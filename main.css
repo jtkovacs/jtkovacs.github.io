@@ -12,8 +12,9 @@ p {
 
 
 /* Links should be dark blue-green (http://www.colorcombos.in/3FA680) and open in new tabs */
-a.link {
+a {
   color: #3FA680;  
+  text-decoration: none;
   target-new: tab;
 }
 

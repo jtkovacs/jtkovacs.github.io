@@ -8,7 +8,7 @@ p {
 
 
 /* Links should be Verdana, 10pt, dark blue-green: http://www.colorcombos.in/3FA680 */
-a {
+a.link {
   color: #3fa680;  
 }
 

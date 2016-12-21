@@ -1,6 +1,6 @@
 /* Pages should have a fairly thick margin */
 body {
-  margin: 60px;
+  margin: 160px;
 }
 
 /* Text should be Verdana, 10pt, slightly dark gray */
@@ -8,6 +8,7 @@ p {
   font-family: Verdana, sans-serif;
   font-size: 13px;
   color: #666666; 
+  max-width: 600px;
 }
 
 
@@ -23,5 +24,5 @@ h1 {
   font-family: Verdana, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: #163b2e;
+  color: #e25500;
 }

@@ -1,8 +1,8 @@
 
-/* Text should be Verdana, 10pt, darker gray */
+/* Text should be Verdana, 10pt=13px, darker gray */
 p {
   font-family: Verdana, sans-serif;
-  font-size: 10pt;
+  font-size: 13px;
   color: #666666; 
 }
 
@@ -13,6 +13,9 @@ a {
 }
 
 /* Headers should be orange: http://www.colorcombos.in/e25500*/
-h1 {
+h {
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
   color: #163b2e;
 }

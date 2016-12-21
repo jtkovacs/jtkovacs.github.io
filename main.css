@@ -11,9 +11,10 @@ p {
 }
 
 
-/* Links should be Verdana, 10pt, dark blue-green: http://www.colorcombos.in/3FA680 */
+/* Links should be dark blue-green (http://www.colorcombos.in/3FA680) and open in new tabs */
 a.link {
   color: #3FA680;  
+  target-new: tab;
 }
 
 /* Headers should be orange: http://www.colorcombos.in/e25500*/

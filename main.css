@@ -1,4 +1,22 @@
-h1 {
-  color: blue;
+
+/* Text should be Verdana, 10pt, darker gray */
+
+p {
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  color: #666666; 
 }
 
+
+/* Links should be Verdana, 10pt, dark blue-green 
+http://www.colorcombos.in/3FA680 */
+
+a {
+  color: #3fa680;  
+}
+
+/* Headers should be orange */
+
+h1 {
+  color: #163b2e;
+}

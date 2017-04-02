@@ -29,10 +29,10 @@ p {
 }
 
 
-/* LIST ITEMS should be Verdana, 10pt, slightly dark gray, slightly narrower than text */
+/* LIST ITEMS should be Verdana, 9pt, slightly dark gray, slightly narrower than text */
 li {
   font-family: Verdana, sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   color: #666666; 
   max-width: 600px;
 }
@@ -55,7 +55,9 @@ table {
 
 /* All table contents should be Verdana, 9pt, slightly dark gray */
 td {
+    font-family: Verdana, sans-serif;
     font-size: 11px;
+    vertical-align: center;
     color: #666666; 
 }
 

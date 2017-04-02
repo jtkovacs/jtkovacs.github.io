@@ -49,52 +49,72 @@ https://docs.python.org/3/howto/regex.html
 http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
 
 ```Python
-match the beginning of a string:
+# match the beginning of a string:
 re.match(pattern, text, flags)
-re.match(r’Jac’, data)
-the r denotes a raw string
-search anywhere in a string:
-first match only: re.search(pattern, text, flags)
-all nonoverlapping: re.findall(pattern, text, flags)
-phone number, note escaped parentheses:
-re.search(r’\(\d\d\d\) \d\d\d-\d\d\d\d’, data)
-pass count parameter into findall:
+re.match(r’Jac’, data) # the r denotes a raw string
+
+# search anywhere in a string:
+# first match only: 
+re.search(pattern, text, flags)
+# all nonoverlapping: 
+re.findall(pattern, text, flags)
+# pass count parameter into findall:
 return re.findall(r’\w{%d,} %my_int, my_str’)
+
+# phone number, note escaped parentheses:
+re.search(r’\(\d\d\d\) \d\d\d-\d\d\d\d’, data)
+# make parentheses, space, hyphen optional in phone number
+r’\)?\d{3})?\s?-?\d\{3}-\d{4}’
+
+```
+
 flags:
-re.IGNORECASE or re.I will ignore word case
-re.VERBOSE or re.X let regexp span lines & contain (ignored) whitespace or comments
-re.MULTILINE or re.M to make a pattern regard lines in your text as the beginning or end of a string
-multiple flags: re.findall(pattern, data, flag|flag|flag)
-store regex for reuse: 
+
+- re.IGNORECASE or re.I will ignore word case
+- re.VERBOSE or re.X let regexp span lines & contain (ignored) whitespace or comments
+- re.MULTILINE or re.M to make a pattern regard lines in your text as the beginning or end of a string
+- multiple flags: re.findall(pattern, data, flag|flag|flag)
+
+```Python
+# store regex for reuse: 
 my_regex = re.compile(pattern, flags)
 re.search(my_regex, data)
-OR my_regex.search(data)
-loop to obtain iterable of match objects:
+# OR 
+my_regex.search(data)
+
+# loop to obtain iterable of match objects:
 for match in my_regex.finditer(data):
-print(‘{first} {last} <{email}>’.format(**match.groupdict())) 
+    print(‘{first} {last} <{email}>’.format(**match.groupdict())) 
+```
+    
+- \w = any Unicode word character,  \W = anything not a Unicode word character
+- \s = any whitespace, \S = anything not whitespace, \t = tab
+- \d = any number 0-9, \D = any non-number
+- \b = word boundaries, \B = not word boundaries
 
-\w = any Unicode word character,  \W = anything not a Unicode word character
-\s = any whitespace, \S = anything not whitespace, \t = tab
-\d = any number 0-9, \D = any non-number
-\b = word boundaries, \B = not word boundaries
+counts, for when something occurs multiple times:
 
-counts, for when something occurs multiple times
-{3} = occurs 3 times, {,3} = 0-3 times, {3,} = 3 or more times, {3-5} = 3-5 times
-\w? = 0-1 word characters, \w* = 0-infinite word characters, \w+ = 1-infinite word characters
-r’\)?\d{3})?\s?-?\d\{3}-\d{4}’ = make parentheses, space, hypen optional in phone number
+- {3} = occurs 3 times, {,3} = 0-3 times, {3,} = 3 or more times, {3-5} = 3-5 times
+- \w? = 0-1 word characters, \w* = 0-infinite word characters, \w+ = 1-infinite word characters
+
 
 sets let us combine explicit characters and escape patterns into pieces that can be repeated multiple time; they also let us specify pieces that should be left out of any matches:
 [aple] finds apple and pale, [a-z] finds any lowercase letter, [A-Z] finds uppercase, [a-zA-Z] finds any case, [^2] finds anything not two, [0-9] finds any number, [\w.]+ finds any # of \w, .
 
-groups search for multiple conditions simultaneously; note that ^ marks the beginning of the string, and $ marks the end; unnamed groups returned as tuples, named groups as dicts:
+```Python
+# groups search for multiple conditions simultaneously; note that ^ marks the beginning of the string, and $ marks the end; unnamed groups returned as tuples, named groups as dicts:
 my_var = re.findall (r’’’
-^(?P<name>[-\w ]+,\s[-\w ]+)\t   # search for lastname, firstname
- (\)?\d{3})?\s?-?\d\{3}-\d{4})? # search for phone number, optional
-(?<email>[-\w\d.+]+ @[-\w\d.]+)\t$  # search for emails
-‘’’, data, flags)
+    ^(?P<name>[-\w ]+,\s[-\w ]+)\t   # search for lastname, firstname
+    (\)?\d{3})?\s?-?\d\{3}-\d{4})? # search for phone number, optional
+    (?<email>[-\w\d.+]+ @[-\w\d.]+)\t$  # search for emails
+    ‘’’, data, flags)
+```
 
-groups addressing
-my_var.groups(), my_var.group_dict(), my_var.group(‘group_name’), my_var.group(1)
+# groups addressing
+my_var.groups()
+my_var.group_dict() 
+my_var.group(‘group_name’)
+my_var.group(1)
 ```
 
 <hr/>

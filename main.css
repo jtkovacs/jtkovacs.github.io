@@ -58,6 +58,7 @@ table {
 td {
     font-family: Verdana, sans-serif;
     font-size: 11px;
+    padding: 10px;
     vertical-align: center;
     color: #666666; 
 }
@@ -68,7 +69,6 @@ td.category {
     color: #f47317;
     font-weight: bold;
     font-size: 11px;
-    padding: 10px;
     vertical-align: top;
     text-align: right;
     width:120px;

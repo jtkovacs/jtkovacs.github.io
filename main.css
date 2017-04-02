@@ -45,3 +45,18 @@ a {
   font-weight: bold;
   target-new: tab;
 }
+
+
+/* All table contents should be Verdana, 10pt, slightly dark gray */
+td {
+  font-family: Verdana, sans-serif;
+  font-size: 13px;
+  color: #666666; 
+}
+
+
+/* Certain table cells should be top- and right aligned, as well as bolded */
+td.category {
+    vertical-align: top;
+    text-align: right;
+}

@@ -59,7 +59,7 @@ re.search(pattern, text, flags)
 # all nonoverlapping: 
 re.findall(pattern, text, flags)
 # pass count parameter into findall:
-return re.findall(r’\w{%d,} %my_int, my_str’)
+# return re.findall(r’\w{%d,} %my_int, my_str’)
 
 # phone number, note escaped parentheses:
 re.search(r’\(\d\d\d\) \d\d\d-\d\d\d\d’, data)

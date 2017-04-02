@@ -57,6 +57,7 @@ td {
 
 /* Certain table cells should be top- and right aligned, as well as bolded */
 td.category {
+    font-weight: bold;
     vertical-align: top;
     text-align: right;
 }

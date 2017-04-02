@@ -49,7 +49,7 @@ a {
 
 /*  Tables get a space before them */
 table {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 
@@ -59,7 +59,8 @@ th {
     font-weight: bold;
     color: #ee5900;
     text-align: left;
-    padding: 5px;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 /* All table contents should be Verdana, 9pt, slightly dark gray */

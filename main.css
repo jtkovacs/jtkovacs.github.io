@@ -49,8 +49,9 @@ a {
 
 /*  Tables get a space before them */
 table {
-    padding-top: 30px;
+    padding-top: 50px;
 }
+
 
 /* All table contents should be Verdana, 10pt, slightly dark gray */
 td {
@@ -62,9 +63,14 @@ td {
 
 /* Certain table cells should be top- and right aligned, as well as orange and bolded */
 td.category {
-    color: #e25500;
+    color: #ff710c;
     font-weight: bold;
     vertical-align: top;
     text-align: right;
     width:140px;
+}
+
+/* Alternating table cells should have a very light grey background */
+td.alt {
+    background: eeeeee;
 }

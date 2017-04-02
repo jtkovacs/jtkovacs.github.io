@@ -55,8 +55,9 @@ td {
 }
 
 
-/* Certain table cells should be top- and right aligned, as well as bolded */
+/* Certain table cells should be top- and right aligned, as well as orange and bolded */
 td.category {
+    color: #e25500;
     font-weight: bold;
     vertical-align: top;
     text-align: right;

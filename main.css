@@ -78,6 +78,7 @@ td.category {
     color: #f47317;
     font-weight: bold;
     font-size: 10px;
+    padding-top: 0px;
     vertical-align: center;
     text-align: right;
     width:120px;

@@ -53,6 +53,15 @@ table {
 }
 
 
+th {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ee5900;
+    text-align: left;
+    padding: 5px;
+}
+
 /* All table contents should be Verdana, 9pt, slightly dark gray */
 td {
     font-family: Verdana, sans-serif;

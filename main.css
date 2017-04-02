@@ -61,7 +61,6 @@ th {
     text-align: left;
     padding-bottom: 10px;
     padding-top: 50px;
-    background-color: #f8f8f8;
 }
 
 
@@ -80,6 +79,7 @@ td {
 td.category {
     color: #f47317;
     font-weight: bold;
+    font-style: italic;
     font-size: 10px;
     padding-top: 0px;
     vertical-align: center;

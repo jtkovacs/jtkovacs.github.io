@@ -48,6 +48,7 @@ https://docs.python.org/3/howto/regex.html
 
 http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
 
+```Python
 match the beginning of a string:
 re.match(pattern, text, flags)
 re.match(r’Jac’, data)
@@ -94,7 +95,7 @@ my_var = re.findall (r’’’
 
 groups addressing
 my_var.groups(), my_var.group_dict(), my_var.group(‘group_name’), my_var.group(1)
-
+```
 
 <hr/>
 

@@ -49,7 +49,8 @@ a {
 
 /* Table headers are anchors, but should be orange, not dark blue-green */
 th a {
-    color: #ee5900;
+/*    color: #ee5900;*/
+    color: #000000;
 }
 
 /* Only links inside lists are bolded */
@@ -73,7 +74,7 @@ th {
     color: #000000;
     text-align: left;
     padding-bottom: 10px;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 

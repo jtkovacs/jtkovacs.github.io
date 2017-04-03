@@ -47,7 +47,7 @@ a {
 }
 
 /* Table headers are anchors, but should be orange, not dark blue-green */
-#a th {
+#a > th {
     color: #ee5900;
 }
 

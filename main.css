@@ -1,4 +1,4 @@
-/* PAGES should have a fairly thick margin */
+    /* PAGES should have a fairly thick margin */
 body {
   margin: 50px 140px 140px 200px;
 }
@@ -51,7 +51,11 @@ a:hover {
     color: #318164;
 }
 
-/* Table headers are anchors, but should be orange, not dark blue-green */
+/* H1 and table headers are anchors, but should be orange or black, not dark blue-green */
+H1 a {
+    color: #e25500;
+}
+
 th a {
 /*    color: #ee5900;*/
     color: #000000;

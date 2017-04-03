@@ -43,8 +43,12 @@ li {
 a {
   color: #3FA680;  
   text-decoration: none;
-  font-weight: bold;
   target-new: tab;
+}
+
+/* Only links inside lists are bolded */
+li.a {
+    font-weight: bold;
 }
 
 

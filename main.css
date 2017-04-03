@@ -56,10 +56,20 @@ H1 a {
     color: #e25500;
 }
 
+H1 a:hover {
+    color: #e25500;
+}
+
+
 th a {
 /*    color: #ee5900;*/
     color: #000000;
 }
+
+th a:hover {
+    color: #000000;
+}
+
 
 /* Only links inside lists are bolded */
 li a {

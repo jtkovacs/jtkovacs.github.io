@@ -7,7 +7,7 @@ body {
 /* HEADERS should be orange: http://www.colorcombos.in/e25500*/
 h1 {
   font-family: Verdana, sans-serif;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   color: #e25500;
 }
@@ -66,7 +66,7 @@ tr {
 /* Table headers have large space before, small space after, and light grey background*/
 th {
     font-family: Verdana, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     color: #ee5900;
     text-align: left;

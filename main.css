@@ -25,11 +25,11 @@ p {
   font-family: Verdana, sans-serif;
   font-size: 13px;
   color: #666666; 
-  max-width: 700px;
+  max-width: 600px;
 }
 
 
-/* LIST ITEMS should be Verdana, 9pt, slightly dark gray, slightly narrower than text */
+/* LIST ITEMS should be Verdana, 9pt, slightly dark gray*/
 li {
   font-family: Verdana, sans-serif;
   font-size: 11px;
@@ -47,10 +47,11 @@ a {
 }
 
 
-/* Table is slightly indented */
+/* TABLES are slightly indented */
 tr {
-    padding-left: 5px;
+    padding-left: 10px;
 }
+
 
 /* Table headers have large space before, small space after, and light grey background*/
 th {

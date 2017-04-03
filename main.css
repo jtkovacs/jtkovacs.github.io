@@ -47,6 +47,10 @@ a {
   target-new: tab;
 }
 
+a:hover {
+    color: #318164;
+}
+
 /* Table headers are anchors, but should be orange, not dark blue-green */
 th a {
 /*    color: #ee5900;*/

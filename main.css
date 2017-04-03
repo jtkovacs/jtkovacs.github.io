@@ -5,6 +5,10 @@ body {
   background-color: #ffffff;
 }  
 
+* {
+  background-color: #ffffff;
+}  
+
 /* HEADERS should be orange: http://www.colorcombos.in/e25500*/
 h1 {
   font-family: Verdana, sans-serif;

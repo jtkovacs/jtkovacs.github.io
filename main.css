@@ -47,12 +47,12 @@ a {
 }
 
 /* Table headers are anchors, but should be orange, not dark blue-green */
-th.a {
+#a th {
     color: #ee5900;
 }
 
 /* Only links inside lists are bolded */
-li.a {
+#a li {
     font-weight: bold;
 }
 

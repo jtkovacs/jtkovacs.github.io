@@ -1,8 +1,9 @@
     /* PAGES should have a fairly thick margin */
 body {
   margin: 50px 140px 140px 200px;
-}
-
+  background-image: url("smoke0.png");
+  background-color: #ffffff;
+}  
 
 /* HEADERS should be orange: http://www.colorcombos.in/e25500*/
 h1 {

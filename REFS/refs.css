@@ -1,0 +1,39 @@
+
+/* PAGES should have a fairly thick margin */
+body {
+    margin: 50px 140px 140px 200px;
+    background-color: #ffffff;
+} 
+
+/* ALL TEXT is Verdana, 11pt, slightly dark grey */
+* {
+    font-family: Verdana, sans-serif;
+    color: #666666;
+    font-size: 13px;
+}
+
+
+/* HEADERS should be orange: http://www.colorcombos.in/e25500*/
+h1, h2, h3 {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color: #e25500;
+}
+
+/* SOME HEADERS are anchors, but shouldn't be colored like other links */
+h1, h2, h3 a {
+    color: #e25500;
+}
+
+h1, h2, h3 a:hover {
+    color: #e25500;
+}
+
+/* HEADER sizes */
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 20px;   
+}

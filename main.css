@@ -1,75 +1,59 @@
+
 /* PAGES should have a fairly thick margin */
 body {
-  margin: 50px 140px 140px 200px;
+    margin: 50px 140px 140px 200px;
 /*  background-image: url("line.jpeg");*/
-  background-color: #ffffff;
+    background-color: #ffffff;
 }  
+
+
 
 /* HEADERS should be orange: http://www.colorcombos.in/e25500*/
 h1 {
-  font-family: Verdana, sans-serif;
-  font-size: 35px;
-  font-weight: bold;
-  color: #e25500;
+    font-family: Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #e25500;
 }
 
-h2 {
-  margin-top:60px;
-  font-family: Verdana, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #e25500;
+/* SOME HEADERS are anchors, but shouldn't be colored like other links */
+h1 a {
+    color: #e25500;
 }
+
+h1 a:hover {
+    color: #e25500;
+}
+
 
 
 /* TEXT should be Verdana, 10pt, slightly dark gray, kept narrow (like a column) */
 p {
-  font-family: Verdana, sans-serif;
-  font-size: 13px;
-  color: #666666; 
-  max-width: 800px;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    color: #666666; 
+    max-width: 800px;
 }
 
-
-/* LIST ITEMS should be Verdana, 9pt, slightly dark gray*/
+/* LIST ITEMS should be Verdana, 9pt, slightly dark gray, vertically centered, and narrower than paragraphs */
 li {
-  font-family: Verdana, sans-serif;
-  font-size: 11px;
-  color: #666666; 
-  vertical-align: center;
-  max-width: 600px;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    color: #666666; 
+    vertical-align: center;
+    max-width: 600px;
 }
 
-
-/* LINKS should be dark blue-green (http://www.colorcombos.in/3FA680) and open in new tabs */
+/* LINKS should be dark blue-green (http://www.colorcombos.in/3FA680) */
 a {
-  color: #3FA680;  
-  text-decoration: none;
-  font-weight: bold;
-  target-new: tab;
+    color: #3FA680;  
+    text-decoration: none;
+    font-weight: bold;
 }
 
+/* HOVER LINKS should be dark grey */
 a:hover {
-    color: #318164;
-}
-
-/* H1 and table headers are anchors, but should be orange or black, not dark blue-green */
-H1 a {
-    color: #e25500;
-}
-
-H1 a:hover {
-    color: #e25500;
-}
-
-
-th a {
-/*    color: #ee5900;*/
-    color: #000000;
-}
-
-th a:hover {
-    color: #000000;
+    color: #555555;
 }
 
 
@@ -79,45 +63,47 @@ tr {
     padding-left: 10px;
 }
 
-
-/* Table headers have large space before, small space after, and light grey background*/
+/* TABLE HEADERS have large space before, small space after, and are black, bold, larger text*/
 th {
     font-family: Verdana, sans-serif;
     font-size: 15px;
     font-weight: bold;
-/*    color: #ee5900;*/
     color: #000000;
     text-align: left;
     padding-bottom: 10px;
     padding-top: 80px;
 }
 
+/* TABLE HEADERS are also anchors, but shouldn't be colored like other links */
+th a {
+    color: #000000;
+}
 
-/* All table contents should be Verdana, 9pt, slightly dark gray */
+th a:hover {
+    color: #000000;
+}
+
+/* TABLE CELLS are padded with center vertical alignment */
 td {
-    font-family: Verdana, sans-serif;
-    font-size: 11px;
     padding-right: 10px;
     padding-top: 10px;
     vertical-align: center;
-    color: #666666; 
 }
 
-
-/* Certain table cells should be top- and right aligned, as well as orange and bolded */
+/* TABLE CELLS WITH CATEGORY NAMES should be right aligned, as well as orange and bolded */
 td.category {
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
     color: #f47317;
     font-weight: bold;
     font-style: italic;
     font-size: 10px;
     padding-top: 0px;
-    vertical-align: center;
     text-align: right;
     width:120px;
 }
 
-
-/* Alternating table cells should have a very light grey background */
+/* ALTERNATING TABLE CELLS should have a very light grey background, with a border that gives some dimensionality */
 td.alt {
     background-color: #f8f8f8;
     border-style: solid;

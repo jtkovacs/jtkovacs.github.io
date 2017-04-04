@@ -8,10 +8,19 @@ body {
 /* ALL TEXT is Verdana, 11pt, slightly dark grey */
 * {
     font-family: Verdana, sans-serif;
-    color: #666666;
-    font-size: 13px;
 }
 
+/* LINKS should be dark blue-green (http://www.colorcombos.in/3FA680) */
+a {
+    color: #3FA680;  
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HOVER LINKS should be dark grey */
+a:hover {
+    color: #555555;
+}
 
 /* HEADERS should be orange: http://www.colorcombos.in/e25500*/
 h1, h2, h3 {
@@ -21,11 +30,11 @@ h1, h2, h3 {
 }
 
 /* SOME HEADERS are anchors, but shouldn't be colored like other links */
-h1, h2, h3 a {
+h1 a, h2 a, h3 a {
     color: #e25500;
 }
 
-h1, h2, h3 a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover {
     color: #e25500;
 }
 
@@ -36,4 +45,10 @@ h1 {
 
 h2 {
     font-size: 20px;   
+}
+
+p, li {
+    font-size: 13px;
+    max-width: 700px;
+    color: #666666;
 }

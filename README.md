@@ -1,1 +1,0 @@
-# jtkovacs.github.io

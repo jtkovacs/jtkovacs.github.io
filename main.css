@@ -17,11 +17,7 @@ h1 {
 }
 
 /* SOME HEADERS are anchors, but shouldn't be colored like other links */
-h1 a {
-    color: #e25500;
-}
-
-h1 a:hover {
+h1 a, h1 a:hover {
     color: #e25500;
 }
 
@@ -96,7 +92,7 @@ td.category {
     font-size: 11px;
     color: #f47317;
     font-weight: bold;
-    font-style: italic;
+/*     font-style: italic; */
     font-size: 10px;
     padding-top: 0px;
     text-align: right;

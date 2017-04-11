@@ -74,7 +74,7 @@ for h in headers:
 link = my_soup.new_tag("link")
 link["rel"] = "stylesheet"
 link["type"] = "text/css"
-link['href'] = "REFS/refs.css"
+link['href'] = "refs.css"
 my_soup.head.style.replace_with(link)
 
 

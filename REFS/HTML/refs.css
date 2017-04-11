@@ -36,7 +36,7 @@ a {
 /* TABLE OF CONTENTS */
 /* Table background should be light grey */
 table {
-    border: 1px solid #dddddd;
+    border: solid 1px #e8e8e8;
     background-color: #f8f8f8;
     width: 800px;
 }
@@ -86,4 +86,15 @@ h4, h4 a, h4 a:hover {
 h5, h5 a, h5 a:hover {
     color: #FF8E4A;
     font-size: 10px;
+}
+
+
+/* In addition to automatic styling from pandoc */
+/* Code chunks should be smaller font w/ light grey background */
+div.sourceCode {
+    background-color: #f8f8f8;
+    font-size: 10px;
+    max-width: 650px;
+    font-family: monospace;
+    padding-left: 10px;
 }

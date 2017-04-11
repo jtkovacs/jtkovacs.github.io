@@ -1,13 +1,15 @@
 # LOAD LIBRARIES
 from bs4 import BeautifulSoup
 import fileinput
+import os
 import string
 import subprocess
 import sys
 
 
 # LOAD MARKDOWN FILE
-fname = sys.argv[1]
+os.chdir('/home/jtk/Site')
+fname = '/home/jtk/Site/REFS/'+sys.argv[1]
 fhand = open(fname, 'r')
 
 

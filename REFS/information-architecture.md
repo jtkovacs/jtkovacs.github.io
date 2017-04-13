@@ -1,17 +1,3 @@
-# Sources
-
-- [ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and format of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
-- [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
-- [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
-- Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
-- Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
-- [RSW - Give yourself permission to follow your nose](https://www.youtube.com/watch?v=SDm1zXxpkr8) [video]
-- [Richard Saul Wurman: the reluctant genius](http://www.wearesalt.org/richard-saul-wurman-the-reluctant-genius/)
-- Wurman, R. S. _Information anxiety._
-- Wurman, R. S. _Information architects._
-- [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
-- [IA tutorial](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)
-
 # What is information architecture?
 
 IA is one of several disciplines (e.g. library science, information science, taxonomy) that supports browsing/navigation and search of content objects (documents and metadata) stored in information systems (e.g. libraries, archives, repositories/portals, websites, databases). The goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV).
@@ -62,48 +48,61 @@ Minimally, terms and relationship indicators must account for synonyms and homog
     - Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms.
 - Homographs must be disambiguated with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercurcy (planet).
 
-Relationships can be much more complex; see <a href="#What-types-of-KOS-exist?">What types of KOS exist?</a>. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun plus a qualifier (in the case of homographs). Focus nouns are also called head nouns. 
+Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by structure</a>. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun plus a qualifier (in the case of homographs). Focus nouns are also called head nouns. 
 
  
 ## What types of KOS exist?
 
-- Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
-- Classifications and categories (subject headings, classification schemes, hierarchical AKA nested taxonomies, categorization schemes)
-- Relationship lists (thesauri [good for representing a very large controlled vocabulary], semantic networks, ontologies)
-    - Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic
+### KOS by function 
+ 
+CVs are associated with content objects in the following ways:
 
-Taxonomies by function:
+- INDEXING: 
+    - vs KEYWORDS: words that emerge as important from a content object
+- METADATA: 
+- CATALOGING: describing 
+    - CLASSIFYING/CATEGORIZING?
 
+???
+    
 - Support indexing with a controlled vocabulary, thesaurus, and/or authority file
 - Support retrieval with faceted taxonomies and thesauri
 - Support navigation with hierarchical taxonomies
 
-By structure:
-
-- List
-- Synring/synset
-- Taxonomy/hierarchy
-- Thesaurus
-- [Ontology/graph]
-
-Terms in a controlled vocabulary may be arranged into:
-
-- A HIERARCHY
-- FACETS
-- 
-
-By major application:
-Major applications of CVs:
-Major applications of non-CV KSOs:
-
-- Pick list
+???
+    
 - Cataloging & subject headings
 - Indexing: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed
 - Tagging: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
 - Categorizing: allocate something into one of existing categories, vs creating categories???
 - Classifying: https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf 
+- Faceted taxonomies
+    
+Insofar as they overlap, KSOs have all the uses of CVs detailed above and may additionally serve as navigation structures.  
 
-In order of complexity:
+### KOS by structure
+
+In order of increasing complexity:
+
+- List
+- Synring/synset
+- Taxonomy/hierarchy
+- Faceted taxonomies
+- Thesaurus
+- [Ontology/graph]
+
+### KOS by contribution to IR
+
+A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
+
+- p. 19 of ANSI/NISO Z39.19 
+
+### KOS, exhaustive 
+
+- Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
+- Classifications and categories (subject headings, classification schemes, hierarchical AKA nested taxonomies, categorization schemes)
+- Relationship lists (thesauri [good for representing a very large controlled vocabulary], semantic networks, ontologies)
+    - Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
 
 - Reference works: Reference works are usually referred to for particular pieces of information, rather than read beginning to end. Reference works include dictionaries, thesauruses, encyclopedias, almanacs, bibliographies, and catalogs.
     - Dictionary: 
@@ -134,24 +133,18 @@ In order of complexity:
 - Controlled vocabulary:
     - Synonym rings/synset
 
-Per meta data model:
 
-- Relational model
-- Hierarchical model
-- Ontological/graph/network/triples model
 
-## Uses of KOS & CVs 
- 
-CVs are associated with content objects in the following ways:
+# Sources
 
-- INDEXING: 
-    - vs KEYWORDS: words that emerge as important from a content object
-- METADATA: 
-- CATALOGING: describing 
-    - CLASSIFYING/CATEGORIZING?
-
-Insofar as they overlap, KSOs have all the uses of CVs detailed above and may additionally serve as navigation structures.  
-
-A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
-
-- p. 19 of ANSI/NISO Z39.19 
+- [ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and format of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
+- [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
+- [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
+- Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
+- Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
+- [RSW - Give yourself permission to follow your nose](https://www.youtube.com/watch?v=SDm1zXxpkr8) [video]
+- [Richard Saul Wurman: the reluctant genius](http://www.wearesalt.org/richard-saul-wurman-the-reluctant-genius/)
+- Wurman, R. S. _Information anxiety._
+- Wurman, R. S. _Information architects._
+- [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
+- [IA tutorial](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)

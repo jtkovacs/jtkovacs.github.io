@@ -53,7 +53,7 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 - Postcoordination
 - Concept mapping/clustering
 
-**Precision** is improved by controlleding ambiguity:
+**Precision** is improved by controlling ambiguity:
 
 - Parenthetical qualifiers
 - Broader and narrower term hierarchical relationships
@@ -97,6 +97,11 @@ More specific to the purview of IAs, information consumers depend on KOSs to bro
 ### KOS by structure
 
 In order of increasing complexity (number, kind, and configuration of relationships):
+
+| KOS | Ambiguity control | Synonym control | Hierarchical relationship | Associative relationship |
+| --- | --- | --- | --- | --- |
+| Term list | X | | | |
+
 
 Term lists: [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
 - Authority file: What’s the definitive version of a term, at least one variant of which I know?

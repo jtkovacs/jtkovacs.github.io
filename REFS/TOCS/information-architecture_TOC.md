@@ -1,12 +1,12 @@
 <table id="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
 	- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy and vocabulary control?](#what-is-taxonomy-and-vocabulary-control?)
-	- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 	- [Basic elements of controlled vocabularies](#basic-elements-of-controlled-vocabularies)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOS by function ](#kos-by-function-)
 		- [KOS by structure](#kos-by-structure)
 	- [Displaying KOS](#displaying-kos)
+- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 - [Sources](#sources)
 </td></tr></table>
 # What is information architecture?
@@ -23,7 +23,9 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 # What is taxonomy and vocabulary control?
 
-Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structures/systems (KOS). The field has roots in biological taxonomies and library catalogs (which existed even antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
+Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. 
+
+In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structures/systems (KOS). The field has roots in biological taxonomies and library catalogs (which existed even in antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
 
 Beyond this general sense, a taxonomy is also a specific kind of KOS with a hierarchical structure:
 
@@ -35,14 +37,6 @@ Controlled vocabularies are very nearly synonymous with taxonomies. CVs stand in
 - Provide some way of linking SYNONYMS, which increases recall; 
 - Distinguish between HOMOGRAPHS, which increases precision; and, optionally,
 - Capture SEMANTIC RELATIONSHIPS between terms, which improves both recall and precision.
-
-## What activities comprise vocabulary control?
-
-- Construction
-- Testing
-- Maintenance
-
-... within a CV management system.
 
 ## Basic elements of controlled vocabularies
 
@@ -62,7 +56,7 @@ Minimally, terms and relationship indicators must account for synonyms and homog
 - Homographs must be disambiguated with a modifier AKA difference AKA qualifier term.
     - e.g. Mercury (metal), Mercurcy (planet)
 
-Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by structure</a>. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun plus a qualifier (in the case of homographs). Focus nouns are also called head nouns. 
+Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by structure.</a> Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun plus a qualifier (in the case of homographs). Focus nouns are also called head nouns. 
  
 ## What types of KOS exist?
 
@@ -166,6 +160,14 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 - permuted display 
 - classified display
 - flat format
+
+# What activities comprise vocabulary control?
+
+- Construction
+- Testing
+- Maintenance
+
+... within a CV management system.
 
 # Sources
 

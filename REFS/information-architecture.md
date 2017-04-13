@@ -208,8 +208,6 @@ Wurman, R. S. (1990). _Information anxiety._ New York City, NY: Bantam Books.
 
 Wurman, R. S. _Information architects._
 
+[Wyllys, R. E. (2000). Information architecture. Retrieved from https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)chool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
+
 [Zeng, M. (n.d.). 4.3 Hierarchical relationships. In _Construction of controlled vocabularies: A primer._ Retrieved from http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm](http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm)
-
-[The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
-
-[Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)

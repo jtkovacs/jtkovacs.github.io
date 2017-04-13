@@ -1,6 +1,7 @@
 # Sources
 
-- [ANSI/NISO Z39.19-2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
+- [ANSI/NISO Z39.19-2005, Guidelines for ... controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
+- [NISO-TR02-1997, Guidelines for indexes ... ](http://www.niso.org/publications/tr/tr02.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - Abrahamson & Freedman. _A perfect mess: The hidden benefits of disorder._
 - [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
@@ -23,26 +24,38 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 IA is one of several disciplines (e.g. library science, information science, taxonomy) that supports browsing/navigation and search of content objects (documents and metadata) stored in information systems (e.g. libraries, archives, repositories/portals, websites, databases). The goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV).
 
-History: ... in libraries, from antiquity; in companies, very marginally from the 1980s and increasingly after the emergence of the web in the 1990s.
+## What is taxonomy and vocabulary control?
 
-## What is taxonomy/KOS?
-
-Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structure/systems (KOS); however, a taxonomy is also a specific kind of KOS with a hierarchical structure. KOS are used to ...  
+Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structure/systems (KOS). It has roots in biological taxonomies and library catalogs (which have existed since antiquity --- as scrolls!). Companies began to use taxonomies for corporate knowledge assets management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. Beyond this general sense, a taxonomy is also a specific kind of KOS with a hierarchical structure:
 
 <img src="../ILLOS/KSOs.png" width="550px">
 
-## What is a controlled vocabulary?
+Controlled vocabularies are very nearly synonymous with taxonomies/KOSs. CVs stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms). Versus natural languages, CVs:
 
-In addition, taxonomies/KOSs are very nearly synonymous with controlled vocabularies. CVs stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms). CVs are associated with content objects in the following ways:
+- Clearly define the SCOPE of terms;
+- Provide some way of LINKING synonyms; and
+- DISTINGUISH between homographs. 
+
+CVs consist of terms and relationships. Terms are chosen if warrant exists:
+
+- User warrant
+- Literary warrant
+- Organizational warrant
+
+CVs are associated with content objects in the following ways:
 
 - INDEXING: 
- - vs KEYWORDS: 
+    - vs KEYWORDS: 
 - METADATA: 
 - CATALOGING: describing 
+
+Insofar as they overlap, KSOs have all the uses of CVs detailed above and may additionally serve as navigation structures.  
 
 A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
 
 - p. 19 of ANSI/NISO Z39.19 
+
+One hopes CVs are interoperable.
 
 ## What types of taxonomies/KOS exist?
 
@@ -56,6 +69,14 @@ Taxonomies by function:
 - Support indexing with a controlled vocabulary, thesaurus, and/or authority file
 - Support retrieval with faceted taxonomies and thesauri
 - Support navigation with hierarchical taxonomies
+
+By structure:
+
+- List
+- Synring/synset
+- Taxonomy/hierarchy
+- Thesaurus
+- [Ontology/graph]
 
 By major application:
 Major applications of CVs:
@@ -103,3 +124,11 @@ Per meta data model:
 - Relational model
 - Hierarchical model
 - Ontological/graph/network/triples model
+
+## What activities comprise vocabulary control?
+
+- Construction
+- Testing
+- Maintenance
+
+... within a CV management system.

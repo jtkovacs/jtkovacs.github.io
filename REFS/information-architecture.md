@@ -45,28 +45,10 @@ Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by s
 ## What types of KOS exist?
 
 ### KOS by function 
- 
-REFERENCE WORKS: for consultation, not comprehensive reading
 
-- Dictionary: 
-    - A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
-    - A book of words in one language with their equivalents in another, sometimes known as a lexicon.
-- Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
-- Thesaurus:
-- Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
-- Bibliography:
-- Catalog:
-- Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
-- Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
-- Almanacs
-- Catalogs
-    
-INDEXING: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; using controlled vocabulary, thesaurus, authority file; using an indexing language with indexing terms
-
-- vs KEYWORDS: words that emerge as important from a content object
-- vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
-
-CATALOGING: describing with metadata including subject headings
+#### Content object acquired by information system
+     
+CATALOGING: cataloger describing content object with metadata including subject headings, so it can be found
 
 representation and organization, fundamental actions
 
@@ -91,6 +73,29 @@ classification system" (Jacob, 2004, p.522)
     - Hierarchical AKA nested taxonomies
     - Polyhierarchical taxonomy
     - Faceted taxonomies
+    - Catalog
+
+INDEXING: undexer saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; applying a controlled vocabulary, authority file; using an indexing language with indexing terms
+
+- vs KEYWORDS: words that emerge as important from a content object
+- vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
+
+#### Content object retrieved from information system
+
+REFERENCE WORKS:info consumer seeking item for consultation, not comprehensive reading
+
+- Dictionary: 
+    - A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
+    - A book of words in one language with their equivalents in another, sometimes known as a lexicon.
+- Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
+- Thesaurus:
+- Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
+- Bibliography:
+- Catalog:
+- Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
+- Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
+- Almanacs
+- Catalogs 
 
 NAVIGATION: 
 
@@ -156,10 +161,16 @@ In order of increasing complexity (number, kind, and configuration of relationsh
         - structured attributes
         - entities are instances of classes
 
-### KOS by implementation
+### KOS in the wild
 
-CVs are associated with content objects in the following ways ... 
-        
+You would see KOS in these places, in these forms:
+
+- hierarchical or faceted navigation taxonomies
+- pick list (dropdown for website, database)
+- a synset behind a search engine
+- metadata
+- ... 
+
 ## Displaying KOS
 
 - generic structure

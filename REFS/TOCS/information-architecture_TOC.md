@@ -143,21 +143,21 @@ In order of increasing complexity (number, kind, and configuration of relationsh
     - Brain: Central nervous system (BTP)
     - Spinal cord: Central nervous system (BTP)
     
-Taxonomies are a top-down approach. Thus, there may occasionally be node labels: terms in a hierarchy that are never applied to a content object, but exist to preserve a coherent logical structure.
+Taxonomies are a top-down approach. Thus, there may occasionally be node labels: terms in a hierarchy that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
 
-- generic posting
-- up-posting/autoposting
+The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
 
-Faceted taxonomies: 
+**Faceted taxonomies** 
+
 - bottom-up
 - multiple views of same info, based on attributes
 - usually used for navigation
 - CVs may be presented by facets
 - facets may be/use CVs
 
-Polyhierarchy
+**Polyhierarchies**
 
-Thesaurus: captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
+**Thesauri** captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
 - related term/associative relationship (RT)
 - equivalence relationship (UF/U)
 - hierarchical relationship (BT/NT)
@@ -165,9 +165,9 @@ Thesaurus: captures more relationships than synonyms; [good for representing a v
 - reciprocity
 - a/symmetric relationship
 
-Semantic networks: not CV; not 100% ontology
+**Semantic networks:** not CV; not 100% ontology
 
-Ontology
+**Ontology**
 - Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
 - Expressed om RDF, OWL, topic maps
 - defined by

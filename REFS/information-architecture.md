@@ -21,27 +21,21 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 # What is information architecture?
 
-A discipline that supports the browsing, navigation, search and retrieval of (or from) information systems. 
+IA is one of several disciplines (e.g. library science, information science, taxonomy) that supports browsing/navigation and search of content objects (documents and metadata) stored in information systems (e.g. libraries, archives, repositories/portals, websites, databases). The goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV).
 
-In general, information storage and retrieval systems hold content objects AKA documents and metadata.
+# What is taxonomy/KOS/controlled vocabulary?
 
-
-## What is (a) taxonomy?
-
-Per Hedden, taxonomy has both general and specific senses. In general, a taxonomy means a knowledge organization structure (KOS), and taxonomy is the discipline of creating and managing such structures: 
+Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structure/systems (KOS); but a taxonomy is also a specific kind of KOS, characterized by hierarchical structure: 
 
 <img src="../ILLOS/KSOs.png" width="600px">
 
-KOSs are very nearly synonymous with controlled vocabularies. A CV stands in contrast with natural language. Since natural language is fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms), it undermines information retrieval. A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
+In addition, taxonomies/KOSs are very nearly synonymous with controlled vocabularies. CVs stand in contrast with natural languages, which are fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms) that undermine information retrieval. A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
 
-### What types of taxonomies/KOS exist?
+## How do KSOs support information retrieval?
 
-What is a taxonomy?
+p. 19 of ANSI/NISO Z39.19 
 
-    The law or science (nomos) of order (taxis). This is the broad definition: any "knowledge organization structure/system"
-    A hierarchical classification/categorization system.
-
-What's included in the broad sense?
+## What types of taxonomies/KOS exist?
 
     Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
     Classifications and categories (subject headings, classification schemes, hierarchical AKA nested taxonomies, categorization schemes)
@@ -102,7 +96,3 @@ Per meta data model:
 - Relational model
 - Hierarchical model
 - Ontological/graph/network/triples model
-
-### How do KSOs support information retrieval?
-
-p. 19 of ANSI/NISO Z39.19 

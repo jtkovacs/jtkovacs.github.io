@@ -1,7 +1,7 @@
 # Sources
 
 - [ANSI/NISO Z39.19-2005, Guidelines for ... controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
-- [NISO-TR02-1997, Guidelines for indexes ... ](http://www.niso.org/publications/tr/tr02.pdf)
+- [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - Abrahamson & Freedman. _A perfect mess: The hidden benefits of disorder._
 - [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)

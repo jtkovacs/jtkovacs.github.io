@@ -30,7 +30,7 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 Per Hedden, taxonomy has both general and specific senses. In general, a taxonomy is a knowledge organization structure, very nearly synonymous with a controlled vocabulary (only the use of CVs in technical writing prevents total equivalence):
 
-![Knowledge organization structures](../ILLOS/KSOs.png)
+<img src="../ILLOS/KSOs.png" width="300px">
 
 A CV stands in contrast with natural language. Since natural language is fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms), it undermines information retrieval (typically measured in terms of precision and recall). A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
 

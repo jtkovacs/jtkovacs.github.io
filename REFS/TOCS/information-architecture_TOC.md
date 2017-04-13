@@ -52,10 +52,10 @@ CVs consist of terms and relationships. Terms are chosen if warrant exists; this
 
 Minimally, terms and relationship indicators must account for synonyms and homographs. This means:
 
-- A preferred term must be designated among synonyms, and synonyms must be linked. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms.
+- Synonyms must be linked. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity. 
 - Homographs must be disambiguated with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercury (planet), Mercury (car).
 
-Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). Relationships between terms can be much more complex than U/UF; see <a href="#KOS-by-structure">KOS by structure.</a> 
+A preferred term may be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). Relationships between terms can be much more complex than U/UF; see <a href="#KOS-by-structure">KOS by structure.</a> 
 
 ## CV elements by impact on IR
 

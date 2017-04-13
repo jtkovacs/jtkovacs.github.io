@@ -4,8 +4,8 @@
 	- [Basic elements of controlled vocabularies](#basic-elements-of-controlled-vocabularies)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOS by function ](#kos-by-function-)
-			- [Content object acquired by information system](#content-object-acquired-by-information-system)
-			- [Content object retrieved from information system](#content-object-retrieved-from-information-system)
+			- [(content object acquired by information system)](#(content-object-acquired-by-information-system))
+			- [(content object retrieved from information system)](#(content-object-retrieved-from-information-system))
 		- [KOS by structure](#kos-by-structure)
 		- [KOS in the wild](#kos-in-the-wild)
 	- [Displaying KOS](#displaying-kos)
@@ -60,7 +60,7 @@ Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by s
 
 ### KOS by function 
 
-#### Content object acquired by information system
+#### (content object acquired by information system)
      
 CATALOGING: cataloger describing content object with metadata including subject headings, so it can be found
 
@@ -94,7 +94,7 @@ INDEXING: undexer saying what something is about in maximalist fashion, identify
 - vs KEYWORDS: words that emerge as important from a content object
 - vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
 
-#### Content object retrieved from information system
+#### (content object retrieved from information system)
 
 REFERENCE WORKS:info consumer seeking item for consultation, not comprehensive reading
 

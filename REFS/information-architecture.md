@@ -46,7 +46,7 @@ Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by s
 
 ### KOS by function 
 
-#### Content object acquired by information system
+#### (content object acquired by information system)
      
 CATALOGING: cataloger describing content object with metadata including subject headings, so it can be found
 
@@ -80,7 +80,7 @@ INDEXING: undexer saying what something is about in maximalist fashion, identify
 - vs KEYWORDS: words that emerge as important from a content object
 - vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
 
-#### Content object retrieved from information system
+#### (content object retrieved from information system)
 
 REFERENCE WORKS:info consumer seeking item for consultation, not comprehensive reading
 

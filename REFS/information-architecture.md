@@ -21,13 +21,88 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 # What is information architecture?
 
-## What is taxonomy?
+A discipline that supports the browsing, navigation, search and retrieval of (or from) information systems. 
 
-Per Hedden, taxonomy has both general and specific senses. In general, a taxonomy is a knowledge organization structure, very nearly synonymous with a controlled vocabulary (only the use of CVs in technical writing prevents total equivalence):
+In general, information storage and retrieval systems hold content objects AKA documents and metadata.
+
+
+## What is (a) taxonomy?
+
+Per Hedden, taxonomy has both general and specific senses. In general, a taxonomy means a knowledge organization structure (KOS), and taxonomy is the discipline of creating and managing such structures: 
 
 <img src="../ILLOS/KSOs.png" width="600px">
 
-A CV stands in contrast with natural language. Since natural language is fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms), it undermines information retrieval (typically measured in terms of precision and recall). A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
+KOSs are very nearly synonymous with controlled vocabularies. A CV stands in contrast with natural language. Since natural language is fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms), it undermines information retrieval. A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
 
+### What types of taxonomies/KOS exist?
 
+What is a taxonomy?
 
+    The law or science (nomos) of order (taxis). This is the broad definition: any "knowledge organization structure/system"
+    A hierarchical classification/categorization system.
+
+What's included in the broad sense?
+
+    Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
+    Classifications and categories (subject headings, classification schemes, hierarchical AKA nested taxonomies, categorization schemes)
+    Relationship lists (thesauri [good for representing a very large controlled vocabulary], semantic networks, ontologies)
+        Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic
+
+Taxonomies by function:
+
+    Support indexing with a controlled vocabulary, thesaurus, and/or authority file
+    Support retrieval with faceted taxonomies and thesauri
+    Support navigation with hierarchical taxonomies
+
+History: ... in libraries, from antiquity; in companies, very marginally from the 1980s and increasingly after the emergence of the web in the 1990s.
+
+By major application:
+Major applications of CVs:
+Major applications of non-CV KSOs:
+
+- Cataloging & subject headings
+- Indexing: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed
+- Tagging: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
+- Categorizing: allocate something into one of existing categories, vs creating categories???
+- Classifying: https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf 
+
+In order of complexity:
+
+- Reference works: Reference works are usually referred to for particular pieces of information, rather than read beginning to end. Reference works include dictionaries, thesauruses, encyclopedias, almanacs, bibliographies, and catalogs.
+    - Dictionary: 
+        - A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
+        - A book of words in one language with their equivalents in another, sometimes known as a lexicon.
+    - Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
+    - Thesaurus:
+    - Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
+    - Bibliography:
+    - Catalog:
+    - Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
+    - Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
+- Term lists:
+    - Authority file: What’s the definitive version of a term, at least one variant of which I know?
+    - Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
+    - Dictionary
+    - Gazetteer
+- Classifications:
+    - Subject headings
+    - Classification schemes
+    - Hierarchical taxonomies
+    - Polyhierarchical taxonomy
+    - Faceted taxonomies
+- Relationship lists:
+    - Thesaurus
+    - Ontology
+    - Semantic network
+- Controlled vocabulary:
+    - Synonym rings/synset
+
+Per meta data model:
+
+- Relational model
+- Hierarchical model
+- Ontological/graph/network/triples model
+
+### How do KSOs support information retrieval?
+
+p. 19 of ANSI/NISO Z39.19 

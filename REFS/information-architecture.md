@@ -4,7 +4,7 @@ Information architecture (IA) is one of several disciplines (e.g. library scienc
 
 ## What generic organization schemes exist?
 
-Per RSW, 
+Per Wurman (1990), 
 
 - Alphabetical, guided by filing rules that specify how to treat numbers, spaces, special characters and capitals
 - Chronological
@@ -188,14 +188,14 @@ Relevant technologies include RDF, OWL, and topic maps.
 - [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
 - [Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515.](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
 - [Hjørland, Birger (2011). Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), p. 546-552.](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
-- [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - [Zeng, M. (n.d.). 4.3 Hierarchical relationships. In _Construction of controlled vocabularies: A primer._](http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm)
 - Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 - Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
 - Rosenfeld, L., Morville, P., & Arango, J. (2015). _Information architecture for the web and beyond_ (4e). Sebastopol, California: O'Reilly Media.
 - [RSW - Give yourself permission to follow your nose](https://www.youtube.com/watch?v=SDm1zXxpkr8) [video]
 - [Richard Saul Wurman: the reluctant genius](http://www.wearesalt.org/richard-saul-wurman-the-reluctant-genius/)
-- Wurman, R. S. _Information anxiety._
+- Wurman, R. S. (1990). _Information anxiety._ New York City, NY: Bantam Books.
 - Wurman, R. S. _Information architects._
+- [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
 - [IA tutorial](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)

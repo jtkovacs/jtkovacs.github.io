@@ -32,15 +32,15 @@ Per Wurman (1990),
 
 Schemas:
 
-    Exact (mutually exclusive): Alphabet, Geographic, Chronology
-    Inexact: Topical, Task-Oriented, Audience-Specific, Metaphor-Driven (e.g., the information lifecycle)
-    Hybrids: Combining multiple methods (confusing?)
+- Exact (mutually exclusive): Alphabet, Geographic, Chronology
+- Inexact: Topical, Task-Oriented, Audience-Specific, Metaphor-Driven (e.g., the information lifecycle)
+- Hybrids: Combining multiple methods (confusing?)
 
 Structures:
 
-    Hierarchy
-    Network
-    Relational
+- Hierarchy
+- Network
+- Relational
 
 A hierarchy (structure) of topical (schema) categories, automatically sorted by alphabet (schema). This is a hybrid schema; does that make it more confusing? If child categories weren’t alphabetized, they’d be random or chronological (e.g. to reflect steps in a process, maybe).
 

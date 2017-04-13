@@ -113,7 +113,7 @@ div.sourceCode {
 
 
 /* TABLES should be center aligned, regular text */
-table, th, td {
+th, td {
     font-size: 11px;
     color: #666666;
     text-align: center;

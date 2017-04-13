@@ -12,6 +12,23 @@ Per Wurman (1990),
 - Categorical
 - 
 
+Schemas:
+
+    Exact (mutually exclusive): Alphabet, Geographic, Chronology
+    Inexact: Topical, Task-Oriented, Audience-Specific, Metaphor-Driven (e.g., the information lifecycle)
+    Hybrids: Combining multiple methods (confusing?)
+
+Structures:
+
+    Hierarchy
+    Network
+    Relational
+
+A hierarchy (structure) of topical (schema) categories, automatically sorted by alphabet (schema). This is a hybrid schema; does that make it more confusing? If child categories weren’t alphabetized, they’d be random or chronological (e.g. to reflect steps in a process, maybe).
+
+When using inexact categories, make top-level categories reflect frequent contexts; major interests or anticipated volume of material? At the same time, though, what about the approach of making many top-level categories, so that the overall structure can be flatter?
+
+
 ## Must information be organized?
 
 Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, shared information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
@@ -202,11 +219,13 @@ Pomerantz, J. (2015). _Metadata._ The MIT Press Essential Knowledge Series. Bost
 
 Rosenfeld, L., Morville, P., & Arango, J. (2015). _Information architecture for the web and beyond_ (4e). Sebastopol, California: O'Reilly Media.
 
+[UX Booth. (2015). A complete beginner's guide to information architecture. Retrieved from http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/](http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/)
+
 [Wurman, R. S. (2014). Give yourself permission to follow your nose [video]. Retrieved from https://www.youtube.com/watch?v=SDm1zXxpkr8](https://www.youtube.com/watch?v=SDm1zXxpkr8)
 
 Wurman, R. S. (1990). _Information anxiety._ New York City, NY: Bantam Books.
 
-Wurman, R. S. _Information architects._
+Wurman, R. S. (1997). _Information architects._ New York City, NY: Graphis Inc.
 
 [Wyllys, R. E. (2000). Information architecture. Retrieved from https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)chool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
 

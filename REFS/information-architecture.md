@@ -74,8 +74,15 @@ representation and organization, fundamental actions
 ties whose members are in some way similar to each ... ment. By reducing the
 load on memory and facilitating the efficient storage and retrieval of infor-
 mation, categorization serves as the fundamental cognitive mechanism that
-simplifies the individual’s experience of the environment" (, p. 518)
+simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518)
+
 - Classifying: placing something into existing categories/classes 
+"In LIS, the term “classification” is used to refer to three distinct but
+related concepts: a system of classes, ordered according to a predetermined
+set of principles and used to organize a set of entities; a group or class in a
+classification system; and the process of assigning entities to classes in a
+classification system" (Jacob, 2004, p.522)
+
     - Subject headings
         - subheadings
             - postcoordinated

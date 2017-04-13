@@ -45,10 +45,10 @@ table.TOC {
     border: solid 1px #e8e8e8;
     background-color: #f8f8f8;
     width: 75%;
-    text-align: right;
+    text-align: left;
 }
-table.TOC th, table.TOC tr {
-    text-align: right;
+table.TOC td {
+    text-align: left;
 }
 /* No bullet points for list items */
 table.TOC ul {

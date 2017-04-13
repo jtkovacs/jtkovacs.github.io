@@ -47,6 +47,9 @@ table.TOC {
     width: 75%;
     text-align: right;
 }
+table.TOC th, table.TOC tr {
+    text-align: right;
+}
 /* No bullet points for list items */
 table.TOC ul {
     list-style-type: none;
@@ -121,7 +124,6 @@ th, td {
     border: 1px solid #cccccc;
     padding: 5px;
 }
-
 th {
     background-color: #e8e8e8;
 }

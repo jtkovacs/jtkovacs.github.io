@@ -171,7 +171,7 @@ You would see KOS in these places, in these forms:
 - metadata
 - ... 
 
-## Displaying KOS
+# Displaying KOS
 
 - generic structure
 - permuted display 

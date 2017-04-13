@@ -67,6 +67,10 @@ table li li li a {
     color: #3FA680;  
     font-size:12px;
 }
+table li li li li a {
+    color: #58C09A;  
+    font-size:10px;
+}
 
 
 
@@ -87,13 +91,14 @@ h3, h3 a, h3 a:hover {
     font-size: 14px;
 }
 h4, h4 a, h4 a:hover {
-    color: #FF7E30;
+    color: #FF7E31;
     font-size: 12px;
 }
 h5, h5 a, h5 a:hover {
     color: #FF8E4A;
-    font-size: 10px;
+    font-size: 12px;
 }
+
 
 
 /* In addition to automatic styling from pandoc */

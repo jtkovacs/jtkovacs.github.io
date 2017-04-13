@@ -8,7 +8,7 @@
 			- [(content object retrieved from information system)](#(content-object-retrieved-from-information-system))
 		- [KOS by structure](#kos-by-structure)
 		- [KOS in the wild](#kos-in-the-wild)
-	- [Displaying KOS](#displaying-kos)
+- [Displaying KOS](#displaying-kos)
 - [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 - [Sources](#sources)
 </td></tr></table>
@@ -185,7 +185,7 @@ You would see KOS in these places, in these forms:
 - metadata
 - ... 
 
-## Displaying KOS
+# Displaying KOS
 
 - generic structure
 - permuted display 

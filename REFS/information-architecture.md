@@ -60,16 +60,15 @@ Assigning subject headings is an act of **CLASSIFYING** objects, placing them in
 
 I review **REFERENCE WORKS** here because the terminology often overlaps with KOSs as they interest IAs. Reference works are information-dense resources meant to be consulted for specific information, not read comprehensively. Definitions are quoted/paraphrased from Wikipedia:
 
-- Dictionary: A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
-- Dictionary: A book of words in one language with their equivalents in another, sometimes known as a lexicon.
-- Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
-- Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
-- Bibliography: Collected citations for related books, articles, etc., which may be as simple as a reading list or may be extensively annotated. 
-- Thesaurus: A list of words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words, and generally lists them in alphabetical order. 
-- Almanac: An annual publication that includes information such as weather forecasts, farmers' planting dates, tide tables, and tabular information often arranged according to the calendar. 
-- Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
-- Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory.
-- Catalog: A listing of content objects (their description and location). 
+- **Dictionary:** (1) A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc. (2) A book of words in one language with their equivalents in another, sometimes known as a lexicon.
+- **Lexicon:** The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
+- **Encyclopedia:** A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
+- **Bibliography:** Collected citations for related books, articles, etc., which may be as simple as a reading list or may be extensively annotated. 
+- **Thesaurus:** A list of words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words, and generally lists them in alphabetical order. 
+- **Almanac:** An annual publication that includes information such as weather forecasts, farmers' planting dates, tide tables, and tabular information often arranged according to the calendar. 
+- **Gazetteer:** A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
+- **Directory:** A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory.
+- **Catalog:** A listing of content objects (their description and location). 
 
 NAVIGATION: 
 

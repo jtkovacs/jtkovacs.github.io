@@ -76,6 +76,7 @@ table li li li a {
 h1, h1 a, h1 a:hover {
     color: #e25500;
     font-size: 22px;
+    padding-top: 80px;
 }
 h2, h2 a, h2 a:hover {
     color: #FC5F00;

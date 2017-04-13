@@ -49,6 +49,7 @@ table.TOC {
 }
 table.TOC td {
     text-align: left;
+    border-style: none;
 }
 /* No bullet points for list items */
 table.TOC ul {
@@ -114,6 +115,7 @@ div.sourceCode {
     font-family: monospace;
     padding-left: 10px;
 }
+
 
 
 /* TABLES should be center aligned, regular text */

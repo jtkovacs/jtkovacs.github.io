@@ -147,17 +147,12 @@ Taxonomies are a top-down approach. Thus, there may occasionally be node labels:
 
 The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
 
-**Faceted taxonomies** 
+**Faceted taxonomies** are a bottom-up approach to providing multiple views of the same content objects, based on shared attributes like topic, location, format, author, etc. They are often presented as navigation aids or search refinments; they may also be used to organize  very large controlled vocabulary. 
 
-- bottom-up
-- multiple views of same info, based on attributes
-- usually used for navigation
-- CVs may be presented by facets
-- facets may be/use CVs
-
-**Polyhierarchies**
+**Polyhierarchies** are hierarchies in which children may have multiple parents.
 
 **Thesauri** captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
+
 - related term/associative relationship (RT)
 - equivalence relationship (UF/U)
 - hierarchical relationship (BT/NT)
@@ -165,17 +160,15 @@ The practice of indexing a content object with a broader term rather than a narr
 - reciprocity
 - a/symmetric relationship
 
-**Semantic networks:** not CV; not 100% ontology
+**Semantic networks** fall short, in some way, of being **ontologies,** which are defined by:   
 
-**Ontology**
-- Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
-- Expressed om RDF, OWL, topic maps
-- defined by
-    - ontological ambition
-    - semantic relationships (annotated edges)
-    - graph model
-    - structured attributes
-    - entities are instances of classes
+- Ambition to "[define] a set of representational primitives [atoms] with which to model a domain of knowledge or discourse" (Tom Gruber, qtd. in Hedden, 2015)
+- Network/graph model of interconnected triples (subject-predicate-object)
+- Semantic relationships (predicates)
+- Structured attributes
+- Entities are instances of classes
+
+Relevant technologies include RDF, OWL, and topic maps.
 
 # What activities comprise vocabulary control?
 

@@ -4,7 +4,7 @@
 	- [Basic elements of controlled vocabularies](#basic-elements-of-controlled-vocabularies)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOS by function ](#kos-by-function-)
-			- [(content object acquired by information system)](#(content-object-acquired-by-information-system))
+			- [(content object added to information system)](#(content-object-added-to-information-system))
 			- [(content object retrieved from information system)](#(content-object-retrieved-from-information-system))
 		- [KOS by structure](#kos-by-structure)
 		- [KOS in the wild](#kos-in-the-wild)
@@ -60,36 +60,15 @@ Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by s
 
 ### KOS by function 
 
-#### (content object acquired by information system)
-     
-CATALOGING: cataloger describing content object with metadata including subject headings, so it can be found
+#### (content object added to information system)
 
-representation and organization, fundamental actions
+A KOS can be applied to a content object at several levels. 
 
-- Categorizing: "Categorization is the process of dividing the world into groups of enti-
-ties whose members are in some way similar to each ... ment. By reducing the
-load on memory and facilitating the efficient storage and retrieval of infor-
-mation, categorization serves as the fundamental cognitive mechanism that
-simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518)
+CATALOGING is the macro level, where a cataloger describes/represents a content object with metadata including subject headings and subheadings so it can be found and perhaps assigned to a single physical location (not a concern for digital objects). Cataloged objects are listed in a catalog. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination); they may be organized in hierarchical (single parent), polyhierarchical (multi-parent), and faceted taxonomies.
 
-- Classifying: placing something into existing categories/classes 
-"In LIS, the term “classification” is used to refer to three distinct but
-related concepts: a system of classes, ordered according to a predetermined
-set of principles and used to organize a set of entities; a group or class in a
-classification system; and the process of assigning entities to classes in a
-classification system" (Jacob, 2004, p.522)
+Assigning subject headings is an act of CLASSIFYING objects, placing them into an existing classification scheme. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). The first sense of classification given here (constructing classes) may also be called CATEGORIZATION, although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
 
-    - Subject headings
-        - subheadings
-            - postcoordinated
-            - precoordinated
-    - Classification schemes
-    - Hierarchical AKA nested taxonomies
-    - Polyhierarchical taxonomy
-    - Faceted taxonomies
-    - Catalog
-
-INDEXING: undexer saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; applying a controlled vocabulary, authority file; using an indexing language with indexing terms
+INDEXING is the micro level. undexer saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; applying a controlled vocabulary, authority file; using an indexing language with indexing terms
 
 - vs KEYWORDS: words that emerge as important from a content object
 - vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about

@@ -110,3 +110,12 @@ div.sourceCode {
     font-family: monospace;
     padding-left: 10px;
 }
+
+
+/* TABLES should be center aligned, regular text */
+table {
+    font-size: 11px;
+    color: #666666;
+    text-align: center;
+    border: 1px solid #cccccc;
+}

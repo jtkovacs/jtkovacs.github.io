@@ -10,14 +10,14 @@
 - [ANSI/NISO Z39.19-2005, Guidelines for ... controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 - [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
-- Abrahamson & Freedman. _A perfect mess: The hidden benefits of disorder._
-- [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
+- Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder._ New York City, NY: Back Bay Books.
 - Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
-- [IA tutorial](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)
 - [RSW - Give yourself permission to follow your nose](https://www.youtube.com/watch?v=SDm1zXxpkr8) [video]
 - [Richard Saul Wurman: the reluctant genius](http://www.wearesalt.org/richard-saul-wurman-the-reluctant-genius/)
 - Wurman, R. S. _Information anxiety._
 - Wurman, R. S. _Information architects._
+- [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
+- [IA tutorial](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)
 
 # What is information architecture?
 
@@ -25,9 +25,9 @@ IA is one of several disciplines (e.g. library science, information science, tax
 
 ## Must information be organized?
 
-Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, _shared_ information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
+Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, shared information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
 
-Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) **objective,** with obvious empirical basis; (2) **socially-negotiated,** eventually becoming (3) **culturally embedded;** or (4) **idiosyncratic:**
+Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![Objective, culturally embedded, socially-negotiated, and idiosyncratic taxonomies](../ILLOS/taxonomy_status.png)
 
@@ -45,9 +45,9 @@ Controlled vocabularies are very nearly synonymous with taxonomies/KOSs. CVs sta
 
 CVs consist of terms and relationships. Terms are chosen if warrant exists:
 
-- User warrant
-- Literary warrant
-- Organizational warrant
+- User warrant, which emerges from user search terms and feedback;
+- Literary warrant, which emerges from review of documents and standards; and
+- Organizational warrant, which emerges from an organization's existing standards.
 
 CVs are associated with content objects in the following ways:
 
@@ -55,6 +55,7 @@ CVs are associated with content objects in the following ways:
     - vs KEYWORDS: 
 - METADATA: 
 - CATALOGING: describing 
+    - CLASSIFYING/CATEGORIZING?
 
 Insofar as they overlap, KSOs have all the uses of CVs detailed above and may additionally serve as navigation structures.  
 

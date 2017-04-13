@@ -41,33 +41,33 @@ p.caption {
 
 /* TABLE OF CONTENTS */
 /* Table background should be light grey */
-table {
+table.toc {
     border: solid 1px #e8e8e8;
     background-color: #f8f8f8;
     width: 75%;
 }
 /* No bullet points for list items */
-table ul {
+table.toc ul {
     list-style-type: none;
 }
 /* Some padding between list items */
-table li {
+table.toc li {
     padding-top: 2px;
 }
 /* Make nested list items lighter and smaller */
-table li a {
+table.toc li a {
     font-size: 16px;
     color: #235D47;
 }
-table li li a {
+table.toc li li a {
     color: #318164;
     font-size: 14px;
 }
-table li li li a {
+table.toc li li li a {
     color: #3FA680;  
     font-size:12px;
 }
-table li li li li a {
+table.toc li li li li a {
     color: #58C09A;  
     font-size:10px;
 }

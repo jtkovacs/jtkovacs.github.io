@@ -8,8 +8,9 @@
 			- [Content object added to information system](#content-object-added-to-information-system)
 			- [Content object retrieved from information system](#content-object-retrieved-from-information-system)
 		- [KOS by structure](#kos-by-structure)
-- [Displaying KOS](#displaying-kos)
 - [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
+	- [Constructing a CV](#constructing-a-cv)
+	- [Displaying KOSs](#displaying-koss)
 - [Sources](#sources)
 </td></tr></table>
 # What is information architecture?
@@ -112,61 +113,62 @@ More specific to the purview of IAs, information consumers depend on KOSs to bro
 
 In order of increasing complexity (number, kind, and configuration of relationships):
 
-- Term lists: [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
-    - Authority file: What’s the definitive version of a term, at least one variant of which I know?
-    - Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
-    - Dictionary
-    - Gazetteer
-    - Significant overlap w/ reference works
-- Synonym ring/synset
-    - Usually invisible to user, e.g. underpinning a search engine
-- category
-- Taxonomy AKA hierarchy AKA tree structure: 
-    - top-down
-    - Broader term (BT)
-    - Broader term (generic) (BTG)
-    - Broader term (instance) (BTI)
-    - Broader term (partitive) (BTP)    
-    - Narrower term (NT)
-    - Narrower term (generic) (NTG)
-    - Narrower term (instance) (NTI)
-    - Narrower term (partitive) (NTP)
-    - sibling
-    - generic posting
-    - up-posting/autoposting
-    - top term (TT)
-    - node label
-- Faceted taxonomies: 
-    - bottom-up
-    - multiple views of same info, based on attributes
-    - usually used for navigation
-    - CVs may be presented by facets
-    - facets may be/use CVs
-- Polyhierarchy
-- Thesaurus: captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
-    - related term/associative relationship (RT)
-    - equivalence relationship (UF/U)
-    - hierarchical relationship (BT/NT)
-    - cross-reference
-    - reciprocity
-    - a/symmetric relationship
-- Semantic networks: not CV; not 100% ontology
-- Ontology
-    - Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
-    - Expressed om RDF, OWL, topic maps
-    - defined by
-        - ontological ambition
-        - semantic relationships (annotated edges)
-        - graph model
-        - structured attributes
-        - entities are instances of classes
+Term lists: [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
+- Authority file: What’s the definitive version of a term, at least one variant of which I know?
+- Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
+- Dictionary
+- Gazetteer
+- Significant overlap w/ reference works
 
-# Displaying KOS
+Synonym ring/synset
+- Usually invisible to user, e.g. underpinning a search engine
 
-- generic structure
-- permuted display 
-- classified display
-- flat format
+Category
+
+Taxonomy AKA hierarchy AKA tree structure: 
+- top-down
+- Broader term (BT)
+- Broader term (generic) (BTG)
+- Broader term (instance) (BTI)
+- Broader term (partitive) (BTP)    
+- Narrower term (NT)
+- Narrower term (generic) (NTG)
+- Narrower term (instance) (NTI)
+- Narrower term (partitive) (NTP)
+- sibling
+- generic posting
+- up-posting/autoposting
+- top term (TT)
+- node label
+
+Faceted taxonomies: 
+- bottom-up
+- multiple views of same info, based on attributes
+- usually used for navigation
+- CVs may be presented by facets
+- facets may be/use CVs
+
+Polyhierarchy
+
+Thesaurus: captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
+- related term/associative relationship (RT)
+- equivalence relationship (UF/U)
+- hierarchical relationship (BT/NT)
+- cross-reference
+- reciprocity
+- a/symmetric relationship
+
+Semantic networks: not CV; not 100% ontology
+
+Ontology
+- Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
+- Expressed om RDF, OWL, topic maps
+- defined by
+    - ontological ambition
+    - semantic relationships (annotated edges)
+    - graph model
+    - structured attributes
+    - entities are instances of classes
 
 # What activities comprise vocabulary control?
 
@@ -175,6 +177,15 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 - Maintenance
 
 ... within a CV management system.
+
+## Constructing a CV
+        
+## Displaying KOSs
+
+- generic structure
+- permuted display 
+- classified display
+- flat format
 
 # Sources
 

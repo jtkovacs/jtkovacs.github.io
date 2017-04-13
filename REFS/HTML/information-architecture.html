@@ -72,14 +72,21 @@
        </ul>
       </li>
       <li>
-       <a href="#displaying-kos">
-        Displaying KOS
-       </a>
-      </li>
-      <li>
        <a href="#what-activities-comprise-vocabulary-control?">
         What activities comprise vocabulary control?
        </a>
+       <ul>
+        <li>
+         <a href="#constructing-a-cv">
+          Constructing a CV
+         </a>
+        </li>
+        <li>
+         <a href="#displaying-koss">
+          Displaying KOSs
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        <a href="#sources">
@@ -385,186 +392,35 @@
   <p>
    In order of increasing complexity (number, kind, and configuration of relationships):
   </p>
-  <ul>
-   <li>
-    Term lists: [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
-    <ul>
-     <li>
-      Authority file: What’s the definitive version of a term, at least one variant of which I know?
-     </li>
-     <li>
-      Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
-     </li>
-     <li>
-      Dictionary
-     </li>
-     <li>
-      Gazetteer
-     </li>
-     <li>
-      Significant overlap w/ reference works
-     </li>
-    </ul>
-   </li>
-   <li>
-    Synonym ring/synset
-    <ul>
-     <li>
-      Usually invisible to user, e.g. underpinning a search engine
-     </li>
-    </ul>
-   </li>
-   <li>
-    category
-   </li>
-   <li>
-    Taxonomy AKA hierarchy AKA tree structure:
-    <ul>
-     <li>
-      top-down
-     </li>
-     <li>
-      Broader term (BT)
-     </li>
-     <li>
-      Broader term (generic) (BTG)
-     </li>
-     <li>
-      Broader term (instance) (BTI)
-     </li>
-     <li>
-      Broader term (partitive) (BTP)
-      <br/>
-     </li>
-     <li>
-      Narrower term (NT)
-     </li>
-     <li>
-      Narrower term (generic) (NTG)
-     </li>
-     <li>
-      Narrower term (instance) (NTI)
-     </li>
-     <li>
-      Narrower term (partitive) (NTP)
-     </li>
-     <li>
-      sibling
-     </li>
-     <li>
-      generic posting
-     </li>
-     <li>
-      up-posting/autoposting
-     </li>
-     <li>
-      top term (TT)
-     </li>
-     <li>
-      node label
-     </li>
-    </ul>
-   </li>
-   <li>
-    Faceted taxonomies:
-    <ul>
-     <li>
-      bottom-up
-     </li>
-     <li>
-      multiple views of same info, based on attributes
-     </li>
-     <li>
-      usually used for navigation
-     </li>
-     <li>
-      CVs may be presented by facets
-     </li>
-     <li>
-      facets may be/use CVs
-     </li>
-    </ul>
-   </li>
-   <li>
-    Polyhierarchy
-   </li>
-   <li>
-    Thesaurus: captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
-    <ul>
-     <li>
-      related term/associative relationship (RT)
-     </li>
-     <li>
-      equivalence relationship (UF/U)
-     </li>
-     <li>
-      hierarchical relationship (BT/NT)
-     </li>
-     <li>
-      cross-reference
-     </li>
-     <li>
-      reciprocity
-     </li>
-     <li>
-      a/symmetric relationship
-     </li>
-    </ul>
-   </li>
-   <li>
-    Semantic networks: not CV; not 100% ontology
-   </li>
-   <li>
-    Ontology
-    <ul>
-     <li>
-      Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
-     </li>
-     <li>
-      Expressed om RDF, OWL, topic maps
-     </li>
-     <li>
-      defined by
-      <ul>
-       <li>
-        ontological ambition
-       </li>
-       <li>
-        semantic relationships (annotated edges)
-       </li>
-       <li>
-        graph model
-       </li>
-       <li>
-        structured attributes
-       </li>
-       <li>
-        entities are instances of classes
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-  </ul>
-  <h1>
-   <a name="displaying-kos">
-    Displaying KOS
-   </a>
-  </h1>
-  <ul>
-   <li>
-    generic structure
-   </li>
-   <li>
-    permuted display
-   </li>
-   <li>
-    classified display
-   </li>
-   <li>
-    flat format
-   </li>
-  </ul>
+  <p>
+   Term lists: [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple]) - Authority file: What’s the definitive version of a term, at least one variant of which I know? - Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge. - Dictionary - Gazetteer - Significant overlap w/ reference works
+  </p>
+  <p>
+   Synonym ring/synset - Usually invisible to user, e.g. underpinning a search engine
+  </p>
+  <p>
+   Category
+  </p>
+  <p>
+   Taxonomy AKA hierarchy AKA tree structure: - top-down - Broader term (BT) - Broader term (generic) (BTG) - Broader term (instance) (BTI) - Broader term (partitive) (BTP)
+   <br/>
+   - Narrower term (NT) - Narrower term (generic) (NTG) - Narrower term (instance) (NTI) - Narrower term (partitive) (NTP) - sibling - generic posting - up-posting/autoposting - top term (TT) - node label
+  </p>
+  <p>
+   Faceted taxonomies: - bottom-up - multiple views of same info, based on attributes - usually used for navigation - CVs may be presented by facets - facets may be/use CVs
+  </p>
+  <p>
+   Polyhierarchy
+  </p>
+  <p>
+   Thesaurus: captures more relationships than synonyms; [good for representing a very large controlled vocabulary] - related term/associative relationship (RT) - equivalence relationship (UF/U) - hierarchical relationship (BT/NT) - cross-reference - reciprocity - a/symmetric relationship
+  </p>
+  <p>
+   Semantic networks: not CV; not 100% ontology
+  </p>
+  <p>
+   Ontology - Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic" - Expressed om RDF, OWL, topic maps - defined by - ontological ambition - semantic relationships (annotated edges) - graph model - structured attributes - entities are instances of classes
+  </p>
   <h1>
    <a name="what-activities-comprise-vocabulary-control?">
     What activities comprise vocabulary control?
@@ -584,6 +440,30 @@
   <p>
    ... within a CV management system.
   </p>
+  <h2>
+   <a name="constructing-a-cv">
+    Constructing a CV
+   </a>
+  </h2>
+  <h2>
+   <a name="displaying-koss">
+    Displaying KOSs
+   </a>
+  </h2>
+  <ul>
+   <li>
+    generic structure
+   </li>
+   <li>
+    permuted display
+   </li>
+   <li>
+    classified display
+   </li>
+   <li>
+    flat format
+   </li>
+  </ul>
   <h1>
    <a name="sources">
     Sources

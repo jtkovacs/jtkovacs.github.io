@@ -1,6 +1,6 @@
 # Sources
 
-- [ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and foramat of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
+- [ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and format of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 - [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
@@ -47,19 +47,23 @@ Controlled vocabularies are very nearly synonymous with taxonomies. CVs stand in
 
 ... within a CV management system.
 
-## Basic elements of CVs
+## Basic elements of controlled vocabularies
 
-CVs consist of terms and relationships
+CVs consist of terms and relationships. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
 
-Terms may be compound ... 
+- User warrant emerges from user search terms and feedback;
+- Literary warrant emerges from review of documents and standards; and
+- Organizational warrant emerges from an organization's existing standards.
 
-Terms are chosen if warrant exists:
+Minimally, terms and relationship indicators must account for synonyms and homographs. This means:
 
-- User warrant, which emerges from user search terms and feedback;
-- Literary warrant, which emerges from review of documents and standards; and
-- Organizational warrant, which emerges from an organization's existing standards.
+- A preferred term must be designated among synonyms, and synonyms must be linked. 
+    - This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity. 
+    - Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms.
+- Homographs must be disambiguated with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercurcy (planet).
 
- --- minimally, between synonyms and homographs. 
+Relationships can be much more complex; see <a href="#What-types-of-KOS-exist?">What types of KOS exist?</a>. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun plus a qualifier (in the case of homographs). Focus nouns are also called head nouns. 
+
  
 ## What types of KOS exist?
 
@@ -81,6 +85,12 @@ By structure:
 - Taxonomy/hierarchy
 - Thesaurus
 - [Ontology/graph]
+
+Terms in a controlled vocabulary may be arranged into:
+
+- A HIERARCHY
+- FACETS
+- 
 
 By major application:
 Major applications of CVs:

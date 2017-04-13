@@ -41,8 +41,8 @@
          </a>
         </li>
         <li>
-         <a href="#basic-elements-of-cvs">
-          Basic elements of CVs
+         <a href="#basic-elements-of-controlled-vocabularies">
+          Basic elements of controlled vocabularies
          </a>
         </li>
         <li>
@@ -69,7 +69,7 @@
   <ul>
    <li>
     <a href="http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf">
-     ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and foramat of monolingual controlled vocabularies
+     ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and format of monolingual controlled vocabularies
     </a>
    </li>
    <li>
@@ -215,32 +215,49 @@
    ... within a CV management system.
   </p>
   <h2>
-   <a name="basic-elements-of-cvs">
-    Basic elements of CVs
+   <a name="basic-elements-of-controlled-vocabularies">
+    Basic elements of controlled vocabularies
    </a>
   </h2>
   <p>
-   CVs consist of terms and relationships
-  </p>
-  <p>
-   Terms may be compound ...
-  </p>
-  <p>
-   Terms are chosen if warrant exists:
+   CVs consist of terms and relationships. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
   </p>
   <ul>
    <li>
-    User warrant, which emerges from user search terms and feedback;
+    User warrant emerges from user search terms and feedback;
    </li>
    <li>
-    Literary warrant, which emerges from review of documents and standards; and
+    Literary warrant emerges from review of documents and standards; and
    </li>
    <li>
-    Organizational warrant, which emerges from an organization's existing standards.
+    Organizational warrant emerges from an organization's existing standards.
    </li>
   </ul>
   <p>
-   --- minimally, between synonyms and homographs.
+   Minimally, terms and relationship indicators must account for synonyms and homographs. This means:
+  </p>
+  <ul>
+   <li>
+    A preferred term must be designated among synonyms, and synonyms must be linked.
+    <ul>
+     <li>
+      This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
+     </li>
+     <li>
+      Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms.
+     </li>
+    </ul>
+   </li>
+   <li>
+    Homographs must be disambiguated with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercurcy (planet).
+   </li>
+  </ul>
+  <p>
+   Relationships can be much more complex; see
+   <a href="#What-types-of-KOS-exist?">
+    What types of KOS exist?
+   </a>
+   . Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun plus a qualifier (in the case of homographs). Focus nouns are also called head nouns.
   </p>
   <h2>
    <a name="what-types-of-kos-exist?">
@@ -295,6 +312,19 @@
    </li>
    <li>
     [Ontology/graph]
+   </li>
+  </ul>
+  <p>
+   Terms in a controlled vocabulary may be arranged into:
+  </p>
+  <ul>
+   <li>
+    A HIERARCHY
+   </li>
+   <li>
+    FACETS
+   </li>
+   <li>
    </li>
   </ul>
   <p>

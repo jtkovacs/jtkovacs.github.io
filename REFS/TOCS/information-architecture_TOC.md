@@ -1,8 +1,8 @@
 <table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
 	- [Must information be organized?](#must-information-be-organized?)
-- [What is taxonomy and vocabulary control?](#what-is-taxonomy-and-vocabulary-control?)
-	- [Basic elements of controlled vocabularies](#basic-elements-of-controlled-vocabularies)
-	- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
+- [What is taxonomy?](#what-is-taxonomy?)
+	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
+		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOS by function ](#kos-by-function-)
 			- [Content object added to information system](#content-object-added-to-information-system)
@@ -25,24 +25,24 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 ![Objective, culturally embedded, socially negotiated, and idiosyncratic taxonomies](../ILLOS/taxonomy_status.png)
 
-# What is taxonomy and vocabulary control?
+# What is taxonomy?
 
 Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. 
 
-In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structures/systems (KOS). The field has roots in biological taxonomies and library catalogs (which existed even in antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
+In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structures/systems (KOS) and very nearly synonymous with controlled vocabularies (CVs). The field has roots in biological taxonomies and library catalogs (which existed even in antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
 
 Beyond this general sense, a taxonomy is also a specific kind of KOS with a hierarchical structure:
 
 <img src="../ILLOS/KSOs.png" width="550px">
 
-Controlled vocabularies are very nearly synonymous with taxonomies. CVs stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Versus natural languages, CVs:
+## What are controlled vocabularies?
+
+Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Versus natural languages, CVs:
 
 - Clearly define the SCOPE of terms using scope notes (SN) and history notes (HN);
 - Provide some way of linking SYNONYMS, which increases recall; 
 - Distinguish between HOMOGRAPHS, which increases precision; and, optionally,
 - Capture SEMANTIC RELATIONSHIPS between terms, which improves both recall and precision.
-
-## Basic elements of controlled vocabularies
 
 CVs consist of terms and relationships. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
 
@@ -57,7 +57,7 @@ Minimally, terms and relationship indicators must account for synonyms and homog
 
 A preferred term may be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). Relationships between terms can be much more complex than U/UF; see <a href="#KOS-by-structure">KOS by structure.</a> 
 
-## CV elements by impact on IR
+### CV elements by impact on IR
 
 Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
 

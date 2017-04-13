@@ -2,8 +2,10 @@
 - [What is information architecture?](#what-is-information-architecture?)
 	- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy and vocabulary control?](#what-is-taxonomy-and-vocabulary-control?)
-	- [What types of KOS exist?](#what-types-of-kos-exist?)
 	- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
+	- [Basic elements of CVs](#basic-elements-of-cvs)
+	- [What types of KOS exist?](#what-types-of-kos-exist?)
+	- [Uses of KOS & CVs ](#uses-of-kos-&-cvs-)
 </td></tr></table>
 # Sources
 
@@ -27,13 +29,15 @@ IA is one of several disciplines (e.g. library science, information science, tax
 
 Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, shared information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
 
-Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, eventually becoming (3) culturally embedded; or (4) idiosyncratic:
+Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
-![Objective, culturally embedded, socially-negotiated, and idiosyncratic taxonomies](../ILLOS/taxonomy_status.png)
+![Objective, culturally embedded, socially negotiated, and idiosyncratic taxonomies](../ILLOS/taxonomy_status.png)
 
 # What is taxonomy and vocabulary control?
 
-Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structure/systems (KOS). It has roots in biological taxonomies and library catalogs (which have existed since antiquity --- as scrolls!). Companies began to use taxonomies for corporate knowledge assets management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. Beyond this general sense, a taxonomy is also a specific kind of KOS with a hierarchical structure:
+Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structures/systems (KOS). The field has roots in biological taxonomies and library catalogs (which existed even antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
+
+Beyond this general sense, a taxonomy is also a specific kind of KOS with a hierarchical structure:
 
 <img src="../ILLOS/KSOs.png" width="550px">
 
@@ -44,7 +48,19 @@ Controlled vocabularies are very nearly synonymous with taxonomies. CVs stand in
 - Distinguish between HOMOGRAPHS, which increases precision; and, optionally,
 - Capture SEMANTIC RELATIONSHIPS between terms, which improves both recall and precision.
 
-CVs consist of terms and relationships (minimally, between synonyms and homographs). Terms may be compound ... 
+## What activities comprise vocabulary control?
+
+- Construction
+- Testing
+- Maintenance
+
+... within a CV management system.
+
+## Basic elements of CVs
+
+CVs consist of terms and relationships
+
+Terms may be compound ... 
 
 Terms are chosen if warrant exists:
 
@@ -52,22 +68,8 @@ Terms are chosen if warrant exists:
 - Literary warrant, which emerges from review of documents and standards; and
 - Organizational warrant, which emerges from an organization's existing standards.
 
-CVs are associated with content objects in the following ways:
-
-- INDEXING: 
-    - vs KEYWORDS: words that emerge as important from a content object
-- METADATA: 
-- CATALOGING: describing 
-    - CLASSIFYING/CATEGORIZING?
-
-Insofar as they overlap, KSOs have all the uses of CVs detailed above and may additionally serve as navigation structures.  
-
-A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
-
-- p. 19 of ANSI/NISO Z39.19 
-
-One hopes CVs are interoperable.
-
+ --- minimally, between synonyms and homographs. 
+ 
 ## What types of KOS exist?
 
 - Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
@@ -93,6 +95,7 @@ By major application:
 Major applications of CVs:
 Major applications of non-CV KSOs:
 
+- Pick list
 - Cataloging & subject headings
 - Indexing: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed
 - Tagging: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
@@ -136,10 +139,18 @@ Per meta data model:
 - Hierarchical model
 - Ontological/graph/network/triples model
 
-## What activities comprise vocabulary control?
+## Uses of KOS & CVs 
+ 
+CVs are associated with content objects in the following ways:
 
-- Construction
-- Testing
-- Maintenance
+- INDEXING: 
+    - vs KEYWORDS: words that emerge as important from a content object
+- METADATA: 
+- CATALOGING: describing 
+    - CLASSIFYING/CATEGORIZING?
 
-... within a CV management system.
+Insofar as they overlap, KSOs have all the uses of CVs detailed above and may additionally serve as navigation structures.  
+
+A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
+
+- p. 19 of ANSI/NISO Z39.19 

@@ -116,23 +116,22 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 
 **Taxonomies** AKA hierarchies AKA hierarchical taxonomies AKA tree structures arrange terms into parent/child relationships beneath a single top term (TT). A strict hierarchy requires that each term have a single parent AKA broader term (BT), though they may have multiple siblings and children AKA narrower terms (NT). Per Zeng (n.d.), hierarchies model three different types of real-world relationships: 
 
-- Whole/part (partitive): 
-- Generic/specific (generic): **X is a Y**
-    - X: Y (BTG)
-    - Y: X (NTG)
-- Class/instance (instance):
+- Generic: **X is a Y** or **All X are Y, and some Y are X**
+    - Succulent: Cactus (NTG)
+    - Cactus: Succulent (BTG)
+- Instance: **X is a Y** but not a _kind_ of Y or a _part_ of Y
+    - Mountain: Alps (NTI), Himalayas (NTI)
+    - Alps: Moutain (BTI)
+    - Himalayas: Mountain (BTI)
+- Partitive: **Y consists of Xs**
+    - Central nervous system: Brain (NTP), Spinal cord (NTP)
+    - Brain: Central nervous system (BTP)
+    - Spinal cord: Central nervous system (BTP)
+    
+Taxonomies are a top-down approach. Thus, there may occasionally be node labels: terms in a hierarchy that are never applied to a content object, but exist to preserve a coherent logical structure.
 
-Taxonomies are a top-down approach.
-
-- Broader term (generic) (BTG)
-- Broader term (instance) (BTI)
-- Broader term (partitive) (BTP)    
-- Narrower term (generic) (NTG)
-- Narrower term (instance) (NTI)
-- Narrower term (partitive) (NTP)
 - generic posting
 - up-posting/autoposting
-- node label
 
 Faceted taxonomies: 
 - bottom-up

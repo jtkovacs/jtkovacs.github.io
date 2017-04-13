@@ -1,6 +1,6 @@
 # What is information architecture?
 
-Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports browsing/navigation and search of content objects (documents and metadata) stored in information systems (e.g. libraries, archives, repositories/portals, websites, databases). For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures. Another way of putting this is that IA designs for finding and for understanding.
+Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
 
 ## Must information be organized?
 
@@ -44,12 +44,14 @@ CVs consist of terms and relationships. Terms are chosen if warrant exists; this
 Minimally, terms and relationship indicators must account for synonyms and homographs. This means:
 
 - A preferred term must be designated among synonyms, and synonyms must be linked. 
-    - This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity. 
-    - Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms.
-- Homographs must be disambiguated with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercurcy (planet).
+    - This is often accomplished via the indicators UF (use for) and U (use).
+        - e.g. Salinity UF Saltiness, Saltiness U Salinity
+    - Preferred terms are also called descriptors or headings.
+    - Non-preferred terms are also called entry terms or lead-in terms.
+- Homographs must be disambiguated with a modifier AKA difference AKA qualifier term.
+    - e.g. Mercury (metal), Mercurcy (planet)
 
 Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by structure</a>. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun plus a qualifier (in the case of homographs). Focus nouns are also called head nouns. 
-
  
 ## What types of KOS exist?
 
@@ -57,53 +59,70 @@ Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by s
  
 CVs are associated with content objects in the following ways:
 
-- INDEXING: 
+- INDEXING: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; using controlled vocabulary, thesaurus, authority file; using an indexing language with indexing terms
     - vs KEYWORDS: words that emerge as important from a content object
-- METADATA: 
-- CATALOGING: describing 
+    - vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
+- CATALOGING: describing with subject headings
+    - subheadings
+    - postcoordinated
+    - precoordinated
     - CLASSIFYING/CATEGORIZING?
-
-???
-    
-- Support indexing with a controlled vocabulary, thesaurus, and/or authority file
-- Support retrieval with faceted taxonomies and thesauri
-- Support navigation with hierarchical taxonomies
-
-???
-    
-- Cataloging & subject headings
-- Indexing: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed
-- Tagging: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
 - Categorizing: allocate something into one of existing categories, vs creating categories???
 - Classifying: https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf 
-- Faceted taxonomies
+- METADATA: 
+- NAVIGATION: 
+    - with hierarchical taxonomies
+    - with a pick list
+    - faceted taxonomies
+- RETRIEVAL: 
+    - faceted taxonomies and thesauri
+    - p. 19 of ANSI/NISO Z39.19 
     
-Insofar as they overlap, KSOs have all the uses of CVs detailed above and may additionally serve as navigation structures.  
-
 ### KOS by structure
 
 In order of increasing complexity:
 
 - List
 - Synring/synset
-- Taxonomy/hierarchy
-- Faceted taxonomies
+- Taxonomy AKA hierarchy AKA tree structure: 
+    - top-down
+    - Broader term (BT)
+    - Broader term (generic) (BTG)
+    - Broader term (instance) (BTI)
+    - Broader term (partitive) (BTP)    
+    - Narrower term (NT)
+    - Narrower term (generic) (NTG)
+    - Narrower term (instance) (NTI)
+    - Narrower term (partitive) (NTP)
+    - sibling
+    - generic posting
+    - up-posting/autoposting
+    - top term (TT)
+    - node label
+- Faceted taxonomies: 
+    - bottom-up
+    - multiple views of same info, based on attributes
+    - usually used for navigation
+    - CVs may be presented by facets
+    - facets may be/use CVs
+- Polyhierarchy
 - Thesaurus
+    - related term (RT)
+    - associative relationship
+    - equivalence relationship
+    - hierarchical relationship
+    - cross-reference
+    - category
+    - reciprocity
+    - a/symmetric relationship
 - [Ontology/graph]
-
-### KOS by contribution to IR
-
-A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
-
-- p. 19 of ANSI/NISO Z39.19 
+    - Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
 
 ### KOS, exhaustive 
 
 - Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
 - Classifications and categories (subject headings, classification schemes, hierarchical AKA nested taxonomies, categorization schemes)
 - Relationship lists (thesauri [good for representing a very large controlled vocabulary], semantic networks, ontologies)
-    - Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
-
 - Reference works: Reference works are usually referred to for particular pieces of information, rather than read beginning to end. Reference works include dictionaries, thesauruses, encyclopedias, almanacs, bibliographies, and catalogs.
     - Dictionary: 
         - A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
@@ -133,7 +152,12 @@ A controlled vocabulary (the product) or vocabulary control (the process) improv
 - Controlled vocabulary:
     - Synonym rings/synset
 
+## Displaying KOS
 
+- generic structure
+- permuted display 
+- classified display
+- flat format
 
 # Sources
 

@@ -56,16 +56,16 @@
            </a>
           </li>
           <li>
-           <a href="#kos-by-contribution-to-ir">
-            KOS by contribution to IR
-           </a>
-          </li>
-          <li>
            <a href="#kos,-exhaustive-">
             KOS, exhaustive
            </a>
           </li>
          </ul>
+        </li>
+        <li>
+         <a href="#displaying-kos">
+          Displaying KOS
+         </a>
         </li>
        </ul>
       </li>
@@ -84,7 +84,7 @@
    </a>
   </h1>
   <p>
-   Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports browsing/navigation and search of content objects (documents and metadata) stored in information systems (e.g. libraries, archives, repositories/portals, websites, databases). For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures. Another way of putting this is that IA designs for finding and for understanding.
+   Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
   </p>
   <h2>
    <a name="must-information-be-organized?">
@@ -188,15 +188,28 @@
     A preferred term must be designated among synonyms, and synonyms must be linked.
     <ul>
      <li>
-      This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
+      This is often accomplished via the indicators UF (use for) and U (use).
+      <ul>
+       <li>
+        e.g. Salinity UF Saltiness, Saltiness U Salinity
+       </li>
+      </ul>
      </li>
      <li>
-      Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms.
+      Preferred terms are also called descriptors or headings.
+     </li>
+     <li>
+      Non-preferred terms are also called entry terms or lead-in terms.
      </li>
     </ul>
    </li>
    <li>
-    Homographs must be disambiguated with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercurcy (planet).
+    Homographs must be disambiguated with a modifier AKA difference AKA qualifier term.
+    <ul>
+     <li>
+      e.g. Mercury (metal), Mercurcy (planet)
+     </li>
+    </ul>
    </li>
   </ul>
   <p>
@@ -221,51 +234,32 @@
   </p>
   <ul>
    <li>
-    INDEXING:
+    INDEXING: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; using controlled vocabulary, thesaurus, authority file; using an indexing language with indexing terms
     <ul>
      <li>
       vs KEYWORDS: words that emerge as important from a content object
      </li>
+     <li>
+      vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
+     </li>
     </ul>
    </li>
    <li>
-    METADATA:
-   </li>
-   <li>
-    CATALOGING: describing
+    CATALOGING: describing with subject headings
     <ul>
+     <li>
+      subheadings
+     </li>
+     <li>
+      postcoordinated
+     </li>
+     <li>
+      precoordinated
+     </li>
      <li>
       CLASSIFYING/CATEGORIZING?
      </li>
     </ul>
-   </li>
-  </ul>
-  <p>
-   ???
-  </p>
-  <ul>
-   <li>
-    Support indexing with a controlled vocabulary, thesaurus, and/or authority file
-   </li>
-   <li>
-    Support retrieval with faceted taxonomies and thesauri
-   </li>
-   <li>
-    Support navigation with hierarchical taxonomies
-   </li>
-  </ul>
-  <p>
-   ???
-  </p>
-  <ul>
-   <li>
-    Cataloging &amp; subject headings
-   </li>
-   <li>
-    Indexing: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed
-   </li>
-   <li>
-    Tagging: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
    </li>
    <li>
     Categorizing: allocate something into one of existing categories, vs creating categories???
@@ -274,12 +268,34 @@
     Classifying: https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf
    </li>
    <li>
-    Faceted taxonomies
+    METADATA:
+   </li>
+   <li>
+    NAVIGATION:
+    <ul>
+     <li>
+      with hierarchical taxonomies
+     </li>
+     <li>
+      with a pick list
+     </li>
+     <li>
+      faceted taxonomies
+     </li>
+    </ul>
+   </li>
+   <li>
+    RETRIEVAL:
+    <ul>
+     <li>
+      faceted taxonomies and thesauri
+     </li>
+     <li>
+      p. 19 of ANSI/NISO Z39.19
+     </li>
+    </ul>
    </li>
   </ul>
-  <p>
-   Insofar as they overlap, KSOs have all the uses of CVs detailed above and may additionally serve as navigation structures.
-  </p>
   <h3>
    <a name="kos-by-structure">
     KOS by structure
@@ -296,29 +312,112 @@
     Synring/synset
    </li>
    <li>
-    Taxonomy/hierarchy
+    Taxonomy AKA hierarchy AKA tree structure:
+    <ul>
+     <li>
+      top-down
+     </li>
+     <li>
+      Broader term (BT)
+     </li>
+     <li>
+      Broader term (generic) (BTG)
+     </li>
+     <li>
+      Broader term (instance) (BTI)
+     </li>
+     <li>
+      Broader term (partitive) (BTP)
+      <br/>
+     </li>
+     <li>
+      Narrower term (NT)
+     </li>
+     <li>
+      Narrower term (generic) (NTG)
+     </li>
+     <li>
+      Narrower term (instance) (NTI)
+     </li>
+     <li>
+      Narrower term (partitive) (NTP)
+     </li>
+     <li>
+      sibling
+     </li>
+     <li>
+      generic posting
+     </li>
+     <li>
+      up-posting/autoposting
+     </li>
+     <li>
+      top term (TT)
+     </li>
+     <li>
+      node label
+     </li>
+    </ul>
    </li>
    <li>
-    Faceted taxonomies
+    Faceted taxonomies:
+    <ul>
+     <li>
+      bottom-up
+     </li>
+     <li>
+      multiple views of same info, based on attributes
+     </li>
+     <li>
+      usually used for navigation
+     </li>
+     <li>
+      CVs may be presented by facets
+     </li>
+     <li>
+      facets may be/use CVs
+     </li>
+    </ul>
+   </li>
+   <li>
+    Polyhierarchy
    </li>
    <li>
     Thesaurus
+    <ul>
+     <li>
+      related term (RT)
+     </li>
+     <li>
+      associative relationship
+     </li>
+     <li>
+      equivalence relationship
+     </li>
+     <li>
+      hierarchical relationship
+     </li>
+     <li>
+      cross-reference
+     </li>
+     <li>
+      category
+     </li>
+     <li>
+      reciprocity
+     </li>
+     <li>
+      a/symmetric relationship
+     </li>
+    </ul>
    </li>
    <li>
     [Ontology/graph]
-   </li>
-  </ul>
-  <h3>
-   <a name="kos-by-contribution-to-ir">
-    KOS by contribution to IR
-   </a>
-  </h3>
-  <p>
-   A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
-  </p>
-  <ul>
-   <li>
-    p. 19 of ANSI/NISO Z39.19
+    <ul>
+     <li>
+      Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
+     </li>
+    </ul>
    </li>
   </ul>
   <h3>
@@ -335,11 +434,6 @@
    </li>
    <li>
     Relationship lists (thesauri [good for representing a very large controlled vocabulary], semantic networks, ontologies)
-    <ul>
-     <li>
-      Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
-     </li>
-    </ul>
    </li>
    <li>
     Reference works: Reference works are usually referred to for particular pieces of information, rather than read beginning to end. Reference works include dictionaries, thesauruses, encyclopedias, almanacs, bibliographies, and catalogs.
@@ -436,6 +530,25 @@
       Synonym rings/synset
      </li>
     </ul>
+   </li>
+  </ul>
+  <h2>
+   <a name="displaying-kos">
+    Displaying KOS
+   </a>
+  </h2>
+  <ul>
+   <li>
+    generic structure
+   </li>
+   <li>
+    permuted display
+   </li>
+   <li>
+    classified display
+   </li>
+   <li>
+    flat format
    </li>
   </ul>
   <h1>

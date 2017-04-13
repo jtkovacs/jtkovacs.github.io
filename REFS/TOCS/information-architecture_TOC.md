@@ -6,6 +6,7 @@
 		- [KOS by function ](#kos-by-function-)
 			- [Content object added to information system](#content-object-added-to-information-system)
 			- [Content object retrieved from information system](#content-object-retrieved-from-information-system)
+		- [KOS by impact on IR](#kos-by-impact-on-ir)
 		- [KOS by structure](#kos-by-structure)
 		- [KOS in the wild](#kos-in-the-wild)
 - [Displaying KOS](#displaying-kos)
@@ -86,20 +87,19 @@ I review **REFERENCE WORKS** here because the terminology often overlaps with KO
 
 More specific to the purview of IAs, information consumers depend on KOSs to browse and search content objects. 
 
-**BROWSING** AKA navigating is the act of reviewing Hjørland (2011) provided the following definition: "Browsing is a quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects".
+**BROWSING** is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011). **NAVIGATION** is related, but has implications of (1) traversing a website (2) with perhaps a greater sense of direction. KOSs that support these activities include hierarchical taxonomies, faceted taxonomies, and pick lists (a drop-down UI element). 
 
-NAVIGATION: 
+**SEARCHING** is the machine-aided pursuit of a specific piece of information. Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects. 
 
-- with hierarchical taxonomies
-- with a pick list
-- faceted taxonomies
+### KOS by impact on IR
 
-**SEARCHING** is 
+Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by:
 
-RETRIEVAL: 
+- 
 
-- faceted taxonomies and thesauri
-- p. 19 of ANSI/NISO Z39.19 
+**Precision** is improved by:
+
+- 
 
 ### KOS by structure
 

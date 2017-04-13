@@ -42,7 +42,7 @@ Minimally, terms and relationship indicators must account for synonyms and homog
 
 Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). Relationships between terms can be much more complex than U/UF; see <a href="#KOS-by-structure">KOS by structure.</a> 
 
-### CV elements by impact on IR
+## CV elements by impact on IR
 
 Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
 
@@ -58,8 +58,8 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 - Parenthetical qualifiers
 - Broader and narrower term hierarchical relationships
 - Compound terms
-- Precoordination
- 
+- Precoordination 
+
 ## What types of KOS exist?
 
 ### KOS by function 
@@ -167,7 +167,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 - [ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and format of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 - [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
 - [Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515.](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
-- [Hjørland, Birger (2011).Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), p. 546-552.](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
+- [Hjørland, Birger (2011). Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), p. 546-552.](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 - Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.

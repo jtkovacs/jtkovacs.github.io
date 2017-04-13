@@ -1,5 +1,6 @@
 # Sources
 
+- [ANSI/NISO Z39.19-2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - Abrahamson & Freedman. _A perfect mess: The hidden benefits of disorder._
 - [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
@@ -21,6 +22,12 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 # What is information architecture?
 
 ## What is taxonomy?
+
+Per Hedden, taxonomy has both general and specific senses. In general, a taxonomy is a knowledge organization structure, very nearly synonymous with a controlled vocabulary (only the use of CVs in technical writing prevents total equivalence):
+
+![Knowledge organization structures](../ILLOS/KSOs.png)
+
+A CV stands in contrast with natural language. Since natural language is fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms), it undermines information retrieval (typically measured in terms of precision and recall). A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
 
 
 

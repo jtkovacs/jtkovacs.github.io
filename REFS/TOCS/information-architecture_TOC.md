@@ -1,4 +1,5 @@
 <table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
+	- [What generic organization schemes exist?](#what-generic-organization-schemes-exist?)
 	- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
@@ -11,11 +12,22 @@
 - [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 	- [Constructing a CV](#constructing-a-cv)
 	- [Displaying KOSs](#displaying-koss)
+- [Interoperability](#interoperability)
 - [Sources](#sources)
 </td></tr></table>
 # What is information architecture?
 
 Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
+
+## What generic organization schemes exist?
+
+Per RSW, 
+
+- Alphabetical, guided by filing rules that specify how to treat numbers, spaces, special characters and capitals
+- Chronological
+- Geographical
+- Categorical
+- 
 
 ## Must information be organized?
 
@@ -37,14 +49,14 @@ Beyond this general sense, a taxonomy is also a specific kind of KOS with a hier
 
 ## What are controlled vocabularies?
 
-Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). **Versus natural languages, CVs:**
+Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Natural language in content objects is called free text. **Versus natural languages, CVs:**
 
-- Must clearly define the SCOPE of terms. This is done with scope notes (SN) and history notes (HN).
+- Must clearly define the SCOPE of terms. This is done with scope notes (SN).
 - Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
-- Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercury (planet), Mercury (car).
+- Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
 - May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision. 
 
-CVs consist of terms and relationships. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs).Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
+CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
 
 - User warrant emerges from user search terms and feedback;
 - Literary warrant emerges from review of documents and standards; and
@@ -61,7 +73,7 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 - Postcoordination
 - Concept mapping/clustering
 
-**Precision** is improved by controlling ambiguity:
+**Precision** (minimizing false hits) is improved by controlling ambiguity:
 
 - Parenthetical qualifiers
 - Broader and narrower term hierarchical relationships
@@ -88,6 +100,7 @@ I review **REFERENCE WORKS** here because the terminology often overlaps with KO
 
 - **Dictionary:** (1) A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc. (2) A book of words in one language with their equivalents in another, sometimes known as a lexicon.
 - **Lexicon:** The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
+- **Lexical database:** Stores terms along with information about terms.
 - **Encyclopedia:** A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
 - **Bibliography:** Collected citations for related books, articles, etc., which may be as simple as a reading list or may be extensively annotated. 
 - **Thesaurus:** A list of words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words, and generally lists them in alphabetical order. 
@@ -98,9 +111,9 @@ I review **REFERENCE WORKS** here because the terminology often overlaps with KO
 
 More specific to the purview of IAs, information consumers depend on KOSs to browse and search content objects. 
 
-**BROWSING** is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011). **NAVIGATION** is related, but has implications of (1) traversing a website (2) with perhaps a greater sense of direction. KOSs that support these activities include hierarchical taxonomies, faceted taxonomies, and pick lists (a drop-down UI element). 
+**BROWSING** is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162). KOSs that support these activities include hierarchical taxonomies, faceted taxonomies, and pick lists (a drop-down UI element). 
 
-**SEARCHING** is the machine-aided pursuit of a specific piece of information. Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects. 
+**SEARCHING** is the machine-aided pursuit of a specific piece of information. Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects. Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
 
 ### KOS by structure
 
@@ -117,6 +130,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 
 - **Authority file:** Identifies the definitive version of a name among all variants
 - **Glossary** (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
+- **Stop list:** Words to ignore in search query processing (because they are extremely common)
 - **Dictionary:** Definitions, history, etc. for words.
 - **Gazetteer:** A geographical dictionary
 
@@ -136,9 +150,11 @@ In order of increasing complexity (number, kind, and configuration of relationsh
     - Brain: Central nervous system (BTP)
     - Spinal cord: Central nervous system (BTP)
 
-The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
+Indexing a content object with a term is called posting; a given term contains X postings. The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
 
-Taxonomies are a top-down approach. Thus, there may occasionally be node labels: terms in a hierarchy that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
+Taxonomies are a top-down approach. Thus, there may occasionally be node labels AKA blind references AKA facet indicators: terms in a CV that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
+
+**Microcontrolled vocabularies** are subsets of a controlled vocabulary, creating a specialist CV.
 
 **Faceted taxonomies** are a bottom-up approach to providing multiple views of the same content objects, based on shared attributes like topic, location, format, author, etc. They are often presented as navigation aids or search refinments; they may also be used to organize  very large controlled vocabulary. 
 
@@ -161,6 +177,7 @@ Relevant technologies include RDF, OWL, and topic maps.
 - Construction
 - Testing
 - Maintenance
+    - History notes (HN) indicate date and nature of modifications; they are important for provenance
 
 ... within a CV management system.
 
@@ -168,10 +185,19 @@ Relevant technologies include RDF, OWL, and topic maps.
         
 ## Displaying KOSs
 
+- running head
 - generic structure
-- permuted display 
+- graphics display
+- permuted display AKA rotated listing
+    - KWIC, KWAC, KWOC: https://en.wikipedia.org/wiki/Key_Word_in_Context
 - classified display
 - flat format
+- Concept map: a 2D representation of interrelated concepts
+
+# Interoperability
+
+- Mapping, cross-walks
+- Transcription, transliteration, romanization
 
 # Sources
 

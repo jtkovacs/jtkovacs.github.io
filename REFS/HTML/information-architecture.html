@@ -19,6 +19,11 @@
        </a>
        <ul>
         <li>
+         <a href="#what-generic-organization-schemes-exist?">
+          What generic organization schemes exist?
+         </a>
+        </li>
+        <li>
          <a href="#must-information-be-organized?">
           Must information be organized?
          </a>
@@ -91,6 +96,11 @@
        </ul>
       </li>
       <li>
+       <a href="#interoperability">
+        Interoperability
+       </a>
+      </li>
+      <li>
        <a href="#sources">
         Sources
        </a>
@@ -107,6 +117,30 @@
   <p>
    Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
   </p>
+  <h2>
+   <a name="what-generic-organization-schemes-exist?">
+    What generic organization schemes exist?
+   </a>
+  </h2>
+  <p>
+   Per RSW,
+  </p>
+  <ul>
+   <li>
+    Alphabetical, guided by filing rules that specify how to treat numbers, spaces, special characters and capitals
+   </li>
+   <li>
+    Chronological
+   </li>
+   <li>
+    Geographical
+   </li>
+   <li>
+    Categorical
+   </li>
+   <li>
+   </li>
+  </ul>
   <h2>
    <a name="must-information-be-organized?">
     Must information be organized?
@@ -155,27 +189,27 @@
    </a>
   </h2>
   <p>
-   Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms).
+   Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Natural language in content objects is called free text.
    <strong>
     Versus natural languages, CVs:
    </strong>
   </p>
   <ul>
    <li>
-    Must clearly define the SCOPE of terms. This is done with scope notes (SN) and history notes (HN).
+    Must clearly define the SCOPE of terms. This is done with scope notes (SN).
    </li>
    <li>
     Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
    </li>
    <li>
-    Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercury (planet), Mercury (car).
+    Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
    </li>
    <li>
     May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision.
    </li>
   </ul>
   <p>
-   CVs consist of terms and relationships. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs).Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
+   CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
   </p>
   <ul>
    <li>
@@ -224,7 +258,7 @@
    <strong>
     Precision
    </strong>
-   is improved by controlling ambiguity:
+   (minimizing false hits) is improved by controlling ambiguity:
   </p>
   <ul>
    <li>
@@ -312,6 +346,12 @@
    </li>
    <li>
     <strong>
+     Lexical database:
+    </strong>
+    Stores terms along with information about terms.
+   </li>
+   <li>
+    <strong>
      Encyclopedia:
     </strong>
     A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
@@ -360,17 +400,17 @@
    <strong>
     BROWSING
    </strong>
-   is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011).
+   is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157).
    <strong>
     NAVIGATION
    </strong>
-   is related, but has implications of (1) traversing a website (2) with perhaps a greater sense of direction. KOSs that support these activities include hierarchical taxonomies, faceted taxonomies, and pick lists (a drop-down UI element).
+   is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162). KOSs that support these activities include hierarchical taxonomies, faceted taxonomies, and pick lists (a drop-down UI element).
   </p>
   <p>
    <strong>
     SEARCHING
    </strong>
-   is the machine-aided pursuit of a specific piece of information. Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects.
+   is the machine-aided pursuit of a specific piece of information. Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects. Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
   </p>
   <h3>
    <a name="kos-by-structure">
@@ -498,6 +538,12 @@
    </li>
    <li>
     <strong>
+     Stop list:
+    </strong>
+    Words to ignore in search query processing (because they are extremely common)
+   </li>
+   <li>
+    <strong>
      Dictionary:
     </strong>
     Definitions, history, etc. for words.
@@ -585,10 +631,16 @@
    </li>
   </ul>
   <p>
-   The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
+   Indexing a content object with a term is called posting; a given term contains X postings. The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
   </p>
   <p>
-   Taxonomies are a top-down approach. Thus, there may occasionally be node labels: terms in a hierarchy that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
+   Taxonomies are a top-down approach. Thus, there may occasionally be node labels AKA blind references AKA facet indicators: terms in a CV that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
+  </p>
+  <p>
+   <strong>
+    Microcontrolled vocabularies
+   </strong>
+   are subsets of a controlled vocabulary, creating a specialist CV.
   </p>
   <p>
    <strong>
@@ -652,6 +704,11 @@
    </li>
    <li>
     Maintenance
+    <ul>
+     <li>
+      History notes (HN) indicate date and nature of modifications; they are important for provenance
+     </li>
+    </ul>
    </li>
   </ul>
   <p>
@@ -669,16 +726,43 @@
   </h2>
   <ul>
    <li>
+    running head
+   </li>
+   <li>
     generic structure
    </li>
    <li>
-    permuted display
+    graphics display
+   </li>
+   <li>
+    permuted display AKA rotated listing
+    <ul>
+     <li>
+      KWIC, KWAC, KWOC: https://en.wikipedia.org/wiki/Key_Word_in_Context
+     </li>
+    </ul>
    </li>
    <li>
     classified display
    </li>
    <li>
     flat format
+   </li>
+   <li>
+    Concept map: a 2D representation of interrelated concepts
+   </li>
+  </ul>
+  <h1>
+   <a name="interoperability">
+    Interoperability
+   </a>
+  </h1>
+  <ul>
+   <li>
+    Mapping, cross-walks
+   </li>
+   <li>
+    Transcription, transliteration, romanization
    </li>
   </ul>
   <h1>

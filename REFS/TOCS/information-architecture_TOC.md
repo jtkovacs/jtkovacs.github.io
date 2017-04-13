@@ -1,7 +1,7 @@
 <table id="TOC"><tr><td>- [Sources](#sources)
-- [Must information be organized?](#must-information-be-organized?)
 - [What is information architecture?](#what-is-information-architecture?)
-	- [What is taxonomy and vocabulary control?](#what-is-taxonomy-and-vocabulary-control?)
+	- [Must information be organized?](#must-information-be-organized?)
+- [What is taxonomy and vocabulary control?](#what-is-taxonomy-and-vocabulary-control?)
 	- [What types of taxonomies/KOS exist?](#what-types-of-taxonomies/kos-exist?)
 	- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 </td></tr></table>
@@ -19,7 +19,11 @@
 - Wurman, R. S. _Information anxiety._
 - Wurman, R. S. _Information architects._
 
-# Must information be organized?
+# What is information architecture?
+
+IA is one of several disciplines (e.g. library science, information science, taxonomy) that supports browsing/navigation and search of content objects (documents and metadata) stored in information systems (e.g. libraries, archives, repositories/portals, websites, databases). The goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV).
+
+## Must information be organized?
 
 Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, _shared_ information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
 
@@ -27,11 +31,7 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 ![Objective, culturally embedded, socially-negotiated, and idiosyncratic taxonomies](../ILLOS/taxonomy_status.png)
 
-# What is information architecture?
-
-IA is one of several disciplines (e.g. library science, information science, taxonomy) that supports browsing/navigation and search of content objects (documents and metadata) stored in information systems (e.g. libraries, archives, repositories/portals, websites, databases). The goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV).
-
-## What is taxonomy and vocabulary control?
+# What is taxonomy and vocabulary control?
 
 Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structure/systems (KOS). It has roots in biological taxonomies and library catalogs (which have existed since antiquity --- as scrolls!). Companies began to use taxonomies for corporate knowledge assets management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. Beyond this general sense, a taxonomy is also a specific kind of KOS with a hierarchical structure:
 

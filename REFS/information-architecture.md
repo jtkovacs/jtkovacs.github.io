@@ -190,8 +190,9 @@ Relevant technologies include RDF, OWL, and topic maps.
 - [Hjørland, Birger (2011). Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), p. 546-552.](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
 - [Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515.](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
 - [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
+- Pomerantz, J. (2015). _Metadata._ The MIT Press Essential Knowledge Series. Boston, MA: MIT Press.
 - Rosenfeld, L., Morville, P., & Arango, J. (2015). _Information architecture for the web and beyond_ (4e). Sebastopol, California: O'Reilly Media.
-- [Wurman, R. S. (2014.) Give yourself permission to follow your nose [video].](https://www.youtube.com/watch?v=SDm1zXxpkr8)
+- [Wurman, R. S. (2014). Give yourself permission to follow your nose [video].](https://www.youtube.com/watch?v=SDm1zXxpkr8)
 - Wurman, R. S. (1990). _Information anxiety._ New York City, NY: Bantam Books.
 - Wurman, R. S. _Information architects._
 - [Zeng, M. (n.d.). 4.3 Hierarchical relationships. In _Construction of controlled vocabularies: A primer._](http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm)

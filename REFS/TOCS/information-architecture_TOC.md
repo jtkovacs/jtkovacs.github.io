@@ -8,7 +8,6 @@
 			- [Content object retrieved from information system](#content-object-retrieved-from-information-system)
 		- [KOS by impact on IR](#kos-by-impact-on-ir)
 		- [KOS by structure](#kos-by-structure)
-		- [KOS in the wild](#kos-in-the-wild)
 - [Displaying KOS](#displaying-kos)
 - [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 - [Sources](#sources)
@@ -93,13 +92,21 @@ More specific to the purview of IAs, information consumers depend on KOSs to bro
 
 ### KOS by impact on IR
 
-Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by:
+Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
 
-- 
+- Equivalence relationships/preferred terms
+- Preferred term form
+- Associative relationships/related terms
+- Classified and hierarchical relationships
+- Postcoordination
+- Concept mapping/clustering
 
-**Precision** is improved by:
+**Precision** is improved by controlleding ambiguity:
 
-- 
+- Parenthetical qualifiers
+- Broader and narrower term hierarchical relationships
+- Compound terms
+- Precoordination
 
 ### KOS by structure
 
@@ -153,16 +160,6 @@ In order of increasing complexity (number, kind, and configuration of relationsh
         - graph model
         - structured attributes
         - entities are instances of classes
-
-### KOS in the wild
-
-You would see KOS in these places, in these forms:
-
-- hierarchical or faceted navigation taxonomies
-- pick list (dropdown for website, database)
-- a synset behind a search engine
-- metadata
-- ... 
 
 # Displaying KOS
 

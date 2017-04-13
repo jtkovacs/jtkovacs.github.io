@@ -186,30 +186,30 @@ Relevant technologies include RDF, OWL, and topic maps.
 
 Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 
-[ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and format of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
+[AfterHoursProgramming.com. (n.d.) IA tutorial. Retrieved from http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)
+
+[ANSI/NISO. (2005). Z39.19-2005: Guidelines for the construction, management, and format of monolingual controlled vocabularies. Retrieved from http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 
 Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
 
-[Hjørland, Birger (2011). Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), p. 546-552.](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
+[Hjørland, B. (2011). Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), 546-552. Retrieved from http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
 
-[Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515.](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
+[Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515. Retrieved from https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
 
-[NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
+[NISO. (1997). TR02-1997: Guidelines for indexes and related information retrieval devices. Retrieved from http://www.niso.org/publications/tr/tr02.pdf](http://www.niso.org/publications/tr/tr02.pdf)
 
 Pomerantz, J. (2015). _Metadata._ The MIT Press Essential Knowledge Series. Boston, MA: MIT Press.
 
 Rosenfeld, L., Morville, P., & Arango, J. (2015). _Information architecture for the web and beyond_ (4e). Sebastopol, California: O'Reilly Media.
 
-[Wurman, R. S. (2014). Give yourself permission to follow your nose [video].](https://www.youtube.com/watch?v=SDm1zXxpkr8)
+[Wurman, R. S. (2014). Give yourself permission to follow your nose [video]. Retrieved from https://www.youtube.com/watch?v=SDm1zXxpkr8](https://www.youtube.com/watch?v=SDm1zXxpkr8)
 
 Wurman, R. S. (1990). _Information anxiety._ New York City, NY: Bantam Books.
 
 Wurman, R. S. _Information architects._
 
-[Zeng, M. (n.d.). 4.3 Hierarchical relationships. In _Construction of controlled vocabularies: A primer._](http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm)
+[Zeng, M. (n.d.). 4.3 Hierarchical relationships. In _Construction of controlled vocabularies: A primer._ Retrieved from http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm](http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm)
 
 [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 
 [Information architecture](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
-
-[IA tutorial](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)

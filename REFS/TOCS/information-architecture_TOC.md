@@ -116,7 +116,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 | KOS | Ambiguity control | Synonym control | Hierarchical relationship | Associative relationship |
 | --- | --- | --- | --- | --- |
 | Term list | X | | | |
-| Synonym ring | X | X | | |
+| Syn ring | X | X | | |
 | Taxonomy | X | X | X | |
 | Thesaurus | X | X | X | X |
 

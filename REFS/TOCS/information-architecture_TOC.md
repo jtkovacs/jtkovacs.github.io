@@ -2,15 +2,15 @@
 - [What is information architecture?](#what-is-information-architecture?)
 	- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy and vocabulary control?](#what-is-taxonomy-and-vocabulary-control?)
-	- [What types of taxonomies/KOS exist?](#what-types-of-taxonomies/kos-exist?)
+	- [What types of KOS exist?](#what-types-of-kos-exist?)
 	- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 </td></tr></table>
 # Sources
 
-- [ANSI/NISO Z39.19-2005, Guidelines for ... controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
+- [ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and foramat of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 - [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
-- Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder._ New York City, NY: Back Bay Books.
+- Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 - Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
 - [RSW - Give yourself permission to follow your nose](https://www.youtube.com/watch?v=SDm1zXxpkr8) [video]
 - [Richard Saul Wurman: the reluctant genius](http://www.wearesalt.org/richard-saul-wurman-the-reluctant-genius/)
@@ -37,13 +37,16 @@ Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has bot
 
 <img src="../ILLOS/KSOs.png" width="550px">
 
-Controlled vocabularies are very nearly synonymous with taxonomies/KOSs. CVs stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms). Versus natural languages, CVs:
+Controlled vocabularies are very nearly synonymous with taxonomies. CVs stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Versus natural languages, CVs:
 
-- Clearly define the SCOPE of terms;
-- Provide some way of LINKING synonyms; and
-- DISTINGUISH between homographs. 
+- Clearly define the SCOPE of terms using scope notes (SN) and history notes (HN);
+- Provide some way of linking SYNONYMS, which increases recall; 
+- Distinguish between HOMOGRAPHS, which increases precision; and, optionally,
+- Capture SEMANTIC RELATIONSHIPS between terms, which improves both recall and precision.
 
-CVs consist of terms and relationships. Terms are chosen if warrant exists:
+CVs consist of terms and relationships (minimally, between synonyms and homographs). Terms may be compound ... 
+
+Terms are chosen if warrant exists:
 
 - User warrant, which emerges from user search terms and feedback;
 - Literary warrant, which emerges from review of documents and standards; and
@@ -52,7 +55,7 @@ CVs consist of terms and relationships. Terms are chosen if warrant exists:
 CVs are associated with content objects in the following ways:
 
 - INDEXING: 
-    - vs KEYWORDS: 
+    - vs KEYWORDS: words that emerge as important from a content object
 - METADATA: 
 - CATALOGING: describing 
     - CLASSIFYING/CATEGORIZING?
@@ -65,7 +68,7 @@ A controlled vocabulary (the product) or vocabulary control (the process) improv
 
 One hopes CVs are interoperable.
 
-## What types of taxonomies/KOS exist?
+## What types of KOS exist?
 
 - Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
 - Classifications and categories (subject headings, classification schemes, hierarchical AKA nested taxonomies, categorization schemes)

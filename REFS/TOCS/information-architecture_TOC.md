@@ -1,8 +1,8 @@
 <table id="TOC"><tr><td>- [Sources](#sources)
 - [Must information be organized?](#must-information-be-organized?)
 - [What is information architecture?](#what-is-information-architecture?)
-	- [What is taxonomy/KOS/controlled vocabulary?](#what-is-taxonomy/kos/controlled-vocabulary?)
-	- [How do KSOs support information retrieval?](#how-do-ksos-support-information-retrieval?)
+	- [What is taxonomy/KOS?](#what-is-taxonomy/kos?)
+	- [What is a controlled vocabulary?](#what-is-a-controlled-vocabulary?)
 	- [What types of taxonomies/KOS exist?](#what-types-of-taxonomies/kos-exist?)
 </td></tr></table>
 # Sources
@@ -30,17 +30,26 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 IA is one of several disciplines (e.g. library science, information science, taxonomy) that supports browsing/navigation and search of content objects (documents and metadata) stored in information systems (e.g. libraries, archives, repositories/portals, websites, databases). The goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV).
 
-## What is taxonomy/KOS/controlled vocabulary?
+History: ... in libraries, from antiquity; in companies, very marginally from the 1980s and increasingly after the emergence of the web in the 1990s.
 
-Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structure/systems (KOS); however, a taxonomy is also a specific kind of KOS with a hierarchical structure: 
+## What is taxonomy/KOS?
+
+Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structure/systems (KOS); however, a taxonomy is also a specific kind of KOS with a hierarchical structure. KOS are used to ...  
 
 <img src="../ILLOS/KSOs.png" width="550px">
 
-In addition, taxonomies/KOSs are very nearly synonymous with controlled vocabularies. CVs stand in contrast with natural languages, which are fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms) that undermine information retrieval. A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
+## What is a controlled vocabulary?
 
-## How do KSOs support information retrieval?
+In addition, taxonomies/KOSs are very nearly synonymous with controlled vocabularies. CVs stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (both homographs and synonyms/near-synonyms/quasi-synonyms). CVs are associated with content objects in the following ways:
 
-p. 19 of ANSI/NISO Z39.19 
+- INDEXING: 
+ - vs KEYWORDS: 
+- METADATA: 
+- CATALOGING: describing 
+
+A controlled vocabulary (the product) or vocabulary control (the process) improves information retrieval by:
+
+- p. 19 of ANSI/NISO Z39.19 
 
 ## What types of taxonomies/KOS exist?
 
@@ -54,8 +63,6 @@ Taxonomies by function:
 - Support indexing with a controlled vocabulary, thesaurus, and/or authority file
 - Support retrieval with faceted taxonomies and thesauri
 - Support navigation with hierarchical taxonomies
-
-History: ... in libraries, from antiquity; in companies, very marginally from the 1980s and increasingly after the emergence of the web in the 1990s.
 
 By major application:
 Major applications of CVs:

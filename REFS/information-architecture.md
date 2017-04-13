@@ -70,11 +70,17 @@ I review **REFERENCE WORKS** here because the terminology often overlaps with KO
 - **Directory:** A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory.
 - **Catalog:** A listing of content objects (their description and location). 
 
+More specific to the purview of IAs, information consumers depend on KOSs to browse and search content objects. 
+
+**BROWSING** AKA navigating is the act of reviewing Hjørland (2011) provided the following definition: "Browsing is a quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects".
+
 NAVIGATION: 
 
 - with hierarchical taxonomies
 - with a pick list
 - faceted taxonomies
+
+**SEARCHING** is 
 
 RETRIEVAL: 
 
@@ -164,6 +170,7 @@ You would see KOS in these places, in these forms:
 - [ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and format of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 - [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
 - [Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515.](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
+- [Hjørland, Birger (2011).Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), p. 546-552.](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 - Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.

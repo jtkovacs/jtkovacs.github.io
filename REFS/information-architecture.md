@@ -14,7 +14,7 @@
 
 Per Abrahamson & Freedman's _A perfect mess: The hidden benefits of disorder_, order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal_. At the same time, because individuals' organization strategies and preferences vary so much, _shared_ information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
 
-Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) **objective,** with obvious empirical basis; (2) **socially-negotiated**, eventually becoming (3) **culturally embedded**; or (4) **idiosyncratic**:
+Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) **objective,** with obvious empirical basis; (2) **socially-negotiated,** eventually becoming (3) **culturally embedded;** or (4) **idiosyncratic**:
 
 ![Objective, culturally embedded, socially-negotiated, and idiosyncratic taxonomies](../ILLOS/taxonomy_status.png)
 

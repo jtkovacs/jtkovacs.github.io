@@ -31,6 +31,12 @@ a {
     font-weight: bold;
 }
 
+/* CAPTIONS for images should be tiny italics */
+p.caption {
+    font-style: italic;
+    font-size: 9px;
+}
+
 
 
 /* TABLE OF CONTENTS */
@@ -38,7 +44,7 @@ a {
 table {
     border: solid 1px #e8e8e8;
     background-color: #f8f8f8;
-    width: 800px;
+    width: 75%;
 }
 /* No bullet points for list items */
 table ul {

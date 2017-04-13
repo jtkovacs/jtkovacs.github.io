@@ -55,11 +55,6 @@
             KOS by structure
            </a>
           </li>
-          <li>
-           <a href="#kos,-exhaustive-">
-            KOS, exhaustive
-           </a>
-          </li>
          </ul>
         </li>
         <li>
@@ -234,6 +229,49 @@
   </p>
   <ul>
    <li>
+    REFERENCE WORKS: for consultation, not comprehensive reading
+    <ul>
+     <li>
+      Dictionary:
+      <ul>
+       <li>
+        A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
+       </li>
+       <li>
+        A book of words in one language with their equivalents in another, sometimes known as a lexicon.
+       </li>
+      </ul>
+     </li>
+     <li>
+      Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
+     </li>
+     <li>
+      Thesaurus:
+     </li>
+     <li>
+      Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
+     </li>
+     <li>
+      Bibliography:
+     </li>
+     <li>
+      Catalog:
+     </li>
+     <li>
+      Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
+     </li>
+     <li>
+      Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
+     </li>
+     <li>
+      Almanacs
+     </li>
+     <li>
+      Catalogs
+     </li>
+    </ul>
+   </li>
+   <li>
     INDEXING: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; using controlled vocabulary, thesaurus, authority file; using an indexing language with indexing terms
     <ul>
      <li>
@@ -266,6 +304,23 @@
    </li>
    <li>
     Classifying: https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf
+    <ul>
+     <li>
+      Subject headings
+     </li>
+     <li>
+      Classification schemes
+     </li>
+     <li>
+      Hierarchical AKA nested taxonomies
+     </li>
+     <li>
+      Polyhierarchical taxonomy
+     </li>
+     <li>
+      Faceted taxonomies
+     </li>
+    </ul>
    </li>
    <li>
     METADATA:
@@ -302,14 +357,36 @@
    </a>
   </h3>
   <p>
-   In order of increasing complexity:
+   In order of increasing complexity (number, kind, and configuration of relationships):
   </p>
   <ul>
    <li>
-    List
+    Term lists: [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
+    <ul>
+     <li>
+      Authority file: What’s the definitive version of a term, at least one variant of which I know?
+     </li>
+     <li>
+      Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
+     </li>
+     <li>
+      Dictionary
+     </li>
+     <li>
+      Gazetteer
+     </li>
+     <li>
+      Significant overlap w/ reference works
+     </li>
+    </ul>
    </li>
    <li>
-    Synring/synset
+    Synonym ring/synset
+    <ul>
+     <li>
+      Usually invisible to user, e.g. underpinning a search engine
+     </li>
+    </ul>
    </li>
    <li>
     Taxonomy AKA hierarchy AKA tree structure:
@@ -383,19 +460,16 @@
     Polyhierarchy
    </li>
    <li>
-    Thesaurus
+    Thesaurus: captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
     <ul>
      <li>
-      related term (RT)
+      related term/associative relationship (RT)
      </li>
      <li>
-      associative relationship
+      equivalence relationship (UF/U)
      </li>
      <li>
-      equivalence relationship
-     </li>
-     <li>
-      hierarchical relationship
+      hierarchical relationship (BT/NT)
      </li>
      <li>
       cross-reference
@@ -412,122 +486,36 @@
     </ul>
    </li>
    <li>
-    [Ontology/graph]
+    Semantic networks: not CV; not 100% ontology
+   </li>
+   <li>
+    Ontology
     <ul>
      <li>
       Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
      </li>
-    </ul>
-   </li>
-  </ul>
-  <h3>
-   <a name="kos,-exhaustive">
-    KOS, exhaustive
-   </a>
-  </h3>
-  <ul>
-   <li>
-    Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
-   </li>
-   <li>
-    Classifications and categories (subject headings, classification schemes, hierarchical AKA nested taxonomies, categorization schemes)
-   </li>
-   <li>
-    Relationship lists (thesauri [good for representing a very large controlled vocabulary], semantic networks, ontologies)
-   </li>
-   <li>
-    Reference works: Reference works are usually referred to for particular pieces of information, rather than read beginning to end. Reference works include dictionaries, thesauruses, encyclopedias, almanacs, bibliographies, and catalogs.
-    <ul>
      <li>
-      Dictionary:
+      Expressed om RDF, OWL, topic maps
+     </li>
+     <li>
+      defined by
       <ul>
        <li>
-        A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
+        ontological ambition
        </li>
        <li>
-        A book of words in one language with their equivalents in another, sometimes known as a lexicon.
+        semantic relationships (annotated edges)
+       </li>
+       <li>
+        graph model
+       </li>
+       <li>
+        structured attributes
+       </li>
+       <li>
+        entities are instances of classes
        </li>
       </ul>
-     </li>
-     <li>
-      Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
-     </li>
-     <li>
-      Thesaurus:
-     </li>
-     <li>
-      Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
-     </li>
-     <li>
-      Bibliography:
-     </li>
-     <li>
-      Catalog:
-     </li>
-     <li>
-      Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
-     </li>
-     <li>
-      Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
-     </li>
-    </ul>
-   </li>
-   <li>
-    Term lists:
-    <ul>
-     <li>
-      Authority file: What’s the definitive version of a term, at least one variant of which I know?
-     </li>
-     <li>
-      Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
-     </li>
-     <li>
-      Dictionary
-     </li>
-     <li>
-      Gazetteer
-     </li>
-    </ul>
-   </li>
-   <li>
-    Classifications:
-    <ul>
-     <li>
-      Subject headings
-     </li>
-     <li>
-      Classification schemes
-     </li>
-     <li>
-      Hierarchical taxonomies
-     </li>
-     <li>
-      Polyhierarchical taxonomy
-     </li>
-     <li>
-      Faceted taxonomies
-     </li>
-    </ul>
-   </li>
-   <li>
-    Relationship lists:
-    <ul>
-     <li>
-      Thesaurus
-     </li>
-     <li>
-      Ontology
-     </li>
-     <li>
-      Semantic network
-     </li>
-    </ul>
-   </li>
-   <li>
-    Controlled vocabulary:
-    <ul>
-     <li>
-      Synonym rings/synset
      </li>
     </ul>
    </li>

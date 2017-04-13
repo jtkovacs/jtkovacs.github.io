@@ -59,6 +59,19 @@ Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by s
  
 CVs are associated with content objects in the following ways:
 
+- REFERENCE WORKS: for consultation, not comprehensive reading
+    - Dictionary: 
+        - A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
+        - A book of words in one language with their equivalents in another, sometimes known as a lexicon.
+    - Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
+    - Thesaurus:
+    - Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
+    - Bibliography:
+    - Catalog:
+    - Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
+    - Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
+    - Almanacs
+    - Catalogs
 - INDEXING: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; using controlled vocabulary, thesaurus, authority file; using an indexing language with indexing terms
     - vs KEYWORDS: words that emerge as important from a content object
     - vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
@@ -69,6 +82,11 @@ CVs are associated with content objects in the following ways:
     - CLASSIFYING/CATEGORIZING?
 - Categorizing: allocate something into one of existing categories, vs creating categories???
 - Classifying: https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf 
+    - Subject headings
+    - Classification schemes
+    - Hierarchical AKA nested taxonomies
+    - Polyhierarchical taxonomy
+    - Faceted taxonomies
 - METADATA: 
 - NAVIGATION: 
     - with hierarchical taxonomies
@@ -80,10 +98,16 @@ CVs are associated with content objects in the following ways:
     
 ### KOS by structure
 
-In order of increasing complexity:
+In order of increasing complexity (number, kind, and configuration of relationships):
 
-- List
-- Synring/synset
+- Term lists: [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
+    - Authority file: What’s the definitive version of a term, at least one variant of which I know?
+    - Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
+    - Dictionary
+    - Gazetteer
+    - Significant overlap w/ reference works
+- Synonym ring/synset
+    - Usually invisible to user, e.g. underpinning a search engine
 - Taxonomy AKA hierarchy AKA tree structure: 
     - top-down
     - Broader term (BT)
@@ -106,51 +130,24 @@ In order of increasing complexity:
     - CVs may be presented by facets
     - facets may be/use CVs
 - Polyhierarchy
-- Thesaurus
-    - related term (RT)
-    - associative relationship
-    - equivalence relationship
-    - hierarchical relationship
+- Thesaurus: captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
+    - related term/associative relationship (RT)
+    - equivalence relationship (UF/U)
+    - hierarchical relationship (BT/NT)
     - cross-reference
     - category
     - reciprocity
     - a/symmetric relationship
-- [Ontology/graph]
+- Semantic networks: not CV; not 100% ontology
+- Ontology
     - Tom Gruber: "An ontology defines a set of representational primitives with which to model a domain of knowledge or discourse ... ontology can be viewed as a level of abstraction of data models, analogous to hierarchical and relational models." In other words, there are Three Big Data Models: hierarchical, relational, and ontological/atomic"
-
-### KOS, exhaustive 
-
-- Term lists (authority files, glossaries, dictionaries, and gazetteers, controlled vocabularies [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
-- Classifications and categories (subject headings, classification schemes, hierarchical AKA nested taxonomies, categorization schemes)
-- Relationship lists (thesauri [good for representing a very large controlled vocabulary], semantic networks, ontologies)
-- Reference works: Reference works are usually referred to for particular pieces of information, rather than read beginning to end. Reference works include dictionaries, thesauruses, encyclopedias, almanacs, bibliographies, and catalogs.
-    - Dictionary: 
-        - A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
-        - A book of words in one language with their equivalents in another, sometimes known as a lexicon.
-    - Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
-    - Thesaurus:
-    - Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
-    - Bibliography:
-    - Catalog:
-    - Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
-    - Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
-- Term lists:
-    - Authority file: What’s the definitive version of a term, at least one variant of which I know?
-    - Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
-    - Dictionary
-    - Gazetteer
-- Classifications:
-    - Subject headings
-    - Classification schemes
-    - Hierarchical taxonomies
-    - Polyhierarchical taxonomy
-    - Faceted taxonomies
-- Relationship lists:
-    - Thesaurus
-    - Ontology
-    - Semantic network
-- Controlled vocabulary:
-    - Synonym rings/synset
+    - Expressed om RDF, OWL, topic maps
+    - defined by
+        - ontological ambition
+        - semantic relationships (annotated edges)
+        - graph model
+        - structured attributes
+        - entities are instances of classes
 
 ## Displaying KOS
 

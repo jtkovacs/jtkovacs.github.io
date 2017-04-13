@@ -127,7 +127,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 - **Dictionary:** Definitions, history, etc. for words.
 - **Gazetteer:** A geographical dictionary
 
-**Synonym rings** AKA synsets are synonyms given equal preference in a controlled vocabulary. Synsets are usually invisible to users, e.g. underpinning a search engine.
+**Synonym rings** AKA synsets associate synonyms without indicating preference for one over the others (equivalence relationship). Synsets are usually invisible to users, e.g. underpinning a search engine.
 
 **Taxonomies** AKA hierarchies AKA hierarchical taxonomies AKA tree structures arrange terms into parent/child relationships beneath a single top term (TT). A strict hierarchy requires that each term have a single parent AKA broader term (BT), though they may have multiple siblings and children AKA narrower terms (NT). Per Zeng (n.d.), hierarchies model three different types of real-world relationships: 
 
@@ -142,25 +142,18 @@ In order of increasing complexity (number, kind, and configuration of relationsh
     - Central nervous system: Brain (NTP), Spinal cord (NTP)
     - Brain: Central nervous system (BTP)
     - Spinal cord: Central nervous system (BTP)
-    
-Taxonomies are a top-down approach. Thus, there may occasionally be node labels: terms in a hierarchy that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
 
 The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
+
+Taxonomies are a top-down approach. Thus, there may occasionally be node labels: terms in a hierarchy that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
 
 **Faceted taxonomies** are a bottom-up approach to providing multiple views of the same content objects, based on shared attributes like topic, location, format, author, etc. They are often presented as navigation aids or search refinments; they may also be used to organize  very large controlled vocabulary. 
 
 **Polyhierarchies** are hierarchies in which children may have multiple parents.
 
-**Thesauri** captures more relationships than synonyms; [good for representing a very large controlled vocabulary]
+**Thesauri** capture associative relationships AKA related terms (RT) in addition to equivalence (U/UF) and hierarchical (BT/NT) relationships. Relationships are also called cross-references; they should be reciprocal (explicit entry at term Y linking to term X, explicit entry at term X linking to term Y) and may or may not be symmetric. Thesauri are useful for representing a very large controlled vocabulary.
 
-- related term/associative relationship (RT)
-- equivalence relationship (UF/U)
-- hierarchical relationship (BT/NT)
-- cross-reference
-- reciprocity
-- a/symmetric relationship
-
-**Semantic networks** fall short, in some way, of being **ontologies,** which are defined by:   
+**Semantic networks** fall short, in some way, of full **ontologies,** which are defined by their:   
 
 - Ambition to "[define] a set of representational primitives [atoms] with which to model a domain of knowledge or discourse" (Tom Gruber, qtd. in Hedden, 2015)
 - Network/graph model of interconnected triples (subject-predicate-object)

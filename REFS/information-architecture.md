@@ -80,6 +80,14 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 - Compound terms
 - Precoordination 
 
+### Relationship between CVs and metadata
+
+Per ANSI/NISO Z39.19 (p. 19), 
+
+- A metadata standard may require that values for certain fields come from CVs
+- Metadata may be used to describe a CV, supporting its discovery as a resource
+- A CV may be expressed as a metadata schema, e.g. in XML
+
 ## What types of KOS exist?
 
 ### KOS by function 

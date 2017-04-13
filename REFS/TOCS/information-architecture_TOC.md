@@ -4,6 +4,7 @@
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
 		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
+		- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOS by function ](#kos-by-function-)
 			- [Content object added to information system](#content-object-added-to-information-system)
@@ -96,6 +97,14 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 - Broader and narrower term hierarchical relationships
 - Compound terms
 - Precoordination 
+
+### Relationship between CVs and metadata
+
+Per ANSI/NISO Z39.19 (p. 19), 
+
+- A metadata standard may require that values for certain fields come from CVs
+- Metadata may be used to describe a CV, supporting its discovery as a resource
+- A CV may be expressed as a metadata schema, e.g. in XML
 
 ## What types of KOS exist?
 

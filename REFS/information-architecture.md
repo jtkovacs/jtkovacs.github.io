@@ -105,33 +105,33 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 | Taxonomy | X | X | X | |
 | Thesaurus | X | X | X | X |
 
+**Term lists** are essentially flat list, though they may include "See"/"Use" to steer people towards preferred language, or use a synonym ring approach (no preferred term among multiple). 
 
-Term lists: [which may have "See" or "Use" to steer people towards preferred language, or use a "synonym ring/synset" approach of no preferred term among multiple])
-- Authority file: What’s the definitive version of a term, at least one variant of which I know?
-- Glossary (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
-- Dictionary
-- Gazetteer
-- Significant overlap w/ reference works
+- **Authority file:** Identifies the definitive version of a name among all variants
+- **Glossary** (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
+- **Dictionary:** Definitions, history, etc. for words.
+- **Gazetteer:** A geographical dictionary
 
-Synonym ring/synset
-- Usually invisible to user, e.g. underpinning a search engine
+**Synonym rings** AKA synsets are synonyms given equal preference in a controlled vocabulary. Synsets are usually invisible to users, e.g. underpinning a search engine.
 
-Category
+**Taxonomies** AKA hierarchies AKA hierarchical taxonomies AKA tree structures arrange terms into parent/child relationships beneath a single top term (TT). A strict hierarchy requires that each term have a single parent AKA broader term (BT), though they may have multiple siblings and children AKA narrower terms (NT). Per Zeng (n.d.), hierarchies model three different types of real-world relationships: 
 
-Taxonomy AKA hierarchy AKA tree structure: 
-- top-down
-- Broader term (BT)
+- Whole/part (partitive): 
+- Generic/specific (generic): **X is a Y**
+    - X: Y (BTG)
+    - Y: X (NTG)
+- Class/instance (instance):
+
+Taxonomies are a top-down approach.
+
 - Broader term (generic) (BTG)
 - Broader term (instance) (BTI)
 - Broader term (partitive) (BTP)    
-- Narrower term (NT)
 - Narrower term (generic) (NTG)
 - Narrower term (instance) (NTI)
 - Narrower term (partitive) (NTP)
-- sibling
 - generic posting
 - up-posting/autoposting
-- top term (TT)
 - node label
 
 Faceted taxonomies: 
@@ -187,6 +187,7 @@ Ontology
 - [Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515.](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
 - [Hjørland, Birger (2011). Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), p. 546-552.](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
+- [Zeng, M. (n.d.). 4.3 Hierarchical relationships. In _Construction of controlled vocabularies: A primer._](http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm)
 - Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 - Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
 - Rosenfeld, L., Morville, P., & Arango, J. (2015). _Information architecture for the web and beyond_ (4e). Sebastopol, California: O'Reilly Media.

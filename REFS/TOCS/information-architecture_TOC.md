@@ -2,11 +2,11 @@
 	- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy and vocabulary control?](#what-is-taxonomy-and-vocabulary-control?)
 	- [Basic elements of controlled vocabularies](#basic-elements-of-controlled-vocabularies)
+		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOS by function ](#kos-by-function-)
 			- [Content object added to information system](#content-object-added-to-information-system)
 			- [Content object retrieved from information system](#content-object-retrieved-from-information-system)
-		- [KOS by impact on IR](#kos-by-impact-on-ir)
 		- [KOS by structure](#kos-by-structure)
 - [Displaying KOS](#displaying-kos)
 - [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
@@ -55,6 +55,24 @@ Minimally, terms and relationship indicators must account for synonyms and homog
 - Homographs must be disambiguated with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercury (planet), Mercury (car).
 
 Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). Relationships between terms can be much more complex than U/UF; see <a href="#KOS-by-structure">KOS by structure.</a> 
+
+### CV elements by impact on IR
+
+Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
+
+- Equivalence relationships/preferred terms
+- Preferred term form
+- Associative relationships/related terms
+- Classified and hierarchical relationships
+- Postcoordination
+- Concept mapping/clustering
+
+**Precision** is improved by controlleding ambiguity:
+
+- Parenthetical qualifiers
+- Broader and narrower term hierarchical relationships
+- Compound terms
+- Precoordination
  
 ## What types of KOS exist?
 
@@ -89,24 +107,6 @@ More specific to the purview of IAs, information consumers depend on KOSs to bro
 **BROWSING** is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011). **NAVIGATION** is related, but has implications of (1) traversing a website (2) with perhaps a greater sense of direction. KOSs that support these activities include hierarchical taxonomies, faceted taxonomies, and pick lists (a drop-down UI element). 
 
 **SEARCHING** is the machine-aided pursuit of a specific piece of information. Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects. 
-
-### KOS by impact on IR
-
-Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
-
-- Equivalence relationships/preferred terms
-- Preferred term form
-- Associative relationships/related terms
-- Classified and hierarchical relationships
-- Postcoordination
-- Concept mapping/clustering
-
-**Precision** is improved by controlleding ambiguity:
-
-- Parenthetical qualifiers
-- Broader and narrower term hierarchical relationships
-- Compound terms
-- Precoordination
 
 ### KOS by structure
 

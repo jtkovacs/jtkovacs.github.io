@@ -5,6 +5,7 @@
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOS by function ](#kos-by-function-)
 		- [KOS by structure](#kos-by-structure)
+		- [KOS by implementation](#kos-by-implementation)
 	- [Displaying KOS](#displaying-kos)
 - [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 - [Sources](#sources)
@@ -57,45 +58,56 @@ Relationships can be much more complex; see <a href="#KOS-by-structure">KOS by s
 
 ### KOS by function 
  
-CVs are associated with content objects in the following ways:
+REFERENCE WORKS: for consultation, not comprehensive reading
 
-- REFERENCE WORKS: for consultation, not comprehensive reading
-    - Dictionary: 
-        - A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
-        - A book of words in one language with their equivalents in another, sometimes known as a lexicon.
-    - Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
-    - Thesaurus:
-    - Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
-    - Bibliography:
-    - Catalog:
-    - Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
-    - Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
-    - Almanacs
-    - Catalogs
-- INDEXING: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; using controlled vocabulary, thesaurus, authority file; using an indexing language with indexing terms
-    - vs KEYWORDS: words that emerge as important from a content object
-    - vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
-- CATALOGING: describing with subject headings
-    - subheadings
-    - postcoordinated
-    - precoordinated
-    - CLASSIFYING/CATEGORIZING?
-- Categorizing: allocate something into one of existing categories, vs creating categories???
-- Classifying: https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf 
+- Dictionary: 
+    - A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc.
+    - A book of words in one language with their equivalents in another, sometimes known as a lexicon.
+- Lexicon: The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
+- Thesaurus:
+- Encyclopedia: A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
+- Bibliography:
+- Catalog:
+- Gazetteer: A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
+- Directory: A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory
+- Almanacs
+- Catalogs
+    
+INDEXING: saying what something is about in maximalist fashion, identifying what’s discussed and where it’s discussed; using controlled vocabulary, thesaurus, authority file; using an indexing language with indexing terms
+
+- vs KEYWORDS: words that emerge as important from a content object
+- vs TAGGING: saying what something is about in summary fashion, with keywords; also allows for grassroots view of what something’s about
+
+CATALOGING: describing with metadata including subject headings
+
+representation and organization, fundamental actions
+
+- Categorizing: "Categorization is the process of dividing the world into groups of enti-
+ties whose members are in some way similar to each ... ment. By reducing the
+load on memory and facilitating the efficient storage and retrieval of infor-
+mation, categorization serves as the fundamental cognitive mechanism that
+simplifies the individual’s experience of the environment" (, p. 518)
+- Classifying: placing something into existing categories/classes 
     - Subject headings
+        - subheadings
+            - postcoordinated
+            - precoordinated
     - Classification schemes
     - Hierarchical AKA nested taxonomies
     - Polyhierarchical taxonomy
     - Faceted taxonomies
-- METADATA: 
-- NAVIGATION: 
-    - with hierarchical taxonomies
-    - with a pick list
-    - faceted taxonomies
-- RETRIEVAL: 
-    - faceted taxonomies and thesauri
-    - p. 19 of ANSI/NISO Z39.19 
-    
+
+NAVIGATION: 
+
+- with hierarchical taxonomies
+- with a pick list
+- faceted taxonomies
+
+RETRIEVAL: 
+
+- faceted taxonomies and thesauri
+- p. 19 of ANSI/NISO Z39.19 
+
 ### KOS by structure
 
 In order of increasing complexity (number, kind, and configuration of relationships):
@@ -108,6 +120,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
     - Significant overlap w/ reference works
 - Synonym ring/synset
     - Usually invisible to user, e.g. underpinning a search engine
+- category
 - Taxonomy AKA hierarchy AKA tree structure: 
     - top-down
     - Broader term (BT)
@@ -135,7 +148,6 @@ In order of increasing complexity (number, kind, and configuration of relationsh
     - equivalence relationship (UF/U)
     - hierarchical relationship (BT/NT)
     - cross-reference
-    - category
     - reciprocity
     - a/symmetric relationship
 - Semantic networks: not CV; not 100% ontology
@@ -149,6 +161,10 @@ In order of increasing complexity (number, kind, and configuration of relationsh
         - structured attributes
         - entities are instances of classes
 
+### KOS by implementation
+
+CVs are associated with content objects in the following ways ... 
+        
 ## Displaying KOS
 
 - generic structure
@@ -168,6 +184,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 
 - [ANSI/NISO Z39.19-2005, Guidelines for the construction, management, and format of monolingual controlled vocabularies](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 - [NISO-TR02-1997, Guidelines for indexes and related information retrieval devices](http://www.niso.org/publications/tr/tr02.pdf)
+- [Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515.](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
 - [The new information architecture](https://www.youtube.com/watch?v=Fou5J7j5uzk) [video]
 - Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 - Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.

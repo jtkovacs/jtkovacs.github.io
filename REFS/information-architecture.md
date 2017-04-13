@@ -22,25 +22,18 @@ Beyond this general sense, a taxonomy is also a specific kind of KOS with a hier
 
 ## What are controlled vocabularies?
 
-Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Versus natural languages, CVs:
+Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). **Versus natural languages, CVs:**
 
-- Clearly define the SCOPE of terms using scope notes (SN) and history notes (HN);
-- Provide some way of linking SYNONYMS, which increases recall; 
-- Distinguish between HOMOGRAPHS, which increases precision; and, optionally,
-- Capture SEMANTIC RELATIONSHIPS between terms, which improves both recall and precision.
+- Must clearly define the SCOPE of terms. This is done with scope notes (SN) and history notes (HN).
+- Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
+- Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercury (planet), Mercury (car).
+- May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision. 
 
-CVs consist of terms and relationships. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
+CVs consist of terms and relationships. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs).Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
 
 - User warrant emerges from user search terms and feedback;
 - Literary warrant emerges from review of documents and standards; and
 - Organizational warrant emerges from an organization's existing standards.
-
-Minimally, terms and relationship indicators must account for synonyms and homographs. This means:
-
-- Synonyms must be linked. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity. 
-- Homographs must be disambiguated with a modifier AKA difference AKA qualifier term, e.g. Mercury (metal), Mercury (planet), Mercury (car).
-
-A preferred term may be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). Relationships between terms can be much more complex than U/UF; see <a href="#KOS-by-structure">KOS by structure.</a> 
 
 ### CV elements by impact on IR
 

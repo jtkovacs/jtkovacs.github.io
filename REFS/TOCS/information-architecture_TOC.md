@@ -1,4 +1,4 @@
-<table id="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
+<table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
 	- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy and vocabulary control?](#what-is-taxonomy-and-vocabulary-control?)
 	- [Basic elements of controlled vocabularies](#basic-elements-of-controlled-vocabularies)

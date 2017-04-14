@@ -15,10 +15,12 @@
 	- [Writing a project charter](#writing-a-project-charter)
 		- [Vision & success criteria](#vision-&-success-criteria)
 		- [Defining & managing scope](#defining-&-managing-scope)
-- [Planning](#planning)
-	- [Implementation planning](#implementation-planning)
+- [Project planning](#project-planning)
 	- [Work breakdown structure](#work-breakdown-structure)
+	- [Budgeting](#budgeting)
+	- [Scheduling](#scheduling)
 	- [Communications plan](#communications-plan)
+	- [Monitoring and reporting](#monitoring-and-reporting)
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements analysis](#requirements-analysis)
 		- [User personas](#user-personas)
@@ -188,9 +190,9 @@ Per Clayton (2003), some thoughts about writing an executive summary for a busin
 
 ## Writing a project charter
     
-Project Charter
-Project Initiation Document (PID)
-Project Mandate
+- Project Charter
+- Project Initiation Document (PID)
+- Project Mandate
 
 ### Vision & success criteria
 
@@ -217,11 +219,31 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 
 
-# Planning
-
-## Implementation planning
+# Project planning
 
 ## Work breakdown structure
+
+Per Wikipedia (2017), a work breakdown structure (WBS) is a hierarchical decomposition of a project's total work. WBS elements are coded as 1.0, 1.1, 1.10.11, etc. Child elements must sum to 100% of their parent element, and so on until 100% of the project's total work is accounted for. Elements must be mutually exclusive, which is easier to accomplish if elements are _outcomes,_ not tasks. There are different heuristics for establishing the terminal granularity of a WBS:
+
+- 80 hour rule: smallest element must not exceed 80 hours of work
+- Smallest element must be small enough to occur within the standard reporting period
+
+Once the hierarchy is established, it's the terminal elements that are budgeted and scheduled.
+
+## Budgeting
+
+- Traditional
+- Agile
+- Combination
+
+## Scheduling
+
+- Critical Path
+- Crash
+- Gate
+- Milestone
+- Gantt Chart
+- PERT Chart
 
 ## Communications plan
 
@@ -233,18 +255,9 @@ Per PMI (2013):
 - Know who you need to talk to, and how much [(see: RACI plan)](#raci-plan)
 - Plan should specify modes of communication; adjust to people's habits where possible
 
-Scheduling:
+## Monitoring and reporting
 
-- Critical Path
-- Crash
-- Gate
-- Milestone
-- Gantt Chart
-- PERT Chart
-
-Monitoring and Reporting
-
-- CARDI Log – (Constraints/Assumptions/Risks/Dependencies/Issues)
+- CARDI Log (Constraints/Assumptions/Risks/Dependencies/Issues)
 - RAG Status
 - Project Dashboard
 
@@ -282,7 +295,9 @@ Hard to distinguish business process from IT process from work
 
 # Monitoring & governance
 
-... 
+
+
+
 
 # Sources
 
@@ -307,3 +322,5 @@ Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interest
 Sheen, R. (2015). How to manage scope creep. _Harvard Business Review._ Retrieved from https://hbr.org/video/2942763785001/how-to-manage-scope-creep
 
 Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/   
+
+Wikipedia. (2017, March 28). Work breakdown structure. Retrieved from https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&oldid=772556888

@@ -65,18 +65,10 @@ Overall, a business case must clearly outline a problem and a solution. If it's 
 
 Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of proposal writing and their remedies:
 
-1. Failure to focus on the client’s business problems and payoffs; the content sounds generic. --> **Research the client**
-2. No clear differentiation of this customer compared with other customers. --> **Research the client**
-3. Failure to offer a compelling value proposition and clear solution. --> **Research the client**
-4. No persuasive structure --- the proposal is an "information dump". --> **Select, edit, curate!**
-5. Key points are difficult to read because they’re full of jargon, too long, or too technical. --> **Simplify language**
-6. Key points are buried --- no punch, no highlighting. --> **Use structuring devices thoughtfully**
-7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. --> **Proofread**
-
 <table>
 
 <tr>
-<td style="text-align:left; width:450px;">Failure to focus on the client’s business problems and payoffs; the content sounds generic.</td>
+<td style="text-align:left; width:420px;">Failure to focus on the client’s business problems and payoffs; the content sounds generic.</td>
 <td style="width:160px;" rowspan=3>**Research the client**</td>
 </tr>
 <tr><td style="text-align:left;">No clear differentiation of this customer compared with other customers.</td></tr>

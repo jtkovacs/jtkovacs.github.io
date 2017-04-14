@@ -3,10 +3,12 @@
 	- [Agile](#agile)
 - [Launching a project](#launching-a-project)
 	- [Evaluating feasibility & desirability](#evaluating-feasibility-&-desirability)
-	- [Stakeholder analysis](#stakeholder-analysis)
-	- [SWOT analysis](#swot-analysis)
-	- [Gap analysis](#gap-analysis)
-	- [Force field analysis](#force-field-analysis)
+		- [PESTEL analysis](#pestel-analysis)
+		- [Five forces analysis](#five-forces-analysis)
+		- [SWOT analysis](#swot-analysis)
+		- [Gap analysis](#gap-analysis)
+		- [Stakeholder analysis](#stakeholder-analysis)
+		- [Force field analysis](#force-field-analysis)
 	- [Writing a business case or proposal](#writing-a-business-case-or-proposal)
 	- [Writing a project charter](#writing-a-project-charter)
 		- [Vision](#vision)
@@ -40,17 +42,21 @@
 
 ## Evaluating feasibility & desirability
 
-## Stakeholder analysis
+### PESTEL analysis
 
-identify stakeholders and analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan.
+### Five forces analysis
 
-## SWOT analysis
+### SWOT analysis
 
-## Gap analysis
+### Gap analysis
 
 Current state, future state
 
-## Force field analysis
+### Stakeholder analysis
+
+identify stakeholders and analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan.
+
+### Force field analysis
 
 ## Writing a business case or proposal
 

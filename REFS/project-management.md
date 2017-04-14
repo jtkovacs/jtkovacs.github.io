@@ -9,17 +9,21 @@
 
 ## Evaluating feasibility & desirability
 
-## Stakeholder analysis
+### PESTEL analysis
 
-identify stakeholders and analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan.
+### Five forces analysis
 
-## SWOT analysis
+### SWOT analysis
 
-## Gap analysis
+### Gap analysis
 
 Current state, future state
 
-## Force field analysis
+### Stakeholder analysis
+
+identify stakeholders and analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan.
+
+### Force field analysis
 
 ## Writing a business case or proposal
 

@@ -1,7 +1,7 @@
 <table class="TOC"><tr><td>- [What is project management?](#what-is-project-management?)
 	- [Systems Development Lifecycle (SDLC)](#systems-development-lifecycle-(sdlc))
 	- [Agile](#agile)
-- [Strategic assessment](#strategic-assessment)
+- [Should we & can we do something?](#should-we-&-can-we-do-something?)
 	- [Stakeholder analysis](#stakeholder-analysis)
 	- [SWOT analysis](#swot-analysis)
 	- [Gap analysis](#gap-analysis)
@@ -30,10 +30,11 @@
 ## Agile
 
 
-# Strategic assessment
+# Should we & can we do something?
+
+Business case/proposal, executive summary
 
 Defining vision, scope, success criteria
-Business case/proposal, executive summary
 
 ## Stakeholder analysis
 

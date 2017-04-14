@@ -5,10 +5,11 @@
 ## Agile
 
 
-# Strategic assessment
+# Should we & can we do something?
+
+Business case/proposal, executive summary
 
 Defining vision, scope, success criteria
-Business case/proposal, executive summary
 
 ## Stakeholder analysis
 

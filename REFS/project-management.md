@@ -32,7 +32,7 @@ Framework for evaluating the intensity of competition in a specific market or in
 
 ### SWOT analysis
 
-Framework for making connections between a company's external landscape and internal characteristics; can be restricted to the scope of a single project:
+Framework for making connections between a company's external landscape and internal characteristics (which can be restricted to the scope of a single project). Data is collected and sorted into a matrix, with one matrix for each alternative under consideration:
 
 - Internal **strengths**
 - Internal **weaknesses**
@@ -41,13 +41,15 @@ Framework for making connections between a company's external landscape and inte
 
 ### Gap analysis
 
-Current state, future state
+comparing current performance to desired performance, sometimes based on industry averages or industry leaders.
 
 ### Stakeholder analysis
 
 identify stakeholders and analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan.
 
 ### Force field analysis
+
+lists the forces that drive or hinder an organization's strengths and weaknesses
 
 ## Writing a business case or proposal
 
@@ -123,4 +125,5 @@ Hard to distinguish business process from IT process from work
 
 Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
 
+Gretzky, W. (2010). Strategic planning and SWOT analysis. American College of Healtcare Executives. Health Administration Press. Retrieved from http://mydesievent.com/wp-content/uploads/2014/10/Harrison_Chapter5.pdf
 

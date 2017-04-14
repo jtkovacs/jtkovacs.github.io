@@ -37,7 +37,7 @@
 </td></tr></table>
 # What is project management?
 
-Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices may help:
+Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes:
 
 - Focus of strategy and stakeholders, not exclusively budget and scheduling
 - Ensure talent is sufficient to execute the project
@@ -223,7 +223,7 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 ## Work breakdown structure
 
-Per Wikipedia (2017), a work breakdown structure (WBS) is a hierarchical decomposition of a project's total work. WBS elements are coded as 1.0, 1.1, 1.10.11, etc. Child elements must sum to 100% of their parent element, and so on until 100% of the project's total work is accounted for. Elements must be mutually exclusive, which is easier to accomplish if elements are _outcomes,_ not tasks. There are different heuristics for establishing the terminal granularity of a WBS:
+Per Wikipedia (2017), a work breakdown structure (WBS) is a **hierarchical decomposition of a project's total work.** WBS elements are coded as 1.0, 1.1, 1.10.11, etc. Child elements must sum to 100% of their parent element, and so on until 100% of the project's total work is accounted for. Elements must be mutually exclusive, which is easier to accomplish if elements are _outcomes,_ not tasks. There are different heuristics for establishing the terminal granularity of a WBS:
 
 - 80 hour rule: smallest element must not exceed 80 hours of work
 - Smallest element must be small enough to occur within the standard reporting period

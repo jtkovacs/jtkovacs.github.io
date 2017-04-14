@@ -51,10 +51,10 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 <td style="text-align:left;>5. Key points are difficult to read because they’re full of jargon, too long, or too technical. </td>
 <td>**Simplify language**</td>
 </tr><tr>
-<td style="text-align:left;>6. Key points are buried --- no punch, no highlighting.</td>
+<td style="text-align:left;">6. Key points are buried --- no punch, no highlighting.</td>
 <td>**Use structuring devices thoughtfully**</td>
 </tr><tr>
-<td style="text-align:left;>7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. </td>
+<td style="text-align:left;">7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. </td>
 <td>**Proofread**</td>
 </tr></table>
 

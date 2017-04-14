@@ -144,7 +144,9 @@ Per Tom Sant as summarized by Obuchowski (2015):
 <td>**Proofread**</td></tr>
 </table>
 
-Per Clayton (2003), some thoughts about writing an executive summary for a business proposal:
+### Writing an executive summary
+
+Per Clayton (2003):
 
 - An executive summary is not a summary; it's an articulation of the business case.
 - Can't just echo the RFP, because readers of the full RFP and the executive summary differ.

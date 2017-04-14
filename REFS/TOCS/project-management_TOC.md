@@ -1,11 +1,17 @@
 <table class="TOC"><tr><td>- [What is project management?](#what-is-project-management?)
 	- [Systems Development Lifecycle (SDLC)](#systems-development-lifecycle-(sdlc))
 	- [Agile](#agile)
-- [Should we & can we do something?](#should-we-&-can-we-do-something?)
+- [Launching a project](#launching-a-project)
+	- [Evaluating feasibility & desirability](#evaluating-feasibility-&-desirability)
 	- [Stakeholder analysis](#stakeholder-analysis)
 	- [SWOT analysis](#swot-analysis)
 	- [Gap analysis](#gap-analysis)
 	- [Force field analysis](#force-field-analysis)
+	- [Writing a business case or proposal](#writing-a-business-case-or-proposal)
+	- [Writing a project charter](#writing-a-project-charter)
+		- [Vision](#vision)
+		- [Scope](#scope)
+		- [Success criteria](#success-criteria)
 - [Planning](#planning)
 	- [Implementation planning](#implementation-planning)
 	- [Communications plan](#communications-plan)
@@ -30,11 +36,9 @@
 ## Agile
 
 
-# Should we & can we do something?
+# Launching a project
 
-Business case/proposal, executive summary
-
-Defining vision, scope, success criteria
+## Evaluating feasibility & desirability
 
 ## Stakeholder analysis
 
@@ -47,6 +51,18 @@ identify stakeholders and analyze their interests and expectations; categorize i
 Current state, future state
 
 ## Force field analysis
+
+## Writing a business case or proposal
+
+Writing an executive summary
+
+## Writing a project charter
+
+### Vision
+
+### Scope
+
+### Success criteria
 
 
 # Planning

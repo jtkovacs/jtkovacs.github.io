@@ -5,11 +5,9 @@
 ## Agile
 
 
-# Should we & can we do something?
+# Launching a project
 
-Business case/proposal, executive summary
-
-Defining vision, scope, success criteria
+## Evaluating feasibility & desirability
 
 ## Stakeholder analysis
 
@@ -22,6 +20,18 @@ identify stakeholders and analyze their interests and expectations; categorize i
 Current state, future state
 
 ## Force field analysis
+
+## Writing a business case or proposal
+
+Writing an executive summary
+
+## Writing a project charter
+
+### Vision
+
+### Scope
+
+### Success criteria
 
 
 # Planning

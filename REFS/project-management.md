@@ -157,14 +157,28 @@ Project Charter
 Project Initiation Document (PID)
 Project Mandate
 
-### Vision
+### Vision & success criteria
 
-### Scope
+Per Hill & Cantera (2015): 
 
-Per Sheen (2015),  
+- Establish a simple definition for "business process" that everyone understands. Adopt Gartner's definition as a starting point.
+    - Management process: highest level of abstraction; processes centered on mission statement and long-term vision
+    - Administrative process: maintaining a functioning organization
+    - Operational process: day-to-day operations
+- Assess proposed changes to business processes in terms of the probability of the change directly impacting the desired business outcome. A "good" change is one that improves enterprise business outcomes (not just functional unit outcomes), or that must be made for compliance reasons. Our 2014 study of business transformation initiatives shows that one-third of organizations have an insufficient understanding of their business strategy, and 35% fail to translate the business strategy into measurable business goals.
+- Work backwards from the business outcome using 5 whys, Fishbone diagram, or customer journey mapping.
+- A Level 0 process diagram is a simple way of communicating how the organization works. It is the highest representation of the enterprise's business operations from a process perspective ... In our view, every organization would benefit from having such a visual to facilitate communications about improving the outcomes from business operations. Such a visual should fit on a single piece of paper.
+- Identify key processes and pair them with metrics. (Metrics can be of the form 'from X to Y' but should be outside-in; e.g.,"from purchase request to receipt".)
+    - How do we make our product or service?
+    - How do our customers receive/experience the value of our product or service?
+    - How do we collect money for our product or service?
+    - How do we support (provide customer service for) our product or service?
+    - How do we source the raw materials or talent we need to create our product or service?
+- Look at the process as-is and try to simplify it, rather than leaping to IT automation as the solution. "Automation is very good for scaling work (with speed and capacity) without a commensurate increase in head count, for lowering the cost of performing the work (since, theoretically, machines can work 24/7) and for increasing the consistency of the output. If these are the kinds of improvements desired, then automation is an appropriate answer."
 
-### Success criteria
+### Defining & managing scope
 
+Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed during the project initiation phase by (1) listing what's in and out of scope, provided stakeholders agree about scope; or (2) establishing scope ranges AKA scope tolerance parameters, which can be pinpointed as information emerges. A task is out of scope if it (1) doesn't make a direct contribution to the project goal, or (2) if time and money are binding constraints. **Project the impact of requested additional tasks;** never simply agree to perform them.
 
 
 
@@ -242,6 +256,8 @@ Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects
 Clayton, J. (2003). Writing an executive summary that means business. _Harvard Management Communication Letter._
 
 Collella, H. (2009). Effective communications: A strategy. Gartner.
+
+Hill, J. B., & Cantera, M. (2015). Use business outcomes to determine the scope of the “business process” to be improved (No. G00277312). Gartner.
 
 Kantor, B. (2012, May 22). How to design a successful RACI project plan. _CIO._ Retrieved from http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html
 

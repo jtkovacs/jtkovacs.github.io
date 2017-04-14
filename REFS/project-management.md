@@ -1,14 +1,9 @@
 # Systems Development Lifecycle (SDLC)
 
-## Planning
+## Strategic assessment
 
 Defining vision, scope, success criteria
 Business case/proposal, executive summary
-Communications plan
-
-### Implementation planning
-
-## Analysis
 
 ### Stakeholder analysis
 
@@ -22,9 +17,25 @@ Current state, future state
 
 ### Force field analysis
 
-## Design
 
-Requirements analysis, use cases and 
+## Planning
+
+### Implementation planning
+
+### Communications plan
+
+### RACI plan
+
+
+## Analysis
+
+### Requirements analysis
+
+### Current state, future state analysis
+
+
+## Design/Modeling/Documenting
+
 
 ### User personas
 
@@ -32,6 +43,10 @@ I need to X in order to Y
 List of goals
 Pain points
 Scenarios
+
+### Use cases
+
+### User stories
 
 ### Prototyping UI
 
@@ -41,10 +56,15 @@ Scenarios
 
 Choosing software
 
+Defining architecture
+
 Governance plan
+
 
 ## Development
 
 ## Implementation
 
 ## Monitoring, support, continuous improvement
+
+# Agile

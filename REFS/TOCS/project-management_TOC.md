@@ -1,31 +1,34 @@
 <table class="TOC"><tr><td>- [Systems Development Lifecycle (SDLC)](#systems-development-lifecycle-(sdlc))
-	- [Planning](#planning)
-		- [Implementation planning](#implementation-planning)
-	- [Analysis](#analysis)
+	- [Strategic assessment](#strategic-assessment)
 		- [Stakeholder analysis](#stakeholder-analysis)
 		- [SWOT analysis](#swot-analysis)
 		- [Gap analysis](#gap-analysis)
 		- [Force field analysis](#force-field-analysis)
-	- [Design](#design)
+	- [Planning](#planning)
+		- [Implementation planning](#implementation-planning)
+		- [Communications plan](#communications-plan)
+		- [RACI plan](#raci-plan)
+	- [Analysis](#analysis)
+		- [Requirements analysis](#requirements-analysis)
+		- [Current state, future state analysis](#current-state,-future-state-analysis)
+	- [Design/Modeling/Documenting](#design/modeling/documenting)
 		- [User personas](#user-personas)
+		- [Use cases](#use-cases)
+		- [User stories](#user-stories)
 		- [Prototyping UI](#prototyping-ui)
 		- [Modeling systems and data flow](#modeling-systems-and-data-flow)
 		- [Business process modeling & reengineering: hard to distinguish business process from IT process from work](#business-process-modeling-&-reengineering:-hard-to-distinguish-business-process-from-it-process-from-work)
 	- [Development](#development)
 	- [Implementation](#implementation)
 	- [Monitoring, support, continuous improvement](#monitoring,-support,-continuous-improvement)
+- [Agil](#agil)
 </td></tr></table>
 # Systems Development Lifecycle (SDLC)
 
-## Planning
+## Strategic assessment
 
 Defining vision, scope, success criteria
 Business case/proposal, executive summary
-Communications plan
-
-### Implementation planning
-
-## Analysis
 
 ### Stakeholder analysis
 
@@ -39,9 +42,25 @@ Current state, future state
 
 ### Force field analysis
 
-## Design
 
-Requirements analysis, use cases and 
+## Planning
+
+### Implementation planning
+
+### Communications plan
+
+### RACI plan
+
+
+## Analysis
+
+### Requirements analysis
+
+### Current state, future state analysis
+
+
+## Design/Modeling/Documenting
+
 
 ### User personas
 
@@ -49,6 +68,10 @@ I need to X in order to Y
 List of goals
 Pain points
 Scenarios
+
+### Use cases
+
+### User stories
 
 ### Prototyping UI
 
@@ -58,10 +81,15 @@ Scenarios
 
 Choosing software
 
+Defining architecture
+
 Governance plan
+
 
 ## Development
 
 ## Implementation
 
 ## Monitoring, support, continuous improvement
+
+# Agile

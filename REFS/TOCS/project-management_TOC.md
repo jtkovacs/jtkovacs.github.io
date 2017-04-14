@@ -16,12 +16,13 @@
 		- [Vision & success criteria](#vision-&-success-criteria)
 		- [Defining & managing scope](#defining-&-managing-scope)
 - [Project planning](#project-planning)
-	- [Work breakdown structure](#work-breakdown-structure)
-	- [Budgeting](#budgeting)
-	- [Scheduling](#scheduling)
 	- [Agile vs. traditional approaches](#agile-vs.-traditional-approaches)
-	- [Communications plan](#communications-plan)
-	- [Monitoring and reporting](#monitoring-and-reporting)
+	- [Traditional approach ](#traditional-approach-)
+		- [Communications plan](#communications-plan)
+		- [Work breakdown structure](#work-breakdown-structure)
+		- [Budgeting](#budgeting)
+		- [Scheduling](#scheduling)
+		- [Monitoring and reporting](#monitoring-and-reporting)
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements analysis](#requirements-analysis)
 		- [User personas](#user-personas)
@@ -220,34 +221,16 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 # Project planning
 
-## Work breakdown structure
-
-Per Wikipedia (2017), a work breakdown structure (WBS) is a **hierarchical decomposition of a project's total work.** WBS elements are coded as 1.0, 1.1, 1.10.11, etc. Child elements must sum to 100% of their parent element, and so on until 100% of the project's total work is accounted for. Elements must be mutually exclusive, which is easier to accomplish if elements are _outcomes,_ not tasks. There are different heuristics for establishing the terminal granularity of a WBS:
-
-- 80 hour rule: smallest element must not exceed 80 hours of work
-- Smallest element must be small enough to occur within the standard reporting period
-
-Once the hierarchy is established, terminal elements are budgeted and scheduled.
-
-## Budgeting
-
-## Scheduling
-
-- Critical Path
-- Crash
-- Gate
-- Milestone
-- Gantt Chart
-- PERT Chart
-
 ## Agile vs. traditional approaches
 
-Per Ambler (n.d.), about two-thirds of requirements elicited in traditional "serial" or lifecycle project management approaches lead to features that are never or rarely used, i.e. "spectacular levels of waste". Agile tries to accelerate development processes to the realities of shifting requirements, but must be supported by parallel changes to budgeting and scheduling, namely:
+In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (n.d.), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
 
-- Developers work from a stack of prioritized requirements, and are responsible for estimating time per requirements
-- Funding may be continuously adjusted by product recipients in response to the value delivered by products
+- In place of a schedule, a stack of prioritized requirements with detailed requirements modeling done 'just in time';
+- In place of a budget, funding is continuously adjusted by product recipients in response to the value delivered by products.
 
-## Communications plan
+## Traditional approach 
+
+### Communications plan
 
 Per Collella (2009), effective organizational communication requires a **communications strategy,** which includes (1) a core message that is not burdened with IT jargon, (2) the capacity to refine messages in response to stakeholder cues, and (3) assessment; a **communications plan** for institutionalizing and executing the strategy; and **communication delivery skills.**
 
@@ -257,7 +240,27 @@ Per PMI (2013):
 - Know who you need to talk to, and how much [(see: RACI plan)](#raci-plan)
 - Plan should specify modes of communication; adjust to people's habits where possible
 
-## Monitoring and reporting
+### Work breakdown structure
+
+Per Wikipedia (2017), a work breakdown structure (WBS) is a **hierarchical decomposition of a project's total work.** WBS elements are coded as 1.0, 1.1, 1.10.11, etc. Child elements must sum to 100% of their parent element, and so on until 100% of the project's total work is accounted for. Elements must be mutually exclusive, which is easier to accomplish if elements are _outcomes,_ not tasks. There are different heuristics for establishing the terminal granularity of a WBS:
+
+- 80 hour rule: smallest element must not exceed 80 hours of work
+- Smallest element must be small enough to occur within the standard reporting period
+
+Once the hierarchy is established, terminal elements are budgeted and scheduled.
+
+### Budgeting
+
+### Scheduling
+
+- Critical Path
+- Crash
+- Gate
+- Milestone
+- Gantt Chart
+- PERT Chart
+
+### Monitoring and reporting
 
 - CARDI Log (Constraints/Assumptions/Risks/Dependencies/Issues)
 - RAG Status

@@ -39,19 +39,50 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 6. Key points are buried --- no punch, no highlighting. --> **Use structuring devices thoughtfully**
 7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. --> **Proofread**
 
-| Problem | Remedy | 
-| --- | --- | 
-| 1. Failure to focus on the client’s business problems and payoffs; the content sounds generic 
-  2. No clear differentiation of this customer compared with other customers
-  3. Failure to offer a compelling value proposition and clear solution. |  **Research the client** |
-  
-  
-  
-4. No persuasive structure --- the proposal is an "information dump". --> **Select, edit, curate!**
-5. Key points are difficult to read because they’re full of jargon, too long, or too technical. --> **Simplify language**
-6. Key points are buried --- no punch, no highlighting. --> **Use structuring devices thoughtfully**
-7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. --> **Proofread**
-
+<table>
+<tr>
+<td>
+1. Failure to focus on the client’s business problems and payoffs; the content sounds generic 
+2. No clear differentiation of this customer compared with other customers
+3. Failure to offer a compelling value proposition and clear solution. 
+</td>
+<td>
+**Research the client**
+</td>
+</tr>
+<tr>
+<td>
+4. No persuasive structure --- the proposal is an "information dump". 
+</td>
+<td>
+**Select, edit, curate!**
+</td>
+</tr>
+<tr>
+<td>
+5. Key points are difficult to read because they’re full of jargon, too long, or too technical. 
+</td>
+<td>
+**Simplify language**
+</td>
+</tr>
+<tr>
+<td>
+6. Key points are buried --- no punch, no highlighting. 
+</td>
+<td>
+**Use structuring devices thoughtfully**
+</td>
+</tr>
+<tr>
+<td>
+7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. 
+</td>
+<td>
+**Proofread**
+</td>
+</tr>
+</table>
 
 ## Writing a project charter
 

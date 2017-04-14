@@ -93,7 +93,8 @@ The general aim is to identify stakeholders; analyze their interests and expecta
 
 Rabinowitz also maps stakeholder groups on axes of interest and influence:
 
-| --- | **Low interest** | **High interest** |
+| | **Low interest** | **High interest** |
+| --- | --- | --- |
 | **High influence** | Latents | Promoters |
 | **Low influence** | Apathetics | Defenders |
 

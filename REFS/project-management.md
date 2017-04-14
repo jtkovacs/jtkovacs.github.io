@@ -40,10 +40,10 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. --> **Proofread**
 
 <table><tr>
-<td style="text-align:left; width:350px;">1. Failure to focus on the client’s business problems and payoffs; the content sounds generic 
-2. No clear differentiation of this customer compared with other customers
+<td style="text-align:left; width:350px;">1. Failure to focus on the client’s business problems and payoffs; the content sounds generic.
+2. No clear differentiation of this customer compared with other customers.
 3. Failure to offer a compelling value proposition and clear solution.</td>
-<td>**Research the client**</td>
+<td style="width:80px;">**Research the client**</td>
 </tr><tr>
 <td style="text-align:left;">4. No persuasive structure --- the proposal is an "information dump". </td>
 <td>**Select, edit, curate!**</td>

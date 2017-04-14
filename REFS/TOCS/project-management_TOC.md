@@ -1,7 +1,6 @@
 <table class="TOC"><tr><td>- [What is project management?](#what-is-project-management?)
-	- [Project Life Cycle (PLC)](#project-life-cycle-(plc))
-	- [Systems Development Lifecycle (SDLC)](#systems-development-lifecycle-(sdlc))
-	- [Agile](#agile)
+	- [Common pitfalls & best practices](#common-pitfalls-&-best-practices)
+	- [Overview of PM methodologies](#overview-of-pm-methodologies)
 - [Initiating a project](#initiating-a-project)
 	- [Evaluating desirability & feasibility](#evaluating-desirability-&-feasibility)
 		- [PESTEL analysis](#pestel-analysis)
@@ -39,6 +38,8 @@
 </td></tr></table>
 # What is project management?
 
+## Common pitfalls & best practices
+
 Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes:
 
 - Focus on strategy and stakeholders, not exclusively budget and scheduling
@@ -46,16 +47,16 @@ Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays an
 - Align team incentives with project incentives and have adequate team infrastructure
 - Have excellent project management, including short delivery cycles and quality checks
 
-## Project Life Cycle (PLC)
+## Overview of PM methodologies
 
-Per Watt (2014):
+Project Life Cycle (PLC) per Watt (2014):
 
 1. Initiation
 2. Planning
 3. Implementation/Execution
 4. Closing
 
-## Systems Development Lifecycle (SDLC)
+Systems Development Lifecycle (SDLC) per Annabi & McGann (n.d.):
 
 1. Planning
 2. Analysis
@@ -63,7 +64,7 @@ Per Watt (2014):
 4. Development
 5. Implementation/Rollout
 
-## Agile
+Agile:
 
 - https://hbr.org/video/4846148015001/a-quick-introduction-to-agile-management
 

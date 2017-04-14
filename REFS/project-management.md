@@ -41,7 +41,7 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 
 <table>
 <tr>
-<td style="text-align:left;">1. Failure to focus on the client’s business problems and payoffs; the content sounds generic 
+<td style="text-align:left; max-width:400px;">1. Failure to focus on the client’s business problems and payoffs; the content sounds generic 
 2. No clear differentiation of this customer compared with other customers
 3. Failure to offer a compelling value proposition and clear solution.</td>
 <td>**Research the client**</td>

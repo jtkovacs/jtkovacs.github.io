@@ -19,6 +19,7 @@
 	- [Work breakdown structure](#work-breakdown-structure)
 	- [Budgeting](#budgeting)
 	- [Scheduling](#scheduling)
+	- [Agile vs. traditional approaches](#agile-vs.-traditional-approaches)
 	- [Communications plan](#communications-plan)
 	- [Monitoring and reporting](#monitoring-and-reporting)
 - [Analysis, design & specification](#analysis,-design-&-specification)
@@ -230,10 +231,6 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Budgeting
 
-- Traditional
-- Agile
-- Combination
-
 ## Scheduling
 
 - Critical Path
@@ -242,6 +239,13 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 - Milestone
 - Gantt Chart
 - PERT Chart
+
+## Agile vs. traditional approaches
+
+Per Ambler (n.d.), about two-thirds of requirements elicited in traditional "serial" or lifecycle project management approaches lead to features that are never or rarely used, i.e. "spectacular levels of waste". Agile tries to accelerate development processes to the realities of shifting requirements, but must be supported by parallel changes to budgeting and scheduling, namely:
+
+- Developers work from a stack of prioritized requirements, and are responsible for estimating time per requirements
+- Funding may be continuously adjusted by product recipients in response to the value delivered by products
 
 ## Communications plan
 
@@ -265,6 +269,8 @@ Per PMI (2013):
 # Analysis, design & specification
 
 ## Requirements analysis
+
+- http://www.agilemodeling.com/artifacts/
 
 ### User personas
 
@@ -298,6 +304,8 @@ Hard to distinguish business process from IT process from work
 
 
 # Sources
+
+Ambler, S. (n.d.). Comparing approaches to budgeting and estimating software development projects. Retrieved from http://www.ambysoft.com/essays/comparingEstimatingApproaches.html
 
 Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects on time, on budget, and on value. McKinsey & Company. Retrieved from http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value
 

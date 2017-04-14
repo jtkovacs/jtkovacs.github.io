@@ -51,31 +51,31 @@ Writing an executive summary
 
 ## Requirements analysis
 
-## Current state, future state analysis
-
-## User personas
+### User personas
 
 I need to X in order to Y
 List of goals
 Pain points
 Scenarios
 
-## Use cases
+### Use cases
 
-## User stories
+### User stories
 
 ## Prototyping UI
 
-## Modeling data flow
+## Current state, future state analysis
 
-## Modeling processes
+### Modeling data flows
+
+### Modeling processes
 
 Hard to distinguish business process from IT process from work
 
+### Modeling systems architecture
+
 ## Choosing software
 
-## Modeling systems architecture
-
-## Governance plan
+# Monitoring & governance
 
 ... 

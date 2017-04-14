@@ -20,16 +20,16 @@
 	- [RACI plan](#raci-plan)
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements analysis](#requirements-analysis)
-	- [Current state, future state analysis](#current-state,-future-state-analysis)
-	- [User personas](#user-personas)
-	- [Use cases](#use-cases)
-	- [User stories](#user-stories)
+		- [User personas](#user-personas)
+		- [Use cases](#use-cases)
+		- [User stories](#user-stories)
 	- [Prototyping UI](#prototyping-ui)
-	- [Modeling data flow](#modeling-data-flow)
-	- [Modeling processes](#modeling-processes)
+	- [Current state, future state analysis](#current-state,-future-state-analysis)
+		- [Modeling data flows](#modeling-data-flows)
+		- [Modeling processes](#modeling-processes)
+		- [Modeling systems architecture](#modeling-systems-architecture)
 	- [Choosing software](#choosing-software)
-	- [Modeling systems architecture](#modeling-systems-architecture)
-	- [Governance plan](#governance-plan)
+- [Monitoring & governance](#monitoring-&-governance)
 </td></tr></table>
 # What is project management?
 
@@ -84,31 +84,31 @@ Writing an executive summary
 
 ## Requirements analysis
 
-## Current state, future state analysis
-
-## User personas
+### User personas
 
 I need to X in order to Y
 List of goals
 Pain points
 Scenarios
 
-## Use cases
+### Use cases
 
-## User stories
+### User stories
 
 ## Prototyping UI
 
-## Modeling data flow
+## Current state, future state analysis
 
-## Modeling processes
+### Modeling data flows
+
+### Modeling processes
 
 Hard to distinguish business process from IT process from work
 
+### Modeling systems architecture
+
 ## Choosing software
 
-## Modeling systems architecture
-
-## Governance plan
+# Monitoring & governance
 
 ... 

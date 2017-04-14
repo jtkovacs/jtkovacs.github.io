@@ -11,7 +11,7 @@
 
 ### PESTEL analysis
 
-A systematic review of the broadest trends and forces that constitute the business environment:
+Systematic review of the broadest trends and forces that constitute the business environment, to identify the implications for organizational strategy (since projects should be related to an organization's strategic goals):
 
 - **Political:** trade policy, international relations, fiscal policy, electoral cycle, tax policy
 - **Economic:** unemployment, disposable income, exchange rates, interest rates, trade tariffs, inflation, taxation 
@@ -20,7 +20,17 @@ A systematic review of the broadest trends and forces that constitute the busine
 - **Environmental:** ecological impacts of operations, consumer attitudes
 - **Legal:** patents & licensing, employment law, consumer protections, industry-specific regulations, environmental protections, competitive regulations
 
-### Five forces analysis
+### Porter's five forces analysis
+
+Framework for evaluating the intensity of competition in a specific market or industry, which may have implications for whether a project is worth undertaking or may point to profitable niches:
+
+- Bargaining power
+    - of consumers
+    - of suppliers
+- Threat
+    - of established competitors
+    - of new entrants
+    - of product substitutes
 
 ### SWOT analysis
 

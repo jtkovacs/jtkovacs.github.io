@@ -169,7 +169,7 @@ Per Collella (2009), effective organizational communication requires a **communi
 Per PMI (2013):
  
 - Be able to sell people on the strategic value of communication
-- Know who you need to talk to, and how much [(see: RACI plan)](#RACI-plan)
+- Know who you need to talk to, and how much [(see: RACI plan)](#raci-plan)
 - Plan should specify modes of communication; adjust to people's habits where possible
 
 Scheduling:

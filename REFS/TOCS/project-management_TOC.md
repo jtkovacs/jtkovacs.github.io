@@ -85,10 +85,12 @@ Also called need-gap analysis, need analysis, or need assessment. Gap analysis i
 
 ### Stakeholder analysis & RACI plans
 
-The general aim is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan. Different authors present different stakeholder typologies. Per Rabinowitz (n.d.):
+The general aim is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan that delimits roles for different stakeholders. 
+
+Different authors present different stakeholder typologies; per Rabinowitz (n.d.):
 
 - **Primary** stakeholders use a system directly 
-- **Secondary** stakeholders have only indirect contact)
+- **Secondary** stakeholders have only indirect contact
 - **Key** stakeholders have decision-making authority
 
 Rabinowitz also maps stakeholder groups on axes of interest and influence:
@@ -101,7 +103,7 @@ Rabinowitz also maps stakeholder groups on axes of interest and influence:
 
 Per Leffingwell (2010):
 
-- **Users**
+- **Users** are stakeholders
 - **System stakeholders** are those who:
     - Will use the system
     - Will work with those who use the system
@@ -110,17 +112,22 @@ Per Leffingwell (2010):
     - Have a vested interest in the project's budget and schedule
     - Will be involved in marketing, selling, installing, or maintaining the system
     
-Stakeholder interest may be synthesized through a combination of facilitation (seeking consensus) and leading (executive decision).
+Once identified, decisions must be made about levels of stakeholder involvement:
 
-Levels of stakeholder involvement:
-    Kept informed
-    Consulted
-    Involved in development
-    Authority to decide key outcomes
-    
+- Kept informed
+- Consulted
+- Involved in development
+- Authority to decide key outcomes
+  
+A RACI plan can capture stakeholder roles as well as roles for those involved in executing the project:
+
+- 
+  
 ### Force field analysis
 
-Facilitates organizational change by enumerating the forces that help or hinder an organization's ability to make change. (Individual people may constitute a force!)
+Facilitates organizational change by enumerating the forces that help or hinder an organization's ability to make change (note that individual people may constitute a force).
+
+![Example force field analysis](https://www.odi.org/sites/odi.org.uk/files/odi-assets/embedded-images/Forcefield.gif)
 
 ## Writing a business case or proposal
 
@@ -141,6 +148,13 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 <td>**Proofread**</td></tr>
 </table>
 
+Per Clayton (2003), some thoughts about writing an executive summary for a business proposal:
+
+- An executive summary is not a summary; it's an articulation of the business case.
+- Can't just echo the RFP, because readers of the full RFP and the executive summary differ.
+- You're not just competing against other respondents; you're competing against inertia, since the client may ultimately do nothing.
+- Describe your solution in terms of business outcomes; don't get into the technical details.
+
 ## Writing a project charter
     
 Project Charter
@@ -153,25 +167,24 @@ Project Mandate
 
 ### Success criteria
 
-
 # Planning
 
 ## Implementation planning
 
-Scheduling
+Scheduling:
 
-    Critical Path
-    Crash
-    Gate
-    Milestone
-    Gantt Chart
-    PERT Chart
+- Critical Path
+- Crash
+- Gate
+- Milestone
+- Gantt Chart
+- PERT Chart
 
 Monitoring and Reporting
 
-    CARDI Log – (Constraints/Assumptions/Risks/Dependencies/Issues)
-    RAG Status
-    Project Dashboard
+- CARDI Log – (Constraints/Assumptions/Risks/Dependencies/Issues)
+- RAG Status
+- Project Dashboard
 
 ## Work breakdown structure
 
@@ -211,6 +224,9 @@ Hard to distinguish business process from IT process from work
 ... 
 
 # Sources
+
+Clayton, J. (2003). Writing an executive summary that means business. _Harvard Management Communication Letter._
+
 
 Leffingwell, D. (2010). Stakeholders, user personas, and user experiences. In _Agile software requirements: Lean requirements practices for teams, programs, and the enterprise._ Boston, MA: Addison-Wesley Professional.
 

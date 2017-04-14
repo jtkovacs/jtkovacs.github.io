@@ -41,13 +41,13 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 
 <table>
 <tr>
-<td style="text-align:left; width:400px;">1. Failure to focus on the client’s business problems and payoffs; the content sounds generic 
+<td style="text-align:left; width:450px;">1. Failure to focus on the client’s business problems and payoffs; the content sounds generic 
 2. No clear differentiation of this customer compared with other customers
 3. Failure to offer a compelling value proposition and clear solution.</td>
 <td>**Research the client**</td>
 </tr>
 <tr>
-<td>4. No persuasive structure --- the proposal is an "information dump". </td>
+<td style="text-align:left;">4. No persuasive structure --- the proposal is an "information dump". </td>
 <td>**Select, edit, curate!**</td>
 </tr>
 <tr>

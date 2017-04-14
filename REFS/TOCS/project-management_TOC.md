@@ -1,7 +1,8 @@
 <table class="TOC"><tr><td>- [What is project management?](#what-is-project-management?)
+	- [Project Life Cycle (PLC)](#project-life-cycle-(plc))
 	- [Systems Development Lifecycle (SDLC)](#systems-development-lifecycle-(sdlc))
 	- [Agile](#agile)
-- [Launching a project](#launching-a-project)
+- [Initiating a project](#initiating-a-project)
 	- [Evaluating desirability & feasibility](#evaluating-desirability-&-feasibility)
 		- [PESTEL analysis](#pestel-analysis)
 		- [Porter's five forces analysis](#porter's-five-forces-analysis)
@@ -35,12 +36,21 @@
 </td></tr></table>
 # What is project management?
 
+## Project Life Cycle (PLC)
+
+Per Watt (2014):
+
+1. Initiation
+2. Planning
+3. Implementation/Execution
+4. Closing
+
 ## Systems Development Lifecycle (SDLC)
 
 ## Agile
 
 
-# Launching a project
+# Initiating a project
 
 ## Evaluating desirability & feasibility
 
@@ -156,7 +166,7 @@ Per Clayton (2003), some thoughts about writing an executive summary for a busin
 
 - An executive summary is not a summary; it's an articulation of the business case.
 - Can't just echo the RFP, because readers of the full RFP and the executive summary differ.
-- You're not just competing against other respondents; you're competing against inertia, since the client may ultimately do nothing.
+- Beyond other respondents, you're competing against inertia (since the client may ultimately do nothing).
 - Describe your solution in terms of business outcomes; don't get into the technical details.
 
 ## Writing a project charter
@@ -238,3 +248,5 @@ Leffingwell, D. (2010). Stakeholders, user personas, and user experiences. In _A
 Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
 
 Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interests. In _Community Tool Box._ Work Group for Community Health and Development at Kansas State University. Retrieved from http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main
+
+Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/

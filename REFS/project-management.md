@@ -49,7 +49,7 @@ Also called need-gap analysis, need analysis, or need assessment. Gap analysis i
 | --- | --- | --- |
 | 12 widgets daily | 2 widgets | Hire more workers |
 
-### Stakeholder analysis & RACI plans
+### Stakeholder analysis
 
 The general aim is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance and level of stakeholder influence; and develop an action plan that delimits roles for different stakeholders. 
 
@@ -78,12 +78,18 @@ Rabinowitz also maps stakeholder groups on axes of interest and influence:
 <tr><th>Low influence</th><td>Apathetics</td><td>Defenders</td></tr>
 </table>
     
-Once identified, decisions must be made about levels of stakeholder involvement. A RACI plan can capture stakeholder roles as well as roles for those involved in executing the project (Kantor, 2012):
+#### RACI plan
+    
+Once identified, decisions must be made about levels of stakeholder involvement. A RACI plan can capture stakeholder roles as well as roles for those involved in executing the project. Per Kantor (2012):
 
-- Kept informed
-- Consulted
-- Involved in development
-- Authority to decide key outcomes
+1. Identify all the tasks involved in delivering the project and list them on the left-hand side of the chart in completion order.
+2. Identify all the project stakeholders and list them along the top of the chart.
+3. Complete the cells of the model identifying who has **responsibility (R)**, **accountability (A)** and who will be **consulted (C)** and **informed (I)** for each task.
+4. Validate and, if needed, amend cells:
+    a. Ensure every task has at least one R, but no more than needed to accomplish the work.
+    b. Ensure every task has one A, and no more.
+    c. Ensure that all participation levels are the minimum necessary, e.g. downgrade from C to I where possible.
+    d. Ensure that stakeholders accept their roles.
   
 ### Force field analysis
 

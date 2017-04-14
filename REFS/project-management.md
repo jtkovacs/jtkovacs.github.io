@@ -51,9 +51,20 @@ Also called need-gap analysis, need analysis, or need assessment. Gap analysis i
 
 ### Stakeholder analysis & RACI plans
 
-The general aim is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan that delimits roles for different stakeholders. 
+The general aim is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance and level of stakeholder influence; and develop an action plan that delimits roles for different stakeholders. 
 
-Different authors present different stakeholder typologies; per Rabinowitz (n.d.):
+Different authors present different stakeholder typologies. Per Leffingwell (2010):
+
+- **Users** are stakeholders
+- **System stakeholders** are those who:
+    - Will use the system
+    - Will work with those who use the system
+    - Will be impacted by the deployment and operation of a system
+- **Project stakeholders** are those who:
+    - Have a vested interest in the project's budget and schedule
+    - Will be involved in marketing, selling, installing, or maintaining the system
+
+Per Rabinowitz (n.d.):
 
 - **Primary** stakeholders use a system directly 
 - **Secondary** stakeholders have only indirect contact
@@ -66,28 +77,13 @@ Rabinowitz also maps stakeholder groups on axes of interest and influence:
 <tr><th>High influence</th><td>Latents</td><td>Promoters</td></tr>
 <tr><th>Low influence</th><td>Apathetics</td><td>Defenders</td></tr>
 </table>
-
-Per Leffingwell (2010):
-
-- **Users** are stakeholders
-- **System stakeholders** are those who:
-    - Will use the system
-    - Will work with those who use the system
-    - Will be impacted by the deployment and operation of a system
-- **Project stakeholders** are those who:
-    - Have a vested interest in the project's budget and schedule
-    - Will be involved in marketing, selling, installing, or maintaining the system
     
-Once identified, decisions must be made about levels of stakeholder involvement:
+Once identified, decisions must be made about levels of stakeholder involvement. A RACI plan can capture stakeholder roles as well as roles for those involved in executing the project (Kantor, 2012):
 
 - Kept informed
 - Consulted
 - Involved in development
 - Authority to decide key outcomes
-  
-A RACI plan can capture stakeholder roles as well as roles for those involved in executing the project:
-
-- 
   
 ### Force field analysis
 
@@ -99,9 +95,10 @@ Facilitates organizational change by enumerating the forces that help or hinder 
 
 Overall, a business case must clearly outline a problem and a solution. If it's a proposal (meaning you must convince someone to hire you), you also need to demonstrate your credibility and capacity to deliver the solution.
 
-Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of proposal writing and their remedies:
+Per Tom Sant as summarized by Obuchowski (2015):
 
 <table>
+<tr><th>Proposal problem</th><th>Remedy</th></tr>
 <tr><td style="text-align:left; width:420px;">Failure to focus on the client’s business problems and payoffs; the content sounds generic.</td>
 <td style="width:160px;" rowspan=3>**Research the client**</td></tr>
 <tr><td style="text-align:left;">No clear differentiation of this customer compared with other customers.</td></tr>
@@ -193,6 +190,7 @@ Hard to distinguish business process from IT process from work
 
 Clayton, J. (2003). Writing an executive summary that means business. _Harvard Management Communication Letter._
 
+Kantor, B. (2012, May 22). How to design a successful RACI project plan. _CIO._ Retrieved from http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html
 
 Leffingwell, D. (2010). Stakeholders, user personas, and user experiences. In _Agile software requirements: Lean requirements practices for teams, programs, and the enterprise._ Boston, MA: Addison-Wesley Professional.
 

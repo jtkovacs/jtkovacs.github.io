@@ -91,15 +91,15 @@ Different authors present different stakeholder typologies. Per Leffingwell (201
 
 Two typologies per Rabinowitz (n.d.):
 
+- **Primary** stakeholders use a system directly 
+- **Secondary** stakeholders have only indirect contact
+- **Key** stakeholders have decision-making authority
+
 <table>
 <tr><th></th><th>Low interest</th><th>High interest</th></tr>
 <tr><th>High influence</th><td>Latents</td><td>Promoters</td></tr>
 <tr><th>Low influence</th><td>Apathetics</td><td>Defenders</td></tr>
 </table>
-
-- **Primary** stakeholders use a system directly 
-- **Secondary** stakeholders have only indirect contact
-- **Key** stakeholders have decision-making authority
 
 #### RACI plan
     
@@ -107,9 +107,9 @@ Once identified, decisions must be made about levels of stakeholder involvement.
 
 1. Identify all the tasks involved in delivering the project and list them on the left-hand side of the chart in completion order.
 2. Identify all the project stakeholders and list them along the top of the chart.
-3. Complete the cells of the model identifying who has 
-    a. **responsibility (R)** and  **accountability (A)** 
-    b. and who will be **consulted (C)** and **informed (I)** for each task.
+3. Complete the cells of the model identifying
+    a. who has **responsibility (R)** and  **accountability (A)**, and 
+    b. who will be **consulted (C)** and **informed (I)** for each task [(see Communications plan)](#communications-plan).
 4. Validate and, if needed, amend cells:
     a. Ensure every task has at least one R, but no more than needed to accomplish the work.
     b. Ensure every task has one A, and no more.

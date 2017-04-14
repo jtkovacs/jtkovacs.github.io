@@ -25,14 +25,23 @@ Systematic review of the broadest trends and forces that constitute the business
 Framework for evaluating the intensity of competition in a specific market or industry, which may have implications for whether a project is worth undertaking or may point to profitable niches:
 
 - Bargaining power
-    - of consumers
-    - of suppliers
+    - of **consumers**
+    - of **suppliers**
 - Threat
-    - of established competitors
-    - of new entrants
-    - of product substitutes
+    - of **established competitors**
+    - of **new entrants**
+    - of **product substitutes**
 
 ### SWOT analysis
+
+Framework for making connections between a company's external landscape and internal characteristics:
+
+- Internal
+    - Strengths
+    - Weaknesses
+- External
+    - Opportunities
+    - Threats
 
 ### Gap analysis
 

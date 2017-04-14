@@ -2,12 +2,12 @@
 	- [Systems Development Lifecycle (SDLC)](#systems-development-lifecycle-(sdlc))
 	- [Agile](#agile)
 - [Launching a project](#launching-a-project)
-	- [Evaluating feasibility & desirability](#evaluating-feasibility-&-desirability)
+	- [Evaluating desirability & feasibility](#evaluating-desirability-&-feasibility)
 		- [PESTEL analysis](#pestel-analysis)
 		- [Porter's five forces analysis](#porter's-five-forces-analysis)
 		- [SWOT/SLOT analysis](#swot/slot-analysis)
 		- [Gap analysis](#gap-analysis)
-		- [Stakeholder analysis](#stakeholder-analysis)
+		- [Stakeholder analysis & RACI plans](#stakeholder-analysis-&-raci-plans)
 		- [Force field analysis](#force-field-analysis)
 	- [Writing a business case or proposal](#writing-a-business-case-or-proposal)
 	- [Writing a project charter](#writing-a-project-charter)
@@ -18,7 +18,6 @@
 	- [Implementation planning](#implementation-planning)
 	- [Work breakdown structure](#work-breakdown-structure)
 	- [Communications plan](#communications-plan)
-	- [RACI plan](#raci-plan)
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements analysis](#requirements-analysis)
 		- [User personas](#user-personas)
@@ -42,7 +41,7 @@
 
 # Launching a project
 
-## Evaluating feasibility & desirability
+## Evaluating desirability & feasibility
 
 PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but can also be scoped for projects.
 
@@ -84,37 +83,40 @@ Also called need-gap analysis, need analysis, or need assessment. Gap analysis i
 | --- | --- | --- |
 | 12 widgets daily | 2 widgets | Hire more workers |
 
-### Stakeholder analysis
+### Stakeholder analysis & RACI plans
 
-identify stakeholders and analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan.
+The general aim is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan. Different authors present different stakeholder typologies. Per Rabinowitz (n.d.):
+
+- **Primary** stakeholders use a system directly 
+- **Secondary** stakeholders have only indirect contact)
+- **Key** stakeholders have decision-making authority
+
+Rabinowitz also maps stakeholder groups on axes of interest and influence:
+
+| | Low interest | High interest |
+| --- | --- | --- |
+| High influence | Latents | Promoters |
+| Low influence | Apathetics | Defenders |
 
 Per Leffingwell (2010):
 
-    Users are only ONE kind of stakeholder.
-    System stakeholders are those who:
-        Will use the system
-        Will work with those who use the system
-        Will be impacted by the deployment and operation of a system
-    Project stakeholders are those who:
-        Have a vested interest in the project's budget and schedule
-        Will be involved in marketing, selling, installing, or maintaining the system
-    Stakeholder interest may be synthesized through a combination of facilitation (seeking consensus) and leading (executive decision).
-    Levels of stakeholder involvement:
-        Kept informed
-        Consulted
-        Involved in development
-        Authority to decide key outcomes
-    From each stakeholder, we need to learn what they expect from the system and what activities they want to perform with the system.
+- **Users**
+- **System stakeholders** are those who:
+    - Will use the system
+    - Will work with those who use the system
+    - Will be impacted by the deployment and operation of a system
+- **Project stakeholders** are those who:
+    - Have a vested interest in the project's budget and schedule
+    - Will be involved in marketing, selling, installing, or maintaining the system
     
-Per Rabinowitz (n.d.):
+Stakeholder interest may be synthesized through a combination of facilitation (seeking consensus) and leading (executive decision).
 
-    Primary (direct use), secondary (indirect contact), key (authority for decisions)
-    Axes of interest and influence:
-        Promoters have both great interest in the effort and the power to help make it successful (or to derail it)
-        Defenders have a vested interest and can voice their support in the community, but have little actual power to influence the effort in any way
-        Latents have no particular interest or involvement in the effort, but have the power to influence it greatly if they become interested
-        Apathetics have little interest and little power, and may not even know the effort exists
-
+Levels of stakeholder involvement:
+    Kept informed
+    Consulted
+    Involved in development
+    Authority to decide key outcomes
+    
 ### Force field analysis
 
 Facilitates organizational change by enumerating the forces that help or hinder an organization's ability to make change. (Individual people may constitute a force!)
@@ -173,9 +175,6 @@ Monitoring and Reporting
 ## Work breakdown structure
 
 ## Communications plan
-
-## RACI plan
-
 
 # Analysis, design & specification
 

@@ -16,8 +16,8 @@
 		- [Vision & success criteria](#vision-&-success-criteria)
 		- [Defining & managing scope](#defining-&-managing-scope)
 - [Project planning](#project-planning)
-	- [Agile vs. traditional approaches](#agile-vs.-traditional-approaches)
-	- [Traditional approach ](#traditional-approach-)
+	- [In Agile methodologies](#in-agile-methodologies)
+	- [In lifecycle methodologies](#in-lifecycle-methodologies)
 		- [Communications plan](#communications-plan)
 		- [Work breakdown structure](#work-breakdown-structure)
 		- [Budgeting](#budgeting)
@@ -221,14 +221,14 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 # Project planning
 
-## Agile vs. traditional approaches
+## In Agile methodologies
 
 In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (n.d.), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
 
 - In place of a schedule, a stack of prioritized requirements with detailed requirements modeling done 'just in time';
 - In place of a budget, funding is continuously adjusted by product recipients in response to the value delivered by products.
 
-## Traditional approach 
+## In lifecycle methodologies
 
 ### Communications plan
 

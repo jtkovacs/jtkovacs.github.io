@@ -48,7 +48,7 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 <td style="text-align:left;">4. No persuasive structure --- the proposal is an "information dump". </td>
 <td>**Select, edit, curate!**</td>
 </tr><tr>
-<td style="text-align:left;>5. Key points are difficult to read because they’re full of jargon, too long, or too technical. </td>
+<td style="text-align:left;">5. Key points are difficult to read because they’re full of jargon, too long, or too technical. </td>
 <td>**Simplify language**</td>
 </tr><tr>
 <td style="text-align:left;">6. Key points are buried --- no punch, no highlighting.</td>

@@ -36,6 +36,13 @@
 </td></tr></table>
 # What is project management?
 
+Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices may help:
+
+- Focus of strategy and stakeholders, not exclusively budget and scheduling
+- Ensure talent is sufficient to execute the project
+- Align team incentives with project incentives and have adequate team infrastructure
+- Have excellent project management, including short delivery cycles and quality checks
+
 ## Project Life Cycle (PLC)
 
 Per Watt (2014):
@@ -55,6 +62,7 @@ Per Watt (2014):
 
 ## Agile
 
+- https://hbr.org/video/4846148015001/a-quick-introduction-to-agile-management
 
 
 
@@ -189,6 +197,8 @@ Project Mandate
 
 ### Scope
 
+Per Sheen (2015),  
+
 ### Success criteria
 
 
@@ -263,6 +273,8 @@ Hard to distinguish business process from IT process from work
 
 # Sources
 
+Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects on time, on budget, and on value. McKinsey & Company. Retrieved from http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value
+
 Clayton, J. (2003). Writing an executive summary that means business. _Harvard Management Communication Letter._
 
 Collella, H. (2009). Effective communications: A strategy. Gartner.
@@ -276,5 +288,7 @@ Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Har
 Project Management Institute (PMI). (2013). Communication: The message is clear.
 
 Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interests. In _Community Tool Box._ Work Group for Community Health and Development at Kansas State University. Retrieved from http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main
+
+Sheen, R. (2015). How to manage scope creep. _Harvard Business Review._ Retrieved from https://hbr.org/video/2942763785001/how-to-manage-scope-creep
 
 Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/   

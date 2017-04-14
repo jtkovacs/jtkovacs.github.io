@@ -39,13 +39,15 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 6. Key points are buried --- no punch, no highlighting. --> **Use structuring devices thoughtfully**
 7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. --> **Proofread**
 
-<table><tr>
-<td style="text-align:left; width:500px;">
-- Failure to focus on the client’s business problems and payoffs; the content sounds generic.
-- No clear differentiation of this customer compared with other customers.
-- Failure to offer a compelling value proposition and clear solution.</td>
-<td style="width:160px;">**Research the client**</td>
-</tr><tr>
+<table>
+<tr>
+<td style="text-align:left; width:500px;">Failure to focus on the client’s business problems and payoffs; the content sounds generic.</td>
+<td style="width:160px; rowspan=3;">**Research the client**</td>
+</tr>
+<tr><td>No clear differentiation of this customer compared with other customers.</td></tr>
+<tr><td>Failure to offer a compelling value proposition and clear solution.</td></tr>
+</table>
+
 <td style="text-align:left;">- No persuasive structure --- the proposal is an "information dump".
 - Key points are difficult to read because they’re full of jargon, too long, or too technical. 
 - Key points are buried --- no punch, no highlighting.</td>

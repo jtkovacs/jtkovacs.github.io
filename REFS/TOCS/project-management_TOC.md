@@ -148,7 +148,7 @@ Once identified, decisions must be made about levels of stakeholder involvement.
 1. Identify all the tasks involved in delivering the project and list them on the left-hand side of the chart in completion order.
 2. Identify all the project stakeholders and list them along the top of the chart.
 3. Complete the cells of the model identifying
-    a. who has **responsibility (R)** and  **accountability (A)**, and 
+    a. who has **responsibility (R)** and  **accountability (A),** and 
     b. who will be **consulted (C)** and **informed (I)** for each task [(see: Communications plan)](#communications-plan).
 4. Validate and, if needed, amend cells:
     a. Ensure every task has at least one R, but no more than needed to accomplish the work.
@@ -169,7 +169,7 @@ Overall, a business case must clearly outline a problem and a solution. If it's 
 Per Tom Sant as summarized by Obuchowski (2015):
 
 <table>
-<tr><th>Proposal problem</th><th>Remedy</th></tr>
+<tr><th>Problem with business proposal</th><th>Remedy</th></tr>
 <tr><td style="text-align:left; width:420px;">Failure to focus on the client’s business problems and payoffs; the content sounds generic.</td>
 <td style="width:160px;" rowspan=3>**Research the client**</td></tr>
 <tr><td style="text-align:left;">No clear differentiation of this customer compared with other customers.</td></tr>

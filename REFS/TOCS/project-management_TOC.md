@@ -39,7 +39,7 @@
 
 Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes:
 
-- Focus of strategy and stakeholders, not exclusively budget and scheduling
+- Focus on strategy and stakeholders, not exclusively budget and scheduling
 - Ensure talent is sufficient to execute the project
 - Align team incentives with project incentives and have adequate team infrastructure
 - Have excellent project management, including short delivery cycles and quality checks
@@ -126,13 +126,11 @@ Different authors present different stakeholder typologies. Per Leffingwell (201
     - Have a vested interest in the project's budget and schedule
     - Will be involved in marketing, selling, installing, or maintaining the system
 
-Per Rabinowitz (n.d.):
+Two typologies per Rabinowitz (n.d.):
 
 - **Primary** stakeholders use a system directly 
 - **Secondary** stakeholders have only indirect contact
 - **Key** stakeholders have decision-making authority
-
-Rabinowitz also maps stakeholder groups on axes of interest and influence:
 
 <table>
 <tr><th></th><th>Low interest</th><th>High interest</th></tr>

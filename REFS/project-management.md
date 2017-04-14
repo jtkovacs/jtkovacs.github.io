@@ -91,16 +91,16 @@ Different authors present different stakeholder typologies. Per Leffingwell (201
 
 Two typologies per Rabinowitz (n.d.):
 
-- **Primary** stakeholders use a system directly 
-- **Secondary** stakeholders have only indirect contact
-- **Key** stakeholders have decision-making authority
-
 <table>
 <tr><th></th><th>Low interest</th><th>High interest</th></tr>
 <tr><th>High influence</th><td>Latents</td><td>Promoters</td></tr>
 <tr><th>Low influence</th><td>Apathetics</td><td>Defenders</td></tr>
 </table>
-    
+
+- **Primary** stakeholders use a system directly 
+- **Secondary** stakeholders have only indirect contact
+- **Key** stakeholders have decision-making authority
+
 #### RACI plan
     
 Once identified, decisions must be made about levels of stakeholder involvement. A RACI plan can capture stakeholder roles as well as roles for those involved in executing the project. Per Kantor (2012):

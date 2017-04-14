@@ -164,11 +164,13 @@ Project Mandate
 
 ## Communications plan
 
+Per Collella (2009), effective organizational communication requires a **communications strategy,** which includes (1) a core message that is not burdened with IT jargon, (2) the capacity to refine messages in response to stakeholder cues, and (3) assessment; a **communications plan** for institutionalizing and executing the strategy; and **communication delivery skills.**
+
 Per PMI (2013):
  
 - Be able to sell people on the strategic value of communication
-- Know who you need to talk to (see [RACI plan](#RACI-plan))
-- Communications plan should include preferred modes of communication; adjust to people's habits where possible
+- Know who you need to talk to, and how much [(see: RACI plan)](#RACI-plan)
+- Plan should specify modes of communication; adjust to people's habits where possible
 
 Scheduling:
 
@@ -224,6 +226,8 @@ Hard to distinguish business process from IT process from work
 # Sources
 
 Clayton, J. (2003). Writing an executive summary that means business. _Harvard Management Communication Letter._
+
+Collella, H. (2009). Effective communications: A strategy. Gartner.
 
 Kantor, B. (2012, May 22). How to design a successful RACI project plan. _CIO._ Retrieved from http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html
 

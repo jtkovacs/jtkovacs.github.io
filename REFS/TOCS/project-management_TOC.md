@@ -7,8 +7,8 @@
 		- [Porter's five forces analysis](#porter's-five-forces-analysis)
 		- [SWOT/SLOT analysis](#swot/slot-analysis)
 		- [Gap analysis](#gap-analysis)
-		- [Force field analysis](#force-field-analysis)
 		- [Stakeholder analysis](#stakeholder-analysis)
+		- [Force field analysis](#force-field-analysis)
 	- [Writing a business case or proposal](#writing-a-business-case-or-proposal)
 	- [Writing a project charter](#writing-a-project-charter)
 		- [Vision](#vision)
@@ -84,13 +84,40 @@ Also called need-gap analysis, need analysis, or need assessment. Gap analysis i
 | --- | --- | --- |
 | 12 widgets daily | 2 widgets | Hire more workers |
 
-### Force field analysis
-
-lists the forces that help or hinder an organization's ability to make change
-
 ### Stakeholder analysis
 
 identify stakeholders and analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan.
+
+Per Leffingwell (2010):
+
+    Users are only ONE kind of stakeholder.
+    System stakeholders are those who:
+        Will use the system
+        Will work with those who use the system
+        Will be impacted by the deployment and operation of a system
+    Project stakeholders are those who:
+        Have a vested interest in the project's budget and schedule
+        Will be involved in marketing, selling, installing, or maintaining the system
+    Stakeholder interest may be synthesized through a combination of facilitation (seeking consensus) and leading (executive decision).
+    Levels of stakeholder involvement:
+        Kept informed
+        Consulted
+        Involved in development
+        Authority to decide key outcomes
+    From each stakeholder, we need to learn what they expect from the system and what activities they want to perform with the system.
+    
+Per Rabinowitz (n.d.):
+
+    Primary (direct use), secondary (indirect contact), key (authority for decisions)
+    Axes of interest and influence:
+        Promoters have both great interest in the effort and the power to help make it successful (or to derail it)
+        Defenders have a vested interest and can voice their support in the community, but have little actual power to influence the effort in any way
+        Latents have no particular interest or involvement in the effort, but have the power to influence it greatly if they become interested
+        Apathetics have little interest and little power, and may not even know the effort exists
+
+### Force field analysis
+
+Facilitates organizational change by enumerating the forces that help or hinder an organization's ability to make change. (Individual people may constitute a force!)
 
 ## Writing a business case or proposal
 
@@ -185,6 +212,8 @@ Hard to distinguish business process from IT process from work
 
 # Sources
 
+Leffingwell, D. (2010). Stakeholders, user personas, and user experiences. In _Agile software requirements: Lean requirements practices for teams, programs, and the enterprise._ Boston, MA: Addison-Wesley Professional.
+
 Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
 
-
+Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interests. In _Community Tool Box._ Work Group for Community Health and Development at Kansas State University. Retrieved from http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main

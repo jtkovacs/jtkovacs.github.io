@@ -18,7 +18,7 @@ Project Life Cycle (PLC) per Watt (2014):
 3. Implementation/Execution
 4. Closing
 
-Systems Development Lifecycle (SDLC) per Annabi & McGann (n.d.):
+Systems Development Lifecycle (SDLC) per Annabi and McGann (2014):
 
 1. Planning
 2. Analysis
@@ -272,6 +272,8 @@ Hard to distinguish business process from IT process from work
 # Sources
 
 Ambler, S. (n.d.). Comparing approaches to budgeting and estimating software development projects. Retrieved from http://www.ambysoft.com/essays/comparingEstimatingApproaches.html
+
+Annabi, H. & McGann, S. (2014). Unit 1---What is MIS? In _The real deal on MIS._
 
 Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects on time, on budget, and on value. McKinsey & Company. Retrieved from http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value
 

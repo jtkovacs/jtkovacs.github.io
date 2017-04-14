@@ -98,6 +98,12 @@ Rabinowitz also maps stakeholder groups on axes of interest and influence:
 | **High influence** | Latents | Promoters |
 | **Low influence** | Apathetics | Defenders |
 
+<table>
+<tr><td></td><th>Low interest</th><th>High interest</th></tr>
+<tr><th>High influence</th><td>Latents</td><td>Promoters</td></tr>
+<tr><th>Low influence</th><td>Apathetics</td><td>Defenders</td></tr>
+</table>
+
 Per Leffingwell (2010):
 
 - **Users**

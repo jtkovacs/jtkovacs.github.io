@@ -109,7 +109,7 @@ Once identified, decisions must be made about levels of stakeholder involvement.
 2. Identify all the project stakeholders and list them along the top of the chart.
 3. Complete the cells of the model identifying
     a. who has **responsibility (R)** and  **accountability (A)**, and 
-    b. who will be **consulted (C)** and **informed (I)** for each task [(see Communications plan)](#communications-plan).
+    b. who will be **consulted (C)** and **informed (I)** for each task [(see: Communications plan)](#communications-plan).
 4. Validate and, if needed, amend cells:
     a. Ensure every task has at least one R, but no more than needed to accomplish the work.
     b. Ensure every task has one A, and no more.
@@ -189,7 +189,7 @@ Per Wikipedia (2017), a work breakdown structure (WBS) is a **hierarchical decom
 - 80 hour rule: smallest element must not exceed 80 hours of work
 - Smallest element must be small enough to occur within the standard reporting period
 
-Once the hierarchy is established, it's the terminal elements that are budgeted and scheduled.
+Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Budgeting
 

@@ -92,6 +92,6 @@ Hard to distinguish business process from IT process from work
 
 # Sources
 
-Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter.
+Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
 
 

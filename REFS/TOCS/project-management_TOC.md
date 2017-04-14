@@ -47,7 +47,15 @@ Per Watt (2014):
 
 ## Systems Development Lifecycle (SDLC)
 
+1. Planning
+2. Analysis
+3. Design
+4. Development
+5. Implementation/Rollout
+
 ## Agile
+
+
 
 
 # Initiating a project
@@ -181,9 +189,22 @@ Project Mandate
 
 ### Success criteria
 
+
+
+
 # Planning
 
 ## Implementation planning
+
+## Work breakdown structure
+
+## Communications plan
+
+Per PMI (2013):
+ 
+- Be able to sell people on the strategic value of communication
+- Know who you need to talk to (see [RACI plan](#RACI-plan))
+- Communications plan should include preferred modes of communication; adjust to people's habits where possible
 
 Scheduling:
 
@@ -200,9 +221,8 @@ Monitoring and Reporting
 - RAG Status
 - Project Dashboard
 
-## Work breakdown structure
 
-## Communications plan
+
 
 # Analysis, design & specification
 
@@ -247,6 +267,8 @@ Leffingwell, D. (2010). Stakeholders, user personas, and user experiences. In _A
 
 Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
 
+Project Management Institute (PMI). (2013). Communication: The message is clear.
+
 Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interests. In _Community Tool Box._ Work Group for Community Health and Development at Kansas State University. Retrieved from http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main
 
-Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/
+Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/   

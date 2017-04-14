@@ -5,10 +5,10 @@
 	- [Evaluating feasibility & desirability](#evaluating-feasibility-&-desirability)
 		- [PESTEL analysis](#pestel-analysis)
 		- [Porter's five forces analysis](#porter's-five-forces-analysis)
-		- [SWOT analysis](#swot-analysis)
+		- [SWOT/SLOT analysis](#swot/slot-analysis)
 		- [Gap analysis](#gap-analysis)
-		- [Stakeholder analysis](#stakeholder-analysis)
 		- [Force field analysis](#force-field-analysis)
+		- [Stakeholder analysis](#stakeholder-analysis)
 	- [Writing a business case or proposal](#writing-a-business-case-or-proposal)
 	- [Writing a project charter](#writing-a-project-charter)
 		- [Vision](#vision)
@@ -16,6 +16,7 @@
 		- [Success criteria](#success-criteria)
 - [Planning](#planning)
 	- [Implementation planning](#implementation-planning)
+	- [Work breakdown structure](#work-breakdown-structure)
 	- [Communications plan](#communications-plan)
 	- [RACI plan](#raci-plan)
 - [Analysis, design & specification](#analysis,-design-&-specification)
@@ -43,6 +44,8 @@
 
 ## Evaluating feasibility & desirability
 
+PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but can also be scoped for projects.
+
 ### PESTEL analysis
 
 Systematic review of the broadest trends and forces that constitute the business environment, to identify the implications for organizational strategy (since projects should be related to an organization's strategic goals):
@@ -64,26 +67,30 @@ Framework for evaluating the intensity of competition in a specific market or in
 - Threat of **new entrants**
 - Threat of **product substitutes**
 
-### SWOT analysis
+### SWOT/SLOT analysis
 
 Framework for making connections between a company's external landscape and internal characteristics (which can be restricted to the scope of a single project). Data is collected and sorted into a matrix, with one matrix for each alternative under consideration:
 
 - Internal **strengths**
-- Internal **weaknesses**
+- Internal **weaknesses** or liabilities
 - External **opportunities**
 - External **threats**
 
 ### Gap analysis
 
-comparing current performance to desired performance, sometimes based on industry averages or industry leaders.
+Also called need-gap analysis, need analysis, or need assessment. Gap analysis is a way of ensuring that planned actions align with objectives and present a reasonable pathway from the current reality to the desired state. The 5 whys or fishbone/Ishikawa/cause-and-effect diagrams may be useful in analyzing the current reality to identify possible actions.
+
+| Objective | Reality | Action |
+| --- | --- | --- |
+| 12 widgets daily | 2 widgets | Hire more workers |
+
+### Force field analysis
+
+lists the forces that help or hinder an organization's ability to make change
 
 ### Stakeholder analysis
 
 identify stakeholders and analyze their interests and expectations; categorize interests and expectations based on importance; and develop an action plan.
-
-### Force field analysis
-
-lists the forces that drive or hinder an organization's strengths and weaknesses
 
 ## Writing a business case or proposal
 
@@ -105,6 +112,10 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 </table>
 
 ## Writing a project charter
+    
+Project Charter
+Project Initiation Document (PID)
+Project Mandate
 
 ### Vision
 
@@ -116,6 +127,23 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 # Planning
 
 ## Implementation planning
+
+Scheduling
+
+    Critical Path
+    Crash
+    Gate
+    Milestone
+    Gantt Chart
+    PERT Chart
+
+Monitoring and Reporting
+
+    CARDI Log – (Constraints/Assumptions/Risks/Dependencies/Issues)
+    RAG Status
+    Project Dashboard
+
+## Work breakdown structure
 
 ## Communications plan
 
@@ -159,5 +187,4 @@ Hard to distinguish business process from IT process from work
 
 Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
 
-Gretzky, W. (2010). Strategic planning and SWOT analysis. American College of Healtcare Executives. Health Administration Press. Retrieved from http://mydesievent.com/wp-content/uploads/2014/10/Harrison_Chapter5.pdf
 

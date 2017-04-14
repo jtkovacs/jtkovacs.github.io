@@ -74,17 +74,19 @@ Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of propos
 7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. --> **Proofread**
 
 <table><tr>
-<td style="text-align:left; width:500px;">1. Failure to focus on the client’s business problems and payoffs; the content sounds generic.
+<td style="text-align:left; width:500px;">
+1. Failure to focus on the client’s business problems and payoffs; the content sounds generic.
 2. No clear differentiation of this customer compared with other customers.
 3. Failure to offer a compelling value proposition and clear solution.</td>
 <td style="width:160px;">**Research the client**</td>
 </tr><tr>
-<td style="text-align:left;">4. No persuasive structure --- the proposal is an "information dump".
+<td style="text-align:left;">
+4. No persuasive structure --- the proposal is an "information dump".
 5. Key points are difficult to read because they’re full of jargon, too long, or too technical. 
 6. Key points are buried --- no punch, no highlighting.</td>
 <td>**Use structuring devices and simple language**</td>
 </tr><tr>
-<td style="text-align:left;">7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. </td>
+<td style="text-align:left;">7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes.</td>
 <td>**Proofread**</td>
 </tr></table>
 

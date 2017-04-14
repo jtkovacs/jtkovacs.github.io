@@ -9,7 +9,7 @@
 - [Planning](#planning)
 	- [Implementation planning](#implementation-planning)
 	- [Communications plan](#communications-plan)
-- [RACI plan](#raci-plan)
+	- [RACI plan](#raci-plan)
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements analysis](#requirements-analysis)
 	- [Current state, future state analysis](#current-state,-future-state-analysis)
@@ -21,7 +21,7 @@
 	- [Modeling processes](#modeling-processes)
 	- [Choosing software](#choosing-software)
 	- [Modeling systems architecture](#modeling-systems-architecture)
-	- [Governance pla](#governance-pla)
+	- [Governance plan](#governance-plan)
 </td></tr></table>
 # What is project management?
 
@@ -54,7 +54,7 @@ Current state, future state
 
 ## Communications plan
 
-# RACI plan
+## RACI plan
 
 
 # Analysis, design & specification
@@ -87,3 +87,5 @@ Hard to distinguish business process from IT process from work
 ## Modeling systems architecture
 
 ## Governance plan
+
+... 

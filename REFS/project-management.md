@@ -29,7 +29,7 @@ Current state, future state
 
 ## Communications plan
 
-# RACI plan
+## RACI plan
 
 
 # Analysis, design & specification
@@ -62,3 +62,5 @@ Hard to distinguish business process from IT process from work
 ## Modeling systems architecture
 
 ## Governance plan
+
+... 

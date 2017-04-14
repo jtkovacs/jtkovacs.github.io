@@ -27,7 +27,17 @@ identify stakeholders and analyze their interests and expectations; categorize i
 
 ## Writing a business case or proposal
 
-Writing an executive summary
+Overall, a business case must clearly outline a problem and a solution. If it's a proposal (meaning you must convince someone to hire you), you also need to demonstrate your credibility and capacity to deliver the solution.
+
+Per Tom Sant as summarized by Obuchowski (2015), the seven deadly sins of proposal writing and their remedies:
+
+1. Failure to focus on the client’s business problems and payoffs; the content sounds generic. --> **Research the client**
+2. No clear differentiation of this customer compared with other customers. --> **Research the client**
+3. Failure to offer a compelling value proposition and clear solution. --> **Research the client**
+4. No persuasive structure --- the proposal is an "information dump". --> **Select, edit, curate!**
+5. Key points are difficult to read because they’re full of jargon, too long, or too technical. --> **Simplify language**
+6. Key points are buried --- no punch, no highlighting. --> **Use structuring devices thoughtfully**
+7. Credibility killers --- misspellings, grammar and punctuation errors, use of the wrong client’s name, inconsistent formatting, and similar mistakes. --> **Proofread**
 
 ## Writing a project charter
 
@@ -79,3 +89,9 @@ Hard to distinguish business process from IT process from work
 # Monitoring & governance
 
 ... 
+
+# Sources
+
+Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter.
+
+

@@ -34,6 +34,18 @@
 - logs
 - paradata
 
+## Metadata association models
+
+Per Duval et al. (2002), thinking from the perspective of a metadata manager (not the user perspective), metadata may be:
+
+- **Embedded** within the markup of a resource, either automatically (as with cameras) or by a person, trained or untrained in resource description'
+- **Associated** with a resource, but stored and managed in a separate format;
+- **Third-party metadata**, maintained without any connection to the underlying resource.
+
+Per Pomerantz (2015), metadata stored internally is authoritative but static; metadata stored externally is flexible and required for resource discovery.
+
+
+
 
 # Metadata schemas AKA element sets AKA standards
 
@@ -72,7 +84,9 @@
 
 AKA structured data??
 
-### HTML & XML
+### HTML 
+
+## XML
 
 - DTD
 - DOM
@@ -86,18 +100,6 @@ AKA structured data??
 ### Relational databases
 
 ### DCMI abstract model
-
-
-
-# Metadata association models
-
-Per Duval et al. (2002), thinking from the perspective of a metadata manager (not the user perspective), metadata may be:
-
-- **Embedded** within the markup of a resource, either automatically (as with cameras) or by a person, trained or untrained in resource description'
-- **Associated** with a resource, but stored and managed in a separate format;
-- **Third-party metadata**, maintained without any connection to the underlying resource.
-
-Per Pomerantz (2015), metadata stored internally is authoritative but static; metadata stored externally is flexible and required for resource discovery.
 
 
 

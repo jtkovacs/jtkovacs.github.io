@@ -51,23 +51,6 @@
 
 # Metadata encoding schemes
 
-## Syntaxes
-
-AKA structured data??
-
-### HTML & XML
-
-- DTD
-- DOM
-
-### RDF
-
-"... an additional layer on top of XML that is intended to simplify the reuse of vocabulary terms across names" (Duval et al., 2002)
-
-### Relational databases
-
-### DCMI abstract model
-
 ## Controlled vocabularies
 
 - Library of Congress Subject Headings
@@ -82,6 +65,25 @@ AKA structured data??
     - "use for", "part of", "instance of"
 - Ontologies
 - [Tagging]
+
+## Syntaxes
+
+AKA structured data??
+
+### HTML & XML
+
+- DTD
+- DOM
+
+### RDF
+
+"... an additional layer on top of XML that is intended to simplify the reuse of vocabulary terms across names" (Duval et al., 2002)
+
+### OWL??
+
+### Relational databases
+
+### DCMI abstract model
 
 
 
@@ -133,8 +135,10 @@ There are practical considerations that arise in pursuit of these principles:
     - defererencability
     - sameAs
     - Facebook's OGP
-- schema.org
-    - microdata
+
+## Schema.org
+
+- microdata
 
 
     

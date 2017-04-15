@@ -22,10 +22,39 @@
        <a href="#what-is-a-metadata-element-set-or-standard?">
         What is a metadata element set or standard?
        </a>
+       <ul>
+        <li>
+         <a href="#dublin-core">
+          Dublin Core
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
-       <a href="#what-is-it-for?">
-        What is it for?
+       <a href="#metadata-syntaxes">
+        Metadata syntaxes
+       </a>
+       <ul>
+        <li>
+         <a href="#html">
+          HTML
+         </a>
+        </li>
+        <li>
+         <a href="#xml">
+          XML
+         </a>
+        </li>
+        <li>
+         <a href="#rdf">
+          RDF
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#metadata-association-models">
+        Metadata association models
        </a>
       </li>
       <li>
@@ -52,26 +81,69 @@
     What is a metadata element set or standard?
    </a>
   </h1>
+  <h2>
+   <a name="dublin-core">
+    Dublin Core
+   </a>
+  </h2>
   <h1>
-   <a name="what-is-it-for?">
-    What is it for?
+   <a name="metadata-syntaxes">
+    Metadata syntaxes
    </a>
   </h1>
+  <h2>
+   <a name="html">
+    HTML
+   </a>
+  </h2>
+  <h2>
+   <a name="xml">
+    XML
+   </a>
+  </h2>
+  <h2>
+   <a name="rdf">
+    RDF
+   </a>
+  </h2>
+  <p>
+   "... an additional layer on top of XML that is intended to simplify the reuse of vocabulary terms across names" (Duval et al., 2002)
+  </p>
+  <h1>
+   <a name="metadata-association-models">
+    Metadata association models
+   </a>
+  </h1>
+  <p>
+   Per Duval et al. (2002), thinking from the perspective of a metadata manager (not the user perspective), metadata may be:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Embedded
+    </strong>
+    within the markup of a resource, either automatically (as with cameras) or by a person, trained or untrained in resource description'
+   </li>
+   <li>
+    <strong>
+     Associated
+    </strong>
+    with a resource, but stored and managed in a separate format;
+   </li>
+   <li>
+    <strong>
+     Third-party metadata
+    </strong>
+    , maintained without any connection to the underlying resource.
+   </li>
+  </ul>
   <h1>
    <a name="interoperability">
     Interoperability
    </a>
   </h1>
   <p>
-   Per Duval et al. (2002, my emphases), the goal is enabling "application designers to mix a variety of
-   <strong>
-    semantic modules
-   </strong>
-   within a common
-   <strong>
-    syntactic foundation".
-   </strong>
-   The semantic and machine ioteroperability of metadata is facilitated by adherance to the following principles:
+   Per Duval et al. (2002), "Semantics is about meaning; syntax is about form. Agreements about both are necessary for two communities to share metadata." The semantic and machine ioteroperability of metadata is facilitated by adherance to the following principles:
   </p>
   <ul>
    <li>
@@ -112,6 +184,46 @@
       localization: the adaptation of international standards to local needs
      </li>
     </ul>
+   </li>
+  </ul>
+  <p>
+   There are practical considerations that arise in pursuit of these principles:
+  </p>
+  <ul>
+   <li>
+    "The purpose of an application profile is to adapt or combine existing schemas into a package that is tailored to the functional requirements of a particular application, while retaining interoperability with the original base schemas". Application profiles must handle:
+    <ul>
+     <li>
+      Cardinality enforcement (optional/conditional/mandatory)
+     </li>
+     <li>
+      Value space restrictions
+     </li>
+     <li>
+      Relationship and dependency restrictions
+     </li>
+     <li>
+      Namespace declarations
+     </li>
+    </ul>
+   </li>
+   <li>
+    It is important to keep syntax standards and semantic standards independent
+   </li>
+   <li>
+    Tokens are machine-readable, so should be invariant; labels are meant for humans, and should vary locally
+   </li>
+   <li>
+    People are working on development of metadata registries to help metadata users access metadata standards, syntax schemas, and controlled vocabularies
+   </li>
+   <li>
+    Software should compensate for the tendency of users to fill out irrelevant metadata elements or leave relevant ones empty
+   </li>
+   <li>
+    Subjectivity of metadata
+   </li>
+   <li>
+    Balancing cataloguing (which produces metadata) and searching (based on machine-generated indexes); "Between these two extremes lies a broad range of metadata creation that can be automated to some degree, and which can be expected to grow in importance as advances in such areas as natural language processing, data mining, profile and pattern recognition algorithms become more effective.
    </li>
   </ul>
   <h1>

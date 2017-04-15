@@ -28,6 +28,9 @@
 
 ## Use metadata
 
+- data exhaust
+- logs
+- paradata
 
 
 # Metadata schemas AKA element sets AKA standards
@@ -49,6 +52,8 @@
 # Metadata encoding schemes
 
 ## Syntaxes
+
+AKA structured data??
 
 ### HTML & XML
 
@@ -95,6 +100,12 @@ Per Pomerantz (2015), metadata stored internally is authoritative but static; me
 # Interoperability and the semantic web
 
 - SEO & keyword stuffing
+- linked data
+    - defererencability
+    - sameAs
+    - Facebook's OGP
+- schema.org
+    - microdata
 
 Per Duval et al. (2002), "Semantics is about meaning; syntax is about form. Agreements about both are necessary for two communities to share metadata." The semantic and machine ioteroperability of metadata is facilitated by adherance to the following principles:
 

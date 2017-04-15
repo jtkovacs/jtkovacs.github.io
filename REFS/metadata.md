@@ -3,7 +3,9 @@
 
 - Metadata record
 
-## Descriptive metadata
+## Types of metadata
+
+### Descriptive metadata
 
 - Unique identifier
     - For books
@@ -13,7 +15,7 @@
     - For web, URI
         - URL
 
-## Administrative metadata
+### Administrative metadata
 
 - technical
 - structural
@@ -26,7 +28,7 @@
     - RightsDeclarationMD
 - METS
 
-## Use metadata
+### Use metadata
 
 - data exhaust
 - logs

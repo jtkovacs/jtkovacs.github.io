@@ -1,7 +1,8 @@
 <table class="TOC"><tr><td>- [What is metadata?](#what-is-metadata?)
-	- [Descriptive metadata](#descriptive-metadata)
-	- [Administrative metadata](#administrative-metadata)
-	- [Use metadata](#use-metadata)
+	- [Types of metadata](#types-of-metadata)
+		- [Descriptive metadata](#descriptive-metadata)
+		- [Administrative metadata](#administrative-metadata)
+		- [Use metadata](#use-metadata)
 - [Metadata schemas AKA element sets AKA standards](#metadata-schemas-aka-element-sets-aka-standards)
 	- [Dublin Core](#dublin-core)
 - [Metadata encoding schemes](#metadata-encoding-schemes)
@@ -23,7 +24,9 @@
 
 - Metadata record
 
-## Descriptive metadata
+## Types of metadata
+
+### Descriptive metadata
 
 - Unique identifier
     - For books
@@ -33,7 +36,7 @@
     - For web, URI
         - URL
 
-## Administrative metadata
+### Administrative metadata
 
 - technical
 - structural
@@ -46,7 +49,7 @@
     - RightsDeclarationMD
 - METS
 
-## Use metadata
+### Use metadata
 
 - data exhaust
 - logs

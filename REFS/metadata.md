@@ -97,15 +97,7 @@ Per Pomerantz (2015), metadata stored internally is authoritative but static; me
 
 
 
-# Interoperability and the semantic web
-
-- SEO & keyword stuffing
-- linked data
-    - defererencability
-    - sameAs
-    - Facebook's OGP
-- schema.org
-    - microdata
+# Interoperability
 
 Per Duval et al. (2002), "Semantics is about meaning; syntax is about form. Agreements about both are necessary for two communities to share metadata." The semantic and machine ioteroperability of metadata is facilitated by adherance to the following principles:
 
@@ -131,6 +123,18 @@ There are practical considerations that arise in pursuit of these principles:
 - Software should compensate for the tendency of users to fill out irrelevant metadata elements or leave relevant ones empty
 - Subjectivity of metadata 
 - Balancing cataloguing (which produces metadata) and searching (based on machine-generated indexes); "Between these two extremes lies a broad range of metadata creation that can be automated to some degree, and which can be expected to grow in importance as advances in such areas as natural language processing, data mining, profile and pattern recognition algorithms become more effective.
+
+
+
+# Semantic web
+
+- SEO & keyword stuffing
+- linked data
+    - defererencability
+    - sameAs
+    - Facebook's OGP
+- schema.org
+    - microdata
 
 
     

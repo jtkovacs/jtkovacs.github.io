@@ -1,21 +1,82 @@
 
 # What is metadata?
 
-# What is a metadata element set or standard?
+- Metadata record
+
+## Descriptive metadata
+
+- Unique identifier
+    - For books
+        - Library of Congress Classification (LCC)
+        - Dewey Decimal System
+        - ISBN
+    - For web, URI
+        - URL
+
+## Administrative metadata
+
+- technical
+- structural
+- provenance
+    - WC3
+- preservation
+    - PREMIS
+- rights
+    - CC Rel
+    - RightsDeclarationMD
+- METS
+
+## Use metadata
+
+
+
+# Metadata schemas AKA element sets AKA standards
+
+- Elements
+- Values
+    - Dates
+        - ISO 8601
+    - Format
+        - MIME types
 
 ## Dublin Core
 
+- Core terms
+- Qualifiers
 
 
-# Metadata syntaxes
 
-## HTML
+# Metadata encoding schemes
 
-## XML
+## Syntaxes
 
-## RDF
+### HTML & XML
+
+- DTD
+- DOM
+
+### RDF
 
 "... an additional layer on top of XML that is intended to simplify the reuse of vocabulary terms across names" (Duval et al., 2002)
+
+### Relational databases
+
+### DCMI abstract model
+
+## Controlled vocabularies
+
+- Library of Congress Subject Headings
+- Authority files
+    - VIAF
+- Thesaurus
+    - J. Paul Getty thesaurus of geographic names
+    - network topologies
+        - ring
+        - star
+        - tree
+    - "use for", "part of", "instance of"
+- Ontologies
+- [Tagging]
 
 
 
@@ -27,9 +88,13 @@ Per Duval et al. (2002), thinking from the perspective of a metadata manager (no
 - **Associated** with a resource, but stored and managed in a separate format;
 - **Third-party metadata**, maintained without any connection to the underlying resource.
 
+Per Pomerantz (2015), metadata stored internally is authoritative but static; metadata stored externally is flexible and required for resource discovery.
 
 
-# Interoperability
+
+# Interoperability and the semantic web
+
+- SEO & keyword stuffing
 
 Per Duval et al. (2002), "Semantics is about meaning; syntax is about form. Agreements about both are necessary for two communities to share metadata." The semantic and machine ioteroperability of metadata is facilitated by adherance to the following principles:
 

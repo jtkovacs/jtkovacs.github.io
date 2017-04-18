@@ -1,5 +1,5 @@
 
-# Core definitions & terminology 
+# What is a database?
 
 A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
 
@@ -22,6 +22,38 @@ A database is a structured collection of data. A database management system (DBM
     - views that are customized to the needs of specific audiences;
 - Other applications can interact with the data by communicating with the DBMS.
 
+## Data models
+
+### Object-based
+
+Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
+
+- Entity-Relationship (ER)
+- Semantic
+- Functional
+- (3G) Object-oriented: adds **behavior** alongside state.
+
+### Record-based
+
+Can’t express constraints on the data, but express structure well.
+
+#### (1G) Hierarchical
+
+Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
+
+#### (1G) Graph
+
+AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+
+#### (2G) Relational
+
+Tables with columns, with implicit relationships via attributes.
+
+### Physical data models
+
+Most common: unifying model, frame memory.
+
+
 
 
 # History of databases
@@ -32,7 +64,7 @@ The first computerized information systems imitated hierarchical paper filing sy
 - **inconsistency:** redundant data that *should be* the same not updated consistently;
 - **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
 
-A database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering a language for ad hoc queries).
+A database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
 
 ## ANSI-SPARC architecture
 
@@ -48,38 +80,11 @@ Then,
 - a realization of a schema is called the extension or state of the database.
 
 
+ 
 
 
-# Data models
 
-## Object-based data models
 
-Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
-
-- Entity-Relationship (ER)
-- Semantic
-- Functional
-- (3G) Object-oriented: adds **behavior** alongside state.
-
-## Record-based data models
-
-Can’t express constraints on the data, but express structure well.
-
-### (1G) Hierarchical data model
-
-Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
-
-### (1G) Graph data model 
-
-AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-
-### (2G) Relational data model
-
-Tables with columns, with implicit relationships via attributes.
-
-## Physical data models
-
-Most common: unifying model, frame memory.
 
 
 

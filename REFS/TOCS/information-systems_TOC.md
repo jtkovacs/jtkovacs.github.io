@@ -88,7 +88,7 @@ CS are used to connect people, and include:
 
 # Implementing IS 
 
-See [notes on project management.](project-management.html)
+See [notes on project management](project-management.html) for complete description of phases and techniques employed across the systems development lifecycle (SDLC).
 
 ## Common pitfalls & best practices
 

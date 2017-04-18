@@ -24,6 +24,7 @@
 		- [Monitoring and reporting](#monitoring-and-reporting)
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements determination](#requirements-determination)
+		- [Initial requirements](#initial-requirements)
 			- [Cards](#cards)
 			- [Requirements trace matrix](#requirements-trace-matrix)
 		- [Use cases](#use-cases)
@@ -289,6 +290,8 @@ Requirements may be classified as:
     - integration with other systems.
 - **Non-functional,** i.e. concerned with the "look and feel" of the system. 
 
+### Initial requirements
+
 #### Cards
 
 Per Whitney (n.d.), requirements may be tracked using card methodologies, which include
@@ -304,6 +307,8 @@ Per Whitney (n.d.), requirements may be tracked using card methodologies, which 
 I.e., requirements in table format.
 
 ### Use cases
+
+
 
 ### User personas
 

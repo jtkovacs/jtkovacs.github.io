@@ -9,7 +9,6 @@
 		- [Collaboration systems (CS)](#collaboration-systems-(cs))
 - [Implementing IS ](#implementing-is-)
 	- [Common pitfalls & best practices](#common-pitfalls-&-best-practices)
-	- [System Development Lifecycle (SDLC)](#system-development-lifecycle-(sdlc))
 - [Sources](#sources)
 </td></tr></table>
 
@@ -79,6 +78,8 @@ CS are used to connect people, and include:
         
 # Implementing IS 
 
+See [notes on project management.](project-management.html)
+
 ## Common pitfalls & best practices
 
 Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes:
@@ -87,17 +88,6 @@ Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays an
 - Ensure talent is sufficient to execute the project
 - Align team incentives with project incentives and have adequate team infrastructure
 - Have excellent project management, including short delivery cycles and quality checks
-
-## System Development Lifecycle (SDLC)
-  
-- Planning: defining scope, objectives/charter, budget, schedule, etc.
-- Analysis: characterizing and understanding the system 'as is'; producing requirements specifications
-- Design: producing IT-focused mock-ups, blueprints etc. of system 'to be'
-- Development: building software/hardware
-- Implementation: users encounter the built system
-- [Maintaining]
-- [Monitoring]
-- [Improving]
 
 
     

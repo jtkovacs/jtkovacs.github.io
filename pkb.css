@@ -1,0 +1,48 @@
+
+
+
+/* PAGES should have a fairly thick margin */
+body {
+    margin: 50px 140px 140px 200px;
+    background-color: #ffffff;
+} 
+
+/* ALL TEXT is Verdana */
+* {
+    font-family: Verdana, sans-serif;
+}
+
+/* Text should be grey, limited to 700 px wide */
+p, li {
+    max-width: 700px;
+    font-size: 11px;
+    color: #bbbbbb;
+}
+
+
+/* LINKS should be dark blue-green h(ttp://www.colorcombos.in/3FA680) */
+a {
+    color: #3FA680;  
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* LIST has no bullets */
+ul {
+    list-style-type: none;
+}
+
+
+/* HEADERS are anchors, but shouldn't be colored like other links */
+h1, h1 a, h1 a:hover {
+    color: #FC2000;
+    font-size: 22px;
+}
+h2, h2 a, h2 a:hover {
+    color: #FC5F00;
+    font-size: 19px;
+}
+h3, h3 a, h3 a:hover {
+    color: #FF6E16;
+    font-size: 15px;

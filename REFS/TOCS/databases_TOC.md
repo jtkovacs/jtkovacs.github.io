@@ -8,10 +8,14 @@
 		- [Physical data models](#physical-data-models)
 - [History of databases](#history-of-databases)
 	- [ANSI-SPARC architecture](#ansi-sparc-architecture)
-- [Database development lifecycle](#database-development-lifecycle)
+- [How do you design and build a database?](#how-do-you-design-and-build-a-database?)
+	- [Database design lifecycle](#database-design-lifecycle)
+		- [Conceptual design](#conceptual-design)
+		- [Logical design](#logical-design)
+		- [Physical design](#physical-design)
 	- [Top-down vs. bottom-up](#top-down-vs.-bottom-up)
-		- [Design by decomposition](#design-by-decomposition)
-			- [Unified Modeling Language](#unified-modeling-language)
+		- [Unified Modeling Language](#unified-modeling-language)
+		- [Normalization](#normalization)
 - [SOURCES](#sources)
 	- [INBOX](#inbox)
 </td></tr></table>
@@ -113,10 +117,9 @@ Then,
 
 
 
+# How do you design and build a database?
 
-
-
-# Database development lifecycle
+## Database design lifecycle
 
 A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). 
 
@@ -150,11 +153,42 @@ A good design process prevents repetition; reduces errors (by limiting data entr
   - Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
 - __Create physical design (software-specific instructions)__: Construct, roll out, and support.
 
+### Conceptual design
+
+### Logical design
+
+### Physical design
+
 ## Top-down vs. bottom-up
 
-### Design by decomposition
+### Unified Modeling Language
 
-This approach avoids redundancy and its consequences (update & deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
+UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
+
+- Classes: Name, attributes, primary key/methods; analogous to relations.
+- Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations: `1..1 is default; m..n; m..\*; 0..n; 0..\*`.
+- Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
+- Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.  
+- Superclasses are in/complete and disjoint/overlapping.
+- Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity `1..1`. No PK needed!
+- Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+
+UML can be translated into relations:
+
+- Classes become relations.
+- Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written  0..1 to \*), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
+- Association classes add their attributes to the association’s relation.
+- Self-associations: rename and recycle same key.
+- Subclasses have three different translation procedures: 
+  - Subclass relations contain superclass PK and unique attributes;
+  - Subclass relations contain all superclass attributes & unique attributes;
+  - One relation contains all super- and subclass attributes.
+- Composition: Add PK from main class, but not as a key, just as an attribute.
+- Aggregation: “, with the additional stipulation that main class’s PK can be empty.
+
+### Normalization
+
+Design by decomposition avoids redundancy and its consequences (update & deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
 
 __Functional dependency (FD)__, `A→B`: The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 
@@ -179,30 +213,6 @@ __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides
 
 __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
 
-#### Unified Modeling Language
-
-UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
-
-- Classes: Name, attributes, primary key/methods; analogous to relations.
-- Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations: `1..1 is default; m..n; m..\*; 0..n; 0..\*`.
-- Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
-- Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.  
-- Superclasses are in/complete and disjoint/overlapping.
-- Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity `1..1`. No PK needed!
-- Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
-
-UML can be translated into relations:
-
-- Classes become relations.
-- Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written  0..1 to \*), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
-- Association classes add their attributes to the association’s relation.
-- Self-associations: rename and recycle same key.
-- Subclasses have three different translation procedures: 
-  - Subclass relations contain superclass PK and unique attributes;
-  - Subclass relations contain all superclass attributes & unique attributes;
-  - One relation contains all super- and subclass attributes.
-- Composition: Add PK from main class, but not as a key, just as an attribute.
-- Aggregation: “, with the additional stipulation that main class’s PK can be empty.
 
 
 # SOURCES

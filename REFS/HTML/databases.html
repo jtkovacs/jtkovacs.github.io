@@ -72,26 +72,46 @@
        </ul>
       </li>
       <li>
-       <a href="#database-development-lifecycle">
-        Database development lifecycle
+       <a href="#how-do-you-design-and-build-a-database?">
+        How do you design and build a database?
        </a>
        <ul>
+        <li>
+         <a href="#database-design-lifecycle">
+          Database design lifecycle
+         </a>
+         <ul>
+          <li>
+           <a href="#conceptual-design">
+            Conceptual design
+           </a>
+          </li>
+          <li>
+           <a href="#logical-design">
+            Logical design
+           </a>
+          </li>
+          <li>
+           <a href="#physical-design">
+            Physical design
+           </a>
+          </li>
+         </ul>
+        </li>
         <li>
          <a href="#top-down-vs.-bottom-up">
           Top-down vs. bottom-up
          </a>
          <ul>
           <li>
-           <a href="#design-by-decomposition">
-            Design by decomposition
+           <a href="#unified-modeling-language">
+            Unified Modeling Language
            </a>
-           <ul>
-            <li>
-             <a href="#unified-modeling-language">
-              Unified Modeling Language
-             </a>
-            </li>
-           </ul>
+          </li>
+          <li>
+           <a href="#normalization">
+            Normalization
+           </a>
           </li>
          </ul>
         </li>
@@ -399,10 +419,15 @@
    </li>
   </ul>
   <h1>
-   <a name="database-development-lifecycle">
-    Database development lifecycle
+   <a name="how-do-you-design-and-build-a-database?">
+    How do you design and build a database?
    </a>
   </h1>
+  <h2>
+   <a name="database-design-lifecycle">
+    Database design lifecycle
+   </a>
+  </h2>
   <p>
    A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input).
   </p>
@@ -521,18 +546,112 @@
     : Construct, roll out, and support.
    </li>
   </ul>
+  <h3>
+   <a name="conceptual-design">
+    Conceptual design
+   </a>
+  </h3>
+  <h3>
+   <a name="logical-design">
+    Logical design
+   </a>
+  </h3>
+  <h3>
+   <a name="physical-design">
+    Physical design
+   </a>
+  </h3>
   <h2>
    <a name="top-down-vs.-bottom-up">
     Top-down vs. bottom-up
    </a>
   </h2>
   <h3>
-   <a name="design-by-decomposition">
-    Design by decomposition
+   <a name="unified-modeling-language">
+    Unified Modeling Language
    </a>
   </h3>
   <p>
-   This approach avoids redundancy and its consequences (update &amp; deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
+   UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design.
+   <a href="https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/">
+    See UML graphs
+   </a>
+   .
+  </p>
+  <ul>
+   <li>
+    Classes: Name, attributes, primary key/methods; analogous to relations.
+   </li>
+   <li>
+    Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations:
+    <code>
+     1..1 is default; m..n; m..\*; 0..n; 0..\*
+    </code>
+    .
+   </li>
+   <li>
+    Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
+   </li>
+   <li>
+    Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
+    <br/>
+   </li>
+   <li>
+    Superclasses are in/complete and disjoint/overlapping.
+   </li>
+   <li>
+    Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
+    <code>
+     1..1
+    </code>
+    . No PK needed!
+   </li>
+   <li>
+    Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+   </li>
+  </ul>
+  <p>
+   UML can be translated into relations:
+  </p>
+  <ul>
+   <li>
+    Classes become relations.
+   </li>
+   <li>
+    Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written 0..1 to *), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
+   </li>
+   <li>
+    Association classes add their attributes to the association’s relation.
+   </li>
+   <li>
+    Self-associations: rename and recycle same key.
+   </li>
+   <li>
+    Subclasses have three different translation procedures:
+   </li>
+   <li>
+    Subclass relations contain superclass PK and unique attributes;
+   </li>
+   <li>
+    Subclass relations contain all superclass attributes &amp; unique attributes;
+   </li>
+   <li>
+    One relation contains all super- and subclass attributes.
+   </li>
+   <li>
+    Composition: Add PK from main class, but not as a key, just as an attribute.
+   </li>
+   <li>
+    Aggregation: “, with the additional stipulation that main class’s PK can be empty.
+   </li>
+  </ul>
+  <h3>
+   <a name="normalization">
+    Normalization
+   </a>
+  </h3>
+  <p>
+   Design by decomposition avoids redundancy and its consequences (update &amp; deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
   </p>
   <p>
    <strong>
@@ -765,85 +884,6 @@
    </sub>
    (A,rest); repeat.
   </p>
-  <h4>
-   <a name="unified-modeling-language">
-    Unified Modeling Language
-   </a>
-  </h4>
-  <p>
-   UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design.
-   <a href="https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/">
-    See UML graphs
-   </a>
-   .
-  </p>
-  <ul>
-   <li>
-    Classes: Name, attributes, primary key/methods; analogous to relations.
-   </li>
-   <li>
-    Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations:
-    <code>
-     1..1 is default; m..n; m..\*; 0..n; 0..\*
-    </code>
-    .
-   </li>
-   <li>
-    Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
-   </li>
-   <li>
-    Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
-    <br/>
-   </li>
-   <li>
-    Superclasses are in/complete and disjoint/overlapping.
-   </li>
-   <li>
-    Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
-    <code>
-     1..1
-    </code>
-    . No PK needed!
-   </li>
-   <li>
-    Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
-   </li>
-  </ul>
-  <p>
-   UML can be translated into relations:
-  </p>
-  <ul>
-   <li>
-    Classes become relations.
-   </li>
-   <li>
-    Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written 0..1 to *), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
-   </li>
-   <li>
-    Association classes add their attributes to the association’s relation.
-   </li>
-   <li>
-    Self-associations: rename and recycle same key.
-   </li>
-   <li>
-    Subclasses have three different translation procedures:
-   </li>
-   <li>
-    Subclass relations contain superclass PK and unique attributes;
-   </li>
-   <li>
-    Subclass relations contain all superclass attributes &amp; unique attributes;
-   </li>
-   <li>
-    One relation contains all super- and subclass attributes.
-   </li>
-   <li>
-    Composition: Add PK from main class, but not as a key, just as an attribute.
-   </li>
-   <li>
-    Aggregation: “, with the additional stipulation that main class’s PK can be empty.
-   </li>
-  </ul>
   <h1>
    <a name="sources">
     SOURCES

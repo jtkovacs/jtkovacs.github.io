@@ -296,12 +296,11 @@ Per Avison and Fitzger (2006) qtd. in Dennis et al. (2012), common problems with
 
 ### Current state analysis
 
-Per Dennis et al. (2012), a requirements determination process may begin with current state analysis, yielding models of the **as-is system.** This, however, depends on:
+Per Dennis et al. (2012), a requirements determination process may begin with current state analysis, yielding models of the **as-is system** (see [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current states of the system.) This, however, depends on:
 
-- The overall methodology used by the systems development team: "Users of traditional design methods such as waterfall and parallel development (see Chapter 1) typically spend significant time understanding the as-is system and identifying improvements before moving to capture requirements for the to-be system. However, newer RAD, agile, and object-oriented methodologies, such as phased development, prototyping, throwaway prototyping, extreme programming, and Scrum (see Chapter 1) focus almost exclusively on improvements and the to-be system requirements". 
-- The amount of system change desired: 
-
-See [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current states of the system.
+- **The methodology used by the systems development team:** "Users of traditional design methods such as waterfall and parallel development (see Chapter 1) typically spend significant time understanding the as-is system and identifying improvements before moving to capture requirements for the to-be system. However, newer RAD, agile, and object-oriented methodologies, such as phased development, prototyping, throwaway prototyping, extreme programming, and Scrum (see Chapter 1) focus almost exclusively on improvements and the to-be system requirements". 
+- **The amount of system change desired:** 
+    - 
 
 ### Gathering requirements
 

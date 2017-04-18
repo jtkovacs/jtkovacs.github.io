@@ -24,12 +24,14 @@
 		- [Monitoring and reporting](#monitoring-and-reporting)
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements determination](#requirements-determination)
-		- [Initial requirements](#initial-requirements)
-			- [Cards](#cards)
+		- [Gathering requirements](#gathering-requirements)
+		- [Expressing individual requirements](#expressing-individual-requirements)
 			- [Requirements trace matrix](#requirements-trace-matrix)
-		- [Use cases](#use-cases)
-		- [User personas](#user-personas)
-		- [User stories](#user-stories)
+			- [Cards](#cards)
+		- [Analyzing and grouping requirements](#analyzing-and-grouping-requirements)
+			- [Use cases](#use-cases)
+			- [User personas](#user-personas)
+			- [User stories](#user-stories)
 	- [Current state, future state analysis](#current-state,-future-state-analysis)
 	- [Choosing software](#choosing-software)
 - [Monitoring & governance](#monitoring-&-governance)
@@ -268,33 +270,29 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Requirements determination
 
-Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs. Requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs. 
-
-Per Whitney (n.d.), good requirements are:
+Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs. Requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs. Per Whitney (n.d.), good requirements are:
 
 - Complete, correct, unambiguous, verifiable
 - Necessary, feasible, prioritized
 
-Requirements may be derived from:
+### Gathering requirements
+
+Requirements may be obtained via interviews, observations, or analysis of:
 
 - users;
 - domain experts;  
 - existing processes; 
 - competing software. 
 
-Requirements may be classified as:
+### Expressing individual requirements
 
-- **Functional,** i.e. tasks that the software or system must perform, including 
-    - business rules; 
-    - system scope; and 
-    - integration with other systems.
-- **Non-functional,** i.e. concerned with the "look and feel" of the system. 
+#### Requirements trace matrix
 
-### Initial requirements
+Requirements may be expressed in table format.
 
 #### Cards
 
-Per Whitney (n.d.), requirements may be tracked using card methodologies, which include
+Per Whitney (n.d.), requirements may expressed in card formats, which include
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
 - **XP Story Cards,** in which a customer writes a story on a card.
@@ -302,22 +300,22 @@ Per Whitney (n.d.), requirements may be tracked using card methodologies, which 
 
 <img src="../ILLOS/volere.jpeg" width="350px">
 
-#### Requirements trace matrix
+### Analyzing and grouping requirements
 
-I.e., requirements in table format.
+#### Use cases
 
-### Use cases
+Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system".
 
-
-
-### User personas
+#### User personas
 
 I need to X in order to Y
 List of goals
 Pain points
 Scenarios
 
-### User stories
+#### User stories
+
+
 
 ## Current state, future state analysis
 

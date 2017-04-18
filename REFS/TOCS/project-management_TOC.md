@@ -277,12 +277,7 @@ Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysi
 
 ### Gathering requirements
 
-Requirements may be obtained via interviews, observations, or analysis of:
-
-- users;
-- domain experts;  
-- existing processes; 
-- competing software. 
+Requirements may be obtained via interviews, observations, or analysis of users; domain experts; existing processes; and competing software. 
 
 ### Expressing individual requirements
 

@@ -313,6 +313,8 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
 
 #### Business process automation (BPA)
 
+BPA is focused on making current processes more efficient through automation; it requires thorough analysis of the current system.
+
 ##### Problems analysis
 
 ##### Root cause analysis

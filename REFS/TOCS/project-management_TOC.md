@@ -265,7 +265,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Requirements analysis
 
-Designs must emerge from in-depth analysis of [stakeholder'(#stakeholder-analysis) (not just user) needs. Requirements analysis is the process of eliciting, analyzing, and synthesizing stakeholder needs.
+Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs. Requirements analysis is the process of eliciting, analyzing, and synthesizing stakeholder needs.
 
 ### User personas
 

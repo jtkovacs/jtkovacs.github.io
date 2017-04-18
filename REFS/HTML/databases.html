@@ -19,6 +19,18 @@
        </a>
        <ul>
         <li>
+         <a href="#history-of-databases">
+          History of databases
+         </a>
+         <ul>
+          <li>
+           <a href="#ansi-sparc-architecture">
+            ANSI-SPARC architecture
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
          <a href="#data-models">
           Data models
          </a>
@@ -56,18 +68,6 @@
            </a>
           </li>
          </ul>
-        </li>
-       </ul>
-      </li>
-      <li>
-       <a href="#history-of-databases">
-        History of databases
-       </a>
-       <ul>
-        <li>
-         <a href="#ansi-sparc-architecture">
-          ANSI-SPARC architecture
-         </a>
         </li>
        </ul>
       </li>
@@ -266,6 +266,91 @@
    </li>
   </ul>
   <h2>
+   <a name="history-of-databases">
+    History of databases
+   </a>
+  </h2>
+  <p>
+   The first computerized information systems imitated hierarchical paper filing systems. File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
+  </p>
+  <ul>
+   <li>
+    <strong>
+     redundancy:
+    </strong>
+    the same data collected and stored by multiple departments;
+   </li>
+   <li>
+    <strong>
+     inconsistency:
+    </strong>
+    redundant data that
+    <em>
+     should be
+    </em>
+    the same not updated consistently;
+   </li>
+   <li>
+    <strong>
+     inaccessibility:
+    </strong>
+    software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
+   </li>
+  </ul>
+  <p>
+   A database addresses the aforementioned problems because it is
+   <strong>
+    centralized
+   </strong>
+   (reducing redundancy, improving consistency, enabling data integration) and
+   <strong>
+    abstracted
+   </strong>
+   (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
+  </p>
+  <h3>
+   <a name="ansi-sparc-architecture">
+    ANSI-SPARC architecture
+   </a>
+  </h3>
+  <p>
+   This is one way of thinking about database abstraction/separation, which, in general, makes the database easier to change and maintain by providing
+   <strong>
+    logical data independence
+   </strong>
+   and
+   <strong>
+    physical data independence:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    <strong>
+     External level:
+    </strong>
+    Views for different users (subsets and derivations of data). Described by subschemas; logically independent from conceptual level.
+   </li>
+   <li>
+    <strong>
+     Conceptual level:
+    </strong>
+    Logical structure of the entire database: all entities, attributes, relationships, and constraints. Described by conceptual schema; physically independent from internal level.
+   </li>
+   <li>
+    <strong>
+     Internal level:
+    </strong>
+    Implementation details, including storage allocation, data compression, and encryption. Described by internal schema.
+   </li>
+  </ul>
+  <p>
+   Then, the DBMS creates
+   <strong>
+    mappings
+   </strong>
+   between schemas (also called intensions); a realization of a schema is called the extension or state of the database.
+  </p>
+  <h2>
    <a name="data-models">
     Data models
    </a>
@@ -352,99 +437,6 @@
   <p>
    Most common: unifying model, frame memory.
   </p>
-  <h1>
-   <a name="history-of-databases">
-    History of databases
-   </a>
-  </h1>
-  <p>
-   The first computerized information systems imitated hierarchical paper filing systems. File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
-  </p>
-  <ul>
-   <li>
-    <strong>
-     redundancy:
-    </strong>
-    the same data collected and stored by multiple departments;
-   </li>
-   <li>
-    <strong>
-     inconsistency:
-    </strong>
-    redundant data that
-    <em>
-     should be
-    </em>
-    the same not updated consistently;
-   </li>
-   <li>
-    <strong>
-     inaccessibility:
-    </strong>
-    software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
-   </li>
-  </ul>
-  <p>
-   A database addresses the aforementioned problems because it is
-   <strong>
-    centralized
-   </strong>
-   (reducing redundancy, improving consistency, enabling data integration) and
-   <strong>
-    abstracted
-   </strong>
-   (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
-  </p>
-  <h2>
-   <a name="ansi-sparc-architecture">
-    ANSI-SPARC architecture
-   </a>
-  </h2>
-  <p>
-   This is one way of thinking about database abstraction/separation, which, in general, makes the database easier to change and maintain by providing
-   <strong>
-    logical data independence
-   </strong>
-   and
-   <strong>
-    physical data independence:
-   </strong>
-  </p>
-  <ul>
-   <li>
-    <strong>
-     External level:
-    </strong>
-    Views for different users (subsets and derivations of data). Described by subschemas; logically independent from conceptual level.
-   </li>
-   <li>
-    <strong>
-     Conceptual level:
-    </strong>
-    Logical structure of the entire database: all entities, attributes, relationships, and constraints. Described by conceptual schema; physically independent from internal level.
-   </li>
-   <li>
-    <strong>
-     Internal level:
-    </strong>
-    Implementation details, including storage allocation, data compression, and encryption. Described by internal schema.
-   </li>
-  </ul>
-  <p>
-   Then,
-  </p>
-  <ul>
-   <li>
-    the DBMS creates
-    <strong>
-     mappings
-    </strong>
-    between schemas (also called intensions);
-   </li>
-   <li>
-    a realization of a schema is called the extension or state of the database.
-   </li>
-  </ul>
   <h1>
    <a name="database-design">
     Database design

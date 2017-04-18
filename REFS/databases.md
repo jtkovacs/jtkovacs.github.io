@@ -22,6 +22,27 @@ A database is a structured collection of data. A database management system (DBM
     - views that are customized to the needs of specific audiences;
 - Other applications can interact with the data by communicating with the DBMS.
 
+## History of databases
+
+The first computerized information systems imitated hierarchical paper filing systems. File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
+
+- **redundancy:** the same data collected and stored by multiple departments;
+- **inconsistency:** redundant data that *should be* the same not updated consistently;
+- **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
+
+A database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
+
+### ANSI-SPARC architecture
+
+This is one way of thinking about database abstraction/separation, which, in general, makes the database easier to change and maintain by providing **logical data independence** and  **physical data independence:**
+
+- **External level:** Views for different users (subsets and derivations of data). Described by subschemas; logically independent from conceptual level.
+- **Conceptual level:** Logical structure of the entire database: all entities, attributes, relationships, and constraints. Described by conceptual schema; physically independent from internal level.
+- **Internal level:** Implementation details, including storage allocation, data compression, and encryption. Described by internal schema.
+
+Then, the DBMS creates **mappings** between schemas (also called intensions); a realization of a schema is called the extension or state of the database.
+
+
 ## Data models
 
 ### Object-based
@@ -55,29 +76,6 @@ Most common: unifying model, frame memory.
 
 
 
-
-# History of databases
-
-The first computerized information systems imitated hierarchical paper filing systems. File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
-
-- **redundancy:** the same data collected and stored by multiple departments;
-- **inconsistency:** redundant data that *should be* the same not updated consistently;
-- **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
-
-A database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
-
-## ANSI-SPARC architecture
-
-This is one way of thinking about database abstraction/separation, which, in general, makes the database easier to change and maintain by providing **logical data independence** and  **physical data independence:**
-
-- **External level:** Views for different users (subsets and derivations of data). Described by subschemas; logically independent from conceptual level.
-- **Conceptual level:** Logical structure of the entire database: all entities, attributes, relationships, and constraints. Described by conceptual schema; physically independent from internal level.
-- **Internal level:** Implementation details, including storage allocation, data compression, and encryption. Described by internal schema.
-
-Then,
-
-- the DBMS creates **mappings** between schemas (also called intensions);
-- a realization of a schema is called the extension or state of the database.
 
 
  

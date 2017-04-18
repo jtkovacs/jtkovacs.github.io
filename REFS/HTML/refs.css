@@ -83,17 +83,17 @@ table.TOC li li li li a {
 /* HEADERS are anchors, but shouldn't be colored like other links */
 /* They should get lighter shades of orange as they decrease in size */
 h1, h1 a, h1 a:hover {
-    color: #e25500;
+    color: #FC2000;
     font-size: 22px;
     padding-top: 80px;
 }
 h2, h2 a, h2 a:hover {
     color: #FC5F00;
-    font-size: 18px;
+    font-size: 19px;
 }
 h3, h3 a, h3 a:hover {
     color: #FF6E16;
-    font-size: 14px;
+    font-size: 15px;
 }
 h4, h4 a, h4 a:hover {
     color: #FF7E31;

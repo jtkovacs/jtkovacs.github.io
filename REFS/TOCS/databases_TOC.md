@@ -1,4 +1,4 @@
-<table id="TOC"><tr><td>- [Precursors to databases](#precursors-to-databases)
+<table class="TOC"><tr><td>- [Precursors to databases](#precursors-to-databases)
 - [Database approach](#database-approach)
 	- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 - [(Generations of) data models](#(generations-of)-data-models)

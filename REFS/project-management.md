@@ -27,7 +27,7 @@ Agile:
 
 # Initiating a project
 
-## Evaluating desirability & feasibility
+## Strategic assessment
 
 PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but can also be scoped for projects.
 
@@ -247,12 +247,26 @@ Per Whitney (n.d.), good requirements are:
 - Complete, correct, unambiguous, verifiable
 - Necessary, feasible, prioritized
 
-Per Avison and Fitzger (2006) qtd in Dennis et al. (2012), common problems with requirements determination are:
+Per Avison and Fitzger (2006) qtd. in Dennis et al. (2012), common problems with requirements determination are:
 
 - Inadequate access to users or access to the wrong users for requirements elicitation
 - Requirements are inadequately specified
 - The inevitably iterative nature of requirements is poorly managed
 - Requirements are not verified or validated
+
+### Current state analysis
+
+Per Dennis et al. (2012), a requirements determination process may begin with current state analysis, yielding models of the as-is system. This, however, depends on (1) the overall methodology used by the systems development team, and (2) the amount of system change desired. 
+
+
+Users of  traditional design methods such as waterfall and parallel development (see Chapter 1) 
+typically  spend  significant  time  understanding  the  as-is  system  and  identifying  improve-
+ments before moving to capture requirements for the to-be system. However, newer RAD, 
+agile,  and  object-oriented  methodologies,  such  as  phased  development,  prototyping, 
+throwaway  prototyping, extreme  programming, and  Scrum  (see  Chapter  1)  focus  almost 
+exclusively on improvements and the to-be system requirements, and they spend little time investigating the current as-is system
+
+See [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current states of the system.
 
 ### Gathering requirements
 
@@ -295,10 +309,9 @@ Requirements are often analyzed by grouping them into **use cases.** Per Whitney
 - GUI requirements
 - Dependencies and relations (to other use cases; often modeled with UML)
 
+## Future state design
 
-## Current state, future state analysis
-
-See [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current and desired future states of the system, including (per Dennis et al., 2012):
+See [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the desired future state of the system, including (per Dennis et al., 2012):
 
 - functional models
 - structural models

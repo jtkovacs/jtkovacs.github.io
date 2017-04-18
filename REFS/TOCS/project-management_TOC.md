@@ -274,8 +274,12 @@ Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysi
 
 Requirements are also categorized as **functional** (what business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect how tasks are performed, and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759) Per [StackExchange answers,](https://softwareengineering.stackexchange.com/questions/82763/why-bother-differentiating-between-functional-and-nonfunctional-requirements) is important to differentiate functional from nonfunctional requirements because:
 
-- Different people are responsible for implementing them
-- 
+- They apply to different levels of the system (nonfunctional = system as a whole)
+- They are of interest to different people (or some people may only be interested in a subset of requirements)
+- They are of interest at different points in the system development lifecycle (nonfunctional = architecture)
+- They may be modeled/represented in different ways (nonfunctional = quality attribute scenario)
+- Differentiating conceptually helps you be more thorough when eliciting and analyzing requirements
+- Modularity (differentiation and cross-referencing) supports iteration
 
 Per Whitney (n.d.), good requirements are:
 

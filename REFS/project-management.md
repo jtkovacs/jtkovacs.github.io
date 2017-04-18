@@ -236,6 +236,8 @@ Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysi
 - Complete, correct, unambiguous, verifiable
 - Necessary, feasible, prioritized
 
+Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements analysis are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users) and then as **system requirements** (from the perspective of developers).  
+
 ### Gathering requirements
 
 Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, existing documents, and competing software using the following techniques:
@@ -280,7 +282,11 @@ Requirements are often analyzed by grouping them into **use cases.** Per Whitney
 
 ## Current state, future state analysis
 
-See [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current and desired future states of the system.
+See [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current and desired future states of the system, including (per Dennis et al., 2012):
+
+- functional models
+- structural models
+- behavioral models
 
 ## Choosing software
 

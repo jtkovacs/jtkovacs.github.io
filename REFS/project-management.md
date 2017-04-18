@@ -267,7 +267,7 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
 
 (3) **The amount of system change desired** (i.e. BPA vs. BPI vs. BPR), where the amount of change desired and amount of effort spent analyzing the as-is system are inversely related, and:
 
-![Comparison of BPA, BPI, and BPR](../ILLOS/BPA-BPI-BPR.png)
+![](../ILLOS/BPA-BPI-BPR.png)
 
 #### Business process automation (BPA)
 

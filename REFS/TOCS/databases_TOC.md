@@ -1,15 +1,15 @@
 <table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
-- [Data models](#data-models)
+	- [Data models](#data-models)
 	- [Relational ](#relational-)
 - [Database design](#database-design)
 	- [Groundwork](#groundwork)
 	- [Conceptual design](#conceptual-design)
 		- [Top-down vs. bottom-up design](#top-down-vs.-bottom-up-design)
 			- [Kinds of attributes ](#kinds-of-attributes-)
-			- [Bottom-up design through normalization](#bottom-up-design-through-normalization)
-			- [Top-down design with UML/ERDs](#top-down-design-with-uml/erds)
+		- [Bottom-up design through normalization](#bottom-up-design-through-normalization)
+		- [Top-down design with UML/ERDs](#top-down-design-with-uml/erds)
 	- [Logical design](#logical-design)
 	- [Physical design](#physical-design)
 - [Database administration](#database-administration)
@@ -64,8 +64,7 @@ This is one way of thinking about database abstraction/separation, which, in gen
 
 Then, the DBMS creates **mappings** between schemas (also called intensions); a realization of a schema is called the extension or state of the database.
 
-
-# Data models
+## Data models
 
 - **Object-based:** Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
     - Entity-Relationship (ER)
@@ -83,19 +82,6 @@ Then, the DBMS creates **mappings** between schemas (also called intensions); a 
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Database design
@@ -139,7 +125,7 @@ An attribute is multi-valued/set-valued if, for a single entity, the attribute c
 
 An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
 
-#### Bottom-up design through normalization
+### Bottom-up design through normalization
 
 Design by decomposition avoids redundancy and its consequences (update & deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
 
@@ -166,7 +152,7 @@ __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides
 
 __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
 
-#### Top-down design with UML/ERDs
+### Top-down design with UML/ERDs
 
 UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
 

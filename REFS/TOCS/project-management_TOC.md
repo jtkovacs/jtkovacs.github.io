@@ -27,11 +27,7 @@
 		- [User personas](#user-personas)
 		- [Use cases](#use-cases)
 		- [User stories](#user-stories)
-	- [Prototyping UI](#prototyping-ui)
 	- [Current state, future state analysis](#current-state,-future-state-analysis)
-		- [Modeling data flows](#modeling-data-flows)
-		- [Modeling processes](#modeling-processes)
-		- [Modeling systems architecture](#modeling-systems-architecture)
 	- [Choosing software](#choosing-software)
 - [Monitoring & governance](#monitoring-&-governance)
 - [Sources](#sources)
@@ -282,19 +278,13 @@ Scenarios
 
 ### User stories
 
-## Prototyping UI
-
 ## Current state, future state analysis
 
-### Modeling data flows
-
-### Modeling processes
-
-Hard to distinguish business process from IT process from work
-
-### Modeling systems architecture
+See [notes on system, process, and interface modeling.](modeling.html)
 
 ## Choosing software
+
+See [notes on BI architectures.](BI.html)
 
 # Monitoring & governance
 

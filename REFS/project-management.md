@@ -273,7 +273,11 @@ BPA is focused on making current processes more efficient through automation; it
 
 ##### Problems analysis
 
+This entails asking current system users about problems they face or features they desire. Problems identified with this technique are often related to UI and their resolution produces little if any business value.
+
 ##### Root cause analysis
+
+This entails asking current system users to explore the root causes of problems they've identified (since these problems may only be symptoms). Root causes may be uncovered by asking "Why?" five times; causal relationships may be represented as a hierarchy, web, or fishbone/Ishikawa diagram.
 
 #### Business process improvement (BPI)
     

@@ -28,15 +28,15 @@ There are three major MIS in an enterprise, collectively referred to as an organ
 ES are used to perform the daily tasks of a business, and include:
 
 - **Enterprise resource planning (ERP):** internal
-    - - Major providers are SAP, Oracle, Sage Group, Microsoft Dynamics, SSA Global Technologies
-    - + eliminate data inconsistencies, reporting that cover entirety of business process, better availability of data
-    - /- costs from purchase, training, data conversion, consulting fees ... also enforce standardization of business processes, which users may resist
+    - \- Major providers are SAP, Oracle, Sage Group, Microsoft Dynamics, SSA Global Technologies
+    - \+ eliminate data inconsistencies, reporting that cover entirety of business process, better availability of data
+    - \- costs from purchase, training, data conversion, consulting fees ... also enforce standardization of business processes, which users may resist
 - **Customer relationship management (CRM):** external interface; incl. sales, marketing, customer service, and analysis of such
-    - + better customer service to attract and retain customers, perform targeted marketing and experiences, discover new customers
-    - /- hard to develop a customer-centric culture
+    - \+ better customer service to attract and retain customers, perform targeted marketing and experiences, discover new customers
+    - \- hard to develop a customer-centric culture
 - **Supply chain management (SCM):** external interface; covers suppliers, manufacturers, distributors, and customers (presumably in a way that isn't redundant to the CRM??)
-    - + Avoid waste in supply chain by identifying inefficiencies and improving forecasting
-    - /- Depends on building trust among members of the supply chain; also difficult to model supply chain that can be quite complex 
+    - \+ Avoid waste in supply chain by identifying inefficiencies and improving forecasting
+    - \- Depends on building trust among members of the supply chain; also difficult to model supply chain that can be quite complex 
 
 ## Business intelligence (BI)
 

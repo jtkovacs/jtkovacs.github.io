@@ -270,12 +270,17 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Requirements determination
 
-Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs. Requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs. Per Whitney (n.d.), good requirements are:
+Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users), second as **system requirements** (from the perspective of developers). 
+
+Requirements are also categorized as **functional** (what business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect how tasks are performed, and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759) Per [StackExchange answers,](https://softwareengineering.stackexchange.com/questions/82763/why-bother-differentiating-between-functional-and-nonfunctional-requirements) is important to differentiate functional from nonfunctional requirements because:
+
+- Different people are responsible for implementing them
+- 
+
+Per Whitney (n.d.), good requirements are:
 
 - Complete, correct, unambiguous, verifiable
 - Necessary, feasible, prioritized
-
-Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements analysis are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users) and then as **system requirements** (from the perspective of developers). Requirements are also categorized as **functional** (business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect system requirements and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)  
 
 Per Avison and Fitzger (2006) qtd in Dennis et al. (2012), common problems with requirements determination are:
 

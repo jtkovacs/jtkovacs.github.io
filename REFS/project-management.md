@@ -253,17 +253,21 @@ Requirements may be classified as:
     - integration with other systems.
 - **Non-functional,** i.e. concerned with the "look and feel" of the system. 
 
-### Cards
+#### Cards
 
 Per Whitney (n.d.), requirements may be tracked using card methodologies, which include
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
 - **XP Story Cards,** in which a customer writes a story on a card.
-- **Volere Snow Cards,** which are templates to populate:
+- **Volere Snow Cards:**
 
 <img src="../ILLOS/volere.jpeg" width="350px">
 
-### Matrices
+#### Requirements trace matrix
+
+I.e., requirements in table format.
+
+### Use cases
 
 ### User personas
 
@@ -271,8 +275,6 @@ I need to X in order to Y
 List of goals
 Pain points
 Scenarios
-
-### Use cases
 
 ### User stories
 

@@ -20,23 +20,32 @@ Per Annabi and McGann (2014b):
 
 ## What are MIS?
     
-There are three major MIS in an enterprise, collectively referred to as an organization's **IS architecture.** Each systems offers benefits and poses challenges. 
-
+There are three major MIS in an enterprise, collectively referred to as an organization's **IS architecture.**
 
 ### Enterprise systems (ES)
 
-ES are used to perform the daily tasks of a business, and include:
+ES are used to perform the daily tasks of a business.
 
-- **Enterprise resource planning (ERP):** internal
-    - \- Major providers are SAP, Oracle, Sage Group, Microsoft Dynamics, SSA Global Technologies
-    - \+ eliminate data inconsistencies, reporting that cover entirety of business process, better availability of data
-    - \- costs from purchase, training, data conversion, consulting fees ... also enforce standardization of business processes, which users may resist
-- **Customer relationship management (CRM):** external interface; incl. sales, marketing, customer service, and analysis of such
-    - \+ better customer service to attract and retain customers, perform targeted marketing and experiences, discover new customers
-    - \- hard to develop a customer-centric culture
-- **Supply chain management (SCM):** external interface; covers suppliers, manufacturers, distributors, and customers (presumably in a way that isn't redundant to the CRM??)
-    - \+ Avoid waste in supply chain by identifying inefficiencies and improving forecasting
-    - \- Depends on building trust among members of the supply chain; also difficult to model supply chain that can be quite complex 
+#### Enterprise resource planning (ERP) 
+
+Internal. Major providers are SAP, Oracle, Sage Group, Microsoft Dynamics, SSA Global Technologies.
+
+- \+ eliminate data inconsistencies, reporting that cover entirety of business process, better availability of data
+- \- costs from purchase, training, data conversion, consulting fees ... also enforce standardization of business processes, which users may resist
+
+#### Customer relationship management (CRM)
+
+External interface; incl. sales, marketing, customer service, and analysis of such.
+
+- \+ better customer service to attract and retain customers, perform targeted marketing and experiences, discover new customers
+- \- hard to develop a customer-centric culture
+
+#### Supply chain management (SCM)
+
+External interface; covers suppliers, manufacturers, distributors, and customers (presumably in a way that isn't redundant to the CRM??).
+
+- \+ Avoid waste in supply chain by identifying inefficiencies and improving forecasting
+- \- Depends on building trust among members of the supply chain; also difficult to model supply chain that can be quite complex 
 
 ### Business intelligence (BI)
 
@@ -47,6 +56,8 @@ BI systems are used to inform strategic decisions, and include:
 - Decision support systems (DSS)
 - Expert systems (ES)
 - AI systems
+
+See [notes on BI architectures](BI-architectures.html).
 
 ### Collaboration systems (CS)
 

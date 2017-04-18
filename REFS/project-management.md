@@ -319,6 +319,17 @@ Per Dennis et al. (2012), requirements may be obtained from users, domain expert
 
 #### Interviews
 
+1. Select interviewees
+2. Write an interview plan:
+    a. Design interview questions (closed, open-ended, probing; note that early interviews should be less structured than later interviews)
+    b. Sequence interview questions (top-down or bottom-up, depending on how much information is needed and the role of the interview subject)
+4. Conduct the interview, focusing on:
+    a. Building rapport and interviewee comfort
+    b. Conveying the importance of the interview
+    c. Uncovering the facts that underlie interviewee opinions
+    d. Taking careful notes (if recording is disallowed)
+5. Prepare an interview summary, and ask the interviewee for any corrections
+
 #### Observations
 
 #### Surveys or questionnaires 

@@ -300,9 +300,9 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
 
 - **The methodology used by the systems development team:** "Users of traditional design methods such as waterfall and parallel development (see Chapter 1) typically spend significant time understanding the as-is system and identifying improvements before moving to capture requirements for the to-be system. However, newer RAD, agile, and object-oriented methodologies, such as phased development, prototyping, throwaway prototyping, extreme programming, and Scrum (see Chapter 1) focus almost exclusively on improvements and the to-be system requirements". 
 - **The amount of system change desired:** 
-    - **Business process automation (BPA)**
-    - **Business process improvement (BPI)**
-    - **Business process reengineering (BPR)**
+    - Business process automation **(BPA)**
+    - Business process improvement **(BPI)**
+    - Business process reengineering **(BPR)**
 
 ### Gathering requirements
 

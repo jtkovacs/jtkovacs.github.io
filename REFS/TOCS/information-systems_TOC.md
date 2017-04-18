@@ -28,9 +28,9 @@ Information systems (IS) professionals work with IT professionals to create IS s
     
 Per Annabi and McGann (2014b):
 
-- Computational systems are very narrow and focused on automating tedious tasks, e.g. keeping a ledger
-- Functional systems are slightly broader and place automated tasks in context of all related tasks, e.g. accounting and financial reporting
-- Enterprise systems are broadest and try to integrate processes across functional areas, e.g. recognizing the relationship between accounting and HR, as well as bridging internal and external users
+- **Computational systems** were very narrow and focused on automating tedious tasks, e.g. keeping a ledger
+- **Functional systems** were slightly broader and place automated tasks in context of all related tasks, e.g. accounting and financial reporting
+- **Enterprise systems** are broadest and try to integrate processes across functional areas, e.g. recognizing the relationship between accounting and HR, as well as bridging internal and external users
 
 ## What are MIS?
     

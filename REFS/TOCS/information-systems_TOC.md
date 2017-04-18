@@ -63,15 +63,13 @@ External interface; covers suppliers, manufacturers, distributors, and customers
 
 ### Business intelligence (BI)
 
-BI systems are used to inform strategic decisions, and include:
+See [notes on BI architectures.](BI-architectures.html) BI systems are used to inform strategic decisions, and include:
 
 - Reporting
 - Data mining
 - Decision support systems (DSS)
 - Expert systems (ES)
 - AI systems
-
-See [notes on BI architectures](BI-architectures.html).
 
 ### Collaboration systems (CS)
 

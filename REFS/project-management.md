@@ -229,9 +229,17 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 # Analysis, design & specification
 
-## Requirements analysis
+## Requirements determination
 
-Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs. Requirements analysis is the process of eliciting, analyzing, and synthesizing stakeholder needs.
+Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs. Requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs.
+
+Requirements are twofold:
+
+- **Functional:** tasks that the software or system must perform. Includes 
+    - business rules; 
+    - system scope; and 
+    - integration with other systems.
+- **Non-functional:** 
 
 ### User personas
 

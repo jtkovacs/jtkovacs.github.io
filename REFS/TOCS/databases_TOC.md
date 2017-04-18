@@ -1,13 +1,13 @@
 <table class="TOC"><tr><td>- [History of databases](#history-of-databases)
+	- [Generations of data models](#generations-of-data-models)
+		- [Object-based data models](#object-based-data-models)
+		- [Record-based data models](#record-based-data-models)
+			- [(1G) Hierarchical data model](#(1g)-hierarchical-data-model)
+			- [(1G) Graph data model ](#(1g)-graph-data-model-)
+			- [(2G) Relational data model](#(2g)-relational-data-model)
+		- [Physical data models](#physical-data-models)
 	- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 - [Terminology ](#terminology-)
-- [(Generations of) data models](#(generations-of)-data-models)
-	- [Object-based data models](#object-based-data-models)
-	- [Record-based data models](#record-based-data-models)
-		- [(1G) Hierarchical data model](#(1g)-hierarchical-data-model)
-		- [(1G) Graph data model ](#(1g)-graph-data-model-)
-		- [(2G) Relational data model](#(2g)-relational-data-model)
-	- [Physical data models](#physical-data-models)
 - [Database development lifecycle](#database-development-lifecycle)
 	- [Top-down vs. bottom-up](#top-down-vs.-bottom-up)
 		- [Design by decomposition](#design-by-decomposition)
@@ -41,6 +41,37 @@ A database addresses the aforementioned problems because it is **centralized** (
     - views that are customized to the needs of specific audiences;
 - Other applications can interact with the data by communicating with the DBMS.
 
+## Generations of data models
+
+### Object-based data models
+
+Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
+
+- Entity-Relationship (ER)
+- Semantic
+- Functional
+- (3G) Object-oriented: adds **behavior** alongside state.
+
+### Record-based data models
+
+Can’t express constraints on the data, but express structure well.
+
+#### (1G) Hierarchical data model
+
+Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
+
+#### (1G) Graph data model 
+
+AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+
+#### (2G) Relational data model
+
+Tables with columns, with implicit relationships via attributes.
+
+### Physical data models
+
+Most common: unifying model, frame memory.
+
 ## ANSI-SPARC architecture
 
 This is one way of thinking about database abstraction/separation, which, in general, makes the database easier to change and maintain by providing **logical data independence** and  **physical data independence:**
@@ -57,6 +88,9 @@ Then,
 
 
 
+
+
+
 # Terminology 
 
 A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
@@ -66,36 +100,10 @@ A database is a structured collection of data. A database management system (DBM
 - **Database Environment** = Hardware + Software + Data + Procedures + People
 
 
-# (Generations of) data models
 
-## Object-based data models
 
-Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
 
-- Entity-Relationship (ER)
-- Semantic
-- Functional
-- (3G) Object-oriented: adds **behavior** alongside state.
 
-## Record-based data models
-
-Can’t express constraints on the data, but express structure well.
-
-### (1G) Hierarchical data model
-
-Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
-
-### (1G) Graph data model 
-
-AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-
-### (2G) Relational data model
-
-Tables with columns, with implicit relationships via attributes.
-
-## Physical data models
-
-Most common: unifying model, frame memory.
 
 # Database development lifecycle
 

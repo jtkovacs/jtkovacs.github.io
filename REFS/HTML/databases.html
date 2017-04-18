@@ -19,6 +19,45 @@
        </a>
        <ul>
         <li>
+         <a href="#generations-of-data-models">
+          Generations of data models
+         </a>
+         <ul>
+          <li>
+           <a href="#object-based-data-models">
+            Object-based data models
+           </a>
+          </li>
+          <li>
+           <a href="#record-based-data-models">
+            Record-based data models
+           </a>
+           <ul>
+            <li>
+             <a href="#(1g)-hierarchical-data-model">
+              (1G) Hierarchical data model
+             </a>
+            </li>
+            <li>
+             <a href="#(1g)-graph-data-model-">
+              (1G) Graph data model
+             </a>
+            </li>
+            <li>
+             <a href="#(2g)-relational-data-model">
+              (2G) Relational data model
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#physical-data-models">
+            Physical data models
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
          <a href="#ansi-sparc-architecture">
           ANSI-SPARC architecture
          </a>
@@ -29,45 +68,6 @@
        <a href="#terminology-">
         Terminology
        </a>
-      </li>
-      <li>
-       <a href="#(generations-of)-data-models">
-        (Generations of) data models
-       </a>
-       <ul>
-        <li>
-         <a href="#object-based-data-models">
-          Object-based data models
-         </a>
-        </li>
-        <li>
-         <a href="#record-based-data-models">
-          Record-based data models
-         </a>
-         <ul>
-          <li>
-           <a href="#(1g)-hierarchical-data-model">
-            (1G) Hierarchical data model
-           </a>
-          </li>
-          <li>
-           <a href="#(1g)-graph-data-model-">
-            (1G) Graph data model
-           </a>
-          </li>
-          <li>
-           <a href="#(2g)-relational-data-model">
-            (2G) Relational data model
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#physical-data-models">
-          Physical data models
-         </a>
-        </li>
-       </ul>
       </li>
       <li>
        <a href="#database-development-lifecycle">
@@ -230,6 +230,93 @@
    </li>
   </ul>
   <h2>
+   <a name="generations-of-data-models">
+    Generations of data models
+   </a>
+  </h2>
+  <h3>
+   <a name="object-based-data-models">
+    Object-based data models
+   </a>
+  </h3>
+  <p>
+   Allow specification of constraints, but not overall structure. Includes
+   <strong>
+    entities
+   </strong>
+   with
+   <strong>
+    attributes
+   </strong>
+   and
+   <strong>
+    relationships,
+   </strong>
+   describing the
+   <strong>
+    state
+   </strong>
+   of the object.
+  </p>
+  <ul>
+   <li>
+    Entity-Relationship (ER)
+   </li>
+   <li>
+    Semantic
+   </li>
+   <li>
+    Functional
+   </li>
+   <li>
+    (3G) Object-oriented: adds
+    <strong>
+     behavior
+    </strong>
+    alongside state.
+   </li>
+  </ul>
+  <h3>
+   <a name="record-based-data-models">
+    Record-based data models
+   </a>
+  </h3>
+  <p>
+   Can’t express constraints on the data, but express structure well.
+  </p>
+  <h4>
+   <a name="(1g)-hierarchical-data-model">
+    (1G) Hierarchical data model
+   </a>
+  </h4>
+  <p>
+   Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
+  </p>
+  <h4>
+   <a name="(1g)-graph-data-model">
+    (1G) Graph data model
+   </a>
+  </h4>
+  <p>
+   AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+  </p>
+  <h4>
+   <a name="(2g)-relational-data-model">
+    (2G) Relational data model
+   </a>
+  </h4>
+  <p>
+   Tables with columns, with implicit relationships via attributes.
+  </p>
+  <h3>
+   <a name="physical-data-models">
+    Physical data models
+   </a>
+  </h3>
+  <p>
+   Most common: unifying model, frame memory.
+  </p>
+  <h2>
    <a name="ansi-sparc-architecture">
     ANSI-SPARC architecture
    </a>
@@ -307,93 +394,6 @@
     = Hardware + Software + Data + Procedures + People
    </li>
   </ul>
-  <h1>
-   <a name="(generations-of)-data-models">
-    (Generations of) data models
-   </a>
-  </h1>
-  <h2>
-   <a name="object-based-data-models">
-    Object-based data models
-   </a>
-  </h2>
-  <p>
-   Allow specification of constraints, but not overall structure. Includes
-   <strong>
-    entities
-   </strong>
-   with
-   <strong>
-    attributes
-   </strong>
-   and
-   <strong>
-    relationships,
-   </strong>
-   describing the
-   <strong>
-    state
-   </strong>
-   of the object.
-  </p>
-  <ul>
-   <li>
-    Entity-Relationship (ER)
-   </li>
-   <li>
-    Semantic
-   </li>
-   <li>
-    Functional
-   </li>
-   <li>
-    (3G) Object-oriented: adds
-    <strong>
-     behavior
-    </strong>
-    alongside state.
-   </li>
-  </ul>
-  <h2>
-   <a name="record-based-data-models">
-    Record-based data models
-   </a>
-  </h2>
-  <p>
-   Can’t express constraints on the data, but express structure well.
-  </p>
-  <h3>
-   <a name="(1g)-hierarchical-data-model">
-    (1G) Hierarchical data model
-   </a>
-  </h3>
-  <p>
-   Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
-  </p>
-  <h3>
-   <a name="(1g)-graph-data-model">
-    (1G) Graph data model
-   </a>
-  </h3>
-  <p>
-   AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-  </p>
-  <h3>
-   <a name="(2g)-relational-data-model">
-    (2G) Relational data model
-   </a>
-  </h3>
-  <p>
-   Tables with columns, with implicit relationships via attributes.
-  </p>
-  <h2>
-   <a name="physical-data-models">
-    Physical data models
-   </a>
-  </h2>
-  <p>
-   Most common: unifying model, frame memory.
-  </p>
   <h1>
    <a name="database-development-lifecycle">
     Database development lifecycle

@@ -261,7 +261,7 @@ Per Whitney (n.d.), requirements may be tracked using card methodologies, which 
 - **XP Story Cards,** in which a customer writes a story on a card.
 - **Volere Snow Cards,** which are templates to populate:
 
-<img src="../ILLOS/volere.jpeg" width="400px">
+<img src="../ILLOS/volere.jpeg" width="350px">
 
 ### Matrices
 

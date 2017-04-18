@@ -309,11 +309,7 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
     (a) No current system exists
     (b) Little effect on current systems
 
-(3) **The amount of system change desired,** where the amount of change and amount of effort spent understanding the current system are positively related: 
-
-    (a) Business process automation **(BPA)** is a minor change;
-    (b) Business process improvement **(BPI)** is a moderate change;
-    (c) Business process reengineering **(BPR)** is a major change.
+(3) **The amount of system change desired,** i.e. BPA vs. BPI vs. BPR.
 
 #### Business process automation (BPA)
 

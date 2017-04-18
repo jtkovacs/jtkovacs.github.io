@@ -25,6 +25,10 @@
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements determination](#requirements-determination)
 		- [Current state analysis](#current-state-analysis)
+			- [Business process automation (BPA)](#business-process-automation-(bpa))
+				- [Problems analysis](#problems-analysis)
+				- [Root cause analysis](#root-cause-analysis)
+			- [Business process improvement (BPI)](#business-process-improvement-(bpi))
 		- [Gathering requirements](#gathering-requirements)
 			- [Interviews](#interviews)
 			- [Observations](#observations)
@@ -298,18 +302,28 @@ Per Avison and Fitzger (2006) qtd. in Dennis et al. (2012), common problems with
 
 Per Dennis et al. (2012), a requirements determination process may begin with current state analysis, yielding models of the **as-is system** (see [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current states of the system). This, however, depends on:
 
-(1) **The methodology used by the systems development team:** "Users of traditional design methods such as waterfall and parallel development (see Chapter 1) typically spend significant time understanding the as-is system and identifying improvements before moving to capture requirements for the to-be system. However, newer RAD, agile, and object-oriented methodologies, such as phased development, prototyping, throwaway prototyping, extreme programming, and Scrum (see Chapter 1) focus almost exclusively on improvements and the to-be system requirements". 
+(1) **The methodology used by the systems development team:** "Users of traditional design methods such as waterfall and parallel development (see Chapter 1) typically spend significant time understanding the as-is system and identifying improvements before moving to capture requirements for the to-be system. However, newer RAD, agile, and object-oriented methodologies, such as phased development, prototyping, throwaway prototyping, extreme programming, and Scrum (see Chapter 1) focus almost exclusively on improvements and the to-be system requirements."
 
-(2) **The amount of system change desired,** where the amount of change and amount of effort spent understanding the current system are positively related: 
+(2) **The context of the system being developed:**
+    
+    (a) No current system exists
+    (b) Little effect on current systems
+
+(3) **The amount of system change desired,** where the amount of change and amount of effort spent understanding the current system are positively related: 
 
     (a) Business process automation **(BPA)** is a minor change;
     (b) Business process improvement **(BPI)** is a moderate change;
     (c) Business process reengineering **(BPR)** is a major change.
 
-(3) **The context of the system being developed:**
+#### Business process automation (BPA)
+
+##### Problems analysis
+
+##### Root cause analysis
+
+#### Business process improvement (BPI)
     
-    (a) No current system exists
-    (b) Little effect on current systems
+    
     
 ### Gathering requirements
 

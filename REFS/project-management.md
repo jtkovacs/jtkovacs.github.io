@@ -1,14 +1,5 @@
 # What is project management?
 
-## Common pitfalls & best practices
-
-Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes:
-
-- Focus on strategy and stakeholders, not exclusively budget and scheduling
-- Ensure talent is sufficient to execute the project
-- Align team incentives with project incentives and have adequate team infrastructure
-- Have excellent project management, including short delivery cycles and quality checks
-
 ## Overview of PM methodologies
 
 Project Life Cycle (PLC) per Watt (2014):

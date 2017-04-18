@@ -16,14 +16,14 @@
 
 # What are information systems (IS)?
 
-Per Annabi and McGann (2014a):
+Per Annabi and McGann (2014a), information systems (IS) professionals work with IT professionals to create IS systems. IT people build the IT, but IS people identify the problems that an IS system may solve or the opportunities that an IS system may create, and coordinate implementation of an IS that meets the organization's needs. 
 
-Information systems (IS) professionals work with IT professionals to create IS systems. IT people build the IT, but IS people identify the problems that an IS system may solve or the opportunities that an IS system may create, and coordinate implementation of an IS that meets the organization's needs. ISs consist of three components (the IS triangle):
+IS consist of three components, represented as the **IS triangle:**
 
-- Business process: a predefined way in which an organization performs its functions
-- People
-- IT: hardware and software
-    
+- **Business processes:** a predefined way in which an organization performs its functions
+- **IT:** hardware and software
+- **People:** various [stakeholders](project-management.html#stakeholder-analysis)
+
 ## Evolution of IS
     
 Per Annabi and McGann (2014b):

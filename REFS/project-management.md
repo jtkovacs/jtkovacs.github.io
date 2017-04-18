@@ -285,7 +285,7 @@ BPI goes beyond increased efficiency to the realm of increased effectiveness, fo
     
 ##### Duration analysis
 
-First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through **process integration** (fewer people involved in doing the work across its lifecycle) or **process parallelization** (steps being done concurrently).
+First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through **integration** (fewer people involved in doing the work across its lifecycle) or **parallelization** (steps being done concurrently).
 
 ##### Activity-based costing
 
@@ -297,12 +297,19 @@ Examine competitors to identify performance targets and process improvements.
     
 #### Business process reengineering (BPR)
 
+BPR is a radical upending of current business processes and systems, so spends little time analyzing them.
+
 ##### Outcome analysis
+
+Trying to think about the business from the perspective of users' ultimate goals and needs (recognizing that your product or service may be only a means to an end).
 
 ##### Technology analysis
 
+Reviewing existing and emerging technologies and asking how they might be applied in your company (either as a process improvement or a product).
+
 ##### Activity elimination
-    
+
+Systematically (but as a thought exercise) eliminating each step in a process, and asking what the implications are.
     
 ### Gathering requirements
 

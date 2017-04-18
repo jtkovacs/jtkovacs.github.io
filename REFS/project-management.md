@@ -231,10 +231,23 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Requirements determination
 
-Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs. Requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs. Requirements are twofold:
+Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs. Requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs. 
+
+Per Whitney (n.d.), good requirements are:
+
+- Complete, correct, unambiguous, verifiable
+- Necessary, feasible, prioritized
+
+Requirements may be derived from domain experts; users; existing processes; competing software. 
+
+Requirements are twofold:
 
 - **Functional requirements** are tasks that the software or system must perform. FRs cover business rules; system scope; and integration with other systems.
-- **Non-functional:** 
+- **Non-functional requirements** concern the "look and feel" of the system. 
+
+### Cards
+
+### Matrices
 
 ### User personas
 

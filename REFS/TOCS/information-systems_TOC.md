@@ -7,6 +7,7 @@
 			- [Supply chain management (SCM)](#supply-chain-management-(scm))
 		- [Business intelligence (BI)](#business-intelligence-(bi))
 		- [Collaboration systems (CS)](#collaboration-systems-(cs))
+	- [Other IS](#other-is)
 - [Implementing IS ](#implementing-is-)
 	- [Common pitfalls & best practices](#common-pitfalls-&-best-practices)
 - [Sources](#sources)
@@ -73,9 +74,18 @@ CS are used to connect people, and include:
 - Knowledge management
 - Internet, extranet, intranet
 
+## Other IS
+
+- Digital asset management (DAM)
+- Content management systems (CMS)
+- Websites
+- Catalogs
+- Libraries
+- Archives
+
         
-        
-        
+
+
 # Implementing IS 
 
 See [notes on project management.](project-management.html)

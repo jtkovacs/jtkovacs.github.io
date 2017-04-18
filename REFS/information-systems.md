@@ -60,9 +60,18 @@ CS are used to connect people, and include:
 - Knowledge management
 - Internet, extranet, intranet
 
+## Other IS
+
+- Digital asset management (DAM)
+- Content management systems (CMS)
+- Websites
+- Catalogs
+- Libraries
+- Archives
+
         
-        
-        
+
+
 # Implementing IS 
 
 See [notes on project management.](project-management.html)

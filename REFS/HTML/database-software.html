@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+  </title>
+  <link href="refs.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <table class="TOC">
+   <tr>
+    <td>
+     <pre><code> - [MySQL Server:](#mysql-server:)
+    - [Access](#access)</code></pre>
+    </td>
+   </tr>
+  </table>
+  <p>
+   https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446
+  </p>
+  <p>
+   Migrating Access DB to Microsoft SQL Server Management Studio
+  </p>
+  <ul>
+   <li>
+    Split database
+   </li>
+   <li>
+    Database performance can be improved by splitting the database: tables in one file, all other objects (like queries, forms, and reports) in another. Other reasons to split a database.
+   </li>
+   <li>
+    How? Database Tools &gt; Access Database &gt; Database Splitter wizard.
+   </li>
+   <li>
+    http://www.techrepublic.com/blog/10-things/10-plus-reasons-to-split-an-access-database/
+   </li>
+   <li>
+    https://support.office.com/en-us/article/Split-an-Access-database-3015ad18-a3a1-4e9c-a7f3-51b1d73498cc?ui=en-US&amp;rs=en-US&amp;ad=US
+   </li>
+   <li>
+    Naming conventions: for mydb.accdb, the backend can be named mydb_be.accdb or mybd_datafile.accdb
+   </li>
+   <li>
+    Tables in mydatabase.accdb are linked tables
+   </li>
+   <li>
+    Backend goes on server
+   </li>
+   <li>
+    What about .mdb??
+    <ul>
+     <li>
+      https://support.microsoft.com/en-us/kb/118609
+     </li>
+     <li>
+      https://support.office.com/en-us/article/Which-Access-file-format-should-I-use-012d9ab3-d14c-479e-b617-be66f9070b41
+     </li>
+    </ul>
+   </li>
+   <li>
+    Prepare frontend
+   </li>
+   <li>
+    Consider compiling the frontend file to limit functionality: Database Tools &gt; Make ACCDE &gt; Save as mydb.accde or mydd.mde
+   </li>
+   <li>
+    Hide menus: Access Options &gt; deselect Display Navigation Pane
+   </li>
+   <li>
+    Prepare backend
+   </li>
+   <li>
+    Backup plan?
+   </li>
+   <li>
+    https://support.microsoft.com/en-us/kb/162522: When you distribute your application, instruct a network or system administrator to run the Setup program for your back-end database on the network file server first ... After Setup install the appropriate files on the file server, instruct all users to run the setup program for your front-end database. This setup program sets up your main application and all of the Microsoft Access run-time files on each user's computer.
+   </li>
+   <li>
+    https://www.youtube.com/watch?v=aylQNvVDPsg
+   </li>
+  </ul>
+  <h3>
+   <a name="mysql-server:">
+    MySQL Server:
+   </a>
+  </h3>
+  <p>
+   install: ubuntu launch: /usr/bin/mysql -u [uname] -p[pwd] exit: quit; errors log location: /var/log/mysql/error.log edit configs: less my.cnf exit less: q create database: CREATE DATABASE dname; list all databases: SHOW DATABASES;
+  </p>
+  <p>
+   view users: SELECT User, Host, Password FROM mysql.user; add user: INSERT INTO mysql.user (User,Host,Password) VALUES('username','localhost',PASSWORD('demopassword')); FLUSH PRIVILEGES; change password: UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root'; FLUSH PRIVILEGES; grant privileges: GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost; FLUSH PRIVILEGES; SHOW GRANTS FOR 'demouser'@'localhost';
+  </p>
+  <h3>
+   <a name="access">
+    Access
+   </a>
+  </h3>
+  <p>
+   http://allenbrowne.com/tips.html
+  </p>
+  <p>
+   components of a database: tables, saved queries, views, forms data types: short/long text, autonumber/keys, int, float, binary, attachment, hyperlink, calculated field, currency, Lookup Wizard date delimiter: BETWEEN #00/00/0000# AND #00/00/0000# create tables: Create &gt; Table (or Table Design) External Data &gt; … (can import from Excel, XML, CSV, etc.; Access will add a primary key) Autosaves when inputting records; need to save changes to DB structure though Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers define relationships: Database Tools &gt; Relationships; drag &amp; drop interface Check “Enforce referential integrity” , “Cascade update” and “Cascade delete” to prevent orphan records control input: can make a field required specify formatting, e.g. e.g. (xxx) xxx-xxxx for a phone number: Design View &gt; choose field &gt; Input Mask &gt; … default value: Design View &gt; choose field &gt; Default Value &gt; … &gt; =”United States” validation rules: Design View &gt; choose field &gt; Validation Rule &gt; … &gt; =Date(), =”MasterCard” OR “Visa” Design View &gt; choose field &gt; Validation Text &gt; The credit card you’ve entered has expired! lookup tables: Design View &gt; choose field &gt; Data Type &gt; Lookup Wizard Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected Lookup value list is static, good for a small number of relatively fixed values optimize: Design View &gt; choose field &gt; Field Size; Indexed query types: Create &gt; Query Design&gt; Totals, Select, Update, Make Table, Delete, Append, Crosstab &gt; Run choose join type: double click on UML associations in Query Design view deletion: Query Design &gt; join Table and Query affecting Table &gt; Property Sheet &gt; set Unique Records to Yes &gt; Delete &gt; Run append is a permanent combination of two tables; union is a temporary combination crosstab is similar to totals, but presents the results in matrix form create forms: GUIs for database users Choose table &gt; Create &gt; Form (or Form Wizard, or Form Design) Basing forms on queries (rather than tables) makes future modifications easier http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm for navigating multiple forms: Create &gt; Navigation; drag &amp; drop forms onto this page specify form properties (many): Form Design &gt; Properties Sheet &gt; Format, Data, Event, Other
+   <br/>
+   … Properties Sheet &gt; Data &gt; Data Source → Design &gt; Add Existing Fields Design View &gt; Layout Add a combo box to the header of a form for easier navigation (e.g. by employee name) reports: for printing, reading, analyzing trends Create &gt; Report (or Report Design or Report Wizard) Design &gt; Group &amp; Sort, Totals Format &gt; Conditional Formatting database maintenance &amp; navigability: Database Tools &gt; Object Dependencies, Database Documenter, Compact &amp; Repair (run periodically) can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane Design View of tables/queries/etc. lets you add descriptions and tool tips for fields Database Tools &gt; Access Database (splits database into front-end=queries+forms+reports and back-end=tables) troubleshooting: External Data &gt; Linked Table Manager build a custom ribbon with frequently-used commands &amp; macros: Options &gt; Customize Ribbon startup actions, default views, and limited views: Options &gt; Current Database bypass by holding shift key while opening database macros: Create &gt; Macro button macros: Design &gt; create a button &gt; Property Sheet &gt; Events &gt; On Click &gt; … &gt; ApplyFilter remove all filters: ApplyFilter &gt; Where Condition = true data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; … name macro autoexec to run it on launch
+  </p>
+ </body>
+</html>

@@ -265,13 +265,13 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
     (a) No current system exists
     (b) Little effect on current systems
 
-(3) **The amount of system change desired,** i.e. BPA vs. BPI vs. BPR.
+(3) **The amount of system change desired** (i.e. BPA vs. BPI vs. BPR), where the amount of change desired and amount of effort spent analyzing the as-is system are inversely related.
 
 #### Business process automation (BPA)
 
 BPA is focused on making current processes more efficient through automation; it requires thorough analysis of the current system.
 
-##### Problems analysis
+##### Problem analysis
 
 This entails asking current system users about problems they face or features they desire. Problems identified with this technique are often related to UI and their resolution produces little if any business value.
 
@@ -280,7 +280,22 @@ This entails asking current system users about problems they face or features th
 This entails asking current system users to explore the root causes of problems they've identified (since these problems may only be symptoms). Root causes may be uncovered by asking "Why?" five times; causal relationships may be represented as a hierarchy, web, or fishbone/Ishikawa diagram.
 
 #### Business process improvement (BPI)
+
+BPI goes beyond increased efficiency to the realm of increased effectiveness, for instance taking advantage of new opportunities and technologies.
     
+##### Duration analysis
+
+##### Activity-based costing
+
+##### Informal bench-marking 
+    
+#### Business process reengineering (BPR)
+
+##### Outcome analysis
+
+##### Technology analysis
+
+##### Activity elimination
     
     
 ### Gathering requirements

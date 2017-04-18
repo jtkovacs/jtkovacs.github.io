@@ -2,12 +2,7 @@
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 - [Data models](#data-models)
-	- [Object-based](#object-based)
-	- [Record-based](#record-based)
-		- [(1G) Hierarchical](#(1g)-hierarchical)
-		- [(1G) Graph](#(1g)-graph)
-		- [(2G) Relational](#(2g)-relational)
-	- [Physical data models](#physical-data-models)
+	- [Relational ](#relational-)
 - [Database design](#database-design)
 	- [Groundwork](#groundwork)
 	- [Conceptual design](#conceptual-design)
@@ -73,36 +68,18 @@ Then, the DBMS creates **mappings** between schemas (also called intensions); a 
 
 # Data models
 
-## Object-based
+- **Object-based:** Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
+    - Entity-Relationship (ER)
+    - Semantic
+    - Functional
+    - (3G) Object-oriented: adds **behavior** alongside state.
+- **Record-based: ** Can’t express constraints on the data, but express structure well.
+    - **(1G) Hierarchical:** Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
+    - **(1G) Graph:** AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+    - **(2G) Relational:** Tables with columns, with implicit relationships via attributes.
+- **Physical data models:** Most common: unifying model, frame memory.
 
-Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
-
-- Entity-Relationship (ER)
-- Semantic
-- Functional
-- (3G) Object-oriented: adds **behavior** alongside state.
-
-## Record-based
-
-Can’t express constraints on the data, but express structure well.
-
-### (1G) Hierarchical
-
-Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
-
-### (1G) Graph
-
-AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-
-### (2G) Relational
-
-Tables with columns, with implicit relationships via attributes.
-
-## Physical data models
-
-Most common: unifying model, frame memory.
-
-
+## Relational 
 
 
 

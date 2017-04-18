@@ -38,35 +38,8 @@
        </a>
        <ul>
         <li>
-         <a href="#object-based">
-          Object-based
-         </a>
-        </li>
-        <li>
-         <a href="#record-based">
-          Record-based
-         </a>
-         <ul>
-          <li>
-           <a href="#(1g)-hierarchical">
-            (1G) Hierarchical
-           </a>
-          </li>
-          <li>
-           <a href="#(1g)-graph">
-            (1G) Graph
-           </a>
-          </li>
-          <li>
-           <a href="#(2g)-relational">
-            (2G) Relational
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#physical-data-models">
-          Physical data models
+         <a href="#relational-">
+          Relational
          </a>
         </li>
        </ul>
@@ -363,88 +336,85 @@
     Data models
    </a>
   </h1>
-  <h2>
-   <a name="object-based">
-    Object-based
-   </a>
-  </h2>
-  <p>
-   Allow specification of constraints, but not overall structure. Includes
-   <strong>
-    entities
-   </strong>
-   with
-   <strong>
-    attributes
-   </strong>
-   and
-   <strong>
-    relationships,
-   </strong>
-   describing the
-   <strong>
-    state
-   </strong>
-   of the object.
-  </p>
   <ul>
    <li>
-    Entity-Relationship (ER)
-   </li>
-   <li>
-    Semantic
-   </li>
-   <li>
-    Functional
-   </li>
-   <li>
-    (3G) Object-oriented: adds
     <strong>
-     behavior
+     Object-based:
     </strong>
-    alongside state.
+    Allow specification of constraints, but not overall structure. Includes
+    <strong>
+     entities
+    </strong>
+    with
+    <strong>
+     attributes
+    </strong>
+    and
+    <strong>
+     relationships,
+    </strong>
+    describing the
+    <strong>
+     state
+    </strong>
+    of the object.
+    <ul>
+     <li>
+      Entity-Relationship (ER)
+     </li>
+     <li>
+      Semantic
+     </li>
+     <li>
+      Functional
+     </li>
+     <li>
+      (3G) Object-oriented: adds
+      <strong>
+       behavior
+      </strong>
+      alongside state.
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Record-based:
+    </strong>
+    Can’t express constraints on the data, but express structure well.
+    <ul>
+     <li>
+      <strong>
+       (1G) Hierarchical:
+      </strong>
+      Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
+     </li>
+     <li>
+      <strong>
+       (1G) Graph:
+      </strong>
+      AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+     </li>
+     <li>
+      <strong>
+       (2G) Relational:
+      </strong>
+      Tables with columns, with implicit relationships via attributes.
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Physical data models:
+    </strong>
+    Most common: unifying model, frame memory.
    </li>
   </ul>
   <h2>
-   <a name="record-based">
-    Record-based
+   <a name="relational">
+    Relational
    </a>
   </h2>
-  <p>
-   Can’t express constraints on the data, but express structure well.
-  </p>
-  <h3>
-   <a name="(1g)-hierarchical">
-    (1G) Hierarchical
-   </a>
-  </h3>
-  <p>
-   Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
-  </p>
-  <h3>
-   <a name="(1g)-graph">
-    (1G) Graph
-   </a>
-  </h3>
-  <p>
-   AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-  </p>
-  <h3>
-   <a name="(2g)-relational">
-    (2G) Relational
-   </a>
-  </h3>
-  <p>
-   Tables with columns, with implicit relationships via attributes.
-  </p>
-  <h2>
-   <a name="physical-data-models">
-    Physical data models
-   </a>
-  </h2>
-  <p>
-   Most common: unifying model, frame memory.
-  </p>
   <h1>
    <a name="database-design">
     Database design

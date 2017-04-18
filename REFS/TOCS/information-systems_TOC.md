@@ -42,24 +42,15 @@ ES are used to perform the daily tasks of a business.
 
 #### Enterprise resource planning (ERP) 
 
-Internal. Major providers are SAP, Oracle, Sage Group, Microsoft Dynamics, SSA Global Technologies.
-
-- \+ eliminate data inconsistencies, reporting that cover entirety of business process, better availability of data
-- \- costs from purchase, training, data conversion, consulting fees ... also enforce standardization of business processes, which users may resist
+Internal. Major providers are SAP, Oracle, Sage Group, Microsoft Dynamics, SSA Global Technologies. ERP systems eliminate data inconsistencies; enable reporting that covers the entirety of a business function or process; and supports better availability of data. ERPs entail costs (purchase, training, data conversion, consulting fees, etc.) and also enforce standardization of business processes, which users may resist.
 
 #### Customer relationship management (CRM)
 
-External interface; incl. sales, marketing, customer service, and analysis of such.
-
-- \+ better customer service to attract and retain customers, perform targeted marketing and experiences, discover new customers
-- \- hard to develop a customer-centric culture
+External interface; incl. sales, marketing, customer service, and analysis of such. CRM systems enable targeted marketing and experiences; help discover new customers; and support better customer service to attract and retain customers. However, their success depends on a customer-centric organizational culture, which can be hard to develop.
 
 #### Supply chain management (SCM)
 
-External interface; covers suppliers, manufacturers, distributors, and customers (presumably in a way that isn't redundant to the CRM??).
-
-- \+ Avoid waste in supply chain by identifying inefficiencies and improving forecasting
-- \- Depends on building trust among members of the supply chain; also difficult to model supply chain that can be quite complex 
+External interface; covers suppliers, manufacturers, distributors, and customers (presumably in a way that isn't redundant to the CRM??). SCMs help avoid waste in supply chain by identifying inefficiencies and improving forecasting. Their success depends on (1) trust among members of the supply chain, and (2) accurate models of the supply chain, which can be dauntingly complex.
 
 ### Business intelligence (BI)
 

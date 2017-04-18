@@ -43,9 +43,9 @@ This is one way of thinking about database abstraction/separation, which, in gen
 Then, the DBMS creates **mappings** between schemas (also called intensions); a realization of a schema is called the extension or state of the database.
 
 
-## Data models
+# Data models
 
-### Object-based
+## Object-based
 
 Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
 
@@ -54,23 +54,23 @@ Allow specification of constraints, but not overall structure. Includes **entiti
 - Functional
 - (3G) Object-oriented: adds **behavior** alongside state.
 
-### Record-based
+## Record-based
 
 Can’t express constraints on the data, but express structure well.
 
-#### (1G) Hierarchical
+### (1G) Hierarchical
 
 Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
 
-#### (1G) Graph
+### (1G) Graph
 
 AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 
-#### (2G) Relational
+### (2G) Relational
 
 Tables with columns, with implicit relationships via attributes.
 
-### Physical data models
+## Physical data models
 
 Most common: unifying model, frame memory.
 

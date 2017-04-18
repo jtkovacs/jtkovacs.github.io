@@ -30,44 +30,44 @@
           </li>
          </ul>
         </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#data-models">
+        Data models
+       </a>
+       <ul>
         <li>
-         <a href="#data-models">
-          Data models
+         <a href="#object-based">
+          Object-based
+         </a>
+        </li>
+        <li>
+         <a href="#record-based">
+          Record-based
          </a>
          <ul>
           <li>
-           <a href="#object-based">
-            Object-based
+           <a href="#(1g)-hierarchical">
+            (1G) Hierarchical
            </a>
           </li>
           <li>
-           <a href="#record-based">
-            Record-based
+           <a href="#(1g)-graph">
+            (1G) Graph
            </a>
-           <ul>
-            <li>
-             <a href="#(1g)-hierarchical">
-              (1G) Hierarchical
-             </a>
-            </li>
-            <li>
-             <a href="#(1g)-graph">
-              (1G) Graph
-             </a>
-            </li>
-            <li>
-             <a href="#(2g)-relational">
-              (2G) Relational
-             </a>
-            </li>
-           </ul>
           </li>
           <li>
-           <a href="#physical-data-models">
-            Physical data models
+           <a href="#(2g)-relational">
+            (2G) Relational
            </a>
           </li>
          </ul>
+        </li>
+        <li>
+         <a href="#physical-data-models">
+          Physical data models
+         </a>
         </li>
        </ul>
       </li>
@@ -350,16 +350,16 @@
    </strong>
    between schemas (also called intensions); a realization of a schema is called the extension or state of the database.
   </p>
-  <h2>
+  <h1>
    <a name="data-models">
     Data models
    </a>
-  </h2>
-  <h3>
+  </h1>
+  <h2>
    <a name="object-based">
     Object-based
    </a>
-  </h3>
+  </h2>
   <p>
    Allow specification of constraints, but not overall structure. Includes
    <strong>
@@ -397,43 +397,43 @@
     alongside state.
    </li>
   </ul>
-  <h3>
+  <h2>
    <a name="record-based">
     Record-based
    </a>
-  </h3>
+  </h2>
   <p>
    Can’t express constraints on the data, but express structure well.
   </p>
-  <h4>
+  <h3>
    <a name="(1g)-hierarchical">
     (1G) Hierarchical
    </a>
-  </h4>
+  </h3>
   <p>
    Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
   </p>
-  <h4>
+  <h3>
    <a name="(1g)-graph">
     (1G) Graph
    </a>
-  </h4>
+  </h3>
   <p>
    AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
   </p>
-  <h4>
+  <h3>
    <a name="(2g)-relational">
     (2G) Relational
    </a>
-  </h4>
+  </h3>
   <p>
    Tables with columns, with implicit relationships via attributes.
   </p>
-  <h3>
+  <h2>
    <a name="physical-data-models">
     Physical data models
    </a>
-  </h3>
+  </h2>
   <p>
    Most common: unifying model, frame memory.
   </p>

@@ -32,8 +32,6 @@
 			- [Document analysis](#document-analysis)
 		- [Documenting requirements](#documenting-requirements)
 		- [Analyzing requirements](#analyzing-requirements)
-			- [User personas](#user-personas)
-			- [User stories](#user-stories)
 	- [Current state, future state analysis](#current-state,-future-state-analysis)
 	- [Choosing software](#choosing-software)
 - [Monitoring & governance](#monitoring-&-governance)
@@ -317,11 +315,6 @@ Requirements are often analyzed by grouping them into **use cases.** Per Whitney
 - Exceptions
 - GUI requirements
 - Dependencies and relations (to other use cases; often modeled with UML)
-
-#### User personas
-
-#### User stories
-
 
 
 ## Current state, future state analysis

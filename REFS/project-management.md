@@ -277,11 +277,6 @@ Requirements are often analyzed by grouping them into **use cases.** Per Whitney
 - GUI requirements
 - Dependencies and relations (to other use cases; often modeled with UML)
 
-#### User personas
-
-#### User stories
-
-
 
 ## Current state, future state analysis
 

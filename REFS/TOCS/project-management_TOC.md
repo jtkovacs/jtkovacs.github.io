@@ -275,7 +275,7 @@ Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysi
 - Complete, correct, unambiguous, verifiable
 - Necessary, feasible, prioritized
 
-Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements analysis are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users) and then as **system requirements** (from the perspective of developers). Requirements are also categorized as **functional** (business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect system requirements).  
+Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements analysis are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users) and then as **system requirements** (from the perspective of developers). Requirements are also categorized as **functional** (business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect system requirements and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as COBIT, ISO 9000, and the Capability Maturity Model).  
 
 ### Gathering requirements
 

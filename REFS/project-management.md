@@ -233,6 +233,9 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 - http://www.agilemodeling.com/artifacts/
 
+
+
+
 ### User personas
 
 I need to X in order to Y
@@ -246,11 +249,18 @@ Scenarios
 
 ## Current state, future state analysis
 
-See [notes on system, process, and interface modeling.](modeling.html)
+See [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current and desired future states of the system.
 
 ## Choosing software
 
-See [notes on BI architectures.](BI.html)
+See [notes on BI architectures](BI.html) for information specific to selecting BI software. 
+
+General criteria to consider:
+
+- 
+
+
+
 
 # Monitoring & governance
 

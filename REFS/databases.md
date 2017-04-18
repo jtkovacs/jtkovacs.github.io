@@ -1,14 +1,11 @@
-*These notes are informed by Connolly & Begg (2015), Database Systems, 6E.*
 
-# Precursors to databases
+# History of databases
 
 The first computerized information systems imitated hierarchical paper filing systems. File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
 
 - **redundancy:** the same data collected and stored by multiple departments;
 - **inconsistency:** redundant data that *should be* the same not updated consistently;
 - **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
-
-# Database approach
 
 A database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering a language for ad hoc queries). In a database,
 
@@ -27,15 +24,6 @@ A database addresses the aforementioned problems because it is **centralized** (
     - views that are customized to the needs of specific audiences;
 - Other applications can interact with the data by communicating with the DBMS.
 
-# Terminology 
-
-A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
-
-- **Database** = Data + DBMS
-- **Database System** = Database + Database Applications
-- **Database Environment** = Hardware + Software + Data + Procedures + People
-
-
 ## ANSI-SPARC architecture
 
 This is one way of thinking about database abstraction/separation, which, in general, makes the database easier to change and maintain by providing **logical data independence** and  **physical data independence:**
@@ -48,6 +36,18 @@ Then,
 
 - the DBMS creates **mappings** between schemas (also called intensions);
 - a realization of a schema is called the extension or state of the database.
+
+
+
+
+# Terminology 
+
+A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+
+- **Database** = Data + DBMS
+- **Database System** = Database + Database Applications
+- **Database Environment** = Hardware + Software + Data + Procedures + People
+
 
 # (Generations of) data models
 
@@ -171,7 +171,7 @@ UML can be translated into relations:
 
 # SOURCES
 
-## ARCHIVE
+*These notes are informed by Connolly & Begg (2015), Database Systems, 6E.*
 
 - [Intro. to Relational Databases](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
 - [Relational Algebra](https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about)

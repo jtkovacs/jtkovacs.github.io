@@ -244,19 +244,13 @@ Scenarios
 
 ### User stories
 
-## Prototyping UI
-
 ## Current state, future state analysis
 
-### Modeling data flows
-
-### Modeling processes
-
-Hard to distinguish business process from IT process from work
-
-### Modeling systems architecture
+See [notes on system, process, and interface modeling.](modeling.html)
 
 ## Choosing software
+
+See [notes on BI architectures.](BI.html)
 
 # Monitoring & governance
 

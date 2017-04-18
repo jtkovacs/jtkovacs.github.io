@@ -109,7 +109,7 @@ There are three stages of database design. In the conceptual design stage, a dat
 
 In the conceptual design stage of database development, there are two competing approaches: top-down and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. The bottom-up approach begins with identifying attributes, then grouping and normalizing them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes. 
 
-### Kinds of attributes 
+#### Kinds of attributes 
 
 An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
 
@@ -117,34 +117,7 @@ An attribute is multi-valued/set-valued if, for a single entity, the attribute c
 
 An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
 
-### Entity Relationship diagrams (ERD)
-
-### Unified Modeling Language (UML)
-
-UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
-
-- Classes: Name, attributes, primary key/methods; analogous to relations.
-- Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations: `1..1 is default; m..n; m..\*; 0..n; 0..\*`.
-- Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
-- Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.  
-- Superclasses are in/complete and disjoint/overlapping.
-- Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity `1..1`. No PK needed!
-- Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
-
-UML can be translated into relations:
-
-- Classes become relations.
-- Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written  0..1 to \*), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
-- Association classes add their attributes to the association’s relation.
-- Self-associations: rename and recycle same key.
-- Subclasses have three different translation procedures: 
-  - Subclass relations contain superclass PK and unique attributes;
-  - Subclass relations contain all superclass attributes & unique attributes;
-  - One relation contains all super- and subclass attributes.
-- Composition: Add PK from main class, but not as a key, just as an attribute.
-- Aggregation: “, with the additional stipulation that main class’s PK can be empty.
-
-### Normalization
+#### Bottom-up design through normalization
 
 Design by decomposition avoids redundancy and its consequences (update & deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
 
@@ -171,8 +144,32 @@ __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides
 
 __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
 
+#### Top-down design with UML/ERDs
 
-    
+UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
+
+- Classes: Name, attributes, primary key/methods; analogous to relations.
+- Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations: `1..1 is default; m..n; m..\*; 0..n; 0..\*`.
+- Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
+- Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.  
+- Superclasses are in/complete and disjoint/overlapping.
+- Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity `1..1`. No PK needed!
+- Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+
+UML can be translated into relations:
+
+- Classes become relations.
+- Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written  0..1 to \*), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
+- Association classes add their attributes to the association’s relation.
+- Self-associations: rename and recycle same key.
+- Subclasses have three different translation procedures: 
+  - Subclass relations contain superclass PK and unique attributes;
+  - Subclass relations contain all superclass attributes & unique attributes;
+  - One relation contains all super- and subclass attributes.
+- Composition: Add PK from main class, but not as a key, just as an attribute.
+- Aggregation: “, with the additional stipulation that main class’s PK can be empty.
+
+
 ## Logical design
     
 - __Create logical design (rules and constraints)__:
@@ -205,6 +202,9 @@ __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is t
 ## Performance
 
 ## Security
+
+
+
 
 
 # SOURCES

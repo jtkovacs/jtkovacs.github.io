@@ -63,26 +63,23 @@
            <a href="#top-down-vs.-bottom-up-design">
             Top-down vs. bottom-up design
            </a>
-          </li>
-          <li>
-           <a href="#kinds-of-attributes-">
-            Kinds of attributes
-           </a>
-          </li>
-          <li>
-           <a href="#entity-relationship-diagrams-(erd)">
-            Entity Relationship diagrams (ERD)
-           </a>
-          </li>
-          <li>
-           <a href="#unified-modeling-language-(uml)">
-            Unified Modeling Language (UML)
-           </a>
-          </li>
-          <li>
-           <a href="#normalization">
-            Normalization
-           </a>
+           <ul>
+            <li>
+             <a href="#kinds-of-attributes-">
+              Kinds of attributes
+             </a>
+            </li>
+            <li>
+             <a href="#bottom-up-design-through-normalization">
+              Bottom-up design through normalization
+             </a>
+            </li>
+            <li>
+             <a href="#top-down-design-with-uml/erds">
+              Top-down design with UML/ERDs
+             </a>
+            </li>
+           </ul>
           </li>
          </ul>
         </li>
@@ -520,11 +517,11 @@
   <p>
    In the conceptual design stage of database development, there are two competing approaches: top-down and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. The bottom-up approach begins with identifying attributes, then grouping and normalizing them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
   </p>
-  <h3>
+  <h4>
    <a name="kinds-of-attributes">
     Kinds of attributes
    </a>
-  </h3>
+  </h4>
   <p>
    An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
   </p>
@@ -534,95 +531,11 @@
   <p>
    An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
   </p>
-  <h3>
-   <a name="entity-relationship-diagrams-(erd)">
-    Entity Relationship diagrams (ERD)
+  <h4>
+   <a name="bottom-up-design-through-normalization">
+    Bottom-up design through normalization
    </a>
-  </h3>
-  <h3>
-   <a name="unified-modeling-language-(uml)">
-    Unified Modeling Language (UML)
-   </a>
-  </h3>
-  <p>
-   UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design.
-   <a href="https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/">
-    See UML graphs
-   </a>
-   .
-  </p>
-  <ul>
-   <li>
-    Classes: Name, attributes, primary key/methods; analogous to relations.
-   </li>
-   <li>
-    Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations:
-    <code>
-     1..1 is default; m..n; m..\*; 0..n; 0..\*
-    </code>
-    .
-   </li>
-   <li>
-    Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
-   </li>
-   <li>
-    Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
-    <br/>
-   </li>
-   <li>
-    Superclasses are in/complete and disjoint/overlapping.
-   </li>
-   <li>
-    Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
-    <code>
-     1..1
-    </code>
-    . No PK needed!
-   </li>
-   <li>
-    Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
-   </li>
-  </ul>
-  <p>
-   UML can be translated into relations:
-  </p>
-  <ul>
-   <li>
-    Classes become relations.
-   </li>
-   <li>
-    Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written 0..1 to *), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
-   </li>
-   <li>
-    Association classes add their attributes to the association’s relation.
-   </li>
-   <li>
-    Self-associations: rename and recycle same key.
-   </li>
-   <li>
-    Subclasses have three different translation procedures:
-   </li>
-   <li>
-    Subclass relations contain superclass PK and unique attributes;
-   </li>
-   <li>
-    Subclass relations contain all superclass attributes &amp; unique attributes;
-   </li>
-   <li>
-    One relation contains all super- and subclass attributes.
-   </li>
-   <li>
-    Composition: Add PK from main class, but not as a key, just as an attribute.
-   </li>
-   <li>
-    Aggregation: “, with the additional stipulation that main class’s PK can be empty.
-   </li>
-  </ul>
-  <h3>
-   <a name="normalization">
-    Normalization
-   </a>
-  </h3>
+  </h4>
   <p>
    Design by decomposition avoids redundancy and its consequences (update &amp; deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
   </p>
@@ -857,6 +770,85 @@
    </sub>
    (A,rest); repeat.
   </p>
+  <h4>
+   <a name="top-down-design-with-uml/erds">
+    Top-down design with UML/ERDs
+   </a>
+  </h4>
+  <p>
+   UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design.
+   <a href="https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/">
+    See UML graphs
+   </a>
+   .
+  </p>
+  <ul>
+   <li>
+    Classes: Name, attributes, primary key/methods; analogous to relations.
+   </li>
+   <li>
+    Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations:
+    <code>
+     1..1 is default; m..n; m..\*; 0..n; 0..\*
+    </code>
+    .
+   </li>
+   <li>
+    Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
+   </li>
+   <li>
+    Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
+    <br/>
+   </li>
+   <li>
+    Superclasses are in/complete and disjoint/overlapping.
+   </li>
+   <li>
+    Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
+    <code>
+     1..1
+    </code>
+    . No PK needed!
+   </li>
+   <li>
+    Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+   </li>
+  </ul>
+  <p>
+   UML can be translated into relations:
+  </p>
+  <ul>
+   <li>
+    Classes become relations.
+   </li>
+   <li>
+    Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written 0..1 to *), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
+   </li>
+   <li>
+    Association classes add their attributes to the association’s relation.
+   </li>
+   <li>
+    Self-associations: rename and recycle same key.
+   </li>
+   <li>
+    Subclasses have three different translation procedures:
+   </li>
+   <li>
+    Subclass relations contain superclass PK and unique attributes;
+   </li>
+   <li>
+    Subclass relations contain all superclass attributes &amp; unique attributes;
+   </li>
+   <li>
+    One relation contains all super- and subclass attributes.
+   </li>
+   <li>
+    Composition: Add PK from main class, but not as a key, just as an attribute.
+   </li>
+   <li>
+    Aggregation: “, with the additional stipulation that main class’s PK can be empty.
+   </li>
+  </ul>
   <h2>
    <a name="logical-design">
     Logical design

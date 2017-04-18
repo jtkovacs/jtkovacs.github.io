@@ -340,9 +340,11 @@ First, major processes are timed; second, all individual steps in those processe
 
 ##### Activity-based costing
 
-
+Steps in a process are costed, and improvement efforts are focused on the costliest step.
 
 ##### Informal bench-marking 
+
+Examine competitors to identify performance targets and process improvements.
     
 #### Business process reengineering (BPR)
 

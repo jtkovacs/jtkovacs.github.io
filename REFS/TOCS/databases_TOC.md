@@ -1,5 +1,6 @@
 <table class="TOC"><tr><td>- [Precursors to databases](#precursors-to-databases)
 - [Database approach](#database-approach)
+- [Terminology ](#terminology-)
 	- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 - [(Generations of) data models](#(generations-of)-data-models)
 	- [Object-based data models](#object-based-data-models)
@@ -8,14 +9,13 @@
 		- [(1G) Graph data model ](#(1g)-graph-data-model-)
 		- [(2G) Relational data model](#(2g)-relational-data-model)
 	- [Physical data models](#physical-data-models)
-	- [ORGANIZE & STORE > Relational Databases](#organize-&-store->-relational-databases)
-		- [Terminology ](#terminology-)
-		- [Database development lifecycle](#database-development-lifecycle)
+- [Database development lifecycle](#database-development-lifecycle)
+	- [Top-down vs. bottom-up](#top-down-vs.-bottom-up)
 		- [Design by decomposition](#design-by-decomposition)
-		- [Unified Modeling Language](#unified-modeling-language)
+			- [Unified Modeling Language](#unified-modeling-language)
 - [SOURCES](#sources)
-			- [ARCHIVE](#archive)
-			- [INBOX](#inbox)
+	- [ARCHIVE](#archive)
+	- [INBOX](#inbox)
 </td></tr></table>
 *These notes are informed by Connolly & Begg (2015), Database Systems, 6E.*
 
@@ -46,11 +46,14 @@ A database addresses the aforementioned problems because it is **centralized** (
     - views that are customized to the needs of specific audiences;
 - Other applications can interact with the data by communicating with the DBMS.
 
-Some definitions:
+# Terminology 
+
+A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
 
 - **Database** = Data + DBMS
 - **Database System** = Database + Database Applications
 - **Database Environment** = Hardware + Software + Data + Procedures + People
+
 
 ## ANSI-SPARC architecture
 
@@ -68,6 +71,7 @@ Then,
 # (Generations of) data models
 
 ## Object-based data models
+
 Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
 
 - Entity-Relationship (ER)
@@ -95,23 +99,7 @@ Tables with columns, with implicit relationships via attributes.
 
 Most common: unifying model, frame memory.
 
-
-## ORGANIZE & STORE > Relational Databases
-
-<hr/>
-
-- [Terminology](#terminology)
-- [Database development lifecycle](#database-development-lifecycle)
-- [Design by decomposition](#design-by-decomposition)
-- [Unified Modeling Language](#unified-modeling-language)
-
-<hr/>
-
-### Terminology 
-
-A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
-
-### Database development lifecycle
+# Database development lifecycle
 
 A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). 
 
@@ -145,6 +133,8 @@ A good design process prevents repetition; reduces errors (by limiting data entr
   - Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
 - __Create physical design (software-specific instructions)__: Construct, roll out, and support.
 
+## Top-down vs. bottom-up
+
 ### Design by decomposition
 
 This approach avoids redundancy and its consequences (update & deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
@@ -172,7 +162,7 @@ __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides
 
 __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
 
-### Unified Modeling Language
+#### Unified Modeling Language
 
 UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
 
@@ -200,7 +190,7 @@ UML can be translated into relations:
 
 # SOURCES
 
-#### ARCHIVE
+## ARCHIVE
 
 - [Intro. to Relational Databases](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
 - [Relational Algebra](https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about)
@@ -210,7 +200,7 @@ UML can be translated into relations:
 - [ORM is an offensive anti-pattern](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html)
 - [Access 2016](http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html)
 
-#### INBOX
+## INBOX
 
 - [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
 - [How does a relational database work?](http://coding-geek.com/how-databases-work/)

@@ -302,9 +302,9 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
 
 (2) **The amount of system change desired:** 
 
-- Business process automation **(BPA)**
-- Business process improvement **(BPI)**
-- Business process reengineering **(BPR)**
+    (a) Business process automation **(BPA)**
+    (b) Business process improvement **(BPI)**
+    (c) Business process reengineering **(BPR)**
 
 ### Gathering requirements
 

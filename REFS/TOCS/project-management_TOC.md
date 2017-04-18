@@ -25,6 +25,11 @@
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements determination](#requirements-determination)
 		- [Gathering requirements](#gathering-requirements)
+			- [Interviews](#interviews)
+			- [Observations](#observations)
+			- [Surveys or questionnaires ](#surveys-or-questionnaires-)
+			- [JAD sessions](#jad-sessions)
+			- [Document analysis](#document-analysis)
 		- [Documenting requirements](#documenting-requirements)
 		- [Analyzing requirements](#analyzing-requirements)
 			- [User personas](#user-personas)
@@ -274,11 +279,21 @@ Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysi
 
 ### Gathering requirements
 
-Requirements may be obtained via interviews, observations, surveys, JAD sessions, and analysis of users, domain experts, existing processes, existing documents, and competing software. 
+Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, existing documents, and competing software using the following techniques:
+
+#### Interviews
+
+#### Observations
+
+#### Surveys or questionnaires 
+
+#### JAD sessions
+
+#### Document analysis
 
 ### Documenting requirements
 
-Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be expressed using a **concept map**, **requirements trace matrix** (table format), or various **card** formats, which include:
+Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be expressed using a **concept map,** **requirements trace matrix** (table format), or various **card** formats, which include:
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
 - **XP Story Cards,** in which a customer writes a story on a card.

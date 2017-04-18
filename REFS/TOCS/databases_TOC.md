@@ -8,7 +8,7 @@
 		- [Physical data models](#physical-data-models)
 - [History of databases](#history-of-databases)
 	- [ANSI-SPARC architecture](#ansi-sparc-architecture)
-- [How do you design and build a database?](#how-do-you-design-and-build-a-database?)
+- [Database design](#database-design)
 	- [Database design lifecycle](#database-design-lifecycle)
 		- [Conceptual design](#conceptual-design)
 		- [Logical design](#logical-design)
@@ -16,6 +16,11 @@
 	- [Top-down vs. bottom-up](#top-down-vs.-bottom-up)
 		- [Unified Modeling Language](#unified-modeling-language)
 		- [Normalization](#normalization)
+- [Database administration](#database-administration)
+	- [Transaction management](#transaction-management)
+	- [Indexing](#indexing)
+	- [Performance](#performance)
+	- [Security](#security)
 - [SOURCES](#sources)
 	- [INBOX](#inbox)
 </td></tr></table>
@@ -117,7 +122,7 @@ Then,
 
 
 
-# How do you design and build a database?
+# Database design
 
 ## Database design lifecycle
 
@@ -213,6 +218,17 @@ __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides
 
 __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
 
+
+
+# Database administration
+
+## Transaction management
+
+## Indexing
+
+## Performance
+
+## Security
 
 
 # SOURCES

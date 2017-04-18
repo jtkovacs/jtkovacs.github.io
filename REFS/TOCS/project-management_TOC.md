@@ -265,7 +265,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Requirements analysis
 
-- http://www.agilemodeling.com/artifacts/
+Designs must emerge from in-depth analysis of [stakeholder'(#stakeholder-analysis) (not just user) needs. Requirements analysis is the process of eliciting, analyzing, and synthesizing stakeholder needs.
 
 ### User personas
 
@@ -280,11 +280,18 @@ Scenarios
 
 ## Current state, future state analysis
 
-See [notes on system, process, and interface modeling.](modeling.html)
+See [notes on system, process, and interface modeling techniques](modeling.html) that are used to characterize the current and desired future states of the system.
 
 ## Choosing software
 
-See [notes on BI architectures.](BI.html)
+See [notes on BI architectures](BI.html) for information specific to selecting BI software. 
+
+General criteria to consider:
+
+- 
+
+
+
 
 # Monitoring & governance
 

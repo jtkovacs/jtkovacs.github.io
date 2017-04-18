@@ -231,10 +231,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Requirements analysis
 
-- http://www.agilemodeling.com/artifacts/
-
-
-
+Designs must emerge from in-depth analysis of [stakeholder'(#stakeholder-analysis) (not just user) needs. Requirements analysis is the process of eliciting, analyzing, and synthesizing stakeholder needs.
 
 ### User personas
 

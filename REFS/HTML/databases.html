@@ -67,7 +67,47 @@
           Physical data models
          </a>
         </li>
+        <li>
+         <a href="#organize-&amp;-store-%3E-relational-databases">
+          ORGANIZE &amp; STORE &gt; Relational Databases
+         </a>
+         <ul>
+          <li>
+           <a href="#terminology-">
+            Terminology
+           </a>
+          </li>
+          <li>
+           <a href="#database-development-lifecycle">
+            Database development lifecycle
+           </a>
+          </li>
+          <li>
+           <a href="#design-by-decomposition">
+            Design by decomposition
+           </a>
+          </li>
+          <li>
+           <a href="#unified-modeling-language">
+            Unified Modeling Language
+           </a>
+          </li>
+         </ul>
+        </li>
        </ul>
+      </li>
+      <li>
+       <a href="#sources">
+        SOURCES
+       </a>
+       -
+       <a href="#archive">
+        ARCHIVE
+       </a>
+       -
+       <a href="#inbox">
+        INBOX
+       </a>
       </li>
      </ul>
     </td>
@@ -361,5 +401,597 @@
   <p>
    Most common: unifying model, frame memory.
   </p>
+  <h2>
+   <a name="organize-&amp;-store-&gt;-relational-databases">
+    ORGANIZE &amp; STORE &gt; Relational Databases
+   </a>
+  </h2>
+  <hr/>
+  <ul>
+   <li>
+    <a href="#terminology">
+     Terminology
+    </a>
+   </li>
+   <li>
+    <a href="#database-development-lifecycle">
+     Database development lifecycle
+    </a>
+   </li>
+   <li>
+    <a href="#design-by-decomposition">
+     Design by decomposition
+    </a>
+   </li>
+   <li>
+    <a href="#unified-modeling-language">
+     Unified Modeling Language
+    </a>
+   </li>
+  </ul>
+  <hr/>
+  <h3>
+   <a name="terminology">
+    Terminology
+   </a>
+  </h3>
+  <p>
+   A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+  </p>
+  <h3>
+   <a name="database-development-lifecycle">
+    Database development lifecycle
+   </a>
+  </h3>
+  <p>
+   A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input).
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Conduct cost-benefit for proposed database
+    </strong>
+   </li>
+   <li>
+    <strong>
+     Requirements analysis
+    </strong>
+    :
+   </li>
+   <li>
+    Write a mission statement and objectives;
+   </li>
+   <li>
+    Analyze current data inputs and outputs;
+   </li>
+   <li>
+    Within the scope of the objectives, identify key actors;
+   </li>
+   <li>
+    Interview actors to understand tasks that actors execute.
+   </li>
+   <li>
+    <strong>
+     Create conceptual design
+    </strong>
+    :
+   </li>
+   <li>
+    Group fields into tables a logical way;
+   </li>
+   <li>
+    Identify relationships verbally, and/or visualize in UML;
+   </li>
+   <li>
+    Identify cardinality (max#) and optionality (min#) associated with each relationship;
+   </li>
+   <li>
+    Identify entity subtypes/subclasses;
+   </li>
+   <li>
+    Create lookup tables;
+   </li>
+   <li>
+    Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”.
+   </li>
+   <li>
+    <strong>
+     Normalize your data model
+    </strong>
+    (see
+    <a href="#design-by-decomposition">
+     Design by decomposition
+    </a>
+    )
+    <ul>
+     <li>
+      1NF: all fields only include a single piece of data;
+     </li>
+     <li>
+      2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
+     </li>
+     <li>
+      3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Create logical design (rules and constraints)
+    </strong>
+    :
+   </li>
+   <li>
+    Proceed table by table, field by field;
+   </li>
+   <li>
+    Choose naming conventions: avoid special characters and reserved words for your DBMS;
+   </li>
+   <li>
+    Choose data types;
+   </li>
+   <li>
+    Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
+   </li>
+   <li>
+    Apply integrity constraints:
+    <ul>
+     <li>
+      With a lookup table;
+     </li>
+     <li>
+      With a referential integrity constraint to prevent orphaned records;
+     </li>
+     <li>
+      Through a check constraint.
+     </li>
+    </ul>
+   </li>
+   <li>
+    Denote required fields;
+   </li>
+   <li>
+    Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).
+    <br/>
+   </li>
+   <li>
+    <strong>
+     Create physical design (software-specific instructions)
+    </strong>
+    : Construct, roll out, and support.
+   </li>
+  </ul>
+  <h3>
+   <a name="design-by-decomposition">
+    Design by decomposition
+   </a>
+  </h3>
+  <p>
+   This approach avoids redundancy and its consequences (update &amp; deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
+  </p>
+  <p>
+   <strong>
+    Functional dependency (FD)
+   </strong>
+   ,
+   <code>
+    A→B
+   </code>
+   : The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for
+   <code>
+    ∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B
+   </code>
+   . This generalizes to multiple attributes:
+   <code>
+    A1, A2, …, An → B1, B2, …, Bm.
+   </code>
+   FDs are used in DB compression and query optimization.
+  </p>
+  <ul>
+   <li>
+    trivial FD:
+    <code>
+     A→B &amp; B⊆A
+    </code>
+   </li>
+   <li>
+    nontrivial FD:
+    <code>
+     A→B &amp; B⊈A
+    </code>
+   </li>
+   <li>
+    completely nontrivial FD:
+    <code>
+     A→B &amp; A∩B=∅
+    </code>
+   </li>
+   <li>
+    transitive property:
+    <code>
+     A→B &amp; B→C ⇒ A→C
+    </code>
+   </li>
+   <li>
+    the
+    <strong>
+     closure
+    </strong>
+    of A, {A}*, is all attributes functionally determined by A
+   </li>
+   <li>
+    <strong>
+     keys
+    </strong>
+    are attributes whose closure encompasses all attributes in a relation
+   </li>
+   <li>
+    <code>
+     S2
+    </code>
+    , a set of FDs, follows from
+    <code>
+     S1
+    </code>
+    if every relation satisfying
+    <code>
+     S1
+    </code>
+    also satisfies
+    <code>
+     S2
+    </code>
+   </li>
+   <li>
+    <code>
+     S2
+    </code>
+    , set of FDs, is equivalent to
+    <code>
+     S1
+    </code>
+    if exactly the same FDs follow from
+    <code>
+     S1
+    </code>
+    and
+    <code>
+     S2
+    </code>
+   </li>
+  </ul>
+  <p>
+   <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies">
+    <strong>
+     Boyce Codd normal form
+    </strong>
+    (BCNF)
+   </a>
+   is when, for all FDs
+   <code>
+    A→B
+   </code>
+   , A is the key. To achieve BCNF, find FDs and keys for R
+   <sub>
+    i
+   </sub>
+   ; pick any R
+   <sub>
+    i
+   </sub>
+   with
+   <code>
+    A→B
+   </code>
+   violating BCNF; decompose into R
+   <sub>
+    1
+   </sub>
+   (A,B) and R
+   <sub>
+    2
+   </sub>
+   (A, rest); repeat.
+  </p>
+  <p>
+   <strong>
+    <a href="http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf">
+     Multivalued dependency
+    </a>
+   </strong>
+   (MVD),
+   <code>
+    A↠B
+   </code>
+   : A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic:
+   <code>
+    if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.
+   </code>
+   Furthermore,
+   <code>
+    ∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest
+   </code>
+   .
+  </p>
+  <ul>
+   <li>
+    trivial MVD:
+    <code>
+     A↠B &amp; B⊆A
+    </code>
+    or
+    <code>
+     A∪B ={ all attributes}
+    </code>
+    ; e.g.
+    <code>
+     AB↠B
+    </code>
+   </li>
+   <li>
+    if
+    <code>
+     A→B
+    </code>
+    , then also
+    <code>
+     A↠B
+    </code>
+   </li>
+   <li>
+    intersection rule:
+    <code>
+     A↠B &amp; A↠C ⇒ A↠B⋂C
+    </code>
+   </li>
+   <li>
+    transitive rule:
+    <code>
+     A↠B &amp; B↠C ⇒ A↠C-B
+    </code>
+   </li>
+   <li>
+    a relation A is
+    <strong>
+     decomposed
+    </strong>
+    into B and C if the union of B and C’s attributes contains all of A’s attributes and
+    <code>
+     B⋈C = A
+    </code>
+    (the lossless join property).
+   </li>
+  </ul>
+  <p>
+   <strong>
+    Fourth normal form
+   </strong>
+   (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B*C tuples. A relation is in 4NF if, for each nontrivial MVD
+   <code>
+    A↠B
+   </code>
+   , A is the key. To test for 4NF, look at each pair of tuples
+   <code>
+    t,u
+   </code>
+   that match on A, and create the additional tuples
+   <code>
+    v,w
+   </code>
+   : are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R
+   <sub>
+    i
+   </sub>
+   ; pick any R
+   <sub>
+    i
+   </sub>
+   with nontrivial
+   <code>
+    A↠B
+   </code>
+   violating 4NF (3) decompose into R
+   <sub>
+    1
+   </sub>
+   (A,B) and R
+   <sub>
+    2
+   </sub>
+   (A,rest); repeat.
+  </p>
+  <h3>
+   <a name="unified-modeling-language">
+    Unified Modeling Language
+   </a>
+  </h3>
+  <p>
+   UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design.
+   <a href="https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/">
+    See UML graphs
+   </a>
+   .
+  </p>
+  <ul>
+   <li>
+    Classes: Name, attributes, primary key/methods; analogous to relations.
+   </li>
+   <li>
+    Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations:
+    <code>
+     1..1 is default; m..n; m..\*; 0..n; 0..\*
+    </code>
+    .
+   </li>
+   <li>
+    Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
+   </li>
+   <li>
+    Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
+    <br/>
+   </li>
+   <li>
+    Superclasses are in/complete and disjoint/overlapping.
+   </li>
+   <li>
+    Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
+    <code>
+     1..1
+    </code>
+    . No PK needed!
+   </li>
+   <li>
+    Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+   </li>
+  </ul>
+  <p>
+   UML can be translated into relations:
+  </p>
+  <ul>
+   <li>
+    Classes become relations.
+   </li>
+   <li>
+    Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written 0..1 to *), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
+   </li>
+   <li>
+    Association classes add their attributes to the association’s relation.
+   </li>
+   <li>
+    Self-associations: rename and recycle same key.
+   </li>
+   <li>
+    Subclasses have three different translation procedures:
+   </li>
+   <li>
+    Subclass relations contain superclass PK and unique attributes;
+   </li>
+   <li>
+    Subclass relations contain all superclass attributes &amp; unique attributes;
+   </li>
+   <li>
+    One relation contains all super- and subclass attributes.
+   </li>
+   <li>
+    Composition: Add PK from main class, but not as a key, just as an attribute.
+   </li>
+   <li>
+    Aggregation: “, with the additional stipulation that main class’s PK can be empty.
+   </li>
+  </ul>
+  <h1>
+   <a name="sources">
+    SOURCES
+   </a>
+  </h1>
+  <h4>
+   <a name="archive">
+    ARCHIVE
+   </a>
+  </h4>
+  <ul>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about">
+     Intro. to Relational Databases
+    </a>
+   </li>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about">
+     Relational Algebra
+    </a>
+   </li>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/RD/SelfPaced/about">
+     Relational Design Theory
+    </a>
+   </li>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/UML/SelfPaced/about">
+     Unified Modeling Language
+    </a>
+   </li>
+   <li>
+    <a href="http://www.lynda.com/Access-tutorials/Relational-Database-Fundamentals/145932-2.html">
+     Relational Database Fundamentals
+    </a>
+   </li>
+   <li>
+    <a href="http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html">
+     ORM is an offensive anti-pattern
+    </a>
+   </li>
+   <li>
+    <a href="http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html">
+     Access 2016
+    </a>
+   </li>
+  </ul>
+  <h4>
+   <a name="inbox">
+    INBOX
+   </a>
+  </h4>
+  <ul>
+   <li>
+    <a href="https://www.codecademy.com/articles/sql-rdbms">
+     Overview of SQL RDBMS
+    </a>
+   </li>
+   <li>
+    <a href="http://coding-geek.com/how-databases-work/">
+     How does a relational database work?
+    </a>
+   </li>
+   <li>
+    <a href="https://www.lynda.com/Access-tutorials/Migrating-Access-Databases-SQL-Server/397389-2.html">
+     Migrating Access Databases to SQL Server
+    </a>
+   </li>
+   <li>
+    <a href="http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Core-Concepts/385693-2.html">
+     Core Concepts for SQL Server
+    </a>
+   </li>
+   <li>
+    <a href="http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Storage/385694-2.html">
+     Storage in SQL Server
+    </a>
+   </li>
+   <li>
+    <a href="http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Creating-Manipulating-Data/385697-2.html">
+     Data Manipulation in SQL Server
+    </a>
+   </li>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/Indexes/SelfPaced/about">
+     Indexes &amp; Transactions
+    </a>
+   </li>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/Constraints/SelfPaced/about">
+     Constraints &amp; Triggers
+    </a>
+   </li>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/Views/SelfPaced/about">
+     Views &amp; Authorization
+    </a>
+   </li>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/OLAP/SelfPaced/about">
+     OLAP
+    </a>
+   </li>
+   <li>
+    <a href="https://lagunita.stanford.edu/courses/DB/Recursion/SelfPaced/about">
+     Recursion
+    </a>
+   </li>
+   <li>
+    <a href="http://databases.about.com/od/specificproducts/a/Database-Dependency.htm">
+     Database dependency
+    </a>
+   </li>
+  </ul>
  </body>
 </html>

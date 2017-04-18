@@ -236,7 +236,14 @@ Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysi
 - Complete, correct, unambiguous, verifiable
 - Necessary, feasible, prioritized
 
-Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements analysis are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users) and then as **system requirements** (from the perspective of developers). Requirements are also categorized as **functional** (business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect system requirements and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html), and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)  
+Per Av ison and Fitzger (2006) qtd in Dennis et al. (2012), common problems with requirements determination are:
+
+- Inadequate access to users or access to the wrong users for requirements elicitation
+- Requirements are inadequately specified
+- The inevitably iterative nature of requirements is poorly managed
+- Requirements are not verified or validated
+
+Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements analysis are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users) and then as **system requirements** (from the perspective of developers). Requirements are also categorized as **functional** (business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect system requirements and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)  
 
 ### Gathering requirements
 
@@ -264,7 +271,7 @@ Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be e
 
 ### Analyzing requirements
 
-Requirements are often analyzed by grouping them into **use cases.** Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... The Use Case should describe the interaction between the actor and the system - what the actor does and how the system reacts." Note that actors include other software as well as people. Use cases are expressed textually, usually including these elements:
+Requirements are often analyzed by grouping them into **use cases.** Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... The Use Case should describe the interaction between the actor and the system - what the actor does and how the system reacts." Note that actors include other software as well as people. Use cases are expressed textually (also called a **requirements definition report),** usually including these elements:
 
 - Overview
 - Notes

@@ -14,49 +14,15 @@
     <td>
      <ul>
       <li>
+       <a href="#core-definitions-&amp;-terminology-">
+        Core definitions &amp; terminology
+       </a>
+      </li>
+      <li>
        <a href="#history-of-databases">
         History of databases
        </a>
        <ul>
-        <li>
-         <a href="#generations-of-data-models">
-          Generations of data models
-         </a>
-         <ul>
-          <li>
-           <a href="#object-based-data-models">
-            Object-based data models
-           </a>
-          </li>
-          <li>
-           <a href="#record-based-data-models">
-            Record-based data models
-           </a>
-           <ul>
-            <li>
-             <a href="#(1g)-hierarchical-data-model">
-              (1G) Hierarchical data model
-             </a>
-            </li>
-            <li>
-             <a href="#(1g)-graph-data-model-">
-              (1G) Graph data model
-             </a>
-            </li>
-            <li>
-             <a href="#(2g)-relational-data-model">
-              (2G) Relational data model
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           <a href="#physical-data-models">
-            Physical data models
-           </a>
-          </li>
-         </ul>
-        </li>
         <li>
          <a href="#ansi-sparc-architecture">
           ANSI-SPARC architecture
@@ -65,9 +31,43 @@
        </ul>
       </li>
       <li>
-       <a href="#terminology-">
-        Terminology
+       <a href="#data-models">
+        Data models
        </a>
+       <ul>
+        <li>
+         <a href="#object-based-data-models">
+          Object-based data models
+         </a>
+        </li>
+        <li>
+         <a href="#record-based-data-models">
+          Record-based data models
+         </a>
+         <ul>
+          <li>
+           <a href="#(1g)-hierarchical-data-model">
+            (1G) Hierarchical data model
+           </a>
+          </li>
+          <li>
+           <a href="#(1g)-graph-data-model-">
+            (1G) Graph data model
+           </a>
+          </li>
+          <li>
+           <a href="#(2g)-relational-data-model">
+            (2G) Relational data model
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#physical-data-models">
+          Physical data models
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        <a href="#database-development-lifecycle">
@@ -112,49 +112,34 @@
    </tr>
   </table>
   <h1>
-   <a name="history-of-databases">
-    History of databases
+   <a name="core-definitions-&amp;-terminology">
+    Core definitions &amp; terminology
    </a>
   </h1>
   <p>
-   The first computerized information systems imitated hierarchical paper filing systems. File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
+   A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
   </p>
   <ul>
    <li>
     <strong>
-     redundancy:
+     Database
     </strong>
-    the same data collected and stored by multiple departments;
+    = Data + DBMS
    </li>
    <li>
     <strong>
-     inconsistency:
+     Database System
     </strong>
-    redundant data that
-    <em>
-     should be
-    </em>
-    the same not updated consistently;
+    = Database + Database Applications
    </li>
    <li>
-    <strong>
-     inaccessibility:
-    </strong>
-    software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
+    <p>
+     <strong>
+      Database Environment
+     </strong>
+     = Hardware + Software + Data + Procedures + People
+    </p>
    </li>
-  </ul>
-  <p>
-   A database addresses the aforementioned problems because it is
-   <strong>
-    centralized
-   </strong>
-   (reducing redundancy, improving consistency, enabling data integration) and
-   <strong>
-    abstracted
-   </strong>
-   (available as a black box to interface with many different applications; offering a language for ad hoc queries). In a database,
-  </p>
-  <ul>
    <li>
     Data is formatted according to a data model;
    </li>
@@ -226,95 +211,53 @@
     </ul>
    </li>
    <li>
-    Other applications can interact with the data by communicating with the DBMS.
+    <p>
+     Other applications can interact with the data by communicating with the DBMS.
+    </p>
    </li>
   </ul>
-  <h2>
-   <a name="generations-of-data-models">
-    Generations of data models
+  <h1>
+   <a name="history-of-databases">
+    History of databases
    </a>
-  </h2>
-  <h3>
-   <a name="object-based-data-models">
-    Object-based data models
-   </a>
-  </h3>
+  </h1>
   <p>
-   Allow specification of constraints, but not overall structure. Includes
-   <strong>
-    entities
-   </strong>
-   with
-   <strong>
-    attributes
-   </strong>
-   and
-   <strong>
-    relationships,
-   </strong>
-   describing the
-   <strong>
-    state
-   </strong>
-   of the object.
+   The first computerized information systems imitated hierarchical paper filing systems. File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
   </p>
   <ul>
    <li>
-    Entity-Relationship (ER)
-   </li>
-   <li>
-    Semantic
-   </li>
-   <li>
-    Functional
-   </li>
-   <li>
-    (3G) Object-oriented: adds
     <strong>
-     behavior
+     redundancy:
     </strong>
-    alongside state.
+    the same data collected and stored by multiple departments;
+   </li>
+   <li>
+    <strong>
+     inconsistency:
+    </strong>
+    redundant data that
+    <em>
+     should be
+    </em>
+    the same not updated consistently;
+   </li>
+   <li>
+    <strong>
+     inaccessibility:
+    </strong>
+    software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
    </li>
   </ul>
-  <h3>
-   <a name="record-based-data-models">
-    Record-based data models
-   </a>
-  </h3>
   <p>
-   Can’t express constraints on the data, but express structure well.
-  </p>
-  <h4>
-   <a name="(1g)-hierarchical-data-model">
-    (1G) Hierarchical data model
-   </a>
-  </h4>
-  <p>
-   Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
-  </p>
-  <h4>
-   <a name="(1g)-graph-data-model">
-    (1G) Graph data model
-   </a>
-  </h4>
-  <p>
-   AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-  </p>
-  <h4>
-   <a name="(2g)-relational-data-model">
-    (2G) Relational data model
-   </a>
-  </h4>
-  <p>
-   Tables with columns, with implicit relationships via attributes.
-  </p>
-  <h3>
-   <a name="physical-data-models">
-    Physical data models
-   </a>
-  </h3>
-  <p>
-   Most common: unifying model, frame memory.
+   A database addresses the aforementioned problems because it is
+   <strong>
+    centralized
+   </strong>
+   (reducing redundancy, improving consistency, enabling data integration) and
+   <strong>
+    abstracted
+   </strong>
+   (available as a black box to interface with many different applications; offering a language for ad hoc queries).
   </p>
   <h2>
    <a name="ansi-sparc-architecture">
@@ -367,33 +310,92 @@
    </li>
   </ul>
   <h1>
-   <a name="terminology">
-    Terminology
+   <a name="data-models">
+    Data models
    </a>
   </h1>
+  <h2>
+   <a name="object-based-data-models">
+    Object-based data models
+   </a>
+  </h2>
   <p>
-   A database is a structured collection of data. A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). In a relational database, the data model is of tables/relations. Other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+   Allow specification of constraints, but not overall structure. Includes
+   <strong>
+    entities
+   </strong>
+   with
+   <strong>
+    attributes
+   </strong>
+   and
+   <strong>
+    relationships,
+   </strong>
+   describing the
+   <strong>
+    state
+   </strong>
+   of the object.
   </p>
   <ul>
    <li>
-    <strong>
-     Database
-    </strong>
-    = Data + DBMS
+    Entity-Relationship (ER)
    </li>
    <li>
-    <strong>
-     Database System
-    </strong>
-    = Database + Database Applications
+    Semantic
    </li>
    <li>
+    Functional
+   </li>
+   <li>
+    (3G) Object-oriented: adds
     <strong>
-     Database Environment
+     behavior
     </strong>
-    = Hardware + Software + Data + Procedures + People
+    alongside state.
    </li>
   </ul>
+  <h2>
+   <a name="record-based-data-models">
+    Record-based data models
+   </a>
+  </h2>
+  <p>
+   Can’t express constraints on the data, but express structure well.
+  </p>
+  <h3>
+   <a name="(1g)-hierarchical-data-model">
+    (1G) Hierarchical data model
+   </a>
+  </h3>
+  <p>
+   Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
+  </p>
+  <h3>
+   <a name="(1g)-graph-data-model">
+    (1G) Graph data model
+   </a>
+  </h3>
+  <p>
+   AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+  </p>
+  <h3>
+   <a name="(2g)-relational-data-model">
+    (2G) Relational data model
+   </a>
+  </h3>
+  <p>
+   Tables with columns, with implicit relationships via attributes.
+  </p>
+  <h2>
+   <a name="physical-data-models">
+    Physical data models
+   </a>
+  </h2>
+  <p>
+   Most common: unifying model, frame memory.
+  </p>
   <h1>
    <a name="database-development-lifecycle">
     Database development lifecycle

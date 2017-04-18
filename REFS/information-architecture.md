@@ -215,6 +215,8 @@ AfterHoursProgramming.com. (n.d.) IA tutorial. Retrieved from [http://www.afterh
 
 ANSI/NISO. (2005). Z39.19-2005: Guidelines for the construction, management, and format of monolingual controlled vocabularies. Retrieved from [http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
 
+Ayres, F. (2001). Authority control simply does not work. _Cataloguing & Classification Quarterly,_ 32(2), 49-59.  
+
 Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
 
 Hjørland, B. (2011). Theoretical clarity is not "Manicheanism": A reply to Marcia Bates. _Journal of Information Science,_ 37(5), 546-552. Retrieved from [http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf](http://pure.iva.dk/files/31053333/JIS_1568_v3.pdf)
@@ -222,6 +224,8 @@ Hjørland, B. (2011). Theoretical clarity is not "Manicheanism": A reply to Marc
 Jacob, E. K. (2004). Classification and categorization: a difference that makes a difference. _Library Trends,_ 52(3), 515. Retrieved from [https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf](https://pdfs.semanticscholar.org/774e/ab27b22aa92dfaa9aeeeafbe845058e85f58.pdf)
 
 NISO. (1997). TR02-1997: Guidelines for indexes and related information retrieval devices. Retrieved from [http://www.niso.org/publications/tr/tr02.pdf](http://www.niso.org/publications/tr/tr02.pdf)
+
+Layne, S. (1994). Some issues in the indexing of images. _Journal of the American Society for Information Science,_ 45(8), 583-588.
 
 Pomerantz, J. (2015). _Metadata._ The MIT Press Essential Knowledge Series. Boston, MA: MIT Press.
 

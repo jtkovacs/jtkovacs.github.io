@@ -21,8 +21,8 @@ Per Annabi and McGann (2014a), information systems (IS) professionals work with 
 IS consist of three components, represented as the **IS triangle:**
 
 - **Business processes:** a predefined way in which an organization performs its functions
-- **IT:** hardware and software
 - **People:** various [stakeholders](project-management.html#stakeholder-analysis)
+- **IT:** hardware and software
 
 ## Evolution of IS
     

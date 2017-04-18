@@ -9,13 +9,15 @@ Project Life Cycle (PLC) per Watt (2014):
 3. Implementation/Execution
 4. Closing
 
-Systems Development Lifecycle (SDLC) per Annabi and McGann (2014):
+Systems Development Lifecycle (SDLC) per Annabi and McGann (2014), with my additions bracketed:
 
-1. Planning
-2. Analysis
-3. Design
-4. Development
-5. Implementation/Rollout
+1. **Planning:** defining scope, objectives/charter, budget, schedule, etc.
+2. **Analysis:** characterizing and understanding the system as-is; producing requirements specifications
+3. **Design:** producing IT-focused mock-ups, blueprints etc. of system to-be
+4. **Development:** building software/hardware
+5. **Implementation:** when users encounter the built system
+6. [Monitoring and maintaining]
+7. [Improving]
 
 Agile:
 

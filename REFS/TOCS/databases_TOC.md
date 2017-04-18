@@ -2,7 +2,6 @@
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 	- [Data models](#data-models)
-	- [Relational ](#relational-)
 - [Database design](#database-design)
 	- [Groundwork](#groundwork)
 	- [Conceptual design](#conceptual-design)
@@ -17,8 +16,7 @@
 	- [Indexing](#indexing)
 	- [Performance](#performance)
 	- [Security](#security)
-- [SOURCES](#sources)
-	- [INBOX](#inbox)
+- [Sources](#sources)
 </td></tr></table>
 
 # What is a database?
@@ -76,10 +74,6 @@ Then, the DBMS creates **mappings** between schemas (also called intensions); a 
     - **(1G) Graph:** AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
     - **(2G) Relational:** Tables with columns, with implicit relationships via attributes.
 - **Physical data models:** Most common: unifying model, frame memory.
-
-## Relational 
-
-
 
  
 
@@ -215,7 +209,7 @@ UML can be translated into relations:
 
 
 
-# SOURCES
+# Sources
 
 *These notes are informed by Connolly & Begg (2015), Database Systems, 6E.*
 
@@ -227,7 +221,7 @@ UML can be translated into relations:
 - [ORM is an offensive anti-pattern](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html)
 - [Access 2016](http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html)
 
-## INBOX
+**Inbox**
 
 - [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
 - [How does a relational database work?](http://coding-geek.com/how-databases-work/)

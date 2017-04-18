@@ -55,10 +55,6 @@ Then, the DBMS creates **mappings** between schemas (also called intensions); a 
     - **(2G) Relational:** Tables with columns, with implicit relationships via attributes.
 - **Physical data models:** Most common: unifying model, frame memory.
 
-## Relational 
-
-
-
  
 
 
@@ -193,7 +189,7 @@ UML can be translated into relations:
 
 
 
-# SOURCES
+# Sources
 
 *These notes are informed by Connolly & Begg (2015), Database Systems, 6E.*
 
@@ -205,7 +201,7 @@ UML can be translated into relations:
 - [ORM is an offensive anti-pattern](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html)
 - [Access 2016](http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html)
 
-## INBOX
+**Inbox**
 
 - [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
 - [How does a relational database work?](http://coding-geek.com/how-databases-work/)

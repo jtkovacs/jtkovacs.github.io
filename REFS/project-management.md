@@ -238,7 +238,7 @@ Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysi
 
 ### Gathering requirements
 
-Requirements may be obtained via interviews, observations, or analysis of users; domain experts; existing processes; and competing software. 
+Requirements may be obtained via interviews, observations, or analysis of users, domain experts, existing processes, and competing software. 
 
 ### Expressing individual requirements
 
@@ -260,7 +260,20 @@ Per Whitney (n.d.), requirements may expressed in card formats, which include
 
 #### Use cases
 
-Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system".
+Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... The Use Case should describe the interaction between the actor and the system - what the actor does and how the system reacts." Note that actors include other software as well as people. Use cases are expressed textually, usually including these elements:
+
+- Overview
+- Notes
+- Actors
+- Preconditions
+- Scenario, consisting of
+    - Actor actions
+    - System reactions
+- Scenario notes
+- Post conditions
+- Exceptions
+- GUI requirements
+- Dependencies and relations (to other use cases; often modeled with UML)
 
 #### User personas
 

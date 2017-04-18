@@ -276,20 +276,26 @@ Per Whitney (n.d.), good requirements are:
 
 Requirements may be derived from:
 
-- domain experts; 
-- users; 
+- users;
+- domain experts;  
 - existing processes; 
 - competing software. 
 
 Requirements may be classified as:
 
-- **Functional**, i.e. tasks that the software or system must perform. FRs cover 
+- **Functional**, i.e. tasks that the software or system must perform, including 
     - business rules; 
     - system scope; and 
     - integration with other systems.
 - **Non-functional**, i.e. concerned with the "look and feel" of the system. 
 
 ### Cards
+
+Per Whitney (n.d.), requirements may be tracked using card methodologies, which include
+
+- **CRC cards**, each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
+- **XP Story Cards**
+- **Volere Snow Cards**
 
 ### Matrices
 

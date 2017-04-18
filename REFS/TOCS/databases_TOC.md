@@ -9,13 +9,14 @@
 		- [(2G) Relational](#(2g)-relational)
 	- [Physical data models](#physical-data-models)
 - [Database design](#database-design)
-	- [Database design lifecycle](#database-design-lifecycle)
-		- [Conceptual design](#conceptual-design)
-		- [Logical design](#logical-design)
-		- [Physical design](#physical-design)
-	- [Top-down vs. bottom-up](#top-down-vs.-bottom-up)
-		- [Unified Modeling Language](#unified-modeling-language)
+	- [Groundwork](#groundwork)
+	- [Conceptual design](#conceptual-design)
+		- [Top-down vs. bottom-up design](#top-down-vs.-bottom-up-design)
+		- [Entity Relationship diagrams (ERD)](#entity-relationship-diagrams-(erd))
+		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
 		- [Normalization](#normalization)
+	- [Logical design](#logical-design)
+	- [Physical design](#physical-design)
 - [Database administration](#database-administration)
 	- [Transaction management](#transaction-management)
 	- [Indexing](#indexing)
@@ -122,49 +123,36 @@ Most common: unifying model, frame memory.
 
 # Database design
 
-## Database design lifecycle
-
 A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). 
 
-- __Conduct cost-benefit for proposed database__
+## Groundwork
+
+- __Conduct cost-benefit analysis for proposed database__
 - __Requirements analysis__: 
   - Write a mission statement and objectives;
   - Analyze current data inputs and outputs; 
   - Within the scope of the objectives, identify key actors;
   - Interview actors to understand tasks that actors execute.
+
+## Conceptual design
+  
 - __Create conceptual design__:
-  - Group fields into tables a logical way;
-  - Identify relationships verbally, and/or visualize in UML;
-  - Identify cardinality (max#) and optionality (min#) associated with each relationship;
-  - Identify entity subtypes/subclasses;
-  - Create lookup tables;
-  - Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
-  - __Normalize your data model__ (see [Design by decomposition](#design-by-decomposition))
+    - Group fields into tables a logical way;
+    - Identify relationships verbally, and/or visualize in UML;
+    - Identify cardinality (max#) and optionality (min#) associated with each relationship;
+    - Identify entity subtypes/subclasses;
+    - Create lookup tables;
+    - Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
+- __Normalize your data model__ (see [Design by decomposition](#design-by-decomposition))
     - 1NF: all fields only include a single piece of data;
     - 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
     - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
-- __Create logical design (rules and constraints)__:
-  - Proceed table by table, field by field;
-  - Choose naming conventions: avoid special characters and reserved words for your DBMS;
-  - Choose data types;
-  - Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
-  - Apply integrity constraints:
-      - With a lookup table; 
-      - With a referential integrity constraint to prevent orphaned records; 
-      - Through a check constraint. 
-  - Denote required fields;
-  - Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
-- __Create physical design (software-specific instructions)__: Construct, roll out, and support.
+    
+### Top-down vs. bottom-up design
 
-### Conceptual design
+### Entity Relationship diagrams (ERD)
 
-### Logical design
-
-### Physical design
-
-## Top-down vs. bottom-up
-
-### Unified Modeling Language
+### Unified Modeling Language (UML)
 
 UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
 
@@ -215,6 +203,29 @@ __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides
 - a relation A is __decomposed__ into B and C if the union of B and C’s attributes contains all of A’s attributes and `B⋈C = A` (the lossless join property). 
 
 __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
+
+
+    
+## Logical design
+    
+- __Create logical design (rules and constraints)__:
+    - Proceed table by table, field by field;
+    - Choose naming conventions: avoid special characters and reserved words for your DBMS;
+    - Choose data types;
+    - Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
+    - Apply integrity constraints:
+        - With a lookup table; 
+        - With a referential integrity constraint to prevent orphaned records; 
+        - Through a check constraint. 
+    - Denote required fields;
+
+## Physical design
+    
+- __Create physical design (software-specific instructions)__: Construct, roll out, and support.
+    - Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
+
+
+
 
 
 

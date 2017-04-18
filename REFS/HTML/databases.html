@@ -77,35 +77,28 @@
        </a>
        <ul>
         <li>
-         <a href="#database-design-lifecycle">
-          Database design lifecycle
+         <a href="#groundwork">
+          Groundwork
          </a>
-         <ul>
-          <li>
-           <a href="#conceptual-design">
-            Conceptual design
-           </a>
-          </li>
-          <li>
-           <a href="#logical-design">
-            Logical design
-           </a>
-          </li>
-          <li>
-           <a href="#physical-design">
-            Physical design
-           </a>
-          </li>
-         </ul>
         </li>
         <li>
-         <a href="#top-down-vs.-bottom-up">
-          Top-down vs. bottom-up
+         <a href="#conceptual-design">
+          Conceptual design
          </a>
          <ul>
           <li>
-           <a href="#unified-modeling-language">
-            Unified Modeling Language
+           <a href="#top-down-vs.-bottom-up-design">
+            Top-down vs. bottom-up design
+           </a>
+          </li>
+          <li>
+           <a href="#entity-relationship-diagrams-(erd)">
+            Entity Relationship diagrams (ERD)
+           </a>
+          </li>
+          <li>
+           <a href="#unified-modeling-language-(uml)">
+            Unified Modeling Language (UML)
            </a>
           </li>
           <li>
@@ -114,6 +107,16 @@
            </a>
           </li>
          </ul>
+        </li>
+        <li>
+         <a href="#logical-design">
+          Logical design
+         </a>
+        </li>
+        <li>
+         <a href="#physical-design">
+          Physical design
+         </a>
         </li>
        </ul>
       </li>
@@ -442,18 +445,18 @@
     Database design
    </a>
   </h1>
-  <h2>
-   <a name="database-design-lifecycle">
-    Database design lifecycle
-   </a>
-  </h2>
   <p>
    A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input).
   </p>
+  <h2>
+   <a name="groundwork">
+    Groundwork
+   </a>
+  </h2>
   <ul>
    <li>
     <strong>
-     Conduct cost-benefit for proposed database
+     Conduct cost-benefit analysis for proposed database
     </strong>
    </li>
    <li>
@@ -474,29 +477,38 @@
    <li>
     Interview actors to understand tasks that actors execute.
    </li>
+  </ul>
+  <h2>
+   <a name="conceptual-design">
+    Conceptual design
+   </a>
+  </h2>
+  <ul>
    <li>
     <strong>
      Create conceptual design
     </strong>
     :
-   </li>
-   <li>
-    Group fields into tables a logical way;
-   </li>
-   <li>
-    Identify relationships verbally, and/or visualize in UML;
-   </li>
-   <li>
-    Identify cardinality (max#) and optionality (min#) associated with each relationship;
-   </li>
-   <li>
-    Identify entity subtypes/subclasses;
-   </li>
-   <li>
-    Create lookup tables;
-   </li>
-   <li>
-    Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”.
+    <ul>
+     <li>
+      Group fields into tables a logical way;
+     </li>
+     <li>
+      Identify relationships verbally, and/or visualize in UML;
+     </li>
+     <li>
+      Identify cardinality (max#) and optionality (min#) associated with each relationship;
+     </li>
+     <li>
+      Identify entity subtypes/subclasses;
+     </li>
+     <li>
+      Create lookup tables;
+     </li>
+     <li>
+      Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”.
+     </li>
+    </ul>
    </li>
    <li>
     <strong>
@@ -519,75 +531,20 @@
      </li>
     </ul>
    </li>
-   <li>
-    <strong>
-     Create logical design (rules and constraints)
-    </strong>
-    :
-   </li>
-   <li>
-    Proceed table by table, field by field;
-   </li>
-   <li>
-    Choose naming conventions: avoid special characters and reserved words for your DBMS;
-   </li>
-   <li>
-    Choose data types;
-   </li>
-   <li>
-    Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
-   </li>
-   <li>
-    Apply integrity constraints:
-    <ul>
-     <li>
-      With a lookup table;
-     </li>
-     <li>
-      With a referential integrity constraint to prevent orphaned records;
-     </li>
-     <li>
-      Through a check constraint.
-     </li>
-    </ul>
-   </li>
-   <li>
-    Denote required fields;
-   </li>
-   <li>
-    Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).
-    <br/>
-   </li>
-   <li>
-    <strong>
-     Create physical design (software-specific instructions)
-    </strong>
-    : Construct, roll out, and support.
-   </li>
   </ul>
   <h3>
-   <a name="conceptual-design">
-    Conceptual design
+   <a name="top-down-vs.-bottom-up-design">
+    Top-down vs. bottom-up design
    </a>
   </h3>
   <h3>
-   <a name="logical-design">
-    Logical design
+   <a name="entity-relationship-diagrams-(erd)">
+    Entity Relationship diagrams (ERD)
    </a>
   </h3>
   <h3>
-   <a name="physical-design">
-    Physical design
-   </a>
-  </h3>
-  <h2>
-   <a name="top-down-vs.-bottom-up">
-    Top-down vs. bottom-up
-   </a>
-  </h2>
-  <h3>
-   <a name="unified-modeling-language">
-    Unified Modeling Language
+   <a name="unified-modeling-language-(uml)">
+    Unified Modeling Language (UML)
    </a>
   </h3>
   <p>
@@ -903,6 +860,68 @@
    </sub>
    (A,rest); repeat.
   </p>
+  <h2>
+   <a name="logical-design">
+    Logical design
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <strong>
+     Create logical design (rules and constraints)
+    </strong>
+    :
+    <ul>
+     <li>
+      Proceed table by table, field by field;
+     </li>
+     <li>
+      Choose naming conventions: avoid special characters and reserved words for your DBMS;
+     </li>
+     <li>
+      Choose data types;
+     </li>
+     <li>
+      Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
+     </li>
+     <li>
+      Apply integrity constraints:
+      <ul>
+       <li>
+        With a lookup table;
+       </li>
+       <li>
+        With a referential integrity constraint to prevent orphaned records;
+       </li>
+       <li>
+        Through a check constraint.
+       </li>
+      </ul>
+     </li>
+     <li>
+      Denote required fields;
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h2>
+   <a name="physical-design">
+    Physical design
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <strong>
+     Create physical design (software-specific instructions)
+    </strong>
+    : Construct, roll out, and support.
+    <ul>
+     <li>
+      Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).
+     </li>
+    </ul>
+   </li>
+  </ul>
   <h1>
    <a name="database-administration">
     Database administration

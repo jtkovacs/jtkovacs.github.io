@@ -336,7 +336,11 @@ BPI goes beyond increased efficiency to the realm of increased effectiveness, fo
     
 ##### Duration analysis
 
+First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through **process integration** (fewer people involved in doing the work across its lifecycle) or **process parallelization** (steps being done concurrently).
+
 ##### Activity-based costing
+
+
 
 ##### Informal bench-marking 
     

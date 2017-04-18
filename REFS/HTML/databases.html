@@ -92,6 +92,11 @@
            </a>
           </li>
           <li>
+           <a href="#kinds-of-attributes-">
+            Kinds of attributes
+           </a>
+          </li>
+          <li>
            <a href="#entity-relationship-diagrams-(erd)">
             Entity Relationship diagrams (ERD)
            </a>
@@ -448,6 +453,9 @@
   <p>
    A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input).
   </p>
+  <p>
+   There are three stages of database design. In the conceptual design stage, a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain. In the logical design stage, the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies. Finally, in the physical design phase, the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+  </p>
   <h2>
    <a name="groundwork">
     Groundwork
@@ -464,18 +472,20 @@
      Requirements analysis
     </strong>
     :
-   </li>
-   <li>
-    Write a mission statement and objectives;
-   </li>
-   <li>
-    Analyze current data inputs and outputs;
-   </li>
-   <li>
-    Within the scope of the objectives, identify key actors;
-   </li>
-   <li>
-    Interview actors to understand tasks that actors execute.
+    <ul>
+     <li>
+      Write a mission statement and objectives;
+     </li>
+     <li>
+      Analyze current data inputs and outputs;
+     </li>
+     <li>
+      Within the scope of the objectives, identify key actors;
+     </li>
+     <li>
+      Interview actors to understand tasks that actors execute.
+     </li>
+    </ul>
    </li>
   </ul>
   <h2>
@@ -537,6 +547,23 @@
     Top-down vs. bottom-up design
    </a>
   </h3>
+  <p>
+   In the conceptual design stage of database development, there are two competing approaches: top-down and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. The bottom-up approach begins with identifying attributes, then grouping and normalizing them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
+  </p>
+  <h3>
+   <a name="kinds-of-attributes">
+    Kinds of attributes
+   </a>
+  </h3>
+  <p>
+   An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
+  </p>
+  <p>
+   An attribute is multi-valued/set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
+  </p>
+  <p>
+   An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
+  </p>
   <h3>
    <a name="entity-relationship-diagrams-(erd)">
     Entity Relationship diagrams (ERD)

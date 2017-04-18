@@ -12,6 +12,7 @@
 	- [Groundwork](#groundwork)
 	- [Conceptual design](#conceptual-design)
 		- [Top-down vs. bottom-up design](#top-down-vs.-bottom-up-design)
+		- [Kinds of attributes ](#kinds-of-attributes-)
 		- [Entity Relationship diagrams (ERD)](#entity-relationship-diagrams-(erd))
 		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
 		- [Normalization](#normalization)
@@ -125,14 +126,16 @@ Most common: unifying model, frame memory.
 
 A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). 
 
+There are three stages of database design. In the conceptual design stage, a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain. In the logical design stage, the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies. Finally, in the physical design phase, the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+
 ## Groundwork
 
 - __Conduct cost-benefit analysis for proposed database__
 - __Requirements analysis__: 
-  - Write a mission statement and objectives;
-  - Analyze current data inputs and outputs; 
-  - Within the scope of the objectives, identify key actors;
-  - Interview actors to understand tasks that actors execute.
+    - Write a mission statement and objectives;
+    - Analyze current data inputs and outputs; 
+    - Within the scope of the objectives, identify key actors;
+    - Interview actors to understand tasks that actors execute.
 
 ## Conceptual design
   
@@ -149,6 +152,16 @@ A good design process prevents repetition; reduces errors (by limiting data entr
     - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
     
 ### Top-down vs. bottom-up design
+
+In the conceptual design stage of database development, there are two competing approaches: top-down and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. The bottom-up approach begins with identifying attributes, then grouping and normalizing them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes. 
+
+### Kinds of attributes 
+
+An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
+
+An attribute is multi-valued/set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
+
+An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
 
 ### Entity Relationship diagrams (ERD)
 

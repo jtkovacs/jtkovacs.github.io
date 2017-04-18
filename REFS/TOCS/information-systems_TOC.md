@@ -2,7 +2,7 @@
 	- [Evolution of IS](#evolution-of-is)
 	- [What are MIS?](#what-are-mis?)
 		- [Enterprise systems (ES)](#enterprise-systems-(es))
-	- [Business intelligence (BI)](#business-intelligence-(bi))
+		- [Business intelligence (BI)](#business-intelligence-(bi))
 		- [Collaboration systems (CS)](#collaboration-systems-(cs))
 - [Implementing IS ](#implementing-is-)
 	- [Common pitfalls & best practices](#common-pitfalls-&-best-practices)
@@ -49,7 +49,7 @@ ES are used to perform the daily tasks of a business, and include:
     - \+ Avoid waste in supply chain by identifying inefficiencies and improving forecasting
     - \- Depends on building trust among members of the supply chain; also difficult to model supply chain that can be quite complex 
 
-## Business intelligence (BI)
+### Business intelligence (BI)
 
 BI systems are used to inform strategic decisions, and include:
 

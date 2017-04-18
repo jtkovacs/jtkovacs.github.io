@@ -38,7 +38,7 @@ ES are used to perform the daily tasks of a business, and include:
     - \+ Avoid waste in supply chain by identifying inefficiencies and improving forecasting
     - \- Depends on building trust among members of the supply chain; also difficult to model supply chain that can be quite complex 
 
-## Business intelligence (BI)
+### Business intelligence (BI)
 
 BI systems are used to inform strategic decisions, and include:
 

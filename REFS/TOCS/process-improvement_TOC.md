@@ -92,6 +92,8 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 # Continuous Process Improvement (CPI)
 
+_These notes are based on Jeevon Powell's class, [Process Improvement Tools.](https://ucs.admin.uw.edu/pod/Course/Details/Q1170)_
+
 ## Depict system
 
 See [notes on systems modeling.](modeling.html)
@@ -120,6 +122,8 @@ See [notes on systems modeling.](modeling.html)
 
 
 # Operations Management
+
+_These notes are based on Christian Terwiesch's Coursera class, [Intro. to Operations Management.](https://www.coursera.org/learn/wharton-operations)_
 
 Strategy and assessment often reference four **operational dimensions:** 
 

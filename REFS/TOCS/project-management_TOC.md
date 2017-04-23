@@ -309,7 +309,7 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
     
 ### Gathering requirements
 
-Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, existing documents, and competing software using the following techniques (and see [notes on qualitative methods](qualitative-methods.html)):
+Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, existing documents, and competing software using the following techniques (and see [notes on qualitative methods):](qualitative-methods.html)
 
 #### Interviews
 

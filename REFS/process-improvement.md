@@ -62,13 +62,13 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ### Value stream mapping
 
-### Pareto analysis
-
 ### Spaghetti diagram
 
 ## Identify problems
 
 ### Eleven wastes checklist
+
+### Pareto analysis
 
 ## Analyze problems 
 

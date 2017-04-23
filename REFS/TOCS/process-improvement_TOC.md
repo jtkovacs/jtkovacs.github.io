@@ -15,10 +15,10 @@
 		- [5S](#5s)
 	- [Characterize existing system](#characterize-existing-system)
 		- [Value stream mapping](#value-stream-mapping)
-		- [Pareto analysis](#pareto-analysis)
 		- [Spaghetti diagram](#spaghetti-diagram)
 	- [Identify problems](#identify-problems)
 		- [Eleven wastes checklist](#eleven-wastes-checklist)
+		- [Pareto analysis](#pareto-analysis)
 	- [Analyze problems ](#analyze-problems-)
 		- [Brainstorming](#brainstorming)
 		- [Cause-and-effect diagram](#cause-and-effect-diagram)
@@ -91,13 +91,13 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ### Value stream mapping
 
-### Pareto analysis
-
 ### Spaghetti diagram
 
 ## Identify problems
 
 ### Eleven wastes checklist
+
+### Pareto analysis
 
 ## Analyze problems 
 

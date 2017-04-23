@@ -141,8 +141,33 @@ Motivating question here is why should there be inventory? What are the drivers 
 - The reason is variability of activity times; workers do not “work like robots”, so “buffer or suffer”. 
 - Reasons for inventory: buffer seasonal demand, internal demand (between processes or activities), customer demand, inherent time lag in production (e.g., aging cheese).
 
+## Analyzing & improving productivity
 
+Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://en.wikipedia.org/wiki/The_Principles_of_Scientific_Management). In general, (multifactor) productivity  is a ratio of output_produced / input(s)_used. 
 
+### Sources of wastes
+
+- Waste (or inefficiency) may be represented as the distance between a firm and an industry-wide PPF
+- Overproduction: Produce sooner or in greater quantities than required by customers or inventories
+- Transportation: Unnecessary, unergonomic movement (Taiichi Ohno: “Moving is not necessarily working”)
+- Rework: Having to doing it right the second time; called “bounce backs” in hospitals
+- Over-processing: Doing more work than is required to meet the customer’s demands; driven by operator’s high standards, or ignorance about customers’ actual requirements
+- Inventory: Poorly managed, can be one of the biggest forms of waste. Inventory may take the form of raw materials, works in progress (WIP), or finished products.
+- Waiting: Underutilizing resources because of poor process design
+- Intellect: Esp. the intellect of workers
+
+### Financial value of productivity
+
+- “Productivity [i.e., capacity improvements] are not the goal in and of themselves; the goal is to save money”
+- Profit: Process_capacity*Per_capita_revenue - (Fixed_costs + Variable_costs)
+- “How does the profit change as we change the operational variables?”
+- “Every second counts—however, not every second counts equally.” The largest impact comes from improvements to the bottleneck when demand is not a binding constraint; also, in organizations with large fixed costs and lower marginal costs (can see this by checking the relative slopes of the cost and revenue lines past the break even point).
+
+### Key Performance Indicators (KPIs) and KPI trees
+
+KPI trees are about “visualizing the relationship between operational variables and the financial bottom line, and are also the starting point for sensitivity analysis wherein we identify those operational variables that have the largest impact.” Map out dependencies between variables, then take the partial derivative of the terminal KPI w/r/t an operational variable or evaluate using a spreadsheet.
+
+![](/ILLOS/KPI-tree.png)
 
 
 # Sources

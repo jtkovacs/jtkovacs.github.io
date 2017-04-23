@@ -25,8 +25,6 @@
 		- [CEDAC](#cedac)
 	- [Prioritize problems](#prioritize-problems)
 		- [Opportunity rating matrix ](#opportunity-rating-matrix-)
-	- [Tackle problem](#tackle-problem)
-		- [Charter](#charter)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -112,10 +110,6 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 ## Prioritize problems
 
 ### Opportunity rating matrix 
-
-## Tackle problem
-
-### Charter
 
 
 

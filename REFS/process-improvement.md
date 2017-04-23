@@ -82,10 +82,6 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ### Opportunity rating matrix 
 
-## Tackle problem
-
-### Charter
-
 
 
 # Sources

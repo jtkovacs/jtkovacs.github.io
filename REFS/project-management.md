@@ -416,6 +416,8 @@ Project Management Institute (PMI). (2013). Communication: The message is clear.
 
 Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interests. In _Community Tool Box._ Work Group for Community Health and Development at Kansas State University. Retrieved from [http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main](http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main)
 
+Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
+
 Sheen, R. (2015). How to manage scope creep [video]. _Harvard Business Review._ Retrieved from [https://hbr.org/video/2942763785001/how-to-manage-scope-creep](https://hbr.org/video/2942763785001/how-to-manage-scope-creep)
 
 Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from [https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/](https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/)   

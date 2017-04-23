@@ -96,3 +96,4 @@ Annabi, H. & McGann, S. (2014a). Unit 1 -- What is MIS? In _The real deal on MIS
 
 Annabi, H. & McGann, S. (2014b). Unit 2 -- Enterprise systems: The benefits and challenges of integrating people, process and information technology. In _The real deal on MIS._
 
+Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects on time, on budget, and on value. McKinsey & Company. Retrieved from [http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value](http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value)

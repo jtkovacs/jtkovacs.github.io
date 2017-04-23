@@ -1,4 +1,4 @@
-<table class="TOC"><tr><td>- [Degree of change sought](#degree-of-change-sought)
+<table class="TOC"><tr><td>- [Tools by degree of change sought](#tools-by-degree-of-change-sought)
 	- [Business process automation (BPA)](#business-process-automation-(bpa))
 		- [Problem analysis](#problem-analysis)
 		- [Root cause analysis](#root-cause-analysis)
@@ -10,10 +10,27 @@
 		- [Outcome analysis](#outcome-analysis)
 		- [Technology analysis](#technology-analysis)
 		- [Activity elimination](#activity-elimination)
+- [Continuous Process Improvement (CPI)](#continuous-process-improvement-(cpi))
+	- [Optimize environment](#optimize-environment)
+		- [5S](#5s)
+	- [Characterize existing system](#characterize-existing-system)
+		- [Value stream mapping](#value-stream-mapping)
+		- [Pareto analysis](#pareto-analysis)
+		- [Spaghetti diagram](#spaghetti-diagram)
+	- [Identify problems](#identify-problems)
+		- [Eleven wastes checklist](#eleven-wastes-checklist)
+	- [Analyze problems ](#analyze-problems-)
+		- [Brainstorming](#brainstorming)
+		- [Cause-and-effect diagram](#cause-and-effect-diagram)
+		- [CEDAC](#cedac)
+	- [Prioritize problems](#prioritize-problems)
+		- [Opportunity rating matrix ](#opportunity-rating-matrix-)
+	- [Tackle problem](#tackle-problem)
+		- [Charter](#charter)
 - [Sources](#sources)
 </td></tr></table>
 
-# Degree of change sought
+# Tools by degree of change sought
 
 Per Dennis et al. (2012), 
 
@@ -62,6 +79,43 @@ Reviewing existing and emerging technologies and asking how they might be applie
 ### Activity elimination
 
 Systematically (but as a thought exercise) eliminating each step in a process, and asking what the implications are.
+
+
+
+
+# Continuous Process Improvement (CPI)
+
+## Optimize environment
+
+### 5S
+
+## Characterize existing system
+
+### Value stream mapping
+
+### Pareto analysis
+
+### Spaghetti diagram
+
+## Identify problems
+
+### Eleven wastes checklist
+
+## Analyze problems 
+
+### Brainstorming
+
+### Cause-and-effect diagram
+
+### CEDAC
+
+## Prioritize problems
+
+### Opportunity rating matrix 
+
+## Tackle problem
+
+### Charter
 
 
 

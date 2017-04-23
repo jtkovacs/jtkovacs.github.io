@@ -153,6 +153,47 @@
        <a href="#operations-management">
         Operations Management
        </a>
+       <ul>
+        <li>
+         <a href="#business-process-analysis">
+          Business process analysis
+         </a>
+         <ul>
+          <li>
+           <a href="#flow-diagram">
+            Flow diagram
+           </a>
+          </li>
+          <li>
+           <a href="#measuring-labor-productivity">
+            Measuring labor productivity
+           </a>
+          </li>
+          <li>
+           <a href="#inventory-metrics">
+            Inventory metrics
+           </a>
+           <ul>
+            <li>
+             <a href="#little’s-law">
+              Little’s law
+             </a>
+            </li>
+            <li>
+             <a href="#inventory-turns">
+              Inventory turns
+             </a>
+            </li>
+            <li>
+             <a href="#make-to-stock-vs-make-to-order">
+              Make-to-stock vs make-to-order
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
       </li>
       <li>
        <a href="#sources">
@@ -368,6 +409,120 @@
    </strong>
    obtain this curve by locating the performance of existing companies for any two dimensions. Then the question is whether your company is operating on the frontier or within it.
   </p>
+  <h2>
+   <a name="business-process-analysis">
+    Business process analysis
+   </a>
+  </h2>
+  <h3>
+   <a name="flow-diagram">
+    Flow diagram
+   </a>
+  </h3>
+  <p>
+   Business processes underlie performance. One way to measure them: graph flow units vs. time, showing cumulative inflow and cumulative outflow. Then:
+  </p>
+  <ul>
+   <li>
+    (Instantaneous) inventory is the vertical distance between c.inflow and c.outflow
+   </li>
+   <li>
+    Flow time is the horizontal distance between c.inflow and c.outflow—the time a flow unit spends in the system
+   </li>
+  </ul>
+  <p>
+   Create a process flow diagram aka value stream map showing how flow units are transformed from inputs to outputs by process activities. Represent wait times, lines, or inventories with triangles, and activities with boxes (labeled with activity time in units, and m, the number of workers or resources). Then:
+  </p>
+  <ul>
+   <li>
+    Processing time is the sum of all the individual activity times
+   </li>
+   <li>
+    Capacity is driven by processing time: m/processing time
+   </li>
+   <li>
+    The bottleneck is the activity with lowest capacity, and this lowest capacity is the overall process capacity
+   </li>
+   <li>
+    Flow rate aka throughput is min{demand_rate, process_capacity}, so flow rate is driven by these factors
+   </li>
+   <li>
+    Utilization is flow_rate/capacity (dimensionless)
+   </li>
+  </ul>
+  <p>
+   Realistically, processing times will vary from flow unit to flow unit. Flow units may even follow different pathways through all possible process activities. So, how to find the bottleneck and determine the flow rate? Depict multiple flow units on same process diagram, symbolized as types of flow units, then:
+  </p>
+  <ul>
+   <li>
+    Approach #1, “adding up demand streams”: (1) Compute capacity of each process activity: m/activity_time (2) Compute demand experienced by each activity (3) Compute implied utilization as ratio of demand to capacity (can sum to more than 100%); now, the activity with highest implied utilization is the bottleneck
+   </li>
+   <li>
+    Approach #2, “minutes of work”: (1) Based on m, how many minutes of work per hour can each activity supply? (2) Calculate how many minutes of work is required by each demand stream (3) Compute ratio of minutes required to minutes available; highest is the bottleneck
+   </li>
+  </ul>
+  <h3>
+   <a name="measuring-labor-productivity">
+    Measuring labor productivity
+   </a>
+  </h3>
+  <p>
+   Why focus on this when labor seems to contribute less to modern firms’ costs? —because many firms keep labor costs off their balance sheet by ‘outsourcing’ them to their suppliers. If you account for labor in the cost of goods supplied, the role of labor becomes evident.
+  </p>
+  <ul>
+   <li>
+    Labor content: sum of all the individual activity times
+   </li>
+   <li>
+    Cycle time: 1/flow_rate
+   </li>
+   <li>
+    All activities except the bottleneck have idle time=cycle_time-process_time, and the sum of these is direct idle time
+   </li>
+   <li>
+    Average labor utilization is labor_content / (labor_content+direct_idle_time)
+   </li>
+   <li>
+    Cost of direct labor: total wages/time / flow_rate/time
+   </li>
+  </ul>
+  <h3>
+   <a name="inventory-metrics">
+    Inventory metrics
+   </a>
+  </h3>
+  <h4>
+   <a name="little’s-law">
+    Little’s law
+   </a>
+  </h4>
+  <p>
+   Inventory=Flow_rate*Flow_time. Given any two variables, can solve for a third (especially flow time); also, can decide how to manipulate outcomes by adjusting a variable. Note that flow time here is essentially average flow time, a line fitted to the actual data recorded from observations of inflow and outflow. “Not an empirical law; to prove it, we need to turn to stochastic optimization.”
+  </p>
+  <h4>
+   <a name="inventory-turns">
+    Inventory turns
+   </a>
+  </h4>
+  <p>
+   Cost_Of_Goods_Sold/Inventory. Gives the amount of time that a flow unit spends inside the process; comes from Little’s law (where COGS=Flow_rate). High inventory turns can dramatically reduce inventory costs (capital, storage, obsolescence). Per unit inventory costs=Annual_inventory_cost/Inventory_turns.
+  </p>
+  <h4>
+   <a name="make-to-stock-vs-make-to-order">
+    Make-to-stock vs make-to-order
+   </a>
+  </h4>
+  <p>
+   Motivating question here is why should there be inventory? What are the drivers of inventory? (Note that, per Little’s law, these same factors are implicit drivers of flow time.) Contrast McDonald’s and Subway—not all companies use inventory to increase flow rate; there are make-to-stock vs. make-to-order strategies.
+  </p>
+  <ul>
+   <li>
+    The reason is variability of activity times; workers do not “work like robots”, so “buffer or suffer”.
+   </li>
+   <li>
+    Reasons for inventory: buffer seasonal demand, internal demand (between processes or activities), customer demand, inherent time lag in production (e.g., aging cheese).
+   </li>
+  </ul>
   <h1>
    <a name="sources">
     Sources

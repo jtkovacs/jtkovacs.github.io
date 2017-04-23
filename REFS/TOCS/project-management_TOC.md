@@ -447,8 +447,6 @@ Ambler, S. (n.d.). Comparing approaches to budgeting and estimating software dev
 
 Annabi, H. & McGann, S. (2014). Unit 1---What is MIS? In _The real deal on MIS._
 
-Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects on time, on budget, and on value. McKinsey & Company. Retrieved from [http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value](http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value)
-
 Clayton, J. (2003). Writing an executive summary that means business. _Harvard Management Communication Letter._
 
 Collella, H. (2009). Effective communications: A strategy. Gartner.

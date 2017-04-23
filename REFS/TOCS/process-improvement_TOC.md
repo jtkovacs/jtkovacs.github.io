@@ -34,6 +34,10 @@
 		- [Sources of wastes](#sources-of-wastes)
 		- [Financial value of productivity](#financial-value-of-productivity)
 		- [Key Performance Indicators (KPIs) and KPI trees](#key-performance-indicators-(kpis)-and-kpi-trees)
+		- [Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)](#overall-equipment-effectiveness-(oee)-and-overall-people-effectiveness-(ope))
+		- [Reducing idle time](#reducing-idle-time)
+		- [Smoothing performance across workers](#smoothing-performance-across-workers)
+	- [Quality control](#quality-control)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -187,6 +191,11 @@ Motivating question here is why should there be inventory? What are the drivers 
 
 Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://en.wikipedia.org/wiki/The_Principles_of_Scientific_Management). In general, (multifactor) productivity  is a ratio of output_produced / input(s)_used. 
 
+- Basic productivity ratio is output/input; at firm or industry level, “output” is revenue, and “input” is cost categories
+- Disaggregate ratio to pinpoint source of productivity difference: 
+    - Productivity = Operational_yield * Transformation_efficiency * Per-unit_capacity_cost
+    - Error
+
 ### Sources of wastes
 
 - Waste (or inefficiency) may be represented as the distance between a firm and an industry-wide PPF
@@ -210,6 +219,33 @@ Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://
 KPI trees are about “visualizing the relationship between operational variables and the financial bottom line, and are also the starting point for sensitivity analysis wherein we identify those operational variables that have the largest impact.” Map out dependencies between variables, then take the partial derivative of the terminal KPI w/r/t an operational variable or evaluate using a spreadsheet.
 
 <img src="../ILLOS/KPI-tree.png" width="450px">
+
+### Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)
+
+- Available_time=Total_planned_uptime - Downtime
+- Downtime = Break_downs + Product_change_overs
+- Net_operating_time = Available_time - Speed_losses
+- Speed_losses = Idling + Minor_stoppages + Reduced_operating_speed
+- OEE = Net_operating_time - Quality_losses
+- Quality_losses = Defects + Startup_time
+- Availability_rate * Performance_rate * Quality_rate = Value_add_time / Available_time = OEE
+
+### Reducing idle time
+
+- Takt time is the pace required to keep up with demand: “every person has to dance to the meet of demand”
+    - Demand leveling: Average out demand over a period of time
+- Line balancing: Equal processing time at each station (ideal). Calculate takt time; assign tasks such that all processing times fall below the takt time; make sure that all tasks are assigned; and minimize the number of workers needed.
+
+### Smoothing performance across workers
+
+- Quartile analysis: Observing workers, noting differences in processing time, grouping into quartiles based on processing time, and identifying best practices that appear to shorten processing time
+    - e.g. 260% different observed in ER between 10% and 90% quartiles
+    - Biggest differences tend to be observed in knowledge-intensive tasks
+
+## Quality control
+
+
+
 
 
 # Sources

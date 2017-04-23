@@ -12,8 +12,6 @@
 		- [Activity elimination](#activity-elimination)
 - [Continuous Process Improvement (CPI)](#continuous-process-improvement-(cpi))
 	- [Depict system](#depict-system)
-		- [Value stream mapping](#value-stream-mapping)
-		- [Spaghetti diagram](#spaghetti-diagram)
 	- [Identify problems](#identify-problems)
 		- [Eleven wastes checklist](#eleven-wastes-checklist)
 		- [Pareto analysis](#pareto-analysis)
@@ -86,10 +84,6 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 ## Depict system
 
 See [notes on systems modeling.](modeling.html)
-
-### Value stream mapping
-
-### Spaghetti diagram
 
 ## Identify problems
 

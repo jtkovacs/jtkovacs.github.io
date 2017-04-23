@@ -54,9 +54,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 # Continuous Process Improvement (CPI)
 
-## Optimize environment
-
-### 5S
+## 5S workplace organization methodology
 
 ## Characterize existing system
 

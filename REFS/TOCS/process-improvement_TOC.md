@@ -11,8 +11,7 @@
 		- [Technology analysis](#technology-analysis)
 		- [Activity elimination](#activity-elimination)
 - [Continuous Process Improvement (CPI)](#continuous-process-improvement-(cpi))
-	- [Optimize environment](#optimize-environment)
-		- [5S](#5s)
+	- [5S workplace organization methodology](#5s-workplace-organization-methodology)
 	- [Characterize existing system](#characterize-existing-system)
 		- [Value stream mapping](#value-stream-mapping)
 		- [Spaghetti diagram](#spaghetti-diagram)
@@ -83,9 +82,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 # Continuous Process Improvement (CPI)
 
-## Optimize environment
-
-### 5S
+## 5S workplace organization methodology
 
 ## Characterize existing system
 

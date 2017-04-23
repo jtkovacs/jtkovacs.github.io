@@ -56,7 +56,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ## 5S workplace organization methodology
 
-## Characterize existing system
+## Depict system
 
 ### Value stream mapping
 
@@ -76,9 +76,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ### CEDAC
 
-## Prioritize problems
-
-### Opportunity rating matrix 
+## Improvement opportunities rating matrix 
 
 
 

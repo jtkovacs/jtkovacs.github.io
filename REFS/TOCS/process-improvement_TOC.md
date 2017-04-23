@@ -12,7 +12,7 @@
 		- [Activity elimination](#activity-elimination)
 - [Continuous Process Improvement (CPI)](#continuous-process-improvement-(cpi))
 	- [5S workplace organization methodology](#5s-workplace-organization-methodology)
-	- [Characterize existing system](#characterize-existing-system)
+	- [Depict system](#depict-system)
 		- [Value stream mapping](#value-stream-mapping)
 		- [Spaghetti diagram](#spaghetti-diagram)
 	- [Identify problems](#identify-problems)
@@ -22,8 +22,7 @@
 		- [Brainstorming](#brainstorming)
 		- [Cause-and-effect diagram](#cause-and-effect-diagram)
 		- [CEDAC](#cedac)
-	- [Prioritize problems](#prioritize-problems)
-		- [Opportunity rating matrix ](#opportunity-rating-matrix-)
+	- [Improvement opportunities rating matrix ](#improvement-opportunities-rating-matrix-)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -84,7 +83,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ## 5S workplace organization methodology
 
-## Characterize existing system
+## Depict system
 
 ### Value stream mapping
 
@@ -104,9 +103,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ### CEDAC
 
-## Prioritize problems
-
-### Opportunity rating matrix 
+## Improvement opportunities rating matrix 
 
 
 

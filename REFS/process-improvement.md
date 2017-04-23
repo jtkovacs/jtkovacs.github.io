@@ -54,8 +54,6 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 # Continuous Process Improvement (CPI)
 
-## 5S workplace organization methodology
-
 ## Depict system
 
 ### Value stream mapping
@@ -74,7 +72,11 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ### CEDAC
 
-## Opportunities rating matrix 
+## Address problem
+
+### Opportunities rating matrix 
+
+### 5S organization methodology
 
 ### Brainstorming
 
@@ -91,6 +93,8 @@ Strategy and assessment often reference four **operational dimensions:**
 - Quality (performance, conformance)
 
 Between any two dimensions, there may be a **tradeoff;** obtain this curve by locating the performance of existing companies for any two dimensions. Then the question is whether your company is operating on the frontier or within it.
+
+
 
 
 

@@ -2,6 +2,12 @@
 
 Hard to distinguish business process from IT process from work
 
+## Activity diagram
+
+## Value stream mapping
+
+## Spaghetti diagram
+
 ## Logic flow charts
 
 ### Language-level diagram

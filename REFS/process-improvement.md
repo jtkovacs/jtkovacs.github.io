@@ -58,10 +58,6 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 See [notes on systems modeling.](modeling.html)
 
-### Value stream mapping
-
-### Spaghetti diagram
-
 ## Identify problems
 
 ### Eleven wastes checklist

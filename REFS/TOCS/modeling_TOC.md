@@ -1,4 +1,7 @@
 <table class="TOC"><tr><td>- [Modeling systems & processes](#modeling-systems-&-processes)
+	- [Activity diagram](#activity-diagram)
+	- [Value stream mapping](#value-stream-mapping)
+	- [Spaghetti diagram](#spaghetti-diagram)
 	- [Logic flow charts](#logic-flow-charts)
 		- [Language-level diagram](#language-level-diagram)
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
@@ -20,6 +23,12 @@
 # Modeling systems & processes
 
 Hard to distinguish business process from IT process from work
+
+## Activity diagram
+
+## Value stream mapping
+
+## Spaghetti diagram
 
 ## Logic flow charts
 

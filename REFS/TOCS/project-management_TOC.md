@@ -394,7 +394,7 @@ Clayton, J. (2003). Writing an executive summary that means business. _Harvard M
 
 Collella, H. (2009). Effective communications: A strategy. Gartner.
 
-Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
+Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
 
 Hill, J. B., & Cantera, M. (2015). Use business outcomes to determine the scope of the “business process” to be improved (No. G00277312). Gartner.
 

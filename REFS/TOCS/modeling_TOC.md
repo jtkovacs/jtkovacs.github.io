@@ -1,62 +1,57 @@
-<table class="TOC"><tr><td>- [Modeling systems architecture](#modeling-systems-architecture)
-- [Modeling processes](#modeling-processes)
-- [Logic flow charts](#logic-flow-charts)
-	- [Language-level diagram](#language-level-diagram)
-	- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
-- [Data flow diagram](#data-flow-diagram)
-	- [Gane/Sarson method](#gane/sarson-method)
-	- [Yourdon/Coad method](#yourdon/coad-method)
-- [Entity-relationship diagrams](#entity-relationship-diagrams)
-	- [Bachmann/crow-foot notation](#bachmann/crow-foot-notation)
-	- [Chen notation](#chen-notation)
-	- [Martin notation](#martin-notation)
-- [Object-oriented modeling](#object-oriented-modeling)
-	- [Rumbaugh/OMT method](#rumbaugh/omt-method)
-	- [Shlaer/Mellor method](#shlaer/mellor-method)
-	- [UML](#uml)
-	- [Booch notation](#booch-notation)
+<table class="TOC"><tr><td>- [Modeling systems & processes](#modeling-systems-&-processes)
+	- [Logic flow charts](#logic-flow-charts)
+		- [Language-level diagram](#language-level-diagram)
+		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
+	- [Data flow diagram](#data-flow-diagram)
+		- [Gane/Sarson method](#gane/sarson-method)
+		- [Yourdon/Coad method](#yourdon/coad-method)
+	- [Entity-relationship diagrams](#entity-relationship-diagrams)
+		- [Bachmann/crow-foot notation](#bachmann/crow-foot-notation)
+		- [Chen notation](#chen-notation)
+		- [Martin notation](#martin-notation)
+	- [Object-oriented modeling](#object-oriented-modeling)
+		- [Rumbaugh/OMT method](#rumbaugh/omt-method)
+		- [Shlaer/Mellor method](#shlaer/mellor-method)
+		- [UML](#uml)
+		- [Booch notation](#booch-notation)
 - [Prototyping interfaces](#prototyping-interfaces)
 - [Sources](#sources)
 </td></tr></table>
-# Modeling systems architecture
-
-# Modeling processes
+# Modeling systems & processes
 
 Hard to distinguish business process from IT process from work
 
+## Logic flow charts
 
-# Logic flow charts
+### Language-level diagram
 
-## Language-level diagram
-
-## Nassi-Schneiderman (N-S) diagram
+### Nassi-Schneiderman (N-S) diagram
 
 AKA Chapin charts
 
-# Data flow diagram
+## Data flow diagram
 
-## Gane/Sarson method
+### Gane/Sarson method
 
-## Yourdon/Coad method
+### Yourdon/Coad method
 
-# Entity-relationship diagrams
+## Entity-relationship diagrams
 
-## Bachmann/crow-foot notation
+### Bachmann/crow-foot notation
 
-## Chen notation
+### Chen notation
 
-## Martin notation
+### Martin notation
 
-# Object-oriented modeling
+## Object-oriented modeling
 
-## Rumbaugh/OMT method
+### Rumbaugh/OMT method
 
-## Shlaer/Mellor method
+### Shlaer/Mellor method
 
-## UML
+### UML
 
-## Booch notation
-
+### Booch notation
 
 
 # Prototyping interfaces

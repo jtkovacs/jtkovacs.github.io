@@ -16,7 +16,7 @@ body {
 p, li {
     max-width: 700px;
     font-size: 11px;
-    color: #bbbbbb;
+    color: #C8C8C8;
 }
 
 
@@ -26,6 +26,9 @@ a {
     text-decoration: none;
     font-weight: bold;
 }
+a:hover {
+    color: #555555;
+}    
 
 
 /* LIST has no bullets */

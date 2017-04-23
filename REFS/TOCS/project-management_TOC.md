@@ -25,17 +25,6 @@
 - [Analysis, design & specification](#analysis,-design-&-specification)
 	- [Requirements determination](#requirements-determination)
 		- [Current state analysis](#current-state-analysis)
-			- [Business process automation (BPA)](#business-process-automation-(bpa))
-				- [Problem analysis](#problem-analysis)
-				- [Root cause analysis](#root-cause-analysis)
-			- [Business process improvement (BPI)](#business-process-improvement-(bpi))
-				- [Duration analysis](#duration-analysis)
-				- [Activity-based costing](#activity-based-costing)
-				- [Informal bench-marking ](#informal-bench-marking-)
-			- [Business process reengineering (BPR)](#business-process-reengineering-(bpr))
-				- [Outcome analysis](#outcome-analysis)
-				- [Technology analysis](#technology-analysis)
-				- [Activity elimination](#activity-elimination)
 		- [Gathering requirements](#gathering-requirements)
 			- [Interviews](#interviews)
 			- [Observations](#observations)
@@ -316,53 +305,7 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
     (a) No current system exists
     (b) Little effect on current systems
 
-(3) **The amount of system change desired** (i.e. BPA vs. BPI vs. BPR), where the amount of change desired and amount of effort spent analyzing the as-is system are inversely related, and:
-
-![](../ILLOS/BPA-BPI-BPR.png)
-
-#### Business process automation (BPA)
-
-BPA is focused on making current processes more efficient through automation; it requires thorough analysis of the current system.
-
-##### Problem analysis
-
-This entails asking current system users about problems they face or features they desire. Problems identified with this technique are often related to UI and their resolution produces little if any business value.
-
-##### Root cause analysis
-
-This entails asking current system users to explore the root causes of problems they've identified (since these problems may only be symptoms). Root causes may be uncovered by asking "Why?" five times; causal relationships may be represented as a hierarchy, web, or fishbone/Ishikawa diagram.
-
-#### Business process improvement (BPI)
-
-BPI goes beyond increased efficiency to the realm of increased effectiveness, for instance taking advantage of new opportunities and technologies.
-    
-##### Duration analysis
-
-First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through **integration** (fewer people involved in doing the work across its lifecycle) or **parallelization** (steps being done concurrently).
-
-##### Activity-based costing
-
-Steps in a process are costed, and improvement efforts are focused on the costliest step.
-
-##### Informal bench-marking 
-
-Examine competitors to identify performance targets and process improvements.
-    
-#### Business process reengineering (BPR)
-
-BPR is a radical upending of current business processes and systems, so spends little time analyzing them.
-
-##### Outcome analysis
-
-Trying to think about the business from the perspective of users' ultimate goals and needs (recognizing that your product or service may be only a means to an end).
-
-##### Technology analysis
-
-Reviewing existing and emerging technologies and asking how they might be applied in your company (either as a process improvement or a product).
-
-##### Activity elimination
-
-Systematically (but as a thought exercise) eliminating each step in a process, and asking what the implications are.
+(3) **The amount of system change desired** (i.e. BPA vs. BPI vs. BPR), where the amount of change desired and amount of effort spent analyzing the as-is system are inversely related. See [notes on process improvement](process-improvement.html) for methods used in BPA, BPI, and BPR.
     
 ### Gathering requirements
 

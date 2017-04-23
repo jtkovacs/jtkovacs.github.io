@@ -309,6 +309,8 @@ Looking for root cause(s):
 
 ![](../ILLOS/reality-models.png)
 
+<br/>
+
 ![](../ILLOS/problem-solving.png)
     
 

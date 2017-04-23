@@ -205,7 +205,7 @@ Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://
 
 KPI trees are about “visualizing the relationship between operational variables and the financial bottom line, and are also the starting point for sensitivity analysis wherein we identify those operational variables that have the largest impact.” Map out dependencies between variables, then take the partial derivative of the terminal KPI w/r/t an operational variable or evaluate using a spreadsheet.
 
-![](/ILLOS/KPI-tree.png)
+![](../ILLOS/KPI-tree.png)
 
 
 # Sources

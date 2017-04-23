@@ -57,7 +57,7 @@ table.TOC ul {
 }
 /* Some padding between list items */
 table.TOC li {
-    padding-top: 2px;
+    padding-top:2px;
 }
 /* Make nested list items lighter and smaller */
 table.TOC li a {

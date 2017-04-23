@@ -234,6 +234,13 @@
          <a href="#quality-control">
           Quality control
          </a>
+         <ul>
+          <li>
+           <a href="#basic-defect-calculations">
+            Basic defect calculations
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
       </li>
@@ -739,6 +746,30 @@
     Quality control
    </a>
   </h2>
+  <h3>
+   <a name="basic-defect-calculations">
+    Basic defect calculations
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Activity yield is %units produced according to specification = 1 - p(defect)
+   </li>
+   <li>
+    Process yield = f(activity_yield); if dependent (Swiss cheese) activities, then product of activity yields, 1-p(defect)n; if independent, then sum, represented as (1-p(defect))
+    <sup>
+     n
+    </sup>
+    .
+   </li>
+   <li>
+    Swiss Cheese model: think of a hole as a defect; as you stack slices of cheese, there is always the chance that all the holes will line up. This redundancy reduces the probability of process failure. Then the process yield is 1-p(defect)
+    <sup>
+     n
+    </sup>
+    .
+   </li>
+  </ul>
   <h1>
    <a name="sources">
     Sources

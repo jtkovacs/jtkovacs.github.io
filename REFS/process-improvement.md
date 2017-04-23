@@ -202,6 +202,12 @@ KPI trees are about “visualizing the relationship between operational variable
 
 ## Quality control
 
+### Basic defect calculations
+
+- Activity yield is %units produced according to specification = 1 - p(defect)
+- Process yield = f(activity_yield); if dependent (Swiss cheese) activities, then product of activity yields, 1-p(defect)n; if independent, then sum, represented as (1-p(defect))<sup>n</sup>. 
+- Swiss Cheese model: think of a hole as a defect; as you stack slices of cheese, there is always the chance that all the holes will line up. This redundancy reduces the probability of process failure. Then the process yield is 1-p(defect)<sup>n</sup>.
+
 
 
 

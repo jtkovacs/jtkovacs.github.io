@@ -307,7 +307,10 @@ Looking for root cause(s):
 - Pareto chart “maps out the assignable causes of a problem in the categories from the Ishikawa diagram, ordering root causes in decreasing order of frequency of occurrance”; 
     - Pareto principle: 80% of the defects are explained by 20% of the root causes
 
+~[](../ILLOS/reality-models.png)
 
+~[](../ILLOS/problem-solving.png)
+    
 
 
 

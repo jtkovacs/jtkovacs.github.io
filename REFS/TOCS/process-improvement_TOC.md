@@ -22,7 +22,7 @@
 		- [Brainstorming](#brainstorming)
 		- [Cause-and-effect diagram](#cause-and-effect-diagram)
 		- [CEDAC](#cedac)
-	- [Improvement opportunities rating matrix ](#improvement-opportunities-rating-matrix-)
+	- [Opportunities rating matrix ](#opportunities-rating-matrix-)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -103,7 +103,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ### CEDAC
 
-## Improvement opportunities rating matrix 
+## Opportunities rating matrix 
 
 
 

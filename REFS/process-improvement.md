@@ -76,7 +76,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ### CEDAC
 
-## Improvement opportunities rating matrix 
+## Opportunities rating matrix 
 
 
 

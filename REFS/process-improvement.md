@@ -202,11 +202,62 @@ KPI trees are about “visualizing the relationship between operational variable
 
 ## Quality control
 
+- Ford production system: Influenced by Taylor; aspired to optimization of work. Used a moving line, big machinery, economies of scale, standardization of product.
+- Toyota production system: c. 1950s, focused on elimination of waste and matching demand after failure to replicate Ford system in a postwar context where inputs and domestic demand was scarce.
+    - Worry about: waste, inflexibility, and variability
+
 ### Basic defect calculations
 
 - Activity yield is %units produced according to specification = 1 - p(defect)
 - Process yield = f(activity_yield); if dependent (Swiss cheese) activities, then product of activity yields, 1-p(defect)n; if independent, then sum, represented as (1-p(defect))<sup>n</sup>. 
 - Swiss Cheese model: think of a hole as a defect; as you stack slices of cheese, there is always the chance that all the holes will line up. This redundancy reduces the probability of process failure. Then the process yield is 1-p(defect)<sup>n</sup>.
+
+### Quality & flow
+
+- Adding representations of quality to a flow diagram:
+    - Dropped flow units: Calculate end demand; calculate yield of each step (include defects); calculate how much each step must produce to meet demand (e.g., a 50% defect rate means that an activity must produce 2xD); calculate implied utilization (D/capacity); highest implied utilization is the bottleneck.    
+    - Re-worked flow units: Calculate the expected processing time. E.g. if there is a 30% defect rate and defects are re-worked, then the real processing time is 0.7*processing_time + 0.3*rework_time. After this modification, the activity with lowest capacity is the bottleneck.
+- Costs of defects: Say that we pay $2 per flow unit as an input, but receive $20 per flow unit post-processing, as an output. Then the cost of defects depends not on where they occur, but where they are detected—before or after the bottleneck. Before is cheaper. Pre-bottleneck, defect costs are driven by input costs; post-bottleneck, by revenue (opportunity cost).
+- Variability & buffering dilemma: 
+    - For a 2-step process where each step has p(defect)=0.5, there are four possibilities: both defect-free; first step defective, leaving step 2 “starved”; second step defective, leaving step one “blocked”; and both defective. This variability dramatically lowers the expected flow rate; by adding a buffer, the flow rate may be increased. 
+    - However, buffers remove the incentive for process improvement; buffering hides problems.
+    - Toyota developed the Kanban “demand-pull” card system to manage this dilemma. Kanban cards authorize work, and are themselves authorized by customer demand. This puts a cap on inventory.
+
+### Six Sigma
+
+Improving a process by reducing internal variability.
+
+- LSL, USL: lower and upper specification limits
+- Capability score (AKA CP score), where higher is better: (USL-LSL)/(6*process_stdev). Clearly, the CP score can be raised by widening the range between upper and lower specifications, or by decreasing the standard deviation in the process.
+- For interpretation, relates to defect probabilities.
+- Quality targets are often expressed as ppm, parts per million.
+- A “six sigma” quality target corresponds to a defect probability of 0.002 and a capability score of 2.
+
+### Control charts
+
+Help distinguish between normal and abnormal variation; part of statistical process control
+
+- Common cause variation may be high or low, but has one basic root
+- Assignable cause variation is when the variation stems from multiple sources: “something in the underlying process that changed”, resulting in more variability
+- How to identify assignable causes? 
+- Establish LCL, UCL---upper and lower control limits, different from LSL, USL. 
+- LCL= mean - 3*stdev; UCL = mean + 3*stdev 
+- Plot means of samples against LCL, UCL; if a sample’s mean crosses control limits, we suspect assignable cause.
+
+### Jidoka
+
+Detect → Alert → Stop, as quickly as possible, to prevent defects from reaching the bottleneck. In manufacturing assembly lines, jidoka is often implemented with andon cords (for workers to pull, freezing the whole line) and a central andon board (to indicate which station initiated the stop).
+
+- ITAT is “information turnaround time”, something that is (detrimentally) increased by inventory. Low ITAT means quick feedback and the potential for quick learning.
+
+### Problem solving
+
+Looking for root cause(s):
+
+- Kaizen: Process improvement is best carried out by frontline employees
+- Ishikawa diagram, also called fishbone diagram, for brainstorming; complemented by 5 whys
+- Pareto chart “maps out the assignable causes of a problem in the categories from the Ishikawa diagram, ordering root causes in decreasing order of frequency of occurrance”; 
+    - Pareto principle: 80% of the defects are explained by 20% of the root causes
 
 
 

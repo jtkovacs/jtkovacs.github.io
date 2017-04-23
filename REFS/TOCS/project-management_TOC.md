@@ -305,7 +305,7 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
     (a) No current system exists
     (b) Little effect on current systems
 
-(3) **The amount of system change desired** (i.e. BPA vs. BPI vs. BPR), where the amount of change desired and amount of effort spent analyzing the as-is system are inversely related. See [notes on process improvement](process-improvement.html) for methods used in BPA, BPI, and BPR.
+(3) **The amount of system change desired,** i.e. BPA vs. BPI vs. BPR (see [notes on process improvement](process-improvement.html) for definitions and associated methods). The amount of change desired and amount of effort spent analyzing the as-is system are inversely related.
     
 ### Gathering requirements
 

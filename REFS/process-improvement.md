@@ -70,13 +70,28 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 ## Analyze problems 
 
-### Brainstorming
-
 ### Cause-and-effect diagram
 
 ### CEDAC
 
 ## Opportunities rating matrix 
+
+### Brainstorming
+
+
+
+
+# Operations Management
+
+Strategy and assessment often reference four **operational dimensions:** 
+
+- Cost
+- Time
+- Variety/responsiveness to consumer tastes
+- Quality (performance, conformance)
+
+Between any two dimensions, there may be a **tradeoff;** obtain this curve by locating the performance of existing companies for any two dimensions. Then the question is whether your company is operating on the frontier or within it.
+
 
 
 

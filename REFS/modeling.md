@@ -1,10 +1,43 @@
-# Modeling data flows
+# Modeling systems architecture
 
 # Modeling processes
 
 Hard to distinguish business process from IT process from work
 
-# Modeling systems architecture
+
+# Logic flow charts
+
+## Language-level diagram
+
+## Nassi-Schneiderman (N-S) diagram
+
+AKA Chapin charts
+
+# Data flow diagram
+
+## Gane/Sarson method
+
+## Yourdon/Coad method
+
+# Entity-relationship diagrams
+
+## Bachmann/crow-foot notation
+
+## Chen notation
+
+## Martin notation
+
+# Object-oriented modeling
+
+## Rumbaugh/OMT method
+
+## Shlaer/Mellor method
+
+## UML
+
+## Booch notation
+
+
 
 # Prototyping interfaces
 

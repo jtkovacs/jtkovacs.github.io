@@ -1,16 +1,63 @@
-<table class="TOC"><tr><td>- [Modeling data flows](#modeling-data-flows)
+<table class="TOC"><tr><td>- [Modeling systems architecture](#modeling-systems-architecture)
 - [Modeling processes](#modeling-processes)
-- [Modeling systems architecture](#modeling-systems-architecture)
+- [Logic flow charts](#logic-flow-charts)
+	- [Language-level diagram](#language-level-diagram)
+	- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
+- [Data flow diagram](#data-flow-diagram)
+	- [Gane/Sarson method](#gane/sarson-method)
+	- [Yourdon/Coad method](#yourdon/coad-method)
+- [Entity-relationship diagrams](#entity-relationship-diagrams)
+	- [Bachmann/crow-foot notation](#bachmann/crow-foot-notation)
+	- [Chen notation](#chen-notation)
+	- [Martin notation](#martin-notation)
+- [Object-oriented modeling](#object-oriented-modeling)
+	- [Rumbaugh/OMT method](#rumbaugh/omt-method)
+	- [Shlaer/Mellor method](#shlaer/mellor-method)
+	- [UML](#uml)
+	- [Booch notation](#booch-notation)
 - [Prototyping interfaces](#prototyping-interfaces)
 - [Sources](#sources)
 </td></tr></table>
-# Modeling data flows
+# Modeling systems architecture
 
 # Modeling processes
 
 Hard to distinguish business process from IT process from work
 
-# Modeling systems architecture
+
+# Logic flow charts
+
+## Language-level diagram
+
+## Nassi-Schneiderman (N-S) diagram
+
+AKA Chapin charts
+
+# Data flow diagram
+
+## Gane/Sarson method
+
+## Yourdon/Coad method
+
+# Entity-relationship diagrams
+
+## Bachmann/crow-foot notation
+
+## Chen notation
+
+## Martin notation
+
+# Object-oriented modeling
+
+## Rumbaugh/OMT method
+
+## Shlaer/Mellor method
+
+## UML
+
+## Booch notation
+
+
 
 # Prototyping interfaces
 

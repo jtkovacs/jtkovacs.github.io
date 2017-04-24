@@ -40,7 +40,7 @@ This is a notation that describes the cardinality and optionality/modality/parti
 
 ### Chen notation
 
-<img src="../ILLOS/chens.png" width="350px">
+<img src="../ILLOS/chens.png" width="270px">
 
 ### Baker's notation
 

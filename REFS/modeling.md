@@ -2,7 +2,7 @@
 
 _The following notes are largely based on Steirn (1999) and [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking)_
 
-_Note that there's a lot of overlap between depicting a system and [implementing one;](project-management.html) between depicting a process and [improving it;](process-improvement.html) between modeling a problem and [analyzing it;](models.html) between modeling a system and [modeling a database;](databases.html#database-design) between model forms and [information structures in information architecture.](information-architecture.html#kos-by-structure)_
+_Note that there's a lot of overlap between depicting a system and [implementing one;](project-management.html) between depicting a process and [improving it;](process-improvement.html) between modeling a problem and [analyzing it;](models.html) between modeling a system and [modeling a database;](databases.html#database-design) between model forms and [knowledge organization structures.](information-architecture.html#kos-by-structure)_
 
 
 

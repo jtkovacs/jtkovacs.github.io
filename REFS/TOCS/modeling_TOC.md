@@ -46,7 +46,7 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 ## Entity-relationship diagrams
 
-Per Dybka (2014), there are many ERD notation styles:
+All ERDs capture the entities in a system, along with their attributes and interrelationships. Per Dybka (2014), there are many notation styles:
 
 - **Crow's foot**
 - **Martin**

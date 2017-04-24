@@ -354,7 +354,7 @@ Conditions:
 There is an absolute minimum/maximum
 Movement is only possible in one direction: down/up. In math: if xt+1 ≠ xt, there is some k >0 such that F(xt+1) > F(xt) +/- k, that is, with each timestep the system moves by at least k amount. [Zeno’s paradox; need to define a fixed step distance otherwise we will never arrive at the maximum]
 Therefore, eventually, xt+1=xt.
-#periods_to_equilibrium ≤ (max_value - initial_value)/step_size
+\#periods_to_equilibrium ≤ (max_value - initial_value)/step_size
 Does the process necessarily reach a max/min? No, it can get stuck. For example, in the case of preferences, it could be that a pairwise trading scheme leads to a suboptimal allocation while a more sophisticated trading scheme would attain maximum happiness.
 
 The hard part is constructing a Lyapunov function to represent the system.

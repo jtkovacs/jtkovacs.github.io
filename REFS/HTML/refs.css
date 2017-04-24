@@ -138,11 +138,18 @@ div.sourceCode {
     padding-left: 10px;
 }
 
+div.sourceCode code {
+    background-color: #f8f8f8;
+}
+
+
 code {
     background-color: #ebebeb;
     font-size: 10px;
     font-family: monospace;    
 }
+
+
 
 
 

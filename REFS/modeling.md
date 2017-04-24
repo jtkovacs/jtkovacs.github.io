@@ -27,14 +27,13 @@ Per Scott Page, modeling helps us:
     - **See if something is missing,** e.g. orbits makes us think that there’s a planet beyond our sight
     - **Strategize data collection**
     - **Estimate unobservable parameters** & calibrate based on data
-- To better decide, strategize, and design---to act!
-    - Real-time decision making (e.g., the Monty Hall door selection problem)
-    - Comparative statics: move from one equilibrium to another
-    - Counterfactuals
-    - Identify and rank levers: where do we intervene to have an impact?
-    - Experimental & institutional design
+- **Better decide, strategize, design, and act.**
+    - **Make decisions** (e.g., the Monty Hall door selection problem)
+    - **Consider counterfactuals**
+    - **Identify and rank levers:** where do we intervene to have an impact?
+    - **Design experiments and institutions**
 - **Communicate what we know very simply.**
-- ‘Models are fertile,’ i.e., they have multiple and unexpected uses. 
+- **Discover new things:** "Models are fertile", i.e., they have multiple and unexpected uses. 
 
 Quotes from readings:
 organized data = information; information in context = knowledge; aptly-applied knowledge = wisdom; “How though do we acquire general wisdom? Advocates of liberal arts education argue for broad exposure to great works of literature and to the basic ideas from multiple disciplines. I agree in principle, but I believe the great books approach to be incomplete … the information pours out of the fire hose producing ever more complexity. How do we cope? What tools do we need? We need models. Models provide formal frameworks within which to embed all of this data and information.”

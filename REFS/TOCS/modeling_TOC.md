@@ -27,7 +27,7 @@ The representation of a system needs contextual metadata clarifying the date and
 
 ## Flow charts
 
-AKA decision flow charts, logic flow charts, and logical decision flow charts. This modeling methodology is contemporaneous with structured programming. Flow charts model decisions, which is one type of process; so languages for modeling processes more generally can also represent decisions.
+AKA decision flow charts, logic flow charts, and logical decision flow charts. Flow charts model **decisions,** a type of process. Languages that model processes more generally can also represent decisions.
 
 The basic elements of flow charts are available in MS Visio's language level diagrams stencil:
 
@@ -38,7 +38,7 @@ The basic elements of flow charts are available in MS Visio's language level dia
 
 ### Nassi-Schneiderman (N-S) diagram
 
-AKA Chapin charts, structograms, structured flowcharts.
+AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderman (1973), "We propose a flowchart language whose control structure is closer to that of language amenable to **structured programming:"**
 
 N-S diagrams are an alternative to pseudocode.
 An N-S diagram can be drawn using text and lines (or completely with ASCII characters).

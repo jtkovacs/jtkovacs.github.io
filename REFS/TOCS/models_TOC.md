@@ -1,9 +1,14 @@
-<table class="TOC"><tr><td>- [Models theorizing segregation](#models-theorizing-segregation)
-	- [Measuring segregation](#measuring-segregation)
-	- [Thomas Schelling’s spatial segregation model](#thomas-schelling’s-spatial-segregation-model)
-	- [Granovetter’s model of peer effects ](#granovetter’s-model-of-peer-effects-)
-	- [Standing ovation model](#standing-ovation-model)
-- [Models of aggregation](#models-of-aggregation)
+<table class="TOC"><tr><td>- [Models theorizing ... ](#models-theorizing-...-)
+	- [Segregation](#segregation)
+		- [Measuring segregation](#measuring-segregation)
+		- [Thomas Schelling’s spatial segregation model](#thomas-schelling’s-spatial-segregation-model)
+		- [Granovetter’s model of peer effects ](#granovetter’s-model-of-peer-effects-)
+		- [Standing ovation model](#standing-ovation-model)
+	- [Aggregation](#aggregation)
+		- [Central Limit Theorem](#central-limit-theorem)
+		- [Game of Life](#game-of-life)
+		- [Cellular automata](#cellular-automata)
+		- [Aggregating preferences](#aggregating-preferences)
 - [Decision-making models](#decision-making-models)
 - [Models of human behavior](#models-of-human-behavior)
 	- [Rational ](#rational-)
@@ -44,11 +49,14 @@ _The following notes are largely based on [Scott Page's](https://vserver1.cscs.l
 
 _For information systems-related applications of modeling, see [notes on system and process modeling;](modeling.html) for business applications of models as analytic frameworks, see [notes on project management](project-management.html) and [process improvement.](process-improvement.html)_
  
-# Models theorizing segregation
+
+# Models theorizing ... 
+ 
+## Segregation
  
 There's an identification problem with segregation: do we deliberately seek the company of those who are similar to us (sorting), or do we become like those with whom we associate (peer effects)?
  
-## Measuring segregation
+### Measuring segregation
 
 - **Index of dissimilarity**
     - o ≤ DI ≤ 1
@@ -57,7 +65,7 @@ There's an identification problem with segregation: do we deliberately seek the 
 - **[Isolation index](https://en.wikipedia.org/wiki/Index_of_dissimilarity)**
 
 
-## Thomas Schelling’s spatial segregation model
+### Thomas Schelling’s spatial segregation model
 
 Agent-based model where people choose whether to move or stay depending on the composition of their immediate neighborhood. The deep insight is that a similarity threshold of 30% has an equilibrium (everyone happy) with segregation of 70%; and 50% tolerance leads to nearly 100% segregation, including borders made up of empty cells. Perhaps counterintuitively, when intolerance is set very high, the system won’t find an equilibrium since everyone is perpetually moving. 
 Micromotives ≠ macrobehavior
@@ -66,7 +74,7 @@ Exodus tip: agent leaves because someone else exits the neighborhood
 Genesis tip: agent leaves because someone else enters the neighborhood
 
 
-## Granovetter’s model of peer effects 
+### Granovetter’s model of peer effects 
 
 In re: people’s decision to join in a social movement
 
@@ -76,7 +84,7 @@ collective action more likely to happen if: low thresholds, variation in thresho
 calculate avg. T for a population; avg. discontent doesn’t matter
 
 
-## Standing ovation model
+### Standing ovation model
 
 - builds off Granovetter model; adds information to peer effects
 - T, threshold to stand, and T=f(Q) is a function of quality
@@ -92,34 +100,44 @@ calculate avg. T for a population; avg. discontent doesn’t matter
 
 
 
-# Models of aggregation
+## Aggregation
 
 Aggregation is tricky; “more is different” (can’t just look at individual parts). So, we model to get the logic correct. e.g. water is made of molecules, where wetness comes from the hydrogen bond; cognition comes from connected neurons.
 
-[Aggregating actions or numbers] Central Limit Theorem: If you add up many independent events with finite variance, the distribution should be bell-shaped with mean=N/2 for the binomial distribution (or mean=p*N, more generally) and sigma=sqrt(N)/2 for the binomial distribution (or sigma=sqrt(p(1-p)N), more generally).
+Additional readings:
+
+- http://stattrek.com/sampling/sampling-distribution.aspx
+- http://stattrek.com/probability-distributions/binomial.aspx
+- https://en.wikipedia.org/wiki/Six_Sigma 
+
+### Central Limit Theorem
+
+[Aggregating actions or numbers] : If you add up many independent events with finite variance, the distribution should be bell-shaped with mean=N/2 for the binomial distribution (or mean=p*N, more generally) and sigma=sqrt(N)/2 for the binomial distribution (or sigma=sqrt(p(1-p)N), more generally).
 p(x > 6*sigma) = 3.4 in a million. In production processes, the six sigma approach means that you shoot for a sigma such that your likelihood of exceeding some specific tolerance is 3.4 in a million.
 
-[Aggregating rules] Game of Life by John Conway, a mathematician in group theory:  
+### Game of Life
+
+[Aggregating rules]  by John Conway, a mathematician in group theory:  
 Dead → Come alive if three of your neighbors are alive
 Alive → Die if you have fewer than two neighbors or more than three neighbors
 Results: Self-organization into complex patterns; emergence of distinct functional entities, e.g. f-pentomino, that can be used for computation
     
-[Aggregating families of rules] Cellular automata, developed by John von Neumann and covered extensively in Wolfram, S. A New Kind of Science.
+### Cellular automata
+    
+[Aggregating families of rules] , developed by John von Neumann and covered extensively in Wolfram, S. A New Kind of Science.
 For 1D cellular automata models, we can visualize them on a grid treating each row as an instance of time
 From the perspective of each cell, there are 8 possible states for its immediate neighborhood
 Wolfram shows that 1D models, depending on their governing rules, exhibit all forms of behavior: equilibrium, oscillation, pure randomness, and complexity → “an information theoretic universe”?
 There are a total of 256 rules: 8 neighborhood states, 2 possible responses → 28 = 256
 Langton’s lamba: for a given set of rules, what % tell cells to switch on? e.g. ⅛ or ⅞
 
+### Aggregating preferences
+
 [Aggregating preferences] Politics and economics:  
 How do we represent preferences? Through inequalities: preference rankings/orderings
 How do we discern preferences? Revealed or stated
 Usually assume rational, transitive preferences, but even so collective preferences may be nontransitive (Condorcet paradox)
 
-Additional readings:
-http://stattrek.com/sampling/sampling-distribution.aspx
-http://stattrek.com/probability-distributions/binomial.aspx
-https://en.wikipedia.org/wiki/Six_Sigma 
 
 
 

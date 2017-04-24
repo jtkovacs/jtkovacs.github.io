@@ -34,7 +34,7 @@ Because a model is a representation of a system, the model needs to include cont
 Per Scott Page, modeling helps us:
 
 - **Be an intelligent citizen of the world.** Models are everywhere, so full participation requires knowing them. They are "the new lingua franca" in nonprofits, businesses, politics, academia. 
-- **Be a clearer thinker.** Models are "wrong, but useful"; people make better decisions using a formal model versus either a single model, or multiple casual models. \
+- **Be a clearer thinker.** Models are "wrong, but useful"; people make better decisions using a formal model versus either a single model, or multiple casual models. 
     - Work through all the logical possibilities for part; relationships between parts; logic.
     - Identify the general class of outcome: equilibrium, cycle, random, complex.
     - Identify logical boundaries. "Models give us the conditions under which we can adjudicate" between ideas, e.g. contradictory folk proverbs. _When_ are "two heads better than one"? *When* do "two cooks spoil the broth"?

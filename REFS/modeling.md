@@ -52,6 +52,12 @@ This is a notation that describes the cardinality and optionality/modality/parti
 
 ### Martin notation
 
+<img src="../ILLOS/idef1x.png" width="350px">
+
+### Arrow notation
+
+<img src="../ILLOS/arrow.png" width="350px">
+
 ## Data flow diagram
 
 ### Gane/Sarson method

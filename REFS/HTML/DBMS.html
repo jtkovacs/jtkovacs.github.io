@@ -58,18 +58,18 @@
          </a>
         </li>
         <li>
-         <a href="#ms-sql-server">
-          MS SQL Server
+         <a href="#microsoft-sql-server">
+          Microsoft SQL Server
          </a>
         </li>
         <li>
-         <a href="#ms-access">
-          MS Access
+         <a href="#microsoft-access">
+          Microsoft Access
          </a>
          <ul>
           <li>
-           <a href="#migrating-access-to-microsoft-sql-server-management-studio">
-            Migrating Access to Microsoft SQL Server Management Studio
+           <a href="#migrating-to-microsoft-sql-server">
+            Migrating to Microsoft SQL Server
            </a>
           </li>
          </ul>
@@ -132,13 +132,13 @@
    view users: SELECT User, Host, Password FROM mysql.user; add user: INSERT INTO mysql.user (User,Host,Password) VALUES('username','localhost',PASSWORD('demopassword')); FLUSH PRIVILEGES; change password: UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root'; FLUSH PRIVILEGES; grant privileges: GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost; FLUSH PRIVILEGES; SHOW GRANTS FOR 'demouser'@'localhost';
   </p>
   <h2>
-   <a name="ms-sql-server">
-    MS SQL Server
+   <a name="microsoft-sql-server">
+    Microsoft SQL Server
    </a>
   </h2>
   <h2>
-   <a name="ms-access">
-    MS Access
+   <a name="microsoft-access">
+    Microsoft Access
    </a>
   </h2>
   <p>
@@ -150,8 +150,8 @@
    … Properties Sheet &gt; Data &gt; Data Source → Design &gt; Add Existing Fields Design View &gt; Layout Add a combo box to the header of a form for easier navigation (e.g. by employee name) reports: for printing, reading, analyzing trends Create &gt; Report (or Report Design or Report Wizard) Design &gt; Group &amp; Sort, Totals Format &gt; Conditional Formatting database maintenance &amp; navigability: Database Tools &gt; Object Dependencies, Database Documenter, Compact &amp; Repair (run periodically) can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane Design View of tables/queries/etc. lets you add descriptions and tool tips for fields Database Tools &gt; Access Database (splits database into front-end=queries+forms+reports and back-end=tables) troubleshooting: External Data &gt; Linked Table Manager build a custom ribbon with frequently-used commands &amp; macros: Options &gt; Customize Ribbon startup actions, default views, and limited views: Options &gt; Current Database bypass by holding shift key while opening database macros: Create &gt; Macro button macros: Design &gt; create a button &gt; Property Sheet &gt; Events &gt; On Click &gt; … &gt; ApplyFilter remove all filters: ApplyFilter &gt; Where Condition = true data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; … name macro autoexec to run it on launch
   </p>
   <h3>
-   <a name="migrating-access-to-microsoft-sql-server-management-studio">
-    Migrating Access to Microsoft SQL Server Management Studio
+   <a name="migrating-to-microsoft-sql-server">
+    Migrating to Microsoft SQL Server
    </a>
   </h3>
   <p>

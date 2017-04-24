@@ -41,9 +41,9 @@ add user: INSERT INTO mysql.user (User,Host,Password) VALUES('username','localho
 change password: UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root'; FLUSH PRIVILEGES;
 grant privileges: GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost; FLUSH PRIVILEGES; SHOW GRANTS FOR 'demouser'@'localhost';
 
-## MS SQL Server
+## Microsoft SQL Server
 
-## MS Access
+## Microsoft Access
 
 http://allenbrowne.com/tips.html
 
@@ -104,7 +104,7 @@ data macros: use to make logs that capture editing. create a log table; Table > 
 name macro autoexec to run it on launch
 
 
-### Migrating Access to Microsoft SQL Server Management Studio
+### Migrating to Microsoft SQL Server
 
 https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446
 

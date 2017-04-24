@@ -1,11 +1,23 @@
-_The following notes are largely based on Steirn (1999) and Scott Page's Coursera class on [Model Thinking](https://www.coursera.org/course/modelthinking)._
 
-# Why model?
+
+_The following notes are largely based on Steirn (1999) and Scott Page's Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking) There's a lot of overlap between depicting a system and [implementing one;](project-management.html) between depicting a process and [improving it;](process-improvement.html) between modeling a problem and [analyzing it.](data-analysis.html)_
+
+
+
+# Overview of modeling
 
 Models of a process, system, or interface can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). 
 
+The representation of a system needs to include contextual metadata clarifying the date and/or version it describes. 
 
-# Model typologies 
+## Why model?
+
+Per Scott Page, modeling:
+
+- 
+
+
+## Model typologies 
 
 Steirn (1999) organizes models 
 
@@ -24,7 +36,10 @@ Types of diagrams, per Smartdraw.com (n.d.):
     - Circuit diagram
     - Floorplan
 
-The representation of a system needs to include contextual metadata clarifying the date and/or version it describes. 
+
+
+
+
 
 # Models
 

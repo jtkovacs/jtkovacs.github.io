@@ -46,6 +46,9 @@ This is a notation that describes the cardinality and optionality/modality/parti
 
 <img src="../ILLOS/bakers.png" width="350px">
 
+### IDEF1X
+
+<img src="../ILLOS/idef1x.png" width="350px">
 
 ### Martin notation
 

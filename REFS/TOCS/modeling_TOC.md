@@ -6,7 +6,7 @@
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
 		- [Bachmann/crow's foot notation](#bachmann/crow's-foot-notation)
-	- [Data flow diagrams](#data-flow-diagrams)
+		- [Data flow diagrams](#data-flow-diagrams)
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
 			- [Use-case diagrams](#use-case-diagrams)
@@ -130,7 +130,7 @@ This is a notation that describes the optionality/modality/participation and car
 
 
 
-## Data flow diagrams
+### Data flow diagrams
 
 The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depict the flow of data through a system using the following elements:
 

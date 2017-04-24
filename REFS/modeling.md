@@ -115,7 +115,7 @@ This is a notation that describes the optionality/modality/participation and car
 
 
 
-## Data flow diagrams
+### Data flow diagrams
 
 The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depict the flow of data through a system using the following elements:
 

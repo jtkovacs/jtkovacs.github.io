@@ -306,9 +306,12 @@ Big rocks first: when filling a bucket with rocks and sand
 Random search
 Neumann neighborhoods: look N,S,E,W
 
-No free lunch thm (Wolpert & McCready): all algorithms that search the same number of points with the goal of locating the maximum value of a function defined on a finite set, e.g., a landscape, perform exactly the same when averaged over all possible functions → You need to have some instinct for what heuristic suits which landscape; if you don’t know anything about the problem, then no heuristic is better
+## No free lunch thm 
 
-Diverse teams/collaborative problem-solving
+(Wolpert & McCready): all algorithms that search the same number of points with the goal of locating the maximum value of a function defined on a finite set, e.g., a landscape, perform exactly the same when averaged over all possible functions → You need to have some instinct for what heuristic suits which landscape; if you don’t know anything about the problem, then no heuristic is better
+
+## Collaborative problem-solving
+
 He uses ‘teams’ in a very loose sense; doesn’t need to be face-to-face or synchronous
 Ability: the avg value of all the peaks in your perspective
 For teams, look at intersection of perspectives and take the avg
@@ -318,12 +321,16 @@ Missing from this model:
 Imperfect communication
 Error in interpreting the value of a solution
 
-Recombination
+## Recombination
+
 Martin Weitzman’s theory of recombinant economic growth
 Exaptation: when something developed for one purpose proves highly useful for another, e.g. feathers
 Joel Mokyr: gifts of Athena == technological developments that facilitate the exchange of ideas
 
-WEEK 5    MARKOV PROCESSES: 
+
+
+# Markov processes
+
 A particularly fertile model that captures dynamic processes between a finite and fixed set of states. It must be possible to get from any one state to any other and the probabilities of moving between states (transition probabilities) must remain fixed over time. If those assumptions hold, then the process will have a unique equilibrium (i.e., initial state doesn’t matter; history doesn’t matter; interventions/perturbations don’t matter).
 
 If A is the transition matrix and x is the state vector, then the equilibrium is: Ax=x. 
@@ -335,7 +342,12 @@ Exaption of Markov models: Useful when there’s a sequence of events with known
 Voter turnout, school attendance, student attentiveness, regime transitions
 Identification of authors: make a transition matrix of key phrases; how often is the word “for” followed by “the record”, “example”, “the sake of”?
 
-WEEK 6    LYAPUNOV FUNCTIONS
+
+
+
+# Lyapunov functions
+
+
 If we can represent a system/model with a Lyapunov function, then we know it goes to equilibrium and we also know how quickly it does that. A system with equilibrium behavior can lack Lyapunov representation.
 
 Conditions:
@@ -353,7 +365,9 @@ Even if a system has an equilibrium, we can’t necessarily determine that it do
 
 Difference between Lyapunov processes (reaches an equilibrium that need not be unique or efficient) and Markov processes (stochastic equilibrium that doesn’t depend on initial conditions).
 
-WEEK 6    COORDINATION & CULTURE
+
+
+# Models of coordination & culture
 
 Culture: http://www.worldvaluessurvey.org/WVSContents.jsp, http://geert-hofstede.com/national-culture.html  
 differences between groups and
@@ -363,7 +377,9 @@ interesting in some way, i.e., appearing suboptimal or confusing to outsiders.
 Culture is an n-person coordination game. In a coordination game, players receive payoffs when they choose the same action. An n-person coordination game can be modeled with a Lyapunov function, F(x)= # of coordinations, k=2. BUT, the process doesn’t have to stop with everyone being the same; you can get blocks of different behaviors. 
 Note that suboptimal equilibria are possible with coordination games
 
-Axelrod’s culture model: http://ccl.northwestern.edu/netlogo/models/community/Dissemination%20of%20Culture 
+## Axelrod’s culture model
+
+http://ccl.northwestern.edu/netlogo/models/community/Dissemination%20of%20Culture 
 Features: {1, 2, ..., N}
 Traits are actions you take for a feature: {1, 2, …, aN}
 Person is a vector of traits on features: [a1, a2, …, ai, aN]
@@ -372,7 +388,9 @@ choose whether to interact based on some similarity threshold
 if they’re similar enough to interact, then they randomly select a feature and change their behavior to match their neighbor’s trait (if they don’t match already)
 → emergence of distinct cultures with thick boundaries
 
-Coordination & consistency model: people don’t want to keep infinitely adjusting to people around them; they also have some consistency of worldview. The rule here is, adjust your own traits so they are more numerically similar with each other. → process takes a long time to converge, and small errors at the individual level lead to large population-level divergences. In the transition map below, if we add an error term that allows us to exit the red-red-red-red state of total consistency and coordination, then we suddenly have a Markov process and can represent the process with a transition matrix:
+## Coordination & consistency model
+
+people don’t want to keep infinitely adjusting to people around them; they also have some consistency of worldview. The rule here is, adjust your own traits so they are more numerically similar with each other. → process takes a long time to converge, and small errors at the individual level lead to large population-level divergences. In the transition map below, if we add an error term that allows us to exit the red-red-red-red state of total consistency and coordination, then we suddenly have a Markov process and can represent the process with a transition matrix:
 
 All possible states:
 
@@ -389,7 +407,8 @@ Desire for coordination
 Desire for consistency
 External change in what’s optimal, but system remains stuck at equilibrium
 
-WEEK 7    PATH DEPENDENCE
+
+# Path dependence
 
 What is path dependence?
 Path dependence=the sequence of previous outcomes matter
@@ -414,7 +433,9 @@ Balancing process (phat dependent; outcome dependent, equilibrium independent): 
 Sway process (path dependent): In period t, add a ball of the same color as the selected ball and add (2t-s - 2t-s-1) balls of the color chosen in each period s<t. Result: the past takes on more weight over time.
 
 
-WEEK 7    NETWORKS
+
+
+# Networks
 
 Internet has made networks more visible and measurable; popular and scientific interest has increased. Networks have been used to examine segregation; information flow within organizations (e.g. email traffic patterns); link patterns among blogs to demonstrate political polarization; intellectual traditions, citation patterns, etc.
 https://flowingdata.com/category/visualization/network-visualization/
@@ -453,7 +474,9 @@ Granovetter’s “Strength of weak ties” paper
 Internet is extremely robust against random failure, but not targeted failure (of highly-connected nodes) because it’s a preferentially-attached network
 Helps identify who to vaccinate (more targeted than SIS model)
 
-WEEK 8     RANDOMNESS
+
+
+# Randomness
 
 Randomness is a quality of a variable. We want to know two things: What is the source of the randomness, i.e. the error term? What is the distribution of the randomness?
 
@@ -486,7 +509,8 @@ Model where many players compete: Can have nontransitive victories → Lots of c
 
 Applications of this model: US Electoral College, terrorism, trials, hiring
 
-WEEK 9    PRISONER’S DILEMMA, COOPERATION, COLLECTIVE ACTION & COMMONS
+
+# Prisoner's dilemma, cooperation, collective action & the commons
 
 In Prisoner’s Dilemma, the incentive to defect must be less, on average, than the payoffs available for cooperation. Here are the constraints: T>R, 2T>F, F>T.
 
@@ -531,7 +555,9 @@ What helps with collective action problems? The particulars matter; there’s no
 Clear ownership
 Rotation schemes
 
-WEEK 9    MECHANISM DESIGN
+
+# Mechanism design
+
 Formalizing institutions; designing the rules of the game by defining permitted actions and payoffs.
 
 Hidden actions: Effort={0,1}; Outcome={Good,Bad}; p(Good|Effort=1)=1; p(Good|Effort=0)=p; c, cost of effort=1. Contract: pay M if Good, 0 if Bad→ Payoff(effort=1)=M-c and Payoff(effort=0)=pM; set M-c>pM → M>c/(1-p).
@@ -548,9 +574,13 @@ Mechanisms in public goods projects:
 Clarke-Groves-Vickery Pivot mechanism: each person states what the project is worth to them. If the sum of these claims is higher than the cost of hte project, then the project goes ahead with each paying only the minimum amount needed to make the project viable: e.g. person_1 pays max{cost - V2 - V3 … - Vn, 0}. → everyone has an incentive to reveal their true value, rather than over- or under-bidding.
 All mechanisms for these sorts of problems have trade-offs.
 
-WEEK 10    LEARNING MODELS: REPLICATOR DYNAMICS
 
-Replicator models: Used in psychology, to model learning; in economics, to model populations of people learning; and in ecology, to model evolution. In a nutshell, there is a distribution containing types, and the distribution is shifting in response to the payoffs that each type experiences. The dynamics of the model offer commentary on the strategies of (1) copying the most common strategy and (2) copying the most successful strategy. Elements of model:
+
+# Models of learning
+
+## Replicator models 
+
+Used in psychology, to model learning; in economics, to model populations of people learning; and in ecology, to model evolution. In a nutshell, there is a distribution containing types, and the distribution is shifting in response to the payoffs that each type experiences. The dynamics of the model offer commentary on the strategies of (1) copying the most common strategy and (2) copying the most successful strategy. Elements of model:
 Set of types, {1, 2, 3, … N}
 Payoff for/performance of each type, π(i)
 Proportion of each type in population, Pr(i)
@@ -563,7 +593,9 @@ The tricky part here is calculating weights, since payoffs can vary with actions
 
 Fisher’s fundamental theorem: Higher variance increases rate of evolutionary adaptation. Can examine this by taking the average of each generation of low-variation and high-variation populations. Seems to run counter to Six Sigma! But SS is for a fixed problemscape, while Fisher’s is for complex systems.
 
-WEEK 10    PREDICTION & THE MANY MODEL THINKER
+
+
+# Prediction
 
 Prediction at the individual level → “[W]e tend to pay undue attention to single model thinkers. We shouldn’t. We should heed the advice of those who think more subtly. Better still, we should learn many models ourselves.”
 We’ve looked at three types of predictive models: categorical, linear, and Markov

@@ -142,9 +142,95 @@
        <a href="#models-of-diversity-&amp;-innovation-">
         Models of diversity &amp; innovation
        </a>
+       <ul>
+        <li>
+         <a href="#no-free-lunch-thm-">
+          No free lunch thm
+         </a>
+        </li>
+        <li>
+         <a href="#collaborative-problem-solving">
+          Collaborative problem-solving
+         </a>
+        </li>
+        <li>
+         <a href="#recombination">
+          Recombination
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#markov-processes">
+        Markov processes
+       </a>
+      </li>
+      <li>
+       <a href="#lyapunov-functions">
+        Lyapunov functions
+       </a>
        -
        <a href="#≤-(max_value---initial_value)/step_size">
         ≤ (max_value - initial_value)/step_size
+       </a>
+      </li>
+      <li>
+       <a href="#models-of-coordination-&amp;-culture">
+        Models of coordination &amp; culture
+       </a>
+       <ul>
+        <li>
+         <a href="#axelrod’s-culture-model">
+          Axelrod’s culture model
+         </a>
+        </li>
+        <li>
+         <a href="#coordination-&amp;-consistency-model">
+          Coordination &amp; consistency model
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#path-dependence">
+        Path dependence
+       </a>
+      </li>
+      <li>
+       <a href="#networks">
+        Networks
+       </a>
+      </li>
+      <li>
+       <a href="#randomness">
+        Randomness
+       </a>
+      </li>
+      <li>
+       <a href="#prisoner's-dilemma,-cooperation,-collective-action-&amp;-the-commons">
+        Prisoner's dilemma, cooperation, collective action &amp; the commons
+       </a>
+      </li>
+      <li>
+       <a href="#mechanism-design">
+        Mechanism design
+       </a>
+      </li>
+      <li>
+       <a href="#models-of-learning">
+        Models of learning
+       </a>
+       <ul>
+        <li>
+         <a href="#replicator-models-">
+          Replicator models
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#prediction">
+        Prediction
        </a>
       </li>
      </ul>
@@ -443,17 +529,37 @@
   <p>
    Heuristics: rules that guide how you move across/search your landscape Hillclimb: check left, check right, and move to the higher point Do the opposite ... of the existing solution Big rocks first: when filling a bucket with rocks and sand Random search Neumann neighborhoods: look N,S,E,W
   </p>
+  <h2>
+   <a name="no-free-lunch-thm">
+    No free lunch thm
+   </a>
+  </h2>
   <p>
-   No free lunch thm (Wolpert &amp; McCready): all algorithms that search the same number of points with the goal of locating the maximum value of a function defined on a finite set, e.g., a landscape, perform exactly the same when averaged over all possible functions → You need to have some instinct for what heuristic suits which landscape; if you don’t know anything about the problem, then no heuristic is better
+   (Wolpert &amp; McCready): all algorithms that search the same number of points with the goal of locating the maximum value of a function defined on a finite set, e.g., a landscape, perform exactly the same when averaged over all possible functions → You need to have some instinct for what heuristic suits which landscape; if you don’t know anything about the problem, then no heuristic is better
   </p>
+  <h2>
+   <a name="collaborative-problem-solving">
+    Collaborative problem-solving
+   </a>
+  </h2>
   <p>
-   Diverse teams/collaborative problem-solving He uses ‘teams’ in a very loose sense; doesn’t need to be face-to-face or synchronous Ability: the avg value of all the peaks in your perspective For teams, look at intersection of perspectives and take the avg ⇒ The team can only get stuck on a solution that’s a local optimum for every member of the team. It might not be the global optimum, but it will be better than individual solutions. ⇒ We want teams with a diversity of perspectives and heuristics Missing from this model: Imperfect communication Error in interpreting the value of a solution
+   He uses ‘teams’ in a very loose sense; doesn’t need to be face-to-face or synchronous Ability: the avg value of all the peaks in your perspective For teams, look at intersection of perspectives and take the avg ⇒ The team can only get stuck on a solution that’s a local optimum for every member of the team. It might not be the global optimum, but it will be better than individual solutions. ⇒ We want teams with a diversity of perspectives and heuristics Missing from this model: Imperfect communication Error in interpreting the value of a solution
   </p>
+  <h2>
+   <a name="recombination">
+    Recombination
+   </a>
+  </h2>
   <p>
-   Recombination Martin Weitzman’s theory of recombinant economic growth Exaptation: when something developed for one purpose proves highly useful for another, e.g. feathers Joel Mokyr: gifts of Athena == technological developments that facilitate the exchange of ideas
+   Martin Weitzman’s theory of recombinant economic growth Exaptation: when something developed for one purpose proves highly useful for another, e.g. feathers Joel Mokyr: gifts of Athena == technological developments that facilitate the exchange of ideas
   </p>
+  <h1>
+   <a name="markov-processes">
+    Markov processes
+   </a>
+  </h1>
   <p>
-   WEEK 5 MARKOV PROCESSES: A particularly fertile model that captures dynamic processes between a finite and fixed set of states. It must be possible to get from any one state to any other and the probabilities of moving between states (transition probabilities) must remain fixed over time. If those assumptions hold, then the process will have a unique equilibrium (i.e., initial state doesn’t matter; history doesn’t matter; interventions/perturbations don’t matter).
+   A particularly fertile model that captures dynamic processes between a finite and fixed set of states. It must be possible to get from any one state to any other and the probabilities of moving between states (transition probabilities) must remain fixed over time. If those assumptions hold, then the process will have a unique equilibrium (i.e., initial state doesn’t matter; history doesn’t matter; interventions/perturbations don’t matter).
   </p>
   <p>
    If A is the transition matrix and x is the state vector, then the equilibrium is: Ax=x. Equilibrium=nothing changes vs. statistical equilibrium: individual elements move, but no net change. http://nicolewhite.github.io/2014/06/10/steady-state-transition-matrix.html
@@ -463,8 +569,13 @@
   <p>
    Exaption of Markov models: Useful when there’s a sequence of events with known historical probabilities Voter turnout, school attendance, student attentiveness, regime transitions Identification of authors: make a transition matrix of key phrases; how often is the word “for” followed by “the record”, “example”, “the sake of”?
   </p>
+  <h1>
+   <a name="lyapunov-functions">
+    Lyapunov functions
+   </a>
+  </h1>
   <p>
-   WEEK 6 LYAPUNOV FUNCTIONS If we can represent a system/model with a Lyapunov function, then we know it goes to equilibrium and we also know how quickly it does that. A system with equilibrium behavior can lack Lyapunov representation.
+   If we can represent a system/model with a Lyapunov function, then we know it goes to equilibrium and we also know how quickly it does that. A system with equilibrium behavior can lack Lyapunov representation.
   </p>
   <p>
    Conditions: There is an absolute minimum/maximum Movement is only possible in one direction: down/up. In math: if xt+1 ≠ xt, there is some k &gt;0 such that F(xt+1) &gt; F(xt) +/- k, that is, with each timestep the system moves by at least k amount. [Zeno’s paradox; need to define a fixed step distance otherwise we will never arrive at the maximum] Therefore, eventually, xt+1=xt. #periods_to_equilibrium ≤ (max_value - initial_value)/step_size Does the process necessarily reach a max/min? No, it can get stuck. For example, in the case of preferences, it could be that a pairwise trading scheme leads to a suboptimal allocation while a more sophisticated trading scheme would attain maximum happiness.
@@ -478,9 +589,11 @@
   <p>
    Difference between Lyapunov processes (reaches an equilibrium that need not be unique or efficient) and Markov processes (stochastic equilibrium that doesn’t depend on initial conditions).
   </p>
-  <p>
-   WEEK 6 COORDINATION &amp; CULTURE
-  </p>
+  <h1>
+   <a name="models-of-coordination-&amp;-culture">
+    Models of coordination &amp; culture
+   </a>
+  </h1>
   <p>
    Culture: http://www.worldvaluessurvey.org/WVSContents.jsp, http://geert-hofstede.com/national-culture.html
    <br/>
@@ -489,11 +602,21 @@
   <p>
    Culture is an n-person coordination game. In a coordination game, players receive payoffs when they choose the same action. An n-person coordination game can be modeled with a Lyapunov function, F(x)= # of coordinations, k=2. BUT, the process doesn’t have to stop with everyone being the same; you can get blocks of different behaviors. Note that suboptimal equilibria are possible with coordination games
   </p>
+  <h2>
+   <a name="axelrod’s-culture-model">
+    Axelrod’s culture model
+   </a>
+  </h2>
   <p>
-   Axelrod’s culture model: http://ccl.northwestern.edu/netlogo/models/community/Dissemination%20of%20Culture Features: {1, 2, ..., N} Traits are actions you take for a feature: {1, 2, …, aN} Person is a vector of traits on features: [a1, a2, …, ai, aN] People are placed into a social space, a matrix; they look at neighbors and choose whether to interact based on some similarity threshold if they’re similar enough to interact, then they randomly select a feature and change their behavior to match their neighbor’s trait (if they don’t match already) → emergence of distinct cultures with thick boundaries
+   http://ccl.northwestern.edu/netlogo/models/community/Dissemination%20of%20Culture Features: {1, 2, ..., N} Traits are actions you take for a feature: {1, 2, …, aN} Person is a vector of traits on features: [a1, a2, …, ai, aN] People are placed into a social space, a matrix; they look at neighbors and choose whether to interact based on some similarity threshold if they’re similar enough to interact, then they randomly select a feature and change their behavior to match their neighbor’s trait (if they don’t match already) → emergence of distinct cultures with thick boundaries
   </p>
+  <h2>
+   <a name="coordination-&amp;-consistency-model">
+    Coordination &amp; consistency model
+   </a>
+  </h2>
   <p>
-   Coordination &amp; consistency model: people don’t want to keep infinitely adjusting to people around them; they also have some consistency of worldview. The rule here is, adjust your own traits so they are more numerically similar with each other. → process takes a long time to converge, and small errors at the individual level lead to large population-level divergences. In the transition map below, if we add an error term that allows us to exit the red-red-red-red state of total consistency and coordination, then we suddenly have a Markov process and can represent the process with a transition matrix:
+   people don’t want to keep infinitely adjusting to people around them; they also have some consistency of worldview. The rule here is, adjust your own traits so they are more numerically similar with each other. → process takes a long time to converge, and small errors at the individual level lead to large population-level divergences. In the transition map below, if we add an error term that allows us to exit the red-red-red-red state of total consistency and coordination, then we suddenly have a Markov process and can represent the process with a transition matrix:
   </p>
   <p>
    All possible states:
@@ -507,9 +630,11 @@
   <p>
    Suboptimal outcomes can arise from: Desire for coordination Desire for consistency External change in what’s optimal, but system remains stuck at equilibrium
   </p>
-  <p>
-   WEEK 7 PATH DEPENDENCE
-  </p>
+  <h1>
+   <a name="path-dependence">
+    Path dependence
+   </a>
+  </h1>
   <p>
    What is path dependence? Path dependence=the sequence of previous outcomes matter Early path dependence, or full path dependence Recent path dependence Path dependence of outcomes Path dependence of equilibria Phat dependence=the set of events in the path matter, but not their order State/set dependence=the paths can be partitioned into a finite number of states which contain all relevant information; the outcome in any period depends only upon the state of the process at that time; a kind of Markov process
   </p>
@@ -519,9 +644,11 @@
   <p>
    Urn models illustrate types of in/dependence: different colored balls in an urn, picking some out Bernoulli process (independent): Select ball &amp; return after picking. Polya process (phat dependent; outcome and equilibrium dependent): Select, return along with another ball of the same color. Results: any probability of picking a red ball is an equally likely equilibrium, and a given set of outcomes is equally likely, no matter what order they occur in. Balancing process (phat dependent; outcome dependent, equilibrium independent): Opposite of Polya process, so add the opposite color ball. Result: converges to equal percentages. Sway process (path dependent): In period t, add a ball of the same color as the selected ball and add (2t-s - 2t-s-1) balls of the color chosen in each period s&lt;t. Result: the past takes on more weight over time.
   </p>
-  <p>
-   WEEK 7 NETWORKS
-  </p>
+  <h1>
+   <a name="networks">
+    Networks
+   </a>
+  </h1>
   <p>
    Internet has made networks more visible and measurable; popular and scientific interest has increased. Networks have been used to examine segregation; information flow within organizations (e.g. email traffic patterns); link patterns among blogs to demonstrate political polarization; intellectual traditions, citation patterns, etc. https://flowingdata.com/category/visualization/network-visualization/ https://gephi.org/ http://www.kdnuggets.com/2015/06/top-30-social-network-analysis-visualization-tools.html http://kateto.net/network-visualization http://www.ladamic.com/netlearn/ http://www.cs.cornell.edu/home/kleinber/networks-book/
   </p>
@@ -537,9 +664,11 @@
   <p>
    Function of networks: is emergent Explaining 6 degrees of connection through random-clique model Granovetter’s “Strength of weak ties” paper Internet is extremely robust against random failure, but not targeted failure (of highly-connected nodes) because it’s a preferentially-attached network Helps identify who to vaccinate (more targeted than SIS model)
   </p>
-  <p>
-   WEEK 8 RANDOMNESS
-  </p>
+  <h1>
+   <a name="randomness">
+    Randomness
+   </a>
+  </h1>
   <p>
    Randomness is a quality of a variable. We want to know two things: What is the source of the randomness, i.e. the error term? What is the distribution of the randomness?
   </p>
@@ -568,9 +697,11 @@
   <p>
    Applications of this model: US Electoral College, terrorism, trials, hiring
   </p>
-  <p>
-   WEEK 9 PRISONER’S DILEMMA, COOPERATION, COLLECTIVE ACTION &amp; COMMONS
-  </p>
+  <h1>
+   <a name="prisoner's-dilemma,-cooperation,-collective-action-&amp;-the-commons">
+    Prisoner's dilemma, cooperation, collective action &amp; the commons
+   </a>
+  </h1>
   <p>
    In Prisoner’s Dilemma, the incentive to defect must be less, on average, than the payoffs available for cooperation. Here are the constraints: T&gt;R, 2T&gt;F, F&gt;T.
   </p>
@@ -589,8 +720,13 @@
   <p>
    Collective action problems: n-person Prisoner’s Dilemmas with payoff function for person j making action xj (note that xj’s action is counted as a cost and as a benefit scaled by β): -xj+i=1Nxi, 0 &lt; xj, β &lt; 1. Common pool resource problems: Rt+1=f(X,Rt) where X is the total consumed, sum of all xi. What helps with collective action problems? The particulars matter; there’s no panacea. See http://www.onthecommons.org/magazine/elinor-ostroms-8-principles-managing-commmons. Possible options: Clear ownership Rotation schemes
   </p>
+  <h1>
+   <a name="mechanism-design">
+    Mechanism design
+   </a>
+  </h1>
   <p>
-   WEEK 9 MECHANISM DESIGN Formalizing institutions; designing the rules of the game by defining permitted actions and payoffs.
+   Formalizing institutions; designing the rules of the game by defining permitted actions and payoffs.
   </p>
   <p>
    Hidden actions: Effort={0,1}; Outcome={Good,Bad}; p(Good|Effort=1)=1; p(Good|Effort=0)=p; c, cost of effort=1. Contract: pay M if Good, 0 if Bad→ Payoff(effort=1)=M-c and Payoff(effort=0)=pM; set M-c&gt;pM → M&gt;c/(1-p).
@@ -604,11 +740,18 @@
   <p>
    Mechanisms in public goods projects: Clarke-Groves-Vickery Pivot mechanism: each person states what the project is worth to them. If the sum of these claims is higher than the cost of hte project, then the project goes ahead with each paying only the minimum amount needed to make the project viable: e.g. person_1 pays max{cost - V2 - V3 … - Vn, 0}. → everyone has an incentive to reveal their true value, rather than over- or under-bidding. All mechanisms for these sorts of problems have trade-offs.
   </p>
+  <h1>
+   <a name="models-of-learning">
+    Models of learning
+   </a>
+  </h1>
+  <h2>
+   <a name="replicator-models">
+    Replicator models
+   </a>
+  </h2>
   <p>
-   WEEK 10 LEARNING MODELS: REPLICATOR DYNAMICS
-  </p>
-  <p>
-   Replicator models: Used in psychology, to model learning; in economics, to model populations of people learning; and in ecology, to model evolution. In a nutshell, there is a distribution containing types, and the distribution is shifting in response to the payoffs that each type experiences. The dynamics of the model offer commentary on the strategies of (1) copying the most common strategy and (2) copying the most successful strategy. Elements of model: Set of types, {1, 2, 3, … N} Payoff for/performance of each type, π(i) Proportion of each type in population, Pr(i) The proportion of any type in the next period its its population ‘weight’ divided by the sum of all types’ population weights: Prt+1(i) =Prt(i) (i)j=1NPrt(j) (j) Weights can be represented graphically by a fitness wheel where (1) the number of slices a type gets reflect its proportion, and (2) the width of the slices reflect its fitness.
+   Used in psychology, to model learning; in economics, to model populations of people learning; and in ecology, to model evolution. In a nutshell, there is a distribution containing types, and the distribution is shifting in response to the payoffs that each type experiences. The dynamics of the model offer commentary on the strategies of (1) copying the most common strategy and (2) copying the most successful strategy. Elements of model: Set of types, {1, 2, 3, … N} Payoff for/performance of each type, π(i) Proportion of each type in population, Pr(i) The proportion of any type in the next period its its population ‘weight’ divided by the sum of all types’ population weights: Prt+1(i) =Prt(i) (i)j=1NPrt(j) (j) Weights can be represented graphically by a fitness wheel where (1) the number of slices a type gets reflect its proportion, and (2) the width of the slices reflect its fitness.
   </p>
   <p>
    Can use replicator models to investigate games if proportions are specified (since payoffs are specified as part of games). This can lead to a different equilibrium that arises from rational actors. The tricky part here is calculating weights, since payoffs can vary with actions. For a 2x2 game with Pr(½,½) and where player A has payoffs a or b depending on player B’s actions, weightA=½ (½ a + ½ b).
@@ -616,9 +759,11 @@
   <p>
    Fisher’s fundamental theorem: Higher variance increases rate of evolutionary adaptation. Can examine this by taking the average of each generation of low-variation and high-variation populations. Seems to run counter to Six Sigma! But SS is for a fixed problemscape, while Fisher’s is for complex systems.
   </p>
-  <p>
-   WEEK 10 PREDICTION &amp; THE MANY MODEL THINKER
-  </p>
+  <h1>
+   <a name="prediction">
+    Prediction
+   </a>
+  </h1>
   <p>
    Prediction at the individual level → “[W]e tend to pay undue attention to single model thinkers. We shouldn’t. We should heed the advice of those who think more subtly. Better still, we should learn many models ourselves.” We’ve looked at three types of predictive models: categorical, linear, and Markov
   </p>

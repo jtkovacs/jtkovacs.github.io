@@ -11,8 +11,6 @@
 		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
 			- [Use-case diagrams](#use-case-diagrams)
 			- [Activity diagrams](#activity-diagrams)
-	- [Value stream mapping](#value-stream-mapping)
-	- [Spaghetti diagram](#spaghetti-diagram)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -158,11 +156,6 @@ See [notes on UML.](UML.html)
 
 
 
-
-
-## Value stream mapping
-
-## Spaghetti diagram
 
 
 

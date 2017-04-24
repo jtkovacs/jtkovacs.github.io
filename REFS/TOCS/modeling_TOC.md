@@ -7,11 +7,11 @@
 		- [Chen notation](#chen-notation)
 		- [Baker's notation](#baker's-notation)
 		- [Arrow notation](#arrow-notation)
-		- [IDEF1X](#idef1x)
+		- [IDEF1X notation](#idef1x-notation)
 		- [UML notation](#uml-notation)
 	- [Data flow diagrams](#data-flow-diagrams)
 		- [Gane/Sarson method](#gane/sarson-method)
-		- [Yourdon/Coad method](#yourdon/coad-method)
+		- [Yourdon/DeMarco and Coad method](#yourdon/demarco-and-coad-method)
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Rumbaugh/OMT method](#rumbaugh/omt-method)
 		- [Shlaer/Mellor method](#shlaer/mellor-method)
@@ -83,7 +83,7 @@ This notation enables richer characterization of attributes, entity types, and r
 
 <img src="../ILLOS/arrow.png" width="260px">
 
-### IDEF1X
+### IDEF1X notation
 
 <img src="../ILLOS/idef1x.png" width="250px">
 
@@ -97,8 +97,9 @@ This notation enables richer characterization of attributes, entity types, and r
 
 ### Gane/Sarson method
 
-### Yourdon/Coad method
+### Yourdon/DeMarco and Coad method
 
+![](..//ILLOS/yourdon-demarco.png)
 
 ## Object-oriented modeling
 

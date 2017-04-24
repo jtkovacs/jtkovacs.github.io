@@ -58,7 +58,7 @@ This notation enables richer characterization of attributes, entity types, and r
 
 <img src="../ILLOS/arrow.png" width="260px">
 
-### IDEF1X
+### IDEF1X notation
 
 <img src="../ILLOS/idef1x.png" width="250px">
 
@@ -72,8 +72,9 @@ This notation enables richer characterization of attributes, entity types, and r
 
 ### Gane/Sarson method
 
-### Yourdon/Coad method
+### Yourdon/DeMarco and Coad method
 
+![](..//ILLOS/yourdon-demarco.png)
 
 ## Object-oriented modeling
 

@@ -1,5 +1,5 @@
 <table class="TOC"><tr><td>- [Modeling systems & processes](#modeling-systems-&-processes)
-	- [Logic flow charts](#logic-flow-charts)
+	- [Flow charts](#flow-charts)
 		- [Language-level diagram](#language-level-diagram)
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
 	- [Data flow diagram](#data-flow-diagram)
@@ -22,9 +22,13 @@
 </td></tr></table>
 # Modeling systems & processes
 
+_The following notes are largely from Steirn (1999) and Ambler (n.d.)._
+
 The representation of a system needs contextual metadata clarifying the date and/or version it describes. 
 
-## Logic flow charts
+## Flow charts
+
+AKA decision flow charts, logic flow charts, and logical decision flow charts, this modeling methodology is contemporaneous with structured programming.
 
 ### Language-level diagram
 

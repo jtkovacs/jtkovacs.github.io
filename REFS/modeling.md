@@ -1,8 +1,12 @@
 # Modeling systems & processes
 
+_The following notes are largely from Steirn (1999) and Ambler (n.d.)._
+
 The representation of a system needs contextual metadata clarifying the date and/or version it describes. 
 
-## Logic flow charts
+## Flow charts
+
+AKA decision flow charts, logic flow charts, and logical decision flow charts, this modeling methodology is contemporaneous with structured programming.
 
 ### Language-level diagram
 

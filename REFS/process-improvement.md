@@ -35,7 +35,14 @@ Examine competitors to identify performance targets and process improvements.
     
 ## Business process reengineering (BPR)
 
-BPR is a radical upending of current business processes and systems, so spends little time analyzing them.
+BPR is a radical upending of current business processes and systems, so spends little time analyzing them. Per Rigby (2015; also includes references for further reading), a BPR effort focuses on
+
+- Reorienting organizational culture towards user needs
+- Reorganizing traditional functional departments into cross-functional teams
+- Redesigning and improving core processes, perhaps using IT
+    - Reducing costs
+    - Reducing waste and cycle times
+    - Increasing quality
 
 ### Outcome analysis
 
@@ -153,6 +160,7 @@ Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://
 - Disaggregate ratio to pinpoint source of productivity difference: 
     - Productivity = Operational_yield * Transformation_efficiency * Per-unit_capacity_cost
     - Error
+    - Revenue/Cost = Revenue/Output * Output/Capacity * Capacity/Cost
 
 ### Sources of wastes
 
@@ -271,3 +279,5 @@ Looking for root cause(s):
 # Sources
 
 Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
+
+Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.

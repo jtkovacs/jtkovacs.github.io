@@ -10,11 +10,29 @@ body {
 /* ALL TEXT is Verdana */
 * {
     font-family: Verdana, sans-serif;
+    color: #666666;
 }
 
+
+p {
+    font-size: 11px;
+    max-width: 800px;
+}
+
+
+/* LIST has no bullets */
+ul {
+    list-style-type: none;
+}
+
+ul.nonnav, ul.nonnav li {
+    list-style-type: disc;
+    color: #666666;
+}
+
+
 /* Text should be grey, limited to 700 px wide */
-p, li {
-    max-width: 700px;
+li {
     font-size: 11px;
     color: #C8C8C8;
 }
@@ -31,9 +49,12 @@ a:hover {
 }    
 
 
-/* LIST has no bullets */
-ul {
-    list-style-type: none;
+table {
+    border: solid 1px #e8e8e8;
+    background-color: #f8f8f8;
+    width: 800px;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
 }
 
 

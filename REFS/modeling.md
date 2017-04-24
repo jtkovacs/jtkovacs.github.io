@@ -38,9 +38,7 @@ Per Scott Page, modeling helps us:
 
 ## Model typologies 
 
-Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation,** following Steirn (1999). 
-
-Dennis et al. (2012) seems very similar to Steirn (1999):
+Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation,** following Steirn (1999), who seems very similar to Dennis et al. (2012):
 
 - **Functional** (==flow chart?) models capture processes:
     - Use-case diagrams

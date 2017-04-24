@@ -16,10 +16,11 @@ Because a model is a representation of a system, the model needs to include cont
 Per Scott Page, modeling helps us:
 
 - **Be an intelligent citizen of the world.** Models are everywhere, so full participation requires knowing them. They are "the new lingua franca" in nonprofits, businesses, politics, academia. 
-- **Be a clearer thinker.** Models are "wrong, but useful"; people make better decisions using a formal model versus either a single model, or multiple casual models. 
+- **Be a clearer thinker.** Models are "wrong, but useful"; people make better decisions using a formal model versus either a single model, or multiple casual models. “You are a modeler … But typically, it is an implicit model in which the assumptions are hidden, their internal consistency is untested, their logical consequences are unknown, and their relation to data is unknown.”
     - **Work through all the logical possibilities** for parts; relationships between parts; logic.
     - **Identify the general class of outcome:** equilibrium, cycle, random, complex.
     - **Identify logical bounds:** "Models give us the conditions under which we can adjudicate" between ideas, e.g. contradictory folk proverbs. _When_ are "two heads better than one"? *When* do "two cooks spoil the broth"?
+    - **Reduce complexity.**
 - **Understand and use data,** turning it into knowledge.
     - **See patterns** and understand where they come from
     - **Make predictions** (point or range/bounds)
@@ -35,11 +36,10 @@ Per Scott Page, modeling helps us:
 - **Communicate what we know very simply.**
 - **Discover new things:** "Models are fertile", i.e., they have multiple and unexpected uses. 
 
-Quotes from readings:
-organized data = information; information in context = knowledge; aptly-applied knowledge = wisdom; “How though do we acquire general wisdom? Advocates of liberal arts education argue for broad exposure to great works of literature and to the basic ideas from multiple disciplines. I agree in principle, but I believe the great books approach to be incomplete … the information pours out of the fire hose producing ever more complexity. How do we cope? What tools do we need? We need models. Models provide formal frameworks within which to embed all of this data and information.”
-“We must open dialogues between models and reality. By identifying when a model fails, we learn more about the conditions necessary for it to work … Models don’t have flaws so much as they have limited scope.”
+
+
+
 “Three attributes of physical systems (1) simple parts (2) interacting in large numbers (3) that follow fixed rules render physical models amenable to mathematics … Systems that include people as actors– and these include ecological systems – lack the three attributes that produce regularity. The parts of these systems aren’t simple: People are sophisticated, multi-dimensional, and capable of a range of behaviors. We march to our own drummers. Further, though billions of people exist, we interact in small to moderate sized groups. Finally, we don’t follow the same fixed rules. Unlike carbon atoms, we learn. We adapt. We do crazy things.”
-“You are a modeler … But typically, it is an implicit model in which the assumptions are hidden, their internal consistency is untested, their logical consequences are unknown, and their relation to data is unknown.”
 “[M]odels can be the focal points of teams involving experts from many disciplines.”
 “[I]n the policy sphere … models do not obviate the need for judgment. However, by revealing tradeoffs, uncertainties, and sensitivities, models can discipline the dialogue about options and make unavoidable judgments more considered.”
 “Models can surprise us, make us curious, and lead to new questions. This is what I hate about exams. They only show that you can answer somebody else's question, when the most important thing is: Can you ask a new question?”

@@ -46,6 +46,8 @@ Per Stiern (1999), Martin notation adds a few more details to crows-foot notatio
 
 ### Chen notation
 
+This notation enables richer characterization of attributes, entity types, and relationships.
+
 <img src="../ILLOS/chens.png" width="270px">
 
 ### Baker's notation

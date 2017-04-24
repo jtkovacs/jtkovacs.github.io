@@ -44,21 +44,32 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 ## Entity-relationship diagrams
 
+Per Dybka (2014), there are many ERD notation styles:
+
 ### Bachmann/crow-foot notation
 
-This is a notation that describes the cardinality and optionality/modality/participation of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols
+This is a notation that describes the cardinality and optionality/modality/participation of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
 
 - **Open circle** for optional participation (zero to many)
 - **Bar** for mandatory participation (one to many)
-- **Bar** for one
 - **Crow-foot** for many
+- **Bar** for one
 
 <br/>
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
-
 ### Chen notation
+
+See [Vertabelo Academy's article](http://www.vertabelo.com/blog/technical-articles/chen-erd-notation) for notation, which includes richer representation of attributes, types of entities, and types of relationships.
+
+- The cloud symbol represents aggregations of smaller ER diagrams, in the context of a logical design (as opposed to a physical design).
+- The double-box represents a weak entity, which is dependent on its parent entity. Note: Visio does not support this feature.
+- A diamond symbol represents a type of relationship.
+- Relationship adornments are added adjacent to the lines to indicate connectivity (I, M, N) and cardinality, e.g. "(0,3)".
+- The data-structure diagram (an alternate form of the ERD) uses arrows to show I:M relationships.
+- Circles represent the attributes of an entity, although Visio labels this icon as value.
+- A human figure represents a user icon.
 
 ### Martin notation
 
@@ -97,6 +108,8 @@ This is a notation that describes the cardinality and optionality/modality/parti
 Ambler, S. (n.d.). Agile models distilled: Potential artifacts for agile modeling. Retrieved from [http://www.agilemodeling.com/artifacts/](http://www.agilemodeling.com/artifacts/)
 
 Ambler, S. (n.d.). UML 2 activity diagrams: An Agile introduction. Retrieved from [http://www.agilemodeling.com/artifacts/activityDiagram.htm](http://www.agilemodeling.com/artifacts/activityDiagram.htm)
+
+Dybka, P. (2014). ERD notations in data modeling. Vertabelo Academy. Retrieved from [http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations](http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations)
 
 Nassi, I., & Shneiderman, B. (1973). Flowchart techniques for structured programming. _SIGPLAN Not., 8_(8), 12–26. Retrieved from [https://www.cs.umd.edu/hcil/members/bshneiderman/nsd/1973.pdf](https://www.cs.umd.edu/hcil/members/bshneiderman/nsd/1973.pdf)
 

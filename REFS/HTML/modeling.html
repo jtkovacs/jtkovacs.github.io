@@ -202,13 +202,16 @@
     Entity-relationship diagrams
    </a>
   </h2>
+  <p>
+   Per Dybka (2014), there are many ERD notation styles:
+  </p>
   <h3>
    <a name="bachmann/crow-foot-notation">
     Bachmann/crow-foot notation
    </a>
   </h3>
   <p>
-   This is a notation that describes the cardinality and optionality/modality/participation of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols
+   This is a notation that describes the cardinality and optionality/modality/participation of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
   </p>
   <ul>
    <li>
@@ -225,15 +228,15 @@
    </li>
    <li>
     <strong>
-     Bar
-    </strong>
-    for one
-   </li>
-   <li>
-    <strong>
      Crow-foot
     </strong>
     for many
+   </li>
+   <li>
+    <strong>
+     Bar
+    </strong>
+    for one
    </li>
   </ul>
   <p>
@@ -247,6 +250,36 @@
     Chen notation
    </a>
   </h3>
+  <p>
+   See
+   <a href="http://www.vertabelo.com/blog/technical-articles/chen-erd-notation">
+    Vertabelo Academy's article
+   </a>
+   for notation, which includes richer representation of attributes, types of entities, and types of relationships.
+  </p>
+  <ul>
+   <li>
+    The cloud symbol represents aggregations of smaller ER diagrams, in the context of a logical design (as opposed to a physical design).
+   </li>
+   <li>
+    The double-box represents a weak entity, which is dependent on its parent entity. Note: Visio does not support this feature.
+   </li>
+   <li>
+    A diamond symbol represents a type of relationship.
+   </li>
+   <li>
+    Relationship adornments are added adjacent to the lines to indicate connectivity (I, M, N) and cardinality, e.g. "(0,3)".
+   </li>
+   <li>
+    The data-structure diagram (an alternate form of the ERD) uses arrows to show I:M relationships.
+   </li>
+   <li>
+    Circles represent the attributes of an entity, although Visio labels this icon as value.
+   </li>
+   <li>
+    A human figure represents a user icon.
+   </li>
+  </ul>
   <h3>
    <a name="martin-notation">
     Martin notation
@@ -327,6 +360,12 @@
    Ambler, S. (n.d.). UML 2 activity diagrams: An Agile introduction. Retrieved from
    <a class="uri" href="http://www.agilemodeling.com/artifacts/activityDiagram.htm">
     http://www.agilemodeling.com/artifacts/activityDiagram.htm
+   </a>
+  </p>
+  <p>
+   Dybka, P. (2014). ERD notations in data modeling. Vertabelo Academy. Retrieved from
+   <a class="uri" href="http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations">
+    http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations
    </a>
   </p>
   <p>

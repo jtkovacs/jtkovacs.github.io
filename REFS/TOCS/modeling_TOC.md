@@ -18,7 +18,9 @@
 </td></tr></table>
 
 
-_The following notes are largely based on Steirn (1999) and Scott Page's Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking) There's a lot of overlap between depicting a system and [implementing one;](project-management.html) between depicting a process and [improving it;](process-improvement.html) between modeling a problem and [analyzing it.](data-analysis.html)_
+_The following notes are largely based on Steirn (1999) and Scott Page's Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking)
+
+Note that there's a lot of overlap between depicting a system and [implementing one;](project-management.html) between depicting a process and [improving it;](process-improvement.html) between modeling a problem and [analyzing it.](data-analysis.html)_
 
 
 

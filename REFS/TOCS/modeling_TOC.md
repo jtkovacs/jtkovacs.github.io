@@ -1,6 +1,6 @@
 <table class="TOC"><tr><td>- [Modeling systems & processes](#modeling-systems-&-processes)
 	- [Flow charts](#flow-charts)
-		- [Language-level diagram](#language-level-diagram)
+		- [Language level diagram](#language-level-diagram)
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
 	- [Data flow diagram](#data-flow-diagram)
 		- [Gane/Sarson method](#gane/sarson-method)
@@ -30,9 +30,14 @@ The representation of a system needs contextual metadata clarifying the date and
 
 AKA decision flow charts, logic flow charts, and logical decision flow charts. This modeling methodology is contemporaneous with structured programming. Flow charts model decisions, which is one type of process; so languages for modeling processes more generally can also represent decisions.
 
-### Language-level diagram
+### Language level diagram
 
+The basic elements of flow charts are available in MS Visio's language level diagrams stencil:
 
+- **Parallellograms** for inputs
+- **Diamonds** for decisions
+- **Rectangles** for functions
+- **Hardcopy symbol** (rectangle with wavy bottom edge) for outputs
 
 ### Nassi-Schneiderman (N-S) diagram
 

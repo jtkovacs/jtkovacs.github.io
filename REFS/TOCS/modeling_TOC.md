@@ -5,7 +5,9 @@
 		- [Bachmann/crow-foot notation](#bachmann/crow-foot-notation)
 		- [Chen notation](#chen-notation)
 		- [Baker's notation](#baker's-notation)
+		- [IDEF1X](#idef1x)
 		- [Martin notation](#martin-notation)
+		- [Arrow notation](#arrow-notation)
 	- [Data flow diagram](#data-flow-diagram)
 		- [Gane/Sarson method](#gane/sarson-method)
 		- [Yourdon/Coad method](#yourdon/coad-method)
@@ -68,8 +70,17 @@ This is a notation that describes the cardinality and optionality/modality/parti
 
 <img src="../ILLOS/bakers.png" width="350px">
 
+### IDEF1X
+
+<img src="../ILLOS/idef1x.png" width="350px">
 
 ### Martin notation
+
+<img src="../ILLOS/idef1x.png" width="350px">
+
+### Arrow notation
+
+<img src="../ILLOS/arrow.png" width="350px">
 
 ## Data flow diagram
 

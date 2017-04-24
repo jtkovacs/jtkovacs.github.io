@@ -34,17 +34,8 @@ Per Scott Page, modeling helps us:
     - **Identify and rank levers:** where do we intervene to have an impact?
     - **Design experiments and institutions**
 - **Communicate what we know very simply.**
-- **Discover new things:** "Models are fertile", i.e., they have multiple and unexpected uses. 
-
-
-
-
-“Three attributes of physical systems (1) simple parts (2) interacting in large numbers (3) that follow fixed rules render physical models amenable to mathematics … Systems that include people as actors– and these include ecological systems – lack the three attributes that produce regularity. The parts of these systems aren’t simple: People are sophisticated, multi-dimensional, and capable of a range of behaviors. We march to our own drummers. Further, though billions of people exist, we interact in small to moderate sized groups. Finally, we don’t follow the same fixed rules. Unlike carbon atoms, we learn. We adapt. We do crazy things.”
-“[M]odels can be the focal points of teams involving experts from many disciplines.”
-“[I]n the policy sphere … models do not obviate the need for judgment. However, by revealing tradeoffs, uncertainties, and sensitivities, models can discipline the dialogue about options and make unavoidable judgments more considered.”
-“Models can surprise us, make us curious, and lead to new questions. This is what I hate about exams. They only show that you can answer somebody else's question, when the most important thing is: Can you ask a new question?”
-“To me, however, the most important contribution of the modeling enterprise--as distinct from any particular model, or modeling technique--is that it enforces a scientific habit of mind, which I would characterize as one of militant ignorance--an iron commitment to ‘I don't know.’ That all scientific knowledge is uncertain, contingent, subject to revision, and falsifiable in principle … Intellectuals have a solemn duty to doubt, and to teach doubt. Education, in its truest sense, is not about ‘a saleable skill set.’ It's about freedom, from inherited prejudice and argument by authority. This is the deepest contribution of the modeling enterprise.”
-
+    - “[M]odels can be the focal points of teams involving experts from many disciplines.”
+- **Discover new things:** "Models are fertile", i.e., they have multiple and unexpected uses. “Models can surprise us, make us curious, and lead to new questions. This is what I hate about exams. They only show that you can answer somebody else's question, when the most important thing is: Can you ask a new question?”
 
 ## Model typologies 
 

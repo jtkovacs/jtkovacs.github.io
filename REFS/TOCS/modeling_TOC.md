@@ -53,6 +53,8 @@ This is a notation that describes the cardinality and optionality/modality/parti
 - **Bar** for one
 - **Crow-foot** for many
 
+<br/>
+
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
 

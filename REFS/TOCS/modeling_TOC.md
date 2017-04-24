@@ -2,8 +2,7 @@
 	- [Flow charts](#flow-charts)
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
-		- [Bachmann/crow-foot notation](#bachmann/crow-foot-notation)
-		- [Other ERD notations](#other-erd-notations)
+		- [Bachmann/crow's foot notation](#bachmann/crow's-foot-notation)
 	- [Data flow diagrams](#data-flow-diagrams)
 		- [Gane/Sarson method](#gane/sarson-method)
 		- [Yourdon/DeMarco and Coad method](#yourdon/demarco-and-coad-method)
@@ -49,7 +48,15 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 Per Dybka (2014), there are many ERD notation styles:
 
-### Bachmann/crow-foot notation
+- **Crow's foot**
+- **Martin**
+- [Chen](../ILLOS/chens.png)
+- [Baker](../ILLOS/bakers.png)
+- [Arrow](../ILLOS/arrow.png)
+- [IDEF1X](../ILLOS/idef1x.png)
+- [UML](../ILLOS/UML-relationships.png)
+
+### Bachmann/crow's foot notation
 
 This is a notation that describes the optionality/modality/participation and cardinality/multiplicity of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
 
@@ -59,15 +66,6 @@ This is a notation that describes the optionality/modality/participation and car
 - **Bar** for one
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
-
-### Other ERD notations
-
-- **Martin**
-- [Chen](../ILLOS/chens.png)
-- [Baker](../ILLOS/bakers.png)
-- [Arrow](../ILLOS/arrow.png)
-- [IDEF1X](../ILLOS/idef1x.png)
-- [UML](../ILLOS/UML-relationships.png)
 
 
 ## Data flow diagrams

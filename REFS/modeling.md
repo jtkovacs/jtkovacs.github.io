@@ -29,7 +29,15 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 Per Dybka (2014), there are many ERD notation styles:
 
-### Bachmann/crow-foot notation
+- **Crow's foot**
+- **Martin**
+- [Chen](../ILLOS/chens.png)
+- [Baker](../ILLOS/bakers.png)
+- [Arrow](../ILLOS/arrow.png)
+- [IDEF1X](../ILLOS/idef1x.png)
+- [UML](../ILLOS/UML-relationships.png)
+
+### Bachmann/crow's foot notation
 
 This is a notation that describes the optionality/modality/participation and cardinality/multiplicity of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
 
@@ -39,15 +47,6 @@ This is a notation that describes the optionality/modality/participation and car
 - **Bar** for one
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
-
-### Other ERD notations
-
-- **Martin**
-- [Chen](../ILLOS/chens.png)
-- [Baker](../ILLOS/bakers.png)
-- [Arrow](../ILLOS/arrow.png)
-- [IDEF1X](../ILLOS/idef1x.png)
-- [UML](../ILLOS/UML-relationships.png)
 
 
 ## Data flow diagrams

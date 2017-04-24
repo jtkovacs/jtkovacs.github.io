@@ -8,7 +8,7 @@
 
 This makes a node labeled "Person" with attributes "name", "from", and "klout":
 
-```Cypher
+```SQL
 CREATE (ee:Person { name: "Emil", from: "Sweden", klout: 99 })
 # CREATE clause to create data
 # () parenthesis to indicate a node

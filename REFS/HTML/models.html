@@ -49,6 +49,77 @@
        <a href="#decision-making-models">
         Decision-making models
        </a>
+      </li>
+      <li>
+       <a href="#models-of-human-behavior">
+        Models of human behavior
+       </a>
+       <ul>
+        <li>
+         <a href="#rational-">
+          Rational
+         </a>
+        </li>
+        <li>
+         <a href="#behavioral-">
+          Behavioral
+         </a>
+        </li>
+        <li>
+         <a href="#rule-based">
+          Rule-based
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#categorical-&amp;-linear-models">
+        Categorical &amp; linear models
+       </a>
+      </li>
+      <li>
+       <a href="#tipping-points-&amp;-diffusion">
+        Tipping points &amp; diffusion
+       </a>
+       <ul>
+        <li>
+         <a href="#percolation-model-(contextual)">
+          Percolation model (contextual)
+         </a>
+        </li>
+        <li>
+         <a href="#contagion-models-">
+          Contagion models
+         </a>
+         <ul>
+          <li>
+           <a href="#diffusion">
+            Diffusion
+           </a>
+          </li>
+          <li>
+           <a href="#sis-">
+            SIS
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#classifying-tipping-points:">
+          Classifying tipping points:
+         </a>
+        </li>
+        <li>
+         <a href="#measuring-tipping-points">
+          Measuring tipping points
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#models-of-economic-growth-">
+        Models of economic growth
+       </a>
        -
        <a href="#≤-(max_value---initial_value)/step_size">
         ≤ (max_value - initial_value)/step_size
@@ -181,27 +252,46 @@
   <p>
    Probabilistic models (uncertainty in the world): Probability basics: Classical probability: easy to calculate, e.g. for a dice Frequency: can estimate probability by counting lots of data; makes assumption of stationarity Subjective probabilities: dangerous, subject to bias, make easily violate axioms of probability Decision trees: write down payoffs and probabilities; also can infer what other people think p is based on their decisions, or calculate payoffs knowing probabilities Value of information: calculate value without and with information; then take the difference
   </p>
-  <p>
-   WEEK 3 RATIONAL ACTORS, BEHAVIORAL MODELS, &amp; RULE-BASED MODELS
-  </p>
+  <h1>
+   <a name="models-of-human-behavior">
+    Models of human behavior
+   </a>
+  </h1>
   <p>
    Murray Gell-Mann: “Imagine how difficult physics would be if electrons could think”; people=purposeful, diverse.
   </p>
+  <h2>
+   <a name="rational">
+    Rational
+   </a>
+  </h2>
   <p>
-   Rational == optimizing agents who have goals; can be represented by objective function. Functions of form X(C-X) are optimized when C=X-C → C=X/2 Rationality in no way assumes selfishness Decisions (individual): payoff depends only on your choices Games (multiplayer): payoff depends on what other people do. In this case, assuming rationality on the part of the other person is very helpful because it helps you make you own decision. When are we likely to see rationality? When the stakes are large; when decisions are repeated; when groups of people make decisions (although other phenomena like groupthink can occur); or when a problem is particularly simple. Why is rationality an important assumption? It provides a unique and comparatively easy-to-calculate benchmark; as people learn, they tend towards rationality; and many variations cancel out (i.e., high variance but no bias).
+   == optimizing agents who have goals; can be represented by objective function. Functions of form X(C-X) are optimized when C=X-C → C=X/2 Rationality in no way assumes selfishness Decisions (individual): payoff depends only on your choices Games (multiplayer): payoff depends on what other people do. In this case, assuming rationality on the part of the other person is very helpful because it helps you make you own decision. When are we likely to see rationality? When the stakes are large; when decisions are repeated; when groups of people make decisions (although other phenomena like groupthink can occur); or when a problem is particularly simple. Why is rationality an important assumption? It provides a unique and comparatively easy-to-calculate benchmark; as people learn, they tend towards rationality; and many variations cancel out (i.e., high variance but no bias).
   </p>
+  <h2>
+   <a name="behavioral">
+    Behavioral
+   </a>
+  </h2>
   <p>
-   Behavioral == based on empirics; irrational in systematic ways; based on observations and neuroscience http://us.macmillan.com/thinkingfastandslow/danielkahneman http://yalepress.yale.edu/book.asp?isbn=9780300122237 http://www.econlib.org/library/Enc/BehavioralEconomics.html Prospect theory: we look at mathematically equivalent gains and losses differently Hyperbolic discounting: we discount one day in the near future differently than one day in the far future Status quo bias: 10% check a box to not donate their organs; 25% check a box to donate their organs Base rate bias: If you get people thinking about one number and then ask them for a second, it will tend to be close to the first number Hundreds of documented biases; but, themselves subject to criticisms as WEIRD (Western, educated, industrialized, rich, developed countries) rather than universal. Can model as rational plus some relevant bias/es.
+   == based on empirics; irrational in systematic ways; based on observations and neuroscience http://us.macmillan.com/thinkingfastandslow/danielkahneman http://yalepress.yale.edu/book.asp?isbn=9780300122237 http://www.econlib.org/library/Enc/BehavioralEconomics.html Prospect theory: we look at mathematically equivalent gains and losses differently Hyperbolic discounting: we discount one day in the near future differently than one day in the far future Status quo bias: 10% check a box to not donate their organs; 25% check a box to donate their organs Base rate bias: If you get people thinking about one number and then ask them for a second, it will tend to be close to the first number Hundreds of documented biases; but, themselves subject to criticisms as WEIRD (Western, educated, industrialized, rich, developed countries) rather than universal. Can model as rational plus some relevant bias/es.
   </p>
+  <h2>
+   <a name="rule-based">
+    Rule-based
+   </a>
+  </h2>
   <p>
    Assume that people follow rules/strategies Can apply fixed or adaptive rules in decision or game contexts Fixed rule: random choice, most direct route, tit for tat Adaptive: gradient, mimicry, best possible choice Rules can be easy to compute, good at capturing main effects; but create ‘people’ who are easily exploited (in a strategic context) and can be very ad hoc
   </p>
   <p>
    For the sake of aggregate effects, when does individual behavior matter? Which model of people should we choose? “One of the reasons we models is to determine how much it matters how accurate our model is.” “In markets, the institution itself has such an influence that we don’t worry about modeling behavior”; this was studied with zero intelligence agents (1,2), and they yield the same equilibrium price as rational agents.
   </p>
-  <p>
-   WEEK 3 CATEGORICAL &amp; LINEAR MODELS
-  </p>
+  <h1>
+   <a name="categorical-&amp;-linear-models">
+    Categorical &amp; linear models
+   </a>
+  </h1>
   <p>
    Categorical: data can be sorted into different ‘boxes’ Calculation of total variation: subtract mean from each data point, square and sum the results Proper categories greatly reduce total variation R2 = %variation explained = (total_variation_pre-categories - total_variation_with_categories)/tv_pc
   </p>
@@ -214,30 +304,70 @@
   <p>
    The Big Coefficient approach: making policy decisions based off which coefficient in a multivariate regression is largest, as in evidence based medicine/philanthropy/education/management. The process: build a model, gather data, identify important variables, design intervention. vs Big Data: gather data, find patterns, identify important variables, design intervention vs accounting for feedbacks (people’s behavioral adaptations in response to interventions) vs The New Reality: trying to create a better world, which necessarily means departing from data e.g. Big Coefficient thinking = tax cigarettes, New Reality thinking = universal health care
   </p>
+  <h1>
+   <a name="tipping-points-&amp;-diffusion">
+    Tipping points &amp; diffusion
+   </a>
+  </h1>
   <p>
-   WEEK 4 TIPPING POINTS “The straw that broke the camel’s back”; not an exponential growth pattern, but a moment when a small change comparable to other prior changes has a wildly disproportionate impact.
+   “The straw that broke the camel’s back”; not an exponential growth pattern, but a moment when a small change comparable to other prior changes has a wildly disproportionate impact.
+  </p>
+  <h2>
+   <a name="percolation-model-(contextual)">
+    Percolation model (contextual)
+   </a>
+  </h2>
+  <p>
+   Each square in a grid has p probability of being permeable; water can move from the top to the bottom of the grid through adjacent permeable cells, but otherwise stops At some p ≈ .593, percolation happens (from top to bottom of the grid); this is the tipping point Can be applied forest fires, where the cells represent trees and we track the spread of fire and also the likely yield of a managed forest Can be applied to banks/countries in a simple way, to see how failure spreads Can be applied to the spread of information, where p represents the ‘juciness’ of a rumor; this implies that we shouldn’t expect information to be spread in a linear way Can be used to explain the synchronicity of scientific discoveries, where p represents the accumulation of related knowledge and technologies: “Once we get above the threshold, there are many paths”
+  </p>
+  <h2>
+   <a name="contagion-models">
+    Contagion models
+   </a>
+  </h2>
+  <h3>
+   <a name="diffusion">
+    Diffusion
+   </a>
+  </h3>
+  <p>
+   not a tipping point!
   </p>
   <p>
-   Percolation model (contextual) Each square in a grid has p probability of being permeable; water can move from the top to the bottom of the grid through adjacent permeable cells, but otherwise stops At some p ≈ .593, percolation happens (from top to bottom of the grid); this is the tipping point Can be applied forest fires, where the cells represent trees and we track the spread of fire and also the likely yield of a managed forest Can be applied to banks/countries in a simple way, to see how failure spreads Can be applied to the spread of information, where p represents the ‘juciness’ of a rumor; this implies that we shouldn’t expect information to be spread in a linear way Can be used to explain the synchronicity of scientific discoveries, where p represents the accumulation of related knowledge and technologies: “Once we get above the threshold, there are many paths”
+   N = total population Dt = # of people infected with disease D at time t N - Dt = # of people not infected T = transmission rate, likelihood of infection upon contact p(an individual has D) = Dt/N p(an individual is healthy) = (N - Dt)/N c = contact rate; how often people meet, in general Nc = # of meetings in a population of size N p(individuals meeting each other will be a healthy-infected pair): Dt/N * (N - Dt)/N * Nc p(meeting of healthy-infected pair will lead to a new infection): Dt/N * (N - Dt)/N * Nc * T Dt + 1 = Dt + Dt/N * (N - Dt)/N * Nc * T Curve D = f(t) is sigmoidal, because initially, there are few people to spread the disease; and eventually, there are few healthy people to spread it to
   </p>
+  <h3>
+   <a name="sis">
+    SIS
+   </a>
+  </h3>
   <p>
-   Contagion model, diffusion: not a tipping point! N = total population Dt = # of people infected with disease D at time t N - Dt = # of people not infected T = transmission rate, likelihood of infection upon contact p(an individual has D) = Dt/N p(an individual is healthy) = (N - Dt)/N c = contact rate; how often people meet, in general Nc = # of meetings in a population of size N p(individuals meeting each other will be a healthy-infected pair): Dt/N * (N - Dt)/N * Nc p(meeting of healthy-infected pair will lead to a new infection): Dt/N * (N - Dt)/N * Nc * T Dt + 1 = Dt + Dt/N * (N - Dt)/N * Nc * T Curve D = f(t) is sigmoidal, because initially, there are few people to spread the disease; and eventually, there are few healthy people to spread it to
+   tipping point! Susceptible-Infected-Susceptible a = likelihood of recovering from the disease Dt + 1 = Dt + Dt/N * (N - Dt)/N * Nc * T - aDt = Dt + Dt[cT * (N-Dt)/N - a] If Dt is small, then term N-Dt/N is close to 1, and cT - a &gt; 0, then the disease will spread, i.e.: R0 = cT/a is the basic reproduction number; if R0 &gt; 1, the disease spreads; this is the tipping point R0(measles) is about 15, although for this disease, we need to use the SIR model R0(flu) is about 3 Implications for policy: for V is %N(vaccinated), we need V &gt;= 1 - 1/R0
   </p>
+  <h2>
+   <a name="classifying-tipping-points:">
+    Classifying tipping points:
+   </a>
+  </h2>
   <p>
-   Contagion model, SIS: tipping point! Susceptible-Infected-Susceptible a = likelihood of recovering from the disease Dt + 1 = Dt + Dt/N * (N - Dt)/N * Nc * T - aDt = Dt + Dt[cT * (N-Dt)/N - a] If Dt is small, then term N-Dt/N is close to 1, and cT - a &gt; 0, then the disease will spread, i.e.: R0 = cT/a is the basic reproduction number; if R0 &gt; 1, the disease spreads; this is the tipping point R0(measles) is about 15, although for this disease, we need to use the SIR model R0(flu) is about 3 Implications for policy: for V is %N(vaccinated), we need V &gt;= 1 - 1/R0
+   Active/direct: due to change in variable, i.e., an unstable equilibria in the phase plane Contextual: due to change in parameter/s, i.e. a shift of the phase portrait s.t. fixed points change Within-class tip, e.g. stable equilibrium to new stable equilibrium Between-class tip, e.g. oscillation to complexity
   </p>
+  <h2>
+   <a name="measuring-tipping-points">
+    Measuring tipping points
+   </a>
+  </h2>
   <p>
-   Classifying tipping points: Active/direct: due to change in variable, i.e., an unstable equilibria in the phase plane Contextual: due to change in parameter/s, i.e. a shift of the phase portrait s.t. fixed points change Within-class tip, e.g. stable equilibrium to new stable equilibrium Between-class tip, e.g. oscillation to complexity
-  </p>
-  <p>
-   Measuring tipping points: how big is the tip? how rare? “measure tippiness by changes in uncertainty” For p(A) + p(B) + … + p(N) = 1, the likelihood that any member of set A will another member of set A is p(A)p(A) = p(A)2, and the diversity index is 1i=A,B,...Np(i)2. This means, roughly, how many ‘types’ of outcomes are there? To quantify tippiness, we calculate the diversity index pre- and post-tip.
+   how big is the tip? how rare? “measure tippiness by changes in uncertainty” For p(A) + p(B) + … + p(N) = 1, the likelihood that any member of set A will another member of set A is p(A)p(A) = p(A)2, and the diversity index is 1i=A,B,...Np(i)2. This means, roughly, how many ‘types’ of outcomes are there? To quantify tippiness, we calculate the diversity index pre- and post-tip.
   </p>
   <p>
    Entropy is -Σ p(i)*log2(p(i)). This tells us the number of bits of information we need to know to identify the outcome. I.e. for outcomes A,B,C,D, the questions are: is it in (A,B) or (C,D)? is it A?
   </p>
-  <p>
-   WEEK 4 ECONOMIC GROWTH
-  </p>
+  <h1>
+   <a name="models-of-economic-growth">
+    Models of economic growth
+   </a>
+  </h1>
   <p>
    Introduction to growth Growth discussed in terms of GDP per capita Correlation between GDP and life satisfaction: yes, more money makes you happy if you start poor
   </p>

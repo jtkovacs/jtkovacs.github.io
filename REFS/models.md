@@ -48,10 +48,11 @@ If Q<T, more stand
 Big groups more likely to stand together (local X%)
 Celebrities (people in front row, everyone sees them, they don’t see anyone) → wield large influence
 
+
+
 # Models of aggregation
 
-Aggregation is tricky; “more is different” (can’t just look at individual parts). So, we model to get the logic correct.
-e.g. water is made of molecules, where wetness comes from the hydrogen bond; cognition comes from connected neurons
+Aggregation is tricky; “more is different” (can’t just look at individual parts). So, we model to get the logic correct. e.g. water is made of molecules, where wetness comes from the hydrogen bond; cognition comes from connected neurons
 
 [Aggregating actions or numbers] Central Limit Theorem: If you add up many independent events with finite variance, the distribution should be bell-shaped with mean=N/2 for the binomial distribution (or mean=p*N, more generally) and sigma=sqrt(N)/2 for the binomial distribution (or sigma=sqrt(p(1-p)N), more generally).
 p(x > 6*sigma) = 3.4 in a million. In production processes, the six sigma approach means that you shoot for a sigma such that your likelihood of exceeding some specific tolerance is 3.4 in a million.
@@ -61,14 +62,12 @@ Dead → Come alive if three of your neighbors are alive
 Alive → Die if you have fewer than two neighbors or more than three neighbors
 Results: Self-organization into complex patterns; emergence of distinct functional entities, e.g. f-pentomino, that can be used for computation
     
-
 [Aggregating families of rules] Cellular automata, developed by John von Neumann and covered extensively in Wolfram, S. A New Kind of Science.
 For 1D cellular automata models, we can visualize them on a grid treating each row as an instance of time
 From the perspective of each cell, there are 8 possible states for its immediate neighborhood
 Wolfram shows that 1D models, depending on their governing rules, exhibit all forms of behavior: equilibrium, oscillation, pure randomness, and complexity → “an information theoretic universe”?
 There are a total of 256 rules: 8 neighborhood states, 2 possible responses → 28 = 256
 Langton’s lamba: for a given set of rules, what % tell cells to switch on? e.g. ⅛ or ⅞
-
 
 [Aggregating preferences] Politics and economics:  
 How do we represent preferences? Through inequalities: preference rankings/orderings
@@ -96,11 +95,13 @@ Subjective probabilities: dangerous, subject to bias, make easily violate axioms
 Decision trees: write down payoffs and probabilities; also can infer what other people think p is based on their decisions, or calculate payoffs knowing probabilities
 Value of information: calculate value without and with information; then take the difference
     
-WEEK 3    RATIONAL ACTORS,  BEHAVIORAL MODELS, & RULE-BASED MODELS
-
+# Models of human behavior
+    
 Murray Gell-Mann: “Imagine how difficult physics would be if electrons could think”; people=purposeful, diverse.
 
-Rational == optimizing agents who have goals; can be represented by objective function.
+## Rational 
+
+== optimizing agents who have goals; can be represented by objective function.
 Functions of form X(C-X) are optimized when C=X-C → C=X/2 
 Rationality in no way assumes selfishness
 Decisions (individual): payoff depends only on your choices
@@ -108,7 +109,9 @@ Games (multiplayer): payoff depends on what other people do. In this case, assum
 When are we likely to see rationality? When the stakes are large; when decisions are repeated; when groups of people make decisions (although other phenomena like groupthink can occur); or when a problem is particularly simple.
 Why is rationality an important assumption? It provides a unique and comparatively easy-to-calculate benchmark; as people learn, they tend towards rationality; and many variations cancel out (i.e., high variance but no bias).
 
-Behavioral == based on empirics; irrational in systematic ways; based on observations and neuroscience
+## Behavioral 
+
+== based on empirics; irrational in systematic ways; based on observations and neuroscience
 http://us.macmillan.com/thinkingfastandslow/danielkahneman
 http://yalepress.yale.edu/book.asp?isbn=9780300122237 
 http://www.econlib.org/library/Enc/BehavioralEconomics.html 
@@ -118,6 +121,9 @@ Status quo bias: 10% check a box to not donate their organs; 25% check a box to 
 Base rate bias: If you get people thinking about one number and then ask them for a second, it will tend to be close to the first number
 Hundreds of documented biases; but, themselves subject to criticisms as WEIRD (Western, educated, industrialized, rich, developed countries) rather than universal. 
 Can model as rational plus some relevant bias/es.
+
+
+## Rule-based
 
 Assume that people follow rules/strategies
 Can apply fixed or adaptive rules in decision or game contexts
@@ -129,7 +135,7 @@ For the sake of aggregate effects, when does individual behavior matter? Which m
 “In markets, the institution itself has such an influence that we don’t worry about modeling behavior”; this was studied with zero intelligence agents (1,2), and they yield the same equilibrium price as rational agents.
 
 
-WEEK 3    CATEGORICAL & LINEAR MODELS
+# Categorical & linear models
 
 Categorical: data can be sorted into different ‘boxes’
 Calculation of total variation: subtract mean from each data point, square and sum the results
@@ -150,10 +156,13 @@ vs accounting for feedbacks (people’s behavioral adaptations in response to in
 vs The New Reality: trying to create a better world, which necessarily means departing from data
 e.g. Big Coefficient thinking = tax cigarettes, New Reality thinking = universal health care
 
-WEEK 4    TIPPING POINTS
+
+# Tipping points & diffusion
+
 “The straw that broke the camel’s back”; not an exponential growth pattern, but a moment when a small change comparable to other prior changes has a wildly disproportionate impact.
 
-Percolation model (contextual)
+## Percolation model (contextual)
+
 Each square in a grid has p probability of being permeable; water can move from the top to the bottom of the grid through adjacent permeable cells, but otherwise stops
 At some p ≈ .593, percolation happens (from top to bottom of the grid); this is the tipping point
 Can be applied forest fires, where the cells represent trees and we track the spread of fire and also the likely yield of a managed forest
@@ -161,7 +170,12 @@ Can be applied to banks/countries in a simple way, to see how failure spreads
 Can be applied to the spread of information, where p represents the ‘juciness’ of a rumor; this implies that we shouldn’t expect information to be spread in a linear way
 Can be used to explain the synchronicity of scientific discoveries, where p represents the accumulation of related knowledge and technologies: “Once we get above the threshold, there are many paths”
 
-Contagion model, diffusion: not a tipping point!
+## Contagion models 
+
+### Diffusion
+
+not a tipping point!
+
 N = total population
 Dt = # of people infected with disease D at time t
 N - Dt = # of people not infected
@@ -175,7 +189,9 @@ p(meeting of healthy-infected pair will lead to a new infection): Dt/N * (N - Dt
 Dt + 1 = Dt + Dt/N * (N - Dt)/N * Nc * T
 Curve D = f(t) is sigmoidal, because initially, there are few people to spread the disease; and eventually, there are few healthy people to spread it to
 
-Contagion model, SIS: tipping point!
+### SIS 
+
+tipping point!
 Susceptible-Infected-Susceptible
 a = likelihood of recovering from the disease
 Dt + 1 = Dt + Dt/N * (N - Dt)/N * Nc * T - aDt = Dt + Dt[cT * (N-Dt)/N - a]
@@ -185,19 +201,24 @@ R0(measles) is about 15, although for this disease, we need to use the SIR model
 R0(flu) is about 3
 Implications for policy: for V is %N(vaccinated), we need V >= 1 - 1/R0
 
-Classifying tipping points:
+## Classifying tipping points:
+
 Active/direct: due to change in variable, i.e., an unstable equilibria in the phase plane
 Contextual: due to change in parameter/s, i.e. a shift of the phase portrait s.t. fixed points change
 Within-class tip, e.g. stable equilibrium to new stable equilibrium
 Between-class tip, e.g. oscillation to complexity
 
-Measuring tipping points: how big is the tip? how rare? “measure tippiness by changes in uncertainty”
+## Measuring tipping points
+
+how big is the tip? how rare? “measure tippiness by changes in uncertainty”
 For p(A) + p(B) + … + p(N) = 1, the likelihood that any member of set A will another member of set A is
  p(A)p(A) = p(A)2, and the diversity index is 1i=A,B,...Np(i)2. This means, roughly, how many ‘types’ of outcomes are there? To quantify tippiness, we calculate the diversity index pre- and post-tip. 
 
 Entropy is -Σ p(i)*log2(p(i)). This tells us the number of bits of information we need to know to identify the outcome. I.e. for outcomes A,B,C,D, the questions are: is it in (A,B) or (C,D)? is it A?
 
-WEEK 4    ECONOMIC GROWTH
+
+
+# Models of economic growth 
 
 Introduction to growth
 Growth discussed in terms of GDP per capita

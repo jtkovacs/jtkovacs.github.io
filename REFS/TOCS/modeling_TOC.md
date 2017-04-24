@@ -3,10 +3,10 @@
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
 		- [Bachmann/crow-foot notation](#bachmann/crow-foot-notation)
+		- [Martin notation](#martin-notation)
 		- [Chen notation](#chen-notation)
 		- [Baker's notation](#baker's-notation)
 		- [IDEF1X](#idef1x)
-		- [Martin notation](#martin-notation)
 		- [Arrow notation](#arrow-notation)
 	- [Data flow diagram](#data-flow-diagram)
 		- [Gane/Sarson method](#gane/sarson-method)
@@ -51,7 +51,7 @@ Per Dybka (2014), there are many ERD notation styles:
 
 ### Bachmann/crow-foot notation
 
-This is a notation that describes the cardinality and optionality/modality/participation of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
+This is a notation that describes the optionality/modality/participation and cardinality/multiplicity of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
 
 - **Open circle** for optional participation (zero to many)
 - **Bar** for mandatory participation (one to many)
@@ -62,6 +62,10 @@ This is a notation that describes the cardinality and optionality/modality/parti
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
+### Martin notation
+
+Per Stiern (1999), Martin notation adds a few more details to crows-foot notation.
+
 ### Chen notation
 
 <img src="../ILLOS/chens.png" width="270px">
@@ -71,10 +75,6 @@ This is a notation that describes the cardinality and optionality/modality/parti
 <img src="../ILLOS/bakers.png" width="350px">
 
 ### IDEF1X
-
-<img src="../ILLOS/idef1x.png" width="350px">
-
-### Martin notation
 
 <img src="../ILLOS/idef1x.png" width="350px">
 

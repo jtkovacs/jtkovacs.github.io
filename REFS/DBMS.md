@@ -126,9 +126,16 @@ https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-databas
   
 # Graph DBMS
 
+## PoolParty
+
 ## Neo4j
 
-## PoolParty
+### Editor
+
+- Accepts Cypher queries to work with graph data
+- Client-side commands available, e.g. `:help`
+- Run query: `ctrl+enter`
+- Multiline command: `shift+enter`
 
 
 

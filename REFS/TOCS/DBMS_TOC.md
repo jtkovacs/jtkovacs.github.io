@@ -7,8 +7,9 @@
 	- [Microsoft Access](#microsoft-access)
 		- [Migrating to Microsoft SQL Server](#migrating-to-microsoft-sql-server)
 - [Graph DBMS](#graph-dbms)
-	- [Neo4j](#neo4j)
 	- [PoolParty](#poolparty)
+	- [Neo4j](#neo4j)
+		- [Editor](#editor)
 - [Source](#source)
 </td></tr></table>
 
@@ -139,9 +140,16 @@ https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-databas
   
 # Graph DBMS
 
+## PoolParty
+
 ## Neo4j
 
-## PoolParty
+### Editor
+
+- Accepts Cypher queries to work with graph data
+- Client-side commands available, e.g. `:help`
+- Run query: `ctrl+enter`
+- Multiline command: `shift+enter`
 
 
 

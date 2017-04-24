@@ -128,14 +128,24 @@ https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-databas
 
 ## PoolParty
 
+
+
 ## Neo4j
 
 ### Editor
 
+Input commands and queries.
+
 - Accepts Cypher queries to work with graph data
-- Client-side commands available, e.g. ```:help```
+- lient-side commands available, e.g. ```:help```
 - Run query: `ctrl+enter`
 - Multiline command: `shift+enter`
+
+### Stream
+
+Displays query and command results.
+
+- Clear stream: `:clear`
 
 
 

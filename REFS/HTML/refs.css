@@ -138,6 +138,12 @@ div.sourceCode {
     padding-left: 10px;
 }
 
+code {
+    background-color: #ebebeb;
+    font-size: 10px;
+    font-family: monospace;    
+}
+
 
 
 /* TABLES should be center aligned, regular text */

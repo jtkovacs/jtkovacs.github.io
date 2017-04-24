@@ -83,6 +83,8 @@ OO models show **inheritance** as well as decisions, relationships, and processe
 
 ### Unified Modeling Language (UML)
 
+See [notes on UML.](UML.html)
+
 #### Use-case diagrams
 
 #### Activity diagrams

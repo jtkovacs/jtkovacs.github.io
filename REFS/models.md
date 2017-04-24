@@ -37,16 +37,17 @@ calculate avg. T for a population; avg. discontent doesn’t matter
 
 ## Standing ovation model
 
-builds off Granovetter model; adds information to peer effects
-T, threshold to stand, and T=f(Q) is a function of quality
-S, signal from peers, and S=Q+E is a function of quality and error
-If S > T, then stand; if more people, X%, stand, then stand
-Since Q+E>T is the decision rule, either Q↑ or E↑ increases the number of people standing
-Lower threshold ⇒ higher number of people standing
-Lower X% ⇒ higher numbers of people standing
-If Q<T, more stand
-Big groups more likely to stand together (local X%)
-Celebrities (people in front row, everyone sees them, they don’t see anyone) → wield large influence
+- builds off Granovetter model; adds information to peer effects
+- T, threshold to stand, and T=f(Q) is a function of quality
+- S, signal from peers, and S=Q+E is a function of quality and error
+- If S > T, then stand; if more people, X%, stand, then stand
+- Since Q+E>T is the decision rule, either Q↑ or E↑ increases the number of people standing
+- Lower threshold ⇒ higher number of people standing
+- Lower X% ⇒ higher numbers of people standing
+- If Q<T, more stand
+- Big groups more likely to stand together (local X%)
+- Celebrities (people in front row, everyone sees them, they don’t see anyone) → wield large influence
+
 
 
 

@@ -4,8 +4,6 @@
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
 		- [Bachmann/crow's foot notation](#bachmann/crow's-foot-notation)
 	- [Data flow diagrams](#data-flow-diagrams)
-		- [Gane/Sarson method](#gane/sarson-method)
-		- [Yourdon/DeMarco and Coad method](#yourdon/demarco-and-coad-method)
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Rumbaugh/OMT method](#rumbaugh/omt-method)
 		- [Shlaer/Mellor method](#shlaer/mellor-method)
@@ -70,11 +68,14 @@ This is a notation that describes the optionality/modality/participation and car
 
 ## Data flow diagrams
 
-### Gane/Sarson method
+The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depict the flow of data through a system using the following elements:
 
-### Yourdon/DeMarco and Coad method
+- **Circles** to represent system processes that transform the data
+- **Lines** to represent data flows, with descriptive labels and arrows for directionality
+- **Open rectangles** to represent internal data stores
+- **Rectangles** to represent external interactors
 
-![](..//ILLOS/yourdon-demarco.png)
+![](../ILLOS/DFD.jpg)
 
 ## Object-oriented modeling
 

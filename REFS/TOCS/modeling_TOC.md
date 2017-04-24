@@ -55,22 +55,20 @@ Per Scott Page, modeling helps us:
 
 Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation,** following Steirn (1999). 
 
-Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); or by **methodology** (e.g. Agile, SDLC).
+Dennis et al. (2012) seems very similar to Steirn (1999):
 
-Per Dennis et al. (2012), very similar to Steirn (1999):
-
-- **Functional** (flow chart?) models capture processes:
+- **Functional** (==flow chart?) models capture processes:
     - Use-case diagrams
     - Activity diagrams
-- **Structural** (ERD?) models capture objects, their attributes, and their interactions:
+- **Structural** (==ERD?) models capture objects, their attributes, and their interactions:
     - CRC cards
     - Class diagrams
-- **Behavioral** (object-oriented?) models capture even more detail about interactions:
+- **Behavioral** (==object-oriented?) models capture even more detail about interactions:
     - Interaction diagrams
     - Behavioral state machines
     - Crude analysis
 
-Per Smartdraw.com (n.d.): 
+Smartdraw.com (n.d.): 
 
 - **Graphs** represent entities and relationships
     - Venn
@@ -83,6 +81,10 @@ Per Smartdraw.com (n.d.):
 - **Schematics** represent the elements and architecture of a system
     - Circuit diagram
     - Floorplan
+    
+Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); or by **methodology** (e.g. Agile, SDLC).
+
+
 
 
 

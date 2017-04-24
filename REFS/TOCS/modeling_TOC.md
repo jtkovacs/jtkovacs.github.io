@@ -28,9 +28,11 @@ The representation of a system needs contextual metadata clarifying the date and
 
 ## Flow charts
 
-AKA decision flow charts, logic flow charts, and logical decision flow charts, this modeling methodology is contemporaneous with structured programming.
+AKA decision flow charts, logic flow charts, and logical decision flow charts. This modeling methodology is contemporaneous with structured programming. Flow charts model decisions, which is one type of process; so languages for modeling processes more generally can also represent decisions.
 
 ### Language-level diagram
+
+
 
 ### Nassi-Schneiderman (N-S) diagram
 

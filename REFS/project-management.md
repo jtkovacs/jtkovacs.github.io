@@ -294,7 +294,7 @@ Per Dennis et al. (2012), requirements may be obtained from users, domain expert
 
 ### Documenting requirements
 
-Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be expressed using a **concept map,** **requirements trace matrix** (table format), or various **card** formats, which include:
+Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be expressed using a **concept map,** a **requirements trace matrix** (table format), **user stories,** or various **card** formats, which include:
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
 - **XP Story Cards,** in which a customer writes a story on a card.

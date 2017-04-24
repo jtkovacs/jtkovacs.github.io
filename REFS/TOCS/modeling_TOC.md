@@ -40,7 +40,7 @@ The basic elements of flow charts are available in MS Visio's language level dia
 
 AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderman (1973), "We propose a flowchart language whose control structure is closer to that of language amenable to **structured programming:"**
 
-<img src="../ILLOS/N-S-diagram.png" width="350px">
+<img src="../ILLOS/N-S-diagram.png" width="250px">
 
 ## Data flow diagram
 

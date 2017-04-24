@@ -26,9 +26,7 @@ _Note that there's a lot of overlap between depicting a system and [implementing
 
 # Overview of modeling
 
-Models of a process, system, or interface can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). 
-
-The representation of a system needs to include contextual metadata clarifying the date and/or version it describes. 
+Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). Because a model is a representation of a system, the model needs to include contextual metadata clarifying the date and/or version of the system it describes.
 
 ## Why model?
 

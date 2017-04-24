@@ -361,11 +361,7 @@ Requirements are often analyzed by grouping them into **use cases.** Per Whitney
 
 ## Future state design
 
-See [notes on system & process modeling techniques](modeling.html) that are used to characterize the desired state of the **to-be system,** including (per Dennis et al., 2012):
-
-- functional models
-- structural models
-- behavioral models
+See [notes on system & process modeling techniques](modeling.html) that are used to characterize the desired state of the **to-be system.** 
 
 ## Choosing software
 

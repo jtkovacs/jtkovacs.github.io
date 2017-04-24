@@ -80,7 +80,7 @@ Per Stiern (1999), Martin notation adds a few more details to crows-foot notatio
 
 ### Arrow notation
 
-<img src="../ILLOS/arrow.png" width="280px">
+<img src="../ILLOS/arrow.png" width="260px">
 
 ## Data flow diagram
 

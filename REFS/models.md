@@ -3,6 +3,63 @@ _The following notes are largely based on [Scott Page's](https://vserver1.cscs.l
 
 _For information systems-related applications of modeling, see [notes on system and process modeling;](modeling.html) for business applications of models as analytic frameworks, see [notes on project management](project-management.html) and [process improvement.](process-improvement.html)_
  
+ 
+ 
+ 
+# Models for ... 
+
+## Decision-making 
+
+We talk about decision-making models for normative reasons (to help us make better decisions) and positive ones (to predict or analyze others’ decisions)
+
+Multi-criterion models (many features bundled together): 
+Can plot options in multidimensional space and calculate least distance to ideal point; this is a spatial model. A preference is spatial if people prefer things “just right” rather than infinitely large or small.
+Use a matrix and compare column by column; compute score or weighted score, e.g. MCRI decision
+
+Probabilistic models (uncertainty in the world):
+Probability basics:
+Classical probability: easy to calculate, e.g. for a dice
+Frequency: can estimate probability by counting lots of data; makes assumption of stationarity
+Subjective probabilities: dangerous, subject to bias, make easily violate axioms of probability
+Decision trees: write down payoffs and probabilities; also can infer what other people think p is based on their decisions, or calculate payoffs knowing probabilities
+Value of information: calculate value without and with information; then take the difference
+   
+## Mechanism design
+
+Formalizing institutions; designing the rules of the game by defining permitted actions and payoffs.
+
+Hidden actions: Effort={0,1}; Outcome={Good,Bad}; p(Good|Effort=1)=1; p(Good|Effort=0)=p; c, cost of effort=1. Contract: pay M if Good, 0 if Bad→ Payoff(effort=1)=M-c and Payoff(effort=0)=pM; set M-c>pM → M>c/(1-p).
+
+Hidden information: Ability={a,b}; cost(a)=c, cost(b)=C. Contract: pay M after k hours where M>kc, M<kC → k=M/C. Costly signaling; how does this apply to internships?
+
+Auction design: From the perspective of the seller, the objective is to get as much money as possible for a fixed amount of goods. Three basic designs: ascending bid vs. sealed bid vs. second price bid. In second price bidding, people makes a sealed bid; the highest bid wins but they actually pay the amount of the second highest bidder. 
+For an ascending bid, the winner may not reach their upper limit; the item sells at just over the upper limit of the person with the second highest WTP. 
+For second price bidding, a rational bidder will bid their true WTP because this maximizes ‘net gain’: WTP - actual price paid. Prevents arms race dynamic.
+In sealed bids, people tend to underbid; in fact, the optimal bid is WTP/2 .This turns out to be the expected value of the second highest bidder.
+→ revenue equivalence thm
+
+Mechanisms in public goods projects: 
+Clarke-Groves-Vickery Pivot mechanism: each person states what the project is worth to them. If the sum of these claims is higher than the cost of hte project, then the project goes ahead with each paying only the minimum amount needed to make the project viable: e.g. person_1 pays max{cost - V2 - V3 … - Vn, 0}. → everyone has an incentive to reveal their true value, rather than over- or under-bidding.
+All mechanisms for these sorts of problems have trade-offs.
+
+## Prediction
+
+Prediction at the individual level → “[W]e tend to pay undue attention to single model thinkers. We shouldn’t. We should heed the advice of those who think more subtly. Better still, we should learn many models ourselves.”
+We’ve looked at three types of predictive models: categorical, linear, and Markov
+
+Prediction by groups → Wisdom of crowds = f(individual’s accuracy, diversity of ideas)
+Crowd’s error = Avg error - Variation
+
+## Categorization
+
+Categorical: data can be sorted into different ‘boxes’
+Calculation of total variation: subtract mean from each data point, square and sum the results
+Proper categories greatly reduce total variation
+R2 = %variation explained = (total_variation_pre-categories - total_variation_with_categories)/tv_pc
+
+
+
+
 
 # Models theorizing ... 
  
@@ -18,7 +75,6 @@ There's an identification problem with segregation: do we deliberately seek the 
     D- I for a region of blocks = sum of (#blocks*block’s-DI)
 - **[Isolation index](https://en.wikipedia.org/wiki/Index_of_dissimilarity)**
 
-
 ### Thomas Schelling’s spatial segregation model
 
 Agent-based model where people choose whether to move or stay depending on the composition of their immediate neighborhood. The deep insight is that a similarity threshold of 30% has an equilibrium (everyone happy) with segregation of 70%; and 50% tolerance leads to nearly 100% segregation, including borders made up of empty cells. Perhaps counterintuitively, when intolerance is set very high, the system won’t find an equilibrium since everyone is perpetually moving. 
@@ -26,7 +82,6 @@ Micromotives ≠ macrobehavior
 I would want to augment this model, giving cell-classes their own mobility parameter.
 Exodus tip: agent leaves because someone else exits the neighborhood
 Genesis tip: agent leaves because someone else enters the neighborhood
-
 
 ### Granovetter’s model of peer effects 
 
@@ -36,7 +91,6 @@ N individuals; the jth individual has threshold Tj, and will join if T others do
 ‘tail wagging the dog’: a population needs someone with Tj=0 to get things going
 collective action more likely to happen if: low thresholds, variation in thresholds
 calculate avg. T for a population; avg. discontent doesn’t matter
-
 
 ### Standing ovation model
 
@@ -88,10 +142,8 @@ Langton’s lamba: for a given set of rules, what % tell cells to switch on? e.g
 How do we represent preferences? Through inequalities: preference rankings/orderings
 How do we discern preferences? Revealed or stated
 Usually assume rational, transitive preferences, but even so collective preferences may be nontransitive (Condorcet paradox)
-
-
    
-## Human behavior
+## Individual human behavior
     
 Murray Gell-Mann: “Imagine how difficult physics would be if electrons could think”; people=purposeful, diverse.
 
@@ -129,6 +181,113 @@ Rules can be easy to compute, good at capturing main effects; but create ‘peop
 For the sake of aggregate effects, when does individual behavior matter? Which model of people should we choose? “One of the reasons we models is to determine how much it matters how accurate our model is.” 
 “In markets, the institution itself has such an influence that we don’t worry about modeling behavior”; this was studied with zero intelligence agents (1,2), and they yield the same equilibrium price as rational agents.
 
+## Coordination & culture
+
+Culture: http://www.worldvaluessurvey.org/WVSContents.jsp, http://geert-hofstede.com/national-culture.html  
+differences between groups and
+similarities within groups that are 
+interesting in some way, i.e., appearing suboptimal or confusing to outsiders.
+
+Culture is an n-person coordination game. In a coordination game, players receive payoffs when they choose the same action. An n-person coordination game can be modeled with a Lyapunov function, F(x)= # of coordinations, k=2. BUT, the process doesn’t have to stop with everyone being the same; you can get blocks of different behaviors. 
+Note that suboptimal equilibria are possible with coordination games
+
+### Axelrod’s culture model
+
+http://ccl.northwestern.edu/netlogo/models/community/Dissemination%20of%20Culture 
+Features: {1, 2, ..., N}
+Traits are actions you take for a feature: {1, 2, …, aN}
+Person is a vector of traits on features: [a1, a2, …, ai, aN]
+People are placed into a social space, a matrix; they look at neighbors and 
+choose whether to interact based on some similarity threshold
+if they’re similar enough to interact, then they randomly select a feature and change their behavior to match their neighbor’s trait (if they don’t match already)
+→ emergence of distinct cultures with thick boundaries
+
+### Coordination & consistency model
+
+people don’t want to keep infinitely adjusting to people around them; they also have some consistency of worldview. The rule here is, adjust your own traits so they are more numerically similar with each other. → process takes a long time to converge, and small errors at the individual level lead to large population-level divergences. In the transition map below, if we add an error term that allows us to exit the red-red-red-red state of total consistency and coordination, then we suddenly have a Markov process and can represent the process with a transition matrix:
+
+All possible states:
+
+
+Transition map between states:
+
+
+Markovian matrix:
+
+
+
+Suboptimal outcomes can arise from:
+Desire for coordination
+Desire for consistency
+External change in what’s optimal, but system remains stuck at equilibrium
+
+### Prisoner's dilemma
+
+In Prisoner’s Dilemma, the incentive to defect must be less, on average, than the payoffs available for cooperation. Here are the constraints: T>R, 2T>F, F>T.
+
+What makes PD so interesting is that, in terms of matrix addressing, cell (1,1) is the highest overall payoff; cells (1,2) and (2,1) are Pareto efficient; but cell (2,2), the worst by every criterion, is where the game ends up. It’s the Nash equilibrium. This contrasts with the self-interest game where individual incentives lead players to achieve the highest overall payoff which is also Pareto efficient.
+In the case of price competition or tech adoption, we don’t care that the players suffer becomes consumers benefit. (Unless we also consider that consumers are workers.)
+
+7 ways that cooperation arises in 2-person games: Additional constraint b>c where c=cost of cooperation, b=benefit to others. See http://books.simonandschuster.com/SuperCooperators/Martin-Nowak/9781451626636. 
+Repeated games with opportunity for direct reciprocity. If p=p(meet again), then p>c/b is the condition.
+Indirect reciprocity, i.e. reputation. Let q=p(reputation is known) for the condition q>c/b.
+→ denser ties better
+Network reciprocity with k neighbors, condition is k > b/c.
+→ denser ties worse
+Group selection is the mechanism where, through competing against other groups, groups with a higher percentage of cooperators are more successful. 
+Kin selection where players are related, r, and care about it; rb>c is the constraint.
+Laws or other prohibitions
+Creation of incentives
+
+### Collective action problems
+
+n-person Prisoner’s Dilemmas with payoff function for person j making action xj (note that xj’s action is counted as a cost and as a benefit scaled by β): -xj+i=1Nxi, 0 < xj, β < 1.
+Common pool resource problems: Rt+1=f(X,Rt) where X is the total consumed, sum of all xi.
+What helps with collective action problems? The particulars matter; there’s no panacea. See http://www.onthecommons.org/magazine/elinor-ostroms-8-principles-managing-commmons. Possible options:
+Clear ownership
+Rotation schemes
+
+## Diversity & innovation 
+
+linked to prior discussion of  economic growth & role of innovation)
+
+F(a), the payoff function for action a. The question is: how do we get to c; and further, how do we avoid getting stuck on local optima to find the global optimum?
+
+Perspectives: how you encode the problem, how you represent it to yourself, creating a landscape (above)
+A perspective is a representation of the set of all possible solutions to a problem
+A landscape assigns a value to all possible solutions to a problem
+A better perspective has fewer peaks: fewer places to get stuck
+“Mount Fuji landscape”: single peaked
+Savant existence thm: for any problem there’s a perspective that creates a Mt Fuji landscape
+With N alternatives, there are N! ways to create a perspective … many bad
+
+Heuristics: rules that guide how you move across/search your landscape
+Hillclimb: check left, check right, and move to the higher point
+Do the opposite ... of the existing solution
+Big rocks first: when filling a bucket with rocks and sand
+Random search
+Neumann neighborhoods: look N,S,E,W
+
+### No free lunch thm 
+
+(Wolpert & McCready): all algorithms that search the same number of points with the goal of locating the maximum value of a function defined on a finite set, e.g., a landscape, perform exactly the same when averaged over all possible functions → You need to have some instinct for what heuristic suits which landscape; if you don’t know anything about the problem, then no heuristic is better
+
+### Collaborative problem-solving
+
+He uses ‘teams’ in a very loose sense; doesn’t need to be face-to-face or synchronous
+Ability: the avg value of all the peaks in your perspective
+For teams, look at intersection of perspectives and take the avg
+⇒ The team can only get stuck on a solution that’s a local optimum for every member of the team. It might not be the global optimum, but it will be better than individual solutions.
+⇒ We want teams with a diversity of perspectives and heuristics
+Missing from this model:
+Imperfect communication
+Error in interpreting the value of a solution
+
+### Recombination
+
+Martin Weitzman’s theory of recombinant economic growth
+Exaptation: when something developed for one purpose proves highly useful for another, e.g. feathers
+Joel Mokyr: gifts of Athena == technological developments that facilitate the exchange of ideas
 
 ## Tipping points & diffusion
 
@@ -246,188 +405,9 @@ http://pastspeaks.com/2012/04/17/theory-and-historians/
 
 Other applications of this model: for growth of ‘personal GDP’, pursue innovation and continuous learning
 
-## Diversity & innovation 
-
-linked to prior discussion of  economic growth & role of innovation)
-
-F(a), the payoff function for action a. The question is: how do we get to c; and further, how do we avoid getting stuck on local optima to find the global optimum?
-
-Perspectives: how you encode the problem, how you represent it to yourself, creating a landscape (above)
-A perspective is a representation of the set of all possible solutions to a problem
-A landscape assigns a value to all possible solutions to a problem
-A better perspective has fewer peaks: fewer places to get stuck
-“Mount Fuji landscape”: single peaked
-Savant existence thm: for any problem there’s a perspective that creates a Mt Fuji landscape
-With N alternatives, there are N! ways to create a perspective … many bad
-
-Heuristics: rules that guide how you move across/search your landscape
-Hillclimb: check left, check right, and move to the higher point
-Do the opposite ... of the existing solution
-Big rocks first: when filling a bucket with rocks and sand
-Random search
-Neumann neighborhoods: look N,S,E,W
-
-### No free lunch thm 
-
-(Wolpert & McCready): all algorithms that search the same number of points with the goal of locating the maximum value of a function defined on a finite set, e.g., a landscape, perform exactly the same when averaged over all possible functions → You need to have some instinct for what heuristic suits which landscape; if you don’t know anything about the problem, then no heuristic is better
-
-### Collaborative problem-solving
-
-He uses ‘teams’ in a very loose sense; doesn’t need to be face-to-face or synchronous
-Ability: the avg value of all the peaks in your perspective
-For teams, look at intersection of perspectives and take the avg
-⇒ The team can only get stuck on a solution that’s a local optimum for every member of the team. It might not be the global optimum, but it will be better than individual solutions.
-⇒ We want teams with a diversity of perspectives and heuristics
-Missing from this model:
-Imperfect communication
-Error in interpreting the value of a solution
-
-### Recombination
-
-Martin Weitzman’s theory of recombinant economic growth
-Exaptation: when something developed for one purpose proves highly useful for another, e.g. feathers
-Joel Mokyr: gifts of Athena == technological developments that facilitate the exchange of ideas
-
-## Coordination & culture
-
-Culture: http://www.worldvaluessurvey.org/WVSContents.jsp, http://geert-hofstede.com/national-culture.html  
-differences between groups and
-similarities within groups that are 
-interesting in some way, i.e., appearing suboptimal or confusing to outsiders.
-
-Culture is an n-person coordination game. In a coordination game, players receive payoffs when they choose the same action. An n-person coordination game can be modeled with a Lyapunov function, F(x)= # of coordinations, k=2. BUT, the process doesn’t have to stop with everyone being the same; you can get blocks of different behaviors. 
-Note that suboptimal equilibria are possible with coordination games
-
-### Axelrod’s culture model
-
-http://ccl.northwestern.edu/netlogo/models/community/Dissemination%20of%20Culture 
-Features: {1, 2, ..., N}
-Traits are actions you take for a feature: {1, 2, …, aN}
-Person is a vector of traits on features: [a1, a2, …, ai, aN]
-People are placed into a social space, a matrix; they look at neighbors and 
-choose whether to interact based on some similarity threshold
-if they’re similar enough to interact, then they randomly select a feature and change their behavior to match their neighbor’s trait (if they don’t match already)
-→ emergence of distinct cultures with thick boundaries
-
-### Coordination & consistency model
-
-people don’t want to keep infinitely adjusting to people around them; they also have some consistency of worldview. The rule here is, adjust your own traits so they are more numerically similar with each other. → process takes a long time to converge, and small errors at the individual level lead to large population-level divergences. In the transition map below, if we add an error term that allows us to exit the red-red-red-red state of total consistency and coordination, then we suddenly have a Markov process and can represent the process with a transition matrix:
-
-All possible states:
-
-
-Transition map between states:
-
-
-Markovian matrix:
 
 
 
-Suboptimal outcomes can arise from:
-Desire for coordination
-Desire for consistency
-External change in what’s optimal, but system remains stuck at equilibrium
-
-## Prisoner's dilemma, cooperation, collective action & the commons
-
-In Prisoner’s Dilemma, the incentive to defect must be less, on average, than the payoffs available for cooperation. Here are the constraints: T>R, 2T>F, F>T.
-
-
-
-
-
-
-P2
-
-
-
-
-C
-D
-P1
-C
-T,T
-0,F
-D
-F,0
-R,R
-
-
-What makes PD so interesting is that, in terms of matrix addressing, cell (1,1) is the highest overall payoff; cells (1,2) and (2,1) are Pareto efficient; but cell (2,2), the worst by every criterion, is where the game ends up. It’s the Nash equilibrium. This contrasts with the self-interest game where individual incentives lead players to achieve the highest overall payoff which is also Pareto efficient.
-In the case of price competition or tech adoption, we don’t care that the players suffer becomes consumers benefit. (Unless we also consider that consumers are workers.)
-
-7 ways that cooperation arises in 2-person games: Additional constraint b>c where c=cost of cooperation, b=benefit to others. See http://books.simonandschuster.com/SuperCooperators/Martin-Nowak/9781451626636. 
-Repeated games with opportunity for direct reciprocity. If p=p(meet again), then p>c/b is the condition.
-Indirect reciprocity, i.e. reputation. Let q=p(reputation is known) for the condition q>c/b.
-→ denser ties better
-Network reciprocity with k neighbors, condition is k > b/c.
-→ denser ties worse
-Group selection is the mechanism where, through competing against other groups, groups with a higher percentage of cooperators are more successful. 
-Kin selection where players are related, r, and care about it; rb>c is the constraint.
-Laws or other prohibitions
-Creation of incentives
-
-Collective action problems: n-person Prisoner’s Dilemmas with payoff function for person j making action xj (note that xj’s action is counted as a cost and as a benefit scaled by β): -xj+i=1Nxi, 0 < xj, β < 1.
-Common pool resource problems: Rt+1=f(X,Rt) where X is the total consumed, sum of all xi.
-What helps with collective action problems? The particulars matter; there’s no panacea. See http://www.onthecommons.org/magazine/elinor-ostroms-8-principles-managing-commmons. Possible options:
-Clear ownership
-Rotation schemes
-
-
-
-
-
-
-# Models for ... 
-
-## Decision-making 
-
-We talk about decision-making models for normative reasons (to help us make better decisions) and positive ones (to predict or analyze others’ decisions)
-
-Multi-criterion models (many features bundled together): 
-Can plot options in multidimensional space and calculate least distance to ideal point; this is a spatial model. A preference is spatial if people prefer things “just right” rather than infinitely large or small.
-Use a matrix and compare column by column; compute score or weighted score, e.g. MCRI decision
-
-Probabilistic models (uncertainty in the world):
-Probability basics:
-Classical probability: easy to calculate, e.g. for a dice
-Frequency: can estimate probability by counting lots of data; makes assumption of stationarity
-Subjective probabilities: dangerous, subject to bias, make easily violate axioms of probability
-Decision trees: write down payoffs and probabilities; also can infer what other people think p is based on their decisions, or calculate payoffs knowing probabilities
-Value of information: calculate value without and with information; then take the difference
-   
-## Mechanism design
-
-Formalizing institutions; designing the rules of the game by defining permitted actions and payoffs.
-
-Hidden actions: Effort={0,1}; Outcome={Good,Bad}; p(Good|Effort=1)=1; p(Good|Effort=0)=p; c, cost of effort=1. Contract: pay M if Good, 0 if Bad→ Payoff(effort=1)=M-c and Payoff(effort=0)=pM; set M-c>pM → M>c/(1-p).
-
-Hidden information: Ability={a,b}; cost(a)=c, cost(b)=C. Contract: pay M after k hours where M>kc, M<kC → k=M/C. Costly signaling; how does this apply to internships?
-
-Auction design: From the perspective of the seller, the objective is to get as much money as possible for a fixed amount of goods. Three basic designs: ascending bid vs. sealed bid vs. second price bid. In second price bidding, people makes a sealed bid; the highest bid wins but they actually pay the amount of the second highest bidder. 
-For an ascending bid, the winner may not reach their upper limit; the item sells at just over the upper limit of the person with the second highest WTP. 
-For second price bidding, a rational bidder will bid their true WTP because this maximizes ‘net gain’: WTP - actual price paid. Prevents arms race dynamic.
-In sealed bids, people tend to underbid; in fact, the optimal bid is WTP/2 .This turns out to be the expected value of the second highest bidder.
-→ revenue equivalence thm
-
-Mechanisms in public goods projects: 
-Clarke-Groves-Vickery Pivot mechanism: each person states what the project is worth to them. If the sum of these claims is higher than the cost of hte project, then the project goes ahead with each paying only the minimum amount needed to make the project viable: e.g. person_1 pays max{cost - V2 - V3 … - Vn, 0}. → everyone has an incentive to reveal their true value, rather than over- or under-bidding.
-All mechanisms for these sorts of problems have trade-offs.
-
-## Prediction
-
-Prediction at the individual level → “[W]e tend to pay undue attention to single model thinkers. We shouldn’t. We should heed the advice of those who think more subtly. Better still, we should learn many models ourselves.”
-We’ve looked at three types of predictive models: categorical, linear, and Markov
-
-Prediction by groups → Wisdom of crowds = f(individual’s accuracy, diversity of ideas)
-Crowd’s error = Avg error - Variation
-
-## Categorization
-
-Categorical: data can be sorted into different ‘boxes’
-Calculation of total variation: subtract mean from each data point, square and sum the results
-Proper categories greatly reduce total variation
-R2 = %variation explained = (total_variation_pre-categories - total_variation_with_categories)/tv_pc
 
 
    

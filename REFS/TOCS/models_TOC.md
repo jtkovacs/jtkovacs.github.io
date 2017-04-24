@@ -64,7 +64,6 @@ e.g. water is made of molecules, where wetness comes from the hydrogen bond; cog
 
 [Aggregating actions or numbers] Central Limit Theorem: If you add up many independent events with finite variance, the distribution should be bell-shaped with mean=N/2 for the binomial distribution (or mean=p*N, more generally) and sigma=sqrt(N)/2 for the binomial distribution (or sigma=sqrt(p(1-p)N), more generally).
 p(x > 6*sigma) = 3.4 in a million. In production processes, the six sigma approach means that you shoot for a sigma such that your likelihood of exceeding some specific tolerance is 3.4 in a million.
-    
 
 [Aggregating rules] Game of Life by John Conway, a mathematician in group theory:  
 Dead → Come alive if three of your neighbors are alive

@@ -37,6 +37,14 @@ p.caption {
     font-size: 9px;
 }
 
+li strong {
+    color: #000000;
+}
+
+li li strong {
+    color: #666666;
+}
+
 
 
 /* TABLE OF CONTENTS */
@@ -85,7 +93,6 @@ table.TOC li li li li li a {
 
 /* HEADERS are anchors, but shouldn't be colored like other links */
 /* They should get lighter shades of orange as they decrease in size */
-/* Indentation should be progressive */
 h1, h1 a, h1 a:hover {
     color: #FC2000;
     font-size: 22px;

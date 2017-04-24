@@ -17,8 +17,8 @@ Per Scott Page, modeling helps us:
 
 - **Be an intelligent citizen of the world.** Models are everywhere, so full participation requires knowing them. They are "the new lingua franca" in nonprofits, businesses, politics, academia. 
 - **Be a clearer thinker.** Models are "wrong, but useful"; people make better decisions using a formal model versus either a single model, or multiple casual models. “You are a modeler … But typically, it is an implicit model in which the assumptions are hidden, their internal consistency is untested, their logical consequences are unknown, and their relation to data is unknown.”
-    - **Work through all the logical possibilities** for parts; relationships between parts; logic.
-    - **Identify the general class of outcome:** equilibrium, cycle, random, complex.
+    - **Work through all the logical possibilities** for parts; relationships between parts; logic
+    - **Identify the general class of outcome:** equilibrium, cycle, random, complex
     - **Identify logical bounds:** "Models give us the conditions under which we can adjudicate" between ideas, e.g. contradictory folk proverbs. _When_ are "two heads better than one"? *When* do "two cooks spoil the broth"?
     - **Reduce complexity.**
 - **Understand and use data,** turning it into knowledge.
@@ -33,12 +33,14 @@ Per Scott Page, modeling helps us:
     - **Consider counterfactuals**
     - **Identify and rank levers:** where do we intervene to have an impact?
     - **Design experiments and institutions**
-- **Communicate what we know very simply.** “[M]odels can be the focal points of teams involving experts from many disciplines.”
+- **Communicate what we know very simply.** “[M]odels can be the focal points of teams involving experts from many disciplines”
 - **Discover new things:** "Models are fertile", i.e., they have multiple and unexpected uses. “Models can surprise us, make us curious, and lead to new questions. This is what I hate about exams. They only show that you can answer somebody else's question, when the most important thing is: Can you ask a new question?”
 
 ## Model typologies 
 
-Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). In addition to forms and notations, models could be grouped by the business problems they solve, or as they appear in stages of a lifecycle, or by domain of origin (models were developed sequentially or in parallel by Taylorists; postwar Japanese manufacturers; industrial engineers; social scientists; and software developers). 
+Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation.** 
+
+Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); or by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers). 
 
 Steirn (1999) organizes models as:
 
@@ -67,7 +69,7 @@ Types of diagrams, per Smartdraw.com (n.d.):
 
 
 
-# Models
+# Models by form
 
 ## Flow charts
 

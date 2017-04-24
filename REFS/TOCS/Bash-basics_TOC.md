@@ -1,4 +1,4 @@
-<table id="TOC"><tr><td>- [Bash basics](#bash-basics)
+<table class="TOC"><tr><td>- [Bash basics](#bash-basics)
 	- [What is Bash?](#what-is-bash?)
 	- [Set up Bash](#set-up-bash)
 	- [Manage system](#manage-system)

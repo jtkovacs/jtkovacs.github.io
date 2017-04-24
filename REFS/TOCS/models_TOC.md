@@ -9,40 +9,44 @@
 		- [Game of Life](#game-of-life)
 		- [Cellular automata](#cellular-automata)
 		- [Aggregating preferences](#aggregating-preferences)
-- [Decision-making models](#decision-making-models)
-- [Models of human behavior](#models-of-human-behavior)
-	- [Rational ](#rational-)
-	- [Behavioral ](#behavioral-)
-	- [Rule-based](#rule-based)
-- [Categorical & linear models](#categorical-&-linear-models)
-- [Tipping points & diffusion](#tipping-points-&-diffusion)
-	- [Percolation model (contextual)](#percolation-model-(contextual))
-	- [Contagion models ](#contagion-models-)
-		- [Diffusion](#diffusion)
-		- [SIS ](#sis-)
-	- [Classifying tipping points](#classifying-tipping-points)
-	- [Measuring tipping points](#measuring-tipping-points)
-- [Models of economic growth ](#models-of-economic-growth-)
-	- [Exponential growth](#exponential-growth)
-	- [Basic growth model ](#basic-growth-model-)
-	- [Solow growth model ](#solow-growth-model-)
-- [Models of diversity & innovation ](#models-of-diversity-&-innovation-)
-	- [No free lunch thm ](#no-free-lunch-thm-)
-	- [Collaborative problem-solving](#collaborative-problem-solving)
-	- [Recombination](#recombination)
-- [Markov processes](#markov-processes)
-- [Lyapunov functions](#lyapunov-functions)
-- [Models of coordination & culture](#models-of-coordination-&-culture)
-	- [Axelrod’s culture model](#axelrod’s-culture-model)
-	- [Coordination & consistency model](#coordination-&-consistency-model)
-- [Path dependence](#path-dependence)
-- [Networks](#networks)
-- [Randomness](#randomness)
-- [Prisoner's dilemma, cooperation, collective action & the commons](#prisoner's-dilemma,-cooperation,-collective-action-&-the-commons)
-- [Mechanism design](#mechanism-design)
+	- [Human behavior](#human-behavior)
+		- [Rational ](#rational-)
+		- [Behavioral ](#behavioral-)
+		- [Rule-based](#rule-based)
+	- [Tipping points & diffusion](#tipping-points-&-diffusion)
+		- [Percolation model (contextual)](#percolation-model-(contextual))
+		- [Contagion models ](#contagion-models-)
+			- [Diffusion](#diffusion)
+			- [SIS ](#sis-)
+		- [Classifying tipping points](#classifying-tipping-points)
+		- [Measuring tipping points](#measuring-tipping-points)
+	- [Economic growth ](#economic-growth-)
+		- [Exponential growth](#exponential-growth)
+		- [Basic growth model ](#basic-growth-model-)
+		- [Solow growth model ](#solow-growth-model-)
+	- [Diversity & innovation ](#diversity-&-innovation-)
+		- [No free lunch thm ](#no-free-lunch-thm-)
+		- [Collaborative problem-solving](#collaborative-problem-solving)
+		- [Recombination](#recombination)
+	- [Coordination & culture](#coordination-&-culture)
+		- [Axelrod’s culture model](#axelrod’s-culture-model)
+		- [Coordination & consistency model](#coordination-&-consistency-model)
+	- [Prisoner's dilemma, cooperation, collective action & the commons](#prisoner's-dilemma,-cooperation,-collective-action-&-the-commons)
+- [Models for ... ](#models-for-...-)
+	- [Decision-making ](#decision-making-)
+	- [Mechanism design](#mechanism-design)
+	- [Prediction](#prediction)
+- [Models using ...](#models-using-...)
+	- [Categorical & linear models](#categorical-&-linear-models)
+	- [Markov processes](#markov-processes)
+	- [Lyapunov functions](#lyapunov-functions)
+	- [Path dependence](#path-dependence)
+	- [Networks](#networks)
+	- [Randomness](#randomness)
+	- [Game theory](#game-theory)
+		- [Colonel Blotto](#colonel-blotto)
 - [Models of learning](#models-of-learning)
 	- [Replicator models ](#replicator-models-)
-- [Prediction](#prediction)
 </td></tr></table>
 
 _The following notes are largely based on [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking)_
@@ -97,9 +101,6 @@ calculate avg. T for a population; avg. discontent doesn’t matter
 - Big groups more likely to stand together (local X%)
 - Celebrities (people in front row, everyone sees them, they don’t see anyone) → wield large influence
 
-
-
-
 ## Aggregation
 
 Aggregation is tricky; “more is different” (can’t just look at individual parts). So, we model to get the logic correct. e.g. water is made of molecules, where wetness comes from the hydrogen bond; cognition comes from connected neurons.
@@ -139,33 +140,12 @@ How do we discern preferences? Revealed or stated
 Usually assume rational, transitive preferences, but even so collective preferences may be nontransitive (Condorcet paradox)
 
 
-
-
-
-# Decision-making models
-
-We talk about decision-making models for normative reasons (to help us make better decisions) and positive ones (to predict or analyze others’ decisions)
-
-Multi-criterion models (many features bundled together): 
-Can plot options in multidimensional space and calculate least distance to ideal point; this is a spatial model. A preference is spatial if people prefer things “just right” rather than infinitely large or small.
-Use a matrix and compare column by column; compute score or weighted score, e.g. MCRI decision
-
-Probabilistic models (uncertainty in the world):
-Probability basics:
-Classical probability: easy to calculate, e.g. for a dice
-Frequency: can estimate probability by counting lots of data; makes assumption of stationarity
-Subjective probabilities: dangerous, subject to bias, make easily violate axioms of probability
-Decision trees: write down payoffs and probabilities; also can infer what other people think p is based on their decisions, or calculate payoffs knowing probabilities
-Value of information: calculate value without and with information; then take the difference
    
-   
-   
-   
-# Models of human behavior
+## Human behavior
     
 Murray Gell-Mann: “Imagine how difficult physics would be if electrons could think”; people=purposeful, diverse.
 
-## Rational 
+### Rational 
 
 == optimizing agents who have goals; can be represented by objective function.
 Functions of form X(C-X) are optimized when C=X-C → C=X/2 
@@ -175,7 +155,7 @@ Games (multiplayer): payoff depends on what other people do. In this case, assum
 When are we likely to see rationality? When the stakes are large; when decisions are repeated; when groups of people make decisions (although other phenomena like groupthink can occur); or when a problem is particularly simple.
 Why is rationality an important assumption? It provides a unique and comparatively easy-to-calculate benchmark; as people learn, they tend towards rationality; and many variations cancel out (i.e., high variance but no bias).
 
-## Behavioral 
+### Behavioral 
 
 == based on empirics; irrational in systematic ways; based on observations and neuroscience
 http://us.macmillan.com/thinkingfastandslow/danielkahneman
@@ -188,7 +168,7 @@ Base rate bias: If you get people thinking about one number and then ask them fo
 Hundreds of documented biases; but, themselves subject to criticisms as WEIRD (Western, educated, industrialized, rich, developed countries) rather than universal. 
 Can model as rational plus some relevant bias/es.
 
-## Rule-based
+### Rule-based
 
 Assume that people follow rules/strategies
 Can apply fixed or adaptive rules in decision or game contexts
@@ -200,37 +180,11 @@ For the sake of aggregate effects, when does individual behavior matter? Which m
 “In markets, the institution itself has such an influence that we don’t worry about modeling behavior”; this was studied with zero intelligence agents (1,2), and they yield the same equilibrium price as rational agents.
 
 
-
-
-# Categorical & linear models
-
-Categorical: data can be sorted into different ‘boxes’
-Calculation of total variation: subtract mean from each data point, square and sum the results
-Proper categories greatly reduce total variation
-R2 = %variation explained = (total_variation_pre-categories - total_variation_with_categories)/tv_pc
-
-Linear models, not the same thing as a line; y=f(x), a causal relationships; line of best fit; reading regression output
-http://www.niaoren.info/pdf/Beauty/9.pdf & other studies, experts never did better at prediction than simple linear models
-
-Strategies for modeling nonlinear data
-Approximate nonlinear model with a linear function
-Break nonlinear data into parts, e.g. quartiles, each with their own line
-Introduce nonlinear terms as linear terms: y = mz+b where z=sqrt(x)
-
-The Big Coefficient approach: making policy decisions based off which coefficient in a multivariate regression is largest, as in evidence based medicine/philanthropy/education/management. The process: build a model, gather data, identify important variables, design intervention.
-vs Big Data: gather data, find patterns, identify important variables, design intervention
-vs accounting for feedbacks (people’s behavioral adaptations in response to interventions)
-vs The New Reality: trying to create a better world, which necessarily means departing from data
-e.g. Big Coefficient thinking = tax cigarettes, New Reality thinking = universal health care
-
-
-
-
-# Tipping points & diffusion
+## Tipping points & diffusion
 
 “The straw that broke the camel’s back”; not an exponential growth pattern, but a moment when a small change comparable to other prior changes has a wildly disproportionate impact.
 
-## Percolation model (contextual)
+### Percolation model (contextual)
 
 Each square in a grid has p probability of being permeable; water can move from the top to the bottom of the grid through adjacent permeable cells, but otherwise stops
 At some p ≈ .593, percolation happens (from top to bottom of the grid); this is the tipping point
@@ -239,9 +193,9 @@ Can be applied to banks/countries in a simple way, to see how failure spreads
 Can be applied to the spread of information, where p represents the ‘juciness’ of a rumor; this implies that we shouldn’t expect information to be spread in a linear way
 Can be used to explain the synchronicity of scientific discoveries, where p represents the accumulation of related knowledge and technologies: “Once we get above the threshold, there are many paths”
 
-## Contagion models 
+### Contagion models 
 
-### Diffusion
+#### Diffusion
 
 not a tipping point!
 
@@ -258,7 +212,7 @@ p(meeting of healthy-infected pair will lead to a new infection): Dt/N * (N - Dt
 Dt + 1 = Dt + Dt/N * (N - Dt)/N * Nc * T
 Curve D = f(t) is sigmoidal, because initially, there are few people to spread the disease; and eventually, there are few healthy people to spread it to
 
-### SIS 
+#### SIS 
 
 tipping point!
 Susceptible-Infected-Susceptible
@@ -270,14 +224,14 @@ R0(measles) is about 15, although for this disease, we need to use the SIR model
 R0(flu) is about 3
 Implications for policy: for V is %N(vaccinated), we need V >= 1 - 1/R0
 
-## Classifying tipping points
+### Classifying tipping points
 
 Active/direct: due to change in variable, i.e., an unstable equilibria in the phase plane
 Contextual: due to change in parameter/s, i.e. a shift of the phase portrait s.t. fixed points change
 Within-class tip, e.g. stable equilibrium to new stable equilibrium
 Between-class tip, e.g. oscillation to complexity
 
-## Measuring tipping points
+### Measuring tipping points
 
 how big is the tip? how rare? “measure tippiness by changes in uncertainty”
 For p(A) + p(B) + … + p(N) = 1, the likelihood that any member of set A will another member of set A is
@@ -286,20 +240,19 @@ For p(A) + p(B) + … + p(N) = 1, the likelihood that any member of set A will a
 Entropy is -Σ p(i)*log2(p(i)). This tells us the number of bits of information we need to know to identify the outcome. I.e. for outcomes A,B,C,D, the questions are: is it in (A,B) or (C,D)? is it A?
 
 
-
-# Models of economic growth 
+## Economic growth 
 
 Introduction to growth
 Growth discussed in terms of GDP per capita
 Correlation between GDP and life satisfaction: yes, more money makes you happy if you start poor
 
-## Exponential growth
+### Exponential growth
 
 Compounding: Vt=V0(1+r)t
 Continuous compounding: Vt=V0ert, since lim n→ ∞ (1+r/n)nt = ert 
 Rule of 72: 72/r is approximately how long it will take GDP or a bank balance to double, where 0.08 interest rate means r=8 ⇒ even small changes in annual growth rate matter
 
-## Basic growth model 
+### Basic growth model 
 
 (capital investment, capital depreciation)
 
@@ -318,7 +271,7 @@ Capital can accumulate, but depreciates: Kt+1 = Kt + It - dKt
 Result: long-run equilibrium occurs where investment = depreciation
 Growth eventually stops because output is concave while depreciation is linear
 
-## Solow growth model 
+### Solow growth model 
 
 (capital investment, capital depreciation, innovation)
 Same variables as in basic growth model, adding only: 
@@ -343,9 +296,7 @@ http://pastspeaks.com/2012/04/17/theory-and-historians/
 
 Other applications of this model: for growth of ‘personal GDP’, pursue innovation and continuous learning
 
-
-
-# Models of diversity & innovation 
+## Diversity & innovation 
 
 linked to prior discussion of  economic growth & role of innovation)
 
@@ -366,11 +317,11 @@ Big rocks first: when filling a bucket with rocks and sand
 Random search
 Neumann neighborhoods: look N,S,E,W
 
-## No free lunch thm 
+### No free lunch thm 
 
 (Wolpert & McCready): all algorithms that search the same number of points with the goal of locating the maximum value of a function defined on a finite set, e.g., a landscape, perform exactly the same when averaged over all possible functions → You need to have some instinct for what heuristic suits which landscape; if you don’t know anything about the problem, then no heuristic is better
 
-## Collaborative problem-solving
+### Collaborative problem-solving
 
 He uses ‘teams’ in a very loose sense; doesn’t need to be face-to-face or synchronous
 Ability: the avg value of all the peaks in your perspective
@@ -381,53 +332,13 @@ Missing from this model:
 Imperfect communication
 Error in interpreting the value of a solution
 
-## Recombination
+### Recombination
 
 Martin Weitzman’s theory of recombinant economic growth
 Exaptation: when something developed for one purpose proves highly useful for another, e.g. feathers
 Joel Mokyr: gifts of Athena == technological developments that facilitate the exchange of ideas
 
-
-
-# Markov processes
-
-A particularly fertile model that captures dynamic processes between a finite and fixed set of states. It must be possible to get from any one state to any other and the probabilities of moving between states (transition probabilities) must remain fixed over time. If those assumptions hold, then the process will have a unique equilibrium (i.e., initial state doesn’t matter; history doesn’t matter; interventions/perturbations don’t matter).
-
-If A is the transition matrix and x is the state vector, then the equilibrium is: Ax=x. 
-Equilibrium=nothing changes vs. statistical equilibrium: individual elements move, but no net change.
-http://nicolewhite.github.io/2014/06/10/steady-state-transition-matrix.html    
-http://www2.math.uu.se/~takis/L/McRw/mcrw.pdf 
-
-Exaption of Markov models: Useful when there’s a sequence of events with known historical probabilities
-Voter turnout, school attendance, student attentiveness, regime transitions
-Identification of authors: make a transition matrix of key phrases; how often is the word “for” followed by “the record”, “example”, “the sake of”?
-
-
-
-
-# Lyapunov functions
-
-
-If we can represent a system/model with a Lyapunov function, then we know it goes to equilibrium and we also know how quickly it does that. A system with equilibrium behavior can lack Lyapunov representation.
-
-Conditions:
-There is an absolute minimum/maximum
-Movement is only possible in one direction: down/up. In math: if xt+1 ≠ xt, there is some k >0 such that F(xt+1) > F(xt) +/- k, that is, with each timestep the system moves by at least k amount. [Zeno’s paradox; need to define a fixed step distance otherwise we will never arrive at the maximum]
-Therefore, eventually, xt+1=xt.
-\#periods_to_equilibrium ≤ (max_value - initial_value)/step_size
-Does the process necessarily reach a max/min? No, it can get stuck. For example, in the case of preferences, it could be that a pairwise trading scheme leads to a suboptimal allocation while a more sophisticated trading scheme would attain maximum happiness.
-
-The hard part is constructing a Lyapunov function to represent the system.
-Self-organized avoidance of gridlock in cities: people have a list of places they need to go in the week, and they determine their route randomly. If they encounter a crowd at their desired location on a particular day, then they modify their route. Say the F(x) = # of people you encounter in your weekly route. This has a minimum value (0), and if people move according to their rule, then #encounters falls by at least k=2.
-Exchange economies & externalities: each person brings items to a market, and trades only if that trade increases their happiness by k amount. F(x) = total happiness of all participants in the market. Because of externalities, though, we can’t say that this system will attain equilibrium. Participants not materially involved in a transaction may yet experience its impacts on their happiness.
-
-Even if a system has an equilibrium, we can’t necessarily determine that it does … because of externalities. E.g. Collatz problem: pick a number. If even, divide by 2. If odd, multiply by 3 and add 1. Stop if you ever reach 1. Does this process ever stop?
-
-Difference between Lyapunov processes (reaches an equilibrium that need not be unique or efficient) and Markov processes (stochastic equilibrium that doesn’t depend on initial conditions).
-
-
-
-# Models of coordination & culture
+## Coordination & culture
 
 Culture: http://www.worldvaluessurvey.org/WVSContents.jsp, http://geert-hofstede.com/national-culture.html  
 differences between groups and
@@ -437,7 +348,7 @@ interesting in some way, i.e., appearing suboptimal or confusing to outsiders.
 Culture is an n-person coordination game. In a coordination game, players receive payoffs when they choose the same action. An n-person coordination game can be modeled with a Lyapunov function, F(x)= # of coordinations, k=2. BUT, the process doesn’t have to stop with everyone being the same; you can get blocks of different behaviors. 
 Note that suboptimal equilibria are possible with coordination games
 
-## Axelrod’s culture model
+### Axelrod’s culture model
 
 http://ccl.northwestern.edu/netlogo/models/community/Dissemination%20of%20Culture 
 Features: {1, 2, ..., N}
@@ -448,7 +359,7 @@ choose whether to interact based on some similarity threshold
 if they’re similar enough to interact, then they randomly select a feature and change their behavior to match their neighbor’s trait (if they don’t match already)
 → emergence of distinct cultures with thick boundaries
 
-## Coordination & consistency model
+### Coordination & consistency model
 
 people don’t want to keep infinitely adjusting to people around them; they also have some consistency of worldview. The rule here is, adjust your own traits so they are more numerically similar with each other. → process takes a long time to converge, and small errors at the individual level lead to large population-level divergences. In the transition map below, if we add an error term that allows us to exit the red-red-red-red state of total consistency and coordination, then we suddenly have a Markov process and can represent the process with a transition matrix:
 
@@ -467,110 +378,7 @@ Desire for coordination
 Desire for consistency
 External change in what’s optimal, but system remains stuck at equilibrium
 
-
-# Path dependence
-
-What is path dependence?
-Path dependence=the sequence of previous outcomes matter
-Early path dependence, or full path dependence
-Recent path dependence
-Path dependence of outcomes
-Path dependence of equilibria
-Phat dependence=the set of events in the path matter, but not their order
-State/set dependence=the paths can be partitioned into a finite number of states which contain all relevant information; the outcome in any period depends only upon the state of the process at that time; a kind of Markov process
-
-What isn’t path dependence?
-Strict Markov processes, where history doesn’t matter; path-dependent systems violate the Markov assumption of fixed transition probabilities
-Externalities: can play a role in creating path dependence, especially negative externalities
-Increasing returns/virtuous cycle/self reinforcement/positive feedbacks: often co-occurs with path dependence, but doesn’t need to; increasing returns are a kind of externality
-Chaos, where systems exhibit extreme sensitivity to initial conditions; deterministic
-Tipping points: similar to the case of chaos, where one moment or point holds undue influence over the fate of the system; it’s a difference of degree, an issue of abrupt versus gradual change
-
-Urn models illustrate types of in/dependence: different colored balls in an urn, picking some out
-Bernoulli process (independent): Select ball & return after picking.
-Polya process (phat dependent; outcome and equilibrium dependent): Select, return along with another ball of the same color. Results: any probability of picking a red ball is an equally likely equilibrium, and a given set of outcomes is equally likely, no matter what order they occur in.
-Balancing process (phat dependent; outcome dependent, equilibrium independent): Opposite of Polya process, so add the opposite color ball. Result: converges to equal percentages.
-Sway process (path dependent): In period t, add a ball of the same color as the selected ball and add (2t-s - 2t-s-1) balls of the color chosen in each period s<t. Result: the past takes on more weight over time.
-
-
-
-
-# Networks
-
-Internet has made networks more visible and measurable; popular and scientific interest has increased. Networks have been used to examine segregation; information flow within organizations (e.g. email traffic patterns); link patterns among blogs to demonstrate political polarization; intellectual traditions, citation patterns, etc.
-https://flowingdata.com/category/visualization/network-visualization/
-https://gephi.org/
-http://www.kdnuggets.com/2015/06/top-30-social-network-analysis-visualization-tools.html
-http://kateto.net/network-visualization 
-http://www.ladamic.com/netlearn/ 
-http://www.cs.cornell.edu/home/kleinber/networks-book/ 
-
-Logic of network formation:
-Random: N nodes with P probability that they’re attached; interesting to investigate, but not realistic
-Contextual tipping point: for large N, P > 1/(N-1) the network almost always becomes connected
-Small worlds: Some percentage of local friends and some percentage of random friends 
-Random-clique: A variant where local friends are extremely interconnected
-Preferential attachment: Node arrives; P(connects to an existing node) is proportional to the existing node’s degree (i.e., more likely to attached to currently well-connected nodes)
-
-Structure & measurement of networks:
-Nodes/points & edges/lines
-A node might be a state and an edge might be a shared border
-Directed edges vs undirected edges
-K-neighbor: a node that is k edges distant from another node by the most efficient path
-
-Degree: #edges connected to a node; avg. degree across all nodes, calculated as 2*#edges/#nodes
-thm: your friends have more friends than you do
-degree has implications for density of connections; social capital; speed of diffusion
-Path length: min(#edges) to get from A→B; avg path length between all pairs of nodes
-path length has implications for choosing efficient routes, measuring social distance, calculating likelihood that information will spread
-Connectedness vs. disconnectedness
-has implications for whether Markov convergence thm applies; Internet/power failure
-Clustering coefficient: percentage of triples of nodes that have edges between all three nodes
-has implications for redundancy/robustness of network; social capital; innovation adoption
-
-Function of networks: is emergent
-Explaining 6 degrees of connection through random-clique model
-Granovetter’s “Strength of weak ties” paper
-Internet is extremely robust against random failure, but not targeted failure (of highly-connected nodes) because it’s a preferentially-attached network
-Helps identify who to vaccinate (more targeted than SIS model)
-
-
-
-# Randomness
-
-Randomness is a quality of a variable. We want to know two things: What is the source of the randomness, i.e. the error term? What is the distribution of the randomness?
-
-Skill vs luck model: http://success-equation.com/
-Outcome = a*luck + (1-a)*skill, 0<a<1
-If luck figures heavily, we expect to see regression to the mean
-The “paradox of skill”: when the very best compete against each other, randomness matters a lot
-
-Random walk is a process where each time step is random. A random walk has these properties:
-For n an even number, n flips has an expected value of 0
-For any k,  a random walk will cross |k| an infinite number of times; i.e., no trend will emerge
-For any k, a random walk will exhibit a streak/cluster of k outcomes in a row an infinite number of times
-Binary random walk: keep a running total when flipping a coin where H=1, T=-1
-Normal random walk → Efficient Markets Hypothesis: stock prices are random walks because markets are efficient; people anticipate trends and act in ways that cancel them out. OR, p(tomorrow)=f(p(today), news_tommorow) and news is unpredictable.
-http://books.wwnorton.com/books/978-0-393-24611-7/ 
-But, there is too much fluctuation in stock prices, and there are consistent winners, e.g. Warren Buffett. 
-Finite memory random walk: VT=XT + XT-1 + … XT-n 
-
-WEEK 8    COLONEL BLOTTO
-CB is about strategic mismatch and allocation of resources, e.g. as of opposing troops forming battle fronts. One of two models, the other being Prisoner’s Dilemma, that brought game theory into policy settings.
-
-Basic CB model: 2 players with T troops trying to form N fronts, where T >> N. Action = allocation of troops; payoffs =  # fronts won, determined by simple majority (although different fronts can have different payoffs associated with them). Reflected by a matrix of players*fronts. CB is a zero-sum game → Very competitive; “you have to work very very hard to win”. The behavior of this system is equilibrium with a random element. That is, there is an area within the space of possible choices where each player has an expected value of 0, and the winner is determined by luck. → Best strategy: randomize your troop allocation; be confusing.
-Any strategy can be defeated
-Don’t need all your troops to win
-If Blotto is played sequentially, the second player has enormous advantage
-
-Model where one side has an advantage in the form of more resources: As the number of fronts increases, so does the amount of additional resources needed in order to maintain an advantage. Or, the advantage of having k more troops decreases as N increases. If you’re the weaker player, what you want to do is increase the number of fronts/dimensions of competition.
-
-Model where many players compete: Can have nontransitive victories → Lots of cycles, not equilibrium
-
-Applications of this model: US Electoral College, terrorism, trials, hiring
-
-
-# Prisoner's dilemma, cooperation, collective action & the commons
+## Prisoner's dilemma, cooperation, collective action & the commons
 
 In Prisoner’s Dilemma, the incentive to defect must be less, on average, than the payoffs available for cooperation. Here are the constraints: T>R, 2T>F, F>T.
 
@@ -616,7 +424,29 @@ Clear ownership
 Rotation schemes
 
 
-# Mechanism design
+
+
+
+
+# Models for ... 
+
+## Decision-making 
+
+We talk about decision-making models for normative reasons (to help us make better decisions) and positive ones (to predict or analyze others’ decisions)
+
+Multi-criterion models (many features bundled together): 
+Can plot options in multidimensional space and calculate least distance to ideal point; this is a spatial model. A preference is spatial if people prefer things “just right” rather than infinitely large or small.
+Use a matrix and compare column by column; compute score or weighted score, e.g. MCRI decision
+
+Probabilistic models (uncertainty in the world):
+Probability basics:
+Classical probability: easy to calculate, e.g. for a dice
+Frequency: can estimate probability by counting lots of data; makes assumption of stationarity
+Subjective probabilities: dangerous, subject to bias, make easily violate axioms of probability
+Decision trees: write down payoffs and probabilities; also can infer what other people think p is based on their decisions, or calculate payoffs knowing probabilities
+Value of information: calculate value without and with information; then take the difference
+   
+## Mechanism design
 
 Formalizing institutions; designing the rules of the game by defining permitted actions and payoffs.
 
@@ -633,6 +463,177 @@ In sealed bids, people tend to underbid; in fact, the optimal bid is WTP/2 .This
 Mechanisms in public goods projects: 
 Clarke-Groves-Vickery Pivot mechanism: each person states what the project is worth to them. If the sum of these claims is higher than the cost of hte project, then the project goes ahead with each paying only the minimum amount needed to make the project viable: e.g. person_1 pays max{cost - V2 - V3 … - Vn, 0}. → everyone has an incentive to reveal their true value, rather than over- or under-bidding.
 All mechanisms for these sorts of problems have trade-offs.
+
+## Prediction
+
+Prediction at the individual level → “[W]e tend to pay undue attention to single model thinkers. We shouldn’t. We should heed the advice of those who think more subtly. Better still, we should learn many models ourselves.”
+We’ve looked at three types of predictive models: categorical, linear, and Markov
+
+Prediction by groups → Wisdom of crowds = f(individual’s accuracy, diversity of ideas)
+Crowd’s error = Avg error - Variation
+
+
+
+
+   
+# Models using ...
+
+## Categorical & linear models
+
+Categorical: data can be sorted into different ‘boxes’
+Calculation of total variation: subtract mean from each data point, square and sum the results
+Proper categories greatly reduce total variation
+R2 = %variation explained = (total_variation_pre-categories - total_variation_with_categories)/tv_pc
+
+Linear models, not the same thing as a line; y=f(x), a causal relationships; line of best fit; reading regression output
+http://www.niaoren.info/pdf/Beauty/9.pdf & other studies, experts never did better at prediction than simple linear models
+
+Strategies for modeling nonlinear data
+Approximate nonlinear model with a linear function
+Break nonlinear data into parts, e.g. quartiles, each with their own line
+Introduce nonlinear terms as linear terms: y = mz+b where z=sqrt(x)
+
+The Big Coefficient approach: making policy decisions based off which coefficient in a multivariate regression is largest, as in evidence based medicine/philanthropy/education/management. The process: build a model, gather data, identify important variables, design intervention.
+vs Big Data: gather data, find patterns, identify important variables, design intervention
+vs accounting for feedbacks (people’s behavioral adaptations in response to interventions)
+vs The New Reality: trying to create a better world, which necessarily means departing from data
+e.g. Big Coefficient thinking = tax cigarettes, New Reality thinking = universal health care
+
+
+## Markov processes
+
+A particularly fertile model that captures dynamic processes between a finite and fixed set of states. It must be possible to get from any one state to any other and the probabilities of moving between states (transition probabilities) must remain fixed over time. If those assumptions hold, then the process will have a unique equilibrium (i.e., initial state doesn’t matter; history doesn’t matter; interventions/perturbations don’t matter).
+
+If A is the transition matrix and x is the state vector, then the equilibrium is: Ax=x. 
+Equilibrium=nothing changes vs. statistical equilibrium: individual elements move, but no net change.
+http://nicolewhite.github.io/2014/06/10/steady-state-transition-matrix.html    
+http://www2.math.uu.se/~takis/L/McRw/mcrw.pdf 
+
+Exaption of Markov models: Useful when there’s a sequence of events with known historical probabilities
+Voter turnout, school attendance, student attentiveness, regime transitions
+Identification of authors: make a transition matrix of key phrases; how often is the word “for” followed by “the record”, “example”, “the sake of”?
+
+
+## Lyapunov functions
+
+If we can represent a system/model with a Lyapunov function, then we know it goes to equilibrium and we also know how quickly it does that. A system with equilibrium behavior can lack Lyapunov representation.
+
+Conditions:
+There is an absolute minimum/maximum
+Movement is only possible in one direction: down/up. In math: if xt+1 ≠ xt, there is some k >0 such that F(xt+1) > F(xt) +/- k, that is, with each timestep the system moves by at least k amount. [Zeno’s paradox; need to define a fixed step distance otherwise we will never arrive at the maximum]
+Therefore, eventually, xt+1=xt.
+\#periods_to_equilibrium ≤ (max_value - initial_value)/step_size
+Does the process necessarily reach a max/min? No, it can get stuck. For example, in the case of preferences, it could be that a pairwise trading scheme leads to a suboptimal allocation while a more sophisticated trading scheme would attain maximum happiness.
+
+The hard part is constructing a Lyapunov function to represent the system.
+Self-organized avoidance of gridlock in cities: people have a list of places they need to go in the week, and they determine their route randomly. If they encounter a crowd at their desired location on a particular day, then they modify their route. Say the F(x) = # of people you encounter in your weekly route. This has a minimum value (0), and if people move according to their rule, then #encounters falls by at least k=2.
+Exchange economies & externalities: each person brings items to a market, and trades only if that trade increases their happiness by k amount. F(x) = total happiness of all participants in the market. Because of externalities, though, we can’t say that this system will attain equilibrium. Participants not materially involved in a transaction may yet experience its impacts on their happiness.
+
+Even if a system has an equilibrium, we can’t necessarily determine that it does … because of externalities. E.g. Collatz problem: pick a number. If even, divide by 2. If odd, multiply by 3 and add 1. Stop if you ever reach 1. Does this process ever stop?
+
+Difference between Lyapunov processes (reaches an equilibrium that need not be unique or efficient) and Markov processes (stochastic equilibrium that doesn’t depend on initial conditions).
+
+## Path dependence
+
+What is path dependence?
+Path dependence=the sequence of previous outcomes matter
+Early path dependence, or full path dependence
+Recent path dependence
+Path dependence of outcomes
+Path dependence of equilibria
+Phat dependence=the set of events in the path matter, but not their order
+State/set dependence=the paths can be partitioned into a finite number of states which contain all relevant information; the outcome in any period depends only upon the state of the process at that time; a kind of Markov process
+
+What isn’t path dependence?
+Strict Markov processes, where history doesn’t matter; path-dependent systems violate the Markov assumption of fixed transition probabilities
+Externalities: can play a role in creating path dependence, especially negative externalities
+Increasing returns/virtuous cycle/self reinforcement/positive feedbacks: often co-occurs with path dependence, but doesn’t need to; increasing returns are a kind of externality
+Chaos, where systems exhibit extreme sensitivity to initial conditions; deterministic
+Tipping points: similar to the case of chaos, where one moment or point holds undue influence over the fate of the system; it’s a difference of degree, an issue of abrupt versus gradual change
+
+Urn models illustrate types of in/dependence: different colored balls in an urn, picking some out
+Bernoulli process (independent): Select ball & return after picking.
+Polya process (phat dependent; outcome and equilibrium dependent): Select, return along with another ball of the same color. Results: any probability of picking a red ball is an equally likely equilibrium, and a given set of outcomes is equally likely, no matter what order they occur in.
+Balancing process (phat dependent; outcome dependent, equilibrium independent): Opposite of Polya process, so add the opposite color ball. Result: converges to equal percentages.
+Sway process (path dependent): In period t, add a ball of the same color as the selected ball and add (2t-s - 2t-s-1) balls of the color chosen in each period s<t. Result: the past takes on more weight over time.
+
+
+## Networks
+
+Internet has made networks more visible and measurable; popular and scientific interest has increased. Networks have been used to examine segregation; information flow within organizations (e.g. email traffic patterns); link patterns among blogs to demonstrate political polarization; intellectual traditions, citation patterns, etc.
+https://flowingdata.com/category/visualization/network-visualization/
+https://gephi.org/
+http://www.kdnuggets.com/2015/06/top-30-social-network-analysis-visualization-tools.html
+http://kateto.net/network-visualization 
+http://www.ladamic.com/netlearn/ 
+http://www.cs.cornell.edu/home/kleinber/networks-book/ 
+
+Logic of network formation:
+Random: N nodes with P probability that they’re attached; interesting to investigate, but not realistic
+Contextual tipping point: for large N, P > 1/(N-1) the network almost always becomes connected
+Small worlds: Some percentage of local friends and some percentage of random friends 
+Random-clique: A variant where local friends are extremely interconnected
+Preferential attachment: Node arrives; P(connects to an existing node) is proportional to the existing node’s degree (i.e., more likely to attached to currently well-connected nodes)
+
+Structure & measurement of networks:
+Nodes/points & edges/lines
+A node might be a state and an edge might be a shared border
+Directed edges vs undirected edges
+K-neighbor: a node that is k edges distant from another node by the most efficient path
+
+Degree: #edges connected to a node; avg. degree across all nodes, calculated as 2*#edges/#nodes
+thm: your friends have more friends than you do
+degree has implications for density of connections; social capital; speed of diffusion
+Path length: min(#edges) to get from A→B; avg path length between all pairs of nodes
+path length has implications for choosing efficient routes, measuring social distance, calculating likelihood that information will spread
+Connectedness vs. disconnectedness
+has implications for whether Markov convergence thm applies; Internet/power failure
+Clustering coefficient: percentage of triples of nodes that have edges between all three nodes
+has implications for redundancy/robustness of network; social capital; innovation adoption
+
+Function of networks: is emergent
+Explaining 6 degrees of connection through random-clique model
+Granovetter’s “Strength of weak ties” paper
+Internet is extremely robust against random failure, but not targeted failure (of highly-connected nodes) because it’s a preferentially-attached network
+Helps identify who to vaccinate (more targeted than SIS model)
+
+
+## Randomness
+
+Randomness is a quality of a variable. We want to know two things: What is the source of the randomness, i.e. the error term? What is the distribution of the randomness?
+
+Skill vs luck model: http://success-equation.com/
+Outcome = a*luck + (1-a)*skill, 0<a<1
+If luck figures heavily, we expect to see regression to the mean
+The “paradox of skill”: when the very best compete against each other, randomness matters a lot
+
+Random walk is a process where each time step is random. A random walk has these properties:
+For n an even number, n flips has an expected value of 0
+For any k,  a random walk will cross |k| an infinite number of times; i.e., no trend will emerge
+For any k, a random walk will exhibit a streak/cluster of k outcomes in a row an infinite number of times
+Binary random walk: keep a running total when flipping a coin where H=1, T=-1
+Normal random walk → Efficient Markets Hypothesis: stock prices are random walks because markets are efficient; people anticipate trends and act in ways that cancel them out. OR, p(tomorrow)=f(p(today), news_tommorow) and news is unpredictable.
+http://books.wwnorton.com/books/978-0-393-24611-7/ 
+But, there is too much fluctuation in stock prices, and there are consistent winners, e.g. Warren Buffett. 
+Finite memory random walk: VT=XT + XT-1 + … XT-n 
+
+## Game theory
+
+### Colonel Blotto
+
+CB is about strategic mismatch and allocation of resources, e.g. as of opposing troops forming battle fronts. One of two models, the other being Prisoner’s Dilemma, that brought game theory into policy settings.
+
+Basic CB model: 2 players with T troops trying to form N fronts, where T >> N. Action = allocation of troops; payoffs =  # fronts won, determined by simple majority (although different fronts can have different payoffs associated with them). Reflected by a matrix of players*fronts. CB is a zero-sum game → Very competitive; “you have to work very very hard to win”. The behavior of this system is equilibrium with a random element. That is, there is an area within the space of possible choices where each player has an expected value of 0, and the winner is determined by luck. → Best strategy: randomize your troop allocation; be confusing.
+Any strategy can be defeated
+Don’t need all your troops to win
+If Blotto is played sequentially, the second player has enormous advantage
+
+Model where one side has an advantage in the form of more resources: As the number of fronts increases, so does the amount of additional resources needed in order to maintain an advantage. Or, the advantage of having k more troops decreases as N increases. If you’re the weaker player, what you want to do is increase the number of fronts/dimensions of competition.
+
+Model where many players compete: Can have nontransitive victories → Lots of cycles, not equilibrium
+
+Applications of this model: US Electoral College, terrorism, trials, hiring
+
 
 
 
@@ -653,12 +654,3 @@ The tricky part here is calculating weights, since payoffs can vary with actions
 
 Fisher’s fundamental theorem: Higher variance increases rate of evolutionary adaptation. Can examine this by taking the average of each generation of low-variation and high-variation populations. Seems to run counter to Six Sigma! But SS is for a fixed problemscape, while Fisher’s is for complex systems.
 
-
-
-# Prediction
-
-Prediction at the individual level → “[W]e tend to pay undue attention to single model thinkers. We shouldn’t. We should heed the advice of those who think more subtly. Better still, we should learn many models ourselves.”
-We’ve looked at three types of predictive models: categorical, linear, and Markov
-
-Prediction by groups → Wisdom of crowds = f(individual’s accuracy, diversity of ideas)
-Crowd’s error = Avg error - Variation

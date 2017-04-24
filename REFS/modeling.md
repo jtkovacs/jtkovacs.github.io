@@ -33,8 +33,7 @@ Per Scott Page, modeling helps us:
     - **Consider counterfactuals**
     - **Identify and rank levers:** where do we intervene to have an impact?
     - **Design experiments and institutions**
-- **Communicate what we know very simply.**
-    - “[M]odels can be the focal points of teams involving experts from many disciplines.”
+- **Communicate what we know very simply.** “[M]odels can be the focal points of teams involving experts from many disciplines.”
 - **Discover new things:** "Models are fertile", i.e., they have multiple and unexpected uses. “Models can surprise us, make us curious, and lead to new questions. This is what I hate about exams. They only show that you can answer somebody else's question, when the most important thing is: Can you ask a new question?”
 
 ## Model typologies 

@@ -87,10 +87,9 @@ BPR is a radical upending of current business processes and systems, so spends l
 
 - Reorienting organizational culture towards user needs
 - Reorganizing traditional functional departments into cross-functional teams
-- Redesigning and improving core processes, perhaps using IT
-    - Reducing costs
-    - Reducing waste and cycle times
-    - Increasing quality
+- Redesigning and improving core processes, perhaps using IT to:
+    - Reduce costs, waste, and cycle times
+    - Increase quality
 
 ### Outcome analysis
 

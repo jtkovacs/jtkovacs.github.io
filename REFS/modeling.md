@@ -64,7 +64,7 @@ Per Stiern (1999), Martin notation adds a few more details to crows-foot notatio
 
 ### UML notation
 
-<img src="../ILLOS/UML-relationships.png" width="350px">
+<img src="../ILLOS/UML-relationships.png" width="260px">
 
 
 

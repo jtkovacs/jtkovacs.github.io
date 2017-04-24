@@ -1,8 +1,14 @@
-# Modeling systems & processes
+_The following notes are largely based on Steirn (1999) and Scott Page's Coursera class on [Model Thinking](https://www.coursera.org/course/modelthinking)._
 
-_The following notes are largely based on Steirn (1999) and Smartdraw.com (n.d.)._
+# Why model?
 
-The representation of a system needs contextual metadata clarifying the date and/or version it describes. 
+Models of a process, system, or interface can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). 
+
+
+# Model typologies 
+
+Steirn (1999) organizes models 
+
 
 Types of diagrams, per Smartdraw.com (n.d.): 
 
@@ -18,6 +24,9 @@ Types of diagrams, per Smartdraw.com (n.d.):
     - Circuit diagram
     - Floorplan
 
+The representation of a system needs to include contextual metadata clarifying the date and/or version it describes. 
+
+# Models
 
 ## Flow charts
 
@@ -110,8 +119,11 @@ Ambler, S. (n.d.). UML 2 activity diagrams: An Agile introduction. Retrieved fro
 
 Dybka, P. (2014). ERD notations in data modeling. Vertabelo Academy. Retrieved from [http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations](http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations)
 
+Meadows, D. H., & Wright, D. (2008). _Thinking in systems: A primer._ White River Junction, Vt.: Chelsea Green Pub.
+
 Nassi, I., & Shneiderman, B. (1973). Flowchart techniques for structured programming. _SIGPLAN Not., 8_(8), 12–26. Retrieved from [https://www.cs.umd.edu/hcil/members/bshneiderman/nsd/1973.pdf](https://www.cs.umd.edu/hcil/members/bshneiderman/nsd/1973.pdf)
 
 Smartdraw.com. (n.d.). Diagrams. Retrieved from [https://www.smartdraw.com/diagrams/?exp=ste](https://www.smartdraw.com/diagrams/?exp=ste)
 
 Stiern, K. (1999). Comparison of diagramming methods. Retrieved from [http://www.umsl.edu/~sauterv/analysis/dfd/DiagrammingMethods.html](http://www.umsl.edu/~sauterv/analysis/dfd/DiagrammingMethods.html)
+

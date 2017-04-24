@@ -20,20 +20,20 @@ Per Scott Page, modeling helps us:
     - **Work through all the logical possibilities** for parts; relationships between parts; logic.
     - **Identify the general class of outcome:** equilibrium, cycle, random, complex.
     - **Identify logical bounds:** "Models give us the conditions under which we can adjudicate" between ideas, e.g. contradictory folk proverbs. _When_ are "two heads better than one"? *When* do "two cooks spoil the broth"?
-- **Communicate what we know very simply.**
 - **Understand and use data,** turning it into knowledge.
-    - See patterns and understand where they come from
-    - Make predictions (point or range/bounds)
-    - Retrodiction: predict the past, when data is absent or to test models for prediction
-    - See if something is missing, e.g. orbits makes us think that there’s a planet beyond our sight
-    - Inform data collection
-    - Estimate unobservable parameters & calibrate based on data
+    - **See patterns** and understand where they come from
+    - **Make predictions** (point or range/bounds)
+    - **Make retrodictions** (predict the past, when data is absent or when testing predictive models)
+    - **See if something is missing,** e.g. orbits makes us think that there’s a planet beyond our sight
+    - **Strategize data collection**
+    - **Estimate unobservable parameters** & calibrate based on data
 - To better decide, strategize, and design---to act!
     - Real-time decision making (e.g., the Monty Hall door selection problem)
     - Comparative statics: move from one equilibrium to another
     - Counterfactuals
     - Identify and rank levers: where do we intervene to have an impact?
     - Experimental & institutional design
+- **Communicate what we know very simply.**
 - ‘Models are fertile,’ i.e., they have multiple and unexpected uses. 
 
 Quotes from readings:

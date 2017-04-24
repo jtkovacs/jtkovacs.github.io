@@ -4,6 +4,19 @@ _The following notes are largely based on Steirn (1999) and Smartdraw.com (n.d.)
 
 The representation of a system needs contextual metadata clarifying the date and/or version it describes. 
 
+Types of diagrams, per Smartdraw.com (n.d.): 
+
+- **Graphs** represent entities and relationships
+    - Venn
+    - Flowchart
+    - Network diagram
+    - Genograms
+- **Charts** represent data
+    - Histogram
+    - Line graph
+- **Schematics** represent the elements and architecture of a system
+    - Circuit diagram
+    - Floorplan
 
 
 ## Flow charts

@@ -11,23 +11,30 @@ There's an identification problem with segregation: do we deliberately seek the 
     - o ≤ DI ≤ 1
     - b = #units-in-block; B = #total-units-across-blocks b/B = %units-in-block; and y, Y, y/Y → |b/B - y/Y|/2
     D- I for a region of blocks = sum of (#blocks*block’s-DI)
-- **Isolation index**
+- **[Isolation index](https://en.wikipedia.org/wiki/Index_of_dissimilarity)**
 
 
-Thomas Schelling’s spatial segregation model: agent-based model where people choose whether to move or stay depending on the composition of their immediate neighborhood. The deep insight is that a similarity threshold of 30% has an equilibrium (everyone happy) with segregation of 70%; and 50% tolerance leads to nearly 100% segregation, including borders made up of empty cells. Perhaps counterintuitively, when intolerance is set very high, the system won’t find an equilibrium since everyone is perpetually moving. 
+## Thomas Schelling’s spatial segregation model
+
+Agent-based model where people choose whether to move or stay depending on the composition of their immediate neighborhood. The deep insight is that a similarity threshold of 30% has an equilibrium (everyone happy) with segregation of 70%; and 50% tolerance leads to nearly 100% segregation, including borders made up of empty cells. Perhaps counterintuitively, when intolerance is set very high, the system won’t find an equilibrium since everyone is perpetually moving. 
 Micromotives ≠ macrobehavior
 I would want to augment this model, giving cell-classes their own mobility parameter.
 Exodus tip: agent leaves because someone else exits the neighborhood
 Genesis tip: agent leaves because someone else enters the neighborhood
 
 
+## Granovetter’s model of peer effects 
 
-Granovetter’s model of peer effects re: people’s decision to join in a social movement
+In re: people’s decision to join in a social movement
+
 N individuals; the jth individual has threshold Tj, and will join if T others do
 ‘tail wagging the dog’: a population needs someone with Tj=0 to get things going
 collective action more likely to happen if: low thresholds, variation in thresholds
 calculate avg. T for a population; avg. discontent doesn’t matter
-Standing ovation model: 
+
+
+## Standing ovation model
+
 builds off Granovetter model; adds information to peer effects
 T, threshold to stand, and T=f(Q) is a function of quality
 S, signal from peers, and S=Q+E is a function of quality and error
@@ -39,7 +46,7 @@ If Q<T, more stand
 Big groups more likely to stand together (local X%)
 Celebrities (people in front row, everyone sees them, they don’t see anyone) → wield large influence
 
-WEEK 2    AGGREGATION    
+# Models of aggregation
 
 Aggregation is tricky; “more is different” (can’t just look at individual parts). So, we model to get the logic correct.
 e.g. water is made of molecules, where wetness comes from the hydrogen bond; cognition comes from connected neurons
@@ -72,7 +79,7 @@ http://stattrek.com/sampling/sampling-distribution.aspx
 http://stattrek.com/probability-distributions/binomial.aspx
 https://en.wikipedia.org/wiki/Six_Sigma 
 
-WEEK 2    DECISION MODELS
+# Decision-making models
 
 We talk about decision-making models for normative reasons (to help us make better decisions) and positive ones (to predict or analyze others’ decisions)
 

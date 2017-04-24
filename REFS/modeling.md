@@ -21,19 +21,30 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 <img src="../ILLOS/N-S-diagram.png" width="250px">
 
+## Entity-relationship diagrams
+
+### Bachmann/crow-foot notation
+
+This is a notation that describes the cardinality and optionality/modality/participation of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols
+
+- **Open circle** for optional participation (zero to many)
+- **Bar** for mandatory participation (one to many)
+- **Bar** for one
+- **Crow-foot** for many
+
+<img src="../ILLOS/crowsfoot.gif" width="250px">
+
+
+### Chen notation
+
+### Martin notation
+
 ## Data flow diagram
 
 ### Gane/Sarson method
 
 ### Yourdon/Coad method
 
-## Entity-relationship diagrams
-
-### Bachmann/crow-foot notation
-
-### Chen notation
-
-### Martin notation
 
 ## Object-oriented modeling
 

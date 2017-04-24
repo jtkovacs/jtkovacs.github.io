@@ -1,13 +1,13 @@
 <table class="TOC"><tr><td>- [Modeling systems & processes](#modeling-systems-&-processes)
 	- [Flow charts](#flow-charts)
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
-	- [Data flow diagram](#data-flow-diagram)
-		- [Gane/Sarson method](#gane/sarson-method)
-		- [Yourdon/Coad method](#yourdon/coad-method)
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
 		- [Bachmann/crow-foot notation](#bachmann/crow-foot-notation)
 		- [Chen notation](#chen-notation)
 		- [Martin notation](#martin-notation)
+	- [Data flow diagram](#data-flow-diagram)
+		- [Gane/Sarson method](#gane/sarson-method)
+		- [Yourdon/Coad method](#yourdon/coad-method)
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Rumbaugh/OMT method](#rumbaugh/omt-method)
 		- [Shlaer/Mellor method](#shlaer/mellor-method)
@@ -42,19 +42,30 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 <img src="../ILLOS/N-S-diagram.png" width="250px">
 
+## Entity-relationship diagrams
+
+### Bachmann/crow-foot notation
+
+This is a notation that describes the cardinality and optionality/modality/participation of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols
+
+- **Open circle** for optional participation (zero to many)
+- **Bar** for mandatory participation (one to many)
+- **Bar** for one
+- **Crow-foot** for many
+
+<img src="../ILLOS/crowsfoot.gif" width="250px">
+
+
+### Chen notation
+
+### Martin notation
+
 ## Data flow diagram
 
 ### Gane/Sarson method
 
 ### Yourdon/Coad method
 
-## Entity-relationship diagrams
-
-### Bachmann/crow-foot notation
-
-### Chen notation
-
-### Martin notation
 
 ## Object-oriented modeling
 

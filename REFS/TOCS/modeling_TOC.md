@@ -5,9 +5,6 @@
 		- [Bachmann/crow's foot notation](#bachmann/crow's-foot-notation)
 	- [Data flow diagrams](#data-flow-diagrams)
 	- [Object-oriented modeling](#object-oriented-modeling)
-		- [Rumbaugh/OMT method](#rumbaugh/omt-method)
-		- [Shlaer/Mellor method](#shlaer/mellor-method)
-		- [Booch notation](#booch-notation)
 		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
 			- [Activity diagram](#activity-diagram)
 	- [Value stream mapping](#value-stream-mapping)
@@ -66,6 +63,7 @@ This is a notation that describes the optionality/modality/participation and car
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
 
+
 ## Data flow diagrams
 
 The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depict the flow of data through a system using the following elements:
@@ -77,13 +75,10 @@ The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depi
 
 ![](../ILLOS/DFD.jpg)
 
+
 ## Object-oriented modeling
 
-### Rumbaugh/OMT method
-
-### Shlaer/Mellor method
-
-### Booch notation
+OO models show **inheritance** as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML.
 
 ### Unified Modeling Language (UML)
 

@@ -19,7 +19,7 @@
 </td></tr></table>
 # Modeling systems & processes
 
-_The following notes are largely based on Steirn (1999)._
+_The following notes are largely based on Steirn (1999) and Smartdraw.com (n.d.)._
 
 The representation of a system needs contextual metadata clarifying the date and/or version it describes. 
 

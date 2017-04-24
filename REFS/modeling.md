@@ -8,17 +8,18 @@ _Note that there's a lot of overlap between depicting a system and [implementing
 
 # Overview of modeling
 
-Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). Because a model is a representation of a system, the model needs to include contextual metadata clarifying the date and/or version of the system it describes.
+Because a model is a representation of a system, the model needs to include contextual metadata clarifying the date and/or version of the system it describes.
+
 
 ## Why model?
 
 Per Scott Page, modeling helps us:
 
-- To be an intelligent citizen of the world---models are ‘everywhere’, so knowing them is mandatory in order to participate. ‘The new lingua franca’: nonprofit, business, politics, academia. Comparable to (or a supplanter of) the Great Books project, the point of which was to expose people to ideas (see: the syntopicon); now an educated person should have an arsenal of models.
-- To be a clearer thinker---models are ‘wrong, but useful;’ people make better decisions using a formal model versus either a single model, or multiple casual models. ‘Models are fertile,’ i.e., they have multiple and unexpected uses. 
-    - Work through all the logical possibilities: Parts → Relationships between parts → Logic.
+- **Be an intelligent citizen of the world.** Models are everywhere, so full participation requires knowing them. They are "the new lingua franca" in nonprofits, businesses, politics, academia. 
+- **Be a clearer thinker.** Models are "wrong, but useful"; people make better decisions using a formal model versus either a single model, or multiple casual models. \
+    - Work through all the logical possibilities for part; relationships between parts; logic.
     - Identify the general class of outcome: equilibrium, cycle, random, complex.
-    - Identify logical boundaries: ‘Models give us the conditions under which we can adjudicate’ between ideas, e.g. contradictory folk proverbs. When are two heads better than one? When do two cooks spoil the broth?
+    - Identify logical boundaries. "Models give us the conditions under which we can adjudicate" between ideas, e.g. contradictory folk proverbs. _When_ are "two heads better than one"? *When* do "two cooks spoil the broth"?
     - Communicate what we know very simply.
 - To understand and use data---of which there is a shit ton: either a firehose or a hairball of data. But models might help us turn data into knowledge. Models are used to:
     - See patterns and understand where they come from
@@ -26,13 +27,14 @@ Per Scott Page, modeling helps us:
     - Retrodiction: predict the past, when data is absent or to test models for prediction
     - See if something is missing, e.g. orbits makes us think that there’s a planet beyond our sight
     - Inform data collection
-Estimate unobservable parameters & calibrate based on data
+    - Estimate unobservable parameters & calibrate based on data
 - To better decide, strategize, and design---to act!
     - Real-time decision making (e.g., the Monty Hall door selection problem)
     - Comparative statics: move from one equilibrium to another
     - Counterfactuals
     - Identify and rank levers: where do we intervene to have an impact?
     - Experimental & institutional design
+- ‘Models are fertile,’ i.e., they have multiple and unexpected uses. 
 
 Quotes from readings:
 organized data = information; information in context = knowledge; aptly-applied knowledge = wisdom; “How though do we acquire general wisdom? Advocates of liberal arts education argue for broad exposure to great works of literature and to the basic ideas from multiple disciplines. I agree in principle, but I believe the great books approach to be incomplete … the information pours out of the fire hose producing ever more complexity. How do we cope? What tools do we need? We need models. Models provide formal frameworks within which to embed all of this data and information.”
@@ -47,8 +49,9 @@ organized data = information; information in context = knowledge; aptly-applied 
 
 ## Model typologies 
 
-Steirn (1999) organizes models as:
+Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). 
 
+Steirn (1999) organizes models as:
 
 Per Dennis et al. (2012):
 

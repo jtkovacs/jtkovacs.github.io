@@ -52,7 +52,7 @@ Per Stiern (1999), Martin notation adds a few more details to crows-foot notatio
 
 ### IDEF1X
 
-<img src="../ILLOS/idef1x.png" width="300px">
+<img src="../ILLOS/idef1x.png" width="250px">
 
 ### Arrow notation
 

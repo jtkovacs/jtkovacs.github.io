@@ -15,9 +15,13 @@
 	- [Contagion models ](#contagion-models-)
 		- [Diffusion](#diffusion)
 		- [SIS ](#sis-)
-	- [Classifying tipping points:](#classifying-tipping-points:)
+	- [Classifying tipping points](#classifying-tipping-points)
 	- [Measuring tipping points](#measuring-tipping-points)
 - [Models of economic growth ](#models-of-economic-growth-)
+	- [Exponential growth](#exponential-growth)
+	- [Basic growth model ](#basic-growth-model-)
+	- [Solow growth model ](#solow-growth-model-)
+- [Models of diversity & innovation ](#models-of-diversity-&-innovation-)
 																						- [≤ (max_value - initial_value)/step_size](#≤-(max_value---initial_value)/step_size)
 </td></tr></table>
 
@@ -101,6 +105,9 @@ http://stattrek.com/sampling/sampling-distribution.aspx
 http://stattrek.com/probability-distributions/binomial.aspx
 https://en.wikipedia.org/wiki/Six_Sigma 
 
+
+
+
 # Decision-making models
 
 We talk about decision-making models for normative reasons (to help us make better decisions) and positive ones (to predict or analyze others’ decisions)
@@ -116,7 +123,10 @@ Frequency: can estimate probability by counting lots of data; makes assumption o
 Subjective probabilities: dangerous, subject to bias, make easily violate axioms of probability
 Decision trees: write down payoffs and probabilities; also can infer what other people think p is based on their decisions, or calculate payoffs knowing probabilities
 Value of information: calculate value without and with information; then take the difference
-    
+   
+   
+   
+   
 # Models of human behavior
     
 Murray Gell-Mann: “Imagine how difficult physics would be if electrons could think”; people=purposeful, diverse.
@@ -144,7 +154,6 @@ Base rate bias: If you get people thinking about one number and then ask them fo
 Hundreds of documented biases; but, themselves subject to criticisms as WEIRD (Western, educated, industrialized, rich, developed countries) rather than universal. 
 Can model as rational plus some relevant bias/es.
 
-
 ## Rule-based
 
 Assume that people follow rules/strategies
@@ -155,6 +164,8 @@ Rules can be easy to compute, good at capturing main effects; but create ‘peop
 
 For the sake of aggregate effects, when does individual behavior matter? Which model of people should we choose? “One of the reasons we models is to determine how much it matters how accurate our model is.” 
 “In markets, the institution itself has such an influence that we don’t worry about modeling behavior”; this was studied with zero intelligence agents (1,2), and they yield the same equilibrium price as rational agents.
+
+
 
 
 # Categorical & linear models
@@ -177,6 +188,8 @@ vs Big Data: gather data, find patterns, identify important variables, design in
 vs accounting for feedbacks (people’s behavioral adaptations in response to interventions)
 vs The New Reality: trying to create a better world, which necessarily means departing from data
 e.g. Big Coefficient thinking = tax cigarettes, New Reality thinking = universal health care
+
+
 
 
 # Tipping points & diffusion
@@ -223,7 +236,7 @@ R0(measles) is about 15, although for this disease, we need to use the SIR model
 R0(flu) is about 3
 Implications for policy: for V is %N(vaccinated), we need V >= 1 - 1/R0
 
-## Classifying tipping points:
+## Classifying tipping points
 
 Active/direct: due to change in variable, i.e., an unstable equilibria in the phase plane
 Contextual: due to change in parameter/s, i.e. a shift of the phase portrait s.t. fixed points change
@@ -246,12 +259,16 @@ Introduction to growth
 Growth discussed in terms of GDP per capita
 Correlation between GDP and life satisfaction: yes, more money makes you happy if you start poor
 
-Exponential growth
+## Exponential growth
+
 Compounding: Vt=V0(1+r)t
 Continuous compounding: Vt=V0ert, since lim n→ ∞ (1+r/n)nt = ert 
 Rule of 72: 72/r is approximately how long it will take GDP or a bank balance to double, where 0.08 interest rate means r=8 ⇒ even small changes in annual growth rate matter
 
-Basic growth model (capital investment, capital depreciation)
+## Basic growth model 
+
+(capital investment, capital depreciation)
+
 Elements:
 L1=labor at time t, plus
 Kt=capital at time t combine to produce
@@ -267,7 +284,9 @@ Capital can accumulate, but depreciates: Kt+1 = Kt + It - dKt
 Result: long-run equilibrium occurs where investment = depreciation
 Growth eventually stops because output is concave while depreciation is linear
 
-Solow growth model (capital investment, capital depreciation, innovation)
+## Solow growth model 
+
+(capital investment, capital depreciation, innovation)
 Same variables as in basic growth model, adding only: 
 At, quality of technology at time T, and 
 β, a measure of the capital-intensivity of a specific output
@@ -290,10 +309,13 @@ http://pastspeaks.com/2012/04/17/theory-and-historians/
 
 Other applications of this model: for growth of ‘personal GDP’, pursue innovation and continuous learning
 
-WEEK 5    DIVERSITY & INNOVATION (linked to prior discussion of  economic growth & role of innovation)
+
+
+# Models of diversity & innovation 
+
+linked to prior discussion of  economic growth & role of innovation)
 
 F(a), the payoff function for action a. The question is: how do we get to c; and further, how do we avoid getting stuck on local optima to find the global optimum?
-
 
 Perspectives: how you encode the problem, how you represent it to yourself, creating a landscape (above)
 A perspective is a representation of the set of all possible solutions to a problem

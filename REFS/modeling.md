@@ -1,10 +1,6 @@
 # Modeling systems & processes
 
 
-## Value stream mapping
-
-## Spaghetti diagram
-
 ## Logic flow charts
 
 ### Language-level diagram
@@ -35,9 +31,14 @@ AKA Chapin charts
 
 ### Booch notation
 
-### UML
+### Unified Modeling Language (UML)
 
 #### Activity diagram
+
+## Value stream mapping
+
+## Spaghetti diagram
+
 
 
 # Prototyping interfaces

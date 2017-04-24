@@ -1,6 +1,4 @@
 <table class="TOC"><tr><td>- [Modeling systems & processes](#modeling-systems-&-processes)
-	- [Value stream mapping](#value-stream-mapping)
-	- [Spaghetti diagram](#spaghetti-diagram)
 	- [Logic flow charts](#logic-flow-charts)
 		- [Language-level diagram](#language-level-diagram)
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
@@ -15,17 +13,15 @@
 		- [Rumbaugh/OMT method](#rumbaugh/omt-method)
 		- [Shlaer/Mellor method](#shlaer/mellor-method)
 		- [Booch notation](#booch-notation)
-		- [UML](#uml)
+		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
 			- [Activity diagram](#activity-diagram)
+	- [Value stream mapping](#value-stream-mapping)
+	- [Spaghetti diagram](#spaghetti-diagram)
 - [Prototyping interfaces](#prototyping-interfaces)
 - [Sources](#sources)
 </td></tr></table>
 # Modeling systems & processes
 
-
-## Value stream mapping
-
-## Spaghetti diagram
 
 ## Logic flow charts
 
@@ -57,9 +53,14 @@ AKA Chapin charts
 
 ### Booch notation
 
-### UML
+### Unified Modeling Language (UML)
 
 #### Activity diagram
+
+## Value stream mapping
+
+## Spaghetti diagram
+
 
 
 # Prototyping interfaces

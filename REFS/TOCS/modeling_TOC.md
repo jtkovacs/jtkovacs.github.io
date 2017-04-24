@@ -6,7 +6,8 @@
 	- [Data flow diagrams](#data-flow-diagrams)
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
-			- [Activity diagram](#activity-diagram)
+			- [Use-case diagrams](#use-case-diagrams)
+			- [Activity diagrams](#activity-diagrams)
 	- [Value stream mapping](#value-stream-mapping)
 	- [Spaghetti diagram](#spaghetti-diagram)
 - [Prototyping interfaces](#prototyping-interfaces)
@@ -78,11 +79,17 @@ The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depi
 
 ## Object-oriented modeling
 
-OO models show **inheritance** as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML.
+OO models show **inheritance** as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML in 1997.
 
 ### Unified Modeling Language (UML)
 
-#### Activity diagram
+#### Use-case diagrams
+
+#### Activity diagrams
+
+
+
+
 
 ## Value stream mapping
 

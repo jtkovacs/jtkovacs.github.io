@@ -40,32 +40,14 @@ This is a notation that describes the optionality/modality/participation and car
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
-### Martin notation
+### Other ERD notations
 
-Per Stiern (1999), Martin notation adds a few more details to crows-foot notation.
-
-### Chen notation
-
-This notation enables richer characterization of attributes, entity types, and relationships.
-
-<img src="../ILLOS/chens.png" width="270px">
-
-### Baker's notation
-
-<img src="../ILLOS/bakers.png" width="350px">
-
-### Arrow notation
-
-<img src="../ILLOS/arrow.png" width="260px">
-
-### IDEF1X notation
-
-<img src="../ILLOS/idef1x.png" width="250px">
-
-### UML notation
-
-<img src="../ILLOS/UML-relationships.png" width="260px">
-
+- Martin
+- Chen
+- Baker
+- Arrow
+- IDEF1X
+- UML
 
 
 ## Data flow diagrams

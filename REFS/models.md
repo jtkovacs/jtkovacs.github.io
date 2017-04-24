@@ -1,53 +1,27 @@
 
 _The following notes are largely based on [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking)_
  
+# Models theorizing segregation
+ 
+There's an identification problem with segregation: do we deliberately seek the company of those who are similar to us (sorting), or do we become like those with whom we associate (peer effects)?
+ 
+## Measuring segregation
 
-We live in a complex world with diverse people, firms, and governments whose behaviors aggregate to produce novel, unexpected phenomena. We see political uprisings, market crashes, and a never ending array of social trends. How do we make sense of it? Models. Evidence shows that people who think with models consistently outperform those who don't. And, moreover people who think with lots of models outperform people who use only one. Why do models make us better thinkers? Models help us to better organize information - to make sense of that fire hose or hairball of data (choose your metaphor) available on the Internet. Models improve our abilities to make accurate forecasts. They help us make better decisions and adopt more effective strategies. They even can improve our ability to design institutions and procedures. In this class, I present a starter kit of models.
+- **Index of dissimilarity**
+    - o ≤ DI ≤ 1
+    - b = #units-in-block; B = #total-units-across-blocks b/B = %units-in-block; and y, Y, y/Y → |b/B - y/Y|/2
+    D- I for a region of blocks = sum of (#blocks*block’s-DI)
+- **Isolation index**
 
-WEEK 1    WHY MODEL?
 
-To be an intelligent citizen of the world---models are ‘everywhere’, so knowing them is mandatory in order to participate. ‘The new lingua franca’: nonprofit, business, politics, academia. Comparable to (or a supplanter of) the Great Books project, the point of which was to expose people to ideas (see: the syntopicon); now an educated person should have an arsenal of models.
-To be a clearer thinker---models are ‘wrong, but useful;’ people make better decisions using a formal model versus either a single model, or multiple casual models. ‘Models are fertile,’ i.e., they have multiple and unexpected uses. 
-Work through all the logical possibilities: Parts → Relationships between parts → Logic.
-Identify the general class of outcome: equilibrium, cycle, random, complex.
-Identify logical boundaries: ‘Models give us the conditions under which we can adjudicate’ between ideas, e.g. contradictory folk proverbs. When are two heads better than one? When do two cooks spoil the broth?
-Communicate what we know very simply.
-To understand and use data---of which there is a shit ton: either a firehose or a hairball of data. But models might help us turn data into knowledge. Models are used to:
-See patterns and understand where they come from
-Make predictions (point or range/bounds)
-Retrodiction: predict the past, when data is absent or to test models for prediction
-See if something is missing, e.g. orbits makes us think that there’s a planet beyond our sight
-Inform data collection
-Estimate unobservable parameters & calibrate based on data
-To better decide, strategize, and design---to act!
-Real-time decision making (e.g., the Monty Hall door selection problem)
-Comparative statics: move from one equilibrium to another
-Counterfactuals
-Identify and rank levers: where do we intervene to have an impact?
-Experimental & institutional design
-
-Quotes from readings:
-organized data = information; information in context = knowledge; aptly-applied knowledge = wisdom; “How though do we acquire general wisdom? Advocates of liberal arts education argue for broad exposure to great works of literature and to the basic ideas from multiple disciplines. I agree in principle, but I believe the great books approach to be incomplete … the information pours out of the fire hose producing ever more complexity. How do we cope? What tools do we need? We need models. Models provide formal frameworks within which to embed all of this data and information.”
-“We must open dialogues between models and reality. By identifying when a model fails, we learn more about the conditions necessary for it to work … Models don’t have flaws so much as they have limited scope.”
-“Three attributes of physical systems (1) simple parts (2) interacting in large numbers (3) that follow fixed rules render physical models amenable to mathematics … Systems that include people as actors– and these include ecological systems – lack the three attributes that produce regularity. The parts of these systems aren’t simple: People are sophisticated, multi-dimensional, and capable of a range of behaviors. We march to our own drummers. Further, though billions of people exist, we interact in small to moderate sized groups. Finally, we don’t follow the same fixed rules. Unlike carbon atoms, we learn. We adapt. We do crazy things.”
-“You are a modeler … But typically, it is an implicit model in which the assumptions are hidden, their internal consistency is untested, their logical consequences are unknown, and their relation to data is unknown.”
-“[M]odels can be the focal points of teams involving experts from many disciplines.”
-“[I]n the policy sphere … models do not obviate the need for judgment. However, by revealing tradeoffs, uncertainties, and sensitivities, models can discipline the dialogue about options and make unavoidable judgments more considered.”
-“Models can surprise us, make us curious, and lead to new questions. This is what I hate about exams. They only show that you can answer somebody else's question, when the most important thing is: Can you ask a new question?”
-“To me, however, the most important contribution of the modeling enterprise--as distinct from any particular model, or modeling technique--is that it enforces a scientific habit of mind, which I would characterize as one of militant ignorance--an iron commitment to ‘I don't know.’ That all scientific knowledge is uncertain, contingent, subject to revision, and falsifiable in principle … Intellectuals have a solemn duty to doubt, and to teach doubt. Education, in its truest sense, is not about ‘a saleable skill set.’ It's about freedom, from inherited prejudice and argument by authority. This is the deepest contribution of the modeling enterprise.”
-
-WEEK 1    SEGREGATION: SORTING & PEER EFFECTS
-
-Two forces ⇒ Identification problem: homophily, where we deliberately seek the company of those similar to us; and peer effects, where we become like (in belief and action) those with whom we associate.
-If agent-based models follow optimizing rules, then they are game theory models.
-Measuring segregation with an index of dissimilarity, o ≤ DI ≤ 1; alternative, isolation index
-b=#units-in-block; B=#total-units-across-blocks; b/B = %units-in-block; and y, Y, y/Y → |b/B - y/Y|/2
-DI for a region of blocks = sum of (#blocks*block’s-DI)
 Thomas Schelling’s spatial segregation model: agent-based model where people choose whether to move or stay depending on the composition of their immediate neighborhood. The deep insight is that a similarity threshold of 30% has an equilibrium (everyone happy) with segregation of 70%; and 50% tolerance leads to nearly 100% segregation, including borders made up of empty cells. Perhaps counterintuitively, when intolerance is set very high, the system won’t find an equilibrium since everyone is perpetually moving. 
 Micromotives ≠ macrobehavior
 I would want to augment this model, giving cell-classes their own mobility parameter.
 Exodus tip: agent leaves because someone else exits the neighborhood
 Genesis tip: agent leaves because someone else enters the neighborhood
+
+
+
 Granovetter’s model of peer effects re: people’s decision to join in a social movement
 N individuals; the jth individual has threshold Tj, and will join if T others do
 ‘tail wagging the dog’: a population needs someone with Tj=0 to get things going

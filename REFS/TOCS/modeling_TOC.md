@@ -4,6 +4,7 @@
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
 		- [Bachmann/crow-foot notation](#bachmann/crow-foot-notation)
 		- [Chen notation](#chen-notation)
+		- [Baker's notation](#baker's-notation)
 		- [Martin notation](#martin-notation)
 	- [Data flow diagram](#data-flow-diagram)
 		- [Gane/Sarson method](#gane/sarson-method)
@@ -61,15 +62,10 @@ This is a notation that describes the cardinality and optionality/modality/parti
 
 ### Chen notation
 
-See [Vertabelo Academy's article](http://www.vertabelo.com/blog/technical-articles/chen-erd-notation) for notation, which includes richer representation of attributes, types of entities, and types of relationships.
+### Baker's notation
 
-- The cloud symbol represents aggregations of smaller ER diagrams, in the context of a logical design (as opposed to a physical design).
-- The double-box represents a weak entity, which is dependent on its parent entity. Note: Visio does not support this feature.
-- A diamond symbol represents a type of relationship.
-- Relationship adornments are added adjacent to the lines to indicate connectivity (I, M, N) and cardinality, e.g. "(0,3)".
-- The data-structure diagram (an alternate form of the ERD) uses arrows to show I:M relationships.
-- Circles represent the attributes of an entity, although Visio labels this icon as value.
-- A human figure represents a user icon.
+<img src="../ILLOS/bakers.png" width="350px">
+
 
 ### Martin notation
 

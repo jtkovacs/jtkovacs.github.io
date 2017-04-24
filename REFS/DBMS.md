@@ -12,16 +12,6 @@
 
 
 
-# Graph DBMS
-
-## Neo4j
-
-## PoolParty
-
-
-
-
-
 
 # Relational DBMS
 
@@ -126,6 +116,24 @@ https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-databas
   - Backup plan?
   - https://support.microsoft.com/en-us/kb/162522: When you distribute your application, instruct a network or system administrator to run the Setup program for your back-end database on the network file server first ... After Setup install the appropriate files on the file server, instruct all users to run the setup program for your front-end database. This setup program sets up your main application and all of the Microsoft Access run-time files on each user's computer.
   - https://www.youtube.com/watch?v=aylQNvVDPsg
+
+  
+  
+  
+  
+  
+  
+  
+# Graph DBMS
+
+## Neo4j
+
+## PoolParty
+
+
+
+
+  
   
 
 # Sources

@@ -49,8 +49,14 @@ organized data = information; information in context = knowledge; aptly-applied 
 
 ## Model typologies 
 
-Steirn (1999) organizes models 
+Steirn (1999) organizes models as:
 
+
+Per Dennis et al. (2012):
+
+- functional models
+- structural models
+- behavioral models
 
 Types of diagrams, per Smartdraw.com (n.d.): 
 
@@ -163,6 +169,8 @@ Ambler, S. (n.d.). Agile models distilled: Potential artifacts for agile modelin
 Ambler, S. (n.d.). UML 2 activity diagrams: An Agile introduction. Retrieved from [http://www.agilemodeling.com/artifacts/activityDiagram.htm](http://www.agilemodeling.com/artifacts/activityDiagram.htm)
 
 Dybka, P. (2014). ERD notations in data modeling. Vertabelo Academy. Retrieved from [http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations](http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations)
+
+Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley. 
 
 Meadows, D. H., & Wright, D. (2008). _Thinking in systems: A primer._ White River Junction, Vt.: Chelsea Green Pub.
 

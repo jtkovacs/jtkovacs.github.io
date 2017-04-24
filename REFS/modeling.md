@@ -4,6 +4,8 @@ _The following notes are largely based on Steirn (1999)._
 
 The representation of a system needs contextual metadata clarifying the date and/or version it describes. 
 
+
+
 ## Flow charts
 
 AKA decision flow charts, logic flow charts, and logical decision flow charts. Flow charts model **decisions,** a type of process. Languages that model processes more generally can also represent decisions.
@@ -20,6 +22,8 @@ The basic elements of flow charts are available in MS Visio's language level dia
 AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderman (1973), "We propose a flowchart language whose control structure is closer to that of language amenable to **structured programming:"**
 
 <img src="../ILLOS/N-S-diagram.png" width="250px">
+
+
 
 ## Entity-relationship diagrams
 
@@ -50,15 +54,21 @@ Per Stiern (1999), Martin notation adds a few more details to crows-foot notatio
 
 <img src="../ILLOS/bakers.png" width="350px">
 
-### IDEF1X
-
-<img src="../ILLOS/idef1x.png" width="250px">
-
 ### Arrow notation
 
 <img src="../ILLOS/arrow.png" width="260px">
 
-## Data flow diagram
+### IDEF1X
+
+<img src="../ILLOS/idef1x.png" width="250px">
+
+### UML notation
+
+<img src="../ILLOS/UML-relationships.png" width="350px">
+
+
+
+## Data flow diagrams
 
 ### Gane/Sarson method
 

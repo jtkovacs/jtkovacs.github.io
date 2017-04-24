@@ -38,8 +38,6 @@ This is a notation that describes the optionality/modality/participation and car
 - **Crow-foot** for many
 - **Bar** for one
 
-<br/>
-
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
 ### Martin notation

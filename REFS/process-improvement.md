@@ -66,6 +66,10 @@ _These notes are based on Jeevon Powell's class, [Process Improvement Tools.](ht
 
 See [notes on systems modeling.](modeling.html)
 
+### Value stream mapping
+
+### Spaghetti diagram
+
 ## Identify problems
 
 ### Eleven wastes checklist

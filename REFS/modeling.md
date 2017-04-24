@@ -143,11 +143,6 @@ See [notes on UML.](UML.html)
 
 
 
-## Value stream mapping
-
-## Spaghetti diagram
-
-
 
 
 

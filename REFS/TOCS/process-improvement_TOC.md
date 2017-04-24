@@ -12,6 +12,8 @@
 		- [Activity elimination](#activity-elimination)
 - [Continuous Process Improvement](#continuous-process-improvement)
 	- [Depict system](#depict-system)
+		- [Value stream mapping](#value-stream-mapping)
+		- [Spaghetti diagram](#spaghetti-diagram)
 	- [Identify problems](#identify-problems)
 		- [Eleven wastes checklist](#eleven-wastes-checklist)
 		- [Pareto analysis](#pareto-analysis)
@@ -113,6 +115,10 @@ _These notes are based on Jeevon Powell's class, [Process Improvement Tools.](ht
 ## Depict system
 
 See [notes on systems modeling.](modeling.html)
+
+### Value stream mapping
+
+### Spaghetti diagram
 
 ## Identify problems
 

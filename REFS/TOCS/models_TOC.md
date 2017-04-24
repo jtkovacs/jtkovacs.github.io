@@ -8,7 +8,9 @@
 																						- [≤ (max_value - initial_value)/step_size](#≤-(max_value---initial_value)/step_size)
 </td></tr></table>
 
-_The following notes are largely based on [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking) For applications of modeling to information systems, see [notes on system and process modeling;](modeling.html) for business applications of models as analytic frameworks, see [notes on project management](project-management.html) and [notes on process improvement.](process-improvement.html)_
+_The following notes are largely based on [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking)_
+
+_For applications of modeling to information systems, see [notes on system and process modeling;](modeling.html) for business applications of models as analytic frameworks, see [notes on project management](project-management.html) and [notes on process improvement.](process-improvement.html)_
  
 # Models theorizing segregation
  

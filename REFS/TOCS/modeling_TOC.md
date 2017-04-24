@@ -1,5 +1,4 @@
 <table class="TOC"><tr><td>- [Modeling systems & processes](#modeling-systems-&-processes)
-	- [Activity diagram](#activity-diagram)
 	- [Value stream mapping](#value-stream-mapping)
 	- [Spaghetti diagram](#spaghetti-diagram)
 	- [Logic flow charts](#logic-flow-charts)
@@ -15,16 +14,14 @@
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Rumbaugh/OMT method](#rumbaugh/omt-method)
 		- [Shlaer/Mellor method](#shlaer/mellor-method)
-		- [UML](#uml)
 		- [Booch notation](#booch-notation)
+		- [UML](#uml)
+			- [Activity diagram](#activity-diagram)
 - [Prototyping interfaces](#prototyping-interfaces)
 - [Sources](#sources)
 </td></tr></table>
 # Modeling systems & processes
 
-Hard to distinguish business process from IT process from work
-
-## Activity diagram
 
 ## Value stream mapping
 
@@ -58,12 +55,17 @@ AKA Chapin charts
 
 ### Shlaer/Mellor method
 
+### Booch notation
+
 ### UML
 
-### Booch notation
+#### Activity diagram
 
 
 # Prototyping interfaces
+
+
+
 
 # Sources
 

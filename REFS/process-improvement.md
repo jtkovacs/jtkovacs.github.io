@@ -35,7 +35,7 @@ Examine competitors to identify performance targets and process improvements.
     
 ## Business process reengineering (BPR)
 
-BPR is a radical upending of current business processes and systems, so spends little time analyzing them. Per Rigby (2015; also includes references for further reading), a BPR effort focuses on
+BPR is a radical upending of current business processes and systems, so spends little time analyzing them. Per Rigby (2015; also gives recommendations for further reading), a BPR effort focuses on:
 
 - Reorienting organizational culture towards user needs
 - Reorganizing traditional functional departments into cross-functional teams
@@ -58,7 +58,7 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 
 
-# Continuous Process Improvement (CPI)
+# Continuous Process Improvement
 
 _These notes are based on Jeevon Powell's class, [Process Improvement Tools.](https://ucs.admin.uw.edu/pod/Course/Details/Q1170)_
 

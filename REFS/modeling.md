@@ -1,8 +1,5 @@
 # Modeling systems & processes
 
-Hard to distinguish business process from IT process from work
-
-## Activity diagram
 
 ## Value stream mapping
 
@@ -36,12 +33,17 @@ AKA Chapin charts
 
 ### Shlaer/Mellor method
 
+### Booch notation
+
 ### UML
 
-### Booch notation
+#### Activity diagram
 
 
 # Prototyping interfaces
+
+
+
 
 # Sources
 

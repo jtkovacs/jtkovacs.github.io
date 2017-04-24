@@ -19,11 +19,7 @@ The basic elements of flow charts are available in MS Visio's language level dia
 
 AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderman (1973), "We propose a flowchart language whose control structure is closer to that of language amenable to **structured programming:"**
 
-N-S diagrams are an alternative to pseudocode.
-An N-S diagram can be drawn using text and lines (or completely with ASCII characters).
-N-S diagrams show processing by series, by selection, or by iteration.
-N-S diagrams are read from top to bottom.
-N-S diagrams are more structured than flowcharting (one start, one end).
+![](../ILLOS/N-S-diagram.png)
 
 ## Data flow diagram
 

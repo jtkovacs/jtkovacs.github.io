@@ -62,12 +62,12 @@ This is a notation that describes the optionality/modality/participation and car
 
 ### Other ERD notations
 
-- Martin
-- Chen
-- Baker
-- Arrow
-- IDEF1X
-- UML
+- **Martin**
+- [Chen](../ILLOS/chens.png)
+- [Baker](../ILLOS/bakers.png)
+- [Arrow](../ILLOS/arrow.png)
+- [IDEF1X](../ILLOS/idef1x.png)
+- [UML](../ILLOS/UML-relationships.png)
 
 
 ## Data flow diagrams

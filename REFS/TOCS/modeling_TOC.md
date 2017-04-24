@@ -61,9 +61,16 @@ Steirn (1999) organizes models as:
 
 Per Dennis et al. (2012):
 
-- functional models
-- structural models
-- behavioral models
+- Functional models:
+    - Use-case diagrams
+    - Activity diagrams
+- Structural models:
+    - CRC cards
+    - Class diagrams
+- Behavioral models:
+    - Interaction diagrams
+    - Behavioral state machines
+    - Crude analysis
 
 Types of diagrams, per Smartdraw.com (n.d.): 
 

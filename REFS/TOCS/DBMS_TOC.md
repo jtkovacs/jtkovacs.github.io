@@ -9,8 +9,6 @@
 - [Graph DBMS](#graph-dbms)
 	- [PoolParty](#poolparty)
 	- [Neo4j](#neo4j)
-		- [Editor](#editor)
-		- [Stream](#stream)
 - [Source](#source)
 </td></tr></table>
 
@@ -147,18 +145,14 @@ https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-databas
 
 ## Neo4j
 
-### Editor
+The **editor** accepts input:
 
-Input commands and queries.
-
-- Accepts Cypher queries to work with graph data
-- lient-side commands available, e.g. ```:help```
+- [Cypher queries](Cypher.html) to work with graph data
+- Client-side commands available, e.g. ```:help```
 - Run query: `ctrl+enter`
 - Multiline command: `shift+enter`
 
-### Stream
-
-Displays query and command results.
+The **stream** displays output:
 
 - Clear stream: `:clear`
 

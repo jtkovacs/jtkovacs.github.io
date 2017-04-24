@@ -365,7 +365,7 @@ See [notes on system & process modeling](modeling.html) for methods used to char
 
 ## Choosing software
 
-See [notes on BI architectures](BI.html) for information specific to selecting BI software. 
+See [notes on BI systems](BI.html) for information specific to selecting BI software. 
 
 General criteria to consider:
 

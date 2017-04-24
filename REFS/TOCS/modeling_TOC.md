@@ -13,7 +13,6 @@
 			- [Activity diagrams](#activity-diagrams)
 	- [Value stream mapping](#value-stream-mapping)
 	- [Spaghetti diagram](#spaghetti-diagram)
-- [Prototyping interfaces](#prototyping-interfaces)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -35,11 +34,11 @@ Per Scott Page, modeling helps us:
 
 - **Be an intelligent citizen of the world.** Models are everywhere, so full participation requires knowing them. They are "the new lingua franca" in nonprofits, businesses, politics, academia. 
 - **Be a clearer thinker.** Models are "wrong, but useful"; people make better decisions using a formal model versus either a single model, or multiple casual models. 
-    - Work through all the logical possibilities for part; relationships between parts; logic.
-    - Identify the general class of outcome: equilibrium, cycle, random, complex.
-    - Identify logical boundaries. "Models give us the conditions under which we can adjudicate" between ideas, e.g. contradictory folk proverbs. _When_ are "two heads better than one"? *When* do "two cooks spoil the broth"?
-    - Communicate what we know very simply.
-- To understand and use data---of which there is a shit ton: either a firehose or a hairball of data. But models might help us turn data into knowledge. Models are used to:
+    - **Work through all the logical possibilities** for parts; relationships between parts; logic.
+    - **Identify the general class of outcome:** equilibrium, cycle, random, complex.
+    - **Identify logical bounds:** "Models give us the conditions under which we can adjudicate" between ideas, e.g. contradictory folk proverbs. _When_ are "two heads better than one"? *When* do "two cooks spoil the broth"?
+- **Communicate what we know very simply.**
+- **Understand and use data,** turning it into knowledge.
     - See patterns and understand where they come from
     - Make predictions (point or range/bounds)
     - Retrodiction: predict the past, when data is absent or to test models for prediction
@@ -175,8 +174,6 @@ See [notes on UML.](UML.html)
 ## Spaghetti diagram
 
 
-
-# Prototyping interfaces
 
 
 

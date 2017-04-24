@@ -66,7 +66,7 @@ organized data = information; information in context = knowledge; aptly-applied 
 
 ## Model typologies 
 
-Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). 
+Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). In addition to forms and notations, models could be grouped by the business problems they solve, or as they appear in stages of a lifecycle, or by domain of origin (models were developed sequentially or in parallel by Taylorists; postwar Japanese manufacturers; industrial engineers; social scientists; and software developers). 
 
 Steirn (1999) organizes models as:
 

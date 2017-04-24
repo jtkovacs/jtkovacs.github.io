@@ -422,18 +422,18 @@ We’ve looked at three types of predictive models: categorical, linear, and Mar
 Prediction by groups → Wisdom of crowds = f(individual’s accuracy, diversity of ideas)
 Crowd’s error = Avg error - Variation
 
-
-
-
-   
-# Models using ...
-
-## Categorical & linear models
+## Categorization
 
 Categorical: data can be sorted into different ‘boxes’
 Calculation of total variation: subtract mean from each data point, square and sum the results
 Proper categories greatly reduce total variation
 R2 = %variation explained = (total_variation_pre-categories - total_variation_with_categories)/tv_pc
+
+
+   
+# Models using ...
+
+## Linear regression
 
 Linear models, not the same thing as a line; y=f(x), a causal relationships; line of best fit; reading regression output
 http://www.niaoren.info/pdf/Beauty/9.pdf & other studies, experts never did better at prediction than simple linear models
@@ -585,11 +585,7 @@ Model where many players compete: Can have nontransitive victories → Lots of c
 Applications of this model: US Electoral College, terrorism, trials, hiring
 
 
-
-
-# Models of learning
-
-## Replicator models 
+## Replicators
 
 Used in psychology, to model learning; in economics, to model populations of people learning; and in ecology, to model evolution. In a nutshell, there is a distribution containing types, and the distribution is shifting in response to the payoffs that each type experiences. The dynamics of the model offer commentary on the strategies of (1) copying the most common strategy and (2) copying the most successful strategy. Elements of model:
 Set of types, {1, 2, 3, … N}

@@ -38,26 +38,24 @@ Per Scott Page, modeling helps us:
 
 ## Model typologies 
 
-Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation.** 
+Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation,** following Steirn (1999). 
 
 Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); or by **methodology** (e.g. Agile, SDLC).
 
-Steirn (1999) organizes models as:
+Per Dennis et al. (2012), very similar to Steirn (1999):
 
-Per Dennis et al. (2012):
-
-- Functional models:
+- **Functional** (flow chart?) models capture processes:
     - Use-case diagrams
     - Activity diagrams
-- Structural models:
+- **Structural** (ERD?) models capture objects, their attributes, and their interactions:
     - CRC cards
     - Class diagrams
-- Behavioral models:
+- **Behavioral** (object-oriented?) models capture even more detail about interactions:
     - Interaction diagrams
     - Behavioral state machines
     - Crude analysis
 
-Types of diagrams, per Smartdraw.com (n.d.): 
+Per Smartdraw.com (n.d.): 
 
 - **Graphs** represent entities and relationships
     - Venn

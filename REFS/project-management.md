@@ -218,7 +218,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 - Gantt Chart
 - PERT Chart
 
-### Monitoring and reporting
+### Monitoring & reporting
 
 - CARDI Log (Constraints/Assumptions/Risks/Dependencies/Issues)
 - RAG Status
@@ -294,17 +294,17 @@ Per Dennis et al. (2012), requirements may be obtained from users, domain expert
 
 
 
-### Documenting requirements
+### Analyzing requirements
 
-Per Whitney (n.d.), Dennis et al. (2012), and Ambler (1999), once gathered, requirements may be expressed in different ways:
+Per Whitney (n.d.), Dennis et al. (2012), and Ambler (1999), once gathered, requirements may be preserved, analyzed, and expressed in different ways:
 
 #### Actors & personas
 
-Actors are the generic users of a system, e.g. customers, that might appear on a system diagram. Personas are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users.
+**Actors** are the generic users of a system, e.g. customers, that might appear on a system diagram. Note that actors include other software as well as people. **Personas** are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users; they are an exercise in fostering empathy and user-centered design.
 
 #### User stories
 
-User stories describe at a high level the various actions users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."** User stories are refined (split, grouped, reprioritized, etc.) throughout the development process.
+User stories describe, at a high level, the various actions users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."** User stories are refined (split, grouped, reprioritized, etc.) throughout the development process.
 
 #### Concept map
 
@@ -322,15 +322,9 @@ Table format linking requirements with other information, e.g. requirement categ
 
 <img src="../ILLOS/volere.jpeg" width="350px">
 
-
-
-### Analyzing requirements
-
 #### Use cases
 
-Each persona will have archetypical interactions with the system, called **use cases;** these use case may be collectively depicted using a **use case diagram.** There will be different paths through these use cases, called **use scenarios.** 
-
-Requirements are often analyzed by grouping them into **use cases.** Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... The Use Case should describe the interaction between the actor and the system - what the actor does and how the system reacts." Note that actors include other software as well as people. Use cases are expressed textually (also called a **requirements definition report),** usually including these elements:
+Requirements are often analyzed by grouping them into **use cases,** capturing actors' archetypical interactions with the system. Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... [They] should describe the interaction between the actor and the system - what the actor does and how the system reacts. Use cases are expressed textually (also called a **requirements definition report),** usually including these elements:
 
 - Overview
 - Notes
@@ -344,6 +338,17 @@ Requirements are often analyzed by grouping them into **use cases.** Per Whitney
 - Exceptions
 - GUI requirements
 - Dependencies and relations (to other use cases; often modeled with UML)
+
+#### Use scenarios
+
+There will be different paths through these use cases, called **use scenarios.** 
+
+#### Use case diagrams
+
+These use case may be collectively depicted using a **use case diagram.** 
+
+
+
 
 ## Future state design
 

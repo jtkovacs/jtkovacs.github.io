@@ -55,6 +55,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         Create node
        </a>
       </li>
+      <li>
+       <a href="#find-nodes">
+        Find nodes
+       </a>
+      </li>
      </ul>
     </td>
    </tr>
@@ -65,10 +70,36 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </a>
   </h1>
   <p>
-   This makes a node labeled "Person" with attributes "name", "from", and "klout":
+   This makes a node
+   <strong>
+    named
+   </strong>
+   "ee" with
+   <strong>
+    label
+   </strong>
+   "Person" and
+   <strong>
+    attributes
+   </strong>
+   "name", "from", and "klout":
   </p>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (ee<span class="ch">:Person</span> { name: <span class="ot">"Emil"</span>, from: <span class="ot">"Sweden"</span>, klout: <span class="dv">99</span> })</code></pre>
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (ee<span class="ch">:Person</span> { name: <span class="ot">"Emil"</span>, from: <span class="ot">"Sweden"</span>, klout: <span class="dv">99</span> })
+
+<span class="kw">CREATE</span> (js<span class="ch">:Person</span> { name: <span class="ot">"Johan"</span>, from: <span class="ot">"Sweden"</span>, learn: <span class="ot">"surfing"</span> }),
+(ir<span class="ch">:Person</span> { name: <span class="ot">"Ian"</span>, from: <span class="ot">"England"</span>, title: <span class="ot">"author"</span> })</code></pre>
+  </div>
+  <h1>
+   <a name="find-nodes">
+    Find nodes
+   </a>
+  </h1>
+  <p>
+   Find a nodel labeled "Person" and named "Emil":
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql">MATCH (ee<span class="ch">:Person</span>) <span class="kw">WHERE</span> ee.name = <span class="ot">"Emil"</span> <span class="kw">RETURN</span> ee;</code></pre>
   </div>
  </body>
 </html>

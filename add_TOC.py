@@ -46,7 +46,7 @@ foname.insert(-1, "TOCS")
 foname = '/'.join(foname)
 fout = open(foname, "w")
 url = 'https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html'
-fout.write('<p id="path"><a href="../../pkb.html">pkb.html</a> \> <a href="'+url+'">'+url+'</a></p>') 
+fout.write('<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="'+url+'">'+url+'</a></p>') 
 # fout.write('<span id="path">https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html</span>')
 fout.write('<table class="TOC"><tr><td>')
 for row in TOC:

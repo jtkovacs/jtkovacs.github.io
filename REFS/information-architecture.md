@@ -55,7 +55,7 @@ Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge 
 ## What ways can things be organized?
 
 Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
-The distinction I draw is that "schemas" are for the conceptual (abstract, disembodied) organization of information into groups, whereas "structures" describe the structure and behavior of those groups. 
+The distinction I draw is that "schemas" are for the conceptual (abstract, disembodied) organization of information into groups, whereas "structures" describe configuration of those groups. 
 
 ### Information schemas
 

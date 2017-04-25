@@ -92,7 +92,7 @@ Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has bot
 
 In general, taxonomy is the discipline of creating and managing taxonomies, a term synonymous with knowledge organization structures/systems (KOS) and very nearly synonymous with controlled vocabularies (CVs). As a field, taxonomy has roots in biological taxonomies and library catalogs (which existed even in antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
 
-Beyond this general sense, a taxonomy is also a [specific kind of KOS.](#what-types-of-kos-exist?)
+Beyond this general sense, a taxonomy is also a [specific kind of KOS.](#what-are-knowledge-organization-structures?)
 
 ## What are knowledge organization structures?
 

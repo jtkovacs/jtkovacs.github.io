@@ -1,10 +1,12 @@
 
 
-# What is information architecture?
+# What is information architecture (IA)?
 
-Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that support the **discoverability** of information object AKA content objects (documents and metadata) within and across myriad different **information retrieval (IR)** systems (e.g. libraries, archives, repositories/portals, websites, databases), with the goals of good precision and good recall. Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information.
+IA is one of several disciplines (e.g. library science, information science, taxonomy) that support the **discoverability** of information object AKA content objects (documents and metadata) within and across myriad different **information retrieval (IR)** systems (e.g. libraries, archives, repositories/portals, websites, databases), with the goals of good precision and good recall. Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information.
 
-Users engage with information systems by:
+## What is information retrieval (IR)?
+
+To retrieve information, users engage with information systems by:
 
 - **SEARCHING** for a specific piece of information; this is the concern of back-end IA. Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
     

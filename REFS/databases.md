@@ -19,7 +19,7 @@ A database is a structured collection of data. A database management system (DBM
     - enforcement of constraints on data input **(integrity);**
     - backup and recovery;
     - views that are customized to the needs of specific audiences;
-- Other applications can interact with the data by communicating with the DBMS.
+- **Other applications** can interact with the data by communicating with the DBMS.
 
 ## History of databases
 
@@ -150,6 +150,8 @@ UML can be translated into relations:
         - Through a check constraint. 
     - Denote required fields;
 
+    
+    
 ## Physical design
     
 - __Create physical design (software-specific instructions)__: Construct, roll out, and support.

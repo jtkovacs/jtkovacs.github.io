@@ -302,15 +302,17 @@ Per Whitney (n.d.), Dennis et al. (2012), and Ambler (1999), once gathered, requ
 
 **Actors** are the generic users of a system, e.g. customers, that might appear on a system diagram. Note that actors include other software as well as people. **Personas** are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users; they are an exercise in fostering empathy and user-centered design.
 
+A **primary persona** is one whose needs are distinct enough to require a dedicated interface.
+
 #### User stories
 
 User stories describe, at a high level, the various actions users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."** User stories are refined (split, grouped, reprioritized, etc.) throughout the development process.
 
-#### Concept map
+#### Concept maps
 
 A informally-constructed network of concepts, reflecting entities and their interrelationships. 
 
-#### Requirements trace matrix
+#### Requirements trace matrices
 
 Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
 
@@ -322,7 +324,7 @@ Table format linking requirements with other information, e.g. requirement categ
 
 <img src="../ILLOS/volere.jpeg" width="350px">
 
-#### Use cases
+#### Use cases & requirements definition reports
 
 Requirements are often analyzed by grouping them into **use cases,** capturing actors' archetypical interactions with the system. Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... [They] should describe the interaction between the actor and the system - what the actor does and how the system reacts. Use cases are expressed textually (also called a **requirements definition report),** usually including these elements:
 
@@ -341,12 +343,13 @@ Requirements are often analyzed by grouping them into **use cases,** capturing a
 
 #### Use scenarios
 
-There will be different paths through these use cases, called **use scenarios.** 
+There may be different paths through a use cases, perhaps corresponding to different personas; these paths are called **use scenarios,** and they may be depicted with a [UML activity diagram.](modeling.html#activity-diagrams)
 
 #### Use case diagrams
 
-These use case may be collectively depicted using a **use case diagram.** 
+These use case may be collectively depicted with a **use case diagram:** 
 
+![]()
 
 
 

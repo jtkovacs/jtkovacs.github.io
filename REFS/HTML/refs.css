@@ -16,9 +16,13 @@ body {
     padding-left: 3px;
     font-family: monospace;
     font-size: 10px;
+    font-weight: normal;
     color: #bbbbbb;
 }
 
+#path a:hover {
+    text-decoration: underline;
+}
 
 
 

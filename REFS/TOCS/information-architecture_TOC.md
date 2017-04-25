@@ -42,15 +42,15 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
     - Assigning subject headings (called "subject cataloging") entails **CLASSIFYING** objects. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). 
     - The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
     
-- **INDEXING** the object, i.e. mapping out the contents of an information object, perhaps using terms from a CV (at minimum, for named entities, an authority file shuld be consulted). 
+- **INDEXING** the object, i.e. mapping out the contents of an information object, perhaps using terms from a CV (at minimum, for named entities, an authority file should be consulted). 
 
     - Although **TAGGING** or keywording is occasionally used as a synonym for indexing, it is more often used to denote the opposite of indexing, in which keywords emerge from an information itself rather than from an indexing language. This allows for a grassroots view of what something is about.
     
-    - Indexing may be performed by machines when :
+    - Indexing may be performed by machines when it is **necessary** (there are many documents; content changes quickly; speed matters) or when it is **suitable** (documents are inherently structured; documents fall within a small domain; documents are only text).
         - Automatic indexing with a CV (AKA auto-tagging, -classification, -categorization) may be rules-based (e.g., using regex) or machine learning-based (Bayesian, support vector machines, neural networks). Regardless, performance is better with pre-coordinated terms. 
-        - Automatic indexing that doesn't use a CV is called information extraction, which includes**entity extraction.**
+        - Automatic indexing that doesn't use a CV is called information extraction, which includes**entity extraction** AKA entity recognition, entity identification.
    
-    - Indexing may be performed by humans (professionals or social media users) when
+    - Indexing may be performed by humans (professionals or social media users) when it is **necessary** () or **feasible** (). 
         - Human professional indexing consists of 
             - analyzing content; 
             - assigning terms; and possibly 

@@ -1,7 +1,7 @@
 <p id="path">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</p><table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
 	- [Must information be organized?](#must-information-be-organized?)
 		- [Anatomy of mess](#anatomy-of-mess)
-		- [Derivation of organization systems](#derivation-of-organization-systems)
+		- [Bases of organization](#bases-of-organization)
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
 		- [Information schemas](#information-schemas)
 		- [Information structures](#information-structures)
@@ -46,9 +46,9 @@ Per Abrahamson and Freedman (2008):
 
 <img src="../ILLOS/mess.jpg" width="600px">
 
-### Derivation of organization systems
+### Bases of organization
 
-Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge organization structures) may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
+Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge organization structures) may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![](../ILLOS/taxonomy_status.png)
     

@@ -1,4 +1,4 @@
-<table class="TOC"><tr><td>- [What is metadata?](#what-is-metadata?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/metadata.html">https://jtkovacs.github.io/REFS/HTML/metadata.html</a></p><table class="TOC"><tr><td>- [What is metadata?](#what-is-metadata?)
 	- [Types of metadata](#types-of-metadata)
 		- [Descriptive metadata](#descriptive-metadata)
 		- [Administrative metadata](#administrative-metadata)

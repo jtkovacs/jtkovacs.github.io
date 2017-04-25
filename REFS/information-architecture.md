@@ -22,7 +22,8 @@ Similarly, Wyllys (2000) states that information can be organized according to d
 
 But, Wyllys adds, there are also three fundamental information **structures,** AKA data models or forms. In their review of database history (generations 1 through 3), Connolley and Berg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
 
-- **Record-based: ** Can’t express constraints on the data, but express structure well.
+- **Record-based: ** Can’t express constraints on the data, but express structure well
+
     - **(1G) Hierarchical structures** 
         - Per Zeng (n.d.), strict hierarchies (trees) can model three different types of real-world relationships: 
             - Generic: **X is a Y** or **All X are Y, and some Y are X**
@@ -37,19 +38,17 @@ But, Wyllys adds, there are also three fundamental information **structures,** A
                 - Brain: Central nervous system (BTP)
                 - Spinal cord: Central nervous system (BTP)
         - Polyhierarchy (family tree) is more complex than a strict hierarchy
-    - **(1G) Graph:** AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-    - **(2G) Relational:** Tables with columns, with implicit relationships via attributes.
-- **Physical data models:** Most common: unifying model, frame memory.
+        
+    - **(1G) Graph structures,** AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 
-- **Object-based:** Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
+    - **(2G) Relational structures** are tables with columns, and implicit relationships via attributes.
+    
+- **Object-based structures** allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
     - Entity-Relationship (ER)
     - Semantic
     - Functional
     - (3G) Object-oriented: adds **behavior** alongside state.
 
-- Per , **relational structures** 
-- Per , **graph structures** (AKA networks, ontologies)
-- Per , **object-oriented structures**
 
 The distinction I draw between schemas and structures is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are . 
 

@@ -46,7 +46,7 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
 
     - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
     
-<table style="padding-left: 30px;">
+<table style="padding-left: 50px;">
 
 <tr><th></th><th></th>
 <th colspan="3">INDEXING AGENT</th></tr>

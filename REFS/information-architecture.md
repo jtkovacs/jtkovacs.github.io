@@ -94,14 +94,9 @@ In general, taxonomy is the discipline of creating and managing taxonomies, a te
 
 Beyond this general sense, a taxonomy is also a [specific kind of KOS.](#what-types-of-kos-exist?)
 
-
-
-# What are knowledge organization structures?
+## What are knowledge organization structures?
 
 <img src="../ILLOS/KSOs.png" width="550px">
-
-
-## What types of KOS exist?
 
 ### KOSs by structure
 

@@ -4,8 +4,7 @@
 		- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
 		- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy?](#what-is-taxonomy?)
-- [What are knowledge organization structures?](#what-are-knowledge-organization-structures?)
-	- [What types of KOS exist?](#what-types-of-kos-exist?)
+	- [What are knowledge organization structures?](#what-are-knowledge-organization-structures?)
 		- [KOSs by structure](#koss-by-structure)
 		- [KOSs by role in IR](#koss-by-role-in-ir)
 	- [What are reference works?](#what-are-reference-works?)
@@ -118,14 +117,9 @@ In general, taxonomy is the discipline of creating and managing taxonomies, a te
 
 Beyond this general sense, a taxonomy is also a [specific kind of KOS.](#what-types-of-kos-exist?)
 
-
-
-# What are knowledge organization structures?
+## What are knowledge organization structures?
 
 <img src="../ILLOS/KSOs.png" width="550px">
-
-
-## What types of KOS exist?
 
 ### KOSs by structure
 

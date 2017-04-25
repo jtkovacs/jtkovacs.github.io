@@ -30,6 +30,7 @@ IR is about making an information object discoverable within an information syst
 
 - **SEARCHING** for a specific piece of information.
     - Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
+    
 - **BROWSING** a collection of information. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
     - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
@@ -38,7 +39,7 @@ The custodians of IR systems (usually librarians) are responsible for ingesting 
 - **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Cataloged objects are listed in a catalog.    
     - Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
     - Assigning subject headings is an act of **CLASSIFYING** objects, placing them into an existing classification scheme. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
-    
+
 - **INDEXING** the object, i.e. mapping out the contents of an information object. Indexing may be closed (specific to a single object) or open (using terms from a controlled vocabulary), 
     - For named entities, an authority file shuld be consulted. 
     - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.

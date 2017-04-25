@@ -254,15 +254,45 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 #### Choosing terms
 
-While taxonomies may be automatically generated, they are more often built. A taxonomist adds a term to the vocabulary if warranted; since warrant shift over time, a taxonomist may also have a 'parking lot' for candidate terms AKA provisional terms:
+While taxonomies may be automatically generated, they are more often built by a taxonomist to cover a specific domain/information space. A taxonomist adds a term to the vocabulary if warranted: 
 
-- User warrant emerges from user search terms and feedback;
-- Literary warrant emerges from review of documents and standards; and
-- Organizational warrant emerges from an organization's existing standards.
+- **User warrant** emerges from user search terms and feedback;
+- **Literary warrant** emerges from review of documents and standards; and
+- **Organizational warrant** emerges from an organization's existing standards.
+
+Other considerations:
+
+- Since warrants shift over time, a taxonomist may also have a 'parking lot' for candidate terms AKA provisional terms.
+- CVs can (should) be built from or within other CVs.
+
 
 #### Constructing terms
 
+Types of terms:
+
+- 
+
+##### Scoping terms
+
+- Concept
+- Single term
+- Compound term
+
+
+##### Which term is preferred?
+
 A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
+
+- Usage & spelling: 
+    - Capitalization: 
+    - Punctuation:
+- Full vs. abbreviated forms: 
+- Popular vs. scientific:
+- (Romanized) loan words vs. translations: 
+
+##### Grammar guidelines for terms
+
+
 
 #### Specifying relationships
 
@@ -293,8 +323,17 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 
 ### Maintaining CVs
 
+CVs are somewhat alive, so 
+
 - History notes (HN) indicate date and nature of modifications; they are important for provenance
 
+
+
+### Managing CVs
+
+Hedden (2016, pp. 99-102) lists desirable features of CV management software:
+
+- 
 
 
         

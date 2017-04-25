@@ -234,13 +234,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What are controlled vocabularies?
 
-Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Natural language in content objects is called free text. **Versus natural languages, CVs:**
-
-- Must clearly define the SCOPE of terms. This is done with scope notes (SN).
-- Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
-- Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
-- May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision. 
-
+Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words) ---both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** Natural language in content objects is called free text. 
 
 ### Relationship between CVs and metadata
 
@@ -252,7 +246,16 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 ### Constructing CVs
 
-CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
+**Versus natural languages, CVs:**
+
+- Must clearly define the SCOPE of terms. This is done with scope notes (SN).
+- Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
+- Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
+- May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision. 
+
+CVs consist of terms and relationships, described in term records. 
+
+A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
 
 #### Choosing terms
 
@@ -263,6 +266,10 @@ Terms are chosen if warrant exists; this warrant may take a while to develop, le
 - User warrant emerges from user search terms and feedback;
 - Literary warrant emerges from review of documents and standards; and
 - Organizational warrant emerges from an organization's existing standards.
+
+#### Constructing terms
+
+
 
 #### Specifying relationships
 

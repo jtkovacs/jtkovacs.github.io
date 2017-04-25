@@ -39,12 +39,13 @@ for h in headers:
     TOC.append(space+'- ['+lname+'](#'+aname+')\n')
 
 
-# WRITE TOC & CONTENTS TO MARKDOWN FILE
+# WRITE  TOC & CONTENTS TO MARKDOWN FILE
 foname = fname[:-3]+"_TOC.md"
 foname = foname.split('/') 
 foname.insert(-1, "TOCS")
 foname = '/'.join(foname)
 fout = open(foname, "w")
+fout.write('<a href="../pkb.html">Back to PKB Index</a>')
 fout.write('<p id="path">https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html</p>')
 fout.write('<table class="TOC"><tr><td>')
 for row in TOC:

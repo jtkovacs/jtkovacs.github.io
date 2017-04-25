@@ -25,9 +25,12 @@
 			- [Specifying relationships](#specifying-relationships)
 			- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
 		- [Testing CVs](#testing-cvs)
+		- [Documenting CVs](#documenting-cvs)
 		- [Maintaining CVs](#maintaining-cvs)
 		- [Managing CVs](#managing-cvs)
-	- [Displaying KOSs & CVs](#displaying-koss-&-cvs)
+		- [Displaying CVs](#displaying-cvs)
+			- [Display types](#display-types)
+			- [Format considerations](#format-considerations)
 	- [Interoperability](#interoperability)
 - [Sources](#sources)
 </td></tr></table>
@@ -360,6 +363,22 @@ The usability and IR performance of CVs should be tested:
 - through user research (e.g. comparing to user-generated card-based affinity models).
 
 
+### Documenting CVs
+
+Documentation should cover:
+
+- Purpose of CV
+- Scope of CV
+- Explanation of conventions and rules governing
+    - Term choice
+    - Term form (punctuation, abbreviation, etc.)
+    - Filing and sorting
+    - Navigation
+- Total #terms and #entry_terms; #entry/#total is a user accessibility metric
+- Date last updated, and [update policies](#maintaining-cvs)
+- Contact information
+
+
 ### Maintaining CVs
 
 CVs must be updated to stay valid, so there should be plan for reviews at defined intervals. 
@@ -388,7 +407,7 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 - Accessible to multiple users
 
 
-## Displaying KOSs & CVs
+### Displaying CVs
 
 - running head
 - generic structure
@@ -398,6 +417,17 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 - classified display
 - flat format
 - Concept map: a 2D representation of interrelated concepts
+
+#### Display types
+
+- 
+
+#### Format considerations
+
+- **Screen:** 
+- **Web:** 
+- **Print:** 
+
 
 
 

@@ -48,10 +48,10 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
     
 <table>
 
-<tr><th></th>
+<tr><th></th><th></th>
 <th colspan="3">INDEXING AGENT</th></tr>
 
-<tr><th></th>
+<tr><th></th><th></th>
 <th>Taxonomist</th>
 <th>Users</th>
 <th>Machine</th></tr>

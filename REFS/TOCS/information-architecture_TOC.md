@@ -406,7 +406,7 @@ ANSI/NISO Z39.19 (2005, pp. 99-102) lists desirable features of CV management so
 The need for interoperability arises from different sources:
 
 - Users want to metasearch across different IR systems
-- Users are multilingual [(see ISO 5964 (1985))](https://www.iso.org/standard/12159.html)
+- Users are multilingual [(see ISO 5964)](https://www.iso.org/standard/12159.html)
 - Two databases, indexed differently, must be merged
 - A content object must be indexed with a CV developed for a different domain
 

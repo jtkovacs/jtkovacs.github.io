@@ -1,4 +1,4 @@
-<p id="path">https://jtkovacs.github.io/REFS/HTML/project-management.html</p><table class="TOC"><tr><td>- [What is project management?](#what-is-project-management?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/project-management.html">https://jtkovacs.github.io/REFS/HTML/project-management.html</a></p><table class="TOC"><tr><td>- [What is project management?](#what-is-project-management?)
 	- [Overview of PM methodologies](#overview-of-pm-methodologies)
 - [Initiating a project](#initiating-a-project)
 	- [Strategic assessment](#strategic-assessment)

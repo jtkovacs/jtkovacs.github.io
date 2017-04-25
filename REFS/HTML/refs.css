@@ -150,6 +150,12 @@ code {
 }
 
 
+#path {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: monospace;
+    font-size: 10px;
+}
 
 
 

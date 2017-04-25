@@ -332,14 +332,24 @@ Updates may include:
 - Deleting over- and underused terms (may be proactive or retroactive)
 - Adding **history notes (HN)** that indicate date and nature of modifications; they are important for provenance
 
+
+
+
 ### Managing CVs
 
-Hedden (2016, pp. 99-102) lists desirable features of CV management software:
+ANSI/NISO Z39.19 (2005, pp. 99-102) lists desirable features of CV management software:
 
-- 
+- Notes: SN, HN
+- Relationships: U/UF, BT/NT, RT
+    - Audit validity of relationships
+    - Create reciprocal relationships automatically
+- Allow definition of fields for metadata, other semantic relationships
+- Display contents by hierarchy and alphabet
+- Open source and hardware independent
+- Usable and well-documented
+- Generates reports
+- Multiuser
 
-
-        
 ## Displaying KOSs & CVs
 
 - running head

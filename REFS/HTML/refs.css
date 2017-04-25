@@ -146,15 +146,15 @@ div.sourceCode code {
 code {
     background-color: #ebebeb;
     font-size: 10px;
-    font-family: monospace;    
+    font-family: monospace;   
 }
 
 
 #path {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 5px;
     font-family: monospace;
     font-size: 10px;
+    color: #bbbbbb;
 }
 
 

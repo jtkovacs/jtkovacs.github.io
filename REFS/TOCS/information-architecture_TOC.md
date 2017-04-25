@@ -3,8 +3,8 @@
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
 		- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
 		- [Must information be organized?](#must-information-be-organized?)
-			- [Types of mess](#types-of-mess)
-			- [Extent of organization](#extent-of-organization)
+			- [Anatomy of mess](#anatomy-of-mess)
+			- [Audience of organization systems](#audience-of-organization-systems)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are knowledge organization structures?](#what-are-knowledge-organization-structures?)
 		- [KOSs by structure](#koss-by-structure)
@@ -106,17 +106,18 @@ The distinction I draw is that schemas are for the conceptual (abstract, disembo
 
 ### Must information be organized?
 
-Per Abrahamson and Freedman (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn.
+Per Abrahamson and Freedman (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ 
 
-#### Types of mess
+At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn.
+
+#### Anatomy of mess
 
 Per Abrahamson and Freedman (2008):
-
 <img src="../ILLOS/mess.jpg" width="600px">
 
-#### Extent of organization
+#### Audience of organization systems
 
-Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
+Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge organization structurs) may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![](../ILLOS/taxonomy_status.png)
 

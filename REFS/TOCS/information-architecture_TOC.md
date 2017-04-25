@@ -1,5 +1,4 @@
 <p id="path">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</p><table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
-	- [What is information retrieval?](#what-is-information-retrieval?)
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
 		- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
 		- [Must information be organized?](#must-information-be-organized?)
@@ -22,11 +21,9 @@
 
 # What is information architecture?
 
-Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
+Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the **discoverability** of information object AKA content objects (documents and metadata) within and across myriad different **information retrieval systems** (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information.
 
-
-
-## What is information retrieval?
+For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
 
 IR is about making an information object discoverable within an information system. [IR depends on IA.](#kos-by-function) In IR, users engage with information systems by:
 

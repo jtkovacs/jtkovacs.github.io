@@ -34,7 +34,7 @@ For example, my Zotero library is a hierarchy (structure) of topical categories 
 - What information structure/s to use
 - Whether to prefer shallower or deeper hierarchies
 - Whether to base category divisions off anticipated volume of material
-- Whether to classify (1:1) or tag (1:&inf;)
+- Whether to classify (1:1) or tag (1: &infin;)
 
 When using inexact categories, make top-level categories reflect frequent contexts; major interests or anticipated volume of material? At the same time, though, what about the approach of making many top-level categories, so that the overall structure can be flatter?
 

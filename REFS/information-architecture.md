@@ -8,11 +8,11 @@ Information architecture (IA) is one of several disciplines (e.g. library scienc
 
 Per Wurman (1990), there are five ways to organize items into groups:
 
-- Alphabetical, guided by filing rules that specify how to sort numbers, spaces, special characters and capitals
-- Chronological (Time)
-- Categorical
-- Continuum (Magnitude)
-- Geographical (Location)
+- **Alphabetical,** guided by filing rules that specify how to sort numbers, spaces, special characters and capitals
+- **Chronological** (Time)
+- **Categorical**
+- **Continuum** (Magnitude)
+- **Geographical** (Location)
 
 Similarly, Wyllys (2000) states that information can be organized according to different **schemas:**
 

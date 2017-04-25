@@ -64,18 +64,18 @@ But, Wyllys adds, there are also three fundamental information **structures,** A
 
     - **(1G) Hierarchical structures** 
         - Per Zeng (n.d.), strict hierarchies (trees) can model three different types of real-world relationships: 
-            - Generic: **X is a Y** or **All X are Y, and some Y are X**
+            - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
                 - Succulent: Cactus (NTG)
                 - Cactus: Succulent (BTG)
-            - Instance: **X is a Y** but not a _kind_ of Y or a _part_ of Y
+            - __Instance:__ _X is a Y_ but not a _kind_ of Y or a _part_ of Y
                 - Mountain: Alps (NTI), Himalayas (NTI)
                 - Alps: Moutain (BTI)
                 - Himalayas: Mountain (BTI)
-            - Partitive: **Y consists of Xs**
+            - __Partitive:__ _Y consists of Xs_
                 - Central nervous system: Brain (NTP), Spinal cord (NTP)
                 - Brain: Central nervous system (BTP)
                 - Spinal cord: Central nervous system (BTP)
-        - Polyhierarchy (family tree) is more complex than a strict hierarchy
+        - __Polyhierarchy__ (family tree) is more complex than a strict hierarchy
         
     - **(1G) Graph structures,** AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 

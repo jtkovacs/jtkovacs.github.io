@@ -114,7 +114,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What types of KOS exist?
 
-### KOS by structure
+### KOSs by structure
 
 In order of increasing complexity (number, kind, and configuration of relationships):
 
@@ -159,7 +159,7 @@ Taxonomies are a top-down approach. Thus, there may occasionally be node labels 
 
 Relevant technologies include RDF, OWL, and topic maps.
 
-### KOS by function
+### KOSs by function
 
 As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
 
@@ -186,7 +186,7 @@ CVs consist of terms and relationships, described in term records. A preferred t
 
 ### What activities comprise vocabulary control?
 
-#### Constructing a CV
+#### Constructing CVs
 
 ##### Choosing terms
 

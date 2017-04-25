@@ -5,11 +5,11 @@
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are reference works?](#what-are-reference-works?)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
-		- [KOS by structure](#kos-by-structure)
-		- [KOS by function](#kos-by-function)
+		- [KOSs by structure](#koss-by-structure)
+		- [KOSs by function](#koss-by-function)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
 		- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
-			- [Constructing a CV](#constructing-a-cv)
+			- [Constructing CVs](#constructing-cvs)
 				- [Choosing terms](#choosing-terms)
 				- [Specifying relationships](#specifying-relationships)
 			- [Testing CVs](#testing-cvs)
@@ -136,7 +136,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What types of KOS exist?
 
-### KOS by structure
+### KOSs by structure
 
 In order of increasing complexity (number, kind, and configuration of relationships):
 
@@ -181,7 +181,7 @@ Taxonomies are a top-down approach. Thus, there may occasionally be node labels 
 
 Relevant technologies include RDF, OWL, and topic maps.
 
-### KOS by function
+### KOSs by function
 
 As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
 
@@ -208,7 +208,7 @@ CVs consist of terms and relationships, described in term records. A preferred t
 
 ### What activities comprise vocabulary control?
 
-#### Constructing a CV
+#### Constructing CVs
 
 ##### Choosing terms
 

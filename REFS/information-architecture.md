@@ -28,7 +28,7 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
             - assigning relevancy scores/weights to the terms.
         - Human social indexing produced a **folksonomy,** different from the anthropological term "folk taxonomy" that describes informal categorization schemes.
     
-<table style="padding-left: 70px;">
+<table style="padding-left: 100px;">
 <tr><th></th><th></th>
 <th colspan="3">INDEXING AGENT</th></tr>
 

@@ -141,12 +141,6 @@ OO models show **inheritance** as well as decisions, relationships, and processe
 
 See [notes on UML.](UML.html)
 
-#### Use cases
-
-Start by characterizing **users** with **personas.** Now, each persona will have archetypical interactions with the system, called **use cases;** these use case may be collectively depicted using a **use case diagram.** There will be different paths through these use cases, called **use scenarios.** 
-
-**User stories** are closer to 
-
 #### Activity diagrams
 
 Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific use case or usage scenario. 

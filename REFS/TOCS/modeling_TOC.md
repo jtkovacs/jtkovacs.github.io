@@ -9,7 +9,6 @@
 		- [Data flow diagrams](#data-flow-diagrams)
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
-			- [Use cases](#use-cases)
 			- [Activity diagrams](#activity-diagrams)
 - [Sources](#sources)
 </td></tr></table>
@@ -155,12 +154,6 @@ OO models show **inheritance** as well as decisions, relationships, and processe
 ### Unified Modeling Language (UML)
 
 See [notes on UML.](UML.html)
-
-#### Use cases
-
-Start by characterizing **users** with **personas.** Now, each persona will have archetypical interactions with the system, called **use cases;** these use case may be collectively depicted using a **use case diagram.** There will be different paths through these use cases, called **use scenarios.** 
-
-**User stories** are closer to 
 
 #### Activity diagrams
 

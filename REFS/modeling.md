@@ -36,9 +36,9 @@ Per Scott Page, modeling helps us:
 - **Communicate what we know very simply.** “[M]odels can be the focal points of teams involving experts from many disciplines”
 - **Discover new things:** "Models are fertile", i.e., they have multiple and unexpected uses. “Models can surprise us, make us curious, and lead to new questions. This is what I hate about exams. They only show that you can answer somebody else's question, when the most important thing is: Can you ask a new question?”
 
-## Model typologies 
+## Model typologies
 
-Models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation,** following Steirn (1999), who seems very similar to Dennis et al. (2012):
+Somewhat corresponding to [information structures,](information-architecture.html#information-structures) models can have a general form (e.g. entity relationship diagram) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation,** following Steirn (1999), who seems very similar to Dennis et al. (2012):
 
 - **Functional** (==flow chart?) models capture processes:
     - Use-case diagrams

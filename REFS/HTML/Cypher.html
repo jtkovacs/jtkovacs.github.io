@@ -128,7 +128,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </p>
   <ul>
    <li>
-    MATCHING the node (ee:Person) WHERE ee.name is Emil;
+    MATCHING the node:Lobel (ee:Person) WHERE ee.name is Emil;
    </li>
    <li>
     Traversing all -:KNOWS- relationships of which either direction involves Emil;
@@ -139,6 +139,28 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </ul>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql">MATCH (ee<span class="ch">:Person</span>)-[<span class="ch">:KNOWS</span>]-(friends) <span class="kw">WHERE</span> ee.name = <span class="ot">"Emil"</span> <span class="kw">RETURN</span> ee, friends</code></pre>
+  </div>
+  <p>
+   <strong>
+    Recommend
+   </strong>
+   a similar friend of friend by:
+  </p>
+  <ul>
+   <li>
+    MATCHING the node:Label (js:Person) WHERE js.name is Johan;
+   </li>
+   <li>
+    Traversing all -:KNOWS- relationships to identify unknown friends of friends whose hobby is surfing;
+   </li>
+   <li>
+    Calls result nodes "surfer", drops redundant results, and returns both Johan and result node(s).
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql">MATCH (js<span class="ch">:Person</span>)-[<span class="ch">:KNOWS</span>]-()-[<span class="ch">:KNOWS</span>]-(surfer)
+<span class="kw">WHERE</span> js.name = <span class="ot">"Johan"</span> <span class="kw">AND</span> surfer.hobby = <span class="ot">"surfing"</span>
+<span class="kw">RETURN</span> <span class="kw">DISTINCT</span> surfer</code></pre>
   </div>
  </body>
 </html>

@@ -19,14 +19,13 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
     
     - Indexing may be performed by machines when it is **necessary** (there are many documents; content changes quickly; speed matters) or when it is **suitable** (documents are inherently structured; documents fall within a small domain; documents are only text).
         - Automatic indexing with a CV (AKA auto-tagging, -classification, -categorization) may be rules-based (e.g., using regex) or machine learning-based (Bayesian, support vector machines, neural networks). Regardless, performance is better with pre-coordinated terms. 
-        - Automatic indexing that doesn't use a CV is called information extraction, which includes**entity extraction** AKA entity recognition, entity identification.
+        - Automatic indexing that doesn't use a CV is called information extraction, which includes**entity extraction** AKA entity recognition, entity identification.<br/>
    
     - Indexing may be performed by humans (professionals or social media users) when it is **necessary** () or **feasible** (). 
         - Human professional indexing consists of 
             - analyzing content; 
             - assigning terms; and possibly 
             - assigning relevancy scores/weights to the terms.
-<br/>
         - Human social indexing produced a **folksonomy,** different from the anthropological term "folk taxonomy" that describes informal categorization schemes.
     
 <table style="padding-left: 50px;">

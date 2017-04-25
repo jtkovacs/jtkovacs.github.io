@@ -352,6 +352,11 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 
 ### Testing CVs
 
+The usability and IR performance of CVs should be tested:
+
+- for conformance with standards;
+- heuristically (by expert opinion); and/or 
+- through user research (e.g. comparing to user-generated card-based affinity models)
 
 
 ### Maintaining CVs
@@ -364,8 +369,6 @@ Updates may include:
 - Adding new terms
 - Deleting over- and underused terms (may be proactive or retroactive)
 - Adding **history notes (HN)** that indicate date and nature of modifications; they are important for provenance
-
-
 
 
 ### Managing CVs
@@ -382,6 +385,7 @@ ANSI/NISO Z39.19 (2005, pp. 99-102) lists desirable features of CV management so
 - Usable and well-documented
 - Generates reports
 - Multiuser
+
 
 ## Displaying KOSs & CVs
 

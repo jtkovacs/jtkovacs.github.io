@@ -1,7 +1,8 @@
 <p id="path">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</p><table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
+	- [What is information retrieval?](#what-is-information-retrieval?)
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
-	- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
-	- [Must information be organized?](#must-information-be-organized?)
+		- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
+		- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
 		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
@@ -22,6 +23,10 @@
 # What is information architecture?
 
 Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
+
+## What is information retrieval?
+
+
 
 ## What ways can things be organized?
 
@@ -63,7 +68,7 @@ But, Wyllys adds, there are also three fundamental information **structures,** A
 Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
 The distinction I draw is that schemas are for the conceptual (abstract, disembodied) organization of information into groups, whereas structures describe the structure and behavior of those groups.
 
-## What major questions arise in organizing?
+### What major questions arise in organizing?
 
 - What organization schema/s to use
 - Whether to classify (1:1) or tag (1:&infin;)
@@ -71,7 +76,7 @@ The distinction I draw is that schemas are for the conceptual (abstract, disembo
 - What information structure/s to use
 - Whether to prefer shallower or deeper hierarchies
 
-## Must information be organized?
+### Must information be organized?
 
 Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, shared information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
 

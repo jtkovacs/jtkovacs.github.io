@@ -3,11 +3,11 @@
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
 		- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
 		- [Must information be organized?](#must-information-be-organized?)
-- [What is taxonomy?](#what-is-taxonomy?)
-	- [What are reference works?](#what-are-reference-works?)
+- [What are taxonomies/KOSs?](#what-are-taxonomies/koss?)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOSs by structure](#koss-by-structure)
 		- [KOSs by role in IR](#koss-by-role-in-ir)
+	- [What are reference works?](#what-are-reference-works?)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
 		- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 			- [Constructing CVs](#constructing-cvs)
@@ -113,7 +113,7 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 
 
 
-# What is taxonomy?
+# What are taxonomies/KOSs?
 
 Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. 
 
@@ -122,22 +122,6 @@ In general, taxonomy is the discipline of creating and managing taxonomies, syno
 Beyond this general sense, a taxonomy is also a specific kind of KOS with a hierarchical structure:
 
 <img src="../ILLOS/KSOs.png" width="550px">
-
-
-## What are reference works?
-
-Reference works are information-dense resources meant to be consulted for specific information, not read comprehensively. Terminology for reference works is reviewed here because it often overlaps with KOS terminology. Definitions are quoted/paraphrased from Wikipedia:
-
-- **Dictionary:** (1) A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc. (2) A book of words in one language with their equivalents in another, sometimes known as a lexicon.
-- **Lexicon:** The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
-- **Lexical database:** Stores terms along with information about terms.
-- **Encyclopedia:** A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
-- **Bibliography:** Collected citations for related books, articles, etc., which may be as simple as a reading list or may be extensively annotated. 
-- **Thesaurus:** A list of words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words, and generally lists them in alphabetical order. 
-- **Almanac:** An annual publication that includes information such as weather forecasts, farmers' planting dates, tide tables, and tabular information often arranged according to the calendar. 
-- **Gazetteer:** A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
-- **Directory:** A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory.
-- **Catalog:** A listing of content objects (their description and location). 
 
 
 ## What types of KOS exist?
@@ -198,6 +182,22 @@ Information consumers depend on KOSs to browse and search content objects:
 
 - Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
 - Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
+
+## What are reference works?
+
+Reference works are information-dense resources meant to be consulted for specific information, not read comprehensively. Terminology for reference works is reviewed here because it often overlaps with KOS terminology. Definitions are quoted/paraphrased from Wikipedia:
+
+- **Dictionary:** (1) A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc. (2) A book of words in one language with their equivalents in another, sometimes known as a lexicon.
+- **Lexicon:** The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
+- **Lexical database:** Stores terms along with information about terms.
+- **Encyclopedia:** A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
+- **Bibliography:** Collected citations for related books, articles, etc., which may be as simple as a reading list or may be extensively annotated. 
+- **Thesaurus:** A list of words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words, and generally lists them in alphabetical order. 
+- **Almanac:** An annual publication that includes information such as weather forecasts, farmers' planting dates, tide tables, and tabular information often arranged according to the calendar. 
+- **Gazetteer:** A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
+- **Directory:** A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory.
+- **Catalog:** A listing of content objects (their description and location). 
+
 
 
 

@@ -16,6 +16,30 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
 - **INDEXING** the object, i.e. mapping out the contents of an information object. Indexing may be closed (specific to a single object) or open (using terms from a controlled vocabulary). For named entities, an authority file shuld be consulted. 
 
     - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
+    
+<table>
+
+<tr><th></th>
+<th colspan="3">INDEXING AGENT</th></tr>
+
+<tr><th></th>
+<th>Taxonomist</th>
+<th>Users</th>
+<th>Machine</th></tr>
+
+<tr><th rowspan="2">TAXONOMY?</th>
+<th>Yes</th>
+<td>Closed</td>
+<td>n/a</td>
+<td>Auto-Tagging, Auto-Classification, Auto-Categorization</td></tr>
+
+<tr><th>No</th>
+<td>Open</td>
+<td>Tagging</td>
+<td>Information Extraction</td></tr>
+
+</table>
+    
 
 ## Searching, browsing, & navigating
     
@@ -173,7 +197,8 @@ As part of ingesting a content object into an information system, KOSs can be ap
 Information consumers depend on KOSs to browse and search content objects: 
 
 - Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
-- [Search engines](search-engines.html) may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
+- [Search engines](search-engines.html) may use synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
+    - Small search engines (for website, intranet, CMS, repository) may use thesauri to facilitate search
 
 ## What are reference works?
 

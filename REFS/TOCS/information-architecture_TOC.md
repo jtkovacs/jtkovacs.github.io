@@ -356,11 +356,12 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 
 ### Maintaining CVs
 
-CVs are somewhat alive, so 
+CVs must be updated to stay valid, so there should be plan for reviews at defined intervals. Updates may include:
 
-- History notes (HN) indicate date and nature of modifications; they are important for provenance
-
-
+- Adding new terms
+- **Deleting** over- and underused terms (may be proactive or retroactive)
+- Auditing validity of links
+- Adding **history notes (HN)** that indicate date and nature of modifications; they are important for provenance
 
 ### Managing CVs
 

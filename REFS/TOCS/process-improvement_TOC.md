@@ -1,4 +1,4 @@
-<table class="TOC"><tr><td>- [Tools by degree of change sought](#tools-by-degree-of-change-sought)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/process-improvement.html">https://jtkovacs.github.io/REFS/HTML/process-improvement.html</a></p><table class="TOC"><tr><td>- [Tools by degree of change sought](#tools-by-degree-of-change-sought)
 	- [Business process automation (BPA)](#business-process-automation-(bpa))
 		- [Problem analysis](#problem-analysis)
 		- [Root cause analysis](#root-cause-analysis)

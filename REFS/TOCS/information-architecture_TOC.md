@@ -8,10 +8,10 @@
 		- [KOS by structure](#kos-by-structure)
 		- [KOS by function](#kos-by-function)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
+		- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
+		- [Constructing a CV](#constructing-a-cv)
 		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
 		- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
-- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
-	- [Constructing a CV](#constructing-a-cv)
 	- [Displaying KOSs](#displaying-koss)
 - [Interoperability](#interoperability)
 - [Sources](#sources)
@@ -200,11 +200,26 @@ Controlled vocabularies stand in contrast with natural languages, which undermin
 - Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
 - May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision. 
 
-CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
+CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
+
+### What activities comprise vocabulary control?
+
+- Construction
+- Testing
+- Maintenance
+    - History notes (HN) indicate date and nature of modifications; they are important for provenance
+
+... within a CV management system.
+
+### Constructing a CV
+
+Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
 
 - User warrant emerges from user search terms and feedback;
 - Literary warrant emerges from review of documents and standards; and
 - Organizational warrant emerges from an organization's existing standards.
+
+
 
 ### CV elements by impact on IR
 
@@ -234,17 +249,6 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
 
-
-# What activities comprise vocabulary control?
-
-- Construction
-- Testing
-- Maintenance
-    - History notes (HN) indicate date and nature of modifications; they are important for provenance
-
-... within a CV management system.
-
-## Constructing a CV
         
 ## Displaying KOSs
 

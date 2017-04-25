@@ -265,6 +265,12 @@ Reference works are information-dense resources meant to be consulted for specif
 
 Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words) --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).**
 
+CVs consist of **terms** and **semantic relationships,** described in term records. At minimum, to avoid the IR pitfalls of natural languages CVs must:
+
+- Clearly define the applicability of terms with **scope notes (SN)**
+- Connect synonyms, thereby increasing recall; this is often accomplished with **UF (use for), U (use)**
+- Disambiguate homographs, thereby increasing precision; this is often accomplished with a **gloss** AKA modifier AKA difference AKA qualifier term
+
 ### Relationship between CVs and metadata
 
 Per ANSI/NISO Z39.19 (p. 19), 
@@ -274,14 +280,6 @@ Per ANSI/NISO Z39.19 (p. 19),
 - A CV may be expressed as a metadata schema, e.g. in XML
 
 ### Constructing CVs
-
-CVs consist of **terms** and **semantic relationships,** described in term records. At minimum, to avoid the IR pitfalls of natural languages CVs must:
-
-- Clearly define the applicability of terms with **scope notes (SN)**
-- Connect synonyms, thereby increasing recall; this is often accomplished with **UF (use for), U (use)**
-- Disambiguate homographs, thereby increasing precision; this is often accomplished with a **gloss** AKA modifier AKA difference AKA qualifier term
-
-A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
 
 #### Choosing terms
 
@@ -295,7 +293,7 @@ Terms are chosen if warrant exists; this warrant may take a while to develop, le
 
 #### Constructing terms
 
-
+A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
 
 #### Specifying relationships
 

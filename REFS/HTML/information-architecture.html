@@ -118,47 +118,40 @@
          </a>
          <ul>
           <li>
-           <a href="#what-activities-comprise-vocabulary-control?">
-            What activities comprise vocabulary control?
+           <a href="#relationship-between-cvs-and-metadata">
+            Relationship between CVs and metadata
+           </a>
+          </li>
+          <li>
+           <a href="#constructing-cvs">
+            Constructing CVs
            </a>
            <ul>
             <li>
-             <a href="#constructing-cvs">
-              Constructing CVs
-             </a>
-             <ul>
-              <li>
-               <a href="#choosing-terms">
-                Choosing terms
-               </a>
-              </li>
-              <li>
-               <a href="#specifying-relationships">
-                Specifying relationships
-               </a>
-              </li>
-             </ul>
-            </li>
-            <li>
-             <a href="#testing-cvs">
-              Testing CVs
+             <a href="#choosing-terms">
+              Choosing terms
              </a>
             </li>
             <li>
-             <a href="#maintaining-cvs">
-              Maintaining CVs
+             <a href="#specifying-relationships">
+              Specifying relationships
+             </a>
+            </li>
+            <li>
+             <a href="#cv-elements-by-impact-on-ir">
+              CV elements by impact on IR
              </a>
             </li>
            </ul>
           </li>
           <li>
-           <a href="#cv-elements-by-impact-on-ir">
-            CV elements by impact on IR
+           <a href="#testing-cvs">
+            Testing CVs
            </a>
           </li>
           <li>
-           <a href="#relationship-between-cvs-and-metadata">
-            Relationship between CVs and metadata
+           <a href="#maintaining-cvs">
+            Maintaining CVs
            </a>
           </li>
          </ul>
@@ -215,7 +208,7 @@
    </a>
    They do this by (1)
    <a href="search-engines.html">
-    creating search algorithms,
+    creating search algorithms
    </a>
    or by (2) ingesting information objects into a catalog, which includes:
   </p>
@@ -1041,24 +1034,38 @@
     May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision.
    </li>
   </ul>
-  <p>
-   CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
-  </p>
   <h3>
-   <a name="what-activities-comprise-vocabulary-control?">
-    What activities comprise vocabulary control?
+   <a name="relationship-between-cvs-and-metadata">
+    Relationship between CVs and metadata
    </a>
   </h3>
-  <h4>
+  <p>
+   Per ANSI/NISO Z39.19 (p. 19),
+  </p>
+  <ul>
+   <li>
+    A metadata standard may require that values for certain fields come from CVs
+   </li>
+   <li>
+    Metadata may be used to describe a CV, supporting its discovery as a resource
+   </li>
+   <li>
+    A CV may be expressed as a metadata schema, e.g. in XML
+   </li>
+  </ul>
+  <h3>
    <a name="constructing-cvs">
     Constructing CVs
    </a>
-  </h4>
-  <h5>
+  </h3>
+  <p>
+   CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
+  </p>
+  <h4>
    <a name="choosing-terms">
     Choosing terms
    </a>
-  </h5>
+  </h4>
   <p>
    Taxonomies may be automatically generated.
   </p>
@@ -1076,31 +1083,16 @@
     Organizational warrant emerges from an organization's existing standards.
    </li>
   </ul>
-  <h5>
+  <h4>
    <a name="specifying-relationships">
     Specifying relationships
    </a>
-  </h5>
-  <h4>
-   <a name="testing-cvs">
-    Testing CVs
-   </a>
   </h4>
   <h4>
-   <a name="maintaining-cvs">
-    Maintaining CVs
-   </a>
-  </h4>
-  <ul>
-   <li>
-    History notes (HN) indicate date and nature of modifications; they are important for provenance
-   </li>
-  </ul>
-  <h3>
    <a name="cv-elements-by-impact-on-ir">
     CV elements by impact on IR
    </a>
-  </h3>
+  </h4>
   <p>
    Per ANSI/NISO Z39.19 (p. 16),
    <strong>
@@ -1149,22 +1141,18 @@
    </li>
   </ul>
   <h3>
-   <a name="relationship-between-cvs-and-metadata">
-    Relationship between CVs and metadata
+   <a name="testing-cvs">
+    Testing CVs
    </a>
   </h3>
-  <p>
-   Per ANSI/NISO Z39.19 (p. 19),
-  </p>
+  <h3>
+   <a name="maintaining-cvs">
+    Maintaining CVs
+   </a>
+  </h3>
   <ul>
    <li>
-    A metadata standard may require that values for certain fields come from CVs
-   </li>
-   <li>
-    Metadata may be used to describe a CV, supporting its discovery as a resource
-   </li>
-   <li>
-    A CV may be expressed as a metadata schema, e.g. in XML
+    History notes (HN) indicate date and nature of modifications; they are important for provenance
    </li>
   </ul>
   <h2>

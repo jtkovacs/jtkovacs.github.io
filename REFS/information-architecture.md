@@ -6,7 +6,7 @@ IR occurs when a user retrieves information objects AKA content objects (documen
 
 ## Cataloging & indexing
 
-Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by (1) [creating search algorithms,](search-engines.html) or by (2) ingesting information objects into a catalog, which includes:
+Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by (1) [creating search algorithms](search-engines.html) or by (2) ingesting information objects into a catalog, which includes:
 
 - **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
 
@@ -211,6 +211,9 @@ Information consumers depend on KOSs to browse and search content objects:
 - [Search engines](search-engines.html) may use synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
     - Small search engines (for website, intranet, CMS, repository) may use thesauri to facilitate search
 
+    
+    
+
 ## What are reference works?
 
 Reference works are information-dense resources meant to be consulted for specific information, not read comprehensively. Terminology for reference works is reviewed here because it often overlaps with KOS terminology. Definitions are quoted/paraphrased from Wikipedia:
@@ -238,13 +241,20 @@ Controlled vocabularies stand in contrast with natural languages, which undermin
 - Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
 - May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision. 
 
+
+### Relationship between CVs and metadata
+
+Per ANSI/NISO Z39.19 (p. 19), 
+
+- A metadata standard may require that values for certain fields come from CVs
+- Metadata may be used to describe a CV, supporting its discovery as a resource
+- A CV may be expressed as a metadata schema, e.g. in XML
+
+### Constructing CVs
+
 CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
 
-### What activities comprise vocabulary control?
-
-#### Constructing CVs
-
-##### Choosing terms
+#### Choosing terms
 
 Taxonomies may be automatically generated.
 
@@ -254,15 +264,11 @@ Terms are chosen if warrant exists; this warrant may take a while to develop, le
 - Literary warrant emerges from review of documents and standards; and
 - Organizational warrant emerges from an organization's existing standards.
 
-##### Specifying relationships
+#### Specifying relationships
 
-#### Testing CVs
 
-#### Maintaining CVs
 
-- History notes (HN) indicate date and nature of modifications; they are important for provenance
-
-### CV elements by impact on IR
+#### CV elements by impact on IR
 
 Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
 
@@ -280,13 +286,14 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 - Compound terms
 - Precoordination 
 
-### Relationship between CVs and metadata
 
-Per ANSI/NISO Z39.19 (p. 19), 
+### Testing CVs
 
-- A metadata standard may require that values for certain fields come from CVs
-- Metadata may be used to describe a CV, supporting its discovery as a resource
-- A CV may be expressed as a metadata schema, e.g. in XML
+
+
+### Maintaining CVs
+
+- History notes (HN) indicate date and nature of modifications; they are important for provenance
 
 
 

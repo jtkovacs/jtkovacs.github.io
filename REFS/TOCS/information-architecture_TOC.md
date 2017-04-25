@@ -8,8 +8,8 @@
 		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
 		- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
-		- [KOS by function](#kos-by-function)
 		- [KOS by structure](#kos-by-structure)
+		- [KOS by function](#kos-by-function)
 - [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 	- [Constructing a CV](#constructing-a-cv)
 	- [Displaying KOSs](#displaying-koss)
@@ -177,18 +177,6 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 ## What types of KOS exist?
 
-### KOS by function
-
-As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
-
-- Subject headings applied during cataloging may be organized in hierarchical (single parent), polyhierarchical (multi-parent), and faceted taxonomies
-- Indexing may use indexing terms from an authority file or other CV
-
-Information consumers depend on KOSs to browse and search content objects: 
-
-- Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
-- Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
-
 ### KOS by structure
 
 In order of increasing complexity (number, kind, and configuration of relationships):
@@ -233,6 +221,22 @@ Taxonomies are a top-down approach. Thus, there may occasionally be node labels 
 - Entities are instances of classes
 
 Relevant technologies include RDF, OWL, and topic maps.
+
+### KOS by function
+
+As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
+
+- Subject headings applied during cataloging may be organized in hierarchical (single parent), polyhierarchical (multi-parent), and faceted taxonomies
+- Indexing may use indexing terms from an authority file or other CV
+
+Information consumers depend on KOSs to browse and search content objects: 
+
+- Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
+- Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
+
+
+
+
 
 # What activities comprise vocabulary control?
 

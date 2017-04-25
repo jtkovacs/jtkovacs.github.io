@@ -12,6 +12,17 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+#path {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-family: monospace;
+    font-size: 10px;
+    color: #bbbbbb;
+}
+
+
+
+
 /* Text should be grey, limited to 700 px wide */
 p, li {
     max-width: 700px;
@@ -137,16 +148,12 @@ div.sourceCode {
     font-family: monospace;
     padding-left: 10px;
 }
-
 div.sourceCode code {
     background-color: #f8f8f8;
 }
-
 div.sourceCode ~ p {
     padding-top: 5px;
 }
-
-
 code {
     background-color: #ebebeb;
     font-size: 10px;
@@ -154,12 +161,6 @@ code {
 }
 
 
-#path {
-    padding-left: 5px;
-    font-family: monospace;
-    font-size: 10px;
-    color: #bbbbbb;
-}
 
 
 

@@ -151,12 +151,12 @@ Similar to flowcharts and data flow diagrams, since they focus on depicting a _p
 - **Rounded rectangle** to indicate activities
 - **Rectangle** to capture explanatory notes
     - **Dotted line** to connect notes to relevant entities
-- **Oval** to 
-- **Rake** annotating an activity, to indicate that it's described by its own activity diagram
-- **Black bar** for forks and joins (to capture parallel processes)
+- **Oval** to indicate that a use case is being covered
+    - **Rake** annotating an activity, to indicate it's described by its own activity diagram
 - **Lines** for flows
-- **Diamonds** for conditional branching and merging
-    - **Bracketed text annotation** of a flow to denote a logical condition that must be satisfied 
+    - **Black bar** for forks and joins (to capture parallel processes)
+    - **Diamonds** for conditional branching and merging
+        - **Bracketed text annotation** of a flow to denote a logical condition that must be satisfied 
 - **Swimlanes** to capture which actor performs the activity
 
 <img src="../ILLOS/activity-diagram.jpg" width="580px"/>

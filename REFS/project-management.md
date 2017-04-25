@@ -352,7 +352,9 @@ Use cases may be depicted collectively with a **use case diagram:**
 
 ## Future state design
 
-See [notes on system & process modeling](modeling.html) for methods used to characterize the desired **to-be system.** 
+See [notes on system & process modeling](modeling.html) for methods used to characterize the **to-be system.** 
+
+
 
 ## Choosing software
 

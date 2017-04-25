@@ -66,7 +66,3 @@ RETURN DISTINCT surfer
 PROFILE MATCH ...
 EXPLAIN MATCH ...
 ```
-
-# Update
-
-# Delete

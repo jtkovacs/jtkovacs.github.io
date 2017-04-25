@@ -4,8 +4,6 @@
 - [Retrieve](#retrieve)
 	- [Recommend ](#recommend-)
 	- [Analyze queries](#analyze-queries)
-- [Update](#update)
-- [Delet](#delet)
 </td></tr></table>
 
 
@@ -75,7 +73,3 @@ RETURN DISTINCT surfer
 PROFILE MATCH ...
 EXPLAIN MATCH ...
 ```
-
-# Update
-
-# Delete

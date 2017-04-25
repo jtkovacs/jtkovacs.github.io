@@ -56,7 +56,7 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
 <th>Users</th>
 <th>Machine</th></tr>
 
-<tr><th rowspan="2">TAXONOMY?</th>
+<tr><th rowspan="2">TAXONOMY</th>
 <th>Yes</th>
 <td>Closed</td>
 <td>n/a</td>

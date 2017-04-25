@@ -393,7 +393,7 @@ There may be different paths through a use cases, perhaps corresponding to diffe
 
 These use case may be collectively depicted with a **use case diagram:** 
 
-![](../ILLOS/use-case-diagram.gif)
+<img src="../ILLOS/use-case-diagram.gif" width="450px"/>
 
 
 

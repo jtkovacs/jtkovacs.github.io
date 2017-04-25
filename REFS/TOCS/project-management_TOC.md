@@ -38,8 +38,8 @@
 			- [Requirements trace matrices](#requirements-trace-matrices)
 			- [Card formats](#card-formats)
 			- [Use cases & requirements definition reports](#use-cases-&-requirements-definition-reports)
-			- [Use scenarios](#use-scenarios)
-			- [Use case diagrams](#use-case-diagrams)
+				- [Use scenarios](#use-scenarios)
+				- [Use case diagrams](#use-case-diagrams)
 	- [Future state design](#future-state-design)
 	- [Choosing software](#choosing-software)
 - [Monitoring & governance](#monitoring-&-governance)
@@ -379,24 +379,21 @@ Requirements are often analyzed by grouping them into **use cases,** capturing a
 - Notes
 - Actors
 - Preconditions
-- Scenario, consisting of
-    - Actor actions
-    - System reactions
-- Scenario notes
+- [Scenario(s)](#use-scenarios), AKA alternate course(s)
 - Post conditions
 - Exceptions
 - GUI requirements
 - Dependencies and relations (to other use cases; often modeled with UML)
 
-#### Use scenarios
+##### Use scenarios
 
 There may be different paths through a use cases, perhaps corresponding to different personas; these paths are called **use scenarios,** and they may be depicted with a [UML activity diagram.](modeling.html#activity-diagrams)
 
-#### Use case diagrams
+##### Use case diagrams
 
 These use case may be collectively depicted with a **use case diagram:** 
 
-![]()
+![](use-case-diagram.gif)
 
 
 

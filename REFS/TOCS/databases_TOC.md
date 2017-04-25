@@ -1,7 +1,6 @@
-<table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path">https://jtkovacs.github.io/REFS/HTML/databases.html</p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
-	- [Data models](#data-models)
 - [Database design](#database-design)
 	- [Groundwork](#groundwork)
 	- [Conceptual design](#conceptual-design)
@@ -62,20 +61,6 @@ This is one way of thinking about database abstraction/separation, which, in gen
 
 Then, the DBMS creates **mappings** between schemas (also called intensions); a realization of a schema is called the extension or state of the database.
 
-## Data models
-
-- **Object-based:** Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
-    - Entity-Relationship (ER)
-    - Semantic
-    - Functional
-    - (3G) Object-oriented: adds **behavior** alongside state.
-- **Record-based: ** Can’t express constraints on the data, but express structure well.
-    - **(1G) Hierarchical:** Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
-    - **(1G) Graph:** AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-    - **(2G) Relational:** Tables with columns, with implicit relationships via attributes.
-- **Physical data models:** Most common: unifying model, frame memory.
-
- 
 
 
 # Database design
@@ -211,7 +196,7 @@ UML can be translated into relations:
 
 # Sources
 
-*These notes are informed by Connolly & Begg (2015), Database Systems, 6E.*
+Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
 
 - [Intro. to Relational Databases](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
 - [Relational Algebra](https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about)

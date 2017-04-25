@@ -9,6 +9,9 @@
   <link href="refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
+  <p id="path">
+   https://jtkovacs.github.io/REFS/HTML/databases.html
+  </p>
   <table class="TOC">
    <tr>
     <td>
@@ -29,11 +32,6 @@
            </a>
           </li>
          </ul>
-        </li>
-        <li>
-         <a href="#data-models">
-          Data models
-         </a>
         </li>
        </ul>
       </li>
@@ -314,85 +312,6 @@
    </strong>
    between schemas (also called intensions); a realization of a schema is called the extension or state of the database.
   </p>
-  <h2>
-   <a name="data-models">
-    Data models
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <strong>
-     Object-based:
-    </strong>
-    Allow specification of constraints, but not overall structure. Includes
-    <strong>
-     entities
-    </strong>
-    with
-    <strong>
-     attributes
-    </strong>
-    and
-    <strong>
-     relationships,
-    </strong>
-    describing the
-    <strong>
-     state
-    </strong>
-    of the object.
-    <ul>
-     <li>
-      Entity-Relationship (ER)
-     </li>
-     <li>
-      Semantic
-     </li>
-     <li>
-      Functional
-     </li>
-     <li>
-      (3G) Object-oriented: adds
-      <strong>
-       behavior
-      </strong>
-      alongside state.
-     </li>
-    </ul>
-   </li>
-   <li>
-    <strong>
-     Record-based:
-    </strong>
-    Can’t express constraints on the data, but express structure well.
-    <ul>
-     <li>
-      <strong>
-       (1G) Hierarchical:
-      </strong>
-      Good for modeling parts-of-a-thing, which is a fairly simple relationship. A polyhierarchy (family tree) is a little more complex than a strict hierarchy (tree).
-     </li>
-     <li>
-      <strong>
-       (1G) Graph:
-      </strong>
-      AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
-     </li>
-     <li>
-      <strong>
-       (2G) Relational:
-      </strong>
-      Tables with columns, with implicit relationships via attributes.
-     </li>
-    </ul>
-   </li>
-   <li>
-    <strong>
-     Physical data models:
-    </strong>
-    Most common: unifying model, frame memory.
-   </li>
-  </ul>
   <h1>
    <a name="database-design">
     Database design
@@ -923,9 +842,11 @@
    </a>
   </h1>
   <p>
+   Connolly, T. &amp; Begg, C. (2015).
    <em>
-    These notes are informed by Connolly &amp; Begg (2015), Database Systems, 6E.
+    Database systems: A practical approach to design, implementation, and management
    </em>
+   (6th ed.). New York City, NY: Pearson Education.
   </p>
   <ul>
    <li>

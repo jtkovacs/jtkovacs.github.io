@@ -54,18 +54,25 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     <td>
      <ul>
       <li>
-       <a href="#create-nodes">
-        Create nodes
+       <a href="#create">
+        Create
+       </a>
+       <ul>
+        <li>
+         <a href="#nodes">
+          Nodes
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#relationships-(edges)">
+        Relationships (edges)
        </a>
       </li>
       <li>
-       <a href="#create-relationships">
-        Create relationships
-       </a>
-      </li>
-      <li>
-       <a href="#find-nodes">
-        Find nodes
+       <a href="#retrieve">
+        Retrieve
        </a>
        <ul>
         <li>
@@ -80,15 +87,30 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         </li>
        </ul>
       </li>
+      <li>
+       <a href="#update">
+        Update
+       </a>
+      </li>
+      <li>
+       <a href="#delet">
+        Delet
+       </a>
+      </li>
      </ul>
     </td>
    </tr>
   </table>
   <h1>
-   <a name="create-nodes">
-    Create nodes
+   <a name="create">
+    Create
    </a>
   </h1>
+  <h2>
+   <a name="nodes">
+    Nodes
+   </a>
+  </h2>
   <p>
    This makes a node
    <strong>
@@ -115,8 +137,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 (ir<span class="ch">:Person</span> { name: <span class="ot">"Ian"</span>, from: <span class="ot">"England"</span>, title: <span class="ot">"author"</span> })</code></pre>
   </div>
   <h1>
-   <a name="create-relationships">
-    Create relationships
+   <a name="relationships-(edges)">
+    Relationships (edges)
    </a>
   </h1>
   <div class="sourceCode">
@@ -125,8 +147,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">CREATE</span> (ee)-[<span class="ch">:KNOWS</span> {since: <span class="dv">2001</span>}]-&gt;(js), (ee)-[<span class="ch">:KNOWS</span> {rating: <span class="dv">5</span>}]-&gt;(ir)</code></pre>
   </div>
   <h1>
-   <a name="find-nodes">
-    Find nodes
+   <a name="retrieve">
+    Retrieve
    </a>
   </h1>
   <p>
@@ -185,5 +207,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">PROFILE</span> MATCH ...
 <span class="kw">EXPLAIN</span> MATCH ...</code></pre>
   </div>
+  <h1>
+   <a name="update">
+    Update
+   </a>
+  </h1>
+  <h1>
+   <a name="delete">
+    Delete
+   </a>
+  </h1>
  </body>
 </html>

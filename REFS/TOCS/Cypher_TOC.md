@@ -1,14 +1,19 @@
-<p id="path">https://jtkovacs.github.io/REFS/HTML/Cypher.html</p><table class="TOC"><tr><td>- [Create nodes](#create-nodes)
-- [Create relationships](#create-relationships)
-- [Find nodes](#find-nodes)
+<p id="path">https://jtkovacs.github.io/REFS/HTML/Cypher.html</p><table class="TOC"><tr><td>- [Create](#create)
+	- [Nodes](#nodes)
+- [Relationships (edges)](#relationships-(edges))
+- [Retrieve](#retrieve)
 	- [Recommend ](#recommend-)
 	- [Analyze queries](#analyze-queries)
+- [Update](#update)
+- [Delet](#delet)
 </td></tr></table>
 
 
 
 
-# Create nodes
+# Create
+
+## Nodes
 
 This makes a node **named** "ee" with **label** "Person" and **attributes** "name", "from", and "klout":
 
@@ -23,7 +28,7 @@ CREATE (js:Person { name: "Johan", from: "Sweden", learn: "surfing" }),
 (ir:Person { name: "Ian", from: "England", title: "author" })
 ```
 
-# Create relationships
+# Relationships (edges)
 
 ```SQL
 CREATE (node_name)-[:RELATIONSHIP_NAME {relationship_attribute: value}] -> (node_name)
@@ -32,7 +37,7 @@ CREATE (ee)-[:KNOWS {since: 2001}]->(js), (ee)-[:KNOWS {rating: 5}]->(ir)
 ```
 
 
-# Find nodes
+# Retrieve
 
 Find a nodel labeled "Person" and named "Emil":
 
@@ -70,3 +75,7 @@ RETURN DISTINCT surfer
 PROFILE MATCH ...
 EXPLAIN MATCH ...
 ```
+
+# Update
+
+# Delete

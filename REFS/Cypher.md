@@ -20,6 +20,7 @@ CREATE (js:Person { name: "Johan", from: "Sweden", learn: "surfing" }),
 # Create relationships
 
 ```SQL
+CREATE ( {  })
 ```
 
 

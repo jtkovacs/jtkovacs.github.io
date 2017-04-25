@@ -45,7 +45,7 @@ foname = foname.split('/')
 foname.insert(-1, "TOCS")
 foname = '/'.join(foname)
 fout = open(foname, "w")
-fout.write('<a id="path" href="../pkb.html">Back to PKB Index</a>')
+fout.write('<a id="path" href="../pkb.html">back to PKB index</a>')
 fout.write('<p id="path">https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html</p>')
 fout.write('<table class="TOC"><tr><td>')
 for row in TOC:

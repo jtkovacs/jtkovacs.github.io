@@ -14,7 +14,7 @@ Wurman (1990) claims there are only five ways to organize items. Similarly, Wyll
 
 But, Wyllys adds, there are also three fundamental information **structures,** AKA data models. In their review of database history (gens 1-3), Connolly and Begg (2015) classify Wyllys' three structures as "record-based", and add "object-oriented" as another top-level category:
 
-- **Record-based: ** Can’t express constraints on the data, but express structure well
+- **Record-based structures** can’t express constraints on the data, but express structure well
 
     - **(1G) Hierarchical structures** 
         - Per Zeng (n.d.), strict hierarchies (trees) can model three different types of real-world relationships: 

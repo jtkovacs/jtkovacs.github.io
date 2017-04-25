@@ -155,7 +155,7 @@ The **editor** accepts input:
 The **stream** displays output:
 
 - Clear stream: `:clear`
-
+- Monitor: `:play sysinfo`
 
 
 

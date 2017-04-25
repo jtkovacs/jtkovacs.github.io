@@ -1,10 +1,10 @@
 <p id="path">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</p><table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
+	- [Must information be organized?](#must-information-be-organized?)
+		- [Anatomy of mess](#anatomy-of-mess)
+		- [Derivation of organization systems](#derivation-of-organization-systems)
 	- [What is information retrieval?](#what-is-information-retrieval?)
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
 		- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
-		- [Must information be organized?](#must-information-be-organized?)
-			- [Anatomy of mess](#anatomy-of-mess)
-			- [Audience of organization systems](#audience-of-organization-systems)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are knowledge organization structures?](#what-are-knowledge-organization-structures?)
 		- [KOSs by structure](#koss-by-structure)
@@ -30,6 +30,24 @@
 Rosenfeld, Morville, and Arango (2015) say that IA aims to facilitate both the finding and understanding of information. The "finding" dimension of IA is information retrieval, the legacy of library science; the "understanding" dimension comes via Richard Saul Wurman, who focused on making complex systems intelligible through visualization. 
 
 
+## Must information be organized?
+
+Per Abrahamson and Freedman (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ 
+
+At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn.
+
+### Anatomy of mess
+
+Per Abrahamson and Freedman (2008):
+
+<img src="../ILLOS/mess.jpg" width="600px">
+
+### Derivation of organization systems
+
+Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge organization structures) may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
+
+![](../ILLOS/taxonomy_status.png)
+
 
 ## What is information retrieval?
 
@@ -53,7 +71,6 @@ To retrieve information, users engage with information systems by:
 - **BROWSING** a collection of information; this is the concern of front-end IA, with the goal of intuitive user interfaces and navigational structures. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
 
     - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
-
 
     
 ## What ways can things be organized?
@@ -104,22 +121,6 @@ The distinction I draw is that schemas are for the conceptual (abstract, disembo
 - What information structure/s to use
 - Whether to prefer shallower or deeper hierarchies
 
-### Must information be organized?
-
-Per Abrahamson and Freedman (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ 
-
-At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn.
-
-#### Anatomy of mess
-
-Per Abrahamson and Freedman (2008):
-<img src="../ILLOS/mess.jpg" width="600px">
-
-#### Audience of organization systems
-
-Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge organization structurs) may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
-
-![](../ILLOS/taxonomy_status.png)
 
 
 # What is taxonomy?

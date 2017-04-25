@@ -1,4 +1,4 @@
-<p id="path"><a href="../pkb.html">PKB index</a> &gt; <a href="https://jtkovacs.github.io/REFS/HTML/information-architecture.html">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</a></p><table class="TOC"><tr><td>- [What is information retrieval?](#what-is-information-retrieval?)
+<p id="path"><a href="../pkb.html">PKB index</a> - <a href="https://jtkovacs.github.io/REFS/HTML/information-architecture.html">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</a></p><table class="TOC"><tr><td>- [What is information retrieval?](#what-is-information-retrieval?)
 	- [Cataloging & indexing](#cataloging-&-indexing)
 	- [Searching, browsing, & navigating](#searching,-browsing,-&-navigating)
 - [What is information architecture?](#what-is-information-architecture?)

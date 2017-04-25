@@ -271,10 +271,6 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
 
 Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, [process improvement efforts,](process-improvement.html) existing documents, and competing software using the following techniques (and see [notes on qualitative methods):](qualitative-methods.html) 
 
-#### User stories
-
-User stories specify small actions that users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."**
-
 #### Interviews
 
 1. Select interviewees
@@ -296,11 +292,25 @@ User stories specify small actions that users need to complete. User stories sho
 
 #### Document analysis
 
+
+
 ### Documenting requirements
 
-Start by characterizing **users** with **personas.** Each persona will have archetypical interactions with the system, called **use cases;** these use case may be collectively depicted using a **use case diagram.** There will be different paths through these use cases, called **use scenarios.** 
+Per Whitney (n.d.), Dennis et al. (2012), and Ambler (1999), once gathered, requirements may be expressed in different ways:
 
-Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be expressed using a **concept map,** a **requirements trace matrix** (table format), **user stories,** or various **card** formats, which include:
+#### Actors & personas
+
+Actors are the generic users of a system, e.g. customers, that might appear on a system diagram. Personas are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users.
+
+#### User stories
+
+User stories describe at a high level the various actions users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."** User stories are refined (split, grouped, reprioritized, etc.) throughout the development process.
+
+#### Concept map
+
+#### Requirements trace matrix
+
+#### Card formats
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
 - **XP Story Cards,** in which a customer writes a story on a card.
@@ -308,9 +318,12 @@ Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be e
 
 <img src="../ILLOS/volere.jpeg" width="350px">
 
+
 ### Analyzing requirements
 
 #### Use cases
+
+Each persona will have archetypical interactions with the system, called **use cases;** these use case may be collectively depicted using a **use case diagram.** There will be different paths through these use cases, called **use scenarios.** 
 
 Requirements are often analyzed by grouping them into **use cases.** Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... The Use Case should describe the interaction between the actor and the system - what the actor does and how the system reacts." Note that actors include other software as well as people. Use cases are expressed textually (also called a **requirements definition report),** usually including these elements:
 

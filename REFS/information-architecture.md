@@ -249,7 +249,7 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
         
-# Displaying KOSs
+## Displaying KOSs
 
 - running head
 - generic structure
@@ -264,7 +264,7 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
 
-# Interoperability
+## Interoperability
 
 - Mapping, cross-walks
 - Transcription, transliteration, romanization

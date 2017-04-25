@@ -21,8 +21,8 @@
 			- [Maintaining CVs](#maintaining-cvs)
 		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
 		- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
-- [Displaying KOSs](#displaying-koss)
-- [Interoperability](#interoperability)
+	- [Displaying KOSs](#displaying-koss)
+	- [Interoperability](#interoperability)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -276,7 +276,7 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
         
-# Displaying KOSs
+## Displaying KOSs
 
 - running head
 - generic structure
@@ -291,7 +291,7 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
 
-# Interoperability
+## Interoperability
 
 - Mapping, cross-walks
 - Transcription, transliteration, romanization

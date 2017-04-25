@@ -81,13 +81,17 @@ The distinction I draw is that schemas are for the conceptual (abstract, disembo
 
 ### Must information be organized?
 
-Per Abrahamson & Freedman's _A perfect mess_ (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ 
-
-At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
+Per Abrahamson and Freedman (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn.
 
 Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![](../ILLOS/taxonomy_status.png)
+
+#### Types of mess
+
+Per Abrahamson and Freedman (2008):
+
+<img src="../ILLOS/mess.jpg" width="600px">
 
 
 # What is taxonomy?

@@ -159,9 +159,6 @@ See [notes on UML.](UML.html)
 
 Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific [use case](project-management.html#use-cases-&-requirements-definition-reports) or [usage scenario.](project-management.html#use-scenarios) Activity diagrams use the following elements:
 
-- **Solid circle** to indicate the starting node
-- **Solid circle with halo** to indicate terminal node/s   
-- **Halo around X** to indicate unsuccessful end of process
 - **Rounded rectangle** to indicate activities
 - **Rectangle** to capture explanatory notes
     - **Dotted line** to connect notes to relevant entities
@@ -171,6 +168,9 @@ Similar to flowcharts and data flow diagrams, since they focus on depicting a _p
     - **Black bar** for forks and joins (to capture parallel processes)
     - **Diamonds** for conditional branching and merging
         - **Bracketed text annotation** of a flow to denote a logical condition that must be satisfied 
+    - **Solid circle** to indicate the starting node
+    - **Solid circle with halo** to indicate terminal node/s   
+    - **Halo around X** to indicate unsuccessful end of process
 - **Swimlanes** to capture which actor performs the activity
 
 <img src="../ILLOS/activity-diagram.jpg" width="580px"/>

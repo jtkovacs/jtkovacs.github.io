@@ -18,7 +18,7 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
     - Although **TAGGING** or keywording is occasionally used as a synonym for indexing, it is more often used to denote the opposite of indexing, in which keywords emerge from an information itself rather than from an indexing language. This allows for a grassroots view of what something is about.
     
     - Indexing may be performed by machines when :
-        - Automatic indexing that uses a CV (AKA automated tagging, auto-classification, auto-categorization) may be rules-based (e.g., using regex) or machine learning-based; regardless, performance is better when terms are pre-coordinated. 
+        - Automatic indexing with a CV (AKA auto-tagging, -classification, -categorization) may be rules-based (e.g., using regex) or machine learning-based; regardless, performance is better when terms are pre-coordinated. 
         - Automatic indexing that doesn't use a CV is called information extraction, which includes**entity extraction.**
    
     - Indexing may be performed by humans (professionals or social media users) when

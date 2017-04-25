@@ -47,10 +47,10 @@ The distinction I draw is that schemas are for the conceptual (abstract, disembo
 ## What major questions arise in organizing?
 
 - What organization schema/s to use
-    - Whether to classify (1:1) or tag (1:&infin;)
-    - Whether to base category divisions off anticipated volume of material
+- Whether to classify (1:1) or tag (1:&infin;)
+- Whether to base category divisions off anticipated volume of material
 - What information structure/s to use
-    - Whether to prefer shallower or deeper hierarchies
+- Whether to prefer shallower or deeper hierarchies
 
 ## Must information be organized?
 

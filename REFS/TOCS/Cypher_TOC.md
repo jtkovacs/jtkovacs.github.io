@@ -34,7 +34,7 @@ CREATE (ee)-[:KNOWS {since: 2001}]->(js), (ee)-[:KNOWS {rating: 5}]->(ir)
 
 Find a nodel labeled "Person" and named "Emil":
 
-```XML
+```xslt
 MATCH (ee:Person) WHERE ee.name = "Emil" RETURN ee;
 ```
 

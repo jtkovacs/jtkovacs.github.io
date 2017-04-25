@@ -263,9 +263,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What are controlled vocabularies?
 
-Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words) --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).**
-
-CVs consist of **terms** and **semantic relationships,** described in term records. At minimum, to avoid the IR pitfalls of natural languages CVs must:
+CVs consist of **terms** and **semantic relationships,** described in term records.  Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** At minimum, to avoid the IR pitfalls of natural languages CVs must:
 
 - Clearly define the applicability of terms with **scope notes (SN)**
 - Connect synonyms, thereby increasing recall; this is often accomplished with **UF (use for), U (use)**

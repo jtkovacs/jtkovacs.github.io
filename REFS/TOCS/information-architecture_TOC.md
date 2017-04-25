@@ -283,9 +283,7 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 #### Choosing terms
 
-Taxonomies may be automatically generated.
-
-Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
+While taxonomies may be automatically generated, they are more often built. A taxonomist adds a term to the vocabulary if warranted; since warrant shift over time, a taxonomist may also have a 'parking lot' for candidate terms AKA provisional terms:
 
 - User warrant emerges from user search terms and feedback;
 - Literary warrant emerges from review of documents and standards; and

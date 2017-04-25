@@ -308,7 +308,11 @@ User stories describe at a high level the various actions users need to complete
 
 #### Concept map
 
+A informally-constructed network of concepts, reflecting entities and their interrelationships. 
+
 #### Requirements trace matrix
+
+Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
 
 #### Card formats
 
@@ -317,6 +321,7 @@ User stories describe at a high level the various actions users need to complete
 - **Volere Snow Cards:**
 
 <img src="../ILLOS/volere.jpeg" width="350px">
+
 
 
 ### Analyzing requirements

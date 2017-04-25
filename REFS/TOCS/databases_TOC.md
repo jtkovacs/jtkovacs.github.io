@@ -1,4 +1,4 @@
-<p id="path">https://jtkovacs.github.io/REFS/HTML/databases.html</p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a></p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 - [Database design](#database-design)
@@ -25,7 +25,7 @@ A database is a structured collection of data. A database management system (DBM
 - **Database** = Data + DBMS
 - **Database System** = Database + Database Applications
 - **Database Environment** = Hardware + Software + Data + Procedures + People
-- Data is formatted according to a [data model;](information-architecture.html#what-ways-can-things-be-organized?)
+- Data is formatted according to a [data model;](information-architecture.html#information-structures)
 - Data is managed via a database management system [(DBMS)](DBMS.html) which includes **data sublanguages:**
     - a data definition language **(DDL)** that expresses a schema, stored in the **system catalog** (AKA data directory, data dictionary); 
     - a data manipulation language **(DML),**

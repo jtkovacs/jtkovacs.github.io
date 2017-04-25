@@ -6,7 +6,7 @@ A database is a structured collection of data. A database management system (DBM
 - **Database** = Data + DBMS
 - **Database System** = Database + Database Applications
 - **Database Environment** = Hardware + Software + Data + Procedures + People
-- Data is formatted according to a [data model;](information-architecture.html#what-ways-can-things-be-organized?)
+- Data is formatted according to a [data model;](information-architecture.html#information-structures)
 - Data is managed via a database management system [(DBMS)](DBMS.html) which includes **data sublanguages:**
     - a data definition language **(DDL)** that expresses a schema, stored in the **system catalog** (AKA data directory, data dictionary); 
     - a data manipulation language **(DML),**

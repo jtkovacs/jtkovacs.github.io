@@ -86,17 +86,17 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
 ![](../ILLOS/taxonomy_status.png)
 
 
-
-
-
-
-# What are taxonomies/KOSs?
+# What is taxonomy?
 
 Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. 
 
-In general, taxonomy is the discipline of creating and managing taxonomies, synonymous with knowledge organization structures/systems (KOS) and very nearly synonymous with controlled vocabularies (CVs). The field has roots in biological taxonomies and library catalogs (which existed even in antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
+In general, taxonomy is the discipline of creating and managing taxonomies, a term synonymous with knowledge organization structures/systems (KOS) and very nearly synonymous with controlled vocabularies (CVs). As a field, taxonomy has roots in biological taxonomies and library catalogs (which existed even in antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
 
-Beyond this general sense, a taxonomy is also a specific kind of KOS with a hierarchical structure:
+Beyond this general sense, a taxonomy is also a [specific kind of KOS.](#what-types-of-kos-exist?)
+
+
+
+# What are knowledge organization structures?
 
 <img src="../ILLOS/KSOs.png" width="550px">
 

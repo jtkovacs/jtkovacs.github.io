@@ -255,7 +255,7 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
         
-## Displaying KOSs
+## Displaying KOSs & CVs
 
 - running head
 - generic structure

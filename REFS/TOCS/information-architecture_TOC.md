@@ -23,7 +23,7 @@
 			- [Maintaining CVs](#maintaining-cvs)
 		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
 		- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
-	- [Displaying KOSs](#displaying-koss)
+	- [Displaying KOSs & CVs](#displaying-koss-&-cvs)
 	- [Interoperability](#interoperability)
 - [Sources](#sources)
 </td></tr></table>
@@ -284,7 +284,7 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
         
-## Displaying KOSs
+## Displaying KOSs & CVs
 
 - running head
 - generic structure

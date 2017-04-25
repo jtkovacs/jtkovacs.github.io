@@ -173,7 +173,7 @@ As part of ingesting a content object into an information system, KOSs can be ap
 Information consumers depend on KOSs to browse and search content objects: 
 
 - Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
-- Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
+- [Search engines](search-engines.html) may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
 
 ## What are reference works?
 

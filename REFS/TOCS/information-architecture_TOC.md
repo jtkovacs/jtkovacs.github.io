@@ -194,7 +194,7 @@ Relevant technologies include RDF, OWL, and topic maps.
 
 ### KOSs by role in IR
 
-As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
+As part of ingesting a content object into an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
 
 - Subject headings applied during cataloging may be organized in hierarchical (single parent), polyhierarchical (multi-parent), and faceted taxonomies
 - Indexing may use indexing terms from an authority file or other CV
@@ -202,7 +202,7 @@ As part of ingesting a content object to an information system, KOSs can be appl
 Information consumers depend on KOSs to browse and search content objects: 
 
 - Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
-- Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
+- [Search engines](search-engines.html) may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
 
 ## What are reference works?
 

@@ -1,4 +1,4 @@
-<table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
+<p id="path">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</p><table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
 	- [What generic organization schemes exist?](#what-generic-organization-schemes-exist?)
 	- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy?](#what-is-taxonomy?)

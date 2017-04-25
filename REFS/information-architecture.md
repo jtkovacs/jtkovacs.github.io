@@ -22,7 +22,10 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
         - Automatic indexing that doesn't use a CV is called information extraction, a subset of which is **entity extraction.**
    
     - Indexing may be performed by humans (professionals or social media users) when
-        - Human professional indexing consists of (1) analyzing content; (2) assigning terms; and possibly (3) assigning relevancy scores/weights to the terms.
+        - Human professional indexing consists of 
+            - analyzing content; 
+            - assigning terms; and possibly 
+            - assigning relevancy scores/weights to the terms.
         - Human social indexing produced a **folksonomy,** different from the anthropological term "folk taxonomy" that describes informal categorization schemes.
     
 <table style="padding-left: 50px;">

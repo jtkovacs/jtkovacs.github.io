@@ -39,9 +39,20 @@ Similarly, Wyllys (2000) states that information can be organized according to d
 - **Inexact** schemas: topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid** schemas, combining multiple methods (may be confusing)
 
-But, Wyllys adds, there are also information **structures, models, or forms** that can be combined with schemas:
+But, Wyllys adds, there are also fundamental information **structures,** models, or forms:
 
-- Hierarchy
+- Per Zeng (n.d.), **hierarchies** model three different types of real-world relationships: 
+    - Generic: **X is a Y** or **All X are Y, and some Y are X**
+        - Succulent: Cactus (NTG)
+        - Cactus: Succulent (BTG)
+    - Instance: **X is a Y** but not a _kind_ of Y or a _part_ of Y
+        - Mountain: Alps (NTI), Himalayas (NTI)
+        - Alps: Moutain (BTI)
+        - Himalayas: Mountain (BTI)
+    - Partitive: **Y consists of Xs**
+        - Central nervous system: Brain (NTP), Spinal cord (NTP)
+        - Brain: Central nervous system (BTP)
+        - Spinal cord: Central nervous system (BTP)
 - Relational
 - Network
 
@@ -53,7 +64,7 @@ For example, my Zotero library is a hierarchy (structure) of topical categories 
 - What information structure/s to use
 - Whether to prefer shallower or deeper hierarchies
 - Whether to base category divisions off anticipated volume of material
-- Whether to classify (1:1) or tag (1: &infin;)
+- Whether to classify (1:1) or tag (1:&infin;)
 
 When using inexact categories, make top-level categories reflect frequent contexts; major interests or anticipated volume of material? At the same time, though, what about the approach of making many top-level categories, so that the overall structure can be flatter?
 
@@ -173,19 +184,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 
 **Synonym rings** AKA synsets associate synonyms without indicating preference for one over the others (equivalence relationship). Synsets are usually invisible to users, e.g. underpinning a search engine.
 
-**Taxonomies** AKA hierarchies AKA hierarchical taxonomies AKA tree structures arrange terms into parent/child relationships beneath a single top term (TT). A strict hierarchy requires that each term have a single parent AKA broader term (BT), though they may have multiple siblings and children AKA narrower terms (NT). Per Zeng (n.d.), hierarchies model three different types of real-world relationships: 
-
-- Generic: **X is a Y** or **All X are Y, and some Y are X**
-    - Succulent: Cactus (NTG)
-    - Cactus: Succulent (BTG)
-- Instance: **X is a Y** but not a _kind_ of Y or a _part_ of Y
-    - Mountain: Alps (NTI), Himalayas (NTI)
-    - Alps: Moutain (BTI)
-    - Himalayas: Mountain (BTI)
-- Partitive: **Y consists of Xs**
-    - Central nervous system: Brain (NTP), Spinal cord (NTP)
-    - Brain: Central nervous system (BTP)
-    - Spinal cord: Central nervous system (BTP)
+**Taxonomies** AKA hierarchies AKA hierarchical taxonomies AKA tree structures arrange terms into parent/child relationships beneath a single top term (TT). A strict hierarchy requires that each term have a single parent AKA broader term (BT), though they may have multiple siblings and children AKA narrower terms (NT). 
 
 Indexing a content object with a term is called posting; a given term contains X postings. The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
 

@@ -31,7 +31,7 @@ Rosenfeld, Morville, and Arango (2015) say that IA aims to facilitate both the f
 
 ## What is information retrieval (IR)?
 
-IA is one of several disciplines (e.g. library science, information science) that support the **discoverability** of information object AKA content objects (documents and metadata) within and across myriad different information retrieval systems (e.g. libraries, archives, repositories/portals, websites, databases), with the goals of good precision and good recall. The custodians of IR systems are responsible for ingesting information objects, which includes:
+IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). Information professionals work to ensure that IR (1) has good precision; (2) has good recall; and (3) is possible across multiple IR systems. They do this by ingesting information objects, which includes:
 
 - **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Cataloged objects are listed in a catalog. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
 

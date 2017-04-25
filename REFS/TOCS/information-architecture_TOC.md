@@ -26,11 +26,11 @@ Information architecture (IA) is one of several disciplines (e.g. library scienc
 
 ## What is information retrieval?
 
-IR is about making an information object discoverable within an information system. [IR depends on IA.](#kos-by-function) In IR, users engage with information systems by **SEARCHING** for a specific piece of information or by **BROWSING** a collection of information:
+IR is about making an information object discoverable within an information system. [IR depends on IA.](#kos-by-function) In IR, users engage with information systems by:
 
-- Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
-
-- Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
+- **SEARCHING** for a specific piece of information.
+    - Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
+- **BROWSING** a collection of information. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
     - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
 The custodians of IR systems (usually librarians) are responsible for ingesting information objects, which includes:

@@ -372,13 +372,13 @@ Table format linking requirements with other information, e.g. requirement categ
 
 #### Use cases & requirements definition reports
 
-Requirements are often analyzed by grouping them into **use cases,** capturing actors' archetypical interactions with the system. Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... [They] should describe the interaction between the actor and the system - what the actor does and how the system reacts. Use cases are expressed textually (also called a **requirements definition report),** usually including these elements:
+Requirements are often analyzed by grouping them into **use cases,** capturing actors' archetypical interactions with the system. Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... [They] should describe the interaction between the actor and the system - what the actor does and how the system reacts. Use cases are expressed textually (AKA **requirements definition report),** usually including these elements:
 
 - Overview
 - Notes
 - Actors
 - Preconditions
-- [Scenario(s)](#use-scenarios), AKA alternate course(s)
+- [Scenario(s),](#use-scenarios) AKA alternate course(s)
 - Post conditions
 - Exceptions
 - GUI requirements

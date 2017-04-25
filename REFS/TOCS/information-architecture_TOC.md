@@ -65,9 +65,7 @@ Rosenfeld, Morville, and Arango (2015) say that IA aims to facilitate both the f
 
 ## Must information be organized?
 
-Per Abrahamson and Freedman (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ 
-
-At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn.
+Per Abrahamson and Freedman (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, shared information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn.
 
 ### Anatomy of mess
 

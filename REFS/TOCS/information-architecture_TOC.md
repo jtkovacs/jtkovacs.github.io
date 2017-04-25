@@ -16,6 +16,8 @@
 - [Interoperability](#interoperability)
 - [Sources](#sources)
 </td></tr></table>
+
+
 # What is information architecture?
 
 Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
@@ -24,19 +26,26 @@ Information architecture (IA) is one of several disciplines (e.g. library scienc
 
 Per Wurman (1990), 
 
-- Alphabetical, guided by filing rules that specify how to treat numbers, spaces, special characters and capitals
-- Chronological
-- Geographical
+- Alphabetical, guided by filing rules that specify how to sort numbers, spaces, special characters and capitals
+- Chronological (Time)
 - Categorical
-- 
+- Continuum
+- Geographical (Location)
 
-Schemas:
+Similarly, Wyllys (2000) explains that information may be organized according to different **schemas:**
 
-- Exact (mutually exclusive): Alphabet, Geographic, Chronology
-- Inexact: Topical, Task-Oriented, Audience-Specific, Metaphor-Driven (e.g., the information lifecycle)
-- Hybrids: Combining multiple methods (confusing?)
+- **Exact** (mutually exclusive) schemas
+    - Alphabet
+    - Location
+    - Chronology
+- **Inexact** schemas 
+    - Topical
+    - Task-Oriented
+    - Audience-Specific
+    - Metaphor-Driven (e.g., the information lifecycle)
+- **Hybrid** schemas, combining multiple methods (may be confusing)
 
-Structures:
+Wyllys adds that there are information **structures**
 
 - Hierarchy
 - Network
@@ -220,10 +229,18 @@ Relevant technologies include RDF, OWL, and topic maps.
 - flat format
 - Concept map: a 2D representation of interrelated concepts
 
+
+
+
+
 # Interoperability
 
 - Mapping, cross-walks
 - Transcription, transliteration, romanization
+
+
+
+
 
 # Sources
 

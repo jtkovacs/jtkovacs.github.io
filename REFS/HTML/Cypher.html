@@ -63,12 +63,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           Nodes
          </a>
         </li>
+        <li>
+         <a href="#relationships-(edges)">
+          Relationships (edges)
+         </a>
+        </li>
        </ul>
-      </li>
-      <li>
-       <a href="#relationships-(edges)">
-        Relationships (edges)
-       </a>
       </li>
       <li>
        <a href="#retrieve">
@@ -136,11 +136,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (js<span class="ch">:Person</span> { name: <span class="ot">"Johan"</span>, from: <span class="ot">"Sweden"</span>, learn: <span class="ot">"surfing"</span> }),
 (ir<span class="ch">:Person</span> { name: <span class="ot">"Ian"</span>, from: <span class="ot">"England"</span>, title: <span class="ot">"author"</span> })</code></pre>
   </div>
-  <h1>
+  <h2>
    <a name="relationships-(edges)">
     Relationships (edges)
    </a>
-  </h1>
+  </h2>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (node_name)-[<span class="ch">:RELATIONSHIP_NAME</span> {relationship_attribute: <span class="fu">value</span>}] -&gt; (node_name)
 

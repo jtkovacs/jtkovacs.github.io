@@ -1,6 +1,6 @@
 <p id="path">https://jtkovacs.github.io/REFS/HTML/Cypher.html</p><table class="TOC"><tr><td>- [Create](#create)
 	- [Nodes](#nodes)
-- [Relationships (edges)](#relationships-(edges))
+	- [Relationships (edges)](#relationships-(edges))
 - [Retrieve](#retrieve)
 	- [Recommend ](#recommend-)
 	- [Analyze queries](#analyze-queries)
@@ -28,7 +28,7 @@ CREATE (js:Person { name: "Johan", from: "Sweden", learn: "surfing" }),
 (ir:Person { name: "Ian", from: "England", title: "author" })
 ```
 
-# Relationships (edges)
+## Relationships (edges)
 
 ```SQL
 CREATE (node_name)-[:RELATIONSHIP_NAME {relationship_attribute: value}] -> (node_name)

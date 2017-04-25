@@ -19,7 +19,7 @@ CREATE (js:Person { name: "Johan", from: "Sweden", learn: "surfing" }),
 (ir:Person { name: "Ian", from: "England", title: "author" })
 ```
 
-# Relationships (edges)
+## Relationships (edges)
 
 ```SQL
 CREATE (node_name)-[:RELATIONSHIP_NAME {relationship_attribute: value}] -> (node_name)

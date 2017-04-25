@@ -8,7 +8,7 @@ Information architecture (IA) is one of several disciplines (e.g. library scienc
 
 Wurman (1990) claims there are only five ways to organize items. Similarly, Wyllys (2000) states that information can be organized according to different **schemas** that encompass Wurman's five (italicized):
 
-- **Exact schemas** (mutually exclusive): _alphabet, location, chronology, continuum_
+- **Exact schemas** (mutually exclusive, AKA classes): _alphabet, location, chronology, continuum_
 - **Inexact schemas,** AKA _categories:_ topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid schemas,** combining multiple methods (may be confusing)
 
@@ -42,17 +42,15 @@ But, Wyllys adds, there are also three fundamental information **structures,** A
     - (3G) Object-oriented: adds **behavior** alongside state.
 
 Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
-The distinction I draw is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are . 
+The distinction I draw is that schemas are for the conceptual (abstract, disembodied) organization of information into groups, whereas structures describe the structure and behavior of those groups.
 
 ## What major questions arise in organizing?
 
 - What organization schema/s to use
+    - Whether to classify (1:1) or tag (1:&infin;)
+    - Whether to base category divisions off anticipated volume of material
 - What information structure/s to use
-- Whether to prefer shallower or deeper hierarchies
-- Whether to base category divisions off anticipated volume of material
-- Whether to classify (1:1) or tag (1:&infin;)
-
-When using inexact categories, make top-level categories reflect frequent contexts; major interests or anticipated volume of material? At the same time, though, what about the approach of making many top-level categories, so that the overall structure can be flatter?
+    - Whether to prefer shallower or deeper hierarchies
 
 ## Must information be organized?
 

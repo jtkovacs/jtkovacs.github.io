@@ -2,21 +2,19 @@
 
 # What is information architecture?
 
-Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the **discoverability** of information object AKA content objects (documents and metadata) within and across myriad different **information retrieval systems** (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information.
+Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the **discoverability** of information object AKA content objects (documents and metadata) within and across myriad different **information retrieval (IR)** systems (e.g. libraries, archives, repositories/portals, websites, databases), with the goals of good precision and good recall. Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information.
 
-For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
+Users engage with information systems by:
 
-IR is about making an information object discoverable within an information system. [IR depends on IA.](#kos-by-function) In IR, users engage with information systems by:
-
-- **SEARCHING** for a specific piece of information.
+- **SEARCHING** for a specific piece of information; this is the concern of back-end IA.
 
     - Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
     
-- **BROWSING** a collection of information. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
+- **BROWSING** a collection of information; this is the concern of front-end IA, with the goal of intuitive user interfaces and navigational structures. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
 
     - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
-The custodians of IR systems (usually librarians) are responsible for ingesting information objects, which includes:
+The custodians of IR systems are responsible for ingesting information objects, which includes:
 
 - **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Cataloged objects are listed in a catalog.
 

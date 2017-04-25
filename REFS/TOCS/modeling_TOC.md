@@ -165,8 +165,8 @@ Similar to flowcharts and data flow diagrams, since they focus on depicting a _p
 - **Oval** to indicate that a use case is being covered
     - **Rake** annotating an activity, to indicate it's described by its own activity diagram
 - **Lines** for flows
-    - **Black bar** for forks and joins (to capture parallel processes)
-    - **Diamonds** for conditional branching and merging
+    - **Black bar** for forks and joins (to capture parallel processes: AND)
+    - **Diamonds** for conditional branching and merging (OR)
         - **Bracketed text annotation** of a flow to denote a logical condition that must be satisfied 
     - **Solid circle** to indicate the starting node
     - **Solid circle with halo** to indicate terminal node/s   

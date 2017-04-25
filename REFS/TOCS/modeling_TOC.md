@@ -1,4 +1,4 @@
-<table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
+<p id="path">https://jtkovacs.github.io/REFS/HTML/modeling.html</p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
 	- [Why model?](#why-model?)
 	- [Model typologies ](#model-typologies-)
 - [Models by form](#models-by-form)
@@ -9,7 +9,7 @@
 		- [Data flow diagrams](#data-flow-diagrams)
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
-			- [Use-case diagrams](#use-case-diagrams)
+			- [Use cases](#use-cases)
 			- [Activity diagrams](#activity-diagrams)
 - [Sources](#sources)
 </td></tr></table>
@@ -147,6 +147,7 @@ The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depi
 ![](../ILLOS/DFD.jpg)
 
 
+
 ## Object-oriented modeling
 
 OO models show **inheritance** as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML in 1997.
@@ -155,9 +156,17 @@ OO models show **inheritance** as well as decisions, relationships, and processe
 
 See [notes on UML.](UML.html)
 
-#### Use-case diagrams
+#### Use cases
+
+Start by characterizing **users** with **personas.** Now, each persona will have archetypical interactions with the system, called **use cases;** these use case may be collectively depicted using a **use case diagram.** There will be different paths through these use cases, called **use scenarios.** 
+
+**User stories** are closer to 
 
 #### Activity diagrams
+
+Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific use case or usage scenario. 
+
+
 
 
 

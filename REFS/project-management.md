@@ -231,7 +231,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Requirements determination
 
-Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users), second as **system requirements** (from the perspective of developers). 
+Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs so they can influence system design. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users), second as **system requirements** (from the perspective of developers). 
 
 Requirements are also categorized as **functional** (what business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect how tasks are performed, and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759) Per [StackExchange answers,](https://softwareengineering.stackexchange.com/questions/82763/why-bother-differentiating-between-functional-and-nonfunctional-requirements) is important to differentiate functional from nonfunctional requirements because:
 
@@ -271,6 +271,10 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
 
 Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, [process improvement efforts,](process-improvement.html) existing documents, and competing software using the following techniques (and see [notes on qualitative methods):](qualitative-methods.html) 
 
+#### User stories
+
+User stories specify small actions that users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."**
+
 #### Interviews
 
 1. Select interviewees
@@ -294,6 +298,8 @@ Per Dennis et al. (2012), requirements may be obtained from users, domain expert
 
 ### Documenting requirements
 
+Start by characterizing **users** with **personas.** Each persona will have archetypical interactions with the system, called **use cases;** these use case may be collectively depicted using a **use case diagram.** There will be different paths through these use cases, called **use scenarios.** 
+
 Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be expressed using a **concept map,** a **requirements trace matrix** (table format), **user stories,** or various **card** formats, which include:
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
@@ -303,6 +309,8 @@ Per Whitney (n.d.) and Dennis et al. (2012), once gathered requirements may be e
 <img src="../ILLOS/volere.jpeg" width="350px">
 
 ### Analyzing requirements
+
+#### Use cases
 
 Requirements are often analyzed by grouping them into **use cases.** Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... The Use Case should describe the interaction between the actor and the system - what the actor does and how the system reacts." Note that actors include other software as well as people. Use cases are expressed textually (also called a **requirements definition report),** usually including these elements:
 

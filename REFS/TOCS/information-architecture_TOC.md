@@ -25,7 +25,7 @@ Information architecture (IA) is one of several disciplines (e.g. library scienc
 
 ## What ways can things be organized?
 
-Wurman (1990) claims there are five ways to organize items; Wyllys (2000) states that information can be organized according to different **schemas,** which include Wurman's five (italicized):
+Wurman (1990) claims there are only five ways to organize items. Similarly, Wyllys (2000) states that information can be organized according to different **schemas** which encompass Wurman's five (italicized):
 
 - **Exact schemas** (mutually exclusive): _alphabet, location, chronology, continuum_
 - **Inexact schemas,** AKA _categories:_ topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)

@@ -385,7 +385,7 @@ ANSI/NISO Z39.19 (2005, pp. 99-102) lists desirable features of CV management so
 - Open source and hardware independent
 - Usable and well-documented
 - Generates reports
-- Multiuser
+- Accessible to multiple users
 
 
 ## Displaying KOSs & CVs

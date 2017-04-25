@@ -6,46 +6,22 @@ Information architecture (IA) is one of several disciplines (e.g. library scienc
 
 ## What is information retrieval?
 
-IR is about making an information object discoverable within an information system. [IR depends on IA.](#kos-by-function) 
-
-Users engage with information systems by **SEARCHING** for a specific piece of information or by **BROWSING** a collection of information:
+IR is about making an information object discoverable within an information system. [IR depends on IA.](#kos-by-function) In IR, users engage with information systems by **SEARCHING** for a specific piece of information or by **BROWSING** a collection of information:
 
 - Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
+
 - Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
-    - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162). KOSs that support these activities include hierarchical taxonomies, faceted taxonomies, and pick lists (a drop-down UI element). 
+    - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
+The custodians of IR systems (usually librarians) are responsible for ingesting information objects, which includes:
 
-More specific to the purview of IAs, information consumers depend on KOSs to browse and search content objects. 
-
-
-
-
-#### Adding content to information system
-
-As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about. 
-
-**CATALOGING** is the macro level, where a cataloger describes/represents a content object with metadata including subject headings and subheadings so it can be found and perhaps assigned to a single physical location (not a concern for digital objects). Cataloged objects are listed in a catalog. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination); they may be organized in hierarchical (single parent), polyhierarchical (multi-parent), and faceted taxonomies.
-
-Assigning subject headings is an act of **CLASSIFYING** objects, placing them into an existing classification scheme. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
-
-**INDEXING** is the micro level, where an indexer uses a controlled vocabulary (specifically, indexing terms from an indexing language) to map out the contents of a content object (what is discussed, and where it's discussed). For named entities, an authority file shuld be consulted. Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
-
-#### Retrieving content from information system
-
-I review **REFERENCE WORKS** here because the terminology often overlaps with KOSs as they interest IAs. Reference works are information-dense resources meant to be consulted for specific information, not read comprehensively. Definitions are quoted/paraphrased from Wikipedia:
-
-- **Dictionary:** (1) A collection of words in one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, phonetics, pronunciations, translation, etc. (2) A book of words in one language with their equivalents in another, sometimes known as a lexicon.
-- **Lexicon:** The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
-- **Lexical database:** Stores terms along with information about terms.
-- **Encyclopedia:** A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
-- **Bibliography:** Collected citations for related books, articles, etc., which may be as simple as a reading list or may be extensively annotated. 
-- **Thesaurus:** A list of words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words, and generally lists them in alphabetical order. 
-- **Almanac:** An annual publication that includes information such as weather forecasts, farmers' planting dates, tide tables, and tabular information often arranged according to the calendar. 
-- **Gazetteer:** A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
-- **Directory:** A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory.
-- **Catalog:** A listing of content objects (their description and location). 
-
-
+- **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Cataloged objects are listed in a catalog.    
+    - Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
+    - Assigning subject headings is an act of **CLASSIFYING** objects, placing them into an existing classification scheme. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
+    
+- **INDEXING** the object, i.e. mapping out the contents of an information object. Indexing may be closed (specific to a single object) or open (using terms from a controlled vocabulary), 
+    - For named entities, an authority file shuld be consulted. 
+    - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
 
 
 

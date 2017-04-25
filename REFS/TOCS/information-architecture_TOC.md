@@ -2,9 +2,9 @@
 	- [Must information be organized?](#must-information-be-organized?)
 		- [Anatomy of mess](#anatomy-of-mess)
 		- [Derivation of organization systems](#derivation-of-organization-systems)
-	- [What is information retrieval?](#what-is-information-retrieval?)
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
 		- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
+- [What is information retrieval?](#what-is-information-retrieval?)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are knowledge organization structures?](#what-are-knowledge-organization-structures?)
 		- [KOSs by structure](#koss-by-structure)
@@ -47,31 +47,6 @@ Per Abrahamson and Freedman (2008):
 Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge organization structures) may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![](../ILLOS/taxonomy_status.png)
-
-
-## What is information retrieval?
-
-IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). 
-
-Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by ingesting information objects, which includes:
-
-- **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Cataloged objects are listed in a catalog. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
-
-    - Assigning subject headings entails **CLASSIFYING** objects. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). 
-    - The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
-    
-- **INDEXING** the object, i.e. mapping out the contents of an information object. Indexing may be closed (specific to a single object) or open (using terms from a controlled vocabulary). For named entities, an authority file shuld be consulted. 
-
-    - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
-
-To retrieve information, users engage with information systems by:
-
-- **SEARCHING** for a specific piece of information; this is the concern of back-end IA. Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
-    
-- **BROWSING** a collection of information; this is the concern of front-end IA, with the goal of intuitive user interfaces and navigational structures. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
-
-    - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
-
     
 ## What ways can things be organized?
 
@@ -120,6 +95,31 @@ The distinction I draw is that schemas are for the conceptual (abstract, disembo
 - Whether to base category divisions off anticipated volume of material
 - What information structure/s to use
 - Whether to prefer shallower or deeper hierarchies
+
+
+
+# What is information retrieval?
+
+IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). IR requires IA.
+
+Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by ingesting information objects, which includes:
+
+- **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Cataloged objects are listed in a catalog. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
+
+    - Assigning subject headings entails **CLASSIFYING** objects. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). 
+    - The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
+    
+- **INDEXING** the object, i.e. mapping out the contents of an information object. Indexing may be closed (specific to a single object) or open (using terms from a controlled vocabulary). For named entities, an authority file shuld be consulted. 
+
+    - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
+
+To retrieve information, users engage with information systems by:
+
+- **SEARCHING** for a specific piece of information; this is the concern of back-end IA. Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
+    
+- **BROWSING** a collection of information; this is the concern of front-end IA, with the goal of intuitive user interfaces and navigational structures. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
+
+    - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
 
 

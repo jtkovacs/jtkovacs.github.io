@@ -20,7 +20,7 @@
 
 # What is information architecture?
 
-Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the **discoverability** of information object AKA content objects (documents and metadata) within and across myriad different **information retrieval (IR)** systems (e.g. libraries, archives, repositories/portals, websites, databases), with the goals of good precision and good recall. Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information.
+Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that support the **discoverability** of information object AKA content objects (documents and metadata) within and across myriad different **information retrieval (IR)** systems (e.g. libraries, archives, repositories/portals, websites, databases), with the goals of good precision and good recall. Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information.
 
 Users engage with information systems by:
 
@@ -181,13 +181,13 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
 
-- Subject headings applied during cataloging may be organized in hierarchical (single parent), polyhierarchical (multi-parent), and faceted taxonomies.
-- Indexing may use indexing terms from an authority file or other CV.
+- Subject headings applied during cataloging may be organized in hierarchical (single parent), polyhierarchical (multi-parent), and faceted taxonomies
+- Indexing may use indexing terms from an authority file or other CV
 
 Information consumers depend on KOSs to browse and search content objects: 
 
-- Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists (a drop-down UI element).
-- Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects.
+- Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
+- Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
 
 ### KOS by structure
 

@@ -186,14 +186,9 @@ CVs consist of terms and relationships, described in term records. A preferred t
 
 ### What activities comprise vocabulary control?
 
-- Construction
-- Testing
-- Maintenance
-    - History notes (HN) indicate date and nature of modifications; they are important for provenance
+#### Constructing a CV
 
-... within a CV management system.
-
-### Constructing a CV
+##### Choosing terms
 
 Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
 
@@ -201,7 +196,13 @@ Terms are chosen if warrant exists; this warrant may take a while to develop, le
 - Literary warrant emerges from review of documents and standards; and
 - Organizational warrant emerges from an organization's existing standards.
 
+##### Specifying relationships
 
+#### Testing CVs
+
+#### Maintaining CVs
+
+- History notes (HN) indicate date and nature of modifications; they are important for provenance
 
 ### CV elements by impact on IR
 

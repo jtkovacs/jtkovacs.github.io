@@ -62,7 +62,7 @@ But, Wyllys adds, there are also three fundamental information **structures,** A
 
     - **(2G) Relational structures** are tables with columns, and implicit relationships via attributes.
     
-- **Object-based structures** allow specification of constraints, but not overall structure; include entities with attributes and relationships, describing the **state** of the object
+- **Object-based structures** allow specification of constraints, but not overall structure; include entities with attributes and relationships, describing the state of the object
     - Entity-Relationship (ER)
     - Semantic
     - Functional

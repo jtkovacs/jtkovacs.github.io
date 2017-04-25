@@ -6,9 +6,9 @@ IR occurs when a user retrieves information objects AKA content objects (documen
 
 ## Cataloging & indexing
 
-Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by ingesting information objects, which includes:
+Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by (1) [creating search algorithms,](search-engines.html) or by (2) ingesting information objects into a catalog, which includes:
 
-- **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Cataloged objects are listed in a catalog. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
+- **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
 
     - Assigning subject headings entails **CLASSIFYING** objects. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). 
     - The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).

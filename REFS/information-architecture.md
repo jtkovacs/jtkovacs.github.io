@@ -4,7 +4,7 @@
 
 Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
 
-## How are things organized?
+## What ways can things be organized?
 
 Per Wurman (1990), there are five ways to organize items:
 
@@ -20,7 +20,7 @@ Similarly, Wyllys (2000) states that information can be organized according to d
 - **Inexact schemas:** topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid schemas,** combining multiple methods (may be confusing)
 
-But, Wyllys adds, there are also fundamental information **structures,** models, or forms:
+But, Wyllys adds, there are also fundamental information **structures,** AKA data models or forms. (The distinction I draw between schemas and structures is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are .) In their review of database history, Connolley and Berg (2015) add a fourth structure to the list:
 
 - Per Zeng (n.d.), **hierarchical structures** can model three different types of real-world relationships: 
     - Generic: **X is a Y** or **All X are Y, and some Y are X**
@@ -36,6 +36,7 @@ But, Wyllys adds, there are also fundamental information **structures,** models,
         - Spinal cord: Central nervous system (BTP)
 - Per , **relational structures** 
 - Per , **graph structures** (AKA networks, ontologies)
+- Per , **object-oriented structures**
 
 For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
 

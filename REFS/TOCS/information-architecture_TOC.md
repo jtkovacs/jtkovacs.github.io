@@ -1,5 +1,5 @@
-<p id="path">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</p><table class="TOC"><tr><td>- [What is information architecture (IA)?](#what-is-information-architecture-(ia)?)
-	- [What is information retrieval (IR)?](#what-is-information-retrieval-(ir)?)
+<p id="path">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</p><table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
+	- [What is information retrieval?](#what-is-information-retrieval?)
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
 		- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
 		- [Must information be organized?](#must-information-be-organized?)
@@ -23,13 +23,13 @@
 </td></tr></table>
 
 
-# What is information architecture (IA)?
+# What is information architecture?
 
 Rosenfeld, Morville, and Arango (2015) say that IA aims to facilitate both the finding and understanding of information. The "finding" dimension of IA is information retrieval, the legacy of library science; the "understanding" dimension comes via Richard Saul Wurman, who focused on making complex systems intelligible through visualization. 
 
 
 
-## What is information retrieval (IR)?
+## What is information retrieval?
 
 IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). Information professionals work to ensure that IR (1) has good precision; (2) has good recall; and (3) is possible across multiple IR systems. They do this by ingesting information objects, which includes:
 

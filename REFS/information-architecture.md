@@ -1,12 +1,12 @@
 
 
-# What is information architecture (IA)?
+# What is information architecture?
 
 Rosenfeld, Morville, and Arango (2015) say that IA aims to facilitate both the finding and understanding of information. The "finding" dimension of IA is information retrieval, the legacy of library science; the "understanding" dimension comes via Richard Saul Wurman, who focused on making complex systems intelligible through visualization. 
 
 
 
-## What is information retrieval (IR)?
+## What is information retrieval?
 
 IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). Information professionals work to ensure that IR (1) has good precision; (2) has good recall; and (3) is possible across multiple IR systems. They do this by ingesting information objects, which includes:
 

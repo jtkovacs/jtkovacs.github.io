@@ -48,7 +48,7 @@ Per Abrahamson and Freedman (2008):
 
 ### Bases of organization
 
-Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge organization structures) may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
+Heather Hedden (2016) offers this typology in which taxonomies (i.e., knowledge organization structures) have different bases/origins. KOSs may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![](../ILLOS/taxonomy_status.png)
     

@@ -54,8 +54,8 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
         - Human professional indexing consists of 
             - analyzing content; 
             - assigning terms; and possibly 
-            - assigning relevancy scores/weights to the terms.<br/><br/>
-            
+            - assigning relevancy scores/weights to the terms.
+<br/>
         - Human social indexing produced a **folksonomy,** different from the anthropological term "folk taxonomy" that describes informal categorization schemes.
     
 <table style="padding-left: 50px;">

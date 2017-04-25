@@ -67,6 +67,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        <a href="#find-nodes">
         Find nodes
        </a>
+       <ul>
+        <li>
+         <a href="#recommend-">
+          Recommend
+         </a>
+        </li>
+        <li>
+         <a href="#analyze-queries">
+          Analyze queries
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </td>
@@ -140,11 +152,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql">MATCH (ee<span class="ch">:Person</span>)-[<span class="ch">:KNOWS</span>]-(friends) <span class="kw">WHERE</span> ee.name = <span class="ot">"Emil"</span> <span class="kw">RETURN</span> ee, friends</code></pre>
   </div>
-  <p>
-   <strong>
+  <h2>
+   <a name="recommend">
     Recommend
-   </strong>
-   a similar friend of friend by:
+   </a>
+  </h2>
+  <p>
+   Recommend a similar friend of friend by:
   </p>
   <ul>
    <li>
@@ -161,6 +175,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <pre class="sourceCode sql"><code class="sourceCode sql">MATCH (js<span class="ch">:Person</span>)-[<span class="ch">:KNOWS</span>]-()-[<span class="ch">:KNOWS</span>]-(surfer)
 <span class="kw">WHERE</span> js.name = <span class="ot">"Johan"</span> <span class="kw">AND</span> surfer.hobby = <span class="ot">"surfing"</span>
 <span class="kw">RETURN</span> <span class="kw">DISTINCT</span> surfer</code></pre>
+  </div>
+  <h2>
+   <a name="analyze-queries">
+    Analyze queries
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">PROFILE</span> MATCH ...
+<span class="kw">EXPLAIN</span> MATCH ...</code></pre>
   </div>
  </body>
 </html>

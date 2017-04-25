@@ -44,7 +44,9 @@ Find all Emil's friends by:
 MATCH (ee:Person)-[:KNOWS]-(friends) WHERE ee.name = "Emil" RETURN ee, friends
 ```
 
-**Recommend** a similar friend of friend by:
+## Recommend 
+
+Recommend a similar friend of friend by:
 
 - MATCHING the node:Label (js:Person) WHERE js.name is Johan;
 - Traversing all -:KNOWS- relationships to identify unknown friends of friends whose hobby is surfing; 
@@ -54,4 +56,11 @@ MATCH (ee:Person)-[:KNOWS]-(friends) WHERE ee.name = "Emil" RETURN ee, friends
 MATCH (js:Person)-[:KNOWS]-()-[:KNOWS]-(surfer)
 WHERE js.name = "Johan" AND surfer.hobby = "surfing"
 RETURN DISTINCT surfer
+```
+
+## Analyze queries
+
+```SQL
+PROFILE MATCH ...
+EXPLAIN MATCH ...
 ```

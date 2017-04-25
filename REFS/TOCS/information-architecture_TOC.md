@@ -7,7 +7,7 @@
 	- [What are reference works?](#what-are-reference-works?)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOSs by structure](#koss-by-structure)
-		- [KOSs by function](#koss-by-function)
+		- [KOSs by role in IR](#koss-by-role-in-ir)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
 		- [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 			- [Constructing CVs](#constructing-cvs)
@@ -187,7 +187,7 @@ Taxonomies are a top-down approach. Thus, there may occasionally be node labels 
 
 Relevant technologies include RDF, OWL, and topic maps.
 
-### KOSs by function
+### KOSs by role in IR
 
 As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
 

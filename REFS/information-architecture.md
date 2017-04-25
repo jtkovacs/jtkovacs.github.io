@@ -164,7 +164,7 @@ Taxonomies are a top-down approach. Thus, there may occasionally be node labels 
 
 Relevant technologies include RDF, OWL, and topic maps.
 
-### KOSs by function
+### KOSs by role in IR
 
 As part of ingesting a content object to an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
 

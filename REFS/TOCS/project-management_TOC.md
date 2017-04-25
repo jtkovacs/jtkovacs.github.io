@@ -391,7 +391,7 @@ There may be different paths through a use cases, perhaps corresponding to diffe
 
 ##### Use case diagrams
 
-These use case may be collectively depicted with a **use case diagram:** 
+Use cases may be depicted collectively with a **use case diagram:** 
 
 <img src="../ILLOS/use-case-diagram.gif" width="350px"/>
 

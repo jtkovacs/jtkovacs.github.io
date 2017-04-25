@@ -421,7 +421,7 @@ Interoperability data may be stored in:
 - Authority records
 - Vocabulary mappings
 - Semantic networks
-- Lexical databases, e.g. Xrefer and WordNet
+- Lexical databases, e.g. WordNet
 
 
 

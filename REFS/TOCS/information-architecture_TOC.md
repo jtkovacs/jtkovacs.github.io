@@ -39,23 +39,38 @@ Similarly, Wyllys (2000) states that information can be organized according to d
 - **Inexact schemas:** topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid schemas,** combining multiple methods (may be confusing)
 
-But, Wyllys adds, there are also fundamental information **structures,** AKA data models or forms. (The distinction I draw between schemas and structures is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are .) In their review of database history, Connolley and Berg (2015) add a fourth structure to the list:
+But, Wyllys adds, there are also three fundamental information **structures,** AKA data models or forms. In their review of database history (generations 1 through 3), Connolley and Berg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
 
-- Per Zeng (n.d.), **hierarchical structures** can model three different types of real-world relationships: 
-    - Generic: **X is a Y** or **All X are Y, and some Y are X**
-        - Succulent: Cactus (NTG)
-        - Cactus: Succulent (BTG)
-    - Instance: **X is a Y** but not a _kind_ of Y or a _part_ of Y
-        - Mountain: Alps (NTI), Himalayas (NTI)
-        - Alps: Moutain (BTI)
-        - Himalayas: Mountain (BTI)
-    - Partitive: **Y consists of Xs**
-        - Central nervous system: Brain (NTP), Spinal cord (NTP)
-        - Brain: Central nervous system (BTP)
-        - Spinal cord: Central nervous system (BTP)
+- **Record-based: ** Can’t express constraints on the data, but express structure well.
+    - **(1G) Hierarchical structures** 
+        - Per Zeng (n.d.), strict hierarchies (trees) can model three different types of real-world relationships: 
+            - Generic: **X is a Y** or **All X are Y, and some Y are X**
+                - Succulent: Cactus (NTG)
+                - Cactus: Succulent (BTG)
+            - Instance: **X is a Y** but not a _kind_ of Y or a _part_ of Y
+                - Mountain: Alps (NTI), Himalayas (NTI)
+                - Alps: Moutain (BTI)
+                - Himalayas: Mountain (BTI)
+            - Partitive: **Y consists of Xs**
+                - Central nervous system: Brain (NTP), Spinal cord (NTP)
+                - Brain: Central nervous system (BTP)
+                - Spinal cord: Central nervous system (BTP)
+        - Polyhierarchy (family tree) is more complex than a strict hierarchy
+    - **(1G) Graph:** AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+    - **(2G) Relational:** Tables with columns, with implicit relationships via attributes.
+- **Physical data models:** Most common: unifying model, frame memory.
+
+- **Object-based:** Allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
+    - Entity-Relationship (ER)
+    - Semantic
+    - Functional
+    - (3G) Object-oriented: adds **behavior** alongside state.
+
 - Per , **relational structures** 
 - Per , **graph structures** (AKA networks, ontologies)
 - Per , **object-oriented structures**
+
+The distinction I draw between schemas and structures is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are . 
 
 For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
 
@@ -75,9 +90,7 @@ Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both b
 
 Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
-![Objective, culturally embedded, socially negotiated, and idiosyncratic taxonomies](../ILLOS/taxonomy_status.png)
-
-
+![](../ILLOS/taxonomy_status.png)
 
 
 

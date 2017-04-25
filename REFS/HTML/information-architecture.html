@@ -196,80 +196,154 @@
    </li>
   </ul>
   <p>
-   But, Wyllys adds, there are also fundamental information
+   But, Wyllys adds, there are also three fundamental information
    <strong>
     structures,
    </strong>
-   AKA data models or forms. (The distinction I draw between schemas and structures is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are .) In their review of database history, Connolley and Berg (2015) add a fourth structure to the list:
+   AKA data models or forms. In their review of database history (generations 1 through 3), Connolley and Berg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
   </p>
   <ul>
    <li>
-    Per Zeng (n.d.),
     <strong>
-     hierarchical structures
+     Record-based:
     </strong>
-    can model three different types of real-world relationships:
+    Can’t express constraints on the data, but express structure well.
     <ul>
      <li>
-      Generic:
       <strong>
-       X is a Y
-      </strong>
-      or
-      <strong>
-       All X are Y, and some Y are X
+       (1G) Hierarchical structures
       </strong>
       <ul>
        <li>
-        Succulent: Cactus (NTG)
+        Per Zeng (n.d.), strict hierarchies (trees) can model three different types of real-world relationships:
+        <ul>
+         <li>
+          Generic:
+          <strong>
+           X is a Y
+          </strong>
+          or
+          <strong>
+           All X are Y, and some Y are X
+          </strong>
+          <ul>
+           <li>
+            Succulent: Cactus (NTG)
+           </li>
+           <li>
+            Cactus: Succulent (BTG)
+           </li>
+          </ul>
+         </li>
+         <li>
+          Instance:
+          <strong>
+           X is a Y
+          </strong>
+          but not a
+          <em>
+           kind
+          </em>
+          of Y or a
+          <em>
+           part
+          </em>
+          of Y
+          <ul>
+           <li>
+            Mountain: Alps (NTI), Himalayas (NTI)
+           </li>
+           <li>
+            Alps: Moutain (BTI)
+           </li>
+           <li>
+            Himalayas: Mountain (BTI)
+           </li>
+          </ul>
+         </li>
+         <li>
+          Partitive:
+          <strong>
+           Y consists of Xs
+          </strong>
+          <ul>
+           <li>
+            Central nervous system: Brain (NTP), Spinal cord (NTP)
+           </li>
+           <li>
+            Brain: Central nervous system (BTP)
+           </li>
+           <li>
+            Spinal cord: Central nervous system (BTP)
+           </li>
+          </ul>
+         </li>
+        </ul>
        </li>
        <li>
-        Cactus: Succulent (BTG)
+        Polyhierarchy (family tree) is more complex than a strict hierarchy
        </li>
       </ul>
      </li>
      <li>
-      Instance:
       <strong>
-       X is a Y
+       (1G) Graph:
       </strong>
-      but not a
-      <em>
-       kind
-      </em>
-      of Y or a
-      <em>
-       part
-      </em>
-      of Y
-      <ul>
-       <li>
-        Mountain: Alps (NTI), Himalayas (NTI)
-       </li>
-       <li>
-        Alps: Moutain (BTI)
-       </li>
-       <li>
-        Himalayas: Mountain (BTI)
-       </li>
-      </ul>
+      AKA networks, AKA triples. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
      </li>
      <li>
-      Partitive:
       <strong>
-       Y consists of Xs
+       (2G) Relational:
       </strong>
-      <ul>
-       <li>
-        Central nervous system: Brain (NTP), Spinal cord (NTP)
-       </li>
-       <li>
-        Brain: Central nervous system (BTP)
-       </li>
-       <li>
-        Spinal cord: Central nervous system (BTP)
-       </li>
-      </ul>
+      Tables with columns, with implicit relationships via attributes.
+     </li>
+    </ul>
+   </li>
+   <li>
+    <p>
+     <strong>
+      Physical data models:
+     </strong>
+     Most common: unifying model, frame memory.
+    </p>
+   </li>
+   <li>
+    <strong>
+     Object-based:
+    </strong>
+    Allow specification of constraints, but not overall structure. Includes
+    <strong>
+     entities
+    </strong>
+    with
+    <strong>
+     attributes
+    </strong>
+    and
+    <strong>
+     relationships,
+    </strong>
+    describing the
+    <strong>
+     state
+    </strong>
+    of the object.
+    <ul>
+     <li>
+      Entity-Relationship (ER)
+     </li>
+     <li>
+      Semantic
+     </li>
+     <li>
+      Functional
+     </li>
+     <li>
+      (3G) Object-oriented: adds
+      <strong>
+       behavior
+      </strong>
+      alongside state.
      </li>
     </ul>
    </li>
@@ -287,12 +361,17 @@
     (AKA networks, ontologies)
    </li>
    <li>
-    Per ,
-    <strong>
-     object-oriented structures
-    </strong>
+    <p>
+     Per ,
+     <strong>
+      object-oriented structures
+     </strong>
+    </p>
    </li>
   </ul>
+  <p>
+   The distinction I draw between schemas and structures is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are .
+  </p>
   <p>
    For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
   </p>
@@ -341,10 +420,7 @@
    Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
   </p>
   <div class="figure">
-   <img alt="Objective, culturally embedded, socially negotiated, and idiosyncratic taxonomies" src="../ILLOS/taxonomy_status.png"/>
-   <p class="caption">
-    Objective, culturally embedded, socially negotiated, and idiosyncratic taxonomies
-   </p>
+   <img src="../ILLOS/taxonomy_status.png"/>
   </div>
   <h1>
    <a name="what-is-taxonomy?">

@@ -234,7 +234,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What are controlled vocabularies?
 
-Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words) ---both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** Natural language in content objects is called free text. 
+Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words) --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** Natural language in content objects is called free text. 
 
 ### Relationship between CVs and metadata
 

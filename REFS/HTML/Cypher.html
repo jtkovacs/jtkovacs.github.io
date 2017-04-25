@@ -51,8 +51,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     <td>
      <ul>
       <li>
-       <a href="#create-node">
-        Create node
+       <a href="#create-nodes">
+        Create nodes
+       </a>
+      </li>
+      <li>
+       <a href="#create-relationships">
+        Create relationships
        </a>
       </li>
       <li>
@@ -65,8 +70,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </tr>
   </table>
   <h1>
-   <a name="create-node">
-    Create node
+   <a name="create-nodes">
+    Create nodes
    </a>
   </h1>
   <p>
@@ -85,10 +90,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    "name", "from", and "klout":
   </p>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (ee<span class="ch">:Person</span> { name: <span class="ot">"Emil"</span>, from: <span class="ot">"Sweden"</span>, klout: <span class="dv">99</span> })
-
-<span class="kw">CREATE</span> (js<span class="ch">:Person</span> { name: <span class="ot">"Johan"</span>, from: <span class="ot">"Sweden"</span>, learn: <span class="ot">"surfing"</span> }),
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (ee<span class="ch">:Person</span> { name: <span class="ot">"Emil"</span>, from: <span class="ot">"Sweden"</span>, klout: <span class="dv">99</span> })</code></pre>
+  </div>
+  <p>
+   This makes two nodes with different names, the same label ("Person"), and differing attributes:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (js<span class="ch">:Person</span> { name: <span class="ot">"Johan"</span>, from: <span class="ot">"Sweden"</span>, learn: <span class="ot">"surfing"</span> }),
 (ir<span class="ch">:Person</span> { name: <span class="ot">"Ian"</span>, from: <span class="ot">"England"</span>, title: <span class="ot">"author"</span> })</code></pre>
+  </div>
+  <h1>
+   <a name="create-relationships">
+    Create relationships
+   </a>
+  </h1>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"></code></pre>
   </div>
   <h1>
    <a name="find-nodes">

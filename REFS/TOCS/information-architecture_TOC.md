@@ -54,6 +54,9 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
     
 ## What ways can things be organized?
 
+Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
+The distinction I draw is that schemas are for the conceptual (abstract, disembodied) organization of information into groups, whereas structures describe the structure and behavior of those groups. 
+
 ### Information schemas
 
 Wurman (1990) claims there are only five ways to organize items. Similarly, Wyllys (2000) states that information can be organized according to different schemas that encompass Wurman's five ways (italicized):
@@ -93,8 +96,6 @@ But, Wyllys adds, there are also three fundamental information **structures,** A
     - Functional
     - (3G) Object-oriented: adds **behavior** alongside state
 
-Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
-The distinction I draw is that schemas are for the conceptual (abstract, disembodied) organization of information into groups, whereas structures describe the structure and behavior of those groups. 
 
 ## What major questions arise in organizing?
 

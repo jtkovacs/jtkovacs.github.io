@@ -190,7 +190,7 @@ UML can be translated into relations:
 
 # Sources
 
-*These notes are informed by Connolly & Begg (2015), Database Systems, 6E.*
+Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
 
 - [Intro. to Relational Databases](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
 - [Relational Algebra](https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about)

@@ -39,7 +39,7 @@ Similarly, Wyllys (2000) states that information can be organized according to d
 - **Inexact schemas:** topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid schemas,** combining multiple methods (may be confusing)
 
-But, Wyllys adds, there are also three fundamental information **structures,** AKA data models or forms. In their review of database history (generations 1 through 3), Connolley and Berg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
+But, Wyllys adds, there are also three fundamental information **structures,** AKA data models or forms. In their review of database history (generations 1 through 3), Connolly and Begg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
 
 - **Record-based: ** Can’t express constraints on the data, but express structure well
 
@@ -62,16 +62,14 @@ But, Wyllys adds, there are also three fundamental information **structures,** A
 
     - **(2G) Relational structures** are tables with columns, and implicit relationships via attributes.
     
-- **Object-based structures** allow specification of constraints, but not overall structure. Includes **entities** with **attributes** and **relationships,** describing the **state** of the object.
+- **Object-based structures** allow specification of constraints, but not overall structure; include entities with attributes and relationships, describing the **state** of the object
     - Entity-Relationship (ER)
     - Semantic
     - Functional
     - (3G) Object-oriented: adds **behavior** alongside state.
 
-
-The distinction I draw between schemas and structures is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are . 
-
-For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
+Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
+The distinction I draw is that schemas are for the conceptual (abstract, disembodied) organization of information, whereas structures are . 
 
 ## What major questions arise in organizing?
 
@@ -269,6 +267,8 @@ Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of
 AfterHoursProgramming.com. (n.d.) IA tutorial. Retrieved from [http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)
 
 ANSI/NISO. (2005). Z39.19-2005: Guidelines for the construction, management, and format of monolingual controlled vocabularies. Retrieved from [http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf](http://www.niso.org/apps/group_public/download.php/12591/z39-19-2005r2010.pdf)
+
+Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
 
 Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
 

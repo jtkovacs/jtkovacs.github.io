@@ -157,7 +157,7 @@ See [notes on UML.](UML.html)
 
 #### Activity diagrams
 
-Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific use case or usage scenario. 
+Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific [use case](project-management.html#use-cases-&-requirements-definition-reports) or [usage scenario](project-management.html#use-scenarios). 
 
 
 

@@ -159,7 +159,7 @@ Similar to flowcharts and data flow diagrams, since they focus on depicting a _p
     - **Bracketed text annotation** of a flow to denote a logical condition that must be satisfied 
 - **Swimlanes** to capture which actor performs the activity
 
-<img src="activity-diagram.jpg" width="500px"/>
+<img src="../ILLOS/activity-diagram.jpg" width="500px"/>
 
 
 

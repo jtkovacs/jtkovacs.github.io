@@ -4,12 +4,12 @@
 		- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are reference works?](#what-are-reference-works?)
-	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
-		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
-		- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
 	- [What types of KOS exist?](#what-types-of-kos-exist?)
 		- [KOS by structure](#kos-by-structure)
 		- [KOS by function](#kos-by-function)
+	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
+		- [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
+		- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
 - [What activities comprise vocabulary control?](#what-activities-comprise-vocabulary-control?)
 	- [Constructing a CV](#constructing-a-cv)
 	- [Displaying KOSs](#displaying-koss)
@@ -114,7 +114,6 @@ Beyond this general sense, a taxonomy is also a specific kind of KOS with a hier
 <img src="../ILLOS/KSOs.png" width="550px">
 
 
-
 ## What are reference works?
 
 Reference works are information-dense resources meant to be consulted for specific information, not read comprehensively. Terminology for reference works is reviewed here because it often overlaps with KOS terminology. Definitions are quoted/paraphrased from Wikipedia:
@@ -129,50 +128,6 @@ Reference works are information-dense resources meant to be consulted for specif
 - **Gazetteer:** A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
 - **Directory:** A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory.
 - **Catalog:** A listing of content objects (their description and location). 
-
-
-
-## What are controlled vocabularies?
-
-Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Natural language in content objects is called free text. **Versus natural languages, CVs:**
-
-- Must clearly define the SCOPE of terms. This is done with scope notes (SN).
-- Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
-- Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
-- May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision. 
-
-CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
-
-- User warrant emerges from user search terms and feedback;
-- Literary warrant emerges from review of documents and standards; and
-- Organizational warrant emerges from an organization's existing standards.
-
-### CV elements by impact on IR
-
-Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
-
-- Equivalence relationships/preferred terms
-- Preferred term form
-- Associative relationships/related terms
-- Classified and hierarchical relationships
-- Postcoordination
-- Concept mapping/clustering
-
-**Precision** (minimizing false hits) is improved by controlling ambiguity:
-
-- Parenthetical qualifiers
-- Broader and narrower term hierarchical relationships
-- Compound terms
-- Precoordination 
-
-### Relationship between CVs and metadata
-
-Per ANSI/NISO Z39.19 (p. 19), 
-
-- A metadata standard may require that values for certain fields come from CVs
-- Metadata may be used to describe a CV, supporting its discovery as a resource
-- A CV may be expressed as a metadata schema, e.g. in XML
-
 
 
 ## What types of KOS exist?
@@ -234,6 +189,48 @@ Information consumers depend on KOSs to browse and search content objects:
 - Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
 - Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
 
+
+
+## What are controlled vocabularies?
+
+Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Natural language in content objects is called free text. **Versus natural languages, CVs:**
+
+- Must clearly define the SCOPE of terms. This is done with scope notes (SN).
+- Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
+- Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
+- May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision. 
+
+CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
+
+- User warrant emerges from user search terms and feedback;
+- Literary warrant emerges from review of documents and standards; and
+- Organizational warrant emerges from an organization's existing standards.
+
+### CV elements by impact on IR
+
+Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
+
+- Equivalence relationships/preferred terms
+- Preferred term form
+- Associative relationships/related terms
+- Classified and hierarchical relationships
+- Postcoordination
+- Concept mapping/clustering
+
+**Precision** (minimizing false hits) is improved by controlling ambiguity:
+
+- Parenthetical qualifiers
+- Broader and narrower term hierarchical relationships
+- Compound terms
+- Precoordination 
+
+### Relationship between CVs and metadata
+
+Per ANSI/NISO Z39.19 (p. 19), 
+
+- A metadata standard may require that values for certain fields come from CVs
+- Metadata may be used to describe a CV, supporting its discovery as a resource
+- A CV may be expressed as a metadata schema, e.g. in XML
 
 
 

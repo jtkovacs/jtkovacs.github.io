@@ -51,23 +51,6 @@
          </a>
         </li>
         <li>
-         <a href="#what-are-controlled-vocabularies?">
-          What are controlled vocabularies?
-         </a>
-         <ul>
-          <li>
-           <a href="#cv-elements-by-impact-on-ir">
-            CV elements by impact on IR
-           </a>
-          </li>
-          <li>
-           <a href="#relationship-between-cvs-and-metadata">
-            Relationship between CVs and metadata
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
          <a href="#what-types-of-kos-exist?">
           What types of KOS exist?
          </a>
@@ -80,6 +63,23 @@
           <li>
            <a href="#kos-by-function">
             KOS by function
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#what-are-controlled-vocabularies?">
+          What are controlled vocabularies?
+         </a>
+         <ul>
+          <li>
+           <a href="#cv-elements-by-impact-on-ir">
+            CV elements by impact on IR
+           </a>
+          </li>
+          <li>
+           <a href="#relationship-between-cvs-and-metadata">
+            Relationship between CVs and metadata
            </a>
           </li>
          </ul>
@@ -521,116 +521,6 @@
    </li>
   </ul>
   <h2>
-   <a name="what-are-controlled-vocabularies?">
-    What are controlled vocabularies?
-   </a>
-  </h2>
-  <p>
-   Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Natural language in content objects is called free text.
-   <strong>
-    Versus natural languages, CVs:
-   </strong>
-  </p>
-  <ul>
-   <li>
-    Must clearly define the SCOPE of terms. This is done with scope notes (SN).
-   </li>
-   <li>
-    Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
-   </li>
-   <li>
-    Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
-   </li>
-   <li>
-    May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision.
-   </li>
-  </ul>
-  <p>
-   CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
-  </p>
-  <ul>
-   <li>
-    User warrant emerges from user search terms and feedback;
-   </li>
-   <li>
-    Literary warrant emerges from review of documents and standards; and
-   </li>
-   <li>
-    Organizational warrant emerges from an organization's existing standards.
-   </li>
-  </ul>
-  <h3>
-   <a name="cv-elements-by-impact-on-ir">
-    CV elements by impact on IR
-   </a>
-  </h3>
-  <p>
-   Per ANSI/NISO Z39.19 (p. 16),
-   <strong>
-    recall
-   </strong>
-   is improved by indicating relationships:
-  </p>
-  <ul>
-   <li>
-    Equivalence relationships/preferred terms
-   </li>
-   <li>
-    Preferred term form
-   </li>
-   <li>
-    Associative relationships/related terms
-   </li>
-   <li>
-    Classified and hierarchical relationships
-   </li>
-   <li>
-    Postcoordination
-   </li>
-   <li>
-    Concept mapping/clustering
-   </li>
-  </ul>
-  <p>
-   <strong>
-    Precision
-   </strong>
-   (minimizing false hits) is improved by controlling ambiguity:
-  </p>
-  <ul>
-   <li>
-    Parenthetical qualifiers
-   </li>
-   <li>
-    Broader and narrower term hierarchical relationships
-   </li>
-   <li>
-    Compound terms
-   </li>
-   <li>
-    Precoordination
-   </li>
-  </ul>
-  <h3>
-   <a name="relationship-between-cvs-and-metadata">
-    Relationship between CVs and metadata
-   </a>
-  </h3>
-  <p>
-   Per ANSI/NISO Z39.19 (p. 19),
-  </p>
-  <ul>
-   <li>
-    A metadata standard may require that values for certain fields come from CVs
-   </li>
-   <li>
-    Metadata may be used to describe a CV, supporting its discovery as a resource
-   </li>
-   <li>
-    A CV may be expressed as a metadata schema, e.g. in XML
-   </li>
-  </ul>
-  <h2>
    <a name="what-types-of-kos-exist?">
     What types of KOS exist?
    </a>
@@ -875,6 +765,116 @@
    </li>
    <li>
     Search engines may use thesauri and synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
+   </li>
+  </ul>
+  <h2>
+   <a name="what-are-controlled-vocabularies?">
+    What are controlled vocabularies?
+   </a>
+  </h2>
+  <p>
+   Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words, both homographs/homophones and synonyms/near-synonyms/quasi-synonyms). Natural language in content objects is called free text.
+   <strong>
+    Versus natural languages, CVs:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Must clearly define the SCOPE of terms. This is done with scope notes (SN).
+   </li>
+   <li>
+    Must somehow link SYNONYMS, thereby increasing recall. This is often accomplished via the indicators UF (use for) and U (use), e.g. Salinity UF Saltiness, Saltiness U Salinity.
+   </li>
+   <li>
+    Must distinguish between HOMOGRAPHS, thereby increasing precision. Disambiguation is often accomplished with a modifier AKA difference AKA qualifier term AKA gloss, e.g. Mercury (metal), Mercury (planet), Mercury (car).
+   </li>
+   <li>
+    May capture SEMANTIC RELATIONSHIPS between terms, improving both recall and precision.
+   </li>
+  </ul>
+  <p>
+   CVs consist of terms and relationships, described in term records. A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms. Terms are chosen if warrant exists; this warrant may take a while to develop, leading to the category of candidate terms AKA provisional terms. Warrants have different bases:
+  </p>
+  <ul>
+   <li>
+    User warrant emerges from user search terms and feedback;
+   </li>
+   <li>
+    Literary warrant emerges from review of documents and standards; and
+   </li>
+   <li>
+    Organizational warrant emerges from an organization's existing standards.
+   </li>
+  </ul>
+  <h3>
+   <a name="cv-elements-by-impact-on-ir">
+    CV elements by impact on IR
+   </a>
+  </h3>
+  <p>
+   Per ANSI/NISO Z39.19 (p. 16),
+   <strong>
+    recall
+   </strong>
+   is improved by indicating relationships:
+  </p>
+  <ul>
+   <li>
+    Equivalence relationships/preferred terms
+   </li>
+   <li>
+    Preferred term form
+   </li>
+   <li>
+    Associative relationships/related terms
+   </li>
+   <li>
+    Classified and hierarchical relationships
+   </li>
+   <li>
+    Postcoordination
+   </li>
+   <li>
+    Concept mapping/clustering
+   </li>
+  </ul>
+  <p>
+   <strong>
+    Precision
+   </strong>
+   (minimizing false hits) is improved by controlling ambiguity:
+  </p>
+  <ul>
+   <li>
+    Parenthetical qualifiers
+   </li>
+   <li>
+    Broader and narrower term hierarchical relationships
+   </li>
+   <li>
+    Compound terms
+   </li>
+   <li>
+    Precoordination
+   </li>
+  </ul>
+  <h3>
+   <a name="relationship-between-cvs-and-metadata">
+    Relationship between CVs and metadata
+   </a>
+  </h3>
+  <p>
+   Per ANSI/NISO Z39.19 (p. 19),
+  </p>
+  <ul>
+   <li>
+    A metadata standard may require that values for certain fields come from CVs
+   </li>
+   <li>
+    Metadata may be used to describe a CV, supporting its discovery as a resource
+   </li>
+   <li>
+    A CV may be expressed as a metadata schema, e.g. in XML
    </li>
   </ul>
   <h1>

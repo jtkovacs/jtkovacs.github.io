@@ -22,6 +22,7 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
         - Automatic indexing that doesn't use a CV is called information extraction, a subset of which is **entity extraction.**
    
     - Indexing may be performed by humans (professionals or social media users) when
+    
         - Human professional indexing consists of 
             - analyzing content; 
             - assigning terms; and possibly 

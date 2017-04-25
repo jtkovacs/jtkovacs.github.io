@@ -1,5 +1,6 @@
 <p id="path">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</p><table class="TOC"><tr><td>- [What is information architecture?](#what-is-information-architecture?)
 	- [What generic organization schemes exist?](#what-generic-organization-schemes-exist?)
+	- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
 	- [Must information be organized?](#must-information-be-organized?)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
@@ -24,27 +25,35 @@ Information architecture (IA) is one of several disciplines (e.g. library scienc
 
 ## What generic organization schemes exist?
 
-Per Wurman (1990), 
+Per Wurman (1990), there are five ways to organize items into groups:
 
 - Alphabetical, guided by filing rules that specify how to sort numbers, spaces, special characters and capitals
 - Chronological (Time)
 - Categorical
-- Continuum
+- Continuum (Magnitude)
 - Geographical (Location)
 
-Similarly, Wyllys (2000) explains that information may be organized according to different **schemas:**
+Similarly, Wyllys (2000) states that information can be organized according to different **schemas:**
 
 - **Exact** (mutually exclusive) schemas: alphabet, location, chronology
 - **Inexact** schemas: topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid** schemas, combining multiple methods (may be confusing)
 
-Wyllys adds that there are information **structures**
+But, Wyllys adds, there are also information **structures, models, or forms** that can be combined with schemas:
 
 - Hierarchy
-- Network
 - Relational
+- Network
 
-A hierarchy (structure) of topical (schema) categories, automatically sorted by alphabet (schema). This is a hybrid schema; does that make it more confusing? If child categories weren’t alphabetized, they’d be random or chronological (e.g. to reflect steps in a process, maybe).
+For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
+
+## What major questions arise in organizing?
+
+- What organization schema/s to use
+- What information structure/s to use
+- Whether to prefer shallower or deeper hierarchies
+- Whether to base category divisions off anticipated volume of material
+- Whether to classify (1:1) or tag (1:&inf;)
 
 When using inexact categories, make top-level categories reflect frequent contexts; major interests or anticipated volume of material? At the same time, though, what about the approach of making many top-level categories, so that the overall structure can be flatter?
 

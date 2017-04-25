@@ -35,13 +35,13 @@ Per Wurman (1990), there are five ways to organize items into groups:
 
 Similarly, Wyllys (2000) states that information can be organized according to different **schemas:**
 
-- **Exact** (mutually exclusive) schemas: alphabet, location, chronology
-- **Inexact** schemas: topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
-- **Hybrid** schemas, combining multiple methods (may be confusing)
+- **Exact schemas** (mutually exclusive): alphabet, location, chronology
+- **Inexact schemas:** topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
+- **Hybrid schemas,** combining multiple methods (may be confusing)
 
 But, Wyllys adds, there are also fundamental information **structures,** models, or forms:
 
-- Per Zeng (n.d.), **hierarchies** model three different types of real-world relationships: 
+- Per Zeng (n.d.), **hierarchical structures** can model three different types of real-world relationships: 
     - Generic: **X is a Y** or **All X are Y, and some Y are X**
         - Succulent: Cactus (NTG)
         - Cactus: Succulent (BTG)

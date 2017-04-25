@@ -25,18 +25,22 @@ Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies
     
 ## What ways can things be organized?
 
-Wurman (1990) claims there are only five ways to organize items. Similarly, Wyllys (2000) states that information can be organized according to different **schemas** that encompass Wurman's five ways (italicized):
+### Information schemas
+
+Wurman (1990) claims there are only five ways to organize items. Similarly, Wyllys (2000) states that information can be organized according to different schemas that encompass Wurman's five ways (italicized):
 
 - **Exact schemas** (mutually exclusive, AKA classes): _alphabet, location, chronology, continuum_
 - **Inexact schemas,** AKA _categories:_ topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid schemas,** combining multiple methods (may be confusing)
+
+### Information structures
 
 But, Wyllys adds, there are also three fundamental information **structures,** AKA **data models.** In their review of database history (gens 1-3), Connolly and Begg (2015) classify Wyllys' three structures as "record-based", and add "object-oriented" as another top-level category:
 
 - **Record-based structures** can’t express constraints on the data, but express structure well
 
     - **(1G) Hierarchical structures** 
-        - Per Zeng (n.d.), strict hierarchies (trees) can model three different types of real-world relationships: 
+        - Per Zeng (n.d.), strict hierarchies __(trees)__ can model three different types of real-world relationships: 
             - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
                 - Succulent: Cactus (NTG)
                 - Cactus: Succulent (BTG)
@@ -63,7 +67,7 @@ But, Wyllys adds, there are also three fundamental information **structures,** A
 Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
 The distinction I draw is that schemas are for the conceptual (abstract, disembodied) organization of information into groups, whereas structures describe the structure and behavior of those groups. 
 
-### What major questions arise in organizing?
+## What major questions arise in organizing?
 
 - What organization schema/s to use
 - Whether to classify (1:1) or tag (1:&infin;)

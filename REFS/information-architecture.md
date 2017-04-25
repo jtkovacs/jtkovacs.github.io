@@ -4,9 +4,9 @@
 
 Information architecture (IA) is one of several disciplines (e.g. library science, information science, taxonomy) that supports the search, browsing, and presentation of content objects (documents and metadata) within and across myriad different information systems (e.g. libraries, archives, repositories/portals, websites, databases). Another way of putting this (credit to Rosenfeld, Morville, and Arango, 2015) is that IA aims to facilitate both the finding and understanding of information. For search (the concern of back-end IA), the goal is information retrieval with good precision and good recall, which requires that content objects be described consistently, i.e. with a controlled vocabulary (CV). For browsing (the concern of front-end IA), the goal is intuitive user interfaces and navigational structures.
 
-## What generic organization schemes exist?
+## How are things organized?
 
-Per Wurman (1990), there are five ways to organize items into groups:
+Per Wurman (1990), there are five ways to organize items:
 
 - **Alphabetical,** guided by filing rules that specify how to sort numbers, spaces, special characters and capitals
 - **Chronological** (Time)
@@ -34,8 +34,8 @@ But, Wyllys adds, there are also fundamental information **structures,** models,
         - Central nervous system: Brain (NTP), Spinal cord (NTP)
         - Brain: Central nervous system (BTP)
         - Spinal cord: Central nervous system (BTP)
-- Relational
-- Network
+- Per , **relational structures** 
+- Per , **graph structures** (AKA networks, ontologies)
 
 For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
 
@@ -49,7 +49,6 @@ For example, my Zotero library is a hierarchy (structure) of topical categories 
 
 When using inexact categories, make top-level categories reflect frequent contexts; major interests or anticipated volume of material? At the same time, though, what about the approach of making many top-level categories, so that the overall structure can be flatter?
 
-
 ## Must information be organized?
 
 Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, shared information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
@@ -57,6 +56,13 @@ Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both b
 Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![Objective, culturally embedded, socially negotiated, and idiosyncratic taxonomies](../ILLOS/taxonomy_status.png)
+
+
+
+
+
+
+
 
 # What is taxonomy?
 

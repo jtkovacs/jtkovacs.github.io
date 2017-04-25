@@ -13,9 +13,12 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
     - Assigning subject headings (called "subject cataloging") entails **CLASSIFYING** objects. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). 
     - The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
     
-- **INDEXING** the object, i.e. mapping out the contents of an information object, perhaps using terms from a CV (at minimum, for named entities, an authority file shuld be consulted). Indexing consists of (1) analyzing content; (2) assigning terms; and possibly (3) assigning relevancy scores/weights to the terms.
+- **INDEXING** the object, i.e. mapping out the contents of an information object, perhaps using terms from a CV (at minimum, for named entities, an authority file shuld be consulted). 
 
+    - Indexing consists of (1) analyzing content; (2) assigning terms; and possibly (3) assigning relevancy scores/weights to the terms.s
     - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
+    - Automatic indexing that uses a CV (AKA automated tagging, auto-classification, auto-categorization) may be rules-based (e.g., using regex) or machine learning-based; regardless, performance is better when terms are pre-coordinated. 
+    - Automatic indexing that doesn't use a CV is called information extraction, a subset of which is **entity extraction.**
     
 <table style="padding-left: 50px;">
 

@@ -32,5 +32,14 @@ Find a nodel labeled "Person" and named "Emil":
 
 ```SQL
 MATCH (ee:Person) WHERE ee.name = "Emil" RETURN ee;
+```
 
+Find all Emil's friends by: 
+
+- MATCHING the node (ee:Person) WHERE ee.name is Emil;
+- Traversing all -:KNOWS- relationships of which either direction involves Emil; 
+- Calls result nodes "friends" and returns both Emil and result nodes 
+
+```SQL
+MATCH (ee:Person)-[:KNOWS]-(friends) WHERE ee.name = "Emil" RETURN ee, friends
 ```

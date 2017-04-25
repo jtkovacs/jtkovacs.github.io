@@ -77,6 +77,8 @@ The distinction I draw is that schemas are for the conceptual (abstract, disembo
 
 IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). IR requires IA.
 
+## Cataloging & indexing
+
 Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by ingesting information objects, which includes:
 
 - **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Cataloged objects are listed in a catalog. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
@@ -88,6 +90,8 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
 
     - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
 
+## Searching, browsing, & navigating
+    
 To retrieve information, users engage with information systems by:
 
 - **SEARCHING** for a specific piece of information; this is the concern of back-end IA. Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.

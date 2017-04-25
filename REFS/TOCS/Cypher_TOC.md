@@ -24,7 +24,9 @@ CREATE (js:Person { name: "Johan", from: "Sweden", learn: "surfing" }),
 # Create relationships
 
 ```SQL
-CREATE ( {  })
+CREATE (ee)-[:KNOWS {since: 2001}]->(js),(ee)-[:KNOWS {rating: 5}]->(ir)
+
+CREATE (node_name)-[:RELATIONSHIP_NAME {relationship_attribute: value}] -> (node_name)
 ```
 
 

@@ -108,7 +108,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </a>
   </h1>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> ( {  })</code></pre>
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (ee)-[<span class="ch">:KNOWS</span> {since: <span class="dv">2001</span>}]-&gt;(js),(ee)-[<span class="ch">:KNOWS</span> {rating: <span class="dv">5</span>}]-&gt;(ir)
+
+<span class="kw">CREATE</span> (node_name)-[<span class="ch">:RELATIONSHIP_NAME</span> {relationship_attribute: <span class="fu">value</span>}] -&gt; (node_name)</code></pre>
   </div>
   <h1>
    <a name="find-nodes">

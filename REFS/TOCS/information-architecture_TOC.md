@@ -34,15 +34,8 @@ Per Wurman (1990),
 
 Similarly, Wyllys (2000) explains that information may be organized according to different **schemas:**
 
-- **Exact** (mutually exclusive) schemas
-    - Alphabet
-    - Location
-    - Chronology
-- **Inexact** schemas 
-    - Topical
-    - Task-Oriented
-    - Audience-Specific
-    - Metaphor-Driven (e.g., the information lifecycle)
+- **Exact** (mutually exclusive) schemas: alphabet, location, chronology
+- **Inexact** schemas: topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid** schemas, combining multiple methods (may be confusing)
 
 Wyllys adds that there are information **structures**

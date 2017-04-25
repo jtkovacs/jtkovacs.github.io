@@ -15,8 +15,8 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
     
 - **INDEXING** the object, i.e. mapping out the contents of an information object, perhaps using terms from a CV (at minimum, for named entities, an authority file shuld be consulted). 
 
-    - Indexing consists of (1) analyzing content; (2) assigning terms; and possibly (3) assigning relevancy scores/weights to the terms.s
     - Indexing may be contrasted with **TAGGING,** where keywords are selected from the text itself rather than from an indexing language. This allows for a grassroots view of what something is about.
+    - Human indexing consists of (1) analyzing content; (2) assigning terms; and possibly (3) assigning relevancy scores/weights to the terms.
     - Automatic indexing that uses a CV (AKA automated tagging, auto-classification, auto-categorization) may be rules-based (e.g., using regex) or machine learning-based; regardless, performance is better when terms are pre-coordinated. 
     - Automatic indexing that doesn't use a CV is called information extraction, a subset of which is **entity extraction.**
     

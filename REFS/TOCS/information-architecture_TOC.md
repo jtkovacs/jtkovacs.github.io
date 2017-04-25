@@ -356,7 +356,9 @@ Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships
 
 ### Maintaining CVs
 
-CVs must be updated to stay valid, so there should be plan for reviews at defined intervals. Updates may include:
+CVs must be updated to stay valid, so there should be plan for reviews at defined intervals. 
+
+Updates may include:
 
 - Auditing validity of links
 - Adding new terms

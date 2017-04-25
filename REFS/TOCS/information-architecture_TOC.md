@@ -56,7 +56,7 @@ To retrieve information, users engage with information systems by:
     
 ## What ways can things be organized?
 
-Wurman (1990) claims there are only five ways to organize items. Similarly, Wyllys (2000) states that information can be organized according to different **schemas** that encompass Wurman's five (italicized):
+Wurman (1990) claims there are only five ways to organize items. Similarly, Wyllys (2000) states that information can be organized according to different **schemas** that encompass Wurman's five ways (italicized):
 
 - **Exact schemas** (mutually exclusive, AKA classes): _alphabet, location, chronology, continuum_
 - **Inexact schemas,** AKA _categories:_ topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
@@ -104,7 +104,9 @@ The distinction I draw is that schemas are for the conceptual (abstract, disembo
 
 ### Must information be organized?
 
-Per Abrahamson & Freedman's _A perfect mess,_ order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
+Per Abrahamson & Freedman's _A perfect mess_ (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ 
+
+At the same time, because individuals' organization strategies and preferences vary so much, **shared information spaces** must (?) be organized according to intelligible principles that prospective users of the space can access and learn. 
 
 Somewhat related, Heather Hedden (2016) offers this typology in which taxonomies may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 

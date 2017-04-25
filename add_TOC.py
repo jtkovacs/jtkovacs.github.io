@@ -45,7 +45,7 @@ foname = foname.split('/')
 foname.insert(-1, "TOCS")
 foname = '/'.join(foname)
 fout = open(foname, "w")
-fout.write('<span id="path">'+fname+'</span>')
+fout.write('<p id="path">'+fname+'</p>')
 fout.write('<table class="TOC"><tr><td>')
 for row in TOC:
     fout.write(row)

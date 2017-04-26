@@ -348,7 +348,7 @@ This is easy with a **single-word term,** but things get more complex; there are
 
 <span style="color: red; font-weight: bold;">(1)</span> A **bound compound term** uses multiple words or a phrase to denote a single concept, e.g. _oral surgery._ The inverted form of bound terms may be included as an entry term, e.g. _surgery, oral: see oral surgery._ 
 
-These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  If no bound compound term exists, ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of any term (not just homographs) may be clarified with a **scope note (SN).** If a SN mentions another term in the vocabulary, it should receive a reciprocal SN or cross-reference: _term2: X SN term1._
+These naturally occurring compound terms are generally preferable to the second kind of multiword term, <span style="color: red; font-weight: bold;">(2)</span> **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  If no bound compound term exists, ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of any term (not just homographs) may be clarified with a **scope note (SN).** If a SN mentions another term in the vocabulary, it should receive a reciprocal SN or cross-reference: _term2: X SN term1._
 
 - Try to standardize qualifiers (e.g., don't have _biology_ and _bioscience_ both as qualifiers)
 - The qualifier must not itself be a homograph
@@ -358,7 +358,7 @@ These naturally occurring compound terms are generally preferable to the second 
     - ... unless other meanings of the homograph are entirely outside the domain
         - ... but even then, anticipate metasearching and include a qualifier
 
-While compound terms denote a single concept, **coordinated terms** associate several concepts with a single information object. This can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English Language--Rhetoric, Persuasion (Rhetoric), Report Writing._ Precoordinated terms enable browsing with great specificity, describe complex concepts, and impose alphabetic proximity on related terms that would otherwise be far apart. Given the high cost of taxonomist labor, though, it's often better to let users combine terms interactively during search **(postcoordination),** e.g. _English Language AND Rhetoric AND Persuasion AND Report Writing._  
+While compound terms denote a single concept, <span style="color: red; font-weight: bold;">(3)</span> **coordinated terms** associate several concepts with a single information object. This can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English Language--Rhetoric, Persuasion (Rhetoric), Report Writing._ Precoordinated terms enable browsing with great specificity, describe complex concepts, and impose alphabetic proximity on related terms that would otherwise be far apart. Given the high cost of taxonomist labor, though, it's often better to let users combine terms interactively during search **(postcoordination),** e.g. _English Language AND Rhetoric AND Persuasion AND Report Writing._  
 
 ##### Grammatical forms
 

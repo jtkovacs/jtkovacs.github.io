@@ -299,8 +299,10 @@ The basic rule is that terms should denote a single **concept,** or unit of thou
 - Disciplines, fields
 - Units of measurement
 
-A **bound compound term** uses multiple words or a phrase to denote a single concept. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms): 
+A **bound compound term** uses multiple words or a phrase to denote a single concept: 
 
+- The inverted forms of compound terms may be used as entry terms to preserve alphabetic proximity. 
+- Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms).
 - p. 39: why join?
 - p. 40: why split?
 
@@ -320,7 +322,7 @@ Additionally, the scope of a term may be clarified with **scope notes (SN).** If
 ##### Grammatical forms
 
 - 
-- Can use inverted forms as entry terms
+
 
 ##### Typographic forms
 
@@ -336,7 +338,7 @@ All relationships are **reciprocal,** which should be captured by the taxonomy s
 
 ##### Equivalence & preferred terms
 
-Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF.
+Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF:
 
 - Preferred terms are also called descriptors and headings
 - Non-preferred terms are also called entry or lead-in terms

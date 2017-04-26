@@ -405,14 +405,10 @@ Synonyms, near-synonyms, lexical variants, and (when **generic posting** is prac
 - Consult lexical authorities for official spelling
 - Prefer whichever is more popular for loan words versus translations 
 - Romanization converts non-Roman characters to Roman characters via a table, which may not align with informal but dominant Romanizations; prefer the dominant form
-
-Indicating preferred term when compound:
-
-| term | relationship |
-| --- | --- |
-| coal mining | USE coal AND mining |
-| coal | USED FOR coal AND mining |
-| mining | USED FOR coal AND mining |
+- For compound terms where postcoordination is intended, and component terms have no other use: 
+    - _coal mining: USE coal AND mining_
+    - _coal: USED FOR coal AND mining_
+    - _mining: USED FOR coal AND mining_
 
 ##### Hierarchy
 

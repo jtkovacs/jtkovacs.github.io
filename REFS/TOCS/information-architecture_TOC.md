@@ -332,7 +332,7 @@ Terms are chosen from a specific domain/information space if their inclusion is 
 
 ##### Scope & coordination
 
-The basic rule is that term should denote a single concept, or unit of thought. Classes of things denoted by terms:
+The basic rule is that term should denote a single **concept,** or unit of thought. There are different kinds of concepts:
 
 - Things and their parts
     - Proper names (persons, institutions, places, titles) may be
@@ -346,7 +346,15 @@ The basic rule is that term should denote a single concept, or unit of thought. 
 - Disciplines, fields
 - Units of measurement
 
-A term may use multiple words to denote a single concept, in which case it's a **compound term** and should have two parts: the **focus** AKA head, and the **modifier** AKA difference. But concepts aren't compounded at the level of terms. (They may be compounded 
+A term may use multiple words to denote a single concept, in which case it's a **compound term** and should have two parts: the **focus** AKA head, and the **modifier** AKA difference. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms). 
+
+- p. 39: why join?
+- p. 40: why split?
+
+Compound terms denote a single concept; **coordinated terms** denote multiple concepts
+
+
+But concepts aren't compounded at the level of terms. (They may be compounded 
 
 ##### Grammatical forms
 
@@ -366,7 +374,7 @@ All relationships are reciprocal, which should be captured by the taxonomy softw
 
 ##### Equivalence
 
-Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted USE/USED FOR or U/UF in the case of a single preferred term or otherwise stored as a synonym ring AKA synset. 
+Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF in the case of a single preferred term or otherwise stored as a synonym ring AKA synset. 
 
 Keep in mind:
 
@@ -383,7 +391,6 @@ A preferred term may or may not be designated among synonyms. Preferred terms ar
 
 - (Romanized) loan words vs. translations: 
 - Can use inverted forms as entry terms
-
 
 Indicating preferred term when compound:
 

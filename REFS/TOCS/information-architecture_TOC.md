@@ -36,7 +36,7 @@
 		- [Documenting CVs](#documenting-cvs)
 		- [Maintaining CVs](#maintaining-cvs)
 		- [Managing CVs](#managing-cvs)
-		- [Displaying CVs](#displaying-cvs)
+		- [Displaying CVs [IP]](#displaying-cvs-[ip])
 			- [Overarching forms](#overarching-forms)
 			- [Organization within or across forms](#organization-within-or-across-forms)
 			- [Format considerations](#format-considerations)
@@ -382,7 +382,6 @@ Additionally, the scope of a term may be clarified with **scope notes (SN).** If
     - Regardless, abstract concepts and unique entities are singular
     - Rarely, singular and plural forms denote process and product, so both may appear (qualified) in the CV
 
-
 ##### Typographic forms
 
 - **Capitalization:** Don't capitalize unless it's a proper noun.
@@ -514,7 +513,7 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 - Accessible to multiple users
 
 
-### Displaying CVs
+### Displaying CVs [IP]
 
 #### Overarching forms
 

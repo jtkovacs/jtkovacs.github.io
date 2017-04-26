@@ -344,7 +344,7 @@ The basic rule is that a term should denote a single **concept,** or unit of tho
 - Disciplines, fields
 - Units of measurement
 
-A single-word term is unproblematic, but things get more complex: there are two kinds of multiword terms. A **bound compound term** uses multiple words or a phrase to denote a single concept: 
+This is easy with a single-word term, but things get more complex; there are two kinds of multiword terms. A **bound compound term** uses multiple words or a phrase to denote a single concept: 
 
 - The inverted forms of compound terms may be used as entry terms to preserve alphabetic proximity. 
 - Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms).

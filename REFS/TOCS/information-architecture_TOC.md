@@ -297,11 +297,15 @@ Controlled vocabularies stand in contrast with natural languages, which undermin
 - Connect synonyms, thereby increasing recall; this is often accomplished with **UF (use for), U (use)**
 - Disambiguate homographs, thereby increasing precision; this is often accomplished with a **gloss** AKA modifier AKA difference AKA qualifier term
 
-*Why so many polysemes in natural language?
+_*Why so many polysemes in natural language?_
 
-- Words inherited from different parent languages, e.g. Greek and Latin
-- Popular words versus jargon
-- 
+- _Words inherited from different parent languages, e.g. Greek and Latin_
+- _Popular words versus jargon_
+- _Trade names that become generic, e.g. bandaids_
+- _Dialectical variations reflecting geographic boundaries and social groups_
+- _Formal words versus slang_
+- _Political changes leading to changes in preferred terms_
+- _Competing terms for emerging objects and phenomena_
 
 
 ### Relationship between CVs and metadata

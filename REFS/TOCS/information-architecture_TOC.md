@@ -351,7 +351,7 @@ This is easy with a single-word term, but things get more complex; there are two
 - p. 39: why join?
 - p. 40: why split?
 
-These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  But if no bound compound term exists, then ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of a term may be clarified with **scope notes (SN);** and if a scope note mentions another term in the vocabulary, here should be a reciprocal SN or a cross-reference (term2: X SN term1).
+These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  If no bound compound term exists, ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of any term (not just homographs) may be clarified with a **scope note (SN),** which, if it mentions another term in the vocabulary, should receive a reciprocal SN or cross-reference: _term2: X SN term1._
 
 - Try to standardize qualifiers (e.g., don't have _biology_ and _bioscience_ both as qualifiers)
 - The qualifier must not itself be a homograph

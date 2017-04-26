@@ -8,11 +8,11 @@
 	- [What ways can things be organized?](#what-ways-can-things-be-organized?)
 		- [Information schemas](#information-schemas)
 		- [Information structures](#information-structures)
-			- [Record-based structures](#record-based-structures)
-				- [Hierarchical structures (1G)](#hierarchical-structures-(1g))
-				- [Graph structures (1G) ](#graph-structures-(1g)-)
-				- [Relational structures (2G) ](#relational-structures-(2g)-)
-			- [Object-based structures](#object-based-structures)
+			- [Record-based](#record-based)
+				- [Hierarchical (1G)](#hierarchical-(1g))
+				- [Graph (1G)](#graph-(1g))
+				- [Relational (2G)](#relational-(2g))
+			- [Object-based](#object-based)
 		- [Questions that arise in organizing](#questions-that-arise-in-organizing)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are knowledge organization structures?](#what-are-knowledge-organization-structures?)
@@ -148,11 +148,11 @@ Wurman (1990) claims there are only five ways to organize items. Similarly, Wyll
 
 But, Wyllys adds, there are also three fundamental information structures, AKA **data models.** In their review of database history (gens 1-3), Connolly and Begg (2015) classify Wyllys' three structures as "record-based", and add "object-oriented" as another top-level category:
 
-#### Record-based structures
+#### Record-based
 
 Can’t express constraints on the data, but express structure well.
 
-##### Hierarchical structures (1G)
+##### Hierarchical (1G)
 
 - Per Zeng (n.d.), strict hierarchies __(trees)__ can model three different types of real-world relationships: 
     - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
@@ -168,15 +168,15 @@ Can’t express constraints on the data, but express structure well.
         - Spinal cord: Central nervous system (BTP)
 - __Polyhierarchy__ (family tree) is more complex than a strict hierarchy
 
-##### Graph structures (1G) 
+##### Graph (1G)
 
 AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 
-##### Relational structures (2G) 
+##### Relational (2G)
 
 Tables with columns, and implicit relationships via attributes.
     
-#### Object-based structures
+#### Object-based
 
 Allow specification of constraints, but not overall structure; include entities with attributes and relationships, describing the state of the object.
 

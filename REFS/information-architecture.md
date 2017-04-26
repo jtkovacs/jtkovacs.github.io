@@ -339,6 +339,15 @@ A preferred term may or may not be designated among synonyms. Preferred terms ar
 - (Romanized) loan words vs. translations: 
 - Can use inverted forms as entry terms
 
+
+Indicating preferred term when compound:
+
+| term | relationship |
+| --- | --- |
+| coal mining | USE coal AND mining |
+| coal | USED FOR coal AND mining |
+| mining | USED FOR coal AND mining |
+
 ##### Hierarchy
 
 See [discussion of hierarchy, above.](#hierarchical-(1g))

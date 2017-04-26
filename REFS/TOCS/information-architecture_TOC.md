@@ -351,14 +351,15 @@ This is easy with a single-word term, but things get more complex; there are two
 - p. 39: why join?
 - p. 40: why split?
 
-These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** (for example, _religious tolerance_ is generally better than _tolerance (religious))._ If no compound term exists, then ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of a term may be clarified with **scope notes (SN);** and if a scope note mentions another term in the vocabulary, here should be a reciprocal SN or a cross-reference (term2: X SN term1).
+These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  But if no bound compound term exists, then ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of a term may be clarified with **scope notes (SN);** and if a scope note mentions another term in the vocabulary, here should be a reciprocal SN or a cross-reference (term2: X SN term1).
 
-- Try to standardize qualifiers
+- Try to standardize qualifiers (e.g., don't have _biology_ and _bioscience_ both as qualifiers)
 - The qualifier must not itself be a homograph
 - The addition of a qualifier must not make the term a compound concept
 - Qualify even the domain-specific dominant use of a term
 - Qualify even if only one use of the homograph occurs in the CV
     - ... unless other meanings of the homograph are entirely outside the domain
+        - ... but even then, anticipate metasearching and include a qualifier
 
 While compound terms denote a single concept, **coordinated terms** associate several concepts with a single information object. This can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English language--Rhetoric, Persuasion (Rhetoric), Report writing._ Precoordinated terms enable browsing with great specificity and impose alphabetic proximity on related terms that would otherwise be far apart; but given the high cost of txonomist labor, it's often better to let users combine terms interactively during search **(postcoordination),** e.g. _English language AND rhetoric AND persuasion AND reporting writing._  
 

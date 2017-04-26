@@ -246,11 +246,18 @@ Reference works are information-dense resources meant to be consulted for specif
 
 CVs consist of **terms** and **semantic relationships,** described in term records.  
 
-Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes (ambiguous words --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** At minimum, to avoid the IR pitfalls of natural languages CVs must:
+Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes* (ambiguous words --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** At minimum, to avoid the IR pitfalls of natural languages CVs must:
 
 - Clearly define the applicability of terms with **scope notes (SN)**
 - Connect synonyms, thereby increasing recall; this is often accomplished with **UF (use for), U (use)**
 - Disambiguate homographs, thereby increasing precision; this is often accomplished with a **gloss** AKA modifier AKA difference AKA qualifier term
+
+*Why so many polysemes in natural language?
+
+- Words inherited from different parent languages, e.g. Greek and Latin
+- Popular words versus jargon
+- 
+
 
 ### Relationship between CVs and metadata
 
@@ -303,27 +310,36 @@ A term may use multiple words to denote a single concept, in which case it's a *
  
 
 
+
 #### How are terms related?
+
+All relationships are reciprocal, which should be captured by the taxonomy software. Most relationships (except RT) are asymmetric.
 
 ##### Equivalence
 
-Choosing preferred term
+Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted USE/USED FOR or U/UF in the case of a single preferred term or otherwise stored as a synonym ring AKA synset. 
 
-This is chosing the preferred term among several near-synonyms, and also chosing the preferred form of a word with spelling variations.
+Keep in mind:
+
+- Only equate near-synonyms if warranted
+- 
+
+
+
+Choosing preferred term
 
 A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
 
-- Usage & spelling: 
-- Full vs. abbreviated forms: 
-- Popular vs. scientific:
+- Spelling, full vs. abbreviated forms: lexical variants
+- Synonyms
+    - Popular vs. scientific:
+
 - (Romanized) loan words vs. translations: 
 - Can use inverted forms as entry terms
 
 ##### Hierarchy
 
-##### Related
-
-##### Semantic
+##### Associative
 
 
 

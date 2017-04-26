@@ -344,12 +344,11 @@ The basic rule is that a term should denote a single **concept,** or unit of tho
 - Disciplines, fields
 - Units of measurement
 
-This is easy with a single-word term, but things get more complex; there are two kinds of multiword terms. A **bound compound term** uses multiple words or a phrase to denote a single concept: 
+This is easy with a **single-word term,** but things get more complex; there are three kinds of **multiword terms.** 
+
+A **bound compound term** uses multiple words or a phrase to denote a single concept. Deciding to use a compound term rather than a single term should be guided by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format () 
 
 - The inverted forms of compound terms may be used as entry terms to preserve alphabetic proximity. 
-- Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms).
-- p. 39: why join?
-- p. 40: why split?
 
 These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  If no bound compound term exists, ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of any term (not just homographs) may be clarified with a **scope note (SN).** If a SN mentions another term in the vocabulary, it should receive a reciprocal SN or cross-reference: _term2: X SN term1._
 
@@ -361,7 +360,7 @@ These naturally occurring compound terms are generally preferable to the second 
     - ... unless other meanings of the homograph are entirely outside the domain
         - ... but even then, anticipate metasearching and include a qualifier
 
-While compound terms denote a single concept, **coordinated terms** associate several concepts with a single information object. This can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English language--Rhetoric, Persuasion (Rhetoric), Report writing._ Precoordinated terms enable browsing with great specificity and impose alphabetic proximity on related terms that would otherwise be far apart; but given the high cost of txonomist labor, it's often better to let users combine terms interactively during search **(postcoordination),** e.g. _English language AND rhetoric AND persuasion AND reporting writing._  
+While compound terms denote a single concept, **coordinated terms** associate several concepts with a single information object. This can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English Language--Rhetoric, Persuasion (Rhetoric), Report Writing._ Precoordinated terms enable browsing with great specificity, describe complex concepts, and impose alphabetic proximity on related terms that would otherwise be far apart. Given the high cost of taxonomist labor, though, it's often better to let users combine terms interactively during search **(postcoordination),** e.g. _English Language AND Rhetoric AND Persuasion AND Report Writing._  
 
 ##### Grammatical forms
 
@@ -379,12 +378,15 @@ While compound terms denote a single concept, **coordinated terms** associate se
     - Count nouns (how many?) should be plural unless the singular form is common in the domain
     - Mass nouns (how much?) should be singular unless users regard the noun as a class with >1 member
     - Regardless, abstract concepts and unique entities are singular
-    - Rarely, singular and plural forms denote process and product, so both may appear (qualified) in the CV
+    - Singular and plural forms of a noun may denote different concepts, so both may appear (qualified) in the CV
 
 ##### Typographic forms
 
-- **Capitalization:** Don't capitalize unless it's a proper noun.
-- **Punctuation:** Minimize because it can interfere with sorting, searching, etc. Definitely reserve parentheses for glosses. Use apostrophes for possessives.
+- **Capitalization:** don't capitalize unless it's a proper noun
+- **Punctuation:** minimize because it can interfere with sorting, searching, etc.
+    - Reserve parentheses for qualifiers 
+    - Use apostrophes for possessives and proper names
+    - Diacritical marks are acceptable e.g. for loan words
  
 
 
@@ -404,8 +406,9 @@ Synonyms, near-synonyms, and lexical variants are connected via equivalence rela
     - Prefer full form unless acronym dominant in the domain
     - If acronym is dominant but ambiguous, prefer full form 
 - Include a term's popular and scientific forms; prefer whichever is dominant in the domain
-- Consult lexical authorities for official spelling (esp. for Romanized terms; see ANSI/NISO Z39.19 p. 36)
+- Consult lexical authorities for official spelling
 - Prefer whichever is more popular for loan words versus translations 
+- Romanization converts non-Roman characters to Roman characters via a table, which may not align with informal but dominant Romanizations; prefer the dominant form
 
 Indicating preferred term when compound:
 

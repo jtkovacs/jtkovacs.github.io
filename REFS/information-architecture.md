@@ -373,25 +373,54 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 
 ### Displaying CVs
 
-- running head
-- generic structure
-- graphics display
-- permuted display AKA rotated listing
-    - KWIC, KWAC, KWOC: https://en.wikipedia.org/wiki/Key_Word_in_Context
-- classified display
-- flat format
-- Concept map: a 2D representation of interrelated concepts
+#### Overarching forms
 
-#### Display types
+- **Alphabetic:**
+    - Alphabetic listing
+    - Flat format (only shows immediate BT/s & NT/s)
+- **Graphic** 
+- **Hierarchical:**
+    - Tree AKA systematic display, classified display:
+        - Top term
+    - Multilevel:
+        - Symbols and generic structures (GS)
+        - BT1, BT2, ... BTn
+        - NT1, NT2, ... NTn
+    - Two-way hierarchical structure
+    - Broad categories
+    -  Faceted display
+- **Permuted** AKA rotated display:
+    - KWIC
+    - KWAC
+    - KWOC
 
-- 
+#### Organization within or across forms
+
+- Term detail
+    - Relationships can be organized:
+        - Alphabetically or logically
+        - Into categories, under node labels (not used for indexing)
+    - Depthof U/UF can be adjusted to compensate for hierarchy display type (?)
+- Sorting:
+    - Prefer word-by-word ("nothing before something")
+    - Sort numbers by magnitude
+    - Ignore commas in inverted USE references
+    - Treat parentheses around glosses as special characters; don't ignore
 
 #### Format considerations
 
+- **Print:** Minimize double lookups, and use a running header to indicate position
 - **Screen:** 
-- **Web:** 
-- **Print:** 
-
+    - UF principles
+    - Keyword search
+    - Consider accessibility
+    - Term detail
+    - Display hierarchy
+    - Pick list
+- **Web,** a subset of screens: 
+    - Path hierarchy display: show the file path (URL) of the current page
+    - Path hierarchy in context: show all file paths together (e.g., [PKB index)](../../pkb.html) 
+    - Facilitate browsing with scroll bars, arrows, hyperlinks, [+] (click to expand)
 
 
 

@@ -328,13 +328,11 @@ Keep in mind:
 - Only equate near-synonyms if warranted
 - 
 
-
-
 Choosing preferred term
 
 A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
 
-- Spelling, full vs. abbreviated forms: lexical variants
+- Spelling, full vs. abbreviated forms: lexical variants (ANSI/NISO, p. 45)
 - Synonyms
     - Popular vs. scientific:
 
@@ -343,9 +341,26 @@ A preferred term may or may not be designated among synonyms. Preferred terms ar
 
 ##### Hierarchy
 
-See [discussion of hierarchy above](#hierarchical-(1g))
+See [discussion of hierarchy, above.](#hierarchical-(1g))
 
 ##### Associative
+
+Associative relationships should be recorded between terms that are needed to explain each other, or readily evoke each other, or are etymologically related, or are derived one from the other. Although they may be disambiguated in a graph database, in a thesaurus the following **semantic relationships** (and more) are collapsed under RELATED TERM/RT:
+
+- Cause/effect
+- Process/agent or counteragent
+- Action/property
+- Action/target
+- Action/product
+- Raw material/product
+- Concept/property
+- Concept/origins
+- Concept/measurement unit or measurement mechanism
+- Concept/antonym
+- Object/property
+- Object/origins
+- Object/measurement unit or measurement mechanism
+- Discipline/practioner
 
 
 

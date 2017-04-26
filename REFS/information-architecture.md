@@ -121,8 +121,10 @@ Can’t express constraints on the data, but express structure well.
         - Brain: Central nervous system (BTP)
         - Spinal cord: Central nervous system (BTP)
 - __Polyhierarchy__ (family tree) is more complex than a strict hierarchy
-        
-- **(1G) Graph structures,** AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+
+##### (1G) Graph structures
+
+AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 
 ##### (2G) Relational structures
 

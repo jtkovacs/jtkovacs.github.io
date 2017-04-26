@@ -344,14 +344,14 @@ The basic rule is that a term should denote a single **concept,** or unit of tho
 - Disciplines, fields
 - Units of measurement
 
-A **bound compound term** uses multiple words or a phrase to denote a single concept: 
+A single-word term is unproblematic, but things get more complex: there are two kinds of multiword terms. A **bound compound term** uses multiple words or a phrase to denote a single concept: 
 
 - The inverted forms of compound terms may be used as entry terms to preserve alphabetic proximity. 
 - Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms).
 - p. 39: why join?
 - p. 40: why split?
 
-Naturally occurring compound terms are generally preferable to **qualified homographs,** another type of compound term (for example, _religious tolerance_ is generally better than _tolerance (religious))._ If no compound term exists, then ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of a term may be clarified with **scope notes (SN);** and if a scope note mentions another term in the vocabulary, here should be a reciprocal SN or a cross-reference (term2: X SN term1).
+These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** (for example, _religious tolerance_ is generally better than _tolerance (religious))._ If no compound term exists, then ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of a term may be clarified with **scope notes (SN);** and if a scope note mentions another term in the vocabulary, here should be a reciprocal SN or a cross-reference (term2: X SN term1).
 
 - Try to standardize qualifiers
 - The qualifier must not itself be a homograph

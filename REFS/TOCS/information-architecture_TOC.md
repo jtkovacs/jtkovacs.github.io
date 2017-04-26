@@ -344,13 +344,9 @@ The basic rule is that a term should denote a single **concept,** or unit of tho
 - Disciplines, fields
 - Units of measurement
 
-This is easy with a **single-word term,** but things get more complex; there are three kinds of **multiword terms.** 
+This is easy with a **single-word term,** but things get more complex; there are three kinds of **multiword terms.** Deciding to use a compound term rather than a single term should be guided by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format (print sometimes benefits from precoordinated terms). 
 
-A **bound compound term** uses multiple words or a phrase to denote a single concept. Deciding to use a compound term rather than a single term should be guided by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format () 
-
-- The inverted forms of compound terms may be used as entry terms to preserve alphabetic proximity. 
-
-These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  If no bound compound term exists, ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of any term (not just homographs) may be clarified with a **scope note (SN).** If a SN mentions another term in the vocabulary, it should receive a reciprocal SN or cross-reference: _term2: X SN term1._
+A **bound compound term** uses multiple words or a phrase to denote a single concept. These naturally occurring compound terms are generally preferable to the second kind of multiword term, **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  If no bound compound term exists, ambiguous terms (AKA the head or focus nouns) should receive a modifier AKA difference. Additionally, the scope of any term (not just homographs) may be clarified with a **scope note (SN).** If a SN mentions another term in the vocabulary, it should receive a reciprocal SN or cross-reference: _term2: X SN term1._
 
 - Try to standardize qualifiers (e.g., don't have _biology_ and _bioscience_ both as qualifiers)
 - The qualifier must not itself be a homograph

@@ -287,7 +287,7 @@ Terms are chosen from a specific domain/information space if their inclusion is 
 
 ##### Scope & coordination
 
-The basic rule is that term should denote a single **concept,** or unit of thought. There are different kinds of concepts:
+The basic rule is that terms should denote a single **concept,** or unit of thought. There are different kinds of concepts:
 
 - Things and their parts
     - Proper names (persons, institutions, places, titles) may be
@@ -301,7 +301,9 @@ The basic rule is that term should denote a single **concept,** or unit of thoug
 - Disciplines, fields
 - Units of measurement
 
-A term may use multiple words to denote a single concept, in which case it's a **compound term** and should have two parts: the **focus** AKA head, and the **modifier** AKA difference. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms). 
+If ambiguous, the scope of a term may be clarified with **scope notes (SN).** If a scope note mentions another term in the vocabulary, then there should be a reciprocal SN or a cross-reference (term2: X SN term1).
+
+A term may use multiple words to denote a single concept, in which case it's a **compound term** and should have two parts: the **focus** AKA head, and the **modifier** AKA difference. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms): 
 
 - p. 39: why join?
 - p. 40: why split?
@@ -325,7 +327,7 @@ Compound terms denote a single concept; **coordinated terms** denote several con
 
 All relationships are reciprocal, which should be captured by the taxonomy software. Most relationships (except RT) are asymmetric.
 
-##### Equivalence
+##### Equivalence & preferred terms
 
 Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF in the case of a single preferred term or otherwise stored as a synonym ring AKA synset. 
 

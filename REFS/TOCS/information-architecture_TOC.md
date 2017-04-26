@@ -351,10 +351,16 @@ A term may use multiple words to denote a single concept, in which case it's a *
 
 Compound terms denote a single concept; **coordinated terms** denote several concepts associated with a single information object. This denotation can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English language--Rhetoric, Persuasion (Rhetoric), Report writing._ Precoordinated terms enable browsnig with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search **(postcoordination):** _English language AND rhetoric AND persuasion AND reporting writing._  
 
-Naturally occurring compound terms are preferable to qualified homographs, e.g. `religious tolerance` is better than `tolerance (religious)`. 
+Naturally occurring compound terms are preferable to **qualified homographs,** e.g. _religious tolerance_ is better than _tolerance (religious)._ But if no compound term exists, then ambiguous terms should be qualified:
 
+- Try to standardize qualifiers
+- The qualifier must not itself be a homograph
+- The addition of a qualifier must not make the term a compound concept
+- Qualify even the domain-specific dominant use of a term
+- Qualify even if only one use of the homograph occurs in the CV
+    - ... unless other meanings of the homograph are entirely outside the domain
 
-If ambiguous, the scope of a term may be clarified with **scope notes (SN).** If a scope note mentions another term in the vocabulary, then there should be a reciprocal SN or a cross-reference (term2: X SN term1).
+Additionally, the scope of a term may be clarified with **scope notes (SN).** If a scope note mentions another term in the vocabulary, then there should be a reciprocal SN or a cross-reference (term2: X SN term1).
 
 ##### Grammatical forms
 

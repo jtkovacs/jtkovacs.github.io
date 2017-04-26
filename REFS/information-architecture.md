@@ -304,7 +304,7 @@ A term may use multiple words to denote a single concept, in which case it's a *
 - p. 39: why join?
 - p. 40: why split?
 
-Compound terms denote a single concept; **coordinated terms** denote several concepts associated with a single information object. This denotation can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: `English language--Rhetoric, Persuasion (Rhetoric), Report writing.` Precoordinated terms enable browsnig with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search **(postcoordination):** `English language AND rhetoric AND persuasion AND reporting writing.`  
+Compound terms denote a single concept; **coordinated terms** denote several concepts associated with a single information object. This denotation can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English language--Rhetoric, Persuasion (Rhetoric), Report writing._ Precoordinated terms enable browsnig with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search **(postcoordination):** _English language AND rhetoric AND persuasion AND reporting writing._  
 
 Naturally occurring compound terms are preferable to qualified homographs, e.g. `religious tolerance` is better than `tolerance (religious)`. 
 

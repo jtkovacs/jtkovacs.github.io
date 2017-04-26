@@ -306,10 +306,8 @@ A term may use multiple words to denote a single concept, in which case it's a *
 - p. 39: why join?
 - p. 40: why split?
 
-Compound terms denote a single concept; **coordinated terms** denote multiple concepts
+Compound terms denote a single concept; **coordinated terms** denote several concepts associated with a single information object. This denotation can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: English language--Rhetoric, Persuasion (Rhetoric), Report writing. Precoordinated terms enable browsnig with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search **(postcoordination):** English language AND rhetoric AND persuasion AND reporting writing.  
 
-
-But concepts aren't compounded at the level of terms. (They may be compounded 
 
 ##### Grammatical forms
 
@@ -341,9 +339,6 @@ Choosing preferred term
 A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
 
 - Spelling, full vs. abbreviated forms: lexical variants (ANSI/NISO, p. 45)
-- Synonyms
-    - Popular vs. scientific:
-
 - (Romanized) loan words vs. translations: 
 - Can use inverted forms as entry terms
 

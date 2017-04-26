@@ -128,7 +128,7 @@ AKA networks, triples, ontologies. Enables explicit modeling of different kinds 
 
 ##### Relational (2G)
 
-Tables with columns, and implicit relationships via attributes.
+Tables with columns, and implicit relationships via attributes; see [notes on databases.](databases.html)
     
 #### Object-based
 
@@ -342,6 +342,8 @@ A preferred term may or may not be designated among synonyms. Preferred terms ar
 - Can use inverted forms as entry terms
 
 ##### Hierarchy
+
+See [discussion of hierarchy above](#hierarchical-(1g))
 
 ##### Associative
 

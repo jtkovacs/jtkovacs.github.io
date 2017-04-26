@@ -395,7 +395,7 @@ All relationships are **reciprocal,** which should be captured by the taxonomy s
 
 ##### Equivalence & preferred terms
 
-Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with **USE/USED FOR** or **U/UF** to reflect that one form is preferred. (Preferred terms are also called descriptors and headings; non-preferred terms are also called entry or lead-in terms.)
+Synonyms, near-synonyms, lexical variants, and (when **generic posting is practiced)** child terms are subsumed into a single **preferred term** with **USE/USED FOR** or **U/UF.** Preferred terms are also called descriptors and headings; non-preferred terms are also called entry or lead-in terms.
 
 - Only equate near-synonyms if warranted
 - Include a term's full form and acronym:

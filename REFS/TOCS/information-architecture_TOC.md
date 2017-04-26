@@ -287,6 +287,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 
 
+
 ## What are controlled vocabularies?
 
 CVs consist of **terms** and **semantic relationships,** described in term records.  
@@ -307,7 +308,6 @@ Controlled vocabularies stand in contrast with natural languages, which undermin
 - _Political changes leading to changes in preferred terms_
 - _Competing terms for emerging objects and phenomena_
 
-
 ### Relationship between CVs and metadata
 
 Per ANSI/NISO Z39.19 (p. 19), 
@@ -315,6 +315,8 @@ Per ANSI/NISO Z39.19 (p. 19),
 - A metadata standard may require that values for certain fields come from CVs
 - Metadata may be used to describe a CV, supporting its discovery as a resource
 - A CV may be expressed as a metadata schema, e.g. in XML
+
+
 
 ### Constructing CVs
 
@@ -366,8 +368,11 @@ Additionally, the scope of a term may be clarified with **scope notes (SN).** If
 
 ##### Grammatical forms
 
+- Prefer nouns or (in the case of bound compound terms) noun phrases 
+    - Count nouns (how many?) should be plural unless the singular form is common in the domain
+    - Mass nouns (how much?) should be singular unless users regard the noun as a class with >1 member
+    - Rarely, singular and plural forms denote process and product, so both may appear (qualified) in the CV
 - 
-
 
 ##### Typographic forms
 

@@ -299,15 +299,17 @@ The basic rule is that terms should denote a single **concept,** or unit of thou
 - Disciplines, fields
 - Units of measurement
 
-If ambiguous, the scope of a term may be clarified with **scope notes (SN).** If a scope note mentions another term in the vocabulary, then there should be a reciprocal SN or a cross-reference (term2: X SN term1).
-
 A term may use multiple words to denote a single concept, in which case it's a **compound term** and should have two parts: the **focus** AKA head, and the **modifier** AKA difference. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms): 
 
 - p. 39: why join?
 - p. 40: why split?
 
-Compound terms denote a single concept; **coordinated terms** denote several concepts associated with a single information object. This denotation can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: English language--Rhetoric, Persuasion (Rhetoric), Report writing. Precoordinated terms enable browsnig with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search **(postcoordination):** English language AND rhetoric AND persuasion AND reporting writing.  
+Compound terms denote a single concept; **coordinated terms** denote several concepts associated with a single information object. This denotation can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: `English language--Rhetoric, Persuasion (Rhetoric), Report writing.` Precoordinated terms enable browsnig with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search **(postcoordination):** `English language AND rhetoric AND persuasion AND reporting writing.`  
 
+Naturally occurring compound terms are preferable to qualified homographs, e.g. `religious tolerance` is better than `tolerance (religious)`. 
+
+
+If ambiguous, the scope of a term may be clarified with **scope notes (SN).** If a scope note mentions another term in the vocabulary, then there should be a reciprocal SN or a cross-reference (term2: X SN term1).
 
 ##### Grammatical forms
 

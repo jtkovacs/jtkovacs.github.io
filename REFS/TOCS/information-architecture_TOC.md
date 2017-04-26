@@ -365,6 +365,7 @@ Additionally, the scope of a term may be clarified with **scope notes (SN).** If
 ##### Grammatical forms
 
 - 
+- Can use inverted forms as entry terms
 
 ##### Typographic forms
 
@@ -382,12 +383,13 @@ All relationships are **reciprocal,** which should be captured by the taxonomy s
 
 Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF in the case of a single **preferred term** AKA descriptors, headings; non-preferred terms are called entry terms or lead-in terms. 
 
-Keep in mind:
-
 - Only equate near-synonyms if warranted
-- Spelling, full vs. abbreviated forms: lexical variants (ANSI/NISO, p. 45)
-- (Romanized) loan words vs. translations: 
-- Can use inverted forms as entry terms
+- Include a term's full form and acronym:
+    - Prefer full form unless acronym dominant in the domain
+    - If acronym is dominant but ambiguous, prefer full form 
+- Include a term's popular and scientific forms; prefer whichever is dominant in the domain
+- Consult lexical authorities for official spelling (esp. for Romanized terms)
+- Prefer whichever is more popular for loan words versus translations 
 
 Indicating preferred term when compound:
 

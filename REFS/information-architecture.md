@@ -276,9 +276,11 @@ Terms are chosen from a specific domain/information space if their inclusion is 
 - **Literary warrant** emerges from review of documents and standards; and
 - **Organizational warrant** emerges from an organization's existing standards.
 
-##### Scoping terms
+##### Scoping & coordinating terms
 
-The basic rule is that term should denote a single concept, or unit of thought. A term may use multiple words to denote a single concept, in which case it's a **compound term;** but concepts aren't compounded at the level of terms. (They may be compounded 
+The basic rule is that term should denote a single concept, or unit of thought. A term may use multiple words to denote a single concept, in which case it's a **compound term** and should have two parts: the **focus** AKA head, and the **modifier** AKA difference.  
+
+but concepts aren't compounded at the level of terms. (They may be compounded 
 
 
 ##### Grammar guidelines for terms
@@ -301,6 +303,10 @@ So sibling terms can be parallel, it might help to think about types of terms:
 - Units of measurement
 
 ##### Choosing preferred term
+
+This is chosing the preferred term among several near-synonyms, and also chosing the preferred form of a word with spelling variations.
+
+- Can use inverted forms as entry terms
 
 A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
 

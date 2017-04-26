@@ -323,7 +323,7 @@ While compound terms denote a single concept, **coordinated terms** associate se
 - **Parts of speech:**
     - Prefer nouns or (in the case of bound compound terms) noun phrases;
         - Prefer premodified/adjectival noun phrases, e.g. _historical drama, African American women authors, cold fusion_
-        - Avoid postmodified/prepositional noun phrases unless idiomatic, e.g. _hospitals for children, metabolism of carbohydrates_
+        - Avoid postmodified/prepositional noun phrases unless idiomatic, e.g. avoid _hospitals for children_ in favor of _children's hospital,_ but prefer _burden of proof_ to _proof's burden_
     - Avoid verbs used as nouns (e.g. reading, distillation, cookery)
     - Single adjectives are sometimes included to facilitate coordination, avoiding multiple compound terms
     - Single adverbs are rarely needed, but depends on the domain

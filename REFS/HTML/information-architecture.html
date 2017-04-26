@@ -80,6 +80,18 @@
              <a href="#record-based-structures">
               Record-based structures
              </a>
+             <ul>
+              <li>
+               <a href="#(1g)-hierarchical-structures-">
+                (1G) Hierarchical structures
+               </a>
+              </li>
+              <li>
+               <a href="#(2g)-relational-structures">
+                (2G) Relational structures
+               </a>
+              </li>
+             </ul>
             </li>
             <li>
              <a href="#object-based-structures">
@@ -571,94 +583,94 @@
    </a>
   </h4>
   <p>
-   Can’t express constraints on the data, but express structure well
+   Can’t express constraints on the data, but express structure well.
   </p>
+  <h5>
+   <a name="(1g)-hierarchical-structures">
+    (1G) Hierarchical structures
+   </a>
+  </h5>
   <ul>
    <li>
+    Per Zeng (n.d.), strict hierarchies
     <strong>
-     (1G) Hierarchical structures
+     (trees)
     </strong>
+    can model three different types of real-world relationships:
     <ul>
      <li>
-      Per Zeng (n.d.), strict hierarchies
       <strong>
-       (trees)
+       Generic:
       </strong>
-      can model three different types of real-world relationships:
+      <em>
+       X is a Y
+      </em>
+      or _All X are Y, and some Y are X
       <ul>
        <li>
-        <strong>
-         Generic:
-        </strong>
-        <em>
-         X is a Y
-        </em>
-        or _All X are Y, and some Y are X
-        <ul>
-         <li>
-          Succulent: Cactus (NTG)
-         </li>
-         <li>
-          Cactus: Succulent (BTG)
-         </li>
-        </ul>
+        Succulent: Cactus (NTG)
        </li>
        <li>
-        <strong>
-         Instance:
-        </strong>
-        <em>
-         X is a Y
-        </em>
-        but not a
-        <em>
-         kind
-        </em>
-        of Y or a
-        <em>
-         part
-        </em>
-        of Y
-        <ul>
-         <li>
-          Mountain: Alps (NTI), Himalayas (NTI)
-         </li>
-         <li>
-          Alps: Moutain (BTI)
-         </li>
-         <li>
-          Himalayas: Mountain (BTI)
-         </li>
-        </ul>
-       </li>
-       <li>
-        <strong>
-         Partitive:
-        </strong>
-        <em>
-         Y consists of Xs
-        </em>
-        <ul>
-         <li>
-          Central nervous system: Brain (NTP), Spinal cord (NTP)
-         </li>
-         <li>
-          Brain: Central nervous system (BTP)
-         </li>
-         <li>
-          Spinal cord: Central nervous system (BTP)
-         </li>
-        </ul>
+        Cactus: Succulent (BTG)
        </li>
       </ul>
      </li>
      <li>
       <strong>
-       Polyhierarchy
+       Instance:
       </strong>
-      (family tree) is more complex than a strict hierarchy
+      <em>
+       X is a Y
+      </em>
+      but not a
+      <em>
+       kind
+      </em>
+      of Y or a
+      <em>
+       part
+      </em>
+      of Y
+      <ul>
+       <li>
+        Mountain: Alps (NTI), Himalayas (NTI)
+       </li>
+       <li>
+        Alps: Moutain (BTI)
+       </li>
+       <li>
+        Himalayas: Mountain (BTI)
+       </li>
+      </ul>
+     </li>
+     <li>
+      <strong>
+       Partitive:
+      </strong>
+      <em>
+       Y consists of Xs
+      </em>
+      <ul>
+       <li>
+        Central nervous system: Brain (NTP), Spinal cord (NTP)
+       </li>
+       <li>
+        Brain: Central nervous system (BTP)
+       </li>
+       <li>
+        Spinal cord: Central nervous system (BTP)
+       </li>
+      </ul>
      </li>
     </ul>
+   </li>
+   <li>
+    <p>
+     <strong>
+      Polyhierarchy
+     </strong>
+     (family tree) is more complex than a strict hierarchy
+    </p>
    </li>
    <li>
     <p>
@@ -668,15 +680,15 @@
      AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
     </p>
    </li>
-   <li>
-    <p>
-     <strong>
-      (2G) Relational structures
-     </strong>
-     are tables with columns, and implicit relationships via attributes.
-    </p>
-   </li>
   </ul>
+  <h5>
+   <a name="(2g)-relational-structures">
+    (2G) Relational structures
+   </a>
+  </h5>
+  <p>
+   Tables with columns, and implicit relationships via attributes.
+  </p>
   <h4>
    <a name="object-based-structures">
     Object-based structures

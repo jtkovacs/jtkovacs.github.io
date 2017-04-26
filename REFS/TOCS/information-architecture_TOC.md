@@ -9,6 +9,8 @@
 		- [Information schemas](#information-schemas)
 		- [Information structures](#information-structures)
 			- [Record-based structures](#record-based-structures)
+				- [(1G) Hierarchical structures ](#(1g)-hierarchical-structures-)
+				- [(2G) Relational structures](#(2g)-relational-structures)
 			- [Object-based structures](#object-based-structures)
 	- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
 - [What is taxonomy?](#what-is-taxonomy?)
@@ -143,26 +145,29 @@ But, Wyllys adds, there are also three fundamental information structures, AKA *
 
 #### Record-based structures
 
-Can’t express constraints on the data, but express structure well
+Can’t express constraints on the data, but express structure well.
 
-- **(1G) Hierarchical structures** 
-    - Per Zeng (n.d.), strict hierarchies __(trees)__ can model three different types of real-world relationships: 
-        - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
-            - Succulent: Cactus (NTG)
-            - Cactus: Succulent (BTG)
-        - __Instance:__ _X is a Y_ but not a _kind_ of Y or a _part_ of Y
-            - Mountain: Alps (NTI), Himalayas (NTI)
-            - Alps: Moutain (BTI)
-            - Himalayas: Mountain (BTI)
-        - __Partitive:__ _Y consists of Xs_
-            - Central nervous system: Brain (NTP), Spinal cord (NTP)
-            - Brain: Central nervous system (BTP)
-            - Spinal cord: Central nervous system (BTP)
-    - __Polyhierarchy__ (family tree) is more complex than a strict hierarchy
+##### (1G) Hierarchical structures 
+
+- Per Zeng (n.d.), strict hierarchies __(trees)__ can model three different types of real-world relationships: 
+    - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
+        - Succulent: Cactus (NTG)
+        - Cactus: Succulent (BTG)
+    - __Instance:__ _X is a Y_ but not a _kind_ of Y or a _part_ of Y
+        - Mountain: Alps (NTI), Himalayas (NTI)
+        - Alps: Moutain (BTI)
+        - Himalayas: Mountain (BTI)
+    - __Partitive:__ _Y consists of Xs_
+        - Central nervous system: Brain (NTP), Spinal cord (NTP)
+        - Brain: Central nervous system (BTP)
+        - Spinal cord: Central nervous system (BTP)
+- __Polyhierarchy__ (family tree) is more complex than a strict hierarchy
         
 - **(1G) Graph structures,** AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 
-- **(2G) Relational structures** are tables with columns, and implicit relationships via attributes.
+##### (2G) Relational structures
+
+Tables with columns, and implicit relationships via attributes.
     
 #### Object-based structures
 

@@ -289,13 +289,9 @@ Since warrants shift over time, there should be a 'parking lot' for candidate te
 
 ##### Scope & coordination
 
-The basic rule is that terms should denote a single **concept,** or unit of thought. There are different kinds of concepts:
+The basic rule is that a term should denote a single **concept,** or unit of thought. There are different kinds of concepts:
 
 - Things and their parts
-    - Proper names (persons, institutions, places, titles) may be
-        - controlled with another CV;
-        - controlled with a name authority file;
-        - left uncontrolled
 - Materials
 - Activities, processes
 - Events, occurrences

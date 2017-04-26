@@ -299,14 +299,14 @@ The basic rule is that terms should denote a single **concept,** or unit of thou
 - Disciplines, fields
 - Units of measurement
 
-A term may use multiple words to denote a single concept, in which case it's a **compound term** and should have two parts: the **focus** AKA head, and the **modifier** AKA difference. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms): 
+A **bound compound term** uses multiple words or a phrase to denote a single concept. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms): 
 
 - p. 39: why join?
 - p. 40: why split?
 
-Compound terms denote a single concept; **coordinated terms** denote several concepts associated with a single information object. This denotation can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English language--Rhetoric, Persuasion (Rhetoric), Report writing._ Precoordinated terms enable browsnig with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search **(postcoordination):** _English language AND rhetoric AND persuasion AND reporting writing._  
+Compound terms denote a single concept; **coordinated terms** denote several concepts associated with a single information object. This denotation can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English language--Rhetoric, Persuasion (Rhetoric), Report writing._ Precoordinated terms enable browsing with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search **(postcoordination):** _English language AND rhetoric AND persuasion AND reporting writing._  
 
-Naturally occurring compound terms are preferable to **qualified homographs,** e.g. _religious tolerance_ is better than _tolerance (religious)._ But if no compound term exists, then ambiguous terms should be qualified:
+Naturally occurring compound terms are preferable to **qualified homographs,** another type of compound term; e.g. _religious tolerance_ is better than _tolerance (religious)._ If no compound term exists, then ambiguous terms (AKA head or focus nouns) should receive a modifier AKA difference:
 
 - Try to standardize qualifiers
 - The qualifier must not itself be a homograph
@@ -331,21 +331,15 @@ Additionally, the scope of a term may be clarified with **scope notes (SN).** If
 
 #### How are terms related?
 
-All relationships are reciprocal, which should be captured by the taxonomy software. Most relationships (except RT) are asymmetric.
+All relationships are reciprocal, which should be captured by the taxonomy software. Most relationships (except RT) are asymmetric. **Orphan terms** lack any relationship.
 
 ##### Equivalence & preferred terms
 
-Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF in the case of a single preferred term or otherwise stored as a synonym ring AKA synset. 
+Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF in the case of a single **preferred term** AKA descriptors, headings; non-preferred terms are called entry terms or lead-in terms. 
 
 Keep in mind:
 
 - Only equate near-synonyms if warranted
-- 
-
-Choosing preferred term
-
-A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
-
 - Spelling, full vs. abbreviated forms: lexical variants (ANSI/NISO, p. 45)
 - (Romanized) loan words vs. translations: 
 - Can use inverted forms as entry terms
@@ -362,7 +356,7 @@ Indicating preferred term when compound:
 
 See [discussion of hierarchy, above.](#hierarchical-(1g))
 
-##### Associative
+##### Association
 
 Associative relationships should be recorded between terms that are needed to explain each other, or readily evoke each other, or are etymologically related, or are derived one from the other. Although they may be disambiguated in a graph database, in a thesaurus the following **semantic relationships** (and more) are collapsed under RELATED TERM/RT:
 

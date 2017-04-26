@@ -199,8 +199,8 @@
                </a>
               </li>
               <li>
-               <a href="#associative">
-                Associative
+               <a href="#association">
+                Association
                </a>
               </li>
              </ul>
@@ -1305,19 +1305,11 @@
    </li>
   </ul>
   <p>
-   A term may use multiple words to denote a single concept, in which case it's a
+   A
    <strong>
-    compound term
+    bound compound term
    </strong>
-   and should have two parts: the
-   <strong>
-    focus
-   </strong>
-   AKA head, and the
-   <strong>
-    modifier
-   </strong>
-   AKA difference. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms):
+   uses multiple words or a phrase to denote a single concept. Deciding to use a compound term rather than a single term should be guided by warrant and total #terms in the CV (more compound terms means fewer overall terms):
   </p>
   <ul>
    <li>
@@ -1340,7 +1332,7 @@
    <em>
     English language--Rhetoric, Persuasion (Rhetoric), Report writing.
    </em>
-   Precoordinated terms enable browsnig with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search
+   Precoordinated terms enable browsing with great specificity, avoiding search, and impose alphabetic proximity on related terms that would otherwise be far apart. But it's better to let a user combine terms interactively during search
    <strong>
     (postcoordination):
    </strong>
@@ -1353,7 +1345,7 @@
    <strong>
     qualified homographs,
    </strong>
-   e.g.
+   another type of compound term; e.g.
    <em>
     religious tolerance
    </em>
@@ -1361,7 +1353,7 @@
    <em>
     tolerance (religious).
    </em>
-   But if no compound term exists, then ambiguous terms should be qualified:
+   If no compound term exists, then ambiguous terms (AKA head or focus nouns) should receive a modifier AKA difference:
   </p>
   <ul>
    <li>
@@ -1427,6 +1419,10 @@
   </h4>
   <p>
    All relationships are reciprocal, which should be captured by the taxonomy software. Most relationships (except RT) are asymmetric.
+   <strong>
+    Orphan terms
+   </strong>
+   lack any relationship.
   </p>
   <h5>
    <a name="equivalence-&amp;-preferred-terms">
@@ -1434,7 +1430,11 @@
    </a>
   </h5>
   <p>
-   Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF in the case of a single preferred term or otherwise stored as a synonym ring AKA synset.
+   Synonyms, near-synonyms, and lexical variants are connected via equivalence relationships, denoted with USE/USED FOR or U/UF in the case of a single
+   <strong>
+    preferred term
+   </strong>
+   AKA descriptors, headings; non-preferred terms are called entry terms or lead-in terms.
   </p>
   <p>
    Keep in mind:
@@ -1443,16 +1443,6 @@
    <li>
     Only equate near-synonyms if warranted
    </li>
-   <li>
-   </li>
-  </ul>
-  <p>
-   Choosing preferred term
-  </p>
-  <p>
-   A preferred term may or may not be designated among synonyms. Preferred terms are also called descriptors or headings; non-preferred terms are also called entry terms or lead-in terms. Terms may be compound, either bound (denoting a single concept) or consisting of a focus noun (also called head nous) plus a qualifier (in the case of homographs). A term may be an orphan, lacking any relationship to other terms.
-  </p>
-  <ul>
    <li>
     Spelling, full vs. abbreviated forms: lexical variants (ANSI/NISO, p. 45)
    </li>
@@ -1516,8 +1506,8 @@
    </a>
   </p>
   <h5>
-   <a name="associative">
-    Associative
+   <a name="association">
+    Association
    </a>
   </h5>
   <p>

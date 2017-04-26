@@ -368,7 +368,7 @@ Additionally, the scope of a term may be clarified with **scope notes (SN).** If
 
 ##### Grammatical forms
 
-Parts of speech:
+**Parts of speech:**
 
 - Prefer nouns or (in the case of bound compound terms) noun phrases;
     - Prefer premodified/adjectival noun phrases
@@ -376,17 +376,14 @@ Parts of speech:
 - Avoid verbs used as nouns (e.g. reading, distillation, cookery)
 - Single adjectives are sometimes included to facilitate coordination, avoiding multiple compound terms
 - Single adverbs are rarely needed, but depends on the domain
+- Drop initial articles unless they're important for finding an item (may depend on the underlying natural language)
 
-Pluralization:
+**Pluralization:**
 
 - Count nouns (how many?) should be plural unless the singular form is common in the domain
 - Mass nouns (how much?) should be singular unless users regard the noun as a class with >1 member
 - Regardless, abstract concepts and unique entities are singular
 - Rarely, singular and plural forms denote process and product, so both may appear (qualified) in the CV
-
-Misc.:
-
-- Drop initial articles unless they're important for finding an item (may depend on the underlying natural language)
 
 
 ##### Typographic forms

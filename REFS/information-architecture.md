@@ -323,11 +323,26 @@ Additionally, the scope of a term may be clarified with **scope notes (SN).** If
 
 ##### Grammatical forms
 
-- Prefer nouns or (in the case of bound compound terms) noun phrases 
-    - Count nouns (how many?) should be plural unless the singular form is common in the domain
-    - Mass nouns (how much?) should be singular unless users regard the noun as a class with >1 member
-    - Rarely, singular and plural forms denote process and product, so both may appear (qualified) in the CV
-- 
+Parts of speech:
+
+- Prefer nouns or (in the case of bound compound terms) noun phrases;
+    - Prefer premodified/adjectival noun phrases
+    - Avoid postmodified/prepositional noun phrases unless idiomatic, e.g. _X of Y, Y for X_
+- Avoid verbs used as nouns (e.g. reading, distillation, cookery)
+- Single adjectives are sometimes included to facilitate coordination, avoiding multiple compound terms
+- Single adverbs are rarely needed, but depends on the domain
+
+Pluralization:
+
+- Count nouns (how many?) should be plural unless the singular form is common in the domain
+- Mass nouns (how much?) should be singular unless users regard the noun as a class with >1 member
+- Regardless, abstract concepts and unique entities are singular
+- Rarely, singular and plural forms denote process and product, so both may appear (qualified) in the CV
+
+Misc.:
+
+- Drop initial articles unless they're important for finding an item (may depend on the underlying natural language)
+
 
 ##### Typographic forms
 
@@ -352,7 +367,7 @@ Synonyms, near-synonyms, and lexical variants are connected via equivalence rela
     - Prefer full form unless acronym dominant in the domain
     - If acronym is dominant but ambiguous, prefer full form 
 - Include a term's popular and scientific forms; prefer whichever is dominant in the domain
-- Consult lexical authorities for official spelling (esp. for Romanized terms)
+- Consult lexical authorities for official spelling (esp. for Romanized terms; see ANSI/NISO Z39.19 p. 36)
 - Prefer whichever is more popular for loan words versus translations 
 
 Indicating preferred term when compound:

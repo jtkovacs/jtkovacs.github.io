@@ -468,7 +468,7 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 - Accessible to multiple users
 
 
-### Displaying CVs [IP]
+### Displaying CVs (IP)
 
 #### Overarching forms
 

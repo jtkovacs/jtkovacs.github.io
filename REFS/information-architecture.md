@@ -392,21 +392,20 @@ Associative relationships should be recorded between terms that are needed to ex
 
 #### CV elements by impact on IR
 
-Per ANSI/NISO Z39.19 (p. 16), **recall** is improved by indicating relationships:
+Per ANSI/NISO Z39.19 (p. 16), 
 
-- Equivalence relationships/preferred terms
-- Preferred term form
-- Associative relationships/related terms
-- Classified and hierarchical relationships
-- Postcoordination
-- Concept mapping/clustering
-
-**Precision** (minimizing false hits) is improved by controlling ambiguity:
-
-- Parenthetical qualifiers
-- Broader and narrower term hierarchical relationships
-- Compound terms
-- Precoordination 
+- **Recall** is improved by indicating relationships:
+    - Equivalence relationships/preferred terms
+    - Preferred term form
+    - Associative relationships/related terms
+    - Classified and hierarchical relationships
+    - Postcoordination
+    - Concept mapping/clustering
+- **Precision** (minimizing false hits) is improved by controlling ambiguity:
+    - Parenthetical qualifiers
+    - Broader and narrower term hierarchical relationships
+    - Compound terms
+    - Precoordination 
 
 
 ### Testing CVs

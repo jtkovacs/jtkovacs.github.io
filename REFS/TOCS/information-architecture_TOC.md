@@ -369,8 +369,10 @@ While compound terms denote a single concept, **coordinated terms** associate se
     - Prefer nouns or (in the case of bound compound terms) noun phrases;
         - Prefer premodified/adjectival noun phrases, e.g. _historical drama, cold fusion_
         - Avoid postmodified/prepositional noun phrases unless idiomatic, e.g. avoid _hospitals for children_ in favor of _children's hospital,_ but prefer _burden of proof_ to _proof's burden_
-    - Avoid verbs used as nouns; e.g., prefer _reading_ to _read_, _cookery_ to _cook_
-    - Single adjectives are sometimes included to facilitate coordination, avoiding multiple compound terms
+    - Avoid verbs used as nouns; e.g., prefer _reading_ to _read,_ _cookery_ to _cook_
+    - Single adjectives are sometimes included:
+        - ... to facilitate coordination and avoid multiple compound terms, e.g. _small, portable, offshore_
+        - ... as an entry term, e.g. _cardiac: see also terms beginning with heart_
     - Single adverbs are rarely needed, but depends on the domain
     - Drop initial articles unless they're important for finding an item (may depend on the underlying natural language)
 - **Pluralization:**

@@ -106,7 +106,9 @@ But, Wyllys adds, there are also three fundamental information structures, AKA *
 
 Can’t express constraints on the data, but express structure well.
 
-##### (1G) Hierarchical structures 
+##### Hierarchical structures 
+
+1G
 
 - Per Zeng (n.d.), strict hierarchies __(trees)__ can model three different types of real-world relationships: 
     - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
@@ -122,13 +124,13 @@ Can’t express constraints on the data, but express structure well.
         - Spinal cord: Central nervous system (BTP)
 - __Polyhierarchy__ (family tree) is more complex than a strict hierarchy
 
-##### (1G) Graph structures
+##### Graph structures
 
-AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
+1G. AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 
-##### (2G) Relational structures
+##### Relational structures
 
-Tables with columns, and implicit relationships via attributes.
+2G. Tables with columns, and implicit relationships via attributes.
     
 #### Object-based structures
 

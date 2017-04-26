@@ -331,7 +331,7 @@ Additionally, the scope of a term may be clarified with **scope notes (SN).** If
 
 #### How are terms related?
 
-All relationships are reciprocal, which should be captured by the taxonomy software. Most relationships (except RT) are asymmetric. **Orphan terms** lack any relationship.
+All relationships are **reciprocal,** which should be captured by the taxonomy software. Most relationships (except RT) are asymmetric. **Orphan terms** lack any relationship.
 
 ##### Equivalence & preferred terms
 

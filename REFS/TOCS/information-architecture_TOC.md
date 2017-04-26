@@ -13,7 +13,7 @@
 				- [Graph structures](#graph-structures)
 				- [Relational structures](#relational-structures)
 			- [Object-based structures](#object-based-structures)
-	- [What major questions arise in organizing?](#what-major-questions-arise-in-organizing?)
+		- [Questions that arise in organizing](#questions-that-arise-in-organizing)
 - [What is taxonomy?](#what-is-taxonomy?)
 	- [What are knowledge organization structures?](#what-are-knowledge-organization-structures?)
 		- [KOSs by structure](#koss-by-structure)
@@ -183,7 +183,7 @@ Allow specification of constraints, but not overall structure; include entities 
 - Functional
 - (3G) Object-oriented: adds **behavior** alongside state
 
-## What major questions arise in organizing?
+### Questions that arise in organizing
 
 - What organization schema/s to use
 - Whether to classify (1:1) or tag (1:&infin;)

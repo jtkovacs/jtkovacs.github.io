@@ -141,7 +141,7 @@ Allow specification of constraints, but not overall structure; include entities 
 - Functional
 - (3G) Object-oriented: adds **behavior** alongside state
 
-## What major questions arise in organizing?
+### Questions that arise in organizing
 
 - What organization schema/s to use
 - Whether to classify (1:1) or tag (1:&infin;)

@@ -181,10 +181,9 @@ th {
 }
 
 /* Bullets in tables should NOT be indented so far */
-table li {
+table.OSEMN li {
     max-width: 60px;
 }
-table.OSEMN td {
-    padding: 0;
-    margin: 0;
+table.OSEMN ul {
+    margin-left: 2px;
 }

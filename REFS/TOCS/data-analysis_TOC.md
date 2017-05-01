@@ -60,7 +60,7 @@ Via Mason and Wiggins (2010):
 - Encoding
 </td>
 
-<td style="align: left;">
+<td style="text-align: left;">
 - Filter
 - Extract columns
 - Extract values
@@ -69,13 +69,13 @@ Via Mason and Wiggins (2010):
 - Convert formats
 </td>
 
-<td style="align: left;">
+<td style="text-align: left;">
 </td>
 
-<td style="align: left;">
+<td style="text-align: left;">
 </td>
 
-<td style="align: left;">
+<td style="text-align: left;">
 </td>
 
 <td style="align: left;">

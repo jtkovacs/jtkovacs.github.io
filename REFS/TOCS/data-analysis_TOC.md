@@ -82,11 +82,12 @@ Via Mason and Wiggins (2010):
 - Dimensionality reduction
 </td>
 
-<td style="text-align: left;">
+<td style="text-align: left;" colspan=2>
+- Conclusion
+- Implications
+- Communication
 </td>
 
-<td style="align: left;">
-</td>
 </tr>
 </table>
 

@@ -1,9 +1,9 @@
 
 # What's the scientific method?
 
+## Institutions of scientific knowledge production
 
-
-## What are major institutions of knowledge production, and how well are they working?
+What are major institutions of knowledge production, and how well are they working?
 
 ### Academic apprenticeship
 
@@ -13,11 +13,9 @@
 
 ### Libraries & the accumulation of knowledge
 
+## Academic vs. practitioner knowledge
 
-
-## How do professional and academic knowledge compare?
-
-## How reliable is crowd-sourced knowledge?
+## Expert vs. crowdsourced knowledge
 
 
 

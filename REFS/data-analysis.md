@@ -21,13 +21,12 @@ Via Mason and Wiggins (2010):
 <th rowspan=2>Alt terms:</th>
 <td>Acquire</td>
 <td>Clean</td>
-<td colspan=2>Analyze</td>
-<td>Apply</td>
+<td colspan=2 rowspan=2>Analyze</td>
+<td rowspan=2>Apply</td>
 </tr>
 
 <tr>
 <td colspan=2>Wrangle</td>
-<td colspan=4>Visualize</td>
 </tr>
 
 <tr>

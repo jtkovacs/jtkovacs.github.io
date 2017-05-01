@@ -59,8 +59,10 @@ Via Mason and Wiggins (2010):
 </td>
 
 <td style="text-align: left;">
-- 
-- 
+- Clustering
+- Classification
+- Regression
+- Dimensionality reduction
 </td>
 
 <td style="text-align: left;">

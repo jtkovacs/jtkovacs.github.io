@@ -48,7 +48,7 @@ Via Mason and Wiggins (2010):
 
 <tr>
 <th>Skills & tools:</th>
-<td style="align: left;">
+<td style="text-align: left;">
 - Plain text
 - CSV
 - JSON

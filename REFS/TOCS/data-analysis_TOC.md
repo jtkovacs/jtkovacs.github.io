@@ -30,6 +30,10 @@ AKA acquire.
 
 ### Scrub
 
+- What are major steps in data cleaning?
+- What's the best way to filter data?
+- What's the best way to aggregate data?
+
 ### Explore
 
 ### Model
@@ -39,6 +43,10 @@ AKA acquire.
 ## Data science skills
 
 ## Data science tools
+
+
+
+
 
 
 
@@ -52,13 +60,16 @@ Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataist
 
 - [Google APIs Explorer](https://developers.google.com/apis-explorer/#p/)
 - [Google Developers](https://developers.google.com/)
+- [Handy Python libraries for data cleaning](https://blog.modeanalytics.com/python-data-cleaning-libraries/)
 
 ## Read
 
 - [Treehouse -&nbsp;CSV &amp; JSON&nbsp;in Python](https://www.google.com/url?q=https%3A%2F%2Fteamtreehouse.com%2Flibrary%2Fcsv-and-json-in-python&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH4m-fFGcDa-fuIpEHKxk28kRxlqg)
+- _Bad data handbook._
 
 ## Unread
 
+- _Data wrangling with Python._
 - [Coursera - Using Python to Access Web Data](https://www.coursera.org/learn/python-network-data)
 - [Scraping the web](http://schoolofdata.org/2013/11/25/scraping-the-web/)
 - [Prevent web scraping](https://blog.hartleybrody.com/prevent-scrapers/)
@@ -67,3 +78,6 @@ Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataist
 - [HTML scraping with requests and lmxl](http://docs.python-guide.org/en/latest/scenarios/scrape/)
 - [Don’t parse HTML with regex](http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454)
 - [Automate the Boring Stuff with Python: Web Scraping](https://automatetheboringstuff.com/chapter11/)
+- [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets](http://www.joelonsoftware.com/articles/Unicode.html)
+- [The Data Scrub](https://statswithcats.wordpress.com/2010/10/17/the-data-scrub-3/)
+- [Why data preparation should not be overlooked](http://www.datasciencecentral.com/profiles/blogs/why-data-preparation-should-not-be-overlooked)

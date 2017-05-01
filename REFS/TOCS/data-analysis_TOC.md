@@ -20,7 +20,7 @@
 
 ## Data science lifecycle
 
-Mason and Wiggins (2010) name the following as stages in the (iterative) process of data science:
+Via Mason and Wiggins (2010):
 
 <table>
 <tr>
@@ -33,19 +33,27 @@ Mason and Wiggins (2010) name the following as stages in the (iterative) process
 </tr>
 
 <tr>
-<th>Alternative terms:</th>
-<td colspan=2>Wrangle</td>
+<th rowspan=2>Alternative terms:</th>
+<td>Acquire</td>
+<td>Clean</td>
 <td colspan=2>Analyze</td>
 <td>Apply</td>
 <td>Communicate</td>
 </tr>
+
+<tr>
+<td colspan=2>Wrangle</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
 </table>
 
 
 
 ### Obtain 
-
-AKA acquire. 
 
 - What are major risks in web scraping?
 - When would you scrape versus using an API?

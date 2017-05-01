@@ -1,11 +1,12 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-analysis.html">https://jtkovacs.github.io/REFS/HTML/data-analysis.html</a></p><table class="TOC"><tr><td>- [What is data science?](#what-is-data-science?)
-	- [Data science skills](#data-science-skills)
 	- [Data science lifecycle](#data-science-lifecycle)
 		- [Obtain ](#obtain-)
 		- [Scrub](#scrub)
 		- [Explore](#explore)
 		- [Model](#model)
 		- [iNterpret](#interpret)
+	- [Data science skills](#data-science-skills)
+	- [Data science tools](#data-science-tools)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -13,8 +14,6 @@
 </td></tr></table>
 
 # What is data science?
-
-## Data science skills
 
 ## Data science lifecycle
 
@@ -29,8 +28,6 @@ AKA acquire.
 - How do you parse scraped web data (HTML, JSON, XML)?
 - How is authorization implemented in Google APIs?
 
-
-
 ### Scrub
 
 ### Explore
@@ -39,7 +36,9 @@ AKA acquire.
 
 ### iNterpret
 
+## Data science skills
 
+## Data science tools
 
 
 

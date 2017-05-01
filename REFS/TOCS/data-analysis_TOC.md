@@ -65,7 +65,7 @@ Via Mason and Wiggins (2010):
 - Extract columns
 - Extract values
 - Replace values
-- Handle NULL, missing
+- Handle NULL, missing data
 - Convert formats
 </td>
 

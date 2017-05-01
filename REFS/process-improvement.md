@@ -91,6 +91,16 @@ See [notes on systems modeling.](modeling.html)
 ### Brainstorming
 
 
+# Design Thinking
+
+- [Draw toast](http://www.drawtoast.com/)
+- [Microsoft's radical bet on a new type of design thinking](https://www.fastcodesign.com/3054927/the-big-idea/microsofts-inspiring-bet-on-a-radical-new-type-of-design-thinking)
+- [Service design toolkit](http://www.servicedesigntoolkit.org/downloads.html)
+- [Principles and glossary of presencing](https://www.presencing.com/principles)
+- [Design to improve life (cases and methods)](http://designtoimprovelife.dk/tools/)
+- [Principles for complex systems](http://capita.wustl.edu/ME567_Informatics/contents/complex.html)
+
+
 
 
 # Operations Management

@@ -24,6 +24,7 @@
 		- [Opportunities rating matrix ](#opportunities-rating-matrix-)
 		- [5S organization methodology](#5s-organization-methodology)
 		- [Brainstorming](#brainstorming)
+- [Design Thinking](#design-thinking)
 - [Operations Management](#operations-management)
 	- [Business process analysis](#business-process-analysis)
 		- [Flow diagram](#flow-diagram)
@@ -139,6 +140,16 @@ See [notes on systems modeling.](modeling.html)
 ### 5S organization methodology
 
 ### Brainstorming
+
+
+# Design Thinking
+
+- [Draw toast](http://www.drawtoast.com/)
+- [Microsoft's radical bet on a new type of design thinking](https://www.fastcodesign.com/3054927/the-big-idea/microsofts-inspiring-bet-on-a-radical-new-type-of-design-thinking)
+- [Service design toolkit](http://www.servicedesigntoolkit.org/downloads.html)
+- [Principles and glossary of presencing](https://www.presencing.com/principles)
+- [Design to improve life (cases and methods)](http://designtoimprovelife.dk/tools/)
+- [Principles for complex systems](http://capita.wustl.edu/ME567_Informatics/contents/complex.html)
 
 
 

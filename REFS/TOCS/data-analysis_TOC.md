@@ -61,11 +61,11 @@ Via Mason and Wiggins (2010):
 </td>
 
 <td style="text-align: left;">
-- Filter
+- Filter data
 - Extract columns
 - Extract values
-- Replace
-- Missing data
+- Replace values
+- Handle NULL, missing
 - Convert formats
 </td>
 

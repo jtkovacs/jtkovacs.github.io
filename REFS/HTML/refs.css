@@ -181,9 +181,6 @@ th {
 }
 
 /* Bullets in tables should NOT be indented so far */
-table ul {
-    padding-left: -20px;
-}
 table li {
     max-width: 60px;
 }

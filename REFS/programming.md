@@ -15,11 +15,10 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 # Which language?
 
-# Misc. notes
+# Programming class notes
 
-# Chapter 1 exercises
+## What is the function of secondary memory in a computer?
 
-### 1. What is the function of secondary memory in a computer?
 - [ ] Execute all of the computation and logic of the program.
 - [ ] Retrieve web pages over the Internet.
 - [X] Store information for the long term - even beyond a power cycle.
@@ -27,23 +26,22 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 *The CPU computes. Web pages are retrieved through networks. User input comes via peripherals. The secondary memory is persistant storage while the primary memory is emptied if ever power cuts out.*
 
-### 2. What is a program?
+### What is a program?
+
 *A program, also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.*
 
+### What is the difference between a compiler and an interpreter?
 
-### 3: What is the difference between a compiler and an interpreter?
 *A compiler performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an imtermediary. The interpreter is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
 
+### Which of the following contains "machine code"?
 
-### 4: Which of the following contains "machine code"?
 - [ ] The Python interpreter. 
 - [ ] The keyboard. 
 - [X] Python source file. 
 - [ ] A word processing document.
 
-
-
-#### 5: What is wrong with the following code. What error message do you get? Does it help?:
+### What is wrong with the following code. What error message do you get? Does it help?:
 
 ```python
 >>> print('Hello world!')
@@ -51,7 +49,7 @@ File "<stdin>", line 1
 print('Hello world!')
 ```
 
-#### 6: Where in the computer is a variable such as "X" stored after the following Python line finishes?
+### Where in the computer is a variable such as "X" stored after the following Python line finishes?
 
 ```python
 x = 123
@@ -63,7 +61,7 @@ x = 123
 - [ ] Input Devices
 - [ ] Output Devices
 
-#### 7: What will the following program print out:
+### What will the following program print out:
 
 ```python
 x = 43

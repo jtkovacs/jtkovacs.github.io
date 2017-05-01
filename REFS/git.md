@@ -18,7 +18,7 @@ So, the workflow:
 3. When all edited files are in the staging area, commit them to the specified branch in the repository.
 4. When this branch is functional, merge it into the master (this might require manual resolution of conflicts).
 
-<img src="../ILLOS/solo-workflow.png" width="600px">
+<img src="../ILLOS/solo-workflow.png" width="700px">
 
 # Local-remote workflow
 
@@ -30,7 +30,7 @@ For collaborative work via remotes, you retain your tripartite solo working envi
 4. Merge your branch with your updated master. 
 5. Push your master up to the remote for review.
 
-<img src="../ILLOS/local-remote-workflow.png" width="600px">
+<img src="../ILLOS/local-remote-workflow.png" width="700px">
 
 # Local-remote-collaborator workflow
 
@@ -45,7 +45,7 @@ A sample workflow:
 5. On GitHub, from the new branch, make a pull request to merge the branch into your personal GitHub master or the master you forked from. 
 6. Other users can see your pull request, discuss it, eventually accept it and merge the branch into the master.
 
-<img src="../ILLOS/local-remote-collaborator-workflow.png" width="600px">
+<img src="../ILLOS/local-remote-collaborator-workflow.png" width="700px">
 
 
 

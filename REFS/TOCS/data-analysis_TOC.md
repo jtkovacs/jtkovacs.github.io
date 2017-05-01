@@ -49,16 +49,15 @@ Via Mason and Wiggins (2010):
 <tr>
 <th>Skills & tools:</th>
 <td style="text-align: left;">
-- Plain text
-- CSV
-- JSON
+**Formats:** Plain text, CSV, JSON
+
 </td>
 
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td style="align: left;"></td>
+<td style="align: left;"></td>
+<td style="align: left;"></td>
+<td style="align: left;"></td>
+<td style="align: left;"></td>
 </tr>
 </table>
 

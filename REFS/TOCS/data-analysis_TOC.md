@@ -68,7 +68,7 @@ Via Mason and Wiggins (2010):
 - Convert formats
 </td>
 
-<td style="text-align: left;">
+<td style="text-align: left;" colspan=2>
 - Summary stats
 - Visualization
 - Clustering

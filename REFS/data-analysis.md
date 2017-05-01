@@ -88,7 +88,8 @@ Via Mason and Wiggins (2010):
 
 ### iNterpret
 
-What are best practices for making Excel sheets auditable?
+- What are best practices for making Excel sheets auditable?
+- [http://radar.oreilly.com/2012/07/data-jujitsu.html](http://radar.oreilly.com/2012/07/data-jujitsu.html)
 
 ## Data science skills
 

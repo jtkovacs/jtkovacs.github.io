@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+  </title>
+  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+ </head>
+ <body>
+  <p id="path">
+   <a href="../../pkb.html">
+    https://jtkovacs.github.io/pkb.html
+   </a>
+   &gt;
+   <a href="https://jtkovacs.github.io/REFS/HTML/git.html">
+    https://jtkovacs.github.io/REFS/HTML/git.html
+   </a>
+  </p>
+  <table class="TOC">
+   <tr>
+    <td>
+     <ul>
+      <li>
+       <a href="#what-is-git?">
+        What is Git?
+       </a>
+      </li>
+      <li>
+       <a href="#solo-workflow">
+        Solo workflow
+       </a>
+      </li>
+      <li>
+       <a href="#local-remote-workflow">
+        Local-remote workflow
+       </a>
+      </li>
+      <li>
+       <a href="#local-remote-collaborator-workflow">
+        Local-remote-collaborator workflow
+       </a>
+      </li>
+      <li>
+       <a href="#code">
+        CODE
+       </a>
+      </li>
+      <li>
+       <a href="#questions">
+        Questions
+       </a>
+       <ul>
+        <li>
+         <a href="#git-style-version-control">
+          Git-style version control
+         </a>
+        </li>
+        <li>
+         <a href="#major-components-of-git">
+          Major components of git
+         </a>
+        </li>
+        <li>
+         <a href="#branching,-diffing,-and-merging">
+          Branching, diffing, and merging
+         </a>
+        </li>
+        <li>
+         <a href="#remotes-&amp;-github-based-collaboration">
+          Remotes &amp; GitHub-based collaboration
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#sources">
+        Sources
+       </a>
+       <ul>
+        <li>
+         <a href="#references">
+          REFERENCES
+         </a>
+        </li>
+        <li>
+         <a href="#read">
+          Read
+         </a>
+        </li>
+        <li>
+         <a href="#unread">
+          Unread
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </td>
+   </tr>
+  </table>
+  <h1>
+   <a name="what-is-git?">
+    What is Git?
+   </a>
+  </h1>
+  <p>
+   Git is a versioning tool tailored to the needs of programmers. Like all versioning tools, Git records a series of changes, letting you restore an earlier version if something goes wrong with the current one. In particular, Git is a versioning tool that works offline; lets you choose your file editing programs; saves manually, not automatically (reflecting the stance that old versions are useful only if they are complete, coherent, functioning); saves multiple documents at a time, not just one; and allows branching.
+  </p>
+  <p>
+   There are three general workflows in Git: solo, collaborative (local-remote), and GitHub (local-remote-collaborator). Obviously workflows should be customized to suit the circumstances (number of collaborators, purpose of branches, purpose of master).
+  </p>
+  <h1>
+   <a name="solo-workflow">
+    Solo workflow
+   </a>
+  </h1>
+  <p>
+   Cloning or initializing Git in a directory creates a staging area and repository with one branch, the
+   <strong>
+    master
+   </strong>
+   . Master should be production-quality code that always runs, so work should be done in
+   <strong>
+    branches
+   </strong>
+   , which are in most cases intended to be temporary. Branches are important for sharing code and for compartmentalizing your own work.
+  </p>
+  <p>
+   Git tracks which commit you're 'on' by means of the
+   <strong>
+    HEAD
+   </strong>
+   pointer. HEAD can be pointed to a commit or to a branch that, in turn, points to its
+   <strong>
+    'tip'
+   </strong>
+   (its most recent commit). Each commit points to its parent commit, making most earlier commits
+   <strong>
+    reachable
+   </strong>
+   . 'Checking out' means moving the HEAD pointer to a new commit; checking out a commit that's not the tip of a branch puts you in
+   <em>
+    detached HEAD state
+   </em>
+   , and any commits you make from here will be unreachable. Git periodically runs a garbage collector process that deletes unreachable commits; until the garbage collector runs, all commits are
+   <a href="http://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html">
+    accessible via their SHA
+   </a>
+   if you happen to know it.
+  </p>
+  <p>
+   So, the workflow:
+  </p>
+  <ol style="list-style-type: decimal">
+   <li>
+    Check out a branch, and edit files in your working directory---as many as needed to implement a single logical change.
+   </li>
+   <li>
+    As you finish editing individual files, add them to the staging area.
+   </li>
+   <li>
+    When all edited files are in the staging area, commit them to the specified branch in the repository.
+   </li>
+   <li>
+    When this branch is functional, merge it into the master (this might require manual resolution of conflicts).
+   </li>
+  </ol>
+  <div class="figure">
+   <img alt="Solo workflow" src="solo-workflow.png"/>
+   <p class="caption">
+    Solo workflow
+   </p>
+  </div>
+  <h1>
+   <a name="local-remote-workflow">
+    Local-remote workflow
+   </a>
+  </h1>
+  <p>
+   For collaborative work via remotes, you retain your tripartite solo working environment but add new steps:
+  </p>
+  <ol style="list-style-type: decimal">
+   <li>
+    To start with someone else's files, clone their repository (which copies the current state and commit history of their directory, and adds a remote called 'origin'); otherwise, create your own repository and add another repository to yours as a remote.
+   </li>
+   <li>
+    Create a branch for your personal work, and commit your work to this branch.
+   </li>
+   <li>
+    Pull (fetch and merge) changes from the remote into your master.
+   </li>
+   <li>
+    Merge your branch with your updated master.
+   </li>
+   <li>
+    Push your master up to the remote for review.
+   </li>
+  </ol>
+  <div class="figure">
+   <img alt="Local-remote workflow" src="local-remote-workflow.png"/>
+   <p class="caption">
+    Local-remote workflow
+   </p>
+  </div>
+  <h1>
+   <a name="local-remote-collaborator-workflow">
+    Local-remote-collaborator workflow
+   </a>
+  </h1>
+  <p>
+   For collaborative work via GitHub, you retain your tripartite solo working environment and, from your command line, work with your GitHub repository like a remote repository (remember to
+   <a href="https://help.github.com/articles/caching-your-github-password-in-git/">
+    cache your GitHub login
+   </a>
+   ). GitHub has additional functionality, though, like issues, wikis, forking (the ability to clone someone else's GitHub projects to your GitHub account). Every GitHub repository has three special files by default:
+   <strong>
+    README.md
+   </strong>
+   , a description of the project;
+   <strong>
+    CONTRIBUTING.md
+   </strong>
+   , instructions for how to contribute to the project; and
+   <strong>
+    ISSUE_TEMPLATE.md
+   </strong>
+   , a template for raising issues with the project.
+  </p>
+  <p>
+   A sample workflow:
+  </p>
+  <ol style="list-style-type: decimal">
+   <li>
+    Create a directory on GitHub, sometimes by forking another repository.
+   </li>
+   <li>
+    Clone this directory locally so you can edit it.
+   </li>
+   <li>
+    Create and checkout a new branch to modify and commit to your local repository.
+   </li>
+   <li>
+    Push the local branch to your personal GitHub remote; no need to pull from your GitHub remote first.
+   </li>
+   <li>
+    On GitHub, from the new branch, make a pull request to merge the branch into your personal GitHub master or the master you forked from.
+   </li>
+   <li>
+    Other users can see your pull request, discuss it, eventually accept it and merge the branch into the master.
+   </li>
+  </ol>
+  <div class="figure">
+   <img alt="Local-remote-collaborator workflow" src="local-remote-collaborator-workflow.png"/>
+   <p class="caption">
+    Local-remote-collaborator workflow
+   </p>
+  </div>
+  <hr/>
+  <h1>
+   <a name="code">
+    CODE
+   </a>
+  </h1>
+  <p>
+   <strong>
+    CREATE
+   </strong>
+   :
+   <em>
+    CONFIGURE, INIT, CLONE, BRANCH, CHECKOUT, ADD, COMMIT, MERGE
+   </em>
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> --version
+<span class="kw">git</span> config --global color.ui auto  <span class="co"># make diff output colored</span>
+<span class="kw">git</span> config --global merge.conflictStyle diff3  <span class="co"># make merge files show content of original</span>
+
+<span class="kw">git</span> init  <span class="co"># create .git project in working directory</span>
+<span class="kw">git</span> clone remote_loc [clone_name]  <span class="co"># copy repository to local drive; remote_loc can be path, HTTP, SSH</span>
+<span class="co"># to start with someone else's files, clone their repository </span>
+<span class="co"># cloning copies the current state and commit history of their directory</span>
+
+<span class="kw">git</span> branch branchname  <span class="co"># create new branch</span>
+<span class="kw">git</span> checkout branchname  <span class="co"># switch branches</span>
+<span class="kw">git</span> checkout -b branchname  <span class="co"># create and switch to new branch</span>
+
+<span class="kw">git</span> add file1 file2 ...  <span class="co"># add newly edited file/s to staging area</span>
+<span class="kw">git</span> add -A <span class="co"># add all edits and deletions to staging area</span>
+<span class="kw">git</span> commit -m <span class="st">"Your message here"</span>  <span class="co"># commit to repository</span>
+<span class="co"># Change editor for longer commit messages: https://www.youtube.com/watch?v=s_eFuGauy6k</span>
+<span class="co"># Style guide for commit messages: http://udacity.github.io/git-styleguide/</span>
+<span class="co"># title can include a tag like 'feat', 'fix', 'docs', 'style', 'refactor', 'test', 'chore' </span>
+<span class="co"># title should be in imperative present tense, and should be &amp;lt;50 chars </span>
+<span class="co"># body lines &amp;lt;72 chars; should address 'what' and 'why', not 'how' (should be evident in the code)</span>
+<span class="co"># include relevant issue #s in footer if applicable</span>
+
+<span class="kw">git</span> merge branchname  <span class="co"># call from branch you want to merge into</span>
+<span class="co"># If there is a merge conflict, discrepancies will show up inside the documents in the working directory; </span>
+<span class="co"># undo the merge (see below) or edit, add, and commit the affected documents to complete the merge.</span></code></pre>
+  </div>
+  <p>
+   <strong>
+    UNDO
+   </strong>
+   :
+   <em>
+    CHECKOUT, RESET, ABORT, AMEND, REVERT
+   </em>
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> rm  filename <span class="st">'*pattern.txt'</span>  <span class="co"># deletes files and stages deletions</span>
+
+<span class="kw">git</span> checkout shortSHA  <span class="co"># discard changes to working dir by checking out specified commit</span>
+<span class="kw">git</span> checkout -- filename.ext  <span class="co"># restore file to version from previous commit</span>
+<span class="kw">git</span> checkout HEAD [files]  <span class="co"># (partially) discard changes to working dir by checking out most recent commit</span>
+<span class="kw">git</span> checkout file1, file2 ..  <span class="co"># partially discard changes to working dir by restoring from staging area</span>
+<span class="co"># 5 or 7 of 40-character SHA should be enough to identify a commit</span>
+<span class="co"># CHECKOUT usually moves the HEAD pointer; exception, when it's applied at the file level</span>
+
+<span class="kw">git</span> reset --soft shortSHA  <span class="co"># move branch tip to an earlier commit, abandoning intervening commits</span>
+<span class="kw">git</span> reset --mixed shortSHA  <span class="co"># move branch tip to earlier commit, reset staging area to that commit</span>
+<span class="kw">git</span> reset --hard shortSHA  <span class="co"># reset staging area, working dir to earlier commit and move branch tip to same</span>
+<span class="kw">git</span> reset  <span class="co"># branch tip unchanged; resets staging area to HEAD</span>
+<span class="kw">git</span> reset file1 file2 ...  <span class="co"># partially resets staging area from HEAD; options above don't apply</span>
+<span class="co"># RESET moves a branch pointer; it should be used to undo changes on a private branch</span>
+
+<span class="kw">git</span> branch -d branchname  <span class="co"># delete branch after successful merge</span>
+<span class="kw">git</span> merge --abort  <span class="co"># to abandon a merge, run this after git reset HEAD</span>
+
+<span class="kw">git</span> commit --amend  <span class="co"># 'undo' most recent commit by making new commit of parent commit</span>
+<span class="kw">git</span> revert HEAD-2  <span class="co"># recycle commit-from-two-commits-ago as a new commit, extending the branch tip</span>
+<span class="co"># REVERT should be used to undo changes on a public branch </span>
+  
+<span class="kw">git</span> gc  <span class="co"># run garbage collector</span></code></pre>
+  </div>
+  <p>
+   <strong>
+    MONITOR
+   </strong>
+   :
+   <em>
+    STATUS, DIFF, LOG, SHOW
+   </em>
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> status <span class="co"># check status</span>
+
+<span class="kw">git</span> diff -u file  <span class="co"># see differences working directory and staging area</span>
+<span class="kw">git</span> diff --staged  <span class="co"># see differences between staging area and repository</span>
+<span class="kw">git</span> diff shortSHA  <span class="co"># see differences between working directory and specified commit</span>
+<span class="kw">git</span> diff shortSHA1 shortSHA2  <span class="co"># see differences between specified commits</span>
+<span class="co"># Type 'q' to exit diff mode</span>
+
+<span class="kw">git</span> log  <span class="co"># view commits history</span>
+<span class="kw">git</span> log -n 10  <span class="co"># view 10 most recent commits</span>
+<span class="kw">git</span> log --stat  <span class="co"># esp helpful view for multi-file commits</span>
+
+<span class="kw">git</span> branch  <span class="co"># list all branches and indicate working branch</span>
+<span class="kw">git</span> log --graph --oneline branch1 branch2  <span class="co"># visualize changes between branches</span>
+
+<span class="kw">git</span> show HEAD  <span class="co"># show most recent commit</span>
+<span class="kw">git</span> show shortSHA  <span class="co"># diff a commit with its parent</span></code></pre>
+  </div>
+  <p>
+   <strong>
+    COLLABORATE
+   </strong>
+   :
+   <em>
+    CLONE, REMOTE, FETCH, PULL, PUSH, MERGE
+   </em>
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> clone remote_loc [clone_name]  <span class="co"># copy remote repository to local drive</span>
+
+<span class="kw">git</span> init
+<span class="kw">git</span> remote  <span class="co"># check local for existing remotes; -v option makes verbose</span>
+<span class="kw">git</span> remote add remotename remote_loc  <span class="co"># give remote a convenient name </span>
+<span class="kw">git</span> remote rename oldname newname
+<span class="kw">git</span> remote rm remotename  <span class="co"># remove convenient name</span>
+<span class="co"># Remote branches are prefixed by their remote's name so you don’t mix them up with local branches</span>
+
+<span class="kw">git</span> fetch remotename [branchname]  <span class="co"># check for changes in remote directory without merging </span>
+<span class="kw">git</span> merge remotename/branchname  <span class="co"># merge remote branch into local's active branch</span>
+<span class="co"># https://git-scm.com/docs/git-merge#_how_conflicts_are_presented</span>
+<span class="kw">git</span> pull remotename [branchname]  <span class="co"># fetch &amp; merge content into local's active branch</span>
+
+<span class="kw">git</span> push -u remotename branchname  <span class="co"># FIRST TIME: push content from local's specified branch to remote</span>
+<span class="kw">git</span> push  <span class="co"># subsequent times, if no change to remote or branch</span></code></pre>
+  </div>
+  <hr/>
+  <h1>
+   <a name="questions">
+    Questions
+   </a>
+  </h1>
+  <h2>
+   <a name="git-style-version-control">
+    Git-style version control
+   </a>
+  </h2>
+  <p>
+   <em>
+    How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+   </em>
+  </p>
+  <ul>
+   <li>
+    Would be able to diagnose past mistakes: where did this go wrong?
+   </li>
+   <li>
+    Not lose work from machine failures.
+   </li>
+  </ul>
+  <p>
+   <em>
+    What do you think are the pros and cons of manually choosing when to create a commit,like you do in Git, vs having versions automatically saved, like Google Docs does?
+   </em>
+  </p>
+  <ul>
+   <li>
+    Save manually: -WILL forget, +sensible, intelligible versions, +reasonable num of versions
+   </li>
+   <li>
+    Save automatically: +can't forget, +/-more data, which may or may not be useful
+   </li>
+  </ul>
+  <p>
+   <em>
+    Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+   </em>
+  </p>
+  <ul>
+   <li>
+    Git recognizes that files in coding are more likely to be interdependent, affected by each other's updates.
+   </li>
+  </ul>
+  <h2>
+   <a name="major-components-of-git">
+    Major components of git
+   </a>
+  </h2>
+  <p>
+   <em>
+    What happens when you initialize a repository? Why do you need to do it?
+   </em>
+  </p>
+  <ul>
+   <li>
+    You create a hidden .git file within the working directory, to store metadata for the files.
+   </li>
+   <li>
+    This is the first step, followed by adding specific files to be tracked.
+   </li>
+  </ul>
+  <p>
+   <em>
+    How is the staging area different from the working directory and the repository? What value do you think it offers?
+   </em>
+  </p>
+  <ul>
+   <li>
+    The staging area lets you decide which files from the working directory should be part of a commit, reducing the size of each commit: making them more logically distinct and therefore meaningful and navigable. Without a staging area, all files in the wd would get committed together irrespective of whether they'd changed.
+   </li>
+  </ul>
+  <p>
+   <em>
+    How can you use the staging area to make sure you have one commit per logical change?
+   </em>
+  </p>
+  <ul>
+   <li>
+    ...along with git diff and get diff --staged.
+   </li>
+  </ul>
+  <h2>
+   <a name="branching,-diffing,-and-merging">
+    Branching, diffing, and merging
+   </a>
+  </h2>
+  <p>
+   <em>
+    What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+   </em>
+  </p>
+  <ul>
+   <li>
+    Branches might be helpful when making a major but experimental change, or a deliberately different 'flavor' of the code'.
+   </li>
+  </ul>
+  <p>
+   <em>
+    How do the diagrams help you visualize the branch structure?
+   </em>
+  </p>
+  <ul>
+   <li>
+    They are literally visualizations of a branch structure, unlike the output of git log--which, without the --graph option, is linear.
+   </li>
+  </ul>
+  <p>
+   <em>
+    What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+   </em>
+  </p>
+  <ul>
+   <li>
+    Branches are not adirectionally merged 'together'; one branch is merged INTO another branch. The branch being merged is no longer needed,because the branched merged INTO inherits all its commits. Both branches are parents of the new commit, but we can still safely delete the branch being merged.
+   </li>
+  </ul>
+  <p>
+   <em>
+    What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+   </em>
+  </p>
+  <ul>
+   <li>
+    Always doing merges manually means you need to be really familiar with the purpose and content of each branch as well as the code, so that you can merge intelligently. It would be nearly impossible for auto merge to match the accuracy of an informed programmer.
+   </li>
+  </ul>
+  <p>
+   <em>
+    How did viewing a diff between two versions of a file help you see the bug that was introduced?
+   </em>
+  </p>
+  <ul>
+   <li>
+    It drastically reduced the number of lines I had to squint at.
+   </li>
+  </ul>
+  <h2>
+   <a name="remotes-&amp;-github-based-collaboration">
+    Remotes &amp; GitHub-based collaboration
+   </a>
+  </h2>
+  <p>
+   <em>
+    When would you want to use a remote repository rather than keeping all your work local?
+   </em>
+  </p>
+  <ul>
+   <li>
+    When you expect to be using different computers, or to be collaborating with others.
+   </li>
+  </ul>
+  <p>
+   <em>
+    Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+   </em>
+  </p>
+  <ul>
+   <li>
+    You don't want things being overwritten, or incomprehensibly fragmented, by automatic pull changes.
+   </li>
+  </ul>
+  <p>
+   <em>
+    Describe the differences between forks, clones, and branches. When would you use one instead of another?
+   </em>
+  </p>
+  <ul>
+   <li>
+    TO CLONE is to copy a directory either remote or local, such that its commit history comes along with it. Clone when you want to make your own branch of someone's work.
+   </li>
+   <li>
+    TO BRANCH is to explore something before merging it back into the master code.
+   </li>
+   <li>
+    TO FORK is to clone someone else's GitHub project via GitHub; it is to make a remote-remote connection.
+   </li>
+  </ul>
+  <p>
+   <em>
+    What is the benefit of having a copy of the last known state of the remote stored locally?
+   </em>
+  </p>
+  <ul>
+   <li>
+    ... someone else with access to the remote might commit to it and change it while you're working on the same code
+   </li>
+  </ul>
+  <p>
+   <em>
+    How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+   </em>
+  </p>
+  <ul>
+   <li>
+    I think it depends on the scale of the project. But definitely, the larger the project, the more benefit in handling it with these tools.
+   </li>
+  </ul>
+  <p>
+   <em>
+    When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have
+   </em>
+  </p>
+  <ul>
+   <li>
+    Because you're trying to preserve the master for display/production.
+   </li>
+  </ul>
+  <h1>
+   <a name="sources">
+    Sources
+   </a>
+  </h1>
+  <h2>
+   <a name="references">
+    REFERENCES
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="https://gist.github.com/">
+     Share code quickly with a Gist
+    </a>
+   </li>
+   <li>
+    <a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf">
+     Official GitHub cheatsheet
+    </a>
+    [pdf]
+   </li>
+   <li>
+    <a href="https://marklodato.github.io/visual-git-guide/index-en.html">
+     Visual Git Guide
+    </a>
+   </li>
+   <li>
+    <a href="http://ndpsoftware.com/git-cheatsheet.html">
+     NDP Software's Interactive VIsual Git Cheat Sheet
+    </a>
+   </li>
+  </ul>
+  <h2>
+   <a name="read">
+    Read
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775">
+     Udacity - How to use Git and GitHub
+    </a>
+   </li>
+   <li>
+    Codecademy -
+    <a href="https://www.codecademy.com/learn/learn-git">
+     Learn Git
+    </a>
+    ,
+    <a href="https://www.codecademy.com/articles/push-to-github">
+     Push to GitHub
+    </a>
+   </li>
+   <li>
+    <a href="https://24ways.org/2013/git-for-grownups/">
+     Git for grownups
+    </a>
+   </li>
+   <li>
+    <a href="https://guides.github.com/features/mastering-markdown/">
+     Mastering GithHub Markdown
+    </a>
+   </li>
+   <li>
+    <a href="https://help.github.com/articles/caching-your-github-password-in-git/">
+     Caching your GitHub password in Git
+    </a>
+   </li>
+   <li>
+    Checkout, reset, revert:
+    <a href="https://makandracards.com/makandra/11485-git-basics-checkout-vs-reset">
+     1
+    </a>
+    ,
+    <a href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/">
+     2
+    </a>
+    ,
+    <a href="https://git-scm.com/blog/2011/07/11/reset.html">
+     3
+    </a>
+   </li>
+   <li>
+    [Try Git](https://try.github.io
+   </li>
+  </ul>
+  <h2>
+   <a name="unread">
+    Unread
+   </a>
+  </h2>
+  <ul>
+   <li>
+    GitHub as a portfolio:
+    <a href="https://www.epicodus.com/blog/sprucing-up-github">
+     1
+    </a>
+    ,
+    <a href="http://pydanny.blogspot.com/2011/08/github-is-my-resume.html">
+     2
+    </a>
+   </li>
+   <li>
+    Merge vs rebase
+    <a href="http://gitforteams.com/resources/merge-rebase.html">
+     1
+    </a>
+    ,
+    <a href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing/">
+     2
+    </a>
+   </li>
+   <li>
+    Treehouse -
+    <a href="https://teamtreehouse.com/library/git-basics">
+     Git Basics
+    </a>
+    ,
+    <a href="https://teamtreehouse.com/library/github-basics">
+     GitHub Basics
+    </a>
+    ,
+    <a href="https://teamtreehouse.com/library/share-your-projects-with-github-desktop">
+     GitHub Desktop
+    </a>
+   </li>
+   <li>
+    <a href="https://www.codeschool.com/learn/git">
+     CodeSchool - Git
+    </a>
+   </li>
+   <li>
+    <a href="https://daringfireball.net/projects/markdown/">
+     Markdown tutorial
+    </a>
+   </li>
+  </ul>
+ </body>
+</html>

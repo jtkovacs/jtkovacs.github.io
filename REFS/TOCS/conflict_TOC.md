@@ -1,0 +1,56 @@
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/conflict.html">https://jtkovacs.github.io/REFS/HTML/conflict.html</a></p><table class="TOC"><tr><td>- [What is conflict? ](#what-is-conflict?-)
+	- [What are primary drivers of conflict? ](#what-are-primary-drivers-of-conflict?-)
+	- [How do people operate in conflict situations?](#how-do-people-operate-in-conflict-situations?)
+- [What communication skills help cope with conflict?](#what-communication-skills-help-cope-with-conflict?)
+- [What is the alternative dispute resolution (ADR) spectrum?](#what-is-the-alternative-dispute-resolution-(adr)-spectrum?)
+	- [What is the facilitative mediation process?](#what-is-the-facilitative-mediation-process?)
+	- [What standards govern mediation in Washington State?](#what-standards-govern-mediation-in-washington-state?)
+	- [What are major applications of mediation?](#what-are-major-applications-of-mediation?)
+- [Sources](#sources)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
+</td></tr></table>
+
+
+# What is conflict? 
+
+## What are primary drivers of conflict? 
+
+## How do people operate in conflict situations?
+
+
+
+# What communication skills help cope with conflict?
+
+
+# What is the alternative dispute resolution (ADR) spectrum?
+
+## What is the facilitative mediation process?
+
+## What standards govern mediation in Washington State?
+
+## What are major applications of mediation?
+
+
+# Sources
+
+## References
+
+- [http://www.au.af.mil/au/awc/awcgate/va/mediation/speaking.htm](http://www.au.af.mil/au/awc/awcgate/va/mediation/speaking.htm)
+
+## Read
+
+Baruch Bush, R. A. & Folger, J. P. (1994). _The promise of mediation: Responding to conflict through empowerment and recognition._
+
+Fisher, R., Ury, W. L., & Patton, B. (1991). _Getting to yes._
+
+## Unread
+
+Schulman, S. (2016). _Conflict is not abuse._
+
+Hoffmann, E. A. (2012). _Co-operative workplace dispute resolution: Organizational structure, ownership, and ideology._
+
+Ellickson, R. (1994). _Order without law: How neighbors settle disputes._
+
+Patterson, K. Grenny, J., McMillan, R, & Switzler, A. (2011). _Crucial conversations: Tools for talking when stakes are high._

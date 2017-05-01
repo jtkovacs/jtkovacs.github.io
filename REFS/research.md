@@ -102,7 +102,7 @@ Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis.
 - [Coursera - Measuring Causal Effects](https://www.coursera.org/learn/measuring-causal-effects)
 - [More hypotheses, less trivia](http://allendowney.blogspot.com/2011/06/more-hypotheses-less-trivia.html)
 
-## Not read
+## Unread
 
 - _Causation: A very short introduction._
 - [Academic research online](http://www.onlinecolleges.net/for-students/online-academic-research/)

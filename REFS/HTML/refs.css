@@ -186,4 +186,5 @@ table ul {
 }
 table li {
     padding-left: -10px;
+    max-width: 30px;
 }

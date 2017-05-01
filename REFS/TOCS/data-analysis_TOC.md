@@ -46,9 +46,9 @@ Via Mason and Wiggins (2010):
 <td colspan=4>Visualize</td>
 </tr>
 
-<tr style="align: left;">
+<tr>
 <th>Skills & tools:</th>
-<td>
+<td style="align: left;">
 - Plain text
 - CSV
 - JSON

@@ -71,9 +71,6 @@ Via Mason and Wiggins (2010):
 <td style="text-align: left;">
 - Summary stats
 - Visualization
-</td>
-
-<td style="text-align: left;">
 - Clustering
 - Classification
 - Regression

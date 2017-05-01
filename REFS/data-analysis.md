@@ -32,7 +32,12 @@ Via Mason and Wiggins (2010):
 </tr>
 
 <tr>
-Skills & tools:
+<th>Skills & tools:</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </table>
 

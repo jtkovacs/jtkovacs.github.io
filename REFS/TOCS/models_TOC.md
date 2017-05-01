@@ -48,6 +48,10 @@
 	- [Game theory](#game-theory)
 		- [Colonel Blotto](#colonel-blotto)
 	- [Replicators](#replicators)
+- [Sources](#sources)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
 </td></tr></table>
 
 _The following notes are largely based on [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking)_
@@ -632,4 +636,27 @@ Can use replicator models to investigate games if proportions are specified (sin
 The tricky part here is calculating weights, since payoffs can vary with actions. For a 2x2 game with Pr(½,½) and where player A has payoffs a or b depending on player B’s actions, weightA=½ (½ a + ½ b). 
 
 Fisher’s fundamental theorem: Higher variance increases rate of evolutionary adaptation. Can examine this by taking the average of each generation of low-variation and high-variation populations. Seems to run counter to Six Sigma! But SS is for a fixed problemscape, while Fisher’s is for complex systems.
+
+
+# Sources
+
+## References
+
+## Read
+
+- [Qualitative analysis](http://www.sosmath.com/diffeq/system/qualitative/qualitative.html)
+- [<i>Dynamic models in biology</i>&nbsp;](https://people.cam.cornell.edu/~dmb/DMBsupplements.html)
+
+## Unread
+
+- [11 important model evaluation techniques](http://www.datasciencecentral.com/profiles/blogs/7-important-model-evaluation-error-metrics-everyone-should-know)
+- [Prediction vs extrapolation vs interpolation](http://www.datasciencecentral.com/forum/topics/what-are-the-differences-between-prediction-extrapolation-and)
+- [The model complexity myth: (or, yes you can fit models with more parameters than data points)](http://jakevdp.github.io/blog/2015/07/06/model-complexity-myth/)
+- [Overfitting](http://nlpers.blogspot.co.uk/2015/09/overfitting.html)
+- [A Data Scientist’s Guide to Disarmament](https://www.r-bloggers.com/weapons-of-math-destruction-a-data-scientists-guide-to-disarmament/)
+- [The Chaos Hypertextbook](http://hypertextbook.com/chaos/)
+- [The simple and useful side of dynamical analysis I](http://www.ideaeconomics.org/blog/2015/2/20/inside-vol-2-no-4)
+- [Dimensions](http://www.dimensions-math.org/Dim_E.htm)
+
+
 

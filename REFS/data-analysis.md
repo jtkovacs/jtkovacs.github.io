@@ -38,17 +38,32 @@ Via Mason and Wiggins (2010):
 - CSV
 - JSON
 - XML/HTML
-- DB queries
-- API queries
+- Query DB
+- Query API
 - REST
-
+- Encoding
 </td>
 
-<td style="align: left;"></td>
-<td style="align: left;"></td>
-<td style="align: left;"></td>
-<td style="align: left;"></td>
-<td style="align: left;"></td>
+<td style="align: left;">
+- Filter
+- Extract columns
+- Extract values
+- Replace
+- Missing data
+- Convert formats
+</td>
+
+<td style="align: left;">
+</td>
+
+<td style="align: left;">
+</td>
+
+<td style="align: left;">
+</td>
+
+<td style="align: left;">
+</td>
 </tr>
 </table>
 
@@ -81,9 +96,15 @@ What are best practices for making Excel sheets auditable?
 
 R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
 
+### Why the command line for data science?
 
+Per Janssens (2015):
 
-
+- **Agile:**
+- **Augmenting:**
+- **Scalable:**
+- **Extensible:**
+- **Ubiquitous:**
 
 
 

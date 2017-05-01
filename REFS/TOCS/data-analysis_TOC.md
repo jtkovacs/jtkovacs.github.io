@@ -85,8 +85,6 @@ Via Mason and Wiggins (2010):
 </tr>
 </table>
 
-
-
 ### Obtain 
 
 - What are major risks in web scraping?
@@ -103,6 +101,8 @@ Via Mason and Wiggins (2010):
 
 ### Explore
 
+See [notes on data visualization](data-viz.html).
+
 ### Model
 
 See [notes on models,](models.html) [statistics,](statistics.html) and [machine learning.](machine-learning.html)
@@ -111,6 +111,9 @@ See [notes on models,](models.html) [statistics,](statistics.html) and [machine 
 
 - What are best practices for making Excel sheets auditable?
 - [_Thinking with data_](http://shop.oreilly.com/product/0636920029182.do)
+
+
+
 
 
 ## Data science tools
@@ -128,10 +131,18 @@ Per Janssens (2015):
 - **Ubiquitous** (via Linux/Unix) 
 
 
+
+
+
+
 # Workflow management
 
 - [https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/](https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/)
 - [https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/)
+
+
+
+
 
 # Sources
 

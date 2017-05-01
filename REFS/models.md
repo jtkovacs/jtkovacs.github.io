@@ -602,6 +602,8 @@ Fisher’s fundamental theorem: Higher variance increases rate of evolutionary a
 - [The Chaos Hypertextbook](http://hypertextbook.com/chaos/)
 - [The simple and useful side of dynamical analysis I](http://www.ideaeconomics.org/blog/2015/2/20/inside-vol-2-no-4)
 - [Dimensions](http://www.dimensions-math.org/Dim_E.htm)
+- [Chaos](http://www.chaos-math.org/en)
+- _Weapons of Math Destruction_
 
 
 

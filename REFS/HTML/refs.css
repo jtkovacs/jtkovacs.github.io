@@ -182,5 +182,5 @@ th {
 
 /* Bullets in tables should NOT be indented so far */
 table li {
-    padding-left: 10px;
+    padding-left: -10px;
 }

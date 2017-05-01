@@ -7,6 +7,26 @@
 
 Mason and Wiggins (2010) name the following as stages in the (iterative) process of data science:
 
+<table>
+<tr>
+<th>OSEMN model:</th>
+<td>Obtain</td>
+<td>Scrub</td>
+<td>Explore</td>
+<td>Model</td>
+<td>iNterpret</td>
+</tr>
+
+<tr>
+<th>Alternative terms:</th>
+<td colspan=2>Wrangle</td>
+<td colspan=2>Analyze</td>
+<td>Communicate, Apply</td>
+</tr>
+</table>
+
+
+
 ### Obtain 
 
 AKA acquire. 

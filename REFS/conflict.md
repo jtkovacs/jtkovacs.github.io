@@ -38,6 +38,8 @@
 ## References
 
 - [http://www.au.af.mil/au/awc/awcgate/va/mediation/speaking.htm](http://www.au.af.mil/au/awc/awcgate/va/mediation/speaking.htm)
+- [Lakoff's Cognitive Policy Institute](http://www.cognitivepolicyworks.com/about-us/)
+- [Cognitive bias cheat sheet](https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18#.n5m7q0xpk)
 
 ## Read
 
@@ -54,3 +56,10 @@ Hoffmann, E. A. (2012). _Co-operative workplace dispute resolution: Organization
 Ellickson, R. (1994). _Order without law: How neighbors settle disputes._
 
 Patterson, K. Grenny, J., McMillan, R, & Switzler, A. (2011). _Crucial conversations: Tools for talking when stakes are high._
+
+- [How to change someone's mind, according to science](https://www.washingtonpost.com/news/wonk/wp/2016/02/10/how-to-change-someones-mind-according-to-science/)
+- [Why I defend scoundrels](http://squid314.livejournal.com/333353.html)
+- [Persuasion: empirical evidence](https://ideas.repec.org/a/anr/reveco/v2y2010p643-669.html)
+- [I asked my mom why she didn't vaccinate me](https://www.buzzfeed.com/virginiahughes/why-my-mom-didnt-vaccinate?utm_term=.trAX57OBd#.wfKMbJ8EV)
+- [Study proves that politics and math are incompatible](http://www.salon.com/2013/09/05/study_proves_that_politics_and_math_are_incompatible/)
+- [The terrible horrible no good very bad challenge: Changing patient and provider behaviour](http://theincidentaleconomist.com/wordpress/the-terrible-horrible-no-good-very-bad-challenge-changing-patient-and-provider-behaviour/)

@@ -185,6 +185,6 @@ table li {
     max-width: 60px;
 }
 table.OSEMN {
-    padding: 2px;
-    margin: 2px;
+    padding: 0;
+    margin: 0;
 }

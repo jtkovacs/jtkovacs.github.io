@@ -44,10 +44,7 @@
 - [The Little Handbook of Statistical Practice](http://www.jerrydallal.com/LHSP/LHSP.HTM)
 - [OpenIntro Statistics](https://www.openintro.org/stat/index.php)
 - [Notation in probability in statistics](https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics)
-- [1](http://highered.mheducation.com/sites/0070000237/student_view0/visual_statistics.html)
-- [2](http://statpages.info/)
-- [3](http://www.math.uah.edu/stat/apps/index.html)
-- [4](http://onlinestatbook.com/stat_sim/index.html)
+- Visualizations & interactives: [1, ](http://highered.mheducation.com/sites/0070000237/student_view0/visual_statistics.html) [2,](http://statpages.info/) [3,](http://www.math.uah.edu/stat/apps/index.html) [4](http://onlinestatbook.com/stat_sim/index.html)
 - [British Medical Journal: Statistics notes](http://www.jerrydallal.com/LHSP/bmj.htm)
 - [10 Modern Statistical Concepts Discovered by Data Scientists](http://www.datasciencecentral.com/profiles/blogs/10-modern-statistical-concepts-discovered-by-data-scientists)
 

@@ -94,6 +94,7 @@ See [notes on models](models.html), [statistics](statistics.html), and [machine 
 ### iNterpret
 
 - What are best practices for making Excel sheets auditable?
+- [_Thinking with data_](http://shop.oreilly.com/product/0636920029182.do)
 
 ## Data science skills
 

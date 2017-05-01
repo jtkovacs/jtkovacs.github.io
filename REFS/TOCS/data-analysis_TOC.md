@@ -48,7 +48,12 @@ Via Mason and Wiggins (2010):
 
 <tr>
 <th>Skills & tools:</th>
-<td></td>
+<td>
+- Plain text
+- CSV
+- JSON
+</td>
+
 <td></td>
 <td></td>
 <td></td>

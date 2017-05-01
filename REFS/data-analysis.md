@@ -133,9 +133,6 @@ Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataist
 - [80,000 Hours Career Guide](https://www.google.com/url?q=https%3A%2F%2F80000hours.org%2Fcareer-guide%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGlMjbiH7gq5Nw5Imcl32gRnb1MZw)
 - [What factors can increase your data science salary?](https://www.google.com/url?q=https%3A%2F%2Fwww.springboard.com%2Fblog%2Fhighest-data-scientist-salary-possible%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGfXBBQe8f3lzukZqOuZxXHXIW6sg)
 - [Data Science for IoT vs Classic Data Science: 10 Differences](http://www.datasciencecentral.com/profiles/blogs/data-science-for-iot-vs-classic-data-science-10-differences)
-
-
-
 - _Data wrangling with Python._
 - [Coursera - Using Python to Access Web Data](https://www.coursera.org/learn/python-network-data)
 - [Scraping the web](http://schoolofdata.org/2013/11/25/scraping-the-web/)

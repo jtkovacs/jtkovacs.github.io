@@ -188,3 +188,6 @@ table.OSEMN li {
 table.OSEMN ul {
     margin-left: -10px;
 }
+table.OSEMN th {
+    max-width: 30px;
+}

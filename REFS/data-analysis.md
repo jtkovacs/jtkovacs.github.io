@@ -105,11 +105,11 @@ R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 
 
 Per Janssens (2015):
 
-- **Agile:**
-- **Augmenting:**
-- **Scalable:**
-- **Extensible:**
-- **Ubiquitous:**
+- **Agile:** supports faster iteration through a read-eval-print loop (REPL) versus an edit-compile-run-debug loop.
+- **Augmenting:** amplifies rather than replaces existing tools
+- **Scalable:** ability to automate commands means they're repeatable, supporting scalable analytic workflows
+- **Extensible:** because command line tools are language-agnostic
+- **Ubiquitous** (via Linux/Unix) 
 
 
 # Workflow management

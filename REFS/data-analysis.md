@@ -89,7 +89,7 @@ Via Mason and Wiggins (2010):
 
 ### Model
 
-See [notes on models](models.html), [statistics](statistics.html), and [machine learning](machine-learning.html).
+See [notes on models,](models.html) [statistics,](statistics.html) and [machine learning.](machine-learning.html)
 
 ### iNterpret
 

@@ -61,3 +61,9 @@ In the early days, there was a strong distinction between search engines and lib
 # Sources
 
 Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
+
+## Unread
+
+- [Computational Advertising on Social Networks](http://www.datasciencecentral.com/profiles/blogs/computational-advertising-on-social-network)
+- [SEO tutorial](http://www.afterhoursprogramming.com/tutorial/SEO/Introduction/)
+

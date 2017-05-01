@@ -18,7 +18,7 @@ Via Mason and Wiggins (2010):
 </tr>
 
 <tr>
-<th rowspan=2>Alternative terms:</th>
+<th rowspan=2>Alt terms:</th>
 <td>Acquire</td>
 <td>Clean</td>
 <td colspan=2>Analyze</td>
@@ -31,7 +31,7 @@ Via Mason and Wiggins (2010):
 <td colspan=4>Visualize</td>
 </tr>
 
-<tr style="text-align: left;">
+<tr style="align: left;">
 <th>Skills & tools:</th>
 <td>
 - Plain text

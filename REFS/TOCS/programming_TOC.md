@@ -1,6 +1,7 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/programming.html">https://jtkovacs.github.io/REFS/HTML/programming.html</a></p><table class="TOC"><tr><td>- [What is an algorithm?](#what-is-an-algorithm?)
 - [What are major programming paradigms?](#what-are-major-programming-paradigms?)
 - [What are good programming practices?](#what-are-good-programming-practices?)
+- [Which language?](#which-language?)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -14,6 +15,7 @@
 
 # What are good programming practices?
 
+# Which language?
 
 
 # Sources
@@ -23,6 +25,36 @@
 - [Paul Ford: What <i>is</i>&nbsp;code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 - [ReadTheDocs.org](https://docs.readthedocs.io/en/latest/getting_started.html)
 - [Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+
+
+- [<b>My Bash repository</b>](https://github.com/jacobtkovacs/languages/tree/master/Bash)
+- [Command line cheatsheets for Mac<span style="background-color:transparent">,&nbsp;</span>Linux<span style="background-color:transparent">,&nbsp;</span>Windows](http://ss64.com/)
+- [Software Carpentry’s Unix shell cheatsheet](http://swcarpentry.github.io/shell-novice/reference/)
+- [<b>My Python repository</b>](https://github.com/jacobtkovacs/languages/tree/master/Python)
+- [Official Python 3.5.2. documentation](https://docs.python.org/3/index.html)
+- [Official Jupyter notebook documentation](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
+- [Python cookbook](http://code.activestate.com/recipes/langs/python/)
+- [Python package index (PyPI)](https://pypi.python.org/pypi)
+- [<b>My R repository</b>](https://github.com/jacobtkovacs/languages/tree/master/R)
+- [Official R documentation](https://www.r-project.org/)
+- [R cookbook](http://www.cookbook-r.com/)
+- [R documentation search engine](https://www.rdocumentation.org/)
+- [Introduction to inodes](http://www.grymoire.com/Unix/Inodes.html)
+- [10 Things Every Linux Beginner Should Know](https://www.codementor.io/linux/tutorial/10-things-every-linux-beginner-should-know)
+- [8 deadly commands you should never run on Linux](http://www.howtogeek.com/125157/8-deadly-commands-you-should-never-run-on-linux/)
+- [Thinking in SQL vs. Thinking in Python](https://blog.modeanalytics.com/learning-python-sql/)
+- [R beats Python beats Julia, anyone else wanna challenge R?](https://matloff.wordpress.com/2014/05/21/r-beats-python-r-beats-julia-anyone-else-wanna-challenge-r/)
+- [Surviving MATLAB &amp; R](http://programmers.stackexchange.com/questions/40738/surviving-matlab-and-r-as-a-hardcore-programmer)
+- [R: the master troll](http://www.talyarkoni.org/blog/2012/06/08/r-the-master-troll-of-statistical-languages/)
+- [The homogenization of scientific computing](http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/)
+- [Using Access Control Lists on Linux](http://bencane.com/2012/05/27/acl-using-access-control-lists-on-linux/)
+- [Configuring your Linux for development](https://www.codementor.io/linux/tutorial/configure-linux-toolset-zsh-tmux-vim)
+- [Vim Adventures](http://vim-adventures.com/)
+- [](http://www.vimgenius.com/)
+- [R vs Python? No!](http://www.datasciencecentral.com/profiles/blogs/r-vs-python-r-and-python-and-something-else)
+- [Paul Graham - The 100 year language](http://www.paulgraham.com/hundred.html)
+
+
 
 ## Read
 

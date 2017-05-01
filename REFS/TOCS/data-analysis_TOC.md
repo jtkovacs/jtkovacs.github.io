@@ -31,7 +31,7 @@ Via Mason and Wiggins (2010):
 <td>Scrub</td>
 <td>Explore</td>
 <td>Model</td>
-<td colspan=2>iNterpret</td>
+<td>iNterpret</td>
 </tr>
 
 <tr>
@@ -40,7 +40,6 @@ Via Mason and Wiggins (2010):
 <td>Clean</td>
 <td colspan=2>Analyze</td>
 <td>Apply</td>
-<td>Communicate</td>
 </tr>
 
 <tr>
@@ -82,7 +81,7 @@ Via Mason and Wiggins (2010):
 - Dimension reduction
 </td>
 
-<td style="text-align: left;" colspan=2>
+<td style="text-align: left;">
 - Conclusion
 - Implications
 - Communication

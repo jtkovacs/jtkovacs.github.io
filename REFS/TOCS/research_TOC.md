@@ -6,7 +6,7 @@
 		- [Libraries & the accumulation of knowledge](#libraries-&-the-accumulation-of-knowledge)
 	- [Academic vs. practitioner knowledge](#academic-vs.-practitioner-knowledge)
 	- [Expert vs. crowdsourced knowledge](#expert-vs.-crowdsourced-knowledge)
-- [Research design](#research-design)
+- [The research process](#the-research-process)
 	- [Generating questions](#generating-questions)
 	- [Operationalizing concepts](#operationalizing-concepts)
 	- [Sampling](#sampling)
@@ -38,7 +38,7 @@ What are major institutions of knowledge production, and how well are they worki
 
 
 
-# Research design
+# The research process
 
 ## Generating questions
 

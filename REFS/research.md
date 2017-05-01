@@ -21,7 +21,7 @@ What are major institutions of knowledge production, and how well are they worki
 
 
 
-# Research design
+# The research process
 
 ## Generating questions
 

@@ -23,7 +23,19 @@ What are major institutions of knowledge production, and how well are they worki
 
 # Research design
 
+## Generating questions
+
+## Operationalizing concepts
+
 ## Sampling
+
+## Research methods
+
+## Analysis
+
+See [notes on qualitative methods,](qualitative-methods.html), [data analysis](data-analysis.html) and [models](models.html).
+
+## Scholarly writing
 
 
     

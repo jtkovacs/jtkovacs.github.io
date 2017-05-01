@@ -2,6 +2,10 @@
 
 # General
 
+- https://docs.google.com/document/d/1e0wdTbj6TfpLqfOfYjzqOX17L0pUmNGGfSIdr-n_0BE/edit?usp=drive_web
+- https://docs.google.com/document/d/1akczbgY2f6M-y2FHY649C917KToSU8tj2Y1A7bCfq7k/edit?usp=drive_web
+- https://docs.google.com/document/d/1gWr73U7uhIxzi8MOODNMafwDK7l-BDg3HsCEyc4xaGE/edit?usp=drive_web
+
 ## References
 
 - [1](http://www.dummies.com/how-to/content/statistics-for-dummies-cheat-sheet.html)

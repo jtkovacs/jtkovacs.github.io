@@ -13,7 +13,7 @@
 		- [Strategies for finding articles](#strategies-for-finding-articles)
 		- [Strategies for reading well](#strategies-for-reading-well)
 		- [What is a literature review?](#what-is-a-literature-review?)
-			- [What types of literature reviews exist?](#what-types-of-literature-reviews-exist?)
+		- [What types of literature reviews exist?](#what-types-of-literature-reviews-exist?)
 	- [Sampling](#sampling)
 	- [Choosing a research method](#choosing-a-research-method)
 	- [Analyzing data](#analyzing-data)
@@ -65,7 +65,7 @@ Adler, M. J. (). _How to read a book._
 
 The important thing to understand is that a literature review proper is a research method; it is not peripheral to research.
 
-#### What types of literature reviews exist?
+### What types of literature reviews exist?
 
 
 
@@ -99,18 +99,25 @@ Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis.
 - [IEP entry for care ethics](http://www.iep.utm.edu/care-eth/)
 - [ParticipatoryMethods.org](http://www.participatorymethods.org/)
 - [Arnold Foundation's Evidence-Based Policy Initiative](http://www.arnoldfoundation.org/initiative/evidence-based-policy-innovation/)
+- [Advanced Google search syntax](http://www.cpcstrategy.com/blog/2014/10/advanced-google-search-tips-infographic/)
 
 ## Read
 
-Schmidt, J. Disciplined Minds.
-Abbott, A. Chaos of Disciplines.
-Kuhn, T.
-McCloskey, D. N. 
-Wenger, E.
-Schon, D.
+- Schmidt, J. Disciplined Minds.
+- Abbott, A. Chaos of Disciplines.
+- Kuhn, T.
+- McCloskey, D. N. 
+- Wenger, E.
+- Schon, D.
+- ["Buy less, think more"](https://storify.com/afg85/applying-critical-thinking-to-your-critical-readin)
 
 ## Not read
 
+- [Academic research online](http://www.onlinecolleges.net/for-students/online-academic-research/)
+- [Makessense stop!](http://crookedtimber.org/2014/05/13/makessense-stop/)
+- [How do you read academic papers?](https://news.ycombinator.com/item?id=9245467)
+- [A typology of reviews: an analysis of 14 review types and associated methodologies](http://onlinelibrary.wiley.com/doi/10.1111/j.1471-1842.2009.00848.x/pdf)
+- [A comparative study of methodological approaches to reviewing literature](https://www.heacademy.ac.uk/system/files/resources/comparativestudy_0.pdf)
 - [Everything is fucked: the syllabus](https://hardsci.wordpress.com/2016/08/11/everything-is-fucked-the-syllabus/)
 - [Science made stupid](http://www.besse.at/sms/smsintro.html)
 - [Wiki - Mertonian norms](https://en.wikipedia.org/wiki/Mertonian_norms)

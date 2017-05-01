@@ -21,7 +21,7 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 - Object-oriented
 - Literate
 
-![](../IILOS/types-of-programming.gif)
+![](../ILLOS/types-of-programming.gif)
 
 # What are good programming practices?
 

@@ -1,10 +1,55 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/statistics.html">https://jtkovacs.github.io/REFS/HTML/statistics.html</a></p><table class="TOC"><tr><td>- [Linear Algebra](#linear-algebra)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/statistics.html">https://jtkovacs.github.io/REFS/HTML/statistics.html</a></p><table class="TOC"><tr><td>- [General](#general)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
+- [Linear Algebra](#linear-algebra)
 - [Relationships & Trends](#relationships-&-trends)
 - [Hypothesis & A/B Testing](#hypothesis-&-a/b-testing)
 	- [References](#references)
 	- [Read](#read)
 	- [Unread](#unread)
 </td></tr></table>
+
+
+# General
+
+## References
+
+- [1](http://www.dummies.com/how-to/content/statistics-for-dummies-cheat-sheet.html)
+- [2](http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf)
+- [3](https://drive.google.com/open?id=0B6XYyy1UbJ3XR2w5Snc2ck1BVFE)
+- [CAUSEWeb statistics database](https://www.causeweb.org/cause/resources)
+- [Andrew Gelman's round up of his stats writing](http://andrewgelman.com/2009/05/24/handy_statistic/)
+
+## Read
+
+- _The Seven Pillars of Statistical Wisdom_
+- _Cartoon Guide to Statistics_ 
+- _The Drunkard’s Walk_
+- [Khan Academy -&nbsp;Probability &amp; Statistics](https://www.khanacademy.org/mission/probability)
+- [What is a P-Value Anyway? 34 Stories](https://drive.google.com/open?id=1lNnLujwLNRt_dDBdl0S31bDPtw0-da9PXiImPjBusdE)
+- [The normal distribution: A derivation from basic principles](http://courses.ncssm.edu/math/Talks/PDFS/normal.pdf)
+- [Intuition behind normal distribution](http://math.stackexchange.com/questions/940189/intuition-behind-normal-distribution-forumula)
+- [Intuition behind standard deviation](http://stats.stackexchange.com/questions/85387/intuition-behind-standard-deviation)
+- [Mean absolute deviation versus standard deviation](http://stats.stackexchange.com/questions/81986/mean-absolute-deviation-vs-standard-deviation)
+- [The advantages of the mean deviation](http://www.leeds.ac.uk/educol/documents/00003759.htm)
+- [Difficult concepts in statistics](https://learnandteachstatistics.wordpress.com/2013/06/24/difficult-concepts/)
+
+## Unread
+
+- [A concrete introduction to probability using Python](http://nbviewer.jupyter.org/url/norvig.com/ipython/Probability.ipynb)
+- [Statistical Rethinking: A Bayesian Course in R](http://xcelab.net/rm/statistical-rethinking/)
+- [EdX - Intro. Probability](https://www.edx.org/course/mitx/mitx-6-041x-introduction-probability-1296#.U3yb762SzIo)
+- [Probability theory: The logic of science](http://bayes.wustl.edu/etj/prob/book.pdf)
+- [The Little Handbook of Statistical Practice](http://www.jerrydallal.com/LHSP/LHSP.HTM)
+- [OpenIntro Statistics](https://www.openintro.org/stat/index.php)
+- [Notation in probability in statistics](https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics)
+- [1](http://highered.mheducation.com/sites/0070000237/student_view0/visual_statistics.html)
+- [2](http://statpages.info/)
+- [3](http://www.math.uah.edu/stat/apps/index.html)
+- [4](http://onlinestatbook.com/stat_sim/index.html)
+- [British Medical Journal: Statistics notes](http://www.jerrydallal.com/LHSP/bmj.htm)
+- [10 Modern Statistical Concepts Discovered by Data Scientists](http://www.datasciencecentral.com/profiles/blogs/10-modern-statistical-concepts-discovered-by-data-scientists)
 
 
 # Linear Algebra

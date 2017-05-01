@@ -10,10 +10,10 @@
 	- [Generating questions](#generating-questions)
 	- [Operationalizing concepts](#operationalizing-concepts)
 	- [Sampling](#sampling)
-	- [Research methods](#research-methods)
-	- [Analysis](#analysis)
-	- [Scholarly writing](#scholarly-writing)
-- [Source](#source)
+	- [Choosing a research method](#choosing-a-research-method)
+	- [Analyzing data](#analyzing-data)
+	- [Communicating results](#communicating-results)
+- [Sources](#sources)
 </td></tr></table>
 
 # What's the scientific method?
@@ -46,17 +46,20 @@ What are major institutions of knowledge production, and how well are they worki
 
 ## Sampling
 
-## Research methods
+## Choosing a research method
 
-## Analysis
+## Analyzing data
 
 See [notes on qualitative methods,](qualitative-methods.html), [data analysis](data-analysis.html) and [models](models.html).
 
-## Scholarly writing
+## Communicating results
 
+See Miller (2005).
 
     
 
 
 
 # Sources
+
+Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis._ Chicago, IL: University of Chicago Press.

@@ -60,7 +60,7 @@ Inequality and polarization.
 - [Big Firms Eyeing Profits From U.S. K-12 Market](http://www.huffingtonpost.com/2012/08/02/private-firms-eyeing-prof_n_1732856.html?view=print&amp;comm_ref=false)
 - [A battle between education and business goals](http://www.nytimes.com/roomfordebate/2012/09/11/must-teachers-and-school-officials-be-foes/a-battle-between-education-and-business-goals)
 - [Letter to Secretary of Education Arne Duncan Concerning Evaluation of Teachers and Principals](http://nepc.colorado.edu/publication/letter-to-Arne-Duncan)
-- [1](http://www.datasciencecentral.com/profiles/blogs/big-data-17-predictions-everyone-should-read-1)
+- Predictions about Big Data: [1,](http://www.datasciencecentral.com/profiles/blogs/big-data-17-predictions-everyone-should-read-1) [2](http://www.datasciencecentral.com/profiles/blogs/23-predictions-about-the-future-of-big-data)
 - [Big data: are we making a big mistake?](https://www.ft.com/content/21a6e7d8-b479-11e3-a09a-00144feabdc0#axzz2zQWDYEV3)
 - [With income inequality comes violence](http://www.usnews.com/opinion/blogs/letters-to-the-editor/2012/07/18/with-income-inequality-comes-violence)
 - [How the bursting of the consumer bubble continues to hold the economy back](http://www.nytimes.com/2011/07/17/sunday-review/17economic.html?_r=2)

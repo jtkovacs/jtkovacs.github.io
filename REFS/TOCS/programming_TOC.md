@@ -79,6 +79,6 @@
 - [Using Access Control Lists on Linux](http://bencane.com/2012/05/27/acl-using-access-control-lists-on-linux/)
 - [Configuring your Linux for development](https://www.codementor.io/linux/tutorial/configure-linux-toolset-zsh-tmux-vim)
 - [Vim Adventures](http://vim-adventures.com/)
-- [](http://www.vimgenius.com/)
+- [Vim Genius](http://www.vimgenius.com/)
 - [R vs Python? No!](http://www.datasciencecentral.com/profiles/blogs/r-vs-python-r-and-python-and-something-else)
 - [Paul Graham - The 100 year language](http://www.paulgraham.com/hundred.html)

@@ -3,15 +3,6 @@
 - [What are good programming practices?](#what-are-good-programming-practices?)
 - [Which language?](#which-language?)
 - [Programming class notes](#programming-class-notes)
-	- [What is the function of secondary memory in a computer?](#what-is-the-function-of-secondary-memory-in-a-computer?)
-	- [What is a program?](#what-is-a-program?)
-	- [What is the difference between a compiler and an interpreter?](#what-is-the-difference-between-a-compiler-and-an-interpreter?)
-	- [Which of the following contains "machine code"?](#which-of-the-following-contains-"machine-code"?)
-	- [What is wrong with the following code. What error message do you get? Does it help?:](#what-is-wrong-with-the-following-code.-what-error-message-do-you-get?-does-it-help?:)
-	- [Where in the computer is a variable such as "X" stored after the following Python line finishes?](#where-in-the-computer-is-a-variable-such-as-"x"-stored-after-the-following-python-line-finishes?)
-	- [What will the following program print out:](#what-will-the-following-program-print-out:)
-	- [Explain each of the following using an example of a human capability](#explain-each-of-the-following-using-an-example-of-a-human-capability)
-	- [How do you fix a "Syntax Error"?](#how-do-you-fix-a-"syntax-error"?)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -36,7 +27,7 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 # Programming class notes
 
-## What is the function of secondary memory in a computer?
+What is the function of secondary memory in a computer?
 
 - [ ] Execute all of the computation and logic of the program.
 - [ ] Retrieve web pages over the Internet.
@@ -45,22 +36,22 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 *The CPU computes. Web pages are retrieved through networks. User input comes via peripherals. The secondary memory is persistant storage while the primary memory is emptied if ever power cuts out.*
 
-## What is a program?
+What is a program?
 
 *A program, also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.*
 
-## What is the difference between a compiler and an interpreter?
+What is the difference between a compiler and an interpreter?
 
 *A compiler performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an imtermediary. The interpreter is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
 
-## Which of the following contains "machine code"?
+Which of the following contains "machine code"?
 
 - [ ] The Python interpreter. 
 - [ ] The keyboard. 
 - [X] Python source file. 
 - [ ] A word processing document.
 
-## What is wrong with the following code. What error message do you get? Does it help?:
+What is wrong with the following code. What error message do you get? Does it help?:
 
 ```python
 >>> print('Hello world!')
@@ -68,7 +59,7 @@ File "<stdin>", line 1
 print('Hello world!')
 ```
 
-## Where in the computer is a variable such as "X" stored after the following Python line finishes?
+Where in the computer is a variable such as "X" stored after the following Python line finishes?
 
 ```python
 x = 123
@@ -80,7 +71,7 @@ x = 123
 - [ ] Input Devices
 - [ ] Output Devices
 
-## What will the following program print out:
+What will the following program print out:
 
 ```python
 x = 43
@@ -93,7 +84,7 @@ print(x)
 - [ ] x + 1
 - [ ] Error because x = x + 1 is not possible mathematically
 
-## Explain each of the following using an example of a human capability
+Explain each of the following using an example of a human capability
 
 - [ ] Central processing unit
 - [ ] Main Memory
@@ -101,7 +92,6 @@ print(x)
 - [ ] Input Device
 - [ ] Output Device.
 
-## How do you fix a "Syntax Error"?
 
 
 # Sources

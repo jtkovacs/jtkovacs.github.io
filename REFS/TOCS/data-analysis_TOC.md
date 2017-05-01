@@ -1,12 +1,11 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-analysis.html">https://jtkovacs.github.io/REFS/HTML/data-analysis.html</a></p><table class="TOC"><tr><td>- [What is data science?](#what-is-data-science?)
 	- [What is Big Data?](#what-is-big-data?)
-	- [Data science lifecycle](#data-science-lifecycle)
+	- [Data science lifecycle & skills](#data-science-lifecycle-&-skills)
 		- [Obtain ](#obtain-)
 		- [Scrub](#scrub)
 		- [Explore](#explore)
 		- [Model](#model)
 		- [iNterpret](#interpret)
-	- [Data science skills](#data-science-skills)
 	- [Data science tools](#data-science-tools)
 		- [Why command line for data science?](#why-command-line-for-data-science?)
 - [Workflow management](#workflow-management)
@@ -20,7 +19,7 @@
 
 ## What is Big Data?
 
-## Data science lifecycle
+## Data science lifecycle & skills
 
 Via Mason and Wiggins (2010):
 
@@ -113,7 +112,6 @@ See [notes on models](models.html), [statistics](statistics.html), and [machine 
 - What are best practices for making Excel sheets auditable?
 - [_Thinking with data_](http://shop.oreilly.com/product/0636920029182.do)
 
-## Data science skills
 
 ## Data science tools
 

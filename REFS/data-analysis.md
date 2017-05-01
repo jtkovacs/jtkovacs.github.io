@@ -3,7 +3,7 @@
 
 ## What is Big Data?
 
-## Data science lifecycle
+## Data science lifecycle & skills
 
 Via Mason and Wiggins (2010):
 
@@ -96,7 +96,6 @@ See [notes on models](models.html), [statistics](statistics.html), and [machine 
 - What are best practices for making Excel sheets auditable?
 - [_Thinking with data_](http://shop.oreilly.com/product/0636920029182.do)
 
-## Data science skills
 
 ## Data science tools
 

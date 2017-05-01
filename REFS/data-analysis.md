@@ -28,10 +28,7 @@ Via Mason and Wiggins (2010):
 
 <tr>
 <td colspan=2>Wrangle</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td colspan=3>Visualize</td>
 </tr>
 
 </table>

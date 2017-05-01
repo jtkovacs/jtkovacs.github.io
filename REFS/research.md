@@ -27,6 +27,22 @@ What are major institutions of knowledge production, and how well are they worki
 
 ## Operationalizing concepts
 
+## Reviewing literature
+
+### Strategies for finding articles
+
+### Strategies for reading well
+
+Adler, M. J. (). _How to read a book._
+
+### What is a literature review?
+
+The important thing to understand is that a literature review proper is a research method; it is not peripheral to research.
+
+#### What types of literature reviews exist?
+
+
+
 ## Sampling
 
 ## Choosing a research method
@@ -53,7 +69,7 @@ Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis.
 
 - [Eigenfactor.org](http://eigenfactor.org/)
 - [Dev Nambi's links](https://github.com/DevNambi/blog-drafts/blob/master/490%20-%20Science%20and%20Research.md)
-- Earning by major: [1,](https://cew.georgetown.edu/cew-reports/whats-it-worth-the-economic-value-of-college-majors/) [2,](http://www.hamiltonproject.org/charts/career_earnings_by_college_major/), [3](http://www.payscale.com/college-salary-report/majors-that-pay-you-back)
+- Earning by major: [1,](https://cew.georgetown.edu/cew-reports/whats-it-worth-the-economic-value-of-college-majors/) [2,](http://www.hamiltonproject.org/charts/career_earnings_by_college_major/) [3](http://www.payscale.com/college-salary-report/majors-that-pay-you-back)
 - [IEP entry for care ethics](http://www.iep.utm.edu/care-eth/)
 - [ParticipatoryMethods.org](http://www.participatorymethods.org/)
 - [Arnold Foundation's Evidence-Based Policy Initiative](http://www.arnoldfoundation.org/initiative/evidence-based-policy-innovation/)

@@ -17,7 +17,7 @@ AKA acquire.
 
 ### Model
 
-### Interpret
+### iNterpret
 
 
 

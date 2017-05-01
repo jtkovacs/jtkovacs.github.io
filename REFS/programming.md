@@ -26,22 +26,22 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 *The CPU computes. Web pages are retrieved through networks. User input comes via peripherals. The secondary memory is persistant storage while the primary memory is emptied if ever power cuts out.*
 
-### What is a program?
+## What is a program?
 
 *A program, also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.*
 
-### What is the difference between a compiler and an interpreter?
+## What is the difference between a compiler and an interpreter?
 
 *A compiler performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an imtermediary. The interpreter is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
 
-### Which of the following contains "machine code"?
+## Which of the following contains "machine code"?
 
 - [ ] The Python interpreter. 
 - [ ] The keyboard. 
 - [X] Python source file. 
 - [ ] A word processing document.
 
-### What is wrong with the following code. What error message do you get? Does it help?:
+## What is wrong with the following code. What error message do you get? Does it help?:
 
 ```python
 >>> print('Hello world!')
@@ -49,7 +49,7 @@ File "<stdin>", line 1
 print('Hello world!')
 ```
 
-### Where in the computer is a variable such as "X" stored after the following Python line finishes?
+## Where in the computer is a variable such as "X" stored after the following Python line finishes?
 
 ```python
 x = 123
@@ -61,7 +61,7 @@ x = 123
 - [ ] Input Devices
 - [ ] Output Devices
 
-### What will the following program print out:
+## What will the following program print out:
 
 ```python
 x = 43
@@ -74,7 +74,7 @@ print(x)
 - [ ] x + 1
 - [ ] Error because x = x + 1 is not possible mathematically
 
-#### 8: Explain each of the following using an example of a human capability
+## Explain each of the following using an example of a human capability
 
 - [ ] Central processing unit
 - [ ] Main Memory
@@ -82,7 +82,7 @@ print(x)
 - [ ] Input Device
 - [ ] Output Device.
 
-#### 9: How do you fix a "Syntax Error"?
+## How do you fix a "Syntax Error"?
 
 
 # Sources

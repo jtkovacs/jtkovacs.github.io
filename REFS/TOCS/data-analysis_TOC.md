@@ -101,7 +101,7 @@ Via Mason and Wiggins (2010):
 
 ### Explore
 
-See [notes on data visualization](data-viz.html).
+See [notes on data visualization.](data-viz.html)
 
 ### Model
 

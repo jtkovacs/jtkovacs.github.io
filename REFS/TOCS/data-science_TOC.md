@@ -107,7 +107,7 @@ See [notes on data visualization.](data-viz.html)
 
 ### Model
 
-See [notes on models,](models.html) [statistics,](statistics.html) and [machine learning.](machine-learning.html)
+See [notes on models,](models.html) [statistics,](statistics.html) [machine learning,](machine-learning.html) and [text analytics.](text-analytics.html)
 
 ### iNterpret
 

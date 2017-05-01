@@ -79,7 +79,7 @@ Via Mason and Wiggins (2010):
 - Clustering
 - Classification
 - Regression
-- Dimensionality reduction
+- Dimension reduction
 </td>
 
 <td style="text-align: left;" colspan=2>

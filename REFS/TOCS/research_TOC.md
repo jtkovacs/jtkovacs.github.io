@@ -67,11 +67,20 @@ The important thing to understand is that a literature review proper is a resear
 
 ### What types of literature reviews exist?
 
-
-
 ## Sampling
 
 ## Choosing a research method
+
+What are major study designs and purposes? E.g. experiment, difference-in-differences, etc. What exists; how things are connected; what might happen.
+
+Qualitative methods are premised on the ontological position that the world is multifaceted; the epistemological position that one explores a multifaceted world through people's subjectivities; and the political position that including a wider range of subjectivities in knowledge production leads to more just, effective decision-making. See GEOG 425 - Final paper. 
+
+- Surveys and questionnaires
+- Interviews
+    - Critical incident technique
+- Participant-observation
+- Focus group
+    - Futures workshop
 
 ## Analyzing data
 

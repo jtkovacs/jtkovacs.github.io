@@ -46,7 +46,7 @@ Via Mason and Wiggins (2010):
 <td colspan=4>Visualize</td>
 </tr>
 
-<tr>
+<tr style="text-align: left;">
 <th>Skills & tools:</th>
 <td>
 - Plain text

@@ -9,6 +9,7 @@
 	- [Data science skills](#data-science-skills)
 	- [Data science tools](#data-science-tools)
 		- [Why the command line for data science?](#why-the-command-line-for-data-science?)
+- [Workflow management & replicability](#workflow-management-&-replicability)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -128,6 +129,9 @@ Per Janssens (2015):
 - **Scalable:**
 - **Extensible:**
 - **Ubiquitous:**
+
+
+# Workflow management & replicability
 
 
 

@@ -8,6 +8,10 @@
 		- [[Tips for troubleshooting R package installation problems](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)](#[tips-for-troubleshooting-r-package-installation-problems](https://support.rstudio.com/hc/en-us/articles/200554786-problem-installing-packages))
 		- [spdep](#spdep)
 		- [spatstat](#spatstat)
+- [Sources](#sources)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
 </td></tr></table>
 # Spatial Analysis
 
@@ -145,3 +149,24 @@ plot(Kest(my.ppp))
     - r-base == v.3.2.3, super out of date :/
     - r-cran-spatstat
     - VICTORY!!!
+
+    
+# Sources
+
+## References
+
+- [ColorBrewer generates map color palettes&nbsp;](http://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3)
+- [QGIS documentation](http://linfiniti.com/dla/)
+- [ESRI data models](http://support.esri.com/technical-article/000011644)
+- [NaturalEarth attractive map layers](http://www.naturalearthdata.com/)
+
+## Read
+
+## Unread
+
+- [ESRI - Going places with spatial analysis](http://www.esri.com/mooc/going-places)
+- [Spatial concepts](http://teachspatial.org/spatial-concepts/)
+- [Wiki - Spatial analysis](https://en.wikipedia.org/wiki/Spatial_analysis)
+- [Spatial statistics](http://giscollective.org/tutorials/gis-techniques/spatial-statistics/)
+- [The nature of geographic information](https://www.e-education.psu.edu/natureofgeoinfo/)
+- [Geography for GIS](http://www.ncgia.ucsb.edu/cctp/units/geog_for_GIS/GC_index.html)

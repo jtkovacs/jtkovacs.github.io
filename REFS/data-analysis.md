@@ -46,7 +46,7 @@ Via Mason and Wiggins (2010):
 
 <td style="text-align: left;">
 - Filter data
-- Extract columns
+- Extract data
 - Extract values
 - Replace values
 - Handle NULL, missing data

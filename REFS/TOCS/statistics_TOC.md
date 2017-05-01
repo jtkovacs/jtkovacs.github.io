@@ -1,6 +1,9 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/statistics.html">https://jtkovacs.github.io/REFS/HTML/statistics.html</a></p><table class="TOC"><tr><td>- [Linear Algebra](#linear-algebra)
 - [Relationships & Trends](#relationships-&-trends)
 - [Hypothesis & A/B Testing](#hypothesis-&-a/b-testing)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
 </td></tr></table>
 
 
@@ -51,3 +54,53 @@
 
 # Hypothesis & A/B Testing
 
+## References
+
+- Choosing the right test: [1,](http://www.graphpad.com/support/faqid/1790/) [2](http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm)
+
+## Read
+
+- [Khan Academy - Inferential Statistics](https://www.khanacademy.org/math/probability/statistics-inferential)
+- [There is only one test](http://allendowney.blogspot.com/2011/05/there-is-only-one-test.html)
+- [There is still only one test](http://allendowney.stfi.re/2016/06/there-is-still-only-one-test.html?sf=gezyvye)
+- [Understanding statistical inference](https://learnandteachstatistics.wordpress.com/2015/11/09/understanding-statistical-inference/)
+- [Statistical inference is only mostly wrong](http://allendowney.blogspot.com/2015/03/statistical-inference-is-only-mostly.html)
+- [Statistical significance abuse](https://www.painscience.com/articles/statistical-significance.php)
+- [Ignoring the ‘difference in differences’](https://www.theguardian.com/commentisfree/2011/sep/09/bad-science-research-error)
+- [Hypothesis testing is only mostly useless](http://allendowney.blogspot.com/2015/05/hypothesis-testing-is-only-mostly.html)
+- [Twelve p value misconceptions](http://www.perfendo.org/docs/BayesProbability/twelvePvaluemisconceptions.pdf)
+- [p-hacking](http://blogs.discovermagazine.com/neuroskeptic/2015/05/18/p-hacking-a-talk-and-further-thoughts/#.V18pwRMrLC2)
+- [The garden of forking paths](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)
+- [Life after p-hacking](http://www.acrwebsite.org/volumes/v41/acr_v41_15833.pdf)
+- [The correct interpretation of the confidence interval](https://www.reddit.com/r/statistics/comments/2xg0cs/the_correct_interpretation_of_the_confidence/)
+- [Intuition for Chi-squared test](https://www.quora.com/What-is-the-most-intuitive-explanation-for-the-chi-square-test)
+- [Why pseudoscientists like chi-square](http://bblais.blogspot.com/2010/09/why-pseudoscientists-like-chi-square.html)
+- [Chi-square versus psi](http://bblais.blogspot.com/2010/08/orthodox-statistics-conducive-to-pseudo.html)
+- [What is Chi-squared not for?](http://www.ling.upenn.edu/~clight/chisquared.htm)
+- [How to understand degrees of freedom](http://stats.stackexchange.com/questions/16921/how-to-understand-degrees-of-freedom/17148#17148)
+- DOF: [1, ](http://www.statsdirect.com/help/basics/degrees_of_freedom.htm) [2](http://www.jerrydallal.com/LHSP/dof.htm)
+- [Deduction, induction, and abduction](http://web.bryant.edu/~bblais/deduction-induction-and-abduction-oh-my.html)
+- [Bayes’ theorem with Legos](https://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego)
+- [Believe your friends’ allergies](https://www.countbayesie.com/blog/2016/1/22/why-you-should-believe-your-friends-claims-about-food-allergies)
+- [Hans Solo and Bayesian priors](https://www.countbayesie.com/blog/2015/2/18/hans-solo-and-bayesian-priors)
+- [Bayesian reasoning in the Twilight Zone](https://www.countbayesie.com/blog/2016/3/16/bayesian-reasoning-in-the-twilight-zone)
+- [Bayes’ factor](https://www.countbayesie.com/blog/2015/2/27/building-a-bayesian-voight-kampff-test)
+
+## Unread
+
+- [Understanding the beta distribution](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
+- [Parameter estimation](https://www.countbayesie.com/blog/2015/4/4/parameter-estimation-the-pdf-cdf-and-quantile-function)
+- [Bayesian priors for parameter estimation](https://www.countbayesie.com/blog/2015/4/4/parameter-estimation-adding-bayesian-priors)
+- [Understanding empirical Bayes estimation](http://varianceexplained.org/r/empirical_bayes_baseball/)
+- [Confidence intervals vs. Bayesian intervals](http://bayes.wustl.edu/etj/articles/confidence.pdf)
+- [Understanding credible intervals](http://varianceexplained.org/r/credible_intervals_baseball/)
+- [Hypothesis testing that makes sense](https://www.countbayesie.com/blog/2015/4/25/bayesian-ab-testing)
+- [How Bayes’ theorem, probability, logic and data intersect](https://www.springboard.com/blog/probability-bayes-theorem-data-science/)
+- [Learning to love Bayesian statistics](http://www.oreilly.com/pub/e/3707)
+- [The death of statistical tests of hypotheses](http://www.datasciencecentral.com/profiles/blogs/the-death-of-the-statistical-test-of-hypothesis)
+- [Biased vs unbiased: debunking statistical myths](http://www.datasciencecentral.com/profiles/blogs/biased-vs-unbiased-debunking-statistical-myths)
+- [Lognormal distributions across the sciences: Key and clues](http://stat.ethz.ch/~stahel/lognormal/bioscience.pdf)
+- [<font size="2">Wired - AB testing</font>](http://www.wired.com/2012/04/ff_abtesting/)
+- [Udacity - AB testing](https://www.udacity.com/courses/ab-testing--ud257)
+- [Understanding Bayesian A/B testing](http://varianceexplained.org/r/bayesian_ab_baseball/)
+- [Falsely reassuring: analyses of ALL p values](http://datacolada.org/41)

@@ -83,6 +83,11 @@ Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis.
 - [ParticipatoryMethods.org](http://www.participatorymethods.org/)
 - [Arnold Foundation's Evidence-Based Policy Initiative](http://www.arnoldfoundation.org/initiative/evidence-based-policy-innovation/)
 - [Advanced Google search syntax](http://www.cpcstrategy.com/blog/2014/10/advanced-google-search-tips-infographic/)
+- [Research Methods Knowledge Base](http://www.socialresearchmethods.net/kb/contents.php)
+- [Center for Qualitative &amp; Multi-Method Inquiry](https://www.maxwell.syr.edu/cqmi.aspx)
+- [Typeform online questionnaire software](https://www.typeform.com/)
+- [Q-BANK question evaluation library](https://wwwn.cdc.gov/qbank/QUest/Quest.aspx)
+- [Survey Quality Predictor 2.1](http://sqp.upf.edu/)
 
 ## Read
 
@@ -93,9 +98,13 @@ Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis.
 - Wenger, E.
 - Schon, D.
 - ["Buy less, think more"](https://storify.com/afg85/applying-critical-thinking-to-your-critical-readin)
+- [Coursera - Questionnaire Design](https://www.coursera.org/learn/questionnaire-design)
+- [Coursera - Measuring Causal Effects](https://www.coursera.org/learn/measuring-causal-effects)
+- [More hypotheses, less trivia](http://allendowney.blogspot.com/2011/06/more-hypotheses-less-trivia.html)
 
 ## Not read
 
+- _Causation: A very short introduction._
 - [Academic research online](http://www.onlinecolleges.net/for-students/online-academic-research/)
 - [Makessense stop!](http://crookedtimber.org/2014/05/13/makessense-stop/)
 - [How do you read academic papers?](https://news.ycombinator.com/item?id=9245467)
@@ -126,4 +135,14 @@ Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis.
 - [A conversation with Marion Nestle, PhD](http://defendingscience.org/conversation-marion-nestle-phd)
 - [Aaron Swartz's essays on Wikipedia](http://www.aaronsw.com/weblog/wikiroads)
 - [Wiki - What Wikipedia is not](https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not)
+- [Understanding bias: a prerequisite for trustyworthy results](https://medium.com/@akelleh/understanding-bias-a-pre-requisite-for-trustworthy-results-ee590b75b1be#.r2q3cshpm)
+- [What is research design?](https://drive.google.com/open?id=0B6XYyy1UbJ3XM25RNXFnU2l2Z28)
+- [The nine circles of scientific hell](http://pps.sagepub.com/content/7/6/643.full.pdf+html)
+- [A technical primer on causality](https://medium.com/@akelleh/a-technical-primer-on-causality-181db2575e41#.409ytztzt)
+- [How to tell if correlation implies causation](https://statswithcats.wordpress.com/2015/01/01/how-to-tell-if-correlation-implies-causation/)
+- [Are social science RTCs headed in the wrong direction?](http://chrisblattman.com/2015/12/14/are-social-science-rcts-headed-in-the-wrong-direction-a-roundup-of-the-discussion/)
+- [Theory versus data: you shouldn't have to choose](https://www.bloomberg.com/view/articles/2016-02-17/theory-versus-data-you-shouldn-t-have-to-choose)
+- [What Americans think of abortion](http://www.vox.com/a/abortion-decision-statistics-opinions)
+- [Wiki - Activity theory](https://en.wikipedia.org/wiki/Activity_theory)
+- [Q methodology](https://qmethod.org/)
 

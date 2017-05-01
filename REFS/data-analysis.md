@@ -1,6 +1,8 @@
 
 # What is data science?
 
+## What is Big Data?
+
 ## Data science lifecycle
 
 Mason and Wiggins (2010) name the following as stages in the (iterative) process of data science:
@@ -26,11 +28,14 @@ AKA acquire.
 
 ### iNterpret
 
+What are best practices for making Excel sheets auditable?
+
 ## Data science skills
 
 ## Data science tools
 
 R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
+
 
 
 

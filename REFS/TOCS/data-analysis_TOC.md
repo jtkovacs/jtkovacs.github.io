@@ -49,7 +49,13 @@ Via Mason and Wiggins (2010):
 <tr>
 <th>Skills & tools:</th>
 <td style="text-align: left;">
-**Formats:** Plain text, CSV, JSON
+- Plain text
+- CSV
+- JSON
+- XML/HTML
+- DB queries
+- API queries
+- REST
 
 </td>
 

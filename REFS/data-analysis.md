@@ -71,6 +71,8 @@ Via Mason and Wiggins (2010):
 
 ### Obtain 
 
+**Describe the concepts here. Code can be embedded or via a link, depending on how much there is.**
+
 - What are major risks in web scraping?
 - When would you scrape versus using an API?
 - How do you parse scraped web data (HTML, JSON, XML)?

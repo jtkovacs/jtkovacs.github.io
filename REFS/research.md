@@ -1,13 +1,15 @@
 
 # What's the scientific method?
 
+... the quest to produce useful, high-quality knowledge.
+
 ## Institutions of scientific knowledge production
 
 What are major institutions of knowledge production, and how well are they working?
 
 ### Academic apprenticeship
 
-### Research
+#### How does disciplinary training impact knowledge?
 
 ### Peer review & replicability
 
@@ -25,9 +27,6 @@ What are major institutions of knowledge production, and how well are they worki
 
 
     
-# How does disciplinary training impact knowledge?
-
-## What's up with economics?
 
 
 

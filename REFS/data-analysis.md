@@ -28,9 +28,12 @@ Via Mason and Wiggins (2010):
 
 <tr>
 <td colspan=2>Wrangle</td>
-<td colspan=3>Visualize</td>
+<td colspan=4>Visualize</td>
 </tr>
 
+<tr>
+Skills & tools:
+</tr>
 </table>
 
 

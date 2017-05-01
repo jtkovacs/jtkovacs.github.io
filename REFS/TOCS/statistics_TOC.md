@@ -19,9 +19,7 @@
 
 ## References
 
-- [1](http://www.dummies.com/how-to/content/statistics-for-dummies-cheat-sheet.html)
-- [2](http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf)
-- [3](https://drive.google.com/open?id=0B6XYyy1UbJ3XR2w5Snc2ck1BVFE)
+- [1,](http://www.dummies.com/how-to/content/statistics-for-dummies-cheat-sheet.html) [2,](http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf) [3](https://drive.google.com/open?id=0B6XYyy1UbJ3XR2w5Snc2ck1BVFE)
 - [CAUSEWeb statistics database](https://www.causeweb.org/cause/resources)
 - [Andrew Gelman's round up of his stats writing](http://andrewgelman.com/2009/05/24/handy_statistic/)
 

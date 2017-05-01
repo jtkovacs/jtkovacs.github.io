@@ -89,6 +89,8 @@ Via Mason and Wiggins (2010):
 
 See [notes on data visualization.](data-viz.html)
 
+[https://medium.com/@eytanadar/banning-exploration-in-my-infovis-class-9578676a4705](https://medium.com/@eytanadar/banning-exploration-in-my-infovis-class-9578676a4705)
+
 ### Model
 
 See [notes on models,](models.html) [statistics,](statistics.html) [machine learning,](machine-learning.html) and [text analytics.](text-analytics.html)

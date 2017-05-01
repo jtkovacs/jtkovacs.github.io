@@ -38,14 +38,15 @@ Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataist
 
 ## References
 
+- [Google APIs Explorer](https://developers.google.com/apis-explorer/#p/)
+- [Google Developers](https://developers.google.com/)
+
 ## Read
+
+- [Treehouse -&nbsp;CSV &amp; JSON&nbsp;in Python](https://www.google.com/url?q=https%3A%2F%2Fteamtreehouse.com%2Flibrary%2Fcsv-and-json-in-python&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH4m-fFGcDa-fuIpEHKxk28kRxlqg)
 
 ## Unread
 
-
-- [Google APIs Explorer](https://developers.google.com/apis-explorer/#p/)
-- [Google Developers](https://developers.google.com/)
-- [Treehouse -&nbsp;CSV &amp; JSON&nbsp;in Python](https://www.google.com/url?q=https%3A%2F%2Fteamtreehouse.com%2Flibrary%2Fcsv-and-json-in-python&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH4m-fFGcDa-fuIpEHKxk28kRxlqg)
 - [Coursera - Using Python to Access Web Data](https://www.coursera.org/learn/python-network-data)
 - [Scraping the web](http://schoolofdata.org/2013/11/25/scraping-the-web/)
 - [Prevent web scraping](https://blog.hartleybrody.com/prevent-scrapers/)

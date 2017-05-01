@@ -2,6 +2,17 @@
 - [What are major programming paradigms?](#what-are-major-programming-paradigms?)
 - [What are good programming practices?](#what-are-good-programming-practices?)
 - [Which language?](#which-language?)
+- [Misc. notes](#misc.-notes)
+- [Chapter 1 exercises](#chapter-1-exercises)
+		- [1. What is the function of secondary memory in a computer?](#1.-what-is-the-function-of-secondary-memory-in-a-computer?)
+		- [2. What is a program?](#2.-what-is-a-program?)
+		- [3: What is the difference between a compiler and an interpreter?](#3:-what-is-the-difference-between-a-compiler-and-an-interpreter?)
+		- [4: Which of the following contains "machine code"?](#4:-which-of-the-following-contains-"machine-code"?)
+			- [5: What is wrong with the following code. What error message do you get? Does it help?:](#5:-what-is-wrong-with-the-following-code.-what-error-message-do-you-get?-does-it-help?:)
+			- [6: Where in the computer is a variable such as "X" stored after the following Python line finishes?](#6:-where-in-the-computer-is-a-variable-such-as-"x"-stored-after-the-following-python-line-finishes?)
+			- [7: What will the following program print out:](#7:-what-will-the-following-program-print-out:)
+			- [8: Explain each of the following using an example of a human capability](#8:-explain-each-of-the-following-using-an-example-of-a-human-capability)
+			- [9: How do you fix a "Syntax Error"?](#9:-how-do-you-fix-a-"syntax-error"?)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -11,11 +22,89 @@
 
 # What is an algorithm?
 
+An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms. 
+
 # What are major programming paradigms?
+
+- Structured
+- Functional
+- Object-oriented
+- Literate
 
 # What are good programming practices?
 
 # Which language?
+
+# Misc. notes
+
+# Chapter 1 exercises
+
+### 1. What is the function of secondary memory in a computer?
+- [ ] Execute all of the computation and logic of the program.
+- [ ] Retrieve web pages over the Internet.
+- [X] Store information for the long term - even beyond a power cycle.
+- [ ] Take input from the user.
+
+*The CPU computes. Web pages are retrieved through networks. User input comes via peripherals. The secondary memory is persistant storage while the primary memory is emptied if ever power cuts out.*
+
+### 2. What is a program?
+*A program, also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.*
+
+
+### 3: What is the difference between a compiler and an interpreter?
+*A compiler performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an imtermediary. The interpreter is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
+
+
+### 4: Which of the following contains "machine code"?
+- [ ] The Python interpreter. 
+- [ ] The keyboard. 
+- [X] Python source file. 
+- [ ] A word processing document.
+
+
+
+#### 5: What is wrong with the following code. What error message do you get? Does it help?:
+
+```python
+>>> print('Hello world!')
+File "<stdin>", line 1
+print('Hello world!')
+```
+
+#### 6: Where in the computer is a variable such as "X" stored after the following Python line finishes?
+
+```python
+x = 123
+```
+
+- [ ] Central processing unit
+- [X] Main Memory
+- [ ] Secondary Memory
+- [ ] Input Devices
+- [ ] Output Devices
+
+#### 7: What will the following program print out:
+
+```python
+x = 43
+x = x + 1
+print(x)
+```
+
+- [ ] 43
+- [X] 44
+- [ ] x + 1
+- [ ] Error because x = x + 1 is not possible mathematically
+
+#### 8: Explain each of the following using an example of a human capability
+
+- [ ] Central processing unit
+- [ ] Main Memory
+- [ ] Secondary Memory
+- [ ] Input Device
+- [ ] Output Device.
+
+#### 9: How do you fix a "Syntax Error"?
 
 
 # Sources

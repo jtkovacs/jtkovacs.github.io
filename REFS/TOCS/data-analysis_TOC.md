@@ -26,7 +26,7 @@ Via Mason and Wiggins (2010):
 
 <table class="OSEMN">
 <tr>
-<th>OSEMN model:</th>
+<th>OSEMN Model</th>
 <td>Obtain</td>
 <td>Scrub</td>
 <td>Explore</td>
@@ -35,7 +35,7 @@ Via Mason and Wiggins (2010):
 </tr>
 
 <tr>
-<th rowspan=2>Alt terms:</th>
+<th rowspan=2>Alt Terms</th>
 <td>Acquire</td>
 <td>Clean</td>
 <td colspan=2 rowspan=2>Analyze</td>
@@ -47,7 +47,7 @@ Via Mason and Wiggins (2010):
 </tr>
 
 <tr>
-<th>Skills & tools:</th>
+<th>Skills & Tools</th>
 <td style="text-align: left;">
 - Plain text
 - CSV

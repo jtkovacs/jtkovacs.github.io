@@ -8,8 +8,8 @@
 		- [iNterpret](#interpret)
 	- [Data science skills](#data-science-skills)
 	- [Data science tools](#data-science-tools)
-		- [Why the command line for data science?](#why-the-command-line-for-data-science?)
-- [Workflow management & replicability](#workflow-management-&-replicability)
+		- [Why command line for data science?](#why-command-line-for-data-science?)
+- [Workflow management](#workflow-management)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -110,6 +110,8 @@ Via Mason and Wiggins (2010):
 
 ### Model
 
+See [notes on models](models.html), [statistics](statistics.html), and [machine learning](machine-learning.html).
+
 ### iNterpret
 
 - What are best practices for making Excel sheets auditable?
@@ -120,7 +122,7 @@ Via Mason and Wiggins (2010):
 
 R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
 
-### Why the command line for data science?
+### Why command line for data science?
 
 Per Janssens (2015):
 
@@ -131,7 +133,7 @@ Per Janssens (2015):
 - **Ubiquitous:**
 
 
-# Workflow management & replicability
+# Workflow management
 
 
 

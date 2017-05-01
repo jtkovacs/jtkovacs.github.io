@@ -23,7 +23,7 @@
 
 Via Mason and Wiggins (2010):
 
-<table>
+<table class="OSEMN">
 <tr>
 <th>OSEMN model:</th>
 <td>Obtain</td>

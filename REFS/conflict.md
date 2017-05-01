@@ -20,6 +20,19 @@
 ## What are major applications of mediation?
 
 
+
+# Persuasion
+
+## What makes people change their minds?
+
+## How are people irrational?
+
+## What are major rhetorical appeals?
+
+## What helps people change their behavior?
+
+
+
 # Sources
 
 ## References

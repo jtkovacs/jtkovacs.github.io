@@ -6,6 +6,11 @@
 	- [What is the facilitative mediation process?](#what-is-the-facilitative-mediation-process?)
 	- [What standards govern mediation in Washington State?](#what-standards-govern-mediation-in-washington-state?)
 	- [What are major applications of mediation?](#what-are-major-applications-of-mediation?)
+- [Persuasion](#persuasion)
+	- [What makes people change their minds?](#what-makes-people-change-their-minds?)
+	- [How are people irrational?](#how-are-people-irrational?)
+	- [What are major rhetorical appeals?](#what-are-major-rhetorical-appeals?)
+	- [What helps people change their behavior?](#what-helps-people-change-their-behavior?)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -31,6 +36,19 @@
 ## What standards govern mediation in Washington State?
 
 ## What are major applications of mediation?
+
+
+
+# Persuasion
+
+## What makes people change their minds?
+
+## How are people irrational?
+
+## What are major rhetorical appeals?
+
+## What helps people change their behavior?
+
 
 
 # Sources

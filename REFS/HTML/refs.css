@@ -184,7 +184,7 @@ th {
 table li {
     max-width: 60px;
 }
-table.OSEMN {
+table.OSEMN td {
     padding: 0;
     margin: 0;
 }

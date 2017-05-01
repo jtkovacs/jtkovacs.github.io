@@ -62,6 +62,7 @@ Via Mason and Wiggins (2010):
 
 <td style="text-align: left;">
 [See "Data Jujitsu"](http://radar.oreilly.com/2012/07/data-jujitsu.html)
+
 - Filter
 - Extract columns
 - Extract values

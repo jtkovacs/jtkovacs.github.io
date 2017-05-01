@@ -45,8 +45,6 @@ Via Mason and Wiggins (2010):
 </td>
 
 <td style="text-align: left;">
-[See "Data Jujitsu"](http://radar.oreilly.com/2012/07/data-jujitsu.html)
-
 - Filter
 - Extract columns
 - Extract values
@@ -84,6 +82,7 @@ Via Mason and Wiggins (2010):
 
 ### Scrub
 
+- [http://radar.oreilly.com/2012/07/data-jujitsu.html](http://radar.oreilly.com/2012/07/data-jujitsu.html)
 - What are major steps in data cleaning?
 - What's the best way to filter data?
 - What's the best way to aggregate data?

@@ -30,6 +30,7 @@ AKA acquire.
 
 ## Data science tools
 
+R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
 
 
 

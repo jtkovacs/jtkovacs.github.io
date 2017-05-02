@@ -25,7 +25,8 @@ ftxt = urllib2.urlopen(“target_url”).read()
 # Python 2:
 vname = raw_input('What is your name?\n')
 age = int(input(‘What is your age?")
-long_text = sys.stdin.read().strip() # type ctrl+d for EOF
+long_text = sys.stdin.read().strip()
+# type ctrl+d for EOF
 # Python 3:
 vname = input('What is your name?')
 age = int(input(‘What is your age? ‘)

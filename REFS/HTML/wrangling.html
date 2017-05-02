@@ -118,7 +118,8 @@ ftxt <span class="op">=</span> urllib2.urlopen(“target_url”).read()
 <span class="co"># Python 2:</span>
 vname <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">'What is your name?</span><span class="ch">\n</span><span class="st">'</span>)
 age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(‘What <span class="op">is</span> your age?<span class="st">")</span>
-<span class="st">long_text = sys.stdin.read().strip() # type ctrl+d for EOF</span>
+<span class="st">long_text = sys.stdin.read().strip()</span>
+<span class="st"># type ctrl+d for EOF</span>
 <span class="st"># Python 3:</span>
 <span class="st">vname = input('What is your name?')</span>
 <span class="st">age = int(input(‘What is your age? ‘)</span>

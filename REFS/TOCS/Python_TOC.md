@@ -13,6 +13,7 @@
 	- [Sets](#sets)
 	- [Dictionaries](#dictionaries)
 	- [Datetimes](#datetimes)
+- [Sources](#sources)
 </td></tr></table>
 # Operators
 
@@ -423,3 +424,5 @@ my_datetime.strftime(my_format_string)
 # Format string mini-language: %Y-%m-%d %H:%M:%S %Z%z
 # https://docs.python.org/3/library/datetime.html?highlight=datetime#strftime-and-strptime-behavior
 ```
+
+# Sources

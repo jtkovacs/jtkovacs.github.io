@@ -330,73 +330,118 @@ my_selection &lt;-<span class="st"> </span>my_vec &gt;<span class="st"> </span><
      Big Data U - Using R with Databases
     </a>
    </li>
+   <li>
+    <a class="uri" href="http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb">
+     http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb
+    </a>
+   </li>
+   <li>
+    <a class="uri" href="http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/">
+     http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/
+    </a>
+   </li>
+   <li>
+    <a class="uri" href="http://www.rdocumentation.org/packages/utils/versions/3.3.1/topics/read.table?">
+     http://www.rdocumentation.org/packages/utils/versions/3.3.1/topics/read.table?
+    </a>
+   </li>
+   <li>
+    library for web scraping:
+    <a class="uri" href="https://github.com/hadley/rvest">
+     https://github.com/hadley/rvest
+    </a>
+   </li>
+   <li>
+    library:
+    <a class="uri" href="https://github.com/smbache/magrittr">
+     https://github.com/smbache/magrittr
+    </a>
+   </li>
   </ul>
   <div class="sourceCode">
    <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="st">"Your text here"</span>)
-<span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">""</span>, my_var, <span class="st">""</span>))</code></pre>
+<span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">""</span>, my_var, <span class="st">""</span>)
+
+<span class="kw">seq</span>(a,b,<span class="dt">length.out=</span>n)
+
+<span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">1</span>, <span class="dt">to =</span> <span class="dv">10</span>, <span class="dt">by =</span> <span class="dv">1</span>)
+<span class="co"># Generate sequences, by specifying the from, to andby arguments.</span>
+
+<span class="kw">rep</span>()
+<span class="co"># Replicate elements of vectors and lists.</span>
+
+<span class="kw">sort</span>()
+<span class="co"># Sort a vector in ascending order. Works on numerics, but also on character strings and logicals.</span>
+
+<span class="kw">rev</span>()
+<span class="co"># Reverse the elements in a data structures for which reversal is defined.</span>
+
+<span class="kw">str</span>()
+<span class="co"># Display the structure of any R object.</span>
+
+<span class="kw">append</span>()
+<span class="co"># Merge vectors or lists.</span>
+
+is.*()
+<span class="co"># Check for the class of an R object.</span>
+
+as.*()
+<span class="co"># Convert an R object from one class to another.</span>
+
+<span class="kw">unlist</span>()
+<span class="co"># Flatten (possibly embedded) lists to produce a vector.</span>
+
+<span class="co"># load &amp; clean data:</span>
+<span class="kw">read.table</span>(“url”)
+
+<span class="co"># load custom function: </span>
+<span class="kw">load</span>(<span class="kw">url</span>(“”))
+<span class="kw">na.omit</span>(my_data)
+
+<span class="co"># investigate structure of data frame object:</span>
+<span class="kw">dim</span>(my_df)
+<span class="kw">names</span>(my_df)
+<span class="kw">head</span>(my_df)
+<span class="kw">tail</span>(my_df)
+<span class="kw">typeof</span>(my_df$my_var)
+<span class="kw">levels</span>(categorical_var)
+
+<span class="kw">sort</span>(my_df)
+<span class="kw">order</span>(my_df$my_var, <span class="dt">decreasing=</span><span class="ot">TRUE</span>)
+my_df[<span class="kw">order</span>(my_df),]
+
+<span class="kw">identical</span>(thing1, thing2)
+
+<span class="kw">diff</span>(my_vec)  
+<span class="co"># vector of differences between elements in a numerics vector</span>
+<span class="kw">unique</span>(my_vec)
+<span class="kw">order</span>() 
+<span class="co"># is a function that gives you the ranked position of each element when it is </span>
+<span class="co"># applied on a variable, such as a vector for example</span>
+<span class="co"># we can use the output of order(a) to reshuffle a: a[order(a)]</span>
+
+<span class="co"># retrieve data from data frame:</span>
+my_df$var_name
+<span class="co"># row-and-column style: </span>
+my_df[row<span class="co">#,col#], my_df[row#:range, col#:range], my_df[row#,]</span>
+<span class="co"># names style: </span>
+my_df$var_name, mf_df$var_name[row<span class="co">#:range]</span>
+
+<span class="co"># conditional subsetting: </span>
+subset[my_df, condition]
+<span class="co"># ==, &gt;, &gt;=, !=, |, &amp;</span></code></pre>
   </div>
-  <p>
-   http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb
-  </p>
-  <p>
-   http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/
-  </p>
-  <p>
-   http://www.rdocumentation.org/packages/utils/versions/3.3.1/topics/read.table?
-  </p>
-  <p>
-   library for web scraping: https://github.com/hadley/rvest
-  </p>
-  <p>
-   seq(a,b,length.out=n)
-  </p>
-  <p>
-   seq(from = 1, to = 10, by = 1): Generate sequences, by specifying the from, to andby arguments. rep(): Replicate elements of vectors and lists. sort(): Sort a vector in ascending order. Works on numerics, but also on character strings and logicals. rev(): Reverse the elements in a data structures for which reversal is defined. str(): Display the structure of any R object. append(): Merge vectors or lists. is.
-   <em>
-    (): Check for the class of an R object. as.
-   </em>
-   (): Convert an R object from one class to another. unlist(): Flatten (possibly embedded) lists to produce a vector.
-  </p>
-  <p>
-   load &amp; clean data: read.table(“url”) load custom function: load(url(“”)) na.omit(my_data) library: https://github.com/smbache/magrittr
-  </p>
-  <p>
-   investigate structure of data frame object: dim(my_df) names(my_df) head(my_df) tail(my_df) typeof(my_df$my_var) levels(categorical_var)
-  </p>
-  <p>
-   sort(my_df) order(my_df$my_var, decreasing=TRUE) my_df[order(my_df),]
-  </p>
-  <p>
-   identical(thing1, thing2)
-  </p>
-  <p>
-   diff(my_vec) # vector of differences between elements in a numerics vector unique(my_vec) order() is a function that gives you the ranked position of each element when it is applied on a variable, such as a vector for example we can use the output of order(a) to reshuffle a: a[order(a)]
-  </p>
-  <p>
-   retrieve data from data frame: my_df
-   <span class="math inline">
-    $var_name row-and-column style: my_df[row#,col#], my_df[row#:range, col#:range], my_df[row#,] names style: my_df$
-   </span>
-   var_name, mf_df$var_name[row#:range] conditional subsetting: subset[my_df, condition] ==, &gt;, &gt;=, !=, |, &amp;
-  </p>
   <h2>
    <a name="...-in-python">
     ... in Python
    </a>
   </h2>
-  <p>
-   https://docs.python.org/3.5/library/markup.html
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># to check for an empty list, avoid (if len(my_list) == 0)</span>
-<span class="co"># prefer this approach:</span>
-<span class="kw">def</span> check_list_for_members(my_list):
-    <span class="cf">if</span> <span class="op">not</span> my_list:
-        <span class="bu">print</span>(<span class="st">"Sorry, that's an empty list"</span>)
-    <span class="cf">else</span>: 
-        <span class="cf">pass</span></code></pre>
-  </div>
   <ul>
+   <li>
+    <a class="uri" href="https://docs.python.org/3.5/library/markup.html">
+     https://docs.python.org/3.5/library/markup.html
+    </a>
+   </li>
    <li>
     <a class="uri" href="http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb">
      http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb
@@ -414,7 +459,15 @@ my_selection &lt;-<span class="st"> </span>my_vec &gt;<span class="st"> </span><
    </li>
   </ul>
   <div class="sourceCode">
-   <pre class="sourceCode python"><code class="sourceCode python"><span class="bu">reversed</span>(seq)
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># to check for an empty list, avoid (if len(my_list) == 0)</span>
+<span class="co"># prefer this approach:</span>
+<span class="kw">def</span> check_list_for_members(my_list):
+    <span class="cf">if</span> <span class="op">not</span> my_list:
+        <span class="bu">print</span>(<span class="st">"Sorry, that's an empty list"</span>)
+    <span class="cf">else</span>: 
+        <span class="cf">pass</span>
+
+<span class="bu">reversed</span>(seq)
 <span class="bu">sorted</span>(iterable[, key][, reverse])
 
 <span class="bu">zip</span>(<span class="op">*</span>iterables)

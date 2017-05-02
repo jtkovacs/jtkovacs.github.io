@@ -205,39 +205,53 @@ my_selection <- my_vec > 5  # create new vector based on selection
 ```
 
 - [Big Data U - Using R with Databases](http://bigdatauniversity.com/courses/using-r-with-databases/)
+- [http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb](http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb)
+- [http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/](http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/)
+- [http://www.rdocumentation.org/packages/utils/versions/3.3.1/topics/read.table?](http://www.rdocumentation.org/packages/utils/versions/3.3.1/topics/read.table?)
+- library for web scraping: [https://github.com/hadley/rvest](https://github.com/hadley/rvest)
+- library: [https://github.com/smbache/magrittr](https://github.com/smbache/magrittr) 
 
 ```R
 print("Your text here")
-print(paste("", my_var, ""))
-```
-
-http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb
-
-http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/
-
-http://www.rdocumentation.org/packages/utils/versions/3.3.1/topics/read.table?
-
-library for web scraping: https://github.com/hadley/rvest
+print(paste("", my_var, "")
 
 seq(a,b,length.out=n)
 
-seq(from = 1, to = 10, by = 1): Generate sequences, by specifying the from, to andby arguments.
-rep(): Replicate elements of vectors and lists.
-sort(): Sort a vector in ascending order. Works on numerics, but also on character strings and logicals.
-rev(): Reverse the elements in a data structures for which reversal is defined.
-str(): Display the structure of any R object.
-append(): Merge vectors or lists.
-is.*(): Check for the class of an R object.
-as.*(): Convert an R object from one class to another.
-unlist(): Flatten (possibly embedded) lists to produce a vector.
+seq(from = 1, to = 10, by = 1)
+# Generate sequences, by specifying the from, to andby arguments.
 
-load & clean data:
+rep()
+# Replicate elements of vectors and lists.
+
+sort()
+# Sort a vector in ascending order. Works on numerics, but also on character strings and logicals.
+
+rev()
+# Reverse the elements in a data structures for which reversal is defined.
+
+str()
+# Display the structure of any R object.
+
+append()
+# Merge vectors or lists.
+
+is.*()
+# Check for the class of an R object.
+
+as.*()
+# Convert an R object from one class to another.
+
+unlist()
+# Flatten (possibly embedded) lists to produce a vector.
+
+# load & clean data:
 read.table(“url”)
-load custom function: load(url(“”))
-na.omit(my_data)
-library: https://github.com/smbache/magrittr 
 
-investigate structure of data frame object:
+# load custom function: 
+load(url(“”))
+na.omit(my_data)
+
+# investigate structure of data frame object:
 dim(my_df)
 names(my_df)
 head(my_df)
@@ -251,22 +265,34 @@ my_df[order(my_df),]
 
 identical(thing1, thing2)
 
-diff(my_vec)  # vector of differences between elements in a numerics vector
+diff(my_vec)  
+# vector of differences between elements in a numerics vector
 unique(my_vec)
-order() is a function that gives you the ranked position of each element when it is applied on a variable, such as a vector for example
-we can use the output of order(a) to reshuffle a: a[order(a)]
+order() 
+# is a function that gives you the ranked position of each element when it is 
+# applied on a variable, such as a vector for example
+# we can use the output of order(a) to reshuffle a: a[order(a)]
 
-retrieve data from data frame:
+# retrieve data from data frame:
 my_df$var_name
-row-and-column style: my_df[row#,col#], my_df[row#:range, col#:range], my_df[row#,]
-names style: my_df$var_name, mf_df$var_name[row#:range]
-conditional subsetting: subset[my_df, condition]
-==, >, >=, !=, |, &
+# row-and-column style: 
+my_df[row#,col#], my_df[row#:range, col#:range], my_df[row#,]
+# names style: 
+my_df$var_name, mf_df$var_name[row#:range]
+
+# conditional subsetting: 
+subset[my_df, condition]
+# ==, >, >=, !=, |, &
+```
 
 
 ## ... in Python
 
-https://docs.python.org/3.5/library/markup.html
+- [https://docs.python.org/3.5/library/markup.html](https://docs.python.org/3.5/library/markup.html)
+- [http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb](http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb)
+- [http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/](http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/)
+- [https://docs.python.org/3/howto/sorting.html](https://docs.python.org/3/howto/sorting.html)
+
 
 ```Python
 # to check for an empty list, avoid (if len(my_list) == 0)
@@ -276,13 +302,7 @@ def check_list_for_members(my_list):
         print("Sorry, that's an empty list")
     else: 
         pass
-```
 
-- [http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb](http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb)
-- [http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/](http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/)
-- [https://docs.python.org/3/howto/sorting.html](https://docs.python.org/3/howto/sorting.html)
-
-```Python
 reversed(seq)
 sorted(iterable[, key][, reverse])
 

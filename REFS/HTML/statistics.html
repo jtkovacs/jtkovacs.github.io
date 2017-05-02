@@ -7,6 +7,43 @@
   <title>
   </title>
   <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
  </head>
  <body>
   <p id="path">
@@ -23,8 +60,18 @@
     <td>
      <ul>
       <li>
-       <a href="#general">
-        General
+       <a href="#notes">
+        Notes
+       </a>
+      </li>
+      <li>
+       <a href="#statistics-in-python">
+        Statistics in Python
+       </a>
+      </li>
+      <li>
+       <a href="#sources">
+        Sources
        </a>
        <ul>
         <li>
@@ -81,8 +128,8 @@
    </tr>
   </table>
   <h1>
-   <a name="general">
-    General
+   <a name="notes">
+    Notes
    </a>
   </h1>
   <ul>
@@ -96,6 +143,50 @@
     https://docs.google.com/document/d/1gWr73U7uhIxzi8MOODNMafwDK7l-BDg3HsCEyc4xaGE/edit?usp=drive_web
    </li>
   </ul>
+  <h1>
+   <a name="statistics-in-python">
+    Statistics in Python
+   </a>
+  </h1>
+  <p>
+   numpy has an arrays datatype, essential for analytic operations. arrays are like lists, but you can perform elementwise calculations on them and, unlike lists, they are cannot contain multiple types within one array; they are type coercive.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># create an array: </span>
+array_name <span class="op">=</span> np.array(list_name)
+np.array([list1],[list2])
+np.column_stack((list1, list2))
+
+<span class="co"># subsetting arrays is the same as for lists, plus:</span>
+<span class="co"># conditional selection: </span>
+bmi[bmi<span class="op">&gt;</span><span class="dv">23</span>]<span class="op">;</span> 
+<span class="co"># access specific cell: </span>
+array_name[row,col]
+
+<span class="co"># check dimensions: </span>
+a_name.shape, a_name.size
+<span class="co"># calculate average: </span>
+np.mean(list_name)
+<span class="co"># calculate median: </span>
+np.median(list_name)
+<span class="co"># calculate st dev: </span>
+np.std(list_name)
+<span class="co"># check correlation: </span>
+np.corrcoef(list1,list2)
+<span class="co"># add: </span>
+np.<span class="bu">sum</span>(list_name)
+<span class="co"># simulate random data: </span>
+np.<span class="bu">round</span>(np.random.normal(mean, stdev, <span class="co">#obs), 2)</span>
+
+<span class="im">import</span> random
+random.choice(strname)
+random.randint(a_inclusive,b_inclusive)</code></pre>
+  </div>
+  <h1>
+   <a name="sources">
+    Sources
+   </a>
+  </h1>
   <h2>
    <a name="references">
     References

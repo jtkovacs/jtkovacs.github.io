@@ -1,10 +1,50 @@
-
-
-# General
+# Notes
 
 - https://docs.google.com/document/d/1e0wdTbj6TfpLqfOfYjzqOX17L0pUmNGGfSIdr-n_0BE/edit?usp=drive_web
 - https://docs.google.com/document/d/1akczbgY2f6M-y2FHY649C917KToSU8tj2Y1A7bCfq7k/edit?usp=drive_web
 - https://docs.google.com/document/d/1gWr73U7uhIxzi8MOODNMafwDK7l-BDg3HsCEyc4xaGE/edit?usp=drive_web
+
+
+# Statistics in Python
+
+
+numpy has an arrays datatype, essential for analytic operations. arrays are like lists, but you can perform elementwise calculations on them and, unlike lists, 
+they are cannot contain multiple types within one array; they are type coercive. 
+
+```Python
+# create an array: 
+array_name = np.array(list_name)
+np.array([list1],[list2])
+np.column_stack((list1, list2))
+
+# subsetting arrays is the same as for lists, plus:
+# conditional selection: 
+bmi[bmi>23]; 
+# access specific cell: 
+array_name[row,col]
+
+# check dimensions: 
+a_name.shape, a_name.size
+# calculate average: 
+np.mean(list_name)
+# calculate median: 
+np.median(list_name)
+# calculate st dev: 
+np.std(list_name)
+# check correlation: 
+np.corrcoef(list1,list2)
+# add: 
+np.sum(list_name)
+# simulate random data: 
+np.round(np.random.normal(mean, stdev, #obs), 2)
+
+import random
+random.choice(strname)
+random.randint(a_inclusive,b_inclusive)
+```
+
+
+# Sources
 
 ## References
 

@@ -44,14 +44,30 @@ Metadata, content, anonymity.
 
 ## Read
 
-- [Khan Academy - Cybersecurity](https://www.khanacademy.org/partner-content/nova/cybersecurity)
-- [How the Seattle Police Secretly—and Illegally—Purchased a Tool for Tracking Your Social Media Posts](http://www.thestranger.com/news/2016/09/28/24585899/how-the-seattle-police-secretlyand-illegallypurchased-a-tool-for-tracking-your-social-media-posts)
+- _No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State._
+- [Your iPhone knows where you’ve been](http://blog.chron.com/techblog/2013/10/your-iphone-knows-where-youve-been-puts-it-on-a-map/)
+- [IBM distributes USB malware cocktail at AusCERT security conference&nbsp;](https://nakedsecurity.sophos.com/2010/05/21/ibm-distributes-usb-malware-cocktail-auscert-security-conference/)
 - [Criminals May Be Using Covert Mobile Phone Surveillance Tech for Extortion](http://www.slate.com/blogs/future_tense/2012/08/22/imsi_catchers_criminals_law_enforcement_using_high_tech_portable_devices_to_intercept_communications_.html)
+- [Met police using surveillance system to monitor mobile phones](https://www.theguardian.com/uk/2011/oct/30/metropolitan-police-mobile-phone-surveillance)
 - [Threat modeling](https://source.opennews.org/en-US/learning/security-journalists-part-two-threat-modeling/)
+- [Account Security 101](https://crashoverridenetwork.tumblr.com/post/109948061867/account-security-101-passwords-multifactor)
+- [Protecting your digital life in 7 easy steps](http://mobile.nytimes.com/2016/11/17/technology/personaltech/encryption-privacy.html)
+- [EFF's security starter pack](https://ssd.eff.org/en/playlist/want-security-starter-pack)
 - [How can I protect against social engineering hacks?](http://lifehacker.com/5933296/how-can-i-protect-against-hackers-who-use-sneaky-social-engineering-techniques-to-get-into-my-accounts)
+- [Social engineering: the basics](http://www.csoonline.com/article/2124681/leadership-management/security-awareness-social-engineering-the-basics.html)
+- [The fine art of BS](http://www.csoonline.com/article/2112400/it-audit/social-engineering--the-fine-art-of-bs--face-to-face--includes-video-.html)
+- [How social engineers win your confidence](http://www.csoonline.com/article/2124219/security-awareness/mind-games--how-social-engineers-win-your-confidence.html)
+- [Snowden persuaded other NSA workers to give up passwords](http://www.reuters.com/article/net-us-usa-security-snowden-idUSBRE9A703020131108)
+- [Protect yourself against online fraud and identity theft](http://lifehacker.com/5858197/how-to-protect-yourself-from-online-fraud)
+- [What it's like to steal someone's identity](http://www.csoonline.com/article/2126146/identity-theft-prevention/what-it-s-like-to-steal-someone-s-identity.html)
+- [Anti-phishing and email hygiene](https://freedom.press/training/email-security-tips/)
 - [Preventing doxing](https://crashoverridenetwork.tumblr.com/post/108387569412/preventing-doxing)
 - [Why you should use a VPN](http://lifehacker.com/5940565/why-you-should-start-using-a-vpn-and-how-to-choose-the-best-one-for-your-needs)
+- [How VPNs work](http://computer.howstuffworks.com/vpn.htm)
+- [How to make your VPN even more secure](http://lifehacker.com/5902397/how-to-make-vpns-even-more-secure)
+- [Which VPN providers really take privacy seriously?](https://torrentfreak.com/which-vpn-providers-really-take-anonymity-seriously-111007/)
 - [Rapid response for compromised phones](https://freedom.press/training/rapid-responses-compromised-phones/)
+- [Mobile security prevention tips](https://freedom.press/training/rapid-responses-compromised-phones/)
 
 ## Unread
 

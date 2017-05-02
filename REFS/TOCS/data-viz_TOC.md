@@ -1,3 +1,12 @@
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-viz.html">https://jtkovacs.github.io/REFS/HTML/data-viz.html</a></p><table class="TOC"><tr><td>- [What are Tufte's design principles?](#what-are-tufte's-design-principles?)
+- [What are good tools for data viz and infographics work?](#what-are-good-tools-for-data-viz-and-infographics-work?)
+- [What are best practices for dashboards?](#what-are-best-practices-for-dashboards?)
+- [What are major chart types and their use cases?](#what-are-major-chart-types-and-their-use-cases?)
+- [Sources](#sources)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
+</td></tr></table>
 
 # What are Tufte's design principles?
 

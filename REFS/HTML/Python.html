@@ -165,6 +165,62 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           </li>
          </ul>
         </li>
+        <li>
+         <a href="#functions">
+          Functions
+         </a>
+        </li>
+        <li>
+         <a href="#closures">
+          Closures
+         </a>
+        </li>
+        <li>
+         <a href="#decorators">
+          Decorators
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#paradigms">
+        Paradigms
+       </a>
+       <ul>
+        <li>
+         <a href="#object-oriented-python">
+          Object-oriented Python
+         </a>
+         <ul>
+          <li>
+           <a href="#methods">
+            Methods
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#functional-python">
+          Functional Python
+         </a>
+         <ul>
+          <li>
+           <a href="#lambdas">
+            Lambdas
+           </a>
+          </li>
+          <li>
+           <a href="#currying">
+            Currying
+           </a>
+          </li>
+          <li>
+           <a href="#map-reduce,-filter,-etc.">
+            Map-reduce, filter, etc.
+           </a>
+          </li>
+         </ul>
+        </li>
        </ul>
       </li>
       <li>
@@ -895,6 +951,353 @@ my_year <span class="op">=</span> my_datetime.year
 my_datetime.strftime(my_format_string) 
 <span class="co"># Format string mini-language: %Y-%m-%d %H:%M:%S %Z%z</span>
 <span class="co"># https://docs.python.org/3/library/datetime.html?highlight=datetime#strftime-and-strptime-behavior</span></code></pre>
+  </div>
+  <h2>
+   <a name="functions">
+    Functions
+   </a>
+  </h2>
+  <p>
+   Functions are pieces of reusable code that solve particular tasks. Brett Slatkin,
+   <em>
+    Effective Python
+   </em>
+   , p. 10:
+  </p>
+  <blockquote>
+   <p>
+    As soon as your expression get complicated, it's time to consider splitting them into smaller pieces and moving logic into helper functions. What you gain in readability always outweighs what brevity may have afforded you. Don't let Python's pithy syntax for complex expressions get you into a mess ...
+   </p>
+  </blockquote>
+  <ul>
+   <li>
+    Notation:
+    <code>
+     fname(req_arg[, opt_arg])
+    </code>
+   </li>
+   <li>
+    Function calls can be nested:
+    <code>
+     print(type(var_name))
+    </code>
+   </li>
+   <li>
+    With nesting, inner functions have access to the scope of the outer functions
+   </li>
+   <li>
+    Functions can be recursive (can return a call to themself)
+   </li>
+   <li>
+    <strong>
+     Write functions to raise exceptions
+    </strong>
+    ; expect the calling code to
+    <em>
+     handle
+    </em>
+    exceptions
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="bu">help</span>(fname.mname) 
+<span class="op">%</span>timeit function(argument)  <span class="co"># in Jupyter Notebook</span>
+
+<span class="co"># more about function arguments:</span>
+<span class="co"># http://stackoverflow.com/a/1419160</span>
+<span class="co"># http://markmiyashita.com/blog/python-args-and-kwargs/</span>
+<span class="co"># http://geekodour.blogspot.com/2015/04/args-and-kwargs-in-python-explained.html</span>
+<span class="co"># https://docs.python.org/3.5/tutorial/controlflow.html#more-on-defining-functions</span>
+<span class="co"># *args makes a tuple; **kwargs makes a dictionary</span>
+<span class="kw">def</span> my_func(positional_arg, optional_keyword_arg <span class="op">=</span> default_value, <span class="op">*</span>args, <span class="op">**</span>kwargs):
+    ...
+    <span class="cf">return</span> my_var
+
+my_func(<span class="dv">2</span>, optional_keyword_arg <span class="op">=</span> my_value)
+<span class="co"># in a function call, keyword arguments must follow positional arguments</span>
+
+<span class="co"># example of exending a function's parameters while remaining </span>
+<span class="co"># backwards compatible with existing callers:</span>
+<span class="kw">def</span> log(message, when<span class="op">=</span><span class="va">None</span>):
+    <span class="co">""" Log a message with a timestamp.</span>
+<span class="co">    Args:</span>
+<span class="co">        message: Message to print.</span>
+<span class="co">        when: datetime when message occured. Defaults to the present time.</span>
+<span class="co">    """</span>
+    when <span class="op">=</span> datetime.now() <span class="cf">if</span> when <span class="op">is</span> <span class="va">None</span> <span class="cf">else</span> when  <span class="co"># LOOK HERE</span>
+    <span class="bu">print</span>(<span class="st">'</span><span class="sc">%s</span><span class="st">: </span><span class="sc">%s</span><span class="st">'</span> <span class="op">%</span> (when, message))</code></pre>
+  </div>
+  <h2>
+   <a name="closures">
+    Closures
+   </a>
+  </h2>
+  <p>
+   The scope of closures is tricky; see
+   <em>
+    Effective Python
+   </em>
+   , pp. 31-36. The general notion:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> add_to_five(num): 
+    <span class="kw">def</span> inner():  <span class="co"># write a nested function</span>
+        <span class="bu">print</span>(num<span class="op">+</span>f) 
+        
+    <span class="cf">return</span> inner  <span class="co"># return the nested function</span>
+    
+fifteen <span class="op">=</span> add_to_five(<span class="dv">10</span>)  <span class="co"># store function call (with argument) as a variable</span>
+fifteen()  <span class="co"># call variable as function</span></code></pre>
+  </div>
+  <h2>
+   <a name="decorators">
+    Decorators
+   </a>
+  </h2>
+  <ul>
+   <li>
+    Brett Slatkin:
+    <em>
+     Decorators are Python syntax for allowing one function to modify another function at runtime.
+    </em>
+   </li>
+   <li>
+    <a href="https://www.codementor.io/python/tutorial/introduction-to-decorators">
+     Introduction to decorators
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> functools
+
+<span class="kw">def</span> logme(func): 
+    
+    <span class="im">import</span> logging 
+    logging.basicConfig(level<span class="op">=</span>logging.DEBUG) 
+    
+    <span class="at">@wraps</span>(func) <span class="co"># applies decorator from functools so inner.__name__ = func.__name__, etc. </span>
+    
+    <span class="kw">def</span> inner(<span class="op">*</span>args, <span class="op">**</span>kwargs): 
+        logging.debug(<span class="st">"Called {} with {} and {}"</span>.<span class="bu">format</span>(func.<span class="va">__name__</span>, args, kwargs) 
+        <span class="cf">return</span> func(<span class="op">*</span>args, <span class="op">**</span>kwargs) 
+        
+    <span class="cf">return</span> inner 
+
+<span class="at">@logme</span> 
+<span class="kw">def</span> say_hello(): 
+    <span class="bu">print</span>(<span class="st">"Hello there!"</span>) 
+    
+say_hello() <span class="co"># syntactic sugar!!</span></code></pre>
+  </div>
+  <h1>
+   <a name="paradigms">
+    Paradigms
+   </a>
+  </h1>
+  <h2>
+   <a name="object-oriented-python">
+    Object-oriented Python
+   </a>
+  </h2>
+  <p>
+   Classes are collections of methods and attributes. An object is an instantiation of a class; everything in Python in an object.
+  </p>
+  <ul>
+   <li>
+    <a href="https://docs.python.org/3.5/tutorial/classes.html">
+     Explanation from Python 3.5 docs
+    </a>
+   </li>
+   <li>
+    <a href="http://anandology.com/python-practice-book/object_oriented_programming.html">
+     Anand Chitipothu's explanation
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">
+<span class="kw">class</span> ClassName(ParentName1, ParentName2, arg1, ...):  <span class="co"># define a class, its inheritance &amp; arguments</span>
+    
+    <span class="kw">def</span> mname(<span class="va">self</span>):  <span class="co"># create method in a class</span>
+        vname <span class="op">=</span> my_value  <span class="co"># create attributes in a class </span>
+        <span class="cf">return</span> <span class="va">self</span>.vname
+
+    <span class="kw">def</span> method_override:  <span class="co"># when method name duplicates a parent's method's name</span>
+        ...
+    
+    <span class="kw">def</span> <span class="fu">__init__</span> (<span class="va">self</span>, arg1 <span class="op">=</span> default_val):  <span class="co"># control what happens on instantiation </span>
+        ...
+        
+    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):  <span class="co"># control results of print(my_object)</span>
+        <span class="cf">return</span>({},{}.<span class="bu">format</span>(<span class="va">self</span>.__class__.<span class="va">__name__</span>, <span class="va">self</span>.vname))
+
+<span class="im">from</span> scriptname <span class="im">import</span> ClassName  <span class="co"># use a class</span>
+my_var <span class="op">=</span> ClassName.vname  <span class="co"># access attributes in the class</span>
+inst_name <span class="op">=</span> ClassName(arg)  <span class="co"># create an instance of a class</span>
+inst_name <span class="op">=</span> filename.ClassName()
+inst_name.vname <span class="op">=</span> my_value  <span class="co"># define attributes of an instance    </span></code></pre>
+  </div>
+  <h3>
+   <a name="methods">
+    Methods
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Methods are functions inherited from an object's class
+   </li>
+   <li>
+    Find methods for datatype:
+    <code>
+     help(type_name)
+    </code>
+   </li>
+   <li>
+    Methods can be chained:
+    <code>
+     my_str.lower().strip()
+    </code>
+   </li>
+   <li>
+    CAUTION: some methods change the object they’re called on
+   </li>
+  </ul>
+  <h2>
+   <a name="functional-python">
+    Functional Python
+   </a>
+  </h2>
+  <p>
+   Core concepts of the functional approach to programming, see also [
+   <a href="https://docs.python.org/3/howto/functional.html">
+    1
+   </a>
+   ], [
+   <a href="http://anandology.com/python-practice-book/functional-programming.html">
+    2
+   </a>
+   ], [
+   <a href="https://docs.python.org/3/library/functional.html">
+    3
+   </a>
+   ]:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Computation is the evaluation of functions
+    </strong>
+    ; code should be mostly functions
+   </li>
+   <li>
+    <strong>
+     Programming is done with expressions
+    </strong>
+    : pass the output of a function to another
+   </li>
+   <li>
+    either by chaining (possible if each function returns an iterable)
+   </li>
+   <li>
+    or by using intermediary variables
+   </li>
+   <li>
+    <strong>
+     No side-effects from computation
+    </strong>
+    : a function shouldn’t change values that are outside its proper scope (e.g. defining a variable in a function that reaches outside the function: def my_function(): global var_name, nonlocal var_name)
+   </li>
+   <li>
+    be especially careful about mutable objects like lists &amp; dicts
+   </li>
+   <li>
+    <strong>
+     Functions are first-class citizens
+    </strong>
+    , since they can be both inputs to and outputs from other functions
+    <ul>
+     <li>
+      <code>
+       def my_func(other_func): ...
+      </code>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Functions should be limited in scope and functionality
+    </strong>
+   </li>
+   <li>
+    e.g., not too many arguments
+   </li>
+   <li>
+    e.g., prefer short functions that do one thing
+   </li>
+  </ul>
+  <h3>
+   <a name="lambdas">
+    Lambdas
+   </a>
+  </h3>
+  <p>
+   Anonymous functions that we won’t need to use again; one line long; can’t contain assignments; automatically return the last value calculated.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="bu">filter</span>(<span class="kw">lambda</span> book: book.pages <span class="op">&gt;=</span> <span class="dv">600</span>, BOOKS)
+<span class="bu">reduce</span>(<span class="kw">lambda</span> x, y: x <span class="cf">if</span> <span class="bu">len</span>(x) <span class="op">&gt;</span> <span class="bu">len</span>(y) <span class="cf">else</span> y, [s <span class="cf">for</span> s <span class="op">in</span> strings])</code></pre>
+  </div>
+  <h3>
+   <a name="currying">
+    Currying
+   </a>
+  </h3>
+  <p>
+   currying is the technique of translating the evaluation of a function that takes multiple arguments (or a tuple of arguments) into evaluating a sequence of functions, each with a single argument.
+  </p>
+  <h3>
+   <a name="map-reduce,-filter,-etc.">
+    Map-reduce, filter, etc.
+   </a>
+  </h3>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># map: transform every element of an iterable</span>
+<span class="co"># similar to list comprehension: [my_func(i) for i in my_iterable]</span>
+<span class="co"># prefer map to list comprehension when need to nest functions</span>
+<span class="bu">list</span>(<span class="bu">map</span>(my_func, my_iterable))
+
+<span class="co"># reduce: good algorithm for summing numbers, multiplying numbers</span>
+<span class="im">from</span> functools <span class="im">import</span> <span class="bu">reduce</span>
+<span class="kw">def</span> product(x,y): <span class="cf">return</span> x<span class="op">*</span>y → <span class="bu">print</span>(<span class="bu">reduce</span>(product([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>])))
+
+<span class="co"># sorting: operator module is helpful </span>
+<span class="co"># access attributes of an object: attrgetter</span>
+<span class="co"># access items in a dict: itemgetter</span>
+<span class="bu">sorted</span>(my_data, key<span class="op">=</span>itemgetter(‘dict_key_name’), reverse<span class="op">=</span><span class="va">True</span>)
+<span class="co"># key here is a **kwarg</span>
+<span class="co"># see also: reversed()</span>
+
+<span class="co"># filtering: </span>
+
+<span class="co"># filter function tests every item in iterable, and keeps the truthy ones</span>
+<span class="co"># equivalent to: [item for item in iterable if func(item)]</span>
+<span class="kw">def</span> is_long_book(book): 
+    <span class="cf">return</span> book.pages <span class="op">&gt;=</span> <span class="dv">600</span>
+<span class="bu">filter</span>(is_long_book, books_data) 
+
+<span class="co">#  builds iterator from True elements of my_iterable or my_function(my_iterable)</span>
+<span class="bu">filter</span>([my_function,] my_iterable) 
+
+<span class="co"># builds iterator from my_iterable's False elements</span>
+<span class="im">import</span> itertools
+itertools.filterfalse(my_iterable)  
+
+<span class="co"># partial: </span>
+<span class="im">from</span> functools <span class="im">import</span> partial
+<span class="kw">def</span> markdown(book, discount): 
+    ... 
+std_discount <span class="op">=</span> partial(markdown, discount<span class="op">=</span>.<span class="dv">2</span>) 
+<span class="bu">print</span>(std_discount(my_data))</code></pre>
   </div>
   <h1>
    <a name="sources">

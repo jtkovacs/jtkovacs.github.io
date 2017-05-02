@@ -7,6 +7,43 @@
   <title>
   </title>
   <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
  </head>
  <body>
   <p id="path">
@@ -28,18 +65,8 @@
        </a>
       </li>
       <li>
-       <a href="#what-are-good-tools-for-data-viz-and-infographics-work?">
-        What are good tools for data viz and infographics work?
-       </a>
-      </li>
-      <li>
-       <a href="#what-are-best-practices-for-dashboards?">
-        What are best practices for dashboards?
-       </a>
-      </li>
-      <li>
-       <a href="#what-are-major-chart-types-and-their-use-cases?">
-        What are major chart types and their use cases?
+       <a href="#data-viz-in-python">
+        Data viz in Python
        </a>
       </li>
       <li>
@@ -77,20 +104,79 @@
    Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.
   </p>
   <h1>
-   <a name="what-are-good-tools-for-data-viz-and-infographics-work?">
-    What are good tools for data viz and infographics work?
+   <a name="data-viz-in-python">
+    Data viz in Python
    </a>
   </h1>
-  <h1>
-   <a name="what-are-best-practices-for-dashboards?">
-    What are best practices for dashboards?
-   </a>
-  </h1>
-  <h1>
-   <a name="what-are-major-chart-types-and-their-use-cases?">
-    What are major chart types and their use cases?
-   </a>
-  </h1>
+  <ul>
+   <li>
+    <a class="uri" href="http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb">
+     http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb
+    </a>
+   </li>
+   <li>
+    <a class="uri" href="http://nbviewer.jupyter.org/gist/darribas/4121857">
+     http://nbviewer.jupyter.org/gist/darribas/4121857
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">
+<span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt
+
+<span class="co"># convert to int: </span>
+my_data <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="bu">int</span>, data_in)))
+
+<span class="co"># linecharts/plots:</span>
+fig <span class="op">=</span> plt.figure()
+ax <span class="op">=</span> fig.add_subplot(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)
+x_axis_ticks <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="bu">len</span>(my_data)))
+ax.plot(x_axis_ticks, my_data, linewidth<span class="op">=</span><span class="dv">2</span>)
+ax.set_title(my_title)
+ax.set_xlim([<span class="dv">0</span>, <span class="bu">len</span>(sample)])
+ax.set_xlabel(‘Axis name’)
+ax.set_ylabel(‘Axis name’)
+fig.save_fig(my_filename)
+
+<span class="co"># table: see also tablib</span>
+<span class="im">from</span> prettytable <span class="im">import</span> PrettyTable
+my_data_header <span class="op">=</span> my_data[<span class="dv">0</span>]
+x <span class="op">=</span> PrettyTable(my_data_header)
+x.add_row(my_data[<span class="dv">1</span>])
+
+<span class="co"># plot all bars as barchart:</span>
+X <span class="op">=</span> numpy.arange(<span class="bu">len</span>(my_data))
+width <span class="op">=</span> <span class="fl">0.25</span>
+plt.bar(X<span class="op">+</span>width, prices, width)
+plt.xlim(<span class="dv">0</span>, <span class="dv">5055</span>)
+
+<span class="co"># plot buckets:</span>
+<span class="im">from</span> collections <span class="im">import</span> Counter
+<span class="kw">def</span> group_data_by_range(my_data):
+talley <span class="op">=</span> Counter()
+<span class="cf">for</span> em <span class="op">in</span> data:
+bucket <span class="op">=</span> <span class="dv">0</span>
+<span class="cf">if</span> em <span class="op">&gt;=</span><span class="dv">0</span> <span class="op">and</span> em <span class="op">&lt;</span> <span class="dv">10</span>:
+bucket <span class="op">=</span> <span class="dv">1</span>
+<span class="cf">elif</span> em <span class="op">&gt;=</span> <span class="dv">10</span> <span class="op">and</span> em <span class="op">&lt;</span> <span class="dv">20</span>:
+bucket <span class="op">=</span> <span class="dv">2</span>
+talley[bucket] <span class="op">+=</span> <span class="dv">1</span>
+<span class="cf">return</span> talley
+fig <span class="op">=</span> plt.figure()
+ax <span class="op">=</span> fig.add_subplot(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)
+plt.style.use(‘ggplot’)
+colors <span class="op">=</span> plt.rcParams[‘axes.color_cycle’]
+<span class="cf">for</span> group <span class="op">in</span> my_grouped_data:
+ax.bar(group, my_grouped_data[group], color<span class="op">=</span>colors[groups[group<span class="op">%</span><span class="bu">len</span>(my_grouped_data)])
+labels <span class="op">=</span> [‘Group <span class="dv">1</span>’, ‘Group <span class="dv">2</span>’ … ]
+ax.legend(labels)
+ax.set_title(‘Title’)
+ax.set_xlabel(‘Axis name’)
+ax.set_xticklabels(labels, ha<span class="op">=</span>’left’)
+ax.set_xticks(<span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(my_grouped_data)<span class="op">+</span><span class="dv">1</span>))
+ax.set_ylabel(‘Axis name’)
+plt.grid(<span class="va">True</span>)</code></pre>
+  </div>
   <h1>
    <a name="sources">
     Sources

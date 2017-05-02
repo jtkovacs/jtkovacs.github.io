@@ -60,81 +60,110 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     <td>
      <ul>
       <li>
-       <a href="#operators">
-        Operators
-       </a>
-      </li>
-      <li>
-       <a href="#control-flow-statements">
-        Control flow statements
-       </a>
-      </li>
-      <li>
-       <a href="#comprehensions">
-        Comprehensions
-       </a>
-      </li>
-      <li>
-       <a href="#generator-expressions">
-        Generator expressions
-       </a>
-      </li>
-      <li>
-       <a href="#datatypes">
-        Datatypes
+       <a href="#environment">
+        Environment
        </a>
        <ul>
         <li>
-         <a href="#booleans">
-          Booleans
+         <a href="#writing-&amp;-running-python">
+          Writing &amp; running Python
          </a>
         </li>
         <li>
-         <a href="#numerics">
-          Numerics
+         <a href="#managing-modules">
+          Managing modules
          </a>
         </li>
         <li>
-         <a href="#sequences">
-          Sequences
+         <a href="#which-modules?">
+          Which modules?
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#language">
+        Language
+       </a>
+       <ul>
+        <li>
+         <a href="#operators">
+          Operators
+         </a>
+        </li>
+        <li>
+         <a href="#control-flow-statements">
+          Control flow statements
+         </a>
+        </li>
+        <li>
+         <a href="#comprehensions">
+          Comprehensions
+         </a>
+        </li>
+        <li>
+         <a href="#generator-expressions">
+          Generator expressions
+         </a>
+        </li>
+        <li>
+         <a href="#datatypes">
+          Datatypes
          </a>
          <ul>
           <li>
-           <a href="#strings,-bytes,-&amp;-unicode">
-            Strings, bytes, &amp; unicode
+           <a href="#booleans">
+            Booleans
            </a>
           </li>
           <li>
-           <a href="#lists">
-            Lists
+           <a href="#numerics">
+            Numerics
            </a>
           </li>
           <li>
-           <a href="#queues">
-            Queues
+           <a href="#sequences">
+            Sequences
+           </a>
+           <ul>
+            <li>
+             <a href="#strings,-bytes,-&amp;-unicode">
+              Strings, bytes, &amp; unicode
+             </a>
+            </li>
+            <li>
+             <a href="#lists">
+              Lists
+             </a>
+            </li>
+            <li>
+             <a href="#queues">
+              Queues
+             </a>
+            </li>
+            <li>
+             <a href="#tuples">
+              Tuples
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#sets">
+            Sets
            </a>
           </li>
           <li>
-           <a href="#tuples">
-            Tuples
+           <a href="#dictionaries">
+            Dictionaries
+           </a>
+          </li>
+          <li>
+           <a href="#datetimes">
+            Datetimes
            </a>
           </li>
          </ul>
-        </li>
-        <li>
-         <a href="#sets">
-          Sets
-         </a>
-        </li>
-        <li>
-         <a href="#dictionaries">
-          Dictionaries
-         </a>
-        </li>
-        <li>
-         <a href="#datetimes">
-          Datetimes
-         </a>
         </li>
        </ul>
       </li>
@@ -148,10 +177,164 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </tr>
   </table>
   <h1>
+   <a name="environment">
+    Environment
+   </a>
+  </h1>
+  <h2>
+   <a name="writing-&amp;-running-python">
+    Writing &amp; running Python
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">python</span> --version 
+<span class="kw">python</span>  <span class="co"># launches some version of python 2</span>
+<span class="kw">python3</span>  <span class="co"># launches some version of python 3</span>
+<span class="fu">quit()</span>
+
+<span class="kw">python</span> fname.py  <span class="co"># run a script</span>
+
+<span class="co"># this code will run only if the script is executed from the command line</span>
+<span class="co"># it won't run if the script is imported by another script</span>
+<span class="kw">if</span> <span class="kw">__name__</span> == <span class="st">'__main__'</span>: 
+    <span class="co"># do something</span>
+
+<span class="kw">pip3</span> install jupyter  <span class="co"># install Jupyer Notebook</span>
+<span class="co"># http://jupyter.readthedocs.io/en/latest/install.html</span>
+
+<span class="kw">jupyter</span> notebook  <span class="co"># launches JN in wew browser</span>
+<span class="co"># quit JN by typing ctrl+c twice in the command line</span>
+<span class="co"># share JN by uploading it to GitHub, </span>
+<span class="co"># then pasting its URL into http://nbviewer.jupyter.org/</span></code></pre>
+  </div>
+  <h2>
+   <a name="managing-modules">
+    Managing modules
+   </a>
+  </h2>
+  <p>
+   <a href="https://docs.python.org/3/tutorial/modules.html#packages">
+    Libraries/packages are directories of Python scripts/modules
+   </a>
+   ; each script contains special functions, methods, and/or types.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">python3 get<span class="op">-</span>pip.py
+pip3 install module_name
+
+<span class="im">import</span> module_name  <span class="co"># use functions from module as module_name.function_name()</span>
+<span class="im">import</span> module_name <span class="im">as</span> nickname  <span class="co"># use functions as nickname.function_name()</span>
+
+<span class="im">from</span> module_name <span class="im">import</span> function_name  <span class="co"># partial import; use function as function_name()</span>
+<span class="im">from</span> module_name <span class="im">import</span> <span class="op">*</span>  <span class="co"># full import; bad practice because: </span>
+<span class="co"># (1) it floods __name__, the local namespace; </span>
+<span class="co"># (2) names you’ve defined locally or have previously imported may be overwritten; </span>
+<span class="co"># (3) the module's contents are no longer contained in the module's namespace</span>
+
+<span class="bu">dir</span>(module_name)  <span class="co"># view contents of module</span></code></pre>
+  </div>
+  <h2>
+   <a name="which-modules?">
+    Which modules?
+   </a>
+  </h2>
+  <p>
+   See also: Doug Hellmann's
+   <a href="https://pymotw.com/2/contents.html">
+    Python Module of the Week
+   </a>
+   , SciPy's
+   <a href="https://www.scipy.org/topical-software.html">
+    directory of science-related Python resources and modules
+   </a>
+   , Fredrik Lundh's
+   <a href="http://effbot.org/media/downloads/librarybook-core-modules.pdf">
+    tour of the Python standard library modules
+   </a>
+   [pdf], and the
+   <a href="https://docs.python.org/3/py-modindex.html">
+    Python Module Index
+   </a>
+   .
+  </p>
+  <ul>
+   <li>
+    For data wrangling -
+    <code>
+     collections (defaultdict), pandas (dataframes), numpy (arrays), GraphLab Create
+    </code>
+   </li>
+   <li>
+    For datetimes -
+    <code>
+     datetime, pytz
+    </code>
+   </li>
+   <li>
+    For web scraping &amp; parsing -
+    <code>
+     urllib2, requests, scrapy, beautifulsoup, robobrowser
+    </code>
+   </li>
+   <li>
+    For I/O -
+    <code>
+     csv, json, lxml
+    </code>
+   </li>
+   <li>
+    For data analysis -
+    <code>
+     math, statistics, random, numpy
+    </code>
+   </li>
+   <li>
+    For data visualization -
+    <code>
+     matplotlib, seaborn, prettytable, tablib, bokeh (interactives)
+    </code>
+   </li>
+   <li>
+    For scientific computing -
+    <code>
+     scipy (integrals, diffeqs, matrixes)
+    </code>
+   </li>
+   <li>
+    For machine learning -
+    <code>
+     scikit-learn, GraphLab Create
+    </code>
+   </li>
+   <li>
+    For text analysis -
+    <code>
+     nltk, re, string
+    </code>
+   </li>
+   <li>
+    For functional Python -
+    <code>
+     operator, functools
+    </code>
+   </li>
+   <li>
+    For testing -
+    <code>
+     nose, logging, coverage, unittest, exceptions, pdb
+    </code>
+   </li>
+  </ul>
+  <h1>
+   <a name="language">
+    Language
+   </a>
+  </h1>
+  <h2>
    <a name="operators">
     Operators
    </a>
-  </h1>
+  </h2>
   <div class="sourceCode">
    <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># COMPARISON operators</span>
 a <span class="op">==</span> b  <span class="co"># checking equality/equivalency; returns True</span>
@@ -177,11 +360,11 @@ between1_and5 <span class="op">=</span> [i <span class="cf">for</span> i <span c
 <span class="bu">all</span>(my_iterable)  <span class="co"># returns True if my_iterable is empty, or all its elements are True</span>
 <span class="bu">any</span>(my_iterable)  <span class="co"># returns False if my_iterable is empty, or any element is False</span></code></pre>
   </div>
-  <h1>
+  <h2>
    <a name="control-flow-statements">
     Control flow statements
    </a>
-  </h1>
+  </h2>
   <div class="sourceCode">
    <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># CONDITIONAL operators: </span>
 <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">2</span>:
@@ -208,11 +391,11 @@ between1_and5 <span class="op">=</span> [i <span class="cf">for</span> i <span c
 <span class="co"># INDEFINITE loop: </span>
 <span class="cf">while</span> [condition]: …  </code></pre>
   </div>
-  <h1>
+  <h2>
    <a name="comprehensions">
     Comprehensions
    </a>
-  </h1>
+  </h2>
   <p>
    Often,
    <code>
@@ -234,11 +417,11 @@ squares_dict <span class="op">=</span> { i : i<span class="op">**</span><span cl
 transposed_dict <span class="op">=</span> {<span class="bu">dict</span>[key]:key <span class="cf">for</span> key <span class="op">in</span> <span class="bu">dict</span>} 
 <span class="bu">dict</span> <span class="op">=</span> {letter: num <span class="cf">for</span> letter, num <span class="op">in</span> <span class="bu">zip</span>(<span class="st">'abcdef'</span>, <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>))} </code></pre>
   </div>
-  <h1>
+  <h2>
    <a name="generator-expressions">
     Generator expressions
    </a>
-  </h1>
+  </h2>
   <p>
    A
    <a href="http://anandology.com/python-practice-book/iterators.html">
@@ -273,11 +456,11 @@ roots <span class="op">=</span> ((x, x<span class="op">**</span><span class="fl"
 
 <span class="bu">list</span>(my_generator(data))  <span class="co"># to convert generator to list, but why??</span></code></pre>
   </div>
-  <h1>
+  <h2>
    <a name="datatypes">
     Datatypes
    </a>
-  </h1>
+  </h2>
   <p>
    Overview of
    <a href="https://docs.python.org/3.5/library/stdtypes.html">
@@ -329,11 +512,11 @@ my_integer.bit_length()  <span class="co"># how many bits to represent an intege
 
 <span class="co"># also bool(), float()</span></code></pre>
   </div>
-  <h2>
+  <h3>
    <a name="booleans">
     Booleans
    </a>
-  </h2>
+  </h3>
   <ul>
    <li>
     In addition to Boolean operands
@@ -360,11 +543,11 @@ my_integer.bit_length()  <span class="co"># how many bits to represent an intege
     </code>
    </li>
   </ul>
-  <h2>
+  <h3>
    <a name="numerics">
     Numerics
    </a>
-  </h2>
+  </h3>
   <div class="sourceCode">
    <pre class="sourceCode python"><code class="sourceCode python">my_float <span class="op">=</span> <span class="fl">5.519</span>
 <span class="bu">abs</span>(my_float)
@@ -398,11 +581,11 @@ math.log(my_float[, base])
 my_decimal_price <span class="op">=</span> Decimal(<span class="st">'5.003'</span>)
 my_decimal_price.quantize(Decimal(<span class="st">'0.01'</span>), rounding<span class="op">=</span>ROUND_UP) <span class="co"># returns 5.01</span></code></pre>
   </div>
-  <h2>
+  <h3>
    <a name="sequences">
     Sequences
    </a>
-  </h2>
+  </h3>
   <div class="sourceCode">
    <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Operations supported for all sequences:</span>
 x <span class="op">not</span> <span class="op">in</span> s  <span class="co"># membership check; returns True or False</span>
@@ -421,11 +604,11 @@ s[i:j:k]  <span class="co"># slice s, taking every kth item from index i (inclus
 <span class="co"># Stride k can be negative, but keep it positive to avoid confusion</span>
 <span class="co"># For readability, consider two statements: one to stride, the next to slice</span></code></pre>
   </div>
-  <h3>
+  <h4>
    <a name="strings,-bytes,-&amp;-unicode">
     Strings, bytes, &amp; unicode
    </a>
-  </h3>
+  </h4>
   <p>
    Like lists, strings are composed of elements that can be accessed via their index. Unlike lists, strings are immutable: individual elements cannot be deleted or modified.
   </p>
@@ -495,11 +678,11 @@ my_string.ljust(width[, fillchar])
 <span class="co"># Many of these methods have counterparts that start from the end of the string </span>
 <span class="co"># s.rindex(), s.rfind(), s.rpartition(), etc.</span></code></pre>
   </div>
-  <h3>
+  <h4>
    <a name="lists">
     Lists
    </a>
-  </h3>
+  </h4>
   <p>
    Lists store multiple elements of any type, including mixed type and including other lists. Lists are mutable; unlike string methods, most list methods alter the list in-place and return None. Lists are both sequences and containers.
   </p>
@@ -533,11 +716,11 @@ my_list.sort()  <span class="co"># sorts list elements in place</span>
 my_sorted_list <span class="op">=</span> <span class="bu">sorted</span>(my_list, reverse<span class="op">=</span><span class="va">False</span>)  <span class="co"># returns sorted copy of unaltered list</span>
 <span class="co"># https://wiki.python.org/moin/HowTo/Sorting</span></code></pre>
   </div>
-  <h3>
+  <h4>
    <a name="queues">
     Queues
    </a>
-  </h3>
+  </h4>
   <p>
    Use a
    <a href="https://docs.python.org/3/library/collections.html#deque-objects">
@@ -577,11 +760,11 @@ my_heap <span class="op">=</span> heapify(my_list)
 my_heap[<span class="dv">0</span>]  <span class="co"># always returns lowest number; here, 1</span>
 <span class="bu">print</span>(heappop(my_heap), heappop(my_heap))  <span class="co"># removes and prints lowest, next lowest, etc.; here 1, 3</span></code></pre>
   </div>
-  <h3>
+  <h4>
    <a name="tuples">
     Tuples
    </a>
-  </h3>
+  </h4>
   <p>
    Tuples addressing works like list addressing; unlike lists, though, tuples are immutable. When comparing tuples, Python proceeds on an index-by-index basis. Tuples are used for composite dictionary keys and multivariable assignment:
   </p>
@@ -598,11 +781,11 @@ directory_dict[last,first] <span class="op">=</span> <span class="st">'phone_num
 <span class="cf">for</span> last, first <span class="op">in</span> directory_dict:
         <span class="bu">print</span> first, last, directory_dict[last,first]</code></pre>
   </div>
-  <h2>
+  <h3>
    <a name="sets">
     Sets
    </a>
-  </h2>
+  </h3>
   <p>
    The value of sets is access to set operations; by design, seys lack slicing and indexing:
   </p>
@@ -629,11 +812,11 @@ my_set1.symmetric_difference(my_set2)  <span class="co"># creates a new set: (se
 <span class="co"># many of these operations have more mathematical-looking alternative notation: </span>
 <span class="co"># https://docs.python.org/3.5/library/stdtypes.html#set-types-set-frozenset</span></code></pre>
   </div>
-  <h2>
+  <h3>
    <a name="dictionaries">
     Dictionaries
    </a>
-  </h2>
+  </h3>
   <p>
    A dictionary maps keys to values; values are retrieved via their key, doing away with indices. A dictionary is much faster to search than a list, and is often used to count letter or word occurrences in a block of text.
   </p>
@@ -670,11 +853,11 @@ my_ordered_dict <span class="op">=</span> OrderedDict()  <span class="co"># reca
 my_default_dict <span class="op">=</span> defaultdict(<span class="bu">int</span>)  <span class="co"># sets default_value == 0, ready to increment</span>
 my_default_dict[<span class="st">'key'</span>] <span class="op">+=</span> <span class="dv">1</span>  <span class="co"># increment values initialized at 0</span></code></pre>
   </div>
-  <h2>
+  <h3>
    <a name="datetimes">
     Datetimes
    </a>
-  </h2>
+  </h3>
   <p>
    Code should convert local datetimes to UTC, perform computations, then convert back to local datetimes for display purposes.
   </p>

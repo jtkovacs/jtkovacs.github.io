@@ -1,4 +1,72 @@
-# Operators
+# Environment
+
+## Writing & running Python
+
+```Bash
+python --version 
+python  # launches some version of python 2
+python3  # launches some version of python 3
+quit()
+
+python fname.py  # run a script
+
+# this code will run only if the script is executed from the command line
+# it won't run if the script is imported by another script
+if __name__ == '__main__': 
+    # do something
+
+pip3 install jupyter  # install Jupyer Notebook
+# http://jupyter.readthedocs.io/en/latest/install.html
+
+jupyter notebook  # launches JN in wew browser
+# quit JN by typing ctrl+c twice in the command line
+# share JN by uploading it to GitHub, 
+# then pasting its URL into http://nbviewer.jupyter.org/
+```
+
+## Managing modules
+
+[Libraries/packages are directories of Python scripts/modules](https://docs.python.org/3/tutorial/modules.html#packages); each script contains special functions, methods, and/or types.
+
+```Python
+python3 get-pip.py
+pip3 install module_name
+
+import module_name  # use functions from module as module_name.function_name()
+import module_name as nickname  # use functions as nickname.function_name()
+
+from module_name import function_name  # partial import; use function as function_name()
+from module_name import *  # full import; bad practice because: 
+# (1) it floods __name__, the local namespace; 
+# (2) names you’ve defined locally or have previously imported may be overwritten; 
+# (3) the module's contents are no longer contained in the module's namespace
+
+dir(module_name)  # view contents of module
+```
+
+## Which modules?
+
+See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/contents.html), SciPy's [directory of science-related Python resources and modules](https://www.scipy.org/topical-software.html), Fredrik Lundh's [tour of the Python standard library modules](http://effbot.org/media/downloads/librarybook-core-modules.pdf) [pdf], and the [Python Module Index](https://docs.python.org/3/py-modindex.html).
+
+- For data wrangling - `collections (defaultdict), pandas (dataframes), numpy (arrays), GraphLab Create`
+  - For datetimes - `datetime, pytz`
+  - For web scraping & parsing - `urllib2, requests, scrapy, beautifulsoup, robobrowser`
+  - For I/O - `csv, json, lxml`
+- For data analysis - `math, statistics, random, numpy`
+- For data visualization - `matplotlib, seaborn, prettytable, tablib, bokeh (interactives)`
+- For scientific computing - `scipy (integrals, diffeqs, matrixes)`
+- For machine learning - `scikit-learn, GraphLab Create`
+- For text analysis - `nltk, re, string`
+- For functional Python - `operator, functools`
+- For testing - `nose, logging, coverage, unittest, exceptions, pdb`
+
+
+
+
+# Language
+
+
+## Operators
 
 ```Python
 # COMPARISON operators
@@ -26,7 +94,9 @@ all(my_iterable)  # returns True if my_iterable is empty, or all its elements ar
 any(my_iterable)  # returns False if my_iterable is empty, or any element is False
 ```
 
-# Control flow statements
+
+
+## Control flow statements
 
 ```Python
 # CONDITIONAL operators: 
@@ -55,7 +125,9 @@ for i in [set]: …
 while [condition]: …  
 ```
 
-# Comprehensions
+
+
+## Comprehensions
 
 Often, `for` loops can be conveniently replaced with a comprehension. Comprehensions can be fairly complex, but at a certain point it's better to switch back to a loop.
 
@@ -74,7 +146,9 @@ transposed_dict = {dict[key]:key for key in dict}
 dict = {letter: num for letter, num in zip('abcdef', range(1, 7))} 
 ```
 
-# Generator expressions
+
+
+## Generator expressions
 
 A [generator expression](http://anandology.com/python-practice-book/iterators.html), also called a naked comprehension, is useful for processing large datasets because intermediate results are not stored, so RAM isn't overwhelmed.
 
@@ -95,7 +169,9 @@ sum(i**2 for i in range(10))
 list(my_generator(data))  # to convert generator to list, but why??
 ```
 
-# Datatypes
+
+
+## Datatypes
 
 Overview of [standard types](https://docs.python.org/3.5/library/stdtypes.html):
 
@@ -123,12 +199,12 @@ my_integer.bit_length()  # how many bits to represent an integer?
 # also bool(), float()
 ```
 
-## Booleans
+### Booleans
 
 - In addition to Boolean operands `True` and `False`, all Python objects have truth values 
 - `None`, `0` for any numeric type, and empty collections evaluate as `False`
 
-## Numerics
+### Numerics
 
 ```Python
 my_float = 5.519
@@ -164,7 +240,7 @@ my_decimal_price = Decimal('5.003')
 my_decimal_price.quantize(Decimal('0.01'), rounding=ROUND_UP) # returns 5.01
 ```
 
-## Sequences
+### Sequences
 
 ```Python
 # Operations supported for all sequences:
@@ -185,7 +261,7 @@ s[i:j:k]  # slice s, taking every kth item from index i (inclusive) to j (exclus
 # For readability, consider two statements: one to stride, the next to slice
 ```
 
-### Strings, bytes, & unicode
+#### Strings, bytes, & unicode
 
 Like lists, strings are composed of elements that can be accessed via their index. Unlike lists, strings are immutable: individual elements cannot be deleted or modified. 
 
@@ -216,7 +292,7 @@ my_string.ljust(width[, fillchar])
 # s.rindex(), s.rfind(), s.rpartition(), etc.
 ```
 
-### Lists
+#### Lists
 
 Lists store multiple elements of any type, including mixed type and including other lists. Lists are mutable; unlike string methods, most list methods alter the list in-place and return None. Lists are both sequences and containers. 
 
@@ -251,7 +327,7 @@ my_sorted_list = sorted(my_list, reverse=False)  # returns sorted copy of unalte
 # https://wiki.python.org/moin/HowTo/Sorting
 ```
 
-### Queues
+#### Queues
 
 Use a [double-ended queue](https://docs.python.org/3/library/collections.html#deque-objects), a list-like datatype, when you need to quickly insert or remove items from the end and beginning (deques are a stack-queue hybrid):
 
@@ -284,7 +360,7 @@ my_heap[0]  # always returns lowest number; here, 1
 print(heappop(my_heap), heappop(my_heap))  # removes and prints lowest, next lowest, etc.; here 1, 3
 ```
 
-### Tuples
+#### Tuples
 
 Tuples addressing works like list addressing; unlike lists, though, tuples are immutable. When comparing tuples, Python proceeds on an index-by-index basis. Tuples are used for composite dictionary keys and multivariable assignment:
 
@@ -302,7 +378,7 @@ for last, first in directory_dict:
         print first, last, directory_dict[last,first]
 ```
 
-## Sets
+### Sets
 
 The value of sets is access to set operations; by design, seys lack slicing and indexing:
 
@@ -330,7 +406,7 @@ my_set1.symmetric_difference(my_set2)  # creates a new set: (set1-set2)U(set2-se
 # https://docs.python.org/3.5/library/stdtypes.html#set-types-set-frozenset
 ```
 
-## Dictionaries
+### Dictionaries
 
 A dictionary maps keys to values; values are retrieved via their key, doing away with indices. A dictionary is much faster to search than a list, and is often used to count letter or word occurrences in a block of text.
 
@@ -368,7 +444,7 @@ my_default_dict = defaultdict(int)  # sets default_value == 0, ready to incremen
 my_default_dict['key'] += 1  # increment values initialized at 0
 ```
 
-## Datetimes
+### Datetimes
 
 Code should convert local datetimes to UTC, perform computations, then convert back to local datetimes for display purposes.
 

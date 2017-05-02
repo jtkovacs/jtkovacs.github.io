@@ -212,7 +212,7 @@ zip(*iterables)
 # search file contents: 
 for line in fhand:
 line = line.rstrip()   # remove whitespace
-if line.startswith(‘From:'): print line
+if line.startswith('From:'): print line
 # search more efficiently:
 for line in fhand:
 line = line.rstrip()

@@ -317,55 +317,55 @@ returns doc string <span class="cf">for</span> function: function_name.__doc__</
 <span class="co"># search file contents: </span>
 <span class="cf">for</span> line <span class="op">in</span> fhand:
 line <span class="op">=</span> line.rstrip()   <span class="co"># remove whitespace</span>
-<span class="cf">if</span> line.startswith(‘From:<span class="st">'): print line</span>
-<span class="st"># search more efficiently:</span>
-<span class="st">for line in fhand:</span>
-<span class="st">line = line.rstrip()</span>
-<span class="st">if not line.startswith('</span>From:<span class="st">') : continue </span>
-<span class="st">print line</span>
+<span class="cf">if</span> line.startswith(<span class="st">'From:'</span>): <span class="bu">print</span> line
+<span class="co"># search more efficiently:</span>
+<span class="cf">for</span> line <span class="op">in</span> fhand:
+line <span class="op">=</span> line.rstrip()
+<span class="cf">if</span> <span class="op">not</span> line.startswith(<span class="st">'From:'</span>) : <span class="cf">continue</span> 
+<span class="bu">print</span> line
 
-<span class="st"># find specific string: </span>
-<span class="st">for line in fhand:</span>
-<span class="st">line = line.rstrip()</span>
-<span class="st">if line.find('</span>desired string<span class="st">') == -1 :  continue</span>
-<span class="st">print line</span>
+<span class="co"># find specific string: </span>
+<span class="cf">for</span> line <span class="op">in</span> fhand:
+line <span class="op">=</span> line.rstrip()
+<span class="cf">if</span> line.find(<span class="st">'desired string'</span>) <span class="op">==</span> <span class="op">-</span><span class="dv">1</span> :  <span class="cf">continue</span>
+<span class="bu">print</span> line
 
-<span class="st"># troubleshooting  whitespace errors: print repr(strname)</span>
-<span class="st">inspect pandas dataframe: frame.info()</span>
+<span class="co"># troubleshooting  whitespace errors: print repr(strname)</span>
+inspect pandas dataframe: frame.info()
 
-<span class="st"># count w/ standard library</span>
-<span class="st">from collections import defaultdict</span>
-<span class="st">def get_counts(data):</span>
-<span class="st">counts=defaultdict(int) # initialize to 0</span>
-<span class="st">for x in data:</span>
-<span class="st">counts[x]+=1</span>
-<span class="st">return counts</span>
+<span class="co"># count w/ standard library</span>
+<span class="im">from</span> collections <span class="im">import</span> defaultdict
+<span class="kw">def</span> get_counts(data):
+counts<span class="op">=</span>defaultdict(<span class="bu">int</span>) <span class="co"># initialize to 0</span>
+<span class="cf">for</span> x <span class="op">in</span> data:
+counts[x]<span class="op">+=</span><span class="dv">1</span>
+<span class="cf">return</span> counts
 
-<span class="st"># rank w/ standard library</span>
-<span class="st">from collections import Counter</span>
-<span class="st">counts = Counter(data)</span>
-<span class="st">counts.most_common(10)</span>
+<span class="co"># rank w/ standard library</span>
+<span class="im">from</span> collections <span class="im">import</span> Counter
+counts <span class="op">=</span> Counter(data)
+counts.most_common(<span class="dv">10</span>)
 
-<span class="st"># count w/ pandas</span>
-<span class="st">item_counts = frame[‘item’].value_counts()</span>
+<span class="co"># count w/ pandas</span>
+item_counts <span class="op">=</span> frame[‘item’].value_counts()
 
-<span class="st"># clean w/ pandas</span>
-<span class="st">clean_field = frame[‘field’].fillna(‘Missing’)</span>
-<span class="st">clean_field[clean_field==’’] = ‘Unknown’</span>
-<span class="st">clean_frame = framep[frame.a.notnull()]</span>
+<span class="co"># clean w/ pandas</span>
+clean_field <span class="op">=</span> frame[‘field’].fillna(‘Missing’)
+clean_field[clean_field<span class="op">==</span>’’] <span class="op">=</span> ‘Unknown’
+clean_frame <span class="op">=</span> framep[frame.a.notnull()]
 
-<span class="st"># plot</span>
-<span class="st">item_counts.plot(kind=’barh’,rot=0)</span>
+<span class="co"># plot</span>
+item_counts.plot(kind<span class="op">=</span>’barh’,rot<span class="op">=</span><span class="dv">0</span>)
 
-<span class="st"># numpy search for text in frame</span>
-<span class="st">result = np.where(clean_frame[field].str.contains(‘text’),’Group 1’, ‘ Group 2’)</span>
-<span class="st"># Binary labeling: Group 1 where contains text, Group 2 otherwise</span>
+<span class="co"># numpy search for text in frame</span>
+result <span class="op">=</span> np.where(clean_frame[field].<span class="bu">str</span>.contains(‘text’),’Group <span class="dv">1</span>’, ‘ Group <span class="dv">2</span>’)
+<span class="co"># Binary labeling: Group 1 where contains text, Group 2 otherwise</span>
 
-<span class="st"># group &amp; rank  results</span>
-<span class="st">results_by_group = clean_frame.groupby([field,result])</span>
-<span class="st">group_counts = results_by_group.size().unstack().fillna(0)</span>
-<span class="st">indexer=group_counts.sum(1).argsort()</span>
-<span class="st">count_subset=group_counts.take(indexer)[-10:]</span></code></pre>
+<span class="co"># group &amp; rank  results</span>
+results_by_group <span class="op">=</span> clean_frame.groupby([field,result])
+group_counts <span class="op">=</span> results_by_group.size().unstack().fillna(<span class="dv">0</span>)
+indexer<span class="op">=</span>group_counts.<span class="bu">sum</span>(<span class="dv">1</span>).argsort()
+count_subset<span class="op">=</span>group_counts.take(indexer)[<span class="op">-</span><span class="dv">10</span>:]</code></pre>
   </div>
  </body>
 </html>

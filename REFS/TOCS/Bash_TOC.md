@@ -12,6 +12,10 @@
 	- [Find and regex](#find-and-regex)
 	- [Calculate and analyze](#calculate-and-analyze)
 	- [Combine and split files](#combine-and-split-files)
+- [Sources](#sources)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
 </td></tr></table>
 # Bash basics
 
@@ -303,7 +307,7 @@ split [options] filename prefix
 # options:
 # -l linenumber
 # -b bytes
-
+```
 
 
 # Sources

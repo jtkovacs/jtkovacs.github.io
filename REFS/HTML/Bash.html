@@ -137,6 +137,28 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         </li>
        </ul>
       </li>
+      <li>
+       <a href="#sources">
+        Sources
+       </a>
+       <ul>
+        <li>
+         <a href="#references">
+          References
+         </a>
+        </li>
+        <li>
+         <a href="#read">
+          Read
+         </a>
+        </li>
+        <li>
+         <a href="#unread">
+          Unread
+         </a>
+        </li>
+       </ul>
+      </li>
      </ul>
     </td>
    </tr>
@@ -699,12 +721,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     Combine and split files
    </a>
   </h2>
-  <p>
-   ```Bash cat file1 file2 file3 &gt; newfile # creates or overwrites newfile cat file2 &gt;&gt; file1 # appends file2 to file1
-  </p>
-  <p>
-   split [options] filename prefix # options: # -l linenumber # -b bytes
-  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cat</span> file1 file2 file3 <span class="kw">&gt;</span> newfile  <span class="co"># creates or overwrites newfile</span>
+<span class="kw">cat</span> file2 <span class="kw">&gt;&gt;</span> file1  <span class="co"># appends file2 to file1</span>
+
+<span class="kw">split</span> [options] filename prefix
+<span class="co"># options:</span>
+<span class="co"># -l linenumber</span>
+<span class="co"># -b bytes</span></code></pre>
+  </div>
   <h1>
    <a name="sources">
     Sources

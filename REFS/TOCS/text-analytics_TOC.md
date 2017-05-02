@@ -65,8 +65,6 @@ re.match(r’Jac’, data) # the r denotes a raw string
 re.search(pattern, text, flags)
 # all nonoverlapping: 
 re.findall(pattern, text, flags)
-# pass count parameter into findall:
-return re.findall(r'\w{%d,} %my_int, my_str')
 
 # phone number, note escaped parentheses:
 re.search(r’\(\d\d\d\) \d\d\d-\d\d\d\d’, data)
@@ -93,15 +91,15 @@ for match in my_regex.finditer(data):
     print(‘{first} {last} <{email}>’.format(**match.groupdict())) 
 ```
     
-- \\w = any Unicode word character,  \W = anything not a Unicode word character
-- \\s = any whitespace, \S = anything not whitespace, \t = tab
-- \\d = any number 0-9, \D = any non-number
-- \\b = word boundaries, \B = not word boundaries
+- \\w = any Unicode word character,  \\W = anything not a Unicode word character
+- \\s = any whitespace, \\S = anything not whitespace, \t = tab
+- \\d = any number 0-9, \\D = any non-number
+- \\b = word boundaries, \\B = not word boundaries
 
 counts, for when something occurs multiple times:
 
 - {3} = occurs 3 times, {,3} = 0-3 times, {3,} = 3 or more times, {3-5} = 3-5 times
-- \w? = 0-1 word characters, \w* = 0-infinite word characters, \w+ = 1-infinite word characters
+- \\w? = 0-1 word characters, \\w* = 0-infinite word characters, \\w+ = 1-infinite word characters
 
 
 sets let us combine explicit characters and escape patterns into pieces that can be repeated multiple time; they also let us specify pieces that should be left out of any matches:

@@ -172,8 +172,6 @@ re.match(r’Jac’, data) <span class="co"># the r denotes a raw string</span>
 re.search(pattern, text, flags)
 <span class="co"># all nonoverlapping: </span>
 re.findall(pattern, text, flags)
-<span class="co"># pass count parameter into findall:</span>
-<span class="cf">return</span> re.findall(<span class="vs">r'\w{</span><span class="sc">%d</span><span class="vs">,} %my_int, my_str'</span>)
 
 <span class="co"># phone number, note escaped parentheses:</span>
 re.search(r’<span class="op">\</span>(<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>) <span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">-\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d’, data)
@@ -210,16 +208,16 @@ my_regex.search(data)
   </div>
   <ul>
    <li>
-    \w = any Unicode word character, = anything not a Unicode word character
+    \w = any Unicode word character, \W = anything not a Unicode word character
    </li>
    <li>
-    \s = any whitespace, = anything not whitespace, = tab
+    \s = any whitespace, \S = anything not whitespace, = tab
    </li>
    <li>
-    \d = any number 0-9, = any non-number
+    \d = any number 0-9, \D = any non-number
    </li>
    <li>
-    \b = word boundaries, = not word boundaries
+    \b = word boundaries, \B = not word boundaries
    </li>
   </ul>
   <p>
@@ -230,7 +228,7 @@ my_regex.search(data)
     {3} = occurs 3 times, {,3} = 0-3 times, {3,} = 3 or more times, {3-5} = 3-5 times
    </li>
    <li>
-    ? = 0-1 word characters,  = 0-infinite word characters, + = 1-infinite word characters
+    \w? = 0-1 word characters, \w* = 0-infinite word characters, \w+ = 1-infinite word characters
    </li>
   </ul>
   <p>

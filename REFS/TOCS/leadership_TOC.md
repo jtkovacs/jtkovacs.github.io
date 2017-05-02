@@ -1,11 +1,11 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/leadership.html">https://jtkovacs.github.io/REFS/HTML/leadership.html</a></p><table class="TOC"><tr><td>- [Source](#source)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/leadership.html">https://jtkovacs.github.io/REFS/HTML/leadership.html</a></p><table class="TOC"><tr><td>- [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
 	- [Unread](#unread)
 </td></tr></table>
 
 
-# Source
+# Sources
 
 ## References
 

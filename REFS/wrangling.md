@@ -199,7 +199,7 @@ json.dump(list_of_dicts, my_file)
 ```
 
 
-## ... to database via Peewee ORM
+### ... integrate database via Peewee ORM
 
 ```Python
 pip install peewee

@@ -73,11 +73,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          <a href="#...-in-python">
           ... in Python
          </a>
-        </li>
-        <li>
-         <a href="#...-to-database-via-peewee-orm">
-          ... to database via Peewee ORM
-         </a>
+         <ul>
+          <li>
+           <a href="#...-integrate-database-via-peewee-orm">
+            ... integrate database via Peewee ORM
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
       </li>
@@ -328,11 +330,11 @@ json.dumps(my_list)
 <span class="cf">with</span> <span class="bu">open</span>(‘filename.json’, ‘a’) <span class="im">as</span> my_file:
 json.dump(list_of_dicts, my_file)</code></pre>
   </div>
-  <h2>
-   <a name="...-to-database-via-peewee-orm">
-    ... to database via Peewee ORM
+  <h3>
+   <a name="...-integrate-database-via-peewee-orm">
+    ... integrate database via Peewee ORM
    </a>
-  </h2>
+  </h3>
   <div class="sourceCode">
    <pre class="sourceCode python"><code class="sourceCode python">pip install peewee
 <span class="im">from</span> peewee <span class="im">import</span> <span class="op">*</span>

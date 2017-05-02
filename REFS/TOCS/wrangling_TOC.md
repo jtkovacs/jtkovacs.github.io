@@ -1,7 +1,7 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">https://jtkovacs.github.io/REFS/HTML/wrangling.html</a></p><table class="TOC"><tr><td>- [I/O](#i/o)
 	- [... in R](#...-in-r)
 	- [... in Python](#...-in-python)
-	- [... to database via Peewee ORM](#...-to-database-via-peewee-orm)
+		- [... integrate database via Peewee ORM](#...-integrate-database-via-peewee-orm)
 - [Data wrangling](#data-wrangling)
 </td></tr></table>
 # I/O
@@ -205,7 +205,7 @@ json.dump(list_of_dicts, my_file)
 ```
 
 
-## ... to database via Peewee ORM
+### ... integrate database via Peewee ORM
 
 ```Python
 pip install peewee

@@ -317,13 +317,6 @@ returns doc string <span class="cf">for</span> function: function_name.__doc__</
     ... in R
    </a>
   </h2>
-  <div class="sourceCode">
-   <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>) &gt;<span class="st"> </span><span class="dv">5</span>  <span class="co"># returns vector of Booleans</span>
-my_selection &lt;-<span class="st"> </span>my_vec &gt;<span class="st"> </span><span class="dv">5</span>  <span class="co"># create new vector based on selection</span>
-<span class="co"># &lt;, &gt; can be used with strings, e.g. "Hello" &gt; "Goodbye"; it compares based on alphabetical order, where A is smallest</span>
-<span class="co"># &lt;, &gt; can be used with Booleans, since TRUE == 1 and FALSE == 0 </span>
-<span class="co"># one trick: evaluate a vector to yield a Boolean vector, and then sum the Boolean vector: gives #TRUE</span></code></pre>
-  </div>
   <ul>
    <li>
     <a href="http://bigdatauniversity.com/courses/using-r-with-databases/">
@@ -359,7 +352,13 @@ my_selection &lt;-<span class="st"> </span>my_vec &gt;<span class="st"> </span><
    </li>
   </ul>
   <div class="sourceCode">
-   <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="st">"Your text here"</span>)
+   <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>) &gt;<span class="st"> </span><span class="dv">5</span>  <span class="co"># returns vector of Booleans</span>
+my_selection &lt;-<span class="st"> </span>my_vec &gt;<span class="st"> </span><span class="dv">5</span>  <span class="co"># create new vector based on selection</span>
+<span class="co"># &lt;, &gt; can be used with strings, e.g. "Hello" &gt; "Goodbye"; it compares based on alphabetical order, where A is smallest</span>
+<span class="co"># &lt;, &gt; can be used with Booleans, since TRUE == 1 and FALSE == 0 </span>
+<span class="co"># one trick: evaluate a vector to yield a Boolean vector, and then sum the Boolean vector: gives #TRUE</span>
+
+<span class="kw">print</span>(<span class="st">"Your text here"</span>)
 <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">""</span>, my_var, <span class="st">""</span>)
 
 <span class="kw">seq</span>(a,b,<span class="dt">length.out=</span>n)

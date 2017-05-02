@@ -196,13 +196,6 @@ Searching, counting, ranking, grouping, handling whitespace
 
 ## ... in R
 
-```R
-c(4,5,6) > 5  # returns vector of Booleans
-my_selection <- my_vec > 5  # create new vector based on selection
-# <, > can be used with strings, e.g. "Hello" > "Goodbye"; it compares based on alphabetical order, where A is smallest
-# <, > can be used with Booleans, since TRUE == 1 and FALSE == 0 
-# one trick: evaluate a vector to yield a Boolean vector, and then sum the Boolean vector: gives #TRUE
-```
 
 - [Big Data U - Using R with Databases](http://bigdatauniversity.com/courses/using-r-with-databases/)
 - [http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb](http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb)
@@ -211,7 +204,14 @@ my_selection <- my_vec > 5  # create new vector based on selection
 - library for web scraping: [https://github.com/hadley/rvest](https://github.com/hadley/rvest)
 - library: [https://github.com/smbache/magrittr](https://github.com/smbache/magrittr) 
 
+
 ```R
+c(4,5,6) > 5  # returns vector of Booleans
+my_selection <- my_vec > 5  # create new vector based on selection
+# <, > can be used with strings, e.g. "Hello" > "Goodbye"; it compares based on alphabetical order, where A is smallest
+# <, > can be used with Booleans, since TRUE == 1 and FALSE == 0 
+# one trick: evaluate a vector to yield a Boolean vector, and then sum the Boolean vector: gives #TRUE
+
 print("Your text here")
 print(paste("", my_var, "")
 

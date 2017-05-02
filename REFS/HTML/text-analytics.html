@@ -108,10 +108,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </a>
   </h1>
   <div class="sourceCode">
-   <pre class="sourceCode python"><code class="sourceCode python">reserve order of elements: <span class="bu">list</span>.reverse(), my_string[::<span class="op">-</span><span class="dv">1</span>] 
-selectively replace: str_name.replace(‘this’,’with this’) 
-find index of known element: <span class="bu">list</span>.index(‘str name’) 
-<span class="co">#times element occurs: list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list) </span></code></pre>
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># reserve order of elements: </span>
+<span class="bu">list</span>.reverse(), my_string[::<span class="op">-</span><span class="dv">1</span>] 
+<span class="co"># selectively replace: </span>
+str_name.replace(‘this’,’with this’) 
+<span class="co"># find index of known element: </span>
+<span class="bu">list</span>.index(‘str name’) 
+<span class="co"># times element occurs: </span>
+<span class="bu">list</span>.count(‘em_name’) makes <span class="bu">tuple</span> <span class="cf">with</span> (index,value): <span class="bu">enumerate</span>(my_list) </code></pre>
   </div>
   <h2>
    <a name="manage-punctuation,-case,-&amp;-whitespace">
@@ -147,12 +151,17 @@ str_index <span class="op">=</span> my_string.index(x,i,j)  <span class="co"># r
 <span class="bu">str</span>.startswith(x,i,j)
 my_string.count(x,i,j)</code></pre>
   </div>
-  <p>
-   https://docs.python.org/3/library/re.html https://docs.python.org/3/howto/regex.html
-  </p>
-  <p>
-   http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
-  </p>
+  <ul>
+   <li>
+    https://docs.python.org/3/library/re.html
+   </li>
+   <li>
+    https://docs.python.org/3/howto/regex.html
+   </li>
+   <li>
+    http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
+   </li>
+  </ul>
   <div class="sourceCode">
    <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># match the beginning of a string:</span>
 re.match(pattern, text, flags)
@@ -164,7 +173,7 @@ re.search(pattern, text, flags)
 <span class="co"># all nonoverlapping: </span>
 re.findall(pattern, text, flags)
 <span class="co"># pass count parameter into findall:</span>
-<span class="co"># return re.findall(r’\w{%d,} %my_int, my_str’)</span>
+<span class="cf">return</span> re.findall(<span class="vs">r'\w{</span><span class="sc">%d</span><span class="vs">,} %my_int, my_str'</span>)
 
 <span class="co"># phone number, note escaped parentheses:</span>
 re.search(r’<span class="op">\</span>(<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>) <span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">-\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d’, data)

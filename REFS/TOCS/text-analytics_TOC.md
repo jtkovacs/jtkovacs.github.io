@@ -11,10 +11,14 @@
 
 
 ```Python
-reserve order of elements: list.reverse(), my_string[::-1] 
-selectively replace: str_name.replace(‘this’,’with this’) 
-find index of known element: list.index(‘str name’) 
-#times element occurs: list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list) 
+# reserve order of elements: 
+list.reverse(), my_string[::-1] 
+# selectively replace: 
+str_name.replace(‘this’,’with this’) 
+# find index of known element: 
+list.index(‘str name’) 
+# times element occurs: 
+list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list) 
 ```
 
 ## Manage punctuation, case, & whitespace
@@ -46,10 +50,10 @@ str.endswith(x,i,j)
 str.startswith(x,i,j)
 my_string.count(x,i,j)
 ```
-https://docs.python.org/3/library/re.html
-https://docs.python.org/3/howto/regex.html
 
-http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
+- https://docs.python.org/3/library/re.html
+- https://docs.python.org/3/howto/regex.html
+- http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
 
 ```Python
 # match the beginning of a string:
@@ -62,13 +66,12 @@ re.search(pattern, text, flags)
 # all nonoverlapping: 
 re.findall(pattern, text, flags)
 # pass count parameter into findall:
-# return re.findall(r’\w{%d,} %my_int, my_str’)
+return re.findall(r'\w{%d,} %my_int, my_str')
 
 # phone number, note escaped parentheses:
 re.search(r’\(\d\d\d\) \d\d\d-\d\d\d\d’, data)
 # make parentheses, space, hyphen optional in phone number
 r’\)?\d{3})?\s?-?\d\{3}-\d{4}’
-
 ```
 
 flags:

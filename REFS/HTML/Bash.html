@@ -111,23 +111,28 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        </ul>
       </li>
       <li>
-       <a href="#sources">
-        Sources
+       <a href="#bash-recipes">
+        Bash recipes
        </a>
        <ul>
         <li>
-         <a href="#references">
-          References
+         <a href="#write,-read,-print">
+          Write, read, print
          </a>
         </li>
         <li>
-         <a href="#read">
-          Read
+         <a href="#find-and-regex">
+          Find and regex
          </a>
         </li>
         <li>
-         <a href="#unread">
-          Unread
+         <a href="#calculate-and-analyze">
+          Calculate and analyze
+         </a>
+        </li>
+        <li>
+         <a href="#combine-and-split-files">
+          Combine and split files
          </a>
         </li>
        </ul>
@@ -589,6 +594,117 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">cat</span> <span class="kw">&lt;</span> file  <span class="co"># display file by rdct to cat's stdin; same as &gt;&gt; cat file</span>
 <span class="kw">cat</span> file <span class="kw">|</span> <span class="kw">less</span>  <span class="co"># display large files by rdct cat's stdout to less's stdin</span></code></pre>
   </div>
+  <h1>
+   <a name="bash-recipes">
+    Bash recipes
+   </a>
+  </h1>
+  <h2>
+   <a name="write,-read,-print">
+    Write, read, print
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">touch</span> ~/dirname/file  <span class="co"># create file, or update its modification timestamp if file already exists</span>
+<span class="kw">nano</span> file  <span class="co"># open file in text editor</span>
+<span class="co"># Hotkeys for nano:</span>
+<span class="co"># ^a jumps to beginning of line</span>
+<span class="co"># ^e jumps to end of line</span>
+
+<span class="kw">head</span> file  <span class="co"># show first 10 lines of file</span>
+<span class="kw">tail</span> -n 20 file  <span class="co"># show last 20 lines of file</span>
+<span class="kw">more</span> file  <span class="co"># open long file in special reading view</span>
+<span class="kw">less</span> file  <span class="co"># open long file in special reading view</span>
+<span class="co"># Hotkeys for less:</span>
+<span class="co"># D to go forward one page</span>
+<span class="co"># U to go up one page</span>
+<span class="co"># &gt; to go to end of document</span>
+<span class="co"># &lt; to go to top of document</span>
+<span class="co"># /regex to search, then n and N to page up and down through results</span>
+<span class="co"># q to quit</span>
+
+<span class="kw">cat</span> file  <span class="co"># show file contents on screen </span>
+<span class="kw">cat</span> file1 file2  <span class="co"># shows concatenated files</span>
+<span class="kw">tac</span> file  <span class="co"># show content of file in reverse order</span>
+<span class="kw">clear</span>  <span class="co"># clear the screen by printing many blank lines</span>
+
+<span class="kw">lpr</span> file  <span class="co"># send file to default printer</span>
+<span class="kw">lpr</span> -P printer file  <span class="co"># send file to specified printer</span>
+<span class="kw">lpq</span>  <span class="co"># display print queue</span>
+<span class="kw">lprm</span> jobnum  <span class="co"># delete specified job from print queue</span>
+<span class="kw">lprm</span> -  <span class="co"># delete all jobs from print queue, subject to user permissions</span></code></pre>
+  </div>
+  <h2>
+   <a name="find-and-regex">
+    Find and regex
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">find</span> ... <span class="co"># http://ss64.com/bash/find.html, http://do.co/2hrRPfN</span>
+
+<span class="co"># Some Git commands (grep, less, sed, awk, etc.) take regex expressions:</span>
+<span class="co"># http://tldp.org/LDP/Bash-Beginners-Guide/html/chap_04.html</span>
+<span class="co"># http://www.regular-expressions.info/reference.html</span>
+<span class="co"># http://www.regular-expressions.info/refquick.html</span>
+<span class="kw">grep</span> REGEX file.txt  <span class="co"># searches for regex pattern in filenames</span>
+<span class="kw">grep</span> -i REGEX file.txt  <span class="co"># option makes grep case-insensitive</span>
+<span class="kw">grep</span> -R REGEX path/dir/  <span class="co"># searches directory and outputs filename:line of hits</span>
+<span class="kw">grep</span> -Rl REGEX path/dir/  <span class="co"># searches directory and outputs filename of hits</span>
+
+<span class="co"># In general (ls, cp, etc.), Git uses its own syntaxes for pattern matching and globbing:</span>
+<span class="co"># http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_03.html</span>
+<span class="co"># http://wiki.bash-hackers.org/syntax/pattern</span>
+<span class="co"># http://wiki.bash-hackers.org/syntax/expansion/globs</span>
+<span class="kw">ls</span> <span class="dt">\*{jpg,png}</span>  <span class="co"># list anything ending with either 'jpg' or 'png'</span>
+<span class="kw">cp</span> <span class="dt">\*</span>html dirname  <span class="co"># copy anything ending with 'html' to specified directory</span>
+<span class="kw">cp</span> [abd]<span class="dt">\*</span>.txt dirname  <span class="co"># copy all files beginning with 'a', 'b', or 'c' and ending with '.txt'</span>
+<span class="kw">cp</span> [!0-9]<span class="dt">\*</span>.txt dirname  <span class="co"># copy all files  ending with '.txt', NOT beginning with a number between 0-9</span>
+<span class="kw">cp</span> [[:upper:]]<span class="dt">\*</span> dirname  <span class="co"># copy all files that begin with a capital letter; </span>
+<span class="co"># see also [[:lower:]], [[:digit:]], [[:alpha:]], [[:alnum:]]</span>
+<span class="kw">cp</span> b?t.txt dirname  <span class="co"># copy all files with exactly one character between 'b' and 't.txt'</span>
+<span class="kw">cp</span> b??t.txt dirname  <span class="co"># copy all files with exactly two characters between 'b' and 't.txt'</span></code></pre>
+  </div>
+  <h2>
+   <a name="calculate-and-analyze">
+    Calculate and analyze
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cal</span>  <span class="co"># displays month calendar</span>
+<span class="kw">cal</span> -y  <span class="co"># displays calendar for current year</span>
+<span class="kw">cal</span> 1995  <span class="co"># displays calendar for 1995</span>
+<span class="kw">date</span>  <span class="co"># displays UTC date &amp; time</span>
+
+<span class="kw">expr</span> 2 + 2  <span class="co"># displays sum; spaces are important</span>
+<span class="kw">bc</span>  <span class="co"># simple calculator program</span>
+
+<span class="kw">wc</span> file  <span class="co"># display text file's #lines, #words, #bytes</span>
+<span class="kw">wc</span> -L file  <span class="co"># display num_characters in longest line</span>
+<span class="kw">cat</span> file1 <span class="kw">|</span> <span class="kw">wc</span> <span class="kw">|</span> <span class="kw">cat</span> <span class="kw">&gt;</span> file2  <span class="co"># create/overwrite file2 with #lines, #words, #bytes of file1</span>
+
+<span class="kw">sort</span> file  <span class="co"># sort lines alphabetically</span>
+<span class="kw">sort</span> -n file  <span class="co"># sort numbers</span>
+<span class="kw">sort</span> -t: -k4 file  <span class="co"># sort 4th column of semicolon-delineated text file</span>
+<span class="kw">sort</span> file <span class="kw">&gt;</span> new_file  <span class="co"># save sort to file</span>
+<span class="kw">cat</span> file <span class="kw">|</span> <span class="kw">sort</span> <span class="kw">&gt;</span> sorted-file  <span class="co"># sort items in a file, and save to a new file</span>
+<span class="kw">sort</span> file1 <span class="kw">|</span> <span class="kw">uniq</span> <span class="kw">&gt;</span> file2  <span class="co"># creates file2, an alphabetized set of file1</span>
+<span class="co"># The uniq command filters out adjacent duplicate lines in a file, so always call sort first</span>
+
+<span class="kw">sed</span> <span class="st">'s/search_string/replace_string'</span> file.txt  <span class="co"># find and replace 1st occurrence</span>
+<span class="kw">sed</span> <span class="st">'s/search_string/replace_string/g'</span> file.txt  <span class="co"># find and replace all occurrences</span>
+<span class="kw">diff</span> file1 file2  <span class="co"># get differences between files</span></code></pre>
+  </div>
+  <h2>
+   <a name="combine-and-split-files">
+    Combine and split files
+   </a>
+  </h2>
+  <p>
+   ```Bash cat file1 file2 file3 &gt; newfile # creates or overwrites newfile cat file2 &gt;&gt; file1 # appends file2 to file1
+  </p>
+  <p>
+   split [options] filename prefix # options: # -l linenumber # -b bytes
+  </p>
   <h1>
    <a name="sources">
     Sources

@@ -74,23 +74,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           ... in R
          </a>
         </li>
-       </ul>
-      </li>
-      <li>
-       <a href="#set-up-an-empty-vector-of-5000-nas-to-store-sample-means:">
-        Set up an empty vector of 5000 NAs to store sample means:
-       </a>
-      </li>
-      <li>
-       <a href="#take-5000-samples-of-size-50-of-'area'-and-store-all-of-them-in-'sample_means50'.">
-        Take 5000 samples of size 50 of 'area' and store all of them in 'sample_means50'.
-       </a>
-      </li>
-      <li>
-       <a href="#view-the-result.-if-you-want,-you-can-increase-the-bin-width-to-show-more-detail-by-changing-the-'breaks'-argument.">
-        View the result. If you want, you can increase the bin width to show more detail by changing the 'breaks' argument.
-       </a>
-       <ul>
         <li>
          <a href="#...-in-python">
           ... in Python
@@ -182,99 +165,99 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     ... in R
    </a>
   </h2>
-  <blockquote>
-   <blockquote>
-    <p>
-     rowSums(my_mat) colSums(my_mat) mean(my_vec, trim = 0, na.rm = FALSE, ...) # trim is used to drop some observations from both end of the sorted vector; When trim = 0.3, 3 values from each end will be dropped from the calculations to find mean. na.rm is used to remove the missing values from the input vector. If there are missing values, then the mean function returns NA; To drop the missing values from the calculation use na.rm = TRUE. which means remove the NA values.
-    </p>
-   </blockquote>
-  </blockquote>
-  <blockquote>
-   <blockquote>
-    <p>
-     my_vec1 + my_vec2 # elementwise sum sum of vector elements: sum(my_vector) mean(my_vector) seq(a,b,length.out=n) crossprod(x_vec,y_vec)
-    </p>
-   </blockquote>
-  </blockquote>
-  <blockquote>
-   <blockquote>
-    <p>
-     ceiling(x) floor(x) trunc(x, ...) round(x, digits = 0) signif(x, digits = 6)
-    </p>
-   </blockquote>
-  </blockquote>
-  <p>
-   functions: absolute value: abs(), abs(x1-x2) gives absolute difference
-  </p>
-  <p>
-   mean() nchar(my_vec) # counts number of characters in a vector of characters (strings) max(my_data, na.rm = FALSE, ...) min(my_data) summary() var() median() confidence intervals: inference(my_dav, type="ci", method="simulation", conflevel=0.9, est="mean", boot_method="perc") method=simulation, theoretical boot_method=perc, se est=mean, median, proportion hypothesis testing: inference(y = nc
-   <span class="math inline">
-    <em>
-     w
-    </em>
-    <em>
-     e
-    </em>
-    <em>
-     i
-    </em>
-    <em>
-     g
-    </em>
-    <em>
-     h
-    </em>
-    <em>
-     t
-    </em>
-    ,
-    <em>
-     x
-    </em>
-    =
-    <em>
-     n
-    </em>
-    <em>
-     c
-    </em>
-   </span>
-   habit, est = "mean", type = "ht", null = 0, alternative = "twosided", method = "theoretical") alternative=”greater” inference(us12$response, est = "proportion", type = "ci", method = "theoretical", success = "atheist") compare: by(numerical_dataset, categorical_dataset, mean/length/...) cor(var1, var2)
-  </p>
-  <p>
-   http://www.rdocumentation.org/packages/stats/versions/3.3.1/topics/sd?
-  </p>
-  <p>
-   probability (in/dependent events and simulating event sequences) simulate: possible_values &lt;- c("heads", "tails") sample(possible_values, size=, replace=, prob=c())
-  </p>
-  <p>
-   generate sample distribution: The sampling distribution is calculated by resampling from the population, the bootstrap distribution is calculated by resampling from the sample; To construct the 95% bootstrap confidence interval using the percentile method, we estimate the values of the 5th and 95th percentiles of the bootstrap distribution. # Set up an empty vector of 5000 NAs to store sample means: sample_means50 &lt;- rep(NA, 5000)
-  </p>
-  <h1>
-   <a name="take-5000-samples-of-size-50-of-'area'-and-store-all-of-them-in-'sample_means50'.">
-    Take 5000 samples of size 50 of 'area' and store all of them in 'sample_means50'.
-   </a>
-  </h1>
-  <p>
-   for (i in 1:5000) { samp &lt;- sample(area, 50) sample_means50[i] &lt;- mean(samp) }
-  </p>
-  <h1>
-   <a name="view-the-result.-if-you-want,-you-can-increase-the-bin-width-to-show-more-detail-by-changing-the-'breaks'-argument.">
-    View the result. If you want, you can increase the bin width to show more detail by changing the 'breaks' argument.
-   </a>
-  </h1>
-  <p>
-   hist(sample_means50, breaks = 13)
-  </p>
-  <p>
-   calculate 95 pct conf interval: se &lt;- sd(samp)/sqrt(60) lower &lt;- sample_mean - 1.96 * se upper &lt;- sample_mean + 1.96 * se c(lower, upper)
-  </p>
-  <p>
-   inference: ANOVA test: https://statistics.laerd.com/statistical-guides/one-way-anova-statistical-guide.php, https://explorable.com/anova
-  </p>
-  <p>
-   multivariate regression, looking for the best model: start with a full model: m_full &lt;- lm(score ~ rank + ethnicity + gender + language + age + cls_perc_eval + cls_students + cls_level + cls_profs + cls_credits + bty_avg, data = evals) check p values for each coefficient; drop one with highest p-value drop the variable that, when dropped, leads to the best improvement in R2
-  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rowSums</span>(my_mat)
+<span class="kw">colSums</span>(my_mat)
+<span class="kw">mean</span>(my_vec, <span class="dt">trim =</span> <span class="dv">0</span>, <span class="dt">na.rm =</span> <span class="ot">FALSE</span>, ...)  
+<span class="co"># trim is used to drop some observations from both end of the sorted vector; </span>
+<span class="co"># When trim = 0.3, 3 values from each end will be dropped from the calculations to find mean. </span>
+<span class="co"># na.rm is used to remove the missing values from the input vector. </span>
+<span class="co"># If there are missing values, then the mean function returns NA; </span>
+<span class="co"># To drop the missing values from the calculation use na.rm = TRUE.</span>
+
+<span class="co"># elementwise sum</span>
+my_vec1 +<span class="st"> </span>my_vec2  
+<span class="co"># sum of vector elements: </span>
+<span class="kw">sum</span>(my_vector)
+
+<span class="kw">mean</span>(my_vector)
+<span class="kw">seq</span>(a,b,<span class="dt">length.out=</span>n)
+<span class="kw">crossprod</span>(x_vec,y_vec)
+
+<span class="kw">ceiling</span>(x)
+<span class="kw">floor</span>(x)
+<span class="kw">trunc</span>(x, ...)
+<span class="kw">round</span>(x, <span class="dt">digits =</span> <span class="dv">0</span>)
+<span class="kw">signif</span>(x, <span class="dt">digits =</span> <span class="dv">6</span>)
+
+<span class="co"># absolute value</span>
+<span class="kw">abs</span>()
+<span class="co"># absolute difference</span>
+<span class="kw">abs</span>(x1-x2) 
+
+<span class="kw">mean</span>()
+<span class="kw">nchar</span>(my_vec)  
+<span class="co"># counts number of characters in a vector of characters (strings)</span>
+
+<span class="kw">max</span>(my_data, <span class="dt">na.rm =</span> <span class="ot">FALSE</span>, ...)
+<span class="kw">min</span>(my_data)
+<span class="kw">summary</span>()
+<span class="kw">var</span>()
+<span class="kw">median</span>()
+
+<span class="co"># confidence intervals: </span>
+<span class="kw">inference</span>(my_dav, <span class="dt">type=</span><span class="st">"ci"</span>, <span class="dt">method=</span><span class="st">"simulation"</span>, <span class="dt">conflevel=</span><span class="fl">0.9</span>, <span class="dt">est=</span><span class="st">"mean"</span>, <span class="dt">boot_method=</span><span class="st">"perc"</span>)
+<span class="co"># method=simulation, theoretical</span>
+<span class="co"># boot_method=perc, se</span>
+<span class="co"># est=mean, median, proportion</span>
+
+<span class="co"># hypothesis testing: </span>
+<span class="kw">inference</span>(<span class="dt">y =</span> nc$weight, <span class="dt">x =</span> nc$habit, <span class="dt">est =</span> <span class="st">"mean"</span>, <span class="dt">type =</span> <span class="st">"ht"</span>, <span class="dt">null =</span> <span class="dv">0</span>, <span class="dt">alternative =</span> <span class="st">"twosided"</span>, <span class="dt">method =</span> <span class="st">"theoretical"</span>)
+<span class="co"># alternative=”greater”</span>
+<span class="kw">inference</span>(us12$response, <span class="dt">est =</span> <span class="st">"proportion"</span>,  <span class="dt">type =</span> <span class="st">"ci"</span>, <span class="dt">method =</span> <span class="st">"theoretical"</span>,  <span class="dt">success =</span> <span class="st">"atheist"</span>)
+
+<span class="co"># compare: </span>
+<span class="kw">by</span>(numerical_dataset, categorical_dataset, mean/length/...)
+<span class="kw">cor</span>(var1, var2)
+
+<span class="co"># http://www.rdocumentation.org/packages/stats/versions/3.3.1/topics/sd?</span>
+
+<span class="co"># probability (in/dependent events and simulating event sequences)</span>
+<span class="co"># simulate: </span>
+possible_values &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">"heads"</span>, <span class="st">"tails"</span>)
+<span class="kw">sample</span>(possible_values, <span class="dt">size=</span>, <span class="dt">replace=</span>, <span class="dt">prob=</span><span class="kw">c</span>())
+
+<span class="co"># generate sample distribution: The sampling distribution is calculated by resampling from the population,</span>
+<span class="co"># the bootstrap distribution is calculated by resampling from the sample; </span>
+<span class="co"># To construct the 95% bootstrap confidence interval using the percentile method, </span>
+<span class="co"># we estimate the values of the 5th and 95th percentiles of the bootstrap distribution.</span>
+<span class="co"># Set up an empty vector of 5000 NAs to store sample means:</span>
+sample_means50 &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="ot">NA</span>, <span class="dv">5000</span>)
+
+<span class="co"># Take 5000 samples of size 50 of 'area' and store all of them in 'sample_means50'.</span>
+for (i in <span class="dv">1</span>:<span class="dv">5000</span>) {
+ samp &lt;-<span class="st"> </span><span class="kw">sample</span>(area, <span class="dv">50</span>)
+ sample_means50[i] &lt;-<span class="st"> </span><span class="kw">mean</span>(samp)
+}
+
+<span class="co"># View the result. If you want, you can increase the bin width to show more detail by changing the 'breaks' argument.</span>
+<span class="kw">hist</span>(sample_means50, <span class="dt">breaks =</span> <span class="dv">13</span>)
+
+<span class="co"># calculate 95 pct conf interval:</span>
+se &lt;-<span class="st"> </span><span class="kw">sd</span>(samp)/<span class="kw">sqrt</span>(<span class="dv">60</span>)
+lower &lt;-<span class="st"> </span>sample_mean -<span class="st"> </span><span class="fl">1.96</span> *<span class="st"> </span>se
+upper &lt;-<span class="st"> </span>sample_mean +<span class="st"> </span><span class="fl">1.96</span> *<span class="st"> </span>se
+<span class="kw">c</span>(lower, upper)
+
+<span class="co"># inference:</span>
+<span class="co"># ANOVA test: https://statistics.laerd.com/statistical-guides/one-way-anova-statistical-guide.php, https://explorable.com/anova </span>
+
+<span class="co"># multivariate regression, looking for the best model:</span>
+<span class="co"># start with a full model: </span>
+m_full &lt;-<span class="st"> </span><span class="kw">lm</span>(score ~<span class="st"> </span>rank +<span class="st"> </span>ethnicity +<span class="st"> </span>gender +<span class="st"> </span>language +<span class="st"> </span>age +<span class="st"> </span>cls_perc_eval +<span class="st"> </span>cls_students +<span class="st"> </span>cls_level +<span class="st"> </span>cls_profs +<span class="st"> </span>cls_credits +<span class="st"> </span>bty_avg, <span class="dt">data =</span> evals)
+<span class="co"># check p values for each coefficient; drop one with highest p-value</span>
+<span class="co"># drop the variable that, when dropped, leads to the best improvement in R2</span></code></pre>
+  </div>
   <h2>
    <a name="...-in-python">
     ... in Python

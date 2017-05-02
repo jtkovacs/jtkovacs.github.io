@@ -180,6 +180,33 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           Decorators
          </a>
         </li>
+        <li>
+         <a href="#style">
+          Style
+         </a>
+         <ul>
+          <li>
+           <a href="#spacing">
+            Spacing
+           </a>
+          </li>
+          <li>
+           <a href="#naming">
+            Naming
+           </a>
+          </li>
+          <li>
+           <a href="#structure">
+            Structure
+           </a>
+          </li>
+          <li>
+           <a href="#namespace-&amp;-docstrings">
+            Namespace &amp; docstrings
+           </a>
+          </li>
+         </ul>
+        </li>
        </ul>
       </li>
       <li>
@@ -217,6 +244,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <li>
            <a href="#map-reduce,-filter,-etc.">
             Map-reduce, filter, etc.
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#test-driven-development">
+          Test-Driven Development
+         </a>
+         <ul>
+          <li>
+           <a href="#logging,-errors,-&amp;-debugging">
+            Logging, errors, &amp; debugging
            </a>
           </li>
          </ul>
@@ -1089,6 +1128,238 @@ fifteen()  <span class="co"># call variable as function</span></code></pre>
     
 say_hello() <span class="co"># syntactic sugar!!</span></code></pre>
   </div>
+  <h2>
+   <a name="style">
+    Style
+   </a>
+  </h2>
+  <ul>
+   <li>
+    Python prioritizes readability and simplicity;
+    <code>
+     import this
+    </code>
+   </li>
+   <li>
+    Python is extremely picky about indentation, e.g. to define functions
+   </li>
+   <li>
+    Python is case sensitive and has several
+    <a href="http://pentangle.net/python/handbook/node52.html">
+     reserved words
+    </a>
+   </li>
+   <li>
+    Python uses
+    <a href="http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html">
+     zero-based indexing
+    </a>
+   </li>
+   <li>
+    See PEPs
+    <a href="https://www.python.org/dev/peps/pep-0020/">
+     20
+    </a>
+    ,
+    <a href="https://www.python.org/dev/peps/pep-0290/">
+     290
+    </a>
+    ,
+    <a href="https://www.python.org/dev/peps/pep-0291/">
+     291
+    </a>
+    ,
+    <a href="https://www.python.org/dev/peps/pep-0345/">
+     345
+    </a>
+    ,
+    <a href="https://www.python.org/dev/peps/pep-0008/">
+     8
+    </a>
+   </li>
+   <li>
+    Use
+    <a href="https://pypi.python.org/pypi/pycodestyle/1.8.0.dev0">
+     pycodestyle
+    </a>
+    or
+    <a href="https://github.com/google/yapf">
+     yapf
+    </a>
+    to automate style
+   </li>
+  </ul>
+  <h3>
+   <a name="spacing">
+    Spacing
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Use 2 empty lines between functions
+   </li>
+   <li>
+    Use 2 empty lines between methods
+   </li>
+   <li>
+    Indent with 4 spaces (don't tab)
+   </li>
+   <li>
+    Use spaces after commas:
+    <code>
+     def my_fname(arg1, arg2)
+    </code>
+   </li>
+   <li>
+    Use spaces around assignments and other operators:
+    <code>
+     my_str = 'value'
+    </code>
+   </li>
+   <li>
+    Don't use spaces around operators in function calls:
+    <code>
+     my_fname(kwarg=my_var)
+    </code>
+   </li>
+   <li>
+    Put two spaces between code and inline comments
+   </li>
+   <li>
+    Avoid single line if, for, while, excepts
+   </li>
+  </ul>
+  <h3>
+   <a name="naming">
+    Naming
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Variable names should be informative nouns; also
+   </li>
+   <li>
+    Avoid single letter names since they might conflict with pdb (debugging library)
+   </li>
+   <li>
+    For globals:
+    <code>
+     MODULE_LEVEL_CONSTANT
+    </code>
+   </li>
+   <li>
+    Function names should be informative verb phrases
+   </li>
+   <li>
+    For functions and variables, use
+    <code>
+     my_fname
+    </code>
+    (snake case) instead of
+    <code>
+     MyFname
+    </code>
+    (camel case)
+   </li>
+   <li>
+    For classes and exceptions use camel case
+   </li>
+   <li>
+    For methods:
+    <code>
+     \_protected_instance_attribute
+    </code>
+    or
+    <code>
+     \_\_private_instance_attribute
+    </code>
+   </li>
+  </ul>
+  <h3>
+   <a name="structure">
+    Structure
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Group common operations into functions; group common functions into classes
+   </li>
+   <li>
+    Put import statements at top of file with one library per line, in order:
+   </li>
+   <li>
+    standard library,
+   </li>
+   <li>
+    3rd party modules,
+   </li>
+   <li>
+    own modules
+   </li>
+   <li>
+    79 characters or less per line
+   </li>
+   <li>
+    When an expression exceeds 79 characters, indent it 4 characters past its normal indentation level on the next line
+   </li>
+  </ul>
+  <h3>
+   <a name="namespace-&amp;-docstrings">
+    Namespace &amp; docstrings
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Profile before optimizing; use
+    <code>
+     tracemalloc
+    </code>
+    to profile memory use and leaks
+   </li>
+   <li>
+    <a href="https://www.python.org/dev/peps/pep-0257/">
+     PEP 257
+    </a>
+    : write docstrings for every function, class, and module.
+   </li>
+   <li>
+    function docstrings should describe the purpose of the function, its arguments (incl. default values,
+    <em>
+     args,
+    </em>
+    kwargs), its return value/s, and any exceptions that callers should handle.
+   </li>
+   <li>
+    class docstrings should describe the purpose of the class, public attributes and methods, how to interact with protected attributes.
+   </li>
+   <li>
+    module docstrings should specify the module's purpose and the classes/functions available in the module.
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="bu">dir</span>()  <span class="co"># all names in current local scope</span>
+<span class="bu">dir</span>(my_object)  <span class="co"># list of my_object's attributes</span>
+
+<span class="bu">help</span>()
+<span class="bu">help</span>(my_object)
+
+<span class="bu">print</span>(<span class="bu">repr</span>(f_name.__doc__)  <span class="co"># access docstrings</span>
+<span class="co"># repr returns the printable representation of an object</span>
+<span class="co"># helpful for debugging, to differentiate between print(5) and print('5')</span>
+
+<span class="bu">print</span>(my_object.__dict__)  <span class="co"># to view internals, p. 204</span>
+
+<span class="co"># add docstring to functions, classes, methods:</span>
+<span class="kw">def</span> my_fcn():
+  <span class="st">"""this is a docstring"""</span>
+  
+  <span class="co">"""for a multiline docstring,</span>
+<span class="co">  put closing quotes on their own line</span>
+<span class="co">  """</span>
+
+<span class="im">import</span> docstrings
+<span class="bu">help</span>(docstrings.function_name) </code></pre>
+  </div>
   <h1>
    <a name="paradigms">
     Paradigms
@@ -1298,6 +1569,99 @@ itertools.filterfalse(my_iterable)
     ... 
 std_discount <span class="op">=</span> partial(markdown, discount<span class="op">=</span>.<span class="dv">2</span>) 
 <span class="bu">print</span>(std_discount(my_data))</code></pre>
+  </div>
+  <h2>
+   <a name="test-driven-development">
+    Test-Driven Development
+   </a>
+  </h2>
+  <ul>
+   <li>
+    TDD = write tests for code before writing code itself
+   </li>
+   <li>
+    Doc tests are based on string comparison, so may have issues w/ floats; very code-specfic, not portable
+   </li>
+   <li>
+    <a href="http://coverage.readthedocs.io/en/latest/">
+     coverage
+    </a>
+   </li>
+   <li>
+    <a href="https://docs.python.org/3/library/unittest.html">
+     unittest
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># write doc test</span>
+<span class="kw">def</span> my_function():
+  <span class="co">"""Explanation of function</span>
+<span class="co">  do this code</span>
+<span class="co">  expected_result</span>
+<span class="co">  """</span>
+  
+<span class="co"># run doc tests</span>
+python <span class="op">-</span>m doctest filename.py
+
+<span class="co"># testing the extent of testing</span>
+pip install coverage
+coverage run tests.py
+coverage report <span class="op">-</span>m  <span class="co"># in terminal</span>
+coverage html  <span class="co"># in browser</span>
+
+<span class="co"># unit tests</span>
+python <span class="op">-</span>m unittest tests.py
+<span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> ‘__main__’: 
+  unittest.main()
+
+<span class="im">import</span> unittest
+<span class="kw">class</span> my_unittest(unittest.TestCase):
+  <span class="kw">def</span> test_addition(<span class="va">self</span>):
+    <span class="cf">assert</span> <span class="dv">4</span> <span class="op">+</span> <span class="dv">5</span> <span class="op">==</span> <span class="dv">9</span>
+
+<span class="co"># quantitative assertions:</span>
+<span class="va">self</span>.assertEqual(x, y)
+<span class="va">self</span>.assertNotEqual(x, y)
+<span class="va">self</span>.assertGreater(x, y)  <span class="co"># x &gt; y</span>
+<span class="va">self</span>.assertLess(x, y)
+<span class="va">self</span>.assertGreaterEqual(x, y)
+<span class="va">self</span>.assertLessEqual(x,y)
+
+<span class="co"># logical assertions:</span>
+<span class="va">self</span>.assertTrue()
+<span class="va">self</span>.assertFalse(my_function(test_value))
+
+<span class="co"># membership assertions:</span>
+<span class="va">self</span>.assertIn(x, y)  <span class="co"># x in y? </span>
+<span class="va">self</span>.assertNotIn(x,y)
+<span class="va">self</span>.assertIsInstance(x, y)
+
+<span class="co"># exception assertions: </span>
+<span class="cf">with</span> assertRaise(x): <span class="op">//</span> code to test</code></pre>
+  </div>
+  <h3>
+   <a name="logging,-errors,-&amp;-debugging">
+    Logging, errors, &amp; debugging
+   </a>
+  </h3>
+  <p>
+   <a href="https://docs.python.org/3/tutorial/errors.html">
+    Types of errors
+   </a>
+   : can be syntatic (problems with 'grammar' of Python), logical (problems with structure of program), or semantic (works computationally but does the wrong thing or has unintended behavior).
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> logging
+logging.basicConfig(filename<span class="op">=</span>’fname.log’, level<span class="op">=</span>logging.DEBUG)
+log levels: critical, error, warning, info, debug, notset
+logging.info(‘string to log’)
+<span class="co"># https://docs.python.org/3/howto/logging.html</span>
+
+<span class="im">import</span> pdb
+pdb.set_trace() <span class="co"># launches a psuedo-shell</span>
+<span class="co"># type ‘n’ to run the next line of code</span>
+<span class="co"># type ‘c’ to run as normal</span></code></pre>
   </div>
   <h1>
    <a name="sources">

@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+  </title>
+  <link href="refs.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <p id="path">
+   <a href="../../pkb.html">
+    https://jtkovacs.github.io/pkb.html
+   </a>
+   &gt;
+   <a href="https://jtkovacs.github.io/REFS/HTML/Crouton.html">
+    https://jtkovacs.github.io/REFS/HTML/Crouton.html
+   </a>
+  </p>
+  <table class="TOC">
+   <tr>
+    <td>
+     <pre><code>   - [SOURCES](#sources)
+    - [CHEATSHEET](#cheatsheet)</code></pre>
+    </td>
+   </tr>
+  </table>
+  <hr/>
+  <h3>
+   <a name="sources">
+    SOURCES
+   </a>
+  </h3>
+  <ul>
+   <li>
+    <a href="https://github.com/dnschneid/crouton">
+     GitHub repo for crouton
+    </a>
+   </li>
+   <li>
+    <a href="https://github.com/dnschneid/crouton/wiki/Crouton-Command-Cheat-Sheet">
+     Author's cheatsheet
+    </a>
+   </li>
+   <li>
+    From HowToGeek:
+   </li>
+   <li>
+    <a href="http://www.howtogeek.com/162120/how-to-install-ubuntu-linux-on-your-chromebook-with-crouton/">
+     How to install
+    </a>
+   </li>
+   <li>
+    <a href="http://www.howtogeek.com/208368/how-to-run-a-full-linux-desktop-in-a-browser-tab-on-your-chromebook/">
+     How to run in browser
+    </a>
+   </li>
+   <li>
+    <a href="http://www.howtogeek.com/210047/how-to-manage-the-crouton-linux-system-on-your-chromebook/">
+     How to manage
+    </a>
+   </li>
+  </ul>
+  <hr/>
+  <h3>
+   <a name="cheatsheet">
+    CHEATSHEET
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Put Chrombook into recovery mode:
+    <code>
+     esc + refresh + power
+    </code>
+   </li>
+   <li>
+    Enter dev mode:
+    <code>
+     ctrl + D
+    </code>
+   </li>
+   <li>
+    <a href="https://goo.gl/fd3zc">
+     Download crouton
+    </a>
+   </li>
+   <li>
+    Launch crosh:
+    <code>
+     crtl + alt + T
+    </code>
+   </li>
+   <li>
+    Enter shell:
+    <code>
+     shell
+    </code>
+   </li>
+   <li>
+    View possible targets:
+    <code>
+     sh ~/Downloads/crouton -t help
+    </code>
+   </li>
+   <li>
+    Launch chroot with name and chosen target:
+    <code>
+     sudo sh ~/Downloads/crouton -n my_chroot_name -t xfce,xiwi,cli-extra
+    </code>
+   </li>
+   <li>
+    The
+    <code>
+     sh
+    </code>
+    command creates a new shell
+   </li>
+   <li>
+    View current targets:
+    <code>
+     sudo edit-chroot -l my_chroot_name
+    </code>
+   </li>
+   <li>
+    Add a target to existing chroot:
+    <code>
+     sudo sh ~/Downloads/crouton -u -n my_chroot_name -t core
+    </code>
+    <ul>
+     <li>
+      I installed extension, core, cli-extra, xfce
+     </li>
+    </ul>
+   </li>
+   <li>
+    Target-specific start commands:
+   </li>
+   <li>
+    Command line:
+    <code>
+     sudo enter-chroot -n my_chroot_name
+    </code>
+   </li>
+   <li>
+    XFCE window:
+    <code>
+     sudo enter-chroot -n my_chroot_name startxfce4
+    </code>
+    <ul>
+     <li>
+      Toggle between Chrome OS and chroot:
+      <code>
+       crtl + alt + shift + forward/back
+      </code>
+     </li>
+     <li>
+      Open in browser with
+      <a href="https://chrome.google.com/webstore/detail/crouton-integration/gcpneefbbnfalgjniomfjknbcgkbijom">
+       Crouton extension
+      </a>
+      : xiwi or extension targets must be installed
+     </li>
+    </ul>
+   </li>
+   <li>
+    Delete the chroot:
+    <code>
+     sudo delete-chroot my_chroot_name
+    </code>
+   </li>
+  </ul>
+ </body>
+</html>

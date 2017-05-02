@@ -1,20 +1,6 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">https://jtkovacs.github.io/REFS/HTML/wrangling.html</a></p><table class="TOC"><tr><td>- [I/O](#i/o)
 	- [... to database via Peewee ORM](#...-to-database-via-peewee-orm)
-- [to check for an empty list, avoid (if len(my_list) == 0)](#to-check-for-an-empty-list,-avoid-(if-len(my_list)-==-0))
-- [prefer this approach:](#prefer-this-approach:)
-- [Make an iterator that aggregates elements from each of the iterables.](#make-an-iterator-that-aggregates-elements-from-each-of-the-iterables.)
-- [search file contents: ](#search-file-contents:-)
-- [search more efficiently:](#search-more-efficiently:)
-- [find specific string: ](#find-specific-string:-)
-- [troubleshooting  whitespace errors: print repr(strname)](#troubleshooting--whitespace-errors:-print-repr(strname))
-- [count w/ standard library](#count-w/-standard-library)
-- [rank w/ standard library](#rank-w/-standard-library)
-- [count w/ pandas](#count-w/-pandas)
-- [clean w/ pandas](#clean-w/-pandas)
-- [plot](#plot)
-- [numpy search for text in frame](#numpy-search-for-text-in-frame)
-- [Binary labeling: Group 1 where contains text, Group 2 otherwise](#binary-labeling:-group-1-where-contains-text,-group-2-otherwise)
-- [group & rank  results](#group-&-rank--results)
+- [Data wrangling](#data-wrangling)
 </td></tr></table>
 # I/O
 
@@ -192,7 +178,7 @@ db.close()
 from collections import OrderedDict
 menu = OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)])
 returns doc string for function: function_name.__doc__
-
+```
 
 
 # Data wrangling

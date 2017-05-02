@@ -174,7 +174,7 @@ db.close()
 from collections import OrderedDict
 menu = OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)])
 returns doc string for function: function_name.__doc__
-
+```
 
 
 # Data wrangling

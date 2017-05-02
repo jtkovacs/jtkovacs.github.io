@@ -72,78 +72,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        </ul>
       </li>
       <li>
-       <a href="#to-check-for-an-empty-list,-avoid-(if-len(my_list)-==-0)">
-        to check for an empty list, avoid (if len(my_list) == 0)
-       </a>
-      </li>
-      <li>
-       <a href="#prefer-this-approach:">
-        prefer this approach:
-       </a>
-      </li>
-      <li>
-       <a href="#make-an-iterator-that-aggregates-elements-from-each-of-the-iterables.">
-        Make an iterator that aggregates elements from each of the iterables.
-       </a>
-      </li>
-      <li>
-       <a href="#search-file-contents:-">
-        search file contents:
-       </a>
-      </li>
-      <li>
-       <a href="#search-more-efficiently:">
-        search more efficiently:
-       </a>
-      </li>
-      <li>
-       <a href="#find-specific-string:-">
-        find specific string:
-       </a>
-      </li>
-      <li>
-       <a href="#troubleshooting--whitespace-errors:-print-repr(strname)">
-        troubleshooting whitespace errors: print repr(strname)
-       </a>
-      </li>
-      <li>
-       <a href="#count-w/-standard-library">
-        count w/ standard library
-       </a>
-      </li>
-      <li>
-       <a href="#rank-w/-standard-library">
-        rank w/ standard library
-       </a>
-      </li>
-      <li>
-       <a href="#count-w/-pandas">
-        count w/ pandas
-       </a>
-      </li>
-      <li>
-       <a href="#clean-w/-pandas">
-        clean w/ pandas
-       </a>
-      </li>
-      <li>
-       <a href="#plot">
-        plot
-       </a>
-      </li>
-      <li>
-       <a href="#numpy-search-for-text-in-frame">
-        numpy search for text in frame
-       </a>
-      </li>
-      <li>
-       <a href="#binary-labeling:-group-1-where-contains-text,-group-2-otherwise">
-        Binary labeling: Group 1 where contains text, Group 2 otherwise
-       </a>
-      </li>
-      <li>
-       <a href="#group-&amp;-rank--results">
-        group &amp; rank results
+       <a href="#data-wrangling">
+        Data wrangling
        </a>
       </li>
      </ul>
@@ -293,92 +223,52 @@ age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input
     ... to database via Peewee ORM
    </a>
   </h2>
-  <p>
-   ```Python pip install peewee from peewee import *
-  </p>
-  <h1>
-   <a name="create-&amp;-connect-to-database:">
-    create &amp; connect to database:
-   </a>
-  </h1>
-  <p>
-   db = SqliteDatabase(‘dbname.db’) psql_db = PostgresqlDatabase('my_database', user='postgres') mysql_db = MySQLDatabase('my_database')
-  </p>
-  <h1>
-   <a name="special-python-classes-called-models-correspond-to-tables;">
-    special Python classes called models correspond to tables;
-   </a>
-  </h1>
-  <h1>
-   <a name="specific-models-inherit-from-the-model-class:">
-    specific models inherit from the Model class:
-   </a>
-  </h1>
-  <p>
-   class Student(Model): username = CharField(maxlength=255, unique=True) points = IntegerField(default=0) date = DateTimeField(datetime.datetime.now) # important to omit parantheses in this datetime function call
-  </p>
-  <p>
-   class Meta(): database = db if
-   <strong>
-    name
-   </strong>
-   == ‘
-   <strong>
-    main
-   </strong>
-   ’: db.connect() db.create_tables([Student], safe=True) field types: CharField, IntegerField, TextField, DateTimeFieldfield characteristics: max_length, default, unique
-  </p>
-  <h1>
-   <a name="enter-new-data:">
-    enter new data:
-   </a>
-  </h1>
-  <p>
-   Student.create(username=student[unm], points= student[pts])
-  </p>
-  <h1>
-   <a name="update-existing-data:">
-    update existing data:
-   </a>
-  </h1>
-  <p>
-   record = Student.get(username=student[unm]) → record.points = student[pts] → record.save() Student.update(points=student['points']). where(Student.username == student['username']).execute()
-  </p>
-  <h1>
-   <a name="find/filter-records-in-table:">
-    find/filter records in table:
-   </a>
-  </h1>
-  <p>
-   Student.select().order_by(Student.points.desc()) Entry.select().where(Entry.content.contains(search_query), Entry.Date == date)
-  </p>
-  <h1>
-   <a name="delete-single-record:">
-    delete single record:
-   </a>
-  </h1>
-  <p>
-   Student.delete_instance(condition) single_row.delete_instance()
-  </p>
-  <h1>
-   <a name="close-connection:">
-    close connection:
-   </a>
-  </h1>
-  <p>
-   db.close()
-  </p>
-  <h1>
-   <a name="ordered-dict-can-be-useful:">
-    ordered dict can be useful:
-   </a>
-  </h1>
-  <p>
-   from collections import OrderedDict menu = OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)]) returns doc string for function: function_name.
-   <strong>
-    doc
-   </strong>
-  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">pip install peewee
+<span class="im">from</span> peewee <span class="im">import</span> <span class="op">*</span>
+
+<span class="co"># create &amp; connect to database:</span>
+db <span class="op">=</span> SqliteDatabase(‘dbname.db’)
+psql_db <span class="op">=</span> PostgresqlDatabase(<span class="st">'my_database'</span>, user<span class="op">=</span><span class="st">'postgres'</span>)
+mysql_db <span class="op">=</span> MySQLDatabase(<span class="st">'my_database'</span>)
+
+<span class="co"># special Python classes called models correspond to tables; </span>
+<span class="co"># specific models inherit from the Model class:</span>
+<span class="kw">class</span> Student(Model):
+username <span class="op">=</span> CharField(maxlength<span class="op">=</span><span class="dv">255</span>, unique<span class="op">=</span><span class="va">True</span>)
+points <span class="op">=</span> IntegerField(default<span class="op">=</span><span class="dv">0</span>)
+date <span class="op">=</span> DateTimeField(datetime.datetime.now) <span class="co"># important to omit parantheses in this datetime function call</span>
+
+<span class="kw">class</span> Meta():
+database <span class="op">=</span> db
+<span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> ‘__main__’: 
+db.<span class="ex">connect</span>()
+db.create_tables([Student], safe<span class="op">=</span><span class="va">True</span>)
+field types: CharField, IntegerField, TextField, DateTimeFieldfield characteristics: max_length, default, unique
+
+<span class="co"># enter new data: </span>
+Student.create(username<span class="op">=</span>student[unm], points<span class="op">=</span> student[pts])
+
+<span class="co"># update existing data:</span>
+record <span class="op">=</span> Student.get(username<span class="op">=</span>student[unm]) → record.points <span class="op">=</span> student[pts] → record.save()
+Student.update(points<span class="op">=</span>student[<span class="st">'points'</span>]). where(Student.username <span class="op">==</span> student[<span class="st">'username'</span>]).execute()
+
+<span class="co"># find/filter records in table: </span>
+Student.select().order_by(Student.points.desc())
+Entry.select().where(Entry.content.contains(search_query), Entry.Date <span class="op">==</span> date)
+
+<span class="co"># delete single record: </span>
+Student.delete_instance(condition)
+single_row.delete_instance()
+
+<span class="co"># close connection: </span>
+db.close()
+
+<span class="co"># ordered dict can be useful:</span>
+<span class="im">from</span> collections <span class="im">import</span> OrderedDict
+menu <span class="op">=</span> OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)])
+returns doc string <span class="cf">for</span> function: function_name.__doc__</code></pre>
+  </div>
   <h1>
    <a name="data-wrangling">
     Data wrangling

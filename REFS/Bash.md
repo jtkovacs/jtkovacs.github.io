@@ -184,3 +184,26 @@ cat file1 > file2  # copy file by rdct cat's stdout from terminal to file2
 cat < file  # display file by rdct to cat's stdin; same as >> cat file
 cat file | less  # display large files by rdct cat's stdout to less's stdin
 ```
+
+# Sources
+
+## References
+
+- Command line cheatsheets - [Mac](http://ss64.com/osx/), [Linux Bash](http://ss64.com/bash/), [Windows PowerShell](http://ss64.com/ps/)
+- Software Carpentry’s [Unix shell cheatsheet](http://swcarpentry.github.io/shell-novice/reference/)
+- [Bash keyboard shortcuts for maximum productivity](http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/)
+- [Bash reserved variables](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html#table_03_02)
+
+## Read
+
+- [Codecademy - Command Line](https://www.codecademy.com/learn/learn-the-command-line)
+- [Udacity - Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595)
+- [Udemy - Linux command line basics](https://www.udemy.com/linux-command-line-volume1/)
+- [Linux Survival - Command line tutorial](http://linuxsurvival.com/linux-tutorial-introduction/)
+- [The importance of command line literacy](http://www.linux-mag.com/id/7096/)
+
+## Unread
+- [Data science at the command line](http://datascienceatthecommandline.com/): book, webcast, VM 
+- [How to spy on your programs with strace](http://jvns.ca/strace-zine-unfolded.pdf) (pdf)
+- [Talks by Julia Evans](http://jvns.ca/talks/)
+

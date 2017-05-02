@@ -70,31 +70,53 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          </a>
         </li>
         <li>
-         <a href="#statistics-in-python">
-          Statistics in Python
+         <a href="#...-in-r">
+          ... in R
          </a>
         </li>
        </ul>
       </li>
       <li>
-       <a href="#sources">
-        Sources
+       <a href="#set-up-an-empty-vector-of-5000-nas-to-store-sample-means:">
+        Set up an empty vector of 5000 NAs to store sample means:
+       </a>
+      </li>
+      <li>
+       <a href="#take-5000-samples-of-size-50-of-'area'-and-store-all-of-them-in-'sample_means50'.">
+        Take 5000 samples of size 50 of 'area' and store all of them in 'sample_means50'.
+       </a>
+      </li>
+      <li>
+       <a href="#view-the-result.-if-you-want,-you-can-increase-the-bin-width-to-show-more-detail-by-changing-the-'breaks'-argument.">
+        View the result. If you want, you can increase the bin width to show more detail by changing the 'breaks' argument.
        </a>
        <ul>
         <li>
-         <a href="#references">
-          References
+         <a href="#...-in-python">
+          ... in Python
          </a>
         </li>
         <li>
-         <a href="#read">
-          Read
+         <a href="#sources">
+          Sources
          </a>
-        </li>
-        <li>
-         <a href="#unread">
-          Unread
-         </a>
+         <ul>
+          <li>
+           <a href="#references">
+            References
+           </a>
+          </li>
+          <li>
+           <a href="#read">
+            Read
+           </a>
+          </li>
+          <li>
+           <a href="#unread">
+            Unread
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
       </li>
@@ -156,8 +178,106 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <h2>
-   <a name="statistics-in-python">
-    Statistics in Python
+   <a name="...-in-r">
+    ... in R
+   </a>
+  </h2>
+  <blockquote>
+   <blockquote>
+    <p>
+     rowSums(my_mat) colSums(my_mat) mean(my_vec, trim = 0, na.rm = FALSE, ...) # trim is used to drop some observations from both end of the sorted vector; When trim = 0.3, 3 values from each end will be dropped from the calculations to find mean. na.rm is used to remove the missing values from the input vector. If there are missing values, then the mean function returns NA; To drop the missing values from the calculation use na.rm = TRUE. which means remove the NA values.
+    </p>
+   </blockquote>
+  </blockquote>
+  <blockquote>
+   <blockquote>
+    <p>
+     my_vec1 + my_vec2 # elementwise sum sum of vector elements: sum(my_vector) mean(my_vector) seq(a,b,length.out=n) crossprod(x_vec,y_vec)
+    </p>
+   </blockquote>
+  </blockquote>
+  <blockquote>
+   <blockquote>
+    <p>
+     ceiling(x) floor(x) trunc(x, ...) round(x, digits = 0) signif(x, digits = 6)
+    </p>
+   </blockquote>
+  </blockquote>
+  <p>
+   functions: absolute value: abs(), abs(x1-x2) gives absolute difference
+  </p>
+  <p>
+   mean() nchar(my_vec) # counts number of characters in a vector of characters (strings) max(my_data, na.rm = FALSE, ...) min(my_data) summary() var() median() confidence intervals: inference(my_dav, type="ci", method="simulation", conflevel=0.9, est="mean", boot_method="perc") method=simulation, theoretical boot_method=perc, se est=mean, median, proportion hypothesis testing: inference(y = nc
+   <span class="math inline">
+    <em>
+     w
+    </em>
+    <em>
+     e
+    </em>
+    <em>
+     i
+    </em>
+    <em>
+     g
+    </em>
+    <em>
+     h
+    </em>
+    <em>
+     t
+    </em>
+    ,
+    <em>
+     x
+    </em>
+    =
+    <em>
+     n
+    </em>
+    <em>
+     c
+    </em>
+   </span>
+   habit, est = "mean", type = "ht", null = 0, alternative = "twosided", method = "theoretical") alternative=”greater” inference(us12$response, est = "proportion", type = "ci", method = "theoretical", success = "atheist") compare: by(numerical_dataset, categorical_dataset, mean/length/...) cor(var1, var2)
+  </p>
+  <p>
+   http://www.rdocumentation.org/packages/stats/versions/3.3.1/topics/sd?
+  </p>
+  <p>
+   probability (in/dependent events and simulating event sequences) simulate: possible_values &lt;- c("heads", "tails") sample(possible_values, size=, replace=, prob=c())
+  </p>
+  <p>
+   generate sample distribution: The sampling distribution is calculated by resampling from the population, the bootstrap distribution is calculated by resampling from the sample; To construct the 95% bootstrap confidence interval using the percentile method, we estimate the values of the 5th and 95th percentiles of the bootstrap distribution. # Set up an empty vector of 5000 NAs to store sample means: sample_means50 &lt;- rep(NA, 5000)
+  </p>
+  <h1>
+   <a name="take-5000-samples-of-size-50-of-'area'-and-store-all-of-them-in-'sample_means50'.">
+    Take 5000 samples of size 50 of 'area' and store all of them in 'sample_means50'.
+   </a>
+  </h1>
+  <p>
+   for (i in 1:5000) { samp &lt;- sample(area, 50) sample_means50[i] &lt;- mean(samp) }
+  </p>
+  <h1>
+   <a name="view-the-result.-if-you-want,-you-can-increase-the-bin-width-to-show-more-detail-by-changing-the-'breaks'-argument.">
+    View the result. If you want, you can increase the bin width to show more detail by changing the 'breaks' argument.
+   </a>
+  </h1>
+  <p>
+   hist(sample_means50, breaks = 13)
+  </p>
+  <p>
+   calculate 95 pct conf interval: se &lt;- sd(samp)/sqrt(60) lower &lt;- sample_mean - 1.96 * se upper &lt;- sample_mean + 1.96 * se c(lower, upper)
+  </p>
+  <p>
+   inference: ANOVA test: https://statistics.laerd.com/statistical-guides/one-way-anova-statistical-guide.php, https://explorable.com/anova
+  </p>
+  <p>
+   multivariate regression, looking for the best model: start with a full model: m_full &lt;- lm(score ~ rank + ethnicity + gender + language + age + cls_perc_eval + cls_students + cls_level + cls_profs + cls_credits + bty_avg, data = evals) check p values for each coefficient; drop one with highest p-value drop the variable that, when dropped, leads to the best improvement in R2
+  </p>
+  <h2>
+   <a name="...-in-python">
+    ... in Python
    </a>
   </h2>
   <p>
@@ -194,16 +314,16 @@ np.<span class="bu">round</span>(np.random.normal(mean, stdev, <span class="co">
 random.choice(strname)
 random.randint(a_inclusive,b_inclusive)</code></pre>
   </div>
-  <h1>
+  <h2>
    <a name="sources">
     Sources
    </a>
-  </h1>
-  <h2>
+  </h2>
+  <h3>
    <a name="references">
     References
    </a>
-  </h2>
+  </h3>
   <ul>
    <li>
     <a href="http://www.dummies.com/how-to/content/statistics-for-dummies-cheat-sheet.html">
@@ -227,11 +347,11 @@ random.randint(a_inclusive,b_inclusive)</code></pre>
     </a>
    </li>
   </ul>
-  <h2>
+  <h3>
    <a name="read">
     Read
    </a>
-  </h2>
+  </h3>
   <ul>
    <li>
     <em>
@@ -289,11 +409,11 @@ random.randint(a_inclusive,b_inclusive)</code></pre>
     </a>
    </li>
   </ul>
-  <h2>
+  <h3>
    <a name="unread">
     Unread
    </a>
-  </h2>
+  </h3>
   <ul>
    <li>
     <a href="http://nbviewer.jupyter.org/url/norvig.com/ipython/Probability.ipynb">

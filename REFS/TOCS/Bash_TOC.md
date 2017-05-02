@@ -80,9 +80,16 @@ ps aux | grep regex_pattern  # search running processes
 kill processID  # get PID from ps aux's output
 kill -9 processID  # kill process immediately
 
+sudo -i #   pushes terminal into root until you type “exit”
+
 sudo apt-get update  # fetch list of available packages
 sudo apt-get upgrade  # updates packages according to apt-get update's list
 sudo apt-get dist-upgrade  # like apt-get upgrade, but handles dependencies better
+
+# analyze boot speed
+cat /proc/sys/vm/swappiness
+systemd-analyze-blame
+Df -h, checks disk space and partition usage
 ```
 
 ### Get more information
@@ -307,7 +314,7 @@ split [options] filename prefix
 # options:
 # -l linenumber
 # -b bytes
-```
+``` 
 
 
 # Sources

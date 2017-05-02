@@ -336,9 +336,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">kill</span> processID  <span class="co"># get PID from ps aux's output</span>
 <span class="kw">kill</span> -9 processID  <span class="co"># kill process immediately</span>
 
+<span class="kw">sudo</span> -i <span class="co">#   pushes terminal into root until you type “exit”</span>
+
 <span class="kw">sudo</span> apt-get update  <span class="co"># fetch list of available packages</span>
 <span class="kw">sudo</span> apt-get upgrade  <span class="co"># updates packages according to apt-get update's list</span>
-<span class="kw">sudo</span> apt-get dist-upgrade  <span class="co"># like apt-get upgrade, but handles dependencies better</span></code></pre>
+<span class="kw">sudo</span> apt-get dist-upgrade  <span class="co"># like apt-get upgrade, but handles dependencies better</span>
+
+<span class="co"># analyze boot speed</span>
+<span class="kw">cat</span> /proc/sys/vm/swappiness
+<span class="kw">systemd-analyze-blame</span>
+<span class="kw">Df</span> -h, checks disk space and partition usage</code></pre>
   </div>
   <h3>
    <a name="get-more-information">

@@ -206,9 +206,10 @@ my_selection <- my_vec > 5  # create new vector based on selection
 
 - [Big Data U - Using R with Databases](http://bigdatauniversity.com/courses/using-r-with-databases/)
 
->> print("Your text here")
->> print(paste("", my_var, ""))
-
+```R
+print("Your text here")
+print(paste("", my_var, ""))
+```
 
 http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb
 
@@ -218,7 +219,7 @@ http://www.rdocumentation.org/packages/utils/versions/3.3.1/topics/read.table?
 
 library for web scraping: https://github.com/hadley/rvest
 
->> seq(a,b,length.out=n)
+seq(a,b,length.out=n)
 
 seq(from = 1, to = 10, by = 1): Generate sequences, by specifying the from, to andby arguments.
 rep(): Replicate elements of vectors and lists.
@@ -244,14 +245,14 @@ tail(my_df)
 typeof(my_df$my_var)
 levels(categorical_var)
 
->> sort(my_df)
->> order(my_df$my_var, decreasing=TRUE)
->> my_df[order(my_df),]
+sort(my_df)
+order(my_df$my_var, decreasing=TRUE)
+my_df[order(my_df),]
 
->> identical(thing1, thing2)
+identical(thing1, thing2)
 
->> diff(my_vec)  # vector of differences between elements in a numerics vector
->> unique(my_vec)
+diff(my_vec)  # vector of differences between elements in a numerics vector
+unique(my_vec)
 order() is a function that gives you the ranked position of each element when it is applied on a variable, such as a vector for example
 we can use the output of order(a) to reshuffle a: a[order(a)]
 

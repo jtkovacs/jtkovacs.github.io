@@ -331,13 +331,10 @@ my_selection &lt;-<span class="st"> </span>my_vec &gt;<span class="st"> </span><
     </a>
    </li>
   </ul>
-  <blockquote>
-   <blockquote>
-    <p>
-     print("Your text here") print(paste("", my_var, ""))
-    </p>
-   </blockquote>
-  </blockquote>
+  <div class="sourceCode">
+   <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="st">"Your text here"</span>)
+<span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">""</span>, my_var, <span class="st">""</span>))</code></pre>
+  </div>
   <p>
    http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb
   </p>
@@ -350,13 +347,9 @@ my_selection &lt;-<span class="st"> </span>my_vec &gt;<span class="st"> </span><
   <p>
    library for web scraping: https://github.com/hadley/rvest
   </p>
-  <blockquote>
-   <blockquote>
-    <p>
-     seq(a,b,length.out=n)
-    </p>
-   </blockquote>
-  </blockquote>
+  <p>
+   seq(a,b,length.out=n)
+  </p>
   <p>
    seq(from = 1, to = 10, by = 1): Generate sequences, by specifying the from, to andby arguments. rep(): Replicate elements of vectors and lists. sort(): Sort a vector in ascending order. Works on numerics, but also on character strings and logicals. rev(): Reverse the elements in a data structures for which reversal is defined. str(): Display the structure of any R object. append(): Merge vectors or lists. is.
    <em>
@@ -370,27 +363,15 @@ my_selection &lt;-<span class="st"> </span>my_vec &gt;<span class="st"> </span><
   <p>
    investigate structure of data frame object: dim(my_df) names(my_df) head(my_df) tail(my_df) typeof(my_df$my_var) levels(categorical_var)
   </p>
-  <blockquote>
-   <blockquote>
-    <p>
-     sort(my_df) order(my_df$my_var, decreasing=TRUE) my_df[order(my_df),]
-    </p>
-   </blockquote>
-  </blockquote>
-  <blockquote>
-   <blockquote>
-    <p>
-     identical(thing1, thing2)
-    </p>
-   </blockquote>
-  </blockquote>
-  <blockquote>
-   <blockquote>
-    <p>
-     diff(my_vec) # vector of differences between elements in a numerics vector unique(my_vec) order() is a function that gives you the ranked position of each element when it is applied on a variable, such as a vector for example we can use the output of order(a) to reshuffle a: a[order(a)]
-    </p>
-   </blockquote>
-  </blockquote>
+  <p>
+   sort(my_df) order(my_df$my_var, decreasing=TRUE) my_df[order(my_df),]
+  </p>
+  <p>
+   identical(thing1, thing2)
+  </p>
+  <p>
+   diff(my_vec) # vector of differences between elements in a numerics vector unique(my_vec) order() is a function that gives you the ranked position of each element when it is applied on a variable, such as a vector for example we can use the output of order(a) to reshuffle a: a[order(a)]
+  </p>
   <p>
    retrieve data from data frame: my_df
    <span class="math inline">

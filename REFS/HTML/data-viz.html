@@ -70,6 +70,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        </a>
       </li>
       <li>
+       <a href="#data-viz-in-r">
+        Data viz in R
+       </a>
+      </li>
+      <li>
        <a href="#sources">
         Sources
        </a>
@@ -121,8 +126,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <div class="sourceCode">
-   <pre class="sourceCode python"><code class="sourceCode python">
-<span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt
 
 <span class="co"># convert to int: </span>
 my_data <span class="op">=</span> <span class="bu">list</span>(<span class="bu">map</span>(<span class="bu">int</span>, data_in)))
@@ -176,6 +180,72 @@ ax.set_xticklabels(labels, ha<span class="op">=</span>’left’)
 ax.set_xticks(<span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(my_grouped_data)<span class="op">+</span><span class="dv">1</span>))
 ax.set_ylabel(‘Axis name’)
 plt.grid(<span class="va">True</span>)</code></pre>
+  </div>
+  <h1>
+   <a name="data-viz-in-r">
+    Data viz in R
+   </a>
+  </h1>
+  <ul>
+   <li>
+    library for complex graphs:
+    <a class="uri" href="http://ggplot2.org/">
+     http://ggplot2.org/
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode r"><code class="sourceCode r">p &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.01</span>)
+
+<span class="co"># scatterplot: </span>
+<span class="kw">plot</span>(my_df$name1, my_df$name2)
+
+<span class="co"># line: </span>
+<span class="kw">plot</span>(... <span class="dt">type=</span>”l”)
+
+<span class="kw">plot</span>(var1 ~<span class="st"> </span>var2)<span class="er">)</span>
+
+<span class="co"># univariate boxplot: </span>
+<span class="kw">boxplot</span>(my_df$var_name)
+<span class="co"># multivariate boxplot: </span>
+<span class="kw">boxplot</span>(var1 ~<span class="st"> </span>var2)
+
+<span class="co"># histogram: </span>
+<span class="kw">hist</span>(data, <span class="dt">breaks=</span>)
+
+<span class="co"># frequencies: </span>
+<span class="kw">table</span>()
+<span class="co"># multivariable: </span>
+<span class="kw">table</span>(my_df$var1, my_df$var2) 
+<span class="kw">mosaicplot</span>(<span class="kw">table</span>(my_df$var1, my_df$var2) )
+<span class="kw">mosaicplot</span>(var1 ~<span class="st"> </span>var2)
+
+<span class="co"># relative frequencies: </span>
+<span class="kw">table</span>(my_df$my_var)/<span class="kw">length</span>(my_df$my_var)
+
+<span class="kw">barplot</span>(<span class="kw">table</span>())
+
+<span class="co"># plot in three rows: </span>
+<span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">1</span>))
+xlimits &lt;-<span class="st"> </span><span class="kw">range</span>(data1)
+<span class="kw">hist</span>( … <span class="dt">xlim=</span>xlimits)
+<span class="kw">plot_ss</span>(<span class="dt">x =</span> mlb11$at_bats, <span class="dt">y =</span> mlb11$runs,  x1, y1, x2, y2)
+showSquares=T/F
+leastSquares=T/F
+
+<span class="co"># OLS best-fit: </span>
+<span class="kw">lm</span>(y ~<span class="st"> </span>x, my_df)
+<span class="kw">summary</span>(<span class="kw">lm</span>(...)
+
+<span class="co"># line: </span>
+<span class="kw">abline</span>()
+<span class="kw">abline</span>(<span class="kw">lm</span>(...))
+<span class="kw">qqnorm</span>(m1$residuals)
+<span class="kw">qqline</span>(m1$residuals)
+<span class="kw">hist</span>(m1$residuals)
+
+<span class="co"># account for overlapping data point: </span>
+<span class="kw">plot</span>(<span class="kw">jitter</span>(x), y)</code></pre>
   </div>
   <h1>
    <a name="sources">

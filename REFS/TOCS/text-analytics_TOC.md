@@ -93,10 +93,10 @@ for match in my_regex.finditer(data):
     print(‘{first} {last} <{email}>’.format(**match.groupdict())) 
 ```
     
-- \w = any Unicode word character,  \W = anything not a Unicode word character
-- \s = any whitespace, \S = anything not whitespace, \t = tab
-- \d = any number 0-9, \D = any non-number
-- \b = word boundaries, \B = not word boundaries
+- \\w = any Unicode word character,  \W = anything not a Unicode word character
+- \\s = any whitespace, \S = anything not whitespace, \t = tab
+- \\d = any number 0-9, \D = any non-number
+- \\b = word boundaries, \B = not word boundaries
 
 counts, for when something occurs multiple times:
 

@@ -180,6 +180,10 @@ UML can be translated into relations:
 
 Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
 
+## References
+
+## Read
+
 - [Intro. to Relational Databases](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
 - [Relational Algebra](https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about)
 - [Relational Design Theory](https://lagunita.stanford.edu/courses/DB/RD/SelfPaced/about)
@@ -188,7 +192,7 @@ Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to desig
 - [ORM is an offensive anti-pattern](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html)
 - [Access 2016](http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html)
 
-**Inbox**
+## Unread
 
 - [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
 - [How does a relational database work?](http://coding-geek.com/how-databases-work/)

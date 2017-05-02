@@ -15,10 +15,10 @@ https://fossbytes.com/wp-content/uploads/2016/04/latest-computer-chart.jpg, http
 High-level languages must be translated into machine code. This translation is hardware-specific, not portable. Translation can be done once (when code is complied into an executable) or on-the-fly by an interpreter.
 http://stackoverflow.com/questions/30156349/is-bash-an-interpreted-language
 
-![Layers](layers.jpg)
-![Block diagram of computer](block-diagram-of-computer.jpg)
-![Case](case.jpg)
-![Ports](ports.jpg)
+![Layers](../ILLOS/layers.jpg)
+![Block diagram of computer](../ILLOS/block-diagram-of-computer.jpg)
+![Case](../ILLOS/case.jpg)
+![Ports](../ILLOS/ports.jpg)
 
 
 # Networks: Information representation and transfer

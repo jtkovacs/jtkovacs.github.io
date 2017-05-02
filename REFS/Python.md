@@ -864,7 +864,6 @@ pdb.set_trace() # launches a psuedo-shell
 - [Treehouse - CSV & JSON in Python](https://teamtreehouse.com/library/csv-and-json-in-python)
 - [DataCamp - Introduction to Python for data science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 - [Iterables vs. iterators vs. generators](http://nvie.com/posts/iterators-vs-generators/)
-- _Effective Python: 59 Specific Ways to Write Better Python_
 
 
 ## Unread

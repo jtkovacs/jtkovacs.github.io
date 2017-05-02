@@ -1,0 +1,712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+  </title>
+  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+ </head>
+ <body>
+  <p id="path">
+   <a href="../../pkb.html">
+    https://jtkovacs.github.io/pkb.html
+   </a>
+   &gt;
+   <a href="https://jtkovacs.github.io/REFS/HTML/Python-basics.html">
+    https://jtkovacs.github.io/REFS/HTML/Python-basics.html
+   </a>
+  </p>
+  <table class="TOC">
+   <tr>
+    <td>
+     <ul>
+      <li>
+       <a href="#operators">
+        Operators
+       </a>
+      </li>
+      <li>
+       <a href="#control-flow-statements">
+        Control flow statements
+       </a>
+      </li>
+      <li>
+       <a href="#comprehensions">
+        Comprehensions
+       </a>
+      </li>
+      <li>
+       <a href="#generator-expressions">
+        Generator expressions
+       </a>
+      </li>
+      <li>
+       <a href="#datatypes">
+        Datatypes
+       </a>
+       <ul>
+        <li>
+         <a href="#booleans">
+          Booleans
+         </a>
+        </li>
+        <li>
+         <a href="#numerics">
+          Numerics
+         </a>
+        </li>
+        <li>
+         <a href="#sequences">
+          Sequences
+         </a>
+         <ul>
+          <li>
+           <a href="#strings,-bytes,-&amp;-unicode">
+            Strings, bytes, &amp; unicode
+           </a>
+          </li>
+          <li>
+           <a href="#lists">
+            Lists
+           </a>
+          </li>
+          <li>
+           <a href="#queues">
+            Queues
+           </a>
+          </li>
+          <li>
+           <a href="#tuples">
+            Tuples
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#sets">
+          Sets
+         </a>
+        </li>
+        <li>
+         <a href="#dictionaries">
+          Dictionaries
+         </a>
+        </li>
+        <li>
+         <a href="#datetimes">
+          Datetimes
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </td>
+   </tr>
+  </table>
+  <h1>
+   <a name="operators">
+    Operators
+   </a>
+  </h1>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># COMPARISON operators</span>
+a <span class="op">==</span> b  <span class="co"># checking equality/equivalency; returns True</span>
+a <span class="op">!=</span> b  <span class="co"># checking nonequality; returns False</span>
+a <span class="op">is</span> b  <span class="co"># checking identicality; returns False</span>
+a <span class="op">is</span> <span class="op">not</span> b  <span class="co"># checking nonidenticality; returns True</span>
+a <span class="op">&lt;=</span> b  <span class="co"># inequality</span>
+a <span class="op">&lt;</span> b  <span class="co"># strict inequality</span>
+
+<span class="co"># LOGIC operators are used for selection and filtering;</span>
+<span class="co"># also with conditional operators to control program flow, although</span>
+<span class="co"># multiline if/else expressions are often more readable than complex Booleans</span>
+<span class="cf">if</span> x <span class="op">&gt;</span> y <span class="op">or</span> y <span class="op">!=</span> <span class="dv">1</span>:
+    <span class="bu">print</span>(x)
+   
+between1_and5 <span class="op">=</span> [i <span class="cf">for</span> i <span class="op">in</span> my_list where i <span class="op">&gt;</span> <span class="dv">1</span> <span class="op">and</span> i <span class="op">&lt;</span> <span class="dv">5</span>] <span class="co"># a list comprehension</span>
+
+<span class="co"># avoid negation of positive expressions, e.g. if not a is b</span>
+<span class="co"># prefer inline negation:</span>
+<span class="cf">if</span> x <span class="op">is</span> <span class="op">not</span> y:
+    <span class="bu">print</span>(x) 
+
+<span class="bu">all</span>(my_iterable)  <span class="co"># returns True if my_iterable is empty, or all its elements are True</span>
+<span class="bu">any</span>(my_iterable)  <span class="co"># returns False if my_iterable is empty, or any element is False</span></code></pre>
+  </div>
+  <h1>
+   <a name="control-flow-statements">
+    Control flow statements
+   </a>
+  </h1>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># CONDITIONAL operators: </span>
+<span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">2</span>:
+    <span class="cf">continue</span>  <span class="co"># jumps to next iteration </span>
+<span class="cf">elif</span> x <span class="op">&lt;</span> <span class="dv">0</span>:
+    <span class="cf">if</span> x <span class="op">==</span> <span class="op">-</span><span class="dv">1</span>:  <span class="co"># conditionals can be nested</span>
+        <span class="cf">break</span>  <span class="co"># completely exits loop </span>
+<span class="cf">else</span>:
+    <span class="co"># if included, else clause must be at the end  elif, else </span>
+
+<span class="co"># there is a conditional execution structure for errors; </span>
+<span class="co"># this is called catching an exception: </span>
+<span class="cf">try</span>: <span class="co"># to run code based on input </span>
+<span class="cf">except</span>: <span class="co"># ask for better input </span>
+<span class="cf">else</span>: <span class="co"># execute if try was successful; visually distinguishes the success case</span>
+<span class="cf">finally</span>: <span class="co"># run if all prior code has failed, e.g. close file handles</span>
+
+<span class="co"># DEFINITE loop: </span>
+<span class="cf">for</span> i <span class="op">in</span> [<span class="bu">set</span>]: …
+<span class="co"># or range(x) in python3 // xrange(x) in python2</span>
+<span class="co"># or range(len(my_list) in python3 // range(x) in python2</span>
+<span class="co"># or i, em in enumerate(my_iterable, [starting_index])</span>
+
+<span class="co"># INDEFINITE loop: </span>
+<span class="cf">while</span> [condition]: …  </code></pre>
+  </div>
+  <h1>
+   <a name="comprehensions">
+    Comprehensions
+   </a>
+  </h1>
+  <p>
+   Often,
+   <code>
+    for
+   </code>
+   loops can be conveniently replaced with a comprehension. Comprehensions can be fairly complex, but at a certain point it's better to switch back to a loop.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">squares <span class="op">=</span> [i<span class="op">**</span><span class="dv">2</span> <span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">10</span>)]  <span class="co"># list comprehension</span>
+squares3 <span class="op">=</span> [i<span class="op">**</span><span class="dv">2</span> <span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">30</span>) <span class="cf">if</span> i<span class="op">%</span><span class="dv">3</span><span class="op">==</span><span class="dv">0</span>]   <span class="co"># conditional list comprehension</span>
+two_filter <span class="op">=</span> [x <span class="cf">for</span> x <span class="op">in</span> a <span class="cf">if</span> x<span class="op">&gt;</span><span class="dv">4</span> <span class="cf">if</span> x<span class="op">%</span><span class="dv">2</span><span class="op">==</span><span class="dv">0</span>]  <span class="co"># multiconditional list comprehension</span>
+squared <span class="op">=</span> [[x<span class="op">**</span><span class="dv">2</span> <span class="cf">for</span> x <span class="op">in</span> row] <span class="cf">for</span> row <span class="op">in</span> matrix]  <span class="co"># nested list comprehensions</span>
+
+grid_list <span class="op">=</span> [(x,y) <span class="cf">for</span> x <span class="op">in</span> rows, y <span class="op">in</span> cols]   <span class="co"># list comprehension returns list of tuples</span>
+<span class="bu">set</span> <span class="op">=</span> {num <span class="op">*</span> <span class="dv">2</span> <span class="cf">for</span> num <span class="op">in</span> [<span class="dv">5</span>, <span class="dv">2</span>, <span class="dv">18</span>, <span class="dv">2</span>, <span class="dv">42</span>, <span class="dv">2</span>]}  <span class="co"># set comprehension</span>
+
+<span class="co"># dictionary comprehensions</span>
+squares_dict <span class="op">=</span> { i : i<span class="op">**</span><span class="dv">2</span> <span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">20</span>)}  
+transposed_dict <span class="op">=</span> {<span class="bu">dict</span>[key]:key <span class="cf">for</span> key <span class="op">in</span> <span class="bu">dict</span>} 
+<span class="bu">dict</span> <span class="op">=</span> {letter: num <span class="cf">for</span> letter, num <span class="op">in</span> <span class="bu">zip</span>(<span class="st">'abcdef'</span>, <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>))} </code></pre>
+  </div>
+  <h1>
+   <a name="generator-expressions">
+    Generator expressions
+   </a>
+  </h1>
+  <p>
+   A
+   <a href="http://anandology.com/python-practice-book/iterators.html">
+    generator expression
+   </a>
+   , also called a naked comprehension, is useful for processing large datasets because intermediate results are not stored, so RAM isn't overwhelmed.
+  </p>
+  <ul>
+   <li>
+    Generators are "stateful"
+   </li>
+   <li>
+    You won't get any errors when you iterate over an already exhausted iterator; see pp. 40-41 of
+    <em>
+     Effective Python
+    </em>
+    .
+   </li>
+   <li>
+    Generators are great for functional programming; they execute very quickly when chained together
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">it <span class="op">=</span> (<span class="bu">len</span>(x) <span class="cf">for</span> x <span class="op">in</span> <span class="bu">open</span>(<span class="st">'myfile.txt'</span>))
+<span class="bu">print</span>(<span class="bu">next</span>(it))
+<span class="bu">print</span>(<span class="bu">next</span>(it))
+
+roots <span class="op">=</span> ((x, x<span class="op">**</span><span class="fl">0.5</span>) <span class="cf">for</span> x <span class="op">in</span> it)
+<span class="bu">print</span>(<span class="bu">next</span>(roots))
+
+<span class="bu">sum</span>(i<span class="op">**</span><span class="dv">2</span> <span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="dv">10</span>))
+
+<span class="bu">list</span>(my_generator(data))  <span class="co"># to convert generator to list, but why??</span></code></pre>
+  </div>
+  <h1>
+   <a name="datatypes">
+    Datatypes
+   </a>
+  </h1>
+  <p>
+   Overview of
+   <a href="https://docs.python.org/3.5/library/stdtypes.html">
+    standard types
+   </a>
+   :
+  </p>
+  <ul>
+   <li>
+    Numerics are integers, floats, complex(re,im), decimals
+   </li>
+   <li>
+    Sequences are strings, lists, queues, tuples, ranges
+   </li>
+   <li>
+    Strings, bytes, unicode are character types
+   </li>
+   <li>
+    Collections AKA containers are lists, queues, tuples, sets, dicts;
+   </li>
+   <li>
+    Collections support operators
+    <code>
+     in, not in
+    </code>
+   </li>
+   <li>
+    Not all containers are iterable, see
+    <a href="http://nvie.com/posts/iterators-vs-generators/">
+     iterables vs iterators vs generators
+    </a>
+   </li>
+   <li>
+    The only container also a mapping is dict
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="bu">type</span>(my_var))  <span class="co"># check type</span>
+<span class="bu">print</span>(<span class="bu">repr</span>(my_var))  <span class="co"># printable representation; differentiates '5' and 5 when printing</span>
+
+<span class="bu">str</span>()  <span class="co"># convert to string</span>
+text.decode(<span class="st">'utf-8'</span>)  <span class="co"># convert bytes to unicode</span>
+text.encode(<span class="st">'utf-8'</span>)  <span class="co"># convert unicode to bytes</span>
+
+<span class="bu">int</span>()  <span class="co"># convert numeric to integer</span>
+my_int.to_bytes(length, byteorder<span class="op">=</span>big, <span class="op">*</span>, signed<span class="op">=</span><span class="va">False</span>)  <span class="co"># OverflowError if too small</span>
+my_int.from_bytes(<span class="bu">bytes</span>, byteorder<span class="op">=</span>little, <span class="op">*</span>, signed<span class="op">=</span><span class="va">True</span>)
+my_integer.bit_length()  <span class="co"># how many bits to represent an integer?</span>
+
+<span class="co"># also bool(), float()</span></code></pre>
+  </div>
+  <h2>
+   <a name="booleans">
+    Booleans
+   </a>
+  </h2>
+  <ul>
+   <li>
+    In addition to Boolean operands
+    <code>
+     True
+    </code>
+    and
+    <code>
+     False
+    </code>
+    , all Python objects have truth values
+   </li>
+   <li>
+    <code>
+     None
+    </code>
+    ,
+    <code>
+     0
+    </code>
+    for any numeric type, and empty collections evaluate as
+    <code>
+     False
+    </code>
+   </li>
+  </ul>
+  <h2>
+   <a name="numerics">
+    Numerics
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">my_float <span class="op">=</span> <span class="fl">5.519</span>
+<span class="bu">abs</span>(my_float)
+<span class="bu">sum</span>(my_iterable)  <span class="co"># sum up numerics stored in an iterable</span>
+<span class="bu">round</span>(my_float[, n])  <span class="co"># round float to n digits; n defaults to 0</span>
+
+<span class="co"># standard numeric operators;</span>
+<span class="co"># Python converts types as necessary to perform operations:</span>
+<span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span>  <span class="co"># addition</span>
+<span class="dv">2</span> <span class="op">-</span> <span class="dv">3</span>  <span class="co"># subtraction </span>
+<span class="dv">2</span> <span class="op">*</span> <span class="dv">3</span>  <span class="co"># multiplication </span>
+<span class="dv">2</span> <span class="op">**</span> <span class="dv">3</span>  <span class="co"># exponentiation</span>
+<span class="dv">6</span> <span class="op">/</span> <span class="dv">3</span>  <span class="co"># division </span>
+<span class="dv">7</span> <span class="op">%</span> <span class="dv">2</span>  <span class="co"># modulo; returns remainder of division, e.g. 7/2 = 2*3 + 1, the remainder is 1 </span>
+<span class="dv">5</span> <span class="op">//</span> <span class="dv">2</span>  <span class="co"># floor division, AKA integer division; divides int by int, drops remainder; e.g. 5//2 = 4 </span>
+<span class="bu">divmod</span>(<span class="dv">5</span>, <span class="dv">2</span>)  <span class="co"># returns (x//y, x%y)</span>
+
+<span class="im">import</span> math
+math.factorial(my_integer)
+math.sqrt(my_float)
+math.pi  <span class="co"># a constant</span>
+math.e  <span class="co"># a constant</span>
+math.gcd(my_float1, my_float2)  <span class="co"># greatest common divisor</span>
+math.trunc(my_float)  <span class="co"># truncates float to integer part, without rounding</span>
+math.floor(my_float)  <span class="co"># greatest float(integer) less than or equal to x</span>
+math.ceil(my_float)  <span class="co"># smallest float(integer) greater than or equal to x</span>
+math.log(my_float[, base])
+
+<span class="co"># the decimal library is useful for currency:</span>
+<span class="im">import</span> decimal
+my_decimal_price <span class="op">=</span> Decimal(<span class="st">'5.003'</span>)
+my_decimal_price.quantize(Decimal(<span class="st">'0.01'</span>), rounding<span class="op">=</span>ROUND_UP) <span class="co"># returns 5.01</span></code></pre>
+  </div>
+  <h2>
+   <a name="sequences">
+    Sequences
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Operations supported for all sequences:</span>
+x <span class="op">not</span> <span class="op">in</span> s  <span class="co"># membership check; returns True or False</span>
+x <span class="op">in</span> s
+
+s <span class="op">*</span> n  <span class="co"># adds s to self n times, n is an integer</span>
+s <span class="op">+</span> t  <span class="co"># concatenation</span>
+<span class="bu">len</span>(s)
+<span class="bu">min</span>(s)
+<span class="bu">max</span>(s)
+
+<span class="co"># Addressing for all sequences:</span>
+s.index(x[, i[, j]])  <span class="co"># find index of element x between optional i (inclusive) to j (exclusive)</span>
+s[i:j:k]  <span class="co"># slice s, taking every kth item from index i (inclusive) to j (exclusive)</span>
+<span class="co"># More slicing syntax: s[:], s[i:], s[:j], s[-3:-1] </span>
+<span class="co"># Stride k can be negative, but keep it positive to avoid confusion</span>
+<span class="co"># For readability, consider two statements: one to stride, the next to slice</span></code></pre>
+  </div>
+  <h3>
+   <a name="strings,-bytes,-&amp;-unicode">
+    Strings, bytes, &amp; unicode
+   </a>
+  </h3>
+  <p>
+   Like lists, strings are composed of elements that can be accessed via their index. Unlike lists, strings are immutable: individual elements cannot be deleted or modified.
+  </p>
+  <ul>
+   <li>
+    Your program should use unicode at its core, with helper functions to convert input and output:
+   </li>
+   <li>
+    Convert bytes (or string of bytes):
+    <code>
+     text.decode('utf-8')
+    </code>
+   </li>
+   <li>
+    Convert unicode string:
+    <code>
+     text.encode('utf-8')
+    </code>
+   </li>
+   <li>
+    In Python 3,
+    <code>
+     str()
+    </code>
+    is unicode,
+    <code>
+     bytes()
+    </code>
+    is raw 8-bit. In Python 2,
+    <code>
+     str()
+    </code>
+    is raw 8-bit,
+    <code>
+     unicode()
+    </code>
+    is unicode
+   </li>
+   <li>
+    String output is formatted with with
+    <a href="https://docs.python.org/3.5/library/string.html#formatstrings">
+     .format() and its mini-language
+    </a>
+    , since
+    <a href="https://docs.python.org/3.5/library/stdtypes.html#printf-style-string-formatting">
+     % formatting is depreciated
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">my_string1 <span class="op">=</span> <span class="st">'allows embedded "double" quotes'</span>
+my_string2 <span class="op">=</span> <span class="st">"allows embedded 'single' quotes"</span>
+my_string3 <span class="op">=</span> <span class="st">'quotes can be </span><span class="ch">\'</span><span class="st">escaped</span><span class="ch">\'</span><span class="st"> using the backslash character'</span>
+
+<span class="bu">print</span>(<span class="st">"Hello "</span> <span class="op">+</span> user_name <span class="op">+</span> <span class="st">", how are you doing?"</span>) <span class="co"># string concatenation</span>
+
+<span class="co"># split string</span>
+my_str.partition(sep)  <span class="co"># returns 3-tuple: (str_before_separator, separator, str_after_separator)</span>
+my_str.split(sep<span class="op">=</span><span class="va">None</span>, maxsplit<span class="op">=-</span><span class="dv">1</span>)  <span class="co"># split string every time delimiter occurs or #maxsplit </span>
+my_str.splitlines([keepends])  <span class="co"># keepends is a Boolean</span>
+
+<span class="co">' '</span>.join(my_iterable)  <span class="co"># join elements in an iterator using ' ' as the separator between elements</span>
+my_string.replace(old, new[, count])  <span class="co"># optional 'count' specifies #instances to replace</span>
+my_string.isalpha()  <span class="co"># False if nonalphabetic character in string</span>
+my_string.zfill(width)  <span class="co"># left-pads a string with zeros </span>
+my_string.ljust(width[, fillchar])
+<span class="co"># Many of these methods have counterparts that start from the end of the string </span>
+<span class="co"># s.rindex(), s.rfind(), s.rpartition(), etc.</span></code></pre>
+  </div>
+  <h3>
+   <a name="lists">
+    Lists
+   </a>
+  </h3>
+  <p>
+   Lists store multiple elements of any type, including mixed type and including other lists. Lists are mutable; unlike string methods, most list methods alter the list in-place and return None. Lists are both sequences and containers.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">my_list <span class="op">=</span> <span class="bu">list</span>()
+my_list <span class="op">=</span> []
+my_list <span class="op">=</span> <span class="bu">list</span>(<span class="st">'abc'</span>)
+my_list <span class="op">=</span> [<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>]
+my_list <span class="op">=</span> [i <span class="cf">for</span> i <span class="op">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n))]
+
+b <span class="op">=</span> a  <span class="co"># an ALIAS, not a copy! a is b; changes to b affect a</span>
+b <span class="op">=</span> <span class="bu">list</span>(a) <span class="co"># copies list; b is equivalent, but not identical to a </span>
+b <span class="op">=</span> a[:]  <span class="co"># copies list; b is equivalent, but not identical to a </span>
+
+em <span class="op">in</span> my_list  <span class="co"># check membership</span>
+
+my_list[i[:j]] <span class="op">=</span> em  <span class="co"># update list; em will replace slice i:j, even if len(em) &lt; len(list[i:j])</span>
+my_list.insert(index, em)  <span class="co"># adds element at index</span>
+my_list.append(my_list2)  <span class="co"># adds element/s at end of list </span>
+my_list1 <span class="op">+</span> my_list2  <span class="co"># adds element/s at end of list</span>
+my_list.extend(em)  <span class="co"># adds element/s at end of list; faster for large lists</span>
+
+my_list.remove(em)
+<span class="kw">del</span> my_list[i:j]
+my_list.pop([i])  <span class="co"># deletes and returns last element, or ith element</span>
+
+<span class="co">' '</span>.join(my_iterable)  <span class="co"># join elements in an iterator using ' ' as the separator between elements</span>
+my_list.reverse()  <span class="co"># reverses list elements in-place</span>
+<span class="bu">sum</span>(my_list)  <span class="co"># if list elements are numerics</span>
+my_list.sort()  <span class="co"># sorts list elements in place</span>
+my_sorted_list <span class="op">=</span> <span class="bu">sorted</span>(my_list, reverse<span class="op">=</span><span class="va">False</span>)  <span class="co"># returns sorted copy of unaltered list</span>
+<span class="co"># https://wiki.python.org/moin/HowTo/Sorting</span></code></pre>
+  </div>
+  <h3>
+   <a name="queues">
+    Queues
+   </a>
+  </h3>
+  <p>
+   Use a
+   <a href="https://docs.python.org/3/library/collections.html#deque-objects">
+    double-ended queue
+   </a>
+   , a list-like datatype, when you need to quickly insert or remove items from the end and beginning (deques are a stack-queue hybrid):
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> collections
+my_deque <span class="op">=</span> deque()
+
+my_deque.appendleft(em)  <span class="co"># add element to left</span>
+my_deque.insert(i, em)  <span class="co"># add element at specified index</span>
+my_deque.append(em)  <span class="co"># add element to right</span>
+my_deque.reverse()  <span class="co"># reverses elements in place, returning None</span>
+
+my_deque.popleft()  <span class="co"># remove and return element from left</span>
+my_deque.pop()  <span class="co"># remove and return element from right</span></code></pre>
+  </div>
+  <p>
+   Use a
+   <a href="https://docs.python.org/3/library/heapq.html">
+    heap queue
+   </a>
+   when you want a list that's automatically sorted:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> heapq
+my_heap <span class="op">=</span> <span class="bu">list</span>()
+heappush(my_heap, <span class="dv">3</span>)  <span class="co"># add element</span>
+heappush(my_heap, <span class="dv">5</span>)
+heappush(my_heap, <span class="dv">1</span>)
+
+my_list <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">1</span>]
+my_heap <span class="op">=</span> heapify(my_list)
+
+my_heap[<span class="dv">0</span>]  <span class="co"># always returns lowest number; here, 1</span>
+<span class="bu">print</span>(heappop(my_heap), heappop(my_heap))  <span class="co"># removes and prints lowest, next lowest, etc.; here 1, 3</span></code></pre>
+  </div>
+  <h3>
+   <a name="tuples">
+    Tuples
+   </a>
+  </h3>
+  <p>
+   Tuples addressing works like list addressing; unlike lists, though, tuples are immutable. When comparing tuples, Python proceeds on an index-by-index basis. Tuples are used for composite dictionary keys and multivariable assignment:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">my_tuple <span class="op">=</span> <span class="st">'a'</span>,
+my_tuple <span class="op">=</span> <span class="st">'a'</span>,<span class="st">'b'</span>,<span class="st">'c'</span>,<span class="st">'d'</span>,<span class="st">'e'</span>
+my_tuple <span class="op">=</span> <span class="bu">tuple</span>(my_iterable)
+  
+a <span class="op">=</span> <span class="dv">1</span>,<span class="dv">2</span>,
+b,c <span class="op">=</span> a  <span class="co"># multivariable assignment, aka unpacking a tuple; b=1, c=2</span>
+d<span class="op">=</span>b,c  <span class="co"># packing a tuple; d=1,2 and a==d</span>
+
+directory_dict[last,first] <span class="op">=</span> <span class="st">'phone_number'</span>  <span class="co"># tuple as composite key</span>
+<span class="cf">for</span> last, first <span class="op">in</span> directory_dict:
+        <span class="bu">print</span> first, last, directory_dict[last,first]</code></pre>
+  </div>
+  <h2>
+   <a name="sets">
+    Sets
+   </a>
+  </h2>
+  <p>
+   The value of sets is access to set operations; by design, seys lack slicing and indexing:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">my_set1 <span class="op">=</span> {<span class="st">'a'</span>, <span class="st">'b'</span>}
+my_set2 <span class="op">=</span> <span class="bu">set</span>([<span class="st">'a'</span>,<span class="st">'b'</span>,<span class="st">'c'</span>])
+
+x <span class="op">in</span> my_set1  <span class="co"># True if x an element of set</span>
+
+words_unique <span class="op">=</span> <span class="bu">list</span>(<span class="bu">set</span>(words))  <span class="co"># find unique values</span>
+
+my_set1.add(elem)
+my_set1.remove(elem)  <span class="co"># raises KeyError if elem not in set</span>
+my_set1.discard(elem)
+my_set1.pop()  <span class="co"># remove and return arbitrary element</span>
+my_set1.clear()  <span class="co"># deletes all elements</span>
+
+my_set1.isdisjoint(my_set2)  <span class="co"># True if nonoverlapping sets</span>
+my_set1.issubset(my_set2)
+my_set1.union(my_set2)  <span class="co"># creates a new set from union of sets</span>
+my_set1.intersect(my_set2)  <span class="co"># creates a new set from intersection of sets</span>
+my_set1.difference(my_set2)  <span class="co"># creates a new set: set1 - set2</span>
+my_set1.symmetric_difference(my_set2)  <span class="co"># creates a new set: (set1-set2)U(set2-set1)</span>
+<span class="co"># many of these operations have more mathematical-looking alternative notation: </span>
+<span class="co"># https://docs.python.org/3.5/library/stdtypes.html#set-types-set-frozenset</span></code></pre>
+  </div>
+  <h2>
+   <a name="dictionaries">
+    Dictionaries
+   </a>
+  </h2>
+  <p>
+   A dictionary maps keys to values; values are retrieved via their key, doing away with indices. A dictionary is much faster to search than a list, and is often used to count letter or word occurrences in a block of text.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">a <span class="op">=</span> <span class="bu">dict</span>(one<span class="op">=</span><span class="dv">1</span>, two<span class="op">=</span><span class="dv">2</span>, three<span class="op">=</span><span class="dv">3</span>)
+b <span class="op">=</span> {<span class="st">'one'</span>: <span class="dv">1</span>, <span class="st">'two'</span>: <span class="dv">2</span>, <span class="st">'three'</span>: <span class="dv">3</span>}
+c <span class="op">=</span> <span class="bu">dict</span>(<span class="bu">zip</span>([<span class="st">'one'</span>, <span class="st">'two'</span>, <span class="st">'three'</span>], [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]))
+d <span class="op">=</span> <span class="bu">dict</span>([(<span class="st">'two'</span>, <span class="dv">2</span>), (<span class="st">'one'</span>, <span class="dv">1</span>), (<span class="st">'three'</span>, <span class="dv">3</span>)])
+<span class="cf">assert</span> a <span class="op">==</span> b <span class="op">==</span> c <span class="op">==</span> d
+
+my_dict1.update(my_dict2)  <span class="co"># concatenate dictionaries</span>
+my_dict[<span class="st">'key'</span>] <span class="op">=</span> <span class="st">'value'</span>  <span class="co"># add element</span>
+<span class="kw">del</span> my_dict[<span class="st">'key'</span>]  <span class="co"># delete element</span>
+my_dict.clear()  <span class="co"># remove all elements</span>
+<span class="cf">if</span> key <span class="op">in</span> my_dict: ...  <span class="co"># test membership</span>
+
+<span class="co"># ways to view or unpack a dictionary</span>
+<span class="cf">for</span> pairs <span class="op">in</span> my_dict.items(): ... 
+<span class="cf">for</span> k, v <span class="op">in</span> my_dict.items(): ...
+<span class="cf">for</span> k <span class="op">in</span> my_dict.keys(): ...
+<span class="cf">for</span> v <span class="op">in</span> my_dict.values(): ... 
+<span class="bu">print</span>(<span class="st">"{}: {}"</span>.<span class="bu">format</span>(<span class="op">**</span>my_dict))
+<span class="cf">assert</span> <span class="bu">iter</span>(my_dict) <span class="op">==</span> <span class="bu">iter</span>(my_dict.keys())  <span class="co"># returns an iterator of dictionary keys </span>
+
+my_dict.pop(<span class="st">'k'</span>[, default_value])  <span class="co"># returns and deletes a random element, or returns default_value</span>
+my_dict.popitem()  <span class="co"># deletes and returns arbitrary (k, v) pair</span>
+my_dict.setdefault(<span class="st">'k'</span>[, default_value])  <span class="co"># return v if k exists, otherwise set k=default_value, returns v</span>
+my_dict.get(<span class="st">'k'</span>[, default_value])  <span class="co"># returns default_value if k not found; otherwise returns v</span>
+my_dict[<span class="st">'key'</span>] <span class="op">=</span> my_dict.get(<span class="st">'key'</span>,<span class="dv">0</span>) <span class="op">+</span> <span class="dv">1</span>  <span class="co"># counter</span>
+
+<span class="co"># special dictionaries</span>
+<span class="im">import</span> collections
+my_ordered_dict <span class="op">=</span> OrderedDict()  <span class="co"># recalls order in which its populated</span>
+my_default_dict <span class="op">=</span> defaultdict(<span class="bu">int</span>)  <span class="co"># sets default_value == 0, ready to increment</span>
+my_default_dict[<span class="st">'key'</span>] <span class="op">+=</span> <span class="dv">1</span>  <span class="co"># increment values initialized at 0</span></code></pre>
+  </div>
+  <h2>
+   <a name="datetimes">
+    Datetimes
+   </a>
+  </h2>
+  <p>
+   Code should convert local datetimes to UTC, perform computations, then convert back to local datetimes for display purposes.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> datetime
+<span class="im">import</span> pytz  <span class="co"># a database of timezones</span>
+<span class="co"># http://www.saltycrane.com/blog/2009/05/converting-time-zones-datetime-objects-python/</span>
+
+<span class="co"># get current date/time</span>
+my_current_datetime <span class="op">=</span> datetime.datetime.now(tzinfo<span class="op">=</span>my_timezone)
+my_current_date <span class="op">=</span>  now.date()
+my_current_time <span class="op">=</span> now.time()
+
+<span class="co"># create naive datetime object: doesn't know its timezone</span>
+naive_datetime_from_timestamp <span class="op">=</span> datetime.datetime.fromtimestamp(my_posix_timestamp)
+naive_datetime <span class="op">=</span> datetime.datetime(my_year, my_month, my_day[, my_hour[, my_min[, my_sec[, my_microsec]]]])
+
+<span class="co"># create timedelta objects for timezone assignment/conversion</span>
+pacific_tz_offset <span class="op">=</span> datetime.timezone(datetime.timedelta(hours<span class="op">=-</span><span class="dv">8</span>))
+eastern_tz_offset <span class="op">=</span> datetime.timezone(datetime.timedelta(hours<span class="op">=-</span><span class="dv">5</span>))
+
+<span class="co"># create aware datetime object: knows its timezone</span>
+my_pacific_datetime <span class="op">=</span> datetime.datetime(my_year, my_month, my_day, my_hour, tzinfo<span class="op">=</span>pacific_tz_offset)
+my_pacific_datetime <span class="op">=</span> my_naive_datetime.astimezone(pacific_tz_offset)
+
+<span class="co"># create timedelta object to manipulate datetime objects</span>
+my_inc_5hrs <span class="op">=</span> datetime.timedelta(hours<span class="op">=</span><span class="dv">5</span>)
+
+<span class="co"># access or update a datetime object</span>
+my_incremented_datetime <span class="op">=</span> my_datetime <span class="op">+</span> my_inc_5hrs
+my_datetime.replace(hour<span class="op">=</span>my_new_hour)
+my_year <span class="op">=</span> my_datetime.year
+
+<span class="co"># convert datetime from string</span>
+my_datetime.strftime(my_format_string) 
+<span class="co"># Format string mini-language: %Y-%m-%d %H:%M:%S %Z%z</span>
+<span class="co"># https://docs.python.org/3/library/datetime.html?highlight=datetime#strftime-and-strptime-behavior</span></code></pre>
+  </div>
+ </body>
+</html>

@@ -77,9 +77,26 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        </ul>
       </li>
       <li>
-       <a href="#groups-addressing">
-        groups addressing
+       <a href="#sources">
+        Sources
        </a>
+       <ul>
+        <li>
+         <a href="#references">
+          References
+         </a>
+        </li>
+        <li>
+         <a href="#read">
+          Read
+         </a>
+        </li>
+        <li>
+         <a href="#unread">
+          Unread
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </td>
@@ -216,16 +233,14 @@ my_var <span class="op">=</span> re.findall (r’’’
     <span class="op">^</span>(?P<span class="op">&lt;</span>name<span class="op">&gt;</span>[<span class="op">-\</span>w ]<span class="op">+</span>,<span class="op">\</span>s[<span class="op">-\</span>w ]<span class="op">+</span>)<span class="op">\</span>t   <span class="co"># search for lastname, firstname</span>
     (<span class="op">\</span>)?<span class="op">\</span>d{<span class="dv">3</span>})?<span class="op">\</span>s?<span class="op">-</span>?<span class="op">\</span>d<span class="op">\</span>{<span class="dv">3</span>}<span class="op">-\</span>d{<span class="dv">4</span>})? <span class="co"># search for phone number, optional</span>
     (?<span class="op">&lt;</span>email<span class="op">&gt;</span>[<span class="op">-\</span>w<span class="op">\</span>d.<span class="op">+</span>]<span class="op">+</span> @[<span class="op">-\</span>w<span class="op">\</span>d.]<span class="op">+</span>)<span class="op">\</span>t$  <span class="co"># search for emails</span>
-    ‘’’, data, flags)</code></pre>
+    ‘’’, data, flags)
+
+<span class="co"># groups addressing</span>
+my_var.groups()
+my_var.group_dict() 
+my_var.group(‘group_name’)
+my_var.group(<span class="dv">1</span>)</code></pre>
   </div>
-  <h1>
-   <a name="groups-addressing">
-    groups addressing
-   </a>
-  </h1>
-  <p>
-   my_var.groups() my_var.group_dict() my_var.group(‘group_name’) my_var.group(1) ```
-  </p>
   <h1>
    <a name="sources">
     Sources

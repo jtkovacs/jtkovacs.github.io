@@ -1,7 +1,10 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/text-analytics.html">https://jtkovacs.github.io/REFS/HTML/text-analytics.html</a></p><table class="TOC"><tr><td>- [Text analytics in Python](#text-analytics-in-python)
 	- [Manage punctuation, case, & whitespace](#manage-punctuation,-case,-&-whitespace)
 	- [Search & regex](#search-&-regex)
-- [groups addressing](#groups-addressing)
+- [Sources](#sources)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
 </td></tr></table>
 
 # Text analytics in Python
@@ -108,7 +111,6 @@ my_var = re.findall (r’’’
     (\)?\d{3})?\s?-?\d\{3}-\d{4})? # search for phone number, optional
     (?<email>[-\w\d.+]+ @[-\w\d.]+)\t$  # search for emails
     ‘’’, data, flags)
-```
 
 # groups addressing
 my_var.groups()

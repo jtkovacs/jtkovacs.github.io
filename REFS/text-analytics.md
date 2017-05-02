@@ -103,7 +103,6 @@ my_var = re.findall (r’’’
     (\)?\d{3})?\s?-?\d\{3}-\d{4})? # search for phone number, optional
     (?<email>[-\w\d.+]+ @[-\w\d.]+)\t$  # search for emails
     ‘’’, data, flags)
-```
 
 # groups addressing
 my_var.groups()

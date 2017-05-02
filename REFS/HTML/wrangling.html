@@ -117,107 +117,107 @@ ftxt <span class="op">=</span> urllib2.urlopen(“target_url”).read()
 <span class="co"># store user input: </span>
 <span class="co"># Python 2:</span>
 vname <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">'What is your name?</span><span class="ch">\n</span><span class="st">'</span>)
-age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(‘What <span class="op">is</span> your age?<span class="st">")</span>
-<span class="st">long_text = sys.stdin.read().strip()</span>
-<span class="st"># type ctrl+d for EOF</span>
-<span class="st"># Python 3:</span>
-<span class="st">vname = input('What is your name?')</span>
-<span class="st">age = int(input(‘What is your age? ‘)</span>
+age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"What is your age?"</span>)
+long_text <span class="op">=</span> sys.stdin.read().strip()
+<span class="co"># type ctrl+d for EOF</span>
+<span class="co"># Python 3:</span>
+vname <span class="op">=</span> <span class="bu">input</span>(<span class="st">'What is your name?'</span>)
+age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(‘What <span class="op">is</span> your age? ‘)
 
-<span class="st"># open text file, read single line, remove from memory: </span>
-<span class="st">fhand = open(‘filename.txt’, encoding=’utf-8’)</span>
-<span class="st">fhand.readline() </span>
-<span class="st">fhand.close()</span>
+<span class="co"># open text file, read single line, remove from memory: </span>
+fhand <span class="op">=</span> <span class="bu">open</span>(‘filename.txt’, encoding<span class="op">=</span>’utf<span class="dv">-8</span>’)
+fhand.readline() 
+fhand.close()
 
-<span class="st"># load small text file into string: </span>
-<span class="st">str_name = fhand.read(#bytes)</span>
+<span class="co"># load small text file into string: </span>
+str_name <span class="op">=</span> fhand.read(<span class="co">#bytes)</span>
 
-<span class="st"># load large text file into list: </span>
-<span class="st">l_name = fhand.readlines()</span>
+<span class="co"># load large text file into list: </span>
+l_name <span class="op">=</span> fhand.readlines()
 
-<span class="st"># load text file into pandas dataframe:</span>
-<span class="st">from pandas import DataFrame, Series</span>
-<span class="st">import pandas as pd</span>
-<span class="st">frame=DataFrame(open(‘/file/path.txt’))</span>
+<span class="co"># load text file into pandas dataframe:</span>
+<span class="im">from</span> pandas <span class="im">import</span> DataFrame, Series
+<span class="im">import</span> pandas <span class="im">as</span> pd
+frame<span class="op">=</span>DataFrame(<span class="bu">open</span>(‘<span class="op">/</span><span class="bu">file</span><span class="op">/</span>path.txt’))
 
-<span class="st"># fetch through API: uses urllib2, json, pandas</span>
-<span class="st"># https://github.com/katychuang/python-data-sci-basics/blob/master/teachers_notes/api_example.py</span>
+<span class="co"># fetch through API: uses urllib2, json, pandas</span>
+<span class="co"># https://github.com/katychuang/python-data-sci-basics/blob/master/teachers_notes/api_example.py</span>
 
-<span class="st"># open csv with context manager pattern, load into list: </span>
-<span class="st">import csv</span>
-<span class="st">with open(filename,encoding=’utf-8’) as file_in:</span>
-<span class="st">my_reader = csv.reader(file_in,delimiter=’</span><span class="ch">\t</span><span class="st">’)</span>
-<span class="st">data = list(my_reader)</span>
+<span class="co"># open csv with context manager pattern, load into list: </span>
+<span class="im">import</span> csv
+<span class="cf">with</span> <span class="bu">open</span>(filename,encoding<span class="op">=</span>’utf<span class="dv">-8</span>’) <span class="im">as</span> file_in:
+my_reader <span class="op">=</span> csv.reader(file_in,delimiter<span class="op">=</span>’<span class="op">\</span>t’)
+data <span class="op">=</span> <span class="bu">list</span>(my_reader)
 
-<span class="st"># load csv into dict &amp; read dict: </span>
-<span class="st">with open(filename,encoding=’utf-8’) as file_in:</span>
-<span class="st">my_reader = csv.DictReader(file_in,delimiter=’</span><span class="ch">\t</span><span class="st">’) </span>
-<span class="st">data[‘field name’] # retrieve data by column name</span>
+<span class="co"># load csv into dict &amp; read dict: </span>
+<span class="cf">with</span> <span class="bu">open</span>(filename,encoding<span class="op">=</span>’utf<span class="dv">-8</span>’) <span class="im">as</span> file_in:
+my_reader <span class="op">=</span> csv.DictReader(file_in,delimiter<span class="op">=</span>’<span class="op">\</span>t’) 
+data[‘field name’] <span class="co"># retrieve data by column name</span>
 
-<span class="st"># load csv into array: </span>
-<span class="st">my_array = np.genfromtxt(fname,delimiter=’</span><span class="ch">\t</span><span class="st">’,dtypes=None)</span>
+<span class="co"># load csv into array: </span>
+my_array <span class="op">=</span> np.genfromtxt(fname,delimiter<span class="op">=</span>’<span class="op">\</span>t’,dtypes<span class="op">=</span><span class="va">None</span>)
 
-<span class="st"># open JSON: </span>
-<span class="st">import json</span>
-<span class="st">with open(‘filename.json’) as myfile:</span>
-<span class="st">file = json.load(myfile) # load chooses the closest Python object</span>
+<span class="co"># open JSON: </span>
+<span class="im">import</span> json
+<span class="cf">with</span> <span class="bu">open</span>(‘filename.json’) <span class="im">as</span> myfile:
+<span class="bu">file</span> <span class="op">=</span> json.load(myfile) <span class="co"># load chooses the closest Python object</span>
 
-<span class="st"># load file into list of dicts using json ’load string’ and a list comprehension:</span>
-<span class="st">records = [json.loads(line) for line in open(‘/file/path.txt’,’rb’)</span>
+<span class="co"># load file into list of dicts using json ’load string’ and a list comprehension:</span>
+records <span class="op">=</span> [json.loads(line) <span class="cf">for</span> line <span class="op">in</span> <span class="bu">open</span>(‘<span class="op">/</span><span class="bu">file</span><span class="op">/</span>path.txt’,’rb’)
 
-<span class="st">print(*objects, sep=' ', end='</span><span class="ch">\n</span><span class="st">', file=sys.stdout, flush=False)</span>
+<span class="bu">print</span>(<span class="op">*</span>objects, sep<span class="op">=</span><span class="st">' '</span>, end<span class="op">=</span><span class="st">'</span><span class="ch">\n</span><span class="st">'</span>, <span class="bu">file</span><span class="op">=</span>sys.stdout, flush<span class="op">=</span><span class="va">False</span>)
 
-<span class="st"># output to screen: </span>
-<span class="st">print(vname) or print vname</span>
+<span class="co"># output to screen: </span>
+<span class="bu">print</span>(vname) <span class="op">or</span> <span class="bu">print</span> vname
 
-<span class="st"># create reusable message: </span>
-<span class="st">message = ’There are </span><span class="sc">{it}</span><span class="st"> items’ </span>
-<span class="st">print(message.format(it=nr_items)</span>
+<span class="co"># create reusable message: </span>
+message <span class="op">=</span> ’There are {it} items’ 
+<span class="bu">print</span>(message.<span class="bu">format</span>(it<span class="op">=</span>nr_items)
 
-<span class="st"># print columns</span>
-<span class="st">print(state,’</span><span class="ch">\t</span><span class="st">’,count)</span>
+<span class="co"># print columns</span>
+<span class="bu">print</span>(state,’<span class="op">\</span>t’,count)
 
-<span class="st"># specify display of decimals: </span>
-<span class="st">print(‘Price: ${:03.2f}’.format(price))</span>
+<span class="co"># specify display of decimals: </span>
+<span class="bu">print</span>(‘Price: ${:<span class="fl">03.</span>2f}’.<span class="bu">format</span>(price))
 
-<span class="st"># add linebreak: </span>
-<span class="st">print(‘Hello </span><span class="ch">\n</span><span class="st"> world!’)</span>
+<span class="co"># add linebreak: </span>
+<span class="bu">print</span>(‘Hello <span class="op">\</span>n world<span class="op">!</span>’)
 
-<span class="st"># clear screen: </span>
-<span class="st">os.system(‘cls’ if os_name == ‘nt’ else ‘clear’)</span>
+<span class="co"># clear screen: </span>
+os.system(‘cls’ <span class="cf">if</span> os_name <span class="op">==</span> ‘nt’ <span class="cf">else</span> ‘clear’)
 
-<span class="st"># output to text: </span>
-<span class="st"># CAUTION: opening existing file with ‘w’ will erase its contents; instead, use ‘a’</span>
-<span class="st">fout = open('output.txt', 'w')</span>
+<span class="co"># output to text: </span>
+<span class="co"># CAUTION: opening existing file with ‘w’ will erase its contents; instead, use ‘a’</span>
+fout <span class="op">=</span> <span class="bu">open</span>(<span class="st">'output.txt'</span>, <span class="st">'w'</span>)
 
-<span class="st"># add content to new file: </span>
-<span class="st">fout.write(line)</span>
-<span class="st"># save and close file: </span>
-<span class="st">fout.close()</span>
+<span class="co"># add content to new file: </span>
+fout.write(line)
+<span class="co"># save and close file: </span>
+fout.close()
 
-<span class="st"># output to pdf:</span>
-<span class="st">from matplotlib.backends.backend_pdf import PdfPages</span>
-<span class="st">pp = PdfPages('foo.pdf')</span>
-<span class="st">pp.savefig()pp.close()</span>
+<span class="co"># output to pdf:</span>
+<span class="im">from</span> matplotlib.backends.backend_pdf <span class="im">import</span> PdfPages
+pp <span class="op">=</span> PdfPages(<span class="st">'foo.pdf'</span>)
+pp.savefig()pp.close()
 
-<span class="st"># https://openpyxl.readthedocs.io/en/default/</span>
-<span class="st">import openpyxl</span>
-<span class="st">output to excel: save_spreadsheet(“filename”, my_data)</span>
+<span class="co"># https://openpyxl.readthedocs.io/en/default/</span>
+<span class="im">import</span> openpyxl
+output to excel: save_spreadsheet(“filename”, my_data)
 
-<span class="st"># output to csv: see also unicodecsv</span>
-<span class="st">numpy.savetxt("</span>filename<span class="st">", my_data, delimiter="</span>,<span class="st">", fmt="</span><span class="op">%</span>s<span class="st">")</span>
-<span class="st">with open(‘filename’, ‘a’) as myfile:</span>
-<span class="st">fnames = [l’A’, ‘B’, ‘C’]</span>
-<span class="st">filewriter = csv.DictWriter(myfile, fieldnames = fnames)</span>
-<span class="st">filewriter = writerheader()</span>
-<span class="st">filewriter = writerow({‘A’: 1, ‘B’:2, ‘C’:3})</span>
+<span class="co"># output to csv: see also unicodecsv</span>
+numpy.savetxt(<span class="st">"filename"</span>, my_data, delimiter<span class="op">=</span><span class="st">","</span>, fmt<span class="op">=</span><span class="st">"</span><span class="sc">%s</span><span class="st">"</span>)
+<span class="cf">with</span> <span class="bu">open</span>(‘filename’, ‘a’) <span class="im">as</span> myfile:
+fnames <span class="op">=</span> [l’A’, ‘B’, ‘C’]
+filewriter <span class="op">=</span> csv.DictWriter(myfile, fieldnames <span class="op">=</span> fnames)
+filewriter <span class="op">=</span> writerheader()
+filewriter <span class="op">=</span> writerow({‘A’: <span class="dv">1</span>, ‘B’:<span class="dv">2</span>, ‘C’:<span class="dv">3</span>})
 
-<span class="st"># output to JSON:</span>
-<span class="st"># output to string: </span>
-<span class="st">json.dumps(my_list)</span>
-<span class="st"># output to file:</span>
-<span class="st">with open(‘filename.json’, ‘a’) as my_file:</span>
-<span class="st">json.dump(list_of_dicts, my_file)</span></code></pre>
+<span class="co"># output to JSON:</span>
+<span class="co"># output to string: </span>
+json.dumps(my_list)
+<span class="co"># output to file:</span>
+<span class="cf">with</span> <span class="bu">open</span>(‘filename.json’, ‘a’) <span class="im">as</span> my_file:
+json.dump(list_of_dicts, my_file)</code></pre>
   </div>
   <h2>
    <a name="...-to-database-via-peewee-orm">

@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+  </title>
+  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+ </head>
+ <body>
+  <p id="path">
+   <a href="../../pkb.html">
+    https://jtkovacs.github.io/pkb.html
+   </a>
+   &gt;
+   <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">
+    https://jtkovacs.github.io/REFS/HTML/wrangling.html
+   </a>
+  </p>
+  <table class="TOC">
+   <tr>
+    <td>
+     <ul>
+      <li>
+       <a href="#i/o">
+        I/O
+       </a>
+       <ul>
+        <li>
+         <a href="#...-to-database-via-peewee-orm">
+          ... to database via Peewee ORM
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#to-check-for-an-empty-list,-avoid-(if-len(my_list)-==-0)">
+        to check for an empty list, avoid (if len(my_list) == 0)
+       </a>
+      </li>
+      <li>
+       <a href="#prefer-this-approach:">
+        prefer this approach:
+       </a>
+      </li>
+      <li>
+       <a href="#make-an-iterator-that-aggregates-elements-from-each-of-the-iterables.">
+        Make an iterator that aggregates elements from each of the iterables.
+       </a>
+      </li>
+      <li>
+       <a href="#search-file-contents:-">
+        search file contents:
+       </a>
+      </li>
+      <li>
+       <a href="#search-more-efficiently:">
+        search more efficiently:
+       </a>
+      </li>
+      <li>
+       <a href="#find-specific-string:-">
+        find specific string:
+       </a>
+      </li>
+      <li>
+       <a href="#troubleshooting--whitespace-errors:-print-repr(strname)">
+        troubleshooting whitespace errors: print repr(strname)
+       </a>
+      </li>
+      <li>
+       <a href="#count-w/-standard-library">
+        count w/ standard library
+       </a>
+      </li>
+      <li>
+       <a href="#rank-w/-standard-library">
+        rank w/ standard library
+       </a>
+      </li>
+      <li>
+       <a href="#count-w/-pandas">
+        count w/ pandas
+       </a>
+      </li>
+      <li>
+       <a href="#clean-w/-pandas">
+        clean w/ pandas
+       </a>
+      </li>
+      <li>
+       <a href="#plot">
+        plot
+       </a>
+      </li>
+      <li>
+       <a href="#numpy-search-for-text-in-frame">
+        numpy search for text in frame
+       </a>
+      </li>
+      <li>
+       <a href="#binary-labeling:-group-1-where-contains-text,-group-2-otherwise">
+        Binary labeling: Group 1 where contains text, Group 2 otherwise
+       </a>
+      </li>
+      <li>
+       <a href="#group-&amp;-rank--results">
+        group &amp; rank results
+       </a>
+      </li>
+     </ul>
+    </td>
+   </tr>
+  </table>
+  <h1>
+   <a name="i/o">
+    I/O
+   </a>
+  </h1>
+  <ul>
+   <li>
+    <a href="https://teamtreehouse.com/library/using-databases-in-python">
+     Treehouse - Using Databases in Python
+    </a>
+   </li>
+   <li>
+    <a class="uri" href="https://docs.python.org/3/tutorial/inputoutput.html">
+     https://docs.python.org/3/tutorial/inputoutput.html
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># to read or write binary (raw 8-bit):</span>
+<span class="cf">with</span> <span class="bu">open</span>(<span class="st">'filename'</span>, <span class="st">'wb'</span>) <span class="im">as</span> f: 
+f.write(os.urandom(<span class="dv">10</span>))
+
+<span class="cf">with</span> <span class="bu">open</span>(<span class="st">'filename'</span>, <span class="st">'rb'</span>) <span class="im">as</span> f: 
+f.read()
+
+<span class="bu">open</span>(<span class="bu">file</span>, mode<span class="op">=</span><span class="st">'r'</span>, buffering<span class="op">=-</span><span class="dv">1</span>, encoding<span class="op">=</span><span class="va">None</span>, errors<span class="op">=</span><span class="va">None</span>, newline<span class="op">=</span><span class="va">None</span>, closefd<span class="op">=</span><span class="va">True</span>, opener<span class="op">=</span><span class="va">None</span>)
+<span class="co"># https://docs.python.org/3/library/functions.html</span>
+
+
+<span class="co"># https://docs.python.org/3/howto/urllib2.html</span>
+<span class="co"># download from url: </span>
+<span class="im">import</span> urllib2
+ftxt <span class="op">=</span> urllib2.urlopen(“target_url”).read()
+
+<span class="co"># store user input: </span>
+<span class="co"># Python 2:</span>
+vname <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">'What is your name?</span><span class="ch">\n</span><span class="st">'</span>)
+age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(‘What <span class="op">is</span> your age?<span class="st">")</span>
+<span class="st">long_text = sys.stdin.read().strip() # type ctrl+d for EOF</span>
+<span class="st"># Python 3:</span>
+<span class="st">vname = input('What is your name?')</span>
+<span class="st">age = int(input(‘What is your age? ‘)</span>
+
+<span class="st"># open text file, read single line, remove from memory: </span>
+<span class="st">fhand = open(‘filename.txt’, encoding=’utf-8’)</span>
+<span class="st">fhand.readline() </span>
+<span class="st">fhand.close()</span>
+
+<span class="st"># load small text file into string: </span>
+<span class="st">str_name = fhand.read(#bytes)</span>
+
+<span class="st"># load large text file into list: </span>
+<span class="st">l_name = fhand.readlines()</span>
+
+<span class="st"># load text file into pandas dataframe:</span>
+<span class="st">from pandas import DataFrame, Series</span>
+<span class="st">import pandas as pd</span>
+<span class="st">frame=DataFrame(open(‘/file/path.txt’))</span>
+
+<span class="st"># fetch through API: uses urllib2, json, pandas</span>
+<span class="st"># https://github.com/katychuang/python-data-sci-basics/blob/master/teachers_notes/api_example.py</span>
+
+<span class="st"># open csv with context manager pattern, load into list: </span>
+<span class="st">import csv</span>
+<span class="st">with open(filename,encoding=’utf-8’) as file_in:</span>
+<span class="st">my_reader = csv.reader(file_in,delimiter=’</span><span class="ch">\t</span><span class="st">’)</span>
+<span class="st">data = list(my_reader)</span>
+
+<span class="st"># load csv into dict &amp; read dict: </span>
+<span class="st">with open(filename,encoding=’utf-8’) as file_in:</span>
+<span class="st">my_reader = csv.DictReader(file_in,delimiter=’</span><span class="ch">\t</span><span class="st">’) </span>
+<span class="st">data[‘field name’] # retrieve data by column name</span>
+
+<span class="st"># load csv into array: </span>
+<span class="st">my_array = np.genfromtxt(fname,delimiter=’</span><span class="ch">\t</span><span class="st">’,dtypes=None)</span>
+
+<span class="st"># open JSON: </span>
+<span class="st">import json</span>
+<span class="st">with open(‘filename.json’) as myfile:</span>
+<span class="st">file = json.load(myfile) # load chooses the closest Python object</span>
+
+<span class="st"># load file into list of dicts using json ’load string’ and a list comprehension:</span>
+<span class="st">records = [json.loads(line) for line in open(‘/file/path.txt’,’rb’)</span>
+
+<span class="st">print(*objects, sep=' ', end='</span><span class="ch">\n</span><span class="st">', file=sys.stdout, flush=False)</span>
+
+<span class="st"># output to screen: </span>
+<span class="st">print(vname) or print vname</span>
+
+<span class="st"># create reusable message: </span>
+<span class="st">message = ’There are </span><span class="sc">{it}</span><span class="st"> items’ </span>
+<span class="st">print(message.format(it=nr_items)</span>
+
+<span class="st"># print columns</span>
+<span class="st">print(state,’</span><span class="ch">\t</span><span class="st">’,count)</span>
+
+<span class="st"># specify display of decimals: </span>
+<span class="st">print(‘Price: ${:03.2f}’.format(price))</span>
+
+<span class="st"># add linebreak: </span>
+<span class="st">print(‘Hello </span><span class="ch">\n</span><span class="st"> world!’)</span>
+
+<span class="st"># clear screen: </span>
+<span class="st">os.system(‘cls’ if os_name == ‘nt’ else ‘clear’)</span>
+
+<span class="st"># output to text: </span>
+<span class="st"># CAUTION: opening existing file with ‘w’ will erase its contents; instead, use ‘a’</span>
+<span class="st">fout = open('output.txt', 'w')</span>
+
+<span class="st"># add content to new file: </span>
+<span class="st">fout.write(line)</span>
+<span class="st"># save and close file: </span>
+<span class="st">fout.close()</span>
+
+<span class="st"># output to pdf:</span>
+<span class="st">from matplotlib.backends.backend_pdf import PdfPages</span>
+<span class="st">pp = PdfPages('foo.pdf')</span>
+<span class="st">pp.savefig()pp.close()</span>
+
+<span class="st"># https://openpyxl.readthedocs.io/en/default/</span>
+<span class="st">import openpyxl</span>
+<span class="st">output to excel: save_spreadsheet(“filename”, my_data)</span>
+
+<span class="st"># output to csv: see also unicodecsv</span>
+<span class="st">numpy.savetxt("</span>filename<span class="st">", my_data, delimiter="</span>,<span class="st">", fmt="</span><span class="op">%</span>s<span class="st">")</span>
+<span class="st">with open(‘filename’, ‘a’) as myfile:</span>
+<span class="st">fnames = [l’A’, ‘B’, ‘C’]</span>
+<span class="st">filewriter = csv.DictWriter(myfile, fieldnames = fnames)</span>
+<span class="st">filewriter = writerheader()</span>
+<span class="st">filewriter = writerow({‘A’: 1, ‘B’:2, ‘C’:3})</span>
+
+<span class="st"># output to JSON:</span>
+<span class="st"># output to string: </span>
+<span class="st">json.dumps(my_list)</span>
+<span class="st"># output to file:</span>
+<span class="st">with open(‘filename.json’, ‘a’) as my_file:</span>
+<span class="st">json.dump(list_of_dicts, my_file)</span></code></pre>
+  </div>
+  <h2>
+   <a name="...-to-database-via-peewee-orm">
+    ... to database via Peewee ORM
+   </a>
+  </h2>
+  <p>
+   ```Python pip install peewee from peewee import *
+  </p>
+  <h1>
+   <a name="create-&amp;-connect-to-database:">
+    create &amp; connect to database:
+   </a>
+  </h1>
+  <p>
+   db = SqliteDatabase(‘dbname.db’) psql_db = PostgresqlDatabase('my_database', user='postgres') mysql_db = MySQLDatabase('my_database')
+  </p>
+  <h1>
+   <a name="special-python-classes-called-models-correspond-to-tables;">
+    special Python classes called models correspond to tables;
+   </a>
+  </h1>
+  <h1>
+   <a name="specific-models-inherit-from-the-model-class:">
+    specific models inherit from the Model class:
+   </a>
+  </h1>
+  <p>
+   class Student(Model): username = CharField(maxlength=255, unique=True) points = IntegerField(default=0) date = DateTimeField(datetime.datetime.now) # important to omit parantheses in this datetime function call
+  </p>
+  <p>
+   class Meta(): database = db if
+   <strong>
+    name
+   </strong>
+   == ‘
+   <strong>
+    main
+   </strong>
+   ’: db.connect() db.create_tables([Student], safe=True) field types: CharField, IntegerField, TextField, DateTimeFieldfield characteristics: max_length, default, unique
+  </p>
+  <h1>
+   <a name="enter-new-data:">
+    enter new data:
+   </a>
+  </h1>
+  <p>
+   Student.create(username=student[unm], points= student[pts])
+  </p>
+  <h1>
+   <a name="update-existing-data:">
+    update existing data:
+   </a>
+  </h1>
+  <p>
+   record = Student.get(username=student[unm]) → record.points = student[pts] → record.save() Student.update(points=student['points']). where(Student.username == student['username']).execute()
+  </p>
+  <h1>
+   <a name="find/filter-records-in-table:">
+    find/filter records in table:
+   </a>
+  </h1>
+  <p>
+   Student.select().order_by(Student.points.desc()) Entry.select().where(Entry.content.contains(search_query), Entry.Date == date)
+  </p>
+  <h1>
+   <a name="delete-single-record:">
+    delete single record:
+   </a>
+  </h1>
+  <p>
+   Student.delete_instance(condition) single_row.delete_instance()
+  </p>
+  <h1>
+   <a name="close-connection:">
+    close connection:
+   </a>
+  </h1>
+  <p>
+   db.close()
+  </p>
+  <h1>
+   <a name="ordered-dict-can-be-useful:">
+    ordered dict can be useful:
+   </a>
+  </h1>
+  <p>
+   from collections import OrderedDict menu = OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)]) returns doc string for function: function_name.
+   <strong>
+    doc
+   </strong>
+  </p>
+  <h1>
+   <a name="data-wrangling">
+    Data wrangling
+   </a>
+  </h1>
+  <p>
+   Searching, counting, ranking, grouping, handling whitespace
+  </p>
+  <p>
+   https://docs.python.org/3.5/library/markup.html
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># to check for an empty list, avoid (if len(my_list) == 0)</span>
+<span class="co"># prefer this approach:</span>
+<span class="kw">def</span> check_list_for_members(my_list):
+    <span class="cf">if</span> <span class="op">not</span> my_list:
+        <span class="bu">print</span>(<span class="st">"Sorry, that's an empty list"</span>)
+    <span class="cf">else</span>: 
+        <span class="cf">pass</span></code></pre>
+  </div>
+  <ul>
+   <li>
+    <a class="uri" href="http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb">
+     http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb
+    </a>
+   </li>
+   <li>
+    <a class="uri" href="http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/">
+     http://www.alfredo.motta.name/data-manipulation-primitives-in-r-and-python/
+    </a>
+   </li>
+   <li>
+    <a class="uri" href="https://docs.python.org/3/howto/sorting.html">
+     https://docs.python.org/3/howto/sorting.html
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="bu">reversed</span>(seq)
+<span class="bu">sorted</span>(iterable[, key][, reverse])
+
+<span class="bu">zip</span>(<span class="op">*</span>iterables)
+<span class="co"># Make an iterator that aggregates elements from each of the iterables.</span>
+
+<span class="co"># search file contents: </span>
+<span class="cf">for</span> line <span class="op">in</span> fhand:
+line <span class="op">=</span> line.rstrip()   <span class="co"># remove whitespace</span>
+<span class="cf">if</span> line.startswith(‘From:<span class="st">'): print line</span>
+<span class="st"># search more efficiently:</span>
+<span class="st">for line in fhand:</span>
+<span class="st">line = line.rstrip()</span>
+<span class="st">if not line.startswith('</span>From:<span class="st">') : continue </span>
+<span class="st">print line</span>
+
+<span class="st"># find specific string: </span>
+<span class="st">for line in fhand:</span>
+<span class="st">line = line.rstrip()</span>
+<span class="st">if line.find('</span>desired string<span class="st">') == -1 :  continue</span>
+<span class="st">print line</span>
+
+<span class="st"># troubleshooting  whitespace errors: print repr(strname)</span>
+<span class="st">inspect pandas dataframe: frame.info()</span>
+
+<span class="st"># count w/ standard library</span>
+<span class="st">from collections import defaultdict</span>
+<span class="st">def get_counts(data):</span>
+<span class="st">counts=defaultdict(int) # initialize to 0</span>
+<span class="st">for x in data:</span>
+<span class="st">counts[x]+=1</span>
+<span class="st">return counts</span>
+
+<span class="st"># rank w/ standard library</span>
+<span class="st">from collections import Counter</span>
+<span class="st">counts = Counter(data)</span>
+<span class="st">counts.most_common(10)</span>
+
+<span class="st"># count w/ pandas</span>
+<span class="st">item_counts = frame[‘item’].value_counts()</span>
+
+<span class="st"># clean w/ pandas</span>
+<span class="st">clean_field = frame[‘field’].fillna(‘Missing’)</span>
+<span class="st">clean_field[clean_field==’’] = ‘Unknown’</span>
+<span class="st">clean_frame = framep[frame.a.notnull()]</span>
+
+<span class="st"># plot</span>
+<span class="st">item_counts.plot(kind=’barh’,rot=0)</span>
+
+<span class="st"># numpy search for text in frame</span>
+<span class="st">result = np.where(clean_frame[field].str.contains(‘text’),’Group 1’, ‘ Group 2’)</span>
+<span class="st"># Binary labeling: Group 1 where contains text, Group 2 otherwise</span>
+
+<span class="st"># group &amp; rank  results</span>
+<span class="st">results_by_group = clean_frame.groupby([field,result])</span>
+<span class="st">group_counts = results_by_group.size().unstack().fillna(0)</span>
+<span class="st">indexer=group_counts.sum(1).argsort()</span>
+<span class="st">count_subset=group_counts.take(indexer)[-10:]</span></code></pre>
+  </div>
+ </body>
+</html>

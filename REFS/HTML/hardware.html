@@ -1,0 +1,743 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+  </title>
+  <link href="refs.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <p id="path">
+   <a href="../../pkb.html">
+    https://jtkovacs.github.io/pkb.html
+   </a>
+   &gt;
+   <a href="https://jtkovacs.github.io/REFS/HTML/hardware.html">
+    https://jtkovacs.github.io/REFS/HTML/hardware.html
+   </a>
+  </p>
+  <table class="TOC">
+   <tr>
+    <td>
+     <ul>
+      <li>
+       <a href="#computer-hardware:-information-storage-&amp;-processing">
+        Computer hardware: Information storage &amp; processing
+       </a>
+      </li>
+      <li>
+       <a href="#networks:-information-representation-and-transfer">
+        Networks: Information representation and transfer
+       </a>
+       <ul>
+        <li>
+         <a href="#home-networks">
+          Home networks
+         </a>
+        </li>
+        <li>
+         <a href="#the-internet">
+          The Internet
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#sources-">
+        Sources
+       </a>
+       <ul>
+        <li>
+         <a href="#references">
+          References
+         </a>
+        </li>
+        <li>
+         <a href="#read">
+          Read
+         </a>
+        </li>
+        <li>
+         <a href="#unread">
+          Unread
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </td>
+   </tr>
+  </table>
+  <h1>
+   <a name="computer-hardware:-information-storage-&amp;-processing">
+    Computer hardware: Information storage &amp; processing
+   </a>
+  </h1>
+  <p>
+   https://fossbytes.com/wp-content/uploads/2016/04/latest-computer-chart.jpg, https://fossbytes.com/wp-content/uploads/2016/04/the-complete-computer-hardware-chart.jpg, http://eent3.lsbu.ac.uk/units/compsys/1%20Network%20Computer%20HardwareSlides.htm
+  </p>
+  <p>
+   High-level languages must be translated into machine code. This translation is hardware-specific, not portable. Translation can be done once (when code is complied into an executable) or on-the-fly by an interpreter. http://stackoverflow.com/questions/30156349/is-bash-an-interpreted-language
+  </p>
+  <p>
+   <img alt="Layers" src="layers.jpg"/>
+   <img alt="Block diagram of computer" src="block-diagram-of-computer.jpg"/>
+   <img alt="Case" src="case.jpg"/>
+   <img alt="Ports" src="ports.jpg"/>
+  </p>
+  <h1>
+   <a name="networks:-information-representation-and-transfer">
+    Networks: Information representation and transfer
+   </a>
+  </h1>
+  <p>
+   <strong>
+    Bits
+   </strong>
+   , binary digits, are the 'atoms' of computerized information. Bits can be represented and transmitted by any two-state medium plus a consistent bits-per-unit-time clock (since states may be consecutive). The
+   <em>
+    bandwidth
+   </em>
+   of a system, its capacity to transmit information, is also called its
+   <em>
+    bitrate
+   </em>
+   .
+   <em>
+    Latency
+   </em>
+   is also important: that's the time it take for a bit to travel from receiver to sender.
+  </p>
+  <p>
+   When bits flow between machines and the machines have
+   <strong>
+    protocols
+   </strong>
+   to interpret the bits, you have a
+   <strong>
+    network
+   </strong>
+   : devices that can communicate with each other. Most modern networks are packet-switched networks. Instead of sending a constant bitstream, devices on the network send packets of bits plus metadata. The
+   <strong>
+    router
+   </strong>
+   takes these packets and routes them efficiently but robustly to a destination device that reassembles the packets.
+  </p>
+  <p>
+   "Computer networks differ in the transmission medium used to carry their signals, the communications protocols to organize network traffic, the network's size, topology and organizational intent" [
+   <a href="https://en.wikipedia.org/wiki/Computer_network">
+    1
+   </a>
+   ]:
+  </p>
+  <ul>
+   <li>
+    Cheap copper cables transmit electricity over comparatively short distances.
+   </li>
+   <li>
+    Expensive fiber optic cables transmit light much faster, over much longer distances with less signal decay.
+   </li>
+   <li>
+    Like copper cables, radio waves (wi-fi) experience signal decay over distance. Radio waves are analog, so multiple translations are needed. Antennae &amp; tower.
+   </li>
+  </ul>
+  <h2>
+   <a name="home-networks">
+    Home networks
+   </a>
+  </h2>
+  <p>
+   <a href="https://en.wikipedia.org/wiki/Template:Area_networks">
+    Networks can be many different sizes and scopes
+   </a>
+   : LAN, PAN, WAN, MAN, etc. A P2P network (most home networks) lacks a central computer or server; a LAN might include Ethernet cables, wi-fi/wireless radio signals, or powerline network adaptors connect each device to a switch or hub.
+  </p>
+  <p>
+   In data communication, a physical network node may either be a
+   <a href="https://en.wikipedia.org/wiki/Data_communication_equipment">
+    data communication equipment
+   </a>
+   (DCE) such as a
+   <a href="https://en.wikipedia.org/wiki/Modem">
+    modem
+   </a>
+   ,
+   <a href="https://en.wikipedia.org/wiki/Network_hub">
+    hub
+   </a>
+   , [bridge](https://en.wikipedia.org/wiki/Bridging_(networking) or
+   <a href="https://en.wikipedia.org/wiki/Network_switch">
+    switch
+   </a>
+   ; or a
+   <a href="https://en.wikipedia.org/wiki/Data_terminal_equipment">
+    data terminal equipment
+   </a>
+   (DTE) such as a digital telephone handset, a printer or a
+   <a href="https://en.wikipedia.org/wiki/Host_computer">
+    host computer
+   </a>
+   (router, a workstation or a server).
+  </p>
+  <ul>
+   <li>
+    client:
+   </li>
+   <li>
+    server: provide resources to clients on the network.
+   </li>
+   <li>
+    NIC: A network interface controller (NIC, also known as a network interface card, network adapter, LAN adapter or physical network interface, and by similar terms) is a computer hardware component that connects a computer to a computer network.
+   </li>
+   <li>
+    Ethernet is a specific kind of NIC
+   </li>
+   <li>
+    a switch knows devices apart and can route communications selectively
+   </li>
+   <li>
+    a hub sends all communication to all connected devices (use case: surveillance of employee behavior)
+   </li>
+   <li>
+    an access point/base station/wireless router connects wi-fi devices to network
+   </li>
+   <li>
+    A wireless repeater, which can also be known as a wireless range extender, is a device that takes a signal from an existing access point and rebroadcasts it as a second network.
+   </li>
+   <li>
+    Bluetooth: radio signals between devices
+   </li>
+   <li>
+    a router: can be ISP-provided (even bundled together with a modem in one device); connects devices, incl. modem.
+   </li>
+   <li>
+    <em>
+     A router is a device that sends packets of data between different networks.
+    </em>
+    [
+    <a href="http://whatismyipaddress.com/router-modem">
+     2
+    </a>
+    ]
+   </li>
+   <li>
+    <em>
+     Routers ... send packets between LANs, while also assigning IP addresses, acting as a switch and protecting your LAN [like with a hardware firewall].
+    </em>
+    [
+    <a href="http://whatismyipaddress.com/router-modem">
+     2
+    </a>
+    ]
+   </li>
+   <li>
+    <em>
+     When your computer asks to browse a website, it’s the router’s job to send requests out to that website, then direct the replies back to the appropriate device on your network. Your router will have also have a public IP address, through which Internet services and websites will know where to send their data back to your house, at which point the router examines the data packet and says, “Oh, this was meant for that PC in the bedroom, I’ll send it there.”
+    </em>
+    [
+    <a href="http://whatismyipaddress.com/router-modem">
+     2
+    </a>
+    ]
+   </li>
+   <li>
+    directs packets flowing from modem to LAN back to the specific devices that requested them
+   </li>
+   <li>
+    a modem: provided by ISP, takes signals from router, converts them, sends them to ISP.
+   </li>
+   <li>
+    <em>
+     modem turns the information from our network into information manageable by the telephone infrastructure and vice versa.
+    </em>
+    [
+    <a href="http://whatismyipaddress.com/router-modem">
+     2
+    </a>
+    ]
+   </li>
+   <li>
+    tapped into phone system: dial-up, DSL, ADSL (ADSL splitter/filter: separates voice and computer frequencies in phoneline (instead of modem))
+   </li>
+   <li>
+    own lines: coaxial cable, fiber optic cable
+   </li>
+   <li>
+    wireless broadband: antenna to radio tower
+   </li>
+   <li>
+    radio to mobile devices
+   </li>
+   <li>
+    satellite radio
+   </li>
+   <li>
+    Bridge: connects wired devices to something else via wi-fi (opposite of access point)
+   </li>
+   <li>
+    firewall: can be hardware (in router) or software (on device); works by closing network ports
+   </li>
+  </ul>
+  <h2>
+   <a name="the-internet">
+    The Internet
+   </a>
+  </h2>
+  <p>
+   The Internet is a network of networks with special protocols and entities. Internet means "interconnected networks". Internet is not WWW:
+   <em>
+    the Internet is a technical infrastructure which allows billions of computers to be connected all together. Among those computers, some computers (called Web servers [or HTTP servers]) can send messages intelligible to web browsers. The Internet is an infrastructure, whereas the Web is a service built on top of the infrastructure. It is worth noting there are several other services built on top of the Internet, such as email and IRC. // The Internet carries an extensive range of information resources and services, such as the inter-linked hypertext documents and applications of the World Wide Web (WWW), electronic mail, voice over IP telephony, and peer-to-peer networks for file sharing.
+   </em>
+   [
+   <a href="https://en.wikipedia.org/wiki/World_Wide_Web">
+    3
+   </a>
+   ]. The Web is a graphical interface for some of the content that's available through the Internet.
+  </p>
+  <p>
+   An
+   <strong>
+    ISP
+   </strong>
+   is a company that manages some special routers that link all together and can also access other ISPs' routers. So the message from our network is carried through the network of ISP networks to the destination network. [
+   <a href="https://www.reddit.com/r/explainlikeimfive/comments/3kgehf/eli5how_does_my_internet_service_provider_isp/">
+    5
+   </a>
+   ]
+  </p>
+  <ul>
+   <li>
+    web server provides the Web---in the form of webpages and resources, clustered into websites with domain names---to a web client's browser. The browser renders web pages.
+   </li>
+   <li>
+    <em>
+     The browser goes to the DNS server and finds the real address of the server that the website lives on (you find the address of the shop). The browser sends an HTTP request message to the server asking it to send a copy of the website to the client (you go to the shop and order your goods). This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP. Provided the server approves the client's request, the server sends the client a "200 OK" message, which means "Of course you can look at that website! Here it is", and then starts sending the website's files to the browser as a series of small chunks called data packets (the shop gives you your goods, and you bring them back to your house). The browser assembles the small chunks into a complete website and displays it to you (the goods arrive at your door — new stuff, awesome!).
+    </em>
+   </li>
+   <li>
+    web server is a computer hosting one or more websites. "Hosting" means that all the webpages and their supporting files are available on that computer. The web server will send any webpage from the website it is hosting to any user's browser, per user request.
+   </li>
+   <li>
+    HTTP server
+   </li>
+   <li>
+    file storage
+   </li>
+   <li>
+    A server is any program that responds to requests from another program (client). Servers are run on host machines/host computers. Server=software, host=hardware.
+   </li>
+  </ul>
+  <p>
+   ISPs can connect to each other as peers via
+   <a href="https://en.wikipedia.org/wiki/List_of_Internet_exchange_points_by_size">
+    IXPs
+   </a>
+   or to upstream providers: Just as their customers pay them for Internet access, ISPs themselves pay upstream ISPs for Internet access. An upstream ISP usually has a larger network than the contracting ISP or is able to provide the contracting ISP with access to parts of the Internet the contracting ISP by itself has no access to (https://en.wikipedia.org/wiki/Internet_service_provider)
+  </p>
+  <p>
+   Under the Internet Protocol (
+   <strong>
+    IPv4, IPv6
+   </strong>
+   ), all devices on the Internet have a unique IP address, and bits travel in IP packets (rather than directly from one machine to another). Routers receive these packets and---following transmission control protocol (TCP), user datagram protocol (UDP), or some other packet directing protocol---send them along different routes from sender to receiver, depending on traffic and outages. A router also take inventory of packets when they arrive and tells the sending server to resend any that were incomplete or missing. each packet carries the intended IP address, a number to determine where the packet fits back into the data sent, how many packets to expect, as well as your IP address
+  </p>
+  <p>
+   The domain name system (
+   <strong>
+    DNS
+   </strong>
+   ) associates IP addresses with more human-friendly URLs. The DNS system consists of many DNS servers, connected to each other in a distributed hierarchy. DNS servers are sometimes spoofed: malicious IPs are associated with a domain that people might navigate to. Type URL into browser; DNS converts to IP?; browser talks to server located at IP ...:
+  </p>
+  <ul>
+   <li>
+    URL: http://www.ascii-code.com/, http://ascii.cl/
+   </li>
+   <li>
+    <code>
+     &lt;scheme&gt;://&lt;username&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;path&gt;;&lt;parameters&gt;?&lt;query&gt;#&lt;fragment&gt;
+    </code>
+    <ul>
+     <li>
+      <code>
+       &lt;host&gt; is &lt;subdomain&gt;.&lt;domain&gt;.&lt;second-level domain&gt;.&lt;top-level domain&gt; or &lt;IP address&gt;
+      </code>
+     </li>
+    </ul>
+   </li>
+   <li>
+    in hypertext transfer protocol (HTTP). Browser-server communication consists of:
+   </li>
+   <li>
+    GET requests from the browser, and web files (a combination of text, HTML, and CSS; or images, or videos) in response from the server.
+   </li>
+   <li>
+    POST requests from the browser, sending information to the server
+   </li>
+   <li>
+    COOKIES from the server to the browser and browser to the server; how the server remembers who you are
+   </li>
+   <li>
+    Or, you might communicate with a server via the HTTPS protocol. The server offers a digital certificate that your browser verifies with a certification authority. Then, communication between you is protected by secure sockets layer (SSL) or transport layer security (TLS).
+   </li>
+   <li>
+    Encrypt-key-decrypt
+   </li>
+   <li>
+    Caesar cypher: shift every letter by the same number
+   </li>
+   <li>
+    Shared key: symmetric encryption. Impossible for computers via Internet.
+   </li>
+   <li>
+    Public key cryptography:
+    <ul>
+     <li>
+      N-digit keys: shift every n letters by n numbers: the idea behind 256-bit encryption
+     </li>
+     <li>
+      So, asymmetric encryption: the server offers its public key for encrypting messages to it, and private keys are ...
+     </li>
+    </ul>
+   </li>
+   <li>
+    Or ftp, pop, imap, mailto, etc.; https://en.wikipedia.org/wiki/Lists_of_network_protocols
+   </li>
+  </ul>
+  <p>
+   <em>
+    When you type an address such as www.codecademy.com in your browser, you are commanding it to open a TCP channel to the server that responds to that URL ... Once the TCP connection is established, the client sends an HTTP request to the server ...
+   </em>
+  </p>
+  <p>
+   <img alt="URL" src="../ILLOS/complex_url.png"/>
+   <img alt="OSI model layers" src="../ILLOS/OSI-model-layers.png"/>
+  </p>
+  <h1>
+   <a name="sources">
+    Sources
+   </a>
+  </h1>
+  <h2>
+   <a name="references">
+    References
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="http://www.computerhope.com/jargon.htm">
+     Glossary of computer jargon
+    </a>
+   </li>
+   <li>
+    <a href="http://www.computerhope.com/jargon/internet.htm">
+     Internet jargon
+    </a>
+   </li>
+   <li>
+    <a href="http://www.computerhope.com/jargon/network.htm">
+     Network jargon
+    </a>
+   </li>
+  </ul>
+  <h2>
+   <a name="read">
+    Read
+   </a>
+  </h2>
+  <ul>
+   <li>
+    Mozilla -
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work">
+     How the Internet works
+    </a>
+    ,
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server">
+     What is a web server?
+    </a>
+    ,
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">
+     HTTP
+    </a>
+   </li>
+   <li>
+    Wikipedia -
+    <a href="https://en.wikipedia.org/wiki/Outline_of_the_Internet">
+     Outline of the Internet
+    </a>
+    ,
+    <a href="https://en.wikipedia.org/wiki/Computer_network">
+     Computer network
+    </a>
+    ,
+    <a href="https://en.wikipedia.org/wiki/Internet_protocol_suite">
+     Internet protocol suite
+    </a>
+    ,
+    <a href="https://en.wikipedia.org/wiki/OSI_model#Description_of_OSI_layers">
+     OSI model
+    </a>
+    ,
+    <a href="https://en.wikipedia.org/wiki/Internet_exchange_point">
+     Internet Exchange Point
+    </a>
+   </li>
+   <li>
+    Computer Hope -
+    <a href="http://www.computerhope.com/jargon/b/broadban.htm">
+     broadband
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/d/dns.htm">
+     DNS
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/r/rdns.htm">
+     reverse lookup
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/d/domain.htm">
+     domain
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/w/webhost.htm">
+     webhost
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/h/http-server.htm">
+     http server
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/m/modem.htm">
+     modem
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/p/ptpnet.htm">
+     P2P network
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/w/www.htm">
+     WWW
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/a/accepoin.htm">
+     access point
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/e/ethernet.htm">
+     ethernet
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/p/protocol.htm">
+     protocol
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/f/firewall.htm">
+     firewall
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/p/port.htm">
+     port
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/h/homenetw.htm">
+     home network
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/h/hostcomp.htm">
+     host computer
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/s/server.htm">
+     server
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/i/isp.htm">
+     ISP
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/o/osi.htm">
+     OSI
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/l/lan.htm">
+     LAN
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/n/nos.htm">
+     NOS
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/r/rest.htm">
+     REST
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/r/router.htm">
+     router
+    </a>
+    ,
+    <a href="http://www.computerhope.com/jargon/t/tcpip.htm">
+     TCP/IP
+    </a>
+   </li>
+   <li>
+    MakeUseOf -
+    <a href="http://www.makeuseof.com/tag/everything-need-know-home-networking/">
+     What is home networking
+    </a>
+    ,
+    <a href="http://www.makeuseof.com/tag/types-of-internet-access-technologies-explained-and-what-you-should-expect/">
+     Types of Internet access technologies
+    </a>
+    ,
+    <a href="http://www.makeuseof.com/tag/technology-explained-how-the-internet-works/">
+     How the Internet works
+    </a>
+    ,
+    <a href="http://www.makeuseof.com/tag/whats-difference-routers-hubs-switches/">
+     What’s the difference between routers, hubs, &amp; switches?
+    </a>
+    ,
+    <a href="http://www.makeuseof.com/tag/technology-explained-how-does-a-router-work/">
+     How does a router work?
+    </a>
+    ,
+    <a href="http://www.makeuseof.com/tag/wireless-networking-simplified-the-terms-you-should-know/">
+     Wireless networking terms
+    </a>
+    ,
+    <a href="http://www.makeuseof.com/tag/10-wrong-ways-set-wireless-network/">
+     10 wrong ways to set up your wireless network
+    </a>
+    ,
+    <a href="http://www.makeuseof.com/tag/wireless-feng-shui-optimize-house-wifi-reception/">
+     How to Optimize Your House For Best Wi-Fi Reception
+    </a>
+   </li>
+   <li>
+    <a href="http://pluto.ksi.edu/~cyh/cis370/ebook/ch03c.htm">
+     How networks send data
+    </a>
+    ,
+    <a href="http://superuser.com/questions/295528/does-all-lan-traffic-travel-through-a-router">
+     Does all LAN traffic travel through a router
+    </a>
+    ,
+    <a href="https://doepud.co.uk/blog.php/anatomy-of-a-url">
+     Anatomy of a URL
+    </a>
+    ,
+    <a href="https://www.cs.tut.fi/~jkorpela/HTML3.2/3.5.html">
+     URLs
+    </a>
+    ,
+    <a href="http://www.skorks.com/2010/05/what-every-developer-should-know-about-urls/">
+     What every dev should know about URLs
+    </a>
+    ,
+    <a href="https://www.mattcutts.com/blog/seo-glossary-url-definitions/">
+     URL definitions
+    </a>
+    ,
+    <a href="https://www.codecademy.com/articles/http-requests">
+     HTTP Requests
+    </a>
+   </li>
+  </ul>
+  <h2>
+   <a name="unread">
+    Unread
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="http://openbookproject.net/courses/intro2ict/index.html">
+     Intro. to ICT
+    </a>
+   </li>
+   <li>
+    Security Now [videos] -
+    <a href="https://twit.tv/shows/security-now/episodes/233?autostart=false">
+     Let’s design a computer
+    </a>
+    ,
+    <a href="https://twit.tv/shows/security-now/episodes/235?autostart=false">
+     Machine language
+    </a>
+    ,
+    <a href="https://twit.tv/shows/security-now/episodes/237?autostart=false">
+     Pointers
+    </a>
+    ,
+    <a href="https://twit.tv/shows/security-now/episodes/239?autostart=false">
+     Stacks, registers, and recursion
+    </a>
+    ,
+    <a href="https://twit.tv/shows/security-now/episodes/241?autostart=false">
+     Hardware interrupts
+    </a>
+   </li>
+   <li>
+    Wikiversity -
+    <a href="https://en.wikiversity.org/wiki/Introduction_to_Computers">
+     Intro. to Computers
+    </a>
+    ,
+    <a href="https://en.wikiversity.org/wiki/IT_Fundamentals">
+     IT Fundamentals
+    </a>
+    ,
+    <a href="https://en.wikiversity.org/wiki/IC3">
+     IC3
+    </a>
+    ,
+    <a href="https://en.wikiversity.org/wiki/Introduction_to_Computer_Science">
+     Intro. Computer Science
+    </a>
+   </li>
+   <li>
+    <a href="http://www.explainthatstuff.com/howcomputerswork.html">
+     How computers work
+    </a>
+    ,
+    <a href="http://explainlikeakid.blogspot.com/2011/10/computer-parts-and-what-they-do.html">
+     Computer parts and what they do
+    </a>
+    ,
+    <a href="http://explainlikeakid.blogspot.com/2011/09/why-your-computer-gets-slow-overtime.html">
+     Why your computer gets slow over time
+    </a>
+    ,
+    <a href="http://www.carnegiecyberacademy.com/facultyPages/computer/computers.html#OS">
+     How computers work
+    </a>
+    ,
+    <a href="http://www.linfo.org/memory.html">
+     Memory
+    </a>
+   </li>
+   <li>
+    <a href="https://en.wikipedia.org/wiki/Internet_protocol_suite#Layer_names_and_number_of_layers_in_the_literature">
+     Wiki - Internet protocol suite
+    </a>
+   </li>
+   <li>
+    <a href="http://networkeffect.io/">
+     The network effect
+    </a>
+   </li>
+   <li>
+    <a href="http://pyvideo.org/pycon-us-2013/how-the-internet-works.html">
+     How the internet works
+    </a>
+    [video]
+   </li>
+   <li>
+    <a href="http://www.spl.org/library-collection/articles-and-research/microsoft-it-academy">
+     Microsoft Imagine Academy - Networking Fundamentals
+    </a>
+   </li>
+  </ul>
+ </body>
+</html>

@@ -7,6 +7,43 @@
   <title>
   </title>
   <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
  </head>
  <body>
   <p id="path">
@@ -23,31 +60,172 @@
     <td>
      <ul>
       <li>
-       <a href="#sources">
-        Sources
+       <a href="#text-analytics-in-python">
+        Text analytics in Python
        </a>
        <ul>
         <li>
-         <a href="#references">
-          References
+         <a href="#manage-punctuation,-case,-&amp;-whitespace">
+          Manage punctuation, case, &amp; whitespace
          </a>
         </li>
         <li>
-         <a href="#read">
-          Read
-         </a>
-        </li>
-        <li>
-         <a href="#unread">
-          Unread
+         <a href="#search-&amp;-regex">
+          Search &amp; regex
          </a>
         </li>
        </ul>
+      </li>
+      <li>
+       <a href="#groups-addressing">
+        groups addressing
+       </a>
       </li>
      </ul>
     </td>
    </tr>
   </table>
+  <h1>
+   <a name="text-analytics-in-python">
+    Text analytics in Python
+   </a>
+  </h1>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python">reserve order of elements: <span class="bu">list</span>.reverse(), my_string[::<span class="op">-</span><span class="dv">1</span>] 
+selectively replace: str_name.replace(‘this’,’with this’) 
+find index of known element: <span class="bu">list</span>.index(‘str name’) 
+<span class="co">#times element occurs: list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list) </span></code></pre>
+  </div>
+  <h2>
+   <a name="manage-punctuation,-case,-&amp;-whitespace">
+    Manage punctuation, case, &amp; whitespace
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># remove punctuation</span>
+<span class="im">import</span> string
+line.translate(<span class="va">None</span>, string.punctuation)
+
+<span class="co"># modify case</span>
+my_string.lower()
+my_string.upper()
+my_string.capitalize()
+my_string.title()
+
+<span class="co"># remove whitespace by default, or remove specified characters</span>
+my_string.strip(<span class="st">'chars'</span>)
+my_string.lstrip()
+my_string.rstrip()</code></pre>
+  </div>
+  <h2>
+   <a name="search-&amp;-regex">
+    Search &amp; regex
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># search for substrings within string or subset of string (i inclusive to j exclusive)</span>
+str_index <span class="op">=</span> my_string.find(x,i,j)
+str_index <span class="op">=</span> my_string.index(x,i,j)  <span class="co"># raises ValueError if not found</span>
+<span class="bu">str</span>.endswith(x,i,j)
+<span class="bu">str</span>.startswith(x,i,j)
+my_string.count(x,i,j)</code></pre>
+  </div>
+  <p>
+   https://docs.python.org/3/library/re.html https://docs.python.org/3/howto/regex.html
+  </p>
+  <p>
+   http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># match the beginning of a string:</span>
+re.match(pattern, text, flags)
+re.match(r’Jac’, data) <span class="co"># the r denotes a raw string</span>
+
+<span class="co"># search anywhere in a string:</span>
+<span class="co"># first match only: </span>
+re.search(pattern, text, flags)
+<span class="co"># all nonoverlapping: </span>
+re.findall(pattern, text, flags)
+<span class="co"># pass count parameter into findall:</span>
+<span class="co"># return re.findall(r’\w{%d,} %my_int, my_str’)</span>
+
+<span class="co"># phone number, note escaped parentheses:</span>
+re.search(r’<span class="op">\</span>(<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>) <span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">-\</span>d<span class="op">\</span>d<span class="op">\</span>d<span class="op">\</span>d’, data)
+<span class="co"># make parentheses, space, hyphen optional in phone number</span>
+r’<span class="op">\</span>)?<span class="op">\</span>d{<span class="dv">3</span>})?<span class="op">\</span>s?<span class="op">-</span>?<span class="op">\</span>d<span class="op">\</span>{<span class="dv">3</span>}<span class="op">-\</span>d{<span class="dv">4</span>}’</code></pre>
+  </div>
+  <p>
+   flags:
+  </p>
+  <ul>
+   <li>
+    re.IGNORECASE or re.I will ignore word case
+   </li>
+   <li>
+    re.VERBOSE or re.X let regexp span lines &amp; contain (ignored) whitespace or comments
+   </li>
+   <li>
+    re.MULTILINE or re.M to make a pattern regard lines in your text as the beginning or end of a string
+   </li>
+   <li>
+    multiple flags: re.findall(pattern, data, flag|flag|flag)
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># store regex for reuse: </span>
+my_regex <span class="op">=</span> re.<span class="bu">compile</span>(pattern, flags)
+re.search(my_regex, data)
+<span class="co"># OR </span>
+my_regex.search(data)
+
+<span class="co"># loop to obtain iterable of match objects:</span>
+<span class="cf">for</span> match <span class="op">in</span> my_regex.finditer(data):
+    <span class="bu">print</span>(‘{first} {last} <span class="op">&lt;</span>{email}<span class="op">&gt;</span>’.<span class="bu">format</span>(<span class="op">**</span>match.groupdict())) </code></pre>
+  </div>
+  <ul>
+   <li>
+    = any Unicode word character, = anything not a Unicode word character
+   </li>
+   <li>
+    = any whitespace, = anything not whitespace, = tab
+   </li>
+   <li>
+    = any number 0-9, = any non-number
+   </li>
+   <li>
+    = word boundaries, = not word boundaries
+   </li>
+  </ul>
+  <p>
+   counts, for when something occurs multiple times:
+  </p>
+  <ul>
+   <li>
+    {3} = occurs 3 times, {,3} = 0-3 times, {3,} = 3 or more times, {3-5} = 3-5 times
+   </li>
+   <li>
+    ? = 0-1 word characters,  = 0-infinite word characters, + = 1-infinite word characters
+   </li>
+  </ul>
+  <p>
+   sets let us combine explicit characters and escape patterns into pieces that can be repeated multiple time; they also let us specify pieces that should be left out of any matches: [aple] finds apple and pale, [a-z] finds any lowercase letter, [A-Z] finds uppercase, [a-zA-Z] finds any case, [^2] finds anything not two, [0-9] finds any number, [.]+ finds any # of , .
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># groups search for multiple conditions simultaneously; note that ^ marks the beginning of the string, and $ marks the end; unnamed groups returned as tuples, named groups as dicts:</span>
+my_var <span class="op">=</span> re.findall (r’’’
+    <span class="op">^</span>(?P<span class="op">&lt;</span>name<span class="op">&gt;</span>[<span class="op">-\</span>w ]<span class="op">+</span>,<span class="op">\</span>s[<span class="op">-\</span>w ]<span class="op">+</span>)<span class="op">\</span>t   <span class="co"># search for lastname, firstname</span>
+    (<span class="op">\</span>)?<span class="op">\</span>d{<span class="dv">3</span>})?<span class="op">\</span>s?<span class="op">-</span>?<span class="op">\</span>d<span class="op">\</span>{<span class="dv">3</span>}<span class="op">-\</span>d{<span class="dv">4</span>})? <span class="co"># search for phone number, optional</span>
+    (?<span class="op">&lt;</span>email<span class="op">&gt;</span>[<span class="op">-\</span>w<span class="op">\</span>d.<span class="op">+</span>]<span class="op">+</span> @[<span class="op">-\</span>w<span class="op">\</span>d.]<span class="op">+</span>)<span class="op">\</span>t$  <span class="co"># search for emails</span>
+    ‘’’, data, flags)</code></pre>
+  </div>
+  <h1>
+   <a name="groups-addressing">
+    groups addressing
+   </a>
+  </h1>
+  <p>
+   my_var.groups() my_var.group_dict() my_var.group(‘group_name’) my_var.group(1) ```
+  </p>
   <h1>
    <a name="sources">
     Sources

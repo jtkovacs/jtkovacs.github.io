@@ -294,3 +294,11 @@ Looking for root cause(s):
 Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
 
 Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
+
+## References
+
+## Read
+
+## Unread
+
+- [Wiki - Six Sigma]()

@@ -26,3 +26,4 @@
 - [Seven lessons from nature on how to make change](http://grist.org/article/2011-04-05-seven-lessons-from-nature-how-to-make-change-center-ecoliteracy/)
 - [Wiki - Shearing layers](https://en.m.wikipedia.org/wiki/Shearing_layers)
 - [Wiki - Organizational behavior](https://en.wikipedia.org/wiki/Organizational_behavior)
+- [Building ethical environments for people](https://hackernoon.com/building-ethical-environments-for-people-585cd37bc1bc)

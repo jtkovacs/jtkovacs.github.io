@@ -44,6 +44,9 @@
 	- [Choosing software](#choosing-software)
 - [Monitoring & governance](#monitoring-&-governance)
 - [Sources](#sources)
+	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
 </td></tr></table>
 # What is project management?
 
@@ -452,3 +455,11 @@ Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcam
 Whitney, E. (n.d.). Introduction to gathering requirements and creating use cases. Retrieved from [http://www.codemag.com/Article/0102061](http://www.codemag.com/Article/0102061)
 
 Wikipedia. (2017, March 28). Work breakdown structure. Retrieved from [https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&oldid=772556888](https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&oldid=772556888)
+
+## References
+
+## Read
+
+## Unread
+
+- [_Project Management from Simple to Complex_](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=36)

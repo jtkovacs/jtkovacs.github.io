@@ -411,3 +411,5 @@ Wikipedia. (2017, March 28). Work breakdown structure. Retrieved from [https://e
 ## Read
 
 ## Unread
+
+- [_Project Management from Simple to Complex_](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=36)

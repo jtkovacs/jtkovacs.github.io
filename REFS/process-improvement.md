@@ -301,4 +301,4 @@ Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA
 
 ## Unread
 
-- [Wiki - Six Sigma]()
+- [Wiki - Six Sigma](https://en.wikipedia.org/wiki/Six_Sigma)

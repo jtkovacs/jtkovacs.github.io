@@ -73,9 +73,10 @@ Systems Development Lifecycle (SDLC) per Annabi and McGann (2014), with my addit
 6. [Monitoring and maintaining]
 7. [Improving]
 
-Agile:
+Others:
 
-- https://hbr.org/video/4846148015001/a-quick-introduction-to-agile-management
+- [Agile](https://hbr.org/video/4846148015001/a-quick-introduction-to-agile-management)
+- [MITRE systems engineering lifecycle](https://www.mitre.org/publications/systems-engineering-guide/se-lifecycle-building-blocks)
 
 
 
@@ -455,6 +456,8 @@ Hill, J. B., & Cantera, M. (2015). Use business outcomes to determine the scope 
 Kantor, B. (2012, May 22). How to design a successful RACI project plan. _CIO._ Retrieved from [http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html](http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html)
 
 Leffingwell, D. (2010). Stakeholders, user personas, and user experiences. In _Agile software requirements: Lean requirements practices for teams, programs, and the enterprise._ Boston, MA: Addison-Wesley Professional.
+
+MITRE. (n.d.). Risk impact assessment and prioritization. In _MITRE systems engineering guide._ Retrieved from [https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/risk-management/risk-management-tools](https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/risk-management/risk-management-tools)
 
 Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
 

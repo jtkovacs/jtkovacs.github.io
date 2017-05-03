@@ -71,10 +71,9 @@ Framework for making connections between a company's external landscape and inte
 
 
 
-
 ### Gap analysis
 
-Also called need-gap analysis, need analysis, or need assessment. Gap analysis is a way of ensuring that planned actions align with objectives and present a reasonable pathway from the current reality to the desired state. The 5 whys or fishbone/Ishikawa/cause-and-effect diagrams may be useful in analyzing the current reality to identify possible actions.
+Also called need-gap analysis, need analysis, or need assessment. Gap analysis is a way of ensuring that planned actions align with objectives and present a reasonable pathway from the current reality to the desired state. (The 5 whys or fishbone/Ishikawa/cause-and-effect diagrams may be useful in analyzing the current reality to identify possible actions; see [notes on process improvement.)](#process-improvement.html)
 
 | Objective | Reality | Action |
 | --- | --- | --- |
@@ -82,7 +81,7 @@ Also called need-gap analysis, need analysis, or need assessment. Gap analysis i
 
 ### Stakeholder analysis
 
-The general aim is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance and level of stakeholder influence; and develop an action plan that delimits roles for different stakeholders. 
+The general aim of stakeholder analysis is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance and level of stakeholder influence; and develop an action plan that delimits roles for different stakeholders. Stakeholder analysis is important for managing the scope, influence and interorganizational politics of a project, as well as ensuring that projects address all relevant needs (including social equity goals).
 
 Different authors present different stakeholder typologies. Per Leffingwell (2010):
 

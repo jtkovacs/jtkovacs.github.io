@@ -4,7 +4,10 @@
 	- [Strategic assessment](#strategic-assessment)
 		- [PESTEL analysis](#pestel-analysis)
 		- [Porter's five forces analysis](#porter's-five-forces-analysis)
-		- [SWOT/SLOT analysis](#swot/slot-analysis)
+		- [Risk analysis](#risk-analysis)
+			- [POET analysis](#poet-analysis)
+			- [SWOT/SLOT analysis](#swot/slot-analysis)
+			- [Risk matrix](#risk-matrix)
 		- [Gap analysis](#gap-analysis)
 		- [Stakeholder analysis](#stakeholder-analysis)
 			- [RACI plan](#raci-plan)
@@ -44,6 +47,7 @@
 	- [Choosing software](#choosing-software)
 - [Monitoring & governance](#monitoring-&-governance)
 - [Sources](#sources)
+	- [Cited](#cited)
 	- [References](#references)
 	- [Read](#read)
 	- [Unread](#unread)
@@ -79,7 +83,7 @@ Agile:
 
 ## Strategic assessment
 
-PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but can also be scoped for projects.
+PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but they can also be scoped for projects.
 
 ### PESTEL analysis
 
@@ -102,7 +106,13 @@ Framework for evaluating the intensity of competition in a specific market or in
 - Threat of **new entrants**
 - Threat of **product substitutes**
 
-### SWOT/SLOT analysis
+### Risk analysis
+
+
+
+#### POET analysis
+
+#### SWOT/SLOT analysis
 
 Framework for making connections between a company's external landscape and internal characteristics (which can be restricted to the scope of a single project). Data is collected and sorted into a matrix, with one matrix for each alternative under consideration:
 
@@ -110,6 +120,11 @@ Framework for making connections between a company's external landscape and inte
 - Internal **weaknesses** or liabilities
 - External **opportunities**
 - External **threats**
+
+#### Risk matrix
+
+
+
 
 ### Gap analysis
 
@@ -423,6 +438,8 @@ General criteria to consider:
 
 
 # Sources
+
+## Cited
 
 Ambler, S. (n.d.). Comparing approaches to budgeting and estimating software development projects. Retrieved from [http://www.ambysoft.com/essays/comparingEstimatingApproaches.html](http://www.ambysoft.com/essays/comparingEstimatingApproaches.html)
 

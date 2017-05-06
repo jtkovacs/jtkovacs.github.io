@@ -332,7 +332,7 @@ While compound terms denote a single concept, <span style="color: red; font-weig
 ##### Grammatical forms
 
 - **Parts of speech:**
-    - Prefer nouns<span style="color:red;">\*</span> or in the case of bound compound terms, noun phrases;
+    - <span style="color:red;">\Prefer nouns*</span> or in the case of bound compound terms, noun phrases;
         - Prefer premodified/adjectival noun phrases, e.g. _historical drama, cold fusion_
         - Avoid postmodified/prepositional noun phrases unless idiomatic, e.g. avoid _hospitals for children_ in favor of _children's hospital,_ but prefer _burden of proof_ to _proof's burden_
     - Avoid verbs used as nouns; e.g., prefer _reading_ to _read,_ _cookery_ to _cook_
@@ -347,7 +347,7 @@ While compound terms denote a single concept, <span style="color: red; font-weig
     - Regardless, abstract concepts and unique entities are singular
     - Singular and plural forms of a noun may denote different concepts, so both may appear (qualified) in the CV
 
-\*Svenonius (2005) explains the intended effect of this standard: CVs where every term is "context independent", i.e. self-contained and thus reusable. However, context independence is "not normally operative in classification schemes where the verbal headings are governed by the principle of hierarchical force."     
+<span style="color:red;">\*Svenonius (2005)</span> explains the intended effect of this standard: CVs where every term is "context independent", i.e. self-contained and thus reusable. However, context independence is "not normally operative in classification schemes where the verbal headings are governed by the principle of hierarchical force."     
 
 ##### Typographic forms
 

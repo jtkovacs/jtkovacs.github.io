@@ -275,7 +275,7 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 ### Use of CVs
 
-Svenonius (1989), also see [KOSs by role in IR:](#KOSs-by-role-in-IR) **"Controlled vocabularies can take many forms and be used for many purposes. In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**    
+Svenonius (1989), also see [KOSs by role in IR:](#KOSs-by-role-in-IR) **"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**    
 
 
 

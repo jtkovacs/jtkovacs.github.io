@@ -20,8 +20,8 @@
 		- [KOSs by role in IR](#koss-by-role-in-ir)
 	- [What are reference works?](#what-are-reference-works?)
 	- [What are controlled vocabularies?](#what-are-controlled-vocabularies?)
-		- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
 		- [Uses of CVs](#uses-of-cvs)
+			- [Relationship between CVs and metadata](#relationship-between-cvs-and-metadata)
 		- [Constructing CVs](#constructing-cvs)
 			- [Where do terms come from?](#where-do-terms-come-from?)
 			- [How are terms expressed?](#how-are-terms-expressed?)
@@ -309,7 +309,13 @@ Controlled vocabularies stand in contrast with natural languages, which undermin
 - _Political changes leading to changes in preferred terms_
 - _Competing terms for emerging objects and phenomena_
 
-### Relationship between CVs and metadata
+
+
+### Uses of CVs
+
+Svenonius (1989), also see [KOSs by role in IR:](#koss-by-role-in-ir) **"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**    
+
+#### Relationship between CVs and metadata
 
 Per ANSI/NISO Z39.19 (p. 19), 
 
@@ -317,11 +323,6 @@ Per ANSI/NISO Z39.19 (p. 19),
 - Metadata may be used to describe a CV, supporting its discovery as a resource
 - A CV may be expressed as a metadata schema, e.g. in XML
 
-
-
-### Uses of CVs
-
-Svenonius (1989), also see [KOSs by role in IR:](#koss-by-role-in-ir) **"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**    
 
 
 

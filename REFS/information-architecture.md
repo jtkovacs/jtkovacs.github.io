@@ -254,7 +254,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 CVs (AKA authority lists) consist of **terms, syntax** (how terms may be combined), and **term records** containing each term's **semantic relationships, scope notes,** and **history notes.**    
 
-Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes* (ambiguous words --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** At minimum, to avoid the IR pitfalls of natural languages CVs must:
+Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes* (ambiguous words --- both homographs and synonyms/near-synonyms/quasi-synonyms). At minimum, to avoid the IR pitfalls of natural languages CVs must:
 
 - Clearly define the applicability of terms with scope notes (SN)
 - Connect synonyms, thereby increasing recall; this is often accomplished with **UF (use for), U (use)**

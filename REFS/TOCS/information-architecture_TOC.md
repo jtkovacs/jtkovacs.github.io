@@ -628,7 +628,7 @@ Pomerantz, J. (2015). _Metadata._ The MIT Press Essential Knowledge Series. Bost
 
 Rosenfeld, L., Morville, P., & Arango, J. (2015). _Information architecture for the web and beyond_ (4e). Sebastopol, California: O'Reilly Media.
 
-Svenonius, E. (2005). Design of controlled vocabularies. _Encyclopedia of Library and Information Science, 45_(10), 82–109.
+Svenonius, E. (2005). Design of controlled vocabularies. _Encyclopedia of Library and Information Science, 45_(10), 82–109. Retrieved from [http://polaris.gseis.ucla.edu/gleazer/260_readings/Svenonius.pdf](http://polaris.gseis.ucla.edu/gleazer/260_readings/Svenonius.pdf)
 
 UX Booth. (2015). A complete beginner's guide to information architecture. Retrieved from [http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/](http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/)
 

@@ -4,6 +4,13 @@
 
 IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). [IR requires IA.](#what-is-information-architecture?)
 
+
+## IR systems
+
+- Catalogs, search engines, ??? 
+- Svenonius (2005): **"Systems that do not employ vocabulary control may be characterized in terms of their indexing: natural language, derived, keyword, or title word indexing; or, in terms of the type of searching they allow: free-text searching or full-text searching. It is not a foregone conclusion that a system with vocabulary control is better than one without it."**
+
+
 ## Major activities in IR
 
 ### Cataloging & indexing
@@ -52,8 +59,6 @@ Information professionals work to ensure that IR (1) has good **precision,** AKA
 </table>
 
 
-
-
 ### Searching, browsing, & navigating
     
 To retrieve information, users engage with information systems by:
@@ -64,11 +69,6 @@ To retrieve information, users engage with information systems by:
 
     - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
-    
-## IR systems
-
-- Catalogs, search engines, ??? 
-- Svenonius (2005): **"Systems that do not employ vocabulary control may be characterized in terms of their indexing: natural language, derived, keyword, or title word indexing; or, in terms of the type of searching they allow: free-text searching or full-text searching. It is not a foregone conclusion that a system with vocabulary control is better than one without it."**
 
     
     

@@ -363,7 +363,7 @@ The basic rule is that a term should denote a single **concept,** or unit of tho
 - Disciplines, fields
 - Units of measurement
 
-This is easy to accomplish with a **single-word term,** but things get more complex; there are three kinds of multiword AKA **compound terms,** the construction ofo which is governed by the CV's **syntax.** Use of a compound term should be determined by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format (print sometimes benefits from precoordinated terms); see ANSI/NISO Z9.19 pp. 39-40 for more guidance and examples.
+This is easy to accomplish with a **single-word term,** but things get more complex; there are three kinds of multiword AKA **compound terms,** the construction ofo which is governed by the CV's **syntax.** 
 
 A <span style="color: red; font-weight: bold;">(1)</span> **bound term** uses multiple words or a phrase to denote a single concept, e.g. _oral surgery._ The inverted form of bound terms may be included as an entry term, e.g. _surgery, oral: see oral surgery._ 
 
@@ -378,6 +378,8 @@ These naturally occurring compound terms are generally preferable to the second 
         - ... but even then, anticipate metasearching and include a qualifier
 
 While compound terms denote a single concept, <span style="color: red; font-weight: bold;">(3)</span> **coordinated terms** associate several concepts with a single information object. This can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English Language--Rhetoric, Persuasion (Rhetoric), Report Writing._ Precoordinated terms enable browsing with great specificity, describe complex concepts, and impose alphabetic proximity on related terms that would otherwise be far apart. Given the high cost of taxonomist labor, though, it's often better to let users combine terms interactively during search **(postcoordination),** e.g. _English Language AND Rhetoric AND Persuasion AND Report Writing._ 
+
+Use of a compound term should be determined by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format (print sometimes benefits from precoordinated terms); see ANSI/NISO Z9.19 pp. 39-40 for more guidance and examples.
 
 ##### Grammatical forms
 

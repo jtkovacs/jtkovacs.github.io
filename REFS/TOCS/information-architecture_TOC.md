@@ -1,6 +1,8 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/information-architecture.html">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</a></p><table class="TOC"><tr><td>- [What is information retrieval?](#what-is-information-retrieval?)
-	- [Cataloging & indexing](#cataloging-&-indexing)
-	- [Searching, browsing, & navigating](#searching,-browsing,-&-navigating)
+	- [Major activities in IR](#major-activities-in-ir)
+		- [Cataloging & indexing](#cataloging-&-indexing)
+		- [Searching, browsing, & navigating](#searching,-browsing,-&-navigating)
+	- [IR systems](#ir-systems)
 - [What is information architecture?](#what-is-information-architecture?)
 	- [Must information be organized?](#must-information-be-organized?)
 		- [Anatomy of mess](#anatomy-of-mess)
@@ -50,7 +52,9 @@
 
 IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). [IR requires IA.](#what-is-information-architecture?)
 
-## Cataloging & indexing
+## Major activities in IR
+
+### Cataloging & indexing
 
 Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by (1) [creating search algorithms](search-engines.html) or by (2) ingesting information objects into a catalog, which includes:
 
@@ -98,7 +102,7 @@ Information professionals work to ensure that IR (1) has good **precision;** (2)
 
 
 
-## Searching, browsing, & navigating
+### Searching, browsing, & navigating
     
 To retrieve information, users engage with information systems by:
 
@@ -108,6 +112,11 @@ To retrieve information, users engage with information systems by:
 
     - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
+    
+## IR systems
+
+- Catalogs, search engines, ??? 
+- Svenonius (2005): **"Systems that do not employ vocabulary control may be characterized in terms of their indexing: natural language, derived, keyword, or title word indexing; or, in terms of the type of searching they allow: free-text searching or full-text searching. It is not a foregone conclusion that a system with vocabulary control is better than one without it."**
 
     
     
@@ -313,7 +322,7 @@ Controlled vocabularies stand in contrast with natural languages, which undermin
 
 ### Uses of CVs
 
-Svenonius (1989), also see [KOSs by role in IR:](#koss-by-role-in-ir) **"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**    
+Svenonius (2005), also see [KOSs by role in IR:](#koss-by-role-in-ir) **"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**        
 
 #### Relationship between CVs and metadata
 
@@ -615,7 +624,7 @@ Pomerantz, J. (2015). _Metadata._ The MIT Press Essential Knowledge Series. Bost
 
 Rosenfeld, L., Morville, P., & Arango, J. (2015). _Information architecture for the web and beyond_ (4e). Sebastopol, California: O'Reilly Media.
 
-Svenonius, E. (1989). Design of controlled vocabularies. _Encyclopedia of Library and Information Science, 45_(10), 82–109.
+Svenonius, E. (2005). Design of controlled vocabularies. _Encyclopedia of Library and Information Science, 45_(10), 82–109.
 
 UX Booth. (2015). A complete beginner's guide to information architecture. Retrieved from [http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/](http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/)
 

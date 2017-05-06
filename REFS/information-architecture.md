@@ -176,7 +176,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 
 **Term lists** are essentially flat list, though they may include "See"/"Use" to steer people towards preferred language, or use a synonym ring approach (no preferred term among multiple). 
 
-- **Authority file:** Identifies the definitive version of a name among all variants
+- **Name authority file:** Identifies the definitive version of a name among all variants
 - **Glossary** (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
 - **Stop list:** Words to ignore in search query processing (because they are extremely common)
 - **Dictionary:** Definitions, history, etc. for words.
@@ -245,7 +245,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What are controlled vocabularies?
 
-CVs consist of **terms** and **semantic relationships** described in **term records.**  
+CVs (AKA authority lists) consist of **terms** and **semantic relationships** described in **term records.**  
 
 Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes* (ambiguous words --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** At minimum, to avoid the IR pitfalls of natural languages CVs must:
 

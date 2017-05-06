@@ -221,7 +221,7 @@ Information consumers depend on KOSs to browse and search content objects:
 - [Search engines](search-engines.html) may use synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
     - Small search engines (for website, intranet, CMS, repository) may use thesauri to facilitate search
 
-    
+See also [uses of CVs.](#uses-of-cvs)    
     
 
 ## What are reference works?
@@ -273,9 +273,9 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
 
-### Use of CVs
+### Uses of CVs
 
-Svenonius (1989), also see [KOSs by role in IR:](#KOSs-by-role-in-IR) **"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**    
+Svenonius (1989), also see [KOSs by role in IR:](#koss-by-role-in-ir) **"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**    
 
 
 

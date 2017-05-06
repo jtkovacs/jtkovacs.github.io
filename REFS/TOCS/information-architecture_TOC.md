@@ -304,7 +304,7 @@ CVs (AKA authority lists) consist of **terms; syntax** (how terms may be combine
 
 Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes* (ambiguous words --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** At minimum, to avoid the IR pitfalls of natural languages CVs must:
 
-- Clearly define the applicability of terms with **scope notes (SN)**
+- Clearly define the applicability of terms with scope notes (SN)
 - Connect synonyms, thereby increasing recall; this is often accomplished with **UF (use for), U (use)**
 - Disambiguate homographs, thereby increasing precision; this is often accomplished with a **gloss** AKA modifier AKA difference AKA qualifier term
 

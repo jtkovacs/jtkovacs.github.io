@@ -332,7 +332,7 @@ While compound terms denote a single concept, <span style="color: red; font-weig
 ##### Grammatical forms
 
 - **Parts of speech:**
-    - Prefer nouns<span style="color:red;">\*<span> or in the case of bound compound terms, noun phrases;
+    - Prefer nouns<span style="color:red;">\*</span> or in the case of bound compound terms, noun phrases;
         - Prefer premodified/adjectival noun phrases, e.g. _historical drama, cold fusion_
         - Avoid postmodified/prepositional noun phrases unless idiomatic, e.g. avoid _hospitals for children_ in favor of _children's hospital,_ but prefer _burden of proof_ to _proof's burden_
     - Avoid verbs used as nouns; e.g., prefer _reading_ to _read,_ _cookery_ to _cook_

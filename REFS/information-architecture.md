@@ -305,7 +305,7 @@ Since warrants shift over time, there should be a 'parking lot' for candidate te
 
 ##### Scope & coordination/syntax
 
-The basic rule per ANSI/NISO Z39.19 is that a term should denote a single **concept** or unit of thought; this is challenged by Svenonius (2005), who argues that concepts are inherently fuzzy and that quantitative linguistics provides a more objective foundation for extracting terms from natural language. There are different kinds of concepts:
+The basic rule per ANSI/NISO Z39.19 is that a term should denote a single **concept** or unit of thought; this is challenged by Svenonius (2005), who argues that concepts are inherently fuzzy and that quantitative linguistics provides a more objective foundation for extracting terms from natural language. At any rate, there are different kinds of concepts:
 
 - Things and their parts
 - Materials

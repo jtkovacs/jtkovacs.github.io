@@ -266,7 +266,7 @@ Information consumers depend on KOSs to browse and search content objects:
 - [Search engines](search-engines.html) may use synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
     - Small search engines (for website, intranet, CMS, repository) may use thesauri to facilitate search
 
-    
+Svenonius (1989): **"Controlled vocabularies can take many forms and be used for many purposes. In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."**    
     
 
 ## What are reference works?
@@ -606,6 +606,8 @@ NISO. (1997). TR02-1997: Guidelines for indexes and related information retrieva
 Pomerantz, J. (2015). _Metadata._ The MIT Press Essential Knowledge Series. Boston, MA: MIT Press.
 
 Rosenfeld, L., Morville, P., & Arango, J. (2015). _Information architecture for the web and beyond_ (4e). Sebastopol, California: O'Reilly Media.
+
+Svenonius, E. (1989). Design of controlled vocabularies. _Encyclopedia of Library and Information Science, 45_(10), 82–109.
 
 UX Booth. (2015). A complete beginner's guide to information architecture. Retrieved from [http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/](http://www.uxbooth.com/articles/complete-beginners-guide-to-information-architecture/)
 

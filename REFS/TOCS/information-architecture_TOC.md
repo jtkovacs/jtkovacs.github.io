@@ -353,7 +353,7 @@ Since warrants shift over time, there should be a 'parking lot' for candidate te
 
 ##### Scope & coordination/syntax
 
-The basic rule is that a term should denote a single **concept,** or unit of thought. There are different kinds of concepts:
+The basic rule per ANSI/NISO Z39.19 is that a term should denote a single **concept** or unit of thought; this is challenged by Svenonius (2005), who argues that concepts are inherently fuzzy and that quantitative linguistics provides a more objective foundation for extracting terms from natural language. There are different kinds of concepts:
 
 - Things and their parts
 - Materials
@@ -375,7 +375,7 @@ A <span style="color: red; font-weight: bold;">(1)</span> **bound term** uses mu
     - ... unless other meanings of the homograph are entirely outside the domain
         - ... but even then, anticipate metasearching and include a qualifier
 
-While compound terms denote a single concept, <span style="color: red; font-weight: bold;">(2)</span> **coordinated terms** AKA synthesized terms associate several concepts with a single information object and generally fall in the domain of indexing languages. Coordinated terms can be embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English Language--Rhetoric, Persuasion (Rhetoric), Report Writing._ Precoordinated terms enable browsing with great specificity, describe complex concepts, and impose alphabetic proximity on related terms that would otherwise be far apart. Given the high cost of taxonomist labor, though, it's often better to let users combine terms interactively during search **(postcoordination),** e.g. _English Language AND Rhetoric AND Persuasion AND Report Writing._ 
+While compound terms denote a single concept, <span style="color: red; font-weight: bold;">(2)</span> **coordinated terms** AKA synthesized terms associate several concepts with a single information object and generally fall in the domain of indexing languages. Coordinated terms can be <span style="color: red; font-weight: bold;">(a)</span> embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English Language--Rhetoric, Persuasion (Rhetoric), Report Writing._ Precoordinated terms enable browsing with great specificity, describe complex concepts, and impose alphabetic proximity on related terms that would otherwise be far apart. Given the high cost of taxonomist labor, though, it's often better to let users <span style="color: red; font-weight: bold;">(b)</span> combine terms interactively during search **(postcoordination),** e.g. _English Language AND Rhetoric AND Persuasion AND Report Writing._ 
 
 Use of a compound term should be determined by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format (print sometimes benefits from precoordinated terms); see ANSI/NISO Z9.19 pp. 39-40 for more guidance and examples.
 

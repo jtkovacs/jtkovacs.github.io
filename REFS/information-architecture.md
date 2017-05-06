@@ -303,7 +303,7 @@ Since warrants shift over time, there should be a 'parking lot' for candidate te
 
 #### How are terms expressed?
 
-##### Scope & coordination
+##### Scope & coordination/syntax
 
 The basic rule is that a term should denote a single **concept,** or unit of thought. There are different kinds of concepts:
 
@@ -315,7 +315,7 @@ The basic rule is that a term should denote a single **concept,** or unit of tho
 - Disciplines, fields
 - Units of measurement
 
-This is easy to accomplish with a **single-word term,** but things get more complex; there are three kinds of multiword AKA **compound terms.** Use of a compound term should be determined by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format (print sometimes benefits from precoordinated terms); see ANSI/NISO Z9.19 pp. 39-40 for more guidance and examples.
+This is easy to accomplish with a **single-word term,** but things get more complex; there are three kinds of multiword AKA **compound terms,** the construction ofo which is governed by the CV's **syntax.** Use of a compound term should be determined by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format (print sometimes benefits from precoordinated terms); see ANSI/NISO Z9.19 pp. 39-40 for more guidance and examples.
 
 A <span style="color: red; font-weight: bold;">(1)</span> **bound term** uses multiple words or a phrase to denote a single concept, e.g. _oral surgery._ The inverted form of bound terms may be included as an entry term, e.g. _surgery, oral: see oral surgery._ 
 

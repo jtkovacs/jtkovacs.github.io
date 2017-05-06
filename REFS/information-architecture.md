@@ -245,7 +245,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What are controlled vocabularies?
 
-CVs consist of **terms** and **semantic relationships,** described in term records.  
+CVs consist of **terms** and **semantic relationships** described in **term records.**  
 
 Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes* (ambiguous words --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** At minimum, to avoid the IR pitfalls of natural languages CVs must:
 
@@ -371,7 +371,7 @@ See [discussion of hierarchy, above.](#hierarchical-(1g))
 
 ##### Association
 
-Associative relationships should be recorded between terms that are needed to explain each other, or readily evoke each other, or are etymologically related, or are derived one from the other. Although they may be disambiguated in a graph database, in a thesaurus the following **semantic relationships** (and more) are collapsed under RELATED TERM/RT:
+Associative relationships should be recorded between terms that are needed to explain each other, or readily evoke each other, or are etymologically related, or are derived one from the other. Although they may be disambiguated in a graph database, in a thesaurus the following relationships (and more) are collapsed under RELATED TERM/RT:
 
 - Cause/effect
 - Process/agent or counteragent

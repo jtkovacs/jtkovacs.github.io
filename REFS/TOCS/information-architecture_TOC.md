@@ -363,7 +363,7 @@ The basic rule per ANSI/NISO Z39.19 is that a term should denote a single **conc
 - Disciplines, fields
 - Units of measurement
 
-This is easy to accomplish with a **single-word term,** but things get more complex; there are several kinds of multiword AKA **compound terms,** the construction ofo which is governed by the CV's **syntax:** 
+The simplest term form is a **single-word term;** there are several kinds of multiword AKA **compound terms,** the construction ofo which is governed by the CV's **syntax:** 
 
 A <span style="color: red; font-weight: bold;">(1)</span> **bound term** uses multiple words or a phrase to denote a single concept, e.g. _oral surgery._ The inverted form of bound terms may be included as an entry term, e.g. _surgery, oral: see oral surgery._ These <span style="color: red; font-weight: bold;">(a)</span> naturally occurring compound terms are generally preferable to <span style="color: red; font-weight: bold;">(b)</span> **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  If no bound compound term exists, ambiguous terms (AKA head or focus nouns) should receive a modifier (AKA difference). Additionally, the scope of any term, not just homographs, may be clarified with a scope note (SN). If a SN mentions another term in the vocabulary, it should receive a reciprocal SN or cross-reference: _term2: X SN term1._
 

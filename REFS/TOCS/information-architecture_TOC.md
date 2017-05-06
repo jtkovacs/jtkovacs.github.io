@@ -395,7 +395,7 @@ While compound terms denote a single concept, <span style="color: red; font-weig
     - Regardless, abstract concepts and unique entities are singular
     - Singular and plural forms of a noun may denote different concepts, so both may appear (qualified) in the CV
 
-<span style="color:red;">\*Svenonius (2005)</span> explains the intended effect of this standard: CVs where every term is "context independent", i.e. self-contained and thus reusable. However, context independence is "not normally operative in classification schemes where the verbal headings are governed by the principle of hierarchical force."     
+<span style="color:red; padding-left:30px;">\*Svenonius (2005)</span> explains the intended effect of this standard: CVs where every term is "context independent", i.e. self-contained and thus reusable. However, context independence is "not normally operative in classification schemes where the verbal headings are governed by the principle of hierarchical force."     
 
 ##### Typographic forms
 

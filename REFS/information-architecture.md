@@ -8,7 +8,7 @@ IR occurs when a user retrieves information objects AKA content objects (documen
 
 ### Cataloging & indexing
 
-Information professionals work to ensure that IR (1) has good **precision;** (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by (1) [creating search algorithms](search-engines.html) or by (2) ingesting information objects into a catalog, which includes:
+Information professionals work to ensure that IR (1) has good **precision,** AKA 'satisfies the requirement for general survey' or 'satisfies the collocating requirement' or attains 'representational predictability'; (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by (1) [creating search algorithms](search-engines.html) or by (2) ingesting information objects into a catalog, which includes:
 
 - **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
 

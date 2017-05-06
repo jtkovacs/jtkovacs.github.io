@@ -300,7 +300,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What are controlled vocabularies?
 
-CVs (AKA authority lists) consist of **terms** and **semantic relationships** described in **term records.**  
+CVs (AKA authority lists) consist of **terms; syntax** (how terms may be combined); and **term records,** containing a term's **semantic relationships, scope notes,** and **history notes.**    
 
 Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes* (ambiguous words --- both **homographs** and **synonyms/near-synonyms/quasi-synonyms).** At minimum, to avoid the IR pitfalls of natural languages CVs must:
 

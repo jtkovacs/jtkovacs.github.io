@@ -1,5 +1,5 @@
 
-_The following notes are largely based on [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking)_
+_The following notes are largely based on [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking) Another excellent resource is the Farnam Street Blog roundup of [mental models.](https://www.farnamstreetblog.com/mental-models/)_
 
 _For information systems-related applications of modeling, see [notes on system and process modeling;](modeling.html) for business applications of models as analytic frameworks, see [notes on project management](project-management.html) and [process improvement.](process-improvement.html)_
  

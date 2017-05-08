@@ -31,6 +31,7 @@ symmetric difference: (A-B)∪(B-A)
 
 http://www.vertabelo.com/blog/technical-articles/sql-joins
 http://thomaslarock.com/2012/04/real-world-sql-join-examples/
+http://sqlmag.com/t-sql/t-sql-join-types
 
 ```SQL
 SELECT c1,c2 FROM tname WHERE ... ; SELECT * FROM tname;

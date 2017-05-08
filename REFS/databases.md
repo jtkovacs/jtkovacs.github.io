@@ -8,7 +8,7 @@ A database is a structured collection of data. A database management system (DBM
 - **Database Environment** = Hardware + Software + Data + Procedures + People
 - Data is formatted according to a [data model;](information-architecture.html#information-structures)
 - Data is managed via a database management system [(DBMS)](DBMS.html) which includes **data sublanguages:**
-    - a data definition language **(DDL)** that expresses a schema, stored in the **system catalog** (AKA data directory, data dictionary); 
+    - a data definition language **(DDL)** tha  t expresses a schema, stored in the **system catalog** (AKA data directory, data dictionary); 
     - a data manipulation language **(DML),**
         - which includes the capacity to query (retrieve) the data and is therefore often called a query language (though technically incorrect);
         - which also includes the capacity to create, update, and delete data;
@@ -164,11 +164,14 @@ UML can be translated into relations:
 
 # Database administration
 
+## Indexing & performance
+
+- [http://use-the-index-luke.com/sql/table-of-contents](http://use-the-index-luke.com/sql/table-of-contents)
+- [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
+
+
+
 ## Transaction management
-
-## Indexing
-
-## Performance
 
 ## Security
 

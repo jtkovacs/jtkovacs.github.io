@@ -105,7 +105,7 @@ Wurman (1990) claims there are only five ways to organize items. Similarly, Wyll
 - **Inexact schemas,** AKA _categories:_ topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid schemas,** combining multiple methods (may be confusing)
 
-### Information structures/data models
+### Information structures
 
 But, Wyllys adds, there are also three fundamental information structures, AKA **data models:** hierarchical, graph, and relational. In their review of [database history](databases.html#history-of-databases) (generations 1-3), Connolly and Begg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
 

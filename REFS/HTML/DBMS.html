@@ -614,6 +614,11 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
      https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446
     </a>
    </li>
+   <li>
+    <a href="https://www.youtube.com/watch?v=aylQNvVDPsg">
+     How to Make MS Access Database Executable
+    </a>
+   </li>
   </ul>
   <h4>
    <a name="splitting-a-database">
@@ -621,7 +626,7 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
    </a>
   </h4>
   <p>
-   Why split a database? Database performance can be improved by splitting the database: tables in one file, all other objects (like queries, forms, and reports) in another. Other reasons to split a database.
+   Why split a database? Database performance can be improved by splitting the database: tables in one file, all other objects (like queries, forms, and reports) in another.
   </p>
   <ul>
    <li>
@@ -634,15 +639,10 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     </a>
    </li>
   </ul>
-  <h4>
-   <a name="migrating-to-microsoft-sql-server">
-    Migrating to Microsoft SQL Server
-   </a>
-  </h4>
+  <p>
+   How? Database Tools &gt; Access Database &gt; Database Splitter wizard.
+  </p>
   <ul>
-   <li>
-    How? Database Tools &gt; Access Database &gt; Database Splitter wizard.
-   </li>
    <li>
     Naming conventions: for mydb.accdb, the backend can be named mydb_be.accdb or mybd_datafile.accdb
    </li>
@@ -679,12 +679,14 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     Backup plan?
    </li>
    <li>
-    https://support.microsoft.com/en-us/kb/162522: When you distribute your application, instruct a network or system administrator to run the Setup program for your back-end database on the network file server first ... After Setup install the appropriate files on the file server, instruct all users to run the setup program for your front-end database. This setup program sets up your main application and all of the Microsoft Access run-time files on each user's computer.
-   </li>
-   <li>
-    https://www.youtube.com/watch?v=aylQNvVDPsg
+    https://support.microsoft.com/en-us/kb/162522: "When you distribute your application, instruct a network or system administrator to run the Setup program for your back-end database on the network file server first ... After Setup install the appropriate files on the file server, instruct all users to run the setup program for your front-end database. This setup program sets up your main application and all of the Microsoft Access run-time files on each user's computer."
    </li>
   </ul>
+  <h4>
+   <a name="migrating-to-microsoft-sql-server">
+    Migrating to Microsoft SQL Server
+   </a>
+  </h4>
   <h1>
    <a name="graph-dbms">
     Graph DBMS

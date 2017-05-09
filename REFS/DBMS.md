@@ -178,20 +178,20 @@ Get information:
 ### Sharing an Access database
 
 - [https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446](https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446)
+- [How to Make MS Access Database Executable](https://www.youtube.com/watch?v=aylQNvVDPsg)
 
 #### Splitting a database
 
-Why split a database? Database performance can be improved by splitting the database: tables in one file, all other objects (like queries, forms, and reports) in another. Other reasons to split a database. 
+Why split a database? Database performance can be improved by splitting the database: tables in one file, all other objects (like queries, forms, and reports) in another. 
 
 - [http://www.techrepublic.com/blog/10-things/10-plus-reasons-to-split-an-access-database/](http://www.techrepublic.com/blog/10-things/10-plus-reasons-to-split-an-access-database/) - - [https://support.office.com/en-us/article/Split-an-Access-database-3015ad18-a3a1-4e9c-a7f3-51b1d73498cc?ui=en-US&rs=en-US&ad=US](https://support.office.com/en-us/article/Split-an-Access-database-3015ad18-a3a1-4e9c-a7f3-51b1d73498cc?ui=en-US&rs=en-US&ad=US)
 
-#### Migrating to Microsoft SQL Server
+How? Database Tools > Access Database > Database Splitter wizard. 
 
-  - How? Database Tools > Access Database > Database Splitter wizard. 
-  - Naming conventions: for mydb.accdb, the backend can be named mydb_be.accdb or mybd_datafile.accdb
-  - Tables in mydatabase.accdb are linked tables
-  - Backend goes on server
-  - What about .mdb?? 
+- Naming conventions: for mydb.accdb, the backend can be named mydb_be.accdb or mybd_datafile.accdb
+- Tables in mydatabase.accdb are linked tables
+- Backend goes on server
+- What about .mdb?? 
     - https://support.microsoft.com/en-us/kb/118609
     - https://support.office.com/en-us/article/Which-Access-file-format-should-I-use-012d9ab3-d14c-479e-b617-be66f9070b41
 - Prepare frontend
@@ -199,8 +199,9 @@ Why split a database? Database performance can be improved by splitting the data
   - Hide menus: Access Options > deselect Display Navigation Pane
 - Prepare backend
   - Backup plan?
-  - https://support.microsoft.com/en-us/kb/162522: When you distribute your application, instruct a network or system administrator to run the Setup program for your back-end database on the network file server first ... After Setup install the appropriate files on the file server, instruct all users to run the setup program for your front-end database. This setup program sets up your main application and all of the Microsoft Access run-time files on each user's computer.
-  - https://www.youtube.com/watch?v=aylQNvVDPsg
+  - https://support.microsoft.com/en-us/kb/162522: "When you distribute your application, instruct a network or system administrator to run the Setup program for your back-end database on the network file server first ... After Setup install the appropriate files on the file server, instruct all users to run the setup program for your front-end database. This setup program sets up your main application and all of the Microsoft Access run-time files on each user's computer."
+
+#### Migrating to Microsoft SQL Server
 
   
   

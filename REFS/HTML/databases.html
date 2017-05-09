@@ -178,15 +178,20 @@
          </a>
         </li>
         <li>
-         <a href="#data-movement">
-          Data movement
-         </a>
-        </li>
-        <li>
          <a href="#security">
           Security
          </a>
          <ul>
+          <li>
+           <a href="#authentication">
+            Authentication
+           </a>
+          </li>
+          <li>
+           <a href="#backup">
+            Backup
+           </a>
+          </li>
           <li>
            <a href="#encryption">
             Encryption
@@ -198,11 +203,6 @@
              </a>
             </li>
            </ul>
-          </li>
-          <li>
-           <a href="#backup">
-            Backup
-           </a>
           </li>
          </ul>
         </li>
@@ -468,34 +468,17 @@
    </a>
   </h5>
   <p>
-   Supertype/Subtype (described as Superclass/Subclass in the Connolly &amp; Begg book) implementation:
+   Entities may be specified superclasses and subclasses; this provides more semantic meaning to an ER model, makes the ER model more readable, and (depending on implementation) can reduce the number of NULLs in the database. There are several ways to implement super- and subclasses:
   </p>
   <ul>
    <li>
-    Provides more semantic meaning to an ER model: TRUE
+    Subclass contains superclass PK along with its own unique attributes;
    </li>
    <li>
-    Makes an ER model more readable: TRUE
+    Subclass relations contain all superclass attributes along with its own unique attributes;
    </li>
    <li>
-    Introduces more NULL values to a database: FALSE
-   </li>
-   <li>
-    Supertype and Subtypes have the same primary key: TRUE
-   </li>
-   <li>
-    Subclasses have three different translation procedures:
-    <ul>
-     <li>
-      Subclass relations contain superclass PK and unique attributes;
-     </li>
-     <li>
-      Subclass relations contain all superclass attributes &amp; unique attributes;
-     </li>
-     <li>
-      One relation contains all super- and subclass attributes.
-     </li>
-    </ul>
+    One relation contains all super- and subclass attributes.
    </li>
   </ul>
   <h4>
@@ -1206,16 +1189,24 @@
     Transaction management
    </a>
   </h2>
-  <h2>
-   <a name="data-movement">
-    Data movement
-   </a>
-  </h2>
+  <p>
+   ACID
+  </p>
   <h2>
    <a name="security">
     Security
    </a>
   </h2>
+  <h3>
+   <a name="authentication">
+    Authentication
+   </a>
+  </h3>
+  <h3>
+   <a name="backup">
+    Backup
+   </a>
+  </h3>
   <h3>
    <a name="encryption">
     Encryption
@@ -1229,11 +1220,6 @@
   <p>
    Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
   </p>
-  <h3>
-   <a name="backup">
-    Backup
-   </a>
-  </h3>
   <h1>
    <a name="sources">
     Sources

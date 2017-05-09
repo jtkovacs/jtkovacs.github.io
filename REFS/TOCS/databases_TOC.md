@@ -25,11 +25,11 @@
 - [Database administration](#database-administration)
 	- [Data and log files](#data-and-log-files)
 	- [Transaction management](#transaction-management)
-	- [Data movement](#data-movement)
 	- [Security](#security)
+		- [Authentication](#authentication)
+		- [Backup](#backup)
 		- [Encryption](#encryption)
 			- [Digital signatures](#digital-signatures)
-		- [Backup](#backup)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -43,6 +43,9 @@ A **database** is a either (1) collection of data that's structured according to
 A [DBMS](DBMS.html) is either a **database engine** for interacting with the database plus a **database frontend** for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). See [notes on typical DBMS functionality.](DBMS.html#core-functionality)
 
 A **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). This term denotes only the technical environment of a database; the full **database environment** encompasses hardware, software, data, procedures, and people.
+
+
+
 
 ## History of databases
 
@@ -91,16 +94,11 @@ When two entities are related in many-to-many fashion, an associative entity mus
 
 ##### Superclasses and subclasses
 
-Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book) implementation: 
+Entities may be specified superclasses and subclasses; this provides more semantic meaning to an ER model, makes the ER model more readable, and (depending on implementation) can reduce the number of NULLs in the database. There are several ways to implement super- and subclasses:
 
-- Provides more semantic meaning to an ER model: TRUE
-- Makes an ER model more readable: TRUE
-- Introduces more NULL values to a database: FALSE
-- Supertype and Subtypes have the same primary key: TRUE
-- Subclasses have three different translation procedures: 
-    - Subclass relations contain superclass PK and unique attributes;
-    - Subclass relations contain all superclass attributes & unique attributes;
-    - One relation contains all super- and subclass attributes.
+- Subclass contains superclass PK along with its own unique attributes;
+- Subclass relations contain all superclass attributes along with its own unique attributes;
+- One relation contains all super- and subclass attributes.
 
 #### Types of attributes 
 
@@ -303,17 +301,19 @@ Select all accurate statements about indexes.
 
 ## Transaction management
 
-## Data movement
+ACID
 
 ## Security
+
+### Authentication
+
+### Backup
 
 ### Encryption
 
 #### Digital signatures
 
 Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
-
-### Backup
 
 
 

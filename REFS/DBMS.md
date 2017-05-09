@@ -90,7 +90,7 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 An Access database is made up of different objects:
 
-- **Tables**
+- **Tables:**
     - Autosaves when inputting records; need to save changes to DB structure though
     - Database Tools > Relationships; drag & drop interface
     - **Control input:**
@@ -100,7 +100,7 @@ An Access database is made up of different objects:
         - Default value: Design View > choose field > Default Value > … > =”United States”
         - Design View > choose field > Validation Rule > … > =Date(), =”MasterCard” OR “Visa”
         - Design View > choose field > Validation Text > The credit card you’ve entered has expired!
-- **Queries**
+- **Queries:**
     - Create > Query Design> Totals, Select, Update, Make Table, Delete, Append, Crosstab > Run
     - choose join type: double click on UML associations in Query Design view
     - deletion: Query Design > join Table and Query affecting Table > Property Sheet > set Unique Records to Yes > Delete > Run
@@ -114,32 +114,32 @@ An Access database is made up of different objects:
     - specify form properties (many): Form Design > Properties Sheet > Format, Data, Event, Other … Properties Sheet > Data > Data Source → Design > Add Existing Fields 
     - Design View > Layout
     - Add a combo box to the header of a form for easier navigation (e.g. by employee name)
-- **Reports,** unlike forms, are printer-friendly
+- **Reports,** unlike forms, are printer-friendly:
     - Create > Report (or Report Design or Report Wizard)
     - Design > Group & Sort, Totals
     - Format > Conditional Formatting
-- **Macros** are a way to make operations automatic; they're used to make forms more capable
+- **Macros** are a way to make operations automatic; they're used to make forms more capable:
     - Create > Macro
     - button macros: Design > create a button > Property Sheet > Events > On Click > … > ApplyFilter
     - remove all filters: ApplyFilter > Where Condition = true
     - data macros: use to make logs that capture editing. create a log table; Table > After Update > … 
     - name macro autoexec to run it on launch
-- **Modules** are for Visual Basic code
+- **Modules** are for Visual Basic code.
 
 Objects might not be immediately visible; right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
 
 ### Data types
 
-- short/long text
+- Short text, long text
     - Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
-- autonumber/keys 
-- int
-- float 
-- binary
-- attachment 
-- hyperlink 
-- calculated field
-- currency
+- Autonumber/keys 
+- Int
+- Float 
+- Binary
+- Attachment 
+- Hyperlink 
+- Calculated field
+- Currency
 - Lookup Wizard
     - lookup tables: Design View > choose field > Data Type > Lookup Wizard
     - Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
@@ -147,10 +147,16 @@ Objects might not be immediately visible; right click on “All Access Objects�
 
 ### Administration
 
-- optimize: Design View > choose field > Field Size; Indexed
-- Database Tools > Object Dependencies, Database Documenter, Compact & Repair (run periodically)
-- Database Tools > Access Database (splits database into front-end=queries+forms+reports and back-end=tables)
-- troubleshooting: External Data > Linked Table Manager
+- Optimize: 
+    - Database Tools > Access Database (splits database into front-end=queries+forms+reports and back-end=tables)
+    - Design View > choose field > Field Size
+    - Indexing
+- Troubleshooting: 
+    - External Data > Linked Table Manager
+    - Database Tools > Compact & Repair (run periodically)
+- Get information:
+    - Database Tools > Object Dependencies
+    - Database Tools > Database Documenter 
 
 ### Navigability
 

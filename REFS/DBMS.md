@@ -91,7 +91,7 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 ### SQL Server Management Studio
 
 - **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
-- SQL Server Profiler: lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
+- **SQL Server Profiler:** lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
 
 #### Manage databases
 

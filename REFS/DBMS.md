@@ -82,6 +82,63 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 - Data types
 - CTE
+- Installing logs and data on different drives gives a performance boost
+
+### SQL Server Configuration Manager 
+
+Shows every instance of a SQL Server product on a machine
+
+- Lets you restart a process
+- Lets you enable protocols for communication between client & server
+
+### SQL Server Management Studio
+
+- Activity Monitor: use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
+- SQL Server Profiler: lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
+
+
+Create database
+
+```SQL
+CREATE DATABASE dbname
+```
+
+A database has a default PRIMARY filegroup; can create other filegroups, e.g. to hold tables that should be read-only.
+Create tables: CREATE TABLE tname (fdname dtype, fdname dtype ... ) ON Filegroupname
+Create PK: Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
+In-memory AKA memory-optimized tables: used to improve performance of read-write tables. The keyword GO causes preceding commands to be submitted as a batch, and USE ensures that the table is created within the right database:
+ALTER DATABASE dbname
+ADD FILEGROUP fgname
+CONTAINS MEMORY_OPTIMIZED_DATA;
+
+ALTER DATABASE dbname
+ADD FILE (Name = ‘fname’, Filename ‘fpath/fname’)
+TO FILEGROUP fgname;
+
+GO
+
+USE dbname
+GO
+
+CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, fdname …)
+WITH (MEMORY-OPTIMIZED=ON)
+Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required for all temporal tables:
+CREATE TABLE Inventory ([InventoryID] int NOT NULL PRIMARY KEY CLUSTERED, [ItemName] nvarchar(100) NOT NULL, 
+[ValidFrom] datetime2 (2) GENERATED ALWAYS AS ROW START, 
+[ValidTo] datetime2 (2) GENERATED ALWAYS AS ROW END, 
+PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo))    
+WITH (SYSTEM_VERSIONING = ON); 
+
+SELECT [StockItemName]
+FROM [WideWorldImporters].[Warehouse].[StockItems]
+FOR SYSTEM_TIME AS OF '2015-01-01'
+WHERE StockItemName like '%shark%'
+Columnstore index used to improve performance of read-only tables
+Inspect relationships:
+[Database] > [Table] > Keys
+[Database] > Database diagrams
+Create view: [Database] > [Views] > right click to create new view. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. Views can be made persistent to increase performance: right click view > Script View as > ALTER To > New Query Editor Window > Add “WITH SCHEMABINDING” under “ALTER VIEW” line > Execute > Refresh Object Explorer pane > Right click on Indexes > Clustered index > Add columns.
+```
 
 
 

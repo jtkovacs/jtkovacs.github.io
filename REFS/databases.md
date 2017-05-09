@@ -49,7 +49,13 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Order is insignificant.
 
-#### Types of entities
+#### Relationships between entities
+
+- http://www2.cs.uregina.ca/~bernatja/crowsfoot.html 
+- Relationships between entities have participation: mandatory/optional
+- Relationships between entities have cardinalities AKA modalities: one-to-one, one-to-many, many-to-many
+- “Many-to-many” relationships are “resolved” with an “associative entity” that has a combined primary key (PK), both of which are foreign keys (FK)
+- A relationship is identifying if the PK of a parent entity appears in the PK of a child entity; it’s denoted with a solid line, while nonidentifying relationships are denoted with dashed lines
 
 ##### Associative entities
 
@@ -86,6 +92,10 @@ Identity values must/How to pick a key. Which of the following are guidelines fo
 - Narrow field
 
 #### Data integrity in the relational model
+
+Domain integrity: column values should fall within a given domain, enforced by column data type
+Entity integrity: enforced by primary key
+Referential integrity: enforced by keys (PK-FK pair)
 
 ##### Entity integrity
 

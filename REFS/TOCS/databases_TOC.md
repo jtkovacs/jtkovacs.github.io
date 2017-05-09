@@ -51,11 +51,9 @@ Hierarchies and graphs were superseded by Edgar Codd's **relational** data model
 - Is platform-independent due to ANSI standards, allowing transfer of code across different products
 - Is comparatively cheap to purchase and maintain
 - Provides a programming/query language that is easy to learn and execute, expediting data retrieval
-- Minimizes data redundancy, conserving storage and safeguarding data quality (some redundancy still required to establish relationships)
+- Minimizes data redundancy, conserving storage and safeguarding data quality (although some redundancy is still required to establish relationships)
 
-**Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. 
-
-With the advent of Big Data, **NoSQL** databases (unbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
+**Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data, **NoSQL** databases (unbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
 
 
 ### ANSI-SPARC architecture

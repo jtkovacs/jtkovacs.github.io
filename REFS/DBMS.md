@@ -45,6 +45,7 @@ A database management system is either (1) a database engine for interacting wit
 less my.cnf
 # exit less: 
 q
+```
 
 ```SQL
 -- create database

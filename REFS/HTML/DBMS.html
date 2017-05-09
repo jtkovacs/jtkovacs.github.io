@@ -86,7 +86,46 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           MySQL
          </a>
         </li>
+        <li>
+         <a href="#microsoft-sql-server">
+          Microsoft SQL Server
+         </a>
+        </li>
+        <li>
+         <a href="#microsoft-access">
+          Microsoft Access
+         </a>
+         <ul>
+          <li>
+           <a href="#migrating-to-microsoft-sql-server">
+            Migrating to Microsoft SQL Server
+           </a>
+          </li>
+         </ul>
+        </li>
        </ul>
+      </li>
+      <li>
+       <a href="#graph-dbms">
+        Graph DBMS
+       </a>
+       <ul>
+        <li>
+         <a href="#poolparty">
+          PoolParty
+         </a>
+        </li>
+        <li>
+         <a href="#neo4j">
+          Neo4j
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#source">
+        Source
+       </a>
       </li>
      </ul>
     </td>
@@ -175,25 +214,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     MySQL
    </a>
   </h2>
-  <p>
-   ```Bash # launch /usr/bin/mysql -u [uname] -p[pwd]
-  </p>
-  <h1>
-   <a name="errors-log-location:">
-    errors log location:
-   </a>
-  </h1>
-  <p>
-   /var/log/mysql/error.log
-  </p>
-  <h1>
-   <a name="edit-configs:">
-    edit configs:
-   </a>
-  </h1>
-  <p>
-   less my.cnf # exit less: q
-  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># launch</span>
+<span class="kw">/usr/bin/mysql</span> -u [uname] -p[pwd]
+
+<span class="co"># errors log location: </span>
+<span class="kw">/var/log/mysql/error.log</span>
+
+<span class="co"># edit configs: </span>
+<span class="kw">less</span> my.cnf
+<span class="co"># exit less: </span>
+<span class="kw">q</span></code></pre>
+  </div>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- create database</span>
 <span class="kw">CREATE</span> <span class="kw">DATABASE</span> dname;

@@ -23,9 +23,7 @@ Hierarchies and graphs were superseded by Edgar Codd's **relational** data model
 - Provides a programming/query language that is easy to learn and execute, expediting data retrieval
 - Minimizes data redundancy, conserving storage and safeguarding data quality (although some redundancy is still required to establish relationships)
 
-**Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. 
-
-With the advent of Big Data, [NoSQL databases](#NoSQL-databases) (an umbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
+**Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data, [NoSQL databases](#NoSQL-databases) (an umbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
 
 ### ANSI-SPARC architecture
 
@@ -44,7 +42,7 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 ## The relational data model
 
-In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Columns have types, AKA domains, which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Order is insignificant.
 
 ### Types of entities
 
@@ -91,7 +89,11 @@ Identity values must/How to pick a key. Which of the following are guidelines fo
 
 #### Entity integrity
 
+rows are unique (they need a key).
+
 #### Domain integrity
+
+columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values. 
 
 #### Referential integrity
 

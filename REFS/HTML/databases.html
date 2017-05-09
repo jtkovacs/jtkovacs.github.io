@@ -373,10 +373,7 @@
    <strong>
     Object
    </strong>
-   databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized.
-  </p>
-  <p>
-   With the advent of Big Data,
+   databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data,
    <a href="#NoSQL-databases">
     NoSQL databases
    </a>
@@ -438,7 +435,7 @@
    <strong>
     columns
    </strong>
-   (AKA attributes, fields). Columns have types, AKA domains, which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+   (AKA attributes, fields). Order is insignificant.
   </p>
   <h3>
    <a name="types-of-entities">
@@ -548,11 +545,17 @@
     Entity integrity
    </a>
   </h4>
+  <p>
+   rows are unique (they need a key).
+  </p>
   <h4>
    <a name="domain-integrity">
     Domain integrity
    </a>
   </h4>
+  <p>
+   columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values.
+  </p>
   <h4>
    <a name="referential-integrity">
     Referential integrity

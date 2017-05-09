@@ -119,6 +119,10 @@ An attribute is multi-valued/set-valued if, for a single entity, the attribute c
 
 An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
 
+An attribute may be a **key** or identity value. Kinds of keys: Identity values must/How to pick a key:
+
+
+
 #### Superclasses and subclasses
     
 ### Top-down vs. bottom-up design

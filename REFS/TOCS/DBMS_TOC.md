@@ -50,16 +50,14 @@ A database management system is either (1) a database engine for interacting wit
 [phpMyAdmin](https://www.phpmyadmin.net/) is a MySQL GUI, or you can work with MySQL from Bash: 
 
 ```Bash
-# launch
 /usr/bin/mysql -u [uname] -p[pwd]
+# launch
 
-# errors log location: 
 /var/log/mysql/error.log
+# errors log location 
 
-# edit configs: 
 less my.cnf
-# exit less: 
-q
+# view configs
 ```
 
 MySQL commands:

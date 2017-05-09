@@ -6,7 +6,7 @@
 
 ## Core functionality
 
-From [notes on databases](database.html#what-is-a-database?):
+From [notes on databases:](database.html#what-is-a-database?)
 
 A database management system is either (1) a database engine for interacting with the database plus a database frontend for interacting with the user; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Most DBMS offer:
 

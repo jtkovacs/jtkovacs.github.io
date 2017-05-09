@@ -173,15 +173,21 @@ Get information:
 
 - Date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
 
-### Migrating to Microsoft SQL Server
 
-https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446
 
-- Split database
-  - Database performance can be improved by splitting the database: tables in one file, all other objects (like queries, forms, and reports) in another. Other reasons to split a database.
+### Sharing an Access database
+
+- [https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446](https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446)
+
+#### Splitting a database
+
+Why split a database? Database performance can be improved by splitting the database: tables in one file, all other objects (like queries, forms, and reports) in another. Other reasons to split a database. 
+
+- [http://www.techrepublic.com/blog/10-things/10-plus-reasons-to-split-an-access-database/](http://www.techrepublic.com/blog/10-things/10-plus-reasons-to-split-an-access-database/) - - [https://support.office.com/en-us/article/Split-an-Access-database-3015ad18-a3a1-4e9c-a7f3-51b1d73498cc?ui=en-US&rs=en-US&ad=US](https://support.office.com/en-us/article/Split-an-Access-database-3015ad18-a3a1-4e9c-a7f3-51b1d73498cc?ui=en-US&rs=en-US&ad=US)
+
+#### Migrating to Microsoft SQL Server
+
   - How? Database Tools > Access Database > Database Splitter wizard. 
-  - http://www.techrepublic.com/blog/10-things/10-plus-reasons-to-split-an-access-database/
-  - https://support.office.com/en-us/article/Split-an-Access-database-3015ad18-a3a1-4e9c-a7f3-51b1d73498cc?ui=en-US&rs=en-US&ad=US
   - Naming conventions: for mydb.accdb, the backend can be named mydb_be.accdb or mybd_datafile.accdb
   - Tables in mydatabase.accdb are linked tables
   - Backend goes on server

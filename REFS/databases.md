@@ -36,7 +36,7 @@ This is one way of thinking about database abstraction/separation, which, in gen
 
 - External views for different users (i.e., subsets and derivations of the data) are described by subschemas. Views are **logically independent** from the conceptual level.
 - The structure of the entire database---all entities, attributes, relationships, and constraints---is described by a conceptual schema. This conceptual layer is **physically independent** from implementation details.
-- The implementation details, including storage allocation, data compression, and encryption, and described by an internal schema.
+- Implementation details, including storage allocation, compression, and encryption, are described by an internal schema.
 
 Then, the DBMS creates **mappings** between schemas (also called intensions; a realization of a schema is called the extension or state of the database).
 

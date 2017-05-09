@@ -36,9 +36,9 @@ Objects might ‘belong’ to at most one object of another class; denoted with 
 
 - `1..1`
 - `m..n`
-- `m..\*` 
+- `m..*` 
 - `0..n` 
-- `0..\*`
+- `0..*`
 
 ### Association classes
 

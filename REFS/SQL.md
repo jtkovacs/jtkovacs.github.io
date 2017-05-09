@@ -183,7 +183,26 @@ STRFTIME(“format_string”, ”datetime_string”, <modifier>)
 
 
 
-### 
+### Check for inclusion
+
+- SELECT, FROM, CAST, RANK(), DENSE_RANK()
+- WITH
+- GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT) 
+
+Which of the following are characteristics of a JOIN?
+- Data is automatically sorted by the first column
+- Tables are JOINed via PK/FK relationships
+- More than two tables can be JOINed in one query
+- The keyword GROUP is mandatory
+
+Match the following clauses with its definition: 
+- SELECT: Columns to appear in result-set
+- FROM: Specifies table(s) holding desired columns
+- WHERE: Allows user to filter rows returned
+- GROUP BY: Clusters rows by common column value
+- HAVING: Filters GROUP BY clause
+- ORDER BY: Sorts the output of the results-set in a desired sequence
+
 
 
 # SOURCES

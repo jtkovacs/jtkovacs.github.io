@@ -65,6 +65,10 @@ Connolly and Begg (2015) outline the following database development process:
     - Analyze current data inputs and outputs; 
     - Within the scope of the objectives, identify key actors;
     - Interview actors to understand tasks that actors execute.
+    
+Explain what is meant by 'business rules' and provide an example.
+
+Business rules are database design constraints that arise from the business processes being modeled, not from requirements imposed by the relational data model (or other data model). Business rules affect the design of the database, including how entities are related; what attributes are collected; and what values are permitted or required for specific attributes. As an example, consider a database that stores donor and donations data for a nonprofit. Some business rules in this case might be that  donors can make multiple donations, multiple donors can be associated with the same donation, and individual donation amounts must be over $10.
 
 ## Conceptual design
   
@@ -83,7 +87,17 @@ Connolly and Begg (2015) outline the following database development process:
 ### The relational data model
 
 In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
-    
+
+- Relationship structure allows for scaling exceptionally large data sets with excellent performance for processing transactions: TRUE
+- ANSI standards made platform-independence and transfer code across different products possible: TRUE
+- Considered VERY expensive to purchase and maintain: FALSE
+- Programming/query language that is easy to learn and execute: TRUE
+- Difficult to retrieve data: FALSE
+
+What are the pros and cons of storing redundant data in a database?
+
+Redundant data has two major problems: first, the cost of physical storage, and second, the difficulties of keeping multiple copies of the same data consistent and accurate. For these reasons, normalization is used to minimize data redundancy (but not eliminate it, since the relational data model requires some redundancy to record relationships). However, because normalization is a complex process and because the cost of storage has declined over time, there may be cases or NoSQL database models where greater data redundancy is tolerated.
+
 #### Kinds of attributes 
 
 An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
@@ -92,17 +106,49 @@ An attribute is multi-valued/set-valued if, for a single entity, the attribute c
 
 An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
 
-An attribute may be a **key** or identity value. Kinds of keys: Identity values must/How to pick a key:
+Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
 
+An attribute may be a **key** or identity value. Kinds of keys: 
 
+- Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
+- Candidate Key: Column(s) that can uniquely identify rows in an entity
+
+Identity values must/How to pick a key. Which of the following are guidelines for an Entity Identifier (aka 'Primary Key')?
+
+- INTEGER is most-often the best data type choice
+- Will not change in value
+- Will not be null
+- Narrow field
+
+#### Referential integrity
+
+Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
+
+Explain what referential integrity is and how it is maintained within the Relational Data Model. 
+
+One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+
+#### Associative entities
+
+When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 
 #### Superclasses and subclasses
-    
+
+Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book) implementation: 
+
+- Provides more semantic meaning to an ER model: TRUE
+- Makes an ER model more readable: TRUE
+- Introduces more NULL values to a database: FALSE
+- Supertype and Subtypes have the same primary key: TRUE
+
+
 ### Top-down vs. bottom-up design
 
 In the conceptual design stage of database development, there are two competing approaches: top-down and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. The bottom-up approach begins with identifying attributes, then grouping and normalizing them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes. 
 
 #### Bottom-up design through normalization
+
+In the real world, we usually normalize only up to the 3rd Normal Form: TRUE
 
 Design by decomposition avoids redundancy and its consequences (update & deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
 
@@ -116,6 +162,10 @@ __Functional dependency (FD)__, `A→B`: The same A is always linked with the sa
 - __keys__ are attributes whose closure encompasses all attributes in a relation 
 - `S2`, a set of FDs, follows from `S1` if every relation satisfying `S1` also satisfies `S2`
 - `S2`, set of FDs, is equivalent to `S1` if exactly the same FDs follow from `S1` and `S2`
+
+Describe what Transitive Dependency is and give an example.
+
+If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
 
 [__Boyce Codd normal form__ (BCNF)](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies) is when, for all FDs `A→B`, A is the key. To achieve BCNF, find FDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with `A→B` violating BCNF; decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A, rest); repeat. 
 
@@ -189,6 +239,13 @@ I think UML is just a notation for creating an ERD? UML can be translated into r
 - [http://use-the-index-luke.com/sql/table-of-contents](http://use-the-index-luke.com/sql/table-of-contents)
 - [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
 
+Select all accurate statements about indexes.
+
+- Indexes could improve query performance but slow down database content update: T
+- Clustered indexes determine the physical storage of the related data: T
+- There can be more than one non-clustered index on a table: T
+- There can be more than one clustered index on a table: FALSE
+
 
 
 ## Data and log files
@@ -200,6 +257,10 @@ I think UML is just a notation for creating an ERD? UML can be translated into r
 ## Security
 
 ### Encryption
+
+#### Digital signatures
+
+Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
 
 ### Backup
 

@@ -39,21 +39,18 @@
           </li>
          </ul>
         </li>
+       </ul>
+      </li>
+      <li>
+       <a href="#the-relational-data-model">
+        The relational data model
+       </a>
+       <ul>
         <li>
-         <a href="#the-relational-data-model">
-          The relational data model
+         <a href="#types-of-entities">
+          Types of entities
          </a>
          <ul>
-          <li>
-           <a href="#kinds-of-attributes-">
-            Kinds of attributes
-           </a>
-          </li>
-          <li>
-           <a href="#referential-integrity">
-            Referential integrity
-           </a>
-          </li>
           <li>
            <a href="#associative-entities">
             Associative entities
@@ -62,6 +59,23 @@
           <li>
            <a href="#superclasses-and-subclasses">
             Superclasses and subclasses
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#types-of-attributes-">
+          Types of attributes
+         </a>
+        </li>
+        <li>
+         <a href="#data-integrity-in-the-relational-model">
+          Data integrity in the relational model
+         </a>
+         <ul>
+          <li>
+           <a href="#referential-integrity">
+            Referential integrity
            </a>
           </li>
          </ul>
@@ -369,11 +383,11 @@
   <p>
    Then, the DBMS creates mappings (also called intensions; a realization of a schema is called the extension or state of the database) between schemas.
   </p>
-  <h2>
+  <h1>
    <a name="the-relational-data-model">
     The relational data model
    </a>
-  </h2>
+  </h1>
   <p>
    In a relational database, the data model is of
    <strong>
@@ -387,71 +401,13 @@
    <strong>
     columns
    </strong>
-   (AKA attributes, fields). Columns have types, AKA d domains, which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+   (AKA attributes, fields). Columns have types, AKA domains, which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
   </p>
-  <h3>
-   <a name="kinds-of-attributes">
-    Kinds of attributes
+  <h2>
+   <a name="types-of-entities">
+    Types of entities
    </a>
-  </h3>
-  <p>
-   An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
-  </p>
-  <p>
-   An attribute is multi-valued/set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
-  </p>
-  <p>
-   An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
-  </p>
-  <p>
-   Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
-  </p>
-  <p>
-   An attribute may be a
-   <strong>
-    key
-   </strong>
-   or identity value. Kinds of keys:
-  </p>
-  <ul>
-   <li>
-    Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
-   </li>
-   <li>
-    Candidate Key: Column(s) that can uniquely identify rows in an entity
-   </li>
-  </ul>
-  <p>
-   Identity values must/How to pick a key. Which of the following are guidelines for an Entity Identifier (aka 'Primary Key')?
-  </p>
-  <ul>
-   <li>
-    INTEGER is most-often the best data type choice
-   </li>
-   <li>
-    Will not change in value
-   </li>
-   <li>
-    Will not be null
-   </li>
-   <li>
-    Narrow field
-   </li>
-  </ul>
-  <h3>
-   <a name="referential-integrity">
-    Referential integrity
-   </a>
-  </h3>
-  <p>
-   Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
-  </p>
-  <p>
-   Explain what referential integrity is and how it is maintained within the Relational Data Model.
-  </p>
-  <p>
-   One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
-  </p>
+  </h2>
   <h3>
    <a name="associative-entities">
     Associative entities
@@ -496,6 +452,74 @@
     </ul>
    </li>
   </ul>
+  <h2>
+   <a name="types-of-attributes">
+    Types of attributes
+   </a>
+  </h2>
+  <p>
+   An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
+  </p>
+  <p>
+   An attribute is multi-valued/set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
+  </p>
+  <p>
+   An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
+  </p>
+  <p>
+   Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
+  </p>
+  <p>
+   An attribute may be a
+   <strong>
+    key
+   </strong>
+   or identity value. Kinds of keys:
+  </p>
+  <ul>
+   <li>
+    Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
+   </li>
+   <li>
+    Candidate Key: Column(s) that can uniquely identify rows in an entity
+   </li>
+  </ul>
+  <p>
+   Identity values must/How to pick a key. Which of the following are guidelines for an Entity Identifier (aka 'Primary Key')?
+  </p>
+  <ul>
+   <li>
+    INTEGER is most-often the best data type choice
+   </li>
+   <li>
+    Will not change in value
+   </li>
+   <li>
+    Will not be null
+   </li>
+   <li>
+    Narrow field
+   </li>
+  </ul>
+  <h2>
+   <a name="data-integrity-in-the-relational-model">
+    Data integrity in the relational model
+   </a>
+  </h2>
+  <h3>
+   <a name="referential-integrity">
+    Referential integrity
+   </a>
+  </h3>
+  <p>
+   Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
+  </p>
+  <p>
+   Explain what referential integrity is and how it is maintained within the Relational Data Model.
+  </p>
+  <p>
+   One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+  </p>
   <h1>
    <a name="database-design">
     Database design

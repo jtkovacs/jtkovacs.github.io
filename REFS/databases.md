@@ -9,13 +9,23 @@ A **database system** is a database/DBMS plus database applications (any applica
 
 ## History of databases
 
-The first computerized information systems imitated hierarchical paper filing systems. File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
+The first computerized information systems (IBM, c. 1950) imitated hierarchical paper filing systems. The more semantically powerful graph/network data model followed shortly thereafter (1960s, also IBM). Both were superseded by Edgar Codd's relational data model, proven in the 1970s and implemented in the 1980s.
+
+avoids data redundancy → conserves storage and safeguards data quality. Better than NoSQL for maintaining data integrity because it implements transaction management with ACID properties.
+
+File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
 
 - **redundancy:** the same data collected and stored by multiple departments;
 - **inconsistency:** redundant data that *should be* the same not updated consistently;
 - **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
 
 A database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
+
+
+- Object databases c. 1990s; introduce things like encapsulation and polymorphism, but never became popular or standardized.
+    - Object data model: there are classes and instances of classes. Objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs).
+- NoSQL databases: broad umbrella term for technologies that produce a SQL-like UI for non-relational data, often Big Data. Better than relational DBs at quick search.
+
 
 ### ANSI-SPARC architecture
 

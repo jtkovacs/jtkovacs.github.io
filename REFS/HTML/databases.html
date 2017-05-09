@@ -283,30 +283,25 @@
   <p>
    This is one way of thinking about database abstraction/separation, which, in general, makes the database easier to change and maintain by providing
    <strong>
-    logical data independence
-   </strong>
-   and
-   <strong>
-    physical data independence:
+    data independence:
    </strong>
   </p>
   <ul>
    <li>
+    External views for different users (i.e., subsets and derivations of the data) are described by subschemas. Views are
     <strong>
-     External level:
+     logically independent
     </strong>
-    Views for different users (subsets and derivations of data) are described by subschemas, and are logically independent from the conceptual level.
+    from the conceptual level.
    </li>
    <li>
+    The structure of the entire database---all entities, attributes, relationships, and constraints---is described by a conceptual schema. This conceptual layer is
     <strong>
-     Conceptual level:
+     physically independent
     </strong>
-    The logical structure of the entire database---all entities, attributes, relationships, and constraints---is described by a conceptual schema, and is physically independent from the internal level.
+    from implementation details.
    </li>
    <li>
-    <strong>
-     Internal level:
-    </strong>
     The implementation details, including storage allocation, data compression, and encryption, and described by an internal schema.
    </li>
   </ul>

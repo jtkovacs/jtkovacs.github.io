@@ -34,11 +34,11 @@ Objects might ‘belong’ to at most one object of another class; denoted with 
 
 ### Multiplicity of associations 
 
+- `0..n` 
+- `0..*`
 - `1..1`
 - `m..n`
 - `m..*` 
-- `0..n` 
-- `0..*`
 
 ### Association classes
 

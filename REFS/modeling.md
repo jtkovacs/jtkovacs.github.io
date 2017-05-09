@@ -97,17 +97,15 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 ## Entity-relationship diagrams
 
-All ERDs capture the entities in a system, along with their attributes and interrelationships. Per Dybka (2014), there are many notation styles:
+All ERDs capture the entities in a system, along with their attributes and interrelationships; enhanced ERDs include superclasses and subclasses. Per Dybka (2014), there are many notation styles:
 
 - **Crow's foot**
 - **Martin**
+- [UML](../ILLOS/UML-relationships.png) (increasingly popular)
 - [Chen](../ILLOS/chens.png)
 - [Baker](../ILLOS/bakers.png)
 - [Arrow](../ILLOS/arrow.png)
 - [IDEF1X](../ILLOS/idef1x.png)
-- [UML](../ILLOS/UML-relationships.png)
-
-Increasingly, ERDs are also written in [UML.](UML.html)
 
 ### Bachmann/crow's foot notation
 
@@ -121,7 +119,6 @@ This is a notation that describes the optionality/modality/participation and car
 Entity A is on the left, entity B is on the right. They are connected with an annotated line. Annotations on the right side of the line describe how A relates to B: for a single row in A, how many rows minimum and how many rows maximum could appear in B? Annotations on the left side of the line describe how B relates to A: for a single row in B, how many rows could appear in A?
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
-
 
 
 ### Data flow diagrams

@@ -88,12 +88,19 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 ## Microsoft Access
 
-Components of a database: 
+### Components
 
-- tables, 
-- saved queries, 
-- views, 
-- forms
+An Access database is made up of different objects:
+
+- Tables
+- Queries
+- Forms give a user-friendly interface for interacting with tables and queries
+- Reports, unlike forms, are printer-friendly
+- Macros are a way to make operations automatic; they're used to make forms more capable
+- Modules are for Visual Basic code
+
+These objects might not be immediately visible. To see hidden database objects, right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
+
 
 
 ### Data types

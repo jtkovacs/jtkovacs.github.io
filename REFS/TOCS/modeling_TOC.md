@@ -1,12 +1,13 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1359 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1363 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
 	- [Why model?](#why-model?)
 	- [Model typologies](#model-typologies)
 - [Models by form and notation](#models-by-form-and-notation)
 	- [Flow charts](#flow-charts)
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
-		- [Bachmann/crow's foot notation](#bachmann/crow's-foot-notation)
-		- [UML notation](#uml-notation)
+		- [ERDs for databases](#erds-for-databases)
+			- [Bachmann/crow's foot notation](#bachmann/crow's-foot-notation)
+			- [UML notation](#uml-notation)
 		- [Data flow diagrams](#data-flow-diagrams)
 	- [Object-oriented modeling](#object-oriented-modeling)
 		- [Activity diagrams](#activity-diagrams)
@@ -111,7 +112,11 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 ## Entity-relationship diagrams
 
-All ERDs capture the entities in a system, along with their attributes and interrelationships; enhanced ERDs include superclasses and subclasses. Per Dybka (2014), there are many notation styles:
+All ERDs capture the entities in a system, along with their attributes and interrelationships; enhanced ERDs include superclasses and subclasses. 
+
+### ERDs for databases
+
+Per Dybka (2014), there are many notation styles:
 
 - **Crow's foot**
 - **Martin**
@@ -121,7 +126,7 @@ All ERDs capture the entities in a system, along with their attributes and inter
 - [Arrow](../ILLOS/arrow.png)
 - [IDEF1X](../ILLOS/idef1x.png)
 
-### Bachmann/crow's foot notation
+#### Bachmann/crow's foot notation
 
 This is a notation that describes the optionality/modality/participation and cardinality/multiplicity of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
 
@@ -134,7 +139,7 @@ Entity A is on the left, entity B is on the right. They are connected with an an
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
-### UML notation
+#### UML notation
 
 Predates ER notation, but increasingly popular as a database modeling language; see [notes on UML.](UML.html)
 

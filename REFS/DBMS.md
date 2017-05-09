@@ -112,35 +112,34 @@ These objects might not be immediately visible. To see hidden database objects, 
 - currency
 - Lookup Wizard
 
+### Quirks
 
-create tables:
-- Create > Table (or Table Design)
-- External Data > … (can import from Excel, XML, CSV, etc.; Access will add a primary key)
 - Autosaves when inputting records; need to save changes to DB structure though
 
-- Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
+define relationships:
+- Database Tools > Relationships; drag & drop interface
+- Check “Enforce referential integrity” , “Cascade update” and “Cascade delete” to prevent orphan records
 
-- define relationships:
-Database Tools > Relationships; drag & drop interface
-Check “Enforce referential integrity” , “Cascade update” and “Cascade delete” to prevent orphan records
+control input:
+- can make a field required
+- specify formatting, e.g. e.g. (xxx) xxx-xxxx for a phone number: Design View > choose field > Input Mask > … 
+- default value: Design View > choose field > Default Value > … > =”United States”
 
-- control input:
-can make a field required
-specify formatting, e.g. e.g. (xxx) xxx-xxxx for a phone number: Design View > choose field > Input Mask > … 
-default value: Design View > choose field > Default Value > … > =”United States”
+validation rules: 
+- Design View > choose field > Validation Rule > … > =Date(), =”MasterCard” OR “Visa”
+- Design View > choose field > Validation Text > The credit card you’ve entered has expired!
+- lookup tables: Design View > choose field > Data Type > Lookup Wizard
+- Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
+- Lookup value list is static, good for a small number of relatively fixed values
 
-- validation rules: 
-Design View > choose field > Validation Rule > … > =Date(), =”MasterCard” OR “Visa”
-Design View > choose field > Validation Text > The credit card you’ve entered has expired!
-lookup tables: Design View > choose field > Data Type > Lookup Wizard
-Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
-Lookup value list is static, good for a small number of relatively fixed values
 optimize: Design View > choose field > Field Size; Indexed
+
 query types: Create > Query Design> Totals, Select, Update, Make Table, Delete, Append, Crosstab > Run
 choose join type: double click on UML associations in Query Design view
 deletion: Query Design > join Table and Query affecting Table > Property Sheet > set Unique Records to Yes > Delete > Run
 append is a permanent combination of two tables; union is a temporary combination
 crosstab is similar to totals, but presents the results in matrix form
+
 create forms: GUIs for database users
 Choose table > Create > Form (or Form Wizard, or Form Design)
 Basing forms on queries (rather than tables) makes future modifications easier

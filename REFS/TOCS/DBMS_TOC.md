@@ -10,6 +10,19 @@
 		- [SQL Server Management Studio](#sql-server-management-studio)
 			- [Manage databases](#manage-databases)
 			- [Manage tables ](#manage-tables-)
+	- [Microsoft Access](#microsoft-access)
+		- [Data types](#data-types)
+		- [Administration](#administration)
+		- [Improving navigability](#improving-navigability)
+		- [SQL dialect novelties](#sql-dialect-novelties)
+		- [Sharing an Access database](#sharing-an-access-database)
+			- [Splitting a database](#splitting-a-database)
+			- [Migrating to Microsoft SQL Server](#migrating-to-microsoft-sql-server)
+- [Graph DBMS](#graph-dbms)
+	- [PoolParty](#poolparty)
+	- [Neo4j](#neo4j)
+- [Sources](#sources)
+	- [References](#references)
 </td></tr></table>
 
 
@@ -117,14 +130,14 @@ CREATE DATABASE dbname
 
 #### Manage tables 
 
+- **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
+- In-memory AKA memory-optimized tables are used to improve performance of read-write tables. 
+- The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database.
+
 ```SQL
 CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupname
-```
 
-- **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
-
-
-In-memory AKA memory-optimized tables: used to improve performance of read-write tables. The keyword GO causes preceding commands to be submitted as a batch, and USE ensures that the table is created within the right database:
+-- Memory-optimized table
 ALTER DATABASE dbname
 ADD FILEGROUP fgname
 CONTAINS MEMORY_OPTIMIZED_DATA;
@@ -146,6 +159,8 @@ CREATE TABLE Inventory ([InventoryID] int NOT NULL PRIMARY KEY CLUSTERED, [ItemN
 [ValidTo] datetime2 (2) GENERATED ALWAYS AS ROW END, 
 PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo))    
 WITH (SYSTEM_VERSIONING = ON); 
+
+-- Temporal table
 
 SELECT [StockItemName]
 FROM [WideWorldImporters].[Warehouse].[StockItems]

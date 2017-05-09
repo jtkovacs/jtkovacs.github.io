@@ -168,9 +168,26 @@ NoSQL databases with analytics integration: Hive, Amazon’s Redshift, Facebook�
 
 # Database design
 
-A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). 
+Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; efficient way of producing documentation).
 
-Connolly and Begg (2015) outline the following database development process:
+A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). Best practices for DB design:
+
+- Clearly identify scope of database
+- Follow a database design methodology (SDLC, agile)
+- Use a professional data modeling tool
+- Use a source control system
+
+Connolly and Begg (2015) outline the following database development process AKA database system lifecycle:
+
+- Gather business requirements (interviews, existing data, documents) → Mission & objectives → 
+- Conceptual design: identify entities and attributes →
+    - Top-down: entities, then attributes
+    - Bottom-up: attributes, then entities 
+- Logical design: choose data model (probably relational) → 
+- Physical design: platform-specific details, e.g. indices → 
+- Implementation → Testing → Rollout.
+
+OR:
 
 - Groundwork
 - In the **conceptual design stage,** a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain. 

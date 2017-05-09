@@ -37,6 +37,7 @@ In addition to commands that are typed and entered, Bash responds to hotkeys (`^
 # ^c interrupts/quits
 # ^k to kill (cut)
 # ^y to yank (paste)
+# q to quit (sometimes)
 ```
 
 ## Set up Bash

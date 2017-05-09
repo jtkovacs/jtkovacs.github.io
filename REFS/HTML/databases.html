@@ -60,6 +60,18 @@
            <a href="#the-relational-data-model">
             The relational data model
            </a>
+           <ul>
+            <li>
+             <a href="#kinds-of-attributes-">
+              Kinds of attributes
+             </a>
+            </li>
+            <li>
+             <a href="#superclasses-and-subclasses">
+              Superclasses and subclasses
+             </a>
+            </li>
+           </ul>
           </li>
           <li>
            <a href="#top-down-vs.-bottom-up-design">
@@ -67,21 +79,16 @@
            </a>
            <ul>
             <li>
-             <a href="#kinds-of-attributes-">
-              Kinds of attributes
+             <a href="#bottom-up-design-through-normalization">
+              Bottom-up design through normalization
+             </a>
+            </li>
+            <li>
+             <a href="#top-down-design-with-erds">
+              Top-down design with ERDs
              </a>
             </li>
            </ul>
-          </li>
-          <li>
-           <a href="#bottom-up-design-through-normalization">
-            Bottom-up design through normalization
-           </a>
-          </li>
-          <li>
-           <a href="#top-down-design-with-uml/erds">
-            Top-down design with UML/ERDs
-           </a>
           </li>
          </ul>
         </li>
@@ -306,11 +313,7 @@
    </li>
   </ul>
   <p>
-   Then, the DBMS creates
-   <strong>
-    mappings
-   </strong>
-   between schemas (also called intensions; a realization of a schema is called the extension or state of the database).
+   Then, the DBMS creates mappings (also called intensions; a realization of a schema is called the extension or state of the database) between schemas.
   </p>
   <h1>
    <a name="database-design">
@@ -452,14 +455,6 @@
   <p>
    In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
   </p>
-  <h3>
-   <a name="top-down-vs.-bottom-up-design">
-    Top-down vs. bottom-up design
-   </a>
-  </h3>
-  <p>
-   In the conceptual design stage of database development, there are two competing approaches: top-down and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. The bottom-up approach begins with identifying attributes, then grouping and normalizing them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
-  </p>
   <h4>
    <a name="kinds-of-attributes">
     Kinds of attributes
@@ -474,11 +469,24 @@
   <p>
    An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
   </p>
+  <h4>
+   <a name="superclasses-and-subclasses">
+    Superclasses and subclasses
+   </a>
+  </h4>
   <h3>
+   <a name="top-down-vs.-bottom-up-design">
+    Top-down vs. bottom-up design
+   </a>
+  </h3>
+  <p>
+   In the conceptual design stage of database development, there are two competing approaches: top-down and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. The bottom-up approach begins with identifying attributes, then grouping and normalizing them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
+  </p>
+  <h4>
    <a name="bottom-up-design-through-normalization">
     Bottom-up design through normalization
    </a>
-  </h3>
+  </h4>
   <p>
    Design by decomposition avoids redundancy and its consequences (update &amp; deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
   </p>
@@ -713,11 +721,11 @@
    </sub>
    (A,rest); repeat.
   </p>
-  <h3>
-   <a name="top-down-design-with-uml/erds">
-    Top-down design with UML/ERDs
+  <h4>
+   <a name="top-down-design-with-erds">
+    Top-down design with ERDs
    </a>
-  </h3>
+  </h4>
   <p>
    UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design.
    <a href="https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/">
@@ -758,7 +766,7 @@
    </li>
   </ul>
   <p>
-   UML can be translated into relations:
+   I think UML is just a notation for creating an ERD? UML can be translated into relations:
   </p>
   <ul>
    <li>

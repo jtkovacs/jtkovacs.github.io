@@ -22,16 +22,10 @@
 
 # What is a database?
 
-A database is a collection of data that's structured according to a data model (see [notes on information structures](information-architecture.html#information-structures) for a review of the major data models: hierarchic, relational, graph, object, semantic, functional.) 
+A **database** is a either (1) collection of data that's structured according to a data model (see [notes on information structures](information-architecture.html#information-structures) for a review of the major data models: hierarchic, relational, graph, object, semantic, functional); or (2) this structured data plus a database management system (DBMS). 
 
-A database management system (DBMS) includes a database, a database engine that handles CRUD operations (create, read, update, delete), and a database frontend for user interaction. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). 
+A **database management system (DBMS)** is either (1) a database engine for CRUD operations (create, read, update, delete), and a database frontend UI; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). 
 
-In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
-
-- **Database** = Data + DBMS
-- **Database System** = Database + Database Applications
-- **Database Environment** = Hardware + Software + Data + Procedures + People
-- Data is formatted according to a [data model;](information-architecture.html#information-structures)
 - Data is managed via a database management system [(DBMS)](DBMS.html) which includes **data sublanguages:**
     - a data definition language **(DDL)** tha  t expresses a schema, stored in the **system catalog** (AKA data directory, data dictionary); 
     - a data manipulation language **(DML),**
@@ -44,7 +38,12 @@ In a relational database, the data model is of tables/relations; other data mode
     - enforcement of constraints on data input **(integrity);**
     - backup and recovery;
     - views that are customized to the needs of specific audiences;
-- **Other applications** can interact with the data by communicating with the DBMS.
+
+
+A **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). A **database environment** is the hardware plus software, data, procedures, and people involved in managing a database.
+
+In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+
 
 ## History of databases
 

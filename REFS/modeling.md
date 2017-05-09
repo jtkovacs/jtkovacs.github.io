@@ -124,7 +124,7 @@ Entity A is on the left, entity B is on the right. They are connected with an an
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
-!()[../ILLOS/EERD.png]
+![](../ILLOS/EERD.png)
 
 #### UML notation
 

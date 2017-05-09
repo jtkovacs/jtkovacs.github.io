@@ -198,7 +198,7 @@ __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is t
 
 #### Top-down design with ERDs
 
-See (notes on ER diagrams.)[modeling.html#entity-relationship-diagrams]
+See [notes on ER diagrams.](modeling.html#entity-relationship-diagrams)
 
 UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
 
@@ -230,6 +230,7 @@ I think UML is just a notation for creating an ERD? UML can be translated into r
     - Proceed table by table, field by field;
     - Choose naming conventions: avoid special characters and reserved words for your DBMS;
     - Choose data types;
+        - Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
     - Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
     - Apply integrity constraints:
         - With a lookup table; 

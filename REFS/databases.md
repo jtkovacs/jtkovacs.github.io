@@ -168,7 +168,7 @@ __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is t
 
 #### Top-down design with ERDs
 
-See (notes on ER diagrams.)[modeling.html#entity-relationship-diagrams]
+See [notes on ER diagrams.](modeling.html#entity-relationship-diagrams)
 
 UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
 

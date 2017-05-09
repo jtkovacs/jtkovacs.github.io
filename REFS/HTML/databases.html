@@ -832,7 +832,10 @@
    </a>
   </h4>
   <p>
-   See (notes on ER diagrams.)[modeling.html#entity-relationship-diagrams]
+   See
+   <a href="modeling.html#entity-relationship-diagrams">
+    notes on ER diagrams.
+   </a>
   </p>
   <p>
    UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design.
@@ -928,6 +931,11 @@
      </li>
      <li>
       Choose data types;
+      <ul>
+       <li>
+        Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
+       </li>
+      </ul>
      </li>
      <li>
       Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;

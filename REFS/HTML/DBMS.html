@@ -125,6 +125,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             </li>
            </ul>
           </li>
+          <li>
+           <a href="#manage-views">
+            Manage views
+           </a>
+          </li>
          </ul>
         </li>
         <li>
@@ -393,9 +398,6 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     Manage tables
    </a>
   </h4>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fieldname datatype, fielddname datatype ... ) <span class="kw">ON</span> Filegroupname</code></pre>
-  </div>
   <ul>
    <li>
     <strong>
@@ -403,7 +405,23 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     </strong>
     Right click table &gt; Design &gt; Select field, click key icon &gt; In column properties window, change Identity Specification to “yes”
    </li>
+   <li>
+    <strong>
+     Inspect relationships:
+    </strong>
+    <ul>
+     <li>
+      [Database] &gt; [Table] &gt; Keys
+     </li>
+     <li>
+      [Database] &gt; Database diagrams
+     </li>
+    </ul>
+   </li>
   </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fieldname datatype, fielddname datatype ... ) <span class="kw">ON</span> Filegroupname</code></pre>
+  </div>
   <p>
    In-memory AKA
    <strong>
@@ -455,8 +473,13 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
 <span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
 <span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
   </div>
+  <h3>
+   <a name="manage-views">
+    Manage views
+   </a>
+  </h3>
   <p>
-   Columnstore index used to improve performance of read-only tables Inspect relationships: [Database] &gt; [Table] &gt; Keys [Database] &gt; Database diagrams Create view: [Database] &gt; [Views] &gt; right click to create new view. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. Views can be made persistent to increase performance: right click view &gt; Script View as &gt; ALTER To &gt; New Query Editor Window &gt; Add “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; Execute &gt; Refresh Object Explorer pane &gt; Right click on Indexes &gt; Clustered index &gt; Add columns.
+   Create view: [Database] &gt; [Views] &gt; right click to create new view. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. Views can be made persistent to increase performance: right click view &gt; Script View as &gt; ALTER To &gt; New Query Editor Window &gt; Add “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; Execute &gt; Refresh Object Explorer pane &gt; Right click on Indexes &gt; Clustered index &gt; Add columns.
   </p>
   <h2>
    <a name="microsoft-access">

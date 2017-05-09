@@ -10,6 +10,7 @@
 		- [SQL Server Management Studio](#sql-server-management-studio)
 			- [Manage databases](#manage-databases)
 			- [Manage tables ](#manage-tables-)
+		- [Manage views](#manage-views)
 	- [Microsoft Access](#microsoft-access)
 		- [Data types](#data-types)
 		- [Administration](#administration)
@@ -119,7 +120,6 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 - **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
 - SQL Server Profiler: lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
 
-
 #### Manage databases
 
 A database has a default PRIMARY filegroup; can create other filegroups, e.g. to hold tables that should be read-only.
@@ -130,11 +130,14 @@ CREATE DATABASE dbname
 
 #### Manage tables 
 
+- **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
+- **Inspect relationships:**
+    - [Database] > [Table] > Keys
+    - [Database] > Database diagrams
+
 ```SQL
 CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupname
 ```
-
-- **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
 
 In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
 
@@ -173,10 +176,8 @@ FOR SYSTEM_TIME AS OF '2015-01-01'
 WHERE StockItemName like '%shark%'
 ```
 
-Columnstore index used to improve performance of read-only tables
-Inspect relationships:
-[Database] > [Table] > Keys
-[Database] > Database diagrams
+### Manage views
+
 Create view: [Database] > [Views] > right click to create new view. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. Views can be made persistent to increase performance: right click view > Script View as > ALTER To > New Query Editor Window > Add “WITH SCHEMABINDING” under “ALTER VIEW” line > Execute > Refresh Object Explorer pane > Right click on Indexes > Clustered index > Add columns.
 
 

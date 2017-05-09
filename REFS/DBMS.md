@@ -154,9 +154,11 @@ Objects might not be immediately visible; right click on â€œAll Access Objectsâ€
 - Troubleshooting: 
     - External Data > Linked Table Manager
     - Database Tools > Compact & Repair (run periodically)
-- Get information:
-    - Database Tools > Object Dependencies
-    - Database Tools > Database Documenter 
+
+Get information:
+
+- Database Tools > Object Dependencies
+- Database Tools > Database Documenter 
 
 ### Navigability
 

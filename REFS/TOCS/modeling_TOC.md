@@ -1,7 +1,7 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a></p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
 	- [Why model?](#why-model?)
 	- [Model typologies](#model-typologies)
-- [Models by form, then notation](#models-by-form,-then-notation)
+- [Models by form and notation](#models-by-form-and-notation)
 	- [Flow charts](#flow-charts)
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
@@ -88,7 +88,7 @@ Models could also be grouped by the **business problems they solve** (e.g. poor 
 
 
 
-# Models by form, then notation
+# Models by form and notation
 
 ## Flow charts
 

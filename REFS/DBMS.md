@@ -106,22 +106,21 @@ An Access database is made up of different objects:
         - Append is a permanent combination of two tables; union is a temporary combination
         - Crosstab is similar to totals, but presents the results in matrix form
     - Choose join type: double click on UML associations in Query Design view
-- **Forms** give a user-friendly interface for interacting with tables and queries:
+- **Forms** give a user-friendly interface for tables and queries:
     - Choose table > Create > Form (or Form Wizard, or Form Design)
     - Basing forms on queries (rather than tables) makes future modifications easier 
-    - for navigating multiple forms: Create > Navigation; drag & drop forms onto this page
-    - specify form properties (many): Form Design > Properties Sheet > Format, Data, Event, Other … Properties Sheet > Data > Data Source → Design > Add Existing Fields 
-    - Design View > Layout
+    - Dashboard: Create > Navigation; drag & drop forms onto this page
+    - [Tips for designing Access Forms](http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm)
     - Add a combo box to the header of a form for easier navigation (e.g. by employee name)
 - **Reports,** unlike forms, are printer-friendly:
     - Create > Report (or Report Design or Report Wizard)
     - Design > Group & Sort, Totals
     - Format > Conditional Formatting
-- **Macros** are a way to make operations automatic; they're used to make forms more capable:
+- **Macros** automate operations, making forms more capable:
     - Create > Macro
-    - button macros: Design > create a button > Property Sheet > Events > On Click > … > ApplyFilter
-    - remove all filters: ApplyFilter > Where Condition = true
-    - data macros: use to make logs that capture editing. create a log table; Table > After Update > … 
+    - Button macros: Design > create a button --> Property Sheet > Events > On Click > … > ApplyFilter
+    - Remove all filters: ApplyFilter > Where Condition = true
+    - Data macros: use to make logs that capture editing. create a log table; Table > After Update > … 
     - Name macro autoexec to run it on launch
 - **Modules** are for Visual Basic code.
 
@@ -165,7 +164,6 @@ Get information:
 
 - Create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
 - Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
-- [Tips for designing Access Forms](http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm)
 - Build a custom ribbon with frequently-used commands & macros: Options > Customize Ribbon
 - Define startup actions, default views, and limited views: Options > Current Database
     - Name macro autoexec to run it on launch

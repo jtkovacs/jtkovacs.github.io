@@ -392,7 +392,7 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     <strong>
      Forms
     </strong>
-    give a user-friendly interface for interacting with tables and queries:
+    give a user-friendly interface for tables and queries:
     <ul>
      <li>
       Choose table &gt; Create &gt; Form (or Form Wizard, or Form Design)
@@ -401,13 +401,12 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
       Basing forms on queries (rather than tables) makes future modifications easier
      </li>
      <li>
-      for navigating multiple forms: Create &gt; Navigation; drag &amp; drop forms onto this page
+      Dashboard: Create &gt; Navigation; drag &amp; drop forms onto this page
      </li>
      <li>
-      specify form properties (many): Form Design &gt; Properties Sheet &gt; Format, Data, Event, Other … Properties Sheet &gt; Data &gt; Data Source → Design &gt; Add Existing Fields
-     </li>
-     <li>
-      Design View &gt; Layout
+      <a href="http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm">
+       Tips for designing Access Forms
+      </a>
      </li>
      <li>
       Add a combo box to the header of a form for easier navigation (e.g. by employee name)
@@ -435,19 +434,19 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     <strong>
      Macros
     </strong>
-    are a way to make operations automatic; they're used to make forms more capable:
+    automate operations, making forms more capable:
     <ul>
      <li>
       Create &gt; Macro
      </li>
      <li>
-      button macros: Design &gt; create a button &gt; Property Sheet &gt; Events &gt; On Click &gt; … &gt; ApplyFilter
+      Button macros: Design &gt; create a button --&gt; Property Sheet &gt; Events &gt; On Click &gt; … &gt; ApplyFilter
      </li>
      <li>
-      remove all filters: ApplyFilter &gt; Where Condition = true
+      Remove all filters: ApplyFilter &gt; Where Condition = true
      </li>
      <li>
-      data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; …
+      Data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; …
      </li>
      <li>
       Name macro autoexec to run it on launch
@@ -566,11 +565,6 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
    </li>
    <li>
     Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
-   </li>
-   <li>
-    <a href="http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm">
-     Tips for designing Access Forms
-    </a>
    </li>
    <li>
     Build a custom ribbon with frequently-used commands &amp; macros: Options &gt; Customize Ribbon

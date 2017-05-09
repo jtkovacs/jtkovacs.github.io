@@ -103,31 +103,35 @@ One table’s primary key may be used in another table as a foreign key, establi
 
 ### NoSQL databases
 
-Characteristics:
+NoSQL databases use a non-relational data model ... 
 
-- Non-relational data model
-    - 
-- Big Data: large volume (petabytes rather than terabytes), wide variety (structured and unstructured), high velocity
+- **Key-value model,** e.g. Dynamo, Riak, Basho: _[Key|Value|Timestamp]._ Provides easy and fast storage for simple data.
+- **Columnar model,** e.g. Google’s Bigtable, Apache’s HBase (part of Hadoop): _[Row Key|Value|Timestamp|Column Family|Column Name]_ Good for retaining relationships (since columns can be grouped into families). 
+- Document: MongoDB, JSON, XML; good for storing complex hierarchical relationships
+- Graph/triple store: Neo4j, PoolParty; good for capturing a web of relationships
+
+... and ...
+
+... to store Big Data ...  
+
+- large **volume** (petabytes rather than terabytes)
+- wide **variety** (structured and unstructured)
+- high **velocity**
+
+
 - Distributed storage and processing (rather than client/server architecture)
 - Memory cache
 - Open source & less costly hardware
 - Batch (Google Map Reduce) or interactive or stream (Apache Tez Framework, Apache Spark, Facebook Presto) processing
 - Typically both SQL-like and proprietary interfaces 
+    - NoSQL databases with SQL-like interfaces: Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope
 
 Achieve greater speed by
+
 - using append rather than updating records
 - denormalizing data upon input 
 
-NoSQL databases with non-relational data models
-Key-value model: Dynamo, Riak, Basho; provides easy and fast storage for simple data. [Key|Value|Timestamp]
-Columnar: Google’s Bigtable, Apache’s HBase (part of Hadoop); good for retaining relationships (since columns can be grouped into families). [Row Key|Value|Timestamp|Column Family|Column Name]
-Document: MongoDB, JSON, XML; good for storing complex hierarchical relationships
-Graph/triple store: Neo4j, PoolParty; good for capturing a web of relationships
-NoSQL databases with analytics integration
-Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal
-NoSQL databases with SQL-like interfaces
-Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope
-
+NoSQL databases with analytics integration: Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal
 
 
 

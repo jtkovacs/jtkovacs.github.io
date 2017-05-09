@@ -88,8 +88,28 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 ## Microsoft Access
 
-components of a database: tables, saved queries, views, forms
-data types: short/long text, autonumber/keys, int, float, binary, attachment, hyperlink, calculated field, currency, Lookup Wizard
+Components of a database: 
+
+- tables, 
+- saved queries, 
+- views, 
+- forms
+
+
+### Data types
+
+- short/long text
+- autonumber/keys 
+- int
+- float 
+- binary
+- attachment 
+- hyperlink 
+- calculated field
+- currency
+- Lookup Wizard
+
+
 date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
 create tables:
 Create > Table (or Table Design)

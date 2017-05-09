@@ -198,9 +198,7 @@ __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is t
 
 #### Top-down design with ERDs
 
-See [notes on ER diagrams.](modeling.html#entity-relationship-diagrams)
-
-UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. [See UML graphs](https://praveenthomasln.wordpress.com/tag/class-diagrams-in-uml/).
+See [notes on ER diagrams.](modeling.html#entity-relationship-diagrams) and [notes on UML.](modeling.html#unified-modeling-language-(uml))
 
 - Classes: Name, attributes, primary key/methods; analogous to relations.
 - Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations: `1..1 is default; m..n; m..\*; 0..n; 0..\*`.
@@ -210,7 +208,7 @@ UML is a graphical, higher-level language that precedes relational data modeling
 - Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity `1..1`. No PK needed!
 - Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
 
-I think UML is just a notation for creating an ERD? UML can be translated into relations:
+UML can be translated into relations:
 
 - Classes become relations.
 - Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written  0..1 to \*), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.

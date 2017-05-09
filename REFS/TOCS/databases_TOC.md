@@ -8,6 +8,7 @@
 	- [Types of attributes ](#types-of-attributes-)
 	- [Data integrity in the relational model](#data-integrity-in-the-relational-model)
 		- [Referential integrity](#referential-integrity)
+- [NoSQL databases](#nosql-databases)
 - [Database design](#database-design)
 	- [Groundwork](#groundwork)
 	- [Conceptual design](#conceptual-design)
@@ -56,8 +57,9 @@ Hierarchies and graphs were superseded by Edgar Codd's **relational** data model
 - Provides a programming/query language that is easy to learn and execute, expediting data retrieval
 - Minimizes data redundancy, conserving storage and safeguarding data quality (although some redundancy is still required to establish relationships)
 
-**Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data, **NoSQL** databases (unbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
+**Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. 
 
+With the advent of Big Data, [NoSQL databases](#NoSQL-databases) (an umbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
 
 ### ANSI-SPARC architecture
 
@@ -128,6 +130,34 @@ Explain what referential integrity is and how it is maintained within the Relati
 
 One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
+
+
+# NoSQL databases
+
+Characteristics:
+
+- Non-relational data model
+    - 
+- Big Data: large volume (petabytes rather than terabytes), wide variety (structured and unstructured), high velocity
+- Distributed storage and processing (rather than client/server architecture)
+- Memory cache
+- Open source & less costly hardware
+- Batch (Google Map Reduce) or interactive or stream (Apache Tez Framework, Apache Spark, Facebook Presto) processing
+- Typically both SQL-like and proprietary interfaces 
+
+Achieve greater speed by
+- using append rather than updating records
+- denormalizing data upon input 
+
+NoSQL databases with non-relational data models
+Key-value model: Dynamo, Riak, Basho; provides easy and fast storage for simple data. [Key|Value|Timestamp]
+Columnar: Google’s Bigtable, Apache’s HBase (part of Hadoop); good for retaining relationships (since columns can be grouped into families). [Row Key|Value|Timestamp|Column Family|Column Name]
+Document: MongoDB, JSON, XML; good for storing complex hierarchical relationships
+Graph/triple store: Neo4j, PoolParty; good for capturing a web of relationships
+NoSQL databases with analytics integration
+Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal
+NoSQL databases with SQL-like interfaces
+Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope
 
 
 

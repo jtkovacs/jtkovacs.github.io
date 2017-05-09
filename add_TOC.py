@@ -46,15 +46,11 @@ foname.insert(-1, "TOCS")
 foname = '/'.join(foname)
 fout = open(foname, "w")
 
-## URLs
+## Add URLs & word count
 url = 'https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html'
-fout.write('<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="'+url+'">'+url+'</a></p>') 
-# fout.write('<span id="path">https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html</span>')
-
-## Word count
 wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
 num_words = wc.stdout.decode("utf-8").split(" ")[0]
-fout.write('<p id="path">&nbsp; &nbsp; word count: ' + num_words + '</p>')
+fout.write('<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="'+url+'">'+url+'</a> word count: '+num_words+'</p>') 
 
 ## TOC
 fout.write('<table class="TOC"><tr><td>')

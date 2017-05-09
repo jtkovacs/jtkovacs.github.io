@@ -50,17 +50,29 @@
          </a>
          <ul>
           <li>
-           <a href="#composition">
-            Composition
+           <a href="#association-types">
+            Association types
+           </a>
+           <ul>
+            <li>
+             <a href="#composition">
+              Composition
+             </a>
+            </li>
+            <li>
+             <a href="#aggregation">
+              Aggregation
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           <a href="#multiplicity-of-associations-">
+            Multiplicity of associations
            </a>
           </li>
           <li>
-           <a href="#aggregation">
-            Aggregation
-           </a>
-          </li>
-          <li>
-           <a href="#association-classes-">
+           <a href="#association-classes">
             Association classes
            </a>
           </li>
@@ -123,31 +135,38 @@
    </a>
   </h2>
   <p>
-   Captures type and multiplicity of relationships between objects of two classes; self-association is possible.
+   Captures relationships between objects of two classes. Self-association is possible.
   </p>
   <h3>
+   <a name="association-types">
+    Association types
+   </a>
+  </h3>
+  <h4>
    <a name="composition">
     Composition
    </a>
-  </h3>
+  </h4>
   <p>
-   Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
+   Objects in one class ‘belong’ to objects in another class. Denoted with a solid diamond on the association. Default multiplicity
    <code>
     1..1
    </code>
-   . No PK needed!
+   , no PK needed.
   </p>
-  <h3>
+  <h4>
    <a name="aggregation">
     Aggregation
    </a>
-  </h3>
+  </h4>
   <p>
    Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
   </p>
-  <p>
-   Also note the multiplicity of associations:
-  </p>
+  <h3>
+   <a name="multiplicity-of-associations">
+    Multiplicity of associations
+   </a>
+  </h3>
   <ul>
    <li>
     <code>

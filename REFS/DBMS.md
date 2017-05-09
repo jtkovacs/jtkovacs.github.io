@@ -33,20 +33,41 @@ A database management system is either (1) a database engine for interacting wit
 # Relational DBMS
 
 ## MySQL
-  
-install: ubuntu
-launch: /usr/bin/mysql -u [uname] -p[pwd]
-exit: quit;
-errors log location: /var/log/mysql/error.log
-edit configs: less my.cnf
-exit less: q
-create database: CREATE DATABASE dname;
-list all databases: SHOW DATABASES;
 
-view users: SELECT User, Host, Password FROM mysql.user;
-add user: INSERT INTO mysql.user (User,Host,Password) VALUES('username','localhost',PASSWORD('demopassword')); FLUSH PRIVILEGES;
-change password: UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root'; FLUSH PRIVILEGES;
-grant privileges: GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost; FLUSH PRIVILEGES; SHOW GRANTS FOR 'demouser'@'localhost';
+```Bash
+# launch
+/usr/bin/mysql -u [uname] -p[pwd]
+
+# errors log location: 
+/var/log/mysql/error.log
+
+# edit configs: 
+less my.cnf
+# exit less: 
+q
+
+```SQL
+-- create database
+CREATE DATABASE dname;
+
+-- list all databases
+SHOW DATABASES;
+
+-- view users
+SELECT User, Host, Password FROM mysql.user;
+
+-- add user
+INSERT INTO mysql.user (User,Host,Password) VALUES('username','localhost',PASSWORD('demopassword')); FLUSH PRIVILEGES;
+
+-- change password
+UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root'; FLUSH PRIVILEGES;
+
+-- grant privileges: 
+GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost; FLUSH PRIVILEGES; SHOW GRANTS FOR 'demouser'@'localhost';
+
+-- exit: 
+quit;
+```
 
 ## Microsoft SQL Server
 

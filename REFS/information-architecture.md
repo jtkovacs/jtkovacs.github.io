@@ -115,7 +115,9 @@ Can’t express constraints on the data, but express structure well.
 
 ##### Hierarchical
 
-- Per Zeng (n.d.), strict hierarchies __(trees)__ can model three different types of real-world relationships: 
+Per Zeng (n.d.), 
+
+- **Strict hierarchies** (trees) can model three different types of real-world relationships: 
     - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
         - Succulent: Cactus (NTG)
         - Cactus: Succulent (BTG)

@@ -49,6 +49,24 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Order is insignificant.
 
+#### Normalization
+
+Done to avoid transitive dependencies:
+
+- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
+- https://www.thoughtco.com/transitive-dependency-1019760 
+
+Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization: 
+
+- “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
+    - It contains two-dimensional tables with rows and columns.
+    - Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
+    - Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
+    - All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
+- Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
+- Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+
+
 #### Relationships between entities
 
 - http://www2.cs.uregina.ca/~bernatja/crowsfoot.html 
@@ -70,6 +88,9 @@ Entities may be specified superclasses and subclasses; this provides more semant
 - One relation contains all super- and subclass attributes.
 
 #### Types of attributes 
+
+http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html
+http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes 
 
 An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
 

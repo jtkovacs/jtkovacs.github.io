@@ -50,8 +50,13 @@
            </a>
            <ul>
             <li>
-             <a href="#types-of-entities">
-              Types of entities
+             <a href="#normalization">
+              Normalization
+             </a>
+            </li>
+            <li>
+             <a href="#relationships-between-entities">
+              Relationships between entities
              </a>
              <ul>
               <li>
@@ -450,10 +455,71 @@
    (AKA attributes, fields). Order is insignificant.
   </p>
   <h4>
-   <a name="types-of-entities">
-    Types of entities
+   <a name="normalization">
+    Normalization
    </a>
   </h4>
+  <p>
+   Done to avoid transitive dependencies:
+  </p>
+  <ul>
+   <li>
+    https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
+   </li>
+   <li>
+    https://www.thoughtco.com/transitive-dependency-1019760
+   </li>
+  </ul>
+  <p>
+   Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization:
+  </p>
+  <ul>
+   <li>
+    “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
+    <ul>
+     <li>
+      It contains two-dimensional tables with rows and columns.
+     </li>
+     <li>
+      Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
+     </li>
+     <li>
+      Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
+     </li>
+     <li>
+      All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
+     </li>
+    </ul>
+   </li>
+   <li>
+    Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
+   </li>
+   <li>
+    Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+   </li>
+  </ul>
+  <h4>
+   <a name="relationships-between-entities">
+    Relationships between entities
+   </a>
+  </h4>
+  <ul>
+   <li>
+    http://www2.cs.uregina.ca/~bernatja/crowsfoot.html
+   </li>
+   <li>
+    Relationships between entities have participation: mandatory/optional
+   </li>
+   <li>
+    Relationships between entities have cardinalities AKA modalities: one-to-one, one-to-many, many-to-many
+   </li>
+   <li>
+    “Many-to-many” relationships are “resolved” with an “associative entity” that has a combined primary key (PK), both of which are foreign keys (FK)
+   </li>
+   <li>
+    A relationship is identifying if the PK of a parent entity appears in the PK of a child entity; it’s denoted with a solid line, while nonidentifying relationships are denoted with dashed lines
+   </li>
+  </ul>
   <h5>
    <a name="associative-entities">
     Associative entities
@@ -486,6 +552,9 @@
     Types of attributes
    </a>
   </h4>
+  <p>
+   http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes
+  </p>
   <p>
    An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
   </p>
@@ -535,6 +604,9 @@
     Data integrity in the relational model
    </a>
   </h4>
+  <p>
+   Domain integrity: column values should fall within a given domain, enforced by column data type Entity integrity: enforced by primary key Referential integrity: enforced by keys (PK-FK pair)
+  </p>
   <h5>
    <a name="entity-integrity">
     Entity integrity
@@ -1167,6 +1239,9 @@
    </li>
    <li>
     There can be more than one clustered index on a table: FALSE
+   </li>
+   <li>
+    Columnstore index used to improve performance of read-only tables
    </li>
   </ul>
   <h2>

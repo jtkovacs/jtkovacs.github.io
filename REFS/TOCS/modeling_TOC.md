@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1363 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1359 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
 	- [Why model?](#why-model?)
 	- [Model typologies](#model-typologies)
 - [Models by form and notation](#models-by-form-and-notation)
@@ -6,10 +6,10 @@
 		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
 	- [Entity-relationship diagrams](#entity-relationship-diagrams)
 		- [Bachmann/crow's foot notation](#bachmann/crow's-foot-notation)
+		- [UML notation](#uml-notation)
 		- [Data flow diagrams](#data-flow-diagrams)
 	- [Object-oriented modeling](#object-oriented-modeling)
-		- [Unified Modeling Language (UML)](#unified-modeling-language-(uml))
-			- [Activity diagrams](#activity-diagrams)
+		- [Activity diagrams](#activity-diagrams)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -115,7 +115,7 @@ All ERDs capture the entities in a system, along with their attributes and inter
 
 - **Crow's foot**
 - **Martin**
-- [UML](../ILLOS/UML-relationships.png) (increasingly popular)
+- **UML**
 - [Chen](../ILLOS/chens.png)
 - [Baker](../ILLOS/bakers.png)
 - [Arrow](../ILLOS/arrow.png)
@@ -133,6 +133,12 @@ This is a notation that describes the optionality/modality/participation and car
 Entity A is on the left, entity B is on the right. They are connected with an annotated line. Annotations on the right side of the line describe how A relates to B: for a single row in A, how many rows minimum and how many rows maximum could appear in B? Annotations on the left side of the line describe how B relates to A: for a single row in B, how many rows could appear in A?
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
+
+### UML notation
+
+Predates ER notation, but increasingly popular as a database modeling language; see [notes on UML.](UML.html)
+
+![]()
 
 
 ### Data flow diagrams
@@ -152,13 +158,9 @@ The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depi
 
 OO models show **inheritance** as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML in 1997.
 
-### Unified Modeling Language (UML)
+### Activity diagrams
 
-UML is a graphical higher-level language used for database modeling and software design. See [notes on UML.](UML.html)
-
-#### Activity diagrams
-
-Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific [use case](project-management.html#use-cases-&-requirements-definition-reports) or [usage scenario.](project-management.html#use-scenarios) Activity diagrams use the following elements:
+Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific [use case](project-management.html#use-cases-&-requirements-definition-reports) or [usage scenario.](project-management.html#use-scenarios) Activity diagrams use the following UML elements:
 
 - **Rounded rectangle** to indicate activities
 - **Rectangle** to capture explanatory notes

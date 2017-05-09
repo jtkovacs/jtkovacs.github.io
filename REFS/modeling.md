@@ -124,13 +124,13 @@ Entity A is on the left, entity B is on the right. They are connected with an an
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
-![](../ILLOS/EERD.png)
+<img src="../ILLOS/EERD.png" width="350px">
 
 #### UML notation
 
 Predates ER notation, but increasingly popular as a database modeling language; see [notes on UML.](UML.html)
 
-![]()
+<img src="../ILLOS/UML-EERD.png" width="350px">
 
 
 ### Data flow diagrams

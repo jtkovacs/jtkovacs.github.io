@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1364 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1368 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
 	- [Why model?](#why-model?)
 	- [Model typologies](#model-typologies)
 - [Models by form and notation](#models-by-form-and-notation)
@@ -139,13 +139,13 @@ Entity A is on the left, entity B is on the right. They are connected with an an
 
 <img src="../ILLOS/crowsfoot.gif" width="350px">
 
-![](../ILLOS/EERD.png)
+<img src="../ILLOS/EERD.png" width="350px">
 
 #### UML notation
 
 Predates ER notation, but increasingly popular as a database modeling language; see [notes on UML.](UML.html)
 
-![]()
+<img src="../ILLOS/UML-EERD.png" width="350px">
 
 
 ### Data flow diagrams

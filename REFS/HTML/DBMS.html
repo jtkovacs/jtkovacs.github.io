@@ -457,7 +457,7 @@ GO
 <span class="kw">USE</span> dbname
 GO
 
-<span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname   )
+<span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname)
 <span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)</code></pre>
   </div>
   <p>
@@ -484,9 +484,14 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
     Manage views
    </a>
   </h3>
-  <p>
-   Create view: [Database] &gt; [Views] &gt; right click to create new view. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. Views can be made persistent to increase performance: right click view &gt; Script View as &gt; ALTER To &gt; New Query Editor Window &gt; Add “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; Execute &gt; Refresh Object Explorer pane &gt; Right click on Indexes &gt; Clustered index &gt; Add columns.
-  </p>
+  <ul>
+   <li>
+    Create view: [Database] &gt; [Views] &gt; right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data.
+   </li>
+   <li>
+    Views can be made persistent to increase performance: right click view &gt; Script View as &gt; ALTER To &gt; New Query Editor Window &gt; Add “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; Execute &gt; Refresh Object Explorer pane &gt; Right click on Indexes &gt; Clustered index &gt; Add columns.
+   </li>
+  </ul>
   <h2>
    <a name="microsoft-access">
     Microsoft Access

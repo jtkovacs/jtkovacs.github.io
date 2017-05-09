@@ -224,36 +224,38 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">/usr/bin/mysql</span> -u [uname] -p[pwd]
 <span class="co"># launch</span>
 
+<span class="kw">quit;</span>
+
 <span class="kw">/var/log/mysql/error.log</span>
 <span class="co"># errors log location </span>
 
 <span class="kw">less</span> my.cnf
 <span class="co"># view configs</span></code></pre>
   </div>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">DATABASE</span> dname;
+
+SHOW DATABASES;</code></pre>
+  </div>
   <p>
-   MySQL commands:
+   Manage users:
   </p>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- create database</span>
-<span class="kw">CREATE</span> <span class="kw">DATABASE</span> dname;
-
-<span class="co">-- list all databases</span>
-SHOW DATABASES;
-
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> <span class="fu">User</span>, Host, <span class="kw">Password</span> <span class="kw">FROM</span> mysql.user;
 <span class="co">-- view users</span>
-<span class="kw">SELECT</span> <span class="fu">User</span>, Host, <span class="kw">Password</span> <span class="kw">FROM</span> mysql.user;
 
+<span class="kw">INSERT</span> <span class="kw">INTO</span> mysql.user (<span class="fu">User</span>,Host,<span class="kw">Password</span>) <span class="kw">VALUES</span>(<span class="st">'username'</span>,<span class="st">'localhost'</span>,<span class="kw">PASSWORD</span>(<span class="st">'pwd'</span>)); 
+<span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>;
 <span class="co">-- add user</span>
-<span class="kw">INSERT</span> <span class="kw">INTO</span> mysql.user (<span class="fu">User</span>,Host,<span class="kw">Password</span>) <span class="kw">VALUES</span>(<span class="st">'username'</span>,<span class="st">'localhost'</span>,<span class="kw">PASSWORD</span>(<span class="st">'demopassword'</span>)); <span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>;
 
+<span class="kw">UPDATE</span> mysql.user <span class="kw">SET</span> <span class="kw">Password</span> = <span class="kw">PASSWORD</span>(<span class="st">'pwd'</span>) <span class="kw">WHERE</span> <span class="fu">User</span> = <span class="st">'root'</span>; 
+<span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>;
 <span class="co">-- change password</span>
-<span class="kw">UPDATE</span> mysql.user <span class="kw">SET</span> <span class="kw">Password</span> = <span class="kw">PASSWORD</span>(<span class="st">'password'</span>) <span class="kw">WHERE</span> <span class="fu">User</span> = <span class="st">'root'</span>; <span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>;
-
-<span class="co">-- grant privileges: </span>
-<span class="kw">GRANT</span> <span class="kw">ALL</span> <span class="kw">PRIVILEGES</span> <span class="kw">ON</span> demodb.* <span class="kw">to</span> demouser@localhost; <span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>; SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span class="st">'localhost'</span>;
-
-<span class="co">-- exit: </span>
-quit;</code></pre>
+ 
+<span class="kw">GRANT</span> <span class="kw">ALL</span> <span class="kw">PRIVILEGES</span> <span class="kw">ON</span> demodb.* <span class="kw">to</span> demouser@localhost; 
+<span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>; 
+SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span class="st">'localhost'</span>;
+<span class="co">-- grant privileges</span></code></pre>
   </div>
   <h2>
    <a name="microsoft-sql-server">

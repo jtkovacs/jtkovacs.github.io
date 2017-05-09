@@ -53,6 +53,8 @@ A database management system is either (1) a database engine for interacting wit
 /usr/bin/mysql -u [uname] -p[pwd]
 # launch
 
+quit;
+
 /var/log/mysql/error.log
 # errors log location 
 
@@ -60,29 +62,31 @@ less my.cnf
 # view configs
 ```
 
-MySQL commands:
 
 ```SQL
--- create database
 CREATE DATABASE dname;
 
--- list all databases
 SHOW DATABASES;
+```
 
--- view users
+Manage users:
+
+```SQL
 SELECT User, Host, Password FROM mysql.user;
+-- view users
 
+INSERT INTO mysql.user (User,Host,Password) VALUES('username','localhost',PASSWORD('pwd')); 
+FLUSH PRIVILEGES;
 -- add user
-INSERT INTO mysql.user (User,Host,Password) VALUES('username','localhost',PASSWORD('demopassword')); FLUSH PRIVILEGES;
 
+UPDATE mysql.user SET Password = PASSWORD('pwd') WHERE User = 'root'; 
+FLUSH PRIVILEGES;
 -- change password
-UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root'; FLUSH PRIVILEGES;
-
--- grant privileges: 
-GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost; FLUSH PRIVILEGES; SHOW GRANTS FOR 'demouser'@'localhost';
-
--- exit: 
-quit;
+ 
+GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost; 
+FLUSH PRIVILEGES; 
+SHOW GRANTS FOR 'demouser'@'localhost';
+-- grant privileges
 ```
 
 ## Microsoft SQL Server

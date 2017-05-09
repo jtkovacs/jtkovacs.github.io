@@ -43,11 +43,6 @@
            </a>
            <ul>
             <li>
-             <a href="#benefits-of-the-relational-data-model">
-              Benefits of the relational data model
-             </a>
-            </li>
-            <li>
              <a href="#kinds-of-attributes-">
               Kinds of attributes
              </a>
@@ -263,26 +258,7 @@
    <strong>
     graph
    </strong>
-   AKA network data model followed shortly thereafter (1960s, also IBM). Both were superseded by Edgar Codd's
-   <strong>
-    relational
-   </strong>
-   data model, proven in the 1970s and implemented in the 1980s.
-   <strong>
-    Object
-   </strong>
-   databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized.
-  </p>
-  <ul>
-   <li>
-    NoSQL databases: broad umbrella term for technologies that produce a SQL-like UI for non-relational data, often Big Data. Better than relational DBs at quick search.
-   </li>
-  </ul>
-  <p>
-   avoids data redundancy → conserves storage and safeguards data quality. Better than NoSQL for maintaining data integrity because it implements transaction management with ACID properties.
-  </p>
-  <p>
-   File and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
+   AKA network data model followed shortly thereafter (1960s, also IBM). In early systems, file and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
   </p>
   <ul>
    <li>
@@ -309,6 +285,30 @@
    </li>
   </ul>
   <p>
+   Hierarchies and graphs were superseded by Edgar Codd's
+   <strong>
+    relational
+   </strong>
+   data model, proven in the 1970s and implemented in the 1980s.
+  </p>
+  <ul>
+   <li>
+    Relationship structure allows for scaling exceptionally large data sets with excellent performance for processing transactions: TRUE
+   </li>
+   <li>
+    ANSI standards made platform-independence and transfer code across different products possible: TRUE
+   </li>
+   <li>
+    Considered VERY expensive to purchase and maintain: FALSE
+   </li>
+   <li>
+    Programming/query language that is easy to learn and execute: TRUE
+   </li>
+   <li>
+    Difficult to retrieve data: FALSE avoids data redundancy → conserves storage and safeguards data quality. Better than NoSQL for maintaining data integrity because it implements transaction management with ACID properties.
+   </li>
+  </ul>
+  <p>
    A database addresses the aforementioned problems because it is
    <strong>
     centralized
@@ -318,6 +318,22 @@
     abstracted
    </strong>
    (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
+  </p>
+  <p>
+   What are the pros and cons of storing redundant data in a database?
+  </p>
+  <p>
+   Redundant data has two major problems: first, the cost of physical storage, and second, the difficulties of keeping multiple copies of the same data consistent and accurate. For these reasons, normalization is used to minimize data redundancy (but not eliminate it, since the relational data model requires some redundancy to record relationships). However, because normalization is a complex process and because the cost of storage has declined over time, there may be cases or NoSQL database models where greater data redundancy is tolerated.
+  </p>
+  <p>
+   <strong>
+    Object
+   </strong>
+   databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data,
+   <strong>
+    NoSQL
+   </strong>
+   databases (unbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search.
   </p>
   <h3>
    <a name="ansi-sparc-architecture">
@@ -372,34 +388,6 @@
    </strong>
    (AKA attributes, fields). Columns have types, AKA d domains, which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
   </p>
-  <ul>
-   <li>
-    Relationship structure allows for scaling exceptionally large data sets with excellent performance for processing transactions: TRUE
-   </li>
-   <li>
-    ANSI standards made platform-independence and transfer code across different products possible: TRUE
-   </li>
-   <li>
-    Considered VERY expensive to purchase and maintain: FALSE
-   </li>
-   <li>
-    Programming/query language that is easy to learn and execute: TRUE
-   </li>
-   <li>
-    Difficult to retrieve data: FALSE
-   </li>
-  </ul>
-  <p>
-   What are the pros and cons of storing redundant data in a database?
-  </p>
-  <p>
-   Redundant data has two major problems: first, the cost of physical storage, and second, the difficulties of keeping multiple copies of the same data consistent and accurate. For these reasons, normalization is used to minimize data redundancy (but not eliminate it, since the relational data model requires some redundancy to record relationships). However, because normalization is a complex process and because the cost of storage has declined over time, there may be cases or NoSQL database models where greater data redundancy is tolerated.
-  </p>
-  <h4>
-   <a name="benefits-of-the-relational-data-model">
-    Benefits of the relational data model
-   </a>
-  </h4>
   <h4>
    <a name="kinds-of-attributes">
     Kinds of attributes

@@ -122,8 +122,6 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 #### Manage databases
 
-A database has a default PRIMARY filegroup; can create other filegroups, e.g. to hold tables that should be read-only.
-
 ```SQL
 CREATE DATABASE dbname
 ```
@@ -131,6 +129,7 @@ CREATE DATABASE dbname
 #### Manage tables 
 
 - **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
+- A database has a default PRIMARY **filegroup;** you can create other filegroups, e.g. to hold tables that should be read-only.
 - **Inspect relationships:**
     - [Database] > [Table] > Keys
     - [Database] > Database diagrams

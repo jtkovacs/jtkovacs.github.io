@@ -163,13 +163,13 @@ Get information:
 - Database Tools > Object Dependencies
 - Database Tools > Database Documenter 
 
-### Navigability
+### Improving navigability
 
-- can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
+- Create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
 - Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
-- build a custom ribbon with frequently-used commands & macros: Options > Customize Ribbon
-- startup actions, default views, and limited views: Options > Current Database
-- bypass by holding shift key while opening database
+- Build a custom ribbon with frequently-used commands & macros: Options > Customize Ribbon
+- Define startup actions, default views, and limited views: Options > Current Database
+    - Bypass by holding shift key while opening database
 
 ### SQL dialect novelties
 

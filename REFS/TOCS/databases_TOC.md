@@ -1,14 +1,17 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a></p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
-- [The relational data model](#the-relational-data-model)
-	- [Types of entities](#types-of-entities)
-		- [Associative entities](#associative-entities)
-		- [Superclasses and subclasses](#superclasses-and-subclasses)
-	- [Types of attributes ](#types-of-attributes-)
-	- [Data integrity in the relational model](#data-integrity-in-the-relational-model)
-		- [Referential integrity](#referential-integrity)
-- [NoSQL databases](#nosql-databases)
+- [Types of databases](#types-of-databases)
+	- [The relational data model](#the-relational-data-model)
+		- [Types of entities](#types-of-entities)
+			- [Associative entities](#associative-entities)
+			- [Superclasses and subclasses](#superclasses-and-subclasses)
+		- [Types of attributes ](#types-of-attributes-)
+		- [Data integrity in the relational model](#data-integrity-in-the-relational-model)
+			- [Entity integrity](#entity-integrity)
+			- [Domain integrity](#domain-integrity)
+			- [Referential integrity](#referential-integrity)
+	- [NoSQL databases](#nosql-databases)
 - [Database design](#database-design)
 	- [Groundwork](#groundwork)
 	- [Conceptual design](#conceptual-design)
@@ -35,7 +38,7 @@
 
 # What is a database?
 
-A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.htm#information-structures) for other major data models); or (2) this structured data plus a database management system (DBMS). 
+A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.html#information-structures) for other major data models); or (2) this structured data plus a database management system (DBMS). 
 
 A [DBMS](DBMS.html) is either a **database engine** for interacting with the database plus a **database frontend** for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). See [notes on typical DBMS functionality.](DBMS.html#core-functionality)
 
@@ -74,18 +77,19 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 
 
+# Types of databases
 
-# The relational data model
+## The relational data model
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Columns have types, AKA domains, which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
 
-## Types of entities
+### Types of entities
 
-### Associative entities
+#### Associative entities
 
 When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 
-### Superclasses and subclasses
+#### Superclasses and subclasses
 
 Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book) implementation: 
 
@@ -98,7 +102,7 @@ Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book)
     - Subclass relations contain all superclass attributes & unique attributes;
     - One relation contains all super- and subclass attributes.
 
-## Types of attributes 
+### Types of attributes 
 
 An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
 
@@ -120,19 +124,19 @@ Identity values must/How to pick a key. Which of the following are guidelines fo
 - Will not be null
 - Narrow field
 
-## Data integrity in the relational model
+### Data integrity in the relational model
 
-### Referential integrity
+#### Entity integrity
+
+#### Domain integrity
+
+#### Referential integrity
 
 Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
 
-Explain what referential integrity is and how it is maintained within the Relational Data Model. 
-
 One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
-
-
-# NoSQL databases
+## NoSQL databases
 
 Characteristics:
 

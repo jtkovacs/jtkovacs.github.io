@@ -293,7 +293,9 @@ T-SQL:
 - Exclusive: SELECT … WHERE [date] > 2012-02-25’ AND [date] < ‘20120230’; 
     - Note that dates are given as strings
 - Retrieve date, modify date & alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
-- Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal', - MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder'  FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
+- Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal', 
+    - SELECT COUNT(*) [HowManyMarchOrders] FROM ... 
+- MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder'  FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
 - SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) > 1 - ORDER BY SUM(TotalDue) DESC;
 - SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
 - SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;

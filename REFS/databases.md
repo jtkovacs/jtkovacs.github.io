@@ -38,19 +38,19 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 
 
-# Types of databases
+## Types of databases
 
-## The relational data model
+### The relational data model
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Order is insignificant.
 
-### Types of entities
+#### Types of entities
 
-#### Associative entities
+##### Associative entities
 
 When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 
-#### Superclasses and subclasses
+##### Superclasses and subclasses
 
 Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book) implementation: 
 
@@ -63,7 +63,7 @@ Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book)
     - Subclass relations contain all superclass attributes & unique attributes;
     - One relation contains all super- and subclass attributes.
 
-### Types of attributes 
+#### Types of attributes 
 
 An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
 
@@ -85,23 +85,23 @@ Identity values must/How to pick a key. Which of the following are guidelines fo
 - Will not be null
 - Narrow field
 
-### Data integrity in the relational model
+#### Data integrity in the relational model
 
-#### Entity integrity
+##### Entity integrity
 
 rows are unique (they need a key).
 
-#### Domain integrity
+##### Domain integrity
 
 columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values. 
 
-#### Referential integrity
+##### Referential integrity
 
 Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
 
 One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
-## NoSQL databases
+### NoSQL databases
 
 Characteristics:
 

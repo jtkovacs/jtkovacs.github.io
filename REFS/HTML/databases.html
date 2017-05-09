@@ -202,28 +202,16 @@
     </ul>
    </li>
    <li>
-    Access to database metadata through the
-    <strong>
-     system catalog;
-    </strong>
+    Access to database metadata through the system catalog;
    </li>
    <li>
-    Support for concurrent access
-    <strong>
-     (data sharing);
-    </strong>
+    Support for concurrent access (data sharing);
    </li>
    <li>
-    Enforcement of access authorization
-    <strong>
-     (security);
-    </strong>
+    Enforcement of access authorization (security);
    </li>
    <li>
-    Enforcement of constraints on data input
-    <strong>
-     (integrity);
-    </strong>
+    Enforcement of constraints on data input (integrity);
    </li>
    <li>
     Backup and recovery;
@@ -337,8 +325,43 @@
    A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input).
   </p>
   <p>
-   There are three stages of database design. In the conceptual design stage, a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain. In the logical design stage, the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies. Finally, in the physical design phase, the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+   Connolly and Begg (2015) outline the following database development process:
   </p>
+  <ul>
+   <li>
+    Groundwork
+   </li>
+   <li>
+    In the
+    <strong>
+     conceptual design stage,
+    </strong>
+    a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain.
+   </li>
+   <li>
+    In the
+    <strong>
+     logical design stage,
+    </strong>
+    the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies.
+   </li>
+   <li>
+    Finally, in the
+    <strong>
+     physical design phase,
+    </strong>
+    the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+   </li>
+   <li>
+    Implementation
+   </li>
+   <li>
+    Rollout
+   </li>
+   <li>
+    Maintenance
+   </li>
+  </ul>
   <h2>
    <a name="groundwork">
     Groundwork

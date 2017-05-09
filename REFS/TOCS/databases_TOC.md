@@ -33,10 +33,10 @@ A **database management system** [(DBMS)](DBMS.html) is either (1) a database en
         - which enables CRUD operations (create, read, update, delete);
         - which includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
         - which may be procedural or, as with SQL, nonprocedural/declarative;
-- Access to database metadata through the **system catalog;**
-- Support for concurrent access **(data sharing);**
-- Enforcement of access authorization **(security);**
-- Enforcement of constraints on data input **(integrity);**
+- Access to database metadata through the system catalog;
+- Support for concurrent access (data sharing);
+- Enforcement of access authorization (security);
+- Enforcement of constraints on data input (integrity);
 - Backup and recovery;
 - Views that are customized to the needs of specific audiences.
 
@@ -69,7 +69,15 @@ Then, the DBMS creates **mappings** between schemas (also called intensions); a 
 
 A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). 
 
-There are three stages of database design. In the conceptual design stage, a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain. In the logical design stage, the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies. Finally, in the physical design phase, the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+Connolly and Begg (2015) outline the following database development process:
+
+- Groundwork
+- In the **conceptual design stage,** a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain. 
+- In the **logical design stage,** the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies. 
+- Finally, in the **physical design phase,** the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+- Implementation
+- Rollout
+- Maintenance
 
 ## Groundwork
 

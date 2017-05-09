@@ -3,6 +3,8 @@
 	- [Popularity](#popularity)
 - [Relational DBMS](#relational-dbms)
 	- [MySQL](#mysql)
+		- [Manage databases](#manage-databases)
+		- [Manage users](#manage-users)
 	- [Microsoft SQL Server](#microsoft-sql-server)
 	- [Microsoft Access](#microsoft-access)
 		- [Migrating to Microsoft SQL Server](#migrating-to-microsoft-sql-server)
@@ -62,6 +64,7 @@ less my.cnf
 # view configs
 ```
 
+### Manage databases
 
 ```SQL
 CREATE DATABASE dname;
@@ -69,7 +72,7 @@ CREATE DATABASE dname;
 SHOW DATABASES;
 ```
 
-Manage users:
+### Manage users
 
 ```SQL
 SELECT User, Host, Password FROM mysql.user;

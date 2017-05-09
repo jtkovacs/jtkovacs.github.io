@@ -85,6 +85,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          <a href="#mysql">
           MySQL
          </a>
+         <ul>
+          <li>
+           <a href="#manage-databases">
+            Manage databases
+           </a>
+          </li>
+          <li>
+           <a href="#manage-users">
+            Manage users
+           </a>
+          </li>
+         </ul>
         </li>
         <li>
          <a href="#microsoft-sql-server">
@@ -232,14 +244,21 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">less</span> my.cnf
 <span class="co"># view configs</span></code></pre>
   </div>
+  <h3>
+   <a name="manage-databases">
+    Manage databases
+   </a>
+  </h3>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">DATABASE</span> dname;
 
 SHOW DATABASES;</code></pre>
   </div>
-  <p>
-   Manage users:
-  </p>
+  <h3>
+   <a name="manage-users">
+    Manage users
+   </a>
+  </h3>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> <span class="fu">User</span>, Host, <span class="kw">Password</span> <span class="kw">FROM</span> mysql.user;
 <span class="co">-- view users</span>

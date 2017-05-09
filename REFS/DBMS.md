@@ -49,6 +49,7 @@ less my.cnf
 # view configs
 ```
 
+### Manage databases
 
 ```SQL
 CREATE DATABASE dname;
@@ -56,7 +57,7 @@ CREATE DATABASE dname;
 SHOW DATABASES;
 ```
 
-Manage users:
+### Manage users
 
 ```SQL
 SELECT User, Host, Password FROM mysql.user;

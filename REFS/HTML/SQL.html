@@ -340,6 +340,29 @@ modifier: “-<span class="dv">7</span> days”, “+<span class="dv">2</span> m
   <p>
    https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
   </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c.CustomerID, c.TerritoryID, <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">AS</span> [Total Orders],
+    <span class="fu">DENSE_RANK</span>() <span class="kw">OVER</span> (<span class="kw">PARTITION</span> <span class="kw">BY</span> c.TerritoryID <span class="kw">ORDER</span> <span class="kw">BY</span> <span class="fu">COUNT</span>(o.SalesOrderid)) <span class="kw">AS</span> [<span class="fu">Rank</span>]
+<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader o <span class="kw">ON</span> c.CustomerID = o.CustomerID
+<span class="kw">WHERE</span> DATEPART(<span class="dt">year</span>, OrderDate) = <span class="dv">2007</span>
+<span class="kw">GROUP</span> <span class="kw">BY</span> c.TerritoryID, c.CustomerID;</code></pre>
+  </div>
+  <p>
+   Select product_id, name and selling start date for all products that started selling before 01/01/2006. Use the CAST function to display the date only. You need to work with the Production.Product table. The syntax for CAST is CAST(expression AS data_type), where expression is the column name we want to format and we can use DATE as data_type for this question to display just the date.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> ProductID, Name, <span class="fu">CAST</span>(SellStartDate <span class="kw">AS</span> <span class="dt">DATE</span>) SellStartDate
+<span class="kw">FROM</span> Production.Product
+<span class="kw">WHERE</span> SellStartDate &lt; <span class="st">'01/01/2006'</span>;</code></pre>
+  </div>
+  <p>
+   Select the product id, name, and list price for the product(s) that has the highest list price. You need to work with the Production.Product table. You’ll need to use a simple subquery to get the maximum list price and use it in the WHERE clause.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> ProductID, Name, ListPrice
+<span class="kw">FROM</span> Production.Product
+<span class="kw">WHERE</span> ListPrice = (<span class="kw">SELECT</span> <span class="fu">MAX</span>(ListPrice) <span class="kw">FROM</span> Production.Product);</code></pre>
+  </div>
   <p>
    Which of the following are characteristics of a JOIN? - Data is automatically sorted by the first column - Tables are JOINed via PK/FK relationships - More than two tables can be JOINed in one query - The keyword GROUP is mandatory
   </p>
@@ -390,6 +413,37 @@ modifier: “-<span class="dv">7</span> days”, “+<span class="dv">2</span> m
     (<span class="kw">SELECT</span> CustomerID <span class="kw">FROM</span> Sales.SalesOrderHeader)
 <span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>;</code></pre>
   </div>
+  <p>
+   T-SQL:
+  </p>
+  <ul>
+   <li>
+    Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
+   </li>
+   <li>
+    Exclusive: SELECT … WHERE [date] &gt; 2012-02-25’ AND [date] &lt; ‘20120230’;
+    <ul>
+     <li>
+      Note that dates are given as strings
+     </li>
+    </ul>
+   </li>
+   <li>
+    Retrieve date, modify date &amp; alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
+   </li>
+   <li>
+    Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal', - MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder' FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
+   </li>
+   <li>
+    SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) &gt; 1 - ORDER BY SUM(TotalDue) DESC;
+   </li>
+   <li>
+    SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
+   </li>
+   <li>
+    SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
+   </li>
+  </ul>
   <h1>
    <a name="sources">
     SOURCES

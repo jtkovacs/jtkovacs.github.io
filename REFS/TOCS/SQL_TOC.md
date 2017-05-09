@@ -204,6 +204,31 @@ STRFTIME(“format_string”, ”datetime_string”, <modifier>)
 
 https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
 
+```SQL
+SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS [Total Orders],
+    DENSE_RANK() OVER (PARTITION BY c.TerritoryID ORDER BY COUNT(o.SalesOrderid)) AS [Rank]
+FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader o ON c.CustomerID = o.CustomerID
+WHERE DATEPART(year, OrderDate) = 2007
+GROUP BY c.TerritoryID, c.CustomerID;
+```
+
+
+Select product_id, name and selling start date for all products that started selling before 01/01/2006. Use the CAST function to display the date only. You need to work with the Production.Product table. The syntax for CAST is CAST(expression AS data_type), where expression is the column name we want to format and  we can use DATE as data_type for this question to display just the date.
+
+```SQL
+SELECT ProductID, Name, CAST(SellStartDate AS DATE) SellStartDate
+FROM Production.Product
+WHERE SellStartDate < '01/01/2006';
+```
+
+Select the product id, name, and list price for the product(s) that has the highest list price. You need to work with the Production.Product table. You’ll need to use a simple subquery to get the maximum list price and use it in the WHERE clause.
+
+```SQL
+SELECT ProductID, Name, ListPrice
+FROM Production.Product
+WHERE ListPrice = (SELECT MAX(ListPrice) FROM Production.Product);
+```
+
 Which of the following are characteristics of a JOIN?
 - Data is automatically sorted by the first column
 - Tables are JOINed via PK/FK relationships
@@ -261,6 +286,18 @@ WHERE CustomerID NOT IN
     (SELECT CustomerID FROM Sales.SalesOrderHeader)
 ORDER BY CustomerID ASC;
 ```
+
+T-SQL:
+
+- Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
+- Exclusive: SELECT … WHERE [date] > 2012-02-25’ AND [date] < ‘20120230’; 
+    - Note that dates are given as strings
+- Retrieve date, modify date & alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
+- Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal', - MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder'  FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
+- SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) > 1 - ORDER BY SUM(TotalDue) DESC;
+- SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
+- SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
+
 
 # SOURCES
 

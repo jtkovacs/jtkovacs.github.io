@@ -189,6 +189,8 @@ STRFTIME(“format_string”, ”datetime_string”, <modifier>)
 - WITH
 - GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT) 
 
+https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
+
 Which of the following are characteristics of a JOIN?
 - Data is automatically sorted by the first column
 - Tables are JOINed via PK/FK relationships
@@ -204,6 +206,27 @@ Match the following clauses with its definition:
 - ORDER BY: Sorts the output of the results-set in a desired sequence
 
 
+Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
+
+Solution with JOIN:
+
+```SQL
+SELECT CustomerID
+FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader h
+ON c.CustomerID = h.CustomerID
+WHERE h.CustomerID IS NULL
+ORDER BY CustomerID ASC; 
+```
+
+Solution with subquery:
+
+```SQL
+SELECT CustomerID
+FROM Sales.Customer
+WHERE CustomerID NOT IN 
+    (SELECT CustomerID FROM Sales.SalesOrderHeader)
+ORDER BY CustomerID ASC;
+```
 
 # SOURCES
 

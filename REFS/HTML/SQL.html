@@ -46,6 +46,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </style>
  </head>
  <body>
+  <p id="path">
+   <a href="../../pkb.html">
+    https://jtkovacs.github.io/pkb.html
+   </a>
+   &gt;
+   <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
+    https://jtkovacs.github.io/REFS/HTML/SQL.html
+   </a>
+  </p>
   <table class="TOC">
    <tr>
     <td>
@@ -83,6 +92,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       <li>
        <a href="#reporting">
         Reporting
+       </a>
+       -
+       <a href="#check-for-inclusion">
+        Check for inclusion
        </a>
       </li>
       <li>
@@ -141,7 +154,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </a>
   </h1>
   <p>
-   http://www.vertabelo.com/blog/technical-articles/sql-joins http://thomaslarock.com/2012/04/real-world-sql-join-examples/
+   http://www.vertabelo.com/blog/technical-articles/sql-joins http://thomaslarock.com/2012/04/real-world-sql-join-examples/ http://sqlmag.com/t-sql/t-sql-join-types
   </p>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c1,c2 <span class="kw">FROM</span> tname <span class="kw">WHERE</span> ... ; <span class="kw">SELECT</span> * <span class="kw">FROM</span> tname;
@@ -308,6 +321,54 @@ modifier: “-<span class="dv">7</span> days”, “+<span class="dv">2</span> m
     ) “%d/%m/%Y”
    </modifier>
   </p>
+  <h3>
+   <a name="check-for-inclusion">
+    Check for inclusion
+   </a>
+  </h3>
+  <ul>
+   <li>
+    SELECT, FROM, CAST, RANK(), DENSE_RANK()
+   </li>
+   <li>
+    WITH
+   </li>
+   <li>
+    GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT)
+   </li>
+  </ul>
+  <p>
+   https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
+  </p>
+  <p>
+   Which of the following are characteristics of a JOIN? - Data is automatically sorted by the first column - Tables are JOINed via PK/FK relationships - More than two tables can be JOINed in one query - The keyword GROUP is mandatory
+  </p>
+  <p>
+   Match the following clauses with its definition: - SELECT: Columns to appear in result-set - FROM: Specifies table(s) holding desired columns - WHERE: Allows user to filter rows returned - GROUP BY: Clusters rows by common column value - HAVING: Filters GROUP BY clause - ORDER BY: Sorts the output of the results-set in a desired sequence
+  </p>
+  <p>
+   Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
+  </p>
+  <p>
+   Solution with JOIN:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> CustomerID
+<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader h
+<span class="kw">ON</span> c.CustomerID = h.CustomerID
+<span class="kw">WHERE</span> h.CustomerID <span class="kw">IS</span> <span class="kw">NULL</span>
+<span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>; </code></pre>
+  </div>
+  <p>
+   Solution with subquery:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> CustomerID
+<span class="kw">FROM</span> Sales.Customer
+<span class="kw">WHERE</span> CustomerID <span class="kw">NOT</span> <span class="kw">IN</span> 
+    (<span class="kw">SELECT</span> CustomerID <span class="kw">FROM</span> Sales.SalesOrderHeader)
+<span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>;</code></pre>
+  </div>
   <h1>
    <a name="sources">
     SOURCES

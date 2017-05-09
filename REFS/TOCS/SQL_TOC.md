@@ -1,10 +1,11 @@
-<table class="TOC"><tr><td>- [SQL conventions](#sql-conventions)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a></p><table class="TOC"><tr><td>- [SQL conventions](#sql-conventions)
 - [Relational algebra](#relational-algebra)
 - [SELECT, JOINS, & SET THEORY](#select,-joins,-&-set-theory)
 - [Subqueries](#subqueries)
 - [Grouping & aggregation](#grouping-&-aggregation)
 - [Manipulating tables & views](#manipulating-tables-&-views)
 - [Reporting](#reporting)
+		- [Check for inclusion](#check-for-inclusion)
 - [SOURCES](#sources)
 	- [References](#references)
 	- [Archive](#archive)
@@ -43,6 +44,7 @@ symmetric difference: (A-B)∪(B-A)
 
 http://www.vertabelo.com/blog/technical-articles/sql-joins
 http://thomaslarock.com/2012/04/real-world-sql-join-examples/
+http://sqlmag.com/t-sql/t-sql-join-types
 
 ```SQL
 SELECT c1,c2 FROM tname WHERE ... ; SELECT * FROM tname;
@@ -192,6 +194,52 @@ TIME(“datetime_string”) → hh:mm:ss
 STRFTIME(“format_string”, ”datetime_string”, <modifier>)
 “%d/%m/%Y”
 
+
+
+### Check for inclusion
+
+- SELECT, FROM, CAST, RANK(), DENSE_RANK()
+- WITH
+- GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT) 
+
+https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
+
+Which of the following are characteristics of a JOIN?
+- Data is automatically sorted by the first column
+- Tables are JOINed via PK/FK relationships
+- More than two tables can be JOINed in one query
+- The keyword GROUP is mandatory
+
+Match the following clauses with its definition: 
+- SELECT: Columns to appear in result-set
+- FROM: Specifies table(s) holding desired columns
+- WHERE: Allows user to filter rows returned
+- GROUP BY: Clusters rows by common column value
+- HAVING: Filters GROUP BY clause
+- ORDER BY: Sorts the output of the results-set in a desired sequence
+
+
+Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
+
+Solution with JOIN:
+
+```SQL
+SELECT CustomerID
+FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader h
+ON c.CustomerID = h.CustomerID
+WHERE h.CustomerID IS NULL
+ORDER BY CustomerID ASC; 
+```
+
+Solution with subquery:
+
+```SQL
+SELECT CustomerID
+FROM Sales.Customer
+WHERE CustomerID NOT IN 
+    (SELECT CustomerID FROM Sales.SalesOrderHeader)
+ORDER BY CustomerID ASC;
+```
 
 # SOURCES
 

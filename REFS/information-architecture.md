@@ -141,7 +141,7 @@ Tables with columns, implicitly related via attributes; see [notes on relational
     
 #### Object-based
 
-Allow specification of constraints, but not overall structure. Objects are instances of classes; classes and objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs)
+Allow specification of constraints, but not overall structure. Objects are instances of classes; classes and objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs).
 
 - Entity-Relationship (ER)
 - Semantic (not sure how this is different from a graph data model)

@@ -1,11 +1,11 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a></p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
-- [The relational data model](#the-relational-data-model)
-	- [Kinds of attributes ](#kinds-of-attributes-)
-	- [Referential integrity](#referential-integrity)
-	- [Associative entities](#associative-entities)
-	- [Superclasses and subclasses](#superclasses-and-subclasses)
+		- [The relational data model](#the-relational-data-model)
+			- [Kinds of attributes ](#kinds-of-attributes-)
+			- [Referential integrity](#referential-integrity)
+			- [Associative entities](#associative-entities)
+			- [Superclasses and subclasses](#superclasses-and-subclasses)
 - [Database design](#database-design)
 	- [Groundwork](#groundwork)
 	- [Conceptual design](#conceptual-design)
@@ -68,11 +68,9 @@ This is one way of thinking about database abstraction/separation, which, in gen
 Then, the DBMS creates mappings (also called intensions; a realization of a schema is called the extension or state of the database) between schemas.
 
 
+### The relational data model
 
-
-# The relational data model
-
-In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Columns have types, AKA d domains, which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
 
 - Relationship structure allows for scaling exceptionally large data sets with excellent performance for processing transactions: TRUE
 - ANSI standards made platform-independence and transfer code across different products possible: TRUE
@@ -84,7 +82,7 @@ What are the pros and cons of storing redundant data in a database?
 
 Redundant data has two major problems: first, the cost of physical storage, and second, the difficulties of keeping multiple copies of the same data consistent and accurate. For these reasons, normalization is used to minimize data redundancy (but not eliminate it, since the relational data model requires some redundancy to record relationships). However, because normalization is a complex process and because the cost of storage has declined over time, there may be cases or NoSQL database models where greater data redundancy is tolerated.
 
-## Kinds of attributes 
+#### Kinds of attributes 
 
 An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
 
@@ -106,7 +104,7 @@ Identity values must/How to pick a key. Which of the following are guidelines fo
 - Will not be null
 - Narrow field
 
-## Referential integrity
+#### Referential integrity
 
 Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
 
@@ -114,11 +112,11 @@ Explain what referential integrity is and how it is maintained within the Relati
 
 One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
-## Associative entities
+#### Associative entities
 
 When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 
-## Superclasses and subclasses
+#### Superclasses and subclasses
 
 Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book) implementation: 
 

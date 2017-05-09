@@ -37,34 +37,34 @@
             ANSI-SPARC architecture
            </a>
           </li>
+          <li>
+           <a href="#the-relational-data-model">
+            The relational data model
+           </a>
+           <ul>
+            <li>
+             <a href="#kinds-of-attributes-">
+              Kinds of attributes
+             </a>
+            </li>
+            <li>
+             <a href="#referential-integrity">
+              Referential integrity
+             </a>
+            </li>
+            <li>
+             <a href="#associative-entities">
+              Associative entities
+             </a>
+            </li>
+            <li>
+             <a href="#superclasses-and-subclasses">
+              Superclasses and subclasses
+             </a>
+            </li>
+           </ul>
+          </li>
          </ul>
-        </li>
-       </ul>
-      </li>
-      <li>
-       <a href="#the-relational-data-model">
-        The relational data model
-       </a>
-       <ul>
-        <li>
-         <a href="#kinds-of-attributes-">
-          Kinds of attributes
-         </a>
-        </li>
-        <li>
-         <a href="#referential-integrity">
-          Referential integrity
-         </a>
-        </li>
-        <li>
-         <a href="#associative-entities">
-          Associative entities
-         </a>
-        </li>
-        <li>
-         <a href="#superclasses-and-subclasses">
-          Superclasses and subclasses
-         </a>
         </li>
        </ul>
       </li>
@@ -339,13 +339,25 @@
   <p>
    Then, the DBMS creates mappings (also called intensions; a realization of a schema is called the extension or state of the database) between schemas.
   </p>
-  <h1>
+  <h3>
    <a name="the-relational-data-model">
     The relational data model
    </a>
-  </h1>
+  </h3>
   <p>
-   In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+   In a relational database, the data model is of
+   <strong>
+    tables
+   </strong>
+   AKA relations. Tables have
+   <strong>
+    rows
+   </strong>
+   (AKA tuples, records) and
+   <strong>
+    columns
+   </strong>
+   (AKA attributes, fields). Columns have types, AKA d domains, which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
   </p>
   <ul>
    <li>
@@ -370,11 +382,11 @@
   <p>
    Redundant data has two major problems: first, the cost of physical storage, and second, the difficulties of keeping multiple copies of the same data consistent and accurate. For these reasons, normalization is used to minimize data redundancy (but not eliminate it, since the relational data model requires some redundancy to record relationships). However, because normalization is a complex process and because the cost of storage has declined over time, there may be cases or NoSQL database models where greater data redundancy is tolerated.
   </p>
-  <h2>
+  <h4>
    <a name="kinds-of-attributes">
     Kinds of attributes
    </a>
-  </h2>
+  </h4>
   <p>
    An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
   </p>
@@ -419,11 +431,11 @@
     Narrow field
    </li>
   </ul>
-  <h2>
+  <h4>
    <a name="referential-integrity">
     Referential integrity
    </a>
-  </h2>
+  </h4>
   <p>
    Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
   </p>
@@ -433,19 +445,19 @@
   <p>
    One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
   </p>
-  <h2>
+  <h4>
    <a name="associative-entities">
     Associative entities
    </a>
-  </h2>
+  </h4>
   <p>
    When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
   </p>
-  <h2>
+  <h4>
    <a name="superclasses-and-subclasses">
     Superclasses and subclasses
    </a>
-  </h2>
+  </h4>
   <p>
    Supertype/Subtype (described as Superclass/Subclass in the Connolly &amp; Begg book) implementation:
   </p>

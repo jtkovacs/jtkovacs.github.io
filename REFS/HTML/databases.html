@@ -837,43 +837,9 @@
     notes on ER diagrams.
    </a>
    and
-   <a href="modeling.html#unified-modeling-language-(uml)">
+   <a href="uml.html">
     notes on UML.
    </a>
-  </p>
-  <ul>
-   <li>
-    Classes: Name, attributes, primary key/methods; analogous to relations.
-   </li>
-   <li>
-    Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations:
-    <code>
-     1..1 is default; m..n; m..\*; 0..n; 0..\*
-    </code>
-    .
-   </li>
-   <li>
-    Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
-   </li>
-   <li>
-    Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
-    <br/>
-   </li>
-   <li>
-    Superclasses are in/complete and disjoint/overlapping.
-   </li>
-   <li>
-    Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
-    <code>
-     1..1
-    </code>
-    . No PK needed!
-   </li>
-   <li>
-    Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
-   </li>
-  </ul>
-  <p>
    UML can be translated into relations:
   </p>
   <ul>

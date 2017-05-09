@@ -33,20 +33,7 @@
 
 A **database** is a either (1) collection of data that's structured according to a data model (usually relational, as [discussed below;](#the-relational-data-model) for other major data models, see [notes on information structures);](information-architecture.html#information-structures) or (2) this structured data plus a database management system (DBMS). 
 
-A [DBMS](DBMS.html) is either (1) a database engine for interacting with the database plus a database frontend for interacting with the user; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Most DBMS offer:
-
-- A convenient language offering two data sublanguages:
-    - A data definition language **(DDL)** that expresses a schema, stored in the system catalog AKA data directory, data dictionary; 
-    - A data manipulation language **(DML),**
-        - which enables CRUD operations (create, read, update, delete);
-        - which includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
-        - which may be procedural or, as with SQL, nonprocedural/declarative;
-- Access to database metadata through the system catalog;
-- Support for concurrent access (data sharing);
-- Enforcement of access authorization (security);
-- Enforcement of constraints on data input (integrity);
-- Backup and recovery;
-- Views that are customized to the needs of specific audiences.
+A [DBMS](DBMS.html) is either (1) a database engine for interacting with the database plus a database frontend for interacting with the user; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). See [notes on typical DBMS functionality.](DBMS.html#core-functionality)
 
 A **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). This term denotes only the technical environment of a database; the full **database environment** encompasses hardware, software, data, procedures, and people.
 

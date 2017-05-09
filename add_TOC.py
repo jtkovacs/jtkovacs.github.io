@@ -54,7 +54,7 @@ fout.write('<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb
 ## Word count
 wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
 num_words = wc.stdout.decode("utf-8").split(" ")[0]
-fout.write('<p id="path"> word count: ' + num_words + '</p>')
+fout.write('<p id="path">&nbsp; &nbsp; word count: ' + num_words + '</p>')
 
 ## TOC
 fout.write('<table class="TOC"><tr><td>')

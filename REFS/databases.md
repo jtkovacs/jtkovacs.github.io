@@ -30,6 +30,68 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 
 
+# The relational data model
+
+In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+
+- Relationship structure allows for scaling exceptionally large data sets with excellent performance for processing transactions: TRUE
+- ANSI standards made platform-independence and transfer code across different products possible: TRUE
+- Considered VERY expensive to purchase and maintain: FALSE
+- Programming/query language that is easy to learn and execute: TRUE
+- Difficult to retrieve data: FALSE
+
+What are the pros and cons of storing redundant data in a database?
+
+Redundant data has two major problems: first, the cost of physical storage, and second, the difficulties of keeping multiple copies of the same data consistent and accurate. For these reasons, normalization is used to minimize data redundancy (but not eliminate it, since the relational data model requires some redundancy to record relationships). However, because normalization is a complex process and because the cost of storage has declined over time, there may be cases or NoSQL database models where greater data redundancy is tolerated.
+
+## Kinds of attributes 
+
+An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
+
+An attribute is multi-valued/set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
+
+An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
+
+Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
+
+An attribute may be a **key** or identity value. Kinds of keys: 
+
+- Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
+- Candidate Key: Column(s) that can uniquely identify rows in an entity
+
+Identity values must/How to pick a key. Which of the following are guidelines for an Entity Identifier (aka 'Primary Key')?
+
+- INTEGER is most-often the best data type choice
+- Will not change in value
+- Will not be null
+- Narrow field
+
+## Referential integrity
+
+Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
+
+Explain what referential integrity is and how it is maintained within the Relational Data Model. 
+
+One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+
+## Associative entities
+
+When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
+
+## Superclasses and subclasses
+
+Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book) implementation: 
+
+- Provides more semantic meaning to an ER model: TRUE
+- Makes an ER model more readable: TRUE
+- Introduces more NULL values to a database: FALSE
+- Supertype and Subtypes have the same primary key: TRUE
+
+
+
+
+
+
 # Database design
 
 A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). 
@@ -70,64 +132,6 @@ Business rules are database design constraints that arise from the business proc
     - 1NF: all fields only include a single piece of data;
     - 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
     - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
-    
-### The relational data model
-
-In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
-
-- Relationship structure allows for scaling exceptionally large data sets with excellent performance for processing transactions: TRUE
-- ANSI standards made platform-independence and transfer code across different products possible: TRUE
-- Considered VERY expensive to purchase and maintain: FALSE
-- Programming/query language that is easy to learn and execute: TRUE
-- Difficult to retrieve data: FALSE
-
-What are the pros and cons of storing redundant data in a database?
-
-Redundant data has two major problems: first, the cost of physical storage, and second, the difficulties of keeping multiple copies of the same data consistent and accurate. For these reasons, normalization is used to minimize data redundancy (but not eliminate it, since the relational data model requires some redundancy to record relationships). However, because normalization is a complex process and because the cost of storage has declined over time, there may be cases or NoSQL database models where greater data redundancy is tolerated.
-
-#### Kinds of attributes 
-
-An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
-
-An attribute is multi-valued/set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
-
-An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
-
-Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
-
-An attribute may be a **key** or identity value. Kinds of keys: 
-
-- Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
-- Candidate Key: Column(s) that can uniquely identify rows in an entity
-
-Identity values must/How to pick a key. Which of the following are guidelines for an Entity Identifier (aka 'Primary Key')?
-
-- INTEGER is most-often the best data type choice
-- Will not change in value
-- Will not be null
-- Narrow field
-
-#### Referential integrity
-
-Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
-
-Explain what referential integrity is and how it is maintained within the Relational Data Model. 
-
-One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
-
-#### Associative entities
-
-When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
-
-#### Superclasses and subclasses
-
-Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book) implementation: 
-
-- Provides more semantic meaning to an ER model: TRUE
-- Makes an ER model more readable: TRUE
-- Introduces more NULL values to a database: FALSE
-- Supertype and Subtypes have the same primary key: TRUE
-
 
 ### Top-down vs. bottom-up design
 
@@ -168,7 +172,7 @@ __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is t
 
 #### Top-down design with ERDs
 
-See [notes on ER diagrams.](modeling.html#entity-relationship-diagrams) and [notes on UML.](uml.html) UML can be translated into relations:
+See [notes on ER diagrams.](modeling.html#entity-relationship-diagrams) and [notes on UML.](UML.html) UML can be translated into relations:
 
 - Classes become relations.
 - Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written  0..1 to \*), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.

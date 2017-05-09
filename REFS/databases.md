@@ -11,7 +11,7 @@ A **database system** is a database/DBMS plus database applications (any applica
 
 The first computerized information systems (IBM, c. 1950) imitated **hierarchical** paper filing systems. The more semantically powerful **graph** AKA network data model followed shortly thereafter (1960s, also IBM). In early systems, file and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
 
-- **redundancy:** the same data collected ($$) and stored ($$) by multiple departments;
+- **redundancy:** the same data collected (\$\$) and stored (\$\$) by multiple departments;
 - **inconsistency:** redundant data that *should be the same* is not updated consistently;
 - **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
 

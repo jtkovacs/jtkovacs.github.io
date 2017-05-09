@@ -367,19 +367,24 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     </strong>
     <ul>
      <li>
-      Create &gt; Query Design&gt; Totals, Select, Update, Make Table, Delete, Append, Crosstab &gt; Run
+      <strong>
+       Different types:
+      </strong>
+      Create &gt; Query Design &gt; Totals, Select, Update, Make Table, Delete, Append, Crosstab &gt; Run
+      <ul>
+       <li>
+        Deletion: Query Design &gt; join Table and Query affecting Table &gt; Property Sheet &gt; set Unique Records to Yes &gt; Delete &gt; Run
+       </li>
+       <li>
+        Append is a permanent combination of two tables; union is a temporary combination
+       </li>
+       <li>
+        Crosstab is similar to totals, but presents the results in matrix form
+       </li>
+      </ul>
      </li>
      <li>
-      choose join type: double click on UML associations in Query Design view
-     </li>
-     <li>
-      deletion: Query Design &gt; join Table and Query affecting Table &gt; Property Sheet &gt; set Unique Records to Yes &gt; Delete &gt; Run
-     </li>
-     <li>
-      append is a permanent combination of two tables; union is a temporary combination
-     </li>
-     <li>
-      crosstab is similar to totals, but presents the results in matrix form
+      Choose join type: double click on UML associations in Query Design view
      </li>
     </ul>
    </li>
@@ -394,9 +399,6 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
      </li>
      <li>
       Basing forms on queries (rather than tables) makes future modifications easier
-     </li>
-     <li>
-      http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm
      </li>
      <li>
       for navigating multiple forms: Create &gt; Navigation; drag &amp; drop forms onto this page
@@ -448,7 +450,7 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
       data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; …
      </li>
      <li>
-      name macro autoexec to run it on launch
+      Name macro autoexec to run it on launch
      </li>
     </ul>
    </li>
@@ -501,13 +503,10 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     Currency
    </li>
    <li>
-    Lookup Wizard
+    Lookup Wizard: Design View &gt; choose field &gt; Data Type &gt; Lookup Wizard
     <ul>
      <li>
-      lookup tables: Design View &gt; choose field &gt; Data Type &gt; Lookup Wizard
-     </li>
-     <li>
-      Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
+      Lookup list is dynamic, based on a query --&gt; leave the “Hide key column” check box selected
      </li>
      <li>
       Lookup value list is static, good for a small number of relatively fixed values
@@ -569,11 +568,19 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
    </li>
    <li>
+    <a href="http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm">
+     Tips for designing Access Forms
+    </a>
+   </li>
+   <li>
     Build a custom ribbon with frequently-used commands &amp; macros: Options &gt; Customize Ribbon
    </li>
    <li>
     Define startup actions, default views, and limited views: Options &gt; Current Database
     <ul>
+     <li>
+      Name macro autoexec to run it on launch
+     </li>
      <li>
       Bypass by holding shift key while opening database
      </li>
@@ -587,7 +594,7 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
   </h3>
   <ul>
    <li>
-    date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
+    Date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
    </li>
   </ul>
   <h3>

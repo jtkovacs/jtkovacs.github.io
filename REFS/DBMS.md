@@ -101,15 +101,14 @@ An Access database is made up of different objects:
         - Design View > choose field > Validation Rule > … > =Date(), =”MasterCard” OR “Visa”
         - Design View > choose field > Validation Text > The credit card you’ve entered has expired!
 - **Queries:**
-    - Create > Query Design> Totals, Select, Update, Make Table, Delete, Append, Crosstab > Run
-    - choose join type: double click on UML associations in Query Design view
-    - deletion: Query Design > join Table and Query affecting Table > Property Sheet > set Unique Records to Yes > Delete > Run
-    - append is a permanent combination of two tables; union is a temporary combination
-    - crosstab is similar to totals, but presents the results in matrix form
+    - **Different types:** Create > Query Design > Totals, Select, Update, Make Table, Delete, Append, Crosstab > Run
+        - Deletion: Query Design > join Table and Query affecting Table > Property Sheet > set Unique Records to Yes > Delete > Run
+        - Append is a permanent combination of two tables; union is a temporary combination
+        - Crosstab is similar to totals, but presents the results in matrix form
+    - Choose join type: double click on UML associations in Query Design view
 - **Forms** give a user-friendly interface for interacting with tables and queries:
     - Choose table > Create > Form (or Form Wizard, or Form Design)
-    - Basing forms on queries (rather than tables) makes future modifications easier
-    - http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm 
+    - Basing forms on queries (rather than tables) makes future modifications easier 
     - for navigating multiple forms: Create > Navigation; drag & drop forms onto this page
     - specify form properties (many): Form Design > Properties Sheet > Format, Data, Event, Other … Properties Sheet > Data > Data Source → Design > Add Existing Fields 
     - Design View > Layout
@@ -123,7 +122,7 @@ An Access database is made up of different objects:
     - button macros: Design > create a button > Property Sheet > Events > On Click > … > ApplyFilter
     - remove all filters: ApplyFilter > Where Condition = true
     - data macros: use to make logs that capture editing. create a log table; Table > After Update > … 
-    - name macro autoexec to run it on launch
+    - Name macro autoexec to run it on launch
 - **Modules** are for Visual Basic code.
 
 Objects might not be immediately visible; right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
@@ -140,9 +139,8 @@ Objects might not be immediately visible; right click on “All Access Objects�
 - Hyperlink 
 - Calculated field
 - Currency
-- Lookup Wizard
-    - lookup tables: Design View > choose field > Data Type > Lookup Wizard
-    - Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
+- Lookup Wizard: Design View > choose field > Data Type > Lookup Wizard
+    - Lookup list is dynamic, based on a query --> leave the “Hide key column” check box selected
     - Lookup value list is static, good for a small number of relatively fixed values
 
 ### Administration
@@ -167,13 +165,15 @@ Get information:
 
 - Create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
 - Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
+- [Tips for designing Access Forms](http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm)
 - Build a custom ribbon with frequently-used commands & macros: Options > Customize Ribbon
 - Define startup actions, default views, and limited views: Options > Current Database
+    - Name macro autoexec to run it on launch
     - Bypass by holding shift key while opening database
 
 ### SQL dialect novelties
 
-- date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
+- Date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
 
 ### Migrating to Microsoft SQL Server
 

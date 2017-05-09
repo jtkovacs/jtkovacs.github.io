@@ -1,4 +1,4 @@
-<p id="path">https://jtkovacs.github.io/REFS/HTML/DBMS.html</p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a></p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [Popularity](#popularity)
 - [Relational DBMS](#relational-dbms)
@@ -18,6 +18,23 @@
 # Overview of DBMS
 
 ## Core functionality
+
+From [notes on databases](database.html#what-is-a-database?):
+
+A database management system is either (1) a database engine for interacting with the database plus a database frontend for interacting with the user; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Most DBMS offer:
+
+- A convenient language offering two data sublanguages:
+    - A data definition language **(DDL)** that expresses a schema, stored in the system catalog AKA data directory, data dictionary; 
+    - A data manipulation language **(DML),**
+        - which enables CRUD operations (create, read, update, delete);
+        - which includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
+        - which may be procedural or, as with SQL, nonprocedural/declarative;
+- Access to database metadata through the system catalog;
+- Support for concurrent access (data sharing);
+- Enforcement of access authorization (security);
+- Enforcement of constraints on data input (integrity);
+- Backup and recovery;
+- Views that are customized to the needs of specific audiences.
 
 ## Popularity
 
@@ -45,6 +62,9 @@ change password: UPDATE mysql.user SET Password = PASSWORD('password') WHERE Use
 grant privileges: GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost; FLUSH PRIVILEGES; SHOW GRANTS FOR 'demouser'@'localhost';
 
 ## Microsoft SQL Server
+
+- Data types
+- CTE
 
 ## Microsoft Access
 

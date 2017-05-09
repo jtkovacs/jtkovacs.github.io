@@ -10,7 +10,13 @@
  </head>
  <body>
   <p id="path">
-   https://jtkovacs.github.io/REFS/HTML/DBMS.html
+   <a href="../../pkb.html">
+    https://jtkovacs.github.io/pkb.html
+   </a>
+   &gt;
+   <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">
+    https://jtkovacs.github.io/REFS/HTML/DBMS.html
+   </a>
   </p>
   <table class="TOC">
    <tr>
@@ -98,6 +104,65 @@
     Core functionality
    </a>
   </h2>
+  <p>
+   From
+   <a href="database.html#what-is-a-database?">
+    notes on databases
+   </a>
+   :
+  </p>
+  <p>
+   A database management system is either (1) a database engine for interacting with the database plus a database frontend for interacting with the user; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Most DBMS offer:
+  </p>
+  <ul>
+   <li>
+    A convenient language offering two data sublanguages:
+    <ul>
+     <li>
+      A data definition language
+      <strong>
+       (DDL)
+      </strong>
+      that expresses a schema, stored in the system catalog AKA data directory, data dictionary;
+     </li>
+     <li>
+      A data manipulation language
+      <strong>
+       (DML),
+      </strong>
+      <ul>
+       <li>
+        which enables CRUD operations (create, read, update, delete);
+       </li>
+       <li>
+        which includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
+       </li>
+       <li>
+        which may be procedural or, as with SQL, nonprocedural/declarative;
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Access to database metadata through the system catalog;
+   </li>
+   <li>
+    Support for concurrent access (data sharing);
+   </li>
+   <li>
+    Enforcement of access authorization (security);
+   </li>
+   <li>
+    Enforcement of constraints on data input (integrity);
+   </li>
+   <li>
+    Backup and recovery;
+   </li>
+   <li>
+    Views that are customized to the needs of specific audiences.
+   </li>
+  </ul>
   <h2>
    <a name="popularity">
     Popularity
@@ -124,6 +189,14 @@
     Microsoft SQL Server
    </a>
   </h2>
+  <ul>
+   <li>
+    Data types
+   </li>
+   <li>
+    CTE
+   </li>
+  </ul>
   <h2>
    <a name="microsoft-access">
     Microsoft Access

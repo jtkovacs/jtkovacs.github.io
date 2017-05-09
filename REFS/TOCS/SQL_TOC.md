@@ -219,6 +219,27 @@ Match the following clauses with its definition:
 - ORDER BY: Sorts the output of the results-set in a desired sequence
 
 
+Modify the following query to add a column that identifies the frequency of repeat customers and contains the following values based on the number of orders during 2007:
+
+```SQL
+SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS 'Total Orders',
+    CASE
+        WHEN COUNT(o.SalesOrderid) = '0'
+            THEN 'No Orders'
+        WHEN COUNT(o.SalesOrderid) = '1'
+            THEN 'One Time'
+        WHEN COUNT(o.SalesOrderid) BETWEEN '2' AND '5'
+            THEN 'Regular'
+        WHEN COUNT(o.SalesOrderid) BETWEEN '6' AND '12'
+            THEN 'Often'
+        ELSE 'Very Often'
+    END AS 'Order Frequency'
+FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader o ON c.CustomerID = o.CustomerID
+WHERE YEAR(OrderDate) = 2007
+GROUP BY c.TerritoryID, c.CustomerID
+ORDER BY 'Order Frequency' DESC;
+```
+
 Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
 
 Solution with JOIN:

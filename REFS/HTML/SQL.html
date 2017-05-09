@@ -347,6 +347,27 @@ modifier: “-<span class="dv">7</span> days”, “+<span class="dv">2</span> m
    Match the following clauses with its definition: - SELECT: Columns to appear in result-set - FROM: Specifies table(s) holding desired columns - WHERE: Allows user to filter rows returned - GROUP BY: Clusters rows by common column value - HAVING: Filters GROUP BY clause - ORDER BY: Sorts the output of the results-set in a desired sequence
   </p>
   <p>
+   Modify the following query to add a column that identifies the frequency of repeat customers and contains the following values based on the number of orders during 2007:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c.CustomerID, c.TerritoryID, <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">AS</span> <span class="st">'Total Orders'</span>,
+    <span class="kw">CASE</span>
+        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) = <span class="st">'0'</span>
+            <span class="kw">THEN</span> <span class="st">'No Orders'</span>
+        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) = <span class="st">'1'</span>
+            <span class="kw">THEN</span> <span class="st">'One Time'</span>
+        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">BETWEEN</span> <span class="st">'2'</span> <span class="kw">AND</span> <span class="st">'5'</span>
+            <span class="kw">THEN</span> <span class="st">'Regular'</span>
+        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">BETWEEN</span> <span class="st">'6'</span> <span class="kw">AND</span> <span class="st">'12'</span>
+            <span class="kw">THEN</span> <span class="st">'Often'</span>
+        <span class="kw">ELSE</span> <span class="st">'Very Often'</span>
+    <span class="kw">END</span> <span class="kw">AS</span> <span class="st">'Order Frequency'</span>
+<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader o <span class="kw">ON</span> c.CustomerID = o.CustomerID
+<span class="kw">WHERE</span> <span class="dt">YEAR</span>(OrderDate) = <span class="dv">2007</span>
+<span class="kw">GROUP</span> <span class="kw">BY</span> c.TerritoryID, c.CustomerID
+<span class="kw">ORDER</span> <span class="kw">BY</span> <span class="st">'Order Frequency'</span> <span class="kw">DESC</span>;</code></pre>
+  </div>
+  <p>
    Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
   </p>
   <p>

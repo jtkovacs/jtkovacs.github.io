@@ -122,8 +122,20 @@
          </a>
         </li>
         <li>
-         <a href="#physical-design">
-          Physical design
+         <a href="#physical-design-&amp;-construction">
+          Physical design &amp; construction
+         </a>
+         <ul>
+          <li>
+           <a href="#indexing-&amp;-performance">
+            Indexing &amp; performance
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#rollout-&amp;-support">
+          Rollout &amp; support
          </a>
         </li>
        </ul>
@@ -133,11 +145,6 @@
         Database administration
        </a>
        <ul>
-        <li>
-         <a href="#indexing-&amp;-performance">
-          Indexing &amp; performance
-         </a>
-        </li>
         <li>
          <a href="#data-and-log-files">
           Data and log files
@@ -980,33 +987,24 @@
    </li>
   </ul>
   <h2>
-   <a name="physical-design">
-    Physical design
+   <a name="physical-design-&amp;-construction">
+    Physical design &amp; construction
    </a>
   </h2>
-  <ul>
-   <li>
-    <strong>
-     Create physical design (software-specific instructions)
-    </strong>
-    : Construct, roll out, and support.
-    <ul>
-     <li>
-      Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).
-     </li>
-    </ul>
-   </li>
-  </ul>
-  <h1>
-   <a name="database-administration">
-    Database administration
+  <p>
+   Physical design depends on DBMS-specific features; see
+   <a href="DBMS.html">
+    notes on DBMS software.
    </a>
-  </h1>
-  <h2>
+  </p>
+  <h3>
    <a name="indexing-&amp;-performance">
     Indexing &amp; performance
    </a>
-  </h2>
+  </h3>
+  <p>
+   Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).
+  </p>
   <ul>
    <li>
     <a class="uri" href="http://use-the-index-luke.com/sql/table-of-contents">
@@ -1036,6 +1034,16 @@
     There can be more than one clustered index on a table: FALSE
    </li>
   </ul>
+  <h2>
+   <a name="rollout-&amp;-support">
+    Rollout &amp; support
+   </a>
+  </h2>
+  <h1>
+   <a name="database-administration">
+    Database administration
+   </a>
+  </h1>
   <h2>
    <a name="data-and-log-files">
     Data and log files

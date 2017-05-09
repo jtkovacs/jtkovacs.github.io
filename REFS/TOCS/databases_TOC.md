@@ -15,9 +15,10 @@
 			- [Bottom-up design through normalization](#bottom-up-design-through-normalization)
 			- [Top-down design with ERDs](#top-down-design-with-erds)
 	- [Logical design](#logical-design)
-	- [Physical design](#physical-design)
+	- [Physical design & construction](#physical-design-&-construction)
+		- [Indexing & performance](#indexing-&-performance)
+	- [Rollout & support](#rollout-&-support)
 - [Database administration](#database-administration)
-	- [Indexing & performance](#indexing-&-performance)
 	- [Data and log files](#data-and-log-files)
 	- [Transaction management](#transaction-management)
 	- [Data movement](#data-movement)
@@ -229,19 +230,13 @@ A top-down design approach creates an entity relationship diagram (ERD), startin
 
     
     
-## Physical design
+## Physical design & construction
     
-- __Create physical design (software-specific instructions)__: Construct, roll out, and support.
-    - Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
+Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html)
 
+### Indexing & performance
 
-
-
-
-
-# Database administration
-
-## Indexing & performance
+Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
 
 - [http://use-the-index-luke.com/sql/table-of-contents](http://use-the-index-luke.com/sql/table-of-contents)
 - [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
@@ -253,7 +248,14 @@ Select all accurate statements about indexes.
 - There can be more than one non-clustered index on a table: T
 - There can be more than one clustered index on a table: FALSE
 
+## Rollout & support
+    
 
+
+
+
+
+# Database administration
 
 ## Data and log files
 

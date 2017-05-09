@@ -113,9 +113,6 @@ These objects might not be immediately visible. To see hidden database objects, 
 - Lookup Wizard
 
 
-date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
-
-
 create tables:
 - Create > Table (or Table Design)
 - External Data > … (can import from Excel, XML, CSV, etc.; Access will add a primary key)
@@ -172,6 +169,10 @@ button macros: Design > create a button > Property Sheet > Events > On Click > �
  remove all filters: ApplyFilter > Where Condition = true
 data macros: use to make logs that capture editing. create a log table; Table > After Update > … 
 name macro autoexec to run it on launch
+
+### SQL dialect novelties
+
+date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
 
 
 ### Migrating to Microsoft SQL Server

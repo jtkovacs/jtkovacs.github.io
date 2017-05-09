@@ -65,7 +65,7 @@ Smartdraw.com (n.d.):
     - Circuit diagram
     - Floorplan
     
-Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); or by **methodology** (e.g. Agile, SDLC).
+Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); by **methodology** (e.g. Agile, SDLC); or by **notation** (e.g. UML, crow's foot).
 
 
 

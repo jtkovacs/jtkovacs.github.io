@@ -2,6 +2,7 @@
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 		- [The relational data model](#the-relational-data-model)
+			- [Benefits of the relational data model](#benefits-of-the-relational-data-model)
 			- [Kinds of attributes ](#kinds-of-attributes-)
 			- [Referential integrity](#referential-integrity)
 			- [Associative entities](#associative-entities)
@@ -31,7 +32,7 @@
 
 # What is a database?
 
-A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.html#information-structures) for other major data models); or (2) this structured data plus a database management system (DBMS). 
+A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.htm#information-structures/data-models) for other major data models); or (2) this structured data plus a database management system (DBMS). 
 
 A [DBMS](DBMS.html) is either a **database engine** for interacting with the database plus a **database frontend** for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). See [notes on typical DBMS functionality.](DBMS.html#core-functionality)
 
@@ -39,7 +40,11 @@ A **database system** is a database/DBMS plus database applications (any applica
 
 ## History of databases
 
-The first computerized information systems (IBM, c. 1950) imitated hierarchical paper filing systems. The more semantically powerful graph/network data model followed shortly thereafter (1960s, also IBM). Both were superseded by Edgar Codd's relational data model, proven in the 1970s and implemented in the 1980s.
+The first computerized information systems (IBM, c. 1950) imitated **hierarchical** paper filing systems. The more semantically powerful **graph** AKA network data model followed shortly thereafter (1960s, also IBM). Both were superseded by Edgar Codd's **relational** data model, proven in the 1970s and implemented in the 1980s. **Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized.
+
+
+- NoSQL databases: broad umbrella term for technologies that produce a SQL-like UI for non-relational data, often Big Data. Better than relational DBs at quick search.
+
 
 avoids data redundancy → conserves storage and safeguards data quality. Better than NoSQL for maintaining data integrity because it implements transaction management with ACID properties.
 
@@ -50,11 +55,6 @@ File and data formats were specific to an application or language; applications 
 - **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
 
 A database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
-
-
-- Object databases c. 1990s; introduce things like encapsulation and polymorphism, but never became popular or standardized.
-    - Object data model: there are classes and instances of classes. Objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs).
-- NoSQL databases: broad umbrella term for technologies that produce a SQL-like UI for non-relational data, often Big Data. Better than relational DBs at quick search.
 
 
 ### ANSI-SPARC architecture
@@ -81,6 +81,10 @@ In a relational database, the data model is of **tables** AKA relations. Tables 
 What are the pros and cons of storing redundant data in a database?
 
 Redundant data has two major problems: first, the cost of physical storage, and second, the difficulties of keeping multiple copies of the same data consistent and accurate. For these reasons, normalization is used to minimize data redundancy (but not eliminate it, since the relational data model requires some redundancy to record relationships). However, because normalization is a complex process and because the cost of storage has declined over time, there may be cases or NoSQL database models where greater data redundancy is tolerated.
+
+#### Benefits of the relational data model
+
+
 
 #### Kinds of attributes 
 

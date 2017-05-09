@@ -401,9 +401,6 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     Right click table &gt; Design &gt; Select field, click key icon &gt; In column properties window, change Identity Specification to “yes”
    </li>
    <li>
-    In-memory AKA memory-optimized tables are used to improve performance of read-write tables.
-   </li>
-   <li>
     The keyword
     <code>
      GO
@@ -413,6 +410,19 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
      USE
     </code>
     ensures that the table is created within the right database.
+   </li>
+   <li>
+    In-memory AKA
+    <strong>
+     memory-optimized tables
+    </strong>
+    are used to improve performance of read-write tables.
+   </li>
+   <li>
+    <strong>
+     Temporal tables
+    </strong>
+    (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required.
    </li>
   </ul>
   <div class="sourceCode">
@@ -434,7 +444,9 @@ GO
 
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname …)
 <span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)
-Temporal <span class="kw">tables</span> (<span class="kw">only</span> SQL Server <span class="dv">2016</span>) automatically maintain <span class="kw">the</span> history <span class="kw">of</span> <span class="kw">the</span> <span class="kw">table</span>, which can be queried. <span class="kw">The</span> fields ValidFrom, ValidTo, <span class="kw">and</span> PERIOD <span class="kw">FOR</span> SYSTEM_TIME are required <span class="kw">for</span> <span class="kw">all</span> temporal tables:
+
+<span class="co">-- Temporal table</span>
+
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, [ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
 [ValidFrom] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">START</span>, 
 [ValidTo] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">END</span>, 

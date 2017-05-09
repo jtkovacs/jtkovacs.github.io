@@ -105,8 +105,9 @@ CREATE DATABASE dbname
 #### Manage tables 
 
 - **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
-- In-memory AKA memory-optimized tables are used to improve performance of read-write tables. 
 - The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database.
+- In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. 
+- **Temporal tables** (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required.
 
 ```SQL
 CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupname
@@ -127,7 +128,9 @@ GO
 
 CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, fdname …)
 WITH (MEMORY-OPTIMIZED=ON)
-Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required for all temporal tables:
+
+-- Temporal table
+
 CREATE TABLE Inventory ([InventoryID] int NOT NULL PRIMARY KEY CLUSTERED, [ItemName] nvarchar(100) NOT NULL, 
 [ValidFrom] datetime2 (2) GENERATED ALWAYS AS ROW START, 
 [ValidTo] datetime2 (2) GENERATED ALWAYS AS ROW END, 

@@ -1,7 +1,7 @@
 
 # Elements of UML
 
-
+UML is a graphical higher-level language used for database modeling and software design; see [notes on modeling.](modeling.html)
 
 ## Classes
 

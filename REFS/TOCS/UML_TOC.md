@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/UML.html">https://jtkovacs.github.io/REFS/HTML/UML.html</a></p><table class="TOC"><tr><td>- [Elements of UML](#elements-of-uml)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/UML.html">https://jtkovacs.github.io/REFS/HTML/UML.html</a> \> 165 words </p><table class="TOC"><tr><td>- [Elements of UML](#elements-of-uml)
 	- [Classes](#classes)
 		- [Superclasses ](#superclasses-)
 		- [Subclasses](#subclasses)
@@ -13,7 +13,7 @@
 
 # Elements of UML
 
-
+UML is a graphical higher-level language used for database modeling and software design; see [notes on modeling.](modeling.html)
 
 ## Classes
 

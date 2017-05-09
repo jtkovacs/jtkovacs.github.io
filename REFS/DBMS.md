@@ -147,13 +147,16 @@ Objects might not be immediately visible; right click on â€œAll Access Objectsâ€
 
 ### Administration
 
-- Optimize: 
-    - Database Tools > Access Database (splits database into front-end=queries+forms+reports and back-end=tables)
-    - Design View > choose field > Field Size
-    - Indexing
-- Troubleshooting: 
-    - External Data > Linked Table Manager
-    - Database Tools > Compact & Repair (run periodically)
+Optimize: 
+
+- Database Tools > Access Database (splits database into front-end=queries+forms+reports and back-end=tables)
+- Design View > choose field > Field Size
+- Indexing
+
+Troubleshooting: 
+
+- External Data > Linked Table Manager
+- Database Tools > Compact & Repair (run periodically)
 
 Get information:
 

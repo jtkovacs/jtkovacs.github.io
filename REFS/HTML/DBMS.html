@@ -393,6 +393,9 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     Manage tables
    </a>
   </h4>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fieldname datatype, fielddname datatype ... ) <span class="kw">ON</span> Filegroupname</code></pre>
+  </div>
   <ul>
    <li>
     <strong>
@@ -400,36 +403,24 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     </strong>
     Right click table &gt; Design &gt; Select field, click key icon &gt; In column properties window, change Identity Specification to “yes”
    </li>
-   <li>
-    The keyword
-    <code>
-     GO
-    </code>
-    causes preceding commands to be submitted as a batch, and
-    <code>
-     USE
-    </code>
-    ensures that the table is created within the right database.
-   </li>
-   <li>
-    In-memory AKA
-    <strong>
-     memory-optimized tables
-    </strong>
-    are used to improve performance of read-write tables.
-   </li>
-   <li>
-    <strong>
-     Temporal tables
-    </strong>
-    (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required.
-   </li>
   </ul>
+  <p>
+   In-memory AKA
+   <strong>
+    memory-optimized tables
+   </strong>
+   are used to improve performance of read-write tables. The keyword
+   <code>
+    GO
+   </code>
+   causes preceding commands to be submitted as a batch, and
+   <code>
+    USE
+   </code>
+   ensures that the table is created within the right database:
+  </p>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fieldname datatype, fielddname datatype ... ) <span class="kw">ON</span> Filegroupname
-
-<span class="co">-- Memory-optimized table</span>
-<span class="kw">ALTER</span> <span class="kw">DATABASE</span> dbname
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">ALTER</span> <span class="kw">DATABASE</span> dbname
 <span class="kw">ADD</span> FILEGROUP fgname
 CONTAINS MEMORY_OPTIMIZED_DATA;
 
@@ -443,28 +434,29 @@ GO
 GO
 
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname …)
-<span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)
-
-<span class="co">-- Temporal table</span>
-
-<span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, [ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
+<span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)</code></pre>
+  </div>
+  <p>
+   <strong>
+    Temporal tables
+   </strong>
+   (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, [ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
 [ValidFrom] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">START</span>, 
 [ValidTo] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">END</span>, 
 PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))    
 <span class="kw">WITH</span> (SYSTEM_VERSIONING = <span class="kw">ON</span>); 
 
-<span class="co">-- Temporal table</span>
-
 <span class="kw">SELECT</span> [StockItemName]
 <span class="kw">FROM</span> [WideWorldImporters].[Warehouse].[StockItems]
 <span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
-<span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span>
-Columnstore <span class="kw">index</span> used <span class="kw">to</span> improve performance <span class="kw">of</span> read-only <span class="kw">tables</span>
-Inspect relationships:
-[<span class="kw">Database</span>] &gt; [<span class="kw">Table</span>] &gt; Keys
-[<span class="kw">Database</span>] &gt; <span class="kw">Database</span> diagrams
-<span class="kw">Create</span> view: [<span class="kw">Database</span>] &gt; [Views] &gt; <span class="kw">right</span> click <span class="kw">to</span> <span class="kw">create</span> <span class="kw">new</span> view. This <span class="kw">is</span> done <span class="kw">to</span> facilitate reporting, since <span class="kw">data</span> that <span class="kw">is</span> logically related (city <span class="kw">and</span> states) may be scattered across multiple <span class="kw">tables</span>; however, it <span class="kw">create</span> a penalty <span class="kw">for</span> writing data. Views can be made persistent <span class="kw">to</span> increase performance: <span class="kw">right</span> click <span class="kw">view</span> &gt; Script <span class="kw">View</span> <span class="kw">as</span> &gt; <span class="kw">ALTER</span> <span class="kw">To</span> &gt; <span class="kw">New</span> <span class="kw">Query</span> Editor Window &gt; <span class="kw">Add</span> “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; <span class="kw">Execute</span> &gt; <span class="kw">Refresh</span> <span class="dt">Object</span> Explorer pane &gt; <span class="kw">Right</span> click <span class="kw">on</span> <span class="kw">Indexes</span> &gt; Clustered <span class="kw">index</span> &gt; <span class="kw">Add</span> columns.</code></pre>
+<span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
   </div>
+  <p>
+   Columnstore index used to improve performance of read-only tables Inspect relationships: [Database] &gt; [Table] &gt; Keys [Database] &gt; Database diagrams Create view: [Database] &gt; [Views] &gt; right click to create new view. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. Views can be made persistent to increase performance: right click view &gt; Script View as &gt; ALTER To &gt; New Query Editor Window &gt; Add “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; Execute &gt; Refresh Object Explorer pane &gt; Right click on Indexes &gt; Clustered index &gt; Add columns.
+  </p>
   <h2>
    <a name="microsoft-access">
     Microsoft Access

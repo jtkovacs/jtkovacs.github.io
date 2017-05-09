@@ -11,11 +11,11 @@ A **database system** is a database/DBMS plus database applications (any applica
 
 The first computerized information systems (IBM, c. 1950) imitated **hierarchical** paper filing systems. The more semantically powerful **graph** AKA network data model followed shortly thereafter (1960s, also IBM). In early systems, file and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
 
-- **redundancy:** the same data collected (\$\$) and stored (\$\$) by multiple departments;
-- **inconsistency:** redundant data that *should be the same* is not updated consistently;
-- **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
+- ***redundancy:*** the same data collected (\$\$) and stored (\$\$) by multiple departments;
+- ***inconsistency:*** redundant data that *should be the same* is not updated consistently;
+- ***inaccessibility:*** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
 
-Hierarchies and graphs were superseded by Edgar Codd's **relational** data model, proven in the 1970s and implemented in the 1980s. A relational database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries). It also:
+Hierarchies and graphs were superseded by Edgar Codd's **relational** data model, proven in the 1970s and implemented in the 1980s. A relational database addresses the aforementioned problems because it is ***centralized*** (reducing redundancy, improving consistency, enabling data integration) and ***abstracted*** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries). It also:
 
 - Scales to accomodate exceptionally large data sets with excellent performance for processing transactions
 - Is platform-independent due to ANSI standards, allowing transfer of code across different products

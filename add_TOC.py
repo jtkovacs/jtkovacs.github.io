@@ -39,20 +39,31 @@ for h in headers:
     TOC.append(space+'- ['+lname+'](#'+aname+')\n')
 
 
-# WRITE  TOC & CONTENTS TO MARKDOWN FILE
+# WRITE HEADER & CONTENTS TO MARKDOWN FILE
 foname = fname[:-3]+"_TOC.md"
 foname = foname.split('/') 
 foname.insert(-1, "TOCS")
 foname = '/'.join(foname)
 fout = open(foname, "w")
+
+## URLs
 url = 'https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html'
 fout.write('<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="'+url+'">'+url+'</a></p>') 
 # fout.write('<span id="path">https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html</span>')
+
+## Word count
+wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
+print(wc)
+#fout.write('<p id="path">Word count: '+wc+'</p>')
+
+## TOC
 fout.write('<table class="TOC"><tr><td>')
 for row in TOC:
     fout.write(row)
 fout.write("</td></tr></table>")
 fout.write("\n")
+
+## Content
 fhand = open(fname, 'r')
 for row in fhand:
     fout.write(row)    

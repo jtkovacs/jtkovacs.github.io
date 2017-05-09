@@ -155,7 +155,7 @@ OO models show **inheritance** as well as decisions, relationships, and processe
 
 ### Unified Modeling Language (UML)
 
-See [notes on UML.](UML.html)
+UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. See [notes on UML.](UML.html)
 
 #### Activity diagrams
 

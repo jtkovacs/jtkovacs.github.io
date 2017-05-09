@@ -144,7 +144,7 @@ Tables with columns, and implicit relationships via attributes; see [notes on re
 Allow specification of constraints, but not overall structure. Objects are instances of classes; classes and objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs)
 
 - Entity-Relationship (ER)
-- Semantic network
+- Semantic (not sure how this is different from a graph data model)
 - Functional
 - Object-oriented
 

@@ -17,11 +17,13 @@ The first computerized information systems (IBM, c. 1950) imitated **hierarchica
 
 Hierarchies and graphs were superseded by Edgar Codd's **relational** data model, proven in the 1970s and implemented in the 1980s. A relational database addresses the aforementioned problems because it is ***centralized*** (reducing redundancy, improving consistency, enabling data integration) and ***abstracted*** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries). It also:
 
-- Scales to accomodate exceptionally large data sets with excellent performance for processing transactions
+- Scales to terabytes with excellent performance for processing transactions
 - Is platform-independent due to ANSI standards, allowing transfer of code across different products
-- Is comparatively cheap to purchase and maintain
+- Is comparatively cheap to purchase and maintain, and widely available
 - Provides a programming/query language that is easy to learn and execute, expediting data retrieval
 - Minimizes data redundancy, conserving storage and safeguarding data quality (although some redundancy is still required to establish relationships)
+- Can capture complex relationships (important for enforcing business rules)
+- [Preserves data integrity](#data-integrity-in-the-relational-model)
 
 **Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data, [NoSQL databases](#NoSQL-databases) (an umbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
 

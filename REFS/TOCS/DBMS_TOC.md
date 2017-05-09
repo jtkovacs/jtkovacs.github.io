@@ -11,7 +11,8 @@
 - [Graph DBMS](#graph-dbms)
 	- [PoolParty](#poolparty)
 	- [Neo4j](#neo4j)
-- [Source](#source)
+- [Sources](#sources)
+	- [References](#references)
 </td></tr></table>
 
 
@@ -90,14 +91,18 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 -- grant privileges
 ```
 
+
+
+
 ## Microsoft SQL Server
 
 - Data types
 - CTE
 
-## Microsoft Access
 
-http://allenbrowne.com/tips.html
+
+
+## Microsoft Access
 
 components of a database: tables, saved queries, views, forms
 data types: short/long text, autonumber/keys, int, float, binary, attachment, hyperlink, calculated field, currency, Lookup Wizard
@@ -212,3 +217,7 @@ The **stream** displays output:
   
 
 # Sources
+
+## References
+
+- [http://allenbrowne.com/tips.html](http://allenbrowne.com/tips.html)

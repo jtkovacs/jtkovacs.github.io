@@ -433,7 +433,7 @@ GO
 <span class="kw">USE</span> dbname
 GO
 
-<span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname …)
+<span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname   )
 <span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)</code></pre>
   </div>
   <p>
@@ -443,7 +443,8 @@ GO
    (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
   </p>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, [ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, 
+[ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
 [ValidFrom] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">START</span>, 
 [ValidTo] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">END</span>, 
 PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))    

@@ -126,7 +126,7 @@ GO
 USE dbname
 GO
 
-CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, fdname …)
+CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, fdname   )
 WITH (MEMORY-OPTIMIZED=ON)
 
 ```
@@ -134,7 +134,8 @@ WITH (MEMORY-OPTIMIZED=ON)
 **Temporal tables** (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
 
 ```SQL
-CREATE TABLE Inventory ([InventoryID] int NOT NULL PRIMARY KEY CLUSTERED, [ItemName] nvarchar(100) NOT NULL, 
+CREATE TABLE Inventory ([InventoryID] int NOT NULL PRIMARY KEY CLUSTERED, 
+[ItemName] nvarchar(100) NOT NULL, 
 [ValidFrom] datetime2 (2) GENERATED ALWAYS AS ROW START, 
 [ValidTo] datetime2 (2) GENERATED ALWAYS AS ROW END, 
 PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo))    

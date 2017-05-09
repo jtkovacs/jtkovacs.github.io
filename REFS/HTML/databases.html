@@ -462,6 +462,20 @@
    <li>
     Supertype and Subtypes have the same primary key: TRUE
    </li>
+   <li>
+    Subclasses have three different translation procedures:
+    <ul>
+     <li>
+      Subclass relations contain superclass PK and unique attributes;
+     </li>
+     <li>
+      Subclass relations contain all superclass attributes &amp; unique attributes;
+     </li>
+     <li>
+      One relation contains all super- and subclass attributes.
+     </li>
+    </ul>
+   </li>
   </ul>
   <h1>
    <a name="database-design">
@@ -871,40 +885,7 @@
    <a href="UML.html">
     notes on UML.
    </a>
-   UML can be translated into relations:
   </p>
-  <ul>
-   <li>
-    Classes become relations.
-   </li>
-   <li>
-    Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written 0..1 to *), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
-   </li>
-   <li>
-    Association classes add their attributes to the association’s relation.
-   </li>
-   <li>
-    Self-associations: rename and recycle same key.
-   </li>
-   <li>
-    Subclasses have three different translation procedures:
-   </li>
-   <li>
-    Subclass relations contain superclass PK and unique attributes;
-   </li>
-   <li>
-    Subclass relations contain all superclass attributes &amp; unique attributes;
-   </li>
-   <li>
-    One relation contains all super- and subclass attributes.
-   </li>
-   <li>
-    Composition: Add PK from main class, but not as a key, just as an attribute.
-   </li>
-   <li>
-    Aggregation: “, with the additional stipulation that main class’s PK can be empty.
-   </li>
-  </ul>
   <h2>
    <a name="logical-design">
     Logical design

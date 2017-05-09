@@ -96,7 +96,10 @@ Supertype/Subtype (described as Superclass/Subclass in the Connolly & Begg book)
 - Makes an ER model more readable: TRUE
 - Introduces more NULL values to a database: FALSE
 - Supertype and Subtypes have the same primary key: TRUE
-
+- Subclasses have three different translation procedures: 
+    - Subclass relations contain superclass PK and unique attributes;
+    - Subclass relations contain all superclass attributes & unique attributes;
+    - One relation contains all super- and subclass attributes.
 
 
 
@@ -182,19 +185,7 @@ __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is t
 
 #### Top-down design with ERDs
 
-See [notes on ER diagrams.](modeling.html#entity-relationship-diagrams) and [notes on UML.](UML.html) UML can be translated into relations:
-
-- Classes become relations.
-- Associations become relations containing the keys from each class; and the key of this new relation depends on the multiplicity of the involved classes. E.g. for a 1-to-many association (also written  0..1 to \*), the key comes from the ‘many’ side. Or, again depending on multiplicity, the attributes from the association can be ‘folded into’ one of the classes.
-- Association classes add their attributes to the association’s relation.
-- Self-associations: rename and recycle same key.
-- Subclasses have three different translation procedures: 
-  - Subclass relations contain superclass PK and unique attributes;
-  - Subclass relations contain all superclass attributes & unique attributes;
-  - One relation contains all super- and subclass attributes.
-- Composition: Add PK from main class, but not as a key, just as an attribute.
-- Aggregation: “, with the additional stipulation that main class’s PK can be empty.
-
+See [notes on ER diagrams.](modeling.html#entity-relationship-diagrams) and [notes on UML.](UML.html)
 
 ## Logical design
     

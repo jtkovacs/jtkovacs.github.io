@@ -127,6 +127,7 @@ Entity A is on the left, entity B is on the right. They are connected with an an
 <img src="../ILLOS/EERD.png" width="300px">
 
 <br/>
+<br/>
 
 #### UML notation
 

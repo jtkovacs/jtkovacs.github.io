@@ -135,7 +135,7 @@ AKA networks, triples, ontologies. Enables explicit modeling of different kinds 
 
 ##### Relational (2G)
 
-Tables with columns, and implicit relationships via attributes; see [notes on databases.](databases.html)
+Tables with columns, and implicit relationships via attributes; see [notes on relational databases.](databases.html#the-relational-data-model)
     
 #### Object-based
 

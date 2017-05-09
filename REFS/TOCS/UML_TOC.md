@@ -1,16 +1,59 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/UML.html">https://jtkovacs.github.io/REFS/HTML/UML.html</a></p><table class="TOC"><tr><td>- [Elements of UML](#elements-of-uml)
+	- [Classes](#classes)
+		- [Superclasses ](#superclasses-)
+		- [Subclasses](#subclasses)
+	- [Associations](#associations)
+			- [Composition](#composition)
+			- [Aggregation](#aggregation)
+			- [Association classes ](#association-classes-)
 - [Sources](#sources)
 </td></tr></table>
 
 # Elements of UML
 
-- Classes: Name, attributes, primary key/methods; analogous to relations.
-- Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations: `1..1 is default; m..n; m..\*; 0..n; 0..\*`.
-- Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
-- Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.  
-- Superclasses are in/complete and disjoint/overlapping.
-- Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity `1..1`. No PK needed!
-- Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+## Classes
+
+Analogous to relations/tables.
+
+- Name
+- Attributes
+- Methods/primary key
+
+### Superclasses 
+
+In/complete and disjoint/overlapping.
+
+### Subclasses
+
+Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.  
+
+
+## Associations
+
+Captures type and multiplicity of relationships between objects of two classes; self-association is possible.
+
+#### Composition
+
+Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity `1..1`. No PK needed!
+
+#### Aggregation
+
+Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+
+Also note the multiplicity of associations: 
+
+- `1..1`
+- `m..n`
+- `m..\*` 
+- `0..n` 
+- `0..\*`
+
+#### Association classes 
+
+Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”.
+
+
+
 
 # Sources
 

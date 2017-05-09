@@ -26,6 +26,42 @@
        <a href="#elements-of-uml">
         Elements of UML
        </a>
+       <ul>
+        <li>
+         <a href="#classes">
+          Classes
+         </a>
+         <ul>
+          <li>
+           <a href="#superclasses-">
+            Superclasses
+           </a>
+          </li>
+          <li>
+           <a href="#subclasses">
+            Subclasses
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#associations">
+          Associations
+         </a>
+         -
+         <a href="#composition">
+          Composition
+         </a>
+         -
+         <a href="#aggregation">
+          Aggregation
+         </a>
+         -
+         <a href="#association-classes-">
+          Association classes
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        <a href="#sources">
@@ -41,38 +77,107 @@
     Elements of UML
    </a>
   </h1>
+  <h2>
+   <a name="classes">
+    Classes
+   </a>
+  </h2>
+  <p>
+   Analogous to relations/tables.
+  </p>
   <ul>
    <li>
-    Classes: Name, attributes, primary key/methods; analogous to relations.
+    Name
    </li>
    <li>
-    Associations: Capture relationships between objects of two classes; self-association is possible. Also note the multiplicity of associations:
-    <code>
-     1..1 is default; m..n; m..\*; 0..n; 0..\*
-    </code>
-    .
+    Attributes
    </li>
    <li>
-    Association classes: Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”
+    Methods/primary key
    </li>
+  </ul>
+  <h3>
+   <a name="superclasses">
+    Superclasses
+   </a>
+  </h3>
+  <p>
+   In/complete and disjoint/overlapping.
+  </p>
+  <h3>
+   <a name="subclasses">
+    Subclasses
+   </a>
+  </h3>
+  <p>
+   Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
+  </p>
+  <h2>
+   <a name="associations">
+    Associations
+   </a>
+  </h2>
+  <p>
+   Captures type and multiplicity of relationships between objects of two classes; self-association is possible.
+  </p>
+  <h4>
+   <a name="composition">
+    Composition
+   </a>
+  </h4>
+  <p>
+   Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
+   <code>
+    1..1
+   </code>
+   . No PK needed!
+  </p>
+  <h4>
+   <a name="aggregation">
+    Aggregation
+   </a>
+  </h4>
+  <p>
+   Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+  </p>
+  <p>
+   Also note the multiplicity of associations:
+  </p>
+  <ul>
    <li>
-    Subclasses: Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
-    <br/>
-   </li>
-   <li>
-    Superclasses are in/complete and disjoint/overlapping.
-   </li>
-   <li>
-    Composition: Objects in one class ‘belong’ to objects in another class; denoted with a solid diamond on the association, default multiplicity
     <code>
      1..1
     </code>
-    . No PK needed!
    </li>
    <li>
-    Aggregation: Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+    <code>
+     m..n
+    </code>
+   </li>
+   <li>
+    <code>
+     m..\*
+    </code>
+   </li>
+   <li>
+    <code>
+     0..n
+    </code>
+   </li>
+   <li>
+    <code>
+     0..\*
+    </code>
    </li>
   </ul>
+  <h4>
+   <a name="association-classes">
+    Association classes
+   </a>
+  </h4>
+  <p>
+   Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”.
+  </p>
   <h1>
    <a name="sources">
     Sources

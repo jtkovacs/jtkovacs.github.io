@@ -20,7 +20,7 @@ Hierarchies and graphs were superseded by Edgar Codd's **relational** data model
 - Scales to terabytes with excellent performance for processing transactions
 - Is platform-independent due to ANSI standards, allowing transfer of code across different products
 - Is comparatively cheap to purchase and maintain, and widely available
-- Provides a programming/query language that is easy to learn and execute, expediting data retrieval
+- Provides a [programming/query language](SQL.html) that is easy to learn and execute, expediting data retrieval
 - Minimizes data redundancy, conserving storage and safeguarding data quality (although some redundancy is still required to establish relationships)
 - Can capture complex relationships (important for enforcing business rules)
 - [Preserves data integrity](#data-integrity-in-the-relational-model)

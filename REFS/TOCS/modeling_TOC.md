@@ -121,7 +121,7 @@ All ERDs capture the entities in a system, along with their attributes and inter
 - [IDEF1X](../ILLOS/idef1x.png)
 - [UML](../ILLOS/UML-relationships.png)
 
-Increasingly, ERDs are also written in [UML.](UML.html))
+Increasingly, ERDs are also written in [UML.](UML.html)
 
 ### Bachmann/crow's foot notation
 

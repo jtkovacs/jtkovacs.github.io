@@ -187,10 +187,17 @@ I think UML is just a notation for creating an ERD? UML can be translated into r
 
 
 
+## Data and log files
+
 ## Transaction management
+
+## Data movement
 
 ## Security
 
+### Encryption
+
+### Backup
 
 
 

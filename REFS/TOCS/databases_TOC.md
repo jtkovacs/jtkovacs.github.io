@@ -14,8 +14,12 @@
 	- [Physical design](#physical-design)
 - [Database administration](#database-administration)
 	- [Indexing & performance](#indexing-&-performance)
+	- [Data and log files](#data-and-log-files)
 	- [Transaction management](#transaction-management)
+	- [Data movement](#data-movement)
 	- [Security](#security)
+		- [Encryption](#encryption)
+		- [Backup](#backup)
 - [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
@@ -210,10 +214,17 @@ I think UML is just a notation for creating an ERD? UML can be translated into r
 
 
 
+## Data and log files
+
 ## Transaction management
+
+## Data movement
 
 ## Security
 
+### Encryption
+
+### Backup
 
 
 

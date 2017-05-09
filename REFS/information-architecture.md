@@ -107,7 +107,7 @@ Wurman (1990) claims there are only five ways to organize items. Similarly, Wyll
 
 ### Information structures
 
-But, Wyllys adds, there are also three fundamental information structures, AKA **data models:** hierarchical, graph, and relational. In their review of [database history](databases.html#history-of-databases) (generations 1-3), Connolly and Begg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
+But, Wyllys adds, there are also three fundamental information structures, AKA **data models:** hierarchic, graph, and relational. In their review of [database history](databases.html#history-of-databases), Connolly and Begg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
 
 #### Record-based
 
@@ -141,12 +141,12 @@ Tables with columns, and implicit relationships via attributes; see [notes on re
     
 #### Object-based
 
-Allow specification of constraints, but not overall structure; include entities with attributes and relationships, describing the state of the object.
+Allow specification of constraints, but not overall structure. Objects are instances of classes; classes and objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs)
 
 - Entity-Relationship (ER)
-- Semantic
+- Semantic network
 - Functional
-- Object-oriented: objects are instances of classes; classes and objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs)
+- Object-oriented
 
 
 ### Questions that arise in organizing

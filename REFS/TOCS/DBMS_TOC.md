@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> word count: 1618</p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1618 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)

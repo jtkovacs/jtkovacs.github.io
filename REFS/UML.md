@@ -1,6 +1,8 @@
 
 # Elements of UML
 
+
+
 ## Classes
 
 Analogous to relations/tables.
@@ -18,6 +20,7 @@ In/complete and disjoint/overlapping.
 Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.  
 
 
+
 ## Associations
 
 Captures relationships between objects of two classes. Self-association is possible.
@@ -26,11 +29,11 @@ Captures relationships between objects of two classes. Self-association is possi
 
 #### Composition
 
-Objects in one class ‘belong’ to objects in another class. Denoted with a solid diamond on the association. Default multiplicity `1..1`, no PK needed.
+Objects in one class ‘belong’ to objects in another class. Denoted with a solid diamond on the association. Default multiplicity `1..1`. PK not required.
 
 #### Aggregation
 
-Objects might ‘belong’ to at most one object of another class; denoted with an empty diamond on the association. PK required.
+Objects might ‘belong’ to, at most, one object of another class. Denoted with an empty diamond on the association. PK required.
 
 ### Multiplicity of associations 
 

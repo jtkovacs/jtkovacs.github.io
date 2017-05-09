@@ -107,13 +107,13 @@ Wurman (1990) claims there are only five ways to organize items. Similarly, Wyll
 
 ### Information structures
 
-But, Wyllys adds, there are also three fundamental information structures, AKA **data models.** In their review of database history (gens 1-3), Connolly and Begg (2015) classify Wyllys' three structures as "record-based", and add "object-oriented" as another top-level category:
+But, Wyllys adds, there are also three fundamental information structures, AKA **data models:** hierarchical, graph, and relational. In their review of [database history](databases.html#history-of-databases) (generations 1-3), Connolly and Begg (2015) classify Wyllys' three structures as "record-based" and add "object-oriented" as another top-level category:
 
 #### Record-based
 
 Can’t express constraints on the data, but express structure well.
 
-##### Hierarchical (1G)
+##### Hierarchical
 
 - Per Zeng (n.d.), strict hierarchies __(trees)__ can model three different types of real-world relationships: 
     - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
@@ -129,11 +129,11 @@ Can’t express constraints on the data, but express structure well.
         - Spinal cord: Central nervous system (BTP)
 - __Polyhierarchy__ (family tree) is more complex than a strict hierarchy
 
-##### Graph (1G)
+##### Graph
 
 AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 
-##### Relational (2G)
+##### Relational
 
 Tables with columns, and implicit relationships via attributes; see [notes on relational databases.](databases.html#the-relational-data-model)
     
@@ -144,7 +144,8 @@ Allow specification of constraints, but not overall structure; include entities 
 - Entity-Relationship (ER)
 - Semantic
 - Functional
-- Object-oriented (3G): adds **behavior** alongside state
+- Object-oriented: objects are instances of classes; classes and objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs)
+
 
 ### Questions that arise in organizing
 

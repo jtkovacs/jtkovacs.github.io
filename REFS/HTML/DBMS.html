@@ -70,8 +70,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          </a>
         </li>
         <li>
-         <a href="#popularity">
-          Popularity
+         <a href="#dbms-by-popularity">
+          DBMS by popularity
          </a>
         </li>
        </ul>
@@ -112,6 +112,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
            <a href="#sql-server-management-studio">
             SQL Server Management Studio
            </a>
+           <ul>
+            <li>
+             <a href="#manage-databases">
+              Manage databases
+             </a>
+            </li>
+            <li>
+             <a href="#manage-tables-">
+              Manage tables
+             </a>
+            </li>
+           </ul>
           </li>
          </ul>
         </li>
@@ -190,8 +202,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <h2>
-   <a name="popularity">
-    Popularity
+   <a name="dbms-by-popularity">
+    DBMS by popularity
    </a>
   </h2>
   <h1>
@@ -274,16 +286,8 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
    </a>
   </h3>
   <p>
-   Shows every instance of a SQL Server product on a machine
+   Shows every instance of a SQL Server product on a machine; lets you restart a process and enable protocols for communication between client &amp; server.
   </p>
-  <ul>
-   <li>
-    Lets you restart a process
-   </li>
-   <li>
-    Lets you enable protocols for communication between client &amp; server
-   </li>
-  </ul>
   <h3>
    <a name="sql-server-management-studio">
     SQL Server Management Studio
@@ -291,20 +295,44 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
   </h3>
   <ul>
    <li>
-    Activity Monitor: use for identifying bottlenecks &amp; kill process if needed (but might cause data corruption!)
+    <strong>
+     Activity Monitor:
+    </strong>
+    use for identifying bottlenecks &amp; kill process if needed (but might cause data corruption!)
    </li>
    <li>
     SQL Server Profiler: lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
    </li>
   </ul>
+  <h4>
+   <a name="manage-databases">
+    Manage databases
+   </a>
+  </h4>
   <p>
-   Create database
+   A database has a default PRIMARY filegroup; can create other filegroups, e.g. to hold tables that should be read-only.
   </p>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">DATABASE</span> dbname</code></pre>
   </div>
+  <h4>
+   <a name="manage-tables">
+    Manage tables
+   </a>
+  </h4>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fieldname datatype, fielddname datatype ... ) <span class="kw">ON</span> Filegroupname</code></pre>
+  </div>
+  <ul>
+   <li>
+    <strong>
+     Create PK:
+    </strong>
+    Right click table &gt; Design &gt; Select field, click key icon &gt; In column properties window, change Identity Specification to “yes”
+   </li>
+  </ul>
   <p>
-   A database has a default PRIMARY filegroup; can create other filegroups, e.g. to hold tables that should be read-only. Create tables: CREATE TABLE tname (fdname dtype, fdname dtype ... ) ON Filegroupname Create PK: Right click table &gt; Design &gt; Select field, click key icon &gt; In column properties window, change Identity Specification to “yes” In-memory AKA memory-optimized tables: used to improve performance of read-write tables. The keyword GO causes preceding commands to be submitted as a batch, and USE ensures that the table is created within the right database: ALTER DATABASE dbname ADD FILEGROUP fgname CONTAINS MEMORY_OPTIMIZED_DATA;
+   In-memory AKA memory-optimized tables: used to improve performance of read-write tables. The keyword GO causes preceding commands to be submitted as a batch, and USE ensures that the table is created within the right database: ALTER DATABASE dbname ADD FILEGROUP fgname CONTAINS MEMORY_OPTIMIZED_DATA;
   </p>
   <p>
    ALTER DATABASE dbname ADD FILE (Name = ‘fname’, Filename ‘fpath/fname’) TO FILEGROUP fgname;

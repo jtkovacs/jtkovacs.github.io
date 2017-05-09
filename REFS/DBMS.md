@@ -23,7 +23,7 @@ A database management system is either (1) a database engine for interacting wit
 - Backup and recovery;
 - Views that are customized to the needs of specific audiences.
 
-## Popularity
+## DBMS by popularity
 
 
 
@@ -86,26 +86,31 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 ### SQL Server Configuration Manager 
 
-Shows every instance of a SQL Server product on a machine
-
-- Lets you restart a process
-- Lets you enable protocols for communication between client & server
+Shows every instance of a SQL Server product on a machine; lets you restart a process and enable protocols for communication between client & server.
 
 ### SQL Server Management Studio
 
-- Activity Monitor: use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
+- **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
 - SQL Server Profiler: lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
 
 
-Create database
+#### Manage databases
+
+A database has a default PRIMARY filegroup; can create other filegroups, e.g. to hold tables that should be read-only.
 
 ```SQL
 CREATE DATABASE dbname
 ```
 
-A database has a default PRIMARY filegroup; can create other filegroups, e.g. to hold tables that should be read-only.
-Create tables: CREATE TABLE tname (fdname dtype, fdname dtype ... ) ON Filegroupname
-Create PK: Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
+#### Manage tables 
+
+```SQL
+CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupname
+```
+
+- **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
+
+
 In-memory AKA memory-optimized tables: used to improve performance of read-write tables. The keyword GO causes preceding commands to be submitted as a batch, and USE ensures that the table is created within the right database:
 ALTER DATABASE dbname
 ADD FILEGROUP fgname

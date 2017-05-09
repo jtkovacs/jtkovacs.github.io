@@ -7,7 +7,6 @@
 		- [Manage users](#manage-users)
 	- [Microsoft SQL Server](#microsoft-sql-server)
 	- [Microsoft Access](#microsoft-access)
-		- [Components](#components)
 		- [Data types](#data-types)
 		- [Migrating to Microsoft SQL Server](#migrating-to-microsoft-sql-server)
 - [Graph DBMS](#graph-dbms)
@@ -106,8 +105,6 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 ## Microsoft Access
 
-### Components
-
 An Access database is made up of different objects:
 
 - Tables
@@ -118,8 +115,6 @@ An Access database is made up of different objects:
 - Modules are for Visual Basic code
 
 These objects might not be immediately visible. To see hidden database objects, right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
-
-
 
 ### Data types
 
@@ -136,19 +131,25 @@ These objects might not be immediately visible. To see hidden database objects, 
 
 
 date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
+
+
 create tables:
-Create > Table (or Table Design)
-External Data > … (can import from Excel, XML, CSV, etc.; Access will add a primary key)
-Autosaves when inputting records; need to save changes to DB structure though
-Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
-define relationships:
+- Create > Table (or Table Design)
+- External Data > … (can import from Excel, XML, CSV, etc.; Access will add a primary key)
+- Autosaves when inputting records; need to save changes to DB structure though
+
+- Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
+
+- define relationships:
 Database Tools > Relationships; drag & drop interface
 Check “Enforce referential integrity” , “Cascade update” and “Cascade delete” to prevent orphan records
-control input:
+
+- control input:
 can make a field required
 specify formatting, e.g. e.g. (xxx) xxx-xxxx for a phone number: Design View > choose field > Input Mask > … 
 default value: Design View > choose field > Default Value > … > =”United States”
-validation rules: 
+
+- validation rules: 
 Design View > choose field > Validation Rule > … > =Date(), =”MasterCard” OR “Visa”
 Design View > choose field > Validation Text > The credit card you’ve entered has expired!
 lookup tables: Design View > choose field > Data Type > Lookup Wizard

@@ -109,11 +109,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          </a>
          <ul>
           <li>
-           <a href="#components">
-            Components
-           </a>
-          </li>
-          <li>
            <a href="#data-types">
             Data types
            </a>
@@ -309,11 +304,6 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     Microsoft Access
    </a>
   </h2>
-  <h3>
-   <a name="components">
-    Components
-   </a>
-  </h3>
   <p>
    An Access database is made up of different objects:
   </p>
@@ -378,10 +368,35 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
    </li>
   </ul>
   <p>
-   date delimiter: BETWEEN #00/00/0000# AND #00/00/0000# create tables: Create &gt; Table (or Table Design) External Data &gt; … (can import from Excel, XML, CSV, etc.; Access will add a primary key) Autosaves when inputting records; need to save changes to DB structure though Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers define relationships: Database Tools &gt; Relationships; drag &amp; drop interface Check “Enforce referential integrity” , “Cascade update” and “Cascade delete” to prevent orphan records control input: can make a field required specify formatting, e.g. e.g. (xxx) xxx-xxxx for a phone number: Design View &gt; choose field &gt; Input Mask &gt; … default value: Design View &gt; choose field &gt; Default Value &gt; … &gt; =”United States” validation rules: Design View &gt; choose field &gt; Validation Rule &gt; … &gt; =Date(), =”MasterCard” OR “Visa” Design View &gt; choose field &gt; Validation Text &gt; The credit card you’ve entered has expired! lookup tables: Design View &gt; choose field &gt; Data Type &gt; Lookup Wizard Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected Lookup value list is static, good for a small number of relatively fixed values optimize: Design View &gt; choose field &gt; Field Size; Indexed query types: Create &gt; Query Design&gt; Totals, Select, Update, Make Table, Delete, Append, Crosstab &gt; Run choose join type: double click on UML associations in Query Design view deletion: Query Design &gt; join Table and Query affecting Table &gt; Property Sheet &gt; set Unique Records to Yes &gt; Delete &gt; Run append is a permanent combination of two tables; union is a temporary combination crosstab is similar to totals, but presents the results in matrix form create forms: GUIs for database users Choose table &gt; Create &gt; Form (or Form Wizard, or Form Design) Basing forms on queries (rather than tables) makes future modifications easier http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm for navigating multiple forms: Create &gt; Navigation; drag &amp; drop forms onto this page specify form properties (many): Form Design &gt; Properties Sheet &gt; Format, Data, Event, Other
-   <br/>
-   … Properties Sheet &gt; Data &gt; Data Source → Design &gt; Add Existing Fields Design View &gt; Layout Add a combo box to the header of a form for easier navigation (e.g. by employee name) reports: for printing, reading, analyzing trends Create &gt; Report (or Report Design or Report Wizard) Design &gt; Group &amp; Sort, Totals Format &gt; Conditional Formatting database maintenance &amp; navigability: Database Tools &gt; Object Dependencies, Database Documenter, Compact &amp; Repair (run periodically) can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane Design View of tables/queries/etc. lets you add descriptions and tool tips for fields Database Tools &gt; Access Database (splits database into front-end=queries+forms+reports and back-end=tables) troubleshooting: External Data &gt; Linked Table Manager build a custom ribbon with frequently-used commands &amp; macros: Options &gt; Customize Ribbon startup actions, default views, and limited views: Options &gt; Current Database bypass by holding shift key while opening database macros: Create &gt; Macro button macros: Design &gt; create a button &gt; Property Sheet &gt; Events &gt; On Click &gt; … &gt; ApplyFilter remove all filters: ApplyFilter &gt; Where Condition = true data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; … name macro autoexec to run it on launch
+   date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
   </p>
+  <p>
+   create tables: - Create &gt; Table (or Table Design) - External Data &gt; … (can import from Excel, XML, CSV, etc.; Access will add a primary key) - Autosaves when inputting records; need to save changes to DB structure though
+  </p>
+  <ul>
+   <li>
+    <p>
+     Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
+    </p>
+   </li>
+   <li>
+    <p>
+     define relationships: Database Tools &gt; Relationships; drag &amp; drop interface Check “Enforce referential integrity” , “Cascade update” and “Cascade delete” to prevent orphan records
+    </p>
+   </li>
+   <li>
+    <p>
+     control input: can make a field required specify formatting, e.g. e.g. (xxx) xxx-xxxx for a phone number: Design View &gt; choose field &gt; Input Mask &gt; … default value: Design View &gt; choose field &gt; Default Value &gt; … &gt; =”United States”
+    </p>
+   </li>
+   <li>
+    <p>
+     validation rules: Design View &gt; choose field &gt; Validation Rule &gt; … &gt; =Date(), =”MasterCard” OR “Visa” Design View &gt; choose field &gt; Validation Text &gt; The credit card you’ve entered has expired! lookup tables: Design View &gt; choose field &gt; Data Type &gt; Lookup Wizard Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected Lookup value list is static, good for a small number of relatively fixed values optimize: Design View &gt; choose field &gt; Field Size; Indexed query types: Create &gt; Query Design&gt; Totals, Select, Update, Make Table, Delete, Append, Crosstab &gt; Run choose join type: double click on UML associations in Query Design view deletion: Query Design &gt; join Table and Query affecting Table &gt; Property Sheet &gt; set Unique Records to Yes &gt; Delete &gt; Run append is a permanent combination of two tables; union is a temporary combination crosstab is similar to totals, but presents the results in matrix form create forms: GUIs for database users Choose table &gt; Create &gt; Form (or Form Wizard, or Form Design) Basing forms on queries (rather than tables) makes future modifications easier http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm for navigating multiple forms: Create &gt; Navigation; drag &amp; drop forms onto this page specify form properties (many): Form Design &gt; Properties Sheet &gt; Format, Data, Event, Other
+     <br/>
+     … Properties Sheet &gt; Data &gt; Data Source → Design &gt; Add Existing Fields Design View &gt; Layout Add a combo box to the header of a form for easier navigation (e.g. by employee name) reports: for printing, reading, analyzing trends Create &gt; Report (or Report Design or Report Wizard) Design &gt; Group &amp; Sort, Totals Format &gt; Conditional Formatting database maintenance &amp; navigability: Database Tools &gt; Object Dependencies, Database Documenter, Compact &amp; Repair (run periodically) can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane Design View of tables/queries/etc. lets you add descriptions and tool tips for fields Database Tools &gt; Access Database (splits database into front-end=queries+forms+reports and back-end=tables) troubleshooting: External Data &gt; Linked Table Manager build a custom ribbon with frequently-used commands &amp; macros: Options &gt; Customize Ribbon startup actions, default views, and limited views: Options &gt; Current Database bypass by holding shift key while opening database macros: Create &gt; Macro button macros: Design &gt; create a button &gt; Property Sheet &gt; Events &gt; On Click &gt; … &gt; ApplyFilter remove all filters: ApplyFilter &gt; Where Condition = true data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; … name macro autoexec to run it on launch
+    </p>
+   </li>
+  </ul>
   <h3>
    <a name="migrating-to-microsoft-sql-server">
     Migrating to Microsoft SQL Server

@@ -154,7 +154,7 @@
    <a href="information-architecture.html#information-structures">
     notes on information structures
    </a>
-   for a review of the major data models: hierarchic, relational, graph, object, semantic, functional); or (2) this structured data plus a database management system (DBMS).
+   for a review of the major data models---hierarchic, relational, graph, object, semantic, functional); or (2) this structured data plus a database management system (DBMS).
   </p>
   <p>
    A
@@ -168,74 +168,67 @@
   </p>
   <ul>
    <li>
-    Data is managed via a database management system
-    <a href="DBMS.html">
-     (DBMS)
-    </a>
-    which includes
-    <strong>
-     data sublanguages:
-    </strong>
+    A convenient language offering two data sublanguages:
     <ul>
      <li>
-      a data definition language
+      A data definition language
       <strong>
        (DDL)
       </strong>
-      tha t expresses a schema, stored in the
+      that expresses a schema, stored in the
       <strong>
        system catalog
       </strong>
       (AKA data directory, data dictionary);
      </li>
      <li>
-      a data manipulation language
+      A data manipulation language
       <strong>
        (DML),
       </strong>
       <ul>
        <li>
-        which includes the capacity to query (retrieve) the data and is therefore often called a query language (though technically incorrect);
+        which enables CRUD operations (create, read, update, delete);
        </li>
        <li>
-        which also includes the capacity to create, update, and delete data;
-       </li>
-       <li>
-        CRUD operations (create, read, update, delete)
+        which includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
        </li>
        <li>
         which may be procedural or, as with SQL, nonprocedural/declarative;
        </li>
       </ul>
      </li>
-     <li>
-      access to metadata about the database, i.e., the system catalog;
-     </li>
-     <li>
-      support for concurrent access
-      <strong>
-       (data sharing);
-      </strong>
-     </li>
-     <li>
-      enforcement of access authorization
-      <strong>
-       (security);
-      </strong>
-     </li>
-     <li>
-      enforcement of constraints on data input
-      <strong>
-       (integrity);
-      </strong>
-     </li>
-     <li>
-      backup and recovery;
-     </li>
-     <li>
-      views that are customized to the needs of specific audiences;
-     </li>
     </ul>
+   </li>
+   <li>
+    Access to database metadata through the
+    <strong>
+     system catalog;
+    </strong>
+   </li>
+   <li>
+    Support for concurrent access
+    <strong>
+     (data sharing);
+    </strong>
+   </li>
+   <li>
+    Enforcement of access authorization
+    <strong>
+     (security);
+    </strong>
+   </li>
+   <li>
+    Enforcement of constraints on data input
+    <strong>
+     (integrity);
+    </strong>
+   </li>
+   <li>
+    Backup and recovery;
+   </li>
+   <li>
+    Views that are customized to the needs of specific audiences.
    </li>
   </ul>
   <p>

@@ -45,14 +45,12 @@ The first computerized information systems (IBM, c. 1950) imitated **hierarchica
 - **inconsistency:** redundant data that *should be the same* is not updated consistently;
 - **inaccessibility:** software developers were needed to write queries and integrate data across applications; no ad hoc queries or data processing.
 
-A database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries).
-
-Hierarchies and graphs were superseded by Edgar Codd's **relational** data model, proven in the 1970s and implemented in the 1980s. The relational model had the following benefits:
+Hierarchies and graphs were superseded by Edgar Codd's **relational** data model, proven in the 1970s and implemented in the 1980s. A relational database addresses the aforementioned problems because it is **centralized** (reducing redundancy, improving consistency, enabling data integration) and **abstracted** (available as a black box to interface with many different applications; offering an accessible language for ad hoc queries). It also:
 
 - Scales to accomodate exceptionally large data sets with excellent performance for processing transactions
-- ANSI standards enable platform-independence and transfer of code across different products
-- Comparatively cheap to purchase and maintain
-- Programming/query language that is easy to learn and execute, expediting data retrieval
+- Is platform-independent due to ANSI standards, allowing transfer of code across different products
+- Is comparatively cheap to purchase and maintain
+- Provides a programming/query language that is easy to learn and execute, expediting data retrieval
 - Minimizes data redundancy, conserving storage and safeguarding data quality (some redundancy still required to establish relationships)
 
 **Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. 

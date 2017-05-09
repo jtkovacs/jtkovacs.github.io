@@ -107,7 +107,7 @@ Wurman (1990) claims there are only five ways to organize items. Similarly, Wyll
 
 ### Information structures
 
-But, Wyllys adds, there are also three fundamental information structures, AKA **data models:** hierarchic, graph, and relational. In their review of [database history](databases.html#history-of-databases), Connolly and Begg (2015) classify Wyllys' three structures as "record-based" and add "object-based" as another top-level category:
+But, Wyllys adds, there are also three fundamental information structures, AKA **data models:** hierarchic, graph, and relational. In their review of [database history,](databases.html#history-of-databases) Connolly and Begg (2015) classify Wyllys' three structures as "record-based" and add "object-based" as another top-level category:
 
 #### Record-based
 
@@ -118,7 +118,7 @@ Can’t express constraints on the data, but express structure well.
 Per Zeng (n.d.), 
 
 - **Strict hierarchies** (trees) can model three different types of real-world relationships: 
-    - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X
+    - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X_
         - Succulent: Cactus (NTG)
         - Cactus: Succulent (BTG)
     - __Instance:__ _X is a Y_ but not a _kind_ of Y or a _part_ of Y

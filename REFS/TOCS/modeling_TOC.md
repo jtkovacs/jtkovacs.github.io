@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1368 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1369 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
 	- [Why model?](#why-model?)
 	- [Model typologies](#model-typologies)
 - [Models by form and notation](#models-by-form-and-notation)
@@ -137,7 +137,7 @@ This is a notation that describes the optionality/modality/participation and car
 
 Entity A is on the left, entity B is on the right. They are connected with an annotated line. Annotations on the right side of the line describe how A relates to B: for a single row in A, how many rows minimum and how many rows maximum could appear in B? Annotations on the left side of the line describe how B relates to A: for a single row in B, how many rows could appear in A?
 
-<img src="../ILLOS/crowsfoot.gif" width="350px">
+<img src="../ILLOS/crowsfoot.gif" width="350px" align="left">
 
 <img src="../ILLOS/EERD.png" width="300px">
 

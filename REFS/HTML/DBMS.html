@@ -114,8 +114,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
            </a>
           </li>
           <li>
-           <a href="#quirks">
-            Quirks
+           <a href="#administration">
+            Administration
+           </a>
+          </li>
+          <li>
+           <a href="#navigability">
+            Navigability
            </a>
           </li>
           <li>
@@ -319,26 +324,143 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
   </p>
   <ul>
    <li>
-    Tables
+    <strong>
+     Tables
+    </strong>
+    <ul>
+     <li>
+      Autosaves when inputting records; need to save changes to DB structure though
+     </li>
+     <li>
+      Database Tools &gt; Relationships; drag &amp; drop interface
+     </li>
+     <li>
+      <strong>
+       Control input:
+      </strong>
+      <ul>
+       <li>
+        Check “Enforce referential integrity”, “Cascade update” and “Cascade delete” to prevent orphan records
+       </li>
+       <li>
+        Can make a field required
+       </li>
+       <li>
+        Specify formatting: Design View &gt; choose field &gt; Input Mask &gt; e.g. (xxx) xxx-xxxx
+       </li>
+       <li>
+        Default value: Design View &gt; choose field &gt; Default Value &gt; … &gt; =”United States”
+       </li>
+       <li>
+        Design View &gt; choose field &gt; Validation Rule &gt; … &gt; =Date(), =”MasterCard” OR “Visa”
+       </li>
+       <li>
+        Design View &gt; choose field &gt; Validation Text &gt; The credit card you’ve entered has expired!
+       </li>
+      </ul>
+     </li>
+    </ul>
    </li>
    <li>
-    Queries
+    <strong>
+     Queries
+    </strong>
+    <ul>
+     <li>
+      Create &gt; Query Design&gt; Totals, Select, Update, Make Table, Delete, Append, Crosstab &gt; Run
+     </li>
+     <li>
+      choose join type: double click on UML associations in Query Design view
+     </li>
+     <li>
+      deletion: Query Design &gt; join Table and Query affecting Table &gt; Property Sheet &gt; set Unique Records to Yes &gt; Delete &gt; Run
+     </li>
+     <li>
+      append is a permanent combination of two tables; union is a temporary combination
+     </li>
+     <li>
+      crosstab is similar to totals, but presents the results in matrix form
+     </li>
+    </ul>
    </li>
    <li>
-    Forms give a user-friendly interface for interacting with tables and queries
+    <strong>
+     Forms
+    </strong>
+    give a user-friendly interface for interacting with tables and queries:
+    <ul>
+     <li>
+      Choose table &gt; Create &gt; Form (or Form Wizard, or Form Design)
+     </li>
+     <li>
+      Basing forms on queries (rather than tables) makes future modifications easier
+     </li>
+     <li>
+      http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm
+     </li>
+     <li>
+      for navigating multiple forms: Create &gt; Navigation; drag &amp; drop forms onto this page
+     </li>
+     <li>
+      specify form properties (many): Form Design &gt; Properties Sheet &gt; Format, Data, Event, Other … Properties Sheet &gt; Data &gt; Data Source → Design &gt; Add Existing Fields
+     </li>
+     <li>
+      Design View &gt; Layout
+     </li>
+     <li>
+      Add a combo box to the header of a form for easier navigation (e.g. by employee name)
+     </li>
+    </ul>
    </li>
    <li>
-    Reports, unlike forms, are printer-friendly
+    <strong>
+     Reports,
+    </strong>
+    unlike forms, are printer-friendly
+    <ul>
+     <li>
+      Create &gt; Report (or Report Design or Report Wizard)
+     </li>
+     <li>
+      Design &gt; Group &amp; Sort, Totals
+     </li>
+     <li>
+      Format &gt; Conditional Formatting
+     </li>
+    </ul>
    </li>
    <li>
-    Macros are a way to make operations automatic; they're used to make forms more capable
+    <strong>
+     Macros
+    </strong>
+    are a way to make operations automatic; they're used to make forms more capable
+    <ul>
+     <li>
+      Create &gt; Macro
+     </li>
+     <li>
+      button macros: Design &gt; create a button &gt; Property Sheet &gt; Events &gt; On Click &gt; … &gt; ApplyFilter
+     </li>
+     <li>
+      remove all filters: ApplyFilter &gt; Where Condition = true
+     </li>
+     <li>
+      data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; …
+     </li>
+     <li>
+      name macro autoexec to run it on launch
+     </li>
+    </ul>
    </li>
    <li>
-    Modules are for Visual Basic code
+    <strong>
+     Modules
+    </strong>
+    are for Visual Basic code
    </li>
   </ul>
   <p>
-   These objects might not be immediately visible. To see hidden database objects, right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
+   Objects might not be immediately visible; right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
   </p>
   <h3>
    <a name="data-types">
@@ -348,6 +470,11 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
   <ul>
    <li>
     short/long text
+    <ul>
+     <li>
+      Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
+     </li>
+    </ul>
    </li>
    <li>
     autonumber/keys
@@ -375,135 +502,49 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
    </li>
    <li>
     Lookup Wizard
+    <ul>
+     <li>
+      lookup tables: Design View &gt; choose field &gt; Data Type &gt; Lookup Wizard
+     </li>
+     <li>
+      Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
+     </li>
+     <li>
+      Lookup value list is static, good for a small number of relatively fixed values
+     </li>
+    </ul>
    </li>
   </ul>
   <h3>
-   <a name="quirks">
-    Quirks
+   <a name="administration">
+    Administration
    </a>
   </h3>
   <ul>
    <li>
-    Autosaves when inputting records; need to save changes to DB structure though
+    optimize: Design View &gt; choose field &gt; Field Size; Indexed
    </li>
-  </ul>
-  <p>
-   define relationships:
-  </p>
-  <ul>
-   <li>
-    Database Tools &gt; Relationships; drag &amp; drop interface
-   </li>
-   <li>
-    Check “Enforce referential integrity” , “Cascade update” and “Cascade delete” to prevent orphan records
-   </li>
-  </ul>
-  <p>
-   control input:
-  </p>
-  <ul>
-   <li>
-    can make a field required
-   </li>
-   <li>
-    specify formatting, e.g. e.g. (xxx) xxx-xxxx for a phone number: Design View &gt; choose field &gt; Input Mask &gt; …
-   </li>
-   <li>
-    default value: Design View &gt; choose field &gt; Default Value &gt; … &gt; =”United States”
-   </li>
-  </ul>
-  <p>
-   validation rules:
-  </p>
-  <ul>
-   <li>
-    Design View &gt; choose field &gt; Validation Rule &gt; … &gt; =Date(), =”MasterCard” OR “Visa”
-   </li>
-   <li>
-    Design View &gt; choose field &gt; Validation Text &gt; The credit card you’ve entered has expired!
-   </li>
-   <li>
-    lookup tables: Design View &gt; choose field &gt; Data Type &gt; Lookup Wizard
-   </li>
-   <li>
-    Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
-   </li>
-   <li>
-    Lookup value list is static, good for a small number of relatively fixed values
-   </li>
-  </ul>
-  <p>
-   optimize: Design View &gt; choose field &gt; Field Size; Indexed
-  </p>
-  <p>
-   query types: Create &gt; Query Design&gt; Totals, Select, Update, Make Table, Delete, Append, Crosstab &gt; Run
-  </p>
-  <ul>
-   <li>
-    choose join type: double click on UML associations in Query Design view
-   </li>
-   <li>
-    deletion: Query Design &gt; join Table and Query affecting Table &gt; Property Sheet &gt; set Unique Records to Yes &gt; Delete &gt; Run
-   </li>
-   <li>
-    append is a permanent combination of two tables; union is a temporary combination
-   </li>
-   <li>
-    crosstab is similar to totals, but presents the results in matrix form
-   </li>
-  </ul>
-  <p>
-   create forms: GUIs for database users
-  </p>
-  <ul>
-   <li>
-    Choose table &gt; Create &gt; Form (or Form Wizard, or Form Design)
-   </li>
-   <li>
-    Basing forms on queries (rather than tables) makes future modifications easier
-   </li>
-   <li>
-    http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm
-   </li>
-   <li>
-    for navigating multiple forms: Create &gt; Navigation; drag &amp; drop forms onto this page
-   </li>
-   <li>
-    specify form properties (many): Form Design &gt; Properties Sheet &gt; Format, Data, Event, Other … Properties Sheet &gt; Data &gt; Data Source → Design &gt; Add Existing Fields Design View &gt; Layout Add a combo box to the header of a form for easier navigation (e.g. by employee name)
-   </li>
-  </ul>
-  <p>
-   reports: for printing, reading, analyzing trends
-  </p>
-  <ul>
-   <li>
-    Create &gt; Report (or Report Design or Report Wizard)
-   </li>
-   <li>
-    Design &gt; Group &amp; Sort, Totals
-   </li>
-   <li>
-    Format &gt; Conditional Formatting
-   </li>
-  </ul>
-  <p>
-   database maintenance &amp; navigability:
-  </p>
-  <ul>
    <li>
     Database Tools &gt; Object Dependencies, Database Documenter, Compact &amp; Repair (run periodically)
-   </li>
-   <li>
-    can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
-   </li>
-   <li>
-    Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
    </li>
    <li>
     Database Tools &gt; Access Database (splits database into front-end=queries+forms+reports and back-end=tables)
    </li>
    <li>
     troubleshooting: External Data &gt; Linked Table Manager
+   </li>
+  </ul>
+  <h3>
+   <a name="navigability">
+    Navigability
+   </a>
+  </h3>
+  <ul>
+   <li>
+    can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
+   </li>
+   <li>
+    Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
    </li>
    <li>
     build a custom ribbon with frequently-used commands &amp; macros: Options &gt; Customize Ribbon
@@ -515,31 +556,16 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     bypass by holding shift key while opening database
    </li>
   </ul>
-  <p>
-   macros: Create &gt; Macro
-  </p>
-  <ul>
-   <li>
-    button macros: Design &gt; create a button &gt; Property Sheet &gt; Events &gt; On Click &gt; … &gt; ApplyFilter
-   </li>
-   <li>
-    remove all filters: ApplyFilter &gt; Where Condition = true
-   </li>
-   <li>
-    data macros: use to make logs that capture editing. create a log table; Table &gt; After Update &gt; …
-   </li>
-   <li>
-    name macro autoexec to run it on launch
-   </li>
-  </ul>
   <h3>
    <a name="sql-dialect-novelties">
     SQL dialect novelties
    </a>
   </h3>
-  <p>
-   date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
-  </p>
+  <ul>
+   <li>
+    date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
+   </li>
+  </ul>
   <h3>
    <a name="migrating-to-microsoft-sql-server">
     Migrating to Microsoft SQL Server

@@ -90,18 +90,48 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 An Access database is made up of different objects:
 
-- Tables
-- Queries
-- Forms give a user-friendly interface for interacting with tables and queries
-- Reports, unlike forms, are printer-friendly
-- Macros are a way to make operations automatic; they're used to make forms more capable
-- Modules are for Visual Basic code
+- **Tables**
+    - Autosaves when inputting records; need to save changes to DB structure though
+    - Database Tools > Relationships; drag & drop interface
+    - **Control input:**
+        - Check “Enforce referential integrity”, “Cascade update” and “Cascade delete” to prevent orphan records
+        - Can make a field required
+        - Specify formatting: Design View > choose field > Input Mask > e.g. (xxx) xxx-xxxx
+        - Default value: Design View > choose field > Default Value > … > =”United States”
+        - Design View > choose field > Validation Rule > … > =Date(), =”MasterCard” OR “Visa”
+        - Design View > choose field > Validation Text > The credit card you’ve entered has expired!
+- **Queries**
+    - Create > Query Design> Totals, Select, Update, Make Table, Delete, Append, Crosstab > Run
+    - choose join type: double click on UML associations in Query Design view
+    - deletion: Query Design > join Table and Query affecting Table > Property Sheet > set Unique Records to Yes > Delete > Run
+    - append is a permanent combination of two tables; union is a temporary combination
+    - crosstab is similar to totals, but presents the results in matrix form
+- **Forms** give a user-friendly interface for interacting with tables and queries:
+    - Choose table > Create > Form (or Form Wizard, or Form Design)
+    - Basing forms on queries (rather than tables) makes future modifications easier
+    - http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm 
+    - for navigating multiple forms: Create > Navigation; drag & drop forms onto this page
+    - specify form properties (many): Form Design > Properties Sheet > Format, Data, Event, Other … Properties Sheet > Data > Data Source → Design > Add Existing Fields 
+    - Design View > Layout
+    - Add a combo box to the header of a form for easier navigation (e.g. by employee name)
+- **Reports,** unlike forms, are printer-friendly
+    - Create > Report (or Report Design or Report Wizard)
+    - Design > Group & Sort, Totals
+    - Format > Conditional Formatting
+- **Macros** are a way to make operations automatic; they're used to make forms more capable
+    - Create > Macro
+    - button macros: Design > create a button > Property Sheet > Events > On Click > … > ApplyFilter
+    - remove all filters: ApplyFilter > Where Condition = true
+    - data macros: use to make logs that capture editing. create a log table; Table > After Update > … 
+    - name macro autoexec to run it on launch
+- **Modules** are for Visual Basic code
 
-These objects might not be immediately visible. To see hidden database objects, right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
+Objects might not be immediately visible; right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
 
 ### Data types
 
 - short/long text
+    - Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
 - autonumber/keys 
 - int
 - float 
@@ -111,77 +141,28 @@ These objects might not be immediately visible. To see hidden database objects, 
 - calculated field
 - currency
 - Lookup Wizard
+    - lookup tables: Design View > choose field > Data Type > Lookup Wizard
+    - Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
+    - Lookup value list is static, good for a small number of relatively fixed values
 
-### Quirks
+### Administration
 
-- Autosaves when inputting records; need to save changes to DB structure though
-
-define relationships:
-
-- Database Tools > Relationships; drag & drop interface
-- Check “Enforce referential integrity” , “Cascade update” and “Cascade delete” to prevent orphan records
-
-control input:
-
-- can make a field required
-- specify formatting, e.g. e.g. (xxx) xxx-xxxx for a phone number: Design View > choose field > Input Mask > … 
-- default value: Design View > choose field > Default Value > … > =”United States”
-
-validation rules: 
-
-- Design View > choose field > Validation Rule > … > =Date(), =”MasterCard” OR “Visa”
-- Design View > choose field > Validation Text > The credit card you’ve entered has expired!
-- lookup tables: Design View > choose field > Data Type > Lookup Wizard
-- Lookup list is dynamic, based on a query; leave the “Hide key column” check box selected
-- Lookup value list is static, good for a small number of relatively fixed values
-
-optimize: Design View > choose field > Field Size; Indexed
-
-query types: Create > Query Design> Totals, Select, Update, Make Table, Delete, Append, Crosstab > Run
-
-- choose join type: double click on UML associations in Query Design view
-- deletion: Query Design > join Table and Query affecting Table > Property Sheet > set Unique Records to Yes > Delete > Run
-- append is a permanent combination of two tables; union is a temporary combination
-- crosstab is similar to totals, but presents the results in matrix form
-
-create forms: GUIs for database users
-
-- Choose table > Create > Form (or Form Wizard, or Form Design)
-- Basing forms on queries (rather than tables) makes future modifications easier
-- http://www.opengatesw.net/ms-access-tutorials/Access-Articles/MS-Access-Forms.htm 
-- for navigating multiple forms: Create > Navigation; drag & drop forms onto this page
-- specify form properties (many): Form Design > Properties Sheet > Format, Data, Event, Other … Properties Sheet > Data > Data Source → Design > Add Existing Fields 
-Design View > Layout
-Add a combo box to the header of a form for easier navigation (e.g. by employee name)
-
-reports: for printing, reading, analyzing trends
-
-- Create > Report (or Report Design or Report Wizard)
-- Design > Group & Sort, Totals
-- Format > Conditional Formatting
-
-database maintenance & navigability:
-
+- optimize: Design View > choose field > Field Size; Indexed
 - Database Tools > Object Dependencies, Database Documenter, Compact & Repair (run periodically)
-- can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
-- Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
 - Database Tools > Access Database (splits database into front-end=queries+forms+reports and back-end=tables)
 - troubleshooting: External Data > Linked Table Manager
+
+### Navigability
+
+- can create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
+- Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
 - build a custom ribbon with frequently-used commands & macros: Options > Customize Ribbon
 - startup actions, default views, and limited views: Options > Current Database
 - bypass by holding shift key while opening database
 
-macros: Create > Macro
-
-- button macros: Design > create a button > Property Sheet > Events > On Click > … > ApplyFilter
-- remove all filters: ApplyFilter > Where Condition = true
-- data macros: use to make logs that capture editing. create a log table; Table > After Update > … 
-- name macro autoexec to run it on launch
-
 ### SQL dialect novelties
 
-date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
-
+- date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
 
 ### Migrating to Microsoft SQL Server
 

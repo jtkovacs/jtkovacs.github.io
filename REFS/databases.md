@@ -263,7 +263,7 @@ __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is t
 
 #### Top-down design with ERDs
 
-A top-down design approach creates an entity relationship diagram (ERD), starting with entities and associations then adding in attributes. ERDs can be done in [ER notation](modeling.html#entity-relationship-diagrams) or [UML notation,](UML.html) which predates ER notation but is gradually replacing it. MS Visio offers both.
+A top-down design approach creates an entity relationship diagram (ERD), starting with entities and associations then adding in attributes. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both.
 
 ## Logical design
     

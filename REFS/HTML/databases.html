@@ -57,6 +57,11 @@
          </a>
          <ul>
           <li>
+           <a href="#the-relational-data-model">
+            The relational data model
+           </a>
+          </li>
+          <li>
            <a href="#top-down-vs.-bottom-up-design">
             Top-down vs. bottom-up design
            </a>
@@ -164,7 +169,7 @@
    <a href="DBMS.html">
     (DBMS)
    </a>
-   is either (1) a database engine for interacting with the database plus a database frontend for interacting with the user; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). DBMS provide the following functions:
+   is either (1) a database engine for interacting with the database plus a database frontend for interacting with the user; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL); most offer the following functions:
   </p>
   <ul>
    <li>
@@ -175,11 +180,7 @@
       <strong>
        (DDL)
       </strong>
-      that expresses a schema, stored in the
-      <strong>
-       system catalog
-      </strong>
-      (AKA data directory, data dictionary);
+      that expresses a schema, stored in the system catalog AKA data directory, data dictionary;
      </li>
      <li>
       A data manipulation language
@@ -241,9 +242,6 @@
     database environment
    </strong>
    is the hardware plus software, data, procedures, and people involved in managing a database.
-  </p>
-  <p>
-   In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
   </p>
   <h2>
    <a name="history-of-databases">
@@ -427,6 +425,14 @@
     </ul>
    </li>
   </ul>
+  <h3>
+   <a name="the-relational-data-model">
+    The relational data model
+   </a>
+  </h3>
+  <p>
+   In a relational database, the data model is of tables/relations; other data models are XML, graph, and documents. Tables have rows (also called tuples or records) and columns (also called attributes, fields, or values). Table columns have types (also called domains), which can be enumerated. Rules of relations: cells contain single values; columns store single type of data; column names are unique; order is insignificant; rows are unique (they need a key).
+  </p>
   <h3>
    <a name="top-down-vs.-bottom-up-design">
     Top-down vs. bottom-up design

@@ -74,7 +74,7 @@ Models could also be grouped by the **business problems they solve** (e.g. poor 
 
 
 
-# Models by form
+# Models by form, then notation
 
 ## Flow charts
 

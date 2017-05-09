@@ -121,6 +121,8 @@ All ERDs capture the entities in a system, along with their attributes and inter
 - [IDEF1X](../ILLOS/idef1x.png)
 - [UML](../ILLOS/UML-relationships.png)
 
+Increasingly, ERDs are also written in [UML.](#unified-modeling-language-(uml))
+
 ### Bachmann/crow's foot notation
 
 This is a notation that describes the optionality/modality/participation and cardinality/multiplicity of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
@@ -155,7 +157,7 @@ OO models show **inheritance** as well as decisions, relationships, and processe
 
 ### Unified Modeling Language (UML)
 
-UML is a graphical, higher-level language that precedes relational data modeling. UML is gradually replacing the Entity-Relationship (ER) model. UML is also used for software design. See [notes on UML.](UML.html)
+UML is a graphical higher-level language used for database modeling and software design. See [notes on UML.](UML.html)
 
 #### Activity diagrams
 

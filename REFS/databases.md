@@ -18,7 +18,7 @@ A [DBMS](DBMS.html) is either (1) a database engine for interacting with the dat
 - Backup and recovery;
 - Views that are customized to the needs of specific audiences.
 
-A **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). This denotes the technical environment of a database, but the full **database environment** encompasses hardware, software, data, procedures, and people.
+A **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). This term denotes only the technical environment of a database; the full **database environment** encompasses hardware, software, data, procedures, and people.
 
 ## History of databases
 

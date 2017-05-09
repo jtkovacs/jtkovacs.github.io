@@ -201,6 +201,13 @@ STRFTIME(“format_string”, ”datetime_string”, <modifier>)
 - SELECT, FROM, CAST, RANK(), DENSE_RANK()
 - WITH
 - GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT) 
+- UPDATE
+- OUTPUT
+- MERGE
+- remove duplicates
+- subqueries (simple, correlated)
+- EXCEPT
+- DATE functions
 
 https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
 

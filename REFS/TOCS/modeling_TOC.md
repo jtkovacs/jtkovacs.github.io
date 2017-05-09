@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1371 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1370 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
 	- [Why model?](#why-model?)
 	- [Model typologies](#model-typologies)
 - [Models by form and notation](#models-by-form-and-notation)
@@ -139,7 +139,7 @@ Entity A is on the left, entity B is on the right. They are connected with an an
 
 <img src="../ILLOS/crowsfoot.gif" width="350px" align="left">
 
-<img src="../ILLOS/EERD.png" width="280px" padding-bottom: 30px;>
+<img src="../ILLOS/EERD.png" width="280px" style="padding-bottom:30px;">
 
 #### UML notation
 

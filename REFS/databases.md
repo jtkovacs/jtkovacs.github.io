@@ -1,7 +1,7 @@
 
 # What is a database?
 
-A **database** is a either (1) collection of data that's structured according to a data model (see [notes on information structures](information-architecture.html#information-structures) for a review of the major data models---hierarchic, relational, graph, object, semantic, functional); or (2) this structured data plus a database management system (DBMS). 
+A **database** is a either (1) collection of data that's structured according to a data model (usually relational, as [discussed below;](#the-relational-data-model) for other major data models, see [notes on information structures](information-architecture.html#information-structures)); or (2) this structured data plus a database management system (DBMS). 
 
 A **database management system** [(DBMS)](DBMS.html) is either (1) a database engine for interacting with the database plus a database frontend for interacting with the user; or (2) these two things plus a database per definition (1) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL); most offer the following functions:
 

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3342 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3340 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -19,8 +19,8 @@
 	- [Design phases](#design-phases)
 		- [Conceptual design](#conceptual-design)
 		- [Logical design](#logical-design)
-		- [Physical design & construction](#physical-design-&-construction)
-			- [Indexing & performance](#indexing-&-performance)
+		- [Physical design](#physical-design)
+			- [Indexing and performance](#indexing-and-performance)
 - [Database administration](#database-administration)
 	- [Data and log files](#data-and-log-files)
 	- [Transaction management](#transaction-management)
@@ -309,11 +309,11 @@ Proceed table by table, field by field:
     - Through a check constraint. 
 - Denote required fields.
 
-### Physical design & construction
+### Physical design
     
 Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
 
-#### Indexing & performance
+#### Indexing and performance
 
 Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
 

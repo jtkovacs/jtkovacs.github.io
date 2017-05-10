@@ -273,11 +273,11 @@ Proceed table by table, field by field:
     - Through a check constraint. 
 - Denote required fields.
 
-### Physical design & construction
+### Physical design
     
 Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
 
-#### Indexing & performance
+#### Indexing and performance
 
 Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
 

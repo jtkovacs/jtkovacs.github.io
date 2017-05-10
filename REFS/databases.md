@@ -221,20 +221,13 @@ My synthesis of the **database system lifecycle:**
 
 ## Business requirements
 
-- Gather and formulate **business requirements** by analyzing the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database 
-
-- __Conduct cost-benefit analysis for proposed database__
-- __Requirements analysis__: 
-    - Write a mission statement and objectives;
-    - Analyze current data inputs and outputs; 
-    - Within the scope of the objectives, identify key actors;
-    - Interview actors to understand tasks that actors execute.
+- Conduct a **cost-benefit analysis** for the proposed database;
+- Write a **mission statement and objectives;**
+- Gather and formulate **business requirements** by analyzing the business processes, documents, workflows, etc. that will be replaced or supported by the database:
+    - Within the scope of the objectives, identify key **actors;**
+    - Interview actors to understand **tasks** that actors execute;
+    - Identify pertinent **business rules,** i.e., database design constraints that arise from the business processes being modeled, not from requirements of the data model.
     
-Explain what is meant by 'business rules' and provide an example.
-
-Business rules are database design constraints that arise from the business processes being modeled, not from requirements imposed by the relational data model (or other data model). Business rules affect the design of the database, including how entities are related; what attributes are collected; and what values are permitted or required for specific attributes. As an example, consider a database that stores donor and donations data for a nonprofit. Some business rules in this case might be that  donors can make multiple donations, multiple donors can be associated with the same donation, and individual donation amounts must be over $10.
-
-
 
 ## Conceptual design
   
@@ -354,7 +347,6 @@ Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from [http://t
 - [Intro. to Relational Databases](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
 - [Relational Algebra](https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about)
 - [Relational Design Theory](https://lagunita.stanford.edu/courses/DB/RD/SelfPaced/about)
-- [Unified Modeling Language](https://lagunita.stanford.edu/courses/DB/UML/SelfPaced/about)
 - [Relational Database Fundamentals](http://www.lynda.com/Access-tutorials/Relational-Database-Fundamentals/145932-2.html)
 - [ORM is an offensive anti-pattern](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html)
 - [Access 2016](http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html)

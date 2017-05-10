@@ -131,22 +131,21 @@ Referential Integrity Constraint: Constraint that limits the values in an FK to 
 
 ### NoSQL databases
 
-NoSQL databases use a non-relational data model ... 
+NoSQL databases use non-relational data models ... 
 
 - **Key-value model,** e.g. Dynamo, Riak, Basho: _[Key|Value|Timestamp]._ Provides easy and fast storage for simple data.
 - **Columnar model,** e.g. Google’s Bigtable, Apache’s HBase (part of Hadoop): _[Row Key|Value|Timestamp|Column Family|Column Name]_ Good for retaining relationships (since columns can be grouped into families). 
 - **Document model,** e.g. MongoDB, JSON, XML. Good for storing complex hierarchical relationships.
 - **Graph/triple model,** e.g. Neo4j. Good for capturing a web of relationships.
 
-... and these other features ...
+... plus some of these other features ...
 
-- Distributed storage and processing (rather than client/server architecture)
-- Memory cache
 - Open source & less costly hardware
-- Batch (Google Map Reduce) or interactive or stream (Apache Tez Framework, Apache Spark, Facebook Presto) processing
-- Typically both SQL-like and proprietary interfaces 
-    - NoSQL databases with SQL-like interfaces: Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope
-- NoSQL databases with analytics integration: Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal
+- Distributed storage and processing rather than client/server architecture
+- Memory cache
+- Batch processing (Google Map Reduce) or interactive AKA stream processing (Apache Tez Framework, Apache Spark, Facebook Presto)
+- Proprietary and/or (for Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope) SQL-like interfaces  
+- Analytics integration (Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal)
 
 ... to store Big Data ...  
 
@@ -156,8 +155,8 @@ NoSQL databases use a non-relational data model ...
 
 ... achieving greater speed by: 
 
-- using append rather than updating records
-- denormalizing data upon input 
+- appending rather than updating records, and 
+- denormalizing data upon input. 
 
 
 

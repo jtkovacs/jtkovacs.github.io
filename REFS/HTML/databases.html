@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3406 words
+   &gt; 3397 words
   </p>
   <table class="TOC">
    <tr>
@@ -136,13 +136,6 @@
          <a href="#conceptual-design">
           Conceptual design
          </a>
-         <ul>
-          <li>
-           <a href="#top-down-vs.-bottom-up-design">
-            Top-down vs. bottom-up design
-           </a>
-          </li>
-         </ul>
         </li>
         <li>
          <a href="#logical-design">
@@ -930,6 +923,9 @@
    </a>
   </h4>
   <p>
+   Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
+  </p>
+  <p>
    Domain integrity: column values should fall within a given domain, enforced by column data type Entity integrity: enforced by primary key Referential integrity: enforced by keys (PK-FK pair)
   </p>
   <h5>
@@ -1140,6 +1136,13 @@
     Conceptual design
    </a>
   </h2>
+  <p>
+   In the conceptual design stage of database development, there are two competing approaches: top-down (AKA design by decomposition) and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in
+   <a href="modeling.html#erds-for-databases">
+    ER or UML notation;
+   </a>
+   MS Visio offers both. The bottom-up approach begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes. The end goal is a schema that is normalized to avoid anomalies.
+  </p>
   <ul>
    <li>
     In the
@@ -1193,11 +1196,6 @@
     <strong>
      Normalize your data model
     </strong>
-    (see
-    <a href="#design-by-decomposition">
-     Design by decomposition
-    </a>
-    )
     <ul>
      <li>
       1NF: all fields only include a single piece of data;
@@ -1211,27 +1209,6 @@
     </ul>
    </li>
   </ul>
-  <p>
-   Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
-  </p>
-  <h3>
-   <a name="top-down-vs.-bottom-up-design">
-    Top-down vs. bottom-up design
-   </a>
-  </h3>
-  <p>
-   In the conceptual design stage of database development, there are two competing approaches: top-down (AKA design by decomposition) and bottom-up.
-  </p>
-  <p>
-   The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in
-   <a href="modeling.html#erds-for-databases">
-    ER or UML notation;
-   </a>
-   MS Visio offers both.
-  </p>
-  <p>
-   The bottom-up approach begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes. The end goal is a schema that is normalized to avoid anomalies.
-  </p>
   <h2>
    <a name="logical-design">
     Logical design

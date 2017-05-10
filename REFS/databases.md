@@ -157,6 +157,8 @@ __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is t
 
 #### Data integrity in the relational model
 
+Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
+
 Domain integrity: column values should fall within a given domain, enforced by column data type
 Entity integrity: enforced by primary key
 Referential integrity: enforced by keys (PK-FK pair)
@@ -230,7 +232,11 @@ Note that databases are often developed in parallel with the applications that w
     
 
 ## Conceptual design
-  
+
+In the conceptual design stage of database development, there are two competing approaches: top-down (AKA design by decomposition) and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both. The bottom-up approach begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes. The end goal is a schema that is normalized to avoid anomalies.
+ 
+
+
 - In the **conceptual design stage,** a database designer and to identify the entities (objects) and attributes (characteristics) it must contain. 
 - Identify entities and attributes in the **conceptual design** phase
     - Top-down design: entities, then attributes
@@ -243,20 +249,11 @@ Note that databases are often developed in parallel with the applications that w
     - Identify entity subtypes/subclasses;
     - Create lookup tables;
     - Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
-- __Normalize your data model__ (see [Design by decomposition](#design-by-decomposition))
+- __Normalize your data model__ 
     - 1NF: all fields only include a single piece of data;
     - 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
     - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
 
-Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
-
-### Top-down vs. bottom-up design
-
-In the conceptual design stage of database development, there are two competing approaches: top-down (AKA design by decomposition) and bottom-up. 
-
-The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both.
-
-The bottom-up approach begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes. The end goal is a schema that is normalized to avoid anomalies.
 
 
 

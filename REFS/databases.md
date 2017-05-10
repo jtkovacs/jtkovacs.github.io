@@ -8,6 +8,21 @@ A [DBMS](DBMS.html) is either a **database engine** for interacting with the dat
 A **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). This term denotes only the technical environment of a database; the full **database environment** encompasses hardware, software, data, procedures, and people.
 
 
+## Database system lifecycle
+
+My synthesis:
+
+<table>
+<tr><th colspan="2">Requirements Analysis</th></tr>
+<tr><th rowspan=3>Design</th><td>Conceptual</td></tr>
+<tr><td>Logical</td></tr>
+<tr><td>Physical</td></tr>
+<tr><th rowspan="2">Development</th><td>Implementation</td></tr>
+<tr><td>Testing</td></tr>
+<tr><th rowspan="2">Administration</th><td>Rollout</td></tr>
+<tr><td>Support</td></tr>
+</table>
+
 
 
 ## History of databases
@@ -204,19 +219,6 @@ A good design process minimizes redundancy; reduces errors by automating or impo
 - Use a source control system, e.g. GitHub
 
 Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; an efficient way of producing documentation).
-
-My synthesis of the **database system lifecycle:**
-
-<table>
-<tr><th colspan="2">Requirements Analysis</th></tr>
-<tr><th rowspan=3>Design</th><td>Conceptual</td></tr>
-<tr><td>Logical</td></tr>
-<tr><td>Physical</td></tr>
-<tr><th rowspan="2">Development</th><td>Implementation</td></tr>
-<tr><td>Testing</td></tr>
-<tr><th rowspan="2">Administration</th><td>Rollout</td></tr>
-<tr><td>Support</td></tr>
-</table>
 
 
 ## Business requirements

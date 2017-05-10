@@ -173,7 +173,7 @@ Referential Integrity Constraint: Constraint that limits the values in an FK to 
 NoSQL databases use non-relational data models ... 
 
 - **Key-value model,** e.g. Dynamo, Riak, Basho: _[Key|Value|Timestamp]._ Provides easy and fast storage for simple data.
-- **Columnar model,** e.g. Google’s Bigtable, Apache’s HBase (part of Hadoop): _[Row Key|Value|Timestamp|Column Family|Column Name]_ Good for retaining relationships (since columns can be grouped into families). 
+- **Columnar model,** e.g. Google’s Bigtable, Apache’s HBase (part of Hadoop): _[Row Key|Value|Timestamp|Column Family|Column Name]._ Good for retaining relationships (since columns can be grouped into families). 
 - **Document model,** e.g. MongoDB, JSON, XML. Good for storing complex hierarchical relationships.
 - **Graph/triple model,** e.g. Neo4j. Good for capturing a web of relationships.
 

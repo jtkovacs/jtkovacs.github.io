@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3326 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3324 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -311,7 +311,7 @@ Proceed table by table, field by field:
 
 ### Physical design
     
-Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features from the chosen platform.
 
 #### Indexing and performance
 

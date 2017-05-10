@@ -275,7 +275,7 @@ Proceed table by table, field by field:
 
 ### Physical design
     
-Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features from the chosen platform.
 
 #### Indexing and performance
 

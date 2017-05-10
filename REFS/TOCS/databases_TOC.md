@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3516 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3517 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 	- [Types of databases](#types-of-databases)
@@ -252,8 +252,8 @@ My synthesis of the **database system lifecycle:**
 <tr><td>Physical</td></tr>
 <tr><th rowspan="2">Development</th><td>Implementation</td></tr>
 <tr><td>Testing</td></tr>
-<tr><td>Administration</td><td>Support</td></tr>
-<tr><td>Testing</td></tr>
+<tr><th rowspan="2">Administration</th><td>Rollout</td></tr>
+<tr><td>Support</td></tr>
 </table>
 
 

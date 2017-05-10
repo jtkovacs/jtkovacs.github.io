@@ -214,8 +214,8 @@ My synthesis of the **database system lifecycle:**
 <tr><td>Physical</td></tr>
 <tr><th rowspan="2">Development</th><td>Implementation</td></tr>
 <tr><td>Testing</td></tr>
-<tr><td>Administration</td><td>Support</td></tr>
-<tr><td>Testing</td></tr>
+<tr><th rowspan="2">Administration</th><td>Rollout</td></tr>
+<tr><td>Support</td></tr>
 </table>
 
 

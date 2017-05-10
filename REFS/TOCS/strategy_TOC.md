@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/strategy.html">https://jtkovacs.github.io/REFS/HTML/strategy.html</a></p><table class="TOC"><tr><td>- [Business Strategy](#business-strategy)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/strategy.html">https://jtkovacs.github.io/REFS/HTML/strategy.html</a> \> 332 words </p><table class="TOC"><tr><td>- [Business Strategy](#business-strategy)
 	- [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue?)
 	- [What are frameworks for a strategic analysis?](#what-are-frameworks-for-a-strategic-analysis?)
 	- [What is market research, and how is it done?](#what-is-market-research,-and-how-is-it-done?)

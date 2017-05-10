@@ -62,7 +62,9 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Order is insignificant.
 
-Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development, where the goal is to produce a database schema that (1) accurately captures the underlying business processes, and (2) is normalized, i.e. satisfies the requirements of the relational data model and thereby preserves data integrity.
+Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development, where the goal is to produce a database schema that (1) accurately captures the underlying business processes, and (2) is normalized, i.e. satisfies the requirements of the relational data model and thereby preserves data integrity. 
+
+Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
 
 #### Relationships between entities
 
@@ -135,8 +137,6 @@ Describe what **Transitive Dependency** is and give an example: If a functional 
 
 
 #### Normalization and integrity
-
-Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
 
 Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization: 
 

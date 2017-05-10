@@ -279,18 +279,18 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
-Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
+Indexing accelerates queries but reduces write speed. The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
+
+- **Clustered indexes** determine the physical storage of the related data ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/). There can be only one clustered index per table.
+- There can be more than one **non-clustered index** on a table.
+- A **columnstore index** is used to improve performance of read-only tables. 
+
+See:
 
 - [http://use-the-index-luke.com/sql/table-of-contents](http://use-the-index-luke.com/sql/table-of-contents)
 - [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
 
-Select all accurate statements about indexes.
 
-- Indexes could improve query performance but slow down database content update: T
-- Clustered indexes determine the physical storage of the related data: T
-- There can be more than one non-clustered index on a table: T
-- There can be more than one clustered index on a table: FALSE
-- Columnstore index used to improve performance of read-only tables
     
 
 

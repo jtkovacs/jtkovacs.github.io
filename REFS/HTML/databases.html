@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3340 words
+   &gt; 3333 words
   </p>
   <table class="TOC">
    <tr>
@@ -1271,7 +1271,36 @@
    </a>
   </h4>
   <p>
-   Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).
+   Indexing accelerates queries but reduces write speed. The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Clustered indexes
+    </strong>
+    determine the physical storage of the related data ...
+    <a href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
+     sort of.
+    </a>
+    . There can be only one clustered index per table.
+   </li>
+   <li>
+    There can be more than one
+    <strong>
+     non-clustered index
+    </strong>
+    on a table.
+   </li>
+   <li>
+    A
+    <strong>
+     columnstore index
+    </strong>
+    is used to improve performance of read-only tables.
+   </li>
+  </ul>
+  <p>
+   See:
   </p>
   <ul>
    <li>
@@ -1283,26 +1312,6 @@
     <a class="uri" href="https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/">
      https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/
     </a>
-   </li>
-  </ul>
-  <p>
-   Select all accurate statements about indexes.
-  </p>
-  <ul>
-   <li>
-    Indexes could improve query performance but slow down database content update: T
-   </li>
-   <li>
-    Clustered indexes determine the physical storage of the related data: T
-   </li>
-   <li>
-    There can be more than one non-clustered index on a table: T
-   </li>
-   <li>
-    There can be more than one clustered index on a table: FALSE
-   </li>
-   <li>
-    Columnstore index used to improve performance of read-only tables
    </li>
   </ul>
   <h1>

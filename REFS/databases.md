@@ -8,9 +8,7 @@ A [DBMS](DBMS.html) is either a **database engine** for interacting with the dat
 A **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). This term denotes only the technical environment of a database; the full **database environment** encompasses hardware, software, data, procedures, and people.
 
 
-## Database system lifecycle
-
-My synthesis:
+## The database system lifecycle
 
 <table>
 <tr><th colspan="2">Requirements Analysis</th></tr>

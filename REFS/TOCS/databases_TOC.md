@@ -1,5 +1,5 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3407 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
-	- [Database system lifecycle](#database-system-lifecycle)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3406 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 	- [Types of databases](#types-of-databases)
@@ -47,9 +47,7 @@ A [DBMS](DBMS.html) is either a **database engine** for interacting with the dat
 A **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). This term denotes only the technical environment of a database; the full **database environment** encompasses hardware, software, data, procedures, and people.
 
 
-## Database system lifecycle
-
-My synthesis:
+## The database system lifecycle
 
 <table>
 <tr><th colspan="2">Requirements Analysis</th></tr>

@@ -196,7 +196,7 @@ NoSQL databases use non-relational data models ...
 
 # Database design
 
-A good design process minimizes redundancy; reduces errors by automating or imposing constraints on data entry; permits multiple analyses by replacing multipart fields with atomic ones; avoids data conflicts by reserving calculation to the analysis phase, rather than storing results; and ensures complete information by requiring it during input. Best practices for DB design:
+A good design process minimizes redundancy; reduces errors by automating or imposing constraints on data entry; permits multiple analyses by replacing multipart fields with atomic ones; avoids data conflicts by reserving calculation to the analysis phase, rather than storing results; and ensures complete information by requiring it during input. **Best practices for DB design:**
 
 - Clearly identify scope of database
 - Follow a database design methodology, e.g. SDLC, Agile
@@ -206,6 +206,13 @@ A good design process minimizes redundancy; reduces errors by automating or impo
 Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; an efficient way of producing documentation).
 
 Connolly and Begg (2015) outline the following database development process AKA **database system lifecycle:**
+
+<table>
+<tr><td colspan="2">Analysis</td></tr>
+<tr>
+<td rowspan=3>Design</td><td>Conceptual</td>
+</tr>
+</table>
 
 
 ## Business requirements

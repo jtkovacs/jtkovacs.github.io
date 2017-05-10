@@ -62,7 +62,7 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). The order of rows and columns is insignificant.
 
-Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development. Per Ullman (2006), **many different relational schemas could be used to model any given reality;** the best designs will (1) suit the underlying business processes, and (2) be normalized, i.e. will satisfy the requirements of the relational data model and thereby (a) minimize redundancy and (b) preserve data integrity, avoiding update and deletion anomalies. 
+Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development. Per Ullman (2006), **many different relational schemas could be used to model any given reality;** the best designs will (1) suit the underlying business processes, and (2) be normalized, i.e. will satisfy the requirements of the relational data model and thereby (a) minimize redundancy and (b) preserve data integrity, avoiding (i) update and (ii) deletion anomalies. 
 
 #### Relationships between entities
 

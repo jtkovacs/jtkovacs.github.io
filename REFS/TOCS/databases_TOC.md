@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3517 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3519 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 	- [Types of databases](#types-of-databases)
@@ -246,11 +246,11 @@ Note that databases are often developed in parallel with the applications that w
 Connolly and Begg (2015) outline the following database development process AKA **database system lifecycle:**
 
 <table>
-<tr><td colspan="2">Analysis</td></tr>
+<tr><td colspan="2">Requirements Analysis</td></tr>
 <tr><th rowspan=3>Design</th><td>Conceptual</td></tr>
 <tr><td>Logical</td></tr>
 <tr><td>Physical</td></tr>
-
+<tr><td>Administration</td><td>Support</td></tr>
 </table>
 
 

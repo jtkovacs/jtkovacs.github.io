@@ -208,11 +208,11 @@ Note that databases are often developed in parallel with the applications that w
 Connolly and Begg (2015) outline the following database development process AKA **database system lifecycle:**
 
 <table>
-<tr><td colspan="2">Analysis</td></tr>
+<tr><td colspan="2">Requirements Analysis</td></tr>
 <tr><th rowspan=3>Design</th><td>Conceptual</td></tr>
 <tr><td>Logical</td></tr>
 <tr><td>Physical</td></tr>
-
+<tr><td>Administration</td><td>Support</td></tr>
 </table>
 
 

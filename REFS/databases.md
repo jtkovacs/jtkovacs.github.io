@@ -70,7 +70,7 @@ The relationship between two entites has several characteristics. The **particip
 
 ##### Associative entities
 
-“Many-to-many” relationships must be “resolved” with an “associative entity” (AKA junction table) that has a combined primary key (PK), both of which are foreign keys (FK). For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment and a car will likewise be driven by many different drivers. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
+Many-to-many relationships must be resolved with an associative entity (AKA junction table) that has a combined primary key (PK), both of which are foreign keys (FK). For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment and a car will likewise be driven by many different drivers. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 
 ##### Superclasses and subclasses
 
@@ -89,28 +89,31 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 - **Derived** if its value can be calculated from (an)other attribute(s) (which, per third normal form, it shouldn't be).
 - **Multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.  
 
-##### Identifiers, determinants, and dependencies
+##### Dependencies and keys
 
-An attribute may be a **key** or identity value. Kinds of keys: 
+Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s); you could also say there is a dependency between the two attributes, one of which is a determinant. This is a real-world quality that takes several forms:
 
-- Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
-- Candidate Key: Column(s) that can uniquely identify rows in an entity
-- Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
-    - INTEGER is most-often the best data type choice
-    - Will not change in value
-    - Will not be null
-    - Narrow field
+- Functional
+- Transitive
+- Multivalued
 
-Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
-    
+Normalization is a process of allocating attributes to different entities to achieve a certain configuration of dependencies.
+
 __Functional dependency (FD)__, `A→B`: The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 
 - trivial FD: `A→B & B⊆A`
 - nontrivial FD: `A→B & B⊈A`
 - completely nontrivial FD: `A→B & A∩B=∅` 
 - transitive property: `A→B & B→C ⇒ A→C`
-- the __closure__ of A, {A}\*, is all attributes functionally determined by A 
-- __keys__ are attributes whose closure encompasses all attributes in a relation 
+- the __closure__ of A, {A}\*, is all attributes functionally determined by A
+- __keys__ AKA identity values are attributes whose closure encompasses all attributes in a relation 
+    - Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
+    - Candidate Key: Column(s) that can uniquely identify rows in an entity
+    - Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
+        - INTEGER is most-often the best data type choice
+        - Will not change in value
+        - Will not be null
+        - Narrow field
 - `S2`, a set of FDs, follows from `S1` if every relation satisfying `S1` also satisfies `S2`
 - `S2`, set of FDs, is equivalent to `S1` if exactly the same FDs follow from `S1` and `S2`
 
@@ -139,20 +142,15 @@ Levels of normalization: http://searchsqlserver.techtarget.com/definition/normal
     - Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
     - Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
     - All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
-- Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
-- Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-
-__Normalize:__ 
-
 - 1NF: all fields only include a single piece of data;
+- Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
 - 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
+- Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
 - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
+- [__Boyce Codd normal form__ (BCNF)](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies) is when, for all FDs `A→B`, A is the key. To achieve BCNF, find FDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with `A→B` violating BCNF; decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A, rest); repeat. 
+- __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
 
 In the real world, we usually normalize only up to the 3rd Normal Form.
-
-[__Boyce Codd normal form__ (BCNF)](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies) is when, for all FDs `A→B`, A is the key. To achieve BCNF, find FDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with `A→B` violating BCNF; decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A, rest); repeat. 
-
-__Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
 
 ##### Entity integrity
 

@@ -89,8 +89,8 @@ Entities may be specified superclasses and subclasses; this provides more semant
 
 #### Types of attributes 
 
-http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html
-http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes 
+Per Sunderraman (2012) and Wikia ():
+
 
 An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
 
@@ -332,9 +332,15 @@ Digital signatures are based on Public Key techniques; are different for each us
 
 # Sources
 
+E/R model: types of attributes. (n.d.). Retrieved from the Database Management Wiki: [http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes](http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes)
+
 Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
 
+Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from [http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html](http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html)
+
 ## References
+
+- [Database Management Wikia](http://databasemanagement.wikia.com/wiki/Main_Page)
 
 ## Read
 

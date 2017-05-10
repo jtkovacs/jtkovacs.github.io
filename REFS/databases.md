@@ -86,7 +86,7 @@ Entities may be classified as superclasses and subclasses; this provides more se
 Per Sunderraman (2012) and the Database Management Wikia (n.d.):
 
 - An attribute is **composite** if it can be decomposed into **atomic** attributes (which, per first normal form, it should be).
-- An attribute is **multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship).
+- An attribute is **multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.  
 - An attribute is **derived** if its value can be calculated from (an)other attribute(s) in the database (which, per third normal form, it shouldn't be).
 
 ##### Identifiers, determinants, and dependencies

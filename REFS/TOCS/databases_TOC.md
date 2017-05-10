@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3348 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3342 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -21,8 +21,6 @@
 		- [Logical design](#logical-design)
 		- [Physical design & construction](#physical-design-&-construction)
 			- [Indexing & performance](#indexing-&-performance)
-	- [Testing](#testing)
-	- [Rollout & support](#rollout-&-support)
 - [Database administration](#database-administration)
 	- [Data and log files](#data-and-log-files)
 	- [Transaction management](#transaction-management)
@@ -329,13 +327,7 @@ Select all accurate statements about indexes.
 - There can be more than one non-clustered index on a table: T
 - There can be more than one clustered index on a table: FALSE
 - Columnstore index used to improve performance of read-only tables
-
-## Testing
-
-## Rollout & support
     
-
-
 
 
 

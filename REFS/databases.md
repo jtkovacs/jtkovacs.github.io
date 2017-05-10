@@ -291,13 +291,7 @@ Select all accurate statements about indexes.
 - There can be more than one non-clustered index on a table: T
 - There can be more than one clustered index on a table: FALSE
 - Columnstore index used to improve performance of read-only tables
-
-## Testing
-
-## Rollout & support
     
-
-
 
 
 

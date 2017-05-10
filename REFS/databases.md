@@ -76,9 +76,9 @@ The relationship between two entites has several characteristics. The **particip
 
 Entities may be classified as superclasses and subclasses; this provides more semantic meaning to an ER model, makes the ER model more readable, and (depending on implementation) can reduce the number of NULLs in the database. There are several implementation options:
 
-- Subclass contains superclass PK along with its own unique attributes;
-- Subclass relations contain all superclass attributes along with its own unique attributes;
-- One relation contains all super- and subclass attributes.
+- Subclass entity contains superclass PK along with its own unique attributes;
+- Subclass entity contains all superclass attributes along with its own unique attributes;
+- The ERD includes a superclass and subclass(es) but they are implemented as a single table.
 
 
 #### Types of attributes

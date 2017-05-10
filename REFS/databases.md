@@ -84,7 +84,7 @@ Entities may be specified superclasses and subclasses; this provides more semant
 
 
 
-#### Types of attributes 
+#### Types of attributes
 
 Per Sunderraman (2012) and the Database Management Wikia (n.d.):
 
@@ -239,7 +239,7 @@ Note that databases are often developed in parallel with the applications that w
 
 ## Design phases
 
-All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties of each attribute. Lastly, physical design focuses on 
+All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties of each attribute. Lastly, physical design focuses on specifying the database and its interfaces, etc. according to a particular DBMS.
 
 ### Conceptual design
 
@@ -248,7 +248,7 @@ In the conceptual design stage of database development, there are two competing 
 - The **top-down approach** (AKA design by decomposition) begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both. 
 - The **bottom-up approach** begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
 - Regardless, the end goal is a schema that is [normalized](#normalization) to avoid anomalies.
-  
+
 Steps:
 
 - Group fields into tables a logical way;
@@ -256,7 +256,7 @@ Steps:
 - Identify cardinality (max#) and optionality (min#) associated with each relationship;
 - Identify entity subtypes/subclasses;
 - Create lookup tables;
-- Identify primary keys.
+- Identify [primary keys.](#types-of-attributes)
 
 ### Logical design
     

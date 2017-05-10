@@ -346,12 +346,7 @@ Ullman, R. D. (2006). Relational database design. Retrieved from [http://infolab
 
 ## Unread
 
-- [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
 - [How does a relational database work?](http://coding-geek.com/how-databases-work/)
-- [Migrating Access Databases to SQL Server](https://www.lynda.com/Access-tutorials/Migrating-Access-Databases-SQL-Server/397389-2.html)
-- [Core Concepts for SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Core-Concepts/385693-2.html)
-- [Storage in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Storage/385694-2.html)
-- [Data Manipulation in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Creating-Manipulating-Data/385697-2.html)
 - [Indexes &amp; Transactions](https://lagunita.stanford.edu/courses/DB/Indexes/SelfPaced/about)
 - [Constraints &amp; Triggers](https://lagunita.stanford.edu/courses/DB/Constraints/SelfPaced/about)
 - [Views &amp; Authorization](https://lagunita.stanford.edu/courses/DB/Views/SelfPaced/about)
@@ -367,9 +362,6 @@ Ullman, R. D. (2006). Relational database design. Retrieved from [http://infolab
 - [Why NoSQL](http://faculty.washington.edu/blabob/bob/eBooks/Why%20NoSQL%20(WP%20IBM).PDF)
 - [7 steps to understanding NoSQL databases](http://www.kdnuggets.com/2016/07/seven-steps-understanding-nosql-databases.html)
 - [Mapping your SQL thinking to NoSQL](http://apigee.com/about/blog/technology/nosql-noproblem-mapping-your-sql-thinking-nosql)
-- [XML data](https://lagunita.stanford.edu/courses/DB/XML/SelfPaced/about)
-- [XPath &amp; XQuery](https://lagunita.stanford.edu/courses/DB/XPath/SelfPaced/about)
-- [XSLT](https://lagunita.stanford.edu/courses/DB/XSLT/SelfPaced/about)
-- [BigSQL on Hadoop](https://bigdatauniversity.com/courses/sql-access-on-hadoop-big-sql-v4/)
+ -[BigSQL on Hadoop](https://bigdatauniversity.com/courses/sql-access-on-hadoop-big-sql-v4/)
 - [Enterprise NoSQL for Dummies](http://faculty.washington.edu/blabob/bob/eBooks/Enterprise%20NoSQL%20for%20Dummies%20(eBook).pdf)
 - [Graph Databases](http://graphdatabases.com/)

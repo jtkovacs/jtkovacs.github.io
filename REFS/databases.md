@@ -331,6 +331,7 @@ Ullman, R. D. (2006). Relational database design. Retrieved from [http://infolab
 ## References
 
 - [Database Management Wikia](http://databasemanagement.wikia.com/wiki/Main_Page)
+- [Use the index, Luke: A guide to database performance for developers](http://use-the-index-luke.com/sql/table-of-contents)
 
 ## Read
 

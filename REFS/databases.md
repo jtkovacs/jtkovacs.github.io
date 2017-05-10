@@ -70,11 +70,7 @@ The relationship between two entites has several characteristics. The **particip
 
 ##### Associative entities
 
-- “Many-to-many” relationships are “resolved” with an “associative entity” that has a combined primary key (PK), both of which are foreign keys (FK)
-
-When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
-
-Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
+“Many-to-many” relationships must be “resolved” with an “associative entity” (AKA junction table) that has a combined primary key (PK), both of which are foreign keys (FK). For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment and a car will likewise be driven by many different drivers. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 
 ##### Superclasses and subclasses
 

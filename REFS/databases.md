@@ -138,14 +138,7 @@ NoSQL databases use a non-relational data model ...
 - **Document model,** e.g. MongoDB, JSON, XML. Good for storing complex hierarchical relationships.
 - **Graph/triple model,** e.g. Neo4j. Good for capturing a web of relationships.
 
-... and ...
-
-... to store Big Data ...  
-
-- large **volume** (petabytes rather than terabytes)
-- wide **variety** (structured and unstructured)
-- high **velocity**
-
+... and these other features ...
 
 - Distributed storage and processing (rather than client/server architecture)
 - Memory cache
@@ -153,13 +146,18 @@ NoSQL databases use a non-relational data model ...
 - Batch (Google Map Reduce) or interactive or stream (Apache Tez Framework, Apache Spark, Facebook Presto) processing
 - Typically both SQL-like and proprietary interfaces 
     - NoSQL databases with SQL-like interfaces: Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope
+- NoSQL databases with analytics integration: Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal
 
-Achieve greater speed by
+... to store Big Data ...  
+
+- large **volume** (petabytes rather than terabytes)
+- wide **variety** (structured and unstructured)
+- high **velocity**
+
+... achieving greater speed by: 
 
 - using append rather than updating records
 - denormalizing data upon input 
-
-NoSQL databases with analytics integration: Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal
 
 
 

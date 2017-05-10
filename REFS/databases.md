@@ -212,6 +212,7 @@ Connolly and Begg (2015) outline the following database development process AKA 
 <tr><th rowspan=3>Design</th><td>Conceptual</td></tr>
 <tr><td>Logical</td></tr>
 <tr><td>Physical</td></tr>
+<tr><th colspan="2">Development</th></tr>
 <tr><td>Administration</td><td>Support</td></tr>
 </table>
 

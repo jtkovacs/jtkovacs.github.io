@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3537 words
+   &gt; 3527 words
   </p>
   <table class="TOC">
    <tr>
@@ -136,18 +136,6 @@
            <a href="#top-down-vs.-bottom-up-design">
             Top-down vs. bottom-up design
            </a>
-           <ul>
-            <li>
-             <a href="#bottom-up-design-through-normalization">
-              Bottom-up design through normalization
-             </a>
-            </li>
-            <li>
-             <a href="#top-down-design-with-erds">
-              Top-down design with ERDs
-             </a>
-            </li>
-           </ul>
           </li>
          </ul>
         </li>
@@ -727,6 +715,149 @@
     Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
    </li>
   </ul>
+  <p>
+   In the real world, we usually normalize only up to the 3rd Normal Form: TRUE
+  </p>
+  <p>
+   <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies">
+    <strong>
+     Boyce Codd normal form
+    </strong>
+    (BCNF)
+   </a>
+   is when, for all FDs
+   <code>
+    A→B
+   </code>
+   , A is the key. To achieve BCNF, find FDs and keys for R
+   <sub>
+    i
+   </sub>
+   ; pick any R
+   <sub>
+    i
+   </sub>
+   with
+   <code>
+    A→B
+   </code>
+   violating BCNF; decompose into R
+   <sub>
+    1
+   </sub>
+   (A,B) and R
+   <sub>
+    2
+   </sub>
+   (A, rest); repeat.
+  </p>
+  <p>
+   <strong>
+    <a href="http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf">
+     Multivalued dependency
+    </a>
+   </strong>
+   (MVD),
+   <code>
+    A↠B
+   </code>
+   : A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic:
+   <code>
+    if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.
+   </code>
+   Furthermore,
+   <code>
+    ∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest
+   </code>
+   .
+  </p>
+  <ul>
+   <li>
+    trivial MVD:
+    <code>
+     A↠B &amp; B⊆A
+    </code>
+    or
+    <code>
+     A∪B ={ all attributes}
+    </code>
+    ; e.g.
+    <code>
+     AB↠B
+    </code>
+   </li>
+   <li>
+    if
+    <code>
+     A→B
+    </code>
+    , then also
+    <code>
+     A↠B
+    </code>
+   </li>
+   <li>
+    intersection rule:
+    <code>
+     A↠B &amp; A↠C ⇒ A↠B⋂C
+    </code>
+   </li>
+   <li>
+    transitive rule:
+    <code>
+     A↠B &amp; B↠C ⇒ A↠C-B
+    </code>
+   </li>
+   <li>
+    a relation A is
+    <strong>
+     decomposed
+    </strong>
+    into B and C if the union of B and C’s attributes contains all of A’s attributes and
+    <code>
+     B⋈C = A
+    </code>
+    (the lossless join property).
+   </li>
+  </ul>
+  <p>
+   <strong>
+    Fourth normal form
+   </strong>
+   (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B*C tuples. A relation is in 4NF if, for each nontrivial MVD
+   <code>
+    A↠B
+   </code>
+   , A is the key. To test for 4NF, look at each pair of tuples
+   <code>
+    t,u
+   </code>
+   that match on A, and create the additional tuples
+   <code>
+    v,w
+   </code>
+   : are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R
+   <sub>
+    i
+   </sub>
+   ; pick any R
+   <sub>
+    i
+   </sub>
+   with nontrivial
+   <code>
+    A↠B
+   </code>
+   violating 4NF (3) decompose into R
+   <sub>
+    1
+   </sub>
+   (A,B) and R
+   <sub>
+    2
+   </sub>
+   (A,rest); repeat.
+  </p>
   <h4>
    <a name="data-integrity-in-the-relational-model">
     Data integrity in the relational model
@@ -1052,162 +1183,9 @@
   <p>
    In the conceptual design stage of database development, there are two competing approaches: top-down and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. The bottom-up approach begins with identifying attributes, then grouping and normalizing them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
   </p>
-  <h4>
-   <a name="bottom-up-design-through-normalization">
-    Bottom-up design through normalization
-   </a>
-  </h4>
-  <p>
-   In the real world, we usually normalize only up to the 3rd Normal Form: TRUE
-  </p>
   <p>
    Design by decomposition avoids redundancy and its consequences (update &amp; deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
   </p>
-  <p>
-   <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies">
-    <strong>
-     Boyce Codd normal form
-    </strong>
-    (BCNF)
-   </a>
-   is when, for all FDs
-   <code>
-    A→B
-   </code>
-   , A is the key. To achieve BCNF, find FDs and keys for R
-   <sub>
-    i
-   </sub>
-   ; pick any R
-   <sub>
-    i
-   </sub>
-   with
-   <code>
-    A→B
-   </code>
-   violating BCNF; decompose into R
-   <sub>
-    1
-   </sub>
-   (A,B) and R
-   <sub>
-    2
-   </sub>
-   (A, rest); repeat.
-  </p>
-  <p>
-   <strong>
-    <a href="http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf">
-     Multivalued dependency
-    </a>
-   </strong>
-   (MVD),
-   <code>
-    A↠B
-   </code>
-   : A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic:
-   <code>
-    if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.
-   </code>
-   Furthermore,
-   <code>
-    ∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest
-   </code>
-   .
-  </p>
-  <ul>
-   <li>
-    trivial MVD:
-    <code>
-     A↠B &amp; B⊆A
-    </code>
-    or
-    <code>
-     A∪B ={ all attributes}
-    </code>
-    ; e.g.
-    <code>
-     AB↠B
-    </code>
-   </li>
-   <li>
-    if
-    <code>
-     A→B
-    </code>
-    , then also
-    <code>
-     A↠B
-    </code>
-   </li>
-   <li>
-    intersection rule:
-    <code>
-     A↠B &amp; A↠C ⇒ A↠B⋂C
-    </code>
-   </li>
-   <li>
-    transitive rule:
-    <code>
-     A↠B &amp; B↠C ⇒ A↠C-B
-    </code>
-   </li>
-   <li>
-    a relation A is
-    <strong>
-     decomposed
-    </strong>
-    into B and C if the union of B and C’s attributes contains all of A’s attributes and
-    <code>
-     B⋈C = A
-    </code>
-    (the lossless join property).
-   </li>
-  </ul>
-  <p>
-   <strong>
-    Fourth normal form
-   </strong>
-   (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B*C tuples. A relation is in 4NF if, for each nontrivial MVD
-   <code>
-    A↠B
-   </code>
-   , A is the key. To test for 4NF, look at each pair of tuples
-   <code>
-    t,u
-   </code>
-   that match on A, and create the additional tuples
-   <code>
-    v,w
-   </code>
-   : are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R
-   <sub>
-    i
-   </sub>
-   ; pick any R
-   <sub>
-    i
-   </sub>
-   with nontrivial
-   <code>
-    A↠B
-   </code>
-   violating 4NF (3) decompose into R
-   <sub>
-    1
-   </sub>
-   (A,B) and R
-   <sub>
-    2
-   </sub>
-   (A,rest); repeat.
-  </p>
-  <h4>
-   <a name="top-down-design-with-erds">
-    Top-down design with ERDs
-   </a>
-  </h4>
   <p>
    A top-down design approach creates an entity relationship diagram (ERD), starting with entities and associations then adding in attributes. ERDs can be done in
    <a href="modeling.html#erds-for-databases">

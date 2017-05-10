@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3324 words
+   &gt; 3318 words
   </p>
   <table class="TOC">
    <tr>
@@ -525,21 +525,27 @@
     Relationships between entities
    </a>
   </h4>
+  <p>
+   The relationship between two entites has the following characteristics:
+  </p>
   <ul>
    <li>
-    http://www2.cs.uregina.ca/~bernatja/crowsfoot.html
+    <strong>
+     Participation:
+    </strong>
+    mandatory/optional
    </li>
    <li>
-    Relationships between entities have participation: mandatory/optional
+    <strong>
+     Cardinality
+    </strong>
+    AKA modality: one-to-one, one-to-many, many-to-many
    </li>
    <li>
-    Relationships between entities have cardinalities AKA modalities: one-to-one, one-to-many, many-to-many
-   </li>
-   <li>
-    “Many-to-many” relationships are “resolved” with an “associative entity” that has a combined primary key (PK), both of which are foreign keys (FK)
-   </li>
-   <li>
-    A relationship is identifying if the PK of a parent entity appears in the PK of a child entity; it’s denoted with a solid line, while nonidentifying relationships are denoted with dashed lines
+    <strong>
+     Identifying
+    </strong>
+    if the PK of a parent entity appears in the PK of a child entity, denoted with a solid line; nonidentifying relationships are denoted with dashed lines
    </li>
   </ul>
   <h5>
@@ -547,6 +553,11 @@
     Associative entities
    </a>
   </h5>
+  <ul>
+   <li>
+    “Many-to-many” relationships are “resolved” with an “associative entity” that has a combined primary key (PK), both of which are foreign keys (FK)
+   </li>
+  </ul>
   <p>
    When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
   </p>

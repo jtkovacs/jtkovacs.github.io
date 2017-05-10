@@ -66,13 +66,15 @@ Representing reality in terms of entities, attributes and relationships occurs d
 
 #### Relationships between entities
 
-- http://www2.cs.uregina.ca/~bernatja/crowsfoot.html 
-- Relationships between entities have participation: mandatory/optional
-- Relationships between entities have cardinalities AKA modalities: one-to-one, one-to-many, many-to-many
-- “Many-to-many” relationships are “resolved” with an “associative entity” that has a combined primary key (PK), both of which are foreign keys (FK)
-- A relationship is identifying if the PK of a parent entity appears in the PK of a child entity; it’s denoted with a solid line, while nonidentifying relationships are denoted with dashed lines
+The relationship between two entites has the following characteristics:
+
+- **Participation:** mandatory/optional
+- **Cardinality** AKA modality: one-to-one, one-to-many, many-to-many
+- **Identifying** if the PK of a parent entity appears in the PK of a child entity, denoted with a solid line; nonidentifying relationships are denoted with dashed lines
 
 ##### Associative entities
+
+- “Many-to-many” relationships are “resolved” with an “associative entity” that has a combined primary key (PK), both of which are foreign keys (FK)
 
 When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 

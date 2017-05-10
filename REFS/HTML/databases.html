@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3363 words
+   &gt; 3348 words
   </p>
   <table class="TOC">
    <tr>
@@ -85,13 +85,8 @@
              </ul>
             </li>
             <li>
-             <a href="#normalization">
-              Normalization
-             </a>
-            </li>
-            <li>
-             <a href="#data-integrity-in-the-relational-model">
-              Data integrity in the relational model
+             <a href="#normalization-and-integrity">
+              Normalization and integrity
              </a>
              <ul>
               <li>
@@ -443,7 +438,7 @@
     Can capture complex relationships (important for enforcing business rules)
    </li>
    <li>
-    <a href="#data-integrity-in-the-relational-model">
+    <a href="#normalization-and-integrity">
      Preserves data integrity
     </a>
    </li>
@@ -545,6 +540,9 @@
   </h5>
   <p>
    When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
+  </p>
+  <p>
+   Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
   </p>
   <h5>
    <a name="superclasses-and-subclasses">
@@ -741,8 +739,8 @@
    If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
   </p>
   <h4>
-   <a name="normalization">
-    Normalization
+   <a name="normalization-and-integrity">
+    Normalization and integrity
    </a>
   </h4>
   <p>
@@ -943,11 +941,6 @@
    </sub>
    (A,rest); repeat.
   </p>
-  <h4>
-   <a name="data-integrity-in-the-relational-model">
-    Data integrity in the relational model
-   </a>
-  </h4>
   <p>
    Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
   </p>
@@ -1163,7 +1156,7 @@
    </a>
   </h2>
   <p>
-   All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties of each attribute. Lastly, physical design is focused on specifying the database and its interfaces, etc. according to a particular DBMS.
+   All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties and constraints of each attribute. Lastly, physical design is focused on specifying the database and its interfaces, etc. according to a particular DBMS.
   </p>
   <h3>
    <a name="conceptual-design">
@@ -1195,7 +1188,7 @@
   </ul>
   <p>
    Regardless, the end goal is a schema that is
-   <a href="#normalization">
+   <a href="#normalization-and-integrity">
     normalized
    </a>
    to avoid anomalies.
@@ -1228,48 +1221,46 @@
     Logical design
    </a>
   </h3>
+  <p>
+   Proceed table by table, field by field:
+  </p>
   <ul>
    <li>
-    <strong>
-     Create logical design (rules and constraints)
-    </strong>
-    :
+    Choose naming conventions (avoid special characters and reserved words for your DBMS);
+   </li>
+   <li>
+    Choose data types, which vary by DBMS;
     <ul>
      <li>
-      Proceed table by table, field by field;
-     </li>
-     <li>
-      Choose naming conventions: avoid special characters and reserved words for your DBMS;
-     </li>
-     <li>
-      Choose data types;
-      <ul>
-       <li>
-        Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
-       </li>
-      </ul>
-     </li>
-     <li>
-      Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
-     </li>
-     <li>
-      Apply integrity constraints:
-      <ul>
-       <li>
-        With a lookup table;
-       </li>
-       <li>
-        With a referential integrity constraint to prevent orphaned records;
-       </li>
-       <li>
-        Through a check constraint.
-       </li>
-      </ul>
-     </li>
-     <li>
-      Denote required fields;
+      Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
      </li>
     </ul>
+   </li>
+   <li>
+    Resolve many-to-many relationships with
+    <a href="#associative-entities">
+     associative entities;
+    </a>
+   </li>
+   <li>
+    Apply
+    <a href="#normalization-and-integrity">
+     integrity constraints:
+    </a>
+    <ul>
+     <li>
+      With a lookup table;
+     </li>
+     <li>
+      With a referential integrity constraint to prevent orphaned records;
+     </li>
+     <li>
+      Through a check constraint.
+     </li>
+    </ul>
+   </li>
+   <li>
+    Denote required fields.
    </li>
   </ul>
   <h3>
@@ -1282,16 +1273,8 @@
    <a href="DBMS.html">
     notes on DBMS software.
    </a>
+   The goal of this stage is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
   </p>
-  <ul>
-   <li>
-    Finally, in the
-    <strong>
-     physical design phase,
-    </strong>
-    the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
-   </li>
-  </ul>
   <h4>
    <a name="indexing-&amp;-performance">
     Indexing &amp; performance

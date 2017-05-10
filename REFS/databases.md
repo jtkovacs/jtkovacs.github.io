@@ -39,7 +39,7 @@ Hierarchies and graphs were superseded by Edgar Codd's **relational** data model
 - Provides a [programming/query language](SQL.html) that is easy to learn and execute, expediting data retrieval
 - Minimizes data redundancy, conserving storage and safeguarding data quality (although some redundancy is still required to establish relationships)
 - Can capture complex relationships (important for enforcing business rules)
-- [Preserves data integrity](#data-integrity-in-the-relational-model)
+- [Preserves data integrity](#normalization-and-integrity)
 
 **Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data, [NoSQL databases](#NoSQL-databases) (an umbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
 
@@ -73,6 +73,8 @@ In a relational database, the data model is of **tables** AKA relations. Tables 
 ##### Associative entities
 
 When two entities are related in many-to-many fashion, an associative entity must be created to resolve the relationship. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
+
+Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
 
 ##### Superclasses and subclasses
 
@@ -125,7 +127,7 @@ Describe what Transitive Dependency is and give an example.
 If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
 
 
-#### Normalization
+#### Normalization and integrity
 
 Done to avoid transitive dependencies:
 
@@ -161,8 +163,6 @@ __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides
 - a relation A is __decomposed__ into B and C if the union of B and C’s attributes contains all of A’s attributes and `B⋈C = A` (the lossless join property). 
 
 __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
-
-#### Data integrity in the relational model
 
 Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
 
@@ -240,7 +240,7 @@ Note that databases are often developed in parallel with the applications that w
 
 ## Design phases
 
-All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties of each attribute. Lastly, physical design is focused on specifying the database and its interfaces, etc. according to a particular DBMS.
+All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties and constraints of each attribute. Lastly, physical design is focused on specifying the database and its interfaces, etc. according to a particular DBMS.
 
 ### Conceptual design
 
@@ -249,7 +249,7 @@ In the conceptual design stage of database development, there are two competing 
 - The **top-down approach** (AKA design by decomposition) begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both. 
 - The **bottom-up approach** begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
 
-Regardless, the end goal is a schema that is [normalized](#normalization) to avoid anomalies. 
+Regardless, the end goal is a schema that is [normalized](#normalization-and-integrity) to avoid anomalies. 
 
 In addition to constructing tables via a top-down or bottom-up approach, a conceptual design should:
 
@@ -261,23 +261,21 @@ In addition to constructing tables via a top-down or bottom-up approach, a conce
 
 ### Logical design
     
-- __Create logical design (rules and constraints)__:
-    - Proceed table by table, field by field;
-    - Choose naming conventions: avoid special characters and reserved words for your DBMS;
-    - Choose data types;
-        - Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
-    - Resolve many-to-many relationships by adding a junction table with the two tables’ PKs as its composite PK;
-    - Apply integrity constraints:
-        - With a lookup table; 
-        - With a referential integrity constraint to prevent orphaned records; 
-        - Through a check constraint. 
-    - Denote required fields;
+Proceed table by table, field by field:
+
+- Choose naming conventions (avoid special characters and reserved words for your DBMS);
+- Choose data types, which vary by DBMS;
+    - Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
+- Resolve many-to-many relationships with [associative entities;](#associative-entities)
+- Apply [integrity constraints:](#normalization-and-integrity)
+    - With a lookup table; 
+    - With a referential integrity constraint to prevent orphaned records; 
+    - Through a check constraint. 
+- Denote required fields.
 
 ### Physical design & construction
     
-Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html)
-
-- Finally, in the **physical design phase,** the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
 
 #### Indexing & performance
 

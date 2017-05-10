@@ -281,7 +281,7 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 Indexing accelerates queries but reduces write speed. The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
 
-- **Clustered indexes** determine the physical storage of the related data ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/). There can be only one clustered index per table.
+- **Clustered indexes** determine physical storage ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table.
 - There can be more than one **non-clustered index** on a table.
 - A **columnstore index** is used to improve performance of read-only tables. 
 

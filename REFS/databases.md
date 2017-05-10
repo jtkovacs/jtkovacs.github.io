@@ -74,7 +74,7 @@ The relationship between two entites has several characteristics. The **particip
 
 ##### Superclasses and subclasses
 
-Entities may be specified superclasses and subclasses; this provides more semantic meaning to an ER model, makes the ER model more readable, and (depending on implementation) can reduce the number of NULLs in the database. There are several ways to implement super- and subclasses:
+Entities may be classified as superclasses and subclasses; this provides more semantic meaning to an ER model, makes the ER model more readable, and (depending on implementation) can reduce the number of NULLs in the database. There are several implementation options:
 
 - Subclass contains superclass PK along with its own unique attributes;
 - Subclass relations contain all superclass attributes along with its own unique attributes;

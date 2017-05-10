@@ -49,24 +49,6 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Order is insignificant.
 
-#### Normalization
-
-Done to avoid transitive dependencies:
-
-- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
-- https://www.thoughtco.com/transitive-dependency-1019760 
-
-Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization: 
-
-- “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
-    - It contains two-dimensional tables with rows and columns.
-    - Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
-    - Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
-    - All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
-- Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
-- Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-
-
 #### Relationships between entities
 
 - http://www2.cs.uregina.ca/~bernatja/crowsfoot.html 
@@ -86,6 +68,8 @@ Entities may be specified superclasses and subclasses; this provides more semant
 - Subclass contains superclass PK along with its own unique attributes;
 - Subclass relations contain all superclass attributes along with its own unique attributes;
 - One relation contains all super- and subclass attributes.
+
+
 
 #### Types of attributes 
 
@@ -111,6 +95,40 @@ Identity values must/How to pick a key. Which of the following are guidelines fo
 - Will not be null
 - Narrow field
 
+__Functional dependency (FD)__, `A→B`: The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
+
+- trivial FD: `A→B & B⊆A`
+- nontrivial FD: `A→B & B⊈A`
+- completely nontrivial FD: `A→B & A∩B=∅` 
+- transitive property: `A→B & B→C ⇒ A→C`
+- the __closure__ of A, {A}\*, is all attributes functionally determined by A 
+- __keys__ are attributes whose closure encompasses all attributes in a relation 
+- `S2`, a set of FDs, follows from `S1` if every relation satisfying `S1` also satisfies `S2`
+- `S2`, set of FDs, is equivalent to `S1` if exactly the same FDs follow from `S1` and `S2`
+
+Describe what Transitive Dependency is and give an example.
+
+If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
+
+
+#### Normalization
+
+Done to avoid transitive dependencies:
+
+- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
+- https://www.thoughtco.com/transitive-dependency-1019760 
+
+Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization: 
+
+- “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
+    - It contains two-dimensional tables with rows and columns.
+    - Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
+    - Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
+    - All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
+- Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
+- Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+
+
 #### Data integrity in the relational model
 
 Domain integrity: column values should fall within a given domain, enforced by column data type
@@ -128,6 +146,9 @@ columns store single type of data; column names are unique. Columns have data ty
 ##### Referential integrity
 
 Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+
+
+
 
 ### NoSQL databases
 
@@ -227,21 +248,6 @@ In the conceptual design stage of database development, there are two competing 
 In the real world, we usually normalize only up to the 3rd Normal Form: TRUE
 
 Design by decomposition avoids redundancy and its consequences (update & deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
-
-__Functional dependency (FD)__, `A→B`: The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
-
-- trivial FD: `A→B & B⊆A`
-- nontrivial FD: `A→B & B⊈A`
-- completely nontrivial FD: `A→B & A∩B=∅` 
-- transitive property: `A→B & B→C ⇒ A→C`
-- the __closure__ of A, {A}\*, is all attributes functionally determined by A 
-- __keys__ are attributes whose closure encompasses all attributes in a relation 
-- `S2`, a set of FDs, follows from `S1` if every relation satisfying `S1` also satisfies `S2`
-- `S2`, set of FDs, is equivalent to `S1` if exactly the same FDs follow from `S1` and `S2`
-
-Describe what Transitive Dependency is and give an example.
-
-If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
 
 [__Boyce Codd normal form__ (BCNF)](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies) is when, for all FDs `A→B`, A is the key. To achieve BCNF, find FDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with `A→B` violating BCNF; decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A, rest); repeat. 
 

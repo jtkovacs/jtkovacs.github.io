@@ -51,11 +51,6 @@
            </a>
            <ul>
             <li>
-             <a href="#normalization">
-              Normalization
-             </a>
-            </li>
-            <li>
              <a href="#relationships-between-entities">
               Relationships between entities
              </a>
@@ -83,6 +78,11 @@
                </a>
               </li>
              </ul>
+            </li>
+            <li>
+             <a href="#normalization">
+              Normalization
+             </a>
             </li>
             <li>
              <a href="#data-integrity-in-the-relational-model">
@@ -463,50 +463,6 @@
    (AKA attributes, fields). Order is insignificant.
   </p>
   <h4>
-   <a name="normalization">
-    Normalization
-   </a>
-  </h4>
-  <p>
-   Done to avoid transitive dependencies:
-  </p>
-  <ul>
-   <li>
-    https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
-   </li>
-   <li>
-    https://www.thoughtco.com/transitive-dependency-1019760
-   </li>
-  </ul>
-  <p>
-   Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization:
-  </p>
-  <ul>
-   <li>
-    “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
-    <ul>
-     <li>
-      It contains two-dimensional tables with rows and columns.
-     </li>
-     <li>
-      Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
-     </li>
-     <li>
-      Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
-     </li>
-     <li>
-      All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
-     </li>
-    </ul>
-   </li>
-   <li>
-    Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
-   </li>
-   <li>
-    Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-   </li>
-  </ul>
-  <h4>
    <a name="relationships-between-entities">
     Relationships between entities
    </a>
@@ -628,6 +584,147 @@
    </li>
    <li>
     Narrow field
+   </li>
+  </ul>
+  <p>
+   <strong>
+    Functional dependency (FD)
+   </strong>
+   ,
+   <code>
+    A→B
+   </code>
+   : The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for
+   <code>
+    ∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B
+   </code>
+   . This generalizes to multiple attributes:
+   <code>
+    A1, A2, …, An → B1, B2, …, Bm.
+   </code>
+   FDs are used in DB compression and query optimization.
+  </p>
+  <ul>
+   <li>
+    trivial FD:
+    <code>
+     A→B &amp; B⊆A
+    </code>
+   </li>
+   <li>
+    nontrivial FD:
+    <code>
+     A→B &amp; B⊈A
+    </code>
+   </li>
+   <li>
+    completely nontrivial FD:
+    <code>
+     A→B &amp; A∩B=∅
+    </code>
+   </li>
+   <li>
+    transitive property:
+    <code>
+     A→B &amp; B→C ⇒ A→C
+    </code>
+   </li>
+   <li>
+    the
+    <strong>
+     closure
+    </strong>
+    of A, {A}*, is all attributes functionally determined by A
+   </li>
+   <li>
+    <strong>
+     keys
+    </strong>
+    are attributes whose closure encompasses all attributes in a relation
+   </li>
+   <li>
+    <code>
+     S2
+    </code>
+    , a set of FDs, follows from
+    <code>
+     S1
+    </code>
+    if every relation satisfying
+    <code>
+     S1
+    </code>
+    also satisfies
+    <code>
+     S2
+    </code>
+   </li>
+   <li>
+    <code>
+     S2
+    </code>
+    , set of FDs, is equivalent to
+    <code>
+     S1
+    </code>
+    if exactly the same FDs follow from
+    <code>
+     S1
+    </code>
+    and
+    <code>
+     S2
+    </code>
+   </li>
+  </ul>
+  <p>
+   Describe what Transitive Dependency is and give an example.
+  </p>
+  <p>
+   If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
+  </p>
+  <h4>
+   <a name="normalization">
+    Normalization
+   </a>
+  </h4>
+  <p>
+   Done to avoid transitive dependencies:
+  </p>
+  <ul>
+   <li>
+    https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
+   </li>
+   <li>
+    https://www.thoughtco.com/transitive-dependency-1019760
+   </li>
+  </ul>
+  <p>
+   Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization:
+  </p>
+  <ul>
+   <li>
+    “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
+    <ul>
+     <li>
+      It contains two-dimensional tables with rows and columns.
+     </li>
+     <li>
+      Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
+     </li>
+     <li>
+      Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
+     </li>
+     <li>
+      All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
+     </li>
+    </ul>
+   </li>
+   <li>
+    Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
+   </li>
+   <li>
+    Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
    </li>
   </ul>
   <h4>
@@ -965,103 +1062,6 @@
   </p>
   <p>
    Design by decomposition avoids redundancy and its consequences (update &amp; deletion anomalies). First, specify “mega” relations and dependencies to capture real-world constraints on the data; then, decompose into better (i.e., normalized) relations.
-  </p>
-  <p>
-   <strong>
-    Functional dependency (FD)
-   </strong>
-   ,
-   <code>
-    A→B
-   </code>
-   : The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for
-   <code>
-    ∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B
-   </code>
-   . This generalizes to multiple attributes:
-   <code>
-    A1, A2, …, An → B1, B2, …, Bm.
-   </code>
-   FDs are used in DB compression and query optimization.
-  </p>
-  <ul>
-   <li>
-    trivial FD:
-    <code>
-     A→B &amp; B⊆A
-    </code>
-   </li>
-   <li>
-    nontrivial FD:
-    <code>
-     A→B &amp; B⊈A
-    </code>
-   </li>
-   <li>
-    completely nontrivial FD:
-    <code>
-     A→B &amp; A∩B=∅
-    </code>
-   </li>
-   <li>
-    transitive property:
-    <code>
-     A→B &amp; B→C ⇒ A→C
-    </code>
-   </li>
-   <li>
-    the
-    <strong>
-     closure
-    </strong>
-    of A, {A}*, is all attributes functionally determined by A
-   </li>
-   <li>
-    <strong>
-     keys
-    </strong>
-    are attributes whose closure encompasses all attributes in a relation
-   </li>
-   <li>
-    <code>
-     S2
-    </code>
-    , a set of FDs, follows from
-    <code>
-     S1
-    </code>
-    if every relation satisfying
-    <code>
-     S1
-    </code>
-    also satisfies
-    <code>
-     S2
-    </code>
-   </li>
-   <li>
-    <code>
-     S2
-    </code>
-    , set of FDs, is equivalent to
-    <code>
-     S1
-    </code>
-    if exactly the same FDs follow from
-    <code>
-     S1
-    </code>
-    and
-    <code>
-     S2
-    </code>
-   </li>
-  </ul>
-  <p>
-   Describe what Transitive Dependency is and give an example.
-  </p>
-  <p>
-   If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
   </p>
   <p>
    <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies">

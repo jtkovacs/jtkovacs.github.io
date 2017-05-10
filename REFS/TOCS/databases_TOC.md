@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3523 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3540 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
 	- [Types of databases](#types-of-databases)
@@ -8,6 +8,7 @@
 				- [Associative entities](#associative-entities)
 				- [Superclasses and subclasses](#superclasses-and-subclasses)
 			- [Types of attributes ](#types-of-attributes-)
+				- [Identifiers, determinants, and dependencies](#identifiers,-determinants,-and-dependencies)
 			- [Data integrity in the relational model](#data-integrity-in-the-relational-model)
 				- [Entity integrity](#entity-integrity)
 				- [Domain integrity](#domain-integrity)
@@ -127,14 +128,13 @@ Entities may be specified superclasses and subclasses; this provides more semant
 
 #### Types of attributes 
 
-Per Sunderraman (2012) and Wikia ():
+Per Sunderraman (2012) and the Database Management Wikia (n.d.):
 
+- An attribute is **composite** if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two **atomic** AKA simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
+- An attribute is **multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
+- An attribute is **derived** if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
 
-An attribute is composite if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two atomic/simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
-
-An attribute is multi-valued/set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
-
-An attribute is derived if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
+##### Identifiers, determinants, and dependencies
 
 Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
 
@@ -166,9 +166,7 @@ columns store single type of data; column names are unique. Columns have data ty
 
 ##### Referential integrity
 
-Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity
-
-One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
 ### NoSQL databases
 
@@ -176,8 +174,8 @@ NoSQL databases use a non-relational data model ...
 
 - **Key-value model,** e.g. Dynamo, Riak, Basho: _[Key|Value|Timestamp]._ Provides easy and fast storage for simple data.
 - **Columnar model,** e.g. Google’s Bigtable, Apache’s HBase (part of Hadoop): _[Row Key|Value|Timestamp|Column Family|Column Name]_ Good for retaining relationships (since columns can be grouped into families). 
-- Document: MongoDB, JSON, XML; good for storing complex hierarchical relationships
-- Graph/triple store: Neo4j, PoolParty; good for capturing a web of relationships
+- **Document model,** e.g. MongoDB, JSON, XML. Good for storing complex hierarchical relationships.
+- **Graph/triple model,** e.g. Neo4j. Good for capturing a web of relationships.
 
 ... and ...
 

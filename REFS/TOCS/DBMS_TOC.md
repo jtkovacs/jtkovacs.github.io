@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1618 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1651 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -24,6 +24,8 @@
 	- [Neo4j](#neo4j)
 - [Sources](#sources)
 	- [References](#references)
+	- [Read](#read)
+	- [Unread](#unread)
 </td></tr></table>
 
 
@@ -300,13 +302,13 @@ How? Database Tools > Access Database > Database Splitter wizard.
 
 #### Migrating to Microsoft SQL Server
 
+- [Migrating Access Databases to SQL Server](https://www.lynda.com/Access-tutorials/Migrating-Access-Databases-SQL-Server/397389-2.html)
   
   
   
   
   
-  
-  
+
   
 # Graph DBMS
 
@@ -338,3 +340,13 @@ The **stream** displays output:
 ## References
 
 - [http://allenbrowne.com/tips.html](http://allenbrowne.com/tips.html)
+
+## Read
+
+## Unread
+
+- [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
+- [Core Concepts for SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Core-Concepts/385693-2.html)
+- [Storage in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Storage/385694-2.html)
+- [Data Manipulation in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Creating-Manipulating-Data/385697-2.html)
+

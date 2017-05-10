@@ -196,36 +196,21 @@ NoSQL databases use non-relational data models ...
 
 # Database design
 
-Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; efficient way of producing documentation).
-
-A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). Best practices for DB design:
+A good design process minimizes redundancy; reduces errors by automating or imposing constraints on data entry; permits multiple analyses by replacing multipart fields with atomic ones; avoids data conflicts by reserving calculation to the analysis phase, rather than storing results; and ensures complete information by requiring it during input. Best practices for DB design:
 
 - Clearly identify scope of database
-- Follow a database design methodology (SDLC, agile)
-- Use a professional data modeling tool
-- Use a source control system
+- Follow a database design methodology, e.g. SDLC, Agile
+- Use a professional data modeling tool, e.g. MS Visio
+- Use a source control system, e.g. GitHub
 
-Connolly and Begg (2015) outline the following database development process AKA database system lifecycle:
+Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; an efficient way of producing documentation).
 
-- Gather business requirements (interviews, existing data, documents) → Mission & objectives → 
-- Conceptual design: identify entities and attributes →
-    - Top-down: entities, then attributes
-    - Bottom-up: attributes, then entities 
-- Logical design: choose data model (probably relational) → 
-- Physical design: platform-specific details, e.g. indices → 
-- Implementation → Testing → Rollout.
+Connolly and Begg (2015) outline the following database development process AKA **database system lifecycle:**
 
-OR:
 
-- Groundwork
-- In the **conceptual design stage,** a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain. 
-- In the **logical design stage,** the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies. 
-- Finally, in the **physical design phase,** the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
-- Implementation
-- Rollout
-- Maintenance
+## Business requirements
 
-## Groundwork
+- Gather and formulate **business requirements** by analyzing the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database 
 
 - __Conduct cost-benefit analysis for proposed database__
 - __Requirements analysis__: 
@@ -238,7 +223,14 @@ Explain what is meant by 'business rules' and provide an example.
 
 Business rules are database design constraints that arise from the business processes being modeled, not from requirements imposed by the relational data model (or other data model). Business rules affect the design of the database, including how entities are related; what attributes are collected; and what values are permitted or required for specific attributes. As an example, consider a database that stores donor and donations data for a nonprofit. Some business rules in this case might be that  donors can make multiple donations, multiple donors can be associated with the same donation, and individual donation amounts must be over $10.
 
+
+
 ## Conceptual design
+  
+- In the **conceptual design stage,** a database designer and to identify the entities (objects) and attributes (characteristics) it must contain. 
+- Identify entities and attributes in the **conceptual design** phase
+    - Top-down design: entities, then attributes
+    - Bottom-up design: attributes, then entities 
   
 - __Create conceptual design__:
     - Group fields into tables a logical way;
@@ -264,6 +256,9 @@ A top-down design approach creates an entity relationship diagram (ERD), startin
 
 ## Logical design
     
+- In the **logical design stage,** the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies. 
+- Logical design: choose data model (probably relational) → 
+    
 - __Create logical design (rules and constraints)__:
     - Proceed table by table, field by field;
     - Choose naming conventions: avoid special characters and reserved words for your DBMS;
@@ -282,6 +277,8 @@ A top-down design approach creates an entity relationship diagram (ERD), startin
     
 Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html)
 
+- Finally, in the **physical design phase,** the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+
 ### Indexing & performance
 
 Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
@@ -296,6 +293,8 @@ Select all accurate statements about indexes.
 - There can be more than one non-clustered index on a table: T
 - There can be more than one clustered index on a table: FALSE
 - Columnstore index used to improve performance of read-only tables
+
+## Testing
 
 ## Rollout & support
     

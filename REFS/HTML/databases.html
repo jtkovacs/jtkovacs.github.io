@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3527 words
+   &gt; 3509 words
   </p>
   <table class="TOC">
    <tr>
@@ -123,8 +123,8 @@
        </a>
        <ul>
         <li>
-         <a href="#groundwork">
-          Groundwork
+         <a href="#business-requirements">
+          Business requirements
          </a>
         </li>
         <li>
@@ -155,6 +155,11 @@
            </a>
           </li>
          </ul>
+        </li>
+        <li>
+         <a href="#testing">
+          Testing
+         </a>
         </li>
         <li>
          <a href="#rollout-&amp;-support">
@@ -998,97 +1003,46 @@
    </a>
   </h1>
   <p>
-   Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; efficient way of producing documentation).
-  </p>
-  <p>
-   A good design process prevents repetition; reduces errors (by limiting data entry through use of IDs, and imposing constraints); permits multiple analyses (by replacing multipart fields with atomic ones); avoids data conflicts (by reserving calculation to the analysis phase, rather than storing results); and ensures complete information (by requiring it during input). Best practices for DB design:
+   A good design process minimizes redundancy; reduces errors by automating or imposing constraints on data entry; permits multiple analyses by replacing multipart fields with atomic ones; avoids data conflicts by reserving calculation to the analysis phase, rather than storing results; and ensures complete information by requiring it during input. Best practices for DB design:
   </p>
   <ul>
    <li>
     Clearly identify scope of database
    </li>
    <li>
-    Follow a database design methodology (SDLC, agile)
+    Follow a database design methodology, e.g. SDLC, Agile
    </li>
    <li>
-    Use a professional data modeling tool
+    Use a professional data modeling tool, e.g. MS Visio
    </li>
    <li>
-    Use a source control system
+    Use a source control system, e.g. GitHub
    </li>
   </ul>
   <p>
-   Connolly and Begg (2015) outline the following database development process AKA database system lifecycle:
+   Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; an efficient way of producing documentation).
   </p>
-  <ul>
-   <li>
-    Gather business requirements (interviews, existing data, documents) → Mission &amp; objectives →
-   </li>
-   <li>
-    Conceptual design: identify entities and attributes →
-    <ul>
-     <li>
-      Top-down: entities, then attributes
-     </li>
-     <li>
-      Bottom-up: attributes, then entities
-     </li>
-    </ul>
-   </li>
-   <li>
-    Logical design: choose data model (probably relational) →
-   </li>
-   <li>
-    Physical design: platform-specific details, e.g. indices →
-   </li>
-   <li>
-    Implementation → Testing → Rollout.
-   </li>
-  </ul>
   <p>
-   OR:
+   Connolly and Begg (2015) outline the following database development process AKA
+   <strong>
+    database system lifecycle:
+   </strong>
   </p>
-  <ul>
-   <li>
-    Groundwork
-   </li>
-   <li>
-    In the
-    <strong>
-     conceptual design stage,
-    </strong>
-    a database designer analyzes the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database and to identify the entities (objects) and attributes (characteristics) it must contain.
-   </li>
-   <li>
-    In the
-    <strong>
-     logical design stage,
-    </strong>
-    the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies.
-   </li>
-   <li>
-    Finally, in the
-    <strong>
-     physical design phase,
-    </strong>
-    the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
-   </li>
-   <li>
-    Implementation
-   </li>
-   <li>
-    Rollout
-   </li>
-   <li>
-    Maintenance
-   </li>
-  </ul>
   <h2>
-   <a name="groundwork">
-    Groundwork
+   <a name="business-requirements">
+    Business requirements
    </a>
   </h2>
   <ul>
+   <li>
+    <p>
+     Gather and formulate
+     <strong>
+      business requirements
+     </strong>
+     by analyzing the business processes, documents, workflows, etc. that will be replaced or supported by the database. The goal is to understand thoroughly the business context of the database
+    </p>
+   </li>
    <li>
     <strong>
      Conduct cost-benefit analysis for proposed database
@@ -1127,6 +1081,28 @@
    </a>
   </h2>
   <ul>
+   <li>
+    In the
+    <strong>
+     conceptual design stage,
+    </strong>
+    a database designer and to identify the entities (objects) and attributes (characteristics) it must contain.
+   </li>
+   <li>
+    Identify entities and attributes in the
+    <strong>
+     conceptual design
+    </strong>
+    phase
+    <ul>
+     <li>
+      Top-down design: entities, then attributes
+     </li>
+     <li>
+      Bottom-up design: attributes, then entities
+     </li>
+    </ul>
+   </li>
    <li>
     <strong>
      Create conceptual design
@@ -1200,6 +1176,18 @@
   </h2>
   <ul>
    <li>
+    In the
+    <strong>
+     logical design stage,
+    </strong>
+    the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies.
+   </li>
+   <li>
+    <p>
+     Logical design: choose data model (probably relational) →
+    </p>
+   </li>
+   <li>
     <strong>
      Create logical design (rules and constraints)
     </strong>
@@ -1253,6 +1241,15 @@
     notes on DBMS software.
    </a>
   </p>
+  <ul>
+   <li>
+    Finally, in the
+    <strong>
+     physical design phase,
+    </strong>
+    the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
+   </li>
+  </ul>
   <h3>
    <a name="indexing-&amp;-performance">
     Indexing &amp; performance
@@ -1293,6 +1290,11 @@
     Columnstore index used to improve performance of read-only tables
    </li>
   </ul>
+  <h2>
+   <a name="testing">
+    Testing
+   </a>
+  </h2>
   <h2>
    <a name="rollout-&amp;-support">
     Rollout &amp; support

@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3299 words
+   &gt; 3326 words
   </p>
   <table class="TOC">
    <tr>
@@ -95,13 +95,13 @@
                </a>
               </li>
               <li>
-               <a href="#domain-integrity">
-                Domain integrity
+               <a href="#referential-integrity">
+                Referential integrity
                </a>
               </li>
               <li>
-               <a href="#referential-integrity">
-                Referential integrity
+               <a href="#domain-integrity">
+                Domain integrity
                </a>
               </li>
              </ul>
@@ -506,6 +506,13 @@
    </strong>
    (AKA attributes, fields). Order is insignificant.
   </p>
+  <p>
+   Representing reality in terms of entities, attributes and relationships occurs during the
+   <a href="#conceptual-design">
+    conceptual design phase
+   </a>
+   of database development, where the goal is to produce a database schema that (1) accurately captures the underlying business processes, and (2) is normalized, i.e. satisfies the requirements of the relational data model and thereby preserves data integrity.
+  </p>
   <h4>
    <a name="relationships-between-entities">
     Relationships between entities
@@ -599,9 +606,6 @@
    </a>
   </h5>
   <p>
-   Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
-  </p>
-  <p>
    An attribute may be a
    <strong>
     key
@@ -617,25 +621,25 @@
    </li>
    <li>
     Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”.
+    <ul>
+     <li>
+      INTEGER is most-often the best data type choice
+     </li>
+     <li>
+      Will not change in value
+     </li>
+     <li>
+      Will not be null
+     </li>
+     <li>
+      Narrow field
+     </li>
+    </ul>
    </li>
   </ul>
   <p>
-   Identity values must/How to pick a key. Which of the following are guidelines for an Entity Identifier (aka 'Primary Key')?
+   Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
   </p>
-  <ul>
-   <li>
-    INTEGER is most-often the best data type choice
-   </li>
-   <li>
-    Will not change in value
-   </li>
-   <li>
-    Will not be null
-   </li>
-   <li>
-    Narrow field
-   </li>
-  </ul>
   <p>
    <strong>
     Functional dependency (FD)
@@ -728,108 +732,6 @@
    </li>
   </ul>
   <p>
-   Describe what Transitive Dependency is and give an example.
-  </p>
-  <p>
-   If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
-  </p>
-  <h4>
-   <a name="normalization-and-integrity">
-    Normalization and integrity
-   </a>
-  </h4>
-  <p>
-   Done to avoid transitive dependencies:
-  </p>
-  <ul>
-   <li>
-    https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
-   </li>
-   <li>
-    https://www.thoughtco.com/transitive-dependency-1019760
-   </li>
-  </ul>
-  <p>
-   Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization:
-  </p>
-  <ul>
-   <li>
-    “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
-    <ul>
-     <li>
-      It contains two-dimensional tables with rows and columns.
-     </li>
-     <li>
-      Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
-     </li>
-     <li>
-      Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
-     </li>
-     <li>
-      All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
-     </li>
-    </ul>
-   </li>
-   <li>
-    Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
-   </li>
-   <li>
-    Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-   </li>
-  </ul>
-  <p>
-   <strong>
-    Normalize:
-   </strong>
-  </p>
-  <ul>
-   <li>
-    1NF: all fields only include a single piece of data;
-   </li>
-   <li>
-    2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
-   </li>
-   <li>
-    3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
-   </li>
-  </ul>
-  <p>
-   In the real world, we usually normalize only up to the 3rd Normal Form: TRUE
-  </p>
-  <p>
-   <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies">
-    <strong>
-     Boyce Codd normal form
-    </strong>
-    (BCNF)
-   </a>
-   is when, for all FDs
-   <code>
-    A→B
-   </code>
-   , A is the key. To achieve BCNF, find FDs and keys for R
-   <sub>
-    i
-   </sub>
-   ; pick any R
-   <sub>
-    i
-   </sub>
-   with
-   <code>
-    A→B
-   </code>
-   violating BCNF; decompose into R
-   <sub>
-    1
-   </sub>
-   (A,B) and R
-   <sub>
-    2
-   </sub>
-   (A, rest); repeat.
-  </p>
-  <p>
    <strong>
     <a href="http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf">
      Multivalued dependency
@@ -899,6 +801,109 @@
    </li>
   </ul>
   <p>
+   Describe what
+   <strong>
+    Transitive Dependency
+   </strong>
+   is and give an example: If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
+  </p>
+  <ul>
+   <li>
+    https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
+   </li>
+   <li>
+    https://www.thoughtco.com/transitive-dependency-1019760
+   </li>
+  </ul>
+  <h4>
+   <a name="normalization-and-integrity">
+    Normalization and integrity
+   </a>
+  </h4>
+  <p>
+   Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
+  </p>
+  <p>
+   Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization:
+  </p>
+  <ul>
+   <li>
+    “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
+    <ul>
+     <li>
+      It contains two-dimensional tables with rows and columns.
+     </li>
+     <li>
+      Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
+     </li>
+     <li>
+      Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
+     </li>
+     <li>
+      All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
+     </li>
+    </ul>
+   </li>
+   <li>
+    Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
+   </li>
+   <li>
+    Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+   </li>
+  </ul>
+  <p>
+   <strong>
+    Normalize:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    1NF: all fields only include a single piece of data;
+   </li>
+   <li>
+    2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
+   </li>
+   <li>
+    3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
+   </li>
+  </ul>
+  <p>
+   In the real world, we usually normalize only up to the 3rd Normal Form.
+  </p>
+  <p>
+   <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies">
+    <strong>
+     Boyce Codd normal form
+    </strong>
+    (BCNF)
+   </a>
+   is when, for all FDs
+   <code>
+    A→B
+   </code>
+   , A is the key. To achieve BCNF, find FDs and keys for R
+   <sub>
+    i
+   </sub>
+   ; pick any R
+   <sub>
+    i
+   </sub>
+   with
+   <code>
+    A→B
+   </code>
+   violating BCNF; decompose into R
+   <sub>
+    1
+   </sub>
+   (A,B) and R
+   <sub>
+    2
+   </sub>
+   (A, rest); repeat.
+  </p>
+  <p>
    <strong>
     Fourth normal form
    </strong>
@@ -936,27 +941,16 @@
    </sub>
    (A,rest); repeat.
   </p>
-  <p>
-   Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
-  </p>
-  <p>
-   Domain integrity: column values should fall within a given domain, enforced by column data type Entity integrity: enforced by primary key Referential integrity: enforced by keys (PK-FK pair)
-  </p>
   <h5>
    <a name="entity-integrity">
     Entity integrity
    </a>
   </h5>
   <p>
-   rows are unique (they need a key).
+   Entity integrity: enforced by primary key
   </p>
-  <h5>
-   <a name="domain-integrity">
-    Domain integrity
-   </a>
-  </h5>
   <p>
-   columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values.
+   rows are unique (they need a key).
   </p>
   <h5>
    <a name="referential-integrity">
@@ -964,7 +958,21 @@
    </a>
   </h5>
   <p>
+   Referential integrity: enforced by keys (PK-FK pair)
+  </p>
+  <p>
    Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+  </p>
+  <h5>
+   <a name="domain-integrity">
+    Domain integrity
+   </a>
+  </h5>
+  <p>
+   Domain integrity: column values should fall within a given domain, enforced by column data type
+  </p>
+  <p>
+   columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values.
   </p>
   <h3>
    <a name="nosql-databases">

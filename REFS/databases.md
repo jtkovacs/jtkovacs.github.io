@@ -62,6 +62,8 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). Order is insignificant.
 
+Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development, where the goal is to produce a database schema that (1) accurately captures the underlying business processes, and (2) is normalized, i.e. satisfies the requirements of the relational data model and thereby preserves data integrity.
+
 #### Relationships between entities
 
 - http://www2.cs.uregina.ca/~bernatja/crowsfoot.html 
@@ -85,7 +87,6 @@ Entities may be specified superclasses and subclasses; this provides more semant
 - One relation contains all super- and subclass attributes.
 
 
-
 #### Types of attributes
 
 Per Sunderraman (2012) and the Database Management Wikia (n.d.):
@@ -96,21 +97,18 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.):
 
 ##### Identifiers, determinants, and dependencies
 
-Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
-
 An attribute may be a **key** or identity value. Kinds of keys: 
 
 - Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
 - Candidate Key: Column(s) that can uniquely identify rows in an entity
 - Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
+    - INTEGER is most-often the best data type choice
+    - Will not change in value
+    - Will not be null
+    - Narrow field
 
-Identity values must/How to pick a key. Which of the following are guidelines for an Entity Identifier (aka 'Primary Key')?
- 
-- INTEGER is most-often the best data type choice
-- Will not change in value
-- Will not be null
-- Narrow field
-
+Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s)
+    
 __Functional dependency (FD)__, `A→B`: The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 
 - trivial FD: `A→B & B⊆A`
@@ -122,17 +120,23 @@ __Functional dependency (FD)__, `A→B`: The same A is always linked with the sa
 - `S2`, a set of FDs, follows from `S1` if every relation satisfying `S1` also satisfies `S2`
 - `S2`, set of FDs, is equivalent to `S1` if exactly the same FDs follow from `S1` and `S2`
 
-Describe what Transitive Dependency is and give an example.
+__[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf)__ (MVD), `A↠B`: A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic: `if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.` Furthermore, `∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest`.
 
-If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
+- trivial MVD: `A↠B & B⊆A` or `A∪B ={ all attributes}`; e.g. `AB↠B`
+- if `A→B`, then also `A↠B`
+- intersection rule: `A↠B & A↠C ⇒ A↠B⋂C`
+- transitive rule: `A↠B & B↠C ⇒ A↠C-B`
+- a relation A is __decomposed__ into B and C if the union of B and C’s attributes contains all of A’s attributes and `B⋈C = A` (the lossless join property). 
+
+Describe what **Transitive Dependency** is and give an example: If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
+
+- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
+- https://www.thoughtco.com/transitive-dependency-1019760 
 
 
 #### Normalization and integrity
 
-Done to avoid transitive dependencies:
-
-- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
-- https://www.thoughtco.com/transitive-dependency-1019760 
+Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
 
 Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization: 
 
@@ -150,37 +154,29 @@ __Normalize:__
 - 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
 - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
 
-In the real world, we usually normalize only up to the 3rd Normal Form: TRUE
+In the real world, we usually normalize only up to the 3rd Normal Form.
 
 [__Boyce Codd normal form__ (BCNF)](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies) is when, for all FDs `A→B`, A is the key. To achieve BCNF, find FDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with `A→B` violating BCNF; decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A, rest); repeat. 
 
-__[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf)__ (MVD), `A↠B`: A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic: `if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.` Furthermore, `∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest`.
-
-- trivial MVD: `A↠B & B⊆A` or `A∪B ={ all attributes}`; e.g. `AB↠B`
-- if `A→B`, then also `A↠B`
-- intersection rule: `A↠B & A↠C ⇒ A↠B⋂C`
-- transitive rule: `A↠B & B↠C ⇒ A↠C-B`
-- a relation A is __decomposed__ into B and C if the union of B and C’s attributes contains all of A’s attributes and `B⋈C = A` (the lossless join property). 
-
 __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
-
-Per Ullman (2006), many different relational schemas could be used to model any given reality; the best designs will avoid (1) redundancy, (2) update anomalies, and (3) deletion anomalies.
-
-Domain integrity: column values should fall within a given domain, enforced by column data type
-Entity integrity: enforced by primary key
-Referential integrity: enforced by keys (PK-FK pair)
 
 ##### Entity integrity
 
+Entity integrity: enforced by primary key
+
 rows are unique (they need a key).
-
-##### Domain integrity
-
-columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values. 
 
 ##### Referential integrity
 
+Referential integrity: enforced by keys (PK-FK pair)
+
 Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+
+##### Domain integrity
+
+Domain integrity: column values should fall within a given domain, enforced by column data type
+
+columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values. 
 
 
 

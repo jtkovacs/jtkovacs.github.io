@@ -100,9 +100,10 @@ An attribute may be a **key** or identity value. Kinds of keys:
 
 - Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
 - Candidate Key: Column(s) that can uniquely identify rows in an entity
+- Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
 
 Identity values must/How to pick a key. Which of the following are guidelines for an Entity Identifier (aka 'Primary Key')?
-
+ 
 - INTEGER is most-often the best data type choice
 - Will not change in value
 - Will not be null
@@ -140,6 +141,12 @@ Levels of normalization: http://searchsqlserver.techtarget.com/definition/normal
     - All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
 - Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
 - Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+
+__Normalize:__ 
+
+- 1NF: all fields only include a single piece of data;
+- 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
+- 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
 
 In the real world, we usually normalize only up to the 3rd Normal Form: TRUE
 
@@ -229,38 +236,29 @@ Note that databases are often developed in parallel with the applications that w
     - Within the scope of the objectives, identify key **actors;**
     - Interview actors to understand **tasks** that actors execute;
     - Identify pertinent **business rules,** i.e., database design constraints that arise from the business processes being modeled, not from requirements of the data model.
-    
 
-## Conceptual design
+## Design phases
 
-In the conceptual design stage of database development, there are two competing approaches: top-down (AKA design by decomposition) and bottom-up. The top-down approach begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both. The bottom-up approach begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes. The end goal is a schema that is normalized to avoid anomalies.
- 
+All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties of each attribute. Lastly, physical design focuses on 
 
+### Conceptual design
 
-- In the **conceptual design stage,** a database designer and to identify the entities (objects) and attributes (characteristics) it must contain. 
-- Identify entities and attributes in the **conceptual design** phase
-    - Top-down design: entities, then attributes
-    - Bottom-up design: attributes, then entities 
+In the conceptual design stage of database development, there are two competing approaches: 
+
+- The **top-down approach** (AKA design by decomposition) begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both. 
+- The **bottom-up approach** begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
+- Regardless, the end goal is a schema that is [normalized](#normalization) to avoid anomalies.
   
-- __Create conceptual design__:
-    - Group fields into tables a logical way;
-    - Identify relationships verbally, and/or visualize in UML;
-    - Identify cardinality (max#) and optionality (min#) associated with each relationship;
-    - Identify entity subtypes/subclasses;
-    - Create lookup tables;
-    - Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
-- __Normalize your data model__ 
-    - 1NF: all fields only include a single piece of data;
-    - 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
-    - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL).
+Steps:
 
+- Group fields into tables a logical way;
+- Identify relationships verbally, and/or visualize in UML;
+- Identify cardinality (max#) and optionality (min#) associated with each relationship;
+- Identify entity subtypes/subclasses;
+- Create lookup tables;
+- Identify primary keys.
 
-
-
-## Logical design
-    
-- In the **logical design stage,** the entities and attributes are expressed in terms of the chosen data model (often relational). The goal is to express the data in a structured way that avoids data anomalies. 
-- Logical design: choose data model (probably relational) → 
+### Logical design
     
 - __Create logical design (rules and constraints)__:
     - Proceed table by table, field by field;
@@ -274,15 +272,13 @@ In the conceptual design stage of database development, there are two competing 
         - Through a check constraint. 
     - Denote required fields;
 
-    
-    
-## Physical design & construction
+### Physical design & construction
     
 Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html)
 
 - Finally, in the **physical design phase,** the database designer produces software-specific instructions for implementing the database. The goal is to provide all the information necessary to build a database that takes advantage of features (like indexes) from the chosen platform.
 
-### Indexing & performance
+#### Indexing & performance
 
 Build indexes for the most commonly searched fields (PK indexed by default; indexing reduces write speed).  
 

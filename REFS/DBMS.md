@@ -273,13 +273,13 @@ How? Database Tools > Access Database > Database Splitter wizard.
 
 #### Migrating to Microsoft SQL Server
 
+- [Migrating Access Databases to SQL Server](https://www.lynda.com/Access-tutorials/Migrating-Access-Databases-SQL-Server/397389-2.html)
   
   
   
   
   
-  
-  
+
   
 # Graph DBMS
 
@@ -311,3 +311,13 @@ The **stream** displays output:
 ## References
 
 - [http://allenbrowne.com/tips.html](http://allenbrowne.com/tips.html)
+
+## Read
+
+## Unread
+
+- [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
+- [Core Concepts for SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Core-Concepts/385693-2.html)
+- [Storage in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Storage/385694-2.html)
+- [Data Manipulation in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Creating-Manipulating-Data/385697-2.html)
+

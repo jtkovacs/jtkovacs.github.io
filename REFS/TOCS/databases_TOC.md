@@ -14,7 +14,7 @@
 				- [Domain integrity](#domain-integrity)
 				- [Referential integrity](#referential-integrity)
 		- [NoSQL databases](#nosql-databases)
-- [Database design](#database-design)
+- [Database development](#database-development)
 	- [Business requirements](#business-requirements)
 	- [Design phases](#design-phases)
 		- [Conceptual design](#conceptual-design)
@@ -252,7 +252,7 @@ NoSQL databases use non-relational data models ...
 
 
 
-# Database design
+# Database development
 
 A good design process minimizes redundancy; reduces errors by automating or imposing constraints on data entry; permits multiple analyses by replacing multipart fields with atomic ones; avoids data conflicts by reserving calculation to the analysis phase, rather than storing results; and ensures complete information by requiring it during input. **Best practices for DB design:**
 

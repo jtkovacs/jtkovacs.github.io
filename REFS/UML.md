@@ -25,7 +25,7 @@ Inherit attributes from super/parent class, but have own unique attributes and/o
 
 Captures relationships between objects of two classes. Self-association is possible.
 
-### Association types
+### Types of associations
 
 #### Composition
 
@@ -35,6 +35,10 @@ Objects in one class ‘belong’ to objects in another class. Denoted with a so
 
 Objects might ‘belong’ to, at most, one object of another class. Denoted with an empty diamond on the association. PK required.
 
+### Classes for associations
+
+Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”.
+
 ### Multiplicity of associations 
 
 - `0..n` 
@@ -42,10 +46,6 @@ Objects might ‘belong’ to, at most, one object of another class. Denoted wit
 - `1..1`
 - `m..n`
 - `m..*` 
-
-### Association classes
-
-Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”.
 
 
 

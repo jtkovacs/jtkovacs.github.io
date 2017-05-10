@@ -1,13 +1,13 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/UML.html">https://jtkovacs.github.io/REFS/HTML/UML.html</a> \> 171 words </p><table class="TOC"><tr><td>- [Elements of UML](#elements-of-uml)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/UML.html">https://jtkovacs.github.io/REFS/HTML/UML.html</a> \> 173 words </p><table class="TOC"><tr><td>- [Elements of UML](#elements-of-uml)
 	- [Classes](#classes)
 		- [Superclasses ](#superclasses-)
 		- [Subclasses](#subclasses)
 	- [Associations](#associations)
-		- [Association types](#association-types)
+		- [Types of associations](#types-of-associations)
 			- [Composition](#composition)
 			- [Aggregation](#aggregation)
+		- [Classes for associations](#classes-for-associations)
 		- [Multiplicity of associations ](#multiplicity-of-associations-)
-		- [Association classes](#association-classes)
 - [Sources](#sources)
 </td></tr></table>
 
@@ -37,7 +37,7 @@ Inherit attributes from super/parent class, but have own unique attributes and/o
 
 Captures relationships between objects of two classes. Self-association is possible.
 
-### Association types
+### Types of associations
 
 #### Composition
 
@@ -47,6 +47,10 @@ Objects in one class ‘belong’ to objects in another class. Denoted with a so
 
 Objects might ‘belong’ to, at most, one object of another class. Denoted with an empty diamond on the association. PK required.
 
+### Classes for associations
+
+Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”.
+
 ### Multiplicity of associations 
 
 - `0..n` 
@@ -54,10 +58,6 @@ Objects might ‘belong’ to, at most, one object of another class. Denoted wit
 - `1..1`
 - `m..n`
 - `m..*` 
-
-### Association classes
-
-Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”.
 
 
 

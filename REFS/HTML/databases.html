@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3319 words
+   &gt; 3263 words
   </p>
   <table class="TOC">
    <tr>
@@ -585,25 +585,25 @@
     <strong>
      composite
     </strong>
-    if its value can be decomposed. For example, an entity CAT may have an attribute OWNER NAME; this composite attribute could be decomposed into two
+    if its value can be decomposed into
     <strong>
      atomic
     </strong>
-    AKA simple attributes (OWNER FIRST NAME, OWNER LAST NAME).
+    attributes (which it should be, per first normal form).
    </li>
    <li>
     An attribute is
     <strong>
      multi-valued
     </strong>
-    AKA set-valued if, for a single entity, the attribute could/should store multiple values. For example, a PERSON entity may have a LANGUAGES SPOKEN attribute that must contain multiple values to accommodate multilingual people.
+    AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship).
    </li>
    <li>
     An attribute is
     <strong>
      derived
     </strong>
-    if its value can be calculated from (an)other attribute(s) in the database. For example, the value of the attribute TRIP DURATION could be derived from the attributes DEPARTURE DATE and RETURN DATE.
+    if its value can be calculated from (an)other attribute(s) in the database.
    </li>
   </ul>
   <h5>

@@ -205,14 +205,14 @@ A good design process minimizes redundancy; reduces errors by automating or impo
 
 Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; an efficient way of producing documentation).
 
-Connolly and Begg (2015) outline the following database development process AKA **database system lifecycle:**
+My synthesis of the **database system lifecycle:**
 
 <table>
 <tr><th colspan="2">Requirements Analysis</th></tr>
 <tr><th rowspan=3>Design</th><td>Conceptual</td></tr>
 <tr><td>Logical</td></tr>
 <tr><td>Physical</td></tr>
-<tr><th colspan="2">Development</th></tr>
+<tr><th rowspan="2">Development</th><td>Implementation</td></tr>
 <tr><td>Testing</td></tr>
 <tr><td>Administration</td><td>Support</td></tr>
 <tr><td>Testing</td></tr>

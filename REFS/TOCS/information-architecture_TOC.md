@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/information-architecture.html">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</a></p><table class="TOC"><tr><td>- [What is information retrieval?](#what-is-information-retrieval?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/information-architecture.html">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</a> \> 4860 words </p><table class="TOC"><tr><td>- [What is information retrieval?](#what-is-information-retrieval?)
 	- [IR systems](#ir-systems)
 	- [Major activities in IR](#major-activities-in-ir)
 		- [Cataloging & indexing](#cataloging-&-indexing)

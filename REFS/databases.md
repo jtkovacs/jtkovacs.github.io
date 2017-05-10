@@ -338,6 +338,8 @@ Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to desig
 
 Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from [http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html](http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html)
 
+Ullman, R. D. (2006). Relational database design. Retrieved from [http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html](http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html)
+
 ## References
 
 - [Database Management Wikia](http://databasemanagement.wikia.com/wiki/Main_Page)

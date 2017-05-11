@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3957 words
+   &gt; 3963 words
   </p>
   <table class="TOC">
    <tr>
@@ -1402,29 +1402,11 @@
    on the other hand, introduces sorting that is implemented at the level of pages through row offset arrays AKA slot arrays; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
   </p>
   <p>
-   However, to facilitate a wider range of queries, both heaps and clustered tables may have multiple
+   However, to facilitate specific queries, both heaps and clustered tables may have multiple
    <strong>
     non-clustered indexes
    </strong>
-   that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d. a).
-  </p>
-  <ul>
-   <li>
-    When multiple fields are included in a single non-clustered index, this is called a
-    <strong>
-     covering index
-    </strong>
-    because it could "cover" all the fields retrieved in a stored query.
-   </li>
-   <li>
-    When a subset of rows are indexed, this is called a
-    <strong>
-     filtered index.
-    </strong>
-   </li>
-  </ul>
-  <p>
-   Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their
+   that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d. a). Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their
    <strong>
     leaf nodes
    </strong>
@@ -1432,7 +1414,7 @@
    <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
     doubly connected
    </a>
-   to each other via pointers,
+   to each other and also refer to rows in the heap/clustered table via pointers:
   </p>
   <div class="figure">
    <img src="../ILLOS/nonclustered-index.png"/>
@@ -1445,7 +1427,24 @@
     Intermediary node(s)
    </li>
    <li>
-    Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
+    <p>
+     Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
+    </p>
+   </li>
+   <li>
+    When multiple fields are included in a single non-clustered index, this is called a
+    <strong>
+     covering index
+    </strong>
+    because it could "cover" all the fields retrieved in a stored query.
+   </li>
+   <li>
+    <p>
+     When a subset of rows are indexed, this is called a
+     <strong>
+      filtered index.
+     </strong>
+    </p>
    </li>
   </ul>
   <p>

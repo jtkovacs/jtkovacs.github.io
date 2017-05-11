@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3484 words
+   &gt; 3515 words
   </p>
   <table class="TOC">
    <tr>
@@ -1370,11 +1370,7 @@
    </li>
   </ul>
   <p>
-   A
-   <strong>
-    columnstore index
-   </strong>
-   searches only relevant columns, using a different structure than other indexes. Rowstore index pages have a certain structure:
+   Generally, index pages have a certain structure:
   </p>
   <ul>
    <li>
@@ -1388,19 +1384,43 @@
    </li>
   </ul>
   <p>
-   Whereas:
+   But a
+   <strong>
+    columnstore index
+   </strong>
+   (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes:
   </p>
   <div class="figure">
    <img src="../ILLOS/columnstore.png"/>
   </div>
-  <p>
-   Columnstore indexes are useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses.
-  </p>
   <h5>
    <a name="index-fragmentation">
     Index fragmentation
    </a>
   </h5>
+  <p>
+   Index fragmentation is inevitable, especially in OLTP environments:
+  </p>
+  <ul>
+   <li>
+    INSERT and UPDATE operations lead to page splits
+    <strong>
+     (logical fragmentation?)
+    </strong>
+   </li>
+   <li>
+    DELETE operations lead to partially-filled pages
+    <strong>
+     (internal fragmentation)
+    </strong>
+   </li>
+   <li>
+    Large rows
+    <strong>
+     (extent fragmentation?)
+    </strong>
+   </li>
+  </ul>
   <p>
    See:
   </p>

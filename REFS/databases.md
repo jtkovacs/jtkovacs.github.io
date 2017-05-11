@@ -276,20 +276,23 @@ There can be more than one **non-clustered index** on a table; a non-clustered i
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**
 
-A **columnstore index** searches only relevant columns, using a different structure than other indexes. Rowstore index pages have a certain structure:
+Generally, index pages have a certain structure:
 
 - Root node
 - Intermediary node(s)
 - Leaf node
 
-Whereas:
+But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 
 
 ![](../ILLOS/columnstore.png)
 
-Columnstore indexes are useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses. 
-
 ##### Index fragmentation
 
+Index fragmentation is inevitable, especially in OLTP environments:
+
+- INSERT and UPDATE operations lead to page splits **(logical fragmentation?)**
+- DELETE operations lead to partially-filled pages **(internal fragmentation)**
+- Large rows **(extent fragmentation?)**
 
 See:
 

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4103 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4140 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -32,11 +32,12 @@
 	- [Database architectures](#database-architectures)
 	- [Transaction management](#transaction-management)
 	- [Security](#security)
-		- [Authentication](#authentication)
-		- [Backup](#backup)
+		- [Authentication and authorization](#authentication-and-authorization)
 		- [Encryption](#encryption)
 			- [Digital signatures](#digital-signatures)
+		- [Security audits](#security-audits)
 	- [Data movement](#data-movement)
+		- [Backup](#backup)
 - [Sources](#sources)
 	- [Cited](#cited)
 	- [References](#references)
@@ -409,9 +410,21 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ## Security
 
-### Authentication
+Common security threats may be categorized by agent:
 
-### Backup
+<table>
+<th><td>Users</td> <td>Developers</td> <td>Administrators</td></th>
+<tr><td></td> <td></td> <td></td></tr>
+</table>
+
+... and by target/effect:
+
+<table>
+<th><td>Hardware</td> <td>Networks</td> <td>Database</td> <td>DBMS & Applications</td></th>
+<tr><td></td> <td></td> <td></td> <td></td></tr>
+</table>
+
+### Authentication and authorization
 
 ### Encryption
 
@@ -419,7 +432,13 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
 
+### Security audits
+
+
+
 ## Data movement
+
+### Backup
 
 
 # Sources

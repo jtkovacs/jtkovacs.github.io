@@ -364,9 +364,21 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ## Security
 
-### Authentication
+Common security threats may be categorized by agent:
 
-### Backup
+<table>
+<th><td>Users</td> <td>Developers</td> <td>Administrators</td></th>
+<tr><td></td> <td></td> <td></td></tr>
+</table>
+
+... and by target/effect:
+
+<table>
+<th><td>Hardware</td> <td>Networks</td> <td>Database</td> <td>DBMS & Applications</td></th>
+<tr><td></td> <td></td> <td></td> <td></td></tr>
+</table>
+
+### Authentication and authorization
 
 ### Encryption
 
@@ -374,7 +386,13 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
 
+### Security audits
+
+
+
 ## Data movement
+
+### Backup
 
 
 # Sources

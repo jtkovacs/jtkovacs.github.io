@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3843 words
+   &gt; 3868 words
   </p>
   <table class="TOC">
    <tr>
@@ -162,6 +162,21 @@
               Indexing and performance
              </a>
              <ul>
+              <li>
+               <a href="#heaps">
+                Heaps
+               </a>
+              </li>
+              <li>
+               <a href="#clustered-indexes">
+                Clustered indexes
+               </a>
+              </li>
+              <li>
+               <a href="#non-clustered-indexes">
+                Non-clustered indexes
+               </a>
+              </li>
               <li>
                <a href="#types-of-indexes">
                 Types of indexes
@@ -1335,15 +1350,55 @@
   <div class="figure">
    <img src="../ILLOS/SQLDataPage.png"/>
   </div>
+  <h5>
+   <a name="heaps">
+    Heaps
+   </a>
+  </h5>
   <p>
-   A table without a clustered index, specifically, is called a
+   A table without a clustered index is called a
    <strong>
     heap,
    </strong>
-   and the order of its contents will be determined initially by data entry and then by DBMS-initiated changes for efficiency's sake.
+   and the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake).
+  </p>
+  <h5>
+   <a name="clustered-indexes">
+    Clustered indexes
+   </a>
+  </h5>
+  <p>
+   Indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed
+   <code>
+    (INSERT, UPDATE, and DELETE operations)
+   </code>
+   --- so they are more common in
+   <a href="information-systems.html#what-are-mis?">
+    reporting databases versus transactional databases,
+   </a>
+   or they may be erased then restored when loading a very large dataset into the database.
   </p>
   <p>
-   Generally, (clustered???) index pages have a certain structure:
+   The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a
+   <strong>
+    query optimizer
+   </strong>
+   that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
+  </p>
+  <p>
+   Per Sheldon (2014), indexing doesn't improve performance for
+   <em>
+    all
+   </em>
+   queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
+  </p>
+  <h5>
+   <a name="non-clustered-indexes">
+    Non-clustered indexes
+   </a>
+  </h5>
+  <p>
+   The leaves of non-clustered indexes are also stored in pages:
   </p>
   <ul>
    <li>
@@ -1359,28 +1414,6 @@
     Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
    </li>
   </ul>
-  <p>
-   Indexes are created to accelerate queries at the expense of write speed
-   <code>
-    (INSERT, UPDATE, DELETE),
-   </code>
-   so they are more common in
-   <a href="information-systems.html#what-are-mis?">
-    reporting databases versus transactional databases
-   </a>
-   and they may be erased then restored when loading a very large dataset into the database. The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a
-   <strong>
-    query optimizer
-   </strong>
-   that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
-  </p>
-  <p>
-   Per Sheldon (2014), indexing doesn't improve performance for
-   <em>
-    all
-   </em>
-   queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
-  </p>
   <h5>
    <a name="types-of-indexes">
     Types of indexes

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3843 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3868 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -23,6 +23,9 @@
 		- [Logical design](#logical-design)
 		- [Physical design](#physical-design)
 			- [Indexing and performance](#indexing-and-performance)
+				- [Heaps](#heaps)
+				- [Clustered indexes](#clustered-indexes)
+				- [Non-clustered indexes](#non-clustered-indexes)
 				- [Types of indexes](#types-of-indexes)
 				- [Fragmentation](#fragmentation)
 - [Database administration](#database-administration)
@@ -314,18 +317,28 @@ This discussion is based on MS SQL Server, which stores table data (rows) in pag
 
 ![](../ILLOS/SQLDataPage.png)
 
-A table without a clustered index, specifically, is called a **heap,** and the order of its contents will be determined initially by data entry and then by DBMS-initiated changes for efficiency's sake.
+##### Heaps
 
-Generally, (clustered???) index pages have a certain structure:
+A table without a clustered index is called a **heap,** and the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). 
+
+##### Clustered indexes
+
+Indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations)` --- so they are more common in [reporting databases versus transactional databases,](information-systems.html#what-are-mis?) or they may be erased then restored when loading a very large dataset into the database. 
+
+The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
+
+Per Sheldon (2014), indexing doesn't improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
+
+
+##### Non-clustered indexes
+
+The leaves of non-clustered indexes are also stored in pages:
 
 - Root node
 - Intermediary node(s)
 - Leaf node
 - Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
 
-Indexes are created to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases](information-systems.html#what-are-mis?) and they may be erased then restored when loading a very large dataset into the database. The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
-
-Per Sheldon (2014), indexing doesn't improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
 
 ##### Types of indexes
 

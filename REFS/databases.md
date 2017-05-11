@@ -129,13 +129,13 @@ Data must have integrity to be useful and trustworthy. Data integrity [tends to 
 
 ##### Normalization
 
-What happens if data is not normalized?? anomalies
-
-Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target:
+Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target. The first normal form is how Codd articulated his relational data model in the 1970s; the other normal forms are modifications to the basic relational model.
 
 | Normal Form | Requirements | Impact |
 | --- | --- | --- |
-| 1st | | |
+| 1st | Rows are unique;
+Columns have a datatype; 
+All attributes are atomic; | |
 | 2nd | | |
 | 3rd | | |
 | Boyce-Codd | | |
@@ -143,28 +143,29 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 | 5th | | |
 
 - https://en.wikipedia.org/wiki/Database_normalization plus anomalies
+- https://www.thoughtco.com/database-normalization-basics-1019735
+- http://searchsqlserver.techtarget.com/definition/normalization
+- http://psoug.org/reference/normalization.html
+- http://www.bkent.net/Doc/simple5.htm
 
 - “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
     - It contains two-dimensional tables with rows and columns.
     - Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
     - Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
     - All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
-- 1NF: all fields only include a single piece of data;
+
 - Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
 - 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
+
 - Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
 - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL), i.e. remove all transitive dependencies
     - https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
     - https://www.thoughtco.com/transitive-dependency-1019760 
+
 - [__Boyce Codd normal form__ (BCNF)](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies) is when, for all FDs `A→B`, A is the key. To achieve BCNF, find FDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with `A→B` violating BCNF; decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A, rest); repeat. 
+
 - __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
     - Remove Multivalued dependencies
-
-- https://www.thoughtco.com/database-normalization-basics-1019735
-- http://searchsqlserver.techtarget.com/definition/normalization
-- http://psoug.org/reference/normalization.html
-- http://www.bkent.net/Doc/simple5.htm
-
 
 
 

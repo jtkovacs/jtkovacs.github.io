@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3498 words
+   &gt; 3499 words
   </p>
   <table class="TOC">
    <tr>
@@ -651,28 +651,22 @@
    </tbody>
   </table>
   <p>
-   In predicate logic, a FD exists if, for
+   Written in predicate logic, an FD exists if, for
    <code>
     ∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B
    </code>
    . This generalizes to multiple attributes:
    <code>
-    A1, A2, …, An → B1, B2, …, Bm.
+    A1, A2, ..., An → B1, B2, ..., Bm
    </code>
-   FDs are used in DB compression and query optimization.
+   . FDs are used in DB compression and query optimization.
   </p>
   <ul>
    <li>
-    trivial FD:
+    Trivial FD:
     <code>
      A→B &amp; B⊆A
     </code>
-   </li>
-   <li>
-    Watt, n.d.: "The left-hand side of the FD is called the determinant, and the right-hand side is the dependent."
-   </li>
-   <li>
-    Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s);
    </li>
    <li>
     nontrivial FD:
@@ -748,21 +742,31 @@
     </code>
    </li>
    <li>
-    <code>
-     S2
-    </code>
-    , set of FDs, is equivalent to
-    <code>
-     S1
-    </code>
-    if exactly the same FDs follow from
-    <code>
-     S1
-    </code>
-    and
-    <code>
-     S2
-    </code>
+    <p>
+     <code>
+      S2
+     </code>
+     , set of FDs, is equivalent to
+     <code>
+      S1
+     </code>
+     if exactly the same FDs follow from
+     <code>
+      S1
+     </code>
+     and
+     <code>
+      S2
+     </code>
+    </p>
+   </li>
+   <li>
+    Watt, n.d.: "The left-hand side of the FD is called the determinant, and the right-hand side is the dependent."
+   </li>
+   <li>
+    <p>
+     Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s);
+    </p>
    </li>
   </ul>
   <p>

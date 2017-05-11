@@ -290,13 +290,17 @@ However, to facilitate specific queries, both heaps and clustered tables may hav
 - When a subset of rows are indexed, this is called a **filtered index.** 
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.  
 
-Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. Via pointers, [leaves are doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful). Then, to make the index itself quickly searchable, a **B-tree** with [root and intermediary nodes is used:](http://use-the-index-luke.com/sql/anatomy/the-tree)
+Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. Via pointers, [leaves are doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
 
 ![](../ILLOS/nonclustered-index.png)
+
+Whether pages store rows or leaves, a **B-tree** structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make the pages quickly searchable:
 
 <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
 
 Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstore structure, a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns: 
+
+https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/
 
 ![](../ILLOS/columnstore.png)
 

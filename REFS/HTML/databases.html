@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3974 words
+   &gt; 3980 words
   </p>
   <table class="TOC">
    <tr>
@@ -1432,18 +1432,22 @@
    <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
     leaves are doubly connected
    </a>
-   to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful). Then, to make the index itself quickly searchable, a
-   <strong>
-    B-tree
-   </strong>
-   with
-   <a href="http://use-the-index-luke.com/sql/anatomy/the-tree">
-    root and intermediary nodes is used:
-   </a>
+   to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
   </p>
   <div class="figure">
    <img src="../ILLOS/nonclustered-index.png"/>
   </div>
+  <p>
+   Whether pages store rows or leaves, a
+   <strong>
+    B-tree
+   </strong>
+   structure with
+   <a href="http://use-the-index-luke.com/sql/anatomy/the-tree">
+    root and intermediary nodes
+   </a>
+   is used to make the pages quickly searchable:
+  </p>
   <p>
    <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px"/>
   </p>
@@ -1453,6 +1457,9 @@
     columnstore index
    </strong>
    (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns:
+  </p>
+  <p>
+   https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/
   </p>
   <div class="figure">
    <img src="../ILLOS/columnstore.png"/>

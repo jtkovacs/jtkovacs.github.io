@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3291 words
+   &gt; 3185 words
   </p>
   <table class="TOC">
    <tr>
@@ -869,7 +869,7 @@
       and derived attributes
      </td>
      <td align="left">
-      ???
+      Prevent update and deletion anomalies*
      </td>
     </tr>
     <tr class="even">
@@ -898,35 +898,20 @@
       </a>
      </td>
      <td align="left">
-      ???
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      5th
-     </td>
-     <td align="left">
-      ???
-     </td>
-     <td align="left">
-      ???
+      Efficiency is increased, somehow, because there are B+C rather than B*C tuples | | 5th | ??? | ??? |
      </td>
     </tr>
    </tbody>
   </table>
+  <p>
+   *Anomalies: "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+  </p>
   <ul>
    <li>
-    <p>
-     Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-    </p>
-    <ul>
-     <li>
-      https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
-     </li>
-     <li>
-      https://www.thoughtco.com/transitive-dependency-1019760
-     </li>
-    </ul>
+    https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
+   </li>
+   <li>
+    https://www.thoughtco.com/transitive-dependency-1019760
    </li>
    <li>
     https://en.wikipedia.org/wiki/Database_normalization plus anomalies
@@ -941,63 +926,7 @@
     http://psoug.org/reference/normalization.html
    </li>
    <li>
-    <p>
-     http://www.bkent.net/Doc/simple5.htm
-    </p>
-   </li>
-   <li>
-    <p>
-     <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies">
-      <strong>
-       Boyce Codd normal form
-      </strong>
-      (BCNF)
-     </a>
-     is when,
-    </p>
-   </li>
-   <li>
-    <strong>
-     Fourth normal form
-    </strong>
-    (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B*C tuples. A relation is in 4NF if, for each nontrivial MVD
-    <code>
-     A↠B
-    </code>
-    , A is the key. To test for 4NF, look at each pair of tuples
-    <code>
-     t,u
-    </code>
-    that match on A, and create the additional tuples
-    <code>
-     v,w
-    </code>
-    : are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R
-    <sub>
-     i
-    </sub>
-    ; pick any R
-    <sub>
-     i
-    </sub>
-    with nontrivial
-    <code>
-     A↠B
-    </code>
-    violating 4NF (3) decompose into R
-    <sub>
-     1
-    </sub>
-    (A,B) and R
-    <sub>
-     2
-    </sub>
-    (A,rest); repeat.
-    <ul>
-     <li>
-      Remove Multivalued dependencies
-     </li>
-    </ul>
+    http://www.bkent.net/Doc/simple5.htm
    </li>
   </ul>
   <h3>

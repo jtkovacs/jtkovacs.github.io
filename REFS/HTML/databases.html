@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3389 words
+   &gt; 3412 words
   </p>
   <table class="TOC">
    <tr>
@@ -774,16 +774,11 @@
    </a>
   </h4>
   <p>
-   https://www.thoughtco.com/database-normalization-basics-1019735
-  </p>
-  <p>
-   i.e. will satisfy the requirements of the relational data model and thereby (a) minimize redundancy and (b) preserve data integrity, avoiding (i) update and (ii) deletion anomalies.
-  </p>
-  <p>
-   In the real world, we usually normalize only up to the 3rd Normal Form.
-  </p>
-  <p>
-   Levels of normalization: http://searchsqlserver.techtarget.com/definition/normalization:
+   Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of
+   <a href="#relationships-between-attributes">
+    dependencies
+   </a>
+   within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target:
   </p>
   <ul>
    <li>
@@ -901,6 +896,15 @@
       Remove Multivalued dependencies
      </li>
     </ul>
+   </li>
+   <li>
+    https://www.thoughtco.com/database-normalization-basics-1019735
+   </li>
+   <li>
+    http://searchsqlserver.techtarget.com/definition/normalization
+   </li>
+   <li>
+    https://en.wikipedia.org/wiki/Database_normalization
    </li>
   </ul>
   <h5>

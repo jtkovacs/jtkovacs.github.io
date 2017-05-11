@@ -265,15 +265,13 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
-Indexes are **created** to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. 
+Indexes are created to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases](information-systems.html#what-are-mis?) and they may be erased then restored when loading a very large dataset into the database. The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
 There are different kinds of indexes:
 
 - **Clustered indexes** determine the physical storage order of the table ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
 - There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers.
-- A **columnstore index** is used to improve performance of read-only tables. 
-
-Indexes are **maintained** by:
+- A **columnstore index** is used to improve performance of read-only tables.
 
 See:
 

@@ -1,8 +1,9 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a> \> 2285 words </p><table class="TOC"><tr><td>- [What is SQL?](#what-is-sql?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a> \> 2300 words </p><table class="TOC"><tr><td>- [What is SQL?](#what-is-sql?)
 	- [Notation and style guide](#notation-and-style-guide)
 	- [Data definition](#data-definition)
 		- [Manage databases](#manage-databases)
 		- [Manage tables](#manage-tables)
+		- [Manage fields](#manage-fields)
 		- [Manage views](#manage-views)
 	- [Data manipulation](#data-manipulation)
 		- [Generic query form](#generic-query-form)
@@ -113,6 +114,14 @@ DELETE FROM table;
 
 --- update records:
 UPDATE tname SET c1=value/subquery, c2=value/subquery WHERE …
+```
+
+### Manage fields
+
+```SQL
+UPDATE tname
+SET [fname] = 'Value'
+WHERE fname = 'Value';
 ```
 
 ### Manage views

@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
     https://jtkovacs.github.io/REFS/HTML/SQL.html
    </a>
-   &gt; 2285 words
+   &gt; 2300 words
   </p>
   <table class="TOC">
    <tr>
@@ -83,6 +83,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <li>
            <a href="#manage-tables">
             Manage tables
+           </a>
+          </li>
+          <li>
+           <a href="#manage-fields">
+            Manage fields
            </a>
           </li>
           <li>
@@ -326,6 +331,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <span class="co">--- update records:</span>
 <span class="kw">UPDATE</span> tname <span class="kw">SET</span> c1=value/subquery, c2=value/subquery <span class="kw">WHERE</span> …</code></pre>
+  </div>
+  <h3>
+   <a name="manage-fields">
+    Manage fields
+   </a>
+  </h3>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">UPDATE</span> tname
+<span class="kw">SET</span> [fname] = <span class="st">'Value'</span>
+<span class="kw">WHERE</span> fname = <span class="st">'Value'</span>;</code></pre>
   </div>
   <h3>
    <a name="manage-views">

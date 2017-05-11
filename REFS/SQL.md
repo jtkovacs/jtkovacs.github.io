@@ -93,6 +93,14 @@ DELETE FROM table;
 UPDATE tname SET c1=value/subquery, c2=value/subquery WHERE …
 ```
 
+### Manage fields
+
+```SQL
+UPDATE tname
+SET [fname] = 'Value'
+WHERE fname = 'Value';
+```
+
 ### Manage views
 
 view data is not stored physically; every time you retrieve data from the view, the database reruns the underlying query.  most databases don't allow inserting new data or updating existing data in views.

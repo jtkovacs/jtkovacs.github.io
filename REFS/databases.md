@@ -337,6 +337,8 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 
 ## Data and log files
 
+A DBMS records _actions_ in its **log file** and data in its **data files** AKA pages; see [discussion on indexing.](#how-different-types-of-indexes-work)
+
 ## Transaction management
 
 - ACID

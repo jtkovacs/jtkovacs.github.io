@@ -101,7 +101,7 @@ A **functional dependency** `A → B` exists when the same A (for our purposes, 
 | --- | --- |
 | ![](../ILLOS/fcn.png) | ![](../ILLOS/not-fcn.png) |
 
-Written in predicate logic with tuples denoted t and u, attributes denoted A and B, an FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`; this generalizes to multiple attributes, such that a determinant is best defined as an attribute whose value determines the value of a second (set of) attribute(s). The set of attributes that are functionally dependent on the determinant is called the determinant's **closure, ** `{A}*.`
+Written in predicate logic with tuples denoted t and u, attributes denoted A and B, a functional dependency exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`; this generalizes to multiple attributes, such that a determinant is best defined as an attribute whose value determines the value of a second (set of) attribute(s). The set of attributes that are functionally dependent on the determinant is called the determinant's **closure, ** `{A}*.`
 
 There are a few special cases:
 
@@ -111,20 +111,9 @@ There are a few special cases:
 
 FDs are used in DB compression and query optimization.
 
-- transitive property: `A→B & B→C ⇒ A→C`
-- the __closure__ of A, , is all attributes functionally determined by A
-- __keys__ AKA identity values are attributes whose closure encompasses all attributes in a relation 
-    - Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
-    - Candidate Key: Column(s) that can uniquely identify rows in an entity
-    - Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
-        - INTEGER is most-often the best data type choice
-        - Will not change in value
-        - Will not be null
-        - Narrow field
-
-
 Describe what **Transitive Dependency** is and give an example: If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
 
+- transitive property: `A→B & B→C ⇒ A→C`
 - https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
 - https://www.thoughtco.com/transitive-dependency-1019760 
 
@@ -143,6 +132,14 @@ displayName (2015):
 - A determinant can uniquely determine one or more attributes in the row.
 - A candidate key can uniquely determine the entire row.
 
+- __keys__ AKA identity values are attributes whose closure encompasses all attributes in a relation 
+    - Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
+    - Candidate Key: Column(s) that can uniquely identify rows in an entity
+    - Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”. 
+        - INTEGER is most-often the best data type choice
+        - Will not change in value
+        - Will not be null
+        - Narrow field
 
 
 #### Normalization and integrity

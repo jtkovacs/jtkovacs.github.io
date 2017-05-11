@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3844 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3843 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -310,11 +310,11 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
-(This discussion is based on MS SQL Server.) 
-
-A database stores table data (rows) in pages. A table without a clustered index, specifically, is called a **heap,** and the order of its contents will be determined initially by data entry and then by DBMS-initiated changes for efficiency's sake:
+This discussion is based on MS SQL Server, which stores table data (rows) in pages: 
 
 ![](../ILLOS/SQLDataPage.png)
+
+A table without a clustered index, specifically, is called a **heap,** and the order of its contents will be determined initially by data entry and then by DBMS-initiated changes for efficiency's sake.
 
 Generally, (clustered???) index pages have a certain structure:
 

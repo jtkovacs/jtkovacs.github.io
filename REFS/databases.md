@@ -140,7 +140,7 @@ Database schemas are normalized to minimize redundancy (limiting storage costs) 
 - **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
 
-*Anomalies prevented by 3NF, reprising [this example](https://www.thoughtco.com/transitive-dependency-1019760 ): 
+*This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how 3NF prevents data anomalies:
 
 | Author_ID | Author | Book | Author_Nationality | 
 | --- | --- | --- | --- |

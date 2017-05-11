@@ -367,9 +367,9 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 Check database logs to identify security problems, or conduct a more extensive audit. Common security threats may be categorized by human vectors or by system targets:
 
 <table class="bullets">
-<tr><th colspan="2">Users</th> <th>Developers</th> <th>Administrators</th></tr>
+<tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
-<td style="text-align: left;" colspan="2">
+<td style="text-align: left;">
 - Use of person's means of access
 - Inappropriate data sharing
 - Inadequate training
@@ -385,6 +385,9 @@ Check database logs to identify security problems, or conduct a more extensive a
 - Inadequate policies and procedures
 </td> 
 </tr>
+</table>
+
+<table class="bullets">
 <tr><th>Hardware</th> <th>Networks</th> <th>DBMS & Applications</th> <th>Database</th></tr>
 <tr>
 <td style="text-align: left;">

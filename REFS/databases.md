@@ -93,15 +93,13 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 
 Note that these concepts are important for understanding [normalization;](#normalization-and-integrity) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity.
 
-1. Dependencies: 
-    a. FDs, determinants and dependents
- you could also say there is a dependency between the two attributes, one of which is a determinant. This is a real-world quality that takes several forms:
+Dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. There are different sorts of dependencies:
 
-- Functional
-- Transitive
-- Multivalued
+- A **functional dependency** `A→B` exists when the same A (an attribute, for our purposes) is always linked with the same B (another attribute value). The reverse is not necessarily true. Note that this is almost identical to a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
 
-__Functional dependency (FD)__, `A→B`: The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
+![](../illos/fcn.png)
+
+In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 
 - trivial FD: `A→B & B⊆A`
 - Watt, n.d.: "The left-hand side of the FD is called the determinant, and the right-hand side is the dependent."

@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3444 words
+   &gt; 3480 words
   </p>
   <table class="TOC">
    <tr>
@@ -615,36 +615,26 @@
    </a>
    normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity.
   </p>
-  <ol style="list-style-type: decimal">
-   <li>
-    Dependencies:
-    <ol style="list-style-type: lower-alpha">
-     <li>
-      FDs, determinants and dependents you could also say there is a dependency between the two attributes, one of which is a determinant. This is a real-world quality that takes several forms:
-     </li>
-    </ol>
-   </li>
-  </ol>
+  <p>
+   Dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. There are different sorts of dependencies:
+  </p>
   <ul>
    <li>
-    Functional
-   </li>
-   <li>
-    Transitive
-   </li>
-   <li>
-    Multivalued
+    A
+    <strong>
+     functional dependency
+    </strong>
+    <code>
+     A→B
+    </code>
+    exists when the same A (an attribute, for our purposes) is always linked with the same B (another attribute value). The reverse is not necessarily true. Note that this is almost identical to a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
    </li>
   </ul>
+  <div class="figure">
+   <img src="../illos/fcn.png"/>
+  </div>
   <p>
-   <strong>
-    Functional dependency (FD)
-   </strong>
-   ,
-   <code>
-    A→B
-   </code>
-   : The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for
+   In predicate logic, a FD exists if, for
    <code>
     ∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B
    </code>

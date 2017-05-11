@@ -101,6 +101,9 @@ Dependencies exist between attributes; this is not a modeling decision, it is a 
 
 But not
 
+<img src="../ILLOS/not-fcn.png" align="right">
+
+
 ![](../ILLOS/not-fcn.png)
 
 

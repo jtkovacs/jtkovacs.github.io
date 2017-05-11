@@ -149,6 +149,8 @@ Installing logs and data on different drives gives a performance boost.
 
 ##### Creating indexes
 
+Recall that PKs are indexed automatically.
+
 ```SQL
 -- Covering index
 CREATE NONCLUSTERED INDEX IX_Address_PostalCode -- give index a name
@@ -188,6 +190,7 @@ FROM sys.dm_db_index_physical_stats (DB_ID(N'AdventureWorks'),
 -- Column **Avg_fragmentation_in_percent** depicts logical fragmentation
 -- Column **Avg_page_space_used_in_percent** depicts internal fragmentation
 ```
+
 Once identified, fragmentation can be repaired in the following ways:
 
 ```SQL

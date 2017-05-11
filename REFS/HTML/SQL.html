@@ -71,8 +71,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          </a>
         </li>
         <li>
-         <a href="#...-a-data-definition-language">
-          ... a data definition language
+         <a href="#data-definition">
+          Data definition
          </a>
          <ul>
           <li>
@@ -93,42 +93,49 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          </ul>
         </li>
         <li>
-         <a href="#...-a-data-manipulation-language">
-          ... a data manipulation language
-         </a>
-        </li>
-        <li>
-         <a href="#generic-query-form">
-          Generic query form
-         </a>
-        </li>
-        <li>
-         <a href="#relational-algebra">
-          Relational algebra
+         <a href="#data-manipulation">
+          Data manipulation
          </a>
          <ul>
+          <li>
+           <a href="#generic-query-form">
+            Generic query form
+           </a>
+          </li>
+          <li>
+           <a href="#select-and-display">
+            SELECT and display
+           </a>
+           <ul>
+            <li>
+             <a href="#with-conditional-filtering">
+              WITH conditional filtering
+             </a>
+            </li>
+            <li>
+             <a href="#aggregate-and-group-by">
+              Aggregate and GROUP BY
+             </a>
+            </li>
+           </ul>
+          </li>
           <li>
            <a href="#joins">
             JOINs
            </a>
+           <ul>
+            <li>
+             <a href="#set-operations">
+              Set operations
+             </a>
+            </li>
+           </ul>
           </li>
           <li>
-           <a href="#set-operations">
-            Set operations
+           <a href="#subqueries">
+            Subqueries
            </a>
           </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#subqueries">
-          Subqueries
-         </a>
-        </li>
-        <li>
-         <a href="#grouping-&amp;-aggregation">
-          Grouping &amp; aggregation
-         </a>
-         <ul>
           <li>
            <a href="#check-for-inclusion">
             Check for inclusion
@@ -207,8 +214,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <h2>
-   <a name="...-a-data-definition-language">
-    ... a data definition language
+   <a name="data-definition">
+    Data definition
    </a>
   </h2>
   <h3>
@@ -313,15 +320,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">DROP</span> <span class="kw">VIEW</span> vname;</code></pre>
   </div>
   <h2>
-   <a name="...-a-data-manipulation-language">
-    ... a data manipulation language
+   <a name="data-manipulation">
+    Data manipulation
    </a>
   </h2>
-  <h2>
+  <h3>
    <a name="generic-query-form">
     Generic query form
    </a>
-  </h2>
+  </h3>
   <p>
    Match the following clauses with its definition:
   </p>
@@ -363,52 +370,62 @@ fuzzy match:
 multiple char: <span class="kw">SELECT</span> * <span class="kw">FROM</span> … <span class="kw">WHERE</span> c <span class="kw">LIKE</span> ‘%string%’;
 <span class="dt">single</span> char: <span class="kw">SELECT</span> * <span class="kw">FROM</span> … <span class="kw">WHERE</span> c <span class="kw">LIKE</span> ‘_tringvalue’;</code></pre>
   </div>
-  <h2>
-   <a name="relational-algebra">
-    Relational algebra
+  <h3>
+   <a name="select-and-display">
+    SELECT and display
    </a>
-  </h2>
+  </h3>
   <p>
-   Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
+   concatenate strings: really depends on platform
   </p>
-  <ul>
-   <li>
-    select rows: σcondition ∧ condition tname
-   </li>
-   <li>
-    project columns: πcol_name, col_name
-   </li>
-   <li>
-    compose: πcol_name, col_name(σcondition ∧ condition )
-   </li>
-   <li>
-    operators:
-   </li>
-   <li>
-    and, ∧; or, ∨; union, ∪
-   </li>
-   <li>
-    cross product, x: union of schemas, every possible combo of tuples (ntuples(A)*ntuples(B))
-   </li>
-   <li>
-    natural join, ⋈: match cols &amp; drop duplicates; A⋈B ≡ πschema(A) ∪ πschema(B)(σA.col = B.col ∧ … (AxB))
-   </li>
-   <li>
-    theta join: A ⋈θ B where A⋈θB ≡ σθ(AxB); default join for many DBMS
-   </li>
-   <li>
-    rename, ⍴Name(cname, …) (A): unifies schemas to satisfy conditions of set operators and to allow disambiguation in self-joins; ⍴Name(A), ⍴cname, … (A)
-   </li>
-   <li>
-    difference, -
-   </li>
-   <li>
-    intersection, ⋂ where A⋂B ≡ A - (A-B), A⋂B ≡ A⋈B
-   </li>
-   <li>
-    symmetric difference: (A-B)∪(B-A)
-   </li>
-  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> <span class="fu">CONCAT</span>(c1,c2) <span class="kw">FROM</span> t
+<span class="kw">SELECT</span> c1+c2+’ ‘+c3 ..
+<span class="kw">SELECT</span> c1 || ‘ ‘ || c2 <span class="kw">AS</span> email_address <span class="kw">FROM</span> … 
+<span class="kw">SELECT</span> <span class="fu">LENGTH</span>(col)  … 
+<span class="kw">SELECT</span> <span class="fu">MAX</span>(<span class="fu">LENGTH</span>(col)) … 
+<span class="kw">change</span> case: <span class="kw">SELECT</span> <span class="fu">UPPER</span>(c1), <span class="fu">LOWER</span>(c2) … 
+<span class="kw">SELECT</span> <span class="fu">SUBSTR</span>(col,#from,#inc) … 
+<span class="dv">1</span>-based indexing
+<span class="kw">SELECT</span> <span class="kw">REPLACE</span>(col,’from_string’,’to_string’) …
+date: yyyy-mm-d
+time: hh<span class="ch">:mm:ss</span>
+datetime: yyyy-mm-dd hh<span class="ch">:mm:ss</span>
+<span class="dt">DATE</span>(&lt;timestring&gt;,&lt;modifier&gt;,&lt;modifier&gt;, …)
+timestring: “now”, “yyyy-mm-dd”
+modifier: “-<span class="dv">7</span> days”, “+<span class="dv">2</span> months”
+<span class="dt">DATE</span>(“datetime_string”) → yyyy-mm-dd
+<span class="dt">TIME</span>(“datetime_string”) → hh<span class="ch">:mm:ss</span>
+STRFTIME(“format_string”, ”datetime_string”, &lt;modifier&gt;)
+“%d/%m/%Y”</code></pre>
+  </div>
+  <h4>
+   <a name="with-conditional-filtering">
+    WITH conditional filtering
+   </a>
+  </h4>
+  <h4>
+   <a name="aggregate-and-group-by">
+    Aggregate and GROUP BY
+   </a>
+  </h4>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql">skip: <span class="kw">SELECT</span> &lt;c&gt; <span class="kw">FROM</span> &lt;t&gt; <span class="kw">LIMIT</span> &lt;# <span class="kw">of</span> rows&gt; OFFSET &lt;skipped rows&gt;;
+<span class="kw">SELECT</span> &lt;c&gt; <span class="kw">FROM</span> &lt;t&gt; <span class="kw">LIMIT</span> &lt;skipped rows&gt;, &lt;# <span class="kw">of</span> rows&gt;; 
+<span class="kw">SELECT</span> &lt;c&gt; <span class="kw">FROM</span> &lt;t&gt; OFFSET &lt;skipped rows&gt; <span class="kw">ROWS</span> FETCH <span class="kw">NEXT</span> &lt;#&gt; <span class="kw">ROWS</span> <span class="kw">ONLY</span>;
+<span class="kw">summary</span> statistics: <span class="kw">SELECT</span> max/min/avg/sum/abs(cname) <span class="kw">FROM</span> tname; 
+<span class="kw">SELECT</span> c <span class="kw">FROM</span> t T1 <span class="kw">WHERE</span> <span class="kw">NOT</span> <span class="kw">EXISTS</span> (<span class="kw">SELECT</span> * <span class="kw">FROM</span> t T2 <span class="kw">WHERE</span> T2.val&gt;T1.val);
+<span class="kw">SELECT</span> c <span class="kw">FROM</span> t <span class="kw">WHERE</span> c &gt;= <span class="kw">ALL</span> (<span class="kw">SELECT</span> c <span class="kw">FROM</span> t); 
+<span class="kw">SELECT</span> c <span class="kw">FROM</span> t <span class="kw">WHERE</span> <span class="kw">NOT</span> c &lt;  <span class="kw">ANY</span> (<span class="kw">SELECT</span> c <span class="kw">FROM</span> t); 
+<span class="kw">SELECT</span> <span class="fu">round</span>(col,#digits) … 
+<span class="kw">sort</span> (default=ASC): <span class="kw">SELECT</span> * <span class="kw">FROM</span> tname <span class="kw">ORDER</span> <span class="kw">BY</span> fieldname <span class="kw">DESC</span>;
+<span class="kw">select</span> distinct: <span class="kw">SELECT</span> <span class="kw">DISTINCT</span> c <span class="kw">FROM</span> t; <span class="kw">SELECT</span> c <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c;
+<span class="fu">count</span> distinct: <span class="kw">SELECT</span> <span class="fu">count</span>(<span class="kw">DISTINCT</span> cname) <span class="kw">FROM</span> tname;
+<span class="fu">count</span> non-NULL values: <span class="kw">SELECT</span> <span class="fu">count</span>(cname) <span class="kw">FROM</span> tname;
+<span class="kw">sort</span> groups: <span class="kw">SELECT</span> c1, <span class="fu">sum</span>(c3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1 <span class="kw">ORDER</span> <span class="kw">BY</span> <span class="fu">sum</span>(c3);
+display <span class="kw">in</span> groups: <span class="kw">SELECT</span> c1, c2, <span class="fu">count</span>(col3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1, c2; 
+filtering groups: <span class="kw">SELECT</span> c1, <span class="fu">count</span>(c3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1 <span class="kw">HAVING</span> cndn;</code></pre>
+  </div>
   <h3>
    <a name="joins">
     JOINs
@@ -466,16 +483,57 @@ except: <span class="kw">SELECT</span> ... <span class="kw">FROM</span> ... <spa
     Set theory
    </p>
   </div>
-  <h3>
+  <h4>
    <a name="set-operations">
     Set operations
    </a>
-  </h3>
-  <h2>
+  </h4>
+  <p>
+   Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
+  </p>
+  <ul>
+   <li>
+    select rows: σcondition ∧ condition tname
+   </li>
+   <li>
+    project columns: πcol_name, col_name
+   </li>
+   <li>
+    compose: πcol_name, col_name(σcondition ∧ condition )
+   </li>
+   <li>
+    operators:
+   </li>
+   <li>
+    and, ∧; or, ∨; union, ∪
+   </li>
+   <li>
+    cross product, x: union of schemas, every possible combo of tuples (ntuples(A)*ntuples(B))
+   </li>
+   <li>
+    natural join, ⋈: match cols &amp; drop duplicates; A⋈B ≡ πschema(A) ∪ πschema(B)(σA.col = B.col ∧ … (AxB))
+   </li>
+   <li>
+    theta join: A ⋈θ B where A⋈θB ≡ σθ(AxB); default join for many DBMS
+   </li>
+   <li>
+    rename, ⍴Name(cname, …) (A): unifies schemas to satisfy conditions of set operators and to allow disambiguation in self-joins; ⍴Name(A), ⍴cname, … (A)
+   </li>
+   <li>
+    difference, -
+   </li>
+   <li>
+    intersection, ⋂ where A⋂B ≡ A - (A-B), A⋂B ≡ A⋈B
+   </li>
+   <li>
+    symmetric difference: (A-B)∪(B-A)
+   </li>
+  </ul>
+  <h3>
    <a name="subqueries">
     Subqueries
    </a>
-  </h2>
+  </h3>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql">SUBQUERIES … <span class="kw">the</span> <span class="kw">database</span> will <span class="fu">first</span> <span class="kw">check</span> <span class="kw">the</span> subquery <span class="kw">then</span> <span class="kw">check</span> <span class="kw">the</span> final <span class="kw">query</span>, e.g.: <span class="kw">SELECT</span> name <span class="kw">FROM</span> city <span class="kw">WHERE</span> rating = (<span class="kw">SELECT</span> rating <span class="kw">FROM</span> city <span class="kw">WHERE</span> name = <span class="st">'Paris'</span>);
 subqueries can be <span class="kw">in</span> <span class="kw">the</span> <span class="kw">WHERE</span> clause …
@@ -488,56 +546,6 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
 <span class="kw">use</span> aliases <span class="kw">for</span> self-correlated subqueries: <span class="kw">SELECT</span> * <span class="kw">FROM</span> city <span class="kw">as</span> c1 <span class="kw">WHERE</span> c1.rating &gt; (<span class="kw">SELECT</span> <span class="fu">avg</span>(c2.rating) <span class="kw">FROM</span> city <span class="kw">AS</span> c2 <span class="kw">WHERE</span> c1.country_id=c2.country_id);
 <span class="kw">exists</span> operator: <span class="kw">SELECT</span> * <span class="kw">FROM</span> country <span class="kw">WHERE</span> <span class="kw">EXISTS</span> (<span class="kw">SELECT</span> * <span class="kw">FROM</span> mountain <span class="kw">WHERE</span> country.id = mountain.country_id);</code></pre>
   </div>
-  <h2>
-   <a name="grouping-&amp;-aggregation">
-    Grouping &amp; aggregation
-   </a>
-  </h2>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql">skip: <span class="kw">SELECT</span> &lt;c&gt; <span class="kw">FROM</span> &lt;t&gt; <span class="kw">LIMIT</span> &lt;# <span class="kw">of</span> rows&gt; OFFSET &lt;skipped rows&gt;;
-<span class="kw">SELECT</span> &lt;c&gt; <span class="kw">FROM</span> &lt;t&gt; <span class="kw">LIMIT</span> &lt;skipped rows&gt;, &lt;# <span class="kw">of</span> rows&gt;; 
-<span class="kw">SELECT</span> &lt;c&gt; <span class="kw">FROM</span> &lt;t&gt; OFFSET &lt;skipped rows&gt; <span class="kw">ROWS</span> FETCH <span class="kw">NEXT</span> &lt;#&gt; <span class="kw">ROWS</span> <span class="kw">ONLY</span>;
-<span class="kw">summary</span> statistics: <span class="kw">SELECT</span> max/min/avg/sum/abs(cname) <span class="kw">FROM</span> tname; 
-<span class="kw">SELECT</span> c <span class="kw">FROM</span> t T1 <span class="kw">WHERE</span> <span class="kw">NOT</span> <span class="kw">EXISTS</span> (<span class="kw">SELECT</span> * <span class="kw">FROM</span> t T2 <span class="kw">WHERE</span> T2.val&gt;T1.val);
-<span class="kw">SELECT</span> c <span class="kw">FROM</span> t <span class="kw">WHERE</span> c &gt;= <span class="kw">ALL</span> (<span class="kw">SELECT</span> c <span class="kw">FROM</span> t); 
-<span class="kw">SELECT</span> c <span class="kw">FROM</span> t <span class="kw">WHERE</span> <span class="kw">NOT</span> c &lt;  <span class="kw">ANY</span> (<span class="kw">SELECT</span> c <span class="kw">FROM</span> t); 
-<span class="kw">SELECT</span> <span class="fu">round</span>(col,#digits) … 
-<span class="kw">sort</span> (default=ASC): <span class="kw">SELECT</span> * <span class="kw">FROM</span> tname <span class="kw">ORDER</span> <span class="kw">BY</span> fieldname <span class="kw">DESC</span>;
-<span class="kw">select</span> distinct: <span class="kw">SELECT</span> <span class="kw">DISTINCT</span> c <span class="kw">FROM</span> t; <span class="kw">SELECT</span> c <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c;
-<span class="fu">count</span> distinct: <span class="kw">SELECT</span> <span class="fu">count</span>(<span class="kw">DISTINCT</span> cname) <span class="kw">FROM</span> tname;
-<span class="fu">count</span> non-NULL values: <span class="kw">SELECT</span> <span class="fu">count</span>(cname) <span class="kw">FROM</span> tname;
-<span class="kw">sort</span> groups: <span class="kw">SELECT</span> c1, <span class="fu">sum</span>(c3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1 <span class="kw">ORDER</span> <span class="kw">BY</span> <span class="fu">sum</span>(c3);
-display <span class="kw">in</span> groups: <span class="kw">SELECT</span> c1, c2, <span class="fu">count</span>(col3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1, c2; 
-filtering groups: <span class="kw">SELECT</span> c1, <span class="fu">count</span>(c3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1 <span class="kw">HAVING</span> cndn;</code></pre>
-  </div>
-  <p>
-   concatenate strings: really depends on platform
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> <span class="fu">CONCAT</span>(c1,c2) <span class="kw">FROM</span> t
-<span class="kw">SELECT</span> c1+c2+’ ‘+c3 ..
-<span class="kw">SELECT</span> c1 || ‘ ‘ || c2 <span class="kw">AS</span> email_address <span class="kw">FROM</span> … 
-<span class="kw">SELECT</span> <span class="fu">LENGTH</span>(col)  … 
-<span class="kw">SELECT</span> <span class="fu">MAX</span>(<span class="fu">LENGTH</span>(col)) … 
-<span class="kw">change</span> case: <span class="kw">SELECT</span> <span class="fu">UPPER</span>(c1), <span class="fu">LOWER</span>(c2) … 
-<span class="kw">SELECT</span> <span class="fu">SUBSTR</span>(col,#from,#inc) … 
-<span class="dv">1</span>-based indexing
-<span class="kw">SELECT</span> <span class="kw">REPLACE</span>(col,’from_string’,’to_string’) …
-date: yyyy-mm-d
-time: hh<span class="ch">:mm:ss</span>
-datetime: yyyy-mm-dd hh<span class="ch">:mm:ss</span>
-<span class="dt">DATE</span>(&lt;timestring&gt;,&lt;modifier&gt;,&lt;modifier&gt;, …)
-timestring: “now”, “yyyy-mm-dd”
-modifier: “-<span class="dv">7</span> days”, “+<span class="dv">2</span> months”
-<span class="dt">DATE</span>(“datetime_string”) → yyyy-mm-dd
-<span class="dt">TIME</span>(“datetime_string”) → hh<span class="ch">:mm:ss</span></code></pre>
-  </div>
-  <p>
-   STRFTIME(“format_string”, ”datetime_string”,
-   <modifier>
-    ) “%d/%m/%Y”
-   </modifier>
-  </p>
   <h3>
    <a name="check-for-inclusion">
     Check for inclusion

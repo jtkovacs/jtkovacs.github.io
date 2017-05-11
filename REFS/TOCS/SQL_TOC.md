@@ -1,16 +1,17 @@
 <p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a> \> 2286 words </p><table class="TOC"><tr><td>- [What is SQL?](#what-is-sql?)
 	- [Notation and style guide](#notation-and-style-guide)
-	- [... a data definition language](#...-a-data-definition-language)
+	- [Data definition](#data-definition)
 		- [Manage databases](#manage-databases)
 		- [Manage tables](#manage-tables)
 		- [Manage views](#manage-views)
-	- [... a data manipulation language](#...-a-data-manipulation-language)
-	- [Generic query form](#generic-query-form)
-	- [Relational algebra](#relational-algebra)
+	- [Data manipulation](#data-manipulation)
+		- [Generic query form](#generic-query-form)
+		- [SELECT and display](#select-and-display)
+			- [WITH conditional filtering](#with-conditional-filtering)
+			- [Aggregate and GROUP BY](#aggregate-and-group-by)
 		- [JOINs](#joins)
-		- [Set operations](#set-operations)
-	- [Subqueries](#subqueries)
-	- [Grouping & aggregation](#grouping-&-aggregation)
+			- [Set operations](#set-operations)
+		- [Subqueries](#subqueries)
 		- [Check for inclusion](#check-for-inclusion)
 - [SOURCES](#sources)
 	- [References](#references)
@@ -35,10 +36,9 @@ SQL is the standardized language used to access a database. SQL language provide
 - gives row dimension of table: SELECT count(*) FROM tname;
 
 
-## ... a data definition language
+## Data definition
 
 ### Manage databases
-
 
 ### Manage tables
 
@@ -120,9 +120,10 @@ DROP VIEW vname;
 ```
 
 
-## ... a data manipulation language
 
-## Generic query form
+## Data manipulation
+
+### Generic query form
 
 Match the following clauses with its definition: 
 
@@ -152,25 +153,54 @@ multiple char: SELECT * FROM … WHERE c LIKE ‘%string%’;
 single char: SELECT * FROM … WHERE c LIKE ‘_tringvalue’;
 ```
 
+### SELECT and display
+
+concatenate strings: really depends on platform
+
+```SQL
+SELECT CONCAT(c1,c2) FROM t
+SELECT c1+c2+’ ‘+c3 ..
+SELECT c1 || ‘ ‘ || c2 AS email_address FROM … 
+SELECT LENGTH(col)  … 
+SELECT MAX(LENGTH(col)) … 
+change case: SELECT UPPER(c1), LOWER(c2) … 
+SELECT SUBSTR(col,#from,#inc) … 
+1-based indexing
+SELECT REPLACE(col,’from_string’,’to_string’) …
+date: yyyy-mm-d
+time: hh:mm:ss
+datetime: yyyy-mm-dd hh:mm:ss
+DATE(<timestring>,<modifier>,<modifier>, …)
+timestring: “now”, “yyyy-mm-dd”
+modifier: “-7 days”, “+2 months”
+DATE(“datetime_string”) → yyyy-mm-dd
+TIME(“datetime_string”) → hh:mm:ss
+STRFTIME(“format_string”, ”datetime_string”, <modifier>)
+“%d/%m/%Y”
+```
+
+#### WITH conditional filtering
 
 
+#### Aggregate and GROUP BY
 
-## Relational algebra
-
-Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
-
-- select rows: σcondition ∧ condition  tname
-- project columns: πcol_name, col_name
-- compose:  πcol_name, col_name(σcondition ∧ condition )
-- operators: 
-- and, ∧; or, ∨; union, ∪
-- cross product, x: union of schemas, every possible combo of tuples (ntuples(A)*ntuples(B))
-- natural join, ⋈: match cols & drop duplicates; A⋈B ≡ πschema(A) ∪ πschema(B)(σA.col = B.col ∧ …  (AxB))
-- theta join: A ⋈θ B where A⋈θB ≡ σθ(AxB); default join for many DBMS
-- rename, ⍴Name(cname, …) (A): unifies schemas to satisfy conditions of set operators and to allow disambiguation in self-joins; ⍴Name(A), ⍴cname, … (A)
-- difference, -
-- intersection, ⋂ where A⋂B ≡ A - (A-B), A⋂B ≡ A⋈B 
-- symmetric difference: (A-B)∪(B-A)
+```SQL
+skip: SELECT <c> FROM <t> LIMIT <# of rows> OFFSET <skipped rows>;
+SELECT <c> FROM <t> LIMIT <skipped rows>, <# of rows>; 
+SELECT <c> FROM <t> OFFSET <skipped rows> ROWS FETCH NEXT <#> ROWS ONLY;
+summary statistics: SELECT max/min/avg/sum/abs(cname) FROM tname; 
+SELECT c FROM t T1 WHERE NOT EXISTS (SELECT * FROM t T2 WHERE T2.val>T1.val);
+SELECT c FROM t WHERE c >= ALL (SELECT c FROM t); 
+SELECT c FROM t WHERE NOT c <  ANY (SELECT c FROM t); 
+SELECT round(col,#digits) … 
+sort (default=ASC): SELECT * FROM tname ORDER BY fieldname DESC;
+select distinct: SELECT DISTINCT c FROM t; SELECT c FROM t GROUP BY c;
+count distinct: SELECT count(DISTINCT cname) FROM tname;
+count non-NULL values: SELECT count(cname) FROM tname;
+sort groups: SELECT c1, sum(c3) FROM t GROUP BY c1 ORDER BY sum(c3);
+display in groups: SELECT c1, c2, count(col3) FROM t GROUP BY c1, c2; 
+filtering groups: SELECT c1, count(c3) FROM t GROUP BY c1 HAVING cndn;
+```
 
 ### JOINs
 
@@ -206,12 +236,26 @@ SELECT * FROM ... WHERE * IN (subquery) AND * NOT IN (subquery)
 
 ![Set theory](set-theory.png)
 
+#### Set operations
 
-### Set operations
+Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
+
+- select rows: σcondition ∧ condition  tname
+- project columns: πcol_name, col_name
+- compose:  πcol_name, col_name(σcondition ∧ condition )
+- operators: 
+- and, ∧; or, ∨; union, ∪
+- cross product, x: union of schemas, every possible combo of tuples (ntuples(A)*ntuples(B))
+- natural join, ⋈: match cols & drop duplicates; A⋈B ≡ πschema(A) ∪ πschema(B)(σA.col = B.col ∧ …  (AxB))
+- theta join: A ⋈θ B where A⋈θB ≡ σθ(AxB); default join for many DBMS
+- rename, ⍴Name(cname, …) (A): unifies schemas to satisfy conditions of set operators and to allow disambiguation in self-joins; ⍴Name(A), ⍴cname, … (A)
+- difference, -
+- intersection, ⋂ where A⋂B ≡ A - (A-B), A⋂B ≡ A⋈B 
+- symmetric difference: (A-B)∪(B-A)
 
 
 
-## Subqueries
+### Subqueries
 
 ```SQL
 SUBQUERIES … the database will first check the subquery then check the final query, e.g.: SELECT name FROM city WHERE rating = (SELECT rating FROM city WHERE name = 'Paris');
@@ -226,48 +270,6 @@ use aliases for self-correlated subqueries: SELECT * FROM city as c1 WHERE c1.ra
 exists operator: SELECT * FROM country WHERE EXISTS (SELECT * FROM mountain WHERE country.id = mountain.country_id);
 ```
 
-## Grouping & aggregation
-
-```SQL
-skip: SELECT <c> FROM <t> LIMIT <# of rows> OFFSET <skipped rows>;
-SELECT <c> FROM <t> LIMIT <skipped rows>, <# of rows>; 
-SELECT <c> FROM <t> OFFSET <skipped rows> ROWS FETCH NEXT <#> ROWS ONLY;
-summary statistics: SELECT max/min/avg/sum/abs(cname) FROM tname; 
-SELECT c FROM t T1 WHERE NOT EXISTS (SELECT * FROM t T2 WHERE T2.val>T1.val);
-SELECT c FROM t WHERE c >= ALL (SELECT c FROM t); 
-SELECT c FROM t WHERE NOT c <  ANY (SELECT c FROM t); 
-SELECT round(col,#digits) … 
-sort (default=ASC): SELECT * FROM tname ORDER BY fieldname DESC;
-select distinct: SELECT DISTINCT c FROM t; SELECT c FROM t GROUP BY c;
-count distinct: SELECT count(DISTINCT cname) FROM tname;
-count non-NULL values: SELECT count(cname) FROM tname;
-sort groups: SELECT c1, sum(c3) FROM t GROUP BY c1 ORDER BY sum(c3);
-display in groups: SELECT c1, c2, count(col3) FROM t GROUP BY c1, c2; 
-filtering groups: SELECT c1, count(c3) FROM t GROUP BY c1 HAVING cndn;
-```
-
-concatenate strings: really depends on platform
-```SQL
-SELECT CONCAT(c1,c2) FROM t
-SELECT c1+c2+’ ‘+c3 ..
-SELECT c1 || ‘ ‘ || c2 AS email_address FROM … 
-SELECT LENGTH(col)  … 
-SELECT MAX(LENGTH(col)) … 
-change case: SELECT UPPER(c1), LOWER(c2) … 
-SELECT SUBSTR(col,#from,#inc) … 
-1-based indexing
-SELECT REPLACE(col,’from_string’,’to_string’) …
-date: yyyy-mm-d
-time: hh:mm:ss
-datetime: yyyy-mm-dd hh:mm:ss
-DATE(<timestring>,<modifier>,<modifier>, …)
-timestring: “now”, “yyyy-mm-dd”
-modifier: “-7 days”, “+2 months”
-DATE(“datetime_string”) → yyyy-mm-dd
-TIME(“datetime_string”) → hh:mm:ss
-```
-STRFTIME(“format_string”, ”datetime_string”, <modifier>)
-“%d/%m/%Y”
 
 
 

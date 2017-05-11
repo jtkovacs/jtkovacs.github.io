@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4235 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4266 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -435,21 +435,28 @@ Common security threats may be categorized by agent:
 
 ... and by target/effect:
 
-<table>
-<tr><th>Hardware</th> <th>Networks</th> <th>Database</th> <th>DBMS & Applications</th></tr>
+<table class="bullets">
+<tr><th>Hardware</th> <th>Networks</th> <th>DBMS & Applications</th> <th>Database</th></tr>
 <tr>
 <td style="text-align: left;">
 - Fire, flood, bombs
 - Power loss or surge
-- Radiation and magnets
+- Electromagnetic interference and radiation
 - Hardware failure of security mechanisms
 - Equipment theft
 </td> 
 <td style="text-align: left;">
+- Wire tapping
+- Cable breakage or disconnection
+- Electromagnetic interference and radiation
 </td> 
 <td style="text-align: left;">
+- Software failure of security mechanisms
+- Program alteration
+- Program theft
 </td> 
 <td style="text-align: left;">
+- Unauthorized data I/O
 </td> 
 </tr>
 </table>

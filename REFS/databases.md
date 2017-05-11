@@ -389,21 +389,28 @@ Common security threats may be categorized by agent:
 
 ... and by target/effect:
 
-<table>
-<tr><th>Hardware</th> <th>Networks</th> <th>Database</th> <th>DBMS & Applications</th></tr>
+<table class="bullets">
+<tr><th>Hardware</th> <th>Networks</th> <th>DBMS & Applications</th> <th>Database</th></tr>
 <tr>
 <td style="text-align: left;">
 - Fire, flood, bombs
 - Power loss or surge
-- Radiation and magnets
+- Electromagnetic interference and radiation
 - Hardware failure of security mechanisms
 - Equipment theft
 </td> 
 <td style="text-align: left;">
+- Wire tapping
+- Cable breakage or disconnection
+- Electromagnetic interference and radiation
 </td> 
 <td style="text-align: left;">
+- Software failure of security mechanisms
+- Program alteration
+- Program theft
 </td> 
 <td style="text-align: left;">
+- Unauthorized data I/O
 </td> 
 </tr>
 </table>

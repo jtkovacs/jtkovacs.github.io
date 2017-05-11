@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3885 words
+   &gt; 3886 words
   </p>
   <table class="TOC">
    <tr>
@@ -163,11 +163,6 @@
              </a>
              <ul>
               <li>
-               <a href="#heaps">
-                Heaps
-               </a>
-              </li>
-              <li>
                <a href="#clustered-indexes">
                 Clustered indexes
                </a>
@@ -175,11 +170,6 @@
               <li>
                <a href="#non-clustered-indexes">
                 Non-clustered indexes
-               </a>
-              </li>
-              <li>
-               <a href="#types-of-indexes">
-                Types of indexes
                </a>
               </li>
               <li>
@@ -1350,17 +1340,16 @@
   <div class="figure">
    <img src="../ILLOS/SQLDataPage.png"/>
   </div>
-  <h5>
-   <a name="heaps">
-    Heaps
-   </a>
-  </h5>
   <p>
-   A table without a clustered index is called a
+   A table can be a
    <strong>
-    heap,
+    heap
    </strong>
-   and the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake).
+   or, if it has a
+   <strong>
+    clustered index,
+   </strong>
+   a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table.
   </p>
   <ul>
    <li>
@@ -1425,29 +1414,6 @@
     Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
    </li>
   </ul>
-  <h5>
-   <a name="types-of-indexes">
-    Types of indexes
-   </a>
-  </h5>
-  <p>
-   <strong>
-    Clustered indexes
-   </strong>
-   determine the physical storage order of the table ...
-   <a href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
-    sort of
-   </a>
-   ... so there can be only one clustered index per table. A table with a clustered index is called a
-   <strong>
-    clustered table;
-   </strong>
-   a table without a clustered index is called a
-   <strong>
-    heap,
-   </strong>
-   and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake.
-  </p>
   <p>
    There can be more than one
    <strong>
@@ -1745,6 +1711,12 @@
     Database systems: A practical approach to design, implementation, and management
    </em>
    (6th ed.). New York City, NY: Pearson Education.
+  </p>
+  <p>
+   Sheffield, W. (2012, October 12). Does a clustered index really physically store the rows in key order?
+   <a class="uri" href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
+    http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/
+   </a>
   </p>
   <p>
    Sheldon, R. (2014, March 25). 14 SQL Server indexing questions you were too shy to ask. Simple Talk. Retrieved from

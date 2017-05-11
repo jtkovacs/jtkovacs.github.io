@@ -273,9 +273,7 @@ This discussion is based on MS SQL Server, which stores table data (rows) in pag
 
 ![](../ILLOS/SQLDataPage.png)
 
-##### Heaps
-
-A table without a clustered index is called a **heap,** and the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). 
+A table can be a **heap** or, if it has a **clustered index,** a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table. 
 
 - Table: heap or clustered index
 - Heap with non-clustered indexes
@@ -298,11 +296,6 @@ The leaves of non-clustered indexes are also stored in pages:
 - Intermediary node(s)
 - Leaf node
 - Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
-
-
-##### Types of indexes
-
-**Clustered indexes** determine the physical storage order of the table ... [sort of](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) ... so there can be only one clustered index per table. A table with a clustered index is called a **clustered table;** a table without a clustered index is called a **heap,** and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake.
 
 There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers. 
 
@@ -379,6 +372,8 @@ displayName. (2015, December 3). Are determinants and candidate keys same or dif
 E/R model: types of attributes. (n.d.). Retrieved from the Database Management Wiki: [http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes](http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes)
 
 Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
+
+Sheffield, W. (2012, October 12). Does a clustered index really physically store the rows in key order? [http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/)
 
 Sheldon, R. (2014, March 25). 14 SQL Server indexing questions you were too shy to ask. Simple Talk. Retrieved from [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
 

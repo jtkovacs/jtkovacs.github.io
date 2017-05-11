@@ -182,7 +182,7 @@ Normalization is a process of allocating attributes to entities to achieve a cer
 - **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
 
-This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how normal forms prevent data anomalies. In this case there are two FDs `(Book → Author, Author → Author_Nationality)` and one TD `(Book → Author_Nationality), not to mention a violation of 1NF:`
+This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how normal forms prevent data anomalies. In this case there are two FDs `(Book → Author, Author → Author_Nationality)` and one TD `(Book → Author_Nationality),` not to mention a violation of 1NF:
 
 | Author | Book | Author_Nationality | 
 | --- | --- | --- |

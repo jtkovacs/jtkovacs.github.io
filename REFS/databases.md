@@ -146,9 +146,9 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 What happens if data is not normalized??
 
-### Integrity
+#### Integrity
 
-#### Entity integrity
+##### Entity integrity
 
 Entity integrity: enforced by primary key
 

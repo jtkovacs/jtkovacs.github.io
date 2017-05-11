@@ -13,8 +13,8 @@
 				- [Transitive dependencies](#transitive-dependencies)
 				- [Multivalued dependencies](#multivalued-dependencies)
 			- [Normalization and integrity](#normalization-and-integrity)
-		- [Integrity](#integrity)
-			- [Entity integrity](#entity-integrity)
+			- [Integrity](#integrity)
+				- [Entity integrity](#entity-integrity)
 				- [Referential integrity](#referential-integrity)
 				- [Domain integrity](#domain-integrity)
 		- [NoSQL databases](#nosql-databases)
@@ -187,9 +187,9 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 What happens if data is not normalized??
 
-### Integrity
+#### Integrity
 
-#### Entity integrity
+##### Entity integrity
 
 Entity integrity: enforced by primary key
 

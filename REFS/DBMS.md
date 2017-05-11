@@ -170,7 +170,7 @@ WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same n
 
 ##### Fixing index fragmentation
 
-Fragmentation can be identified with [sys.dm_db_index_physical_stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql), a SQL Server dynamic management function **(DMF;** [read more):](https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/)
+Fragmentation can be identified with [sys.dm_db_index_physical_stats,](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql) a SQL Server [dynamic management function](https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/) **(DMF):**
 
 ```SQL
 SELECT * 

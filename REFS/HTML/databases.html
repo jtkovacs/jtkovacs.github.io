@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3746 words
+   &gt; 3773 words
   </p>
   <table class="TOC">
    <tr>
@@ -1344,6 +1344,13 @@
    </strong>
    that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
   </p>
+  <p>
+   Per Sheldon (2014), indexing doesn't improve performance for
+   <em>
+    all
+   </em>
+   queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
+  </p>
   <h5>
    <a name="types-of-indexes">
     Types of indexes
@@ -1593,21 +1600,6 @@
     </tr>
    </tbody>
   </table>
-  <p>
-   SEE:
-  </p>
-  <ul>
-   <li>
-    <a class="uri" href="http://use-the-index-luke.com/sql/table-of-contents">
-     http://use-the-index-luke.com/sql/table-of-contents
-    </a>
-   </li>
-   <li>
-    <a class="uri" href="https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/">
-     https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/
-    </a>
-   </li>
-  </ul>
   <h1>
    <a name="database-administration">
     Database administration

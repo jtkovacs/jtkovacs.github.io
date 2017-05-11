@@ -271,6 +271,8 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 Indexes are created to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases](information-systems.html#what-are-mis?) and they may be erased then restored when loading a very large dataset into the database. The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
+Per Sheldon (2014), indexing doesn't improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
+
 ##### Types of indexes
 
 **Clustered indexes** determine the physical storage order of the table ... [sort of](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) ... so there can be only one clustered index per table. A table with a clustered index is called a **clustered table;** a table without a clustered index is called a **heap,** and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake.
@@ -318,12 +320,6 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 | Transaction log space used | Less | More |
 | Additional free space required in the data file | No | Yes |
 
-
-
-SEE:
-
-- [http://use-the-index-luke.com/sql/table-of-contents](http://use-the-index-luke.com/sql/table-of-contents)
-- [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)    
 
 
 

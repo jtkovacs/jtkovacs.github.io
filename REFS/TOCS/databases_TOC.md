@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4278 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4276 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -409,14 +409,12 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ## Security
 
-Check database logs to identify security problems, or conduct a more extensive audit. 
-
-Common security threats may be categorized by human vectors:
+Check database logs to identify security problems, or conduct a more extensive audit. Common security threats may be categorized by human vectors or by system targets:
 
 <table class="bullets">
-<tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
+<tr><th colspan="2">Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
-<td style="text-align: left;">
+<td style="text-align: left;" colspan="2">
 - Use of person's means of access
 - Inappropriate data sharing
 - Inadequate training
@@ -432,11 +430,6 @@ Common security threats may be categorized by human vectors:
 - Inadequate policies and procedures
 </td> 
 </tr>
-</table>
-
-... and by system targets:
-
-<table class="bullets">
 <tr><th>Hardware</th> <th>Networks</th> <th>DBMS & Applications</th> <th>Database</th></tr>
 <tr>
 <td style="text-align: left;">

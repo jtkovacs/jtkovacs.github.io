@@ -198,7 +198,6 @@ ALTER INDEX ... REBUILD;
 -- Reorganize 
 ALTER INDEX ... REORGANIZE 
 ```
-To reduce the extent fragmentation of a heap, create a clustered index on the table and then drop the index.
 
 
 ##### Creating memory-optimized tables

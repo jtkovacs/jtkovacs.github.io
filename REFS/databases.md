@@ -286,7 +286,7 @@ But a **columnstore index** (useful for read-heavy databases with star or snowfl
 
 ![](../ILLOS/columnstore.png)
 
-##### Index fragmentation
+##### Fragmentation
 
 Index fragmentation is inevitable, especially in OLTP environments:
 
@@ -294,14 +294,16 @@ Index fragmentation is inevitable, especially in OLTP environments:
 - DELETE operations lead to partially-filled pages **(internal fragmentation)**
 - Large rows **(extent fragmentation?)**
 
-Fragmentation can be identified with a SQL Server dynamic management function **(DMF;** [read more):](https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/)
-
-- 
-
 If an index has less than 1000 pages and is in memory (i.e., non-clustered), don't bother removing fragmentation. If an index has <5% logical fragmentation, don't do anything. Otherwise:
 
-- 5% < logical fragmentation < 30%: **reorganize** using `DBCC INDEXDEFRAG` or `ALTER INDEX ... REORGANIZE`
-- 30% < logical fragmentation: **rebuild** using `DBCC DBREINDEX` or `ALTER INDEX ... REBUILD`
+- 5% < logical fragmentation < 30%: **reorganize**
+- 30% < logical fragmentation: **rebuild**
+
+| Characteristic | Reorganize | Rebuild |
+| --- | --- | --- |
+| Online or offline | Online | Offline as default; online as option |
+
+The extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
 
 SEE:
 

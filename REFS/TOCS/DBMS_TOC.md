@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1967 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1947 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -234,7 +234,6 @@ ALTER INDEX ... REBUILD;
 -- Reorganize 
 ALTER INDEX ... REORGANIZE 
 ```
-To reduce the extent fragmentation of a heap, create a clustered index on the table and then drop the index.
 
 
 ##### Creating memory-optimized tables

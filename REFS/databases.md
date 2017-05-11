@@ -273,6 +273,12 @@ There are different kinds of indexes:
 - There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers.
 - A **columnstore index** is used to improve performance of read-only tables.
 
+Index pages have a certain structure:
+
+- Root node
+- Intermediary node(s)
+- Leaf node
+
 See:
 
 - [http://use-the-index-luke.com/sql/table-of-contents](http://use-the-index-luke.com/sql/table-of-contents)

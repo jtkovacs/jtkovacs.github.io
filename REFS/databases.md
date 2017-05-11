@@ -347,6 +347,16 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 - Create multiple data files (.NDF)
     - Create filegroups to manage multiple data files as one object
 
+## Database architectures
+
+![](../ILLOS/db-arch1.png)
+
+![](../ILLOS/db-arch2.png)
+
+![](../ILLOS/db-arch3.png)
+
+![](../ILLOS/db-arch4.png)
+
 ## Transaction management
 
 - ACID

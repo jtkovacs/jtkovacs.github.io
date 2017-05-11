@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4093 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4100 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -29,6 +29,7 @@
 				- [Fragmentation](#fragmentation)
 - [Database administration](#database-administration)
 	- [Files and filegroups](#files-and-filegroups)
+	- [Database architectures](#database-architectures)
 	- [Transaction management](#transaction-management)
 	- [Security](#security)
 		- [Authentication](#authentication)
@@ -389,6 +390,16 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 - Move the data file to a larger drive
 - Create multiple data files (.NDF)
     - Create filegroups to manage multiple data files as one object
+
+## Database architectures
+
+![](../ILLOS/db-arch1.png)
+
+![](../ILLOS/db-arch2.png)
+
+![](../ILLOS/db-arch3.png)
+
+![](../ILLOS/db-arch4.png)
 
 ## Transaction management
 

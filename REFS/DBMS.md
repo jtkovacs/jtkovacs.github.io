@@ -183,7 +183,8 @@ FROM sys.dm_db_index_physical_stats (
 )
 
 SELECT * 
-FROM sys.dm_db_index_physical_stats (DB_ID(N'AdventureWorks'), OBJECT_ID(N'Person.Address'), NULL, NULL , 'DETAILED'); 
+FROM sys.dm_db_index_physical_stats (DB_ID(N'AdventureWorks'), 
+    OBJECT_ID(N'Person.Address'), NULL, NULL , 'DETAILED'); 
 ```
 Once identified, fragmentation can be repaired in the following ways:
 

@@ -622,7 +622,8 @@ INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">--
 )
 
 <span class="kw">SELECT</span> * 
-<span class="kw">FROM</span> sys.dm_db_index_physical_stats (DB_ID(N<span class="st">'AdventureWorks'</span>), OBJECT_ID(N<span class="st">'Person.Address'</span>), <span class="kw">NULL</span>, <span class="kw">NULL</span> , <span class="st">'DETAILED'</span>); </code></pre>
+<span class="kw">FROM</span> sys.dm_db_index_physical_stats (DB_ID(N<span class="st">'AdventureWorks'</span>), 
+    OBJECT_ID(N<span class="st">'Person.Address'</span>), <span class="kw">NULL</span>, <span class="kw">NULL</span> , <span class="st">'DETAILED'</span>); </code></pre>
   </div>
   <p>
    Once identified, fragmentation can be repaired in the following ways:

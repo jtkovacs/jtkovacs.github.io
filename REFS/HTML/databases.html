@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3312 words
+   &gt; 3290 words
   </p>
   <table class="TOC">
    <tr>
@@ -712,6 +712,8 @@
    <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencie">
     This is an excellent demonstration of identifying (super) keys.
    </a>
+  </p>
+  <p>
    In general, keys may be
    <strong>
     natural,
@@ -864,8 +866,10 @@
       <a href="#transitive-dependencies">
        transitive dependencies
       </a>
+      and derived attributes
      </td>
      <td align="left">
+      ???
      </td>
     </tr>
     <tr class="even">
@@ -880,6 +884,7 @@
       A is the PK
      </td>
      <td align="left">
+      ???
      </td>
     </tr>
     <tr class="odd">
@@ -900,18 +905,19 @@
       5th
      </td>
      <td align="left">
+      ???
      </td>
      <td align="left">
+      ???
      </td>
     </tr>
    </tbody>
   </table>
   <ul>
    <li>
-    Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-   </li>
-   <li>
-    3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL), i.e. remove all transitive dependencies
+    <p>
+     Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+    </p>
     <ul>
      <li>
       https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency

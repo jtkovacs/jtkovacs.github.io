@@ -364,6 +364,8 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ## Security
 
+Check database logs to identify security problems, or conduct a more extensive audit. 
+
 Common security threats may be categorized by human vectors:
 
 <table class="bullets">
@@ -415,15 +417,15 @@ Common security threats may be categorized by human vectors:
 </tr>
 </table>
 
-### Authentication and authorization
-
 ### Encryption
+
+
+
+### Authentication and authorization
 
 #### Digital signatures
 
 Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
-
-### Security audits
 
 
 

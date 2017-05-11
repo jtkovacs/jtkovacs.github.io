@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3228 words
+   &gt; 3301 words
   </p>
   <table class="TOC">
    <tr>
@@ -110,6 +110,11 @@
                </a>
               </li>
              </ul>
+            </li>
+            <li>
+             <a href="#why-not-normalize?">
+              Why not normalize?
+             </a>
             </li>
            </ul>
           </li>
@@ -812,14 +817,18 @@
    <a href="#relationships-between-attributes">
     dependencies
    </a>
-   within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
+   within each entity;
+   <a href="http://www.bkent.net/Doc/simple5.htm">
+    Bill Kent
+   </a>
+   does a good job talking about this in terms of which attributes provide "facts" about other attributes. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms progressive refinements of the basic relational model:
   </p>
   <ul>
    <li>
     <strong>
      1NF:
     </strong>
-    Rows are unique, columns have a datatype, and all attributes are atomic (which might require splitting a composive attribute or creating another entity to resolve a one-to-many relationship). These requirements reduce redundancy.
+    Rows are unique (i.e., there is a primary key), columns have a datatype, and all attributes are atomic. These requirements reduce redundancy.
    </li>
    <li>
     <strong>
@@ -829,7 +838,7 @@
     <a href="functional-dependencies-and-keys">
      FDs;
     </a>
-    i.e., each column must be a determinant or a dependent. If so, modification anomalies are prevented.
+    i.e., each column must be either a determinant or a dependent. This may require the creation of new entities to resolve one-to-many relationships through PK/FK pairs. If so, modification anomalies are prevented.
    </li>
    <li>
     <strong>
@@ -845,7 +854,10 @@
     <strong>
      BCNF:
     </strong>
-    Extreme version of 3NF where, for all FDs
+    <a href="http://psoug.org/reference/normalization.html">
+     Extreme version of 3NF
+    </a>
+    where, for all FDs
     <code>
      A → B,
     </code>
@@ -953,29 +965,30 @@
     </strong>
    </li>
    <li>
-    <p>
-     If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an
-     <strong>
-      update anomaly.
-     </strong>
-    </p>
+    If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an
+    <strong>
+     update anomaly.
+    </strong>
+   </li>
+  </ul>
+  <h4>
+   <a name="why-not-normalize?">
+    Why not normalize?
+   </a>
+  </h4>
+  <p>
+   Per Chapple (2016):
+  </p>
+  <ul>
+   <li>
+    Normalization means more tables; more tables mean more
+    <a href="SQL.html">
+     JOINs;
+    </a>
+    JOINs are slow.
    </li>
    <li>
-    https://en.wikipedia.org/wiki/Database_normalization plus anomalies
-   </li>
-   <li>
-    https://www.thoughtco.com/database-normalization-basics-1019735
-   </li>
-   <li>
-    http://searchsqlserver.techtarget.com/definition/normalization
-   </li>
-   <li>
-    http://psoug.org/reference/normalization.html
-   </li>
-   <li>
-    <p>
-     http://www.bkent.net/Doc/simple5.htm
-    </p>
+    Normalization is a complex, time-consuming process and developer time is valuable, so operate in the spirit of 'quick and dirty'.
    </li>
   </ul>
   <h3>
@@ -1346,9 +1359,14 @@
     Transaction management
    </a>
   </h2>
-  <p>
-   ACID
-  </p>
+  <ul>
+   <li>
+    ACID
+   </li>
+   <li>
+    https://www.thoughtco.com/abandoning-acid-in-favor-of-base-1019674
+   </li>
+  </ul>
   <h2>
    <a name="security">
     Security
@@ -1387,6 +1405,12 @@
     Cited
    </a>
   </h2>
+  <p>
+   Chapple, M. (2016, November 29). Should I denormalize my database? ThoughtCo. Retrieved from
+   <a class="uri" href="https://www.thoughtco.com/should-i-normalize-my-database-1019730">
+    https://www.thoughtco.com/should-i-normalize-my-database-1019730
+   </a>
+  </p>
   <p>
    displayName. (2015, December 3). Are determinants and candidate keys same or different things? [Comment]. Stack Overflow. Message posted to
    <a class="uri" href="https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things">

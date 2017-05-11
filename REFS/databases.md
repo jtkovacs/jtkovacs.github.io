@@ -134,13 +134,12 @@ Additionally, database designs are normalized to preserve integrity and minimize
 
 ##### Normalization
 
-Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
+Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity; [Bill Kent](http://www.bkent.net/Doc/simple5.htm) does a good job talking about this in terms of which attributes provide "facts" about other attributes. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms progressive refinements of the basic relational model:
 
-- **1NF:** Rows are unique, columns have a datatype, and all attributes are atomic (which might require splitting a composive attribute or creating another entity to resolve a one-to-many relationship). These requirements reduce redundancy.
-- **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent. If so, 
-modification anomalies are prevented.
+- **1NF:** Rows are unique (i.e., there is a primary key), columns have a datatype, and all attributes are atomic. These requirements reduce redundancy.
+- **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be either a determinant or a dependent. This may require the creation of new entities to resolve one-to-many relationships through PK/FK pairs. If so, modification anomalies are prevented. 
 - **3NF:** Remove [TDs](#transitive-dependencies) and derived attributes, preventing update and deletion anomalies.
-- **BCNF:** Extreme version of 3NF where, for all FDs `A → B,` A is the PK.
+- **BCNF:** [Extreme version of 3NF](http://psoug.org/reference/normalization.html) where, for all FDs `A → B,` A is the PK.
 - **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
 
@@ -158,13 +157,12 @@ Note the redundancy (caused by the transitive dependency) the liabilities it cre
 - You must add an author to add a book, and vice versa; this is an **insertion anomaly.**
 - If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an **update anomaly.**
 
+#### Why not normalize?
 
+Per Chapple (2016): 
 
-- https://en.wikipedia.org/wiki/Database_normalization plus anomalies
-- https://www.thoughtco.com/database-normalization-basics-1019735
-- http://searchsqlserver.techtarget.com/definition/normalization
-- http://psoug.org/reference/normalization.html
-- http://www.bkent.net/Doc/simple5.htm
+- Normalization means more tables; more tables mean more [JOINs;](SQL.html) JOINs are slow.
+- Normalization is a complex, time-consuming process and developer time is valuable, so operate in the spirit of 'quick and dirty'.
 
 
 ### NoSQL databases
@@ -283,7 +281,8 @@ See:
 
 ## Transaction management
 
-ACID
+- ACID
+- https://www.thoughtco.com/abandoning-acid-in-favor-of-base-1019674
 
 ## Security
 
@@ -303,6 +302,8 @@ Digital signatures are based on Public Key techniques; are different for each us
 # Sources
 
 ## Cited
+
+Chapple, M. (2016, November 29). Should I denormalize my database? ThoughtCo. Retrieved from [https://www.thoughtco.com/should-i-normalize-my-database-1019730](https://www.thoughtco.com/should-i-normalize-my-database-1019730)
 
 displayName. (2015, December 3). Are determinants and candidate keys same or different things? [Comment]. Stack Overflow. Message posted to [https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things](https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things)
 

@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3334 words
+   &gt; 3396 words
   </p>
   <table class="TOC">
    <tr>
@@ -823,26 +823,47 @@
     <strong>
      2NF:
     </strong>
+    All columns in a table must be related via
+    <a href="functional-dependencies-and-keys">
+     functional dependencies;
+    </a>
+    i.e., each column must be a determinant or a dependent.
    </li>
    <li>
     <strong>
      3NF:
     </strong>
+    Remove
+    <a href="#transitive-dependencies">
+     transitive dependencies
+    </a>
+    and derived attributes, preventing update and deletion anomalies*.
    </li>
    <li>
     <strong>
      BCNF:
     </strong>
+    Extreme version of 3NF where, for all FDs
+    <code>
+     A → B,
+    </code>
+    A is the PK.
    </li>
    <li>
     <strong>
      4NF:
     </strong>
+    Remove
+    <a href="#multivalued-dependencies">
+     multivalued dependencies,
+    </a>
+    somehow increasing efficiency because there are B+C rather than B*C tuples??
    </li>
    <li>
     <strong>
      5NF:
     </strong>
+    ???
    </li>
   </ul>
   <table style="width:32%;">

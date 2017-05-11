@@ -294,6 +294,8 @@ Just as heaps and clustered tables store their rows in data pages, non-clustered
 
 ![](../ILLOS/nonclustered-index.png)
 
+<br/>
+
 ![](../ILLOS/B-tree.png)
 
 

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3302 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3228 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -145,6 +145,7 @@ Written in predicate logic with tuples denoted t and u, attributes denoted A and
 - Trivial: `A → B & B ⊆ A`
 - Nontrivial: `A → B & B ⊈ A`
 - Completely nontrivial: `A → B & A ∩ B = ∅` 
+- Technically transitive dependencies are functional dependencies
 
 The set of attributes that are functionally dependent on a determinant is called the determinant's **closure, ** `{A}*.` A closure can obviously be as small as a single attribute. Per displayName (2015), a determinant whose closure is the *entire table* is a **candidate key** AKA identity value; one candidate key is chosen as the table's sole **primary key (PK).** [This is an excellent demonstration of identifying (super) keys.](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencie)
 
@@ -167,18 +168,21 @@ Data must have integrity to be useful and trustworthy. Data integrity [tends to 
 - **Domain integrity** is the assurance that attributes have meaningful (as in possible, if not necessarily accurate) values. This is enforced by column data types and custom domain restrictions.
 - **Referential integrity** is the assurance that, once one-to-many or many-to-many relationships are separated into different tables, the data is still kept in sync despite updates and deletions. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
+Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs). 
+
 ##### Normalization
 
-Database schemas are normalized to minimize redundancy (limiting storage costs) and to **preserve data integrity.** Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
+Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
 
-- **1NF:** Rows are unique, columns have a datatype, and all attributes are atomic (which might require splitting a composive attribute or creating an [associative entity.](#associative-entities) This means redundancy is minimized (versus trying to capture a many-to-many relationship in a single table).
-- **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent.
-- **3NF:** Remove [TDs](#transitive-dependencies) and derived attributes, preventing update and deletion anomalies\*.
+- **1NF:** Rows are unique, columns have a datatype, and all attributes are atomic (which might require splitting a composive attribute or creating another entity to resolve a one-to-many relationship). These requirements reduce redundancy.
+- **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent. If so, 
+modification anomalies are prevented.
+- **3NF:** Remove [TDs](#transitive-dependencies) and derived attributes, preventing update and deletion anomalies.
 - **BCNF:** Extreme version of 3NF where, for all FDs `A → B,` A is the PK.
 - **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
 
-*This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how 3NF prevents data anomalies. There are two FDs `(Book → Author, Author → Author_Nationality)` and one TD `(Book → Author_Nationality), not to mention a violation of 1NF:`
+This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how normal forms prevent data anomalies. In this case there are two FDs `(Book → Author, Author → Author_Nationality)` and one TD `(Book → Author_Nationality), not to mention a violation of 1NF:`
 
 | Author | Book | Author_Nationality | 
 | --- | --- | --- |
@@ -192,10 +196,7 @@ Note the redundancy (caused by the transitive dependency) the liabilities it cre
 - You must add an author to add a book, and vice versa; this is an **insertion anomaly.**
 - If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an **update anomaly.**
 
-"At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
 
-
--  
 
 - https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 - https://www.thoughtco.com/database-normalization-basics-1019735

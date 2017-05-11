@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3302 words
+   &gt; 3228 words
   </p>
   <table class="TOC">
    <tr>
@@ -688,6 +688,9 @@
      A → B &amp; A ∩ B = ∅
     </code>
    </li>
+   <li>
+    Technically transitive dependencies are functional dependencies
+   </li>
   </ul>
   <p>
    The set of attributes that are functionally dependent on a determinant is called the determinant's
@@ -796,32 +799,27 @@
     is the assurance that, once one-to-many or many-to-many relationships are separated into different tables, the data is still kept in sync despite updates and deletions. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
    </li>
   </ul>
+  <p>
+   Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs).
+  </p>
   <h5>
    <a name="normalization">
     Normalization
    </a>
   </h5>
   <p>
-   Database schemas are normalized to minimize redundancy (limiting storage costs) and to
-   <strong>
-    preserve data integrity.
-   </strong>
    Normalization is a process of allocating attributes to entities to achieve a certain configuration of
    <a href="#relationships-between-attributes">
     dependencies
    </a>
-   within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
+   within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
   </p>
   <ul>
    <li>
     <strong>
      1NF:
     </strong>
-    Rows are unique, columns have a datatype, and all attributes are atomic (which might require splitting a composive attribute or creating an
-    <a href="#associative-entities">
-     associative entity.
-    </a>
-    This means redundancy is minimized (versus trying to capture a many-to-many relationship in a single table).
+    Rows are unique, columns have a datatype, and all attributes are atomic (which might require splitting a composive attribute or creating another entity to resolve a one-to-many relationship). These requirements reduce redundancy.
    </li>
    <li>
     <strong>
@@ -831,7 +829,7 @@
     <a href="functional-dependencies-and-keys">
      FDs;
     </a>
-    i.e., each column must be a determinant or a dependent.
+    i.e., each column must be a determinant or a dependent. If so, modification anomalies are prevented.
    </li>
    <li>
     <strong>
@@ -841,7 +839,7 @@
     <a href="#transitive-dependencies">
      TDs
     </a>
-    and derived attributes, preventing update and deletion anomalies*.
+    and derived attributes, preventing update and deletion anomalies.
    </li>
    <li>
     <strong>
@@ -871,11 +869,11 @@
    </li>
   </ul>
   <p>
-   *This
+   This
    <a href="https://www.thoughtco.com/transitive-dependency-1019760">
     example from ThoughtCo
    </a>
-   shows how 3NF prevents data anomalies. There are two FDs
+   shows how normal forms prevent data anomalies. In this case there are two FDs
    <code>
     (Book → Author, Author → Author_Nationality)
    </code>
@@ -955,17 +953,12 @@
     </strong>
    </li>
    <li>
-    If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an
-    <strong>
-     update anomaly.
-    </strong>
-   </li>
-  </ul>
-  <p>
-   "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-  </p>
-  <ul>
-   <li>
+    <p>
+     If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an
+     <strong>
+      update anomaly.
+     </strong>
+    </p>
    </li>
    <li>
     https://en.wikipedia.org/wiki/Database_normalization plus anomalies
@@ -980,7 +973,9 @@
     http://psoug.org/reference/normalization.html
    </li>
    <li>
-    http://www.bkent.net/Doc/simple5.htm
+    <p>
+     http://www.bkent.net/Doc/simple5.htm
+    </p>
    </li>
   </ul>
   <h3>

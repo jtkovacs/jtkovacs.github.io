@@ -177,7 +177,7 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 | 2nd | All columns in a table must be related via [functional dependencies;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent | ??? |
 | 3rd | Remove [transitive dependencies](#transitive-dependencies) and derived attributes | Prevent update and deletion anomalies\* |
 | Boyce-Codd | Extreme version of 3NF where, for all FDs `A → B,` A is the PK | ??? |
-| 4th | Remove [multivalued dependencies](#multivalued-dependencies) | Efficiency is increased, somehow, because there are B+C rather than B*C tuples |
+| 4th | Remove [multivalued dependencies](#multivalued-dependencies) | Efficiency is increased, somehow, because there are B+C rather than B\*C tuples |
 | 5th | ??? | ??? |
 
 *Anomalies: "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”

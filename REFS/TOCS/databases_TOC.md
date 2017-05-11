@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3465 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3462 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -312,7 +312,9 @@ There are different kinds of indexes:
 - There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers. 
     - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
     - When a subset of rows are indexed, this is called a **filtered index.**
-- A **columnstore index** is used to improve performance of read-only tables.
+    - A **columnstore index** searches only relevant columns
+    
+![](../ILLOS/columnstore.png)
 
 Index pages have a certain structure:
 

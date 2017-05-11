@@ -273,7 +273,9 @@ There are different kinds of indexes:
 - There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers. 
     - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
     - When a subset of rows are indexed, this is called a **filtered index.**
-- A **columnstore index** is used to improve performance of read-only tables.
+    - A **columnstore index** searches only relevant columns
+    
+![](../ILLOS/columnstore.png)
 
 Index pages have a certain structure:
 

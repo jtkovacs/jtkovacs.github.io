@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3678 words
+   &gt; 3711 words
   </p>
   <table class="TOC">
    <tr>
@@ -1443,7 +1443,15 @@
     </strong>
    </li>
   </ul>
-  <table>
+  <table style="width:17%;">
+   <colgroup>
+    <col width="5%">
+    </col>
+    <col width="5%">
+    </col>
+    <col width="5%">
+    </col>
+   </colgroup>
    <thead>
     <tr class="header">
      <th align="left">
@@ -1484,35 +1492,77 @@
      <td align="left">
       Logical fragmentation
      </td>
+     <td align="left">
+      Yes
+     </td>
+     <td align="left">
+      Yes
+     </td>
     </tr>
     <tr class="even">
      <td align="left">
       Transaction atomicity
+     </td>
+     <td align="left">
+      Small discrete transactions
+     </td>
+     <td align="left">
+      Single atomic transaction
      </td>
     </tr>
     <tr class="odd">
      <td align="left">
       Rebuild statistics automatically
      </td>
+     <td align="left">
+      No
+     </td>
+     <td align="left">
+      Yes
+     </td>
     </tr>
     <tr class="even">
      <td align="left">
       Parallel execution
+     </td>
+     <td align="left">
+      No
+     </td>
+     <td align="left">
+      Yes
      </td>
     </tr>
     <tr class="odd">
      <td align="left">
       Untangle indexes that are interleaved with the data file
      </td>
+     <td align="left">
+      No
+     </td>
+     <td align="left">
+      Yes
+     </td>
     </tr>
     <tr class="even">
      <td align="left">
       Transaction log space used
      </td>
+     <td align="left">
+      Less
+     </td>
+     <td align="left">
+      More
+     </td>
     </tr>
     <tr class="odd">
      <td align="left">
       Additional free space required in the data file
+     </td>
+     <td align="left">
+      No
+     </td>
+     <td align="left">
+      Yes
      </td>
     </tr>
    </tbody>

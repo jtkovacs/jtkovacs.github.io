@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3678 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3711 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -41,6 +41,8 @@
 </td></tr></table>
 
 _These notes are heavily influenced by Dr. Simon Wu-Ping Wang's slides as well as Connolly and Begg (2015)._
+
+
 
 # What is a database?
 
@@ -346,13 +348,13 @@ If an index has less than 1000 pages and is in memory (i.e., non-clustered), don
 | --- | --- | --- |
 | Online or offline | Online | Offline as default; online as option |
 | Internal fragmentation | Yes | Yes |
-| Logical fragmentation |
-| Transaction atomicity | 
-| Rebuild statistics automatically | 
-| Parallel execution | 
-| Untangle indexes that are interleaved with the data file | 
-| Transaction log space used
-| Additional free space required in the data file | 
+| Logical fragmentation | Yes | Yes |
+| Transaction atomicity | Small discrete transactions | Single atomic transaction |
+| Rebuild statistics automatically | No | Yes |
+| Parallel execution | No | Yes |
+| Untangle indexes that are interleaved with the data file | No | Yes |
+| Transaction log space used | Less | More |
+| Additional free space required in the data file | No | Yes |
 
 The extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
 

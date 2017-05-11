@@ -1,6 +1,8 @@
 
 _These notes are heavily influenced by Dr. Simon Wu-Ping Wang's slides as well as Connolly and Begg (2015)._
 
+
+
 # What is a database?
 
 A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.html#information-structures) for other major data models); or (2) this structured data plus a database management system (DBMS). 
@@ -305,13 +307,13 @@ If an index has less than 1000 pages and is in memory (i.e., non-clustered), don
 | --- | --- | --- |
 | Online or offline | Online | Offline as default; online as option |
 | Internal fragmentation | Yes | Yes |
-| Logical fragmentation |
-| Transaction atomicity | 
-| Rebuild statistics automatically | 
-| Parallel execution | 
-| Untangle indexes that are interleaved with the data file | 
-| Transaction log space used
-| Additional free space required in the data file | 
+| Logical fragmentation | Yes | Yes |
+| Transaction atomicity | Small discrete transactions | Single atomic transaction |
+| Rebuild statistics automatically | No | Yes |
+| Parallel execution | No | Yes |
+| Untangle indexes that are interleaved with the data file | No | Yes |
+| Transaction log space used | Less | More |
+| Additional free space required in the data file | No | Yes |
 
 The extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
 

@@ -337,7 +337,7 @@ Just as heaps and clustered tables store their rows in data pages, non-clustered
 
 ![](../ILLOS/nonclustered-index.png)
 
-<img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="600px">
+<img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
 
 
 But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 

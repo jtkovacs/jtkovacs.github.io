@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
     https://jtkovacs.github.io/REFS/HTML/SQL.html
    </a>
-   &gt; 2287 words
+   &gt; 2292 words
   </p>
   <table class="TOC">
    <tr>
@@ -141,14 +141,24 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             Set operations
            </a>
           </li>
-          <li>
-           <a href="#check-for-inclusion">
-            Check for inclusion
-           </a>
-          </li>
          </ul>
         </li>
        </ul>
+      </li>
+      <li>
+       <a href="#check-for-inclusion">
+        Check for inclusion
+       </a>
+      </li>
+      <li>
+       <a href="#t-sql">
+        T-SQL
+       </a>
+      </li>
+      <li>
+       <a href="#cookbook-and-examples">
+        Cookbook and examples
+       </a>
       </li>
       <li>
        <a href="#sources">
@@ -548,11 +558,11 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
     symmetric difference: (A-B)∪(B-A)
    </li>
   </ul>
-  <h3>
+  <h1>
    <a name="check-for-inclusion">
     Check for inclusion
    </a>
-  </h3>
+  </h1>
   <ul>
    <li>
     SELECT, FROM, CAST, RANK(), DENSE_RANK()
@@ -588,6 +598,52 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
   <p>
    https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
   </p>
+  <h1>
+   <a name="t-sql">
+    T-SQL
+   </a>
+  </h1>
+  <ul>
+   <li>
+    Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
+   </li>
+   <li>
+    Exclusive: SELECT … WHERE [date] &gt; 2012-02-25’ AND [date] &lt; ‘20120230’;
+    <ul>
+     <li>
+      Note that dates are given as strings
+     </li>
+    </ul>
+   </li>
+   <li>
+    Retrieve date, modify date &amp; alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
+   </li>
+   <li>
+    Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal',
+    <ul>
+     <li>
+      SELECT COUNT(*) [HowManyMarchOrders] FROM ...
+     </li>
+    </ul>
+   </li>
+   <li>
+    MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder' FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
+   </li>
+   <li>
+    SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) &gt; 1 - ORDER BY SUM(TotalDue) DESC;
+   </li>
+   <li>
+    SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
+   </li>
+   <li>
+    SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
+   </li>
+  </ul>
+  <h1>
+   <a name="cookbook-and-examples">
+    Cookbook and examples
+   </a>
+  </h1>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c.CustomerID, c.TerritoryID, <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">AS</span> [Total Orders],
     <span class="fu">DENSE_RANK</span>() <span class="kw">OVER</span> (<span class="kw">PARTITION</span> <span class="kw">BY</span> c.TerritoryID <span class="kw">ORDER</span> <span class="kw">BY</span> <span class="fu">COUNT</span>(o.SalesOrderid)) <span class="kw">AS</span> [<span class="fu">Rank</span>]
@@ -655,45 +711,6 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
     (<span class="kw">SELECT</span> CustomerID <span class="kw">FROM</span> Sales.SalesOrderHeader)
 <span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>;</code></pre>
   </div>
-  <p>
-   T-SQL:
-  </p>
-  <ul>
-   <li>
-    Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
-   </li>
-   <li>
-    Exclusive: SELECT … WHERE [date] &gt; 2012-02-25’ AND [date] &lt; ‘20120230’;
-    <ul>
-     <li>
-      Note that dates are given as strings
-     </li>
-    </ul>
-   </li>
-   <li>
-    Retrieve date, modify date &amp; alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
-   </li>
-   <li>
-    Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal',
-    <ul>
-     <li>
-      SELECT COUNT(*) [HowManyMarchOrders] FROM ...
-     </li>
-    </ul>
-   </li>
-   <li>
-    MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder' FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
-   </li>
-   <li>
-    SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) &gt; 1 - ORDER BY SUM(TotalDue) DESC;
-   </li>
-   <li>
-    SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
-   </li>
-   <li>
-    SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
-   </li>
-  </ul>
   <h1>
    <a name="sources">
     SOURCES

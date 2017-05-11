@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a> \> 2287 words </p><table class="TOC"><tr><td>- [What is SQL?](#what-is-sql?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a> \> 2292 words </p><table class="TOC"><tr><td>- [What is SQL?](#what-is-sql?)
 	- [Notation and style guide](#notation-and-style-guide)
 	- [Data definition](#data-definition)
 		- [Manage databases](#manage-databases)
@@ -13,7 +13,9 @@
 			- [JOINs](#joins)
 			- [Subqueries](#subqueries)
 		- [Set operations](#set-operations)
-		- [Check for inclusion](#check-for-inclusion)
+- [Check for inclusion](#check-for-inclusion)
+- [T-SQL](#t-sql)
+- [Cookbook and examples](#cookbook-and-examples)
 - [SOURCES](#sources)
 	- [References](#references)
 	- [Archive](#archive)
@@ -271,7 +273,7 @@ Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-bas
 
 
 
-### Check for inclusion
+# Check for inclusion
 
 - SELECT, FROM, CAST, RANK(), DENSE_RANK()
 - WITH
@@ -286,6 +288,26 @@ Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-bas
 
 https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
 
+
+
+# T-SQL
+
+- Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
+- Exclusive: SELECT … WHERE [date] > 2012-02-25’ AND [date] < ‘20120230’; 
+    - Note that dates are given as strings
+- Retrieve date, modify date & alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
+- Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal', 
+    - SELECT COUNT(*) [HowManyMarchOrders] FROM ... 
+- MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder'  FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
+- SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) > 1 - ORDER BY SUM(TotalDue) DESC;
+- SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
+- SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
+
+
+
+
+# Cookbook and examples
+
 ```SQL
 SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS [Total Orders],
     DENSE_RANK() OVER (PARTITION BY c.TerritoryID ORDER BY COUNT(o.SalesOrderid)) AS [Rank]
@@ -293,7 +315,6 @@ FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader o ON c.CustomerID =
 WHERE DATEPART(year, OrderDate) = 2007
 GROUP BY c.TerritoryID, c.CustomerID;
 ```
-
 
 Select product_id, name and selling start date for all products that started selling before 01/01/2006. Use the CAST function to display the date only. You need to work with the Production.Product table. The syntax for CAST is CAST(expression AS data_type), where expression is the column name we want to format and  we can use DATE as data_type for this question to display just the date.
 
@@ -354,18 +375,7 @@ WHERE CustomerID NOT IN
 ORDER BY CustomerID ASC;
 ```
 
-T-SQL:
 
-- Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
-- Exclusive: SELECT … WHERE [date] > 2012-02-25’ AND [date] < ‘20120230’; 
-    - Note that dates are given as strings
-- Retrieve date, modify date & alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
-- Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal', 
-    - SELECT COUNT(*) [HowManyMarchOrders] FROM ... 
-- MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder'  FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
-- SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) > 1 - ORDER BY SUM(TotalDue) DESC;
-- SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
-- SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
 
 
 # SOURCES

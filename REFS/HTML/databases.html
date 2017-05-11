@@ -161,21 +161,19 @@
              <a href="#indexing-and-performance">
               Indexing and performance
              </a>
+             <ul>
+              <li>
+               <a href="#fragmentation">
+                Fragmentation
+               </a>
+              </li>
+             </ul>
             </li>
            </ul>
           </li>
          </ul>
         </li>
        </ul>
-      </li>
-      <li>
-       <a href="#why-&amp;-when">
-        Why &amp; when
-       </a>
-       -
-       <a href="#fragmentation">
-        Fragmentation
-       </a>
       </li>
       <li>
        <a href="#database-administration">
@@ -1327,6 +1325,37 @@
    </a>
   </h4>
   <p>
+   Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed
+   <code>
+    (INSERT, UPDATE, and DELETE operations),
+   </code>
+   though, per sheldon (2014), not
+   <em>
+    all
+   </em>
+   indexes improve performance for
+   <em>
+    all
+   </em>
+   queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
+  </p>
+  <p>
+   Indexes are therefore common in
+   <a href="information-systems.html#what-are-mis?">
+    reporting databases versus transactional databases.
+   </a>
+  </p>
+  <p>
+   An index may also be erased then restored when loading a very large dataset into the database.
+  </p>
+  <p>
+   The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a
+   <strong>
+    query optimizer
+   </strong>
+   that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
+  </p>
+  <p>
    This discussion is based on MS SQL Server, which stores table data (rows) in pages:
   </p>
   <div class="figure">
@@ -1380,36 +1409,6 @@
     </strong>
    </li>
   </ul>
-  <h1>
-   <a name="why-&amp;-when">
-    Why &amp; when
-   </a>
-  </h1>
-  <p>
-   Indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed
-   <code>
-    (INSERT, UPDATE, and DELETE operations)
-   </code>
-   --- so they are more common in
-   <a href="information-systems.html#what-are-mis?">
-    reporting databases versus transactional databases,
-   </a>
-   or they may be erased then restored when loading a very large dataset into the database.
-  </p>
-  <p>
-   The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a
-   <strong>
-    query optimizer
-   </strong>
-   that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
-  </p>
-  <p>
-   Per Sheldon (2014), indexing doesn't improve performance for
-   <em>
-    all
-   </em>
-   queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
-  </p>
   <p>
    But a
    <strong>

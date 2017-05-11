@@ -269,6 +269,17 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
+Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations),` though, per sheldon (2014), not _all_ indexes improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help). 
+
+
+Indexes are therefore common in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) 
+
+An index may also be erased then restored when loading a very large dataset into the database. 
+
+The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
+
+
+
 This discussion is based on MS SQL Server, which stores table data (rows) in pages:
 
 ![](../ILLOS/SQLDataPage.png)
@@ -285,16 +296,6 @@ The leaves of non-clustered indexes are also stored in pages:
 - Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**
-
-
-
-# Why & when
-
-Indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations)` --- so they are more common in [reporting databases versus transactional databases,](information-systems.html#what-are-mis?) or they may be erased then restored when loading a very large dataset into the database. 
-
-The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
-
-Per Sheldon (2014), indexing doesn't improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
 
 
 But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 

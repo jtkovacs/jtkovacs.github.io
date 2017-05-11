@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3488 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3493 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -171,9 +171,7 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 | Normal Form | Requirements | Impact |
 | --- | --- | --- |
-| 1st | Rows are unique;
-Columns have a datatype; 
-All attributes are atomic; | |
+| 1st | Rows are unique; <br/> Columns have a datatype; <br/> All attributes are atomic; | Redundancy is minimized |
 | 2nd | | |
 | 3rd | | |
 | Boyce-Codd | | |

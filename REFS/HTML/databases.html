@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3963 words
+   &gt; 3967 words
   </p>
   <table class="TOC">
    <tr>
@@ -1406,7 +1406,7 @@
    <strong>
     non-clustered indexes
    </strong>
-   that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d. a). Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their
+   that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d.). Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their
    <strong>
     leaf nodes
    </strong>
@@ -1414,23 +1414,22 @@
    <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
     doubly connected
    </a>
-   to each other and also refer to rows in the heap/clustered table via pointers:
+   to each other (to maintain sort order as rows are added and deleted), and also refer to rows in the heap/clustered table via pointers (thereby making the index useful):
   </p>
   <div class="figure">
    <img src="../ILLOS/nonclustered-index.png"/>
   </div>
+  <p>
+   Then, to make the index itself quickly searchable, a
+   <strong>
+    B-tree
+   </strong>
+   with root and intermediary nodes is used:
+  </p>
+  <div class="figure">
+   <img src="../ILLOS/B-tree.png"/>
+  </div>
   <ul>
-   <li>
-    Root node
-   </li>
-   <li>
-    Intermediary node(s)
-   </li>
-   <li>
-    <p>
-     Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
-    </p>
-   </li>
    <li>
     When multiple fields are included in a single non-clustered index, this is called a
     <strong>
@@ -1439,12 +1438,10 @@
     because it could "cover" all the fields retrieved in a stored query.
    </li>
    <li>
-    <p>
-     When a subset of rows are indexed, this is called a
-     <strong>
-      filtered index.
-     </strong>
-    </p>
+    When a subset of rows are indexed, this is called a
+    <strong>
+     filtered index.
+    </strong>
    </li>
   </ul>
   <p>
@@ -1758,7 +1755,7 @@
    </a>
   </p>
   <p>
-   Winand, M. (n.d. a). Anatomy of a SQL index. Retrieved from
+   Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from
    <a class="uri" href="http://use-the-index-luke.com/sql/anatomy">
     http://use-the-index-luke.com/sql/anatomy
    </a>

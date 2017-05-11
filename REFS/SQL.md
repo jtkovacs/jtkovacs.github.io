@@ -135,9 +135,8 @@ single char: SELECT * FROM … WHERE c LIKE ‘_tringvalue’;
 
 ### SELECT and display
 
-concatenate strings: really depends on platform
-
 ```SQL
+-- concatenate strings: really depends on platform
 SELECT CONCAT(c1,c2) FROM t
 SELECT c1+c2+’ ‘+c3 ..
 SELECT c1 || ‘ ‘ || c2 AS email_address FROM … 
@@ -215,8 +214,6 @@ SELECT * FROM <self_join> WHERE <join_cndn> AND <select_cndn>
 except: SELECT ... FROM ... EXCEPT SELECT … FROM...;
 SELECT * FROM ... WHERE * IN (subquery) AND * NOT IN (subquery) 
 ```
-
-![Set theory](set-theory.png)
 
 #### Subqueries
 

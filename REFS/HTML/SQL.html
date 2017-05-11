@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
     https://jtkovacs.github.io/REFS/HTML/SQL.html
    </a>
-   &gt; 2288 words
+   &gt; 2287 words
   </p>
   <table class="TOC">
    <tr>
@@ -380,11 +380,9 @@ multiple char: <span class="kw">SELECT</span> * <span class="kw">FROM</span> …
     SELECT and display
    </a>
   </h3>
-  <p>
-   concatenate strings: really depends on platform
-  </p>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> <span class="fu">CONCAT</span>(c1,c2) <span class="kw">FROM</span> t
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- concatenate strings: really depends on platform</span>
+<span class="kw">SELECT</span> <span class="fu">CONCAT</span>(c1,c2) <span class="kw">FROM</span> t
 <span class="kw">SELECT</span> c1+c2+’ ‘+c3 ..
 <span class="kw">SELECT</span> c1 || ‘ ‘ || c2 <span class="kw">AS</span> email_address <span class="kw">FROM</span> … 
 <span class="kw">SELECT</span> <span class="fu">LENGTH</span>(col)  … 
@@ -486,12 +484,6 @@ removes duplicates: <span class="kw">SELECT</span> … <span class="kw">FROM</sp
 <span class="kw">SELECT</span> * <span class="kw">FROM</span> &lt;self_join&gt; <span class="kw">WHERE</span> &lt;join_cndn&gt; <span class="kw">AND</span> &lt;select_cndn&gt;
 except: <span class="kw">SELECT</span> ... <span class="kw">FROM</span> ... <span class="kw">EXCEPT</span> <span class="kw">SELECT</span> … FROM...;
 <span class="kw">SELECT</span> * <span class="kw">FROM</span> ... <span class="kw">WHERE</span> * <span class="kw">IN</span> (subquery) <span class="kw">AND</span> * <span class="kw">NOT</span> <span class="kw">IN</span> (subquery) </code></pre>
-  </div>
-  <div class="figure">
-   <img alt="Set theory" src="set-theory.png"/>
-   <p class="caption">
-    Set theory
-   </p>
   </div>
   <h4>
    <a name="subqueries">

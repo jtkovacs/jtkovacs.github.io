@@ -3,7 +3,7 @@
 SQL is the standardized language used to access a database. SQL language provides for: (1) data definition/DDL statements that help you define the database and its objects; (2) data manipulation/DML statements that allow you to update and query data; (3) data control, allows you to grant the permissions to a user to access a certain data in the database.
 
 
-## Style guidelines and notation
+## Notation and style guide
 
 - all commands end with semicolon
 - by convention, commands are CAPITALIZED
@@ -92,8 +92,9 @@ UPDATE tname SET c1=value/subquery, c2=value/subquery WHERE …
 
 ### Manage views
 
-```SQL
 view data is not stored physically; every time you retrieve data from the view, the database reruns the underlying query.  most databases don't allow inserting new data or updating existing data in views.
+
+```SQL
 create a view: CREATE VIEW vname AS [query];
 use a view: SELECT * FROM vname;
 DROP VIEW vname;

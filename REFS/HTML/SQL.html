@@ -66,8 +66,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        </a>
        <ul>
         <li>
-         <a href="#style-guidelines-and-notation">
-          Style guidelines and notation
+         <a href="#notation-and-style-guide">
+          Notation and style guide
          </a>
         </li>
         <li>
@@ -173,8 +173,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    SQL is the standardized language used to access a database. SQL language provides for: (1) data definition/DDL statements that help you define the database and its objects; (2) data manipulation/DML statements that allow you to update and query data; (3) data control, allows you to grant the permissions to a user to access a certain data in the database.
   </p>
   <h2>
-   <a name="style-guidelines-and-notation">
-    Style guidelines and notation
+   <a name="notation-and-style-guide">
+    Notation and style guide
    </a>
   </h2>
   <ul>
@@ -304,11 +304,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     Manage views
    </a>
   </h3>
+  <p>
+   view data is not stored physically; every time you retrieve data from the view, the database reruns the underlying query. most databases don't allow inserting new data or updating existing data in views.
+  </p>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">view</span> <span class="kw">data</span> <span class="kw">is</span> <span class="kw">not</span> stored physically; every <span class="dt">time</span> you retrieve <span class="kw">data</span> <span class="kw">from</span> <span class="kw">the</span> <span class="kw">view</span>, <span class="kw">the</span> <span class="kw">database</span> reruns <span class="kw">the</span> underlying query.  most databases don<span class="st">'t allow inserting new data or updating existing data in views.</span>
-<span class="st">create a view: CREATE VIEW vname AS [query];</span>
-<span class="st">use a view: SELECT * FROM vname;</span>
-<span class="st">DROP VIEW vname;</span></code></pre>
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">create</span> a view: <span class="kw">CREATE</span> <span class="kw">VIEW</span> vname <span class="kw">AS</span> [<span class="kw">query</span>];
+<span class="kw">use</span> a view: <span class="kw">SELECT</span> * <span class="kw">FROM</span> vname;
+<span class="kw">DROP</span> <span class="kw">VIEW</span> vname;</code></pre>
   </div>
   <h2>
    <a name="...-a-data-manipulation-language">

@@ -345,7 +345,7 @@ If an index has less than 1000 pages and is in memory (i.e., non-clustered), don
 - 30% < logical fragmentation: **rebuild**
 
 | Characteristic | Reorganize | Rebuild |
-| ------- | ---- | ----- |
+| ------------ | ---- | ----- |
 | Online or offline | Online | Offline as default; online as option |
 | Internal fragmentation | Yes | Yes |
 | Logical fragmentation | Yes | Yes |

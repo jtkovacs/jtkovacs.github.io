@@ -97,6 +97,8 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 ```SQL
 CREATE DATABASE dbname
+
+USE SQLservername.databasename.schemaname.tablename
 ```
 
 #### Manage tables 

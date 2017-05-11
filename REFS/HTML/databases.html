@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3949 words
+   &gt; 3957 words
   </p>
   <table class="TOC">
    <tr>
@@ -1381,7 +1381,7 @@
    </a>
   </h5>
   <p>
-   This discussion is based on MS SQL Server, which stores table data (rows) in pages:
+   This discussion is based on MS SQL Server, which stores table data (rows) in uniformly-sized pages AKA blocks:
   </p>
   <div class="figure">
    <img src="../ILLOS/SQLDataPage.png"/>
@@ -1391,14 +1391,18 @@
    <strong>
     heap
    </strong>
-   or, if it has a
+   or, if it has a clustered index, a
+   <strong>
+    clustered table.
+   </strong>
+   A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A
    <strong>
     clustered index,
    </strong>
-   a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
+   on the other hand, introduces sorting that is implemented at the level of pages through row offset arrays AKA slot arrays; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
   </p>
   <p>
-   To facilitate a wider range of queries, both heaps and clustered tables may have multiple
+   However, to facilitate a wider range of queries, both heaps and clustered tables may have multiple
    <strong>
     non-clustered indexes
    </strong>
@@ -1421,23 +1425,24 @@
   </ul>
   <p>
    Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their
+   <strong>
+    leaf nodes
+   </strong>
+   in data pages. Leaves are
    <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
-    doubly linked
-    <em>
-     leaf nodes
-    </em>
+    doubly connected
    </a>
-   in data pages:
+   to each other via pointers,
   </p>
+  <div class="figure">
+   <img src="../ILLOS/nonclustered-index.png"/>
+  </div>
   <ul>
    <li>
     Root node
    </li>
    <li>
     Intermediary node(s)
-   </li>
-   <li>
-    Leaf node
    </li>
    <li>
     Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)

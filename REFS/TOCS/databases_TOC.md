@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3949 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3957 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -322,23 +322,23 @@ The PK is indexed by default, and commonly searched fields may be indexed as wel
 
 ##### How different types of indexes work
 
-This discussion is based on MS SQL Server, which stores table data (rows) in pages:
+This discussion is based on MS SQL Server, which stores table data (rows) in uniformly-sized pages AKA blocks:
 
 ![](../ILLOS/SQLDataPage.png)
 
-A table is either a **heap** or, if it has a **clustered index,** a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
+A table is either a **heap** or, if it has a clustered index, a **clustered table.** A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A **clustered index,** on the other hand, introduces sorting that is implemented at the level of pages through row offset arrays AKA slot arrays; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
 
-To facilitate a wider range of queries, both heaps and clustered tables may have multiple **non-clustered indexes** that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d. a). 
+However, to facilitate a wider range of queries, both heaps and clustered tables may have multiple **non-clustered indexes** that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d. a). 
 
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**   
 
-Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their [doubly linked *leaf nodes*](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) in data pages:
- 
+Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. Leaves are [doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other via pointers, 
+
+![](../ILLOS/nonclustered-index.png)
 
 - Root node
 - Intermediary node(s)
-- Leaf node
 - Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
 
 But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 

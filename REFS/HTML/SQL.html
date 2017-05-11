@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
     https://jtkovacs.github.io/REFS/HTML/SQL.html
    </a>
-   &gt; 2285 words
+   &gt; 2286 words
   </p>
   <table class="TOC">
    <tr>
@@ -216,6 +216,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     Manage databases
    </a>
   </h3>
+  <h3>
+   <a name="manage-tables">
+    Manage tables
+   </a>
+  </h3>
+  <p>
+   Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
+  </p>
+  <ul>
+   <li>
+    int stores numbers from -217483648 to 217483647
+   </li>
+   <li>
+    double &amp; real allow scientific notation: 2.5e4
+   </li>
+   <li>
+    decimal is good for money: DECIMAL(5,2) has 5 digits, of which 2 are after the decimal point
+   </li>
+   <li>
+    varchar(max_length), char(fixed_length) , clob/text is unlimited length , boolean is TRUE/FALSE
+   </li>
+   <li>
+    date is ‘yyyy-MM-dd’, time is ‘hh:mm:ss’, datetime or timestamp is ‘yyyy-MM-dd hh:mm:ss’
+   </li>
+  </ul>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- create table: </span>
 
@@ -243,35 +268,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co">-- autoincrement PK:</span>
 … <span class="kw">id</span> <span class="dt">INT</span> IDENTITY(#start, #inc) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, ...
 … <span class="kw">id</span> <span class="dt">INT</span> AUTO_INCREMENT(#start, #inc) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, …
-<span class="kw">CREATE</span> <span class="kw">SEQUENCE</span> name <span class="kw">START</span> <span class="kw">WITH</span> # <span class="kw">INCREMENT</span> <span class="kw">BY</span> #; <span class="kw">CREATE</span> <span class="kw">TABLE</span> t ( … <span class="kw">id</span> <span class="kw">DEFAULT</span> nextval(‘name’) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> … );</code></pre>
-  </div>
-  <h3>
-   <a name="manage-tables">
-    Manage tables
-   </a>
-  </h3>
-  <p>
-   Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
-  </p>
-  <ul>
-   <li>
-    int stores numbers from -217483648 to 217483647
-   </li>
-   <li>
-    double &amp; real allow scientific notation: 2.5e4
-   </li>
-   <li>
-    decimal is good for money: DECIMAL(5,2) has 5 digits, of which 2 are after the decimal point
-   </li>
-   <li>
-    varchar(max_length), char(fixed_length) , clob/text is unlimited length , boolean is TRUE/FALSE
-   </li>
-   <li>
-    date is ‘yyyy-MM-dd’, time is ‘hh:mm:ss’, datetime or timestamp is ‘yyyy-MM-dd hh:mm:ss’
-   </li>
-  </ul>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">--- delete table: </span>
+
+<span class="co">-- create PK</span>
+<span class="kw">CREATE</span> <span class="kw">SEQUENCE</span> name <span class="kw">START</span> <span class="kw">WITH</span> # <span class="kw">INCREMENT</span> <span class="kw">BY</span> #; 
+<span class="kw">CREATE</span> <span class="kw">TABLE</span> t ( … <span class="kw">id</span> <span class="kw">DEFAULT</span> nextval(‘name’) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> … );
+
+<span class="co">--- delete table: </span>
 <span class="kw">DROP</span> <span class="kw">TABLE</span> tname;
 <span class="kw">DROP</span> <span class="kw">DATABASE</span> dname;
 <span class="kw">TRUNCATE</span> <span class="kw">TABLE</span> tname;

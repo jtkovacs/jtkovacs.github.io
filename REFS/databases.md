@@ -97,7 +97,9 @@ Dependencies exist between attributes; this is not a modeling decision, it is a 
 
 - A **functional dependency** `A→B` exists when the same A (an attribute, for our purposes) is always linked with the same B (another attribute value). The reverse is not necessarily true. Note that this is almost identical to a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
 
-![](../illos/fcn.png)
+![](../ILLOS/fcn.png)
+
+![](../ILLOS/not-fcn.png)
 
 In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 

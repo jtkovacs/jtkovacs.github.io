@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">
     https://jtkovacs.github.io/REFS/HTML/DBMS.html
    </a>
-   &gt; 1824 words
+   &gt; 1969 words
   </p>
   <table class="TOC">
    <tr>
@@ -147,13 +147,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
                </a>
               </li>
               <li>
-               <a href="#indexes">
-                Indexes
+               <a href="#creating-indexes">
+                Creating indexes
                </a>
               </li>
               <li>
-               <a href="#memory-optimized-tables">
-                Memory-optimized tables
+               <a href="#fixing-index-fragmentation">
+                Fixing index fragmentation
+               </a>
+              </li>
+              <li>
+               <a href="#creating-memory-optimized-tables">
+                Creating memory-optimized tables
                </a>
               </li>
              </ul>
@@ -566,8 +571,8 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
    Installing logs and data on different drives gives a performance boost.
   </p>
   <h5>
-   <a name="indexes">
-    Indexes
+   <a name="creating-indexes">
+    Creating indexes
    </a>
   </h5>
   <div class="sourceCode">
@@ -589,8 +594,55 @@ INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">--
     <span class="kw">ON</span> <span class="ot">"default"</span>;</code></pre>
   </div>
   <h5>
-   <a name="memory-optimized-tables">
-    Memory-optimized tables
+   <a name="fixing-index-fragmentation">
+    Fixing index fragmentation
+   </a>
+  </h5>
+  <p>
+   Fragmentation can be identified with
+   <a href="https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql">
+    sys.dm_db_index_physical_stats
+   </a>
+   , a SQL Server dynamic management function
+   <strong>
+    (DMF;
+   </strong>
+   <a href="https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/">
+    read more):
+   </a>
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> * 
+<span class="kw">FROM</span> sys.dm_db_index_physical_stats (   
+    { database_id | <span class="kw">NULL</span> | <span class="dv">0</span> | <span class="kw">DEFAULT</span> }  
+  , { object_id | <span class="kw">NULL</span> | <span class="dv">0</span> | <span class="kw">DEFAULT</span> }  
+  , { index_id | <span class="kw">NULL</span> | <span class="dv">0</span> | -<span class="dv">1</span> | <span class="kw">DEFAULT</span> }  
+  , { partition_number | <span class="kw">NULL</span> | <span class="dv">0</span> | <span class="kw">DEFAULT</span> }  
+  , { <span class="kw">mode</span> | <span class="kw">NULL</span> | <span class="kw">DEFAULT</span> | DETAILED | <span class="kw">SAMPLE</span> | LIMITED | }  
+)
+
+<span class="kw">SELECT</span> * 
+<span class="kw">FROM</span> sys.dm_db_index_physical_stats (DB_ID(N<span class="st">'AdventureWorks'</span>), OBJECT_ID(N<span class="st">'Person.Address'</span>), <span class="kw">NULL</span>, <span class="kw">NULL</span> , <span class="st">'DETAILED'</span>); </code></pre>
+  </div>
+  <p>
+   Once identified, fragmentation can be repaired in the following ways:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- Recreate </span>
+<span class="kw">CREATE</span> <span class="kw">INDEX</span> <span class="kw">WITH</span> DROP_EXISTING;
+
+<span class="co">-- Rebuild </span>
+<span class="kw">ALTER</span> <span class="kw">INDEX</span> ... <span class="kw">REBUILD</span>;
+
+<span class="co">-- Reorganize </span>
+<span class="kw">ALTER</span> <span class="kw">INDEX</span> ... REORGANIZE </code></pre>
+  </div>
+  <p>
+   To reduce the extent fragmentation of a heap, create a clustered index on the table and then drop the index.
+  </p>
+  <h5>
+   <a name="creating-memory-optimized-tables">
+    Creating memory-optimized tables
    </a>
   </h5>
   <p>

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1824 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1969 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -14,8 +14,9 @@
 				- [Temporal tables](#temporal-tables)
 			- [Manage performance](#manage-performance)
 				- [Splitting the database](#splitting-the-database)
-				- [Indexes](#indexes)
-				- [Memory-optimized tables](#memory-optimized-tables)
+				- [Creating indexes](#creating-indexes)
+				- [Fixing index fragmentation](#fixing-index-fragmentation)
+				- [Creating memory-optimized tables](#creating-memory-optimized-tables)
 			- [Manage views](#manage-views)
 	- [Microsoft Access](#microsoft-access)
 		- [Data types](#data-types)
@@ -182,7 +183,7 @@ WHERE StockItemName like '%shark%'
 
 Installing logs and data on different drives gives a performance boost.
 
-##### Indexes
+##### Creating indexes
 
 ```SQL
 -- Covering index
@@ -202,7 +203,40 @@ WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same n
     MAXDOP = 2) -- for parallel processing
     ON "default";
 ```
-##### Memory-optimized tables
+
+##### Fixing index fragmentation
+
+Fragmentation can be identified with [sys.dm_db_index_physical_stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql), a SQL Server dynamic management function **(DMF;** [read more):](https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/)
+
+```SQL
+SELECT * 
+FROM sys.dm_db_index_physical_stats (   
+    { database_id | NULL | 0 | DEFAULT }  
+  , { object_id | NULL | 0 | DEFAULT }  
+  , { index_id | NULL | 0 | -1 | DEFAULT }  
+  , { partition_number | NULL | 0 | DEFAULT }  
+  , { mode | NULL | DEFAULT | DETAILED | SAMPLE | LIMITED | }  
+)
+
+SELECT * 
+FROM sys.dm_db_index_physical_stats (DB_ID(N'AdventureWorks'), OBJECT_ID(N'Person.Address'), NULL, NULL , 'DETAILED'); 
+```
+Once identified, fragmentation can be repaired in the following ways:
+
+```SQL
+-- Recreate 
+CREATE INDEX WITH DROP_EXISTING;
+
+-- Rebuild 
+ALTER INDEX ... REBUILD;
+
+-- Reorganize 
+ALTER INDEX ... REORGANIZE 
+```
+To reduce the extent fragmentation of a heap, create a clustered index on the table and then drop the index.
+
+
+##### Creating memory-optimized tables
 
 In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
 

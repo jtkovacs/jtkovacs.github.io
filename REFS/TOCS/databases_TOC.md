@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3424 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3471 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -186,6 +186,15 @@ columns store single type of data; column names are unique. Columns have data ty
 
 Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target:
 
+| Normal Form | Requirements | Impact |
+| --- | --- | --- |
+| 1st | | |
+| 2nd | | |
+| 3rd | | |
+| Boyce-Codd | | |
+| 4th | | |
+| 5th | | |
+
 - “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
     - It contains two-dimensional tables with rows and columns.
     - Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
@@ -206,6 +215,7 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 - http://searchsqlserver.techtarget.com/definition/normalization
 - https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 - http://psoug.org/reference/normalization.html
+- http://www.bkent.net/Doc/simple5.htm
 
 
 

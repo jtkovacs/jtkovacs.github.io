@@ -179,12 +179,25 @@ FROM sys.dm_db_index_physical_stats (
   , { object_id | NULL | 0 | DEFAULT }  
   , { index_id | NULL | 0 | -1 | DEFAULT }  
   , { partition_number | NULL | 0 | DEFAULT }  
-  , { mode | NULL | DEFAULT }  
+  , { mode | NULL | DEFAULT | DETAILED | SAMPLE | LIMITED | }  
 )
 
+SELECT * 
+FROM sys.dm_db_index_physical_stats (DB_ID(N'AdventureWorks'), OBJECT_ID(N'Person.Address'), NULL, NULL , 'DETAILED'); 
+```
+Once identified, fragmentation can be repaired in the following ways:
 
-`
+```SQL
+-- Recreate 
+CREATE INDEX WITH DROP_EXISTING;
 
+-- Rebuild 
+ALTER INDEX ... REBUILD;
+
+-- Reorganize 
+ALTER INDEX ... REORGANIZE 
+```
+To reduce the extent fragmentation of a heap, create a clustered index on the table and then drop the index.
 
 
 ##### Creating memory-optimized tables

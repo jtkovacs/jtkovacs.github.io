@@ -114,14 +114,13 @@ CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupna
 
 [Details here;](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql) also note that SQL Server's data types are [mapped to ISO standard data types.](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-type-synonyms-transact-sql)
 
-- Exact numeric: NUMERIC, BIGINT, INT, SMALLINT, TINYINT, DECIMAL, BIT, MONEY, SMALLMONEY
-- Approximate numeric: FLOAT, REAL 
-- Monetary 
-- Date and Time: DATE, TIME, DATETIME, DATETIME2, DATETIMEOFFSET, SMALLDATETIME
-- Character: CHAR, VARCHAR, TEXT    
-    - Unicode Character: NCHAR, NVARCHAR, NTEXT
-- Binary: BINARY, IMAGE, VARBINARY
-- Special purpose: CURSOR, HIERARCHYID, SQL_VARIANT, TABLE, TIMESTAMP, UNIQUEIDENTIFIER, XML
+- **Exact numeric:** NUMERIC, BIGINT, INT, SMALLINT, TINYINT, DECIMAL, BIT, MONEY, SMALLMONEY
+- **Approximate numeric:** FLOAT, REAL 
+- **Date and time:** DATE, TIME, DATETIME, DATETIME2, DATETIMEOFFSET, SMALLDATETIME
+- **Character:** CHAR, VARCHAR, TEXT    
+    - **Unicode character:** NCHAR, NVARCHAR, NTEXT
+- **Binary:** BINARY, IMAGE, VARBINARY
+- **Special purpose:** CURSOR, HIERARCHYID, SQL_VARIANT, TABLE, TIMESTAMP, UNIQUEIDENTIFIER, XML
     - [Spatial data types](https://docs.microsoft.com/en-us/sql/relational-databases/spatial/spatial-data-types-overview)
 
 ##### Temporal tables

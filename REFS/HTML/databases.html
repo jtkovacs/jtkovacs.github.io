@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3425 words
+   &gt; 3424 words
   </p>
   <table class="TOC">
    <tr>
@@ -100,11 +100,6 @@
              </ul>
             </li>
             <li>
-             <a href="#normalization-and-integrity">
-              Normalization and integrity
-             </a>
-            </li>
-            <li>
              <a href="#integrity">
               Integrity
              </a>
@@ -122,6 +117,11 @@
               <li>
                <a href="#domain-integrity">
                 Domain integrity
+               </a>
+              </li>
+              <li>
+               <a href="#normalization">
+                Normalization
                </a>
               </li>
              </ul>
@@ -453,7 +453,7 @@
     Can capture complex relationships (important for enforcing business rules)
    </li>
    <li>
-    <a href="#normalization-and-integrity">
+    <a href="#integrity">
      Preserves data integrity
     </a>
    </li>
@@ -536,7 +536,7 @@
     many different relational schemas could be used to model any given reality;
    </strong>
    the best designs will suit the underlying business processes and be
-   <a href="#normalization-and-integrity">
+   <a href="#normalization">
     in a normal form.
    </a>
   </p>
@@ -630,7 +630,7 @@
   </h4>
   <p>
    Different sorts of relationships AKA dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. Dependencies are important for understanding
-   <a href="#normalization-and-integrity">
+   <a href="#normalization">
     normalization;
    </a>
    normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity. Dependencies are also used (somehow?) in DB compression and query optimization.
@@ -774,10 +774,51 @@
    </a>
   </p>
   <h4>
-   <a name="normalization-and-integrity">
-    Normalization and integrity
+   <a name="integrity">
+    Integrity
    </a>
   </h4>
+  <p>
+   What happens if data is not normalized?? anomalies
+  </p>
+  <h5>
+   <a name="entity-integrity">
+    Entity integrity
+   </a>
+  </h5>
+  <p>
+   Entity integrity: enforced by primary key
+  </p>
+  <p>
+   rows are unique (they need a key).
+  </p>
+  <h5>
+   <a name="referential-integrity">
+    Referential integrity
+   </a>
+  </h5>
+  <p>
+   Referential integrity: enforced by keys (PK-FK pair)
+  </p>
+  <p>
+   Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+  </p>
+  <h5>
+   <a name="domain-integrity">
+    Domain integrity
+   </a>
+  </h5>
+  <p>
+   Domain integrity: column values should fall within a given domain, enforced by column data type
+  </p>
+  <p>
+   columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values.
+  </p>
+  <h5>
+   <a name="normalization">
+    Normalization
+   </a>
+  </h5>
   <p>
    Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of
    <a href="#relationships-between-attributes">
@@ -915,47 +956,6 @@
     http://psoug.org/reference/normalization.html
    </li>
   </ul>
-  <p>
-   What happens if data is not normalized??
-  </p>
-  <h4>
-   <a name="integrity">
-    Integrity
-   </a>
-  </h4>
-  <h5>
-   <a name="entity-integrity">
-    Entity integrity
-   </a>
-  </h5>
-  <p>
-   Entity integrity: enforced by primary key
-  </p>
-  <p>
-   rows are unique (they need a key).
-  </p>
-  <h5>
-   <a name="referential-integrity">
-    Referential integrity
-   </a>
-  </h5>
-  <p>
-   Referential integrity: enforced by keys (PK-FK pair)
-  </p>
-  <p>
-   Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
-  </p>
-  <h5>
-   <a name="domain-integrity">
-    Domain integrity
-   </a>
-  </h5>
-  <p>
-   Domain integrity: column values should fall within a given domain, enforced by column data type
-  </p>
-  <p>
-   columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values.
-  </p>
   <h3>
    <a name="nosql-databases">
     NoSQL databases
@@ -1173,7 +1173,7 @@
   </ul>
   <p>
    Regardless, the end goal is a schema that is
-   <a href="#normalization-and-integrity">
+   <a href="#normalization">
     normalized
    </a>
    to avoid anomalies.
@@ -1229,7 +1229,7 @@
    </li>
    <li>
     Apply
-    <a href="#normalization-and-integrity">
+    <a href="#integrity">
      integrity constraints:
     </a>
     <ul>

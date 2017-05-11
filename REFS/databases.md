@@ -39,7 +39,7 @@ Hierarchies and graphs were superseded by Edgar Codd's **relational** data model
 - Provides a [programming/query language](SQL.html) that is easy to learn and execute, expediting data retrieval
 - Minimizes data redundancy, conserving storage and safeguarding data quality (although some redundancy is still required to establish relationships)
 - Can capture complex relationships (important for enforcing business rules)
-- [Preserves data integrity](#normalization-and-integrity)
+- [Preserves data integrity](#integrity)
 
 **Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data, [NoSQL databases](#NoSQL-databases) (an umbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
 
@@ -62,7 +62,7 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). The order of rows and columns is insignificant.
 
-Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development. Per Ullman (2006), **many different relational schemas could be used to model any given reality;** the best designs will suit the underlying business processes and be [in a normal form.](#normalization-and-integrity) 
+Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development. Per Ullman (2006), **many different relational schemas could be used to model any given reality;** the best designs will suit the underlying business processes and be [in a normal form.](#normalization) 
 
 #### Relationships between entities
 
@@ -92,7 +92,7 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 
 #### Relationships between attributes
 
-Different sorts of relationships AKA dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. Dependencies are important for understanding [normalization;](#normalization-and-integrity) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity. Dependencies are also used (somehow?) in DB compression and query optimization.
+Different sorts of relationships AKA dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. Dependencies are important for understanding [normalization;](#normalization) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity. Dependencies are also used (somehow?) in DB compression and query optimization.
 
 ##### Functional dependencies and keys
 
@@ -119,7 +119,29 @@ If a functional dependency exists between X and Y, and a functional dependency e
 A multivalued dependency `A ↠ B` exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic: `if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.` Furthermore, `∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest`. MVDs matter for 4NF; [examples and details here.](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf)
 
 
-#### Normalization and integrity
+#### Integrity
+
+What happens if data is not normalized?? anomalies
+
+##### Entity integrity
+
+Entity integrity: enforced by primary key
+
+rows are unique (they need a key).
+
+##### Referential integrity
+
+Referential integrity: enforced by keys (PK-FK pair)
+
+Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
+
+##### Domain integrity
+
+Domain integrity: column values should fall within a given domain, enforced by column data type
+
+columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values.
+
+##### Normalization
 
 Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target:
 
@@ -143,28 +165,6 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 - http://searchsqlserver.techtarget.com/definition/normalization
 - https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 - http://psoug.org/reference/normalization.html
-
-What happens if data is not normalized??
-
-#### Integrity
-
-##### Entity integrity
-
-Entity integrity: enforced by primary key
-
-rows are unique (they need a key).
-
-##### Referential integrity
-
-Referential integrity: enforced by keys (PK-FK pair)
-
-Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
-
-##### Domain integrity
-
-Domain integrity: column values should fall within a given domain, enforced by column data type
-
-columns store single type of data; column names are unique. Columns have data types and domains, which can be a restricted list of values. 
 
 
 
@@ -233,7 +233,7 @@ In the conceptual design stage of database development, there are two competing 
 - The **top-down approach** (AKA design by decomposition) begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both. 
 - The **bottom-up approach** begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
 
-Regardless, the end goal is a schema that is [normalized](#normalization-and-integrity) to avoid anomalies. 
+Regardless, the end goal is a schema that is [normalized](#normalization) to avoid anomalies. 
 
 In addition to constructing tables via a top-down or bottom-up approach, a conceptual design should:
 
@@ -251,7 +251,7 @@ Proceed table by table, field by field:
 - Choose data types, which vary by DBMS;
     - Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
 - Resolve many-to-many relationships with [associative entities;](#associative-entities)
-- Apply [integrity constraints:](#normalization-and-integrity)
+- Apply [integrity constraints:](#integrity)
     - With a lookup table; 
     - With a referential integrity constraint to prevent orphaned records; 
     - Through a check constraint. 

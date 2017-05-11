@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">
     https://jtkovacs.github.io/REFS/HTML/DBMS.html
    </a>
-   &gt; 1690 words
+   &gt; 1704 words
   </p>
   <table class="TOC">
    <tr>
@@ -508,7 +508,10 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
 <span class="kw">ON</span> Person.Address (PostalCode) <span class="co">-- specify table and key</span>
 INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID) <span class="co">-- add other fields</span>
 
-<span class="co">-- Filtered index</span></code></pre>
+<span class="co">-- Filtered index</span>
+<span class="kw">CREATE</span> NONCLUSTERED <span class="kw">INDEX</span> DesignEngineer
+<span class="kw">ON</span> HumanResources.Employee (BusinessEntityID) 
+<span class="kw">WHERE</span> JobTitle = <span class="st">'Design Engineer'</span> <span class="co">-- filter</span></code></pre>
   </div>
   <h3>
    <a name="manage-views">

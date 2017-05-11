@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
     https://jtkovacs.github.io/REFS/HTML/SQL.html
    </a>
-   &gt; 2274 words
+   &gt; 2285 words
   </p>
   <table class="TOC">
    <tr>
@@ -76,17 +76,15 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          </a>
          <ul>
           <li>
-           <a href="#define-databases">
-            Define databases
+           <a href="#manage-databases">
+            Manage databases
            </a>
           </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#manage-tables">
-          Manage tables
-         </a>
-         <ul>
+          <li>
+           <a href="#manage-tables">
+            Manage tables
+           </a>
+          </li>
           <li>
            <a href="#manage-views">
             Manage views
@@ -214,36 +212,44 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </a>
   </h2>
   <h3>
-   <a name="define-databases">
-    Define databases
+   <a name="manage-databases">
+    Manage databases
    </a>
   </h3>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">create</span> table: <span class="kw">CREATE</span> <span class="kw">TABLE</span> t (<span class="kw">id</span> <span class="dt">INT</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, col1 <span class="kw">TYPE</span>(<span class="kw">size</span>), col2 <span class="kw">TYPE</span> <span class="kw">constraint</span> <span class="kw">constraint</span>, col3 <span class="kw">FOREIGN</span> <span class="kw">KEY</span> <span class="kw">REFERENCES</span> other_table(fieldname), col4 <span class="kw">DEFAULT</span> ‘value’, … ); 
-constraints: <span class="kw">NOT</span> <span class="kw">NULL</span>, <span class="kw">UNIQUE</span>, <span class="kw">CHECK</span>, <span class="kw">DEFAULT</span>
-autopopulate date: <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (order_date <span class="dt">date</span> <span class="kw">DEFAULT</span> getdate()); 
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- create table: </span>
+
+<span class="kw">CREATE</span> <span class="kw">TABLE</span> t (<span class="kw">id</span> <span class="dt">INT</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, col1 <span class="kw">TYPE</span>(<span class="kw">size</span>), col2 <span class="kw">TYPE</span> <span class="kw">constraint</span> <span class="kw">constraint</span>, col3 <span class="kw">FOREIGN</span> <span class="kw">KEY</span> <span class="kw">REFERENCES</span> other_table(fieldname), col4 <span class="kw">DEFAULT</span> ‘value’, … ); 
+<span class="co">-- constraints: NOT NULL, UNIQUE, CHECK, DEFAULT</span>
+<span class="co">-- autopopulate date: CREATE TABLE tname (order_date date DEFAULT getdate()); </span>
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (… <span class="kw">UNIQUE</span> (col1, col2, …) … );
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname ( … <span class="dt">year</span> <span class="dt">INT</span> <span class="kw">CHECK</span> (year&gt;<span class="dv">1950</span> <span class="kw">AND</span> year&lt;<span class="dv">1980</span>)) …)
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (... <span class="kw">CHECK</span> (price/hours &lt; <span class="dv">20</span>)); 
-composite PK: <span class="kw">CREATE</span> <span class="kw">TABLE</span> t (name <span class="dt">int</span>, <span class="dt">date</span> <span class="dt">int</span>, <span class="kw">PRIMARY</span> <span class="kw">KEY</span>(name,<span class="dt">date</span>));
-<span class="kw">foreign</span> key:
+
+<span class="co">-- composite PK: </span>
+<span class="kw">CREATE</span> <span class="kw">TABLE</span> t (name <span class="dt">int</span>, <span class="dt">date</span> <span class="dt">int</span>, <span class="kw">PRIMARY</span> <span class="kw">KEY</span>(name,<span class="dt">date</span>));
+<span class="co">-- foreign key:</span>
 … <span class="kw">FOREIGN</span> <span class="kw">KEY</span>(c1) <span class="kw">REFERENCES</span> t1(c1), <span class="kw">FOREIGN</span> <span class="kw">KEY</span>(c2) <span class="kw">REFERENCES</span> t2(c1));
 … <span class="kw">REFERENCES</span> … <span class="kw">ON</span> <span class="kw">DELETE</span> [action] <span class="kw">ON</span> <span class="kw">UPDATE</span> [action]
-CASCADE: <span class="kw">when</span> <span class="kw">the</span> referenced <span class="kw">row</span> <span class="kw">is</span> deleted <span class="kw">or</span> updated, <span class="kw">the</span> respective <span class="kw">rows</span> <span class="kw">of</span> <span class="kw">the</span> <span class="kw">referencing</span> <span class="kw">table</span> will be deleted <span class="kw">or</span> updated.
-<span class="kw">NO</span> ACTION: do <span class="kw">nothing</span> <span class="kw">to</span> <span class="kw">the</span> <span class="kw">the</span> referenced <span class="kw">row</span>
-<span class="kw">SET</span> NULL: <span class="kw">the</span> <span class="kw">values</span> <span class="kw">of</span> <span class="kw">the</span> affected <span class="kw">rows</span> are <span class="kw">set</span> <span class="kw">to</span> <span class="kw">NULLs</span>
-<span class="kw">SET</span> DEFAULT: <span class="kw">the</span> <span class="kw">values</span> <span class="kw">of</span> <span class="kw">the</span> affected <span class="kw">rows</span> are <span class="kw">set</span> <span class="kw">to</span> their <span class="kw">default</span> <span class="kw">values</span>
-multicolumn <span class="kw">foreign</span> key: … <span class="kw">FOREIGN</span> <span class="kw">KEY</span>(c1, c2) <span class="kw">REFERENCES</span> t2(c1, c2)); 
-autoincrement PK:
- … <span class="kw">id</span> <span class="dt">INT</span> IDENTITY(#start, #inc) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, ...
+
+<span class="co">-- CASCADE: when the referenced row is deleted or updated, the respective rows of the referencing table will be deleted or updated.</span>
+<span class="co">-- NO ACTION: do nothing to the the referenced row</span>
+<span class="co">-- SET NULL: the values of the affected rows are set to NULLs</span>
+<span class="co">-- SET DEFAULT: the values of the affected rows are set to their default values</span>
+
+<span class="co">-- multicolumn foreign key: </span>
+… <span class="kw">FOREIGN</span> <span class="kw">KEY</span>(c1, c2) <span class="kw">REFERENCES</span> t2(c1, c2)); 
+
+<span class="co">-- autoincrement PK:</span>
+… <span class="kw">id</span> <span class="dt">INT</span> IDENTITY(#start, #inc) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, ...
 … <span class="kw">id</span> <span class="dt">INT</span> AUTO_INCREMENT(#start, #inc) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, …
 <span class="kw">CREATE</span> <span class="kw">SEQUENCE</span> name <span class="kw">START</span> <span class="kw">WITH</span> # <span class="kw">INCREMENT</span> <span class="kw">BY</span> #; <span class="kw">CREATE</span> <span class="kw">TABLE</span> t ( … <span class="kw">id</span> <span class="kw">DEFAULT</span> nextval(‘name’) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> … );</code></pre>
   </div>
-  <h2>
+  <h3>
    <a name="manage-tables">
     Manage tables
    </a>
-  </h2>
+  </h3>
   <p>
    Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
   </p>
@@ -279,16 +285,13 @@ autoincrement PK:
 
 <span class="co">--- add fields to confom to schema: </span>
 <span class="kw">SELECT</span> col, <span class="dv">12</span>, <span class="kw">NULL</span>
-
 <span class="kw">INSERT</span> <span class="kw">INTO</span> t (col1, colx) <span class="kw">VALUES</span> (val, val), (val, val), (val, val)
 
 <span class="co">--- delete records: </span>
 <span class="co">--- some implementations disallow condition statements with a subquery that includes the affected table</span>
-
 <span class="kw">DELETE</span> <span class="kw">FROM</span> tname <span class="kw">WHERE</span> … 
 
 <span class="co">--- delete all records: </span>
-
 <span class="kw">DELETE</span> <span class="kw">FROM</span> <span class="kw">table</span>;
 
 <span class="co">--- update records:</span>

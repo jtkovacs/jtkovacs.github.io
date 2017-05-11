@@ -18,31 +18,39 @@ SQL is the standardized language used to access a database. SQL language provide
 
 ## ... a data definition language
 
-### Define databases
+### Manage databases
 
 ```SQL
-create table: CREATE TABLE t (id INT PRIMARY KEY, col1 TYPE(size), col2 TYPE constraint constraint, col3 FOREIGN KEY REFERENCES other_table(fieldname), col4 DEFAULT ‘value’, … ); 
-constraints: NOT NULL, UNIQUE, CHECK, DEFAULT
-autopopulate date: CREATE TABLE tname (order_date date DEFAULT getdate()); 
+-- create table: 
+
+CREATE TABLE t (id INT PRIMARY KEY, col1 TYPE(size), col2 TYPE constraint constraint, col3 FOREIGN KEY REFERENCES other_table(fieldname), col4 DEFAULT ‘value’, … ); 
+-- constraints: NOT NULL, UNIQUE, CHECK, DEFAULT
+-- autopopulate date: CREATE TABLE tname (order_date date DEFAULT getdate()); 
 CREATE TABLE tname (… UNIQUE (col1, col2, …) … );
 CREATE TABLE tname ( … year INT CHECK (year>1950 AND year<1980)) …)
 CREATE TABLE tname (... CHECK (price/hours < 20)); 
-composite PK: CREATE TABLE t (name int, date int, PRIMARY KEY(name,date));
-foreign key:
+
+-- composite PK: 
+CREATE TABLE t (name int, date int, PRIMARY KEY(name,date));
+-- foreign key:
 … FOREIGN KEY(c1) REFERENCES t1(c1), FOREIGN KEY(c2) REFERENCES t2(c1));
 … REFERENCES … ON DELETE [action] ON UPDATE [action]
-CASCADE: when the referenced row is deleted or updated, the respective rows of the referencing table will be deleted or updated.
-NO ACTION: do nothing to the the referenced row
-SET NULL: the values of the affected rows are set to NULLs
-SET DEFAULT: the values of the affected rows are set to their default values
-multicolumn foreign key: … FOREIGN KEY(c1, c2) REFERENCES t2(c1, c2)); 
-autoincrement PK:
- … id INT IDENTITY(#start, #inc) PRIMARY KEY, ...
+
+-- CASCADE: when the referenced row is deleted or updated, the respective rows of the referencing table will be deleted or updated.
+-- NO ACTION: do nothing to the the referenced row
+-- SET NULL: the values of the affected rows are set to NULLs
+-- SET DEFAULT: the values of the affected rows are set to their default values
+
+-- multicolumn foreign key: 
+… FOREIGN KEY(c1, c2) REFERENCES t2(c1, c2)); 
+
+-- autoincrement PK:
+… id INT IDENTITY(#start, #inc) PRIMARY KEY, ...
 … id INT AUTO_INCREMENT(#start, #inc) PRIMARY KEY, …
 CREATE SEQUENCE name START WITH # INCREMENT BY #; CREATE TABLE t ( … id DEFAULT nextval(‘name’) PRIMARY KEY … );
 ```
 
-## Manage tables
+### Manage tables
 
 Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
 
@@ -67,16 +75,13 @@ INSERT INTO t  (c1, c2) SELECT c1, c2 …
 
 --- add fields to confom to schema: 
 SELECT col, 12, NULL
-
 INSERT INTO t (col1, colx) VALUES (val, val), (val, val), (val, val)
 
 --- delete records: 
 --- some implementations disallow condition statements with a subquery that includes the affected table
-
 DELETE FROM tname WHERE … 
 
 --- delete all records: 
-
 DELETE FROM table;
 
 --- update records:

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3185 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3258 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -180,10 +180,21 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 | 4th | Remove [multivalued dependencies](#multivalued-dependencies) | Efficiency is increased, somehow, because there are B+C rather than B\*C tuples |
 | 5th | ??? | ??? |
 
-*Anomalies: "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+*Anomalies prevented by 3NF, reprising [this example](https://www.thoughtco.com/transitive-dependency-1019760 ): 
+
+| Author_ID | Author | Book | Author_Nationality | 
+| --- | --- | --- | --- |
+| Auth_001 | Orson Scott Card | Ender's Game | United States | 
+| Auth_001 | Orson Scott Card | Children of the Mind | United States | 
+| Auth_002 | Margaret Atwood | The Handmaid's Tale | Canada 
+
+Note the redundancy and the liabilities it creates. (1) If you 
+
+"At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+
 
 - https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
-- https://www.thoughtco.com/transitive-dependency-1019760 
+
 - https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 - https://www.thoughtco.com/database-normalization-basics-1019735
 - http://searchsqlserver.techtarget.com/definition/normalization

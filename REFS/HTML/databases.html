@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3185 words
+   &gt; 3258 words
   </p>
   <table class="TOC">
    <tr>
@@ -915,14 +915,85 @@
    </tbody>
   </table>
   <p>
-   *Anomalies: "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+   *Anomalies prevented by 3NF, reprising
+   <a href="https://www.thoughtco.com/transitive-dependency-1019760">
+    this example
+   </a>
+   :
+  </p>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      Author_ID
+     </th>
+     <th align="left">
+      Author
+     </th>
+     <th align="left">
+      Book
+     </th>
+     <th align="left">
+      Author_Nationality
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      Auth_001
+     </td>
+     <td align="left">
+      Orson Scott Card
+     </td>
+     <td align="left">
+      Ender's Game
+     </td>
+     <td align="left">
+      United States
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Auth_001
+     </td>
+     <td align="left">
+      Orson Scott Card
+     </td>
+     <td align="left">
+      Children of the Mind
+     </td>
+     <td align="left">
+      United States
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Auth_002
+     </td>
+     <td align="left">
+      Margaret Atwood
+     </td>
+     <td align="left">
+      The Handmaid's Tale
+     </td>
+     <td align="left">
+      Canada
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   Note the redundancy and the liabilities it creates. (1) If you
+  </p>
+  <p>
+   "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
   </p>
   <ul>
    <li>
-    https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
-   </li>
-   <li>
-    https://www.thoughtco.com/transitive-dependency-1019760
+    <p>
+     https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
+    </p>
    </li>
    <li>
     https://en.wikipedia.org/wiki/Database_normalization plus anomalies
@@ -937,7 +1008,9 @@
     http://psoug.org/reference/normalization.html
    </li>
    <li>
-    http://www.bkent.net/Doc/simple5.htm
+    <p>
+     http://www.bkent.net/Doc/simple5.htm
+    </p>
    </li>
   </ul>
   <h3>

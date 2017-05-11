@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3279 words
+   &gt; 3290 words
   </p>
   <table class="TOC">
    <tr>
@@ -877,15 +877,12 @@
    </code>
    and one TD
    <code>
-    (Book → Author_Nationality):
+    (Book → Author_Nationality), not to mention a violation of 1NF:
    </code>
   </p>
   <table>
    <thead>
     <tr class="header">
-     <th align="left">
-      Author_ID
-     </th>
      <th align="left">
       Author
      </th>
@@ -900,9 +897,6 @@
    <tbody>
     <tr class="odd">
      <td align="left">
-      Auth_001
-     </td>
-     <td align="left">
       Orson Scott Card
      </td>
      <td align="left">
@@ -914,9 +908,6 @@
     </tr>
     <tr class="even">
      <td align="left">
-      Auth_001
-     </td>
-     <td align="left">
       Orson Scott Card
      </td>
      <td align="left">
@@ -927,9 +918,6 @@
      </td>
     </tr>
     <tr class="odd">
-     <td align="left">
-      Auth_002
-     </td>
      <td align="left">
       Margaret Atwood
      </td>
@@ -943,7 +931,7 @@
    </tbody>
   </table>
   <p>
-   Note the redundancy and the liabilities it creates:
+   Note the redundancy (caused by the transitive dependency) the liabilities it creates:
   </p>
   <ul>
    <li>
@@ -957,10 +945,16 @@
     </strong>
    </li>
    <li>
-    You must add an author to add a book, and vice versa.
+    You must add an author to add a book, and vice versa; this is an
+    <strong>
+     insertion anomaly.
+    </strong>
    </li>
    <li>
-    If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not.
+    If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an
+    <strong>
+     update anomaly.
+    </strong>
    </li>
   </ul>
   <p>
@@ -968,9 +962,6 @@
   </p>
   <ul>
    <li>
-    <p>
-     https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
-    </p>
    </li>
    <li>
     https://en.wikipedia.org/wiki/Database_normalization plus anomalies
@@ -985,9 +976,7 @@
     http://psoug.org/reference/normalization.html
    </li>
    <li>
-    <p>
-     http://www.bkent.net/Doc/simple5.htm
-    </p>
+    http://www.bkent.net/Doc/simple5.htm
    </li>
   </ul>
   <h3>

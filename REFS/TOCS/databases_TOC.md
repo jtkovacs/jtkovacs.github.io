@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3258 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3294 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -188,7 +188,16 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 | Auth_001 | Orson Scott Card | Children of the Mind | United States | 
 | Auth_002 | Margaret Atwood | The Handmaid's Tale | Canada 
 
-Note the redundancy and the liabilities it creates. (1) If you 
+Dependencies:
+
+- FD: Book → Author
+- FD: Author → Author_Nationality
+- TD: Book → Author_Nationality
+
+Note the redundancy and the liabilities it creates: 
+
+- If you deleted Card's two books, you would remove _him_ as an entity from the database. This is a **deletion anomaly.**
+- 
 
 "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
 

@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3258 words
+   &gt; 3294 words
   </p>
   <table class="TOC">
    <tr>
@@ -984,8 +984,36 @@
    </tbody>
   </table>
   <p>
-   Note the redundancy and the liabilities it creates. (1) If you
+   Dependencies:
   </p>
+  <ul>
+   <li>
+    FD: Book → Author
+   </li>
+   <li>
+    FD: Author → Author_Nationality
+   </li>
+   <li>
+    TD: Book → Author_Nationality
+   </li>
+  </ul>
+  <p>
+   Note the redundancy and the liabilities it creates:
+  </p>
+  <ul>
+   <li>
+    If you deleted Card's two books, you would remove
+    <em>
+     him
+    </em>
+    as an entity from the database. This is a
+    <strong>
+     deletion anomaly.
+    </strong>
+   </li>
+   <li>
+   </li>
+  </ul>
   <p>
    "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
   </p>

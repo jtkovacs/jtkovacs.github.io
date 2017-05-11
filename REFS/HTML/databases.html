@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3290 words
+   &gt; 3302 words
   </p>
   <table class="TOC">
    <tr>
@@ -817,7 +817,11 @@
     <strong>
      1NF:
     </strong>
-    Rows are unique, columns have a datatype, and all attributes are atomic. This means redundancy is minimized (versus trying to capture a many-to-many relationship in a single table).
+    Rows are unique, columns have a datatype, and all attributes are atomic (which might require splitting a composive attribute or creating an
+    <a href="#associative-entities">
+     associative entity.
+    </a>
+    This means redundancy is minimized (versus trying to capture a many-to-many relationship in a single table).
    </li>
    <li>
     <strong>

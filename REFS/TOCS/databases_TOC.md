@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3704 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3698 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -342,10 +342,10 @@ Index fragmentation is inevitable, especially in OLTP environments:
 Fragmentation can be detected with a DBMS tool, then repaired: 
 
 - Clustered indexes:
-    - <1000 pages long or <5% fragmentation, do nothing.
+    - <1000 pages long or <5% fragmentation, do nothing
     - 5% < logical fragmentation < 30%: **reorganize**
     - 30% < logical fragmentation: **rebuild**
-- Extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
+- Extent fragmentation of a heap table (non-indexed) can be reduced by creating then dropping a clustered index
 
 | Characteristic | Reorganize | Rebuild |
 | --------------- | ---- | -------- |

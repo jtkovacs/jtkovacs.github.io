@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4140 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4154 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -412,16 +412,28 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 Common security threats may be categorized by agent:
 
-<table>
+<table id="OSEMN">
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
-<tr><td></td> <td></td> <td></td></tr>
+<tr>
+<td>
+- Using another person's means of access
+- 
+</td> 
+<td></td> 
+<td></td>
+</tr>
 </table>
 
 ... and by target/effect:
 
 <table>
 <tr><th>Hardware</th> <th>Networks</th> <th>Database</th> <th>DBMS & Applications</th></tr>
-<tr><td></td> <td></td> <td></td> <td></td></tr>
+<tr>
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td>
+</tr>
 </table>
 
 ### Authentication and authorization

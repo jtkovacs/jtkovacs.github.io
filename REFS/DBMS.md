@@ -117,10 +117,12 @@ CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupna
 - Exact numeric: NUMERIC, BIGINT, INT, SMALLINT, TINYINT, DECIMAL, BIT, MONEY, SMALLMONEY
 - Approximate numeric: FLOAT, REAL 
 - Monetary 
-- Date and Time 
-- Character 
-- Binary 
-- Special Purpose
+- Date and Time: DATE, TIME, DATETIME, DATETIME2, DATETIMEOFFSET, SMALLDATETIME
+- Character: CHAR, VARCHAR, TEXT    
+    - Unicode Character: NCHAR, NVARCHAR, NTEXT
+- Binary: BINARY, IMAGE, VARBINARY
+- Special purpose: CURSOR, HIERARCHYID, SQL_VARIANT, TABLE, TIMESTAMP, UNIQUEIDENTIFIER, XML
+    - [Spatial data types](https://docs.microsoft.com/en-us/sql/relational-databases/spatial/spatial-data-types-overview)
 
 ##### Temporal tables
 

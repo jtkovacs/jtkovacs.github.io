@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1796 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1825 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -152,10 +152,12 @@ CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupna
 - Exact numeric: NUMERIC, BIGINT, INT, SMALLINT, TINYINT, DECIMAL, BIT, MONEY, SMALLMONEY
 - Approximate numeric: FLOAT, REAL 
 - Monetary 
-- Date and Time 
-- Character 
-- Binary 
-- Special Purpose
+- Date and Time: DATE, TIME, DATETIME, DATETIME2, DATETIMEOFFSET, SMALLDATETIME
+- Character: CHAR, VARCHAR, TEXT    
+    - Unicode Character: NCHAR, NVARCHAR, NTEXT
+- Binary: BINARY, IMAGE, VARBINARY
+- Special purpose: CURSOR, HIERARCHYID, SQL_VARIANT, TABLE, TIMESTAMP, UNIQUEIDENTIFIER, XML
+    - [Spatial data types](https://docs.microsoft.com/en-us/sql/relational-databases/spatial/spatial-data-types-overview)
 
 ##### Temporal tables
 

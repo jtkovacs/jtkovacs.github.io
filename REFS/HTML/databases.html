@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3886 words
+   &gt; 3922 words
   </p>
   <table class="TOC">
    <tr>
@@ -161,29 +161,21 @@
              <a href="#indexing-and-performance">
               Indexing and performance
              </a>
-             <ul>
-              <li>
-               <a href="#clustered-indexes">
-                Clustered indexes
-               </a>
-              </li>
-              <li>
-               <a href="#non-clustered-indexes">
-                Non-clustered indexes
-               </a>
-              </li>
-              <li>
-               <a href="#fragmentation">
-                Fragmentation
-               </a>
-              </li>
-             </ul>
             </li>
            </ul>
           </li>
          </ul>
         </li>
        </ul>
+      </li>
+      <li>
+       <a href="#why-&amp;-when">
+        Why &amp; when
+       </a>
+       -
+       <a href="#fragmentation">
+        Fragmentation
+       </a>
       </li>
       <li>
        <a href="#database-administration">
@@ -1341,7 +1333,7 @@
    <img src="../ILLOS/SQLDataPage.png"/>
   </div>
   <p>
-   A table can be a
+   A table is either a
    <strong>
     heap
    </strong>
@@ -1349,24 +1341,50 @@
    <strong>
     clustered index,
    </strong>
-   a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table.
+   a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table.
+  </p>
+  <p>
+   Heaps and clustered tables may have multiple
+   <strong>
+    non-clustered indexes
+   </strong>
+   that, via pointers, provide 'directories' to alternate sort orders: "A [non-clustered] database index is, after all, very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d.).
+  </p>
+  <p>
+   The leaves of non-clustered indexes are also stored in pages:
   </p>
   <ul>
    <li>
-    Table: heap or clustered index
+    Root node
    </li>
    <li>
-    Heap with non-clustered indexes
+    Intermediary node(s)
    </li>
    <li>
-    Clustered index with non-clustered indexes
+    Leaf node
+   </li>
+   <li>
+    Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
+   </li>
+   <li>
+    When multiple fields are included in a single non-clustered index, this is called a
+    <strong>
+     covering index
+    </strong>
+    because it could "cover" all the fields retrieved in a stored query.
+   </li>
+   <li>
+    When a subset of rows are indexed, this is called a
+    <strong>
+     filtered index.
+    </strong>
    </li>
   </ul>
-  <h5>
-   <a name="clustered-indexes">
-    Clustered indexes
+  <h1>
+   <a name="why-&amp;-when">
+    Why &amp; when
    </a>
-  </h5>
+  </h1>
   <p>
    Indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed
    <code>
@@ -1392,50 +1410,6 @@
    </em>
    queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
   </p>
-  <h5>
-   <a name="non-clustered-indexes">
-    Non-clustered indexes
-   </a>
-  </h5>
-  <p>
-   The leaves of non-clustered indexes are also stored in pages:
-  </p>
-  <ul>
-   <li>
-    Root node
-   </li>
-   <li>
-    Intermediary node(s)
-   </li>
-   <li>
-    Leaf node
-   </li>
-   <li>
-    Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
-   </li>
-  </ul>
-  <p>
-   There can be more than one
-   <strong>
-    non-clustered index
-   </strong>
-   on a table; a non-clustered index uses pointers.
-  </p>
-  <ul>
-   <li>
-    When multiple fields are included in a single non-clustered index, this is called a
-    <strong>
-     covering index
-    </strong>
-    because it could "cover" all the fields retrieved in a stored query.
-   </li>
-   <li>
-    When a subset of rows are indexed, this is called a
-    <strong>
-     filtered index.
-    </strong>
-   </li>
-  </ul>
   <p>
    But a
    <strong>
@@ -1744,6 +1718,12 @@
    Retrieved from
    <a class="uri" href="https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/">
     https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/
+   </a>
+  </p>
+  <p>
+   Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from
+   <a class="uri" href="http://use-the-index-luke.com/sql/anatomy">
+    http://use-the-index-luke.com/sql/anatomy
    </a>
   </p>
   <h2>

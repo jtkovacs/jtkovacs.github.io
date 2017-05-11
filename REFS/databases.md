@@ -273,22 +273,9 @@ This discussion is based on MS SQL Server, which stores table data (rows) in pag
 
 ![](../ILLOS/SQLDataPage.png)
 
-A table can be a **heap** or, if it has a **clustered index,** a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table. 
+A table is either a **heap** or, if it has a **clustered index,** a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table.
 
-- Table: heap or clustered index
-- Heap with non-clustered indexes
-- Clustered index with non-clustered indexes
-
-##### Clustered indexes
-
-Indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations)` --- so they are more common in [reporting databases versus transactional databases,](information-systems.html#what-are-mis?) or they may be erased then restored when loading a very large dataset into the database. 
-
-The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
-
-Per Sheldon (2014), indexing doesn't improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
-
-
-##### Non-clustered indexes
+Heaps and clustered tables may have multiple **non-clustered indexes** that, via pointers, provide 'directories' to alternate sort orders: "A [non-clustered] database index is, after all, very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d.). 
 
 The leaves of non-clustered indexes are also stored in pages:
 
@@ -296,11 +283,19 @@ The leaves of non-clustered indexes are also stored in pages:
 - Intermediary node(s)
 - Leaf node
 - Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
-
-There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers. 
-
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**
+
+
+
+# Why & when
+
+Indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations)` --- so they are more common in [reporting databases versus transactional databases,](information-systems.html#what-are-mis?) or they may be erased then restored when loading a very large dataset into the database. 
+
+The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
+
+Per Sheldon (2014), indexing doesn't improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
+
 
 But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 
 
@@ -382,6 +377,9 @@ Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from [http://t
 Ullman, R. D. (2006). Relational database design. Retrieved from [http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html](http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html)
 
 Watt, A. (n.d.). Functional dependencies. In _Database design._ Retrieved from [https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/](https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/)
+
+Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from [http://use-the-index-luke.com/sql/anatomy](http://use-the-index-luke.com/sql/anatomy)
+
 
 ## References
 

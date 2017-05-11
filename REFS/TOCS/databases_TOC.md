@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3392 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3255 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -177,15 +177,6 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 - **BCNF:** Extreme version of 3NF where, for all FDs `A → B,` A is the PK.
 - **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
-
-| Normal Form | Requirements | Impact |
-| --- | --------- | -------- |
-| 1st | Rows are unique, columns have a datatype, and all attributes are atomic | Redundancy is minimized (versus trying to capture a many-to-many relationship in a single table) |
-| 2nd | All columns in a table must be related via [functional dependencies;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent | ??? |
-| 3rd | Remove [transitive dependencies](#transitive-dependencies) and derived attributes | Prevent update and deletion anomalies\* |
-| Boyce-Codd | Extreme version of 3NF where, for all FDs `A → B,` A is the PK | ??? |
-| 4th | Remove [multivalued dependencies](#multivalued-dependencies) | Efficiency is increased, somehow, because there are B+C rather than B\*C tuples |
-| 5th | ??? | ??? |
 
 *Anomalies prevented by 3NF, reprising [this example](https://www.thoughtco.com/transitive-dependency-1019760 ): 
 

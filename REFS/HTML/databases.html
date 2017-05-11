@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3392 words
+   &gt; 3255 words
   </p>
   <table class="TOC">
    <tr>
@@ -866,112 +866,6 @@
     ???
    </li>
   </ul>
-  <table style="width:32%;">
-   <colgroup>
-    <col width="5%">
-    </col>
-    <col width="13%">
-    </col>
-    <col width="12%">
-    </col>
-   </colgroup>
-   <thead>
-    <tr class="header">
-     <th align="left">
-      Normal Form
-     </th>
-     <th align="left">
-      Requirements
-     </th>
-     <th align="left">
-      Impact
-     </th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr class="odd">
-     <td align="left">
-      1st
-     </td>
-     <td align="left">
-      Rows are unique, columns have a datatype, and all attributes are atomic
-     </td>
-     <td align="left">
-      Redundancy is minimized (versus trying to capture a many-to-many relationship in a single table)
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      2nd
-     </td>
-     <td align="left">
-      All columns in a table must be related via
-      <a href="functional-dependencies-and-keys">
-       functional dependencies;
-      </a>
-      i.e., each column must be a determinant or a dependent
-     </td>
-     <td align="left">
-      ???
-     </td>
-    </tr>
-    <tr class="odd">
-     <td align="left">
-      3rd
-     </td>
-     <td align="left">
-      Remove
-      <a href="#transitive-dependencies">
-       transitive dependencies
-      </a>
-      and derived attributes
-     </td>
-     <td align="left">
-      Prevent update and deletion anomalies*
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      Boyce-Codd
-     </td>
-     <td align="left">
-      Extreme version of 3NF where, for all FDs
-      <code>
-       A → B,
-      </code>
-      A is the PK
-     </td>
-     <td align="left">
-      ???
-     </td>
-    </tr>
-    <tr class="odd">
-     <td align="left">
-      4th
-     </td>
-     <td align="left">
-      Remove
-      <a href="#multivalued-dependencies">
-       multivalued dependencies
-      </a>
-     </td>
-     <td align="left">
-      Efficiency is increased, somehow, because there are B+C rather than B*C tuples
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      5th
-     </td>
-     <td align="left">
-      ???
-     </td>
-     <td align="left">
-      ???
-     </td>
-    </tr>
-   </tbody>
-  </table>
   <p>
    *Anomalies prevented by 3NF, reprising
    <a href="https://www.thoughtco.com/transitive-dependency-1019760">

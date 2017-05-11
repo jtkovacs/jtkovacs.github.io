@@ -364,7 +364,7 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ## Security
 
-Common security threats may be categorized by agent:
+Common security threats may be categorized by human vectors:
 
 <table class="bullets">
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
@@ -387,7 +387,7 @@ Common security threats may be categorized by agent:
 </tr>
 </table>
 
-... and by target/effect:
+... and by system targets:
 
 <table class="bullets">
 <tr><th>Hardware</th> <th>Networks</th> <th>DBMS & Applications</th> <th>Database</th></tr>

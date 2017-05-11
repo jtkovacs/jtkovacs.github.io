@@ -156,12 +156,19 @@ WHERE StockItemName like '%shark%'
 -- Covering index
 CREATE NONCLUSTERED INDEX IX_Address_PostalCode -- give index a name
 ON Person.Address (PostalCode) -- specify table and key
-INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID) -- add other fields
+INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); -- add other fields
 
 -- Filtered index
 CREATE NONCLUSTERED INDEX DesignEngineer
-ON HumanResources.Employee (BusinessEntityID) 
+ON HumanResources.Employee (BusinessEntityID);
 WHERE JobTitle = 'Design Engineer' -- filter
+
+-- Columnstore index
+CREATE NONCLUSTERED COLUMNSTORE INDEX csindx_simple 
+ON SimpleTable (OrderDateKey, DueDateKey, ShipDateKey) 
+WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same name 
+    MAXDOP = 2) -- for parallel processing
+    ON "default";
 ```
 
 ### Manage views

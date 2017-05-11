@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">
     https://jtkovacs.github.io/REFS/HTML/DBMS.html
    </a>
-   &gt; 1704 words
+   &gt; 1741 words
   </p>
   <table class="TOC">
    <tr>
@@ -506,12 +506,19 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- Covering index</span>
 <span class="kw">CREATE</span> NONCLUSTERED <span class="kw">INDEX</span> IX_Address_PostalCode <span class="co">-- give index a name</span>
 <span class="kw">ON</span> Person.Address (PostalCode) <span class="co">-- specify table and key</span>
-INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID) <span class="co">-- add other fields</span>
+INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">-- add other fields</span>
 
 <span class="co">-- Filtered index</span>
 <span class="kw">CREATE</span> NONCLUSTERED <span class="kw">INDEX</span> DesignEngineer
-<span class="kw">ON</span> HumanResources.Employee (BusinessEntityID) 
-<span class="kw">WHERE</span> JobTitle = <span class="st">'Design Engineer'</span> <span class="co">-- filter</span></code></pre>
+<span class="kw">ON</span> HumanResources.Employee (BusinessEntityID);
+<span class="kw">WHERE</span> JobTitle = <span class="st">'Design Engineer'</span> <span class="co">-- filter</span>
+
+<span class="co">-- Columnstore index</span>
+<span class="kw">CREATE</span> NONCLUSTERED COLUMNSTORE <span class="kw">INDEX</span> csindx_simple 
+<span class="kw">ON</span> SimpleTable (OrderDateKey, DueDateKey, ShipDateKey) 
+<span class="kw">WITH</span> (DROP_EXISTING =  <span class="kw">ON</span>, <span class="co">-- drops and rebuilds an existing index of the same name </span>
+    MAXDOP = <span class="dv">2</span>) <span class="co">-- for parallel processing</span>
+    <span class="kw">ON</span> <span class="ot">"default"</span>;</code></pre>
   </div>
   <h3>
    <a name="manage-views">

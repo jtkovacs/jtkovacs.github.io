@@ -267,17 +267,11 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 Indexes are created to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases](information-systems.html#what-are-mis?) and they may be erased then restored when loading a very large dataset into the database. The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
-There are different kinds of indexes.
+There are different kinds of indexes:
 
 ##### Clustered indexes
 
 Clustered indexes determine the physical storage order of the table ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
-
-Index pages have a certain structure:
-
-- Root node
-- Intermediary node(s)
-- Leaf node
 
 ##### Non-clustered indexes
 
@@ -285,9 +279,20 @@ There can be more than one **non-clustered index** on a table; a non-clustered i
 
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**
-- A **columnstore index** searches only relevant columns
-    
+
+##### Columnstore indexes
+
+A **columnstore index** searches only relevant columns, using a different structure than other indexes. Rowstore index pages have a certain structure:
+
+- Root node
+- Intermediary node(s)
+- Leaf node
+
+Whereas:
+
 ![](../ILLOS/columnstore.png)
+
+Columnstore indexes are useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses. 
 
 
 See:

@@ -290,15 +290,12 @@ To facilitate a wider range of queries, both heaps and clustered tables may have
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**   
 
-The leaves of non-clustered indexes are also stored in pages:
+Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their *leaves* in data pages:
 
 - Root node
 - Intermediary node(s)
 - Leaf node
 - Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
-
-
-
 
 But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 
 

@@ -1357,14 +1357,15 @@
    <a href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
     sort of.
    </a>
-   There's only one clustered index per table. A table without a clustered index is called a
+   There's only one clustered index per table. A table with a clustered index is called a
+   <strong>
+    clustered table;
+   </strong>
+   a table without a clustered index is called a
    <strong>
     heap,
    </strong>
-   and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake. A table with a clustered index is called a
-   <strong>
-    clustered table.
-   </strong>
+   and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake.
   </p>
   <p>
    There can be more than one

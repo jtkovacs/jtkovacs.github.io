@@ -104,7 +104,9 @@ But not
 <img src="../ILLOS/not-fcn.png" align="right">
 
 
-![](../ILLOS/not-fcn.png)
+| A Function | Not a Function | 
+| --- | --- |
+| ![](../ILLOS/fcn.png) | ![](../ILLOS/not-fcn.png) |
 
 
 

@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3312 words
+   &gt; 3305 words
   </p>
   <table class="TOC">
    <tr>
@@ -842,9 +842,14 @@
       2nd
      </td>
      <td align="left">
-      All columns in a table must be related via functional dependencies; i.e., each column must be a determinant or a dependent
+      All columns in a table must be related via
+      <a href="functional-dependencies-and-keys">
+       functional dependencies;
+      </a>
+      i.e., each column must be a determinant or a dependent
      </td>
      <td align="left">
+      ???
      </td>
     </tr>
     <tr class="odd">
@@ -852,6 +857,10 @@
       3rd
      </td>
      <td align="left">
+      Remove
+      <a href="#transitive-dependencies">
+       transitive dependencies
+      </a>
      </td>
      <td align="left">
      </td>
@@ -861,6 +870,11 @@
       Boyce-Codd
      </td>
      <td align="left">
+      A more extreme version of 3NF where, for all FDs
+      <code>
+       A → B,
+      </code>
+      A is the PK
      </td>
      <td align="left">
      </td>
@@ -870,6 +884,10 @@
       4th
      </td>
      <td align="left">
+      Remove
+      <a href="#multivalued-dependencies">
+       multivalued dependencies
+      </a>
      </td>
      <td align="left">
      </td>
@@ -886,6 +904,20 @@
    </tbody>
   </table>
   <ul>
+   <li>
+    Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+   </li>
+   <li>
+    3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL), i.e. remove all transitive dependencies
+    <ul>
+     <li>
+      https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
+     </li>
+     <li>
+      https://www.thoughtco.com/transitive-dependency-1019760
+     </li>
+    </ul>
+   </li>
    <li>
     https://en.wikipedia.org/wiki/Database_normalization plus anomalies
    </li>
@@ -904,20 +936,6 @@
     </p>
    </li>
    <li>
-    Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-   </li>
-   <li>
-    3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL), i.e. remove all transitive dependencies
-    <ul>
-     <li>
-      https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency
-     </li>
-     <li>
-      https://www.thoughtco.com/transitive-dependency-1019760
-     </li>
-    </ul>
-   </li>
-   <li>
     <p>
      <a href="http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies">
       <strong>
@@ -925,31 +943,7 @@
       </strong>
       (BCNF)
      </a>
-     is when, for all FDs
-     <code>
-      A→B
-     </code>
-     , A is the key. To achieve BCNF, find FDs and keys for R
-     <sub>
-      i
-     </sub>
-     ; pick any R
-     <sub>
-      i
-     </sub>
-     with
-     <code>
-      A→B
-     </code>
-     violating BCNF; decompose into R
-     <sub>
-      1
-     </sub>
-     (A,B) and R
-     <sub>
-      2
-     </sub>
-     (A, rest); repeat.
+     is when,
     </p>
    </li>
    <li>

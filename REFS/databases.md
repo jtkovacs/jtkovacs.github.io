@@ -134,11 +134,17 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 | Normal Form | Requirements | Impact |
 | --- | --- | --- |
 | 1st | Rows are unique, columns have a datatype, and all attributes are atomic | Redundancy is minimized (versus trying to capture a many-to-many relationship in a single table) |
-| 2nd | All columns in a table must be related via functional dependencies; i.e., each column must be a determinant or a dependent |  |
-| 3rd | | |
-| Boyce-Codd | | |
-| 4th | | |
+| 2nd | All columns in a table must be related via [functional dependencies;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent | ??? |
+| 3rd | Remove [transitive dependencies](#transitive-dependencies) | |
+| Boyce-Codd | A more extreme version of 3NF where, for all FDs `A → B,` A is the PK | |
+| 4th | Remove [multivalued dependencies](#multivalued-dependencies) | |
 | 5th | | |
+
+- Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
+- 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL), i.e. remove all transitive dependencies
+    - https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
+    - https://www.thoughtco.com/transitive-dependency-1019760 
+
 
 - https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 - https://www.thoughtco.com/database-normalization-basics-1019735
@@ -146,12 +152,7 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 - http://psoug.org/reference/normalization.html
 - http://www.bkent.net/Doc/simple5.htm
 
-- Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
-- 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL), i.e. remove all transitive dependencies
-    - https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
-    - https://www.thoughtco.com/transitive-dependency-1019760 
-
-- [__Boyce Codd normal form__ (BCNF)](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies) is when, for all FDs `A→B`, A is the key. To achieve BCNF, find FDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with `A→B` violating BCNF; decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A, rest); repeat. 
+- [__Boyce Codd normal form__ (BCNF)](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencies) is when,   
 
 - __Fourth normal form__ (4NF) is more restrictive than BCNF. Its whole point is to separate independent information (i.e., not functionally dependent information) to achieve efficiency: B+C rather than B\*C tuples. A relation is in 4NF if, for each nontrivial MVD `A↠B`, A is the key. To test for 4NF, look at each pair of tuples `t,u` that match on A, and create the additional tuples `v,w`: are they both already in the relation? If not, MVD is not satisfied. To achieve 4NF, find FDs, MVDs and keys for R<sub>i</sub>; pick any R<sub>i</sub> with nontrivial `A↠B` violating 4NF (3) decompose into R<sub>1</sub>(A,B) and R<sub>2</sub>(A,rest); repeat.
     - Remove Multivalued dependencies

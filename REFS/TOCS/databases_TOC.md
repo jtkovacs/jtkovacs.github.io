@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3423 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3425 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -13,7 +13,8 @@
 				- [Transitive dependencies](#transitive-dependencies)
 				- [Multivalued dependencies](#multivalued-dependencies)
 			- [Normalization and integrity](#normalization-and-integrity)
-					- [Entity integrity](#entity-integrity)
+		- [Integrity](#integrity)
+			- [Entity integrity](#entity-integrity)
 				- [Referential integrity](#referential-integrity)
 				- [Domain integrity](#domain-integrity)
 		- [NoSQL databases](#nosql-databases)
@@ -186,8 +187,9 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 What happens if data is not normalized??
 
+### Integrity
 
-###### Entity integrity
+#### Entity integrity
 
 Entity integrity: enforced by primary key
 

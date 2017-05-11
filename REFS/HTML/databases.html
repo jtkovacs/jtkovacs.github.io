@@ -1432,13 +1432,7 @@
    <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
     leaves are doubly connected
    </a>
-   to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
-  </p>
-  <div class="figure">
-   <img src="../ILLOS/nonclustered-index.png"/>
-  </div>
-  <p>
-   Then, to make the index itself quickly searchable, a
+   to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful). Then, to make the index itself quickly searchable, a
    <strong>
     B-tree
    </strong>
@@ -1447,6 +1441,9 @@
     root and intermediary nodes is used:
    </a>
   </p>
+  <div class="figure">
+   <img src="../ILLOS/nonclustered-index.png"/>
+  </div>
   <div class="figure">
    <img src="../ILLOS/B-tree.png"/>
   </div>

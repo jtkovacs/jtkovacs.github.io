@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3496 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3498 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -132,13 +132,11 @@ Note that these concepts are important for understanding [normalization;](#norma
 
 Dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. There are different sorts of dependencies.
 
-A **functional dependency** `A→B` exists when the same A (an attribute, for our purposes) is always linked with the same B (another attribute value). The reverse is not necessarily true. Note that this is almost identical to a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
+A **functional dependency** `A→B` exists when the same A (an attribute value, for our purposes) is linked to a single B (another attribute value). The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
 
-| A Function | Not a Function | 
+| This is a Function | This is Not a Function | 
 | --- | --- |
 | ![](../ILLOS/fcn.png) | ![](../ILLOS/not-fcn.png) |
-
-
 
 In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 

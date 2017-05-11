@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3499 words
+   &gt; 3495 words
   </p>
   <table class="TOC">
    <tr>
@@ -624,9 +624,17 @@
     functional dependency
    </strong>
    <code>
-    A→B
+    A → B
    </code>
-   exists when the same A (an attribute value, for our purposes) is linked to a single B (another attribute value). The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
+   exists when the same A (for our purposes, an attribute value called the
+   <strong>
+    determinant)
+   </strong>
+   is linked to a single B (another attribute value, called the
+   <strong>
+    dependent).
+   </strong>
+   The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
   </p>
   <table>
    <thead>
@@ -651,35 +659,45 @@
    </tbody>
   </table>
   <p>
-   Written in predicate logic, an FD exists if, for
+   Written in predicate logic with tuples denoted t and u, attributes denoted A and B, an FD exists if, for
    <code>
     ∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B
    </code>
-   . This generalizes to multiple attributes:
+   ; this generalizes to multiple attributes, such that a determinant is best defined as an attribute whose value determines the value of a second (set of) attribute(s). The set of attributes that are functionally dependent on the determinant is called the determinant's
+   <strong>
+    closure,
+   </strong>
    <code>
-    A1, A2, ..., An → B1, B2, ..., Bm
+    {A}\*.
    </code>
-   . FDs are used in DB compression and query optimization.
+  </p>
+  <p>
+   There are a few special cases:
   </p>
   <ul>
    <li>
-    Trivial FD:
+    Trivial:
     <code>
-     A→B &amp; B⊆A
+     A → B &amp; B ⊆ A
     </code>
    </li>
    <li>
-    nontrivial FD:
+    Nontrivial:
     <code>
-     A→B &amp; B⊈A
+     A → B &amp; B ⊈ A
     </code>
    </li>
    <li>
-    completely nontrivial FD:
+    Completely nontrivial:
     <code>
-     A→B &amp; A∩B=∅
+     A → B &amp; A ∩ B = ∅
     </code>
    </li>
+  </ul>
+  <p>
+   FDs are used in DB compression and query optimization.
+  </p>
+  <ul>
    <li>
     transitive property:
     <code>
@@ -691,7 +709,7 @@
     <strong>
      closure
     </strong>
-    of A, {A}*, is all attributes functionally determined by A
+    of A, , is all attributes functionally determined by A
    </li>
    <li>
     <strong>
@@ -723,50 +741,6 @@
       </ul>
      </li>
     </ul>
-   </li>
-   <li>
-    <code>
-     S2
-    </code>
-    , a set of FDs, follows from
-    <code>
-     S1
-    </code>
-    if every relation satisfying
-    <code>
-     S1
-    </code>
-    also satisfies
-    <code>
-     S2
-    </code>
-   </li>
-   <li>
-    <p>
-     <code>
-      S2
-     </code>
-     , set of FDs, is equivalent to
-     <code>
-      S1
-     </code>
-     if exactly the same FDs follow from
-     <code>
-      S1
-     </code>
-     and
-     <code>
-      S2
-     </code>
-    </p>
-   </li>
-   <li>
-    Watt, n.d.: "The left-hand side of the FD is called the determinant, and the right-hand side is the dependent."
-   </li>
-   <li>
-    <p>
-     Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s);
-    </p>
    </li>
   </ul>
   <p>

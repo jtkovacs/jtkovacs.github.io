@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3499 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3495 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -132,19 +132,24 @@ Note that these concepts are important for understanding [normalization;](#norma
 
 Dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. There are different sorts of dependencies.
 
-A **functional dependency** `A→B` exists when the same A (an attribute value, for our purposes) is linked to a single B (another attribute value). The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
+A **functional dependency** `A → B` exists when the same A (for our purposes, an attribute value called the **determinant)** is linked to a single B (another attribute value, called the **dependent).** The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
 
 | This is a Function | This is Not a Function | 
 | --- | --- |
 | ![](../ILLOS/fcn.png) | ![](../ILLOS/not-fcn.png) |
 
-Written in predicate logic, an FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, ..., An → B1, B2, ..., Bm`. FDs are used in DB compression and query optimization.
+Written in predicate logic with tuples denoted t and u, attributes denoted A and B, an FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`; this generalizes to multiple attributes, such that a determinant is best defined as an attribute whose value determines the value of a second (set of) attribute(s). The set of attributes that are functionally dependent on the determinant is called the determinant's **closure, ** `{A}\*.`
 
-- Trivial FD: `A→B & B⊆A`
-- nontrivial FD: `A→B & B⊈A`
-- completely nontrivial FD: `A→B & A∩B=∅` 
+There are a few special cases:
+
+- Trivial: `A → B & B ⊆ A`
+- Nontrivial: `A → B & B ⊈ A`
+- Completely nontrivial: `A → B & A ∩ B = ∅` 
+
+FDs are used in DB compression and query optimization.
+
 - transitive property: `A→B & B→C ⇒ A→C`
-- the __closure__ of A, {A}\*, is all attributes functionally determined by A
+- the __closure__ of A, , is all attributes functionally determined by A
 - __keys__ AKA identity values are attributes whose closure encompasses all attributes in a relation 
     - Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
     - Candidate Key: Column(s) that can uniquely identify rows in an entity
@@ -153,11 +158,6 @@ Written in predicate logic, an FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t
         - Will not change in value
         - Will not be null
         - Narrow field
-- `S2`, a set of FDs, follows from `S1` if every relation satisfying `S1` also satisfies `S2`
-- `S2`, set of FDs, is equivalent to `S1` if exactly the same FDs follow from `S1` and `S2`
-
-- Watt, n.d.: "The left-hand side of the FD is called the determinant, and the right-hand side is the dependent."
-- Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s);
 
 
 Describe what **Transitive Dependency** is and give an example: If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 

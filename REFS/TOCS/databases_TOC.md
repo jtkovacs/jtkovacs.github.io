@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3483 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3499 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -137,6 +137,17 @@ Dependencies exist between attributes; this is not a modeling decision, it is a 
 <img src="../ILLOS/fcn.png" align="left">
 
 ![](../ILLOS/not-fcn.png)
+
+
+<figure align="left">
+    <img src="../ILLOS/not-fcn.png" align="left">
+    <figcaption>A function</figcaption>
+</figure>
+
+<figure>
+    <img src="../ILLOS/fcn.png" align="left">
+    <figcaption>Not a function</figcaption>
+</figure>
 
 In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 

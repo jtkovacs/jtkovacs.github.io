@@ -121,13 +121,11 @@ A multivalued dependency `A ↠ B` exists if all tuples share their A attributes
 
 #### Integrity
 
-Data must have integrity to be useful and trustworthy. Data integrity [tends to erode,](wrangling.html#dirty-data-typologies) and a database 
+Data must have integrity to be useful and trustworthy. Data integrity [tends to erode,](wrangling.html#dirty-data-typologies) and a database has mechanisms for maintaining it in its various forms:
 
-##### Entity integrity
-
-Entity integrity: enforced by primary key
-
-rows are unique (they need a key).
+- **Entity integrity** is the assurance that entities in the real world are represented in each applicable table of the database by a single record (row). The constraint that rows be unique is enforced through the primary key.     
+- **Domain integrity**
+- **Referential integrity**
 
 ##### Referential integrity
 

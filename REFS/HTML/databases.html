@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3920 words
+   &gt; 3936 words
   </p>
   <table class="TOC">
    <tr>
@@ -162,6 +162,21 @@
               Indexing and performance
              </a>
              <ul>
+              <li>
+               <a href="#why-to-index">
+                Why to index
+               </a>
+              </li>
+              <li>
+               <a href="#what-to-index">
+                What to index
+               </a>
+              </li>
+              <li>
+               <a href="#how-different-types-of-indexes-work">
+                How different types of indexes work
+               </a>
+              </li>
               <li>
                <a href="#fragmentation">
                 Fragmentation
@@ -1324,6 +1339,11 @@
     Indexing and performance
    </a>
   </h4>
+  <h5>
+   <a name="why-to-index">
+    Why to index
+   </a>
+  </h5>
   <p>
    Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed
    <code>
@@ -1341,10 +1361,13 @@
    <a href="information-systems.html#what-are-mis?">
     reporting databases versus transactional databases.
    </a>
+   Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored.
   </p>
-  <p>
-   An index may also be erased then restored when loading a very large dataset into the database.
-  </p>
+  <h5>
+   <a name="what-to-index">
+    What to index
+   </a>
+  </h5>
   <p>
    The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a
    <strong>
@@ -1352,6 +1375,11 @@
    </strong>
    that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
   </p>
+  <h5>
+   <a name="how-different-types-of-indexes-work">
+    How different types of indexes work
+   </a>
+  </h5>
   <p>
    This discussion is based on MS SQL Server, which stores table data (rows) in pages:
   </p>

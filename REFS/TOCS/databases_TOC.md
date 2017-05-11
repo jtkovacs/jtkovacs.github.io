@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3920 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3936 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -23,6 +23,9 @@
 		- [Logical design](#logical-design)
 		- [Physical design](#physical-design)
 			- [Indexing and performance](#indexing-and-performance)
+				- [Why to index](#why-to-index)
+				- [What to index](#what-to-index)
+				- [How different types of indexes work](#how-different-types-of-indexes-work)
 				- [Fragmentation](#fragmentation)
 - [Database administration](#database-administration)
 	- [Data and log files](#data-and-log-files)
@@ -309,13 +312,15 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
-Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations).` (Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index.) Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) 
+##### Why to index
 
-An index may also be erased then restored when loading a very large dataset into the database. 
+Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations).` (Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index.) Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored. 
+
+##### What to index
 
 The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
-
+##### How different types of indexes work
 
 This discussion is based on MS SQL Server, which stores table data (rows) in pages:
 

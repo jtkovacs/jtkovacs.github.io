@@ -294,7 +294,7 @@ Index fragmentation is inevitable, especially in OLTP environments:
 - DELETE operations lead to partially-filled pages **(internal fragmentation)**
 - Large rows **(extent fragmentation?)**
 
-Identifying fragmentation:
+Fragmentation can be identified with a SQL Server dynamic management function **(DMF;** [read more):](https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/)
 
 - 
 

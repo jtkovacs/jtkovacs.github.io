@@ -147,7 +147,7 @@ WHERE StockItemName like '%shark%'
 
 Installing logs and data on different drives gives a performance boost.
 
-##### Indexes
+##### Creating indexes
 
 ```SQL
 -- Covering index
@@ -167,7 +167,27 @@ WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same n
     MAXDOP = 2) -- for parallel processing
     ON "default";
 ```
-##### Memory-optimized tables
+
+##### Fixing index fragmentation
+
+Fragmentation can be identified with [sys.dm_db_index_physical_stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql), a SQL Server dynamic management function **(DMF;** [read more):](https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/)
+
+```SQL
+SELECT * 
+FROM sys.dm_db_index_physical_stats (   
+    { database_id | NULL | 0 | DEFAULT }  
+  , { object_id | NULL | 0 | DEFAULT }  
+  , { index_id | NULL | 0 | -1 | DEFAULT }  
+  , { partition_number | NULL | 0 | DEFAULT }  
+  , { mode | NULL | DEFAULT }  
+)
+
+
+`
+
+
+
+##### Creating memory-optimized tables
 
 In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
 

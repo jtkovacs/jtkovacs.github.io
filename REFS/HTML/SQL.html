@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
     https://jtkovacs.github.io/REFS/HTML/SQL.html
    </a>
-   &gt; 2292 words
+   &gt; 2285 words
   </p>
   <table class="TOC">
    <tr>
@@ -146,23 +146,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        </ul>
       </li>
       <li>
-       <a href="#check-for-inclusion">
-        Check for inclusion
-       </a>
-      </li>
-      <li>
        <a href="#t-sql">
         T-SQL
        </a>
       </li>
       <li>
-       <a href="#cookbook-and-examples">
-        Cookbook and examples
+       <a href="#examples">
+        Examples
        </a>
       </li>
       <li>
        <a href="#sources">
-        SOURCES
+        Sources
        </a>
        <ul>
         <li>
@@ -238,6 +233,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     Manage databases
    </a>
   </h3>
+  <ul>
+   <li>
+    UPDATE
+   </li>
+   <li>
+    OUTPUT
+   </li>
+   <li>
+    MERGE
+   </li>
+  </ul>
   <h3>
    <a name="manage-tables">
     Manage tables
@@ -390,6 +396,17 @@ multiple char: <span class="kw">SELECT</span> * <span class="kw">FROM</span> …
     SELECT and display
    </a>
   </h3>
+  <ul>
+   <li>
+    SELECT, FROM, CAST, RANK(), DENSE_RANK()
+   </li>
+   <li>
+    DATE functions
+   </li>
+   <li>
+    remove duplicates
+   </li>
+  </ul>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- concatenate strings: really depends on platform</span>
 <span class="kw">SELECT</span> <span class="fu">CONCAT</span>(c1,c2) <span class="kw">FROM</span> t
@@ -417,11 +434,21 @@ STRFTIME(“format_string”, ”datetime_string”, &lt;modifier&gt;)
     WITH conditional filtering
    </a>
   </h4>
+  <ul>
+   <li>
+    EXCEPT
+   </li>
+  </ul>
   <h4>
    <a name="aggregate-and-group-by">
     Aggregate and GROUP BY
    </a>
   </h4>
+  <ul>
+   <li>
+    GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT)
+   </li>
+  </ul>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql">skip: <span class="kw">SELECT</span> &lt;c&gt; <span class="kw">FROM</span> &lt;t&gt; <span class="kw">LIMIT</span> &lt;# <span class="kw">of</span> rows&gt; OFFSET &lt;skipped rows&gt;;
 <span class="kw">SELECT</span> &lt;c&gt; <span class="kw">FROM</span> &lt;t&gt; <span class="kw">LIMIT</span> &lt;skipped rows&gt;, &lt;# <span class="kw">of</span> rows&gt;; 
@@ -500,6 +527,14 @@ except: <span class="kw">SELECT</span> ... <span class="kw">FROM</span> ... <spa
     Subqueries
    </a>
   </h4>
+  <ul>
+   <li>
+    simple
+   </li>
+   <li>
+    correlated
+   </li>
+  </ul>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql">SUBQUERIES … <span class="kw">the</span> <span class="kw">database</span> will <span class="fu">first</span> <span class="kw">check</span> <span class="kw">the</span> subquery <span class="kw">then</span> <span class="kw">check</span> <span class="kw">the</span> final <span class="kw">query</span>, e.g.: <span class="kw">SELECT</span> name <span class="kw">FROM</span> city <span class="kw">WHERE</span> rating = (<span class="kw">SELECT</span> rating <span class="kw">FROM</span> city <span class="kw">WHERE</span> name = <span class="st">'Paris'</span>);
 subqueries can be <span class="kw">in</span> <span class="kw">the</span> <span class="kw">WHERE</span> clause …
@@ -559,51 +594,16 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
    </li>
   </ul>
   <h1>
-   <a name="check-for-inclusion">
-    Check for inclusion
-   </a>
-  </h1>
-  <ul>
-   <li>
-    SELECT, FROM, CAST, RANK(), DENSE_RANK()
-   </li>
-   <li>
-    WITH
-   </li>
-   <li>
-    GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT)
-   </li>
-   <li>
-    UPDATE
-   </li>
-   <li>
-    OUTPUT
-   </li>
-   <li>
-    MERGE
-   </li>
-   <li>
-    remove duplicates
-   </li>
-   <li>
-    subqueries (simple, correlated)
-   </li>
-   <li>
-    EXCEPT
-   </li>
-   <li>
-    DATE functions
-   </li>
-  </ul>
-  <p>
-   https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
-  </p>
-  <h1>
    <a name="t-sql">
     T-SQL
    </a>
   </h1>
   <ul>
+   <li>
+    <a class="uri" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql">
+     https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
+    </a>
+   </li>
    <li>
     Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
    </li>
@@ -640,8 +640,8 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
    </li>
   </ul>
   <h1>
-   <a name="cookbook-and-examples">
-    Cookbook and examples
+   <a name="examples">
+    Examples
    </a>
   </h1>
   <div class="sourceCode">
@@ -713,7 +713,7 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
   </div>
   <h1>
    <a name="sources">
-    SOURCES
+    Sources
    </a>
   </h1>
   <h2>

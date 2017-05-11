@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a> \> 2292 words </p><table class="TOC"><tr><td>- [What is SQL?](#what-is-sql?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a> \> 2285 words </p><table class="TOC"><tr><td>- [What is SQL?](#what-is-sql?)
 	- [Notation and style guide](#notation-and-style-guide)
 	- [Data definition](#data-definition)
 		- [Manage databases](#manage-databases)
@@ -13,10 +13,9 @@
 			- [JOINs](#joins)
 			- [Subqueries](#subqueries)
 		- [Set operations](#set-operations)
-- [Check for inclusion](#check-for-inclusion)
 - [T-SQL](#t-sql)
-- [Cookbook and examples](#cookbook-and-examples)
-- [SOURCES](#sources)
+- [Examples](#examples)
+- [Sources](#sources)
 	- [References](#references)
 	- [Archive](#archive)
 	- [Inbox](#inbox)
@@ -42,6 +41,10 @@ SQL is the standardized language used to access a database. SQL language provide
 ## Data definition
 
 ### Manage databases
+
+- UPDATE
+- OUTPUT
+- MERGE
 
 ### Manage tables
 
@@ -158,6 +161,10 @@ single char: SELECT * FROM … WHERE c LIKE ‘_tringvalue’;
 
 ### SELECT and display
 
+- SELECT, FROM, CAST, RANK(), DENSE_RANK()
+- DATE functions
+- remove duplicates
+
 ```SQL
 -- concatenate strings: really depends on platform
 SELECT CONCAT(c1,c2) FROM t
@@ -183,8 +190,11 @@ STRFTIME(“format_string”, ”datetime_string”, <modifier>)
 
 #### WITH conditional filtering
 
+- EXCEPT
 
 #### Aggregate and GROUP BY
+
+- GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT) 
 
 ```SQL
 skip: SELECT <c> FROM <t> LIMIT <# of rows> OFFSET <skipped rows>;
@@ -240,6 +250,9 @@ SELECT * FROM ... WHERE * IN (subquery) AND * NOT IN (subquery)
 
 #### Subqueries
 
+- simple
+- correlated
+
 ```SQL
 SUBQUERIES … the database will first check the subquery then check the final query, e.g.: SELECT name FROM city WHERE rating = (SELECT rating FROM city WHERE name = 'Paris');
 subqueries can be in the WHERE clause …
@@ -273,25 +286,10 @@ Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-bas
 
 
 
-# Check for inclusion
-
-- SELECT, FROM, CAST, RANK(), DENSE_RANK()
-- WITH
-- GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT) 
-- UPDATE
-- OUTPUT
-- MERGE
-- remove duplicates
-- subqueries (simple, correlated)
-- EXCEPT
-- DATE functions
-
-https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
-
-
 
 # T-SQL
 
+- [https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql)
 - Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
 - Exclusive: SELECT … WHERE [date] > 2012-02-25’ AND [date] < ‘20120230’; 
     - Note that dates are given as strings
@@ -306,7 +304,7 @@ https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transac
 
 
 
-# Cookbook and examples
+# Examples
 
 ```SQL
 SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS [Total Orders],
@@ -378,7 +376,7 @@ ORDER BY CustomerID ASC;
 
 
 
-# SOURCES
+# Sources
 
 ## References
 

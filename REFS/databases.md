@@ -131,7 +131,7 @@ Data must have integrity to be useful and trustworthy. Data integrity [tends to 
 
 ##### Normalization
 
-Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and **(2) preserve data integrity** (by preventing update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
+Database schemas are normalized to minimize redundancy (limiting storage costs) and to **preserve data integrity**. Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
 
 - **1NF:** Rows are unique, columns have a datatype, and all attributes are atomic. This means redundancy is minimized (versus trying to capture a many-to-many relationship in a single table).
 - **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent.

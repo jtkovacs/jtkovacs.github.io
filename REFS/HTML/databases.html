@@ -1410,17 +1410,17 @@
   </p>
   <ul>
    <li>
+    When a subset of rows are indexed, this is called a
+    <strong>
+     filtered index.
+    </strong>
+   </li>
+   <li>
     When multiple fields are included in a single non-clustered index, this is called a
     <strong>
      covering index
     </strong>
     because it could "cover" all the fields retrieved in a stored query.
-   </li>
-   <li>
-    When a subset of rows are indexed, this is called a
-    <strong>
-     filtered index.
-    </strong>
    </li>
   </ul>
   <p>
@@ -1428,11 +1428,11 @@
    <strong>
     leaf nodes
    </strong>
-   in data pages.
+   in data pages. Via pointers,
    <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
-    Leaves are doubly connected
+    leaves are doubly connected
    </a>
-   to each other (to maintain sort order as rows are added and deleted), and also refer to rows in the heap/clustered table via pointers (thereby making the index useful):
+   to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
   </p>
   <div class="figure">
    <img src="../ILLOS/nonclustered-index.png"/>

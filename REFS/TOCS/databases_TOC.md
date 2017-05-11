@@ -330,10 +330,10 @@ A table is either a **heap** or, if it has a clustered index, a **clustered tabl
 
 However, to facilitate specific queries, both heaps and clustered tables may have multiple **non-clustered indexes** that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d.).  
 
-- When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
-- When a subset of rows are indexed, this is called a **filtered index.**   
+- When a subset of rows are indexed, this is called a **filtered index.** 
+- When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.  
 
-Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. [Leaves are doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other (to maintain sort order as rows are added and deleted), and also refer to rows in the heap/clustered table via pointers (thereby making the index useful):
+Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. Via pointers, [leaves are doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
 
 ![](../ILLOS/nonclustered-index.png)
 

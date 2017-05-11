@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3983 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4002 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -337,7 +337,7 @@ Just as heaps and clustered tables store their rows in data pages, non-clustered
 
 ![](../ILLOS/nonclustered-index.png)
 
-For heap pages, clustered indexes, and non-clustered indexes alike, a **B-tree** structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make page search more efficient:
+For heap pages, clustered indexes, and non-clustered indexes alike, a **B-tree** AKA balance tree structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make page search more efficient:
 
 <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
 
@@ -416,7 +416,9 @@ Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to desig
 
 Sheffield, W. (2012, October 12). Does a clustered index really physically store the rows in key order? [http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/)
 
-Sheldon, R. (2014, March 25). 14 SQL Server indexing questions you were too shy to ask. Simple Talk. Retrieved from [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
+Sheldon, R. (2013, July 30). Columnstore indexes in SQL Server 2012. _Simple Talk._ Retrieved from [https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/](https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/)
+
+Sheldon, R. (2014, March 25). 14 SQL Server indexing questions you were too shy to ask. _Simple Talk._ Retrieved from [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
 
 Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from [http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html](http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html)
 

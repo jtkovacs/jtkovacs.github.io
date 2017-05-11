@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3936 words
+   &gt; 3933 words
   </p>
   <table class="TOC">
    <tr>
@@ -1402,7 +1402,11 @@
    <strong>
     non-clustered indexes
    </strong>
-   that, via pointers, provide 'directories' to alternate sort orders: "A [non-clustered] database index is, after all, very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d. a).
+   that,
+   <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
+    via doubly linked lists with pointers,
+   </a>
+   provide 'directories' to alternate sort orders, "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d. a).
   </p>
   <p>
    The leaves of non-clustered indexes are also stored in pages:

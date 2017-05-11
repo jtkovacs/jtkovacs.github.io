@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4287 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4343 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -465,8 +465,16 @@ Check database logs to identify security problems, or conduct a more extensive a
 
 ### Encryption (TDE)
 
+- Data encryption standard (DES) uses bit manipulation (substitution and permutation) and blocks of 64 bits
+- Advanced Encryption Standards (AES) uses block size of 128/192/256 bits
+- Public key encryption (Diffie & Hellman, 1976); later RSA public key (1978)
+- [https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/](https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/)
 
 ### Authentication and authorization
+
+- Role-based access control (RBAC)
+- Mandatory access control (MAC)
+- Principles, permissions, securables
 
 #### Digital signatures
 

@@ -364,6 +364,8 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ## Security
 
+### Audits
+
 Check database logs to identify security problems, or conduct a more extensive audit. Common security threats may be categorized by human vectors or by system targets:
 
 <table class="bullets">
@@ -413,8 +415,7 @@ Check database logs to identify security problems, or conduct a more extensive a
 </tr>
 </table>
 
-### Encryption
-
+### Encryption (TDE)
 
 
 ### Authentication and authorization
@@ -423,11 +424,16 @@ Check database logs to identify security problems, or conduct a more extensive a
 
 Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
 
+#### Ownership chaining
 
+#### Contained database
 
-## Data movement
+### Preventing SQL injections
 
 ### Backup
+
+
+
 
 
 # Sources

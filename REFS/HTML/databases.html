@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 4277 words
+   &gt; 4287 words
   </p>
   <table class="TOC">
    <tr>
@@ -216,8 +216,13 @@
          </a>
          <ul>
           <li>
-           <a href="#encryption">
-            Encryption
+           <a href="#audits">
+            Audits
+           </a>
+          </li>
+          <li>
+           <a href="#encryption-(tde)">
+            Encryption (TDE)
            </a>
           </li>
           <li>
@@ -230,15 +235,23 @@
               Digital signatures
              </a>
             </li>
+            <li>
+             <a href="#ownership-chaining">
+              Ownership chaining
+             </a>
+            </li>
+            <li>
+             <a href="#contained-database">
+              Contained database
+             </a>
+            </li>
            </ul>
           </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#data-movement">
-          Data movement
-         </a>
-         <ul>
+          <li>
+           <a href="#preventing-sql-injections">
+            Preventing SQL injections
+           </a>
+          </li>
           <li>
            <a href="#backup">
             Backup
@@ -1743,6 +1756,11 @@
     Security
    </a>
   </h2>
+  <h3>
+   <a name="audits">
+    Audits
+   </a>
+  </h3>
   <p>
    Check database logs to identify security problems, or conduct a more extensive audit. Common security threats may be categorized by human vectors or by system targets:
   </p>
@@ -1871,8 +1889,8 @@
    </tr>
   </table>
   <h3>
-   <a name="encryption">
-    Encryption
+   <a name="encryption-(tde)">
+    Encryption (TDE)
    </a>
   </h3>
   <h3>
@@ -1888,11 +1906,21 @@
   <p>
    Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
   </p>
-  <h2>
-   <a name="data-movement">
-    Data movement
+  <h4>
+   <a name="ownership-chaining">
+    Ownership chaining
    </a>
-  </h2>
+  </h4>
+  <h4>
+   <a name="contained-database">
+    Contained database
+   </a>
+  </h4>
+  <h3>
+   <a name="preventing-sql-injections">
+    Preventing SQL injections
+   </a>
+  </h3>
   <h3>
    <a name="backup">
     Backup

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4277 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4287 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -32,10 +32,13 @@
 	- [Database architectures](#database-architectures)
 	- [Transaction management](#transaction-management)
 	- [Security](#security)
-		- [Encryption](#encryption)
+		- [Audits](#audits)
+		- [Encryption (TDE)](#encryption-(tde))
 		- [Authentication and authorization](#authentication-and-authorization)
 			- [Digital signatures](#digital-signatures)
-	- [Data movement](#data-movement)
+			- [Ownership chaining](#ownership-chaining)
+			- [Contained database](#contained-database)
+		- [Preventing SQL injections](#preventing-sql-injections)
 		- [Backup](#backup)
 - [Sources](#sources)
 	- [Cited](#cited)
@@ -409,6 +412,8 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ## Security
 
+### Audits
+
 Check database logs to identify security problems, or conduct a more extensive audit. Common security threats may be categorized by human vectors or by system targets:
 
 <table class="bullets">
@@ -458,8 +463,7 @@ Check database logs to identify security problems, or conduct a more extensive a
 </tr>
 </table>
 
-### Encryption
-
+### Encryption (TDE)
 
 
 ### Authentication and authorization
@@ -468,11 +472,16 @@ Check database logs to identify security problems, or conduct a more extensive a
 
 Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
 
+#### Ownership chaining
 
+#### Contained database
 
-## Data movement
+### Preventing SQL injections
 
 ### Backup
+
+
+
 
 
 # Sources

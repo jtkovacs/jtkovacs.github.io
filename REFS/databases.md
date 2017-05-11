@@ -366,10 +366,15 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 Common security threats may be categorized by agent:
 
-<table class="bullets" style="table-layout: fixed;">
+<table class="bullets">
+    <colgroup>
+        <col style="width:40%">
+        <col style="width:30%">
+        <col style="width:30%">
+    </colgroup>  
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
-<td style="text-align: left; width: 200px;">
+<td style="text-align: left;">
 - Use of person's means of access
 - Inappropriate data sharing
 - Inadequate training

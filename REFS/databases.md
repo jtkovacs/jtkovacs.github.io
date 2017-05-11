@@ -121,7 +121,7 @@ A multivalued dependency `A ↠ B` exists if all tuples share their A attributes
 
 #### Integrity
 
-Data must have integrity to be useful and trustworthy. Data integrity tends to erode, and a database 
+Data must have integrity to be useful and trustworthy. Data integrity [tends to erode,](wrangling.html#dirty-data-typologies) and a database 
 
 ##### Entity integrity
 

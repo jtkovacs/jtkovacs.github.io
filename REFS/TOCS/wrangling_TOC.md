@@ -1,8 +1,9 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">https://jtkovacs.github.io/REFS/HTML/wrangling.html</a> \> 1152 words </p><table class="TOC"><tr><td>- [Obtaining data AKA I/O](#obtaining-data-aka-i/o)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">https://jtkovacs.github.io/REFS/HTML/wrangling.html</a> \> 1156 words </p><table class="TOC"><tr><td>- [Obtaining data AKA I/O](#obtaining-data-aka-i/o)
 	- [... in R](#...-in-r)
 	- [... in Python](#...-in-python)
 		- [... integrate database via Peewee ORM](#...-integrate-database-via-peewee-orm)
-- [Data cleaning](#data-cleaning)
+- [Cleaning data](#cleaning-data)
+	- [Dirty data typologies](#dirty-data-typologies)
 	- [... in R](#...-in-r)
 	- [... in Python](#...-in-python)
 </td></tr></table>
@@ -189,8 +190,9 @@ menu = OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)])
 returns doc string for function: function_name.__doc__
 ```
 
+# Cleaning data
 
-# Data cleaning
+## Dirty data typologies
 
 Searching, counting, ranking, grouping, handling whitespace
 

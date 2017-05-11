@@ -181,8 +181,9 @@ menu = OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)])
 returns doc string for function: function_name.__doc__
 ```
 
+# Cleaning data
 
-# Data cleaning
+## Dirty data typologies
 
 Searching, counting, ranking, grouping, handling whitespace
 

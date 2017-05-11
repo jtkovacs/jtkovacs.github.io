@@ -125,13 +125,13 @@ FOR SYSTEM_TIME AS OF '2015-01-01'
 WHERE StockItemName like '%shark%'
 ```
 
-### Manage performance
+#### Manage performance
 
-#### Splitting the database
+##### Splitting the database
 
 Installing logs and data on different drives gives a performance boost.
 
-#### Indexes
+##### Indexes
 
 ```SQL
 -- Covering index
@@ -151,7 +151,7 @@ WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same n
     MAXDOP = 2) -- for parallel processing
     ON "default";
 ```
-#### Memory-optimized tables
+##### Memory-optimized tables
 
 In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
 
@@ -175,7 +175,7 @@ WITH (MEMORY-OPTIMIZED=ON)
 
 
 
-### Manage views
+#### Manage views
 
 - **Create view:** [Database] > [Views] > right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. 
 - **Views can be made persistent to increase performance:** right click view > Script View as > ALTER To > New Query Editor Window > Add “WITH SCHEMABINDING” under “ALTER VIEW” line > Execute > Refresh Object Explorer pane > Right click on Indexes > Clustered index > Add columns.

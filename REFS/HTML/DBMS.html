@@ -124,34 +124,34 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
               Manage tables
              </a>
             </li>
+            <li>
+             <a href="#manage-performance">
+              Manage performance
+             </a>
+             <ul>
+              <li>
+               <a href="#splitting-the-database">
+                Splitting the database
+               </a>
+              </li>
+              <li>
+               <a href="#indexes">
+                Indexes
+               </a>
+              </li>
+              <li>
+               <a href="#memory-optimized-tables">
+                Memory-optimized tables
+               </a>
+              </li>
+             </ul>
+            </li>
+            <li>
+             <a href="#manage-views">
+              Manage views
+             </a>
+            </li>
            </ul>
-          </li>
-          <li>
-           <a href="#manage-performance">
-            Manage performance
-           </a>
-           <ul>
-            <li>
-             <a href="#splitting-the-database">
-              Splitting the database
-             </a>
-            </li>
-            <li>
-             <a href="#indexes">
-              Indexes
-             </a>
-            </li>
-            <li>
-             <a href="#memory-optimized-tables">
-              Memory-optimized tables
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           <a href="#manage-views">
-            Manage views
-           </a>
           </li>
          </ul>
         </li>
@@ -471,24 +471,24 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
 <span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
 <span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
   </div>
-  <h3>
+  <h4>
    <a name="manage-performance">
     Manage performance
    </a>
-  </h3>
-  <h4>
+  </h4>
+  <h5>
    <a name="splitting-the-database">
     Splitting the database
    </a>
-  </h4>
+  </h5>
   <p>
    Installing logs and data on different drives gives a performance boost.
   </p>
-  <h4>
+  <h5>
    <a name="indexes">
     Indexes
    </a>
-  </h4>
+  </h5>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- Covering index</span>
 <span class="kw">CREATE</span> NONCLUSTERED <span class="kw">INDEX</span> IX_Address_PostalCode <span class="co">-- give index a name</span>
@@ -507,11 +507,11 @@ INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">--
     MAXDOP = <span class="dv">2</span>) <span class="co">-- for parallel processing</span>
     <span class="kw">ON</span> <span class="ot">"default"</span>;</code></pre>
   </div>
-  <h4>
+  <h5>
    <a name="memory-optimized-tables">
     Memory-optimized tables
    </a>
-  </h4>
+  </h5>
   <p>
    In-memory AKA
    <strong>
@@ -544,11 +544,11 @@ GO
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname)
 <span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)</code></pre>
   </div>
-  <h3>
+  <h4>
    <a name="manage-views">
     Manage views
    </a>
-  </h3>
+  </h4>
   <ul>
    <li>
     <strong>

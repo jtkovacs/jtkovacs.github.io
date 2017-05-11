@@ -273,7 +273,7 @@ Indexes are created to accelerate queries at the expense of write speed `(INSERT
 
 ##### Types of indexes
 
-**Clustered indexes** determine the physical storage order of the table ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table. A table with a clustered index is called a **clustered table;** a table without a clustered index is called a **heap,** and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake.
+**Clustered indexes** determine the physical storage order of the table ... [sort of ...](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) so there's only one clustered index per table. A table with a clustered index is called a **clustered table;** a table without a clustered index is called a **heap,** and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake.
 
 There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers. 
 

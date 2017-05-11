@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3773 words
+   &gt; 3844 words
   </p>
   <table class="TOC">
    <tr>
@@ -1330,6 +1330,36 @@
    </a>
   </h4>
   <p>
+   (This discussion is based on MS SQL Server.)
+  </p>
+  <p>
+   A database stores table data (rows) in pages. A table without a clustered index, specifically, is called a
+   <strong>
+    heap,
+   </strong>
+   and the order of its contents will be determined initially by data entry and then by DBMS-initiated changes for efficiency's sake:
+  </p>
+  <div class="figure">
+   <img src="../ILLOS/SQLDataPage.png"/>
+  </div>
+  <p>
+   Generally, (clustered???) index pages have a certain structure:
+  </p>
+  <ul>
+   <li>
+    Root node
+   </li>
+   <li>
+    Intermediary node(s)
+   </li>
+   <li>
+    Leaf node
+   </li>
+   <li>
+    Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
+   </li>
+  </ul>
+  <p>
    Indexes are created to accelerate queries at the expense of write speed
    <code>
     (INSERT, UPDATE, DELETE),
@@ -1394,20 +1424,6 @@
     <strong>
      filtered index.
     </strong>
-   </li>
-  </ul>
-  <p>
-   Generally, index pages have a certain structure:
-  </p>
-  <ul>
-   <li>
-    Root node
-   </li>
-   <li>
-    Intermediary node(s)
-   </li>
-   <li>
-    Leaf node
    </li>
   </ul>
   <p>

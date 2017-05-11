@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3773 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3844 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -310,6 +310,19 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
+(This discussion is based on MS SQL Server.) 
+
+A database stores table data (rows) in pages. A table without a clustered index, specifically, is called a **heap,** and the order of its contents will be determined initially by data entry and then by DBMS-initiated changes for efficiency's sake:
+
+![](../ILLOS/SQLDataPage.png)
+
+Generally, (clustered???) index pages have a certain structure:
+
+- Root node
+- Intermediary node(s)
+- Leaf node
+- Fill factor: how much of a data page is filled when the index is initially created (anticipates addition of data)
+
 Indexes are created to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases](information-systems.html#what-are-mis?) and they may be erased then restored when loading a very large dataset into the database. The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
 Per Sheldon (2014), indexing doesn't improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
@@ -322,12 +335,6 @@ There can be more than one **non-clustered index** on a table; a non-clustered i
 
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**
-
-Generally, index pages have a certain structure:
-
-- Root node
-- Intermediary node(s)
-- Leaf node
 
 But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 
 

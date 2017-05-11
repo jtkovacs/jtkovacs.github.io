@@ -130,6 +130,8 @@ Data must have integrity to be useful and trustworthy. Data integrity [tends to 
 - **Domain integrity** is the assurance that attributes have meaningful (as in possible, if not necessarily accurate) values. This is enforced by column data types and custom domain restrictions.
 - **Referential integrity** is the assurance that, once one-to-many or many-to-many relationships are separated into different tables, the data is still kept in sync despite updates and deletions. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
+![](../ILLOS/integrity.png)
+
 Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs). 
 
 ##### Normalization

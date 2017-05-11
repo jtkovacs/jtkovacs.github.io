@@ -107,7 +107,7 @@ USE SQLservername.databasename.schemaname.tablename
     - [Database] > Database diagrams
 
 ```SQL
-CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupname
+CREATE TABLE tname (fieldname IDENTITY(seed, increment), fielddname datatype ... ) ON Filegroupname
 ```
 
 ##### Datatypes

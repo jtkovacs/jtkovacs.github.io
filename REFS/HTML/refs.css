@@ -145,7 +145,7 @@ h5, h5 a, h5 a:hover {
 
 
 /* In addition to automatic styling from pandoc */
-/* Code chunks should be smaller font w/ light grey background */
+/* Code chunks should be smaller font w/ light grey background and slightly indented*/
 div.sourceCode {
     background-color: #f8f8f8;
     font-size: 10px;

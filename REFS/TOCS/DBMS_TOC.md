@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1823 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1824 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -142,7 +142,7 @@ USE SQLservername.databasename.schemaname.tablename
     - [Database] > Database diagrams
 
 ```SQL
-CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupname
+CREATE TABLE tname (fieldname IDENTITY(seed, increment), fielddname datatype ... ) ON Filegroupname
 ```
 
 ##### Datatypes

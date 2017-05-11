@@ -298,10 +298,13 @@ Index fragmentation is inevitable, especially in OLTP environments:
 - DELETE operations lead to partially-filled pages **(internal fragmentation)**
 - Large rows **(extent fragmentation?)**
 
-If an index has less than 1000 pages and is in memory (i.e., non-clustered), don't bother removing fragmentation. If an index has <5% logical fragmentation, don't do anything. Otherwise:
+Fragmentation can be detected with a DBMS tool, then repaired: 
 
-- 5% < logical fragmentation < 30%: **reorganize**
-- 30% < logical fragmentation: **rebuild**
+- Clustered indexes:
+    - <1000 pages long or <5% fragmentation, do nothing.
+    - 5% < logical fragmentation < 30%: **reorganize**
+    - 30% < logical fragmentation: **rebuild**
+- Extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
 
 | Characteristic | Reorganize | Rebuild |
 | --------------- | ---- | -------- |
@@ -315,7 +318,7 @@ If an index has less than 1000 pages and is in memory (i.e., non-clustered), don
 | Transaction log space used | Less | More |
 | Additional free space required in the data file | No | Yes |
 
-The extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
+
 
 SEE:
 

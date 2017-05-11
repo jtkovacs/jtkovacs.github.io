@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3711 words
+   &gt; 3704 words
   </p>
   <table class="TOC">
    <tr>
@@ -1427,20 +1427,31 @@
    </li>
   </ul>
   <p>
-   If an index has less than 1000 pages and is in memory (i.e., non-clustered), don't bother removing fragmentation. If an index has &lt;5% logical fragmentation, don't do anything. Otherwise:
+   Fragmentation can be detected with a DBMS tool, then repaired:
   </p>
   <ul>
    <li>
-    5% &lt; logical fragmentation &lt; 30%:
-    <strong>
-     reorganize
-    </strong>
+    Clustered indexes:
+    <ul>
+     <li>
+      &lt;1000 pages long or &lt;5% fragmentation, do nothing.
+     </li>
+     <li>
+      5% &lt; logical fragmentation &lt; 30%:
+      <strong>
+       reorganize
+      </strong>
+     </li>
+     <li>
+      30% &lt; logical fragmentation:
+      <strong>
+       rebuild
+      </strong>
+     </li>
+    </ul>
    </li>
    <li>
-    30% &lt; logical fragmentation:
-    <strong>
-     rebuild
-    </strong>
+    Extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
    </li>
   </ul>
   <table style="width:42%;">
@@ -1567,9 +1578,6 @@
     </tr>
    </tbody>
   </table>
-  <p>
-   The extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
-  </p>
   <p>
    SEE:
   </p>

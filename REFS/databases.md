@@ -121,7 +121,7 @@ A multivalued dependency `A ↠ B` exists if all tuples share their A attributes
 
 #### Integrity
 
-What happens if data is not normalized?? anomalies
+Data must have integrity to be useful and trustworthy. Data integrity tends to erode, and a database 
 
 ##### Entity integrity
 
@@ -143,6 +143,8 @@ columns store single type of data; column names are unique. Columns have data ty
 
 ##### Normalization
 
+What happens if data is not normalized?? anomalies
+
 Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target:
 
 | Normal Form | Requirements | Impact |
@@ -153,6 +155,8 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 | Boyce-Codd | | |
 | 4th | | |
 | 5th | | |
+
+- https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 
 - “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
     - It contains two-dimensional tables with rows and columns.
@@ -172,7 +176,6 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 - https://www.thoughtco.com/database-normalization-basics-1019735
 - http://searchsqlserver.techtarget.com/definition/normalization
-- https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 - http://psoug.org/reference/normalization.html
 - http://www.bkent.net/Doc/simple5.htm
 

@@ -1,4 +1,4 @@
-# I/O
+# Obtaining data AKA I/O
 
 - [Treehouse - Using Databases in Python](https://teamtreehouse.com/library/using-databases-in-python)
 - [https://docs.python.org/3/tutorial/inputoutput.html](https://docs.python.org/3/tutorial/inputoutput.html)
@@ -182,7 +182,7 @@ returns doc string for function: function_name.__doc__
 ```
 
 
-# Data wrangling
+# Data cleaning
 
 Searching, counting, ranking, grouping, handling whitespace
 

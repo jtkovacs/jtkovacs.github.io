@@ -1,12 +1,12 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">https://jtkovacs.github.io/REFS/HTML/wrangling.html</a></p><table class="TOC"><tr><td>- [I/O](#i/o)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">https://jtkovacs.github.io/REFS/HTML/wrangling.html</a> \> 1152 words </p><table class="TOC"><tr><td>- [Obtaining data AKA I/O](#obtaining-data-aka-i/o)
 	- [... in R](#...-in-r)
 	- [... in Python](#...-in-python)
 		- [... integrate database via Peewee ORM](#...-integrate-database-via-peewee-orm)
-- [Data wrangling](#data-wrangling)
+- [Data cleaning](#data-cleaning)
 	- [... in R](#...-in-r)
 	- [... in Python](#...-in-python)
 </td></tr></table>
-# I/O
+# Obtaining data AKA I/O
 
 - [Treehouse - Using Databases in Python](https://teamtreehouse.com/library/using-databases-in-python)
 - [https://docs.python.org/3/tutorial/inputoutput.html](https://docs.python.org/3/tutorial/inputoutput.html)
@@ -190,7 +190,7 @@ returns doc string for function: function_name.__doc__
 ```
 
 
-# Data wrangling
+# Data cleaning
 
 Searching, counting, ranking, grouping, handling whitespace
 

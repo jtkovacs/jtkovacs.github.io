@@ -89,7 +89,7 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 - **Derived** if its value can be calculated from (an)other attribute(s) (which, per third normal form, it shouldn't be).
 - **Multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.  
 
-#### Dependencies
+#### Relationships between attributes
 
 Note that these concepts are important for understanding [normalization;](#normalization-and-integrity) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity.
 

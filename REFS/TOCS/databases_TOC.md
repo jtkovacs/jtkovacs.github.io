@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3488 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3490 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -8,7 +8,7 @@
 				- [Associative entities](#associative-entities)
 				- [Superclasses and subclasses](#superclasses-and-subclasses)
 			- [Types of attributes](#types-of-attributes)
-			- [Dependencies](#dependencies)
+			- [Relationships between attributes](#relationships-between-attributes)
 				- [Functional dependency and keys](#functional-dependency-and-keys)
 				- [Transitive dependencies](#transitive-dependencies)
 				- [Multivalued dependencies](#multivalued-dependencies)
@@ -129,7 +129,7 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 - **Derived** if its value can be calculated from (an)other attribute(s) (which, per third normal form, it shouldn't be).
 - **Multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.  
 
-#### Dependencies
+#### Relationships between attributes
 
 Note that these concepts are important for understanding [normalization;](#normalization-and-integrity) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity.
 

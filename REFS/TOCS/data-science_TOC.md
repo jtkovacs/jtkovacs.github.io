@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-science.html">https://jtkovacs.github.io/REFS/HTML/data-science.html</a></p><table class="TOC"><tr><td>- [What is data science?](#what-is-data-science?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-science.html">https://jtkovacs.github.io/REFS/HTML/data-science.html</a> \> 1043 words </p><table class="TOC"><tr><td>- [What is data science?](#what-is-data-science?)
 	- [What is Big Data?](#what-is-big-data?)
 	- [Data science lifecycle & skills](#data-science-lifecycle-&-skills)
 		- [Obtain ](#obtain-)
@@ -23,7 +23,7 @@
 
 Via Mason and Wiggins (2010):
 
-<table class="OSEMN">
+<table class="bullets">
 <tr>
 <th>OSEMN Model</th>
 <td>Obtain</td>

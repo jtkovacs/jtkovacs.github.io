@@ -7,7 +7,7 @@
 
 Via Mason and Wiggins (2010):
 
-<table class="OSEMN">
+<table class="bullets">
 <tr>
 <th>OSEMN Model</th>
 <td>Obtain</td>

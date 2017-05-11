@@ -366,7 +366,7 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 Common security threats may be categorized by agent:
 
-<table id="OSEMN">
+<table class="bullets">
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
 <td>

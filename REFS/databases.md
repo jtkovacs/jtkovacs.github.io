@@ -294,7 +294,16 @@ Index fragmentation is inevitable, especially in OLTP environments:
 - DELETE operations lead to partially-filled pages **(internal fragmentation)**
 - Large rows **(extent fragmentation?)**
 
-See:
+Identifying fragmentation:
+
+- 
+
+If an index has less than 1000 pages and is in memory (i.e., non-clustered), don't bother removing fragmentation. If an index has <5% logical fragmentation, don't do anything. Otherwise:
+
+- 5% < logical fragmentation < 30%: **reorganize** using `DBCC INDEXDEFRAG` or `ALTER INDEX ... REORGANIZE`
+- 30% < logical fragmentation: **rebuild** using `DBCC DBREINDEX` or `ALTER INDEX ... REBUILD`
+
+SEE:
 
 - [http://use-the-index-luke.com/sql/table-of-contents](http://use-the-index-luke.com/sql/table-of-contents)
 - [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)    

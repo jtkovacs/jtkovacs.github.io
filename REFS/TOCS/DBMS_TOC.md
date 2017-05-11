@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1653 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1687 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -10,6 +10,7 @@
 		- [SQL Server Management Studio](#sql-server-management-studio)
 			- [Manage databases](#manage-databases)
 			- [Manage tables ](#manage-tables-)
+		- [Manage performance](#manage-performance)
 		- [Manage views](#manage-views)
 	- [Microsoft Access](#microsoft-access)
 		- [Data types](#data-types)
@@ -177,6 +178,15 @@ SELECT [StockItemName]
 FROM [WideWorldImporters].[Warehouse].[StockItems]
 FOR SYSTEM_TIME AS OF '2015-01-01'
 WHERE StockItemName like '%shark%'
+```
+
+### Manage performance
+
+```SQL
+-- Covering index
+CREATE NONCLUSTERED INDEX IX_Address_PostalCode -- give index a name
+ON Person.Address (PostalCode) -- specify table and key
+INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID) -- add other fields
 ```
 
 ### Manage views

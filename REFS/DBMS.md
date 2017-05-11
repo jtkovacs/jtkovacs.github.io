@@ -150,6 +150,15 @@ FOR SYSTEM_TIME AS OF '2015-01-01'
 WHERE StockItemName like '%shark%'
 ```
 
+### Manage performance
+
+```SQL
+-- Covering index
+CREATE NONCLUSTERED INDEX IX_Address_PostalCode -- give index a name
+ON Person.Address (PostalCode) -- specify table and key
+INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID) -- add other fields
+```
+
 ### Manage views
 
 - **Create view:** [Database] > [Views] > right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. 

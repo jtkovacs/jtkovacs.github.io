@@ -93,9 +93,9 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 
 Note that these concepts are important for understanding [normalization;](#normalization-and-integrity) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity.
 
-Dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. There are different sorts of dependencies:
+Dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. There are different sorts of dependencies.
 
-- A **functional dependency** `A→B` exists when the same A (an attribute, for our purposes) is always linked with the same B (another attribute value). The reverse is not necessarily true. Note that this is almost identical to a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
+A **functional dependency** `A→B` exists when the same A (an attribute, for our purposes) is always linked with the same B (another attribute value). The reverse is not necessarily true. Note that this is almost identical to a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
 
 | A Function | Not a Function | 
 | --- | --- |

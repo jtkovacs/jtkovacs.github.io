@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3723 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3725 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -314,7 +314,7 @@ Indexes are created to accelerate queries at the expense of write speed `(INSERT
 
 ##### Types of indexes
 
-**Clustered indexes** determine the physical storage order of the table ... [sort of ...](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) so there's only one clustered index per table. A table with a clustered index is called a **clustered table;** a table without a clustered index is called a **heap,** and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake.
+**Clustered indexes** determine the physical storage order of the table ... [sort of](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) ... so there can be only one clustered index per table. A table with a clustered index is called a **clustered table;** a table without a clustered index is called a **heap,** and the order of its contents will be determined by data entry and DBMS-initiated changes for efficiency's sake.
 
 There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers. 
 

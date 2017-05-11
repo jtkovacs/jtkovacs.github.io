@@ -369,12 +369,14 @@ Common security threats may be categorized by agent:
 <table class="bullets">
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 - Using another person's means of access
 - 
 </td> 
-<td></td> 
-<td></td>
+<td style="text-align: left;">
+</td> 
+<td style="text-align: left;">
+</td> 
 </tr>
 </table>
 
@@ -383,10 +385,14 @@ Common security threats may be categorized by agent:
 <table>
 <tr><th>Hardware</th> <th>Networks</th> <th>Database</th> <th>DBMS & Applications</th></tr>
 <tr>
-<td></td> 
-<td></td> 
-<td></td> 
-<td></td>
+<td style="text-align: left;">
+</td> 
+<td style="text-align: left;">
+</td> 
+<td style="text-align: left;">
+</td> 
+<td style="text-align: left;">
+</td> 
 </tr>
 </table>
 

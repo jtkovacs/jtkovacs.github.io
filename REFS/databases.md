@@ -275,7 +275,7 @@ This discussion is based on MS SQL Server, which stores table data (rows) in pag
 
 A table is either a **heap** or, if it has a **clustered index,** a clustered table. A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A clustered index, on the other hand, introduces sorting that is implemented at the level of pages through the row offset array AKA slot array; see Sheffield (2012). For this reason, there can be only one clustered index per table.
 
-Heaps and clustered tables may have multiple **non-clustered indexes** that, via pointers, provide 'directories' to alternate sort orders: "A [non-clustered] database index is, after all, very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d.). 
+Heaps and clustered tables may have multiple **non-clustered indexes** that, via pointers, provide 'directories' to alternate sort orders: "A [non-clustered] database index is, after all, very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d. a). 
 
 The leaves of non-clustered indexes are also stored in pages:
 
@@ -378,7 +378,7 @@ Ullman, R. D. (2006). Relational database design. Retrieved from [http://infolab
 
 Watt, A. (n.d.). Functional dependencies. In _Database design._ Retrieved from [https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/](https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/)
 
-Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from [http://use-the-index-luke.com/sql/anatomy](http://use-the-index-luke.com/sql/anatomy)
+Winand, M. (n.d. a). Anatomy of a SQL index. Retrieved from [http://use-the-index-luke.com/sql/anatomy](http://use-the-index-luke.com/sql/anatomy)
 
 
 ## References

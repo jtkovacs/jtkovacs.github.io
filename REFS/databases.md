@@ -101,7 +101,7 @@ A **functional dependency** `A → B` exists when the same A (for our purposes, 
 | --- | --- |
 | ![](../ILLOS/fcn.png) | ![](../ILLOS/not-fcn.png) |
 
-Written in predicate logic with tuples denoted t and u, attributes denoted A and B, an FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`; this generalizes to multiple attributes, such that a determinant is best defined as an attribute whose value determines the value of a second (set of) attribute(s). The set of attributes that are functionally dependent on the determinant is called the determinant's **closure, ** `{A}\*.`
+Written in predicate logic with tuples denoted t and u, attributes denoted A and B, an FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`; this generalizes to multiple attributes, such that a determinant is best defined as an attribute whose value determines the value of a second (set of) attribute(s). The set of attributes that are functionally dependent on the determinant is called the determinant's **closure, ** `{A}*.`
 
 There are a few special cases:
 

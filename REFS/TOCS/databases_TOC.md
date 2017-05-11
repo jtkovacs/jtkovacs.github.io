@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3327 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3444 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -128,17 +128,21 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 
 ##### Dependencies and keys
 
-Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s); you could also say there is a dependency between the two attributes, one of which is a determinant. This is a real-world quality that takes several forms:
+Note that these concepts are important for understanding [normalization;](#normalization-and-integrity) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity.
+
+1. Dependencies: 
+    a. FDs, determinants and dependents
+ you could also say there is a dependency between the two attributes, one of which is a determinant. This is a real-world quality that takes several forms:
 
 - Functional
 - Transitive
 - Multivalued
 
-Normalization is a process of allocating attributes to different entities to achieve a certain configuration of dependencies.
-
 __Functional dependency (FD)__, `A→B`: The same A is always linked with the same B, although the reverse is not necessarily true. In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 
 - trivial FD: `A→B & B⊆A`
+- Watt, n.d.: "The left-hand side of the FD is called the determinant, and the right-hand side is the dependent."
+- Determinant: Attribute(s) whose value determines the value of a second (set of) attribute(s);
 - nontrivial FD: `A→B & B⊈A`
 - completely nontrivial FD: `A→B & A∩B=∅` 
 - transitive property: `A→B & B→C ⇒ A→C`
@@ -154,6 +158,11 @@ __Functional dependency (FD)__, `A→B`: The same A is always linked with the sa
 - `S2`, a set of FDs, follows from `S1` if every relation satisfying `S1` also satisfies `S2`
 - `S2`, set of FDs, is equivalent to `S1` if exactly the same FDs follow from `S1` and `S2`
 
+Describe what **Transitive Dependency** is and give an example: If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
+
+- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
+- https://www.thoughtco.com/transitive-dependency-1019760 
+
 __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf)__ (MVD), `A↠B`: A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic: `if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.` Furthermore, `∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest`.
 
 - trivial MVD: `A↠B & B⊆A` or `A∪B ={ all attributes}`; e.g. `AB↠B`
@@ -162,10 +171,13 @@ __[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides
 - transitive rule: `A↠B & B↠C ⇒ A↠C-B`
 - a relation A is __decomposed__ into B and C if the union of B and C’s attributes contains all of A’s attributes and `B⋈C = A` (the lossless join property). 
 
-Describe what **Transitive Dependency** is and give an example: If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
+2. Determinants vs keys
 
-- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
-- https://www.thoughtco.com/transitive-dependency-1019760 
+displayName (2015):
+- A primary key or any candidate key is also a determinant while the opposite is not true.
+- A determinant can uniquely determine one or more attributes in the row.
+- A candidate key can uniquely determine the entire row.
+
 
 
 #### Normalization and integrity
@@ -347,6 +359,8 @@ Digital signatures are based on Public Key techniques; are different for each us
 
 ## Cited
 
+displayName. (2015, December 3). Are determinants and candidate keys same or different things? [Comment]. Stack Overflow. Message posted to [https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things](https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things)
+
 E/R model: types of attributes. (n.d.). Retrieved from the Database Management Wiki: [http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes](http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes)
 
 Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
@@ -354,6 +368,8 @@ Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to desig
 Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from [http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html](http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html)
 
 Ullman, R. D. (2006). Relational database design. Retrieved from [http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html](http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html)
+
+Watt, A. (n.d.). Functional dependencies. In _Database design._ Retrieved from [https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/](https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/)
 
 ## References
 

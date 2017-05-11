@@ -204,6 +204,8 @@ Per Chapple (2016):
 - Normalization is a complex, time-consuming process and developer time is valuable, so operate in the spirit of 'quick and dirty'.
 
 
+
+
 ### NoSQL databases
 
 NoSQL databases use non-relational data models ... 
@@ -232,6 +234,8 @@ NoSQL databases use non-relational data models ...
 
 - appending rather than updating records, and 
 - denormalizing data upon input. 
+
+
 
 
 

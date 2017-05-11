@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3924 words
+   &gt; 3920 words
   </p>
   <table class="TOC">
    <tr>
@@ -1327,9 +1327,9 @@
   <p>
    Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed
    <code>
-    (INSERT, UPDATE, and DELETE operations),
+    (INSERT, UPDATE, and DELETE operations).
    </code>
-   though, per sheldon (2014), not
+   (Per Sheldon (2014), not
    <em>
     all
    </em>
@@ -1337,10 +1337,7 @@
    <em>
     all
    </em>
-   queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help).
-  </p>
-  <p>
-   Indexes are therefore common in
+   queries; more complex queries that involve grouping and sorting can suffer from a clustered index.) Because of this read/write tradeoff, indexes are most useful in
    <a href="information-systems.html#what-are-mis?">
     reporting databases versus transactional databases.
    </a>

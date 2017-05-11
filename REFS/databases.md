@@ -269,10 +269,7 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
-Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations),` though, per sheldon (2014), not _all_ indexes improve performance for _all_ queries. More complex queries that involve grouping and sorting can suffer from a clustered index (although some forms of non-clustered indexes might help). 
-
-
-Indexes are therefore common in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) 
+Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations).` (Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index.) Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) 
 
 An index may also be erased then restored when loading a very large dataset into the database. 
 

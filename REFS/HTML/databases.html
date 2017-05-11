@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3462 words
+   &gt; 3466 words
   </p>
   <table class="TOC">
    <tr>
@@ -161,6 +161,18 @@
              <a href="#indexing-and-performance">
               Indexing and performance
              </a>
+             <ul>
+              <li>
+               <a href="#clustered-indexes">
+                Clustered indexes
+               </a>
+              </li>
+              <li>
+               <a href="#non-clustered-indexes">
+                Non-clustered indexes
+               </a>
+              </li>
+             </ul>
             </li>
            </ul>
           </li>
@@ -1324,52 +1336,20 @@
    that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
   </p>
   <p>
-   There are different kinds of indexes:
+   There are different kinds of indexes.
   </p>
-  <ul>
-   <li>
-    <strong>
-     Clustered indexes
-    </strong>
-    determine the physical storage order of the table ...
-    <a href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
-     sort of.
-    </a>
-    There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
-   </li>
-   <li>
-    There can be more than one
-    <strong>
-     non-clustered index
-    </strong>
-    on a table; a non-clustered index uses pointers.
-    <ul>
-     <li>
-      When multiple fields are included in a single non-clustered index, this is called a
-      <strong>
-       covering index
-      </strong>
-      because it could "cover" all the fields retrieved in a stored query.
-     </li>
-     <li>
-      When a subset of rows are indexed, this is called a
-      <strong>
-       filtered index.
-      </strong>
-     </li>
-     <li>
-      A
-      <strong>
-       columnstore index
-      </strong>
-      searches only relevant columns
-     </li>
-    </ul>
-   </li>
-  </ul>
-  <div class="figure">
-   <img src="../ILLOS/columnstore.png"/>
-  </div>
+  <h5>
+   <a name="clustered-indexes">
+    Clustered indexes
+   </a>
+  </h5>
+  <p>
+   Clustered indexes determine the physical storage order of the table ...
+   <a href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
+    sort of.
+   </a>
+   There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
+  </p>
   <p>
    Index pages have a certain structure:
   </p>
@@ -1384,6 +1364,43 @@
     Leaf node
    </li>
   </ul>
+  <h5>
+   <a name="non-clustered-indexes">
+    Non-clustered indexes
+   </a>
+  </h5>
+  <p>
+   There can be more than one
+   <strong>
+    non-clustered index
+   </strong>
+   on a table; a non-clustered index uses pointers.
+  </p>
+  <ul>
+   <li>
+    When multiple fields are included in a single non-clustered index, this is called a
+    <strong>
+     covering index
+    </strong>
+    because it could "cover" all the fields retrieved in a stored query.
+   </li>
+   <li>
+    When a subset of rows are indexed, this is called a
+    <strong>
+     filtered index.
+    </strong>
+   </li>
+   <li>
+    A
+    <strong>
+     columnstore index
+    </strong>
+    searches only relevant columns
+   </li>
+  </ul>
+  <div class="figure">
+   <img src="../ILLOS/columnstore.png"/>
+  </div>
   <p>
    See:
   </p>

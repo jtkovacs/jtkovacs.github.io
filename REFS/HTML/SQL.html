@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
     https://jtkovacs.github.io/REFS/HTML/SQL.html
    </a>
-   &gt; 2286 words
+   &gt; 2288 words
   </p>
   <table class="TOC">
    <tr>
@@ -120,20 +120,25 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
            </ul>
           </li>
           <li>
-           <a href="#joins">
-            JOINs
+           <a href="#from-">
+            FROM
            </a>
            <ul>
             <li>
-             <a href="#set-operations">
-              Set operations
+             <a href="#joins">
+              JOINs
+             </a>
+            </li>
+            <li>
+             <a href="#subqueries">
+              Subqueries
              </a>
             </li>
            </ul>
           </li>
           <li>
-           <a href="#subqueries">
-            Subqueries
+           <a href="#set-operations">
+            Set operations
            </a>
           </li>
           <li>
@@ -427,10 +432,15 @@ display <span class="kw">in</span> groups: <span class="kw">SELECT</span> c1, c2
 filtering groups: <span class="kw">SELECT</span> c1, <span class="fu">count</span>(c3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1 <span class="kw">HAVING</span> cndn;</code></pre>
   </div>
   <h3>
+   <a name="from">
+    FROM
+   </a>
+  </h3>
+  <h4>
    <a name="joins">
     JOINs
    </a>
-  </h3>
+  </h4>
   <ul>
    <li>
     http://www.vertabelo.com/blog/technical-articles/sql-joins
@@ -484,10 +494,27 @@ except: <span class="kw">SELECT</span> ... <span class="kw">FROM</span> ... <spa
    </p>
   </div>
   <h4>
+   <a name="subqueries">
+    Subqueries
+   </a>
+  </h4>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql">SUBQUERIES … <span class="kw">the</span> <span class="kw">database</span> will <span class="fu">first</span> <span class="kw">check</span> <span class="kw">the</span> subquery <span class="kw">then</span> <span class="kw">check</span> <span class="kw">the</span> final <span class="kw">query</span>, e.g.: <span class="kw">SELECT</span> name <span class="kw">FROM</span> city <span class="kw">WHERE</span> rating = (<span class="kw">SELECT</span> rating <span class="kw">FROM</span> city <span class="kw">WHERE</span> name = <span class="st">'Paris'</span>);
+subqueries can be <span class="kw">in</span> <span class="kw">the</span> <span class="kw">WHERE</span> clause …
+<span class="kw">in</span> <span class="kw">FROM</span> clause, reducing need <span class="kw">for</span> calculation <span class="kw">in</span> <span class="kw">SELECT</span> <span class="kw">and</span> <span class="kw">WHERE</span> ..
+<span class="kw">and</span> <span class="kw">in</span> <span class="kw">the</span> <span class="kw">SELECT</span> clause 
+used <span class="kw">as</span> an expression, it<span class="st">'s important the subquery return exactly one col </span>
+<span class="st">compare with a set of values instead of a single value: … WHERE … IN (subquery);</span>
+<span class="st">correlated subqueries, i.e. dependent on the main query; subqueries can use tables from the main query, but the main query can'</span>t <span class="kw">use</span> <span class="kw">tables</span> <span class="kw">from</span> <span class="kw">the</span> subquery. 
+good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> * <span class="kw">FROM</span> country <span class="kw">WHERE</span> area &lt;= (<span class="kw">SELECT</span> <span class="fu">min</span>(area) <span class="kw">FROM</span> city <span class="kw">WHERE</span> city.country_id = country.id);
+<span class="kw">use</span> aliases <span class="kw">for</span> self-correlated subqueries: <span class="kw">SELECT</span> * <span class="kw">FROM</span> city <span class="kw">as</span> c1 <span class="kw">WHERE</span> c1.rating &gt; (<span class="kw">SELECT</span> <span class="fu">avg</span>(c2.rating) <span class="kw">FROM</span> city <span class="kw">AS</span> c2 <span class="kw">WHERE</span> c1.country_id=c2.country_id);
+<span class="kw">exists</span> operator: <span class="kw">SELECT</span> * <span class="kw">FROM</span> country <span class="kw">WHERE</span> <span class="kw">EXISTS</span> (<span class="kw">SELECT</span> * <span class="kw">FROM</span> mountain <span class="kw">WHERE</span> country.id = mountain.country_id);</code></pre>
+  </div>
+  <h3>
    <a name="set-operations">
     Set operations
    </a>
-  </h4>
+  </h3>
   <p>
    Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
   </p>
@@ -529,23 +556,6 @@ except: <span class="kw">SELECT</span> ... <span class="kw">FROM</span> ... <spa
     symmetric difference: (A-B)∪(B-A)
    </li>
   </ul>
-  <h3>
-   <a name="subqueries">
-    Subqueries
-   </a>
-  </h3>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql">SUBQUERIES … <span class="kw">the</span> <span class="kw">database</span> will <span class="fu">first</span> <span class="kw">check</span> <span class="kw">the</span> subquery <span class="kw">then</span> <span class="kw">check</span> <span class="kw">the</span> final <span class="kw">query</span>, e.g.: <span class="kw">SELECT</span> name <span class="kw">FROM</span> city <span class="kw">WHERE</span> rating = (<span class="kw">SELECT</span> rating <span class="kw">FROM</span> city <span class="kw">WHERE</span> name = <span class="st">'Paris'</span>);
-subqueries can be <span class="kw">in</span> <span class="kw">the</span> <span class="kw">WHERE</span> clause …
-<span class="kw">in</span> <span class="kw">FROM</span> clause, reducing need <span class="kw">for</span> calculation <span class="kw">in</span> <span class="kw">SELECT</span> <span class="kw">and</span> <span class="kw">WHERE</span> ..
-<span class="kw">and</span> <span class="kw">in</span> <span class="kw">the</span> <span class="kw">SELECT</span> clause 
-used <span class="kw">as</span> an expression, it<span class="st">'s important the subquery return exactly one col </span>
-<span class="st">compare with a set of values instead of a single value: … WHERE … IN (subquery);</span>
-<span class="st">correlated subqueries, i.e. dependent on the main query; subqueries can use tables from the main query, but the main query can'</span>t <span class="kw">use</span> <span class="kw">tables</span> <span class="kw">from</span> <span class="kw">the</span> subquery. 
-good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> * <span class="kw">FROM</span> country <span class="kw">WHERE</span> area &lt;= (<span class="kw">SELECT</span> <span class="fu">min</span>(area) <span class="kw">FROM</span> city <span class="kw">WHERE</span> city.country_id = country.id);
-<span class="kw">use</span> aliases <span class="kw">for</span> self-correlated subqueries: <span class="kw">SELECT</span> * <span class="kw">FROM</span> city <span class="kw">as</span> c1 <span class="kw">WHERE</span> c1.rating &gt; (<span class="kw">SELECT</span> <span class="fu">avg</span>(c2.rating) <span class="kw">FROM</span> city <span class="kw">AS</span> c2 <span class="kw">WHERE</span> c1.country_id=c2.country_id);
-<span class="kw">exists</span> operator: <span class="kw">SELECT</span> * <span class="kw">FROM</span> country <span class="kw">WHERE</span> <span class="kw">EXISTS</span> (<span class="kw">SELECT</span> * <span class="kw">FROM</span> mountain <span class="kw">WHERE</span> country.id = mountain.country_id);</code></pre>
-  </div>
   <h3>
    <a name="check-for-inclusion">
     Check for inclusion

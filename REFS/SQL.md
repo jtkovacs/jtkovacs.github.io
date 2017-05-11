@@ -182,7 +182,9 @@ display in groups: SELECT c1, c2, count(col3) FROM t GROUP BY c1, c2;
 filtering groups: SELECT c1, count(c3) FROM t GROUP BY c1 HAVING cndn;
 ```
 
-### JOINs
+### FROM 
+
+#### JOINs
 
 - http://www.vertabelo.com/blog/technical-articles/sql-joins
 - http://thomaslarock.com/2012/04/real-world-sql-join-examples/
@@ -216,7 +218,22 @@ SELECT * FROM ... WHERE * IN (subquery) AND * NOT IN (subquery)
 
 ![Set theory](set-theory.png)
 
-#### Set operations
+#### Subqueries
+
+```SQL
+SUBQUERIES … the database will first check the subquery then check the final query, e.g.: SELECT name FROM city WHERE rating = (SELECT rating FROM city WHERE name = 'Paris');
+subqueries can be in the WHERE clause …
+in FROM clause, reducing need for calculation in SELECT and WHERE ..
+and in the SELECT clause 
+used as an expression, it's important the subquery return exactly one col 
+compare with a set of values instead of a single value: … WHERE … IN (subquery);
+correlated subqueries, i.e. dependent on the main query; subqueries can use tables from the main query, but the main query can't use tables from the subquery. 
+good for debugging, e.g. SELECT * FROM country WHERE area <= (SELECT min(area) FROM city WHERE city.country_id = country.id);
+use aliases for self-correlated subqueries: SELECT * FROM city as c1 WHERE c1.rating > (SELECT avg(c2.rating) FROM city AS c2 WHERE c1.country_id=c2.country_id);
+exists operator: SELECT * FROM country WHERE EXISTS (SELECT * FROM mountain WHERE country.id = mountain.country_id);
+```
+
+### Set operations
 
 Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
 
@@ -232,23 +249,6 @@ Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-bas
 - difference, -
 - intersection, ⋂ where A⋂B ≡ A - (A-B), A⋂B ≡ A⋈B 
 - symmetric difference: (A-B)∪(B-A)
-
-
-
-### Subqueries
-
-```SQL
-SUBQUERIES … the database will first check the subquery then check the final query, e.g.: SELECT name FROM city WHERE rating = (SELECT rating FROM city WHERE name = 'Paris');
-subqueries can be in the WHERE clause …
-in FROM clause, reducing need for calculation in SELECT and WHERE ..
-and in the SELECT clause 
-used as an expression, it's important the subquery return exactly one col 
-compare with a set of values instead of a single value: … WHERE … IN (subquery);
-correlated subqueries, i.e. dependent on the main query; subqueries can use tables from the main query, but the main query can't use tables from the subquery. 
-good for debugging, e.g. SELECT * FROM country WHERE area <= (SELECT min(area) FROM city WHERE city.country_id = country.id);
-use aliases for self-correlated subqueries: SELECT * FROM city as c1 WHERE c1.rating > (SELECT avg(c2.rating) FROM city AS c2 WHERE c1.country_id=c2.country_id);
-exists operator: SELECT * FROM country WHERE EXISTS (SELECT * FROM mountain WHERE country.id = mountain.country_id);
-```
 
 
 

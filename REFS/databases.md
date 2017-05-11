@@ -141,10 +141,13 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 - https://www.thoughtco.com/database-normalization-basics-1019735
 - http://searchsqlserver.techtarget.com/definition/normalization
-- https://en.wikipedia.org/wiki/Database_normalization
+- https://en.wikipedia.org/wiki/Database_normalization plus anomalies
+- http://psoug.org/reference/normalization.html
+
+What happens if data is not normalized??
 
 
-##### Entity integrity
+###### Entity integrity
 
 Entity integrity: enforced by primary key
 

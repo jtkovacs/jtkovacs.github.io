@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4003 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4041 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -379,6 +379,8 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 # Database administration
 
 ## Data and log files
+
+A DBMS records _actions_ in its **log file** and data in its **data file** (holding pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files.)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) During backup, the local log file is wiped but the data files are unchanged.
 
 ## Transaction management
 

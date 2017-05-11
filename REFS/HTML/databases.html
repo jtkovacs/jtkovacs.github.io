@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 4003 words
+   &gt; 4041 words
   </p>
   <table class="TOC">
    <tr>
@@ -1651,6 +1651,29 @@
     Data and log files
    </a>
   </h2>
+  <p>
+   A DBMS records
+   <em>
+    actions
+   </em>
+   in its
+   <strong>
+    log file
+   </strong>
+   and data in its
+   <strong>
+    data file
+   </strong>
+   (holding pages; see
+   <a href="#how-different-types-of-indexes-work">
+    discussion on indexing
+   </a>
+   and
+   <a href="https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups">
+    SQL Server files.)
+   </a>
+   During backup, the local log file is wiped but the data files are unchanged.
+  </p>
   <h2>
    <a name="transaction-management">
     Transaction management

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1740 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1744 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -11,6 +11,9 @@
 			- [Manage databases](#manage-databases)
 			- [Manage tables ](#manage-tables-)
 		- [Manage performance](#manage-performance)
+			- [Splitting the database](#splitting-the-database)
+			- [Indexes](#indexes)
+			- [Memory-optimized tables](#memory-optimized-tables)
 		- [Manage views](#manage-views)
 	- [Microsoft Access](#microsoft-access)
 		- [Data types](#data-types)
@@ -157,9 +160,11 @@ WHERE StockItemName like '%shark%'
 
 ### Manage performance
 
+#### Splitting the database
+
 Installing logs and data on different drives gives a performance boost.
 
-Indexes may also improve performance:
+#### Indexes
 
 ```SQL
 -- Covering index
@@ -179,6 +184,7 @@ WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same n
     MAXDOP = 2) -- for parallel processing
     ON "default";
 ```
+#### Memory-optimized tables
 
 In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
 
@@ -199,6 +205,7 @@ GO
 CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, fdname)
 WITH (MEMORY-OPTIMIZED=ON)
 ```
+
 
 
 ### Manage views

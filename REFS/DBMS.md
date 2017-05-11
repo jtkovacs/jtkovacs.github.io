@@ -127,9 +127,11 @@ WHERE StockItemName like '%shark%'
 
 ### Manage performance
 
+#### Splitting the database
+
 Installing logs and data on different drives gives a performance boost.
 
-Indexes may also improve performance:
+#### Indexes
 
 ```SQL
 -- Covering index
@@ -149,6 +151,7 @@ WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same n
     MAXDOP = 2) -- for parallel processing
     ON "default";
 ```
+#### Memory-optimized tables
 
 In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
 
@@ -169,6 +172,7 @@ GO
 CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, fdname)
 WITH (MEMORY-OPTIMIZED=ON)
 ```
+
 
 
 ### Manage views

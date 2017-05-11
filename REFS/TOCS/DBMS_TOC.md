@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1687 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1690 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -187,6 +187,9 @@ WHERE StockItemName like '%shark%'
 CREATE NONCLUSTERED INDEX IX_Address_PostalCode -- give index a name
 ON Person.Address (PostalCode) -- specify table and key
 INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID) -- add other fields
+
+-- Filtered index
+
 ```
 
 ### Manage views

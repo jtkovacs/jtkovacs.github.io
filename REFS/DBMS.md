@@ -157,6 +157,9 @@ WHERE StockItemName like '%shark%'
 CREATE NONCLUSTERED INDEX IX_Address_PostalCode -- give index a name
 ON Person.Address (PostalCode) -- specify table and key
 INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID) -- add other fields
+
+-- Filtered index
+
 ```
 
 ### Manage views

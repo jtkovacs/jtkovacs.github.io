@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3471 words
+   &gt; 3525 words
   </p>
   <table class="TOC">
    <tr>
@@ -104,11 +104,6 @@
               Integrity
              </a>
              <ul>
-              <li>
-               <a href="#entity-integrity">
-                Entity integrity
-               </a>
-              </li>
               <li>
                <a href="#referential-integrity">
                 Referential integrity
@@ -779,19 +774,31 @@
    </a>
   </h4>
   <p>
-   What happens if data is not normalized?? anomalies
-  </p>
-  <h5>
-   <a name="entity-integrity">
-    Entity integrity
+   Data must have integrity to be useful and trustworthy. Data integrity
+   <a href="wrangling.html#dirty-data-typologies">
+    tends to erode,
    </a>
-  </h5>
-  <p>
-   Entity integrity: enforced by primary key
+   and a database has mechanisms for maintaining it in its various forms:
   </p>
-  <p>
-   rows are unique (they need a key).
-  </p>
+  <ul>
+   <li>
+    <strong>
+     Entity integrity
+    </strong>
+    is the assurance that entities in the real world are represented in each applicable table of the database by a single record (row). The constraint that rows be unique is enforced through the primary key.
+    <br/>
+   </li>
+   <li>
+    <strong>
+     Domain integrity
+    </strong>
+   </li>
+   <li>
+    <strong>
+     Referential integrity
+    </strong>
+   </li>
+  </ul>
   <h5>
    <a name="referential-integrity">
     Referential integrity
@@ -819,6 +826,9 @@
     Normalization
    </a>
   </h5>
+  <p>
+   What happens if data is not normalized?? anomalies
+  </p>
   <p>
    Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of
    <a href="#relationships-between-attributes">
@@ -898,6 +908,11 @@
    </tbody>
   </table>
   <ul>
+   <li>
+    <p>
+     https://en.wikipedia.org/wiki/Database_normalization plus anomalies
+    </p>
+   </li>
    <li>
     “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
     <ul>
@@ -1021,13 +1036,12 @@
     http://searchsqlserver.techtarget.com/definition/normalization
    </li>
    <li>
-    https://en.wikipedia.org/wiki/Database_normalization plus anomalies
-   </li>
-   <li>
     http://psoug.org/reference/normalization.html
    </li>
    <li>
-    http://www.bkent.net/Doc/simple5.htm
+    <p>
+     http://www.bkent.net/Doc/simple5.htm
+    </p>
    </li>
   </ul>
   <h3>

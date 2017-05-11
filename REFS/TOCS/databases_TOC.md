@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3471 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3525 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -13,7 +13,6 @@
 				- [Transitive dependencies](#transitive-dependencies)
 				- [Multivalued dependencies](#multivalued-dependencies)
 			- [Integrity](#integrity)
-				- [Entity integrity](#entity-integrity)
 				- [Referential integrity](#referential-integrity)
 				- [Domain integrity](#domain-integrity)
 				- [Normalization](#normalization)
@@ -162,13 +161,11 @@ A multivalued dependency `A ↠ B` exists if all tuples share their A attributes
 
 #### Integrity
 
-What happens if data is not normalized?? anomalies
+Data must have integrity to be useful and trustworthy. Data integrity [tends to erode,](wrangling.html#dirty-data-typologies) and a database has mechanisms for maintaining it in its various forms:
 
-##### Entity integrity
-
-Entity integrity: enforced by primary key
-
-rows are unique (they need a key).
+- **Entity integrity** is the assurance that entities in the real world are represented in each applicable table of the database by a single record (row). The constraint that rows be unique is enforced through the primary key.     
+- **Domain integrity**
+- **Referential integrity**
 
 ##### Referential integrity
 
@@ -184,6 +181,8 @@ columns store single type of data; column names are unique. Columns have data ty
 
 ##### Normalization
 
+What happens if data is not normalized?? anomalies
+
 Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and (2) preserve data integrity (update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target:
 
 | Normal Form | Requirements | Impact |
@@ -194,6 +193,8 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 | Boyce-Codd | | |
 | 4th | | |
 | 5th | | |
+
+- https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 
 - “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
     - It contains two-dimensional tables with rows and columns.
@@ -213,7 +214,6 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 - https://www.thoughtco.com/database-normalization-basics-1019735
 - http://searchsqlserver.techtarget.com/definition/normalization
-- https://en.wikipedia.org/wiki/Database_normalization plus anomalies
 - http://psoug.org/reference/normalization.html
 - http://www.bkent.net/Doc/simple5.htm
 

@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3325 words
+   &gt; 3381 words
   </p>
   <table class="TOC">
    <tr>
@@ -506,7 +506,11 @@
    <strong>
     tables
    </strong>
-   AKA relations. Tables have
+   AKA relations, which can be clustered tables or heaps
+   <a href="#indexing-and-performance">
+    depending on their indexing.
+   </a>
+   Tables have
    <strong>
     rows
    </strong>
@@ -1317,25 +1321,32 @@
    <a href="information-systems.html#what-are-mis?">
     reporting databases versus transactional databases.
    </a>
-   The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
+   The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a
+   <strong>
+    query optimizer
+   </strong>
+   that identifies statistically when indexing would be beneficial.
+  </p>
+  <p>
+   There are different kinds of indexes:
   </p>
   <ul>
    <li>
     <strong>
      Clustered indexes
     </strong>
-    determine physical storage ...
+    determine the physical storage order of the table ...
     <a href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
      sort of.
     </a>
-    There's only one clustered index per table.
+    There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
    </li>
    <li>
     There can be more than one
     <strong>
      non-clustered index
     </strong>
-    on a table.
+    on a table; a non-clustered index uses pointers.
    </li>
    <li>
     A

@@ -60,7 +60,7 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 ### The relational data model
 
-In a relational database, the data model is of **tables** AKA relations. Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). The order of rows and columns is insignificant.
+In a relational database, the data model is of **tables** AKA relations, which can be clustered tables or heaps [depending on their indexing.](#indexing-and-performance) Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). The order of rows and columns is insignificant.
 
 Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development. Per Ullman (2006), **many different relational schemas could be used to model any given reality;** the best designs will suit the underlying business processes and be [in a normal form.](#normalization) 
 
@@ -265,10 +265,12 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
-Indexes are **created** to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
+Indexes are **created** to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. 
 
-- **Clustered indexes** determine physical storage ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table.
-- There can be more than one **non-clustered index** on a table.
+There are different kinds of indexes:
+
+- **Clustered indexes** determine the physical storage order of the table ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
+- There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers.
 - A **columnstore index** is used to improve performance of read-only tables. 
 
 Indexes are **maintained** by:

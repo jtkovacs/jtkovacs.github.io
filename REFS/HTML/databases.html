@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3466 words
+   &gt; 3484 words
   </p>
   <table class="TOC">
    <tr>
@@ -163,13 +163,13 @@
              </a>
              <ul>
               <li>
-               <a href="#clustered-indexes">
-                Clustered indexes
+               <a href="#types-of-indexes">
+                Types of indexes
                </a>
               </li>
               <li>
-               <a href="#non-clustered-indexes">
-                Non-clustered indexes
+               <a href="#index-fragmentation">
+                Index fragmentation
                </a>
               </li>
              </ul>
@@ -1335,40 +1335,18 @@
    </strong>
    that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
   </p>
-  <p>
-   There are different kinds of indexes.
-  </p>
   <h5>
-   <a name="clustered-indexes">
-    Clustered indexes
+   <a name="types-of-indexes">
+    Types of indexes
    </a>
   </h5>
   <p>
-   Clustered indexes determine the physical storage order of the table ...
+   **Clustered indexes determine the physical storage order of the table ...
    <a href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
     sort of.
    </a>
    There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
   </p>
-  <p>
-   Index pages have a certain structure:
-  </p>
-  <ul>
-   <li>
-    Root node
-   </li>
-   <li>
-    Intermediary node(s)
-   </li>
-   <li>
-    Leaf node
-   </li>
-  </ul>
-  <h5>
-   <a name="non-clustered-indexes">
-    Non-clustered indexes
-   </a>
-  </h5>
   <p>
    There can be more than one
    <strong>
@@ -1390,17 +1368,39 @@
      filtered index.
     </strong>
    </li>
+  </ul>
+  <p>
+   A
+   <strong>
+    columnstore index
+   </strong>
+   searches only relevant columns, using a different structure than other indexes. Rowstore index pages have a certain structure:
+  </p>
+  <ul>
    <li>
-    A
-    <strong>
-     columnstore index
-    </strong>
-    searches only relevant columns
+    Root node
+   </li>
+   <li>
+    Intermediary node(s)
+   </li>
+   <li>
+    Leaf node
    </li>
   </ul>
+  <p>
+   Whereas:
+  </p>
   <div class="figure">
    <img src="../ILLOS/columnstore.png"/>
   </div>
+  <p>
+   Columnstore indexes are useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses.
+  </p>
+  <h5>
+   <a name="index-fragmentation">
+    Index fragmentation
+   </a>
+  </h5>
   <p>
    See:
   </p>

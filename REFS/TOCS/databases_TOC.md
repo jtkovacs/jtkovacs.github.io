@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3466 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3484 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -23,8 +23,8 @@
 		- [Logical design](#logical-design)
 		- [Physical design](#physical-design)
 			- [Indexing and performance](#indexing-and-performance)
-				- [Clustered indexes](#clustered-indexes)
-				- [Non-clustered indexes](#non-clustered-indexes)
+				- [Types of indexes](#types-of-indexes)
+				- [Index fragmentation](#index-fragmentation)
 - [Database administration](#database-administration)
 	- [Data and log files](#data-and-log-files)
 	- [Transaction management](#transaction-management)
@@ -308,27 +308,28 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 Indexes are created to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases](information-systems.html#what-are-mis?) and they may be erased then restored when loading a very large dataset into the database. The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
-There are different kinds of indexes.
+##### Types of indexes
 
-##### Clustered indexes
-
-Clustered indexes determine the physical storage order of the table ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
-
-Index pages have a certain structure:
-
-- Root node
-- Intermediary node(s)
-- Leaf node
-
-##### Non-clustered indexes
+**Clustered indexes determine the physical storage order of the table ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table. A table without a clustered index is called a heap; a table with a clustered index is called a clustered table.
 
 There can be more than one **non-clustered index** on a table; a non-clustered index uses pointers. 
 
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**
-- A **columnstore index** searches only relevant columns
-    
+
+A **columnstore index** searches only relevant columns, using a different structure than other indexes. Rowstore index pages have a certain structure:
+
+- Root node
+- Intermediary node(s)
+- Leaf node
+
+Whereas:
+
 ![](../ILLOS/columnstore.png)
+
+Columnstore indexes are useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses. 
+
+##### Index fragmentation
 
 
 See:

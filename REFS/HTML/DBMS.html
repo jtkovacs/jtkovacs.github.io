@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">
     https://jtkovacs.github.io/REFS/HTML/DBMS.html
    </a>
-   &gt; 1947 words
+   &gt; 1959 words
   </p>
   <table class="TOC">
    <tr>
@@ -623,7 +623,9 @@ INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">--
 
 <span class="kw">SELECT</span> * 
 <span class="kw">FROM</span> sys.dm_db_index_physical_stats (DB_ID(N<span class="st">'AdventureWorks'</span>), 
-    OBJECT_ID(N<span class="st">'Person.Address'</span>), <span class="kw">NULL</span>, <span class="kw">NULL</span> , <span class="st">'DETAILED'</span>); </code></pre>
+    OBJECT_ID(N<span class="st">'Person.Address'</span>), <span class="kw">NULL</span>, <span class="kw">NULL</span> , <span class="st">'DETAILED'</span>); 
+<span class="co">-- Column **Avg_fragmentation_in_percent** depicts logical fragmentation</span>
+<span class="co">-- Column **Avg_page_space_used_in_percent** depicts internal fragmentation</span></code></pre>
   </div>
   <p>
    Once identified, fragmentation can be repaired in the following ways:

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1947 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">https://jtkovacs.github.io/REFS/HTML/DBMS.html</a> \> 1959 words </p><table class="TOC"><tr><td>- [Overview of DBMS](#overview-of-dbms)
 	- [Core functionality](#core-functionality)
 	- [DBMS by popularity](#dbms-by-popularity)
 - [Relational DBMS](#relational-dbms)
@@ -221,6 +221,8 @@ FROM sys.dm_db_index_physical_stats (
 SELECT * 
 FROM sys.dm_db_index_physical_stats (DB_ID(N'AdventureWorks'), 
     OBJECT_ID(N'Person.Address'), NULL, NULL , 'DETAILED'); 
+-- Column **Avg_fragmentation_in_percent** depicts logical fragmentation
+-- Column **Avg_page_space_used_in_percent** depicts internal fragmentation
 ```
 Once identified, fragmentation can be repaired in the following ways:
 

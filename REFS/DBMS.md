@@ -185,6 +185,8 @@ FROM sys.dm_db_index_physical_stats (
 SELECT * 
 FROM sys.dm_db_index_physical_stats (DB_ID(N'AdventureWorks'), 
     OBJECT_ID(N'Person.Address'), NULL, NULL , 'DETAILED'); 
+-- Column **Avg_fragmentation_in_percent** depicts logical fragmentation
+-- Column **Avg_page_space_used_in_percent** depicts internal fragmentation
 ```
 Once identified, fragmentation can be repaired in the following ways:
 

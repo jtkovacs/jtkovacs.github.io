@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3444 words
+   &gt; 3389 words
   </p>
   <table class="TOC">
    <tr>
@@ -751,16 +751,11 @@
    </a>
   </h5>
   <p>
-   <strong>
-    <a href="http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf">
-     Multivalued dependency
-    </a>
-   </strong>
-   (MVD),
+   A multivalued dependency
    <code>
-    A↠B
+    A ↠ B
    </code>
-   : A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic:
+   exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic:
    <code>
     if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.
    </code>
@@ -768,57 +763,11 @@
    <code>
     ∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest
    </code>
-   .
+   . MVDs matter for 4NF;
+   <a href="http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf">
+    examples and details here.
+   </a>
   </p>
-  <ul>
-   <li>
-    trivial MVD:
-    <code>
-     A↠B &amp; B⊆A
-    </code>
-    or
-    <code>
-     A∪B ={ all attributes}
-    </code>
-    ; e.g.
-    <code>
-     AB↠B
-    </code>
-   </li>
-   <li>
-    if
-    <code>
-     A→B
-    </code>
-    , then also
-    <code>
-     A↠B
-    </code>
-   </li>
-   <li>
-    intersection rule:
-    <code>
-     A↠B &amp; A↠C ⇒ A↠B⋂C
-    </code>
-   </li>
-   <li>
-    transitive rule:
-    <code>
-     A↠B &amp; B↠C ⇒ A↠C-B
-    </code>
-   </li>
-   <li>
-    a relation A is
-    <strong>
-     decomposed
-    </strong>
-    into B and C if the union of B and C’s attributes contains all of A’s attributes and
-    <code>
-     B⋈C = A
-    </code>
-    (the lossless join property).
-   </li>
-  </ul>
   <h4>
    <a name="normalization-and-integrity">
     Normalization and integrity
@@ -947,6 +896,11 @@
      2
     </sub>
     (A,rest); repeat.
+    <ul>
+     <li>
+      Remove Multivalued dependencies
+     </li>
+    </ul>
    </li>
   </ul>
   <h5>

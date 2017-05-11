@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3483 words
+   &gt; 3488 words
   </p>
   <table class="TOC">
    <tr>
@@ -76,10 +76,25 @@
              <a href="#types-of-attributes">
               Types of attributes
              </a>
+            </li>
+            <li>
+             <a href="#dependencies">
+              Dependencies
+             </a>
              <ul>
               <li>
-               <a href="#dependencies-and-keys">
-                Dependencies and keys
+               <a href="#functional-dependency-and-keys">
+                Functional dependency and keys
+               </a>
+              </li>
+              <li>
+               <a href="#transitive-dependencies">
+                Transitive dependencies
+               </a>
+              </li>
+              <li>
+               <a href="#multivalued-dependencies">
+                Multivalued dependencies
                </a>
               </li>
              </ul>
@@ -603,11 +618,11 @@
     AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.
    </li>
   </ul>
-  <h5>
-   <a name="dependencies-and-keys">
-    Dependencies and keys
+  <h4>
+   <a name="dependencies">
+    Dependencies
    </a>
-  </h5>
+  </h4>
   <p>
    Note that these concepts are important for understanding
    <a href="#normalization-and-integrity">
@@ -618,11 +633,13 @@
   <p>
    Dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. There are different sorts of dependencies.
   </p>
+  <h5>
+   <a name="functional-dependency-and-keys">
+    Functional dependency and keys
+   </a>
+  </h5>
   <p>
-   A
-   <strong>
-    functional dependency
-   </strong>
+   A functional dependency
    <code>
     A → B
    </code>
@@ -698,6 +715,47 @@
    FDs are used in DB compression and query optimization.
   </p>
   <p>
+   displayName (2015): - A primary key or any candidate key is also a determinant while the opposite is not true. - A determinant can uniquely determine one or more attributes in the row. - A candidate key can uniquely determine the entire row.
+  </p>
+  <ul>
+   <li>
+    <strong>
+     keys
+    </strong>
+    AKA identity values are attributes whose closure encompasses all attributes in a relation
+    <ul>
+     <li>
+      Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
+     </li>
+     <li>
+      Candidate Key: Column(s) that can uniquely identify rows in an entity
+     </li>
+     <li>
+      Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”.
+      <ul>
+       <li>
+        INTEGER is most-often the best data type choice
+       </li>
+       <li>
+        Will not change in value
+       </li>
+       <li>
+        Will not be null
+       </li>
+       <li>
+        Narrow field
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h5>
+   <a name="transitive-dependencies">
+    Transitive dependencies
+   </a>
+  </h5>
+  <p>
    Describe what
    <strong>
     Transitive Dependency
@@ -718,6 +776,11 @@
     https://www.thoughtco.com/transitive-dependency-1019760
    </li>
   </ul>
+  <h5>
+   <a name="multivalued-dependencies">
+    Multivalued dependencies
+   </a>
+  </h5>
   <p>
    <strong>
     <a href="http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf">
@@ -785,47 +848,6 @@
      B⋈C = A
     </code>
     (the lossless join property).
-   </li>
-  </ul>
-  <ol start="2" style="list-style-type: decimal">
-   <li>
-    Determinants vs keys
-   </li>
-  </ol>
-  <p>
-   displayName (2015): - A primary key or any candidate key is also a determinant while the opposite is not true. - A determinant can uniquely determine one or more attributes in the row. - A candidate key can uniquely determine the entire row.
-  </p>
-  <ul>
-   <li>
-    <strong>
-     keys
-    </strong>
-    AKA identity values are attributes whose closure encompasses all attributes in a relation
-    <ul>
-     <li>
-      Surrogate Key: Artificial (non-intelligent) column added to entity for the sole purpose of performing Primary Key duties (oftentimes an INTEGER)
-     </li>
-     <li>
-      Candidate Key: Column(s) that can uniquely identify rows in an entity
-     </li>
-     <li>
-      Identify primary keys (may be “natural”, i.e. present in the data, or “synthetic/surrogate”, for DB use alone; may be “concatenated/composite”.
-      <ul>
-       <li>
-        INTEGER is most-often the best data type choice
-       </li>
-       <li>
-        Will not change in value
-       </li>
-       <li>
-        Will not be null
-       </li>
-       <li>
-        Narrow field
-       </li>
-      </ul>
-     </li>
-    </ul>
    </li>
   </ul>
   <h4>

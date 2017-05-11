@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3483 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3488 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -8,7 +8,10 @@
 				- [Associative entities](#associative-entities)
 				- [Superclasses and subclasses](#superclasses-and-subclasses)
 			- [Types of attributes](#types-of-attributes)
-				- [Dependencies and keys](#dependencies-and-keys)
+			- [Dependencies](#dependencies)
+				- [Functional dependency and keys](#functional-dependency-and-keys)
+				- [Transitive dependencies](#transitive-dependencies)
+				- [Multivalued dependencies](#multivalued-dependencies)
 			- [Normalization and integrity](#normalization-and-integrity)
 				- [Entity integrity](#entity-integrity)
 				- [Referential integrity](#referential-integrity)
@@ -126,13 +129,15 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 - **Derived** if its value can be calculated from (an)other attribute(s) (which, per third normal form, it shouldn't be).
 - **Multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.  
 
-##### Dependencies and keys
+#### Dependencies
 
 Note that these concepts are important for understanding [normalization;](#normalization-and-integrity) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity.
 
 Dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. There are different sorts of dependencies.
 
-A **functional dependency** `A → B` exists when the same A (for our purposes, an attribute value called the **determinant)** is linked to a single B (another attribute value, called the **dependent).** The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
+##### Functional dependency and keys
+
+A functional dependency `A → B` exists when the same A (for our purposes, an attribute value called the **determinant)** is linked to a single B (another attribute value, called the **dependent).** The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one value of y, the function output, but a single value of y might correspond to multiple different values of x:
 
 | This is a Function | This is Not a Function | 
 | --- | --- |
@@ -148,22 +153,6 @@ There are a few special cases:
 
 FDs are used in DB compression and query optimization.
 
-Describe what **Transitive Dependency** is and give an example: If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
-
-- transitive property: `A→B & B→C ⇒ A→C`
-- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
-- https://www.thoughtco.com/transitive-dependency-1019760 
-
-__[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf)__ (MVD), `A↠B`: A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic: `if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.` Furthermore, `∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest`.
-
-- trivial MVD: `A↠B & B⊆A` or `A∪B ={ all attributes}`; e.g. `AB↠B`
-- if `A→B`, then also `A↠B`
-- intersection rule: `A↠B & A↠C ⇒ A↠B⋂C`
-- transitive rule: `A↠B & B↠C ⇒ A↠C-B`
-- a relation A is __decomposed__ into B and C if the union of B and C’s attributes contains all of A’s attributes and `B⋈C = A` (the lossless join property). 
-
-2. Determinants vs keys
-
 displayName (2015):
 - A primary key or any candidate key is also a determinant while the opposite is not true.
 - A determinant can uniquely determine one or more attributes in the row.
@@ -177,6 +166,25 @@ displayName (2015):
         - Will not change in value
         - Will not be null
         - Narrow field
+
+##### Transitive dependencies
+
+Describe what **Transitive Dependency** is and give an example: If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z. Transitive dependencies create problems in relational databases so they are typically removed during normalization. As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN. 
+
+- transitive property: `A→B & B→C ⇒ A→C`
+- https://stackoverflow.com/questions/9950367/what-is-wrong-with-a-transitive-dependency 
+- https://www.thoughtco.com/transitive-dependency-1019760 
+
+##### Multivalued dependencies
+
+__[Multivalued dependency](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf)__ (MVD), `A↠B`: A multivalued dependency exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic: `if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.` Furthermore, `∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest`.
+
+- trivial MVD: `A↠B & B⊆A` or `A∪B ={ all attributes}`; e.g. `AB↠B`
+- if `A→B`, then also `A↠B`
+- intersection rule: `A↠B & A↠C ⇒ A↠B⋂C`
+- transitive rule: `A↠B & B↠C ⇒ A↠C-B`
+- a relation A is __decomposed__ into B and C if the union of B and C’s attributes contains all of A’s attributes and `B⋈C = A` (the lossless join property). 
+
 
 
 #### Normalization and integrity

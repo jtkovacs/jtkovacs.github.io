@@ -1402,11 +1402,7 @@
    <strong>
     non-clustered indexes
    </strong>
-   that,
-   <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
-    via doubly linked lists with pointers,
-   </a>
-   provide 'directories' to alternate sort orders, "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d. a).
+   that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d. a).
   </p>
   <ul>
    <li>
@@ -1424,9 +1420,14 @@
    </li>
   </ul>
   <p>
-   Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their
+   <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
+    via doubly linked lists with pointers,
+   </a>
+  </p>
+  <p>
+   Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their doubly-linked
    <em>
-    leaves
+    leaf nodes
    </em>
    in data pages:
   </p>

@@ -804,9 +804,9 @@
   <p>
    Database schemas are normalized to minimize redundancy (limiting storage costs) and to
    <strong>
-    preserve data integrity
+    preserve data integrity.
    </strong>
-   . Normalization is a process of allocating attributes to entities to achieve a certain configuration of
+   Normalization is a process of allocating attributes to entities to achieve a certain configuration of
    <a href="#relationships-between-attributes">
     dependencies
    </a>
@@ -871,7 +871,7 @@
    <a href="https://www.thoughtco.com/transitive-dependency-1019760">
     example from ThoughtCo
    </a>
-   shows how 3NF prevents data anomalies:
+   shows how 3NF prevents data anomalies. There are two FDs (Book → Author, Author → Author_Nationality) and one TD (Book → Author_Nationality):
   </p>
   <table>
    <thead>
@@ -935,20 +935,6 @@
     </tr>
    </tbody>
   </table>
-  <p>
-   Dependencies:
-  </p>
-  <ul>
-   <li>
-    FD: Book → Author
-   </li>
-   <li>
-    FD: Author → Author_Nationality
-   </li>
-   <li>
-    TD: Book → Author_Nationality
-   </li>
-  </ul>
   <p>
    Note the redundancy and the liabilities it creates:
   </p>

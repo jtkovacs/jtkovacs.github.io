@@ -169,7 +169,7 @@ Data must have integrity to be useful and trustworthy. Data integrity [tends to 
 
 ##### Normalization
 
-Database schemas are normalized to minimize redundancy (limiting storage costs) and to **preserve data integrity**. Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
+Database schemas are normalized to minimize redundancy (limiting storage costs) and to **preserve data integrity.** Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
 
 - **1NF:** Rows are unique, columns have a datatype, and all attributes are atomic. This means redundancy is minimized (versus trying to capture a many-to-many relationship in a single table).
 - **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent.
@@ -178,19 +178,13 @@ Database schemas are normalized to minimize redundancy (limiting storage costs) 
 - **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
 
-*This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how 3NF prevents data anomalies:
+*This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how 3NF prevents data anomalies. There are two FDs (Book → Author, Author → Author_Nationality) and one TD (Book → Author_Nationality):
 
 | Author_ID | Author | Book | Author_Nationality | 
 | --- | --- | --- | --- |
 | Auth_001 | Orson Scott Card | Ender's Game | United States | 
 | Auth_001 | Orson Scott Card | Children of the Mind | United States | 
 | Auth_002 | Margaret Atwood | The Handmaid's Tale | Canada 
-
-Dependencies:
-
-- FD: Book → Author
-- FD: Author → Author_Nationality
-- TD: Book → Author_Nationality
 
 Note the redundancy and the liabilities it creates: 
 

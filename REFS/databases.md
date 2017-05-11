@@ -99,18 +99,11 @@ Dependencies exist between attributes; this is not a modeling decision, it is a 
 
 <img src="../ILLOS/fcn.png" align="left">
 
+But not
+
 ![](../ILLOS/not-fcn.png)
 
 
-<figure align="left">
-<img src="../ILLOS/not-fcn.png">
-<figcaption>A function</figcaption>
-</figure>
-
-<figure>
-<img src="../ILLOS/fcn.png"/>
-<figcaption>Not a function</figcaption>
-</figure>
 
 In predicate logic, a FD exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`. This generalizes to multiple attributes: `A1, A2, …, An → B1, B2, …, Bm.` FDs are used in DB compression and query optimization.
 

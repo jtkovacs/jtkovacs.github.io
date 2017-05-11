@@ -140,7 +140,7 @@ Database schemas are normalized to minimize redundancy (limiting storage costs) 
 - **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
 
-*This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how 3NF prevents data anomalies. There are two FDs (Book → Author, Author → Author_Nationality) and one TD (Book → Author_Nationality):
+*This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how 3NF prevents data anomalies. There are two FDs `(Book → Author, Author → Author_Nationality)` and one TD `(Book → Author_Nationality):`
 
 | Author_ID | Author | Book | Author_Nationality | 
 | --- | --- | --- | --- |
@@ -151,7 +151,8 @@ Database schemas are normalized to minimize redundancy (limiting storage costs) 
 Note the redundancy and the liabilities it creates: 
 
 - If you deleted Card's two books, you would remove _him_ as an entity from the database. This is a **deletion anomaly.**
-- 
+- You must add an author to add a book, and vice versa.
+- If an attribute value changes, you need to find and update every occurrence.
 
 "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
 

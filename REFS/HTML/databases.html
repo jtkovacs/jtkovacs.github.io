@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3246 words
+   &gt; 3272 words
   </p>
   <table class="TOC">
    <tr>
@@ -871,7 +871,14 @@
    <a href="https://www.thoughtco.com/transitive-dependency-1019760">
     example from ThoughtCo
    </a>
-   shows how 3NF prevents data anomalies. There are two FDs (Book → Author, Author → Author_Nationality) and one TD (Book → Author_Nationality):
+   shows how 3NF prevents data anomalies. There are two FDs
+   <code>
+    (Book → Author, Author → Author_Nationality)
+   </code>
+   and one TD
+   <code>
+    (Book → Author_Nationality):
+   </code>
   </p>
   <table>
    <thead>
@@ -950,6 +957,10 @@
     </strong>
    </li>
    <li>
+    You must add an author to add a book, and vice versa.
+   </li>
+   <li>
+    If an attribute value changes, you need to find and update every occurrence.
    </li>
   </ul>
   <p>

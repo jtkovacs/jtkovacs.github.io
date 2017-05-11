@@ -367,11 +367,6 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 Common security threats may be categorized by agent:
 
 <table class="bullets">
-<colgroup>
-<col style="width:40%">
-<col style="width:30%">
-<col style="width:30%">
-</colgroup>  
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
 <td style="text-align: left;">
@@ -398,6 +393,11 @@ Common security threats may be categorized by agent:
 <tr><th>Hardware</th> <th>Networks</th> <th>Database</th> <th>DBMS & Applications</th></tr>
 <tr>
 <td style="text-align: left;">
+- Fire, flood, bombs
+- Power loss or surge
+- Radiation and magnets
+- Hardware failure of security mechanisms
+- Equipment theft
 </td> 
 <td style="text-align: left;">
 </td> 

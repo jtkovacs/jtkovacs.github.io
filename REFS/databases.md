@@ -269,13 +269,17 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
-This discussion is based on MS SQL Server, which stores table data (rows) in pages: 
+This discussion is based on MS SQL Server, which stores table data (rows) in pages:
 
 ![](../ILLOS/SQLDataPage.png)
 
 ##### Heaps
 
 A table without a clustered index is called a **heap,** and the order of its contents (i.e., how rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). 
+
+- Table: heap or clustered index
+- Heap with non-clustered indexes
+- Clustered index with non-clustered indexes
 
 ##### Clustered indexes
 

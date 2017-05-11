@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3509 words
+   &gt; 3470 words
   </p>
   <table class="TOC">
    <tr>
@@ -104,11 +104,6 @@
               Integrity
              </a>
              <ul>
-              <li>
-               <a href="#referential-integrity">
-                Referential integrity
-               </a>
-              </li>
               <li>
                <a href="#normalization">
                 Normalization
@@ -793,19 +788,9 @@
     <strong>
      Referential integrity
     </strong>
+    is the assurance that, once one-to-many or many-to-many relationships are separated into different tables, the data is still kept in sync despite updates and deletions. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
    </li>
   </ul>
-  <h5>
-   <a name="referential-integrity">
-    Referential integrity
-   </a>
-  </h5>
-  <p>
-   Referential integrity: enforced by keys (PK-FK pair)
-  </p>
-  <p>
-   Referential Integrity Constraint: Constraint that limits the values in an FK to those that already exist in the PK of the corresponding entity. One table’s primary key may be used in another table as a foreign key, establishing a relationship between the two tables; referential integrity means that the key is consistent across tables. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
-  </p>
   <h5>
    <a name="normalization">
     Normalization

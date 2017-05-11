@@ -80,10 +80,6 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 ## Microsoft SQL Server
 
-- Data types
-- CTE
-- Installing logs and data on different drives gives a performance boost
-
 ### SQL Server Configuration Manager 
 
 Shows every instance of a SQL Server product on a machine; lets you restart a process and enable protocols for communication between client & server.
@@ -104,34 +100,13 @@ USE SQLservername.databasename.schemaname.tablename
 #### Manage tables 
 
 - **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
-- **Filegroup:** A database has a default PRIMARY filegroup but you can create other filegroups, e.g. to hold tables that should be read-only.
+- **Filegroups:** A database has a default PRIMARY filegroup but you can create other filegroups, e.g. to hold tables that should be read-only.
 - **Inspect relationships:**
     - [Database] > [Table] > Keys
     - [Database] > Database diagrams
 
 ```SQL
 CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupname
-```
-
-In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
-
-```SQL
-ALTER DATABASE dbname
-ADD FILEGROUP fgname
-CONTAINS MEMORY_OPTIMIZED_DATA;
-
-ALTER DATABASE dbname
-ADD FILE (Name = ‘fname’, Filename ‘fpath/fname’)
-TO FILEGROUP fgname;
-
-GO
-
-USE dbname
-GO
-
-CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, fdname)
-WITH (MEMORY-OPTIMIZED=ON)
-
 ```
 
 **Temporal tables** (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
@@ -152,6 +127,10 @@ WHERE StockItemName like '%shark%'
 
 ### Manage performance
 
+Installing logs and data on different drives gives a performance boost.
+
+Indexes may also improve performance:
+
 ```SQL
 -- Covering index
 CREATE NONCLUSTERED INDEX IX_Address_PostalCode -- give index a name
@@ -170,6 +149,27 @@ WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same n
     MAXDOP = 2) -- for parallel processing
     ON "default";
 ```
+
+In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
+
+```SQL
+ALTER DATABASE dbname
+ADD FILEGROUP fgname
+CONTAINS MEMORY_OPTIMIZED_DATA;
+
+ALTER DATABASE dbname
+ADD FILE (Name = ‘fname’, Filename ‘fpath/fname’)
+TO FILEGROUP fgname;
+
+GO
+
+USE dbname
+GO
+
+CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, fdname)
+WITH (MEMORY-OPTIMIZED=ON)
+```
+
 
 ### Manage views
 

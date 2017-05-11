@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">
     https://jtkovacs.github.io/REFS/HTML/DBMS.html
    </a>
-   &gt; 1741 words
+   &gt; 1740 words
   </p>
   <table class="TOC">
    <tr>
@@ -363,17 +363,6 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
     Microsoft SQL Server
    </a>
   </h2>
-  <ul>
-   <li>
-    Data types
-   </li>
-   <li>
-    CTE
-   </li>
-   <li>
-    Installing logs and data on different drives gives a performance boost
-   </li>
-  </ul>
   <h3>
    <a name="sql-server-configuration-manager">
     SQL Server Configuration Manager
@@ -425,7 +414,7 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
    </li>
    <li>
     <strong>
-     Filegroup:
+     Filegroups:
     </strong>
     A database has a default PRIMARY filegroup but you can create other filegroups, e.g. to hold tables that should be read-only.
    </li>
@@ -445,6 +434,54 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
   </ul>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fieldname datatype, fielddname datatype ... ) <span class="kw">ON</span> Filegroupname</code></pre>
+  </div>
+  <p>
+   <strong>
+    Temporal tables
+   </strong>
+   (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, 
+[ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
+[ValidFrom] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">START</span>, 
+[ValidTo] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">END</span>, 
+PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))    
+<span class="kw">WITH</span> (SYSTEM_VERSIONING = <span class="kw">ON</span>); 
+
+<span class="kw">SELECT</span> [StockItemName]
+<span class="kw">FROM</span> [WideWorldImporters].[Warehouse].[StockItems]
+<span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
+<span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
+  </div>
+  <h3>
+   <a name="manage-performance">
+    Manage performance
+   </a>
+  </h3>
+  <p>
+   Installing logs and data on different drives gives a performance boost.
+  </p>
+  <p>
+   Indexes may also improve performance:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- Covering index</span>
+<span class="kw">CREATE</span> NONCLUSTERED <span class="kw">INDEX</span> IX_Address_PostalCode <span class="co">-- give index a name</span>
+<span class="kw">ON</span> Person.Address (PostalCode) <span class="co">-- specify table and key</span>
+INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">-- add other fields</span>
+
+<span class="co">-- Filtered index</span>
+<span class="kw">CREATE</span> NONCLUSTERED <span class="kw">INDEX</span> DesignEngineer
+<span class="kw">ON</span> HumanResources.Employee (BusinessEntityID);
+<span class="kw">WHERE</span> JobTitle = <span class="st">'Design Engineer'</span> <span class="co">-- filter</span>
+
+<span class="co">-- Columnstore index</span>
+<span class="kw">CREATE</span> NONCLUSTERED COLUMNSTORE <span class="kw">INDEX</span> csindx_simple 
+<span class="kw">ON</span> SimpleTable (OrderDateKey, DueDateKey, ShipDateKey) 
+<span class="kw">WITH</span> (DROP_EXISTING =  <span class="kw">ON</span>, <span class="co">-- drops and rebuilds an existing index of the same name </span>
+    MAXDOP = <span class="dv">2</span>) <span class="co">-- for parallel processing</span>
+    <span class="kw">ON</span> <span class="ot">"default"</span>;</code></pre>
   </div>
   <p>
    In-memory AKA
@@ -477,48 +514,6 @@ GO
 
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname)
 <span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)</code></pre>
-  </div>
-  <p>
-   <strong>
-    Temporal tables
-   </strong>
-   (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, 
-[ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
-[ValidFrom] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">START</span>, 
-[ValidTo] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">END</span>, 
-PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))    
-<span class="kw">WITH</span> (SYSTEM_VERSIONING = <span class="kw">ON</span>); 
-
-<span class="kw">SELECT</span> [StockItemName]
-<span class="kw">FROM</span> [WideWorldImporters].[Warehouse].[StockItems]
-<span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
-<span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
-  </div>
-  <h3>
-   <a name="manage-performance">
-    Manage performance
-   </a>
-  </h3>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- Covering index</span>
-<span class="kw">CREATE</span> NONCLUSTERED <span class="kw">INDEX</span> IX_Address_PostalCode <span class="co">-- give index a name</span>
-<span class="kw">ON</span> Person.Address (PostalCode) <span class="co">-- specify table and key</span>
-INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">-- add other fields</span>
-
-<span class="co">-- Filtered index</span>
-<span class="kw">CREATE</span> NONCLUSTERED <span class="kw">INDEX</span> DesignEngineer
-<span class="kw">ON</span> HumanResources.Employee (BusinessEntityID);
-<span class="kw">WHERE</span> JobTitle = <span class="st">'Design Engineer'</span> <span class="co">-- filter</span>
-
-<span class="co">-- Columnstore index</span>
-<span class="kw">CREATE</span> NONCLUSTERED COLUMNSTORE <span class="kw">INDEX</span> csindx_simple 
-<span class="kw">ON</span> SimpleTable (OrderDateKey, DueDateKey, ShipDateKey) 
-<span class="kw">WITH</span> (DROP_EXISTING =  <span class="kw">ON</span>, <span class="co">-- drops and rebuilds an existing index of the same name </span>
-    MAXDOP = <span class="dv">2</span>) <span class="co">-- for parallel processing</span>
-    <span class="kw">ON</span> <span class="ot">"default"</span>;</code></pre>
   </div>
   <h3>
    <a name="manage-views">

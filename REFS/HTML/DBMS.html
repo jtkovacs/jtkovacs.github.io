@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/DBMS.html">
     https://jtkovacs.github.io/REFS/HTML/DBMS.html
    </a>
-   &gt; 1744 words
+   &gt; 1796 words
   </p>
   <table class="TOC">
    <tr>
@@ -123,6 +123,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
              <a href="#manage-tables-">
               Manage tables
              </a>
+             <ul>
+              <li>
+               <a href="#datatypes">
+                Datatypes
+               </a>
+              </li>
+              <li>
+               <a href="#temporal-tables">
+                Temporal tables
+               </a>
+              </li>
+             </ul>
             </li>
             <li>
              <a href="#manage-performance">
@@ -452,11 +464,50 @@ SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fieldname datatype, fielddname datatype ... ) <span class="kw">ON</span> Filegroupname</code></pre>
   </div>
+  <h5>
+   <a name="datatypes">
+    Datatypes
+   </a>
+  </h5>
   <p>
-   <strong>
+   <a href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql">
+    Details here;
+   </a>
+   also note that SQL Server's data types are
+   <a href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-type-synonyms-transact-sql">
+    mapped to ISO standard data types.
+   </a>
+  </p>
+  <ul>
+   <li>
+    Exact numeric: NUMERIC, BIGINT, INT, SMALLINT, TINYINT, DECIMAL, BIT, MONEY, SMALLMONEY
+   </li>
+   <li>
+    Approximate numeric: FLOAT, REAL
+   </li>
+   <li>
+    Monetary
+   </li>
+   <li>
+    Date and Time
+   </li>
+   <li>
+    Character
+   </li>
+   <li>
+    Binary
+   </li>
+   <li>
+    Special Purpose
+   </li>
+  </ul>
+  <h5>
+   <a name="temporal-tables">
     Temporal tables
-   </strong>
-   (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
+   </a>
+  </h5>
+  <p>
+   Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can then be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
   </p>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, 

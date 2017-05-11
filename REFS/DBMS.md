@@ -78,6 +78,8 @@ SHOW GRANTS FOR 'demouser'@'localhost';
 
 
 
+
+
 ## Microsoft SQL Server
 
 ### SQL Server Configuration Manager 
@@ -96,7 +98,6 @@ CREATE DATABASE dbname
 
 USE SQLservername.databasename.schemaname.tablename
 ```
-
 #### Manage tables 
 
 - **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
@@ -109,7 +110,21 @@ USE SQLservername.databasename.schemaname.tablename
 CREATE TABLE tname (fieldname datatype, fielddname datatype ... ) ON Filegroupname
 ```
 
-**Temporal tables** (only SQL Server 2016) automatically maintain the history of the table, which can be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
+##### Datatypes
+
+[Details here;](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql) also note that SQL Server's data types are [mapped to ISO standard data types.](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-type-synonyms-transact-sql)
+
+- Exact numeric: NUMERIC, BIGINT, INT, SMALLINT, TINYINT, DECIMAL, BIT, MONEY, SMALLMONEY
+- Approximate numeric: FLOAT, REAL 
+- Monetary 
+- Date and Time 
+- Character 
+- Binary 
+- Special Purpose
+
+##### Temporal tables
+
+Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can then be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
 
 ```SQL
 CREATE TABLE Inventory ([InventoryID] int NOT NULL PRIMARY KEY CLUSTERED, 
@@ -173,12 +188,14 @@ CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, f
 WITH (MEMORY-OPTIMIZED=ON)
 ```
 
-
-
 #### Manage views
 
 - **Create view:** [Database] > [Views] > right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. 
 - **Views can be made persistent to increase performance:** right click view > Script View as > ALTER To > New Query Editor Window > Add “WITH SCHEMABINDING” under “ALTER VIEW” line > Execute > Refresh Object Explorer pane > Right click on Indexes > Clustered index > Add columns.
+
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3502 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3312 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -171,8 +171,8 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 | Normal Form | Requirements | Impact |
 | --- | --- | --- |
-| 1st | Rows are unique; Columns have a datatype; All attributes are atomic; | Redundancy is minimized (versus trying to capture a many-to-many relationship in a single table) |
-| 2nd | | |
+| 1st | Rows are unique, columns have a datatype, and all attributes are atomic | Redundancy is minimized (versus trying to capture a many-to-many relationship in a single table) |
+| 2nd | All columns in a table must be related via functional dependencies; i.e., each column must be a determinant or a dependent |  |
 | 3rd | | |
 | Boyce-Codd | | |
 | 4th | | |
@@ -183,15 +183,6 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 - http://searchsqlserver.techtarget.com/definition/normalization
 - http://psoug.org/reference/normalization.html
 - http://www.bkent.net/Doc/simple5.htm
-
-- “First normal form (1NF). This is the "basic" level of database normalization, and it generally corresponds to the definition of any database, namely:
-    - It contains two-dimensional tables with rows and columns.
-    - Each column corresponds to a sub-object or an attribute of the object represented by the entire table.
-    - Each row represents a unique instance of that sub-object or attribute and must be different in some way from any other row (that is, no duplicate rows are possible).
-    - All entries in any column must be of the same kind. For example, in the column labeled "Customer," only customer names or numbers are permitted.
-
-- Second normal form (2NF). At this level of normalization, each column in a table that is not a determiner of the contents of another column must itself be a function of the other columns in the table. For example, in a table with three columns containing the customer ID, the product sold and the price of the product when sold, the price would be a function of the customer ID (entitled to a discount) and the specific product.
-- 2NF: all fields in the PK are required to determine the non-key fields, i.e., data not dependent on primary key is moved to another table;
 
 - Third normal form (3NF). At the second normal form, modifications are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
 - 3NF: all the non-key fields are independent from other non-key fields, i.e., don’t store calculable data in the database (conduct calculations in SQL), i.e. remove all transitive dependencies

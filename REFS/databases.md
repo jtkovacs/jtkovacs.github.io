@@ -133,7 +133,7 @@ Database schemas are normalized to (1) minimize redundancy in the interest of li
 
 | Normal Form | Requirements | Impact |
 | --- | --- | --- |
-| 1st | Rows are unique; Columns have a datatype; All attributes are atomic; | Redundancy is minimized |
+| 1st | Rows are unique; Columns have a datatype; All attributes are atomic; | Redundancy is minimized (versus trying to capture a many-to-many relationship in a single table) |
 | 2nd | | |
 | 3rd | | |
 | Boyce-Codd | | |

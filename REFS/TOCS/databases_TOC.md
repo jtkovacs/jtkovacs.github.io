@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4041 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4093 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -28,7 +28,7 @@
 				- [How different types of indexes work](#how-different-types-of-indexes-work)
 				- [Fragmentation](#fragmentation)
 - [Database administration](#database-administration)
-	- [Data and log files](#data-and-log-files)
+	- [Files and filegroups](#files-and-filegroups)
 	- [Transaction management](#transaction-management)
 	- [Security](#security)
 		- [Authentication](#authentication)
@@ -378,9 +378,17 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 
 # Database administration
 
-## Data and log files
+## Files and filegroups
 
-A DBMS records _actions_ in its **log file** and data in its **data file** (holding pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files.)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) During backup, the local log file is wiped but the data files are unchanged.
+A DBMS records _actions_ in its **log file** (.LDF) )and data in its **data file** (holding pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files.)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) During backup, the local log file is wiped but the data files are unchanged.
+
+If the main data file (.MDF) exceeds its initially allocated space, there are several options:
+
+- Specify a new size limit
+- Specify a growth rate
+- Move the data file to a larger drive
+- Create multiple data files (.NDF)
+    - Create filegroups to manage multiple data files as one object
 
 ## Transaction management
 

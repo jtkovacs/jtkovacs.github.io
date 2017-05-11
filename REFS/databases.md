@@ -335,9 +335,17 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 
 # Database administration
 
-## Data and log files
+## Files and filegroups
 
-A DBMS records _actions_ in its **log file** and data in its **data file** (holding pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files.)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) During backup, the local log file is wiped but the data files are unchanged.
+A DBMS records _actions_ in its **log file** (.LDF) )and data in its **data file** (holding pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files.)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) During backup, the local log file is wiped but the data files are unchanged.
+
+If the main data file (.MDF) exceeds its initially allocated space, there are several options:
+
+- Specify a new size limit
+- Specify a growth rate
+- Move the data file to a larger drive
+- Create multiple data files (.NDF)
+    - Create filegroups to manage multiple data files as one object
 
 ## Transaction management
 

@@ -294,7 +294,7 @@ Just as heaps and clustered tables store their rows in data pages, non-clustered
 
 ![](../ILLOS/nonclustered-index.png)
 
-Whether pages store rows or leaves, a **B-tree** structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make the pages quickly searchable:
+For heap pages, clustered indexes, and non-clustered indexes alike, a **B-tree** structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make page search more efficient:
 
 <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
 

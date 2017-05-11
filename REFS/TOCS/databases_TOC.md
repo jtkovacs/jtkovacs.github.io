@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3980 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3983 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -337,7 +337,7 @@ Just as heaps and clustered tables store their rows in data pages, non-clustered
 
 ![](../ILLOS/nonclustered-index.png)
 
-Whether pages store rows or leaves, a **B-tree** structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make the pages quickly searchable:
+For heap pages, clustered indexes, and non-clustered indexes alike, a **B-tree** structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make page search more efficient:
 
 <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
 

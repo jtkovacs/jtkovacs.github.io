@@ -369,19 +369,19 @@ Common security threats may be categorized by agent:
 <table class="bullets">
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
-<td style="text-align: left;">
+<td style="text-align: left; width=100px;">
 - Use of person's means of access
 - Inappropriate data sharing
 - Inadequate training
 - Blackmail
 - Unwitting conduit for viruses or hacks
 </td> 
-<td style="text-align: left;">
+<td style="text-align: left; width=100px;">
 - Creation of trapdoor
 - Staff shortages leading to bad code
 - Lack of security training and procedures
 </td> 
-<td style="text-align: left;">
+<td style="text-align: left; width=50px;">
 - Inadequate policies and procedures
 </td> 
 </tr>

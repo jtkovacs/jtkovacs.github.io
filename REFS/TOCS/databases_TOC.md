@@ -413,14 +413,14 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 Common security threats may be categorized by agent:
 
 <table>
-<th><td>Users</td> <td>Developers</td> <td>Administrators</td></th>
+<tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr><td></td> <td></td> <td></td></tr>
 </table>
 
 ... and by target/effect:
 
 <table>
-<th><td>Hardware</td> <td>Networks</td> <td>Database</td> <td>DBMS & Applications</td></th>
+<tr><th>Hardware</th> <th>Networks</th> <th>Database</th> <th>DBMS & Applications</th></tr>
 <tr><td></td> <td></td> <td></td> <td></td></tr>
 </table>
 

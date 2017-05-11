@@ -134,10 +134,10 @@ Data must have integrity to be useful and trustworthy. Data integrity [tends to 
 Database schemas are normalized to (1) minimize redundancy in the interest of limiting storage costs, and **(2) preserve data integrity** (by preventing update and deletion anomalies). Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity. There are five but actually maybe six levels of normalization, with normalization to third normal form the msot frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms refining the basic relational model:
 
 - **1NF:** Rows are unique, columns have a datatype, and all attributes are atomic. This means redundancy is minimized (versus trying to capture a many-to-many relationship in a single table).
-- **2NF:** All columns in a table must be related via [functional dependencies;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent.
-- **3NF:** Remove [transitive dependencies](#transitive-dependencies) and derived attributes, preventing update and deletion anomalies\*.
+- **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be a determinant or a dependent.
+- **3NF:** Remove [TDs](#transitive-dependencies) and derived attributes, preventing update and deletion anomalies\*.
 - **BCNF:** Extreme version of 3NF where, for all FDs `A → B,` A is the PK.
-- **4NF:** Remove [multivalued dependencies,](#multivalued-dependencies) somehow increasing efficiency because there are B+C rather than B\*C tuples??
+- **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
 
 | Normal Form | Requirements | Impact |

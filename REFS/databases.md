@@ -152,7 +152,7 @@ Note the redundancy and the liabilities it creates:
 
 - If you deleted Card's two books, you would remove _him_ as an entity from the database. This is a **deletion anomaly.**
 - You must add an author to add a book, and vice versa.
-- If an attribute value changes, you need to find and update every occurrence.
+- If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not.
 
 "At the second normal form, [improvements] are still possible because a change to one row in a table may affect data that refers to this information from another table. For example, using the customer table just cited, removing a row describing a customer purchase (because of a return, perhaps) will also remove the fact that the product has a certain price. In the third normal form, these tables would be divided into two tables so that product pricing would be tracked separately.”
 

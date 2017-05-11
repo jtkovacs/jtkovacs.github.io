@@ -1406,7 +1406,25 @@
    <strong>
     non-clustered indexes
    </strong>
-   that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d.). Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their
+   that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place" (Winand, n.d.).
+  </p>
+  <ul>
+   <li>
+    When multiple fields are included in a single non-clustered index, this is called a
+    <strong>
+     covering index
+    </strong>
+    because it could "cover" all the fields retrieved in a stored query.
+   </li>
+   <li>
+    When a subset of rows are indexed, this is called a
+    <strong>
+     filtered index.
+    </strong>
+   </li>
+  </ul>
+  <p>
+   Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their
    <strong>
     leaf nodes
    </strong>
@@ -1432,21 +1450,6 @@
   <div class="figure">
    <img src="../ILLOS/B-tree.png"/>
   </div>
-  <ul>
-   <li>
-    When multiple fields are included in a single non-clustered index, this is called a
-    <strong>
-     covering index
-    </strong>
-    because it could "cover" all the fields retrieved in a stored query.
-   </li>
-   <li>
-    When a subset of rows are indexed, this is called a
-    <strong>
-     filtered index.
-    </strong>
-   </li>
-  </ul>
   <p>
    But a
    <strong>

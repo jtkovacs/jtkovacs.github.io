@@ -296,8 +296,7 @@ Just as heaps and clustered tables store their rows in data pages, non-clustered
 
 <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
 
-
-But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 
+Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstore structure, a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns: 
 
 ![](../ILLOS/columnstore.png)
 

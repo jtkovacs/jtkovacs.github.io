@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3971 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3974 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -339,8 +339,7 @@ Just as heaps and clustered tables store their rows in data pages, non-clustered
 
 <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
 
-
-But a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns, using a different storage structure than other indexes: 
+Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstore structure, a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns: 
 
 ![](../ILLOS/columnstore.png)
 

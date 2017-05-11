@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3954 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3949 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -333,10 +333,8 @@ To facilitate a wider range of queries, both heaps and clustered tables may have
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**   
 
-
-[via doubly linked lists with pointers,](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes)
+Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their [doubly linked *leaf nodes*](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) in data pages:
  
-Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their doubly-linked *leaf nodes* in data pages:
 
 - Root node
 - Intermediary node(s)

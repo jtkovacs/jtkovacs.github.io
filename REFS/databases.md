@@ -290,10 +290,8 @@ To facilitate a wider range of queries, both heaps and clustered tables may have
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 - When a subset of rows are indexed, this is called a **filtered index.**   
 
-
-[via doubly linked lists with pointers,](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes)
+Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their [doubly linked *leaf nodes*](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) in data pages:
  
-Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their doubly-linked *leaf nodes* in data pages:
 
 - Root node
 - Intermediary node(s)

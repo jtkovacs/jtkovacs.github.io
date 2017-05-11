@@ -16,12 +16,11 @@ SQL is the standardized language used to access a database. SQL language provide
 - gives row dimension of table: SELECT count(*) FROM tname;
 
 
-# DDL
+## ... a data definition language
 
-## Manipulating tables & views
+### Define databases
 
 ```SQL
-
 create table: CREATE TABLE t (id INT PRIMARY KEY, col1 TYPE(size), col2 TYPE constraint constraint, col3 FOREIGN KEY REFERENCES other_table(fieldname), col4 DEFAULT ‘value’, … ); 
 constraints: NOT NULL, UNIQUE, CHECK, DEFAULT
 autopopulate date: CREATE TABLE tname (order_date date DEFAULT getdate()); 
@@ -41,36 +40,61 @@ autoincrement PK:
  … id INT IDENTITY(#start, #inc) PRIMARY KEY, ...
 … id INT AUTO_INCREMENT(#start, #inc) PRIMARY KEY, …
 CREATE SEQUENCE name START WITH # INCREMENT BY #; CREATE TABLE t ( … id DEFAULT nextval(‘name’) PRIMARY KEY … );
+```
+
+## Manage tables
+
+Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
+
+- int stores numbers from -217483648 to 217483647
+- double & real allow scientific notation: 2.5e4
+- decimal is good for money: DECIMAL(5,2) has 5 digits, of which 2 are after the decimal point
+- varchar(max_length), char(fixed_length) , clob/text is unlimited length , boolean is TRUE/FALSE 
+- date is ‘yyyy-MM-dd’, time is ‘hh:mm:ss’, datetime or timestamp is ‘yyyy-MM-dd hh:mm:ss’
+
+```SQL
+--- delete table: 
+DROP TABLE tname;
+DROP DATABASE dname;
+TRUNCATE TABLE tname;
+
+--- add records: when SELECT is used as an expression in these kinds of queries, it needs to return only one column; 
+--- so it sometimes helps to create a new identifier, say c1*c2*c3
+INSERT INTO tname VALUES (key#, ‘string_value’, NULL, ...);
+
+--- if select returns same schema: 
+INSERT INTO t  (c1, c2) SELECT c1, c2 … 
+
+--- add fields to confom to schema: 
+SELECT col, 12, NULL
+
+INSERT INTO t (col1, colx) VALUES (val, val), (val, val), (val, val)
+
+--- delete records: 
+--- some implementations disallow condition statements with a subquery that includes the affected table
+
+DELETE FROM tname WHERE … 
+
+--- delete all records: 
+
+DELETE FROM table;
+
+--- update records:
+UPDATE tname SET c1=value/subquery, c2=value/subquery WHERE …
+```
+
+### Manage views
+
+
+```SQL
 view data is not stored physically; every time you retrieve data from the view, the database reruns the underlying query.  most databases don't allow inserting new data or updating existing data in views.
 create a view: CREATE VIEW vname AS [query];
 use a view: SELECT * FROM vname;
 DROP VIEW vname;
-
-datatypes: http://www.w3schools.com/sql/sql_datatypes.asp
-int stores numbers from -217483648 to 217483647
-double & real allow scientific notation: 2.5e4
-decimal is good for money: DECIMAL(5,2) has 5 digits, of which 2 are after the decimal point
-varchar(max_length), char(fixed_length) , clob/text is unlimited length , boolean is TRUE/FALSE 
-date is ‘yyyy-MM-dd’, time is ‘hh:mm:ss’, datetime or timestamp is ‘yyyy-MM-dd hh:mm:ss’
-delete table: 
-DROP TABLE tname;
-DROP DATABASE dname;
-TRUNCATE TABLE tname;
-add records: when SELECT is used as an expression in these kinds of queries, it needs to return only one column; so it sometimes helps to create a new identifier, say c1*c2*c3
-INSERT INTO tname VALUES (key#, ‘string_value’, NULL, ...);
-if select returns same schema: INSERT INTO t  (c1, c2) SELECT c1, c2 … 
-add fields to confom to schema: SELECT col, 12, NULL
-INSERT INTO t (col1, colx) VALUES (val, val), (val, val), (val, val)
-delete records: 
-DELETE FROM tname WHERE … 
-some implementations disallow condition statements with a subquery that includes the affected table
-delete all records: DELETE FROM table;
-update records:
- UPDATE tname SET c1=value/subquery, c2=value/subquery WHERE …
 ```
 
 
-# DML
+## ... a data manipulation language
 
 ## Generic query form
 

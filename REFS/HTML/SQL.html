@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
     https://jtkovacs.github.io/REFS/HTML/SQL.html
    </a>
-   &gt; 2238 words
+   &gt; 2274 words
   </p>
   <table class="TOC">
    <tr>
@@ -70,25 +70,35 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           Style guidelines and notation
          </a>
         </li>
-       </ul>
-      </li>
-      <li>
-       <a href="#ddl">
-        DDL
-       </a>
-       <ul>
         <li>
-         <a href="#manipulating-tables-&amp;-views">
-          Manipulating tables &amp; views
+         <a href="#...-a-data-definition-language">
+          ... a data definition language
+         </a>
+         <ul>
+          <li>
+           <a href="#define-databases">
+            Define databases
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#manage-tables">
+          Manage tables
+         </a>
+         <ul>
+          <li>
+           <a href="#manage-views">
+            Manage views
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#...-a-data-manipulation-language">
+          ... a data manipulation language
          </a>
         </li>
-       </ul>
-      </li>
-      <li>
-       <a href="#dml">
-        DML
-       </a>
-       <ul>
         <li>
          <a href="#generic-query-form">
           Generic query form
@@ -198,19 +208,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     gives row dimension of table: SELECT count(*) FROM tname;
    </li>
   </ul>
-  <h1>
-   <a name="ddl">
-    DDL
-   </a>
-  </h1>
   <h2>
-   <a name="manipulating-tables-&amp;-views">
-    Manipulating tables &amp; views
+   <a name="...-a-data-definition-language">
+    ... a data definition language
    </a>
   </h2>
+  <h3>
+   <a name="define-databases">
+    Define databases
+   </a>
+  </h3>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql">
-<span class="kw">create</span> table: <span class="kw">CREATE</span> <span class="kw">TABLE</span> t (<span class="kw">id</span> <span class="dt">INT</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, col1 <span class="kw">TYPE</span>(<span class="kw">size</span>), col2 <span class="kw">TYPE</span> <span class="kw">constraint</span> <span class="kw">constraint</span>, col3 <span class="kw">FOREIGN</span> <span class="kw">KEY</span> <span class="kw">REFERENCES</span> other_table(fieldname), col4 <span class="kw">DEFAULT</span> ‘value’, … ); 
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">create</span> table: <span class="kw">CREATE</span> <span class="kw">TABLE</span> t (<span class="kw">id</span> <span class="dt">INT</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, col1 <span class="kw">TYPE</span>(<span class="kw">size</span>), col2 <span class="kw">TYPE</span> <span class="kw">constraint</span> <span class="kw">constraint</span>, col3 <span class="kw">FOREIGN</span> <span class="kw">KEY</span> <span class="kw">REFERENCES</span> other_table(fieldname), col4 <span class="kw">DEFAULT</span> ‘value’, … ); 
 constraints: <span class="kw">NOT</span> <span class="kw">NULL</span>, <span class="kw">UNIQUE</span>, <span class="kw">CHECK</span>, <span class="kw">DEFAULT</span>
 autopopulate date: <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (order_date <span class="dt">date</span> <span class="kw">DEFAULT</span> getdate()); 
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (… <span class="kw">UNIQUE</span> (col1, col2, …) … );
@@ -228,39 +237,79 @@ multicolumn <span class="kw">foreign</span> key: … <span class="kw">FOREIGN</s
 autoincrement PK:
  … <span class="kw">id</span> <span class="dt">INT</span> IDENTITY(#start, #inc) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, ...
 … <span class="kw">id</span> <span class="dt">INT</span> AUTO_INCREMENT(#start, #inc) <span class="kw">PRIMARY</span> <span class="kw">KEY</span>, …
-<span class="kw">CREATE</span> <span class="kw">SEQUENCE</span> name <span class="kw">START</span> <span class="kw">WITH</span> # <span class="kw">INCREMENT</span> <span class="kw">BY</span> #; <span class="kw">CREATE</span> <span class="kw">TABLE</span> t ( … <span class="kw">id</span> <span class="kw">DEFAULT</span> nextval(‘name’) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> … );
-<span class="kw">view</span> <span class="kw">data</span> <span class="kw">is</span> <span class="kw">not</span> stored physically; every <span class="dt">time</span> you retrieve <span class="kw">data</span> <span class="kw">from</span> <span class="kw">the</span> <span class="kw">view</span>, <span class="kw">the</span> <span class="kw">database</span> reruns <span class="kw">the</span> underlying query.  most databases don<span class="st">'t allow inserting new data or updating existing data in views.</span>
+<span class="kw">CREATE</span> <span class="kw">SEQUENCE</span> name <span class="kw">START</span> <span class="kw">WITH</span> # <span class="kw">INCREMENT</span> <span class="kw">BY</span> #; <span class="kw">CREATE</span> <span class="kw">TABLE</span> t ( … <span class="kw">id</span> <span class="kw">DEFAULT</span> nextval(‘name’) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> … );</code></pre>
+  </div>
+  <h2>
+   <a name="manage-tables">
+    Manage tables
+   </a>
+  </h2>
+  <p>
+   Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
+  </p>
+  <ul>
+   <li>
+    int stores numbers from -217483648 to 217483647
+   </li>
+   <li>
+    double &amp; real allow scientific notation: 2.5e4
+   </li>
+   <li>
+    decimal is good for money: DECIMAL(5,2) has 5 digits, of which 2 are after the decimal point
+   </li>
+   <li>
+    varchar(max_length), char(fixed_length) , clob/text is unlimited length , boolean is TRUE/FALSE
+   </li>
+   <li>
+    date is ‘yyyy-MM-dd’, time is ‘hh:mm:ss’, datetime or timestamp is ‘yyyy-MM-dd hh:mm:ss’
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">--- delete table: </span>
+<span class="kw">DROP</span> <span class="kw">TABLE</span> tname;
+<span class="kw">DROP</span> <span class="kw">DATABASE</span> dname;
+<span class="kw">TRUNCATE</span> <span class="kw">TABLE</span> tname;
+
+<span class="co">--- add records: when SELECT is used as an expression in these kinds of queries, it needs to return only one column; </span>
+<span class="co">--- so it sometimes helps to create a new identifier, say c1*c2*c3</span>
+<span class="kw">INSERT</span> <span class="kw">INTO</span> tname <span class="kw">VALUES</span> (key#, ‘string_value’, <span class="kw">NULL</span>, ...);
+
+<span class="co">--- if select returns same schema: </span>
+<span class="kw">INSERT</span> <span class="kw">INTO</span> t  (c1, c2) <span class="kw">SELECT</span> c1, c2 … 
+
+<span class="co">--- add fields to confom to schema: </span>
+<span class="kw">SELECT</span> col, <span class="dv">12</span>, <span class="kw">NULL</span>
+
+<span class="kw">INSERT</span> <span class="kw">INTO</span> t (col1, colx) <span class="kw">VALUES</span> (val, val), (val, val), (val, val)
+
+<span class="co">--- delete records: </span>
+<span class="co">--- some implementations disallow condition statements with a subquery that includes the affected table</span>
+
+<span class="kw">DELETE</span> <span class="kw">FROM</span> tname <span class="kw">WHERE</span> … 
+
+<span class="co">--- delete all records: </span>
+
+<span class="kw">DELETE</span> <span class="kw">FROM</span> <span class="kw">table</span>;
+
+<span class="co">--- update records:</span>
+<span class="kw">UPDATE</span> tname <span class="kw">SET</span> c1=value/subquery, c2=value/subquery <span class="kw">WHERE</span> …</code></pre>
+  </div>
+  <h3>
+   <a name="manage-views">
+    Manage views
+   </a>
+  </h3>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">view</span> <span class="kw">data</span> <span class="kw">is</span> <span class="kw">not</span> stored physically; every <span class="dt">time</span> you retrieve <span class="kw">data</span> <span class="kw">from</span> <span class="kw">the</span> <span class="kw">view</span>, <span class="kw">the</span> <span class="kw">database</span> reruns <span class="kw">the</span> underlying query.  most databases don<span class="st">'t allow inserting new data or updating existing data in views.</span>
 <span class="st">create a view: CREATE VIEW vname AS [query];</span>
 <span class="st">use a view: SELECT * FROM vname;</span>
-<span class="st">DROP VIEW vname;</span>
-
-<span class="st">datatypes: http://www.w3schools.com/sql/sql_datatypes.asp</span>
-<span class="st">int stores numbers from -217483648 to 217483647</span>
-<span class="st">double &amp; real allow scientific notation: 2.5e4</span>
-<span class="st">decimal is good for money: DECIMAL(5,2) has 5 digits, of which 2 are after the decimal point</span>
-<span class="st">varchar(max_length), char(fixed_length) , clob/text is unlimited length , boolean is TRUE/FALSE </span>
-<span class="st">date is ‘yyyy-MM-dd’, time is ‘hh:mm:ss’, datetime or timestamp is ‘yyyy-MM-dd hh:mm:ss’</span>
-<span class="st">delete table: </span>
-<span class="st">DROP TABLE tname;</span>
-<span class="st">DROP DATABASE dname;</span>
-<span class="st">TRUNCATE TABLE tname;</span>
-<span class="st">add records: when SELECT is used as an expression in these kinds of queries, it needs to return only one column; so it sometimes helps to create a new identifier, say c1*c2*c3</span>
-<span class="st">INSERT INTO tname VALUES (key#, ‘string_value’, NULL, ...);</span>
-<span class="st">if select returns same schema: INSERT INTO t  (c1, c2) SELECT c1, c2 … </span>
-<span class="st">add fields to confom to schema: SELECT col, 12, NULL</span>
-<span class="st">INSERT INTO t (col1, colx) VALUES (val, val), (val, val), (val, val)</span>
-<span class="st">delete records: </span>
-<span class="st">DELETE FROM tname WHERE … </span>
-<span class="st">some implementations disallow condition statements with a subquery that includes the affected table</span>
-<span class="st">delete all records: DELETE FROM table;</span>
-<span class="st">update records:</span>
-<span class="st"> UPDATE tname SET c1=value/subquery, c2=value/subquery WHERE …</span></code></pre>
+<span class="st">DROP VIEW vname;</span></code></pre>
   </div>
-  <h1>
-   <a name="dml">
-    DML
+  <h2>
+   <a name="...-a-data-manipulation-language">
+    ... a data manipulation language
    </a>
-  </h1>
+  </h2>
   <h2>
    <a name="generic-query-form">
     Generic query form

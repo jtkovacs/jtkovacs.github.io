@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3301 words
+   &gt; 3324 words
   </p>
   <table class="TOC">
    <tr>
@@ -1302,7 +1302,19 @@
    </a>
   </h4>
   <p>
-   Indexing accelerates queries but reduces write speed. The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
+   Indexes are
+   <strong>
+    created
+   </strong>
+   to accelerate queries at the expense of write speed
+   <code>
+    (INSERT, UPDATE, DELETE),
+   </code>
+   so they are more common in
+   <a href="information-systems.html#what-are-mis?">
+    reporting databases versus transactional databases.
+   </a>
+   The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
   </p>
   <ul>
    <li>
@@ -1330,6 +1342,13 @@
     is used to improve performance of read-only tables.
    </li>
   </ul>
+  <p>
+   Indexes are
+   <strong>
+    maintained
+   </strong>
+   by:
+  </p>
   <p>
    See:
   </p>

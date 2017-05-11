@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3301 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 3324 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
 	- [The database system lifecycle](#the-database-system-lifecycle)
 	- [History of databases](#history-of-databases)
 		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -302,19 +302,18 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 #### Indexing and performance
 
-Indexing accelerates queries but reduces write speed. The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
+Indexes are **created** to accelerate queries at the expense of write speed `(INSERT, UPDATE, DELETE),` so they are more common in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) The PK is indexed by default, and commonly searched fields may be indexed as well. There are different kinds of indexes:
 
 - **Clustered indexes** determine physical storage ... [sort of.](http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/) There's only one clustered index per table.
 - There can be more than one **non-clustered index** on a table.
 - A **columnstore index** is used to improve performance of read-only tables. 
 
+Indexes are **maintained** by:
+
 See:
 
 - [http://use-the-index-luke.com/sql/table-of-contents](http://use-the-index-luke.com/sql/table-of-contents)
-- [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
-
-
-    
+- [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)    
 
 
 

@@ -369,7 +369,7 @@ Common security threats may be categorized by agent:
 <table class="bullets">
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
-<td>
+<td align="left">
 - Using another person's means of access
 - 
 </td> 

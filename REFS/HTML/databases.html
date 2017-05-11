@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 3589 words
+   &gt; 3609 words
   </p>
   <table class="TOC">
    <tr>
@@ -168,8 +168,8 @@
                </a>
               </li>
               <li>
-               <a href="#index-fragmentation">
-                Index fragmentation
+               <a href="#fragmentation">
+                Fragmentation
                </a>
               </li>
              </ul>
@@ -1394,8 +1394,8 @@
    <img src="../ILLOS/columnstore.png"/>
   </div>
   <h5>
-   <a name="index-fragmentation">
-    Index fragmentation
+   <a name="fragmentation">
+    Fragmentation
    </a>
   </h5>
   <p>
@@ -1422,19 +1422,6 @@
    </li>
   </ul>
   <p>
-   Fragmentation can be identified with a SQL Server dynamic management function
-   <strong>
-    (DMF;
-   </strong>
-   <a href="https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/">
-    read more):
-   </a>
-  </p>
-  <ul>
-   <li>
-   </li>
-  </ul>
-  <p>
    If an index has less than 1000 pages and is in memory (i.e., non-clustered), don't bother removing fragmentation. If an index has &lt;5% logical fragmentation, don't do anything. Otherwise:
   </p>
   <ul>
@@ -1443,30 +1430,45 @@
     <strong>
      reorganize
     </strong>
-    using
-    <code>
-     DBCC INDEXDEFRAG
-    </code>
-    or
-    <code>
-     ALTER INDEX ... REORGANIZE
-    </code>
    </li>
    <li>
     30% &lt; logical fragmentation:
     <strong>
      rebuild
     </strong>
-    using
-    <code>
-     DBCC DBREINDEX
-    </code>
-    or
-    <code>
-     ALTER INDEX ... REBUILD
-    </code>
    </li>
   </ul>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      Characteristic
+     </th>
+     <th align="left">
+      Reorganize
+     </th>
+     <th align="left">
+      Rebuild
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      Online or offline
+     </td>
+     <td align="left">
+      Online
+     </td>
+     <td align="left">
+      Offline as default; online as option
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <p>
+   The extent fragmentation of a heap table (non-indexed) can be reduced by create a clustered index on the table and then dropping the index.
+  </p>
   <p>
    SEE:
   </p>

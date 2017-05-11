@@ -67,7 +67,7 @@ li li strong {
 table.TOC {
     border: solid 1px #e8e8e8;
     background-color: #f8f8f8;
-    width: 75%;
+    width: 950px;
     text-align: left;
 }
 table.TOC td {
@@ -183,7 +183,7 @@ th {
 
 /* Bullets in tables should NOT be indented so far */
 table.OSEMN li {
-    max-width: 200px; 
+    max-width: 100px; 
     margin-left: -15px;
 }
 table.OSEMN ul {

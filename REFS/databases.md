@@ -369,7 +369,6 @@ Common security threats may be categorized by agent:
 <table class="bullets">
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
 <tr>
-</td>
 <td style="text-align: left;">
 - Use of person's means of access
 - Inappropriate data sharing

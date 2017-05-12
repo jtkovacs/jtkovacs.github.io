@@ -1,8 +1,24 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a></p><table class="TOC"><tr><td>- [Sources](#sources)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 132 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
+	- [Reporting](#reporting)
+	- [Interaction](#interaction)
+- [Prototyping](#prototyping)
+	- [Prototyping tools](#prototyping-tools)
+- [Sources](#sources)
 	- [References](#references)
 	- [Read](#read)
 	- [Unread](#unread)
 </td></tr></table>
+
+# Types of interfaces
+
+## Reporting
+
+## Interaction
+
+
+# Prototyping
+
+## Prototyping tools
 
 
 # Sources

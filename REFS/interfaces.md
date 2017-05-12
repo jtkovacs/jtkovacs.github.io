@@ -70,7 +70,7 @@ Secondary
 <tr><th>Term</th><th>Alt Term</th><th>Definition</th></tr>
 <tr><td>Sketch</td><td>Essential UI</td><td>Conceptual model of UI</td></tr>
 <tr><td rowspan="2">Mock-up</td><td>Sketch</td><td>Manual rendering of a screen's appearance</td></tr>
-<tr><td></td><td>Digital rendering of a screen's appearance</td></tr>
+<tr><td>Concrete prototype</td><td>Digital rendering of a screen's appearance</td></tr>
 <tr><td colspan="2">Wireframe</td><td>Shows how screens interrelate</td></tr>
 </table>
 

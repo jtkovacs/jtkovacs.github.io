@@ -67,15 +67,14 @@ Secondary
 # Prototyping
 
 <table>
-<tr><th>Term</th><th>Alt Term</th></tr>
-<tr><td>Sketch</td><td>Essential UI</td></tr>
-<tr><td rowspan="2">Mock-up</td><td>Sketch</td></tr>
-<tr><td></td></tr>
-<tr></tr>
+<tr><th>Term</th><th>Alt Term</th><th>Definition</th></tr>
+<tr><td>Sketch</td><td>Essential UI</td><td>Conceptual model of UI</td></tr>
+<tr><td rowspan="2">Mock-up</td><td>Sketch</td><td>Manual rendering of a screen's appearance</td></tr>
+<tr><td></td><td>Digital rendering of a screen's appearance</td></tr>
+<tr><td colspan="2">Wireframe</td><td>Shows how screens interrelate</td></tr>
 </table>
 
 
-Sketch (conceptual model), mockup (individual pages), wireframe (shows how everything connects)
 
 ## Essential UIs
 

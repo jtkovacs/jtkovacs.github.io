@@ -13,7 +13,7 @@ Per Wroblewski (n.d.), web forms are used in a variety of scenarios:
 - Log in, gain access
 - Data input, give feedback
 
-#### Gathering form requirements and validating forms
+#### Requirements and validation
 
 - **Usability Testing:** Errors, issues, assists, completion rates, time spent 
 per task, satisfaction scores
@@ -23,14 +23,14 @@ per task, satisfaction scores
 - **Site Tracking:** Completion rates, entry points, exit points, elements utilized, data entered 
 - **Eye Tracking:** Number of eye fixations, length of fixations, heat maps, scan paths 
 
-Best practices for form design:
+#### General best practices
 
 - Minimize input with smart defaults, inline validation, forgiving inputs
 - Provide a progress indicator
 - Provide a consistent voice across pages of a form
 - Indicate errors, available help, success
 
-#### Form elements
+#### Best practices by form element
 
 - 
 

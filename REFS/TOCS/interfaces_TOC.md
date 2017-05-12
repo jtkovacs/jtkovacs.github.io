@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 377 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 387 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
 	- [Reporting](#reporting)
 	- [Interaction](#interaction)
 		- [Forms](#forms)
@@ -55,9 +55,9 @@ per task, satisfaction scores
 
 Label positions:
 
-- Label above field: fastest completion times but may be harder to associate label with appropriate field; use if the form represents a familiar task
+- Label above field: fastest completion times but may be harder to associate label with appropriate field; use if the form represents a familiar task and if _vertical space_ isn't an issue
 - Label to left of field: better for associating labels with appropriate fields, but increases (as much as doubles!) form completion time
-    - Right-aligned: Minimizes distance the eye must move, but jagged left edge is harder to process
+    - Right-aligned: Minimizes vertical space and distance the eye must move, but jagged left edge is harder to process
     - Left-aligned: Most time-consuming but labels are easily read
     
     

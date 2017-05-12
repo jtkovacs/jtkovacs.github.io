@@ -5,9 +5,9 @@
 
 ## Interaction
 
-### Web forms
+### Forms
 
-Per Wroblewski (n.d.), web forms are used in a variety of scenarios:
+Per Wroblewski (n.d.), forms are used in a variety of scenarios both on- and offline:
 
 - Shop, conduct transactions
 - Log in, gain access
@@ -34,8 +34,14 @@ per task, satisfaction scores
 
 ##### Layout 
 
-Label positioning 
+Label positions:
 
+- Label above field: fastest completion times but may be harder to associate label with appropriate field; use if the form represents a familiar task
+- Label to left of field: better for associating labels with appropriate fields, but increases (as much as doubles!) form completion time
+    - Right-aligned: Minimizes distance the eye must move, but jagged left edge is harder to process
+    - Left-aligned: Most time-consuming but labels are easily read
+    
+    
 Content groupings 
 
 ##### Input Affordances 

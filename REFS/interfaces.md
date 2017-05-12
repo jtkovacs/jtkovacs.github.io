@@ -9,9 +9,9 @@
 
 Per Wroblewski (n.d.), web forms are used in a variety of scenarios:
 
-- Shopping, conduct transactions
+- Shop, conduct transactions
 - Log in, gain access
-- Data input, give feedback
+- Input data, give feedback
 
 #### Requirements and validation
 
@@ -32,7 +32,28 @@ per task, satisfaction scores
 
 #### Best practices by form element
 
-- 
+##### Layout 
+
+Label positioning 
+
+Content groupings 
+
+##### Input Affordances 
+
+Formats
+
+Required fields 
+
+##### Actions 
+
+Primary 
+
+Secondary 
+
+##### Help & Tips 
+
+##### Visual Hierarchy
+
 
 # Prototyping
 

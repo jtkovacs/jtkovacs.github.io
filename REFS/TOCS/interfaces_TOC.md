@@ -1,10 +1,15 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 281 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 303 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
 	- [Reporting](#reporting)
 	- [Interaction](#interaction)
 		- [Web forms](#web-forms)
 			- [Requirements and validation](#requirements-and-validation)
 			- [General best practices](#general-best-practices)
 			- [Best practices by form element](#best-practices-by-form-element)
+				- [Layout ](#layout-)
+				- [Input Affordances ](#input-affordances-)
+				- [Actions ](#actions-)
+				- [Help & Tips ](#help-&-tips-)
+				- [Visual Hierarchy](#visual-hierarchy)
 - [Prototyping](#prototyping)
 	- [Prototyping tools](#prototyping-tools)
 - [Sources](#sources)
@@ -23,9 +28,9 @@
 
 Per Wroblewski (n.d.), web forms are used in a variety of scenarios:
 
-- Shopping, conduct transactions
+- Shop, conduct transactions
 - Log in, gain access
-- Data input, give feedback
+- Input data, give feedback
 
 #### Requirements and validation
 
@@ -46,7 +51,28 @@ per task, satisfaction scores
 
 #### Best practices by form element
 
-- 
+##### Layout 
+
+Label positioning 
+
+Content groupings 
+
+##### Input Affordances 
+
+Formats
+
+Required fields 
+
+##### Actions 
+
+Primary 
+
+Secondary 
+
+##### Help & Tips 
+
+##### Visual Hierarchy
+
 
 # Prototyping
 

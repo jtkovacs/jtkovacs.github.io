@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 387 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 458 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
 	- [Reporting](#reporting)
 	- [Interaction](#interaction)
 		- [Forms](#forms)
@@ -47,7 +47,7 @@ per task, satisfaction scores
 - Minimize input with smart defaults, inline validation, forgiving inputs
 - Provide a progress indicator
 - Provide a consistent voice across pages of a form
-- Indicate errors, available help, success
+- Indicate errors, available help, reasons for requesting data, success
 
 #### Best practices by form element
 
@@ -60,14 +60,14 @@ Label positions:
     - Right-aligned: Minimizes vertical space and distance the eye must move, but jagged left edge is harder to process
     - Left-aligned: Most time-consuming but labels are easily read
     
-    
 Content groupings 
 
 ##### Input Affordances 
 
-Formats
+Per Norman (), an object has attributes; a person has capabilities; when a person's capabilities combine with an object's attributes, this is an affordance and we can say that the object affords action X.
 
-Required fields 
+- Based on the total number of fields and their relative incidence, choose to mark fields as required or optional 
+- Formats 
 
 ##### Actions 
 
@@ -86,6 +86,8 @@ Secondary
 
 
 # Sources
+
+Norman, D. (2013). _The design of everyday things._ New York City, NY: Basic Books.
 
 Wroblewski, L. (n.d.). Best practices for form design [presentation slides]. 
 

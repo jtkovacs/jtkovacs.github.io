@@ -67,10 +67,10 @@ Secondary
 # Prototyping
 
 <table>
-<tr><td>Term</td><td>Alt Term</td></tr>
-<tr><td>Sketch</td></tr>
-<tr></tr>
-<tr></tr>
+<tr><th>Term</th><th>Alt Term</th></tr>
+<tr><td>Sketch</td><td>Essential UI</td></tr>
+<tr><td rowspan="2">Mock-up</td><td>Sketch</td></tr>
+<tr><td></td></tr>
 <tr></tr>
 </table>
 

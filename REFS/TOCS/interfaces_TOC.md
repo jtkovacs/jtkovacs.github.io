@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 545 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 547 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
 	- [Reporting](#reporting)
 	- [Interaction](#interaction)
 		- [Forms](#forms)
@@ -88,10 +88,10 @@ Secondary
 # Prototyping
 
 <table>
-<tr><td>Term</td><td>Alt Term</td></tr>
-<tr><td>Sketch</td></tr>
-<tr></tr>
-<tr></tr>
+<tr><th>Term</th><th>Alt Term</th></tr>
+<tr><td>Sketch</td><td>Essential UI</td></tr>
+<tr><td rowspan="2">Mock-up</td><td>Sketch</td></tr>
+<tr><td></td></tr>
 <tr></tr>
 </table>
 

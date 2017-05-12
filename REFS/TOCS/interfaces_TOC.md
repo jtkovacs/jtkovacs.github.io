@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 554 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 568 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
 	- [Reporting](#reporting)
 	- [Interaction](#interaction)
 		- [Forms](#forms)
@@ -107,6 +107,8 @@ http://www.agilemodeling.com/artifacts/essentialUI.htm
 
 
 # Sources
+
+Ambler, S. (n.d.). User interface (UI) prototypes: An Agile introduction. (n.d.). Retrieved from [http://agilemodeling.com/artifacts/uiPrototype.htm](http://agilemodeling.com/artifacts/uiPrototype.htm)
 
 Norman, D. (2013). _The design of everyday things._ New York City, NY: Basic Books.
 

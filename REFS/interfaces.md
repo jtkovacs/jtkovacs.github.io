@@ -87,6 +87,8 @@ http://www.agilemodeling.com/artifacts/essentialUI.htm
 
 # Sources
 
+Ambler, S. (n.d.). User interface (UI) prototypes: An Agile introduction. (n.d.). Retrieved from [http://agilemodeling.com/artifacts/uiPrototype.htm](http://agilemodeling.com/artifacts/uiPrototype.htm)
+
 Norman, D. (2013). _The design of everyday things._ New York City, NY: Basic Books.
 
 Wroblewski, L. (n.d.). Best practices for form design [presentation slides]. 

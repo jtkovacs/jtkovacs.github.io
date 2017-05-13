@@ -9,8 +9,6 @@ import sys
 
 # LOAD MARKDOWN FILE & GITHUB LOGIN
 os.chdir('/home/jtk/Site')
-uname = sys.argv[1]
-pw = sys.argv[2]
 fname = '/home/jtk/Site/REFS/'+sys.argv[3]
 fhand = open(fname, 'r')
 
@@ -105,8 +103,8 @@ fhand.write(my_soup.prettify())
 f = html_out.split("/")[-1]
 subprocess.run(['git', 'add', '.'])
 subprocess.run(['git', 'commit', '-m', 'Changes to {}'.format(f)])
-#subprocess.run(['git', 'push'])
-# Here, need to pass uname and pw, strings, to git push's interactive dialogue
-# https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
-subprocess.run(['git', 'push', '--repo', 'https://'+uname+':'+pw+'@github.com/'+uname+'/jtkovacs.github.io.git'])
+# http://stackoverflow.com/a/24547289
+uname = sys.argv[1]
+pw = sys.argv[2]
+subprocess.run(['git', 'push', '-q', '--repo', 'https://'+uname+':'+pw+'@github.com/'+uname+'/jtkovacs.github.io.git'])
 

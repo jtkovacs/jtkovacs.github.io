@@ -1,4 +1,10 @@
 
+# Types of data visualizations
+
+Source: Eckerson, W., & Hammond, M. (2011). Visual reporting and analysis. TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
+
+![](../ILLOS/viz-types.png)
+
 # What are Tufte's design principles?
 
 Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.

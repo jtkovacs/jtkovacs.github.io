@@ -1,4 +1,5 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-viz.html">https://jtkovacs.github.io/REFS/HTML/data-viz.html</a></p><table class="TOC"><tr><td>- [What are Tufte's design principles?](#what-are-tufte's-design-principles?)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-viz.html">https://jtkovacs.github.io/REFS/HTML/data-viz.html</a> \> 501 words </p><table class="TOC"><tr><td>- [Types of data visualizations](#types-of-data-visualizations)
+- [What are Tufte's design principles?](#what-are-tufte's-design-principles?)
 - [Data viz in Python](#data-viz-in-python)
 - [Data viz in R](#data-viz-in-r)
 - [Sources](#sources)
@@ -6,6 +7,12 @@
 	- [Read](#read)
 	- [Unread](#unread)
 </td></tr></table>
+
+# Types of data visualizations
+
+Source: Eckerson, W., & Hammond, M. (2011). Visual reporting and analysis. TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
+
+![](../ILLOS/viz-types.png)
 
 # What are Tufte's design principles?
 

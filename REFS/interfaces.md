@@ -5,6 +5,12 @@
 
 ## Interaction
 
+### Multimedia
+
+### Data
+
+[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html]
+
 ### Forms
 
 Per Wroblewski (n.d.), forms are used in a variety of scenarios both on- and offline:
@@ -66,6 +72,8 @@ Secondary
 
 # Prototyping
 
+Per Ambler, n.d.:
+
 <table>
 <tr><th>Term</th><th>Alt Term</th><th>Definition</th></tr>
 <tr><td>Sketch</td><td>Essential UI</td><td>Conceptual model of UI</td></tr>
@@ -84,6 +92,8 @@ http://www.agilemodeling.com/artifacts/essentialUI.htm
 
 ## Prototyping tools
 
+[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html]
+[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/3GB44RS2/prototyping-tools.html]
 
 # Sources
 

@@ -1,6 +1,8 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 568 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 895 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
 	- [Reporting](#reporting)
 	- [Interaction](#interaction)
+		- [Multimedia](#multimedia)
+		- [Data](#data)
 		- [Forms](#forms)
 			- [Requirements and validation](#requirements-and-validation)
 			- [General best practices](#general-best-practices)
@@ -24,7 +26,54 @@
 
 ## Reporting
 
+Source: Eckerson, W., & Hammond, M. (2011). Visual reporting and analysis. TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
+
+Focus on requirements first . 
+Focus first on what information users need and how they plan to use the 
+dashboard, rather than how they want to view the data it contains.
+Deliver high-quality data .
+ Populate the visual environment with high-quality data, or even the 
+prettiest pictures won’t have any value for users.
+Prototype
+ .
+ Get user feedback on the data and design before rolling into production.
+Know your users .
+ Different types of users—executives, managers, power users, and front-line 
+workers—have different visualization requirements. 
+Recruit design experts . 
+Don’t attempt visual design without an expert to guide you.
+Iterate
+ . 
+You’ll never create the perfect design the first time, and needs and preferences change. So 
+iterate continuously to improve and adapt your designs.
+Less is more .
+ Don’t clutter your displays with useless decoration or other content that obscures the 
+most important messages that the data needs to convey.
+Zero to three . 
+Ideally, users should be able to view all pertinent data at a glance without clicking. 
+Then, they should be able to view details of any top-level metric in three clicks or fewer.
+Balance sparsity and density . 
+Good visuals are sparse, showing only what’s necessary. Yet they are also 
+dense, showing all information necessary. Balancing sparsity and density is an art.
+Group related elements .
+ One way to balance sparsity and density is to use tabs to group related data. 
+Evolution
+ .
+ Visual preferences change over time and as users become more familiar with the data and 
+the visual environment. As a rule, design visual displays to be sparse at the start and then become 
+denser over time.
+Leverage templates .
+ Create a standard look and feel with standard graph types, fonts, labels, and 
+colors. Using templates is a great way to improve usabi
+
+
 ## Interaction
+
+### Multimedia
+
+### Data
+
+[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html]
 
 ### Forms
 
@@ -87,6 +136,8 @@ Secondary
 
 # Prototyping
 
+Per Ambler, n.d.:
+
 <table>
 <tr><th>Term</th><th>Alt Term</th><th>Definition</th></tr>
 <tr><td>Sketch</td><td>Essential UI</td><td>Conceptual model of UI</td></tr>
@@ -105,6 +156,8 @@ http://www.agilemodeling.com/artifacts/essentialUI.htm
 
 ## Prototyping tools
 
+[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html]
+[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/3GB44RS2/prototyping-tools.html]
 
 # Sources
 

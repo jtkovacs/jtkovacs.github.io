@@ -84,6 +84,8 @@ Per Pomerantz (2015), metadata stored internally is authoritative but static; me
 
 AKA structured data??
 
+There should be a distinction here between data serialization formats (e.g. JSON, XML, YAML) and data models (RDF); not sure how this relates to the concepts of file format, markup, and encoding.
+
 ### HTML 
 
 ## XML

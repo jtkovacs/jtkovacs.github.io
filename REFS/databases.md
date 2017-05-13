@@ -500,6 +500,7 @@ Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from [http://use-the-index-
 
 ## Unread
 
+- [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
 - [How does a relational database work?](http://coding-geek.com/how-databases-work/)
 - [Indexes &amp; Transactions](https://lagunita.stanford.edu/courses/DB/Indexes/SelfPaced/about)
 - [Constraints &amp; Triggers](https://lagunita.stanford.edu/courses/DB/Constraints/SelfPaced/about)

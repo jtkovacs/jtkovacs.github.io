@@ -1,23 +1,16 @@
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Access.html">https://jtkovacs.github.io/REFS/HTML/Access.html</a> \> 863 words </p><table class="TOC"><tr><td>- [MS Access objects](#ms-access-objects)
+- [Data types](#data-types)
+- [Administration](#administration)
+- [Improving navigability](#improving-navigability)
+- [SQL dialect novelties](#sql-dialect-novelties)
+- [Sharing an Access database](#sharing-an-access-database)
+	- [Splitting a database](#splitting-a-database)
+	- [Migrating to Microsoft SQL Server](#migrating-to-microsoft-sql-server)
+- [Sources](#sources)
+	- [References](#references)
+</td></tr></table>
 
-
-
-
-# Relational DBMS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Microsoft Access
+# MS Access objects
 
 An Access database is made up of different objects:
 
@@ -57,7 +50,7 @@ An Access database is made up of different objects:
 
 Objects might not be immediately visible; right click on “All Access Objects”, choose “Navigation Options” from the resulting menu, and check “Show Hidden Objects”.
 
-### Data types
+# Data types
 
 - Short text, long text
     - Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
@@ -73,7 +66,15 @@ Objects might not be immediately visible; right click on “All Access Objects�
     - Lookup list is dynamic, based on a query --> leave the “Hide key column” check box selected
     - Lookup value list is static, good for a small number of relatively fixed values
 
-### Administration
+
+
+    
+    
+    
+    
+    
+    
+# Administration
 
 Optimize: 
 
@@ -91,7 +92,9 @@ Get information:
 - Database Tools > Object Dependencies
 - Database Tools > Database Documenter 
 
-### Improving navigability
+
+
+# Improving navigability
 
 - Create custom groups to replace the default Tables/Forms/Queries in the lefthand navigation pane
 - Design View of tables/queries/etc. lets you add descriptions and tool tips for fields
@@ -100,18 +103,22 @@ Get information:
     - Name macro autoexec to run it on launch
     - Bypass by holding shift key while opening database
 
-### SQL dialect novelties
+    
+    
+    
+    
+# SQL dialect novelties
 
 - Date delimiter: BETWEEN #00/00/0000# AND #00/00/0000#
 
 
 
-### Sharing an Access database
+# Sharing an Access database
 
 - [https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446](https://support.office.com/en-us/article/Ways-to-share-an-Access-desktop-database-03822632-da43-4d8f-ba2a-68da245a0446)
 - [How to Make MS Access Database Executable](https://www.youtube.com/watch?v=aylQNvVDPsg)
 
-#### Splitting a database
+## Splitting a database
 
 Why split a database? Database performance can be improved by splitting the database: tables in one file, all other objects (like queries, forms, and reports) in another. 
 
@@ -133,7 +140,7 @@ How? Database Tools > Access Database > Database Splitter wizard.
   - Backup plan?
   - https://support.microsoft.com/en-us/kb/162522: "When you distribute your application, instruct a network or system administrator to run the Setup program for your back-end database on the network file server first ... After Setup install the appropriate files on the file server, instruct all users to run the setup program for your front-end database. This setup program sets up your main application and all of the Microsoft Access run-time files on each user's computer."
 
-#### Migrating to Microsoft SQL Server
+## Migrating to Microsoft SQL Server
 
 - [Migrating Access Databases to SQL Server](https://www.lynda.com/Access-tutorials/Migrating-Access-Databases-SQL-Server/397389-2.html)
   
@@ -142,44 +149,13 @@ How? Database Tools > Access Database > Database Splitter wizard.
   
   
 
-  
-# Graph DBMS
-
-## PoolParty
+ 
 
 
 
-## Neo4j
-
-The **editor** accepts input:
-
-- [Cypher queries](Cypher.html) to work with graph data
-- Client-side commands available, e.g. ```:help```
-- Run query: `ctrl+enter`
-- Multiline command: `shift+enter`
-
-The **stream** displays output:
-
-- Clear stream: `:clear`
-- Monitor: `:play sysinfo`
-
-
-
-  
-  
 
 # Sources
 
 ## References
 
 - [http://allenbrowne.com/tips.html](http://allenbrowne.com/tips.html)
-
-## Read
-
-## Unread
-
-- [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
-- [Core Concepts for SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Core-Concepts/385693-2.html)
-- [Storage in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Storage/385694-2.html)
-- [Data Manipulation in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Creating-Manipulating-Data/385697-2.html)
-

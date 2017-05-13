@@ -107,4 +107,6 @@ subprocess.run(['git', 'add', '.'])
 subprocess.run(['git', 'commit', '-m', 'Changes to {}'.format(f)])
 #subprocess.run(['git', 'push'])
 # Here, need to pass uname and pw, strings, to git push's interactive dialogue
-subprocess.run(['git', 'push', '--repo', 'https://{'+uname+'}:{'+pw+'}@github.com/{'+uname+'}/{jtkovacs.github.io}.git'])
+# https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+subprocess.run(['git', 'push', '--repo', 'https://'+uname+':'+pw+'@github.com/'+uname+'/jtkovacs.github.io.git'])
+

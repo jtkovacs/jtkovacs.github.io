@@ -7,13 +7,13 @@ import subprocess
 import sys
 
 
-# LOAD MARKDOWN FILE
+# LOAD MARKDOWN FILE & GITHUB LOGIN
 os.chdir('/home/jtk/Site')
+uname = sys.argv[1]
+pw = sys.argv[2]
 fname = '/home/jtk/Site/REFS/'+sys.argv[3]
 fhand = open(fname, 'r')
 
-print(sys.argv[1])
-print(sys.argv[2])
 
 # SAVE HEADERS, EXCLUDING COMMENTS IN CODE CHUNKS
 headers = list()
@@ -105,4 +105,6 @@ fhand.write(my_soup.prettify())
 f = html_out.split("/")[-1]
 subprocess.run(['git', 'add', '.'])
 subprocess.run(['git', 'commit', '-m', 'Changes to {}'.format(f)])
-subprocess.run(['git', 'push'])
+#subprocess.run(['git', 'push'])
+# Here, need to pass uname and pw, strings, to git push's interactive dialogue
+subprocess.run(['git', 'push', '--repo', 'https://{'+uname+'}:{'+pw+'}@github.com/{'+uname+'}/{jtkovacs.github.io}.git'])

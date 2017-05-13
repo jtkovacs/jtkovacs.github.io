@@ -1,3 +1,4 @@
+
 # Prototyping
 
 Prototyping is the practice of making a simple, quick, cheap, etc. versions of a future product, and getting user input on those versions before moving on to production. 
@@ -20,12 +21,20 @@ Per Ambler, n.d. and my friend Clint:
 
 ### Mock-ups
 
+- [http://agilemodeling.com/artifacts/uiPrototype.htm](http://agilemodeling.com/artifacts/uiPrototype.htm)
+
 ### Wireframes
 
 ## Interface prototyping tools
 
 - [http://uxmag.com/articles/bringing-relevant-content-into-your-designs](http://uxmag.com/articles/bringing-relevant-content-into-your-designs)
 - [https://www.cooper.com/prototyping-tools](https://www.cooper.com/prototyping-tools)
+
+
+
+
+
+
 
 
 # Types of interfaces
@@ -51,9 +60,12 @@ A summary of best practies from Eckerson and Hammond (2011):
     - "Ideally, users should be able to view all pertinent data at a glance without clicking. Then, they should be able to view details of any top-level metric in three clicks or fewer."
     - Keep data, not decorative elements, at the forefront
 
-[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html](file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html)
+[http://uxmag.com/articles/bringing-relevant-content-into-your-designs](http://uxmag.com/articles/bringing-relevant-content-into-your-designs)
+    
+    
+    
 
-## Interaction
+## Interactive interfaces
 
 ### Forms
 
@@ -115,9 +127,6 @@ Secondary
 
 
 ### Multimedia
-
-
-
 
 
 

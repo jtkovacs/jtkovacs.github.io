@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+  </title>
+  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+ </head>
+ <body>
+  <p id="path">
+   <a href="../../pkb.html">
+    https://jtkovacs.github.io/pkb.html
+   </a>
+   &gt;
+   <a href="https://jtkovacs.github.io/REFS/HTML/MySQL.html">
+    https://jtkovacs.github.io/REFS/HTML/MySQL.html
+   </a>
+   &gt; 98 words
+  </p>
+  <table class="TOC">
+   <tr>
+    <td>
+     <ul>
+      <li>
+       <a href="#mysql">
+        MySQL
+       </a>
+       <ul>
+        <li>
+         <a href="#manage-databases">
+          Manage databases
+         </a>
+        </li>
+        <li>
+         <a href="#manage-users">
+          Manage users
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </td>
+   </tr>
+  </table>
+  <h1>
+   <a name="mysql">
+    MySQL
+   </a>
+  </h1>
+  <p>
+   <a href="https://www.phpmyadmin.net/">
+    phpMyAdmin
+   </a>
+   is a MySQL GUI, or you can work with MySQL from Bash:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">/usr/bin/mysql</span> -u [uname] -p [pwd]
+<span class="kw">quit;</span>
+
+<span class="kw">/var/log/mysql/error.log</span>
+<span class="co"># errors log location </span>
+
+<span class="kw">less</span> my.cnf
+<span class="co"># view configs</span></code></pre>
+  </div>
+  <h2>
+   <a name="manage-databases">
+    Manage databases
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">DATABASE</span> dname;
+
+SHOW DATABASES;</code></pre>
+  </div>
+  <h2>
+   <a name="manage-users">
+    Manage users
+   </a>
+  </h2>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> <span class="fu">User</span>, Host, <span class="kw">Password</span> <span class="kw">FROM</span> mysql.user;
+<span class="co">-- view users</span>
+
+<span class="kw">INSERT</span> <span class="kw">INTO</span> mysql.user (<span class="fu">User</span>,Host,<span class="kw">Password</span>) <span class="kw">VALUES</span>(<span class="st">'username'</span>,<span class="st">'localhost'</span>,<span class="kw">PASSWORD</span>(<span class="st">'pwd'</span>)); 
+<span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>;
+<span class="co">-- add user</span>
+
+<span class="kw">UPDATE</span> mysql.user <span class="kw">SET</span> <span class="kw">Password</span> = <span class="kw">PASSWORD</span>(<span class="st">'pwd'</span>) <span class="kw">WHERE</span> <span class="fu">User</span> = <span class="st">'root'</span>; 
+<span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>;
+<span class="co">-- change password</span>
+ 
+<span class="kw">GRANT</span> <span class="kw">ALL</span> <span class="kw">PRIVILEGES</span> <span class="kw">ON</span> demodb.* <span class="kw">to</span> demouser@localhost; 
+<span class="kw">FLUSH</span> <span class="kw">PRIVILEGES</span>; 
+SHOW GRANTS <span class="kw">FOR</span> <span class="st">'demouser'</span>@<span class="st">'localhost'</span>;
+<span class="co">-- grant privileges</span></code></pre>
+  </div>
+ </body>
+</html>

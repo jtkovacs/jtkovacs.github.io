@@ -12,6 +12,8 @@ os.chdir('/home/jtk/Site')
 fname = '/home/jtk/Site/REFS/'+sys.argv[1]
 fhand = open(fname, 'r')
 
+if sys.argv[2]: 
+    print(sys.argv[2])
 
 # SAVE HEADERS, EXCLUDING COMMENTS IN CODE CHUNKS
 headers = list()

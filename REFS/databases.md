@@ -10,12 +10,12 @@ A **database** is a either (1) collection of data that's structured according to
 A [DBMS](DBMS.html) is either a **database engine** for interacting with the database plus a **database frontend** for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Typical DBMS offer:
 
 - A convenient language with two data sublanguages:
-    - Data definition language **(DDL)** expresses the schema stored in the system catalog AKA data directory/dictionary; 
+    - Data definition language **(DDL)** expresses the schema; 
     - Data manipulation language **(DML),**
-        - enables CRUD operations (create, read, update, delete);
-        - includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
+        - enables **CRUD operations** (create, read, update, delete);
+        - includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect (because partial);
         - may be procedural or, as with SQL, nonprocedural/declarative;
-- Access to database metadata through the system catalog;
+- Access to database metadata (includes schema) through the system catalog AKA data directory, data dictionary;
 - Support for concurrent access (data sharing);
 - Enforcement of access authorization (security);
 - Enforcement of constraints on data input (integrity);

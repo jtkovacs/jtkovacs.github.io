@@ -1,3 +1,17 @@
+# Neo4j
+
+The **editor** accepts input:
+
+- [Cypher queries](Cypher.html) to work with graph data
+- Client-side commands available, e.g. ```:help```
+- Run query: `ctrl+enter`
+- Multiline command: `shift+enter`
+
+The **stream** displays output:
+
+- Clear stream: `:clear`
+- Monitor: `:play sysinfo`
+
 # Cypher
 
 ## Create

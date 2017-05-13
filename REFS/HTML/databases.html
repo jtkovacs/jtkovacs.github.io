@@ -17,7 +17,7 @@
    <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
     https://jtkovacs.github.io/REFS/HTML/databases.html
    </a>
-   &gt; 4343 words
+   &gt; 4471 words
   </p>
   <table class="TOC">
    <tr>
@@ -28,6 +28,16 @@
         What is a database?
        </a>
        <ul>
+        <li>
+         <a href="#what-isa-dbms?">
+          What isa DBMS?
+         </a>
+        </li>
+        <li>
+         <a href="#what-is-a-database-system?">
+          What is a database system?
+         </a>
+        </li>
         <li>
          <a href="#the-database-system-lifecycle">
           The database system lifecycle
@@ -321,6 +331,11 @@
    </a>
    for other major data models); or (2) this structured data plus a database management system (DBMS).
   </p>
+  <h2>
+   <a name="what-isa-dbms?">
+    What isa DBMS?
+   </a>
+  </h2>
   <p>
    A
    <a href="DBMS.html">
@@ -334,11 +349,62 @@
    <strong>
     database frontend
    </strong>
-   for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). See
-   <a href="DBMS.html#core-functionality">
-    notes on typical DBMS functionality.
-   </a>
+   for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Typical DBMS functionality includes:
   </p>
+  <ul>
+   <li>
+    A convenient language offering two data sublanguages:
+    <ul>
+     <li>
+      A data definition language
+      <strong>
+       (DDL)
+      </strong>
+      that expresses a schema, stored in the system catalog AKA data directory, data dictionary;
+     </li>
+     <li>
+      A data manipulation language
+      <strong>
+       (DML),
+      </strong>
+      <ul>
+       <li>
+        which enables CRUD operations (create, read, update, delete);
+       </li>
+       <li>
+        which includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
+       </li>
+       <li>
+        which may be procedural or, as with SQL, nonprocedural/declarative;
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Access to database metadata through the system catalog;
+   </li>
+   <li>
+    Support for concurrent access (data sharing);
+   </li>
+   <li>
+    Enforcement of access authorization (security);
+   </li>
+   <li>
+    Enforcement of constraints on data input (integrity);
+   </li>
+   <li>
+    Backup and recovery;
+   </li>
+   <li>
+    Views that are customized to the needs of specific audiences.
+   </li>
+  </ul>
+  <h2>
+   <a name="what-is-a-database-system?">
+    What is a database system?
+   </a>
+  </h2>
   <p>
    A
    <strong>

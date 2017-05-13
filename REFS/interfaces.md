@@ -16,13 +16,13 @@ Per Ambler, n.d. and my friend Clint:
 
 ### Sketches
 
-http://www.agilemodeling.com/artifacts/essentialUI.htm
+- [http://www.agilemodeling.com/artifacts/essentialUI.htm](http://www.agilemodeling.com/artifacts/essentialUI.htm)
 
 ### Mock-ups
 
 ### Wireframes
 
-## Prototyping tools
+## Interface prototyping tools
 
 - [http://uxmag.com/articles/bringing-relevant-content-into-your-designs](http://uxmag.com/articles/bringing-relevant-content-into-your-designs)
 - [https://www.cooper.com/prototyping-tools](https://www.cooper.com/prototyping-tools)

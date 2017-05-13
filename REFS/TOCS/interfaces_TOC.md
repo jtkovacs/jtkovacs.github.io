@@ -1,9 +1,9 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 766 words </p><table class="TOC"><tr><td>- [Prototyping](#prototyping)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 768 words </p><table class="TOC"><tr><td>- [Prototyping](#prototyping)
 	- [Types of interface prototypes](#types-of-interface-prototypes)
 		- [Sketches](#sketches)
 		- [Mock-ups](#mock-ups)
 		- [Wireframes](#wireframes)
-	- [Prototyping tools](#prototyping-tools)
+	- [Interface prototyping tools](#interface-prototyping-tools)
 - [Types of interfaces](#types-of-interfaces)
 	- [Reporting dashboards](#reporting-dashboards)
 	- [Interaction](#interaction)
@@ -41,13 +41,13 @@ Per Ambler, n.d. and my friend Clint:
 
 ### Sketches
 
-http://www.agilemodeling.com/artifacts/essentialUI.htm
+- [http://www.agilemodeling.com/artifacts/essentialUI.htm](http://www.agilemodeling.com/artifacts/essentialUI.htm)
 
 ### Mock-ups
 
 ### Wireframes
 
-## Prototyping tools
+## Interface prototyping tools
 
 - [http://uxmag.com/articles/bringing-relevant-content-into-your-designs](http://uxmag.com/articles/bringing-relevant-content-into-your-designs)
 - [https://www.cooper.com/prototyping-tools](https://www.cooper.com/prototyping-tools)

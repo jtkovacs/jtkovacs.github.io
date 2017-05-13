@@ -1,10 +1,16 @@
-# What is Cypher?
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Neo4j.html">https://jtkovacs.github.io/REFS/HTML/Neo4j.html</a> \> 228 words </p><table class="TOC"><tr><td>- [Cypher](#cypher)
+	- [Create](#create)
+		- [Nodes](#nodes)
+		- [Relationships (edges)](#relationships-(edges))
+	- [Retrieve](#retrieve)
+		- [Recommend ](#recommend-)
+		- [Analyze queries](#analyze-queries)
+</td></tr></table>
+# Cypher
 
-Cypher is the query language for the [graph database Neo4j.](DBMS.html#neo4j)
+## Create
 
-# Create
-
-## Nodes
+### Nodes
 
 This makes a node **named** "ee" with **label** "Person" and **attributes** "name", "from", and "klout":
 
@@ -19,7 +25,7 @@ CREATE (js:Person { name: "Johan", from: "Sweden", learn: "surfing" }),
 (ir:Person { name: "Ian", from: "England", title: "author" })
 ```
 
-## Relationships (edges)
+### Relationships (edges)
 
 ```SQL
 CREATE (node_name)-[:RELATIONSHIP_NAME {relationship_attribute: value}] -> (node_name)
@@ -28,7 +34,7 @@ CREATE (ee)-[:KNOWS {since: 2001}]->(js), (ee)-[:KNOWS {rating: 5}]->(ir)
 ```
 
 
-# Retrieve
+## Retrieve
 
 Find a nodel labeled "Person" and named "Emil":
 
@@ -46,7 +52,7 @@ Find all Emil's friends by:
 MATCH (ee:Person)-[:KNOWS]-(friends) WHERE ee.name = "Emil" RETURN ee, friends
 ```
 
-## Recommend 
+### Recommend 
 
 Recommend a similar friend of friend by:
 
@@ -60,7 +66,7 @@ WHERE js.name = "Johan" AND surfer.hobby = "surfing"
 RETURN DISTINCT surfer
 ```
 
-## Analyze queries
+### Analyze queries
 
 ```SQL
 PROFILE MATCH ...

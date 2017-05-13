@@ -7,14 +7,14 @@ _These notes are heavily influenced by Dr. Simon Wu-Ping Wang's slides as well a
 
 A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.html#information-structures) for other major data models); or (2) this structured data plus a database management system (DBMS). 
 
-A [DBMS](DBMS.html) is either a **database engine** for interacting with the database plus a **database frontend** for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Typical DBMS functionality includes:
+A [DBMS](DBMS.html) is either a **database engine** for interacting with the database plus a **database frontend** for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Typical DBMS offer:
 
-- A convenient language offering two data sublanguages:
-    - A data definition language **(DDL)** that expresses a schema, stored in the system catalog AKA data directory, data dictionary; 
-    - A data manipulation language **(DML),**
-        - which enables CRUD operations (create, read, update, delete);
-        - which includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
-        - which may be procedural or, as with SQL, nonprocedural/declarative;
+- A convenient language with two data sublanguages:
+    - Data definition language **(DDL)** expresses the schema stored in the system catalog AKA data directory/dictionary; 
+    - Data manipulation language **(DML),**
+        - enables CRUD operations (create, read, update, delete);
+        - includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect;
+        - may be procedural or, as with SQL, nonprocedural/declarative;
 - Access to database metadata through the system catalog;
 - Support for concurrent access (data sharing);
 - Enforcement of access authorization (security);

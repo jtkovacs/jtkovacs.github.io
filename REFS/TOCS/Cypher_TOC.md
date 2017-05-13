@@ -1,13 +1,14 @@
-<p id="path">https://jtkovacs.github.io/REFS/HTML/Cypher.html</p><table class="TOC"><tr><td>- [Create](#create)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Cypher.html">https://jtkovacs.github.io/REFS/HTML/Cypher.html</a> \> 240 words </p><table class="TOC"><tr><td>- [What is Cypher?](#what-is-cypher?)
+- [Create](#create)
 	- [Nodes](#nodes)
 	- [Relationships (edges)](#relationships-(edges))
 - [Retrieve](#retrieve)
 	- [Recommend ](#recommend-)
 	- [Analyze queries](#analyze-queries)
 </td></tr></table>
+# What is Cypher?
 
-
-
+Cypher is the query language for the [graph database Neo4j.](DBMS.html#neo4j)
 
 # Create
 

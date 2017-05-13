@@ -1,6 +1,6 @@
+# What is Cypher?
 
-
-
+Cypher is the query language for the [graph database Neo4j.](DBMS.html#neo4j)
 
 # Create
 

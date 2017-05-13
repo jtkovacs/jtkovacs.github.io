@@ -12,3 +12,5 @@ SPARQL is a query language for [databases](databases.html) that use [RDF](RDF.ht
 ## Read
 
 ## Not read
+
+-

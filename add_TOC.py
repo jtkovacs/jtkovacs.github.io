@@ -107,4 +107,4 @@ subprocess.run(['git', 'commit', '-m', 'Changes to {}'.format(f)])
 uname = sys.argv[1]
 pw = sys.argv[2]
 subprocess.run(['git', 'push', '-q', '--repo', 'https://'+uname+':'+pw+'@github.com/'+uname+'/jtkovacs.github.io.git'])
-
+subprocess.run(['git', 'fetch'])

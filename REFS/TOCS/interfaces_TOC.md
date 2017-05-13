@@ -1,8 +1,12 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 730 words </p><table class="TOC"><tr><td>- [Types of interfaces](#types-of-interfaces)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 766 words </p><table class="TOC"><tr><td>- [Prototyping](#prototyping)
+	- [Types of interface prototypes](#types-of-interface-prototypes)
+		- [Sketches](#sketches)
+		- [Mock-ups](#mock-ups)
+		- [Wireframes](#wireframes)
+	- [Prototyping tools](#prototyping-tools)
+- [Types of interfaces](#types-of-interfaces)
 	- [Reporting dashboards](#reporting-dashboards)
 	- [Interaction](#interaction)
-		- [Multimedia](#multimedia)
-		- [Data](#data)
 		- [Forms](#forms)
 			- [Requirements and validation](#requirements-and-validation)
 			- [General best practices](#general-best-practices)
@@ -12,15 +16,42 @@
 				- [Actions ](#actions-)
 				- [Help & Tips ](#help-&-tips-)
 				- [Visual Hierarchy](#visual-hierarchy)
-- [Prototyping](#prototyping)
-	- [Essential UIs](#essential-uis)
-	- [UIs](#uis)
-	- [Prototyping tools](#prototyping-tools)
+		- [Multimedia](#multimedia)
 - [Sources](#sources)
+	- [Cited](#cited)
 	- [References](#references)
 	- [Read](#read)
 	- [Unread](#unread)
 </td></tr></table>
+# Prototyping
+
+Prototyping is the practice of making a simple, quick, cheap, etc. versions of a future product, and getting user input on those versions before moving on to production. 
+
+## Types of interface prototypes
+
+Per Ambler, n.d. and my friend Clint:
+
+<table>
+<tr><th>Term</th><th>Alt Term</th><th>Definition</th></tr>
+<tr><td>Sketch</td><td>Essential UI</td><td>Conceptual model of UI</td></tr>
+<tr><td rowspan="2">Mock-up</td><td>Sketch</td><td>Manual rendering of a screen's appearance</td></tr>
+<tr><td>Concrete prototype</td><td>Digital rendering of a screen's appearance</td></tr>
+<tr><td colspan="2">Wireframe</td><td>Shows how screens interrelate</td></tr>
+</table>
+
+### Sketches
+
+http://www.agilemodeling.com/artifacts/essentialUI.htm
+
+### Mock-ups
+
+### Wireframes
+
+## Prototyping tools
+
+- [http://uxmag.com/articles/bringing-relevant-content-into-your-designs](http://uxmag.com/articles/bringing-relevant-content-into-your-designs)
+- [https://www.cooper.com/prototyping-tools](https://www.cooper.com/prototyping-tools)
+
 
 # Types of interfaces
 
@@ -45,14 +76,9 @@ A summary of best practies from Eckerson and Hammond (2011):
     - "Ideally, users should be able to view all pertinent data at a glance without clicking. Then, they should be able to view details of any top-level metric in three clicks or fewer."
     - Keep data, not decorative elements, at the forefront
 
+[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html](file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html)
 
 ## Interaction
-
-### Multimedia
-
-### Data
-
-[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html]
 
 ### Forms
 
@@ -113,32 +139,22 @@ Secondary
 ##### Visual Hierarchy
 
 
-# Prototyping
-
-Per Ambler, n.d. and my friend Clint:
-
-<table>
-<tr><th>Term</th><th>Alt Term</th><th>Definition</th></tr>
-<tr><td>Sketch</td><td>Essential UI</td><td>Conceptual model of UI</td></tr>
-<tr><td rowspan="2">Mock-up</td><td>Sketch</td><td>Manual rendering of a screen's appearance</td></tr>
-<tr><td>Concrete prototype</td><td>Digital rendering of a screen's appearance</td></tr>
-<tr><td colspan="2">Wireframe</td><td>Shows how screens interrelate</td></tr>
-</table>
+### Multimedia
 
 
 
-## Essential UIs
 
-http://www.agilemodeling.com/artifacts/essentialUI.htm
 
-## UIs
 
-## Prototyping tools
 
-[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/KT5TSK8M/bringing-relevant-content-into-your-designs.html]
-[file:///home/jtk/.mozilla/firefox/mwad0hks.default/zotero/storage/3GB44RS2/prototyping-tools.html]
+
+
+
+
 
 # Sources
+
+## Cited
 
 Ambler, S. (n.d.). User interface (UI) prototypes: An Agile introduction. (n.d.). Retrieved from [http://agilemodeling.com/artifacts/uiPrototype.htm](http://agilemodeling.com/artifacts/uiPrototype.htm)
 

@@ -18,23 +18,19 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 
+```SQL
+CREATE TABLE
+    [ database_name . [ schema_name ] . | schema_name . ] table_name   
+    ( { <column_definition> } [ ,...n ] )   
+[ ; ]  
+```
+
 - KEYWORD
 - _user-supplied parameter_
 - <syntax block label> ::=
 - Braces are uptyped for:
     - {required syntax items}
     - [optional syntax items]
-    
-```SQL
-CREATE TABLE   
-    [ database_name . [ schema_name ] . | schema_name . ] table_name   
-    ( { <column_definition> } [ ,...n ] )   
-[ ; ]  
-```
-    
-For example, in the preceding code:
-
-- 
 
 
 ## Manage objects

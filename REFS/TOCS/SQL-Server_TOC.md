@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 887 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 880 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
 	- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
 	- [SQL Server Management Studio](#sql-server-management-studio)
 - [T-SQL](#t-sql)
@@ -41,23 +41,19 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 
+```SQL
+CREATE TABLE
+    [ database_name . [ schema_name ] . | schema_name . ] table_name   
+    ( { <column_definition> } [ ,...n ] )   
+[ ; ]  
+```
+
 - KEYWORD
 - _user-supplied parameter_
 - <syntax block label> ::=
 - Braces are uptyped for:
     - {required syntax items}
     - [optional syntax items]
-    
-```SQL
-CREATE TABLE   
-    [ database_name . [ schema_name ] . | schema_name . ] table_name   
-    ( { <column_definition> } [ ,...n ] )   
-[ ; ]  
-```
-    
-For example, in the preceding code:
-
-- 
 
 
 ## Manage objects

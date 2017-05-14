@@ -13,5 +13,10 @@
     - $ PUSH 'Commit message'
     
     
-I think to finish TOC.py I need to combine calculation of nr with header extraction:
+I think to finish TOC.py I need to combine calculation of nr with header extraction, maybe using functions:
 
+- for each line in input.md, extract headers
+- for each header, calculate number prefix: 
+    - find its header level
+    - for headers[1:], find the header level of the preceeding header
+- 

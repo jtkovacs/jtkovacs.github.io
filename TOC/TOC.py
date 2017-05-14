@@ -40,7 +40,6 @@ for row in fhand:
 ## Initialize counters and containers
 hlevels = [len(h.split(' ')[0]) for h in headers]
 hcount = {1:0, 2:0, 3:0, 4:0, 5:0}
-#h1,h2,h3,h4,h5 = (0,0,0,0,0)
 
 TOC = list()
 

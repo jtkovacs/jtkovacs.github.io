@@ -14,7 +14,7 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 # T-SQL
 
-## Documentation legend
+## Legend
 
 Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 

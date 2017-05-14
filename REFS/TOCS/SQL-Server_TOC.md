@@ -1,6 +1,7 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 764 words </p><table class="TOC"><tr><td>- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 778 words </p><table class="TOC"><tr><td>- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
 - [SQL Server Management Studio](#sql-server-management-studio)
 	- [Manage databases](#manage-databases)
+	- [Manage schemas](#manage-schemas)
 	- [Manage tables ](#manage-tables-)
 		- [Datatypes](#datatypes)
 		- [Temporal tables](#temporal-tables)
@@ -32,6 +33,18 @@ CREATE DATABASE dbname
 
 USE SQLservername.databasename.schemaname.tablename
 ```
+
+## Manage schemas
+
+- [https://stackoverflow.com/questions/1062075/why-do-table-names-in-sql-server-start-with-dbo](https://stackoverflow.com/questions/1062075/why-do-table-names-in-sql-server-start-with-dbo)
+- [http://www.sqlteam.com/article/understanding-the-difference-between-owners-and-schemas-in-sql-server](http://www.sqlteam.com/article/understanding-the-difference-between-owners-and-schemas-in-sql-server)
+
+```SQL
+CREATE SCHEMA sname AUTHORIZATION [???]
+
+```
+
+
 ## Manage tables 
 
 - **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”

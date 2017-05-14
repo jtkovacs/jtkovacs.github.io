@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">
     https://jtkovacs.github.io/REFS/HTML/SQL-Server.html
    </a>
-   &gt; 821 words
+   &gt; 854 words
   </p>
   <table class="TOC">
    <tr>
@@ -69,7 +69,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        <a href="#sql-server-management-studio">
         SQL Server Management Studio
        </a>
+      </li>
+      <li>
+       <a href="#t-sql">
+        T-SQL
+       </a>
        <ul>
+        <li>
+         <a href="#syntax-documentation-legend">
+          Syntax documentation legend
+         </a>
+        </li>
         <li>
          <a href="#manage-databases">
           Manage databases
@@ -188,41 +198,46 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </strong>
     lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
    </li>
+  </ul>
+  <h1>
+   <a name="t-sql">
+    T-SQL
+   </a>
+  </h1>
+  <h2>
+   <a name="syntax-documentation-legend">
+    Syntax documentation legend
+   </a>
+  </h2>
+  <p>
+   Per Buyham and Guyer (2017), the syntax for
+   <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/statements">
+    syntax documentation of T-SQL commands
+   </a>
+   uses the following conventions:
+  </p>
+  <ul>
    <li>
-    <strong>
-     Syntax legend:
-    </strong>
-    <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql">
-     how to interpret syntax documentation
-    </a>
-    of
-    <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/statements">
-     T-SQL commands
-    </a>
+    KEYWORD
+   </li>
+   <li>
+    <em>
+     user-supplied parameter
+    </em>
+   </li>
+   <li>
+    <syntax block="" label="">
+     ::=
+    </syntax>
+   </li>
+   <li>
+    Don't type the braces for:
     <ul>
      <li>
-      KEYWORD
+      {required syntax items}
      </li>
      <li>
-      <em>
-       user-supplied parameter
-      </em>
-     </li>
-     <li>
-      <syntax block="" label="">
-       ::=
-      </syntax>
-     </li>
-     <li>
-      Don't type the braces for:
-      <ul>
-       <li>
-        {required syntax items}
-       </li>
-       <li>
-        (optional syntax items)
-       </li>
-      </ul>
+      (optional syntax items)
      </li>
     </ul>
    </li>
@@ -541,11 +556,24 @@ GO
     Cited
    </a>
   </h2>
+  <p>
+   Buyham, R. &amp; Guyer, C. (2017, March 14). Transact-SQL Syntax Conventions-Transact-SQL. Microsoft. Retrieved from
+   <a class="uri" href="https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql">
+    https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql
+   </a>
+  </p>
   <h2>
    <a name="references">
     References
    </a>
   </h2>
+  <ul>
+   <li>
+    <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/statements">
+     Syntax documentation of T-SQL commands
+    </a>
+   </li>
+  </ul>
   <h2>
    <a name="read">
     Read

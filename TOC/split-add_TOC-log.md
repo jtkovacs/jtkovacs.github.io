@@ -19,4 +19,9 @@ I think to finish TOC.py I need to combine calculation of nr with header extract
 - for each header, calculate number prefix: 
     - find its header level
     - for headers[1:], find the header level of the preceeding header
-- 
+
+    
+Also add to page header:
+
+- estimated reading duration
+- date of last update

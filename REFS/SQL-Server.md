@@ -6,14 +6,20 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 - **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
 - **SQL Server Profiler:** lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
-- **Syntax legend:** [how to interpret syntax documentation](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql) of [T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements)
-    - KEYWORD
-    - _user-supplied parameter_
-    - <syntax block label> ::=
-    - Don't type the braces for:
-        - {required syntax items}
-        - (optional syntax items)
 
+# T-SQL
+
+## Syntax documentation legend
+
+Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
+
+- KEYWORD
+- _user-supplied parameter_
+- <syntax block label> ::=
+- Don't type the braces for:
+    - {required syntax items}
+    - (optional syntax items)
+    
 
 ## Manage databases
 
@@ -182,7 +188,11 @@ WITH (MEMORY-OPTIMIZED=ON)
 
 ## Cited
 
+Buyham, R. & Guyer, C. (2017, March 14). Transact-SQL Syntax Conventions-Transact-SQL. Microsoft. Retrieved from [https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql)
+
 ## References
+
+- [Syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements)
 
 ## Read
 

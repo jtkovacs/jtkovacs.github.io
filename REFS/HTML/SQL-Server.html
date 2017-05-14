@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">
     https://jtkovacs.github.io/REFS/HTML/SQL-Server.html
    </a>
-   &gt; 778 words
+   &gt; 797 words
   </p>
   <table class="TOC">
    <tr>
@@ -188,6 +188,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </strong>
     lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
    </li>
+   <li>
+    <strong>
+     Syntax legend:
+    </strong>
+    <a href="https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql">
+     how to interpret syntax documentation of T-SQL commands
+    </a>
+   </li>
   </ul>
   <h2>
    <a name="manage-databases">
@@ -217,7 +225,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">SCHEMA</span> sname <span class="kw">AUTHORIZATION</span> [???]</code></pre>
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">SCHEMA</span> sname <span class="kw">AUTHORIZATION</span> [dbo]</code></pre>
   </div>
   <h2>
    <a name="manage-tables">
@@ -252,7 +260,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fieldname IDENTITY(seed, <span class="kw">increment</span>), fielddname datatype ... ) <span class="kw">ON</span> Filegroupname</code></pre>
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> tname 
+    (
+    fieldname IDENTITY(seed, <span class="kw">increment</span>), 
+    fielddname datatype, 
+    ... 
+    ) 
+    <span class="kw">ON</span> Filegroupname;
+    
+<span class="co">-- Add field to existing table</span>
+<span class="kw">CREATE</span></code></pre>
   </div>
   <h3>
    <a name="datatypes">

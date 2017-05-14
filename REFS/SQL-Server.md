@@ -6,6 +6,7 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 - **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
 - **SQL Server Profiler:** lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
+- **Syntax legend:** [how to interpret syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql) 
 
 ## Manage databases
 
@@ -21,8 +22,7 @@ USE SQLservername.databasename.schemaname.tablename
 - [http://www.sqlteam.com/article/understanding-the-difference-between-owners-and-schemas-in-sql-server](http://www.sqlteam.com/article/understanding-the-difference-between-owners-and-schemas-in-sql-server)
 
 ```SQL
-CREATE SCHEMA sname AUTHORIZATION [???]
-
+CREATE SCHEMA sname AUTHORIZATION [dbo]
 ```
 
 
@@ -35,8 +35,18 @@ CREATE SCHEMA sname AUTHORIZATION [???]
     - [Database] > Database diagrams
 
 ```SQL
-CREATE TABLE tname (fieldname IDENTITY(seed, increment), fielddname datatype ... ) ON Filegroupname
+CREATE TABLE tname 
+    (
+    fieldname IDENTITY(seed, increment), 
+    fielddname datatype, 
+    ... 
+    ) 
+    ON Filegroupname;
+    
+-- Add field to existing table
+CREATE
 ```
+
 
 ### Datatypes
 

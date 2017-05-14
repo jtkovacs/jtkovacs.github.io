@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">
     https://jtkovacs.github.io/REFS/HTML/SQL-Server.html
    </a>
-   &gt; 854 words
+   &gt; 887 words
   </p>
   <table class="TOC">
    <tr>
@@ -250,15 +250,28 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </syntax>
    </li>
    <li>
-    Don't type the braces for:
+    Braces are uptyped for:
     <ul>
      <li>
       {required syntax items}
      </li>
      <li>
-      (optional syntax items)
+      [optional syntax items]
      </li>
     </ul>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span>   
+    [ database_name . [ schema_name ] . | schema_name . ] table_name   
+    ( { &lt;column_definition&gt; } [ ,...n ] )   
+[ ; ]  </code></pre>
+  </div>
+  <p>
+   For example, in the preceding code:
+  </p>
+  <ul>
+   <li>
    </li>
   </ul>
   <h2>

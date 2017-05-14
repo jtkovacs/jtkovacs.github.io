@@ -21,10 +21,20 @@ Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL comma
 - KEYWORD
 - _user-supplied parameter_
 - <syntax block label> ::=
-- Don't type the braces for:
+- Braces are uptyped for:
     - {required syntax items}
-    - (optional syntax items)
+    - [optional syntax items]
     
+```SQL
+CREATE TABLE   
+    [ database_name . [ schema_name ] . | schema_name . ] table_name   
+    ( { <column_definition> } [ ,...n ] )   
+[ ; ]  
+```
+    
+For example, in the preceding code:
+
+- 
 
 
 ## Manage objects

@@ -88,31 +88,43 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          </a>
         </li>
         <li>
-         <a href="#manage-databases">
-          Manage databases
-         </a>
-        </li>
-        <li>
-         <a href="#manage-schemas">
-          Manage schemas
-         </a>
-        </li>
-        <li>
-         <a href="#manage-tables-">
-          Manage tables
+         <a href="#manage-objects">
+          Manage objects
          </a>
          <ul>
           <li>
-           <a href="#datatypes">
-            Datatypes
+           <a href="#databases">
+            Databases
            </a>
           </li>
           <li>
-           <a href="#temporal-tables">
-            Temporal tables
+           <a href="#schemas">
+            Schemas
            </a>
           </li>
+          <li>
+           <a href="#tables-">
+            Tables
+           </a>
+           <ul>
+            <li>
+             <a href="#datatypes">
+              Datatypes
+             </a>
+            </li>
+            <li>
+             <a href="#temporal-tables">
+              Temporal tables
+             </a>
+            </li>
+           </ul>
+          </li>
          </ul>
+        </li>
+        <li>
+         <a href="#manage-views">
+          Manage views
+         </a>
         </li>
         <li>
          <a href="#manage-performance">
@@ -140,11 +152,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
            </a>
           </li>
          </ul>
-        </li>
-        <li>
-         <a href="#manage-views">
-          Manage views
-         </a>
         </li>
        </ul>
       </li>
@@ -255,20 +262,25 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <h2>
-   <a name="manage-databases">
-    Manage databases
+   <a name="manage-objects">
+    Manage objects
    </a>
   </h2>
+  <h3>
+   <a name="databases">
+    Databases
+   </a>
+  </h3>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">DATABASE</span> dbname
 
 <span class="kw">USE</span> SQLservername.databasename.schemaname.tablename</code></pre>
   </div>
-  <h2>
-   <a name="manage-schemas">
-    Manage schemas
+  <h3>
+   <a name="schemas">
+    Schemas
    </a>
-  </h2>
+  </h3>
   <ul>
    <li>
     <a class="uri" href="https://stackoverflow.com/questions/1062075/why-do-table-names-in-sql-server-start-with-dbo">
@@ -284,11 +296,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">SCHEMA</span> sname <span class="kw">AUTHORIZATION</span> [dbo]</code></pre>
   </div>
-  <h2>
-   <a name="manage-tables">
-    Manage tables
+  <h3>
+   <a name="tables">
+    Tables
    </a>
-  </h2>
+  </h3>
   <ul>
    <li>
     <strong>
@@ -328,11 +340,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co">-- Add field to existing table</span>
 <span class="kw">CREATE</span></code></pre>
   </div>
-  <h3>
+  <h4>
    <a name="datatypes">
     Datatypes
    </a>
-  </h3>
+  </h4>
   <p>
    <a href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql">
     Details here;
@@ -395,11 +407,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </ul>
    </li>
   </ul>
-  <h3>
+  <h4>
    <a name="temporal-tables">
     Temporal tables
    </a>
-  </h3>
+  </h4>
   <p>
    Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can then be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
   </p>
@@ -416,6 +428,25 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
 <span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
 <span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
   </div>
+  <h2>
+   <a name="manage-views">
+    Manage views
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <strong>
+     Create view:
+    </strong>
+    [Database] &gt; [Views] &gt; right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data.
+   </li>
+   <li>
+    <strong>
+     Views can be made persistent to increase performance:
+    </strong>
+    right click view &gt; Script View as &gt; ALTER To &gt; New Query Editor Window &gt; Add “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; Execute &gt; Refresh Object Explorer pane &gt; Right click on Indexes &gt; Clustered index &gt; Add columns.
+   </li>
+  </ul>
   <h2>
    <a name="manage-performance">
     Manage performance
@@ -539,25 +570,6 @@ GO
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname)
 <span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)</code></pre>
   </div>
-  <h2>
-   <a name="manage-views">
-    Manage views
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <strong>
-     Create view:
-    </strong>
-    [Database] &gt; [Views] &gt; right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data.
-   </li>
-   <li>
-    <strong>
-     Views can be made persistent to increase performance:
-    </strong>
-    right click view &gt; Script View as &gt; ALTER To &gt; New Query Editor Window &gt; Add “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; Execute &gt; Refresh Object Explorer pane &gt; Right click on Indexes &gt; Clustered index &gt; Add columns.
-   </li>
-  </ul>
   <h1>
    <a name="sources">
     Sources

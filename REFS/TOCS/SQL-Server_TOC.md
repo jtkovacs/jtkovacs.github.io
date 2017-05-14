@@ -3,17 +3,18 @@
 	- [SQL Server Management Studio](#sql-server-management-studio)
 - [T-SQL](#t-sql)
 	- [Documentation legend](#documentation-legend)
-	- [Manage databases](#manage-databases)
-	- [Manage schemas](#manage-schemas)
-	- [Manage tables ](#manage-tables-)
-		- [Datatypes](#datatypes)
-		- [Temporal tables](#temporal-tables)
+	- [Manage objects](#manage-objects)
+		- [Databases](#databases)
+		- [Schemas](#schemas)
+		- [Tables ](#tables-)
+			- [Datatypes](#datatypes)
+			- [Temporal tables](#temporal-tables)
+	- [Manage views](#manage-views)
 	- [Manage performance](#manage-performance)
 		- [Splitting the database](#splitting-the-database)
 		- [Creating indexes](#creating-indexes)
 		- [Fixing index fragmentation](#fixing-index-fragmentation)
 		- [Creating memory-optimized tables](#creating-memory-optimized-tables)
-	- [Manage views](#manage-views)
 - [Sources](#sources)
 	- [Cited](#cited)
 	- [References](#references)
@@ -48,8 +49,10 @@ Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL comma
     - (optional syntax items)
     
 
+
+## Manage objects
     
-## Manage databases
+### Databases
 
 ```SQL
 CREATE DATABASE dbname
@@ -57,7 +60,7 @@ CREATE DATABASE dbname
 USE SQLservername.databasename.schemaname.tablename
 ```
 
-## Manage schemas
+### Schemas
 
 - [https://stackoverflow.com/questions/1062075/why-do-table-names-in-sql-server-start-with-dbo](https://stackoverflow.com/questions/1062075/why-do-table-names-in-sql-server-start-with-dbo)
 - [http://www.sqlteam.com/article/understanding-the-difference-between-owners-and-schemas-in-sql-server](http://www.sqlteam.com/article/understanding-the-difference-between-owners-and-schemas-in-sql-server)
@@ -66,8 +69,7 @@ USE SQLservername.databasename.schemaname.tablename
 CREATE SCHEMA sname AUTHORIZATION [dbo]
 ```
 
-
-## Manage tables 
+### Tables 
 
 - **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
 - **Filegroups:** A database has a default PRIMARY filegroup but you can create other filegroups, e.g. to hold tables that should be read-only.
@@ -88,8 +90,7 @@ CREATE TABLE tname
 CREATE
 ```
 
-
-### Datatypes
+#### Datatypes
 
 [Details here;](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql) also note that SQL Server's data types are [mapped to ISO standard data types.](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-type-synonyms-transact-sql)
 
@@ -102,7 +103,7 @@ CREATE
 - **Special purpose:** CURSOR, HIERARCHYID, SQL_VARIANT, TABLE, TIMESTAMP, UNIQUEIDENTIFIER, XML
     - [Spatial data types](https://docs.microsoft.com/en-us/sql/relational-databases/spatial/spatial-data-types-overview)
 
-### Temporal tables
+#### Temporal tables
 
 Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can then be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
 
@@ -119,6 +120,13 @@ FROM [WideWorldImporters].[Warehouse].[StockItems]
 FOR SYSTEM_TIME AS OF '2015-01-01'
 WHERE StockItemName like '%shark%'
 ```
+
+## Manage views
+
+- **Create view:** [Database] > [Views] > right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. 
+- **Views can be made persistent to increase performance:** right click view > Script View as > ALTER To > New Query Editor Window > Add “WITH SCHEMABINDING” under “ALTER VIEW” line > Execute > Refresh Object Explorer pane > Right click on Indexes > Clustered index > Add columns.
+
+
 
 ## Manage performance
 
@@ -206,10 +214,8 @@ CREATE TABLE tname (fdname INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED, fdname, f
 WITH (MEMORY-OPTIMIZED=ON)
 ```
 
-## Manage views
 
-- **Create view:** [Database] > [Views] > right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. 
-- **Views can be made persistent to increase performance:** right click view > Script View as > ALTER To > New Query Editor Window > Add “WITH SCHEMABINDING” under “ALTER VIEW” line > Execute > Refresh Object Explorer pane > Right click on Indexes > Clustered index > Add columns.
+
 
 
 # Sources

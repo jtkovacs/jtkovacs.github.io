@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">
     https://jtkovacs.github.io/REFS/HTML/SQL-Server.html
    </a>
-   &gt; 1786 words
+   &gt; 1801 words
   </p>
   <table class="TOC">
    <tr>
@@ -231,7 +231,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <p>
    Per Buyham and Guyer (2017), the syntax for
    <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/statements">
-    syntax documentation of T-SQL commands
+    syntax documentation of T-SQL statements
    </a>
    uses the following conventions:
   </p>
@@ -254,7 +254,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </syntax>
    </li>
    <li>
-    [,...n]
+    [,...n] indicates repeated elements with comma delimitation
+   </li>
+   <li>
+    [...n] indicates repeated elements with space delimitation
    </li>
   </ul>
   <div class="sourceCode">
@@ -264,7 +267,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     ( { &lt;column_definition&gt; } [ ,...n ] )   
 [ ; ]  
 
-<span class="co">-- example</span>
+<span class="co">-- example expression</span>
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> dbo.tname
     (
     fname,

@@ -16,14 +16,15 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 ## Legend
 
-Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
+Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL statements](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 
 - KEYWORD
 - [optional syntax item, brackets not typed]
 - use this syntax item | OR this syntax item
 - {required syntax item, braces not typed}
 - <syntax block label> ::=
-- [,...n]
+- [,...n] indicates repeated elements with comma delimitation
+- [...n] indicates repeated elements with space delimitation
 
 ```SQL
 -- syntax documentation
@@ -32,7 +33,7 @@ CREATE TABLE
     ( { <column_definition> } [ ,...n ] )   
 [ ; ]  
 
--- example
+-- example expression
 CREATE TABLE dbo.tname
     (
     fname,

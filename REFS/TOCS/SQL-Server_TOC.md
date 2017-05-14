@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 1805 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 1807 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
 	- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
 	- [SQL Server Management Studio](#sql-server-management-studio)
 - [T-SQL](#t-sql)
@@ -42,7 +42,7 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL statements](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 
 - **KEYWORD**
-- **[**optional syntax item, brackets not typed**]**
+- <b>[</b> optional syntax item, brackets not typed <b>]</b>
 - use this syntax item **|** OR this syntax item
 - **{**required syntax item, braces not typed**}**
 - **\<syntax block label\> ::=** for documentation purposes only

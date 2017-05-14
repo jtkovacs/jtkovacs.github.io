@@ -19,7 +19,7 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL statements](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 
 - **KEYWORD**
-- **[** optional syntax item, brackets not typed **]**
+- **\[** optional syntax item, brackets not typed **\]**
 - use this syntax item **|** OR this syntax item
 - **{**required syntax item, braces not typed**}**
 - **\<syntax block label\> ::=** for documentation purposes only

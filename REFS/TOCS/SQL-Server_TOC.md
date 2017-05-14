@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 818 words </p><table class="TOC"><tr><td>- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 806 words </p><table class="TOC"><tr><td>- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
 - [SQL Server Management Studio](#sql-server-management-studio)
 	- [Manage databases](#manage-databases)
 	- [Manage schemas](#manage-schemas)
@@ -26,10 +26,15 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 - **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
 - **SQL Server Profiler:** lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
 - **Syntax legend:** [how to interpret syntax documentation](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql) of [T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements)
-    - `KEYWORDS`
-    - _user-supplied parameters_
-    - `<label> ::=` is not typed; it just gives the name of the syntax block
-    - 
+
+```SQL
+KEYWORD
+
+_user-supplied parameter_
+
+<syntax block label> ::=
+
+```
 
 ## Manage databases
 

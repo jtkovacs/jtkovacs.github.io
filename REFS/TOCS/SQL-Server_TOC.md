@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 856 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 855 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
 	- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
 	- [SQL Server Management Studio](#sql-server-management-studio)
 - [T-SQL](#t-sql)
@@ -9,7 +9,7 @@
 		- [Tables ](#tables-)
 			- [Datatypes](#datatypes)
 			- [Temporal tables](#temporal-tables)
-		- [Manage views](#manage-views)
+		- [Views](#views)
 	- [Manage performance](#manage-performance)
 		- [Splitting the database](#splitting-the-database)
 		- [Creating indexes](#creating-indexes)
@@ -121,7 +121,7 @@ FOR SYSTEM_TIME AS OF '2015-01-01'
 WHERE StockItemName like '%shark%'
 ```
 
-### Manage views
+### Views
 
 - **Create view:** [Database] > [Views] > right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. 
 - **Views can be made persistent to increase performance:** right click view > Script View as > ALTER To > New Query Editor Window > Add “WITH SCHEMABINDING” under “ALTER VIEW” line > Execute > Refresh Object Explorer pane > Right click on Indexes > Clustered index > Add columns.

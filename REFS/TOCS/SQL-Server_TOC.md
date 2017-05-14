@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 1801 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 1805 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
 	- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
 	- [SQL Server Management Studio](#sql-server-management-studio)
 - [T-SQL](#t-sql)
@@ -45,7 +45,7 @@ Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL state
 - [optional syntax item, brackets not typed]
 - use this syntax item | OR this syntax item
 - {required syntax item, braces not typed}
-- <syntax block label> ::=
+- \<syntax block label\> ::= for documentation purposes only
 - [,...n] indicates repeated elements with comma delimitation
 - [...n] indicates repeated elements with space delimitation
 

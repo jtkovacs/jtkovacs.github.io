@@ -10,7 +10,7 @@ import sys
 
 
 
-# Open .md file based on file name argument
+# Open .md file based on filename argument
 ## $ alias TOC information-architecture.md
 fname = '/home/jtk/Site/REFS/'+sys.argv[1]
 fhand = open(fname, 'r')
@@ -41,14 +41,16 @@ for h in headers:
     # Calculate indentation depth
     hsplit = h.split(' ')
     hlevel = len(hsplit[0])
-    if hlevel > 1:
-        space = "\t"*(hlevel-1)
-    else:
-        space = ""
+#    if hlevel > 1:
+#        space = "\t"*(hlevel-1)
+#    else:
+#        space = ""
         
     # Assign number prefix
-    for i in range(hlevel):
-        print(i+1)
+    h1,h2,h3,h4,h5 = (0,0,0,0,0)
+    for i in range(len(h)):
+        print(i)
+        
         
     # Construct TOC entry
     aname = "-".join(hsplit[1:]).lower()[:-1]

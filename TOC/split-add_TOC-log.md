@@ -9,5 +9,5 @@
     - alias PUSH='python3 /home/jtk/Site/TOC/PUSH.py $ghbu $ghbp'
 
 - use as:
-    - $ TOC /home/jtk/Site/REFS/fname.md
-    - $ PUSH
+    - $ TOC fname.md
+    - $ PUSH 'Commit message'

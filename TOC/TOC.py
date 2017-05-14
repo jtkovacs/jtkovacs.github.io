@@ -22,40 +22,67 @@ headers = list()
 code_flag = False
 for row in fhand:
     
-    # Exclude comments inside code chunks
+    ## Exclude comments inside code chunks
     if row.startswith("```") and code_flag == False:
         code_flag = True
     elif row.startswith("```") and code_flag == True:
         code_flag = False
     
-    # Extract headers
+    ## Extract headers
     elif row.startswith('#') and code_flag == False:
         headers.append(row)
 
 
 
-# Process header data to build TOC
+# Construct TOC from headers 
+## as <a href="#header-text">header text</a>
+
+## Initialize counters and containers
+hlevels = [len(h.split(' ')[0]) for h in headers]
+hcount = {1:0, 2:0, 3:0, 4:0, 5:0}
+#h1,h2,h3,h4,h5 = (0,0,0,0,0)
+
 TOC = list()
-for h in headers:
+
+## Process header data
+for i,h in enumerate(headers):
     
-    # Calculate indentation depth
-    hsplit = h.split(' ')
-    hlevel = len(hsplit[0])
-#    if hlevel > 1:
-#        space = "\t"*(hlevel-1)
-#    else:
-#        space = ""
+    # Get header levels
+    Hn_prior = hlevels[i-1] 
+    Hn = hlevels[i]
+    
+    ### Calculate number prefix
+    if i == 0:
+        hcount[1] += 1
+    else:
+        hcount[Hn] += 1
+        if Hn < Hn_prior:
+            j = Hn
+            while j+1 <= 5:
+                hcount[j+1] = 0
+                j += 1
         
-    # Assign number prefix
-    h1,h2,h3,h4,h5 = (0,0,0,0,0)
-    for i in range(len(h)):
-        print(i)
-        
-        
-    # Construct TOC entry
-    aname = "-".join(hsplit[1:]).lower()[:-1]
-    lname = " ".join(hsplit[1:])[:-1]
-    TOC.append(space+'- ['+lname+'](#'+aname+')\n')
+    ### Calculate indentation depth
+    if Hn > 1:
+        space = "\t"*(Hn-1)
+    else:
+        space = ""
+
+    ### Construct TOC entry
+    nonzero_keys = list()
+    for k,v in hcount.items():
+        if v != 0:
+            nonzero_keys.append(k)
+    nonzero_keys.sort()    
+    nr_elements = list()
+    for n in nonzero_keys:
+        nr_elements.append(str(hcount[n]))
+    nr = ".".join(nr_elements)
+
+    lname = " ".join(h.split(' ')[1:])[:-1]
+    aname = "-".join(h.split(' ')[1:]).lower()[:-1]
+
+    TOC.append(space+'- ['+nr+'. '+lname+'](#'+aname+')\n')
 
 
 
@@ -86,6 +113,7 @@ fout.write("\n")
 ## . content
 fhand = open(fname, 'r')
 for row in fhand:
+    if not row
     fout.write(row)
 fout.close()
 
@@ -111,10 +139,10 @@ my_soup = BeautifulSoup(fhand, "html.parser")
 headers = my_soup.find_all(["h1","h2","h3","h4","h5","h6"])
 for h in headers:
     h.string.wrap(my_soup.new_tag("a"))
-    del h['id'] 
+del h['id'] 
 
-    # Extract URL text, reformat and set as anchor name
-    h.a['name'] = "-".join(h.get_text().lower().split(" "))
+# Extract URL text, reformat and set as anchor name
+h.a['name'] = "-".join(h.get_text().lower().split(" "))
     
     
     
@@ -133,5 +161,3 @@ fhand.write(my_soup.prettify())
 ## not sure why I need this twice????
 fhand = open(html_out, 'w')
 fhand.write(my_soup.prettify())
-
-

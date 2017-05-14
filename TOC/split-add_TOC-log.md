@@ -11,3 +11,7 @@
 - use as:
     - $ TOC fname.md
     - $ PUSH 'Commit message'
+    
+    
+I think to finish TOC.py I need to combine calculation of nr with header extraction:
+

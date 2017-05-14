@@ -54,7 +54,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">
     https://jtkovacs.github.io/REFS/HTML/SQL-Server.html
    </a>
-   &gt; 880 words
+   &gt; 1783 words
   </p>
   <table class="TOC">
    <tr>
@@ -237,7 +237,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </p>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span>
-    [ database_name . [ schema_name ] . | schema_name . ] table_name   
+    [ database_name. [ schema_name ] . | schema_name. ] table_name   
     ( { &lt;column_definition&gt; } [ ,...n ] )   
 [ ; ]  </code></pre>
   </div>
@@ -246,9 +246,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     KEYWORD
    </li>
    <li>
-    <em>
-     user-supplied parameter
-    </em>
+    [optional syntax item, brackets not typed]
+   </li>
+   <li>
+    use this syntax item | OR this syntax item
+   </li>
+   <li>
+    {required syntax item, braces not typed}
    </li>
    <li>
     <syntax block="" label="">
@@ -256,17 +260,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </syntax>
    </li>
    <li>
-    Braces are uptyped for:
-    <ul>
-     <li>
-      {required syntax items}
-     </li>
-     <li>
-      [optional syntax items]
-     </li>
-    </ul>
+    [,...n]
    </li>
   </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> dbo.tname
+    (
+    fname,
+    fname
+    );</code></pre>
+  </div>
   <h2>
    <a name="manage-objects">
     Manage objects
@@ -342,9 +345,200 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     ... 
     ) 
     <span class="kw">ON</span> Filegroupname;
+
+<span class="co">--Disk-Based CREATE TABLE Syntax  </span>
+<span class="kw">CREATE</span> <span class="kw">TABLE</span>   
+    [ database_name . [ schema_name ] . | schema_name . ] table_name   
+    [ <span class="kw">AS</span> FileTable ]  
+    ( {   &lt;column_definition&gt;   
+        | &lt;computed_column_definition&gt;    
+        | &lt;column_set_definition&gt;   
+        | [ &lt;table_constraint&gt; ]   
+        | [ &lt;table_index&gt; ] }  
+          [ ,...n ]    
+          [ PERIOD <span class="kw">FOR</span> SYSTEM_TIME ( system_start_time_column_name   
+             , system_end_time_column_name ) ]  
+      )  
+    [ <span class="kw">ON</span> { partition_scheme_name ( partition_column_name )   
+           | filegroup   
+           | <span class="ot">"default"</span> } ]   
+    [ TEXTIMAGE_ON { filegroup | <span class="ot">"default"</span> } ]   
+    [ FILESTREAM_ON { partition_scheme_name   
+           | filegroup   
+           | <span class="ot">"default"</span> } ]  
+    [ <span class="kw">WITH</span> ( &lt;table_option&gt; [ ,...n ] ) ]  
+[ ; ]  
+
+&lt;column_definition&gt; ::=  
+column_name &lt;data_type&gt;  
+    [ FILESTREAM ]  
+    [ COLLATE collation_name ]   
+    [ SPARSE ]  
+    [ MASKED <span class="kw">WITH</span> ( <span class="kw">FUNCTION</span> = <span class="st">' mask_function '</span>) ]  
+    [ <span class="kw">CONSTRAINT</span> constraint_name [ <span class="kw">DEFAULT</span> constant_expression ] ]   
+    [ IDENTITY [ ( seed,<span class="kw">increment</span> ) ]  
+    [ <span class="kw">NOT</span> <span class="kw">FOR</span> REPLICATION ]   
+    [ <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> { <span class="kw">START</span> | <span class="kw">END</span> } [ HIDDEN ] ]   
+    [ <span class="kw">NULL</span> | <span class="kw">NOT</span> <span class="kw">NULL</span> ]  
+    [ ROWGUIDCOL ]  
+    [ ENCRYPTED <span class="kw">WITH</span>   
+        ( COLUMN_ENCRYPTION_KEY = key_name ,  
+          ENCRYPTION_TYPE = { DETERMINISTIC | RANDOMIZED } ,   
+          ALGORITHM = <span class="st">'AEAD_AES_256_CBC_HMAC_SHA_256'</span>  
+        ) ]  
+    [ &lt;column_constraint&gt; [ ...n ] ]   
+    [ &lt;column_index&gt; ]  
+
+&lt;data type&gt; ::=   
+[ type_schema_name . ] type_name   
+    [ ( <span class="dt">precision</span> [ , scale ] | <span class="fu">max</span> |   
+        [ { CONTENT | DOCUMENT } ] xml_schema_collection ) ]   
+
+&lt;column_constraint&gt; ::=   
+[ <span class="kw">CONSTRAINT</span> constraint_name ]   
+{     { <span class="kw">PRIMARY</span> <span class="kw">KEY</span> | <span class="kw">UNIQUE</span> }   
+        [ CLUSTERED | NONCLUSTERED ]   
+        [   
+            <span class="kw">WITH</span> FILLFACTOR = fillfactor    
+          | <span class="kw">WITH</span> ( &lt; index_option &gt; [ , ...n ] )   
+        ]   
+        [ <span class="kw">ON</span> { partition_scheme_name ( partition_column_name )   
+            | filegroup | <span class="ot">"default"</span> } ]  
+
+  | [ <span class="kw">FOREIGN</span> <span class="kw">KEY</span> ]   
+        <span class="kw">REFERENCES</span> [ schema_name . ] referenced_table_name [ ( ref_column ) ]   
+        [ <span class="kw">ON</span> <span class="kw">DELETE</span> { <span class="kw">NO</span> ACTION | <span class="kw">CASCADE</span> | <span class="kw">SET</span> <span class="kw">NULL</span> | <span class="kw">SET</span> <span class="kw">DEFAULT</span> } ]   
+        [ <span class="kw">ON</span> <span class="kw">UPDATE</span> { <span class="kw">NO</span> ACTION | <span class="kw">CASCADE</span> | <span class="kw">SET</span> <span class="kw">NULL</span> | <span class="kw">SET</span> <span class="kw">DEFAULT</span> } ]   
+        [ <span class="kw">NOT</span> <span class="kw">FOR</span> REPLICATION ]   
+
+  | <span class="kw">CHECK</span> [ <span class="kw">NOT</span> <span class="kw">FOR</span> REPLICATION ] ( logical_expression )   
+}   
+
+&lt;column_index&gt; ::=   
+ <span class="kw">INDEX</span> index_name [ CLUSTERED | NONCLUSTERED ]  
+    [ <span class="kw">WITH</span> ( &lt;index_option&gt; [ ,... n ] ) ]  
+    [ <span class="kw">ON</span> { partition_scheme_name (column_name )   
+         | filegroup_name  
+         | <span class="kw">default</span>   
+         }  
+    ]   
+    [ FILESTREAM_ON { filestream_filegroup_name | partition_scheme_name | <span class="ot">"NULL"</span> } ]  
+
+&lt;computed_column_definition&gt; ::=  
+column_name <span class="kw">AS</span> computed_column_expression   
+[ PERSISTED [ <span class="kw">NOT</span> <span class="kw">NULL</span> ] ]  
+[   
+    [ <span class="kw">CONSTRAINT</span> constraint_name ]  
+    { <span class="kw">PRIMARY</span> <span class="kw">KEY</span> | <span class="kw">UNIQUE</span> }  
+        [ CLUSTERED | NONCLUSTERED ]  
+        [   
+            <span class="kw">WITH</span> FILLFACTOR = fillfactor   
+          | <span class="kw">WITH</span> ( &lt;index_option&gt; [ , ...n ] )  
+        ]  
+        [ <span class="kw">ON</span> { partition_scheme_name ( partition_column_name )   
+        | filegroup | <span class="ot">"default"</span> } ]  
+
+    | [ <span class="kw">FOREIGN</span> <span class="kw">KEY</span> ]   
+        <span class="kw">REFERENCES</span> referenced_table_name [ ( ref_column ) ]   
+        [ <span class="kw">ON</span> <span class="kw">DELETE</span> { <span class="kw">NO</span> ACTION | <span class="kw">CASCADE</span> } ]   
+        [ <span class="kw">ON</span> <span class="kw">UPDATE</span> { <span class="kw">NO</span> ACTION } ]   
+        [ <span class="kw">NOT</span> <span class="kw">FOR</span> REPLICATION ]   
+
+    | <span class="kw">CHECK</span> [ <span class="kw">NOT</span> <span class="kw">FOR</span> REPLICATION ] ( logical_expression )   
+]   
+
+&lt;column_set_definition&gt; ::=  
+column_set_name XML COLUMN_SET <span class="kw">FOR</span> ALL_SPARSE_COLUMNS  
+
+&lt; table_constraint &gt; ::=  
+[ <span class="kw">CONSTRAINT</span> constraint_name ]   
+{   
+    { <span class="kw">PRIMARY</span> <span class="kw">KEY</span> | <span class="kw">UNIQUE</span> }   
+        [ CLUSTERED | NONCLUSTERED ]   
+        (<span class="kw">column</span> [ <span class="kw">ASC</span> | <span class="kw">DESC</span> ] [ ,...n ] )   
+        [   
+            <span class="kw">WITH</span> FILLFACTOR = fillfactor   
+           |WITH ( &lt;index_option&gt; [ , ...n ] )   
+        ]  
+        [ <span class="kw">ON</span> { partition_scheme_name (partition_column_name)  
+            | filegroup | <span class="ot">"default"</span> } ]   
+    | <span class="kw">FOREIGN</span> <span class="kw">KEY</span>   
+        ( <span class="kw">column</span> [ ,...n ] )   
+        <span class="kw">REFERENCES</span> referenced_table_name [ ( ref_column [ ,...n ] ) ]   
+        [ <span class="kw">ON</span> <span class="kw">DELETE</span> { <span class="kw">NO</span> ACTION | <span class="kw">CASCADE</span> | <span class="kw">SET</span> <span class="kw">NULL</span> | <span class="kw">SET</span> <span class="kw">DEFAULT</span> } ]   
+        [ <span class="kw">ON</span> <span class="kw">UPDATE</span> { <span class="kw">NO</span> ACTION | <span class="kw">CASCADE</span> | <span class="kw">SET</span> <span class="kw">NULL</span> | <span class="kw">SET</span> <span class="kw">DEFAULT</span> } ]   
+        [ <span class="kw">NOT</span> <span class="kw">FOR</span> REPLICATION ]   
+    | <span class="kw">CHECK</span> [ <span class="kw">NOT</span> <span class="kw">FOR</span> REPLICATION ] ( logical_expression )  
+
+
+
+&lt; table_index &gt; ::=   
+{  
+    {  
+      <span class="kw">INDEX</span> index_name [ CLUSTERED | NONCLUSTERED ]   
+         (column_name [ <span class="kw">ASC</span> | <span class="kw">DESC</span> ] [ ,... n ] )   
+    | <span class="kw">INDEX</span> index_name CLUSTERED COLUMNSTORE  
+    | <span class="kw">INDEX</span> index_name [ NONCLUSTERED ] COLUMNSTORE (column_name [ ,... n ] )  
+    }  
+    [ <span class="kw">WITH</span> ( &lt;index_option&gt; [ ,... n ] ) ]   
+    [ <span class="kw">ON</span> { partition_scheme_name (column_name )   
+         | filegroup_name  
+         | <span class="kw">default</span>   
+         }  
+    ]   
+    [ FILESTREAM_ON { filestream_filegroup_name | partition_scheme_name | <span class="ot">"NULL"</span> } ]  
+
+}   
+
+
+&lt;table_option&gt; ::=  
+{  
+    [DATA_COMPRESSION = { <span class="kw">NONE</span> | <span class="kw">ROW</span> | PAGE }  
+      [ <span class="kw">ON</span> <span class="kw">PARTITIONS</span> ( { &lt;partition_number_expression&gt; | &lt;range&gt; }   
+      [ , ...n ] ) ]]  
+    [ FILETABLE_DIRECTORY = &lt;directory_name&gt; ]   
+    [ FILETABLE_COLLATE_FILENAME = { &lt;collation_name&gt; | database_default } ]  
+    [ FILETABLE_PRIMARY_KEY_CONSTRAINT_NAME = &lt;constraint_name&gt; ]  
+    [ FILETABLE_STREAMID_UNIQUE_CONSTRAINT_NAME = &lt;constraint_name&gt; ]  
+    [ FILETABLE_FULLPATH_UNIQUE_CONSTRAINT_NAME = &lt;constraint_name&gt; ]  
+    [ SYSTEM_VERSIONING = <span class="kw">ON</span> [ ( HISTORY_TABLE = schema_name . history_table_name  
+        [, DATA_CONSISTENCY_CHECK = { <span class="kw">ON</span> | <span class="kw">OFF</span> } ] ) ] ]  
+    [ REMOTE_DATA_ARCHIVE =   
+      {   
+          <span class="kw">ON</span> [ ( &lt;table_stretch_options&gt; [,...n] ) ]  
+        | <span class="kw">OFF</span> ( MIGRATION_STATE = PAUSED )   
+      }   
+    ]  
+}  
+
+&lt;table_stretch_options&gt; ::=  
+{  
+     [ FILTER_PREDICATE = { <span class="kw">null</span> | table_predicate_function } , ]  
+       MIGRATION_STATE = { OUTBOUND | INBOUND | PAUSED }  
+ }  
+
+&lt;index_option&gt; ::=  
+{   
+    PAD_INDEX = { <span class="kw">ON</span> | <span class="kw">OFF</span> }   
+  | FILLFACTOR = fillfactor   
+  | IGNORE_DUP_KEY = { <span class="kw">ON</span> | <span class="kw">OFF</span> }   
+  | STATISTICS_NORECOMPUTE = { <span class="kw">ON</span> | <span class="kw">OFF</span> }   
+  | ALLOW_ROW_LOCKS = { <span class="kw">ON</span> | <span class="kw">OFF</span>}   
+  | ALLOW_PAGE_LOCKS ={ <span class="kw">ON</span> | <span class="kw">OFF</span>}   
+  | COMPRESSION_DELAY= {<span class="dv">0</span> | delay [Minutes]}  
+  | DATA_COMPRESSION = { <span class="kw">NONE</span> | <span class="kw">ROW</span> | PAGE | COLUMNSTORE | COLUMNSTORE_ARCHIVE }  
+       [ <span class="kw">ON</span> <span class="kw">PARTITIONS</span> ( { &lt;partition_number_expression&gt; | &lt;range&gt; }   
+       [ , ...n ] ) ]  
+}  
+&lt;range&gt; ::=   
+&lt;partition_number_expression&gt; <span class="kw">TO</span> &lt;partition_number_expression&gt;
+    
     
 <span class="co">-- Add field to existing table</span>
-<span class="kw">CREATE</span></code></pre>
+<span class="kw">CREATE</span>
+
+
+</code></pre>
   </div>
   <h4>
    <a name="datatypes">

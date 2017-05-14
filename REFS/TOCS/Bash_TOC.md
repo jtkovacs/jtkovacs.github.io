@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Bash.html">https://jtkovacs.github.io/REFS/HTML/Bash.html</a></p><table class="TOC"><tr><td>- [Bash basics](#bash-basics)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Bash.html">https://jtkovacs.github.io/REFS/HTML/Bash.html</a> \> 2409 words </p><table class="TOC"><tr><td>- [Bash basics](#bash-basics)
 	- [What is Bash?](#what-is-bash?)
 	- [Set up Bash](#set-up-bash)
 	- [Manage system](#manage-system)

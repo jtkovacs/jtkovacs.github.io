@@ -1,7 +1,8 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 854 words </p><table class="TOC"><tr><td>- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
-- [SQL Server Management Studio](#sql-server-management-studio)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 856 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
+	- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
+	- [SQL Server Management Studio](#sql-server-management-studio)
 - [T-SQL](#t-sql)
-	- [Syntax documentation legend](#syntax-documentation-legend)
+	- [Documentation legend](#documentation-legend)
 	- [Manage databases](#manage-databases)
 	- [Manage schemas](#manage-schemas)
 	- [Manage tables ](#manage-tables-)
@@ -19,18 +20,23 @@
 	- [Read](#read)
 	- [Unread](#unread)
 </td></tr></table>
-# SQL Server Configuration Manager 
+# SQL Server
+
+## SQL Server Configuration Manager 
 
 Shows every instance of a SQL Server product on a machine; lets you restart a process and enable protocols for communication between client & server.
 
-# SQL Server Management Studio
+## SQL Server Management Studio
 
 - **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
 - **SQL Server Profiler:** lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
 
+
+
+
 # T-SQL
 
-## Syntax documentation legend
+## Documentation legend
 
 Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 
@@ -42,6 +48,7 @@ Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL comma
     - (optional syntax items)
     
 
+    
 ## Manage databases
 
 ```SQL

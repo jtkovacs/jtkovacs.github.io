@@ -1,15 +1,20 @@
-# SQL Server Configuration Manager 
+# SQL Server
+
+## SQL Server Configuration Manager 
 
 Shows every instance of a SQL Server product on a machine; lets you restart a process and enable protocols for communication between client & server.
 
-# SQL Server Management Studio
+## SQL Server Management Studio
 
 - **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
 - **SQL Server Profiler:** lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
 
+
+
+
 # T-SQL
 
-## Syntax documentation legend
+## Documentation legend
 
 Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 
@@ -21,6 +26,7 @@ Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL comma
     - (optional syntax items)
     
 
+    
 ## Manage databases
 
 ```SQL

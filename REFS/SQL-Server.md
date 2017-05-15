@@ -67,7 +67,6 @@ CREATE SCHEMA sname AUTHORIZATION [dbo]
 
 ### Tables 
 
-- **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
 - **Filegroups:** A database has a default PRIMARY filegroup but you can create other filegroups, e.g. to hold tables that should be read-only.
 - **Inspect relationships:**
     - [Database] > [Table] > Keys

@@ -1,4 +1,4 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 1236 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
+<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 1212 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
 	- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
 	- [SQL Server Management Studio](#sql-server-management-studio)
 - [T-SQL](#t-sql)
@@ -90,7 +90,6 @@ CREATE SCHEMA sname AUTHORIZATION [dbo]
 
 ### Tables 
 
-- **Create PK:** Right click table > Design > Select field, click key icon > In column properties window, change Identity Specification to “yes”
 - **Filegroups:** A database has a default PRIMARY filegroup but you can create other filegroups, e.g. to hold tables that should be read-only.
 - **Inspect relationships:**
     - [Database] > [Table] > Keys

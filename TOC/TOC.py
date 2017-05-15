@@ -124,10 +124,10 @@ fout = open(foname, "w")
 # Write to new .md file
 ## ... home, last update, word count, est. reading time
 wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
-title = 'TITLE'
+title = sys.argv[1][:-3].replace('-', ' ')
 num_words = wc.stdout.decode("utf-8").split(" ")[0]
 up_date = datetime.datetime.now().strftime("%m/%d/%Y")
-fout.write('<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> '+title+' | '+num_words+' words, updated '+up_date+'</p>') 
+fout.write('<p class="path"><a href="../../pkb.html">pkb contents</a> \> '+title+' | nearly '+num_words+' words | updated '+up_date+'</p>') 
 
 ## ... TOC
 fout.write('<table class="TOC"><tr><td>')

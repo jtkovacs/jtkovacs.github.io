@@ -206,16 +206,5 @@ fhand.write(my_soup.prettify())
 ## not sure why I need this twice????
 fhand = open(html_out, 'w')
 fhand.write(my_soup.prettify())
-
-
-
-# If called as $ TOC filename.md "commit message"
-# .. call $ python3 PUSH.py "commit message"
-try:
-    subprocess.run(['python3','/home/jtk/Site/TOC/PUSH.py', sys.argv[2]])
-except:
-    pass
-    
-    
     
     

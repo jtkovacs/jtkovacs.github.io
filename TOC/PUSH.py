@@ -16,7 +16,7 @@ subprocess.run(['git', 'add', '.'])
 
 
 # Commit locally
-commit_msg = sys.argv[1]
+commit_msg = sys.argv[3]
 subprocess.run(['git', 'commit', '-m', 'Changes to {}'.format(commit_msg)])
 
 

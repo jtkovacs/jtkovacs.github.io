@@ -12,7 +12,7 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-#path, #path a {
+.path, .path a {
     padding-left: 3px;
     font-family: monospace;
     font-size: 10px;
@@ -21,7 +21,7 @@ body {
     max-width: 800px;
 }
 
-#path a:hover {
+.path a:hover {
     font-weight: bold;
 }
 

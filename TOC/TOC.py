@@ -3,6 +3,7 @@
 
 # Load libraries
 from bs4 import BeautifulSoup
+import datetime
 import fileinput
 import string
 import subprocess
@@ -19,29 +20,39 @@ fhand = open(fname, 'r')
 
 # Process .md file to extract header data
 headers = list()
+header_indices = list()
+hi = 0
 code_flag = False
 for row in fhand:
-    
+        
     ## Exclude comments inside code chunks
     if row.startswith("```") and code_flag == False:
         code_flag = True
     elif row.startswith("```") and code_flag == True:
         code_flag = False
     
-    ## Extract headers
+    ## Extract and store headers and header indexes
     elif row.startswith('#') and code_flag == False:
         headers.append(row)
+        header_indices.append(hi)
+
+    # Increment header index counter
+    hi += 1
 
 
 
 # Construct TOC from headers 
-## as <a href="#header-text">header text</a>
+## - X. [header-name](#header-name)
+##      - X.X. [header-name](#header-name)
+##      - X.X. [header-name](#header-name)
+##          - X.X.X. [header-name](#header-name)
+##      - X.X. [header-name](#header-name)
 
 ## Initialize counters and containers
 hlevels = [len(h.split(' ')[0]) for h in headers]
 hcount = {1:0, 2:0, 3:0, 4:0, 5:0}
-
 TOC = list()
+nrs = list()
 
 ## Process header data
 for i,h in enumerate(headers):
@@ -50,7 +61,13 @@ for i,h in enumerate(headers):
     Hn_prior = hlevels[i-1] 
     Hn = hlevels[i]
     
-    ### Calculate number prefix
+    ### Calculate header's indentation depth
+    if Hn > 1:
+        space = "\t"*(Hn-1)
+    else:
+        space = ""
+    
+    ### Calculate header's number prefix
     if i == 0:
         hcount[1] += 1
     else:
@@ -60,14 +77,8 @@ for i,h in enumerate(headers):
             while j+1 <= 5:
                 hcount[j+1] = 0
                 j += 1
-        
-    ### Calculate indentation depth
-    if Hn > 1:
-        space = "\t"*(Hn-1)
-    else:
-        space = ""
-
-    ### Construct TOC entry
+            
+    ### Trim zeros from number prefix, e.g. 1.2.0.0 to 1.2.
     nonzero_keys = list()
     for k,v in hcount.items():
         if v != 0:
@@ -76,17 +87,26 @@ for i,h in enumerate(headers):
     nr_elements = list()
     for n in nonzero_keys:
         nr_elements.append(str(hcount[n]))
-    nr = ".".join(nr_elements)
+    nr = ".".join(nr_elements)+'. '
+    nrs.append(nr)
 
+    ### Drop Markdown header indicators (#s) from header
     lname = " ".join(h.split(' ')[1:])[:-1]
+    
+    ### Create URL-safe anchor from header (as pandoc, below)
     aname = "-".join(h.split(' ')[1:]).lower()[:-1]
+    aname = aname.replace('&','')
+    aname = aname.replace('?', '')
+    aname = nr+aname
 
-    TOC.append(space+'- ['+nr+'. '+lname+'](#'+aname+')\n')
-
-
+    ### Construct TOC entry for header
+    ### - 1.1.2. [What are blue & green?](#1.1.2.-what-are-blue-green)
+    TOC.append(space+'- '+nr+'. ['+lname+'](#'+aname+')\n')
+    
+    
 
 # Open new .md file
-## Constructing the filename is tricky
+## Constructing the output filename is tricky: /home/jtk/Site/REFS/TOCS/fname_TOC.md
 foname = fname[:-3]+"_TOC.md"
 foname = foname.split('/') 
 foname.insert(-1, "TOCS")
@@ -96,11 +116,14 @@ fout = open(foname, "w")
 
 
 # Write to new .md file
-## ... URLs and word count
+## ... URLs, last update, word count, est. reading time
 url = 'https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html'
 wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
+up_date = datetime.datetime.now().isoformat()
 num_words = wc.stdout.decode("utf-8").split(" ")[0]
-fout.write('<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="'+url+'">'+url+'</a> \> '+num_words+' words </p>') 
+read_time = round(num_words/200, 2)
+fout.write('<p class="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="'+url+'">'+url+'</a></p>')  
+fout.write('<p class="path">modified '+up_date+'\> '+num_words+' words, est.'+read_time+' minutes </p>') 
 
 ## ... TOC
 fout.write('<table class="TOC"><tr><td>')
@@ -109,11 +132,26 @@ for row in TOC:
 fout.write("</td></tr></table>")
 fout.write("\n")
 
-## . content
+## ... content
 fhand = open(fname, 'r')
+ci = 0
+ni = 0
+
 for row in fhand:
-    if not row
-    fout.write(row)
+    
+    ### Reformat '## Search engines' as '## 1.4 Search engines'
+    if ci in header_indices:
+        row = row.split(' ')
+        header = row[0]+' '+nrs[ni]+' '+" ".join(row[1:])
+        fout.write(row)
+        
+        ni += 1
+
+    else:
+        fout.write(row)
+
+    ci += 1
+
 fout.close()
 
 
@@ -135,12 +173,16 @@ my_soup = BeautifulSoup(fhand, "html.parser")
 
 
 # Make headers into anchors
+## Creates URL-safe anchor by stripping &, ? characters
 headers = my_soup.find_all(["h1","h2","h3","h4","h5","h6"])
 for h in headers:
     h.string.wrap(my_soup.new_tag("a"))
 del h['id'] 
 
+
+
 # Extract URL text, reformat and set as anchor name
+## Because of URL endcoding, removes ? and & automatically
 h.a['name'] = "-".join(h.get_text().lower().split(" "))
     
     
@@ -160,3 +202,15 @@ fhand.write(my_soup.prettify())
 ## not sure why I need this twice????
 fhand = open(html_out, 'w')
 fhand.write(my_soup.prettify())
+
+
+
+# If called as $ TOC filename.md "commit message"
+# .. call $ python3 PUSH.py "commit message"
+if sys.argv[2]:
+    subprocess.run(['python3','/home/jtk/Site/TOC/PUSH.py', sys.argv[2]])
+    
+    
+    
+    
+    

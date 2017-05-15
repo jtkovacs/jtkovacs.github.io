@@ -1,3 +1,5 @@
+
+
 # SQL Server
 
 ## SQL Server Configuration Manager 
@@ -41,6 +43,8 @@ CREATE TABLE dbo.tname
     );
 ```
     
+    
+
 
 ## Manage objects
     
@@ -70,15 +74,6 @@ CREATE SCHEMA sname AUTHORIZATION [dbo]
     - [Database] > Database diagrams
 
 ```SQL
-CREATE TABLE tname 
-    (
-    fieldname IDENTITY(seed, increment), 
-    fielddname datatype, 
-    ... 
-    ) 
-    ON Filegroupname;
-
---Disk-Based CREATE TABLE Syntax  
 CREATE TABLE   
     [ database_name . [ schema_name ] . | schema_name . ] table_name   
     [ AS FileTable ]  
@@ -146,125 +141,6 @@ column_name <data_type>
   | CHECK [ NOT FOR REPLICATION ] ( logical_expression )   
 }   
 
-<column_index> ::=   
- INDEX index_name [ CLUSTERED | NONCLUSTERED ]  
-    [ WITH ( <index_option> [ ,... n ] ) ]  
-    [ ON { partition_scheme_name (column_name )   
-         | filegroup_name  
-         | default   
-         }  
-    ]   
-    [ FILESTREAM_ON { filestream_filegroup_name | partition_scheme_name | "NULL" } ]  
-
-<computed_column_definition> ::=  
-column_name AS computed_column_expression   
-[ PERSISTED [ NOT NULL ] ]  
-[   
-    [ CONSTRAINT constraint_name ]  
-    { PRIMARY KEY | UNIQUE }  
-        [ CLUSTERED | NONCLUSTERED ]  
-        [   
-            WITH FILLFACTOR = fillfactor   
-          | WITH ( <index_option> [ , ...n ] )  
-        ]  
-        [ ON { partition_scheme_name ( partition_column_name )   
-        | filegroup | "default" } ]  
-
-    | [ FOREIGN KEY ]   
-        REFERENCES referenced_table_name [ ( ref_column ) ]   
-        [ ON DELETE { NO ACTION | CASCADE } ]   
-        [ ON UPDATE { NO ACTION } ]   
-        [ NOT FOR REPLICATION ]   
-
-    | CHECK [ NOT FOR REPLICATION ] ( logical_expression )   
-]   
-
-<column_set_definition> ::=  
-column_set_name XML COLUMN_SET FOR ALL_SPARSE_COLUMNS  
-
-< table_constraint > ::=  
-[ CONSTRAINT constraint_name ]   
-{   
-    { PRIMARY KEY | UNIQUE }   
-        [ CLUSTERED | NONCLUSTERED ]   
-        (column [ ASC | DESC ] [ ,...n ] )   
-        [   
-            WITH FILLFACTOR = fillfactor   
-           |WITH ( <index_option> [ , ...n ] )   
-        ]  
-        [ ON { partition_scheme_name (partition_column_name)  
-            | filegroup | "default" } ]   
-    | FOREIGN KEY   
-        ( column [ ,...n ] )   
-        REFERENCES referenced_table_name [ ( ref_column [ ,...n ] ) ]   
-        [ ON DELETE { NO ACTION | CASCADE | SET NULL | SET DEFAULT } ]   
-        [ ON UPDATE { NO ACTION | CASCADE | SET NULL | SET DEFAULT } ]   
-        [ NOT FOR REPLICATION ]   
-    | CHECK [ NOT FOR REPLICATION ] ( logical_expression )  
-
-
-
-< table_index > ::=   
-{  
-    {  
-      INDEX index_name [ CLUSTERED | NONCLUSTERED ]   
-         (column_name [ ASC | DESC ] [ ,... n ] )   
-    | INDEX index_name CLUSTERED COLUMNSTORE  
-    | INDEX index_name [ NONCLUSTERED ] COLUMNSTORE (column_name [ ,... n ] )  
-    }  
-    [ WITH ( <index_option> [ ,... n ] ) ]   
-    [ ON { partition_scheme_name (column_name )   
-         | filegroup_name  
-         | default   
-         }  
-    ]   
-    [ FILESTREAM_ON { filestream_filegroup_name | partition_scheme_name | "NULL" } ]  
-
-}   
-
-
-<table_option> ::=  
-{  
-    [DATA_COMPRESSION = { NONE | ROW | PAGE }  
-      [ ON PARTITIONS ( { <partition_number_expression> | <range> }   
-      [ , ...n ] ) ]]  
-    [ FILETABLE_DIRECTORY = <directory_name> ]   
-    [ FILETABLE_COLLATE_FILENAME = { <collation_name> | database_default } ]  
-    [ FILETABLE_PRIMARY_KEY_CONSTRAINT_NAME = <constraint_name> ]  
-    [ FILETABLE_STREAMID_UNIQUE_CONSTRAINT_NAME = <constraint_name> ]  
-    [ FILETABLE_FULLPATH_UNIQUE_CONSTRAINT_NAME = <constraint_name> ]  
-    [ SYSTEM_VERSIONING = ON [ ( HISTORY_TABLE = schema_name . history_table_name  
-        [, DATA_CONSISTENCY_CHECK = { ON | OFF } ] ) ] ]  
-    [ REMOTE_DATA_ARCHIVE =   
-      {   
-          ON [ ( <table_stretch_options> [,...n] ) ]  
-        | OFF ( MIGRATION_STATE = PAUSED )   
-      }   
-    ]  
-}  
-
-<table_stretch_options> ::=  
-{  
-     [ FILTER_PREDICATE = { null | table_predicate_function } , ]  
-       MIGRATION_STATE = { OUTBOUND | INBOUND | PAUSED }  
- }  
-
-<index_option> ::=  
-{   
-    PAD_INDEX = { ON | OFF }   
-  | FILLFACTOR = fillfactor   
-  | IGNORE_DUP_KEY = { ON | OFF }   
-  | STATISTICS_NORECOMPUTE = { ON | OFF }   
-  | ALLOW_ROW_LOCKS = { ON | OFF}   
-  | ALLOW_PAGE_LOCKS ={ ON | OFF}   
-  | COMPRESSION_DELAY= {0 | delay [Minutes]}  
-  | DATA_COMPRESSION = { NONE | ROW | PAGE | COLUMNSTORE | COLUMNSTORE_ARCHIVE }  
-       [ ON PARTITIONS ( { <partition_number_expression> | <range> }   
-       [ , ...n ] ) ]  
-}  
-<range> ::=   
-<partition_number_expression> TO <partition_number_expression>
-    
     
 -- Add field to existing table
 CREATE

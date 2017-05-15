@@ -1,17 +1,17 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/modeling.html">https://jtkovacs.github.io/REFS/HTML/modeling.html</a> \> 1370 words </p><table class="TOC"><tr><td>- [Overview of modeling](#overview-of-modeling)
-	- [Why model?](#why-model?)
-	- [Model typologies](#model-typologies)
-- [Models by form and notation](#models-by-form-and-notation)
-	- [Flow charts](#flow-charts)
-		- [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-(n-s)-diagram)
-	- [Entity-relationship diagrams](#entity-relationship-diagrams)
-		- [ERDs for databases](#erds-for-databases)
-			- [Bachmann/crow's foot notation](#bachmann/crow's-foot-notation)
-			- [UML notation](#uml-notation)
-		- [Data flow diagrams](#data-flow-diagrams)
-	- [Object-oriented modeling](#object-oriented-modeling)
-		- [Activity diagrams](#activity-diagrams)
-- [Sources](#sources)
+<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> TITLE | 1370 words, updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [Overview of modeling](#overview-of-modeling)
+	- 1.1. [Why model?](#why-model)
+	- 1.2. [Model typologies](#model-typologies)
+- 2. [Models by form and notation](#models-by-form-and-notation)
+	- 2.1. [Flow charts](#flow-charts)
+		- 2.1.1. [Nassi-Schneiderman (N-S) diagram](#nassi-schneiderman-n-s-diagram)
+	- 2.2. [Entity-relationship diagrams](#entity-relationship-diagrams)
+		- 2.2.1. [ERDs for databases](#erds-for-databases)
+			- 2.2.1.1. [Bachmann/crow's foot notation](#bachmanncrows-foot-notation)
+			- 2.2.1.2. [UML notation](#uml-notation)
+		- 2.2.2. [Data flow diagrams](#data-flow-diagrams)
+	- 2.3. [Object-oriented modeling](#object-oriented-modeling)
+		- 2.3.1. [Activity diagrams](#activity-diagrams)
+- 3. [Sources](#sources)
 </td></tr></table>
 
 
@@ -21,12 +21,12 @@ _Note that there's a lot of overlap between depicting a system and [implementing
 
 
 
-# Overview of modeling
+# 1. Overview of modeling
 
 Because a model is a representation of a system, the model needs to include contextual metadata clarifying the date and/or version of the system it describes.
 
 
-## Why model?
+## 1.1. Why model?
 
 Per Scott Page, modeling helps us:
 
@@ -51,7 +51,7 @@ Per Scott Page, modeling helps us:
 - **Communicate what we know very simply.** “[M]odels can be the focal points of teams involving experts from many disciplines”
 - **Discover new things:** "Models are fertile", i.e., they have multiple and unexpected uses. “Models can surprise us, make us curious, and lead to new questions. This is what I hate about exams. They only show that you can answer somebody else's question, when the most important thing is: Can you ask a new question?”
 
-## Model typologies
+## 1.2. Model typologies
 
 Models can have a general form (e.g. entity relationship diagram) somewhat corresponding to [information structures,](information-architecture.html#information-structures) but be executable in different notations (e.g. Chen, crow's foot). This page organizes models by **form and notation,** following Steirn (1999), who seems very similar to Dennis et al. (2012):
 
@@ -89,9 +89,9 @@ Models could also be grouped by the **business problems they solve** (e.g. poor 
 
 
 
-# Models by form and notation
+# 2. Models by form and notation
 
-## Flow charts
+## 2.1. Flow charts
 
 AKA decision flow charts, logic flow charts, and logical decision flow charts. Flow charts model **decisions,** a type of process. Languages that model processes more generally can also represent decisions.
 
@@ -102,7 +102,7 @@ The basic elements of flow charts are available in MS Visio's language level dia
 - **Rectangles** for functions
 - **Hardcopy symbol** (rectangle with wavy bottom edge) for outputs
 
-### Nassi-Schneiderman (N-S) diagram
+### 2.1.1. Nassi-Schneiderman (N-S) diagram
 
 AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderman (1973), "We propose a flowchart language whose control structure is closer to that of language amenable to **structured programming:"**
 
@@ -110,11 +110,11 @@ AKA Chapin charts, structograms, structured flowcharts. Per Nassi and Shneiderma
 
 
 
-## Entity-relationship diagrams
+## 2.2. Entity-relationship diagrams
 
 All ERDs capture the entities in a system, along with their attributes and interrelationships; enhanced ERDs include superclasses and subclasses. 
 
-### ERDs for databases
+### 2.2.1. ERDs for databases
 
 Per Dybka (2014), there are many notation styles:
 
@@ -126,7 +126,7 @@ Per Dybka (2014), there are many notation styles:
 - [Arrow](../ILLOS/arrow.png)
 - [IDEF1X](../ILLOS/idef1x.png)
 
-#### Bachmann/crow's foot notation
+#### 2.2.1.1. Bachmann/crow's foot notation
 
 This is a notation that describes the optionality/modality/participation and cardinality/multiplicity of a relationship, so it can be used within other modeling systems. Crows-foot notation annotates relationships with the symbols:
 
@@ -141,14 +141,14 @@ Entity A is on the left, entity B is on the right. They are connected with an an
 
 <img src="../ILLOS/EERD.png" width="280px" style="padding-bottom:60px;">
 
-#### UML notation
+#### 2.2.1.2. UML notation
 
 Predates ER notation, but increasingly popular as a database modeling language; see [notes on UML.](UML.html)
 
 <img src="../ILLOS/UML-EERD.png" width="450px">
 
 
-### Data flow diagrams
+### 2.2.2. Data flow diagrams
 
 The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depict the flow of data through a system using the following elements:
 
@@ -161,11 +161,11 @@ The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depi
 
 
 
-## Object-oriented modeling
+## 2.3. Object-oriented modeling
 
 OO models show **inheritance** as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML in 1997.
 
-### Activity diagrams
+### 2.3.1. Activity diagrams
 
 Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific [use case](project-management.html#use-cases-&-requirements-definition-reports) or [usage scenario.](project-management.html#use-scenarios) Activity diagrams use the following UML elements:
 
@@ -193,7 +193,7 @@ Similar to flowcharts and data flow diagrams, since they focus on depicting a _p
 
 
 
-# Sources
+# 3. Sources
 
 Ambler, S. (n.d.). Agile models distilled: Potential artifacts for agile modeling. Retrieved from [http://www.agilemodeling.com/artifacts/](http://www.agilemodeling.com/artifacts/)
 

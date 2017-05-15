@@ -46,51 +46,57 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </style>
  </head>
  <body>
-  <p id="path">
+  <p class="path">
    <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+    PKB CONTENTS
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">
-    https://jtkovacs.github.io/REFS/HTML/SQL.html
-   </a>
-   &gt; 2300 words
+   &gt; TITLE | 2300 words, updated 05/15/2017
   </p>
   <table class="TOC">
    <tr>
     <td>
      <ul>
       <li>
-       <a href="#what-is-sql?">
-        What is SQL?
-       </a>
+       <ol style="list-style-type: decimal">
+        <li>
+         <a href="#what-is-sql">
+          What is SQL?
+         </a>
+        </li>
+       </ol>
        <ul>
         <li>
+         1.1.
          <a href="#notation-and-style-guide">
           Notation and style guide
          </a>
         </li>
         <li>
+         1.2.
          <a href="#data-definition">
           Data definition
          </a>
          <ul>
           <li>
+           1.2.1.
            <a href="#manage-databases">
             Manage databases
            </a>
           </li>
           <li>
+           1.2.2.
            <a href="#manage-tables">
             Manage tables
            </a>
           </li>
           <li>
+           1.2.3.
            <a href="#manage-fields">
             Manage fields
            </a>
           </li>
           <li>
+           1.2.4.
            <a href="#manage-views">
             Manage views
            </a>
@@ -98,26 +104,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          </ul>
         </li>
         <li>
+         1.3.
          <a href="#data-manipulation">
           Data manipulation
          </a>
          <ul>
           <li>
+           1.3.1.
            <a href="#generic-query-form">
             Generic query form
            </a>
           </li>
           <li>
+           1.3.2.
            <a href="#select-and-display">
             SELECT and display
            </a>
            <ul>
             <li>
+             1.3.2.1.
              <a href="#with-conditional-filtering">
               WITH conditional filtering
              </a>
             </li>
             <li>
+             1.3.2.2.
              <a href="#aggregate-and-group-by">
               Aggregate and GROUP BY
              </a>
@@ -125,16 +136,19 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
            </ul>
           </li>
           <li>
+           1.3.3.
            <a href="#from-">
             FROM
            </a>
            <ul>
             <li>
+             1.3.3.1.
              <a href="#joins">
               JOINs
              </a>
             </li>
             <li>
+             1.3.3.2.
              <a href="#subqueries">
               Subqueries
              </a>
@@ -142,6 +156,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
            </ul>
           </li>
           <li>
+           1.3.4.
            <a href="#set-operations">
             Set operations
            </a>
@@ -151,31 +166,46 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        </ul>
       </li>
       <li>
-       <a href="#t-sql">
-        T-SQL
-       </a>
+       <ol start="2" style="list-style-type: decimal">
+        <li>
+         <a href="#t-sql">
+          T-SQL
+         </a>
+        </li>
+       </ol>
       </li>
       <li>
-       <a href="#examples">
-        Examples
-       </a>
+       <ol start="3" style="list-style-type: decimal">
+        <li>
+         <a href="#examples">
+          Examples
+         </a>
+        </li>
+       </ol>
       </li>
       <li>
-       <a href="#sources">
-        Sources
-       </a>
+       <ol start="4" style="list-style-type: decimal">
+        <li>
+         <a href="#sources">
+          Sources
+         </a>
+        </li>
+       </ol>
        <ul>
         <li>
+         4.1.
          <a href="#references">
           References
          </a>
         </li>
         <li>
+         4.2.
          <a href="#archive">
           Archive
          </a>
         </li>
         <li>
+         4.3.
          <a href="#inbox">
           Inbox
          </a>
@@ -186,17 +216,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </td>
    </tr>
   </table>
-  <h1>
-   <a name="what-is-sql?">
-    What is SQL?
+  <h1 id="what-is-sql">
+   <a>
+    1. What is SQL?
    </a>
   </h1>
   <p>
    SQL is the standardized language used to access a database. SQL language provides for: (1) data definition/DDL statements that help you define the database and its objects; (2) data manipulation/DML statements that allow you to update and query data; (3) data control, allows you to grant the permissions to a user to access a certain data in the database.
   </p>
-  <h2>
-   <a name="notation-and-style-guide">
-    Notation and style guide
+  <h2 id="notation-and-style-guide">
+   <a>
+    1.1. Notation and style guide
    </a>
   </h2>
   <ul>
@@ -228,14 +258,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     gives row dimension of table: SELECT count(*) FROM tname;
    </li>
   </ul>
-  <h2>
-   <a name="data-definition">
-    Data definition
+  <h2 id="data-definition">
+   <a>
+    1.2. Data definition
    </a>
   </h2>
-  <h3>
-   <a name="manage-databases">
-    Manage databases
+  <h3 id="manage-databases">
+   <a>
+    1.2.1. Manage databases
    </a>
   </h3>
   <ul>
@@ -249,9 +279,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     MERGE
    </li>
   </ul>
-  <h3>
-   <a name="manage-tables">
-    Manage tables
+  <h3 id="manage-tables">
+   <a>
+    1.2.2. Manage tables
    </a>
   </h3>
   <p>
@@ -332,9 +362,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co">--- update records:</span>
 <span class="kw">UPDATE</span> tname <span class="kw">SET</span> c1=value/subquery, c2=value/subquery <span class="kw">WHERE</span> …</code></pre>
   </div>
-  <h3>
-   <a name="manage-fields">
-    Manage fields
+  <h3 id="manage-fields">
+   <a>
+    1.2.3. Manage fields
    </a>
   </h3>
   <div class="sourceCode">
@@ -342,9 +372,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">SET</span> [fname] = <span class="st">'Value'</span>
 <span class="kw">WHERE</span> fname = <span class="st">'Value'</span>;</code></pre>
   </div>
-  <h3>
-   <a name="manage-views">
-    Manage views
+  <h3 id="manage-views">
+   <a>
+    1.2.4. Manage views
    </a>
   </h3>
   <p>
@@ -355,14 +385,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">use</span> a view: <span class="kw">SELECT</span> * <span class="kw">FROM</span> vname;
 <span class="kw">DROP</span> <span class="kw">VIEW</span> vname;</code></pre>
   </div>
-  <h2>
-   <a name="data-manipulation">
-    Data manipulation
+  <h2 id="data-manipulation">
+   <a>
+    1.3. Data manipulation
    </a>
   </h2>
-  <h3>
-   <a name="generic-query-form">
-    Generic query form
+  <h3 id="generic-query-form">
+   <a>
+    1.3.1. Generic query form
    </a>
   </h3>
   <p>
@@ -406,9 +436,9 @@ fuzzy match:
 multiple char: <span class="kw">SELECT</span> * <span class="kw">FROM</span> … <span class="kw">WHERE</span> c <span class="kw">LIKE</span> ‘%string%’;
 <span class="dt">single</span> char: <span class="kw">SELECT</span> * <span class="kw">FROM</span> … <span class="kw">WHERE</span> c <span class="kw">LIKE</span> ‘_tringvalue’;</code></pre>
   </div>
-  <h3>
-   <a name="select-and-display">
-    SELECT and display
+  <h3 id="select-and-display">
+   <a>
+    1.3.2. SELECT and display
    </a>
   </h3>
   <ul>
@@ -444,9 +474,9 @@ modifier: “-<span class="dv">7</span> days”, “+<span class="dv">2</span> m
 STRFTIME(“format_string”, ”datetime_string”, &lt;modifier&gt;)
 “%d/%m/%Y”</code></pre>
   </div>
-  <h4>
-   <a name="with-conditional-filtering">
-    WITH conditional filtering
+  <h4 id="with-conditional-filtering">
+   <a>
+    1.3.2.1. WITH conditional filtering
    </a>
   </h4>
   <ul>
@@ -454,9 +484,9 @@ STRFTIME(“format_string”, ”datetime_string”, &lt;modifier&gt;)
     EXCEPT
    </li>
   </ul>
-  <h4>
-   <a name="aggregate-and-group-by">
-    Aggregate and GROUP BY
+  <h4 id="aggregate-and-group-by">
+   <a>
+    1.3.2.2. Aggregate and GROUP BY
    </a>
   </h4>
   <ul>
@@ -481,14 +511,14 @@ STRFTIME(“format_string”, ”datetime_string”, &lt;modifier&gt;)
 display <span class="kw">in</span> groups: <span class="kw">SELECT</span> c1, c2, <span class="fu">count</span>(col3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1, c2; 
 filtering groups: <span class="kw">SELECT</span> c1, <span class="fu">count</span>(c3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1 <span class="kw">HAVING</span> cndn;</code></pre>
   </div>
-  <h3>
-   <a name="from">
-    FROM
+  <h3 id="from">
+   <a>
+    1.3.3. FROM
    </a>
   </h3>
-  <h4>
-   <a name="joins">
-    JOINs
+  <h4 id="joins">
+   <a>
+    1.3.3.1. JOINs
    </a>
   </h4>
   <ul>
@@ -537,9 +567,9 @@ removes duplicates: <span class="kw">SELECT</span> … <span class="kw">FROM</sp
 except: <span class="kw">SELECT</span> ... <span class="kw">FROM</span> ... <span class="kw">EXCEPT</span> <span class="kw">SELECT</span> … FROM...;
 <span class="kw">SELECT</span> * <span class="kw">FROM</span> ... <span class="kw">WHERE</span> * <span class="kw">IN</span> (subquery) <span class="kw">AND</span> * <span class="kw">NOT</span> <span class="kw">IN</span> (subquery) </code></pre>
   </div>
-  <h4>
-   <a name="subqueries">
-    Subqueries
+  <h4 id="subqueries">
+   <a>
+    1.3.3.2. Subqueries
    </a>
   </h4>
   <ul>
@@ -562,9 +592,9 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
 <span class="kw">use</span> aliases <span class="kw">for</span> self-correlated subqueries: <span class="kw">SELECT</span> * <span class="kw">FROM</span> city <span class="kw">as</span> c1 <span class="kw">WHERE</span> c1.rating &gt; (<span class="kw">SELECT</span> <span class="fu">avg</span>(c2.rating) <span class="kw">FROM</span> city <span class="kw">AS</span> c2 <span class="kw">WHERE</span> c1.country_id=c2.country_id);
 <span class="kw">exists</span> operator: <span class="kw">SELECT</span> * <span class="kw">FROM</span> country <span class="kw">WHERE</span> <span class="kw">EXISTS</span> (<span class="kw">SELECT</span> * <span class="kw">FROM</span> mountain <span class="kw">WHERE</span> country.id = mountain.country_id);</code></pre>
   </div>
-  <h3>
-   <a name="set-operations">
-    Set operations
+  <h3 id="set-operations">
+   <a>
+    1.3.4. Set operations
    </a>
   </h3>
   <p>
@@ -608,9 +638,9 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
     symmetric difference: (A-B)∪(B-A)
    </li>
   </ul>
-  <h1>
-   <a name="t-sql">
-    T-SQL
+  <h1 id="t-sql">
+   <a>
+    2. T-SQL
    </a>
   </h1>
   <ul>
@@ -654,9 +684,9 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
     SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
    </li>
   </ul>
-  <h1>
-   <a name="examples">
-    Examples
+  <h1 id="examples">
+   <a>
+    3. Examples
    </a>
   </h1>
   <div class="sourceCode">
@@ -726,14 +756,14 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
     (<span class="kw">SELECT</span> CustomerID <span class="kw">FROM</span> Sales.SalesOrderHeader)
 <span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>;</code></pre>
   </div>
-  <h1>
-   <a name="sources">
-    Sources
+  <h1 id="sources">
+   <a>
+    4. Sources
    </a>
   </h1>
-  <h2>
-   <a name="references">
-    References
+  <h2 id="references">
+   <a>
+    4.1. References
    </a>
   </h2>
   <ul>
@@ -768,9 +798,9 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="archive">
-    Archive
+  <h2 id="archive">
+   <a>
+    4.2. Archive
    </a>
   </h2>
   <ul>
@@ -806,8 +836,8 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
    </li>
   </ul>
   <h2>
-   <a name="inbox">
-    Inbox
+   <a name="4.3.-inbox">
+    4.3. Inbox
    </a>
   </h2>
   <ul>

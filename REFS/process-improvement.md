@@ -150,7 +150,7 @@ Why focus on this when labor seems to contribute less to modern firms’ costs? 
 
 ### Inventory metrics
 
-#### Little’s law
+#### Little's law
 
 Inventory=Flow_rate*Flow_time. Given any two variables, can solve for a third (especially flow time); also, can decide how to manipulate outcomes by adjusting a variable. Note that flow time here is essentially average flow time, a line fitted to the actual data recorded from observations of inflow and outflow. “Not an empirical law; to prove it, we need to turn to stochastic optimization.”
 

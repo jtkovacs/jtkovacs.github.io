@@ -9,36 +9,39 @@
   <link href="refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
+  <p class="path">
    <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+    PKB CONTENTS
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">
-    https://jtkovacs.github.io/REFS/HTML/databases.html
-   </a>
-   &gt; 4459 words
+   &gt; TITLE | 4459 words, updated 05/15/2017
   </p>
   <table class="TOC">
    <tr>
     <td>
      <ul>
       <li>
-       <a href="#what-is-a-database?">
-        What is a database?
-       </a>
+       <ol style="list-style-type: decimal">
+        <li>
+         <a href="#what-is-a-database">
+          What is a database?
+         </a>
+        </li>
+       </ol>
        <ul>
         <li>
+         1.1.
          <a href="#the-database-system-lifecycle">
           The database system lifecycle
          </a>
         </li>
         <li>
+         1.2.
          <a href="#history-of-databases">
           History of databases
          </a>
          <ul>
           <li>
+           1.2.1.
            <a href="#ansi-sparc-architecture">
             ANSI-SPARC architecture
            </a>
@@ -46,26 +49,31 @@
          </ul>
         </li>
         <li>
+         1.3.
          <a href="#types-of-databases">
           Types of databases
          </a>
          <ul>
           <li>
+           1.3.1.
            <a href="#the-relational-data-model">
             The relational data model
            </a>
            <ul>
             <li>
+             1.3.1.1.
              <a href="#relationships-between-entities">
               Relationships between entities
              </a>
              <ul>
               <li>
+               1.3.1.1.1.
                <a href="#associative-entities">
                 Associative entities
                </a>
               </li>
               <li>
+               1.3.1.1.2.
                <a href="#superclasses-and-subclasses">
                 Superclasses and subclasses
                </a>
@@ -73,26 +81,31 @@
              </ul>
             </li>
             <li>
+             1.3.1.2.
              <a href="#types-of-attributes">
               Types of attributes
              </a>
             </li>
             <li>
+             1.3.1.3.
              <a href="#relationships-between-attributes">
               Relationships between attributes
              </a>
              <ul>
               <li>
+               1.3.1.3.1.
                <a href="#functional-dependencies-and-keys">
                 Functional dependencies and keys
                </a>
               </li>
               <li>
+               1.3.1.3.2.
                <a href="#transitive-dependencies">
                 Transitive dependencies
                </a>
               </li>
               <li>
+               1.3.1.3.3.
                <a href="#multivalued-dependencies">
                 Multivalued dependencies
                </a>
@@ -100,11 +113,13 @@
              </ul>
             </li>
             <li>
+             1.3.1.4.
              <a href="#integrity">
               Integrity
              </a>
              <ul>
               <li>
+               1.3.1.4.1.
                <a href="#normalization">
                 Normalization
                </a>
@@ -112,13 +127,15 @@
              </ul>
             </li>
             <li>
-             <a href="#why-not-normalize?">
+             1.3.1.5.
+             <a href="#why-not-normalize">
               Why not normalize?
              </a>
             </li>
            </ul>
           </li>
           <li>
+           1.3.2.
            <a href="#nosql-databases">
             NoSQL databases
            </a>
@@ -128,56 +145,70 @@
        </ul>
       </li>
       <li>
-       <a href="#database-development">
-        Database development
-       </a>
+       <ol start="2" style="list-style-type: decimal">
+        <li>
+         <a href="#database-development">
+          Database development
+         </a>
+        </li>
+       </ol>
        <ul>
         <li>
+         2.1.
          <a href="#business-requirements">
           Business requirements
          </a>
         </li>
         <li>
+         2.2.
          <a href="#design-phases">
           Design phases
          </a>
          <ul>
           <li>
+           2.2.1.
            <a href="#conceptual-design">
             Conceptual design
            </a>
           </li>
           <li>
+           2.2.2.
            <a href="#logical-design">
             Logical design
            </a>
           </li>
           <li>
+           2.2.3.
            <a href="#physical-design">
             Physical design
            </a>
            <ul>
             <li>
+             2.2.3.1.
              <a href="#indexing-and-performance">
               Indexing and performance
              </a>
              <ul>
               <li>
+               2.2.3.1.1.
                <a href="#why-to-index">
                 Why to index
                </a>
               </li>
               <li>
+               2.2.3.1.2.
                <a href="#what-to-index">
                 What to index
                </a>
               </li>
               <li>
+               2.2.3.1.3.
                <a href="#how-different-types-of-indexes-work">
                 How different types of indexes work
                </a>
               </li>
               <li>
+               2.2.3.1.4.
                <a href="#fragmentation">
                 Fragmentation
                </a>
@@ -191,56 +222,70 @@
        </ul>
       </li>
       <li>
-       <a href="#database-administration">
-        Database administration
-       </a>
+       <ol start="3" style="list-style-type: decimal">
+        <li>
+         <a href="#database-administration">
+          Database administration
+         </a>
+        </li>
+       </ol>
        <ul>
         <li>
+         3.1.
          <a href="#files-and-filegroups">
           Files and filegroups
          </a>
         </li>
         <li>
+         3.2.
          <a href="#database-architectures">
           Database architectures
          </a>
         </li>
         <li>
+         3.3.
          <a href="#transaction-management">
           Transaction management
          </a>
         </li>
         <li>
+         3.4.
          <a href="#security">
           Security
          </a>
          <ul>
           <li>
+           3.4.1.
            <a href="#audits">
             Audits
            </a>
           </li>
           <li>
+           3.4.2.
            <a href="#encryption-(tde)">
             Encryption (TDE)
            </a>
           </li>
           <li>
+           3.4.3.
            <a href="#authentication-and-authorization">
             Authentication and authorization
            </a>
            <ul>
             <li>
+             3.4.3.1.
              <a href="#digital-signatures">
               Digital signatures
              </a>
             </li>
             <li>
+             3.4.3.2.
              <a href="#ownership-chaining">
               Ownership chaining
              </a>
             </li>
             <li>
+             3.4.3.3.
              <a href="#contained-database">
               Contained database
              </a>
@@ -248,11 +293,13 @@
            </ul>
           </li>
           <li>
+           3.4.4.
            <a href="#preventing-sql-injections">
             Preventing SQL injections
            </a>
           </li>
           <li>
+           3.4.5.
            <a href="#backup">
             Backup
            </a>
@@ -262,26 +309,34 @@
        </ul>
       </li>
       <li>
-       <a href="#sources">
-        Sources
-       </a>
+       <ol start="4" style="list-style-type: decimal">
+        <li>
+         <a href="#sources">
+          Sources
+         </a>
+        </li>
+       </ol>
        <ul>
         <li>
+         4.1.
          <a href="#cited">
           Cited
          </a>
         </li>
         <li>
+         4.2.
          <a href="#references">
           References
          </a>
         </li>
         <li>
+         4.3.
          <a href="#read">
           Read
          </a>
         </li>
         <li>
+         4.4.
          <a href="#unread">
           Unread
          </a>
@@ -297,9 +352,9 @@
     These notes are heavily influenced by Dr. Simon Wu-Ping Wang's slides as well as Connolly and Begg (2015).
    </em>
   </p>
-  <h1>
-   <a name="what-is-a-database?">
-    What is a database?
+  <h1 id="what-is-a-database">
+   <a>
+    1. What is a database?
    </a>
   </h1>
   <p>
@@ -400,9 +455,9 @@
    </strong>
    encompasses hardware, software, data, procedures, and people.
   </p>
-  <h2>
-   <a name="the-database-system-lifecycle">
-    The database system lifecycle
+  <h2 id="the-database-system-lifecycle">
+   <a>
+    1.1. The database system lifecycle
    </a>
   </h2>
   <table>
@@ -456,9 +511,9 @@
     </td>
    </tr>
   </table>
-  <h2>
-   <a name="history-of-databases">
-    History of databases
+  <h2 id="history-of-databases">
+   <a>
+    1.2. History of databases
    </a>
   </h2>
   <p>
@@ -560,9 +615,9 @@
    </a>
    (an umbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
   </p>
-  <h3>
-   <a name="ansi-sparc-architecture">
-    ANSI-SPARC architecture
+  <h3 id="ansi-sparc-architecture">
+   <a>
+    1.2.1. ANSI-SPARC architecture
    </a>
   </h3>
   <p>
@@ -593,14 +648,14 @@
   <p>
    Then, the DBMS creates mappings (also called intensions; a realization of a schema is called the extension or state of the database) between schemas.
   </p>
-  <h2>
-   <a name="types-of-databases">
-    Types of databases
+  <h2 id="types-of-databases">
+   <a>
+    1.3. Types of databases
    </a>
   </h2>
-  <h3>
-   <a name="the-relational-data-model">
-    The relational data model
+  <h3 id="the-relational-data-model">
+   <a>
+    1.3.1. The relational data model
    </a>
   </h3>
   <p>
@@ -640,9 +695,9 @@
     in a normal form.
    </a>
   </p>
-  <h4>
-   <a name="relationships-between-entities">
-    Relationships between entities
+  <h4 id="relationships-between-entities">
+   <a>
+    1.3.1.1. Relationships between entities
    </a>
   </h4>
   <p>
@@ -664,17 +719,17 @@
    </strong>
    if the PK of a parent entity appears in the PK of a child entity, denoted with a solid line; nonidentifying relationships are denoted with dashed lines.
   </p>
-  <h5>
-   <a name="associative-entities">
-    Associative entities
+  <h5 id="associative-entities">
+   <a>
+    1.3.1.1.1. Associative entities
    </a>
   </h5>
   <p>
    Many-to-many relationships must be resolved with an associative entity (AKA junction table) that has a combined primary key (PK), both of which are foreign keys (FK). For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment and a car will likewise be driven by many different drivers. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
   </p>
-  <h5>
-   <a name="superclasses-and-subclasses">
-    Superclasses and subclasses
+  <h5 id="superclasses-and-subclasses">
+   <a>
+    1.3.1.1.2. Superclasses and subclasses
    </a>
   </h5>
   <p>
@@ -691,9 +746,9 @@
     The ERD includes a superclass and subclass(es) but they are implemented as a single table.
    </li>
   </ul>
-  <h4>
-   <a name="types-of-attributes">
-    Types of attributes
+  <h4 id="types-of-attributes">
+   <a>
+    1.3.1.2. Types of attributes
    </a>
   </h4>
   <p>
@@ -723,9 +778,9 @@
     AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.
    </li>
   </ul>
-  <h4>
-   <a name="relationships-between-attributes">
-    Relationships between attributes
+  <h4 id="relationships-between-attributes">
+   <a>
+    1.3.1.3. Relationships between attributes
    </a>
   </h4>
   <p>
@@ -735,9 +790,9 @@
    </a>
    normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity. Dependencies are also used (somehow?) in DB compression and query optimization.
   </p>
-  <h5>
-   <a name="functional-dependencies-and-keys">
-    Functional dependencies and keys
+  <h5 id="functional-dependencies-and-keys">
+   <a>
+    1.3.1.3.1. Functional dependencies and keys
    </a>
   </h5>
   <p>
@@ -846,9 +901,9 @@
    </strong>
    AKA concatenated, meaning that several attributes taken together (a set) are a determinant whose closure is the entire table. For primary keys specifically, they are most often an integer (the narrowest suitable field); immutable; and mandatory.
   </p>
-  <h5>
-   <a name="transitive-dependencies">
-    Transitive dependencies
+  <h5 id="transitive-dependencies">
+   <a>
+    1.3.1.3.2. Transitive dependencies
    </a>
   </h5>
   <p>
@@ -858,9 +913,9 @@
    </code>
    As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
   </p>
-  <h5>
-   <a name="multivalued-dependencies">
-    Multivalued dependencies
+  <h5 id="multivalued-dependencies">
+   <a>
+    1.3.1.3.3. Multivalued dependencies
    </a>
   </h5>
   <p>
@@ -881,9 +936,9 @@
     examples and details here.
    </a>
   </p>
-  <h4>
-   <a name="integrity">
-    Integrity
+  <h4 id="integrity">
+   <a>
+    1.3.1.4. Integrity
    </a>
   </h4>
   <p>
@@ -920,9 +975,9 @@
   <p>
    Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs).
   </p>
-  <h5>
-   <a name="normalization">
-    Normalization
+  <h5 id="normalization">
+   <a>
+    1.3.1.4.1. Normalization
    </a>
   </h5>
   <p>
@@ -1085,9 +1140,9 @@
     </strong>
    </li>
   </ul>
-  <h4>
-   <a name="why-not-normalize?">
-    Why not normalize?
+  <h4 id="why-not-normalize">
+   <a>
+    1.3.1.5. Why not normalize?
    </a>
   </h4>
   <p>
@@ -1105,9 +1160,9 @@
     Normalization is a complex, time-consuming process and developer time is valuable, so operate in the spirit of 'quick and dirty'.
    </li>
   </ul>
-  <h3>
-   <a name="nosql-databases">
-    NoSQL databases
+  <h3 id="nosql-databases">
+   <a>
+    1.3.2. NoSQL databases
    </a>
   </h3>
   <p>
@@ -1207,9 +1262,9 @@
     denormalizing data upon input.
    </li>
   </ul>
-  <h1>
-   <a name="database-development">
-    Database development
+  <h1 id="database-development">
+   <a>
+    2. Database development
    </a>
   </h1>
   <p>
@@ -1235,9 +1290,9 @@
   <p>
    Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; an efficient way of producing documentation).
   </p>
-  <h2>
-   <a name="business-requirements">
-    Business requirements
+  <h2 id="business-requirements">
+   <a>
+    2.1. Business requirements
    </a>
   </h2>
   <ul>
@@ -1284,17 +1339,17 @@
     </ul>
    </li>
   </ul>
-  <h2>
-   <a name="design-phases">
-    Design phases
+  <h2 id="design-phases">
+   <a>
+    2.2. Design phases
    </a>
   </h2>
   <p>
    All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties and constraints of each attribute. Lastly, physical design is focused on specifying the database and its interfaces, etc. according to a particular DBMS.
   </p>
-  <h3>
-   <a name="conceptual-design">
-    Conceptual design
+  <h3 id="conceptual-design">
+   <a>
+    2.2.1. Conceptual design
    </a>
   </h3>
   <p>
@@ -1350,9 +1405,9 @@
     </a>
    </li>
   </ul>
-  <h3>
-   <a name="logical-design">
-    Logical design
+  <h3 id="logical-design">
+   <a>
+    2.2.2. Logical design
    </a>
   </h3>
   <p>
@@ -1397,9 +1452,9 @@
     Denote required fields.
    </li>
   </ul>
-  <h3>
-   <a name="physical-design">
-    Physical design
+  <h3 id="physical-design">
+   <a>
+    2.2.3. Physical design
    </a>
   </h3>
   <p>
@@ -1409,14 +1464,14 @@
    </a>
    The goal of this stage is to provide all the information necessary to build a database that takes advantage of features from the chosen platform.
   </p>
-  <h4>
-   <a name="indexing-and-performance">
-    Indexing and performance
+  <h4 id="indexing-and-performance">
+   <a>
+    2.2.3.1. Indexing and performance
    </a>
   </h4>
-  <h5>
-   <a name="why-to-index">
-    Why to index
+  <h5 id="why-to-index">
+   <a>
+    2.2.3.1.1. Why to index
    </a>
   </h5>
   <p>
@@ -1438,9 +1493,9 @@
    </a>
    Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored.
   </p>
-  <h5>
-   <a name="what-to-index">
-    What to index
+  <h5 id="what-to-index">
+   <a>
+    2.2.3.1.2. What to index
    </a>
   </h5>
   <p>
@@ -1450,9 +1505,9 @@
    </strong>
    that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
   </p>
-  <h5>
-   <a name="how-different-types-of-indexes-work">
-    How different types of indexes work
+  <h5 id="how-different-types-of-indexes-work">
+   <a>
+    2.2.3.1.3. How different types of indexes work
    </a>
   </h5>
   <p>
@@ -1536,9 +1591,9 @@
   <div class="figure">
    <img src="../ILLOS/columnstore.png"/>
   </div>
-  <h5>
-   <a name="fragmentation">
-    Fragmentation
+  <h5 id="fragmentation">
+   <a>
+    2.2.3.1.4. Fragmentation
    </a>
   </h5>
   <p>
@@ -1716,14 +1771,14 @@
     </tr>
    </tbody>
   </table>
-  <h1>
-   <a name="database-administration">
-    Database administration
+  <h1 id="database-administration">
+   <a>
+    3. Database administration
    </a>
   </h1>
-  <h2>
-   <a name="files-and-filegroups">
-    Files and filegroups
+  <h2 id="files-and-filegroups">
+   <a>
+    3.1. Files and filegroups
    </a>
   </h2>
   <p>
@@ -1771,9 +1826,9 @@
     </ul>
    </li>
   </ul>
-  <h2>
-   <a name="database-architectures">
-    Database architectures
+  <h2 id="database-architectures">
+   <a>
+    3.2. Database architectures
    </a>
   </h2>
   <div class="figure">
@@ -1788,9 +1843,9 @@
   <div class="figure">
    <img src="../ILLOS/db-arch4.png"/>
   </div>
-  <h2>
-   <a name="transaction-management">
-    Transaction management
+  <h2 id="transaction-management">
+   <a>
+    3.3. Transaction management
    </a>
   </h2>
   <ul>
@@ -1801,14 +1856,14 @@
     https://www.thoughtco.com/abandoning-acid-in-favor-of-base-1019674
    </li>
   </ul>
-  <h2>
-   <a name="security">
-    Security
+  <h2 id="security">
+   <a>
+    3.4. Security
    </a>
   </h2>
-  <h3>
-   <a name="audits">
-    Audits
+  <h3 id="audits">
+   <a>
+    3.4.1. Audits
    </a>
   </h3>
   <p>
@@ -1938,9 +1993,9 @@
     </td>
    </tr>
   </table>
-  <h3>
-   <a name="encryption-(tde)">
-    Encryption (TDE)
+  <h3 id="encryption-tde">
+   <a>
+    3.4.2. Encryption (TDE)
    </a>
   </h3>
   <ul>
@@ -1959,9 +2014,9 @@
     </a>
    </li>
   </ul>
-  <h3>
-   <a name="authentication-and-authorization">
-    Authentication and authorization
+  <h3 id="authentication-and-authorization">
+   <a>
+    3.4.3. Authentication and authorization
    </a>
   </h3>
   <ul>
@@ -1975,42 +2030,42 @@
     Principles, permissions, securables
    </li>
   </ul>
-  <h4>
-   <a name="digital-signatures">
-    Digital signatures
+  <h4 id="digital-signatures">
+   <a>
+    3.4.3.1. Digital signatures
    </a>
   </h4>
   <p>
    Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
   </p>
-  <h4>
-   <a name="ownership-chaining">
-    Ownership chaining
+  <h4 id="ownership-chaining">
+   <a>
+    3.4.3.2. Ownership chaining
    </a>
   </h4>
-  <h4>
-   <a name="contained-database">
-    Contained database
+  <h4 id="contained-database">
+   <a>
+    3.4.3.3. Contained database
    </a>
   </h4>
-  <h3>
-   <a name="preventing-sql-injections">
-    Preventing SQL injections
+  <h3 id="preventing-sql-injections">
+   <a>
+    3.4.4. Preventing SQL injections
    </a>
   </h3>
-  <h3>
-   <a name="backup">
-    Backup
+  <h3 id="backup">
+   <a>
+    3.4.5. Backup
    </a>
   </h3>
-  <h1>
-   <a name="sources">
-    Sources
+  <h1 id="sources">
+   <a>
+    4. Sources
    </a>
   </h1>
-  <h2>
-   <a name="cited">
-    Cited
+  <h2 id="cited">
+   <a>
+    4.1. Cited
    </a>
   </h2>
   <p>
@@ -2092,9 +2147,9 @@
     http://use-the-index-luke.com/sql/anatomy
    </a>
   </p>
-  <h2>
-   <a name="references">
-    References
+  <h2 id="references">
+   <a>
+    4.2. References
    </a>
   </h2>
   <ul>
@@ -2109,9 +2164,9 @@
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="read">
-    Read
+  <h2 id="read">
+   <a>
+    4.3. Read
    </a>
   </h2>
   <ul>
@@ -2147,8 +2202,8 @@
    </li>
   </ul>
   <h2>
-   <a name="unread">
-    Unread
+   <a name="4.4.-unread">
+    4.4. Unread
    </a>
   </h2>
   <ul>

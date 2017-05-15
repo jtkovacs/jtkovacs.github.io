@@ -1,57 +1,57 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/databases.html">https://jtkovacs.github.io/REFS/HTML/databases.html</a> \> 4459 words </p><table class="TOC"><tr><td>- [What is a database?](#what-is-a-database?)
-	- [The database system lifecycle](#the-database-system-lifecycle)
-	- [History of databases](#history-of-databases)
-		- [ANSI-SPARC architecture](#ansi-sparc-architecture)
-	- [Types of databases](#types-of-databases)
-		- [The relational data model](#the-relational-data-model)
-			- [Relationships between entities](#relationships-between-entities)
-				- [Associative entities](#associative-entities)
-				- [Superclasses and subclasses](#superclasses-and-subclasses)
-			- [Types of attributes](#types-of-attributes)
-			- [Relationships between attributes](#relationships-between-attributes)
-				- [Functional dependencies and keys](#functional-dependencies-and-keys)
-				- [Transitive dependencies](#transitive-dependencies)
-				- [Multivalued dependencies](#multivalued-dependencies)
-			- [Integrity](#integrity)
-				- [Normalization](#normalization)
-			- [Why not normalize?](#why-not-normalize?)
-		- [NoSQL databases](#nosql-databases)
-- [Database development](#database-development)
-	- [Business requirements](#business-requirements)
-	- [Design phases](#design-phases)
-		- [Conceptual design](#conceptual-design)
-		- [Logical design](#logical-design)
-		- [Physical design](#physical-design)
-			- [Indexing and performance](#indexing-and-performance)
-				- [Why to index](#why-to-index)
-				- [What to index](#what-to-index)
-				- [How different types of indexes work](#how-different-types-of-indexes-work)
-				- [Fragmentation](#fragmentation)
-- [Database administration](#database-administration)
-	- [Files and filegroups](#files-and-filegroups)
-	- [Database architectures](#database-architectures)
-	- [Transaction management](#transaction-management)
-	- [Security](#security)
-		- [Audits](#audits)
-		- [Encryption (TDE)](#encryption-(tde))
-		- [Authentication and authorization](#authentication-and-authorization)
-			- [Digital signatures](#digital-signatures)
-			- [Ownership chaining](#ownership-chaining)
-			- [Contained database](#contained-database)
-		- [Preventing SQL injections](#preventing-sql-injections)
-		- [Backup](#backup)
-- [Sources](#sources)
-	- [Cited](#cited)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
+<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> TITLE | 4459 words, updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [What is a database?](#what-is-a-database)
+	- 1.1. [The database system lifecycle](#the-database-system-lifecycle)
+	- 1.2. [History of databases](#history-of-databases)
+		- 1.2.1. [ANSI-SPARC architecture](#ansi-sparc-architecture)
+	- 1.3. [Types of databases](#types-of-databases)
+		- 1.3.1. [The relational data model](#the-relational-data-model)
+			- 1.3.1.1. [Relationships between entities](#relationships-between-entities)
+				- 1.3.1.1.1. [Associative entities](#associative-entities)
+				- 1.3.1.1.2. [Superclasses and subclasses](#superclasses-and-subclasses)
+			- 1.3.1.2. [Types of attributes](#types-of-attributes)
+			- 1.3.1.3. [Relationships between attributes](#relationships-between-attributes)
+				- 1.3.1.3.1. [Functional dependencies and keys](#functional-dependencies-and-keys)
+				- 1.3.1.3.2. [Transitive dependencies](#transitive-dependencies)
+				- 1.3.1.3.3. [Multivalued dependencies](#multivalued-dependencies)
+			- 1.3.1.4. [Integrity](#integrity)
+				- 1.3.1.4.1. [Normalization](#normalization)
+			- 1.3.1.5. [Why not normalize?](#why-not-normalize)
+		- 1.3.2. [NoSQL databases](#nosql-databases)
+- 2. [Database development](#database-development)
+	- 2.1. [Business requirements](#business-requirements)
+	- 2.2. [Design phases](#design-phases)
+		- 2.2.1. [Conceptual design](#conceptual-design)
+		- 2.2.2. [Logical design](#logical-design)
+		- 2.2.3. [Physical design](#physical-design)
+			- 2.2.3.1. [Indexing and performance](#indexing-and-performance)
+				- 2.2.3.1.1. [Why to index](#why-to-index)
+				- 2.2.3.1.2. [What to index](#what-to-index)
+				- 2.2.3.1.3. [How different types of indexes work](#how-different-types-of-indexes-work)
+				- 2.2.3.1.4. [Fragmentation](#fragmentation)
+- 3. [Database administration](#database-administration)
+	- 3.1. [Files and filegroups](#files-and-filegroups)
+	- 3.2. [Database architectures](#database-architectures)
+	- 3.3. [Transaction management](#transaction-management)
+	- 3.4. [Security](#security)
+		- 3.4.1. [Audits](#audits)
+		- 3.4.2. [Encryption (TDE)](#encryption-(tde))
+		- 3.4.3. [Authentication and authorization](#authentication-and-authorization)
+			- 3.4.3.1. [Digital signatures](#digital-signatures)
+			- 3.4.3.2. [Ownership chaining](#ownership-chaining)
+			- 3.4.3.3. [Contained database](#contained-database)
+		- 3.4.4. [Preventing SQL injections](#preventing-sql-injections)
+		- 3.4.5. [Backup](#backup)
+- 4. [Sources](#sources)
+	- 4.1. [Cited](#cited)
+	- 4.2. [References](#references)
+	- 4.3. [Read](#read)
+	- 4.4. [Unread](#unread)
 </td></tr></table>
 
 _These notes are heavily influenced by Dr. Simon Wu-Ping Wang's slides as well as Connolly and Begg (2015)._
 
 
 
-# What is a database?
+# 1. What is a database?
 
 A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.html#information-structures) for other major data models); or (2) this structured data plus a database management system (DBMS). 
 
@@ -73,7 +73,7 @@ A [DBMS](DBMS.html) is either a **database engine** for interacting with the dat
 Finally, a **database system** is a database/DBMS plus database applications (any applications that source from or feed data to the database). This term denotes only the technical environment of a database; the full **database environment** encompasses hardware, software, data, procedures, and people.
 
 
-## The database system lifecycle
+## 1.1. The database system lifecycle
 
 <table>
 <tr><th colspan="2">Requirements Analysis</th></tr>
@@ -88,7 +88,7 @@ Finally, a **database system** is a database/DBMS plus database applications (an
 
 
 
-## History of databases
+## 1.2. History of databases
 
 The first computerized information systems (IBM, c. 1950) imitated **hierarchical** paper filing systems. The more semantically powerful **graph** AKA network data model followed shortly thereafter (1960s, also IBM). In early systems, file and data formats were specific to an application or language; applications were specific to a department. This arrangement led to
 
@@ -108,7 +108,7 @@ Hierarchies and graphs were superseded by Edgar Codd's **relational** data model
 
 **Object** databases introduced features like encapsulation and polymorphism c. 1990, but never became popular or standardized. With the advent of Big Data, [NoSQL databases](#NoSQL-databases) (an umbrella term for non-relational database with SQL-like interface) have become popular because they beat relational DBs at quick search; however, relational databases are still better at maintaining data integrity (via transaction management with ACID properties).
 
-### ANSI-SPARC architecture
+### 1.2.1. ANSI-SPARC architecture
 
 This is one way of thinking about database abstraction/separation, which, in general, makes the database easier to change and maintain by providing **data independence:**
 
@@ -121,23 +121,23 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 
 
-## Types of databases
+## 1.3. Types of databases
 
-### The relational data model
+### 1.3.1. The relational data model
 
 In a relational database, the data model is of **tables** AKA relations, which can be clustered tables or heaps [depending on their indexing.](#indexing-and-performance) Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). The order of rows and columns is insignificant (unless an [index](#indexing-and-performance) is created).
 
 Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development. Per Ullman (2006), **many different relational schemas could be used to model any given reality;** the best designs will suit the underlying business processes and be [in a normal form.](#normalization) 
 
-#### Relationships between entities
+#### 1.3.1.1. Relationships between entities
 
 The relationship between two entites has several characteristics. The **participation** of a relationship is mandatory or optional; the **cardinality** AKA modality of a relationships may be one-to-one, one-to-many, or many-to-many; see [ERDs](modeling.html#erds-for-databases) for notation. A relationship is **identifying** if the PK of a parent entity appears in the PK of a child entity, denoted with a solid line; nonidentifying relationships are denoted with dashed lines.
 
-##### Associative entities
+##### 1.3.1.1.1. Associative entities
 
 Many-to-many relationships must be resolved with an associative entity (AKA junction table) that has a combined primary key (PK), both of which are foreign keys (FK). For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment and a car will likewise be driven by many different drivers. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 
-##### Superclasses and subclasses
+##### 1.3.1.1.2. Superclasses and subclasses
 
 Entities may be classified as superclasses and subclasses; this provides more semantic meaning to an ER model, makes the ER model more readable, and (depending on implementation) can reduce the number of NULLs in the database. There are several implementation options:
 
@@ -146,7 +146,7 @@ Entities may be classified as superclasses and subclasses; this provides more se
 - The ERD includes a superclass and subclass(es) but they are implemented as a single table.
 
 
-#### Types of attributes
+#### 1.3.1.2. Types of attributes
 
 Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is:
 
@@ -155,11 +155,11 @@ Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is
 - **Multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.  
 
 
-#### Relationships between attributes
+#### 1.3.1.3. Relationships between attributes
 
 Different sorts of relationships AKA dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. Dependencies are important for understanding [normalization;](#normalization) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity. Dependencies are also used (somehow?) in DB compression and query optimization.
 
-##### Functional dependencies and keys
+##### 1.3.1.3.1. Functional dependencies and keys
 
 A functional dependency `A → B` exists when the same A (for our purposes, an attribute value called the **determinant)** is linked to a single B (another attribute value, called the **dependent).** The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one y, a function output, but a single value of y might correspond to multiple different values of x:
 
@@ -178,16 +178,16 @@ The set of attributes that are functionally dependent on a determinant is called
 
 In general, keys may be **natural,** i.e. present in the data, or **synthetic** AKA surrogate, automatically generated by the database for internal use. Keys may also be **composite** AKA concatenated, meaning that several attributes taken together (a set) are a determinant whose closure is the entire table. For primary keys specifically, they are most often an integer (the narrowest suitable field); immutable; and mandatory.
 
-##### Transitive dependencies
+##### 1.3.1.3.2. Transitive dependencies
 
 If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z: `A → B & B → C ⇒ A → C.` As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
 
-##### Multivalued dependencies
+##### 1.3.1.3.3. Multivalued dependencies
 
 A multivalued dependency `A ↠ B` exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic: `if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.` Furthermore, `∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest`. MVDs matter for 4NF; [examples and details here.](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf)
 
 
-#### Integrity
+#### 1.3.1.4. Integrity
 
 Data must have integrity to be useful and trustworthy. Data integrity [tends to erode,](wrangling.html#dirty-data-typologies) and a database has mechanisms for maintaining it in its various forms:
 
@@ -199,7 +199,7 @@ Data must have integrity to be useful and trustworthy. Data integrity [tends to 
 
 Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs). 
 
-##### Normalization
+##### 1.3.1.4.1. Normalization
 
 Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity; [Bill Kent](http://www.bkent.net/Doc/simple5.htm) does a good job talking about this in terms of which attributes provide "facts" about other attributes. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms progressive refinements of the basic relational model:
 
@@ -224,7 +224,7 @@ Note the redundancy (caused by the transitive dependency) the liabilities it cre
 - You must add an author to add a book, and vice versa; this is an **insertion anomaly.**
 - If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an **update anomaly.**
 
-#### Why not normalize?
+#### 1.3.1.5. Why not normalize?
 
 Per Chapple (2016): 
 
@@ -234,7 +234,7 @@ Per Chapple (2016):
 
 
 
-### NoSQL databases
+### 1.3.2. NoSQL databases
 
 NoSQL databases use non-relational data models ... 
 
@@ -267,7 +267,7 @@ NoSQL databases use non-relational data models ...
 
 
 
-# Database development
+# 2. Database development
 
 A good design process minimizes redundancy; reduces errors by automating or imposing constraints on data entry; permits multiple analyses by replacing multipart fields with atomic ones; avoids data conflicts by reserving calculation to the analysis phase, rather than storing results; and ensures complete information by requiring it during input. **Best practices for DB design:**
 
@@ -279,7 +279,7 @@ A good design process minimizes redundancy; reduces errors by automating or impo
 Note that databases are often developed in parallel with the applications that will use them. Also, DB development may use CASE (computer-aided software engineering) tools that help with standardization, integration, consistency, and automation. For databases, CASE tools may provide forward engineering (generating database-creating code based on ERD) and reverse engineering (generating ERD from existing database; an efficient way of producing documentation).
 
 
-## Business requirements
+## 2.1. Business requirements
 
 - Conduct a **cost-benefit analysis** for the proposed database;
 - Write a **mission statement and objectives;**
@@ -289,11 +289,11 @@ Note that databases are often developed in parallel with the applications that w
     - Identify pertinent **business rules,** i.e., database design constraints that arise from the business processes being modeled, not from requirements of the data model.
 
 
-## Design phases
+## 2.2. Design phases
 
 All stages of design are beholden to the underlying data model. Conceptual design is broader, mostly focused on grouping attributes into tables; logical design is more granular, mostly focused on properties and constraints of each attribute. Lastly, physical design is focused on specifying the database and its interfaces, etc. according to a particular DBMS.
 
-### Conceptual design
+### 2.2.1. Conceptual design
 
 In the conceptual design stage of database development, there are two competing approaches: 
 
@@ -310,7 +310,7 @@ In addition to constructing tables via a top-down or bottom-up approach, a conce
 - Specify lookup tables;
 - Identify [primary keys.](#types-of-attributes)
 
-### Logical design
+### 2.2.2. Logical design
     
 Proceed table by table, field by field:
 
@@ -324,21 +324,21 @@ Proceed table by table, field by field:
     - Through a check constraint. 
 - Denote required fields.
 
-### Physical design
+### 2.2.3. Physical design
     
 Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features from the chosen platform.
 
-#### Indexing and performance
+#### 2.2.3.1. Indexing and performance
 
-##### Why to index
+##### 2.2.3.1.1. Why to index
 
 Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations).` (Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index.) Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored. 
 
-##### What to index
+##### 2.2.3.1.2. What to index
 
 The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
-##### How different types of indexes work
+##### 2.2.3.1.3. How different types of indexes work
 
 This discussion is based on MS SQL Server, which stores table data (rows) in uniformly-sized pages AKA blocks:
 
@@ -363,7 +363,7 @@ Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstor
 
 ![](../ILLOS/columnstore.png)
 
-##### Fragmentation
+##### 2.2.3.1.4. Fragmentation
 
 Index fragmentation is inevitable, especially in OLTP environments:
 
@@ -394,9 +394,9 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 
 
 
-# Database administration
+# 3. Database administration
 
-## Files and filegroups
+## 3.1. Files and filegroups
 
 A DBMS records _actions_ in its **log file** (.LDF) )and data in its **data file** (holding pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files.)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) During backup, the local log file is wiped but the data files are unchanged.
 
@@ -408,7 +408,7 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 - Create multiple data files (.NDF)
     - Create filegroups to manage multiple data files as one object
 
-## Database architectures
+## 3.2. Database architectures
 
 ![](../ILLOS/db-arch1.png)
 
@@ -418,14 +418,14 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ![](../ILLOS/db-arch4.png)
 
-## Transaction management
+## 3.3. Transaction management
 
 - ACID
 - https://www.thoughtco.com/abandoning-acid-in-favor-of-base-1019674
 
-## Security
+## 3.4. Security
 
-### Audits
+### 3.4.1. Audits
 
 Check database logs to identify security problems, or conduct a more extensive audit. Common security threats may be categorized by human vectors or by system targets:
 
@@ -476,38 +476,38 @@ Check database logs to identify security problems, or conduct a more extensive a
 </tr>
 </table>
 
-### Encryption (TDE)
+### 3.4.2. Encryption (TDE)
 
 - Data encryption standard (DES) uses bit manipulation (substitution and permutation) and blocks of 64 bits
 - Advanced Encryption Standards (AES) uses block size of 128/192/256 bits
 - Public key encryption (Diffie & Hellman, 1976); later RSA public key (1978)
 - [https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/](https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/)
 
-### Authentication and authorization
+### 3.4.3. Authentication and authorization
 
 - Role-based access control (RBAC)
 - Mandatory access control (MAC)
 - Principles, permissions, securables
 
-#### Digital signatures
+#### 3.4.3.1. Digital signatures
 
 Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
 
-#### Ownership chaining
+#### 3.4.3.2. Ownership chaining
 
-#### Contained database
+#### 3.4.3.3. Contained database
 
-### Preventing SQL injections
+### 3.4.4. Preventing SQL injections
 
-### Backup
-
-
+### 3.4.5. Backup
 
 
 
-# Sources
 
-## Cited
+
+# 4. Sources
+
+## 4.1. Cited
 
 Chapple, M. (2016, November 29). Should I denormalize my database? ThoughtCo. Retrieved from [https://www.thoughtco.com/should-i-normalize-my-database-1019730](https://www.thoughtco.com/should-i-normalize-my-database-1019730)
 
@@ -532,12 +532,12 @@ Watt, A. (n.d.). Functional dependencies. In _Database design._ Retrieved from [
 Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from [http://use-the-index-luke.com/sql/anatomy](http://use-the-index-luke.com/sql/anatomy)
 
 
-## References
+## 4.2. References
 
 - [Database Management Wikia](http://databasemanagement.wikia.com/wiki/Main_Page)
 - [Use the index, Luke: A guide to database performance for developers](http://use-the-index-luke.com/sql/table-of-contents)
 
-## Read
+## 4.3. Read
 
 - [Intro. to Relational Databases](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
 - [Relational Algebra](https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about)
@@ -546,7 +546,7 @@ Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from [http://use-the-index-
 - [ORM is an offensive anti-pattern](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html)
 - [Access 2016](http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html)
 
-## Unread
+## 4.4. Unread
 
 - [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
 - [How does a relational database work?](http://coding-geek.com/how-databases-work/)

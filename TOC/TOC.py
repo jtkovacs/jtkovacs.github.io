@@ -87,7 +87,7 @@ for i,h in enumerate(headers):
     nr_elements = list()
     for n in nonzero_keys:
         nr_elements.append(str(hcount[n]))
-    nr = ".".join(nr_elements)+'. '
+    nr = ".".join(nr_elements)
     nrs.append(nr)
 
     ### Drop Markdown header indicators (#s) from header
@@ -95,9 +95,15 @@ for i,h in enumerate(headers):
     
     ### Create URL-safe anchor from header (as pandoc, below)
     aname = "-".join(h.split(' ')[1:]).lower()[:-1]
-    aname = aname.replace('&','')
+    aname = aname.replace('&', '')
+    aname = aname.replace(',', '')
+    aname = aname.replace('(', '')
+    aname = aname.replace(')', '')
+    aname = aname.replace("'", '')
+    aname = aname.replace("/", '')
     aname = aname.replace('?', '')
-    aname = nr+aname
+    aname = aname.replace('--', '-')
+#    aname = nr+'.-'+aname
 
     ### Construct TOC entry for header
     ### - 1.1.2. [What are blue & green?](#1.1.2.-what-are-blue-green)
@@ -116,14 +122,12 @@ fout = open(foname, "w")
 
 
 # Write to new .md file
-## ... URLs, last update, word count, est. reading time
-url = 'https://jtkovacs.github.io/REFS/HTML/'+foname[25:-7]+'.html'
+## ... home, last update, word count, est. reading time
 wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
-up_date = datetime.datetime.now().isoformat()
+title = 'TITLE'
 num_words = wc.stdout.decode("utf-8").split(" ")[0]
-read_time = round(num_words/200, 2)
-fout.write('<p class="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="'+url+'">'+url+'</a></p>')  
-fout.write('<p class="path">modified '+up_date+'\> '+num_words+' words, est.'+read_time+' minutes </p>') 
+up_date = datetime.datetime.now().strftime("%m/%d/%Y")
+fout.write('<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> '+title+' | '+num_words+' words, updated '+up_date+'</p>') 
 
 ## ... TOC
 fout.write('<table class="TOC"><tr><td>')
@@ -139,11 +143,11 @@ ni = 0
 
 for row in fhand:
     
-    ### Reformat '## Search engines' as '## 1.4 Search engines'
+    ### Reformat '## Search engines' as '## 1.4. Search engines'
     if ci in header_indices:
         row = row.split(' ')
-        header = row[0]+' '+nrs[ni]+' '+" ".join(row[1:])
-        fout.write(row)
+        header = row[0]+' '+nrs[ni]+'. '+" ".join(row[1:])
+        fout.write(header)
         
         ni += 1
 
@@ -207,9 +211,10 @@ fhand.write(my_soup.prettify())
 
 # If called as $ TOC filename.md "commit message"
 # .. call $ python3 PUSH.py "commit message"
-if sys.argv[2]:
+try:
     subprocess.run(['python3','/home/jtk/Site/TOC/PUSH.py', sys.argv[2]])
-    
+except:
+    pass
     
     
     

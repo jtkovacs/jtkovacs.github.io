@@ -13,16 +13,15 @@ body {
 }
 
 .path, .path a {
-    padding-left: 3px;
+    padding-left: 15px;
     font-family: monospace;
     font-size: 10px;
-    font-weight: normal;
     color: #bbbbbb;
     max-width: 800px;
 }
 
 .path a:hover {
-    font-weight: bold;
+    color: #e25500;
 }
 
 
@@ -81,11 +80,16 @@ table.TOC ul {
 /* Some padding between list items */
 table.TOC li {
     padding-top:2px;
+    color: #bbbbbb;
+    font-size:8px;
 }
 /* Make nested list items lighter and smaller */
 table.TOC li a {
     font-size: 16px;
     color: #235D47;
+}
+table.TOC li a:hover {
+    color: #e25500;
 }
 table.TOC li li a {
     color: #318164;
@@ -110,36 +114,33 @@ table.TOC li li li li li a {
 /* They should get lighter shades of orange as they decrease in size */
 h1, h1 a, h1 a:hover {
     color: #FC2000;
-    font-size: 22px;
+    font-size: 30px;
     padding-top: 80px;
 }
 
 h2, h2 a, h2 a:hover {
     color: #FC5F00;
-    font-size: 19px;
+    font-size: 22px;
     padding-top: 30px;
 }
 
 
 h3, h3 a, h3 a:hover {
     color: #FF6E16;
-    font-size: 15px;
-    padding-left: 5px;
+    font-size: 18px;
     padding-top: 10px;
 }
 
 
 h4, h4 a, h4 a:hover {
     color: #FF7E31;
-    font-size: 12px;
-    padding-left: 8px;
+    font-size: 15px;
 }
 
 
 h5, h5 a, h5 a:hover {
-    color: #FF9E64;
-    font-size: 10px;
-    padding-left: 11px;
+    color: #FF8E4B;
+    font-size: 12px;
 }
 
 

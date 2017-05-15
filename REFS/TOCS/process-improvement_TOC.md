@@ -1,93 +1,93 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/process-improvement.html">https://jtkovacs.github.io/REFS/HTML/process-improvement.html</a></p><table class="TOC"><tr><td>- [Tools by degree of change sought](#tools-by-degree-of-change-sought)
-	- [Business process automation (BPA)](#business-process-automation-(bpa))
-		- [Problem analysis](#problem-analysis)
-		- [Root cause analysis](#root-cause-analysis)
-	- [Business process improvement (BPI)](#business-process-improvement-(bpi))
-		- [Duration analysis](#duration-analysis)
-		- [Activity-based costing](#activity-based-costing)
-		- [Informal bench-marking ](#informal-bench-marking-)
-	- [Business process reengineering (BPR)](#business-process-reengineering-(bpr))
-		- [Outcome analysis](#outcome-analysis)
-		- [Technology analysis](#technology-analysis)
-		- [Activity elimination](#activity-elimination)
-- [Continuous Process Improvement](#continuous-process-improvement)
-	- [Depict system](#depict-system)
-		- [Value stream mapping](#value-stream-mapping)
-		- [Spaghetti diagram](#spaghetti-diagram)
-	- [Identify problems](#identify-problems)
-		- [Eleven wastes checklist](#eleven-wastes-checklist)
-		- [Pareto analysis](#pareto-analysis)
-	- [Analyze problems ](#analyze-problems-)
-		- [Cause-and-effect diagram](#cause-and-effect-diagram)
-		- [CEDAC](#cedac)
-	- [Address problem](#address-problem)
-		- [Opportunities rating matrix ](#opportunities-rating-matrix-)
-		- [5S organization methodology](#5s-organization-methodology)
-		- [Brainstorming](#brainstorming)
-- [Design Thinking](#design-thinking)
-- [Operations Management](#operations-management)
-	- [Business process analysis](#business-process-analysis)
-		- [Flow diagram](#flow-diagram)
-		- [Measuring labor productivity](#measuring-labor-productivity)
-		- [Inventory metrics](#inventory-metrics)
-			- [Little’s law](#little’s-law)
-			- [Inventory turns](#inventory-turns)
-			- [Make-to-stock vs make-to-order](#make-to-stock-vs-make-to-order)
-	- [Analyzing & improving productivity](#analyzing-&-improving-productivity)
-		- [Sources of wastes](#sources-of-wastes)
-		- [Financial value of productivity](#financial-value-of-productivity)
-		- [Key Performance Indicators (KPIs) and KPI trees](#key-performance-indicators-(kpis)-and-kpi-trees)
-		- [Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)](#overall-equipment-effectiveness-(oee)-and-overall-people-effectiveness-(ope))
-		- [Reducing idle time](#reducing-idle-time)
-		- [Smoothing performance across workers](#smoothing-performance-across-workers)
-	- [Quality control](#quality-control)
-		- [Basic defect calculations](#basic-defect-calculations)
-		- [Quality & flow](#quality-&-flow)
-		- [Six Sigma](#six-sigma)
-		- [Control charts](#control-charts)
-		- [Jidoka](#jidoka)
-		- [Problem solving](#problem-solving)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
+<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> TITLE | 2527 words, updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [Tools by degree of change sought](#tools-by-degree-of-change-sought)
+	- 1.1. [Business process automation (BPA)](#business-process-automation-bpa)
+		- 1.1.1. [Problem analysis](#problem-analysis)
+		- 1.1.2. [Root cause analysis](#root-cause-analysis)
+	- 1.2. [Business process improvement (BPI)](#business-process-improvement-bpi)
+		- 1.2.1. [Duration analysis](#duration-analysis)
+		- 1.2.2. [Activity-based costing](#activity-based-costing)
+		- 1.2.3. [Informal bench-marking ](#informal-bench-marking-)
+	- 1.3. [Business process reengineering (BPR)](#business-process-reengineering-bpr)
+		- 1.3.1. [Outcome analysis](#outcome-analysis)
+		- 1.3.2. [Technology analysis](#technology-analysis)
+		- 1.3.3. [Activity elimination](#activity-elimination)
+- 2. [Continuous Process Improvement](#continuous-process-improvement)
+	- 2.1. [Depict system](#depict-system)
+		- 2.1.1. [Value stream mapping](#value-stream-mapping)
+		- 2.1.2. [Spaghetti diagram](#spaghetti-diagram)
+	- 2.2. [Identify problems](#identify-problems)
+		- 2.2.1. [Eleven wastes checklist](#eleven-wastes-checklist)
+		- 2.2.2. [Pareto analysis](#pareto-analysis)
+	- 2.3. [Analyze problems ](#analyze-problems-)
+		- 2.3.1. [Cause-and-effect diagram](#cause-and-effect-diagram)
+		- 2.3.2. [CEDAC](#cedac)
+	- 2.4. [Address problem](#address-problem)
+		- 2.4.1. [Opportunities rating matrix ](#opportunities-rating-matrix-)
+		- 2.4.2. [5S organization methodology](#5s-organization-methodology)
+		- 2.4.3. [Brainstorming](#brainstorming)
+- 3. [Design Thinking](#design-thinking)
+- 4. [Operations Management](#operations-management)
+	- 4.1. [Business process analysis](#business-process-analysis)
+		- 4.1.1. [Flow diagram](#flow-diagram)
+		- 4.1.2. [Measuring labor productivity](#measuring-labor-productivity)
+		- 4.1.3. [Inventory metrics](#inventory-metrics)
+			- 4.1.3.1. [Little's law](#littles-law)
+			- 4.1.3.2. [Inventory turns](#inventory-turns)
+			- 4.1.3.3. [Make-to-stock vs make-to-order](#make-to-stock-vs-make-to-order)
+	- 4.2. [Analyzing & improving productivity](#analyzing-improving-productivity)
+		- 4.2.1. [Sources of wastes](#sources-of-wastes)
+		- 4.2.2. [Financial value of productivity](#financial-value-of-productivity)
+		- 4.2.3. [Key Performance Indicators (KPIs) and KPI trees](#key-performance-indicators-kpis-and-kpi-trees)
+		- 4.2.4. [Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)](#overall-equipment-effectiveness-oee-and-overall-people-effectiveness-ope)
+		- 4.2.5. [Reducing idle time](#reducing-idle-time)
+		- 4.2.6. [Smoothing performance across workers](#smoothing-performance-across-workers)
+	- 4.3. [Quality control](#quality-control)
+		- 4.3.1. [Basic defect calculations](#basic-defect-calculations)
+		- 4.3.2. [Quality & flow](#quality-flow)
+		- 4.3.3. [Six Sigma](#six-sigma)
+		- 4.3.4. [Control charts](#control-charts)
+		- 4.3.5. [Jidoka](#jidoka)
+		- 4.3.6. [Problem solving](#problem-solving)
+- 5. [Sources](#sources)
+	- 5.1. [References](#references)
+	- 5.2. [Read](#read)
+	- 5.3. [Unread](#unread)
 </td></tr></table>
 
-# Tools by degree of change sought
+# 1. Tools by degree of change sought
 
 Per Dennis et al. (2012), 
 
 ![](../ILLOS/BPA-BPI-BPR.png)
 
-## Business process automation (BPA)
+## 1.1. Business process automation (BPA)
 
 BPA is focused on making current processes more efficient through automation; it requires thorough analysis of the current system.
 
-### Problem analysis
+### 1.1.1. Problem analysis
 
 This entails asking current system users about problems they face or features they desire. Problems identified with this technique are often related to UI and their resolution produces little if any business value.
 
-### Root cause analysis
+### 1.1.2. Root cause analysis
 
 This entails asking current system users to explore the root causes of problems they've identified (since these problems may only be symptoms). Root causes may be uncovered by asking "Why?" five times; causal relationships may be represented as a hierarchy, web, or fishbone/Ishikawa diagram.
 
-## Business process improvement (BPI)
+## 1.2. Business process improvement (BPI)
 
 BPI goes beyond increased efficiency to the realm of increased effectiveness, for instance taking advantage of new opportunities and technologies.
     
-### Duration analysis
+### 1.2.1. Duration analysis
 
 First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through **integration** (fewer people involved in doing the work across its lifecycle) or **parallelization** (steps being done concurrently).
 
-### Activity-based costing
+### 1.2.2. Activity-based costing
 
 Steps in a process are costed, and improvement efforts are focused on the costliest step.
 
-### Informal bench-marking 
+### 1.2.3. Informal bench-marking 
 
 Examine competitors to identify performance targets and process improvements.
     
-## Business process reengineering (BPR)
+## 1.3. Business process reengineering (BPR)
 
 BPR is a radical upending of current business processes and systems, so spends little time analyzing them. Per Rigby (2015; also gives recommendations for further reading), a BPR effort focuses on:
 
@@ -97,55 +97,55 @@ BPR is a radical upending of current business processes and systems, so spends l
     - Reduce costs, waste, and cycle times
     - Increase quality
 
-### Outcome analysis
+### 1.3.1. Outcome analysis
 
 Trying to think about the business from the perspective of users' ultimate goals and needs (recognizing that your product or service may be only a means to an end).
 
-### Technology analysis
+### 1.3.2. Technology analysis
 
 Reviewing existing and emerging technologies and asking how they might be applied in your company (either as a process improvement or a product).
 
-### Activity elimination
+### 1.3.3. Activity elimination
 
 Systematically (but as a thought exercise) eliminating each step in a process, and asking what the implications are.
 
 
 
 
-# Continuous Process Improvement
+# 2. Continuous Process Improvement
 
 _These notes are based on Jeevon Powell's class, [Process Improvement Tools.](https://ucs.admin.uw.edu/pod/Course/Details/Q1170)_
 
-## Depict system
+## 2.1. Depict system
 
 See [notes on systems modeling.](modeling.html)
 
-### Value stream mapping
+### 2.1.1. Value stream mapping
 
-### Spaghetti diagram
+### 2.1.2. Spaghetti diagram
 
-## Identify problems
+## 2.2. Identify problems
 
-### Eleven wastes checklist
+### 2.2.1. Eleven wastes checklist
 
-### Pareto analysis
+### 2.2.2. Pareto analysis
 
-## Analyze problems 
+## 2.3. Analyze problems 
 
-### Cause-and-effect diagram
+### 2.3.1. Cause-and-effect diagram
 
-### CEDAC
+### 2.3.2. CEDAC
 
-## Address problem
+## 2.4. Address problem
 
-### Opportunities rating matrix 
+### 2.4.1. Opportunities rating matrix 
 
-### 5S organization methodology
+### 2.4.2. 5S organization methodology
 
-### Brainstorming
+### 2.4.3. Brainstorming
 
 
-# Design Thinking
+# 3. Design Thinking
 
 - [Draw toast](http://www.drawtoast.com/)
 - [Microsoft's radical bet on a new type of design thinking](https://www.fastcodesign.com/3054927/the-big-idea/microsofts-inspiring-bet-on-a-radical-new-type-of-design-thinking)
@@ -157,7 +157,7 @@ See [notes on systems modeling.](modeling.html)
 
 
 
-# Operations Management
+# 4. Operations Management
 
 _These notes are based on Christian Terwiesch's Coursera class, [Intro. to Operations Management.](https://www.coursera.org/learn/wharton-operations)_
 
@@ -170,9 +170,9 @@ Strategy and assessment often reference four **operational dimensions:**
 
 Between any two dimensions, there may be a **tradeoff;** obtain this curve by locating the performance of existing companies for any two dimensions. Then the question is whether your company is operating on the frontier or within it.
 
-## Business process analysis
+## 4.1. Business process analysis
 
-### Flow diagram
+### 4.1.1. Flow diagram
 
 Business processes underlie performance. One way to measure them: graph flow units vs. time, showing cumulative inflow and cumulative outflow. Then:
 
@@ -192,7 +192,7 @@ Realistically, processing times will vary from flow unit to flow unit. Flow unit
 - Approach #1, “adding up demand streams”: (1) Compute capacity of each process activity: m/activity_time (2) Compute demand experienced by each activity (3) Compute implied utilization as ratio of demand to capacity (can sum to more than 100%); now, the activity with highest implied utilization is the bottleneck
 - Approach #2, “minutes of work”: (1) Based on m, how many minutes of work per hour can each activity supply? (2)  Calculate how many minutes of work is required by each demand stream (3) Compute ratio of minutes required to minutes available; highest is the bottleneck
 
-### Measuring labor productivity
+### 4.1.2. Measuring labor productivity
 
 Why focus on this when labor seems to contribute less to modern firms’ costs? —because many firms keep labor costs off their balance sheet by ‘outsourcing’ them to their suppliers. If you account for labor in the cost of goods supplied, the role of labor becomes evident.
 
@@ -202,24 +202,24 @@ Why focus on this when labor seems to contribute less to modern firms’ costs? 
 - Average labor utilization is labor_content / (labor_content+direct_idle_time)
 - Cost of direct labor: total wages/time / flow_rate/time
 
-### Inventory metrics
+### 4.1.3. Inventory metrics
 
-#### Little’s law
+#### 4.1.3.1. Little's law
 
 Inventory=Flow_rate*Flow_time. Given any two variables, can solve for a third (especially flow time); also, can decide how to manipulate outcomes by adjusting a variable. Note that flow time here is essentially average flow time, a line fitted to the actual data recorded from observations of inflow and outflow. “Not an empirical law; to prove it, we need to turn to stochastic optimization.”
 
-#### Inventory turns
+#### 4.1.3.2. Inventory turns
 
 Cost_Of_Goods_Sold/Inventory. Gives the amount of time that a flow unit spends inside the process; comes from Little’s law (where COGS=Flow_rate). High inventory turns can dramatically reduce inventory costs (capital, storage, obsolescence). Per unit inventory costs=Annual_inventory_cost/Inventory_turns.
 
-#### Make-to-stock vs make-to-order
+#### 4.1.3.3. Make-to-stock vs make-to-order
 
 Motivating question here is why should there be inventory? What are the drivers of inventory? (Note that, per Little’s law, these same factors are implicit drivers of flow time.) Contrast McDonald’s and Subway—not all companies use inventory to increase flow rate; there are make-to-stock vs. make-to-order strategies.
 
 - The reason is variability of activity times; workers do not “work like robots”, so “buffer or suffer”. 
 - Reasons for inventory: buffer seasonal demand, internal demand (between processes or activities), customer demand, inherent time lag in production (e.g., aging cheese).
 
-## Analyzing & improving productivity
+## 4.2. Analyzing & improving productivity
 
 Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://en.wikipedia.org/wiki/The_Principles_of_Scientific_Management). In general, (multifactor) productivity  is a ratio of output_produced / input(s)_used. 
 
@@ -229,7 +229,7 @@ Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://
     - Error
     - Revenue/Cost = Revenue/Output * Output/Capacity * Capacity/Cost
 
-### Sources of wastes
+### 4.2.1. Sources of wastes
 
 - Waste (or inefficiency) may be represented as the distance between a firm and an industry-wide PPF
 - Overproduction: Produce sooner or in greater quantities than required by customers or inventories
@@ -240,20 +240,20 @@ Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://
 - Waiting: Underutilizing resources because of poor process design
 - Intellect: Esp. the intellect of workers
 
-### Financial value of productivity
+### 4.2.2. Financial value of productivity
 
 - “Productivity [i.e., capacity improvements] are not the goal in and of themselves; the goal is to save money”
 - Profit: Process_capacity*Per_capita_revenue - (Fixed_costs + Variable_costs)
 - “How does the profit change as we change the operational variables?”
 - “Every second counts—however, not every second counts equally.” The largest impact comes from improvements to the bottleneck when demand is not a binding constraint; also, in organizations with large fixed costs and lower marginal costs (can see this by checking the relative slopes of the cost and revenue lines past the break even point).
 
-### Key Performance Indicators (KPIs) and KPI trees
+### 4.2.3. Key Performance Indicators (KPIs) and KPI trees
 
 KPI trees are about “visualizing the relationship between operational variables and the financial bottom line, and are also the starting point for sensitivity analysis wherein we identify those operational variables that have the largest impact.” Map out dependencies between variables, then take the partial derivative of the terminal KPI w/r/t an operational variable or evaluate using a spreadsheet.
 
 <img src="../ILLOS/KPI-tree.png" width="450px">
 
-### Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)
+### 4.2.4. Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)
 
 - Available_time=Total_planned_uptime - Downtime
 - Downtime = Break_downs + Product_change_overs
@@ -263,31 +263,31 @@ KPI trees are about “visualizing the relationship between operational variable
 - Quality_losses = Defects + Startup_time
 - Availability_rate * Performance_rate * Quality_rate = Value_add_time / Available_time = OEE
 
-### Reducing idle time
+### 4.2.5. Reducing idle time
 
 - Takt time is the pace required to keep up with demand: “every person has to dance to the meet of demand”
     - Demand leveling: Average out demand over a period of time
 - Line balancing: Equal processing time at each station (ideal). Calculate takt time; assign tasks such that all processing times fall below the takt time; make sure that all tasks are assigned; and minimize the number of workers needed.
 
-### Smoothing performance across workers
+### 4.2.6. Smoothing performance across workers
 
 - Quartile analysis: Observing workers, noting differences in processing time, grouping into quartiles based on processing time, and identifying best practices that appear to shorten processing time
     - e.g. 260% different observed in ER between 10% and 90% quartiles
     - Biggest differences tend to be observed in knowledge-intensive tasks
 
-## Quality control
+## 4.3. Quality control
 
 - Ford production system: Influenced by Taylor; aspired to optimization of work. Used a moving line, big machinery, economies of scale, standardization of product.
 - Toyota production system: c. 1950s, focused on elimination of waste and matching demand after failure to replicate Ford system in a postwar context where inputs and domestic demand was scarce.
     - Worry about: waste, inflexibility, and variability
 
-### Basic defect calculations
+### 4.3.1. Basic defect calculations
 
 - Activity yield is %units produced according to specification = 1 - p(defect)
 - Process yield = f(activity_yield); if dependent (Swiss cheese) activities, then product of activity yields, 1-p(defect)n; if independent, then sum, represented as (1-p(defect))<sup>n</sup>. 
 - Swiss Cheese model: think of a hole as a defect; as you stack slices of cheese, there is always the chance that all the holes will line up. This redundancy reduces the probability of process failure. Then the process yield is 1-p(defect)<sup>n</sup>.
 
-### Quality & flow
+### 4.3.2. Quality & flow
 
 - Adding representations of quality to a flow diagram:
     - Dropped flow units: Calculate end demand; calculate yield of each step (include defects); calculate how much each step must produce to meet demand (e.g., a 50% defect rate means that an activity must produce 2xD); calculate implied utilization (D/capacity); highest implied utilization is the bottleneck.    
@@ -298,7 +298,7 @@ KPI trees are about “visualizing the relationship between operational variable
     - However, buffers remove the incentive for process improvement; buffering hides problems.
     - Toyota developed the Kanban “demand-pull” card system to manage this dilemma. Kanban cards authorize work, and are themselves authorized by customer demand. This puts a cap on inventory.
 
-### Six Sigma
+### 4.3.3. Six Sigma
 
 Improving a process by reducing internal variability.
 
@@ -308,7 +308,7 @@ Improving a process by reducing internal variability.
 - Quality targets are often expressed as ppm, parts per million.
 - A “six sigma” quality target corresponds to a defect probability of 0.002 and a capability score of 2.
 
-### Control charts
+### 4.3.4. Control charts
 
 Help distinguish between normal and abnormal variation; part of statistical process control
 
@@ -319,13 +319,13 @@ Help distinguish between normal and abnormal variation; part of statistical proc
 - LCL= mean - 3*stdev; UCL = mean + 3*stdev 
 - Plot means of samples against LCL, UCL; if a sample’s mean crosses control limits, we suspect assignable cause.
 
-### Jidoka
+### 4.3.5. Jidoka
 
 Detect → Alert → Stop, as quickly as possible, to prevent defects from reaching the bottleneck. In manufacturing assembly lines, jidoka is often implemented with andon cords (for workers to pull, freezing the whole line) and a central andon board (to indicate which station initiated the stop).
 
 - ITAT is “information turnaround time”, something that is (detrimentally) increased by inventory. Low ITAT means quick feedback and the potential for quick learning.
 
-### Problem solving
+### 4.3.6. Problem solving
 
 Looking for root cause(s):
 
@@ -343,16 +343,16 @@ Looking for root cause(s):
 
 
 
-# Sources
+# 5. Sources
 
 Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
 
 Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
 
-## References
+## 5.1. References
 
-## Read
+## 5.2. Read
 
-## Unread
+## 5.3. Unread
 
 - [Wiki - Six Sigma](https://en.wikipedia.org/wiki/Six_Sigma)

@@ -1,67 +1,67 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/information-architecture.html">https://jtkovacs.github.io/REFS/HTML/information-architecture.html</a> \> 4860 words </p><table class="TOC"><tr><td>- [1. What is information retrieval?](#what-is-information-retrieval?)
-	- [1.1. IR systems](#ir-systems)
-	- [1.2. Major activities in IR](#major-activities-in-ir)
-		- [1.2.1. Cataloging & indexing](#cataloging-&-indexing)
-		- [1.2.2. Searching, browsing, & navigating](#searching,-browsing,-&-navigating)
-- [2. What is information architecture?](#what-is-information-architecture?)
-	- [2.1. Must information be organized?](#must-information-be-organized?)
-		- [2.1.1. Anatomy of mess](#anatomy-of-mess)
-		- [2.1.2. Bases of organization](#bases-of-organization)
-	- [2.2. What ways can things be organized?](#what-ways-can-things-be-organized?)
-		- [2.2.1. Information schemas](#information-schemas)
-		- [2.2.2. Information structures](#information-structures)
-			- [2.2.2.1. Record-based](#record-based)
-				- [2.2.2.1.1. Hierarchical](#hierarchical)
-				- [2.2.2.1.2. Graph](#graph)
-				- [2.2.2.1.3. Relational](#relational)
-			- [2.2.2.2. Object-based](#object-based)
-		- [2.2.3. Questions that arise in organizing](#questions-that-arise-in-organizing)
-- [3. What is taxonomy?](#what-is-taxonomy?)
-	- [3.1. What are knowledge organization structures?](#what-are-knowledge-organization-structures?)
-		- [3.1.1. KOSs by structure](#koss-by-structure)
-		- [3.1.2. KOSs by role in IR](#koss-by-role-in-ir)
-	- [3.2. What are reference works?](#what-are-reference-works?)
-	- [3.3. What are controlled vocabularies?](#what-are-controlled-vocabularies?)
-		- [3.3.1. Uses of CVs](#uses-of-cvs)
-			- [3.3.1.1. CV-metadata connections](#cv-metadata-connections)
-		- [3.3.2. Constructing CVs](#constructing-cvs)
-			- [3.3.2.1. Where do terms come from?](#where-do-terms-come-from?)
-			- [3.3.2.2. How are terms expressed?](#how-are-terms-expressed?)
-				- [3.3.2.2.1. Scope & coordination/syntax](#scope-&-coordination/syntax)
-				- [3.3.2.2.2. Grammatical forms](#grammatical-forms)
-				- [3.3.2.2.3. Typographic forms](#typographic-forms)
-			- [3.3.2.3. How are terms related?](#how-are-terms-related?)
-				- [3.3.2.3.1. Equivalence & preferred terms](#equivalence-&-preferred-terms)
-				- [3.3.2.3.2. Hierarchy](#hierarchy)
-				- [3.3.2.3.3. Association](#association)
-			- [3.3.2.4. CV elements by impact on IR](#cv-elements-by-impact-on-ir)
-		- [3.3.3. Testing CVs](#testing-cvs)
-		- [3.3.4. Documenting CVs](#documenting-cvs)
-		- [3.3.5. Maintaining CVs](#maintaining-cvs)
-		- [3.3.6. Managing CVs](#managing-cvs)
-		- [3.3.7. Displaying CVs](#displaying-cvs)
-			- [3.3.7.1. Overarching forms](#overarching-forms)
-			- [3.3.7.2. Organization within or across forms](#organization-within-or-across-forms)
-			- [3.3.7.3. Format considerations](#format-considerations)
-	- [3.4. Interoperability](#interoperability)
-- [4. Sources](#sources)
+<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> TITLE | 4860 words, updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [What is information retrieval?](#what-is-information-retrieval)
+	- 1.1. [IR systems](#ir-systems)
+	- 1.2. [Major activities in IR](#major-activities-in-ir)
+		- 1.2.1. [Cataloging & indexing](#cataloging-indexing)
+		- 1.2.2. [Searching, browsing, & navigating](#searching-browsing-navigating)
+- 2. [What is information architecture?](#what-is-information-architecture)
+	- 2.1. [Must information be organized?](#must-information-be-organized)
+		- 2.1.1. [Anatomy of mess](#anatomy-of-mess)
+		- 2.1.2. [Bases of organization](#bases-of-organization)
+	- 2.2. [What ways can things be organized?](#what-ways-can-things-be-organized)
+		- 2.2.1. [Information schemas](#information-schemas)
+		- 2.2.2. [Information structures](#information-structures)
+			- 2.2.2.1. [Record-based](#record-based)
+				- 2.2.2.1.1. [Hierarchical](#hierarchical)
+				- 2.2.2.1.2. [Graph](#graph)
+				- 2.2.2.1.3. [Relational](#relational)
+			- 2.2.2.2. [Object-based](#object-based)
+		- 2.2.3. [Questions that arise in organizing](#questions-that-arise-in-organizing)
+- 3. [What is taxonomy?](#what-is-taxonomy)
+	- 3.1. [What are knowledge organization structures?](#what-are-knowledge-organization-structures)
+		- 3.1.1. [KOSs by structure](#koss-by-structure)
+		- 3.1.2. [KOSs by role in IR](#koss-by-role-in-ir)
+	- 3.2. [What are reference works?](#what-are-reference-works)
+	- 3.3. [What are controlled vocabularies?](#what-are-controlled-vocabularies)
+		- 3.3.1. [Uses of CVs](#uses-of-cvs)
+			- 3.3.1.1. [CV-metadata connections](#cv-metadata-connections)
+		- 3.3.2. [Constructing CVs](#constructing-cvs)
+			- 3.3.2.1. [Where do terms come from?](#where-do-terms-come-from)
+			- 3.3.2.2. [How are terms expressed?](#how-are-terms-expressed)
+				- 3.3.2.2.1. [Scope & coordination/syntax](#scope-coordinationsyntax)
+				- 3.3.2.2.2. [Grammatical forms](#grammatical-forms)
+				- 3.3.2.2.3. [Typographic forms](#typographic-forms)
+			- 3.3.2.3. [How are terms related?](#how-are-terms-related)
+				- 3.3.2.3.1. [Equivalence & preferred terms](#equivalence-preferred-terms)
+				- 3.3.2.3.2. [Hierarchy](#hierarchy)
+				- 3.3.2.3.3. [Association](#association)
+			- 3.3.2.4. [CV elements by impact on IR](#cv-elements-by-impact-on-ir)
+		- 3.3.3. [Testing CVs](#testing-cvs)
+		- 3.3.4. [Documenting CVs](#documenting-cvs)
+		- 3.3.5. [Maintaining CVs](#maintaining-cvs)
+		- 3.3.6. [Managing CVs](#managing-cvs)
+		- 3.3.7. [Displaying CVs](#displaying-cvs)
+			- 3.3.7.1. [Overarching forms](#overarching-forms)
+			- 3.3.7.2. [Organization within or across forms](#organization-within-or-across-forms)
+			- 3.3.7.3. [Format considerations](#format-considerations)
+	- 3.4. [Interoperability](#interoperability)
+- 4. [Sources](#sources)
 </td></tr></table>
 
 
-# What is information retrieval?
+# 1. What is information retrieval?
 
 IR occurs when a user retrieves information objects AKA content objects (documents and metadata) from an information retrieval system (e.g. libraries, archives, repositories/portals, websites, databases). [IR requires IA.](#what-is-information-architecture?)
 
 
-## IR systems
+## 1.1. IR systems
 
 - Catalogs, search engines, ??? 
 - Svenonius (2005): **"Systems that do not employ vocabulary control may be characterized in terms of their indexing: natural language, derived, keyword, or title word indexing; or, in terms of the type of searching they allow: free-text searching or full-text searching. It is not a foregone conclusion that a system with vocabulary control is better than one without it."**
 
 
-## Major activities in IR
+## 1.2. Major activities in IR
 
-### Cataloging & indexing
+### 1.2.1. Cataloging & indexing
 
 Information professionals work to ensure that IR (1) has good **precision,** AKA 'satisfies the requirement for general survey' or 'satisfies the collocating requirement' or attains 'representational predictability'; (2) has **good recall;** and (3) is [possible across multiple IR systems.](#interoperability) They do this by (1) [creating search algorithms](search-engines.html) or by (2) ingesting information objects into a catalog, which includes:
 
@@ -107,7 +107,7 @@ Information professionals work to ensure that IR (1) has good **precision,** AKA
 </table>
 
 
-### Searching, browsing, & navigating
+### 1.2.2. Searching, browsing, & navigating
     
 To retrieve information, users engage with information systems by:
 
@@ -120,32 +120,32 @@ To retrieve information, users engage with information systems by:
 
     
     
-# What is information architecture?
+# 2. What is information architecture?
 
 Rosenfeld, Morville, and Arango (2015) say that IA aims to facilitate both the finding and understanding of information. The "finding" dimension of IA is information retrieval, the legacy of library science; the "understanding" dimension comes via Richard Saul Wurman, who focused on making complex systems intelligible through visualization. 
 
-## Must information be organized?
+## 2.1. Must information be organized?
 
 Per Abrahamson and Freedman (2008), order (like all things) has both benefit and cost. Even setting feasibility aside, it's probably never the case that 100% order is _optimal._ At the same time, because individuals' organization strategies and preferences vary so much, shared information spaces must (?) be organized according to intelligible principles that prospective users of the space can access and learn.
 
-### Anatomy of mess
+### 2.1.1. Anatomy of mess
 
 Per Abrahamson and Freedman (2008):
 
 <img src="../ILLOS/mess.jpg" width="600px">
 
-### Bases of organization
+### 2.1.2. Bases of organization
 
 Hedden (2016) offers a typology in which taxonomies (i.e., knowledge organization structures) have different bases/origins. KOSs may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![](../ILLOS/taxonomy_status.png)
     
-## What ways can things be organized?
+## 2.2. What ways can things be organized?
 
 Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
 The distinction I draw is that "schemas" are for the conceptual (abstract, disembodied) organization of information into groups, whereas "structures" describe group configuration. 
 
-### Information schemas
+### 2.2.1. Information schemas
 
 Wurman (1990) claims there are only five ways to organize items. Similarly, Wyllys (2000) states that information can be organized according to different schemas that encompass Wurman's five ways (italicized):
 
@@ -153,15 +153,15 @@ Wurman (1990) claims there are only five ways to organize items. Similarly, Wyll
 - **Inexact schemas,** AKA _categories:_ topical, task-oriented, audience-specific, metaphor-driver (e.g., information lifecycle)
 - **Hybrid schemas,** combining multiple methods (may be confusing)
 
-### Information structures
+### 2.2.2. Information structures
 
 But, Wyllys adds, there are also three fundamental information structures, AKA **data models:** hierarchic, graph, and relational. In their review of [database history,](databases.html#history-of-databases) Connolly and Begg (2015) classify Wyllys' three structures as "record-based" and add "object-based" as another top-level category:
 
-#### Record-based
+#### 2.2.2.1. Record-based
 
 Can’t express constraints on the data, but express structure well.
 
-##### Hierarchical
+##### 2.2.2.1.1. Hierarchical
 
 Per Zeng (n.d.), 
 
@@ -179,15 +179,15 @@ Per Zeng (n.d.),
         - Spinal cord: Central nervous system (BTP)
 - __Polyhierarchy__ (family tree) is more complex than a strict hierarchy
 
-##### Graph
+##### 2.2.2.1.2. Graph
 
 AKA networks, triples, ontologies. Enables explicit modeling of different kinds of relationships (Has, IsCreatedBy, etc.) as well as more relationships (not restricted to one parent). Records are also called nodes and segments; relationships are also called edges.
 
-##### Relational
+##### 2.2.2.1.3. Relational
 
 Tables with columns, implicitly related via attributes; see [notes on relational databases.](databases.html#the-relational-data-model)
     
-#### Object-based
+#### 2.2.2.2. Object-based
 
 Allow specification of constraints, but not overall structure. Objects are instances of classes; classes and objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs).
 
@@ -197,7 +197,7 @@ Allow specification of constraints, but not overall structure. Objects are insta
 - Object-oriented
 
 
-### Questions that arise in organizing
+### 2.2.3. Questions that arise in organizing
 
 - What organization schema/s to use
 - Whether to classify (1:1) or tag (1:&infin;)
@@ -209,7 +209,7 @@ Allow specification of constraints, but not overall structure. Objects are insta
 
 
 
-# What is taxonomy?
+# 3. What is taxonomy?
 
 Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. 
 
@@ -217,11 +217,11 @@ In general, taxonomy is the discipline of creating and managing taxonomies, a te
 
 Beyond this general sense, taxonomies are also [specific kinds of KOSs.](#what-are-knowledge-organization-structures?)
 
-## What are knowledge organization structures?
+## 3.1. What are knowledge organization structures?
 
 <img src="../ILLOS/KSOs.png" width="550px">
 
-### KOSs by structure
+### 3.1.1. KOSs by structure
 
 In order of increasing complexity (number, kind, and configuration of relationships):
 
@@ -266,7 +266,7 @@ Taxonomies are a top-down approach. Thus, there may occasionally be node labels 
 
 Relevant technologies include RDF, OWL, and topic maps.
 
-### KOSs by role in IR
+### 3.1.2. KOSs by role in IR
 
 As part of ingesting a content object into an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
 
@@ -282,7 +282,7 @@ Information consumers depend on KOSs to browse and search content objects:
 See also [uses of CVs.](#uses-of-cvs)    
     
 
-## What are reference works?
+## 3.2. What are reference works?
 
 Reference works are information-dense resources meant to be consulted for specific information, not read comprehensively. Terminology for reference works is reviewed here because it often overlaps with KOS terminology. Definitions are quoted/paraphrased from Wikipedia:
 
@@ -301,7 +301,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 
 
-## What are controlled vocabularies?
+## 3.3. What are controlled vocabularies?
 
 CVs (AKA authority lists) consist of **terms, syntax** (how terms may be combined), and **term records** containing each term's **semantic relationships, scope notes,** and **history notes.**    
 
@@ -323,11 +323,11 @@ Controlled vocabularies stand in contrast with natural languages, which undermin
 
 
 
-### Uses of CVs
+### 3.3.1. Uses of CVs
 
 Svenonius (2005), also see [KOSs by role in IR:](#koss-by-role-in-ir) *"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."*    
 
-#### CV-metadata connections
+#### 3.3.1.1. CV-metadata connections
 
 Per ANSI/NISO Z39.19 (p. 19), 
 
@@ -338,9 +338,9 @@ Per ANSI/NISO Z39.19 (p. 19),
 
 
 
-### Constructing CVs
+### 3.3.2. Constructing CVs
 
-#### Where do terms come from?
+#### 3.3.2.1. Where do terms come from?
 
 Terms are chosen from a specific domain/information space if their inclusion is warranted:
 
@@ -352,9 +352,9 @@ Terms are chosen from a specific domain/information space if their inclusion is 
 
 Since warrants shift over time, there should be a 'parking lot' for candidate terms AKA provisional terms. Terms can be generated by a committee (top-down, bottom-up); by empirical methods (deductive, inductive); by a machine; or from an existing CV (don't duplicate effort!).
 
-#### How are terms expressed?
+#### 3.3.2.2. How are terms expressed?
 
-##### Scope & coordination/syntax
+##### 3.3.2.2.1. Scope & coordination/syntax
 
 The basic rule per ANSI/NISO Z39.19 is that a term should denote a single **concept** or unit of thought; this is challenged by Svenonius (2005), who argues that concepts are inherently fuzzy and that quantitative linguistics provides a more objective foundation for extracting terms from natural language. At any rate, there are different kinds of concepts:
 
@@ -382,7 +382,7 @@ While compound terms denote a single concept, <span style="color: red; font-weig
 
 Use of a compound term should be determined by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format (print sometimes benefits from precoordinated terms); see ANSI/NISO Z9.19 pp. 39-40 for more guidance and examples.
 
-##### Grammatical forms
+##### 3.3.2.2.2. Grammatical forms
 
 - **Parts of speech:**
     - <span style="color:red;">Prefer nouns\*</span> or in the case of bound compound terms, noun phrases;
@@ -402,7 +402,7 @@ Use of a compound term should be determined by warrant, total #terms in the CV (
 
 <span style="color:red;">\*Svenonius (2005)</span> explains the intended effect of this standard: CVs where every term is "context independent", i.e. self-contained and thus reusable. However, context independence is "not normally operative in classification schemes where the verbal headings are governed by the principle of hierarchical force."     
 
-##### Typographic forms
+##### 3.3.2.2.3. Typographic forms
 
 - **Capitalization:** don't capitalize unless it's a proper noun
 - **Punctuation:** minimize because it can interfere with sorting, searching, etc.
@@ -413,11 +413,11 @@ Use of a compound term should be determined by warrant, total #terms in the CV (
 
 
 
-#### How are terms related?
+#### 3.3.2.3. How are terms related?
 
 All relationships are **reciprocal,** which should be captured by the taxonomy software. Most relationships (except RT) are asymmetric. **Orphan terms** lack any relationship.
 
-##### Equivalence & preferred terms
+##### 3.3.2.3.1. Equivalence & preferred terms
 
 Synonyms, near-synonyms, lexical variants, and (when **generic posting** is practiced) child terms are subsumed into a single **preferred term** with **USE/USED FOR** or **U/UF.** Preferred terms are also called descriptors and headings; non-preferred terms are also called entry or lead-in terms.
 
@@ -434,11 +434,11 @@ Synonyms, near-synonyms, lexical variants, and (when **generic posting** is prac
     - _coal: USED FOR coal AND mining_
     - _mining: USED FOR coal AND mining_
 
-##### Hierarchy
+##### 3.3.2.3.2. Hierarchy
 
 See [discussion of hierarchy, above.](#hierarchical-(1g))
 
-##### Association
+##### 3.3.2.3.3. Association
 
 Associative relationships should be recorded between terms that are needed to explain each other, or readily evoke each other, or are etymologically related, or are derived one from the other. Although they may be disambiguated in a graph database, in a thesaurus the following relationships (and more) are collapsed under RELATED TERM/RT:
 
@@ -459,7 +459,7 @@ Associative relationships should be recorded between terms that are needed to ex
 
 
 
-#### CV elements by impact on IR
+#### 3.3.2.4. CV elements by impact on IR
 
 Per ANSI/NISO Z39.19 (p. 16), 
 
@@ -477,7 +477,7 @@ Per ANSI/NISO Z39.19 (p. 16),
     - Precoordination 
 
 
-### Testing CVs
+### 3.3.3. Testing CVs
 
 The usability and IR performance of CVs should be tested:
 
@@ -486,7 +486,7 @@ The usability and IR performance of CVs should be tested:
 - through user research (e.g. comparing to user-generated card-based affinity models).
 
 
-### Documenting CVs
+### 3.3.4. Documenting CVs
 
 Documentation should cover:
 
@@ -502,7 +502,7 @@ Documentation should cover:
 - Contact information
 
 
-### Maintaining CVs
+### 3.3.5. Maintaining CVs
 
 CVs must be updated to stay valid, so there should be plan for reviews at defined intervals. 
 
@@ -514,7 +514,7 @@ Updates may include:
 - Adding **history notes (HN)** that indicate date and nature of modifications; they are important for provenance
 
 
-### Managing CVs
+### 3.3.6. Managing CVs
 
 ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software:
 
@@ -530,9 +530,9 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 - Accessible to multiple users
 
 
-### Displaying CVs
+### 3.3.7. Displaying CVs
 
-#### Overarching forms
+#### 3.3.7.1. Overarching forms
 
 - **Alphabetic:**
     - Alphabetic listing
@@ -553,7 +553,7 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
     - KWAC
     - KWOC
 
-#### Organization within or across forms
+#### 3.3.7.2. Organization within or across forms
 
 - Term detail
     - Relationships can be organized:
@@ -566,7 +566,7 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
     - Ignore commas in inverted USE references
     - Treat parentheses around glosses as special characters; don't ignore
 
-#### Format considerations
+#### 3.3.7.3. Format considerations
 
 - **Print:** Minimize double lookups, and use a running header to indicate position
 - **Screen:** 
@@ -583,7 +583,7 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 
 
 
-## Interoperability
+## 3.4. Interoperability
 
 Per ANSI/NISO Z39.19, the need for interoperability arises from different sources:
 
@@ -609,7 +609,7 @@ Interoperability data may be stored in:
 
 
 
-# Sources
+# 4. Sources
 
 Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 

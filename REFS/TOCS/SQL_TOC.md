@@ -1,32 +1,32 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL.html">https://jtkovacs.github.io/REFS/HTML/SQL.html</a> \> 2300 words </p><table class="TOC"><tr><td>- [What is SQL?](#what-is-sql?)
-	- [Notation and style guide](#notation-and-style-guide)
-	- [Data definition](#data-definition)
-		- [Manage databases](#manage-databases)
-		- [Manage tables](#manage-tables)
-		- [Manage fields](#manage-fields)
-		- [Manage views](#manage-views)
-	- [Data manipulation](#data-manipulation)
-		- [Generic query form](#generic-query-form)
-		- [SELECT and display](#select-and-display)
-			- [WITH conditional filtering](#with-conditional-filtering)
-			- [Aggregate and GROUP BY](#aggregate-and-group-by)
-		- [FROM ](#from-)
-			- [JOINs](#joins)
-			- [Subqueries](#subqueries)
-		- [Set operations](#set-operations)
-- [T-SQL](#t-sql)
-- [Examples](#examples)
-- [Sources](#sources)
-	- [References](#references)
-	- [Archive](#archive)
-	- [Inbox](#inbox)
+<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> TITLE | 2300 words, updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [What is SQL?](#what-is-sql)
+	- 1.1. [Notation and style guide](#notation-and-style-guide)
+	- 1.2. [Data definition](#data-definition)
+		- 1.2.1. [Manage databases](#manage-databases)
+		- 1.2.2. [Manage tables](#manage-tables)
+		- 1.2.3. [Manage fields](#manage-fields)
+		- 1.2.4. [Manage views](#manage-views)
+	- 1.3. [Data manipulation](#data-manipulation)
+		- 1.3.1. [Generic query form](#generic-query-form)
+		- 1.3.2. [SELECT and display](#select-and-display)
+			- 1.3.2.1. [WITH conditional filtering](#with-conditional-filtering)
+			- 1.3.2.2. [Aggregate and GROUP BY](#aggregate-and-group-by)
+		- 1.3.3. [FROM ](#from-)
+			- 1.3.3.1. [JOINs](#joins)
+			- 1.3.3.2. [Subqueries](#subqueries)
+		- 1.3.4. [Set operations](#set-operations)
+- 2. [T-SQL](#t-sql)
+- 3. [Examples](#examples)
+- 4. [Sources](#sources)
+	- 4.1. [References](#references)
+	- 4.2. [Archive](#archive)
+	- 4.3. [Inbox](#inbox)
 </td></tr></table>
-# What is SQL?
+# 1. What is SQL?
 
 SQL is the standardized language used to access a database. SQL language provides for: (1) data definition/DDL statements that help you define the database and its objects; (2) data manipulation/DML statements that allow you to update and query data; (3) data control, allows you to grant the permissions to a user to access a certain data in the database.
 
 
-## Notation and style guide
+## 1.1. Notation and style guide
 
 - all commands end with semicolon
 - by convention, commands are CAPITALIZED
@@ -39,15 +39,15 @@ SQL is the standardized language used to access a database. SQL language provide
 - gives row dimension of table: SELECT count(*) FROM tname;
 
 
-## Data definition
+## 1.2. Data definition
 
-### Manage databases
+### 1.2.1. Manage databases
 
 - UPDATE
 - OUTPUT
 - MERGE
 
-### Manage tables
+### 1.2.2. Manage tables
 
 Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
 
@@ -116,7 +116,7 @@ DELETE FROM table;
 UPDATE tname SET c1=value/subquery, c2=value/subquery WHERE …
 ```
 
-### Manage fields
+### 1.2.3. Manage fields
 
 ```SQL
 UPDATE tname
@@ -124,7 +124,7 @@ SET [fname] = 'Value'
 WHERE fname = 'Value';
 ```
 
-### Manage views
+### 1.2.4. Manage views
 
 view data is not stored physically; every time you retrieve data from the view, the database reruns the underlying query.  most databases don't allow inserting new data or updating existing data in views.
 
@@ -136,9 +136,9 @@ DROP VIEW vname;
 
 
 
-## Data manipulation
+## 1.3. Data manipulation
 
-### Generic query form
+### 1.3.1. Generic query form
 
 Match the following clauses with its definition: 
 
@@ -168,7 +168,7 @@ multiple char: SELECT * FROM … WHERE c LIKE ‘%string%’;
 single char: SELECT * FROM … WHERE c LIKE ‘_tringvalue’;
 ```
 
-### SELECT and display
+### 1.3.2. SELECT and display
 
 - SELECT, FROM, CAST, RANK(), DENSE_RANK()
 - DATE functions
@@ -197,11 +197,11 @@ STRFTIME(“format_string”, ”datetime_string”, <modifier>)
 “%d/%m/%Y”
 ```
 
-#### WITH conditional filtering
+#### 1.3.2.1. WITH conditional filtering
 
 - EXCEPT
 
-#### Aggregate and GROUP BY
+#### 1.3.2.2. Aggregate and GROUP BY
 
 - GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT) 
 
@@ -223,9 +223,9 @@ display in groups: SELECT c1, c2, count(col3) FROM t GROUP BY c1, c2;
 filtering groups: SELECT c1, count(c3) FROM t GROUP BY c1 HAVING cndn;
 ```
 
-### FROM 
+### 1.3.3. FROM 
 
-#### JOINs
+#### 1.3.3.1. JOINs
 
 - http://www.vertabelo.com/blog/technical-articles/sql-joins
 - http://thomaslarock.com/2012/04/real-world-sql-join-examples/
@@ -257,7 +257,7 @@ except: SELECT ... FROM ... EXCEPT SELECT … FROM...;
 SELECT * FROM ... WHERE * IN (subquery) AND * NOT IN (subquery) 
 ```
 
-#### Subqueries
+#### 1.3.3.2. Subqueries
 
 - simple
 - correlated
@@ -275,7 +275,7 @@ use aliases for self-correlated subqueries: SELECT * FROM city as c1 WHERE c1.ra
 exists operator: SELECT * FROM country WHERE EXISTS (SELECT * FROM mountain WHERE country.id = mountain.country_id);
 ```
 
-### Set operations
+### 1.3.4. Set operations
 
 Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
 
@@ -296,7 +296,7 @@ Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-bas
 
 
 
-# T-SQL
+# 2. T-SQL
 
 - [https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql)
 - Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
@@ -313,7 +313,7 @@ Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-bas
 
 
 
-# Examples
+# 3. Examples
 
 ```SQL
 SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS [Total Orders],
@@ -385,9 +385,9 @@ ORDER BY CustomerID ASC;
 
 
 
-# Sources
+# 4. Sources
 
-## References
+## 4.1. References
 
 - [w3schools SQL tutorial](http://www.w3schools.com/sql/default.asp)
 - [Weller’s SQL cheatsheet](http://weller.engl.uw.edu/mysql/)
@@ -396,7 +396,7 @@ ORDER BY CustomerID ASC;
 - [Treehouse - SQL to modify data cheatsheet](https://github.com/treehouse/cheatsheets/blob/master/modifying_data_with_sql/cheatsheet.md)
 - [Codecademy - SQL Glossary](https://www.codecademy.com/articles/sql-commands)
 
-## Archive
+## 4.2. Archive
 
 - [SQL queries](https://academy.vertabelo.com/course/sql-queries)
 - [Operating on data in SQL](https://academy.vertabelo.com/course/operating-on-data-in-sql)
@@ -405,7 +405,7 @@ ORDER BY CustomerID ASC;
 - [Treehouse - Reporting with SQL](https://teamtreehouse.com/library/reporting-with-sql)
 - [SQL](https://lagunita.stanford.edu/courses/DB/SQL/SelfPaced/about)
 
-## Inbox
+## 4.3. Inbox
 
 - [7 steps to mastering SQL](http://www.kdnuggets.com/2016/06/seven-steps-mastering-sql-data-science.html)
 - [Table Transformations](https://www.codecademy.com/learn/sql-table-transformation)

@@ -1,26 +1,4 @@
 
-
-hr {
-    margin-top: 14px;
-    border: 0;
-    height: 1px;
-    background-color: #e8e8e8;
-    color: #cdcdcd;
-}
-
-
-/* PAGES should have a fairly thick margin */
-body {
-    margin: 50px 140px 140px 200px;
-    background-color: #ffffff;
-} 
-
-/* ALL TEXT is Verdana */
-* {
-    font-family: Verdana, sans-serif;
-    color: #666666;
-}
-
 /* BOLD TEXT is a lighter grey */
 b {
     color: #777777;

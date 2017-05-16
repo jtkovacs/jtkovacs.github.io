@@ -13,7 +13,7 @@ import sys
 
 # Open .md file based on filename argument
 ## $ alias TOC information-architecture.md
-fname = '/home/jtk/Site/REFS/'+sys.argv[1]
+fname = '/home/jtk/Site/REFS/NOTES/'+sys.argv[1]
 fhand = open(fname, 'r')
 
 
@@ -164,7 +164,7 @@ fout.close()
 hname = foname[:-7]+'.html'
 hname = hname.split('/')
 hname.remove('TOCS')
-hname.insert(-1, "HTML")
+#hname.insert(-1, "HTML")
 html_out = "/".join(hname)
 subprocess.run(['pandoc', foname, '-f', 'markdown', '-t', 'html', '-s', '-o', html_out])
 

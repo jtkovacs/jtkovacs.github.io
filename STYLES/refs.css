@@ -1,12 +1,5 @@
 
 
-
-/* PAGES should have a fairly thick margin */
-body {
-    margin: 50px 20px 140px 200px;
-    background-color: #ffffff;
-} 
-
 /* ALL TEXT is Verdana */
 * {
     font-family: Verdana, sans-serif;

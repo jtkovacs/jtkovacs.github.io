@@ -1,34 +1,34 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/interfaces.html">https://jtkovacs.github.io/REFS/HTML/interfaces.html</a> \> 771 words </p><table class="TOC"><tr><td>- [Prototyping](#prototyping)
-	- [Types of interface prototypes](#types-of-interface-prototypes)
-		- [Sketches](#sketches)
-		- [Mock-ups](#mock-ups)
-		- [Wireframes](#wireframes)
-	- [Interface prototyping tools](#interface-prototyping-tools)
-- [Types of interfaces](#types-of-interfaces)
-	- [Reporting dashboards](#reporting-dashboards)
-	- [Interactive interfaces](#interactive-interfaces)
-		- [Forms](#forms)
-			- [Requirements and validation](#requirements-and-validation)
-			- [General best practices](#general-best-practices)
-			- [Best practices by form element](#best-practices-by-form-element)
-				- [Layout ](#layout-)
-				- [Input Affordances ](#input-affordances-)
-				- [Actions ](#actions-)
-				- [Help & Tips ](#help-&-tips-)
-				- [Visual Hierarchy](#visual-hierarchy)
-		- [Multimedia](#multimedia)
-- [Sources](#sources)
-	- [Cited](#cited)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
+<p class="path"><a href="../../pkb.html">pkb contents</a> \> interfaces | nearly 771 words | updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [Prototyping](#prototyping)
+	- 1.1. [Types of interface prototypes](#types-of-interface-prototypes)
+		- 1.1.1. [Sketches](#sketches)
+		- 1.1.2. [Mock-ups](#mock-ups)
+		- 1.1.3. [Wireframes](#wireframes)
+	- 1.2. [Interface prototyping tools](#interface-prototyping-tools)
+- 2. [Types of interfaces](#types-of-interfaces)
+	- 2.1. [Reporting dashboards](#reporting-dashboards)
+	- 2.2. [Interactive interfaces](#interactive-interfaces)
+		- 2.2.1. [Forms](#forms)
+			- 2.2.1.1. [Requirements and validation](#requirements-and-validation)
+			- 2.2.1.2. [General best practices](#general-best-practices)
+			- 2.2.1.3. [Best practices by form element](#best-practices-by-form-element)
+				- 2.2.1.3.1. [Layout ](#layout-)
+				- 2.2.1.3.2. [Input Affordances ](#input-affordances-)
+				- 2.2.1.3.3. [Actions ](#actions-)
+				- 2.2.1.3.4. [Help & Tips ](#help-tips-)
+				- 2.2.1.3.5. [Visual Hierarchy](#visual-hierarchy)
+		- 2.2.2. [Multimedia](#multimedia)
+- 3. [Sources](#sources)
+	- 3.1. [Cited](#cited)
+	- 3.2. [References](#references)
+	- 3.3. [Read](#read)
+	- 3.4. [Unread](#unread)
 </td></tr></table>
 
-# Prototyping
+# 1. Prototyping
 
 Prototyping is the practice of making a simple, quick, cheap, etc. versions of a future product, and getting user input on those versions before moving on to production. 
 
-## Types of interface prototypes
+## 1.1. Types of interface prototypes
 
 Per Ambler, n.d. and my friend Clint:
 
@@ -40,17 +40,17 @@ Per Ambler, n.d. and my friend Clint:
 <tr><td colspan="2">Wireframe</td><td>Shows how screens interrelate</td></tr>
 </table>
 
-### Sketches
+### 1.1.1. Sketches
 
 - [http://www.agilemodeling.com/artifacts/essentialUI.htm](http://www.agilemodeling.com/artifacts/essentialUI.htm)
 
-### Mock-ups
+### 1.1.2. Mock-ups
 
 - [http://agilemodeling.com/artifacts/uiPrototype.htm](http://agilemodeling.com/artifacts/uiPrototype.htm)
 
-### Wireframes
+### 1.1.3. Wireframes
 
-## Interface prototyping tools
+## 1.2. Interface prototyping tools
 
 - [http://uxmag.com/articles/bringing-relevant-content-into-your-designs](http://uxmag.com/articles/bringing-relevant-content-into-your-designs)
 - [https://www.cooper.com/prototyping-tools](https://www.cooper.com/prototyping-tools)
@@ -62,9 +62,9 @@ Per Ambler, n.d. and my friend Clint:
 
 
 
-# Types of interfaces
+# 2. Types of interfaces
 
-## Reporting dashboards
+## 2.1. Reporting dashboards
 
 A summary of best practies from Eckerson and Hammond (2011):
 
@@ -90,9 +90,9 @@ A summary of best practies from Eckerson and Hammond (2011):
     
     
 
-## Interactive interfaces
+## 2.2. Interactive interfaces
 
-### Forms
+### 2.2.1. Forms
 
 Per Wroblewski (n.d.), forms are used in a variety of scenarios both on- and offline:
 
@@ -100,7 +100,7 @@ Per Wroblewski (n.d.), forms are used in a variety of scenarios both on- and off
 - Log in, gain access
 - Input data, give feedback
 
-#### Requirements and validation
+#### 2.2.1.1. Requirements and validation
 
 - **Usability Testing:** Errors, issues, assists, completion rates, time spent 
 per task, satisfaction scores
@@ -110,16 +110,16 @@ per task, satisfaction scores
 - **Site Tracking:** Completion rates, entry points, exit points, elements utilized, data entered 
 - **Eye Tracking:** Number of eye fixations, length of fixations, heat maps, scan paths 
 
-#### General best practices
+#### 2.2.1.2. General best practices
 
 - Minimize input with smart defaults, inline validation, forgiving inputs
 - Provide a progress indicator
 - Provide a consistent voice across pages of a form
 - Indicate errors, available help, reasons for requesting data, success
 
-#### Best practices by form element
+#### 2.2.1.3. Best practices by form element
 
-##### Layout 
+##### 2.2.1.3.1. Layout 
 
 Label positions:
 
@@ -130,7 +130,7 @@ Label positions:
     
 Content groupings 
 
-##### Input Affordances 
+##### 2.2.1.3.2. Input Affordances 
 
 Per Norman (2013), an object has attributes; a person has capabilities; when a person's capabilities combine with an object's attributes, this is an affordance and we can say that the object affords action X. For example, a rock is hard; many people can move their arms and grip with their hands; therefore, a rock affords hitting something and causing damage. More coloquially, in web design an interface element that evokes and invites interaction from users.
 
@@ -140,20 +140,18 @@ Per Norman (2013), an object has attributes; a person has capabilities; when a p
 
 - Formats   
 
-##### Actions 
+##### 2.2.1.3.3. Actions 
 
 Primary 
 
 Secondary 
 
-##### Help & Tips 
+##### 2.2.1.3.4. Help & Tips 
 
-##### Visual Hierarchy
-
-
-### Multimedia
+##### 2.2.1.3.5. Visual Hierarchy
 
 
+### 2.2.2. Multimedia
 
 
 
@@ -161,9 +159,11 @@ Secondary
 
 
 
-# Sources
 
-## Cited
+
+# 3. Sources
+
+## 3.1. Cited
 
 Ambler, S. (n.d.). User interface (UI) prototypes: An Agile introduction. (n.d.). Retrieved from [http://agilemodeling.com/artifacts/uiPrototype.htm](http://agilemodeling.com/artifacts/uiPrototype.htm)
 
@@ -173,7 +173,7 @@ Norman, D. (2013). _The design of everyday things._ New York City, NY: Basic Boo
 
 Wroblewski, L. (n.d.). Best practices for form design [presentation slides]. 
 
-## References
+## 3.2. References
 
 - [Questionnaire bank for usability research](http://www.usabilitynet.org/tools/r_questionnaire.htm)
 - [User Experience Questionnaire](http://www.ueq-online.org/)
@@ -182,12 +182,12 @@ Wroblewski, L. (n.d.). Best practices for form design [presentation slides].
 - [HTML color codes, pickers, etc.](http://htmlcolorcodes.com/)
 - [Font Pair](http://fontpair.co/)
 
-## Read
+## 3.3. Read
 
 - [Coursera - Design Principles](https://www.coursera.org/learn/design-principles)
 - [Coursera - Graphic Design](https://www.coursera.org/learn/fundamentals-of-graphic-design)
 
-## Unread
+## 3.4. Unread
 
 - [7 Rules for Creating Gorgeous UI](https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda)
 - [Graphic Design tutorial](http://www.afterhoursprogramming.com/tutorial/Graphic-Design/Introduction/)

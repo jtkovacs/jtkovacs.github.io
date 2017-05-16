@@ -27,6 +27,11 @@ body {
 
 
 /* Text should be grey, limited to 700 px wide */
+
+p {
+    padding-left: 5px;
+}
+
 p, li {
     max-width: 700px;
     font-size: 11px;
@@ -38,7 +43,7 @@ ul {
     list-style-type: disc;
 }
 
-/* LINKS should be dark blue-green h(ttp://www.colorcombos.in/3FA680) */
+/* LINKS should be dark blue-green http://www.colorcombos.in/3FA680) */
 a {
     color: #3FA680;  
     text-decoration: none;
@@ -53,12 +58,16 @@ p.caption {
 
 li strong {
     color: #000000;
+    
 }
 
 li li strong {
-    color: #666666;
+    color: #333333;
 }
 
+li li li strong {
+    color: #555555;
+}
 
 
 /* TABLE OF CONTENTS */
@@ -83,6 +92,7 @@ table.TOC li {
     color: #bbbbbb;
     font-size:8px;
 }
+
 /* Make nested list items lighter and smaller */
 table.TOC li a {
     font-size: 16px;
@@ -114,7 +124,7 @@ table.TOC li li li li li a {
 /* They should get lighter shades of orange as they decrease in size */
 h1, h1 a, h1 a:hover {
     color: #FC2000;
-    font-size: 30px;
+    font-size: 26px;
     padding-top: 80px;
 }
 
@@ -123,7 +133,6 @@ h2, h2 a, h2 a:hover {
     font-size: 22px;
     padding-top: 30px;
 }
-
 
 h3, h3 a, h3 a:hover {
     color: #FF6E16;
@@ -194,3 +203,5 @@ table.bullets ul {
 table.bullets th {
     max-width: 50px;
 }
+
+

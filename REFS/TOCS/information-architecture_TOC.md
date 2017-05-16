@@ -1,4 +1,4 @@
-<p class="path"><a href="../../pkb.html">pkb contents</a> \> information architecture | nearly 4860 words | updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [What is information retrieval?](#what-is-information-retrieval)
+<p class="path"><a href="../../pkb.html">pkb contents</a> \> information architecture | nearly 4863 words | updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [What is information retrieval?](#what-is-information-retrieval)
 	- 1.1. [IR systems](#ir-systems)
 	- 1.2. [Major activities in IR](#major-activities-in-ir)
 		- 1.2.1. [Cataloging & indexing](#cataloging-indexing)
@@ -56,7 +56,7 @@ IR occurs when a user retrieves information objects AKA content objects (documen
 ## 1.1. IR systems
 
 - Catalogs, search engines, ??? 
-- Svenonius (2005): **"Systems that do not employ vocabulary control may be characterized in terms of their indexing: natural language, derived, keyword, or title word indexing; or, in terms of the type of searching they allow: free-text searching or full-text searching. It is not a foregone conclusion that a system with vocabulary control is better than one without it."**
+- Svenonius (2005): "Systems that do not employ vocabulary control may be characterized in terms of their indexing: natural language, derived, keyword, or title word indexing; or, in terms of the type of searching they allow: free-text searching or full-text searching. It is not a foregone conclusion that a system with vocabulary control is better than one without it."
 
 
 ## 1.2. Major activities in IR
@@ -115,7 +115,7 @@ To retrieve information, users engage with information systems by:
     
 - **BROWSING** a collection of information; this is the concern of front-end IA, with the goal of intuitive user interfaces and navigational structures. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
 
-    - **NAVIGATION** is related, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
+    - **NAVIGATION** is related to browsing, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
 
     
@@ -559,7 +559,7 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
     - Relationships can be organized:
         - Alphabetically or logically
         - Into categories, under node labels (not used for indexing)
-    - Depthof U/UF can be adjusted to compensate for hierarchy display type (?)
+    - Depth of U/UF can be adjusted to compensate for hierarchy display type (?)
 - Sorting:
     - Prefer word-by-word ("nothing before something")
     - Sort numbers by magnitude

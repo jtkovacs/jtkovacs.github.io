@@ -5,8 +5,9 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | data viz
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
    div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
@@ -44,90 +45,106 @@ code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Ann
 code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/data-viz.html">
-    https://jtkovacs.github.io/REFS/HTML/data-viz.html
-   </a>
-   &gt; 501 words
+   &gt; data viz | nearly 501 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
       <li>
        <a href="#types-of-data-visualizations">
         Types of data visualizations
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
       <li>
-       <a href="#what-are-tufte's-design-principles?">
+       <a href="#what-are-tuftes-design-principles">
         What are Tufte's design principles?
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="3" style="list-style-type: decimal">
       <li>
        <a href="#data-viz-in-python">
         Data viz in Python
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="4" style="list-style-type: decimal">
       <li>
        <a href="#data-viz-in-r">
         Data viz in R
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="5" style="list-style-type: decimal">
       <li>
        <a href="#sources">
         Sources
        </a>
-       <ul>
-        <li>
-         <a href="#references">
-          References
-         </a>
-        </li>
-        <li>
-         <a href="#read">
-          Read
-         </a>
-        </li>
-        <li>
-         <a href="#unread">
-          Unread
-         </a>
-        </li>
-       </ul>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       5.1.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       5.2.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       5.3.
+       <a href="#unread">
+        Unread
+       </a>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="types-of-data-visualizations">
-    Types of data visualizations
+    </li>
+   </ul>
+  </div>
+  <h1 id="types-of-data-visualizations">
+   <a>
+    1. Types of data visualizations
    </a>
   </h1>
   <p>
    Source: Eckerson, W., &amp; Hammond, M. (2011). Visual reporting and analysis. TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
   </p>
   <div class="figure">
-   <img src="../ILLOS/viz-types.png"/>
+   <img src="ILLOS/viz-types.png"/>
   </div>
-  <h1>
-   <a name="what-are-tufte's-design-principles?">
-    What are Tufte's design principles?
+  <h1 id="what-are-tuftes-design-principles">
+   <a>
+    2. What are Tufte's design principles?
    </a>
   </h1>
   <p>
    Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.
   </p>
-  <h1>
-   <a name="data-viz-in-python">
-    Data viz in Python
+  <h1 id="data-viz-in-python">
+   <a>
+    3. Data viz in Python
    </a>
   </h1>
   <ul>
@@ -198,9 +215,9 @@ ax.set_xticks(<span class="bu">range</span>(<span class="dv">1</span>, <span cla
 ax.set_ylabel(‘Axis name’)
 plt.grid(<span class="va">True</span>)</code></pre>
   </div>
-  <h1>
-   <a name="data-viz-in-r">
-    Data viz in R
+  <h1 id="data-viz-in-r">
+   <a>
+    4. Data viz in R
    </a>
   </h1>
   <ul>
@@ -264,14 +281,14 @@ leastSquares=T/F
 <span class="co"># account for overlapping data point: </span>
 <span class="kw">plot</span>(<span class="kw">jitter</span>(x), y)</code></pre>
   </div>
-  <h1>
-   <a name="sources">
-    Sources
+  <h1 id="sources">
+   <a>
+    5. Sources
    </a>
   </h1>
-  <h2>
-   <a name="references">
-    References
+  <h2 id="references">
+   <a>
+    5.1. References
    </a>
   </h2>
   <ul>
@@ -281,9 +298,9 @@ leastSquares=T/F
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="read">
-    Read
+  <h2 id="read">
+   <a>
+    5.2. Read
    </a>
   </h2>
   <ul>
@@ -329,8 +346,8 @@ leastSquares=T/F
    </li>
   </ul>
   <h2>
-   <a name="unread">
-    Unread
+   <a name="5.3.-unread">
+    5.3. Unread
    </a>
   </h2>
   <ul>

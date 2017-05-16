@@ -1,38 +1,38 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/fin-acctg.html">https://jtkovacs.github.io/REFS/HTML/fin-acctg.html</a></p><table class="TOC"><tr><td>- [What is accounting?](#what-is-accounting?)
-	- [What is the fundamental accounting identity?](#what-is-the-fundamental-accounting-identity?)
-	- [What is the accounting process?](#what-is-the-accounting-process?)
-- [What is finance? ](#what-is-finance?-)
-	- [What good is it?](#what-good-is-it?)
-	- [What is sustainable finance?](#what-is-sustainable-finance?)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> fin acctg | nearly 75 words | updated 05/16/2017</p><div class="TOC">- 1. [What is accounting?](#what-is-accounting)
+	- 1.1. [What is the fundamental accounting identity?](#what-is-the-fundamental-accounting-identity)
+	- 1.2. [What is the accounting process?](#what-is-the-accounting-process)
+- 2. [What is finance? ](#what-is-finance-)
+	- 2.1. [What good is it?](#what-good-is-it)
+	- 2.2. [What is sustainable finance?](#what-is-sustainable-finance)
+- 3. [Sources](#sources)
+	- 3.1. [References](#references)
+	- 3.2. [Read](#read)
+	- 3.3. [Unread](#unread)
+</div>
 
-# What is accounting?
+# 1. What is accounting?
 
-## What is the fundamental accounting identity?
+## 1.1. What is the fundamental accounting identity?
 
-## What is the accounting process?
+## 1.2. What is the accounting process?
 
-# What is finance? 
+# 2. What is finance? 
 
-## What good is it?
+## 2.1. What good is it?
 
-## What is sustainable finance?
+## 2.2. What is sustainable finance?
 
 
-# Sources
+# 3. Sources
 
-## References
+## 3.1. References
 
 - [Investopedia's investing tutorials<br>](http://www.investopedia.com/university/all/basics/)
 
-## Read
+## 3.2. Read
 
 
-## Unread
+## 3.3. Unread
 
 - [World's top firms cause $2.2tn of environmental damage, report estimates](https://www.theguardian.com/environment/2010/feb/18/worlds-top-firms-environmental-damage)
 - [The Differences Among Socially Responsible, Impact, and Common Good Investing](http://www.huffingtonpost.com/terry-mollner/the-differences-among-soc_b_4221293.html)

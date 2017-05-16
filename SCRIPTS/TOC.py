@@ -12,7 +12,7 @@ import sys
 
 
 # Open .md file based on filename argument
-## $ alias TOC information-architecture.md
+## $ TOC information-architecture.md
 fname = '/home/jtk/Site/REFS/NOTES/'+sys.argv[1]
 fhand = open(fname, 'r')
 
@@ -128,13 +128,13 @@ wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
 title = sys.argv[1][:-3].replace('-', ' ')
 num_words = wc.stdout.decode("utf-8").split(" ")[0]
 up_date = datetime.datetime.now().strftime("%m/%d/%Y")
-fout.write('<p class="path"><a href="../../pkb.html">pkb contents</a> \> '+title+' | nearly '+num_words+' words | updated '+up_date+'</p>') 
+fout.write('<p class="path"><a href="../pkb.html">pkb contents</a> \> '+title+' | nearly '+num_words+' words | updated '+up_date+'</p>') 
 
 ## ... TOC
-fout.write('<table class="TOC"><tr><td>')
+fout.write('<div class="TOC">')
 for row in TOC:
     fout.write(row)
-fout.write("</td></tr></table>")
+fout.write("</div>")
 fout.write("\n")
 
 ## ... content
@@ -177,26 +177,44 @@ my_soup = BeautifulSoup(fhand, "html.parser")
 
 
 # Make headers into anchors
-## Creates URL-safe anchor by stripping &, ? characters
 headers = my_soup.find_all(["h1","h2","h3","h4","h5","h6"])
 for h in headers:
     h.string.wrap(my_soup.new_tag("a"))
 del h['id'] 
 
-
-
 # Extract URL text, reformat and set as anchor name
-## Because of URL endcoding, removes ? and & automatically
+## Creates URL-safe anchor by stripping &, ?, and other characters automatically
 h.a['name'] = "-".join(h.get_text().lower().split(" "))
+
+
+
+# Add filepath to images
+## Remove all "ILLOS" from img tags for backwards compatibility
+images = my_soup.find_all(["img"])
+for i in images:
+    img_loc = i['src']
+    img_name = img_loc.split("/")[-1]
+    i['src'] = "ILLOS/"+img_name
     
+
     
-    
-# Add stylesheet
-link = my_soup.new_tag("link")
-link["rel"] = "stylesheet"
-link["type"] = "text/css"
-link['href'] = "../STYLES/refs.css"
-my_soup.head.style.replace_with(link)
+# Add stylesheets
+main = my_soup.new_tag("link")
+main["rel"] = "stylesheet"
+main["type"] = "text/css"
+main['href'] = "../STYLES/main.css"
+my_soup.head.style.replace_with(main)
+refs = my_soup.new_tag("link")
+refs["rel"] = "stylesheet"
+refs["type"] = "text/css"
+refs['href'] = "../STYLES/refs.css" 
+my_soup.head.append(refs)
+
+
+
+# Add page title
+pg_title_text = 'jtkovacs.github.io | '+title
+my_soup.title.append(pg_title_text)
 
 
 

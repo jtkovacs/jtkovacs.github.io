@@ -1,16 +1,31 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Neo4j.html">https://jtkovacs.github.io/REFS/HTML/Neo4j.html</a> \> 228 words </p><table class="TOC"><tr><td>- [Cypher](#cypher)
-	- [Create](#create)
-		- [Nodes](#nodes)
-		- [Relationships (edges)](#relationships-(edges))
-	- [Retrieve](#retrieve)
-		- [Recommend ](#recommend-)
-		- [Analyze queries](#analyze-queries)
-</td></tr></table>
-# Cypher
+<p class="path"><a href="../pkb.html">pkb contents</a> \> Neo4j | nearly 268 words | updated 05/16/2017</p><div class="TOC">- 1. [Neo4j](#neo4j)
+- 2. [Cypher](#cypher)
+	- 2.1. [Create](#create)
+		- 2.1.1. [Nodes](#nodes)
+		- 2.1.2. [Relationships (edges)](#relationships-edges)
+	- 2.2. [Retrieve](#retrieve)
+		- 2.2.1. [Recommend ](#recommend-)
+		- 2.2.2. [Analyze queries](#analyze-queries)
+</div>
+# 1. Neo4j
 
-## Create
+The **editor** accepts input:
 
-### Nodes
+- [Cypher queries](Cypher.html) to work with graph data
+- Client-side commands available, e.g. ```:help```
+- Run query: `ctrl+enter`
+- Multiline command: `shift+enter`
+
+The **stream** displays output:
+
+- Clear stream: `:clear`
+- Monitor: `:play sysinfo`
+
+# 2. Cypher
+
+## 2.1. Create
+
+### 2.1.1. Nodes
 
 This makes a node **named** "ee" with **label** "Person" and **attributes** "name", "from", and "klout":
 
@@ -25,7 +40,7 @@ CREATE (js:Person { name: "Johan", from: "Sweden", learn: "surfing" }),
 (ir:Person { name: "Ian", from: "England", title: "author" })
 ```
 
-### Relationships (edges)
+### 2.1.2. Relationships (edges)
 
 ```SQL
 CREATE (node_name)-[:RELATIONSHIP_NAME {relationship_attribute: value}] -> (node_name)
@@ -34,7 +49,7 @@ CREATE (ee)-[:KNOWS {since: 2001}]->(js), (ee)-[:KNOWS {rating: 5}]->(ir)
 ```
 
 
-## Retrieve
+## 2.2. Retrieve
 
 Find a nodel labeled "Person" and named "Emil":
 
@@ -52,7 +67,7 @@ Find all Emil's friends by:
 MATCH (ee:Person)-[:KNOWS]-(friends) WHERE ee.name = "Emil" RETURN ee, friends
 ```
 
-### Recommend 
+### 2.2.1. Recommend 
 
 Recommend a similar friend of friend by:
 
@@ -66,7 +81,7 @@ WHERE js.name = "Johan" AND surfer.hobby = "surfing"
 RETURN DISTINCT surfer
 ```
 
-### Analyze queries
+### 2.2.2. Analyze queries
 
 ```SQL
 PROFILE MATCH ...

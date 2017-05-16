@@ -1,4 +1,4 @@
-<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> TITLE | 2300 words, updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [What is SQL?](#what-is-sql)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> SQL | nearly 2300 words | updated 05/16/2017</p><div class="TOC">- 1. [What is SQL?](#what-is-sql)
 	- 1.1. [Notation and style guide](#notation-and-style-guide)
 	- 1.2. [Data definition](#data-definition)
 		- 1.2.1. [Manage databases](#manage-databases)
@@ -20,7 +20,7 @@
 	- 4.1. [References](#references)
 	- 4.2. [Archive](#archive)
 	- 4.3. [Inbox](#inbox)
-</td></tr></table>
+</div>
 # 1. What is SQL?
 
 SQL is the standardized language used to access a database. SQL language provides for: (1) data definition/DDL statements that help you define the database and its objects; (2) data manipulation/DML statements that allow you to update and query data; (3) data control, allows you to grant the permissions to a user to access a certain data in the database.

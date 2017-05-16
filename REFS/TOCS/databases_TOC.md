@@ -1,4 +1,4 @@
-<p class="path"><a href="../../pkb.html">pkb contents</a> \> databases | nearly 4459 words | updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [What is a database?](#what-is-a-database)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> databases | nearly 4459 words | updated 05/16/2017</p><div class="TOC">- 1. [What is a database?](#what-is-a-database)
 	- 1.1. [The database system lifecycle](#the-database-system-lifecycle)
 	- 1.2. [History of databases](#history-of-databases)
 		- 1.2.1. [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -45,7 +45,7 @@
 	- 4.2. [References](#references)
 	- 4.3. [Read](#read)
 	- 4.4. [Unread](#unread)
-</td></tr></table>
+</div>
 
 _These notes are heavily influenced by Dr. Simon Wu-Ping Wang's slides as well as Connolly and Begg (2015)._
 

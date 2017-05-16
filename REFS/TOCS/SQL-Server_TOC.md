@@ -1,35 +1,35 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">https://jtkovacs.github.io/REFS/HTML/SQL-Server.html</a> \> 1212 words </p><table class="TOC"><tr><td>- [SQL Server](#sql-server)
-	- [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
-	- [SQL Server Management Studio](#sql-server-management-studio)
-- [T-SQL](#t-sql)
-	- [Legend](#legend)
-	- [Manage objects](#manage-objects)
-		- [Databases](#databases)
-		- [Schemas](#schemas)
-		- [Tables ](#tables-)
-			- [Datatypes](#datatypes)
-			- [Temporal tables](#temporal-tables)
-		- [Views](#views)
-	- [Manage performance](#manage-performance)
-		- [Splitting the database](#splitting-the-database)
-		- [Creating indexes](#creating-indexes)
-		- [Fixing index fragmentation](#fixing-index-fragmentation)
-		- [Creating memory-optimized tables](#creating-memory-optimized-tables)
-- [Sources](#sources)
-	- [Cited](#cited)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> SQL Server | nearly 1212 words | updated 05/16/2017</p><div class="TOC">- 1. [SQL Server](#sql-server)
+	- 1.1. [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
+	- 1.2. [SQL Server Management Studio](#sql-server-management-studio)
+- 2. [T-SQL](#t-sql)
+	- 2.1. [Legend](#legend)
+	- 2.2. [Manage objects](#manage-objects)
+		- 2.2.1. [Databases](#databases)
+		- 2.2.2. [Schemas](#schemas)
+		- 2.2.3. [Tables ](#tables-)
+			- 2.2.3.1. [Datatypes](#datatypes)
+			- 2.2.3.2. [Temporal tables](#temporal-tables)
+		- 2.2.4. [Views](#views)
+	- 2.3. [Manage performance](#manage-performance)
+		- 2.3.1. [Splitting the database](#splitting-the-database)
+		- 2.3.2. [Creating indexes](#creating-indexes)
+		- 2.3.3. [Fixing index fragmentation](#fixing-index-fragmentation)
+		- 2.3.4. [Creating memory-optimized tables](#creating-memory-optimized-tables)
+- 3. [Sources](#sources)
+	- 3.1. [Cited](#cited)
+	- 3.2. [References](#references)
+	- 3.3. [Read](#read)
+	- 3.4. [Unread](#unread)
+</div>
 
 
-# SQL Server
+# 1. SQL Server
 
-## SQL Server Configuration Manager 
+## 1.1. SQL Server Configuration Manager 
 
 Shows every instance of a SQL Server product on a machine; lets you restart a process and enable protocols for communication between client & server.
 
-## SQL Server Management Studio
+## 1.2. SQL Server Management Studio
 
 - **Activity Monitor:** use for identifying bottlenecks & kill process if needed (but might cause data corruption!)
 - **SQL Server Profiler:** lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
@@ -37,9 +37,9 @@ Shows every instance of a SQL Server product on a machine; lets you restart a pr
 
 
 
-# T-SQL
+# 2. T-SQL
 
-## Legend
+## 2.1. Legend
 
 Per Buyham and Guyer (2017), the syntax for [syntax documentation of T-SQL statements](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements) uses the following conventions:
 
@@ -69,9 +69,9 @@ CREATE TABLE dbo.tname
     
 
 
-## Manage objects
+## 2.2. Manage objects
     
-### Databases
+### 2.2.1. Databases
 
 ```SQL
 CREATE DATABASE dbname
@@ -79,7 +79,7 @@ CREATE DATABASE dbname
 USE SQLservername.databasename.schemaname.tablename
 ```
 
-### Schemas
+### 2.2.2. Schemas
 
 - [https://stackoverflow.com/questions/1062075/why-do-table-names-in-sql-server-start-with-dbo](https://stackoverflow.com/questions/1062075/why-do-table-names-in-sql-server-start-with-dbo)
 - [http://www.sqlteam.com/article/understanding-the-difference-between-owners-and-schemas-in-sql-server](http://www.sqlteam.com/article/understanding-the-difference-between-owners-and-schemas-in-sql-server)
@@ -88,7 +88,7 @@ USE SQLservername.databasename.schemaname.tablename
 CREATE SCHEMA sname AUTHORIZATION [dbo]
 ```
 
-### Tables 
+### 2.2.3. Tables 
 
 - **Filegroups:** A database has a default PRIMARY filegroup but you can create other filegroups, e.g. to hold tables that should be read-only.
 - **Inspect relationships:**
@@ -172,7 +172,7 @@ CREATE
 
 ```
 
-#### Datatypes
+#### 2.2.3.1. Datatypes
 
 [Details here;](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql) also note that SQL Server's data types are [mapped to ISO standard data types.](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-type-synonyms-transact-sql)
 
@@ -185,7 +185,7 @@ CREATE
 - **Special purpose:** CURSOR, HIERARCHYID, SQL_VARIANT, TABLE, TIMESTAMP, UNIQUEIDENTIFIER, XML
     - [Spatial data types](https://docs.microsoft.com/en-us/sql/relational-databases/spatial/spatial-data-types-overview)
 
-#### Temporal tables
+#### 2.2.3.2. Temporal tables
 
 Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can then be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
 
@@ -203,20 +203,20 @@ FOR SYSTEM_TIME AS OF '2015-01-01'
 WHERE StockItemName like '%shark%'
 ```
 
-### Views
+### 2.2.4. Views
 
 - **Create view:** [Database] > [Views] > right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data. 
 - **Views can be made persistent to increase performance:** right click view > Script View as > ALTER To > New Query Editor Window > Add “WITH SCHEMABINDING” under “ALTER VIEW” line > Execute > Refresh Object Explorer pane > Right click on Indexes > Clustered index > Add columns.
 
 
 
-## Manage performance
+## 2.3. Manage performance
 
-### Splitting the database
+### 2.3.1. Splitting the database
 
 Installing logs and data on different drives gives a performance boost.
 
-### Creating indexes
+### 2.3.2. Creating indexes
 
 Recall that PKs are indexed automatically.
 
@@ -239,7 +239,7 @@ WITH (DROP_EXISTING =  ON, -- drops and rebuilds an existing index of the same n
     ON "default";
 ```
 
-### Fixing index fragmentation
+### 2.3.3. Fixing index fragmentation
 
 Fragmentation can be identified with [sys.dm_db_index_physical_stats,](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql) a SQL Server [dynamic management function](https://blogs.msdn.microsoft.com/sqlcan/2012/05/24/a-microsoft-sql-server-dmvdmf-cheat-sheet/) **(DMF):**
 
@@ -274,7 +274,7 @@ ALTER INDEX ... REORGANIZE
 ```
 
 
-### Creating memory-optimized tables
+### 2.3.4. Creating memory-optimized tables
 
 In-memory AKA **memory-optimized tables** are used to improve performance of read-write tables. The keyword `GO` causes preceding commands to be submitted as a batch, and `USE` ensures that the table is created within the right database:
 
@@ -300,19 +300,19 @@ WITH (MEMORY-OPTIMIZED=ON)
 
 
 
-# Sources
+# 3. Sources
 
-## Cited
+## 3.1. Cited
 
 Buyham, R. & Guyer, C. (2017, March 14). Transact-SQL Syntax Conventions-Transact-SQL. Microsoft. Retrieved from [https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql)
 
-## References
+## 3.2. References
 
 - [Syntax documentation of T-SQL commands](https://docs.microsoft.com/en-us/sql/t-sql/statements/statements)
 
-## Read
+## 3.3. Read
 
-## Unread
+## 3.4. Unread
 
 - [Core Concepts for SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Core-Concepts/385693-2.html)
 - [Storage in SQL Server](http://www.lynda.com/SQL-Server-tutorials/Database-Fundamentals-Storage/385694-2.html)

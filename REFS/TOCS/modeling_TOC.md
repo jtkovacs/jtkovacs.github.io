@@ -1,4 +1,4 @@
-<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> TITLE | 1370 words, updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [Overview of modeling](#overview-of-modeling)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> modeling | nearly 1370 words | updated 05/16/2017</p><div class="TOC">- 1. [Overview of modeling](#overview-of-modeling)
 	- 1.1. [Why model?](#why-model)
 	- 1.2. [Model typologies](#model-typologies)
 - 2. [Models by form and notation](#models-by-form-and-notation)
@@ -12,7 +12,7 @@
 	- 2.3. [Object-oriented modeling](#object-oriented-modeling)
 		- 2.3.1. [Activity diagrams](#activity-diagrams)
 - 3. [Sources](#sources)
-</td></tr></table>
+</div>
 
 
 _The following notes are largely based on Steirn (1999) and [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking)_

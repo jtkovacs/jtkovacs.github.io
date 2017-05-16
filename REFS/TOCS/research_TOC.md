@@ -1,75 +1,75 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/research.html">https://jtkovacs.github.io/REFS/HTML/research.html</a></p><table class="TOC"><tr><td>- [What's the scientific method?](#what's-the-scientific-method?)
-	- [Institutions of scientific knowledge production](#institutions-of-scientific-knowledge-production)
-		- [Academic apprenticeship](#academic-apprenticeship)
-			- [How does disciplinary training impact knowledge?](#how-does-disciplinary-training-impact-knowledge?)
-		- [Peer review & replicability](#peer-review-&-replicability)
-		- [Libraries & the accumulation of knowledge](#libraries-&-the-accumulation-of-knowledge)
-	- [Academic vs. practitioner knowledge](#academic-vs.-practitioner-knowledge)
-	- [Expert vs. crowdsourced knowledge](#expert-vs.-crowdsourced-knowledge)
-- [The research process](#the-research-process)
-	- [Generating questions](#generating-questions)
-	- [Operationalizing concepts](#operationalizing-concepts)
-	- [Reviewing literature](#reviewing-literature)
-		- [Strategies for finding articles](#strategies-for-finding-articles)
-		- [Strategies for reading well](#strategies-for-reading-well)
-		- [What is a literature review?](#what-is-a-literature-review?)
-		- [What types of literature reviews exist?](#what-types-of-literature-reviews-exist?)
-	- [Sampling](#sampling)
-	- [Choosing a research method](#choosing-a-research-method)
-	- [Analyzing data](#analyzing-data)
-	- [Communicating results](#communicating-results)
-- [Sources](#sources)
-	- [Cited](#cited)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> research | nearly 678 words | updated 05/16/2017</p><div class="TOC">- 1. [What's the scientific method?](#whats-the-scientific-method)
+	- 1.1. [Institutions of scientific knowledge production](#institutions-of-scientific-knowledge-production)
+		- 1.1.1. [Academic apprenticeship](#academic-apprenticeship)
+			- 1.1.1.1. [How does disciplinary training impact knowledge?](#how-does-disciplinary-training-impact-knowledge)
+		- 1.1.2. [Peer review & replicability](#peer-review-replicability)
+		- 1.1.3. [Libraries & the accumulation of knowledge](#libraries-the-accumulation-of-knowledge)
+	- 1.2. [Academic vs. practitioner knowledge](#academic-vs.-practitioner-knowledge)
+	- 1.3. [Expert vs. crowdsourced knowledge](#expert-vs.-crowdsourced-knowledge)
+- 2. [The research process](#the-research-process)
+	- 2.1. [Generating questions](#generating-questions)
+	- 2.2. [Operationalizing concepts](#operationalizing-concepts)
+	- 2.3. [Reviewing literature](#reviewing-literature)
+		- 2.3.1. [Strategies for finding articles](#strategies-for-finding-articles)
+		- 2.3.2. [Strategies for reading well](#strategies-for-reading-well)
+		- 2.3.3. [What is a literature review?](#what-is-a-literature-review)
+		- 2.3.4. [What types of literature reviews exist?](#what-types-of-literature-reviews-exist)
+	- 2.4. [Sampling](#sampling)
+	- 2.5. [Choosing a research method](#choosing-a-research-method)
+	- 2.6. [Analyzing data](#analyzing-data)
+	- 2.7. [Communicating results](#communicating-results)
+- 3. [Sources](#sources)
+	- 3.1. [Cited](#cited)
+	- 3.2. [References](#references)
+	- 3.3. [Read](#read)
+	- 3.4. [Unread](#unread)
+</div>
 
-# What's the scientific method?
+# 1. What's the scientific method?
 
 ... the quest to produce useful, high-quality knowledge.
 
-## Institutions of scientific knowledge production
+## 1.1. Institutions of scientific knowledge production
 
 What are major institutions of knowledge production, and how well are they working?
 
-### Academic apprenticeship
+### 1.1.1. Academic apprenticeship
 
-#### How does disciplinary training impact knowledge?
+#### 1.1.1.1. How does disciplinary training impact knowledge?
 
-### Peer review & replicability
+### 1.1.2. Peer review & replicability
 
-### Libraries & the accumulation of knowledge
+### 1.1.3. Libraries & the accumulation of knowledge
 
-## Academic vs. practitioner knowledge
+## 1.2. Academic vs. practitioner knowledge
 
-## Expert vs. crowdsourced knowledge
+## 1.3. Expert vs. crowdsourced knowledge
 
 
 
-# The research process
+# 2. The research process
 
-## Generating questions
+## 2.1. Generating questions
 
-## Operationalizing concepts
+## 2.2. Operationalizing concepts
 
-## Reviewing literature
+## 2.3. Reviewing literature
 
-### Strategies for finding articles
+### 2.3.1. Strategies for finding articles
 
-### Strategies for reading well
+### 2.3.2. Strategies for reading well
 
 Adler, M. J. (). _How to read a book._
 
-### What is a literature review?
+### 2.3.3. What is a literature review?
 
 The important thing to understand is that a literature review proper is a research method; it is not peripheral to research.
 
-### What types of literature reviews exist?
+### 2.3.4. What types of literature reviews exist?
 
-## Sampling
+## 2.4. Sampling
 
-## Choosing a research method
+## 2.5. Choosing a research method
 
 What are major study designs and purposes? E.g. experiment, difference-in-differences, etc. What exists; how things are connected; what might happen.
 
@@ -82,11 +82,11 @@ Qualitative methods are premised on the ontological position that the world is m
 - Focus group
     - Futures workshop
 
-## Analyzing data
+## 2.6. Analyzing data
 
 See [notes on qualitative methods,](qualitative-methods.html), [data analysis](data-analysis.html) and [models](models.html).
 
-## Communicating results
+## 2.7. Communicating results
 
 See Miller (2005).
 
@@ -94,13 +94,13 @@ See Miller (2005).
 
 
 
-# Sources
+# 3. Sources
 
-## Cited
+## 3.1. Cited
 
 Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis._ Chicago, IL: University of Chicago Press.
 
-## References
+## 3.2. References
 
 - [Eigenfactor.org](http://eigenfactor.org/)
 - [Dev Nambi's links](https://github.com/DevNambi/blog-drafts/blob/master/490%20-%20Science%20and%20Research.md)
@@ -115,7 +115,7 @@ Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis.
 - [Q-BANK question evaluation library](https://wwwn.cdc.gov/qbank/QUest/Quest.aspx)
 - [Survey Quality Predictor 2.1](http://sqp.upf.edu/)
 
-## Read
+## 3.3. Read
 
 - Schmidt, J. Disciplined Minds.
 - Abbott, A. Chaos of Disciplines.
@@ -128,7 +128,7 @@ Miller, J. E. (2005). _The Chicago guide to writing about multivariate analysis.
 - [Coursera - Measuring Causal Effects](https://www.coursera.org/learn/measuring-causal-effects)
 - [More hypotheses, less trivia](http://allendowney.blogspot.com/2011/06/more-hypotheses-less-trivia.html)
 
-## Unread
+## 3.4. Unread
 
 - _Causation: A very short introduction._
 - [Academic research online](http://www.onlinecolleges.net/for-students/online-academic-research/)

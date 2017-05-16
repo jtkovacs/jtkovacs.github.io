@@ -5,8 +5,9 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | SQL Server
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
    div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
@@ -44,164 +45,188 @@ code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Ann
 code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/SQL-Server.html">
-    https://jtkovacs.github.io/REFS/HTML/SQL-Server.html
-   </a>
-   &gt; 1212 words
+   &gt; SQL Server | nearly 1212 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
       <li>
        <a href="#sql-server">
         SQL Server
        </a>
-       <ul>
-        <li>
-         <a href="#sql-server-configuration-manager-">
-          SQL Server Configuration Manager
-         </a>
-        </li>
-        <li>
-         <a href="#sql-server-management-studio">
-          SQL Server Management Studio
-         </a>
-        </li>
-       </ul>
       </li>
+     </ol>
+     <ul>
+      <li>
+       1.1.
+       <a href="#sql-server-configuration-manager-">
+        SQL Server Configuration Manager
+       </a>
+      </li>
+      <li>
+       1.2.
+       <a href="#sql-server-management-studio">
+        SQL Server Management Studio
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
       <li>
        <a href="#t-sql">
         T-SQL
        </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       2.1.
+       <a href="#legend">
+        Legend
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#manage-objects">
+        Manage objects
+       </a>
        <ul>
         <li>
-         <a href="#legend">
-          Legend
+         2.2.1.
+         <a href="#databases">
+          Databases
          </a>
         </li>
         <li>
-         <a href="#manage-objects">
-          Manage objects
+         2.2.2.
+         <a href="#schemas">
+          Schemas
+         </a>
+        </li>
+        <li>
+         2.2.3.
+         <a href="#tables-">
+          Tables
          </a>
          <ul>
           <li>
-           <a href="#databases">
-            Databases
+           2.2.3.1.
+           <a href="#datatypes">
+            Datatypes
            </a>
           </li>
           <li>
-           <a href="#schemas">
-            Schemas
-           </a>
-          </li>
-          <li>
-           <a href="#tables-">
-            Tables
-           </a>
-           <ul>
-            <li>
-             <a href="#datatypes">
-              Datatypes
-             </a>
-            </li>
-            <li>
-             <a href="#temporal-tables">
-              Temporal tables
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           <a href="#views">
-            Views
+           2.2.3.2.
+           <a href="#temporal-tables">
+            Temporal tables
            </a>
           </li>
          </ul>
         </li>
         <li>
-         <a href="#manage-performance">
-          Manage performance
+         2.2.4.
+         <a href="#views">
+          Views
          </a>
-         <ul>
-          <li>
-           <a href="#splitting-the-database">
-            Splitting the database
-           </a>
-          </li>
-          <li>
-           <a href="#creating-indexes">
-            Creating indexes
-           </a>
-          </li>
-          <li>
-           <a href="#fixing-index-fragmentation">
-            Fixing index fragmentation
-           </a>
-          </li>
-          <li>
-           <a href="#creating-memory-optimized-tables">
-            Creating memory-optimized tables
-           </a>
-          </li>
-         </ul>
         </li>
        </ul>
       </li>
       <li>
-       <a href="#sources">
-        Sources
+       2.3.
+       <a href="#manage-performance">
+        Manage performance
        </a>
        <ul>
         <li>
-         <a href="#cited">
-          Cited
+         2.3.1.
+         <a href="#splitting-the-database">
+          Splitting the database
          </a>
         </li>
         <li>
-         <a href="#references">
-          References
+         2.3.2.
+         <a href="#creating-indexes">
+          Creating indexes
          </a>
         </li>
         <li>
-         <a href="#read">
-          Read
+         2.3.3.
+         <a href="#fixing-index-fragmentation">
+          Fixing index fragmentation
          </a>
         </li>
         <li>
-         <a href="#unread">
-          Unread
+         2.3.4.
+         <a href="#creating-memory-optimized-tables">
+          Creating memory-optimized tables
          </a>
         </li>
        </ul>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="sql-server">
-    SQL Server
+    </li>
+    <li>
+     <ol start="3" style="list-style-type: decimal">
+      <li>
+       <a href="#sources">
+        Sources
+       </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       3.1.
+       <a href="#cited">
+        Cited
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       3.3.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       3.4.
+       <a href="#unread">
+        Unread
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1 id="sql-server">
+   <a>
+    1. SQL Server
    </a>
   </h1>
-  <h2>
-   <a name="sql-server-configuration-manager">
-    SQL Server Configuration Manager
+  <h2 id="sql-server-configuration-manager">
+   <a>
+    1.1. SQL Server Configuration Manager
    </a>
   </h2>
   <p>
    Shows every instance of a SQL Server product on a machine; lets you restart a process and enable protocols for communication between client &amp; server.
   </p>
-  <h2>
-   <a name="sql-server-management-studio">
-    SQL Server Management Studio
+  <h2 id="sql-server-management-studio">
+   <a>
+    1.2. SQL Server Management Studio
    </a>
   </h2>
   <ul>
@@ -218,14 +243,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     lets you start a trace for ongoing tracking of activity; can specify activities of interest in detail
    </li>
   </ul>
-  <h1>
-   <a name="t-sql">
-    T-SQL
+  <h1 id="t-sql">
+   <a>
+    2. T-SQL
    </a>
   </h1>
-  <h2>
-   <a name="legend">
-    Legend
+  <h2 id="legend">
+   <a>
+    2.1. Legend
    </a>
   </h2>
   <p>
@@ -299,14 +324,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     fname
     );</code></pre>
   </div>
-  <h2>
-   <a name="manage-objects">
-    Manage objects
+  <h2 id="manage-objects">
+   <a>
+    2.2. Manage objects
    </a>
   </h2>
-  <h3>
-   <a name="databases">
-    Databases
+  <h3 id="databases">
+   <a>
+    2.2.1. Databases
    </a>
   </h3>
   <div class="sourceCode">
@@ -314,9 +339,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <span class="kw">USE</span> SQLservername.databasename.schemaname.tablename</code></pre>
   </div>
-  <h3>
-   <a name="schemas">
-    Schemas
+  <h3 id="schemas">
+   <a>
+    2.2.2. Schemas
    </a>
   </h3>
   <ul>
@@ -334,9 +359,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">SCHEMA</span> sname <span class="kw">AUTHORIZATION</span> [dbo]</code></pre>
   </div>
-  <h3>
-   <a name="tables">
-    Tables
+  <h3 id="tables">
+   <a>
+    2.2.3. Tables
    </a>
   </h3>
   <ul>
@@ -435,9 +460,9 @@ column_name &lt;data_type&gt;
 
 </code></pre>
   </div>
-  <h4>
-   <a name="datatypes">
-    Datatypes
+  <h4 id="datatypes">
+   <a>
+    2.2.3.1. Datatypes
    </a>
   </h4>
   <p>
@@ -502,9 +527,9 @@ column_name &lt;data_type&gt;
     </ul>
    </li>
   </ul>
-  <h4>
-   <a name="temporal-tables">
-    Temporal tables
+  <h4 id="temporal-tables">
+   <a>
+    2.2.3.2. Temporal tables
    </a>
   </h4>
   <p>
@@ -523,9 +548,9 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
 <span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
 <span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
   </div>
-  <h3>
-   <a name="views">
-    Views
+  <h3 id="views">
+   <a>
+    2.2.4. Views
    </a>
   </h3>
   <ul>
@@ -533,11 +558,7 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
     <strong>
      Create view:
     </strong>
-    [Database] &gt;
-    <a href="#views">
-     Views
-    </a>
-    &gt; right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data.
+    [Database] &gt; [Views] &gt; right click. This is done to facilitate reporting, since data that is logically related (city and states) may be scattered across multiple tables; however, it create a penalty for writing data.
    </li>
    <li>
     <strong>
@@ -546,22 +567,22 @@ PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))
     right click view &gt; Script View as &gt; ALTER To &gt; New Query Editor Window &gt; Add “WITH SCHEMABINDING” under “ALTER VIEW” line &gt; Execute &gt; Refresh Object Explorer pane &gt; Right click on Indexes &gt; Clustered index &gt; Add columns.
    </li>
   </ul>
-  <h2>
-   <a name="manage-performance">
-    Manage performance
+  <h2 id="manage-performance">
+   <a>
+    2.3. Manage performance
    </a>
   </h2>
-  <h3>
-   <a name="splitting-the-database">
-    Splitting the database
+  <h3 id="splitting-the-database">
+   <a>
+    2.3.1. Splitting the database
    </a>
   </h3>
   <p>
    Installing logs and data on different drives gives a performance boost.
   </p>
-  <h3>
-   <a name="creating-indexes">
-    Creating indexes
+  <h3 id="creating-indexes">
+   <a>
+    2.3.2. Creating indexes
    </a>
   </h3>
   <p>
@@ -585,9 +606,9 @@ INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">--
     MAXDOP = <span class="dv">2</span>) <span class="co">-- for parallel processing</span>
     <span class="kw">ON</span> <span class="ot">"default"</span>;</code></pre>
   </div>
-  <h3>
-   <a name="fixing-index-fragmentation">
-    Fixing index fragmentation
+  <h3 id="fixing-index-fragmentation">
+   <a>
+    2.3.3. Fixing index fragmentation
    </a>
   </h3>
   <p>
@@ -632,9 +653,9 @@ INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID); <span class="co">--
 <span class="co">-- Reorganize </span>
 <span class="kw">ALTER</span> <span class="kw">INDEX</span> ... REORGANIZE </code></pre>
   </div>
-  <h3>
-   <a name="creating-memory-optimized-tables">
-    Creating memory-optimized tables
+  <h3 id="creating-memory-optimized-tables">
+   <a>
+    2.3.4. Creating memory-optimized tables
    </a>
   </h3>
   <p>
@@ -669,14 +690,14 @@ GO
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname)
 <span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)</code></pre>
   </div>
-  <h1>
-   <a name="sources">
-    Sources
+  <h1 id="sources">
+   <a>
+    3. Sources
    </a>
   </h1>
-  <h2>
-   <a name="cited">
-    Cited
+  <h2 id="cited">
+   <a>
+    3.1. Cited
    </a>
   </h2>
   <p>
@@ -685,9 +706,9 @@ GO
     https://docs.microsoft.com/en-us/sql/t-sql/language-elements/transact-sql-syntax-conventions-transact-sql
    </a>
   </p>
-  <h2>
-   <a name="references">
-    References
+  <h2 id="references">
+   <a>
+    3.2. References
    </a>
   </h2>
   <ul>
@@ -697,14 +718,14 @@ GO
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="read">
-    Read
+  <h2 id="read">
+   <a>
+    3.3. Read
    </a>
   </h2>
   <h2>
-   <a name="unread">
-    Unread
+   <a name="3.4.-unread">
+    3.4. Unread
    </a>
   </h2>
   <ul>

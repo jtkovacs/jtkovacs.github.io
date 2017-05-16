@@ -1,25 +1,25 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-viz.html">https://jtkovacs.github.io/REFS/HTML/data-viz.html</a> \> 501 words </p><table class="TOC"><tr><td>- [Types of data visualizations](#types-of-data-visualizations)
-- [What are Tufte's design principles?](#what-are-tufte's-design-principles?)
-- [Data viz in Python](#data-viz-in-python)
-- [Data viz in R](#data-viz-in-r)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data viz | nearly 501 words | updated 05/16/2017</p><div class="TOC">- 1. [Types of data visualizations](#types-of-data-visualizations)
+- 2. [What are Tufte's design principles?](#what-are-tuftes-design-principles)
+- 3. [Data viz in Python](#data-viz-in-python)
+- 4. [Data viz in R](#data-viz-in-r)
+- 5. [Sources](#sources)
+	- 5.1. [References](#references)
+	- 5.2. [Read](#read)
+	- 5.3. [Unread](#unread)
+</div>
 
-# Types of data visualizations
+# 1. Types of data visualizations
 
 Source: Eckerson, W., & Hammond, M. (2011). Visual reporting and analysis. TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
 
 ![](../ILLOS/viz-types.png)
 
-# What are Tufte's design principles?
+# 2. What are Tufte's design principles?
 
 Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.
 
 
-# Data viz in Python
+# 3. Data viz in Python
 
 - [http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb](http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb)
 - [http://nbviewer.jupyter.org/gist/darribas/4121857](http://nbviewer.jupyter.org/gist/darribas/4121857)
@@ -83,7 +83,7 @@ plt.grid(True)
 ```
 
 
-# Data viz in R
+# 4. Data viz in R
 
 - library for complex graphs: [http://ggplot2.org/](http://ggplot2.org/)
 
@@ -143,13 +143,13 @@ plot(jitter(x), y)
 
 
 
-# Sources
+# 5. Sources
 
-## References
+## 5.1. References
 
 - [Timdream's HTML5 wordcloud generator](https://timdream.org/wordcloud/)
 
-## Read
+## 5.2. Read
 
 - UW IT - [Tableau Intro](http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopIntroduction), [Tableau Fundamentals](http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopFundamentals)
 - [Tableau - Which chart?](https://drive.google.com/file/d/0B6XYyy1UbJ3XOVJxVTFJOURpVWc/view?usp=drive_web)
@@ -159,7 +159,7 @@ plot(jitter(x), y)
 - [Old-school NYT death infographics were depressing](http://mentalfloss.com/article/61828/old-school-new-york-times-death-infographics-were-depressing)
 - [3D dataviz taxonomy](http://www.datavizualization.com/blog/taxonomy-of-3d-dataviz)
 
-## Unread
+## 5.3. Unread
 
 - [Word clouds considered harmful](http://www.niemanlab.org/2011/10/word-clouds-considered-harmful/)
 - [Tableau - Training videos](http://www.tableau.com/learn/training)

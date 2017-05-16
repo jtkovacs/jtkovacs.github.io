@@ -5,238 +5,281 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | security
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/security.html">
-    https://jtkovacs.github.io/REFS/HTML/security.html
-   </a>
+   &gt; security | nearly 2013 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
       <li>
-       <a href="#what-is-security?-">
+       <a href="#what-is-security-">
         What is security?
        </a>
-       <ul>
-        <li>
-         <a href="#what-are-major-categories-of-security-threats-&amp;-defenses?">
-          What are major categories of security threats &amp; defenses?
-         </a>
-        </li>
-        <li>
-         <a href="#what-are-security-relevant-certifications?">
-          What are security-relevant certifications?
-         </a>
-        </li>
-       </ul>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       1.1.
+       <a href="#what-are-major-categories-of-security-threats-defenses">
+        What are major categories of security threats &amp; defenses?
+       </a>
       </li>
       <li>
-       <a href="#what-is-operational-risk?-">
+       1.2.
+       <a href="#what-are-security-relevant-certifications">
+        What are security-relevant certifications?
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
+      <li>
+       <a href="#what-is-operational-risk-">
         What is operational risk?
        </a>
-       <ul>
-        <li>
-         <a href="#what-are-information-assurance-strategies?">
-          What are information assurance strategies?
-         </a>
-        </li>
-       </ul>
       </li>
+     </ol>
+     <ul>
+      <li>
+       2.1.
+       <a href="#what-are-information-assurance-strategies">
+        What are information assurance strategies?
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="3" style="list-style-type: decimal">
       <li>
        <a href="#individual-privacy">
         Individual privacy
        </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       3.1.
+       <a href="#what-are-different-degrees-of-privacy">
+        What are different degrees of privacy?
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#threat-modeling">
+        Threat modeling
+       </a>
+      </li>
+      <li>
+       3.3.
+       <a href="#account-security">
+        Account security
+       </a>
        <ul>
         <li>
-         <a href="#what-are-different-degrees-of-privacy?">
-          What are different degrees of privacy?
+         3.3.1.
+         <a href="#research-the-platforms-and-companies-you-use">
+          Research the platforms and companies you use
          </a>
         </li>
         <li>
-         <a href="#threat-modeling">
-          Threat modeling
+         3.3.2.
+         <a href="#logins-pass-phrases-mfa2fa-and-password-managers">
+          Logins, pass phrases, MFA/2FA, and password managers
          </a>
         </li>
         <li>
-         <a href="#account-security">
-          Account security
-         </a>
-         <ul>
-          <li>
-           <a href="#research-the-platforms-and-companies-you-use">
-            Research the platforms and companies you use
-           </a>
-          </li>
-          <li>
-           <a href="#logins,-pass-phrases,-mfa/2fa,-and-password-managers">
-            Logins, pass phrases, MFA/2FA, and password managers
-           </a>
-          </li>
-          <li>
-           <a href="#security-questions-and-account-recovery">
-            Security questions and account recovery
-           </a>
-          </li>
-          <li>
-           <a href="#3p-access">
-            3p access
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#personal-computer">
-          Personal computer
+         3.3.3.
+         <a href="#security-questions-and-account-recovery">
+          Security questions and account recovery
          </a>
         </li>
         <li>
-         <a href="#email-&amp;-messaging">
-          Email &amp; messaging
+         3.3.4.
+         <a href="#3p-access">
+          3p access
          </a>
-         <ul>
-          <li>
-           <a href="#risky-emails">
-            Risky emails
-           </a>
-          </li>
-          <li>
-           <a href="#email-encryption">
-            Email encryption
-           </a>
-          </li>
-          <li>
-           <a href="#instant-messaging">
-            Instant messaging
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#browsing">
-          Browsing
-         </a>
-         <ul>
-          <li>
-           <a href="#tor-and/or-vpn-for-privacy">
-            Tor and/or VPN for privacy
-           </a>
-          </li>
-          <li>
-           <a href="#searching">
-            Searching
-           </a>
-          </li>
-          <li>
-           <a href="#purchasing-online">
-            Purchasing online
-           </a>
-          </li>
-          <li>
-           <a href="#apps-for-ads,-malicious-scripts,-trackers,-etc.">
-            Apps for ads, malicious scripts, trackers, etc.
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#mobile-phone">
-          Mobile phone
-         </a>
-         <ul>
-          <li>
-           <a href="#discourage-unauthorized-access">
-            Discourage unauthorized access
-           </a>
-          </li>
-          <li>
-           <a href="#keep-text-messages,-calls,-and-browsing-private">
-            Keep text messages, calls, and browsing private
-           </a>
-          </li>
-          <li>
-           <a href="#phones-as-audio-recorders-and-locators">
-            Phones as audio recorders and locators
-           </a>
-          </li>
-          <li>
-           <a href="#phone-scams-and-phishing">
-            Phone scams and phishing
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#harrassment">
-          Harrassment
-         </a>
-         <ul>
-          <li>
-           <a href="#doxing">
-            Doxing
-           </a>
-          </li>
-          <li>
-           <a href="#social">
-            Social
-           </a>
-          </li>
-          <li>
-           <a href="#ddos">
-            DDoS
-           </a>
-          </li>
-         </ul>
         </li>
        </ul>
       </li>
       <li>
-       <a href="#sources">
-        Sources
+       3.4.
+       <a href="#personal-computer">
+        Personal computer
+       </a>
+      </li>
+      <li>
+       3.5.
+       <a href="#email-messaging">
+        Email &amp; messaging
        </a>
        <ul>
         <li>
-         <a href="#references">
-          References
+         3.5.1.
+         <a href="#risky-emails">
+          Risky emails
          </a>
         </li>
         <li>
-         <a href="#read">
-          Read
+         3.5.2.
+         <a href="#email-encryption">
+          Email encryption
          </a>
         </li>
         <li>
-         <a href="#unread">
-          Unread
+         3.5.3.
+         <a href="#instant-messaging">
+          Instant messaging
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       3.6.
+       <a href="#browsing">
+        Browsing
+       </a>
+       <ul>
+        <li>
+         3.6.1.
+         <a href="#tor-andor-vpn-for-privacy">
+          Tor and/or VPN for privacy
+         </a>
+        </li>
+        <li>
+         3.6.2.
+         <a href="#searching">
+          Searching
+         </a>
+        </li>
+        <li>
+         3.6.3.
+         <a href="#purchasing-online">
+          Purchasing online
+         </a>
+        </li>
+        <li>
+         3.6.4.
+         <a href="#apps-for-ads-malicious-scripts-trackers-etc.">
+          Apps for ads, malicious scripts, trackers, etc.
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       3.7.
+       <a href="#mobile-phone">
+        Mobile phone
+       </a>
+       <ul>
+        <li>
+         3.7.1.
+         <a href="#discourage-unauthorized-access">
+          Discourage unauthorized access
+         </a>
+        </li>
+        <li>
+         3.7.2.
+         <a href="#keep-text-messages-calls-and-browsing-private">
+          Keep text messages, calls, and browsing private
+         </a>
+        </li>
+        <li>
+         3.7.3.
+         <a href="#phones-as-audio-recorders-and-locators">
+          Phones as audio recorders and locators
+         </a>
+        </li>
+        <li>
+         3.7.4.
+         <a href="#phone-scams-and-phishing">
+          Phone scams and phishing
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       3.8.
+       <a href="#harrassment">
+        Harrassment
+       </a>
+       <ul>
+        <li>
+         3.8.1.
+         <a href="#doxing">
+          Doxing
+         </a>
+        </li>
+        <li>
+         3.8.2.
+         <a href="#social">
+          Social
+         </a>
+        </li>
+        <li>
+         3.8.3.
+         <a href="#ddos">
+          DDoS
          </a>
         </li>
        </ul>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="what-is-security?">
-    What is security?
+    </li>
+    <li>
+     <ol start="4" style="list-style-type: decimal">
+      <li>
+       <a href="#sources">
+        Sources
+       </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       4.1.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       4.2.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       4.3.
+       <a href="#unread">
+        Unread
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1 id="what-is-security">
+   <a>
+    1. What is security?
    </a>
   </h1>
-  <h2>
-   <a name="what-are-major-categories-of-security-threats-&amp;-defenses?">
-    What are major categories of security threats &amp; defenses?
+  <h2 id="what-are-major-categories-of-security-threats-defenses">
+   <a>
+    1.1. What are major categories of security threats &amp; defenses?
    </a>
   </h2>
-  <h2>
-   <a name="what-are-security-relevant-certifications?">
-    What are security-relevant certifications?
+  <h2 id="what-are-security-relevant-certifications">
+   <a>
+    1.2. What are security-relevant certifications?
    </a>
   </h2>
   <ul>
@@ -263,32 +306,32 @@
     has various certs for info systems and cyber security.
    </li>
   </ul>
-  <h1>
-   <a name="what-is-operational-risk?">
-    What is operational risk?
+  <h1 id="what-is-operational-risk">
+   <a>
+    2. What is operational risk?
    </a>
   </h1>
-  <h2>
-   <a name="what-are-information-assurance-strategies?">
-    What are information assurance strategies?
+  <h2 id="what-are-information-assurance-strategies">
+   <a>
+    2.1. What are information assurance strategies?
    </a>
   </h2>
-  <h1>
-   <a name="individual-privacy">
-    Individual privacy
+  <h1 id="individual-privacy">
+   <a>
+    3. Individual privacy
    </a>
   </h1>
-  <h2>
-   <a name="what-are-different-degrees-of-privacy?">
-    What are different degrees of privacy?
+  <h2 id="what-are-different-degrees-of-privacy">
+   <a>
+    3.1. What are different degrees of privacy?
    </a>
   </h2>
   <p>
    Metadata, content, anonymity.
   </p>
-  <h2>
-   <a name="threat-modeling">
-    Threat modeling
+  <h2 id="threat-modeling">
+   <a>
+    3.2. Threat modeling
    </a>
   </h2>
   <p>
@@ -345,22 +388,22 @@
     Phishing is an attempt to access private information by way of legitimate-appearing spam email.
    </li>
   </ul>
-  <h2>
-   <a name="account-security">
-    Account security
+  <h2 id="account-security">
+   <a>
+    3.3. Account security
    </a>
   </h2>
-  <h3>
-   <a name="research-the-platforms-and-companies-you-use">
-    Research the platforms and companies you use
+  <h3 id="research-the-platforms-and-companies-you-use">
+   <a>
+    3.3.1. Research the platforms and companies you use
    </a>
   </h3>
   <p>
    Do they provide the government direct access to user data? Do they notify users when such data has been furnished in compliance with a court order? Do they have a track record of defending their user data in court? Do they sell your data to other companies? Are they data-greedy or do they collect only when needed? Do they have strong enterprise security practices?
   </p>
-  <h3>
-   <a name="logins,-pass-phrases,-mfa/2fa,-and-password-managers">
-    Logins, pass phrases, MFA/2FA, and password managers
+  <h3 id="logins-pass-phrases-mfa2fa-and-password-managers">
+   <a>
+    3.3.2. Logins, pass phrases, MFA/2FA, and password managers
    </a>
   </h3>
   <p>
@@ -394,25 +437,25 @@
   <p>
    For shared systems, it is imperative that all users follow these practices.
   </p>
-  <h3>
-   <a name="security-questions-and-account-recovery">
-    Security questions and account recovery
+  <h3 id="security-questions-and-account-recovery">
+   <a>
+    3.3.3. Security questions and account recovery
    </a>
   </h3>
   <p>
    Answers to security questions should be nonsense, or shifted by one key; store answers in a password manager. When possible, write your own security questions rather than using defaults. Have an email address specifically intended for account recovery.
   </p>
-  <h3>
-   <a name="3p-access">
-    3p access
+  <h3 id="p-access">
+   <a>
+    3.3.4. 3p access
    </a>
   </h3>
   <p>
    Review third party access you've granted to accounts like Facebook and Google Drive; remove inactive ones.
   </p>
-  <h2>
-   <a name="personal-computer">
-    Personal computer
+  <h2 id="personal-computer">
+   <a>
+    3.4. Personal computer
    </a>
   </h2>
   <ul>
@@ -441,14 +484,14 @@
     laptop as a last resort---or, as the polar opposite, use an insecure and disposable device when traveling.
    </li>
   </ul>
-  <h2>
-   <a name="email-&amp;-messaging">
-    Email &amp; messaging
+  <h2 id="email-messaging">
+   <a>
+    3.5. Email &amp; messaging
    </a>
   </h2>
-  <h3>
-   <a name="risky-emails">
-    Risky emails
+  <h3 id="risky-emails">
+   <a>
+    3.5.1. Risky emails
    </a>
   </h3>
   <p>
@@ -462,9 +505,9 @@
    </code>
    .
   </p>
-  <h3>
-   <a name="email-encryption">
-    Email encryption
+  <h3 id="email-encryption">
+   <a>
+    3.5.2. Email encryption
    </a>
   </h3>
   <p>
@@ -474,9 +517,9 @@
    </a>
    for end-to-end encryption that integrates with existing email providers.
   </p>
-  <h3>
-   <a name="instant-messaging">
-    Instant messaging
+  <h3 id="instant-messaging">
+   <a>
+    3.5.3. Instant messaging
    </a>
   </h3>
   <p>
@@ -490,14 +533,14 @@
    </a>
    .
   </p>
-  <h2>
-   <a name="browsing">
-    Browsing
+  <h2 id="browsing">
+   <a>
+    3.6. Browsing
    </a>
   </h2>
-  <h3>
-   <a name="tor-and/or-vpn-for-privacy">
-    Tor and/or VPN for privacy
+  <h3 id="tor-andor-vpn-for-privacy">
+   <a>
+    3.6.1. Tor and/or VPN for privacy
    </a>
   </h3>
   <p>
@@ -532,9 +575,9 @@
     .
    </li>
   </ul>
-  <h3>
-   <a name="searching">
-    Searching
+  <h3 id="searching">
+   <a>
+    3.6.2. Searching
    </a>
   </h3>
   <p>
@@ -544,17 +587,17 @@
    </a>
    , although its search algorithms aren't as good as Google's.
   </p>
-  <h3>
-   <a name="purchasing-online">
-    Purchasing online
+  <h3 id="purchasing-online">
+   <a>
+    3.6.3. Purchasing online
    </a>
   </h3>
   <p>
    Favor credit cards over PayPal or debit cards. Don't store payment information on websites.
   </p>
-  <h3>
-   <a name="apps-for-ads,-malicious-scripts,-trackers,-etc.">
-    Apps for ads, malicious scripts, trackers, etc.
+  <h3 id="apps-for-ads-malicious-scripts-trackers-etc.">
+   <a>
+    3.6.4. Apps for ads, malicious scripts, trackers, etc.
    </a>
   </h3>
   <ul>
@@ -607,14 +650,14 @@
     reduce online ads.
    </li>
   </ul>
-  <h2>
-   <a name="mobile-phone">
-    Mobile phone
+  <h2 id="mobile-phone">
+   <a>
+    3.7. Mobile phone
    </a>
   </h2>
-  <h3>
-   <a name="discourage-unauthorized-access">
-    Discourage unauthorized access
+  <h3 id="discourage-unauthorized-access">
+   <a>
+    3.7.1. Discourage unauthorized access
    </a>
   </h3>
   <p>
@@ -636,9 +679,9 @@
    </em>
    to lock/locate/wipe your phone in case of theft or loss. Swich off wi-fi, GPS, and Bluetooth when not in use.
   </p>
-  <h3>
-   <a name="keep-text-messages,-calls,-and-browsing-private">
-    Keep text messages, calls, and browsing private
+  <h3 id="keep-text-messages-calls-and-browsing-private">
+   <a>
+    3.7.2. Keep text messages, calls, and browsing private
    </a>
   </h3>
   <ul>
@@ -683,9 +726,9 @@
     to encrypt VoIP calls.
    </li>
   </ul>
-  <h3>
-   <a name="phones-as-audio-recorders-and-locators">
-    Phones as audio recorders and locators
+  <h3 id="phones-as-audio-recorders-and-locators">
+   <a>
+    3.7.3. Phones as audio recorders and locators
    </a>
   </h3>
   <p>
@@ -695,9 +738,9 @@
    </em>
    ; if this is a concern, place the phone in a refrigerator to muffle sounds, or remove its battery. A "burner phone" is not really a good option.
   </p>
-  <h3>
-   <a name="phone-scams-and-phishing">
-    Phone scams and phishing
+  <h3 id="phone-scams-and-phishing">
+   <a>
+    3.7.4. Phone scams and phishing
    </a>
   </h3>
   <p>
@@ -735,14 +778,14 @@
     Don't be charmed by humor or intimidated by confidence. Good scammers have these qualities in abundance.
    </li>
   </ul>
-  <h2>
-   <a name="harrassment">
-    Harrassment
+  <h2 id="harrassment">
+   <a>
+    3.8. Harrassment
    </a>
   </h2>
-  <h3>
-   <a name="doxing">
-    Doxing
+  <h3 id="doxing">
+   <a>
+    3.8.1. Doxing
    </a>
   </h3>
   <p>
@@ -764,27 +807,27 @@
    </a>
    as part of your domain registration.
   </p>
-  <h3>
-   <a name="social">
-    Social
+  <h3 id="social">
+   <a>
+    3.8.2. Social
    </a>
   </h3>
   <p>
    In case of harrassment, know who your allies are: some lawyers with an interest in civil rights, and civil rights organizations; some journalists; some politicians; others in your personal network with the capacity to advocate for you, who wil be seen as credible by a mainstream audience.
   </p>
-  <h3>
-   <a name="ddos">
-    DDoS
+  <h3 id="ddos">
+   <a>
+    3.8.3. DDoS
    </a>
   </h3>
-  <h1>
-   <a name="sources">
-    Sources
+  <h1 id="sources">
+   <a>
+    4. Sources
    </a>
   </h1>
-  <h2>
-   <a name="references">
-    References
+  <h2 id="references">
+   <a>
+    4.1. References
    </a>
   </h2>
   <ul>
@@ -829,9 +872,9 @@
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="read">
-    Read
+  <h2 id="read">
+   <a>
+    4.2. Read
    </a>
   </h2>
   <ul>
@@ -957,8 +1000,8 @@
    </li>
   </ul>
   <h2>
-   <a name="unread">
-    Unread
+   <a name="4.3.-unread">
+    4.3. Unread
    </a>
   </h2>
   <ul>

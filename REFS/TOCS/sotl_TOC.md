@@ -1,17 +1,17 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/sotl.html">https://jtkovacs.github.io/REFS/HTML/sotl.html</a></p><table class="TOC"><tr><td>- [Sources](#sources)
-	- [References](#references)
-	- [Read ](#read-)
-	- [Unread](#unread)
-</td></tr></table>
-# Sources
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | nearly 43 words | updated 05/16/2017</p><div class="TOC">- 1. [Sources](#sources)
+	- 1.1. [References](#references)
+	- 1.2. [Read ](#read-)
+	- 1.3. [Unread](#unread)
+</div>
+# 1. Sources
 
-## References
+## 1.1. References
 
 - [Washington Center's learning communities repository](http://wacenter.evergreen.edu/)
 
-## Read 
+## 1.2. Read 
 
-## Unread
+## 1.3. Unread
 
 - [Transfer of learning](http://www.nwlink.com/~donclark/hrd/learning/transfer.html)
 - [High-impact or engaged learning practices](https://uwaterloo.ca/centre-for-teaching-excellence/resources/integrative-learning/high-impact-practices-hips-or-engaged-learning-practices)

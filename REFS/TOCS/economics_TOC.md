@@ -1,36 +1,36 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/economics.html">https://jtkovacs.github.io/REFS/HTML/economics.html</a></p><table class="TOC"><tr><td>- [What is microeconomics?](#what-is-microeconomics?)
-- [What is macroeconomics? ](#what-is-macroeconomics?-)
-	- [Macroeconomic metrics ](#macroeconomic-metrics-)
-- [What is econometrics?](#what-is-econometrics?)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> economics | nearly 72 words | updated 05/16/2017</p><div class="TOC">- 1. [What is microeconomics?](#what-is-microeconomics)
+- 2. [What is macroeconomics? ](#what-is-macroeconomics-)
+	- 2.1. [Macroeconomic metrics ](#macroeconomic-metrics-)
+- 3. [What is econometrics?](#what-is-econometrics)
+- 4. [Sources](#sources)
+	- 4.1. [References](#references)
+	- 4.2. [Read](#read)
+	- 4.3. [Unread](#unread)
+</div>
 
-# What is microeconomics?
+# 1. What is microeconomics?
 
-# What is macroeconomics? 
+# 2. What is macroeconomics? 
 
-## Macroeconomic metrics 
+## 2.1. Macroeconomic metrics 
 
 How are key economic metrics calculated, how did they originate, and what are their limitations?
 
-# What is econometrics?
+# 3. What is econometrics?
 
 
 
 
 
-# Sources
+# 4. Sources
 
-## References
+## 4.1. References
 
-## Read
+## 4.2. Read
 
 - [Relatively deprived: How poor is poor?](http://www.newyorker.com/magazine/2006/04/03/relatively-deprived)
 
-## Unread
+## 4.3. Unread
 
 - [Stop using the unemployment rate](http://evansoltas.com/2012/08/13/stop-using-unemployment-rate/)
 - [Is child poverty really less of a problem than we thought?](http://cepr.net/blogs/cepr-blog/the-supplemental-poverty-measure-does-it-paint-a-more-accurate-picture-of-poverty)

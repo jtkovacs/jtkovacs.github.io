@@ -5,8 +5,9 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | Neo4j
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
    div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
@@ -44,80 +45,151 @@ code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Ann
 code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/Neo4j.html">
-    https://jtkovacs.github.io/REFS/HTML/Neo4j.html
-   </a>
-   &gt; 228 words
+   &gt; Neo4j | nearly 268 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
+      <li>
+       <a href="#neo4j">
+        Neo4j
+       </a>
+      </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
       <li>
        <a href="#cypher">
         Cypher
        </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       2.1.
+       <a href="#create">
+        Create
+       </a>
        <ul>
         <li>
-         <a href="#create">
-          Create
+         2.1.1.
+         <a href="#nodes">
+          Nodes
          </a>
-         <ul>
-          <li>
-           <a href="#nodes">
-            Nodes
-           </a>
-          </li>
-          <li>
-           <a href="#relationships-(edges)">
-            Relationships (edges)
-           </a>
-          </li>
-         </ul>
         </li>
         <li>
-         <a href="#retrieve">
-          Retrieve
+         2.1.2.
+         <a href="#relationships-edges">
+          Relationships (edges)
          </a>
-         <ul>
-          <li>
-           <a href="#recommend-">
-            Recommend
-           </a>
-          </li>
-          <li>
-           <a href="#analyze-queries">
-            Analyze queries
-           </a>
-          </li>
-         </ul>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
+       <a href="#retrieve">
+        Retrieve
+       </a>
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#recommend-">
+          Recommend
+         </a>
+        </li>
+        <li>
+         2.2.2.
+         <a href="#analyze-queries">
+          Analyze queries
+         </a>
         </li>
        </ul>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="cypher">
-    Cypher
+    </li>
+   </ul>
+  </div>
+  <h1 id="neo4j">
+   <a>
+    1. Neo4j
    </a>
   </h1>
-  <h2>
-   <a name="create">
-    Create
+  <p>
+   The
+   <strong>
+    editor
+   </strong>
+   accepts input:
+  </p>
+  <ul>
+   <li>
+    <a href="Cypher.html">
+     Cypher queries
+    </a>
+    to work with graph data
+   </li>
+   <li>
+    Client-side commands available, e.g.
+    <code>
+     :help
+    </code>
+   </li>
+   <li>
+    Run query:
+    <code>
+     ctrl+enter
+    </code>
+   </li>
+   <li>
+    Multiline command:
+    <code>
+     shift+enter
+    </code>
+   </li>
+  </ul>
+  <p>
+   The
+   <strong>
+    stream
+   </strong>
+   displays output:
+  </p>
+  <ul>
+   <li>
+    Clear stream:
+    <code>
+     :clear
+    </code>
+   </li>
+   <li>
+    Monitor:
+    <code>
+     :play sysinfo
+    </code>
+   </li>
+  </ul>
+  <h1 id="cypher">
+   <a>
+    2. Cypher
+   </a>
+  </h1>
+  <h2 id="create">
+   <a>
+    2.1. Create
    </a>
   </h2>
-  <h3>
-   <a name="nodes">
-    Nodes
+  <h3 id="nodes">
+   <a>
+    2.1.1. Nodes
    </a>
   </h3>
   <p>
@@ -145,9 +217,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> (js<span class="ch">:Person</span> { name: <span class="ot">"Johan"</span>, from: <span class="ot">"Sweden"</span>, learn: <span class="ot">"surfing"</span> }),
 (ir<span class="ch">:Person</span> { name: <span class="ot">"Ian"</span>, from: <span class="ot">"England"</span>, title: <span class="ot">"author"</span> })</code></pre>
   </div>
-  <h3>
-   <a name="relationships-(edges)">
-    Relationships (edges)
+  <h3 id="relationships-edges">
+   <a>
+    2.1.2. Relationships (edges)
    </a>
   </h3>
   <div class="sourceCode">
@@ -155,9 +227,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <span class="kw">CREATE</span> (ee)-[<span class="ch">:KNOWS</span> {since: <span class="dv">2001</span>}]-&gt;(js), (ee)-[<span class="ch">:KNOWS</span> {rating: <span class="dv">5</span>}]-&gt;(ir)</code></pre>
   </div>
-  <h2>
-   <a name="retrieve">
-    Retrieve
+  <h2 id="retrieve">
+   <a>
+    2.2. Retrieve
    </a>
   </h2>
   <p>
@@ -183,9 +255,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql">MATCH (ee<span class="ch">:Person</span>)-[<span class="ch">:KNOWS</span>]-(friends) <span class="kw">WHERE</span> ee.name = <span class="ot">"Emil"</span> <span class="kw">RETURN</span> ee, friends</code></pre>
   </div>
-  <h3>
-   <a name="recommend">
-    Recommend
+  <h3 id="recommend">
+   <a>
+    2.2.1. Recommend
    </a>
   </h3>
   <p>
@@ -208,8 +280,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">RETURN</span> <span class="kw">DISTINCT</span> surfer</code></pre>
   </div>
   <h3>
-   <a name="analyze-queries">
-    Analyze queries
+   <a name="2.2.2.-analyze-queries">
+    2.2.2. Analyze queries
    </a>
   </h3>
   <div class="sourceCode">

@@ -1,20 +1,20 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/programming.html">https://jtkovacs.github.io/REFS/HTML/programming.html</a></p><table class="TOC"><tr><td>- [What is an algorithm?](#what-is-an-algorithm?)
-- [What are major programming paradigms?](#what-are-major-programming-paradigms?)
-- [What are good programming practices?](#what-are-good-programming-practices?)
-- [Which language?](#which-language?)
-- [Programming class notes](#programming-class-notes)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | nearly 748 words | updated 05/16/2017</p><div class="TOC">- 1. [What is an algorithm?](#what-is-an-algorithm)
+- 2. [What are major programming paradigms?](#what-are-major-programming-paradigms)
+- 3. [What are good programming practices?](#what-are-good-programming-practices)
+- 4. [Which language?](#which-language)
+- 5. [Programming class notes](#programming-class-notes)
+- 6. [Sources](#sources)
+	- 6.1. [References](#references)
+	- 6.2. [Read](#read)
+	- 6.3. [Unread](#unread)
+</div>
 
 
-# What is an algorithm?
+# 1. What is an algorithm?
 
 An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms. 
 
-# What are major programming paradigms?
+# 2. What are major programming paradigms?
 
 - Structured
 - Functional
@@ -23,11 +23,11 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 <img src="../ILLOS/types-of-programming.gif" width=450px>
 
-# What are good programming practices?
+# 3. What are good programming practices?
 
-# Which language?
+# 4. Which language?
 
-# Programming class notes
+# 5. Programming class notes
 
 What is the function of secondary memory in a computer?
 
@@ -96,9 +96,9 @@ Explain each of the following using an example of a human capability
 
 
 
-# Sources
+# 6. Sources
 
-## References
+## 6.1. References
 
 - [Paul Ford: What <i>is</i>&nbsp;code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 - [ReadTheDocs.org](https://docs.readthedocs.io/en/latest/getting_started.html)
@@ -117,7 +117,7 @@ Explain each of the following using an example of a human capability
 - [R documentation search engine](https://www.rdocumentation.org/)
 
 
-## Read
+## 6.2. Read
 
 - [Low quality of scientific code](http://techblog.bozho.net/the-astonishingly-low-quality-of-scientific-code/)
 - [Why code written by scientists gets ugly](https://nsaunders.wordpress.com/2014/05/14/this-is-why-code-written-by-scientists-gets-ugly/)
@@ -136,7 +136,7 @@ Explain each of the following using an example of a human capability
 - [The homogenization of scientific computing](http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/)
 
 
-## Unread
+## 6.3. Unread
 
 - [Khan Academy - Algorithms&nbsp;](https://www.khanacademy.org/computing/computer-science/algorithms)
 - [Algorithms every software engineer should know by heart](https://www.quora.com/What-are-the-top-10-algorithms-every-software-engineer-should-know-by-heart/answer/Adeel-Ahmed-41?srid=uSgUs&amp;share=0b867289)

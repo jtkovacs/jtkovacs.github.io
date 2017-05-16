@@ -16,6 +16,7 @@ table#blurb p {
 table#blurb ul li {
     list-style-type: disc;
     color: #666666;
+    margin-left: -15px;
 }
 table#blurb * {
     font-size: 11px;
@@ -24,13 +25,8 @@ table#blurb * {
 
 
 /* LIST has no bullets */
-ul {
-    list-style-type: none;
-}
+ul { list-style-type: none; }
 
 /* LIST ITEMS should be lighter grey and smaller sized */
-li, li b, li a {
-    font-size: 11px;
-}
-
-li { color: #C8C8C8; }
+li, li b, li a { font-size: 11px; }
+li { color: #C8C8C8; margin-left: 30px; }

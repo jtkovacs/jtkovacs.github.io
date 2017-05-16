@@ -1,48 +1,48 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Python.html">https://jtkovacs.github.io/REFS/HTML/Python.html</a></p><table class="TOC"><tr><td>- [Environment](#environment)
-	- [Writing & running Python](#writing-&-running-python)
-	- [Managing modules](#managing-modules)
-	- [Which modules?](#which-modules?)
-- [Language](#language)
-	- [Operators](#operators)
-	- [Control flow statements](#control-flow-statements)
-	- [Comprehensions](#comprehensions)
-	- [Generator expressions](#generator-expressions)
-	- [Datatypes](#datatypes)
-		- [Booleans](#booleans)
-		- [Numerics](#numerics)
-		- [Sequences](#sequences)
-			- [Strings, bytes, & unicode](#strings,-bytes,-&-unicode)
-			- [Lists](#lists)
-			- [Queues](#queues)
-			- [Tuples](#tuples)
-		- [Sets](#sets)
-		- [Dictionaries](#dictionaries)
-		- [Datetimes](#datetimes)
-	- [Functions](#functions)
-	- [Closures](#closures)
-	- [Decorators](#decorators)
-	- [Style](#style)
-		- [Spacing](#spacing)
-		- [Naming](#naming)
-		- [Structure](#structure)
-		- [Namespace & docstrings](#namespace-&-docstrings)
-- [Paradigms](#paradigms)
-	- [Object-oriented Python](#object-oriented-python)
-		- [Methods](#methods)
-	- [Functional Python](#functional-python)
-		- [Lambdas](#lambdas)
-		- [Currying](#currying)
-		- [Map-reduce, filter, etc.](#map-reduce,-filter,-etc.)
-	- [Test-Driven Development](#test-driven-development)
-		- [Logging, errors, & debugging](#logging,-errors,-&-debugging)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
-# Environment
+<p class="path"><a href="../pkb.html">pkb contents</a> \> Python | nearly 4354 words | updated 05/16/2017</p><div class="TOC">- 1. [Environment](#environment)
+	- 1.1. [Writing & running Python](#writing-running-python)
+	- 1.2. [Managing modules](#managing-modules)
+	- 1.3. [Which modules?](#which-modules)
+- 2. [Language](#language)
+	- 2.1. [Operators](#operators)
+	- 2.2. [Control flow statements](#control-flow-statements)
+	- 2.3. [Comprehensions](#comprehensions)
+	- 2.4. [Generator expressions](#generator-expressions)
+	- 2.5. [Datatypes](#datatypes)
+		- 2.5.1. [Booleans](#booleans)
+		- 2.5.2. [Numerics](#numerics)
+		- 2.5.3. [Sequences](#sequences)
+			- 2.5.3.1. [Strings, bytes, & unicode](#strings-bytes-unicode)
+			- 2.5.3.2. [Lists](#lists)
+			- 2.5.3.3. [Queues](#queues)
+			- 2.5.3.4. [Tuples](#tuples)
+		- 2.5.4. [Sets](#sets)
+		- 2.5.5. [Dictionaries](#dictionaries)
+		- 2.5.6. [Datetimes](#datetimes)
+	- 2.6. [Functions](#functions)
+	- 2.7. [Closures](#closures)
+	- 2.8. [Decorators](#decorators)
+	- 2.9. [Style](#style)
+		- 2.9.1. [Spacing](#spacing)
+		- 2.9.2. [Naming](#naming)
+		- 2.9.3. [Structure](#structure)
+		- 2.9.4. [Namespace & docstrings](#namespace-docstrings)
+- 3. [Paradigms](#paradigms)
+	- 3.1. [Object-oriented Python](#object-oriented-python)
+		- 3.1.1. [Methods](#methods)
+	- 3.2. [Functional Python](#functional-python)
+		- 3.2.1. [Lambdas](#lambdas)
+		- 3.2.2. [Currying](#currying)
+		- 3.2.3. [Map-reduce, filter, etc.](#map-reduce-filter-etc.)
+	- 3.3. [Test-Driven Development](#test-driven-development)
+		- 3.3.1. [Logging, errors, & debugging](#logging-errors-debugging)
+- 4. [Sources](#sources)
+	- 4.1. [References](#references)
+	- 4.2. [Read](#read)
+	- 4.3. [Unread](#unread)
+</div>
+# 1. Environment
 
-## Writing & running Python
+## 1.1. Writing & running Python
 
 ```Bash
 python --version 
@@ -66,7 +66,7 @@ jupyter notebook  # launches JN in wew browser
 # then pasting its URL into http://nbviewer.jupyter.org/
 ```
 
-## Managing modules
+## 1.2. Managing modules
 
 [Libraries/packages are directories of Python scripts/modules](https://docs.python.org/3/tutorial/modules.html#packages); each script contains special functions, methods, and/or types.
 
@@ -86,7 +86,7 @@ from module_name import *  # full import; bad practice because:
 dir(module_name)  # view contents of module
 ```
 
-## Which modules?
+## 1.3. Which modules?
 
 See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/contents.html), SciPy's [directory of science-related Python resources and modules](https://www.scipy.org/topical-software.html), Fredrik Lundh's [tour of the Python standard library modules](http://effbot.org/media/downloads/librarybook-core-modules.pdf) [pdf], and the [Python Module Index](https://docs.python.org/3/py-modindex.html).
 
@@ -105,10 +105,10 @@ See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/conte
 
 
 
-# Language
+# 2. Language
 
 
-## Operators
+## 2.1. Operators
 
 ```Python
 # COMPARISON operators
@@ -138,7 +138,7 @@ any(my_iterable)  # returns False if my_iterable is empty, or any element is Fal
 
 
 
-## Control flow statements
+## 2.2. Control flow statements
 
 ```Python
 # CONDITIONAL operators: 
@@ -169,7 +169,7 @@ while [condition]: …
 
 
 
-## Comprehensions
+## 2.3. Comprehensions
 
 Often, `for` loops can be conveniently replaced with a comprehension. Comprehensions can be fairly complex, but at a certain point it's better to switch back to a loop.
 
@@ -190,7 +190,7 @@ dict = {letter: num for letter, num in zip('abcdef', range(1, 7))}
 
 
 
-## Generator expressions
+## 2.4. Generator expressions
 
 A [generator expression](http://anandology.com/python-practice-book/iterators.html), also called a naked comprehension, is useful for processing large datasets because intermediate results are not stored, so RAM isn't overwhelmed.
 
@@ -213,7 +213,7 @@ list(my_generator(data))  # to convert generator to list, but why??
 
 
 
-## Datatypes
+## 2.5. Datatypes
 
 Overview of [standard types](https://docs.python.org/3.5/library/stdtypes.html):
 
@@ -241,12 +241,12 @@ my_integer.bit_length()  # how many bits to represent an integer?
 # also bool(), float()
 ```
 
-### Booleans
+### 2.5.1. Booleans
 
 - In addition to Boolean operands `True` and `False`, all Python objects have truth values 
 - `None`, `0` for any numeric type, and empty collections evaluate as `False`
 
-### Numerics
+### 2.5.2. Numerics
 
 ```Python
 my_float = 5.519
@@ -282,7 +282,7 @@ my_decimal_price = Decimal('5.003')
 my_decimal_price.quantize(Decimal('0.01'), rounding=ROUND_UP) # returns 5.01
 ```
 
-### Sequences
+### 2.5.3. Sequences
 
 ```Python
 # Operations supported for all sequences:
@@ -303,7 +303,7 @@ s[i:j:k]  # slice s, taking every kth item from index i (inclusive) to j (exclus
 # For readability, consider two statements: one to stride, the next to slice
 ```
 
-#### Strings, bytes, & unicode
+#### 2.5.3.1. Strings, bytes, & unicode
 
 Like lists, strings are composed of elements that can be accessed via their index. Unlike lists, strings are immutable: individual elements cannot be deleted or modified. 
 
@@ -334,7 +334,7 @@ my_string.ljust(width[, fillchar])
 # s.rindex(), s.rfind(), s.rpartition(), etc.
 ```
 
-#### Lists
+#### 2.5.3.2. Lists
 
 Lists store multiple elements of any type, including mixed type and including other lists. Lists are mutable; unlike string methods, most list methods alter the list in-place and return None. Lists are both sequences and containers. 
 
@@ -369,7 +369,7 @@ my_sorted_list = sorted(my_list, reverse=False)  # returns sorted copy of unalte
 # https://wiki.python.org/moin/HowTo/Sorting
 ```
 
-#### Queues
+#### 2.5.3.3. Queues
 
 Use a [double-ended queue](https://docs.python.org/3/library/collections.html#deque-objects), a list-like datatype, when you need to quickly insert or remove items from the end and beginning (deques are a stack-queue hybrid):
 
@@ -402,7 +402,7 @@ my_heap[0]  # always returns lowest number; here, 1
 print(heappop(my_heap), heappop(my_heap))  # removes and prints lowest, next lowest, etc.; here 1, 3
 ```
 
-#### Tuples
+#### 2.5.3.4. Tuples
 
 Tuples addressing works like list addressing; unlike lists, though, tuples are immutable. When comparing tuples, Python proceeds on an index-by-index basis. Tuples are used for composite dictionary keys and multivariable assignment:
 
@@ -420,7 +420,7 @@ for last, first in directory_dict:
         print first, last, directory_dict[last,first]
 ```
 
-### Sets
+### 2.5.4. Sets
 
 The value of sets is access to set operations; by design, seys lack slicing and indexing:
 
@@ -448,7 +448,7 @@ my_set1.symmetric_difference(my_set2)  # creates a new set: (set1-set2)U(set2-se
 # https://docs.python.org/3.5/library/stdtypes.html#set-types-set-frozenset
 ```
 
-### Dictionaries
+### 2.5.5. Dictionaries
 
 A dictionary maps keys to values; values are retrieved via their key, doing away with indices. A dictionary is much faster to search than a list, and is often used to count letter or word occurrences in a block of text.
 
@@ -486,7 +486,7 @@ my_default_dict = defaultdict(int)  # sets default_value == 0, ready to incremen
 my_default_dict['key'] += 1  # increment values initialized at 0
 ```
 
-### Datetimes
+### 2.5.6. Datetimes
 
 Code should convert local datetimes to UTC, perform computations, then convert back to local datetimes for display purposes.
 
@@ -528,7 +528,7 @@ my_datetime.strftime(my_format_string)
 
 
 
-## Functions
+## 2.6. Functions
 
 Functions are pieces of reusable code that solve particular tasks. Brett Slatkin, _Effective Python_, p. 10:
 
@@ -569,7 +569,7 @@ def log(message, when=None):
     print('%s: %s' % (when, message))
 ```
 
-## Closures
+## 2.7. Closures
 
 The scope of closures is tricky; see _Effective Python_, pp. 31-36. The general notion:
 
@@ -584,7 +584,7 @@ fifteen = add_to_five(10)  # store function call (with argument) as a variable
 fifteen()  # call variable as function
 ```
 
-## Decorators
+## 2.8. Decorators
 
 - Brett Slatkin: _Decorators are Python syntax for allowing one function to modify another function at runtime._
 - [Introduction to decorators](https://www.codementor.io/python/tutorial/introduction-to-decorators)
@@ -612,7 +612,7 @@ def say_hello():
 say_hello() # syntactic sugar!!
 ```
 
-## Style
+## 2.9. Style
 
 - Python prioritizes readability and simplicity; `import this`
 - Python is extremely picky about indentation, e.g. to define functions
@@ -621,7 +621,7 @@ say_hello() # syntactic sugar!!
 - See PEPs [20](https://www.python.org/dev/peps/pep-0020/), [290](https://www.python.org/dev/peps/pep-0290/), [291](https://www.python.org/dev/peps/pep-0291/), [345](https://www.python.org/dev/peps/pep-0345/), [8](https://www.python.org/dev/peps/pep-0008/) 
 - Use [pycodestyle](https://pypi.python.org/pypi/pycodestyle/1.8.0.dev0) or [yapf](https://github.com/google/yapf) to automate style
 
-### Spacing
+### 2.9.1. Spacing
 
 - Use 2 empty lines between functions
 - Use 2 empty lines between methods
@@ -632,7 +632,7 @@ say_hello() # syntactic sugar!!
 - Put two spaces between code and inline comments
 - Avoid single line if, for, while, excepts
 
-### Naming
+### 2.9.2. Naming
 
 - Variable names should be informative nouns; also 
 - Avoid single letter names since they might conflict with pdb (debugging library)
@@ -642,7 +642,7 @@ say_hello() # syntactic sugar!!
 - For classes and exceptions use camel case
 - For methods: `\_protected_instance_attribute` or `\_\_private_instance_attribute`
 
-### Structure
+### 2.9.3. Structure
 
 - Group common operations into functions; group common functions into classes
 - Put import statements at top of file with one library per line, in order: 
@@ -652,7 +652,7 @@ say_hello() # syntactic sugar!!
 - 79 characters or less per line
 - When an expression exceeds 79 characters, indent it 4 characters past its normal indentation level on the next line
 
-### Namespace & docstrings
+### 2.9.4. Namespace & docstrings
 
 - Profile before optimizing; use `tracemalloc` to profile memory use and leaks
 - [PEP 257](https://www.python.org/dev/peps/pep-0257/): write docstrings for every function, class, and module.
@@ -688,9 +688,9 @@ help(docstrings.function_name)
 
 
 
-# Paradigms
+# 3. Paradigms
 
-## Object-oriented Python
+## 3.1. Object-oriented Python
 
 Classes are collections of methods and attributes. An object is an instantiation of a class; everything in Python in an object.
 
@@ -721,14 +721,14 @@ inst_name = filename.ClassName()
 inst_name.vname = my_value  # define attributes of an instance    
 ```
 
-### Methods
+### 3.1.1. Methods
 
 - Methods are functions inherited from an object's class
 - Find methods for datatype: `help(type_name)`
 - Methods can be chained: `my_str.lower().strip()`
 - CAUTION: some methods change the object they’re called on 
 
-## Functional Python
+## 3.2. Functional Python
 
 Core concepts of the functional approach to programming, see also [[1](https://docs.python.org/3/howto/functional.html)], [[2](http://anandology.com/python-practice-book/functional-programming.html)], [[3](https://docs.python.org/3/library/functional.html)]:
 
@@ -744,7 +744,7 @@ Core concepts of the functional approach to programming, see also [[1](https://d
   - e.g., not too many arguments
   - e.g., prefer short functions that do one thing
   
-### Lambdas
+### 3.2.1. Lambdas
 
 Anonymous functions that we won’t need to use again; one line long; can’t contain assignments; automatically return the last value calculated.
 
@@ -753,11 +753,11 @@ filter(lambda book: book.pages >= 600, BOOKS)
 reduce(lambda x, y: x if len(x) > len(y) else y, [s for s in strings])
 ```
 
-### Currying
+### 3.2.2. Currying
 
 currying is the technique of translating the evaluation of a function that takes multiple arguments (or a tuple of arguments) into evaluating a sequence of functions, each with a single argument. 
 
-### Map-reduce, filter, etc.
+### 3.2.3. Map-reduce, filter, etc.
 
 ```Python
 # map: transform every element of an iterable
@@ -800,7 +800,7 @@ print(std_discount(my_data))
 ```
 
 
-## Test-Driven Development
+## 3.3. Test-Driven Development
 
 - TDD = write tests for code before writing code itself
 - Doc tests are based on string comparison, so may have issues w/ floats; very code-specfic, not portable
@@ -855,7 +855,7 @@ self.assertIsInstance(x, y)
 with assertRaise(x): // code to test
 ```
 
-### Logging, errors, & debugging
+### 3.3.1. Logging, errors, & debugging
 
 [Types of errors](https://docs.python.org/3/tutorial/errors.html): can be syntatic (problems with 'grammar' of Python), logical (problems with structure of program), or semantic (works computationally but does the wrong thing or has unintended behavior).
 
@@ -876,9 +876,9 @@ pdb.set_trace() # launches a psuedo-shell
 
 
 
-# Sources
+# 4. Sources
 
-## References
+## 4.1. References
 
 - [Official Python 3.5.2 documentation](https://docs.python.org/3/index.html)
 - [Python cookbook](http://code.activestate.com/recipes/langs/python/)
@@ -888,7 +888,7 @@ pdb.set_trace() # launches a psuedo-shell
 - [Guido Rossum's Python history blog](http://python-history.blogspot.com/)
 
 
-## Read
+## 4.2. Read
 
 - [Coursera - Introduction to Python](https://www.coursera.org/learn/python/home/welcome) 
 - [Coursera - Python data structures](https://www.coursera.org/learn/python-data)
@@ -906,10 +906,9 @@ pdb.set_trace() # launches a psuedo-shell
 - [Treehouse - CSV & JSON in Python](https://teamtreehouse.com/library/csv-and-json-in-python)
 - [DataCamp - Introduction to Python for data science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 - [Iterables vs. iterators vs. generators](http://nvie.com/posts/iterators-vs-generators/)
-- _Effective Python: 59 Specific Ways to Write Better Python_
 
 
-## Unread
+## 4.3. Unread
 
 - [Generator comprehensions](http://nedbatchelder.com/blog/201605/generator_comprehensions.html)
 - [DataCamp - Intermediate Python for data science](https://www.datacamp.com/courses/intermediate-python-for-data-science)

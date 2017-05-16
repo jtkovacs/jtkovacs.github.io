@@ -1,27 +1,27 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/spatial-analysis.html">https://jtkovacs.github.io/REFS/HTML/spatial-analysis.html</a></p><table class="TOC"><tr><td>- [Spatial Analysis](#spatial-analysis)
-	- [Quantifying space and place](#quantifying-space-and-place)
-	- [Categories of spatial analysis](#categories-of-spatial-analysis)
-		- [Clusters, hotspots, heatmaps](#clusters,-hotspots,-heatmaps)
-		- [Spatial dependence](#spatial-dependence)
-	- [Resources](#resources)
-	- [Install notes](#install-notes)
-		- [[Tips for troubleshooting R package installation problems](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)](#[tips-for-troubleshooting-r-package-installation-problems](https://support.rstudio.com/hc/en-us/articles/200554786-problem-installing-packages))
-		- [spdep](#spdep)
-		- [spatstat](#spatstat)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
-# Spatial Analysis
+<p class="path"><a href="../pkb.html">pkb contents</a> \> spatial analysis | nearly 996 words | updated 05/16/2017</p><div class="TOC">- 1. [Spatial Analysis](#spatial-analysis)
+	- 1.1. [Quantifying space and place](#quantifying-space-and-place)
+	- 1.2. [Categories of spatial analysis](#categories-of-spatial-analysis)
+		- 1.2.1. [Clusters, hotspots, heatmaps](#clusters-hotspots-heatmaps)
+		- 1.2.2. [Spatial dependence](#spatial-dependence)
+	- 1.3. [Resources](#resources)
+	- 1.4. [Install notes](#install-notes)
+		- 1.4.1. [[Tips for troubleshooting R package installation problems](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)](#[tips-for-troubleshooting-r-package-installation-problems]https:support.rstudio.comhcen-usarticles200554786-problem-installing-packages)
+		- 1.4.2. [spdep](#spdep)
+		- 1.4.3. [spatstat](#spatstat)
+- 2. [Sources](#sources)
+	- 2.1. [References](#references)
+	- 2.2. [Read](#read)
+	- 2.3. [Unread](#unread)
+</div>
+# 1. Spatial Analysis
 
-## Quantifying space and place
+## 1.1. Quantifying space and place
 
 - A note about [geographical distance](https://gis.stackexchange.com/questions/17638/how-to-cluster-spatial-data-in-r): unless very short, it differs from the Euclidean distance calculable from geographic coordinates alone.
 - Coordinates
 - Projections
 
-## Categories of spatial analysis
+## 1.2. Categories of spatial analysis
 
 - [Ch. 10: Intro to spatial point pattern analysis](http://www.columbia.edu/~cjd11/charles_dimaggio/DIRE/resources/spatialEpiBook.pdf)
     - Summary statistics
@@ -32,7 +32,7 @@
         - Local Moran's I and Gi*
     - Models of point processes for simulating points data
 
-### Clusters, hotspots, heatmaps
+### 1.2.1. Clusters, hotspots, heatmaps
 
 Although both produce a smooth-ish gradient visualization from points data (darker=more dense, lighter=less), [a hotspot map is different from a heat map](https://www.gislounge.com/difference-heat-map-hot-spot-map/). For a [heat map](https://www.gislounge.com/heat-maps-in-gis/), the density surface is created using a point density or kernel density approach. In either case, the resulting map is highly subjective because it depends on your choice of (1) how many input rasters per output raster AKA density unit; (2) length of bandwidth AKA search radius; (3) how points are counted (raw count, inverse-distance weighting, etc.). Here's a [script for pretty heatmapping in Python](http://www.sethoscope.net/heatmap/).
 
@@ -84,7 +84,7 @@ plot(Kest(my.ppp))
 
 ```
 
-### Spatial dependence
+### 1.2.2. Spatial dependence
 
 - [Tutorials by Nick Eubank](http://www.nickeubank.com/gis-in-r/): 
     - how to install spatstat when install.packages() fails
@@ -97,7 +97,7 @@ plot(Kest(my.ppp))
 
 
 
-## Resources
+## 1.3. Resources
 
 - [Overview of GIS-related R packages](https://cran.r-project.org/web/views/Spatial.html)
 - [A whole textbook on finding geospatial patterns in points](https://research.csiro.au/software/wp-content/uploads/sites/6/2015/02/Rspatialcourse_CMIS_PDF-Standard.pdf)
@@ -107,9 +107,9 @@ plot(Kest(my.ppp))
 
 
 
-## Install notes
+## 1.4. Install notes
 
-### [Tips for troubleshooting R package installation problems](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)
+### 1.4.1. [Tips for troubleshooting R package installation problems](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)
 
 - Package available on CRAN or other repository
     - Use a different CRAN mirror
@@ -118,13 +118,13 @@ plot(Kest(my.ppp))
 - Package available for your version of R
 - Connectivity issues
 
-### spdep
+### 1.4.2. spdep
 
 - /usr/share/R/share/make/shlib.mk:6: recipe for target 'expm.so' failed
 - ERROR: compilation failed for package ‘expm’ (dependency for spdep)
 - installed with v. 3.3.2 (launch from command line)
 
-### spatstat
+### 1.4.3. spatstat
 
 - ```install.packages("spatstat")``` fails because polyclip dependency fails because "unable to load shared object ... undefined symbol: __cxa_throw_bad_array_new_length"
 - ```conda install --channel https://conda.anaconda.org/jsignell r-spatstat``` fails because dependencies in conflict with r-modelmetrics
@@ -151,18 +151,18 @@ plot(Kest(my.ppp))
     - VICTORY!!!
 
     
-# Sources
+# 2. Sources
 
-## References
+## 2.1. References
 
 - [ColorBrewer generates map color palettes&nbsp;](http://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3)
 - [QGIS documentation](http://linfiniti.com/dla/)
 - [ESRI data models](http://support.esri.com/technical-article/000011644)
 - [NaturalEarth attractive map layers](http://www.naturalearthdata.com/)
 
-## Read
+## 2.2. Read
 
-## Unread
+## 2.3. Unread
 
 - [ESRI - Going places with spatial analysis](http://www.esri.com/mooc/going-places)
 - [Spatial concepts](http://teachspatial.org/spatial-concepts/)

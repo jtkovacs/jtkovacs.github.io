@@ -1,60 +1,60 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/project-management.html">https://jtkovacs.github.io/REFS/HTML/project-management.html</a></p><table class="TOC"><tr><td>- [What is project management?](#what-is-project-management?)
-	- [Overview of PM methodologies](#overview-of-pm-methodologies)
-- [Initiating a project](#initiating-a-project)
-	- [Strategic assessment](#strategic-assessment)
-		- [PESTEL analysis](#pestel-analysis)
-		- [Porter's five forces analysis](#porter's-five-forces-analysis)
-		- [Risk analysis](#risk-analysis)
-			- [POET analysis](#poet-analysis)
-			- [SWOT/SLOT analysis](#swot/slot-analysis)
-			- [Risk matrix](#risk-matrix)
-		- [Gap analysis](#gap-analysis)
-		- [Stakeholder analysis](#stakeholder-analysis)
-			- [RACI plan](#raci-plan)
-		- [Force field analysis](#force-field-analysis)
-	- [Writing a business case or proposal](#writing-a-business-case-or-proposal)
-		- [Writing an executive summary](#writing-an-executive-summary)
-	- [Writing a project charter](#writing-a-project-charter)
-		- [Vision & success criteria](#vision-&-success-criteria)
-		- [Defining & managing scope](#defining-&-managing-scope)
-- [Project planning](#project-planning)
-	- [... in Agile methodologies](#...-in-agile-methodologies)
-	- [... in lifecycle methodologies](#...-in-lifecycle-methodologies)
-		- [Communications plan](#communications-plan)
-		- [Work breakdown structure](#work-breakdown-structure)
-		- [Budgeting](#budgeting)
-		- [Scheduling](#scheduling)
-		- [Monitoring & reporting](#monitoring-&-reporting)
-- [Analysis, design & specification](#analysis,-design-&-specification)
-	- [Requirements determination](#requirements-determination)
-		- [Current state analysis](#current-state-analysis)
-		- [Gathering requirements](#gathering-requirements)
-			- [Interviews](#interviews)
-			- [Observations](#observations)
-			- [Surveys or questionnaires ](#surveys-or-questionnaires-)
-			- [JAD sessions](#jad-sessions)
-			- [Document analysis](#document-analysis)
-		- [Analyzing requirements](#analyzing-requirements)
-			- [Actors & personas](#actors-&-personas)
-			- [User stories](#user-stories)
-			- [Concept maps](#concept-maps)
-			- [Requirements trace matrices](#requirements-trace-matrices)
-			- [Card formats](#card-formats)
-			- [Use cases & requirements definition reports](#use-cases-&-requirements-definition-reports)
-				- [Use scenarios](#use-scenarios)
-				- [Use case diagrams](#use-case-diagrams)
-	- [Future state design](#future-state-design)
-	- [Choosing software](#choosing-software)
-- [Monitoring & governance](#monitoring-&-governance)
-- [Sources](#sources)
-	- [Cited](#cited)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
-# What is project management?
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | nearly 3294 words | updated 05/16/2017</p><div class="TOC">- 1. [What is project management?](#what-is-project-management)
+	- 1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
+- 2. [Initiating a project](#initiating-a-project)
+	- 2.1. [Strategic assessment](#strategic-assessment)
+		- 2.1.1. [PESTEL analysis](#pestel-analysis)
+		- 2.1.2. [Porter's five forces analysis](#porters-five-forces-analysis)
+		- 2.1.3. [Risk analysis](#risk-analysis)
+			- 2.1.3.1. [POET analysis](#poet-analysis)
+			- 2.1.3.2. [SWOT/SLOT analysis](#swotslot-analysis)
+			- 2.1.3.3. [Risk matrix](#risk-matrix)
+		- 2.1.4. [Gap analysis](#gap-analysis)
+		- 2.1.5. [Stakeholder analysis](#stakeholder-analysis)
+			- 2.1.5.1. [RACI plan](#raci-plan)
+		- 2.1.6. [Force field analysis](#force-field-analysis)
+	- 2.2. [Writing a business case or proposal](#writing-a-business-case-or-proposal)
+		- 2.2.1. [Writing an executive summary](#writing-an-executive-summary)
+	- 2.3. [Writing a project charter](#writing-a-project-charter)
+		- 2.3.1. [Vision & success criteria](#vision-success-criteria)
+		- 2.3.2. [Defining & managing scope](#defining-managing-scope)
+- 3. [Project planning](#project-planning)
+	- 3.1. [... in Agile methodologies](#...-in-agile-methodologies)
+	- 3.2. [... in lifecycle methodologies](#...-in-lifecycle-methodologies)
+		- 3.2.1. [Communications plan](#communications-plan)
+		- 3.2.2. [Work breakdown structure](#work-breakdown-structure)
+		- 3.2.3. [Budgeting](#budgeting)
+		- 3.2.4. [Scheduling](#scheduling)
+		- 3.2.5. [Monitoring & reporting](#monitoring-reporting)
+- 4. [Analysis, design & specification](#analysis-design-specification)
+	- 4.1. [Requirements determination](#requirements-determination)
+		- 4.1.1. [Current state analysis](#current-state-analysis)
+		- 4.1.2. [Gathering requirements](#gathering-requirements)
+			- 4.1.2.1. [Interviews](#interviews)
+			- 4.1.2.2. [Observations](#observations)
+			- 4.1.2.3. [Surveys or questionnaires ](#surveys-or-questionnaires-)
+			- 4.1.2.4. [JAD sessions](#jad-sessions)
+			- 4.1.2.5. [Document analysis](#document-analysis)
+		- 4.1.3. [Analyzing requirements](#analyzing-requirements)
+			- 4.1.3.1. [Actors & personas](#actors-personas)
+			- 4.1.3.2. [User stories](#user-stories)
+			- 4.1.3.3. [Concept maps](#concept-maps)
+			- 4.1.3.4. [Requirements trace matrices](#requirements-trace-matrices)
+			- 4.1.3.5. [Card formats](#card-formats)
+			- 4.1.3.6. [Use cases & requirements definition reports](#use-cases-requirements-definition-reports)
+				- 4.1.3.6.1. [Use scenarios](#use-scenarios)
+				- 4.1.3.6.2. [Use case diagrams](#use-case-diagrams)
+	- 4.2. [Future state design](#future-state-design)
+	- 4.3. [Choosing software](#choosing-software)
+- 5. [Monitoring & governance](#monitoring-governance)
+- 6. [Sources](#sources)
+	- 6.1. [Cited](#cited)
+	- 6.2. [References](#references)
+	- 6.3. [Read](#read)
+	- 6.4. [Unread](#unread)
+</div>
+# 1. What is project management?
 
-## Overview of PM methodologies
+## 1.1. Overview of PM methodologies
 
 Project Life Cycle (PLC) per Watt (2014):
 
@@ -80,13 +80,13 @@ Others:
 
 
 
-# Initiating a project
+# 2. Initiating a project
 
-## Strategic assessment
+## 2.1. Strategic assessment
 
 PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but they can also be scoped for projects.
 
-### PESTEL analysis
+### 2.1.1. PESTEL analysis
 
 Systematic review of the broadest trends and forces that constitute the business environment, to identify the implications for organizational strategy (since projects should be related to an organization's strategic goals):
 
@@ -97,7 +97,7 @@ Systematic review of the broadest trends and forces that constitute the business
 - **Environmental:** ecological impacts of operations, consumer attitudes
 - **Legal:** patents & licensing, employment law, consumer protections, industry-specific regulations, environmental protections, competitive regulations
 
-### Porter's five forces analysis
+### 2.1.2. Porter's five forces analysis
 
 Framework for evaluating the intensity of competition in a specific market or industry, which may have implications for whether a project is worth undertaking or may point to profitable niches:
 
@@ -107,13 +107,13 @@ Framework for evaluating the intensity of competition in a specific market or in
 - Threat of **new entrants**
 - Threat of **product substitutes**
 
-### Risk analysis
+### 2.1.3. Risk analysis
 
 
 
-#### POET analysis
+#### 2.1.3.1. POET analysis
 
-#### SWOT/SLOT analysis
+#### 2.1.3.2. SWOT/SLOT analysis
 
 Framework for making connections between a company's external landscape and internal characteristics (which can be restricted to the scope of a single project). Data is collected and sorted into a matrix, with one matrix for each alternative under consideration:
 
@@ -122,11 +122,11 @@ Framework for making connections between a company's external landscape and inte
 - External **opportunities**
 - External **threats**
 
-#### Risk matrix
+#### 2.1.3.3. Risk matrix
 
 
 
-### Gap analysis
+### 2.1.4. Gap analysis
 
 Also called need-gap analysis, need analysis, or need assessment. Gap analysis is a way of ensuring that planned actions align with objectives and present a reasonable pathway from the current reality to the desired state. (The 5 whys or fishbone/Ishikawa/cause-and-effect diagrams may be useful in analyzing the current reality to identify possible actions; see [notes on process improvement.)](#process-improvement.html)
 
@@ -134,7 +134,7 @@ Also called need-gap analysis, need analysis, or need assessment. Gap analysis i
 | --- | --- | --- |
 | 12 widgets daily | 2 widgets | Hire more workers |
 
-### Stakeholder analysis
+### 2.1.5. Stakeholder analysis
 
 The general aim of stakeholder analysis is to identify stakeholders; analyze their interests and expectations; categorize interests and expectations based on importance and level of stakeholder influence; and develop an action plan that delimits roles for different stakeholders. Stakeholder analysis is important for managing the scope, influence and interorganizational politics of a project, as well as ensuring that projects address all relevant needs (including social equity goals).
 
@@ -161,7 +161,7 @@ Two typologies per Rabinowitz (n.d.):
 <tr><th>Low influence</th><td>Apathetics</td><td>Defenders</td></tr>
 </table>
 
-#### RACI plan
+#### 2.1.5.1. RACI plan
     
 Once identified, decisions must be made about levels of stakeholder involvement. A RACI plan can capture stakeholder roles as well as roles for those involved in executing the project. Per Kantor (2012):
 
@@ -176,13 +176,13 @@ Once identified, decisions must be made about levels of stakeholder involvement.
     c. Ensure that all participation levels are the minimum necessary, e.g. downgrade from C to I where possible.
     d. Ensure that stakeholders accept their roles.
   
-### Force field analysis
+### 2.1.6. Force field analysis
 
 Facilitates organizational change by enumerating the forces that help or hinder an organization's ability to make change (note that individual people may constitute a force).
 
 ![Example force field analysis](https://www.odi.org/sites/odi.org.uk/files/odi-assets/embedded-images/Forcefield.gif)
 
-## Writing a business case or proposal
+## 2.2. Writing a business case or proposal
 
 Overall, a business case must clearly outline a problem and a solution. If it's a proposal (meaning you must convince someone to hire you), you also need to demonstrate your credibility and capacity to deliver the solution.
 
@@ -202,7 +202,7 @@ Per Tom Sant as summarized by Obuchowski (2015):
 <td>**Proofread**</td></tr>
 </table>
 
-### Writing an executive summary
+### 2.2.1. Writing an executive summary
 
 Per Clayton (2003):
 
@@ -211,13 +211,13 @@ Per Clayton (2003):
 - Beyond other respondents, you're competing against inertia (since the client may ultimately do nothing).
 - Describe your solution in terms of business outcomes; don't get into the technical details.
 
-## Writing a project charter
+## 2.3. Writing a project charter
     
 - Project Charter
 - Project Initiation Document (PID)
 - Project Mandate
 
-### Vision & success criteria
+### 2.3.1. Vision & success criteria
 
 Per Hill & Cantera (2015): 
 
@@ -236,24 +236,24 @@ Per Hill & Cantera (2015):
     - How do we source the raw materials or talent we need to create our product or service?
 - Look at the process as-is and try to simplify it, rather than leaping to IT automation as the solution. "Automation is very good for scaling work (with speed and capacity) without a commensurate increase in head count, for lowering the cost of performing the work (since, theoretically, machines can work 24/7) and for increasing the consistency of the output. If these are the kinds of improvements desired, then automation is an appropriate answer."
 
-### Defining & managing scope
+### 2.3.2. Defining & managing scope
 
 Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed during the project initiation phase by (1) listing what's in and out of scope, provided stakeholders agree about scope; or (2) establishing scope ranges AKA scope tolerance parameters, which can be pinpointed as information emerges. A task is out of scope if it (1) doesn't make a direct contribution to the project goal, or (2) if time and money are binding constraints. **Project the impact of requested additional tasks;** never simply agree to perform them.
 
 
 
-# Project planning
+# 3. Project planning
 
-## ... in Agile methodologies
+## 3.1. ... in Agile methodologies
 
 In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (n.d.), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
 
 - ... in place of a schedule, a **stack** of prioritized requirements with detailed modeling done 'just in time';
 - ... in place of a budget, funding is continuously adjusted in response to the **value** delivered by products.
 
-## ... in lifecycle methodologies
+## 3.2. ... in lifecycle methodologies
 
-### Communications plan
+### 3.2.1. Communications plan
 
 Per Collella (2009), effective organizational communication requires a **communications strategy,** which includes (1) a core message that is not burdened with IT jargon, (2) the capacity to refine messages in response to stakeholder cues, and (3) assessment; a **communications plan** for institutionalizing and executing the strategy; and **communication delivery skills.**
 
@@ -263,7 +263,7 @@ Per PMI (2013):
 - Know who you need to talk to, and how much [(see: RACI plan)](#raci-plan)
 - Plan should specify modes of communication; adjust to people's habits where possible
 
-### Work breakdown structure
+### 3.2.2. Work breakdown structure
 
 Per Wikipedia (2017), a work breakdown structure (WBS) is a **hierarchical decomposition of a project's total work.** WBS elements are coded as 1.0, 1.1, 1.10.11, etc. Child elements must sum to 100% of their parent element, and so on until 100% of the project's total work is accounted for. Elements must be mutually exclusive, which is easier to accomplish if elements are _outcomes,_ not tasks. There are different heuristics for establishing the terminal granularity of a WBS:
 
@@ -272,9 +272,9 @@ Per Wikipedia (2017), a work breakdown structure (WBS) is a **hierarchical decom
 
 Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
-### Budgeting
+### 3.2.3. Budgeting
 
-### Scheduling
+### 3.2.4. Scheduling
 
 - Critical Path
 - Crash
@@ -283,7 +283,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 - Gantt Chart
 - PERT Chart
 
-### Monitoring & reporting
+### 3.2.5. Monitoring & reporting
 
 - CARDI Log (Constraints/Assumptions/Risks/Dependencies/Issues)
 - RAG Status
@@ -292,9 +292,9 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 
 
-# Analysis, design & specification
+# 4. Analysis, design & specification
 
-## Requirements determination
+## 4.1. Requirements determination
 
 Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs so they can influence system design. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users), second as **system requirements** (from the perspective of developers). 
 
@@ -319,7 +319,7 @@ Per Avison and Fitzger (2006) qtd. in Dennis et al. (2012), common problems with
 - The inevitably iterative nature of requirements is poorly managed
 - Requirements are not verified or validated
 
-### Current state analysis
+### 4.1.1. Current state analysis
 
 Per Dennis et al. (2012), a requirements determination process may begin with current state analysis, yielding models of the **as-is system** (see [notes on system & process modeling techniques](modeling.html) that are used to characterize the current states of the system). This, however, depends on:
 
@@ -331,11 +331,11 @@ Per Dennis et al. (2012), a requirements determination process may begin with cu
 
 (3) **The amount of system change desired,** i.e. BPA vs. BPI vs. BPR (see [notes on process improvement](process-improvement.html) for definitions and associated methods). The amount of change desired and amount of effort spent analyzing the as-is system are inversely related.
     
-### Gathering requirements
+### 4.1.2. Gathering requirements
 
 Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, [process improvement efforts,](process-improvement.html) existing documents, and competing software using the following techniques (and see [notes on qualitative methods):](qualitative-methods.html) 
 
-#### Interviews
+#### 4.1.2.1. Interviews
 
 1. Select interviewees
 2. Write an **interview plan:**
@@ -348,39 +348,39 @@ Per Dennis et al. (2012), requirements may be obtained from users, domain expert
     d. Taking careful notes (if recording is disallowed)
 5. Prepare an **interview summary,** and ask the interviewee for any corrections
 
-#### Observations
+#### 4.1.2.2. Observations
 
-#### Surveys or questionnaires 
+#### 4.1.2.3. Surveys or questionnaires 
 
-#### JAD sessions
+#### 4.1.2.4. JAD sessions
 
-#### Document analysis
+#### 4.1.2.5. Document analysis
 
 
 
-### Analyzing requirements
+### 4.1.3. Analyzing requirements
 
 Per Whitney (n.d.), Dennis et al. (2012), and Ambler (1999), once gathered, requirements may be preserved, analyzed, and expressed in different ways:
 
-#### Actors & personas
+#### 4.1.3.1. Actors & personas
 
 **Actors** are the generic users of a system, e.g. customers, that might appear on a system diagram. Note that actors include other software as well as people. **Personas** are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users; they are an exercise in fostering empathy and user-centered design.
 
 A **primary persona** is one whose needs are distinct enough to require a dedicated interface.
 
-#### User stories
+#### 4.1.3.2. User stories
 
 User stories describe, at a high level, the various actions users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."** User stories are refined (split, grouped, reprioritized, etc.) throughout the development process.
 
-#### Concept maps
+#### 4.1.3.3. Concept maps
 
 A informally-constructed network of concepts, reflecting entities and their interrelationships. 
 
-#### Requirements trace matrices
+#### 4.1.3.4. Requirements trace matrices
 
 Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
 
-#### Card formats
+#### 4.1.3.5. Card formats
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
 - **XP Story Cards,** in which a customer writes a story on a card.
@@ -388,7 +388,7 @@ Table format linking requirements with other information, e.g. requirement categ
 
 <img src="../ILLOS/volere.jpeg" width="350px">
 
-#### Use cases & requirements definition reports
+#### 4.1.3.6. Use cases & requirements definition reports
 
 Requirements are often analyzed by grouping them into **use cases,** capturing actors' archetypical interactions with the system. Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... [They] should describe the interaction between the actor and the system - what the actor does and how the system reacts. Use cases are expressed textually (AKA **requirements definition report),** usually including these elements:
 
@@ -402,11 +402,11 @@ Requirements are often analyzed by grouping them into **use cases,** capturing a
 - GUI requirements
 - Dependencies and relations (to other use cases; often modeled with UML)
 
-##### Use scenarios
+##### 4.1.3.6.1. Use scenarios
 
 There may be different paths through a use cases, perhaps corresponding to different personas; these paths are called **use scenarios,** and they may be depicted with a [UML activity diagram.](modeling.html#activity-diagrams)
 
-##### Use case diagrams
+##### 4.1.3.6.2. Use case diagrams
 
 Use cases may be depicted collectively with a **use case diagram:** 
 
@@ -414,13 +414,13 @@ Use cases may be depicted collectively with a **use case diagram:**
 
 
 
-## Future state design
+## 4.2. Future state design
 
 See [notes on system & process modeling](modeling.html) for methods used to characterize the **to-be system.** 
 
 
 
-## Choosing software
+## 4.3. Choosing software
 
 See [notes on BI systems](BI.html) for information specific to selecting BI software. 
 
@@ -431,15 +431,15 @@ General criteria to consider:
 
 
 
-# Monitoring & governance
+# 5. Monitoring & governance
 
 
 
 
 
-# Sources
+# 6. Sources
 
-## Cited
+## 6.1. Cited
 
 Ambler, S. (n.d.). Comparing approaches to budgeting and estimating software development projects. Retrieved from [http://www.ambysoft.com/essays/comparingEstimatingApproaches.html](http://www.ambysoft.com/essays/comparingEstimatingApproaches.html)
 
@@ -475,10 +475,10 @@ Whitney, E. (n.d.). Introduction to gathering requirements and creating use case
 
 Wikipedia. (2017, March 28). Work breakdown structure. Retrieved from [https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&oldid=772556888](https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&oldid=772556888)
 
-## References
+## 6.2. References
 
-## Read
+## 6.3. Read
 
-## Unread
+## 6.4. Unread
 
 - [_Project Management from Simple to Complex_](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=36)

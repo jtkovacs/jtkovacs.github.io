@@ -1,28 +1,28 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/civic-tech.html">https://jtkovacs.github.io/REFS/HTML/civic-tech.html</a></p><table class="TOC"><tr><td>- [What is civic tech?](#what-is-civic-tech?)
-- [What is civic education?](#what-is-civic-education?)
-- [What is open data?](#what-is-open-data?)
-- [How does knowledge translate into policy?](#how-does-knowledge-translate-into-policy?)
-- [How does mediation apply to public disputes?](#how-does-mediation-apply-to-public-disputes?)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> civic tech | nearly 298 words | updated 05/16/2017</p><div class="TOC">- 1. [What is civic tech?](#what-is-civic-tech)
+- 2. [What is civic education?](#what-is-civic-education)
+- 3. [What is open data?](#what-is-open-data)
+- 4. [How does knowledge translate into policy?](#how-does-knowledge-translate-into-policy)
+- 5. [How does mediation apply to public disputes?](#how-does-mediation-apply-to-public-disputes)
+- 6. [Sources](#sources)
+	- 6.1. [References](#references)
+	- 6.2. [Read](#read)
+	- 6.3. [Unread](#unread)
+</div>
 
-# What is civic tech?
+# 1. What is civic tech?
 
-# What is civic education?
+# 2. What is civic education?
 
-# What is open data?
+# 3. What is open data?
 
-# How does knowledge translate into policy?
+# 4. How does knowledge translate into policy?
 
-# How does mediation apply to public disputes?
+# 5. How does mediation apply to public disputes?
 
 
-# Sources
+# 6. Sources
 
-## References
+## 6.1. References
 
 - [Open Society Foundations (Soros)](https://www.opensocietyfoundations.org/about)
 - [Sunlight Foundation](http://sunlightfoundation.com/)
@@ -34,7 +34,7 @@
 - [Training for Change](https://www.trainingforchange.org/workshops)
 - [U.S. Institute for Environmental Conflict Resolution](http://www.udall.gov/OurPrograms/Institute/Institute.aspx)
 
-## Read
+## 6.2. Read
  
 - _[Unearthing seeds of fire: The idea of Highlander](http://www.goodreads.com/book/show/825838.Unearthing_Seeds_of_Fire)_
 - [Yotam Marom's "Undoing the politics of powerlessness"](https://medium.com/@YotamMarom/undoing-the-politics-of-powerlessness-72931fee5bda#.b956ibevc) on the necessity of leadership in social movements
@@ -44,7 +44,7 @@
 - Podziba, S. (2013). _Civic fusion._
 - Carpenter, S. L. & Kennedy, W. D. J. (2001). _Managing public disputes: A practical guide for professionals in government, business and citizen's groups._
 
-## Unread
+## 6.3. Unread
 
 - [Puget Sound’s best civic tech projects of 2015](http://crosscut.com/2015/12/puget-sounds-best-civic-tech-efforts-in-2015/)
 - [How to open up data](http://opendatahandbook.org/guide/en/how-to-open-up-data/)

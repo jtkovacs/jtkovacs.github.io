@@ -1,21 +1,21 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">https://jtkovacs.github.io/REFS/HTML/wrangling.html</a> \> 1156 words </p><table class="TOC"><tr><td>- [Obtaining data AKA I/O](#obtaining-data-aka-i/o)
-	- [... in R](#...-in-r)
-	- [... in Python](#...-in-python)
-		- [... integrate database via Peewee ORM](#...-integrate-database-via-peewee-orm)
-- [Cleaning data](#cleaning-data)
-	- [Dirty data typologies](#dirty-data-typologies)
-	- [... in R](#...-in-r)
-	- [... in Python](#...-in-python)
-</td></tr></table>
-# Obtaining data AKA I/O
+<p class="path"><a href="../pkb.html">pkb contents</a> \> wrangling | nearly 1156 words | updated 05/16/2017</p><div class="TOC">- 1. [Obtaining data AKA I/O](#obtaining-data-aka-io)
+	- 1.1. [... in R](#...-in-r)
+	- 1.2. [... in Python](#...-in-python)
+		- 1.2.1. [... integrate database via Peewee ORM](#...-integrate-database-via-peewee-orm)
+- 2. [Cleaning data](#cleaning-data)
+	- 2.1. [Dirty data typologies](#dirty-data-typologies)
+	- 2.2. [... in R](#...-in-r)
+	- 2.3. [... in Python](#...-in-python)
+</div>
+# 1. Obtaining data AKA I/O
 
 - [Treehouse - Using Databases in Python](https://teamtreehouse.com/library/using-databases-in-python)
 - [https://docs.python.org/3/tutorial/inputoutput.html](https://docs.python.org/3/tutorial/inputoutput.html)
 
-## ... in R
+## 1.1. ... in R
 
 
-## ... in Python
+## 1.2. ... in Python
 
 ```Python
 # to read or write binary (raw 8-bit):
@@ -141,7 +141,7 @@ json.dump(list_of_dicts, my_file)
 ```
 
 
-### ... integrate database via Peewee ORM
+### 1.2.1. ... integrate database via Peewee ORM
 
 ```Python
 pip install peewee
@@ -190,13 +190,13 @@ menu = OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)])
 returns doc string for function: function_name.__doc__
 ```
 
-# Cleaning data
+# 2. Cleaning data
 
-## Dirty data typologies
+## 2.1. Dirty data typologies
 
 Searching, counting, ranking, grouping, handling whitespace
 
-## ... in R
+## 2.2. ... in R
 
 
 - [Big Data U - Using R with Databases](http://bigdatauniversity.com/courses/using-r-with-databases/)
@@ -288,7 +288,7 @@ subset[my_df, condition]
 ```
 
 
-## ... in Python
+## 2.3. ... in Python
 
 - [https://docs.python.org/3.5/library/markup.html](https://docs.python.org/3.5/library/markup.html)
 - [http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb](http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/TomAugspurger/6e052140eaa5fdb6e8c0/raw/811585624e843f3f80b9b6fe89e18119d7d2d73c/dplyr_pandas.ipynb)

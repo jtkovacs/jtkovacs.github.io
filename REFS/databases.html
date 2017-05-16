@@ -5,348 +5,346 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | databases
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
   <p class="path">
-   <a href="../../pkb.html">
+   <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; databases | nearly 4459 words | updated 05/15/2017
+   &gt; databases | nearly 4459 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
+      <li>
+       <a href="#what-is-a-database">
+        What is a database?
+       </a>
+      </li>
+     </ol>
      <ul>
       <li>
-       <ol style="list-style-type: decimal">
-        <li>
-         <a href="#what-is-a-database">
-          What is a database?
-         </a>
-        </li>
-       </ol>
+       1.1.
+       <a href="#the-database-system-lifecycle">
+        The database system lifecycle
+       </a>
+      </li>
+      <li>
+       1.2.
+       <a href="#history-of-databases">
+        History of databases
+       </a>
        <ul>
         <li>
-         1.1.
-         <a href="#the-database-system-lifecycle">
-          The database system lifecycle
+         1.2.1.
+         <a href="#ansi-sparc-architecture">
+          ANSI-SPARC architecture
          </a>
         </li>
+       </ul>
+      </li>
+      <li>
+       1.3.
+       <a href="#types-of-databases">
+        Types of databases
+       </a>
+       <ul>
         <li>
-         1.2.
-         <a href="#history-of-databases">
-          History of databases
+         1.3.1.
+         <a href="#the-relational-data-model">
+          The relational data model
          </a>
          <ul>
           <li>
-           1.2.1.
-           <a href="#ansi-sparc-architecture">
-            ANSI-SPARC architecture
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         1.3.
-         <a href="#types-of-databases">
-          Types of databases
-         </a>
-         <ul>
-          <li>
-           1.3.1.
-           <a href="#the-relational-data-model">
-            The relational data model
+           1.3.1.1.
+           <a href="#relationships-between-entities">
+            Relationships between entities
            </a>
            <ul>
             <li>
-             1.3.1.1.
-             <a href="#relationships-between-entities">
-              Relationships between entities
-             </a>
-             <ul>
-              <li>
-               1.3.1.1.1.
-               <a href="#associative-entities">
-                Associative entities
-               </a>
-              </li>
-              <li>
-               1.3.1.1.2.
-               <a href="#superclasses-and-subclasses">
-                Superclasses and subclasses
-               </a>
-              </li>
-             </ul>
-            </li>
-            <li>
-             1.3.1.2.
-             <a href="#types-of-attributes">
-              Types of attributes
+             1.3.1.1.1.
+             <a href="#associative-entities">
+              Associative entities
              </a>
             </li>
             <li>
-             1.3.1.3.
-             <a href="#relationships-between-attributes">
-              Relationships between attributes
-             </a>
-             <ul>
-              <li>
-               1.3.1.3.1.
-               <a href="#functional-dependencies-and-keys">
-                Functional dependencies and keys
-               </a>
-              </li>
-              <li>
-               1.3.1.3.2.
-               <a href="#transitive-dependencies">
-                Transitive dependencies
-               </a>
-              </li>
-              <li>
-               1.3.1.3.3.
-               <a href="#multivalued-dependencies">
-                Multivalued dependencies
-               </a>
-              </li>
-             </ul>
-            </li>
-            <li>
-             1.3.1.4.
-             <a href="#integrity">
-              Integrity
-             </a>
-             <ul>
-              <li>
-               1.3.1.4.1.
-               <a href="#normalization">
-                Normalization
-               </a>
-              </li>
-             </ul>
-            </li>
-            <li>
-             1.3.1.5.
-             <a href="#why-not-normalize">
-              Why not normalize?
+             1.3.1.1.2.
+             <a href="#superclasses-and-subclasses">
+              Superclasses and subclasses
              </a>
             </li>
            </ul>
           </li>
           <li>
-           1.3.2.
-           <a href="#nosql-databases">
-            NoSQL databases
-           </a>
-          </li>
-         </ul>
-        </li>
-       </ul>
-      </li>
-      <li>
-       <ol start="2" style="list-style-type: decimal">
-        <li>
-         <a href="#database-development">
-          Database development
-         </a>
-        </li>
-       </ol>
-       <ul>
-        <li>
-         2.1.
-         <a href="#business-requirements">
-          Business requirements
-         </a>
-        </li>
-        <li>
-         2.2.
-         <a href="#design-phases">
-          Design phases
-         </a>
-         <ul>
-          <li>
-           2.2.1.
-           <a href="#conceptual-design">
-            Conceptual design
+           1.3.1.2.
+           <a href="#types-of-attributes">
+            Types of attributes
            </a>
           </li>
           <li>
-           2.2.2.
-           <a href="#logical-design">
-            Logical design
-           </a>
-          </li>
-          <li>
-           2.2.3.
-           <a href="#physical-design">
-            Physical design
+           1.3.1.3.
+           <a href="#relationships-between-attributes">
+            Relationships between attributes
            </a>
            <ul>
             <li>
-             2.2.3.1.
-             <a href="#indexing-and-performance">
-              Indexing and performance
-             </a>
-             <ul>
-              <li>
-               2.2.3.1.1.
-               <a href="#why-to-index">
-                Why to index
-               </a>
-              </li>
-              <li>
-               2.2.3.1.2.
-               <a href="#what-to-index">
-                What to index
-               </a>
-              </li>
-              <li>
-               2.2.3.1.3.
-               <a href="#how-different-types-of-indexes-work">
-                How different types of indexes work
-               </a>
-              </li>
-              <li>
-               2.2.3.1.4.
-               <a href="#fragmentation">
-                Fragmentation
-               </a>
-              </li>
-             </ul>
-            </li>
-           </ul>
-          </li>
-         </ul>
-        </li>
-       </ul>
-      </li>
-      <li>
-       <ol start="3" style="list-style-type: decimal">
-        <li>
-         <a href="#database-administration">
-          Database administration
-         </a>
-        </li>
-       </ol>
-       <ul>
-        <li>
-         3.1.
-         <a href="#files-and-filegroups">
-          Files and filegroups
-         </a>
-        </li>
-        <li>
-         3.2.
-         <a href="#database-architectures">
-          Database architectures
-         </a>
-        </li>
-        <li>
-         3.3.
-         <a href="#transaction-management">
-          Transaction management
-         </a>
-        </li>
-        <li>
-         3.4.
-         <a href="#security">
-          Security
-         </a>
-         <ul>
-          <li>
-           3.4.1.
-           <a href="#audits">
-            Audits
-           </a>
-          </li>
-          <li>
-           3.4.2.
-           <a href="#encryption-tde">
-            Encryption (TDE)
-           </a>
-          </li>
-          <li>
-           3.4.3.
-           <a href="#authentication-and-authorization">
-            Authentication and authorization
-           </a>
-           <ul>
-            <li>
-             3.4.3.1.
-             <a href="#digital-signatures">
-              Digital signatures
+             1.3.1.3.1.
+             <a href="#functional-dependencies-and-keys">
+              Functional dependencies and keys
              </a>
             </li>
             <li>
-             3.4.3.2.
-             <a href="#ownership-chaining">
-              Ownership chaining
+             1.3.1.3.2.
+             <a href="#transitive-dependencies">
+              Transitive dependencies
              </a>
             </li>
             <li>
-             3.4.3.3.
-             <a href="#contained-database">
-              Contained database
+             1.3.1.3.3.
+             <a href="#multivalued-dependencies">
+              Multivalued dependencies
              </a>
             </li>
            </ul>
           </li>
           <li>
-           3.4.4.
-           <a href="#preventing-sql-injections">
-            Preventing SQL injections
+           1.3.1.4.
+           <a href="#integrity">
+            Integrity
            </a>
+           <ul>
+            <li>
+             1.3.1.4.1.
+             <a href="#normalization">
+              Normalization
+             </a>
+            </li>
+           </ul>
           </li>
           <li>
-           3.4.5.
-           <a href="#backup">
-            Backup
+           1.3.1.5.
+           <a href="#why-not-normalize">
+            Why not normalize?
            </a>
           </li>
          </ul>
         </li>
-       </ul>
-      </li>
-      <li>
-       <ol start="4" style="list-style-type: decimal">
         <li>
-         <a href="#sources">
-          Sources
-         </a>
-        </li>
-       </ol>
-       <ul>
-        <li>
-         4.1.
-         <a href="#cited">
-          Cited
-         </a>
-        </li>
-        <li>
-         4.2.
-         <a href="#references">
-          References
-         </a>
-        </li>
-        <li>
-         4.3.
-         <a href="#read">
-          Read
-         </a>
-        </li>
-        <li>
-         4.4.
-         <a href="#unread">
-          Unread
+         1.3.2.
+         <a href="#nosql-databases">
+          NoSQL databases
          </a>
         </li>
        </ul>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
+      <li>
+       <a href="#database-development">
+        Database development
+       </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       2.1.
+       <a href="#business-requirements">
+        Business requirements
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#design-phases">
+        Design phases
+       </a>
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#conceptual-design">
+          Conceptual design
+         </a>
+        </li>
+        <li>
+         2.2.2.
+         <a href="#logical-design">
+          Logical design
+         </a>
+        </li>
+        <li>
+         2.2.3.
+         <a href="#physical-design">
+          Physical design
+         </a>
+         <ul>
+          <li>
+           2.2.3.1.
+           <a href="#indexing-and-performance">
+            Indexing and performance
+           </a>
+           <ul>
+            <li>
+             2.2.3.1.1.
+             <a href="#why-to-index">
+              Why to index
+             </a>
+            </li>
+            <li>
+             2.2.3.1.2.
+             <a href="#what-to-index">
+              What to index
+             </a>
+            </li>
+            <li>
+             2.2.3.1.3.
+             <a href="#how-different-types-of-indexes-work">
+              How different types of indexes work
+             </a>
+            </li>
+            <li>
+             2.2.3.1.4.
+             <a href="#fragmentation">
+              Fragmentation
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="3" style="list-style-type: decimal">
+      <li>
+       <a href="#database-administration">
+        Database administration
+       </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       3.1.
+       <a href="#files-and-filegroups">
+        Files and filegroups
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#database-architectures">
+        Database architectures
+       </a>
+      </li>
+      <li>
+       3.3.
+       <a href="#transaction-management">
+        Transaction management
+       </a>
+      </li>
+      <li>
+       3.4.
+       <a href="#security">
+        Security
+       </a>
+       <ul>
+        <li>
+         3.4.1.
+         <a href="#audits">
+          Audits
+         </a>
+        </li>
+        <li>
+         3.4.2.
+         <a href="#encryption-tde">
+          Encryption (TDE)
+         </a>
+        </li>
+        <li>
+         3.4.3.
+         <a href="#authentication-and-authorization">
+          Authentication and authorization
+         </a>
+         <ul>
+          <li>
+           3.4.3.1.
+           <a href="#digital-signatures">
+            Digital signatures
+           </a>
+          </li>
+          <li>
+           3.4.3.2.
+           <a href="#ownership-chaining">
+            Ownership chaining
+           </a>
+          </li>
+          <li>
+           3.4.3.3.
+           <a href="#contained-database">
+            Contained database
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         3.4.4.
+         <a href="#preventing-sql-injections">
+          Preventing SQL injections
+         </a>
+        </li>
+        <li>
+         3.4.5.
+         <a href="#backup">
+          Backup
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="4" style="list-style-type: decimal">
+      <li>
+       <a href="#sources">
+        Sources
+       </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       4.1.
+       <a href="#cited">
+        Cited
+       </a>
+      </li>
+      <li>
+       4.2.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       4.3.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       4.4.
+       <a href="#unread">
+        Unread
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
   <p>
    <em>
     These notes are heavily influenced by Dr. Simon Wu-Ping Wang's slides as well as Connolly and Begg (2015).
@@ -824,10 +822,10 @@
    <tbody>
     <tr class="odd">
      <td align="left">
-      <img src="../ILLOS/fcn.png"/>
+      <img src="ILLOS/fcn.png"/>
      </td>
      <td align="left">
-      <img src="../ILLOS/not-fcn.png"/>
+      <img src="ILLOS/not-fcn.png"/>
      </td>
     </tr>
    </tbody>
@@ -970,7 +968,7 @@
    </li>
   </ul>
   <div class="figure">
-   <img src="../ILLOS/integrity.png"/>
+   <img src="ILLOS/integrity.png"/>
   </div>
   <p>
    Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs).
@@ -1514,7 +1512,7 @@
    This discussion is based on MS SQL Server, which stores table data (rows) in uniformly-sized pages AKA blocks:
   </p>
   <div class="figure">
-   <img src="../ILLOS/SQLDataPage.png"/>
+   <img src="ILLOS/SQLDataPage.png"/>
   </div>
   <p>
    A table is either a
@@ -1565,7 +1563,7 @@
    to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
   </p>
   <div class="figure">
-   <img src="../ILLOS/nonclustered-index.png"/>
+   <img src="ILLOS/nonclustered-index.png"/>
   </div>
   <p>
    For heap pages, clustered indexes, and non-clustered indexes alike, a
@@ -1579,7 +1577,7 @@
    is used to make page search more efficient:
   </p>
   <p>
-   <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px"/>
+   <img src="ILLOS/B-tree.png" style="padding-top: 5px;" width="500px"/>
   </p>
   <p>
    Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstore structure (Sheldon, 2013), a
@@ -1589,7 +1587,7 @@
    (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns:
   </p>
   <div class="figure">
-   <img src="../ILLOS/columnstore.png"/>
+   <img src="ILLOS/columnstore.png"/>
   </div>
   <h5 id="fragmentation">
    <a>
@@ -1832,16 +1830,16 @@
    </a>
   </h2>
   <div class="figure">
-   <img src="../ILLOS/db-arch1.png"/>
+   <img src="ILLOS/db-arch1.png"/>
   </div>
   <div class="figure">
-   <img src="../ILLOS/db-arch2.png"/>
+   <img src="ILLOS/db-arch2.png"/>
   </div>
   <div class="figure">
-   <img src="../ILLOS/db-arch3.png"/>
+   <img src="ILLOS/db-arch3.png"/>
   </div>
   <div class="figure">
-   <img src="../ILLOS/db-arch4.png"/>
+   <img src="ILLOS/db-arch4.png"/>
   </div>
   <h2 id="transaction-management">
    <a>

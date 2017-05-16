@@ -1,279 +1,99 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
- <head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-  <meta content="text/css" http-equiv="Content-Style-Type"/>
-  <meta content="pandoc" name="generator"/>
-  <title>
-  </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
- </head>
- <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
-   </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/spatial-analysis.html">
-    https://jtkovacs.github.io/REFS/HTML/spatial-analysis.html
-   </a>
-  </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
-      <li>
-       <a href="#spatial-analysis">
-        Spatial Analysis
-       </a>
-       <ul>
-        <li>
-         <a href="#quantifying-space-and-place">
-          Quantifying space and place
-         </a>
-        </li>
-        <li>
-         <a href="#categories-of-spatial-analysis">
-          Categories of spatial analysis
-         </a>
-         <ul>
-          <li>
-           <a href="#clusters,-hotspots,-heatmaps">
-            Clusters, hotspots, heatmaps
-           </a>
-          </li>
-          <li>
-           <a href="#spatial-dependence">
-            Spatial dependence
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#resources">
-          Resources
-         </a>
-        </li>
-        <li>
-         <a href="#install-notes">
-          Install notes
-         </a>
-         <ul>
-          <li>
-           <a href="#%5Btips-for-troubleshooting-r-package-installation-problems%5D(https://support.rstudio.com/hc/en-us/articles/200554786-problem-installing-packages)">
-            [Tips for troubleshooting R package installation problems](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)
-           </a>
-          </li>
-          <li>
-           <a href="#spdep">
-            spdep
-           </a>
-          </li>
-          <li>
-           <a href="#spatstat">
-            spatstat
-           </a>
-          </li>
-         </ul>
-        </li>
-       </ul>
-      </li>
-      <li>
-       <a href="#sources">
-        Sources
-       </a>
-       <ul>
-        <li>
-         <a href="#references">
-          References
-         </a>
-        </li>
-        <li>
-         <a href="#read">
-          Read
-         </a>
-        </li>
-        <li>
-         <a href="#unread">
-          Unread
-         </a>
-        </li>
-       </ul>
-      </li>
-     </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="spatial-analysis">
-    Spatial Analysis
-   </a>
-  </h1>
-  <h2>
-   <a name="quantifying-space-and-place">
-    Quantifying space and place
-   </a>
-  </h2>
-  <ul>
-   <li>
-    A note about
-    <a href="https://gis.stackexchange.com/questions/17638/how-to-cluster-spatial-data-in-r">
-     geographical distance
-    </a>
-    : unless very short, it differs from the Euclidean distance calculable from geographic coordinates alone.
-   </li>
-   <li>
-    Coordinates
-   </li>
-   <li>
-    Projections
-   </li>
-  </ul>
-  <h2>
-   <a name="categories-of-spatial-analysis">
-    Categories of spatial analysis
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <a href="http://www.columbia.edu/~cjd11/charles_dimaggio/DIRE/resources/spatialEpiBook.pdf">
-     Ch. 10: Intro to spatial point pattern analysis
-    </a>
-    <ul>
-     <li>
-      Summary statistics
-      <ul>
-       <li>
-        Ripley's K function
-       </li>
-      </ul>
-     </li>
-     <li>
-      Assessments of randomness (number and location of points)
-      <ul>
-       <li>
-        'G function
-       </li>
-       <li>
-        Moran's I and Geary's I "measure the tendency of events to cluster or the extent to which points close together have similar values on average than those farther apart"; they are global autocorrelation statistics.
-       </li>
-       <li>
-        Local Moran's I and Gi*
-       </li>
-      </ul>
-     </li>
-     <li>
-      Models of point processes for simulating points data
-     </li>
-    </ul>
-   </li>
-  </ul>
-  <h3>
-   <a name="clusters,-hotspots,-heatmaps">
-    Clusters, hotspots, heatmaps
-   </a>
-  </h3>
-  <p>
-   Although both produce a smooth-ish gradient visualization from points data (darker=more dense, lighter=less),
-   <a href="https://www.gislounge.com/difference-heat-map-hot-spot-map/">
-    a hotspot map is different from a heat map
-   </a>
-   . For a
-   <a href="https://www.gislounge.com/heat-maps-in-gis/">
-    heat map
-   </a>
-   , the density surface is created using a point density or kernel density approach. In either case, the resulting map is highly subjective because it depends on your choice of (1) how many input rasters per output raster AKA density unit; (2) length of bandwidth AKA search radius; (3) how points are counted (raw count, inverse-distance weighting, etc.). Here's a
-   <a href="http://www.sethoscope.net/heatmap/">
-    script for pretty heatmapping in Python
-   </a>
-   .
-  </p>
-  <ul>
-   <li>
-    <a href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/How_Point_Density_works/009z00000013000000/">
-     POINT DENSITY
-    </a>
-    : Set neighborhood size. Impute to each map raster the number or weighted number of points in its neighborhood, divided by the area of the neighborhood.
-   </li>
-   <li>
-    <a href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/How_Kernel_Density_works/009z00000011000000/">
-     KERNEL DENSITY
-    </a>
-    : By means of a kernel density function, each point is replaced by a circular surface that is centered on the point; extends some distance (the search radius); takes its maximum value at the center, and reaches zero at the border. The area of the surface may sum to one or some other value determined by the weight of the point. Finally, the value of each raster is the sum of all partial surfaces that overlap it.
-   </li>
-  </ul>
-  <p>
-   A hotspot map defines densities AND includes statistical tests for whether high densities (clusters) are nonrandom. Two primary methods: Gi* and KDE.
-  </p>
-  <p>
-   Is it possible that the
-   <a href="http://desktop.arcgis.com/en/arcmap/10.3/tools/spatial-statistics-toolbox/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm">
-    Getis-Ord Gi* (G-i-star) statistic
-   </a>
-   is a recipe for how points are counted (3, above) and that it can be calculated on a point or kernel density basis?
-  </p>
-  <ul>
-   <li>
-    Gi* is a z-score; it can be interpreted relative to a critical z score or assigned a p-value.
-   </li>
-   <li>
-    <a href="https://www.cdc.gov/dhdsp/maps/GISX/training/module3/files/3_hotspot_analysis_module.PDF">
-     CDC source
-    </a>
-   </li>
-   <li>
-    <a href="https://ceprofs.civil.tamu.edu/dlord/Papers/Kuo_et_al._GIS_Guidelines.pdf">
-    </a>
-   </li>
-   <li>
-    <a href="http://www.bias-project.org.uk/ASDARcourse/unit6_slides.pdf">
-     Worked example using spdep
-    </a>
-    : a polygon-based analysis
-   </li>
-   <li>
-    <a href="https://www.mailman.columbia.edu/research/population-health-methods/hot-spot-detection">
-     Overview of hotspot detection methods
-    </a>
-   </li>
-   <li>
-    <a href="http://mapas.mma.gov.br/i3geo/pacotes/rlib/win/spatstat/html/nndist.html">
-     Calculate nearest neighbor distances in R
-    </a>
-   </li>
-  </ul>
-  <p>
-   How does this relate to clustering algorithms used outside of geography?
-  </p>
-  <p>
-   <a href="https://research.csiro.au/software/wp-content/uploads/sites/6/2015/02/Rspatialcourse_CMIS_PDF-Standard.pdf">
-    Textbook on spatial points analysis
-   </a>
-   :
-  </p>
-  <ul>
-   <li>
-    All these summary statistics assume stationarity, and are used to characterize a point process by comparing it with random Poisson process:
-    <ul>
-     <li>
-      F function: "cumulative distribution function of the empty space distance"
-     </li>
-     <li>
-      G function: "cumulative distribution function of the nearest-neighbour distance for a typical point in the pattern"
-     </li>
-     <li>
-      Ripley's K: "the expected number of other points of the process within a distance r of a typical point of the process ... weighted and renormalised empirical distribution functions of the pairwise distances"
-     </li>
-    </ul>
-   </li>
-   <li>
-    To go beyond this, you start thinking in terms of specific point processes which give rise to different kinds of clustering
-   </li>
-   <li>
-    "Exploratory techniques for investigating localised features in a point pattern include LISA (Local Indicators of Spatial Association), nearest-neighbour cleaning, and data sharpening"
-   </li>
-  </ul>
-  <pre class="{r}"><code>library(spdep)
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<p class="path">
+<a href="../pkb.html">pkb contents</a> &gt; spatial analysis | nearly 996 words | updated 05/16/2017
+</p>
+<div class="TOC">
+<ul>
+<li><ol style="list-style-type: decimal">
+<li><a href="#spatial-analysis">Spatial Analysis</a></li>
+</ol>
+<ul>
+<li>1.1. <a href="#quantifying-space-and-place">Quantifying space and place</a></li>
+<li>1.2. <a href="#categories-of-spatial-analysis">Categories of spatial analysis</a>
+<ul>
+<li>1.2.1. <a href="#clusters-hotspots-heatmaps">Clusters, hotspots, heatmaps</a></li>
+<li>1.2.2. <a href="#spatial-dependence">Spatial dependence</a></li>
+</ul></li>
+<li>1.3. <a href="#resources">Resources</a></li>
+<li>1.4. <a href="#install-notes">Install notes</a>
+<ul>
+<li>1.4.1. <a href="#%5Btips-for-troubleshooting-r-package-installation-problems%5Dhttps:support.rstudio.comhcen-usarticles200554786-problem-installing-packages">[Tips for troubleshooting R package installation problems](https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages)</a></li>
+<li>1.4.2. <a href="#spdep">spdep</a></li>
+<li>1.4.3. <a href="#spatstat">spatstat</a></li>
+</ul></li>
+</ul></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li><a href="#sources">Sources</a></li>
+</ol>
+<ul>
+<li>2.1. <a href="#references">References</a></li>
+<li>2.2. <a href="#read">Read</a></li>
+<li>2.3. <a href="#unread">Unread</a></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="spatial-analysis">1. Spatial Analysis</h1>
+<h2 id="quantifying-space-and-place">1.1. Quantifying space and place</h2>
+<ul>
+<li>A note about <a href="https://gis.stackexchange.com/questions/17638/how-to-cluster-spatial-data-in-r">geographical distance</a>: unless very short, it differs from the Euclidean distance calculable from geographic coordinates alone.</li>
+<li>Coordinates</li>
+<li>Projections</li>
+</ul>
+<h2 id="categories-of-spatial-analysis">1.2. Categories of spatial analysis</h2>
+<ul>
+<li><a href="http://www.columbia.edu/~cjd11/charles_dimaggio/DIRE/resources/spatialEpiBook.pdf">Ch. 10: Intro to spatial point pattern analysis</a>
+<ul>
+<li>Summary statistics
+<ul>
+<li>Ripley's K function</li>
+</ul></li>
+<li>Assessments of randomness (number and location of points)
+<ul>
+<li>'G function</li>
+<li>Moran's I and Geary's I &quot;measure the tendency of events to cluster or the extent to which points close together have similar values on average than those farther apart&quot;; they are global autocorrelation statistics.</li>
+<li>Local Moran's I and Gi*</li>
+</ul></li>
+<li>Models of point processes for simulating points data</li>
+</ul></li>
+</ul>
+<h3 id="clusters-hotspots-heatmaps">1.2.1. Clusters, hotspots, heatmaps</h3>
+<p>Although both produce a smooth-ish gradient visualization from points data (darker=more dense, lighter=less), <a href="https://www.gislounge.com/difference-heat-map-hot-spot-map/">a hotspot map is different from a heat map</a>. For a <a href="https://www.gislounge.com/heat-maps-in-gis/">heat map</a>, the density surface is created using a point density or kernel density approach. In either case, the resulting map is highly subjective because it depends on your choice of (1) how many input rasters per output raster AKA density unit; (2) length of bandwidth AKA search radius; (3) how points are counted (raw count, inverse-distance weighting, etc.). Here's a <a href="http://www.sethoscope.net/heatmap/">script for pretty heatmapping in Python</a>.</p>
+<ul>
+<li><a href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/How_Point_Density_works/009z00000013000000/">POINT DENSITY</a>: Set neighborhood size. Impute to each map raster the number or weighted number of points in its neighborhood, divided by the area of the neighborhood.</li>
+<li><a href="http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/How_Kernel_Density_works/009z00000011000000/">KERNEL DENSITY</a>: By means of a kernel density function, each point is replaced by a circular surface that is centered on the point; extends some distance (the search radius); takes its maximum value at the center, and reaches zero at the border. The area of the surface may sum to one or some other value determined by the weight of the point. Finally, the value of each raster is the sum of all partial surfaces that overlap it.</li>
+</ul>
+<p>A hotspot map defines densities AND includes statistical tests for whether high densities (clusters) are nonrandom. Two primary methods: Gi* and KDE.</p>
+<p>Is it possible that the <a href="http://desktop.arcgis.com/en/arcmap/10.3/tools/spatial-statistics-toolbox/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm">Getis-Ord Gi* (G-i-star) statistic</a> is a recipe for how points are counted (3, above) and that it can be calculated on a point or kernel density basis?</p>
+<ul>
+<li>Gi* is a z-score; it can be interpreted relative to a critical z score or assigned a p-value.</li>
+<li><a href="https://www.cdc.gov/dhdsp/maps/GISX/training/module3/files/3_hotspot_analysis_module.PDF">CDC source</a></li>
+<li><a href="https://ceprofs.civil.tamu.edu/dlord/Papers/Kuo_et_al._GIS_Guidelines.pdf"></a></li>
+<li><a href="http://www.bias-project.org.uk/ASDARcourse/unit6_slides.pdf">Worked example using spdep</a>: a polygon-based analysis</li>
+<li><a href="https://www.mailman.columbia.edu/research/population-health-methods/hot-spot-detection">Overview of hotspot detection methods</a></li>
+<li><a href="http://mapas.mma.gov.br/i3geo/pacotes/rlib/win/spatstat/html/nndist.html">Calculate nearest neighbor distances in R</a></li>
+</ul>
+<p>How does this relate to clustering algorithms used outside of geography?</p>
+<p><a href="https://research.csiro.au/software/wp-content/uploads/sites/6/2015/02/Rspatialcourse_CMIS_PDF-Standard.pdf">Textbook on spatial points analysis</a>:</p>
+<ul>
+<li>All these summary statistics assume stationarity, and are used to characterize a point process by comparing it with random Poisson process:
+<ul>
+<li>F function: &quot;cumulative distribution function of the empty space distance&quot;</li>
+<li>G function: &quot;cumulative distribution function of the nearest-neighbour distance for a typical point in the pattern&quot;</li>
+<li>Ripley's K: &quot;the expected number of other points of the process within a distance r of a typical point of the process ... weighted and renormalised empirical distribution functions of the pairwise distances&quot;</li>
+</ul></li>
+<li>To go beyond this, you start thinking in terms of specific point processes which give rise to different kinds of clustering</li>
+<li>&quot;Exploratory techniques for investigating localised features in a point pattern include LISA (Local Indicators of Spatial Association), nearest-neighbour cleaning, and data sharpening&quot;</li>
+</ul>
+<pre class="{r}"><code>library(spdep)
 
 
 
@@ -288,322 +108,103 @@ plot(my.ppp)
 # create a density map
 plot(density(my.ppp))
 
-# plot Ripley's K, indicates if clustering is nonrandom
+# plot Ripley&#39;s K, indicates if clustering is nonrandom
 plot(Kest(my.ppp))
 </code></pre>
-  <h3>
-   <a name="spatial-dependence">
-    Spatial dependence
-   </a>
-  </h3>
-  <ul>
-   <li>
-    <a href="http://www.nickeubank.com/gis-in-r/">
-     Tutorials by Nick Eubank
-    </a>
-    :
-    <ul>
-     <li>
-      how to install spatstat when install.packages() fails
-     </li>
-     <li>
-      instructions for calculating Moran's I, "one of the most common measures of spatial dependence"
-     </li>
-    </ul>
-   </li>
-   <li>
-    <a href="http://stats.idre.ucla.edu/r/faq/how-can-i-calculate-morans-i-in-r/">
-     Moran's I
-    </a>
-   </li>
-   <li>
-    <a href="http://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/h-how-spatial-autocorrelation-moran-s-i-spatial-st.htm">
-     Moran's I is a summary statistic; Getis Ord is for hotspots
-    </a>
-   </li>
-   <li>
-    <a href="http://scc.stat.ucla.edu/page_attachments/0000/0094/spatial_R_1_09S.pdf">
-     Slidedeck that covers regression and point patterns
-    </a>
-   </li>
-   <li>
-    <a href="http://www.uclm.es/profesorado/vgomez/useR2014/">
-     Tutorials by V. Gómez-Rubio
-    </a>
-    : slightly clarifying but not enough to work from
-   </li>
-   <li>
-    <a href="http://www.rpubs.com/cengel248">
-     Tutorials by Claudia Engel
-    </a>
-    : good but doesn't touch on clustering
-   </li>
-  </ul>
-  <h2>
-   <a name="resources">
-    Resources
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <a href="https://cran.r-project.org/web/views/Spatial.html">
-     Overview of GIS-related R packages
-    </a>
-   </li>
-   <li>
-    <a href="https://research.csiro.au/software/wp-content/uploads/sites/6/2015/02/Rspatialcourse_CMIS_PDF-Standard.pdf">
-     A whole textbook on finding geospatial patterns in points
-    </a>
-   </li>
-   <li>
-    <a href="https://cran.r-project.org/web/packages/spatstat/">
-     Vignettes for spatstat
-    </a>
-    :
-    <ul>
-     <li>
-      <strong>
-       <a href="https://cran.r-project.org/web/packages/spatstat/vignettes/getstart.pdf">
-        Getting started
-       </a>
-      </strong>
-     </li>
-    </ul>
-   </li>
-   <li>
-    <a href="http://spatial.ly/r/">
-     James Cheshire's tutorials for mapping in R
-    </a>
-   </li>
-  </ul>
-  <h2>
-   <a name="install-notes">
-    Install notes
-   </a>
-  </h2>
-  <h3>
-   <a href="https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages" name="tips-for-troubleshooting-r-package-installation-problems">
-    <a>
-     Tips for troubleshooting R package installation problems
-    </a>
-   </a>
-  </h3>
-  <ul>
-   <li>
-    Package available on CRAN or other repository
-    <ul>
-     <li>
-      Use a different CRAN mirror
-     </li>
-     <li>
-      Use a different default repository, maybe not CRAN
-     </li>
-    </ul>
-   </li>
-   <li>
-    Package name spelled correctly
-   </li>
-   <li>
-    Package available for your version of R
-   </li>
-   <li>
-    Connectivity issues
-   </li>
-  </ul>
-  <h3>
-   <a name="spdep">
-    spdep
-   </a>
-  </h3>
-  <ul>
-   <li>
-    /usr/share/R/share/make/shlib.mk:6: recipe for target 'expm.so' failed
-   </li>
-   <li>
-    ERROR: compilation failed for package ‘expm’ (dependency for spdep)
-   </li>
-   <li>
-    installed with v. 3.3.2 (launch from command line)
-   </li>
-  </ul>
-  <h3>
-   <a name="spatstat">
-    spatstat
-   </a>
-  </h3>
-  <ul>
-   <li>
-    <code>
-     install.packages("spatstat")
-    </code>
-    fails because polyclip dependency fails because "unable to load shared object ... undefined symbol: __cxa_throw_bad_array_new_length"
-   </li>
-   <li>
-    <code>
-     conda install --channel https://conda.anaconda.org/jsignell r-spatstat
-    </code>
-    fails because dependencies in conflict with r-modelmetrics
-    <ul>
-     <li>
-      too risky to uninstall r-modelmetrics; depends on r-essentials and
-      <code>
-       conda remove r-modelmetrics --force
-      </code>
-      is too risky
-     </li>
-     <li>
-      try exploring dependency conflict:
-      <ul>
-       <li>
-        <code>
-         conda info r-spatstat
-        </code>
-        throws an error, so add r-spatstat channel to conda:
-        <code>
-         conda config --append channels https://conda.anaconda.org/jsignell
-        </code>
-        <ul>
-         <li>
-          r-abind
-         </li>
-         <li>
-          r-base 3.3.1*
-         </li>
-         <li>
-          r-deldir &gt;=0.0_21
-         </li>
-         <li>
-          r-goftest
-         </li>
-         <li>
-          r-matrix
-         </li>
-         <li>
-          r-mgcv
-         </li>
-         <li>
-          r-nlme
-         </li>
-         <li>
-          r-polyclip &gt;=1.5_0
-         </li>
-         <li>
-          r-rpart
-         </li>
-         <li>
-          r-tensor
-         </li>
-        </ul>
-       </li>
-       <li>
-        <code>
-         conda info r-modelmetrics
-        </code>
-        :
-        <ul>
-         <li>
-          r-base 3.3.2*
-         </li>
-         <li>
-          r-rcpp
-         </li>
-        </ul>
-       </li>
-       <li>
-        looks like it's a conflict between versions of r-base, no idea how to fix that
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
-   <li>
-    install R through Synaptic; this version of R should open when RStudio is launched from the menu
-    <ul>
-     <li>
-      r-base == v.3.2.3, super out of date :/
-     </li>
-     <li>
-      r-cran-spatstat
-     </li>
-     <li>
-      VICTORY!!!
-     </li>
-    </ul>
-   </li>
-  </ul>
-  <h1>
-   <a name="sources">
-    Sources
-   </a>
-  </h1>
-  <h2>
-   <a name="references">
-    References
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <a href="http://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">
-     ColorBrewer generates map color palettes
-    </a>
-   </li>
-   <li>
-    <a href="http://linfiniti.com/dla/">
-     QGIS documentation
-    </a>
-   </li>
-   <li>
-    <a href="http://support.esri.com/technical-article/000011644">
-     ESRI data models
-    </a>
-   </li>
-   <li>
-    <a href="http://www.naturalearthdata.com/">
-     NaturalEarth attractive map layers
-    </a>
-   </li>
-  </ul>
-  <h2>
-   <a name="read">
-    Read
-   </a>
-  </h2>
-  <h2>
-   <a name="unread">
-    Unread
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <a href="http://www.esri.com/mooc/going-places">
-     ESRI - Going places with spatial analysis
-    </a>
-   </li>
-   <li>
-    <a href="http://teachspatial.org/spatial-concepts/">
-     Spatial concepts
-    </a>
-   </li>
-   <li>
-    <a href="https://en.wikipedia.org/wiki/Spatial_analysis">
-     Wiki - Spatial analysis
-    </a>
-   </li>
-   <li>
-    <a href="http://giscollective.org/tutorials/gis-techniques/spatial-statistics/">
-     Spatial statistics
-    </a>
-   </li>
-   <li>
-    <a href="https://www.e-education.psu.edu/natureofgeoinfo/">
-     The nature of geographic information
-    </a>
-   </li>
-   <li>
-    <a href="http://www.ncgia.ucsb.edu/cctp/units/geog_for_GIS/GC_index.html">
-     Geography for GIS
-    </a>
-   </li>
-  </ul>
- </body>
+<h3 id="spatial-dependence">1.2.2. Spatial dependence</h3>
+<ul>
+<li><a href="http://www.nickeubank.com/gis-in-r/">Tutorials by Nick Eubank</a>:
+<ul>
+<li>how to install spatstat when install.packages() fails</li>
+<li>instructions for calculating Moran's I, &quot;one of the most common measures of spatial dependence&quot;</li>
+</ul></li>
+<li><a href="http://stats.idre.ucla.edu/r/faq/how-can-i-calculate-morans-i-in-r/">Moran's I</a></li>
+<li><a href="http://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/h-how-spatial-autocorrelation-moran-s-i-spatial-st.htm">Moran's I is a summary statistic; Getis Ord is for hotspots</a></li>
+<li><a href="http://scc.stat.ucla.edu/page_attachments/0000/0094/spatial_R_1_09S.pdf">Slidedeck that covers regression and point patterns</a></li>
+<li><a href="http://www.uclm.es/profesorado/vgomez/useR2014/">Tutorials by V. Gómez-Rubio</a>: slightly clarifying but not enough to work from</li>
+<li><a href="http://www.rpubs.com/cengel248">Tutorials by Claudia Engel</a>: good but doesn't touch on clustering</li>
+</ul>
+<h2 id="resources">1.3. Resources</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/views/Spatial.html">Overview of GIS-related R packages</a></li>
+<li><a href="https://research.csiro.au/software/wp-content/uploads/sites/6/2015/02/Rspatialcourse_CMIS_PDF-Standard.pdf">A whole textbook on finding geospatial patterns in points</a></li>
+<li><a href="https://cran.r-project.org/web/packages/spatstat/">Vignettes for spatstat</a>:
+<ul>
+<li><strong><a href="https://cran.r-project.org/web/packages/spatstat/vignettes/getstart.pdf">Getting started</a></strong></li>
+</ul></li>
+<li><a href="http://spatial.ly/r/">James Cheshire's tutorials for mapping in R</a></li>
+</ul>
+<h2 id="install-notes">1.4. Install notes</h2>
+<h3 id="tips-for-troubleshooting-r-package-installation-problems">1.4.1. <a href="https://support.rstudio.com/hc/en-us/articles/200554786-Problem-Installing-Packages">Tips for troubleshooting R package installation problems</a></h3>
+<ul>
+<li>Package available on CRAN or other repository
+<ul>
+<li>Use a different CRAN mirror</li>
+<li>Use a different default repository, maybe not CRAN</li>
+</ul></li>
+<li>Package name spelled correctly</li>
+<li>Package available for your version of R</li>
+<li>Connectivity issues</li>
+</ul>
+<h3 id="spdep">1.4.2. spdep</h3>
+<ul>
+<li>/usr/share/R/share/make/shlib.mk:6: recipe for target 'expm.so' failed</li>
+<li>ERROR: compilation failed for package ‘expm’ (dependency for spdep)</li>
+<li>installed with v. 3.3.2 (launch from command line)</li>
+</ul>
+<h3 id="spatstat">1.4.3. spatstat</h3>
+<ul>
+<li><code>install.packages(&quot;spatstat&quot;)</code> fails because polyclip dependency fails because &quot;unable to load shared object ... undefined symbol: __cxa_throw_bad_array_new_length&quot;</li>
+<li><code>conda install --channel https://conda.anaconda.org/jsignell r-spatstat</code> fails because dependencies in conflict with r-modelmetrics
+<ul>
+<li>too risky to uninstall r-modelmetrics; depends on r-essentials and <code>conda remove r-modelmetrics --force</code> is too risky</li>
+<li>try exploring dependency conflict:
+<ul>
+<li><code>conda info r-spatstat</code> throws an error, so add r-spatstat channel to conda: <code>conda config --append channels https://conda.anaconda.org/jsignell</code>
+<ul>
+<li>r-abind</li>
+<li>r-base 3.3.1*</li>
+<li>r-deldir &gt;=0.0_21</li>
+<li>r-goftest</li>
+<li>r-matrix</li>
+<li>r-mgcv</li>
+<li>r-nlme</li>
+<li>r-polyclip &gt;=1.5_0</li>
+<li>r-rpart</li>
+<li>r-tensor</li>
+</ul></li>
+<li><code>conda info r-modelmetrics</code>:
+<ul>
+<li>r-base 3.3.2*</li>
+<li>r-rcpp</li>
+</ul></li>
+<li>looks like it's a conflict between versions of r-base, no idea how to fix that</li>
+</ul></li>
+</ul></li>
+<li>install R through Synaptic; this version of R should open when RStudio is launched from the menu
+<ul>
+<li>r-base == v.3.2.3, super out of date :/</li>
+<li>r-cran-spatstat</li>
+<li>VICTORY!!!</li>
+</ul></li>
+</ul>
+<h1 id="sources">2. Sources</h1>
+<h2 id="references">2.1. References</h2>
+<ul>
+<li><a href="http://colorbrewer2.org/#type=sequential&amp;scheme=BuGn&amp;n=3">ColorBrewer generates map color palettes </a></li>
+<li><a href="http://linfiniti.com/dla/">QGIS documentation</a></li>
+<li><a href="http://support.esri.com/technical-article/000011644">ESRI data models</a></li>
+<li><a href="http://www.naturalearthdata.com/">NaturalEarth attractive map layers</a></li>
+</ul>
+<h2 id="read">2.2. Read</h2>
+<h2 id="unread">2.3. Unread</h2>
+<ul>
+<li><a href="http://www.esri.com/mooc/going-places">ESRI - Going places with spatial analysis</a></li>
+<li><a href="http://teachspatial.org/spatial-concepts/">Spatial concepts</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Spatial_analysis">Wiki - Spatial analysis</a></li>
+<li><a href="http://giscollective.org/tutorials/gis-techniques/spatial-statistics/">Spatial statistics</a></li>
+<li><a href="https://www.e-education.psu.edu/natureofgeoinfo/">The nature of geographic information</a></li>
+<li><a href="http://www.ncgia.ucsb.edu/cctp/units/geog_for_GIS/GC_index.html">Geography for GIS</a></li>
+</ul>
+</body>
 </html>

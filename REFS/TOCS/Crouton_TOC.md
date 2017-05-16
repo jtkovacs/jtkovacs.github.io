@@ -1,9 +1,9 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Crouton.html">https://jtkovacs.github.io/REFS/HTML/Crouton.html</a></p><table class="TOC"><tr><td>- [Cheatsheet](#cheatsheet)
-- [Sources](#sources)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> Crouton | nearly 177 words | updated 05/16/2017</p><div class="TOC">- 1. [Cheatsheet](#cheatsheet)
+- 2. [Sources](#sources)
+</div>
 
 
-# Cheatsheet
+# 1. Cheatsheet
 
 - Put Chrombook into recovery mode: `esc + refresh + power`
 - Enter dev mode: `ctrl + D`
@@ -24,7 +24,7 @@
 - Delete the chroot: `sudo delete-chroot my_chroot_name`
 
 
-# Sources
+# 2. Sources
 
 - [GitHub repo for crouton](https://github.com/dnschneid/crouton)
 - [Author's cheatsheet](https://github.com/dnschneid/crouton/wiki/Crouton-Command-Cheat-Sheet)

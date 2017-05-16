@@ -1,27 +1,27 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/statistics.html">https://jtkovacs.github.io/REFS/HTML/statistics.html</a></p><table class="TOC"><tr><td>- [Probability & statistics](#probability-&-statistics)
-	- [Notes](#notes)
-	- [... in R](#...-in-r)
-	- [... in Python](#...-in-python)
-	- [Sources](#sources)
-		- [References](#references)
-		- [Read](#read)
-		- [Unread](#unread)
-- [Linear Algebra](#linear-algebra)
-- [Relationships & Trends](#relationships-&-trends)
-- [Hypothesis & A/B Testing](#hypothesis-&-a/b-testing)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
-# Probability & statistics
+<p class="path"><a href="../pkb.html">pkb contents</a> \> statistics | nearly 1235 words | updated 05/16/2017</p><div class="TOC">- 1. [Probability & statistics](#probability-statistics)
+	- 1.1. [Notes](#notes)
+	- 1.2. [... in R](#...-in-r)
+	- 1.3. [... in Python](#...-in-python)
+	- 1.4. [Sources](#sources)
+		- 1.4.1. [References](#references)
+		- 1.4.2. [Read](#read)
+		- 1.4.3. [Unread](#unread)
+- 2. [Linear Algebra](#linear-algebra)
+- 3. [Relationships & Trends](#relationships-trends)
+- 4. [Hypothesis & A/B Testing](#hypothesis-ab-testing)
+	- 4.1. [References](#references)
+	- 4.2. [Read](#read)
+	- 4.3. [Unread](#unread)
+</div>
+# 1. Probability & statistics
 
-## Notes
+## 1.1. Notes
 
 - https://docs.google.com/document/d/1e0wdTbj6TfpLqfOfYjzqOX17L0pUmNGGfSIdr-n_0BE/edit?usp=drive_web
 - https://docs.google.com/document/d/1akczbgY2f6M-y2FHY649C917KToSU8tj2Y1A7bCfq7k/edit?usp=drive_web
 - https://docs.google.com/document/d/1gWr73U7uhIxzi8MOODNMafwDK7l-BDg3HsCEyc4xaGE/edit?usp=drive_web
 
-## ... in R
+## 1.2. ... in R
 
 ```R
 rowSums(my_mat)
@@ -120,7 +120,7 @@ m_full <- lm(score ~ rank + ethnicity + gender + language + age + cls_perc_eval 
 
 
 
-## ... in Python
+## 1.3. ... in Python
 
 numpy has an arrays datatype, essential for analytic operations. arrays are like lists, but you can perform elementwise calculations on them and, unlike lists, 
 they are cannot contain multiple types within one array; they are type coercive. 
@@ -157,15 +157,15 @@ random.choice(strname)
 random.randint(a_inclusive,b_inclusive)
 ```
 
-## Sources
+## 1.4. Sources
 
-### References
+### 1.4.1. References
 
 - [1,](http://www.dummies.com/how-to/content/statistics-for-dummies-cheat-sheet.html) [2,](http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf) [3](https://drive.google.com/open?id=0B6XYyy1UbJ3XR2w5Snc2ck1BVFE)
 - [CAUSEWeb statistics database](https://www.causeweb.org/cause/resources)
 - [Andrew Gelman's round up of his stats writing](http://andrewgelman.com/2009/05/24/handy_statistic/)
 
-### Read
+### 1.4.2. Read
 
 - _The Seven Pillars of Statistical Wisdom_
 - _Cartoon Guide to Statistics_ 
@@ -179,7 +179,7 @@ random.randint(a_inclusive,b_inclusive)
 - [The advantages of the mean deviation](http://www.leeds.ac.uk/educol/documents/00003759.htm)
 - [Difficult concepts in statistics](https://learnandteachstatistics.wordpress.com/2013/06/24/difficult-concepts/)
 
-### Unread
+### 1.4.3. Unread
 
 - [A concrete introduction to probability using Python](http://nbviewer.jupyter.org/url/norvig.com/ipython/Probability.ipynb)
 - [Statistical Rethinking: A Bayesian Course in R](http://xcelab.net/rm/statistical-rethinking/)
@@ -193,13 +193,13 @@ random.randint(a_inclusive,b_inclusive)
 - [10 Modern Statistical Concepts Discovered by Data Scientists](http://www.datasciencecentral.com/profiles/blogs/10-modern-statistical-concepts-discovered-by-data-scientists)
 
 
-# Linear Algebra
+# 2. Linear Algebra
 
 - [<i>Linear algebra</i>](http://joshua.smcvt.edu/linearalgebra/)
 - [A first course in linear algebra](http://linear.ups.edu/)
 - [PCA 4 Dummies: Eigenvectors/values &amp; dimension reduction](https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/)
 
-# Relationships & Trends
+# 3. Relationships & Trends
 
 - [Contingency table calculator](http://www.physics.csbsju.edu/stats/contingency_NROW_NCOLUMN_form.html)
 - [Understanding Multivariate Research](https://drive.google.com/open?id=1-3rUQMEKFaPoNtDHLfZGIqZkgpqvr9b_2Tx7HQQzrTg)
@@ -238,13 +238,13 @@ random.randint(a_inclusive,b_inclusive)
 - [Applied econometrics syllabus](http://courses.umass.edu/econ753/)
 
 
-# Hypothesis & A/B Testing
+# 4. Hypothesis & A/B Testing
 
-## References
+## 4.1. References
 
 - Choosing the right test: [1,](http://www.graphpad.com/support/faqid/1790/) [2](http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm)
 
-## Read
+## 4.2. Read
 
 - [Khan Academy - Inferential Statistics](https://www.khanacademy.org/math/probability/statistics-inferential)
 - [There is only one test](http://allendowney.blogspot.com/2011/05/there-is-only-one-test.html)
@@ -272,7 +272,7 @@ random.randint(a_inclusive,b_inclusive)
 - [Bayesian reasoning in the Twilight Zone](https://www.countbayesie.com/blog/2016/3/16/bayesian-reasoning-in-the-twilight-zone)
 - [Bayes’ factor](https://www.countbayesie.com/blog/2015/2/27/building-a-bayesian-voight-kampff-test)
 
-## Unread
+## 4.3. Unread
 
 - [Understanding the beta distribution](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
 - [Parameter estimation](https://www.countbayesie.com/blog/2015/4/4/parameter-estimation-the-pdf-cdf-and-quantile-function)

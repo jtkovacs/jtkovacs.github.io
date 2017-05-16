@@ -1,19 +1,19 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/BI.html">https://jtkovacs.github.io/REFS/HTML/BI.html</a></p><table class="TOC"><tr><td>- [BI architectures](#bi-architectures)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> BI | nearly 269 words | updated 05/16/2017</p><div class="TOC">- 1. [BI architectures](#bi-architectures)
+- 2. [Sources](#sources)
+	- 2.1. [References](#references)
+	- 2.2. [Read](#read)
+	- 2.3. [Unread](#unread)
+</div>
 
 
-# BI architectures
+# 1. BI architectures
 
 
-# Sources
+# 2. Sources
 
-## References
+## 2.1. References
 
-## Read
+## 2.2. Read
 
 - [UW IT - EDW 101](http://itconnect.uw.edu/work/data/training/workshops/#EDW101)
 - [MapReduce - Simplified Data Processing on Large Clusters](http://research.google.com/archive/mapreduce.html)
@@ -21,7 +21,7 @@
 - [Big Data, n. A kind of black magic](http://www.talyarkoni.org/blog/2014/05/19/big-data-n-a-kind-of-black-magic/)
 
 
-## Unread
+## 2.3. Unread
 
 - _The Data Warehouse Lifecycle Toolkit_
 - _The Data Warehouse Toolkit_

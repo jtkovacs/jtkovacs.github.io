@@ -5,94 +5,105 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | UML
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/UML.html">
-    https://jtkovacs.github.io/REFS/HTML/UML.html
-   </a>
-   &gt; 173 words
+   &gt; UML | nearly 173 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
       <li>
        <a href="#elements-of-uml">
         Elements of UML
        </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       1.1.
+       <a href="#classes">
+        Classes
+       </a>
        <ul>
         <li>
-         <a href="#classes">
-          Classes
+         1.1.1.
+         <a href="#superclasses-">
+          Superclasses
          </a>
-         <ul>
-          <li>
-           <a href="#superclasses-">
-            Superclasses
-           </a>
-          </li>
-          <li>
-           <a href="#subclasses">
-            Subclasses
-           </a>
-          </li>
-         </ul>
         </li>
         <li>
-         <a href="#associations">
-          Associations
+         1.1.2.
+         <a href="#subclasses">
+          Subclasses
          </a>
-         <ul>
-          <li>
-           <a href="#types-of-associations">
-            Types of associations
-           </a>
-           <ul>
-            <li>
-             <a href="#composition">
-              Composition
-             </a>
-            </li>
-            <li>
-             <a href="#aggregation">
-              Aggregation
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           <a href="#classes-for-associations">
-            Classes for associations
-           </a>
-          </li>
-          <li>
-           <a href="#multiplicity-of-associations-">
-            Multiplicity of associations
-           </a>
-          </li>
-         </ul>
         </li>
        </ul>
       </li>
+      <li>
+       1.2.
+       <a href="#associations">
+        Associations
+       </a>
+       <ul>
+        <li>
+         1.2.1.
+         <a href="#types-of-associations">
+          Types of associations
+         </a>
+         <ul>
+          <li>
+           1.2.1.1.
+           <a href="#composition">
+            Composition
+           </a>
+          </li>
+          <li>
+           1.2.1.2.
+           <a href="#aggregation">
+            Aggregation
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         1.2.2.
+         <a href="#classes-for-associations">
+          Classes for associations
+         </a>
+        </li>
+        <li>
+         1.2.3.
+         <a href="#multiplicity-of-associations-">
+          Multiplicity of associations
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
       <li>
        <a href="#sources">
         Sources
        </a>
       </li>
-     </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="elements-of-uml">
-    Elements of UML
+     </ol>
+    </li>
+   </ul>
+  </div>
+  <h1 id="elements-of-uml">
+   <a>
+    1. Elements of UML
    </a>
   </h1>
   <p>
@@ -101,9 +112,9 @@
     notes on modeling.
    </a>
   </p>
-  <h2>
-   <a name="classes">
-    Classes
+  <h2 id="classes">
+   <a>
+    1.1. Classes
    </a>
   </h2>
   <p>
@@ -120,38 +131,38 @@
     Methods/primary key
    </li>
   </ul>
-  <h3>
-   <a name="superclasses">
-    Superclasses
+  <h3 id="superclasses">
+   <a>
+    1.1.1. Superclasses
    </a>
   </h3>
   <p>
    In/complete and disjoint/overlapping.
   </p>
-  <h3>
-   <a name="subclasses">
-    Subclasses
+  <h3 id="subclasses">
+   <a>
+    1.1.2. Subclasses
    </a>
   </h3>
   <p>
    Inherit attributes from super/parent class, but have own unique attributes and/or unique associations.
   </p>
-  <h2>
-   <a name="associations">
-    Associations
+  <h2 id="associations">
+   <a>
+    1.2. Associations
    </a>
   </h2>
   <p>
    Captures relationships between objects of two classes. Self-association is possible.
   </p>
-  <h3>
-   <a name="types-of-associations">
-    Types of associations
+  <h3 id="types-of-associations">
+   <a>
+    1.2.1. Types of associations
    </a>
   </h3>
-  <h4>
-   <a name="composition">
-    Composition
+  <h4 id="composition">
+   <a>
+    1.2.1.1. Composition
    </a>
   </h4>
   <p>
@@ -161,25 +172,25 @@
    </code>
    . PK not required.
   </p>
-  <h4>
-   <a name="aggregation">
-    Aggregation
+  <h4 id="aggregation">
+   <a>
+    1.2.1.2. Aggregation
    </a>
   </h4>
   <p>
    Objects might ‘belong’ to, at most, one object of another class. Denoted with an empty diamond on the association. PK required.
   </p>
-  <h3>
-   <a name="classes-for-associations">
-    Classes for associations
+  <h3 id="classes-for-associations">
+   <a>
+    1.2.2. Classes for associations
    </a>
   </h3>
   <p>
    Add attributes to an association, e.g. “Date” and “Decision” to the association “Applied”.
   </p>
-  <h3>
-   <a name="multiplicity-of-associations">
-    Multiplicity of associations
+  <h3 id="multiplicity-of-associations">
+   <a>
+    1.2.3. Multiplicity of associations
    </a>
   </h3>
   <ul>
@@ -210,8 +221,8 @@
    </li>
   </ul>
   <h1>
-   <a name="sources">
-    Sources
+   <a name="2.-sources">
+    2. Sources
    </a>
   </h1>
   <ul>

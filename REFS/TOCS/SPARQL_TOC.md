@@ -1,23 +1,23 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/SPARQL.html">https://jtkovacs.github.io/REFS/HTML/SPARQL.html</a> \> 30 words </p><table class="TOC"><tr><td>- [What is SPARQL?](#what-is-sparql?)
-- [Sources](#sources)
-	- [Cited](#cited)
-	- [References](#references)
-	- [Read](#read)
-	- [Not read](#not-read)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> SPARQL | nearly 30 words | updated 05/16/2017</p><div class="TOC">- 1. [What is SPARQL?](#what-is-sparql)
+- 2. [Sources](#sources)
+	- 2.1. [Cited](#cited)
+	- 2.2. [References](#references)
+	- 2.3. [Read](#read)
+	- 2.4. [Not read](#not-read)
+</div>
 
-# What is SPARQL?
+# 1. What is SPARQL?
 
 SPARQL is a query language for [databases](databases.html) that use [RDF](RDF.html) as their data model.  
 
-# Sources
+# 2. Sources
 
-## Cited
+## 2.1. Cited
 
-## References
+## 2.2. References
 
-## Read
+## 2.3. Read
 
-## Not read
+## 2.4. Not read
 
 -

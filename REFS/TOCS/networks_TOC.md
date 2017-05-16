@@ -1,20 +1,20 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/networks.html">https://jtkovacs.github.io/REFS/HTML/networks.html</a></p><table class="TOC"><tr><td>- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> networks | nearly 69 words | updated 05/16/2017</p><div class="TOC">- 1. [Sources](#sources)
+	- 1.1. [References](#references)
+	- 1.2. [Read](#read)
+	- 1.3. [Unread](#unread)
+</div>
 
-# Sources
+# 1. Sources
 
 
-## References
+## 1.1. References
 
 - [Gephi, the open graph viz platform](https://gephi.org/)
 - [Victor Preciado's links about network analysis](https://sites.google.com/site/victormpreciado/links)
 
-## Read
+## 1.2. Read
 
-## Unread
+## 1.3. Unread
 
 - [Coursera - Social Network Analysis](https://www.coursera.org/course/sna)
 - [Coursera - Social &amp; Economic Networks](https://www.coursera.org/course/networksonline)

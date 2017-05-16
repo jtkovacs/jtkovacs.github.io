@@ -1,14 +1,14 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/hardware.html">https://jtkovacs.github.io/REFS/HTML/hardware.html</a></p><table class="TOC"><tr><td>- [Computer hardware: Information storage & processing](#computer-hardware:-information-storage-&-processing)
-- [Networks: Information representation and transfer](#networks:-information-representation-and-transfer)
-	- [Home networks](#home-networks)
-	- [The Internet](#the-internet)
-- [Sources ](#sources-)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> hardware | nearly 1945 words | updated 05/16/2017</p><div class="TOC">- 1. [Computer hardware: Information storage & processing](#computer-hardware:-information-storage-processing)
+- 2. [Networks: Information representation and transfer](#networks:-information-representation-and-transfer)
+	- 2.1. [Home networks](#home-networks)
+	- 2.2. [The Internet](#the-internet)
+- 3. [Sources ](#sources-)
+	- 3.1. [References](#references)
+	- 3.2. [Read](#read)
+	- 3.3. [Unread](#unread)
+</div>
 
-# Computer hardware: Information storage & processing
+# 1. Computer hardware: Information storage & processing
 
 https://fossbytes.com/wp-content/uploads/2016/04/latest-computer-chart.jpg, https://fossbytes.com/wp-content/uploads/2016/04/the-complete-computer-hardware-chart.jpg, http://eent3.lsbu.ac.uk/units/compsys/1%20Network%20Computer%20HardwareSlides.htm
 
@@ -21,7 +21,7 @@ http://stackoverflow.com/questions/30156349/is-bash-an-interpreted-language
 ![Ports](../ILLOS/ports.jpg)
 
 
-# Networks: Information representation and transfer
+# 2. Networks: Information representation and transfer
 
 __Bits__, binary digits, are the 'atoms' of computerized information. Bits can be represented and transmitted by any two-state medium plus a consistent bits-per-unit-time clock (since states may be consecutive). The _bandwidth_ of a system, its capacity to transmit information, is also called its _bitrate_. _Latency_ is also important: that's the time it take for a bit to travel from receiver to sender. 
 
@@ -33,7 +33,7 @@ When bits flow between machines and the machines have __protocols__ to interpret
 - Expensive fiber optic cables transmit light much faster, over much longer distances with less signal decay. 
 - Like copper cables, radio waves (wi-fi) experience signal decay over distance. Radio waves are analog, so multiple translations are needed. Antennae & tower.
 
-## Home networks
+## 2.1. Home networks
 
 [Networks can be many different sizes and scopes](https://en.wikipedia.org/wiki/Template:Area_networks): LAN, PAN, WAN, MAN, etc. A P2P network (most home networks) lacks a central computer or server; a LAN might include Ethernet cables, wi-fi/wireless radio signals, or powerline network adaptors connect each device to a switch or hub.
 
@@ -63,7 +63,7 @@ In data communication, a physical network node may either be a [data communicati
 - Bridge: connects wired devices to something else via wi-fi (opposite of access point)
 - firewall: can be hardware (in router) or software (on device); works by closing network ports
 
-## The Internet
+## 2.2. The Internet
 
 The Internet is a network of networks with special protocols and entities. Internet means "interconnected networks". Internet is not WWW: _the Internet is a technical infrastructure which allows billions of computers to be connected all together. Among those computers, some computers (called Web servers [or HTTP servers]) can send messages intelligible to web browsers. The Internet is an infrastructure, whereas the Web is a service built on top of the infrastructure. It is worth noting there are several other services built on top of the Internet, such as email and IRC. // The Internet carries an extensive range of information resources and services, such as the inter-linked hypertext documents and applications of the World Wide Web (WWW), electronic mail, voice over IP telephony, and peer-to-peer networks for file sharing._ [[3](https://en.wikipedia.org/wiki/World_Wide_Web)]. The Web is a graphical interface for some of the content that's available through the Internet.
 
@@ -110,16 +110,16 @@ _When you type an address such as www.codecademy.com in your browser, you are co
 
 
 
-# Sources 
+# 3. Sources 
 
-## References
+## 3.1. References
 
 - [Glossary of computer jargon](http://www.computerhope.com/jargon.htm)
 - [Internet jargon](http://www.computerhope.com/jargon/internet.htm)
 - [Network jargon](http://www.computerhope.com/jargon/network.htm)
 
 
-## Read
+## 3.2. Read
 
 - Mozilla - [How the Internet works](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work), [What is a web server?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server), [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 - Wikipedia - [Outline of the Internet](https://en.wikipedia.org/wiki/Outline_of_the_Internet), [Computer network](https://en.wikipedia.org/wiki/Computer_network), [Internet protocol suite](https://en.wikipedia.org/wiki/Internet_protocol_suite), [OSI model](https://en.wikipedia.org/wiki/OSI_model#Description_of_OSI_layers), [Internet Exchange Point](https://en.wikipedia.org/wiki/Internet_exchange_point)
@@ -127,7 +127,7 @@ _When you type an address such as www.codecademy.com in your browser, you are co
 - MakeUseOf - [What is home networking](http://www.makeuseof.com/tag/everything-need-know-home-networking/), [Types of Internet access technologies](http://www.makeuseof.com/tag/types-of-internet-access-technologies-explained-and-what-you-should-expect/), [How the Internet works](http://www.makeuseof.com/tag/technology-explained-how-the-internet-works/), [What’s the difference between routers, hubs, &amp; switches?](http://www.makeuseof.com/tag/whats-difference-routers-hubs-switches/), [How does a router work?](http://www.makeuseof.com/tag/technology-explained-how-does-a-router-work/), [Wireless networking terms](http://www.makeuseof.com/tag/wireless-networking-simplified-the-terms-you-should-know/), [10 wrong ways to set up your wireless network](http://www.makeuseof.com/tag/10-wrong-ways-set-wireless-network/), [How to Optimize Your House For Best Wi-Fi Reception](http://www.makeuseof.com/tag/wireless-feng-shui-optimize-house-wifi-reception/)
 - [How networks send data](http://pluto.ksi.edu/~cyh/cis370/ebook/ch03c.htm), [Does all LAN traffic travel through a router](http://superuser.com/questions/295528/does-all-lan-traffic-travel-through-a-router), [Anatomy of a URL](https://doepud.co.uk/blog.php/anatomy-of-a-url), [URLs](https://www.cs.tut.fi/~jkorpela/HTML3.2/3.5.html), [What every dev should know about URLs](http://www.skorks.com/2010/05/what-every-developer-should-know-about-urls/), [URL definitions](https://www.mattcutts.com/blog/seo-glossary-url-definitions/), [HTTP Requests](https://www.codecademy.com/articles/http-requests)
 
-## Unread
+## 3.3. Unread
 
 - [Intro. to ICT](http://openbookproject.net/courses/intro2ict/index.html)
 - Security Now [videos] - [Let’s design a computer](https://twit.tv/shows/security-now/episodes/233?autostart=false), [Machine language](https://twit.tv/shows/security-now/episodes/235?autostart=false), [Pointers](https://twit.tv/shows/security-now/episodes/237?autostart=false), [Stacks, registers, and recursion](https://twit.tv/shows/security-now/episodes/239?autostart=false), [Hardware interrupts](https://twit.tv/shows/security-now/episodes/241?autostart=false) 

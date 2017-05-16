@@ -1,58 +1,58 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/models.html">https://jtkovacs.github.io/REFS/HTML/models.html</a></p><table class="TOC"><tr><td>- [Models for ... ](#models-for-...-)
-	- [Decision-making ](#decision-making-)
-	- [Mechanism design](#mechanism-design)
-	- [Prediction](#prediction)
-	- [Categorization](#categorization)
-- [Models theorizing ... ](#models-theorizing-...-)
-	- [Segregation](#segregation)
-		- [Measuring segregation](#measuring-segregation)
-		- [Thomas Schelling’s spatial segregation model](#thomas-schelling’s-spatial-segregation-model)
-		- [Granovetter’s model of peer effects ](#granovetter’s-model-of-peer-effects-)
-		- [Standing ovation model](#standing-ovation-model)
-	- [Aggregation](#aggregation)
-		- [Central Limit Theorem](#central-limit-theorem)
-		- [Game of Life](#game-of-life)
-		- [Cellular automata](#cellular-automata)
-		- [Aggregating preferences](#aggregating-preferences)
-	- [Individual human behavior](#individual-human-behavior)
-		- [Rational ](#rational-)
-		- [Behavioral ](#behavioral-)
-		- [Rule-based](#rule-based)
-	- [Coordination & culture](#coordination-&-culture)
-		- [Axelrod’s culture model](#axelrod’s-culture-model)
-		- [Coordination & consistency model](#coordination-&-consistency-model)
-		- [Prisoner's dilemma](#prisoner's-dilemma)
-		- [Collective action problems](#collective-action-problems)
-	- [Diversity & innovation ](#diversity-&-innovation-)
-		- [No free lunch thm ](#no-free-lunch-thm-)
-		- [Collaborative problem-solving](#collaborative-problem-solving)
-		- [Recombination](#recombination)
-	- [Tipping points & diffusion](#tipping-points-&-diffusion)
-		- [Percolation model (contextual)](#percolation-model-(contextual))
-		- [Contagion models ](#contagion-models-)
-			- [Diffusion](#diffusion)
-			- [SIS ](#sis-)
-		- [Classifying tipping points](#classifying-tipping-points)
-		- [Measuring tipping points](#measuring-tipping-points)
-	- [Economic growth ](#economic-growth-)
-		- [Exponential growth](#exponential-growth)
-		- [Basic growth model ](#basic-growth-model-)
-		- [Solow growth model ](#solow-growth-model-)
-- [Models using ...](#models-using-...)
-	- [Linear regression](#linear-regression)
-	- [Markov processes](#markov-processes)
-	- [Lyapunov functions](#lyapunov-functions)
-	- [Path dependence](#path-dependence)
-	- [Networks](#networks)
-	- [Randomness](#randomness)
-	- [Game theory](#game-theory)
-		- [Colonel Blotto](#colonel-blotto)
-	- [Replicators](#replicators)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> models | nearly 6079 words | updated 05/16/2017</p><div class="TOC">- 1. [Models for ... ](#models-for-...-)
+	- 1.1. [Decision-making ](#decision-making-)
+	- 1.2. [Mechanism design](#mechanism-design)
+	- 1.3. [Prediction](#prediction)
+	- 1.4. [Categorization](#categorization)
+- 2. [Models theorizing ... ](#models-theorizing-...-)
+	- 2.1. [Segregation](#segregation)
+		- 2.1.1. [Measuring segregation](#measuring-segregation)
+		- 2.1.2. [Thomas Schelling’s spatial segregation model](#thomas-schelling’s-spatial-segregation-model)
+		- 2.1.3. [Granovetter’s model of peer effects ](#granovetter’s-model-of-peer-effects-)
+		- 2.1.4. [Standing ovation model](#standing-ovation-model)
+	- 2.2. [Aggregation](#aggregation)
+		- 2.2.1. [Central Limit Theorem](#central-limit-theorem)
+		- 2.2.2. [Game of Life](#game-of-life)
+		- 2.2.3. [Cellular automata](#cellular-automata)
+		- 2.2.4. [Aggregating preferences](#aggregating-preferences)
+	- 2.3. [Individual human behavior](#individual-human-behavior)
+		- 2.3.1. [Rational ](#rational-)
+		- 2.3.2. [Behavioral ](#behavioral-)
+		- 2.3.3. [Rule-based](#rule-based)
+	- 2.4. [Coordination & culture](#coordination-culture)
+		- 2.4.1. [Axelrod’s culture model](#axelrod’s-culture-model)
+		- 2.4.2. [Coordination & consistency model](#coordination-consistency-model)
+		- 2.4.3. [Prisoner's dilemma](#prisoners-dilemma)
+		- 2.4.4. [Collective action problems](#collective-action-problems)
+	- 2.5. [Diversity & innovation ](#diversity-innovation-)
+		- 2.5.1. [No free lunch thm ](#no-free-lunch-thm-)
+		- 2.5.2. [Collaborative problem-solving](#collaborative-problem-solving)
+		- 2.5.3. [Recombination](#recombination)
+	- 2.6. [Tipping points & diffusion](#tipping-points-diffusion)
+		- 2.6.1. [Percolation model (contextual)](#percolation-model-contextual)
+		- 2.6.2. [Contagion models ](#contagion-models-)
+			- 2.6.2.1. [Diffusion](#diffusion)
+			- 2.6.2.2. [SIS ](#sis-)
+		- 2.6.3. [Classifying tipping points](#classifying-tipping-points)
+		- 2.6.4. [Measuring tipping points](#measuring-tipping-points)
+	- 2.7. [Economic growth ](#economic-growth-)
+		- 2.7.1. [Exponential growth](#exponential-growth)
+		- 2.7.2. [Basic growth model ](#basic-growth-model-)
+		- 2.7.3. [Solow growth model ](#solow-growth-model-)
+- 3. [Models using ...](#models-using-...)
+	- 3.1. [Linear regression](#linear-regression)
+	- 3.2. [Markov processes](#markov-processes)
+	- 3.3. [Lyapunov functions](#lyapunov-functions)
+	- 3.4. [Path dependence](#path-dependence)
+	- 3.5. [Networks](#networks)
+	- 3.6. [Randomness](#randomness)
+	- 3.7. [Game theory](#game-theory)
+		- 3.7.1. [Colonel Blotto](#colonel-blotto)
+	- 3.8. [Replicators](#replicators)
+- 4. [Sources](#sources)
+	- 4.1. [References](#references)
+	- 4.2. [Read](#read)
+	- 4.3. [Unread](#unread)
+</div>
 
 _The following notes are largely based on [Scott Page's](https://vserver1.cscs.lsa.umich.edu/~spage/) Coursera class on [Model Thinking.](https://www.coursera.org/course/modelthinking) Another excellent resource is the Farnam Street Blog roundup of [mental models.](https://www.farnamstreetblog.com/mental-models/)_
 
@@ -61,9 +61,9 @@ _For information systems-related applications of modeling, see [notes on system 
  
  
  
-# Models for ... 
+# 1. Models for ... 
 
-## Decision-making 
+## 1.1. Decision-making 
 
 We talk about decision-making models for normative reasons (to help us make better decisions) and positive ones (to predict or analyze others’ decisions)
 
@@ -79,7 +79,7 @@ Subjective probabilities: dangerous, subject to bias, make easily violate axioms
 Decision trees: write down payoffs and probabilities; also can infer what other people think p is based on their decisions, or calculate payoffs knowing probabilities
 Value of information: calculate value without and with information; then take the difference
    
-## Mechanism design
+## 1.2. Mechanism design
 
 Formalizing institutions; designing the rules of the game by defining permitted actions and payoffs.
 
@@ -97,7 +97,7 @@ Mechanisms in public goods projects:
 Clarke-Groves-Vickery Pivot mechanism: each person states what the project is worth to them. If the sum of these claims is higher than the cost of hte project, then the project goes ahead with each paying only the minimum amount needed to make the project viable: e.g. person_1 pays max{cost - V2 - V3 … - Vn, 0}. → everyone has an incentive to reveal their true value, rather than over- or under-bidding.
 All mechanisms for these sorts of problems have trade-offs.
 
-## Prediction
+## 1.3. Prediction
 
 Prediction at the individual level → “[W]e tend to pay undue attention to single model thinkers. We shouldn’t. We should heed the advice of those who think more subtly. Better still, we should learn many models ourselves.”
 We’ve looked at three types of predictive models: categorical, linear, and Markov
@@ -105,7 +105,7 @@ We’ve looked at three types of predictive models: categorical, linear, and Mar
 Prediction by groups → Wisdom of crowds = f(individual’s accuracy, diversity of ideas)
 Crowd’s error = Avg error - Variation
 
-## Categorization
+## 1.4. Categorization
 
 Categorical: data can be sorted into different ‘boxes’
 Calculation of total variation: subtract mean from each data point, square and sum the results
@@ -116,13 +116,13 @@ R2 = %variation explained = (total_variation_pre-categories - total_variation_wi
 
 
 
-# Models theorizing ... 
+# 2. Models theorizing ... 
  
-## Segregation
+## 2.1. Segregation
  
 There's an identification problem with segregation: do we deliberately seek the company of those who are similar to us (sorting), or do we become like those with whom we associate (peer effects)?
  
-### Measuring segregation
+### 2.1.1. Measuring segregation
 
 - **Index of dissimilarity**
     - o ≤ DI ≤ 1
@@ -130,7 +130,7 @@ There's an identification problem with segregation: do we deliberately seek the 
     D- I for a region of blocks = sum of (#blocks*block’s-DI)
 - **[Isolation index](https://en.wikipedia.org/wiki/Index_of_dissimilarity)**
 
-### Thomas Schelling’s spatial segregation model
+### 2.1.2. Thomas Schelling’s spatial segregation model
 
 Agent-based model where people choose whether to move or stay depending on the composition of their immediate neighborhood. The deep insight is that a similarity threshold of 30% has an equilibrium (everyone happy) with segregation of 70%; and 50% tolerance leads to nearly 100% segregation, including borders made up of empty cells. Perhaps counterintuitively, when intolerance is set very high, the system won’t find an equilibrium since everyone is perpetually moving. 
 Micromotives ≠ macrobehavior
@@ -138,7 +138,7 @@ I would want to augment this model, giving cell-classes their own mobility param
 Exodus tip: agent leaves because someone else exits the neighborhood
 Genesis tip: agent leaves because someone else enters the neighborhood
 
-### Granovetter’s model of peer effects 
+### 2.1.3. Granovetter’s model of peer effects 
 
 In re: people’s decision to join in a social movement
 
@@ -147,7 +147,7 @@ N individuals; the jth individual has threshold Tj, and will join if T others do
 collective action more likely to happen if: low thresholds, variation in thresholds
 calculate avg. T for a population; avg. discontent doesn’t matter
 
-### Standing ovation model
+### 2.1.4. Standing ovation model
 
 - builds off Granovetter model; adds information to peer effects
 - T, threshold to stand, and T=f(Q) is a function of quality
@@ -160,7 +160,7 @@ calculate avg. T for a population; avg. discontent doesn’t matter
 - Big groups more likely to stand together (local X%)
 - Celebrities (people in front row, everyone sees them, they don’t see anyone) → wield large influence
 
-## Aggregation
+## 2.2. Aggregation
 
 Aggregation is tricky; “more is different” (can’t just look at individual parts). So, we model to get the logic correct. e.g. water is made of molecules, where wetness comes from the hydrogen bond; cognition comes from connected neurons.
 
@@ -170,19 +170,19 @@ Additional readings:
 - http://stattrek.com/probability-distributions/binomial.aspx
 - https://en.wikipedia.org/wiki/Six_Sigma 
 
-### Central Limit Theorem
+### 2.2.1. Central Limit Theorem
 
 [Aggregating actions or numbers] : If you add up many independent events with finite variance, the distribution should be bell-shaped with mean=N/2 for the binomial distribution (or mean=p*N, more generally) and sigma=sqrt(N)/2 for the binomial distribution (or sigma=sqrt(p(1-p)N), more generally).
 p(x > 6*sigma) = 3.4 in a million. In production processes, the six sigma approach means that you shoot for a sigma such that your likelihood of exceeding some specific tolerance is 3.4 in a million.
 
-### Game of Life
+### 2.2.2. Game of Life
 
 [Aggregating rules]  by John Conway, a mathematician in group theory:  
 Dead → Come alive if three of your neighbors are alive
 Alive → Die if you have fewer than two neighbors or more than three neighbors
 Results: Self-organization into complex patterns; emergence of distinct functional entities, e.g. f-pentomino, that can be used for computation
     
-### Cellular automata
+### 2.2.3. Cellular automata
     
 [Aggregating families of rules] , developed by John von Neumann and covered extensively in Wolfram, S. A New Kind of Science.
 For 1D cellular automata models, we can visualize them on a grid treating each row as an instance of time
@@ -191,20 +191,20 @@ Wolfram shows that 1D models, depending on their governing rules, exhibit all fo
 There are a total of 256 rules: 8 neighborhood states, 2 possible responses → 28 = 256
 Langton’s lamba: for a given set of rules, what % tell cells to switch on? e.g. ⅛ or ⅞
 
-### Aggregating preferences
+### 2.2.4. Aggregating preferences
 
 [Aggregating preferences] Politics and economics:  
 How do we represent preferences? Through inequalities: preference rankings/orderings
 How do we discern preferences? Revealed or stated
 Usually assume rational, transitive preferences, but even so collective preferences may be nontransitive (Condorcet paradox)
    
-## Individual human behavior
+## 2.3. Individual human behavior
     
 Murray Gell-Mann: “Imagine how difficult physics would be if electrons could think”; people=purposeful, diverse.
 
 “Three attributes of physical systems (1) simple parts (2) interacting in large numbers (3) that follow fixed rules render physical models amenable to mathematics … Systems that include people as actors– and these include ecological systems – lack the three attributes that produce regularity. The parts of these systems aren’t simple: People are sophisticated, multi-dimensional, and capable of a range of behaviors. We march to our own drummers. Further, though billions of people exist, we interact in small to moderate sized groups. Finally, we don’t follow the same fixed rules. Unlike carbon atoms, we learn. We adapt. We do crazy things.”
 
-### Rational 
+### 2.3.1. Rational 
 
 == optimizing agents who have goals; can be represented by objective function.
 Functions of form X(C-X) are optimized when C=X-C → C=X/2 
@@ -214,7 +214,7 @@ Games (multiplayer): payoff depends on what other people do. In this case, assum
 When are we likely to see rationality? When the stakes are large; when decisions are repeated; when groups of people make decisions (although other phenomena like groupthink can occur); or when a problem is particularly simple.
 Why is rationality an important assumption? It provides a unique and comparatively easy-to-calculate benchmark; as people learn, they tend towards rationality; and many variations cancel out (i.e., high variance but no bias).
 
-### Behavioral 
+### 2.3.2. Behavioral 
 
 == based on empirics; irrational in systematic ways; based on observations and neuroscience
 http://us.macmillan.com/thinkingfastandslow/danielkahneman
@@ -227,7 +227,7 @@ Base rate bias: If you get people thinking about one number and then ask them fo
 Hundreds of documented biases; but, themselves subject to criticisms as WEIRD (Western, educated, industrialized, rich, developed countries) rather than universal. 
 Can model as rational plus some relevant bias/es.
 
-### Rule-based
+### 2.3.3. Rule-based
 
 Assume that people follow rules/strategies
 Can apply fixed or adaptive rules in decision or game contexts
@@ -238,7 +238,7 @@ Rules can be easy to compute, good at capturing main effects; but create ‘peop
 For the sake of aggregate effects, when does individual behavior matter? Which model of people should we choose? “One of the reasons we models is to determine how much it matters how accurate our model is.” 
 “In markets, the institution itself has such an influence that we don’t worry about modeling behavior”; this was studied with zero intelligence agents (1,2), and they yield the same equilibrium price as rational agents.
 
-## Coordination & culture
+## 2.4. Coordination & culture
 
 Culture: http://www.worldvaluessurvey.org/WVSContents.jsp, http://geert-hofstede.com/national-culture.html  
 differences between groups and
@@ -248,7 +248,7 @@ interesting in some way, i.e., appearing suboptimal or confusing to outsiders.
 Culture is an n-person coordination game. In a coordination game, players receive payoffs when they choose the same action. An n-person coordination game can be modeled with a Lyapunov function, F(x)= # of coordinations, k=2. BUT, the process doesn’t have to stop with everyone being the same; you can get blocks of different behaviors. 
 Note that suboptimal equilibria are possible with coordination games
 
-### Axelrod’s culture model
+### 2.4.1. Axelrod’s culture model
 
 http://ccl.northwestern.edu/netlogo/models/community/Dissemination%20of%20Culture 
 Features: {1, 2, ..., N}
@@ -259,7 +259,7 @@ choose whether to interact based on some similarity threshold
 if they’re similar enough to interact, then they randomly select a feature and change their behavior to match their neighbor’s trait (if they don’t match already)
 → emergence of distinct cultures with thick boundaries
 
-### Coordination & consistency model
+### 2.4.2. Coordination & consistency model
 
 people don’t want to keep infinitely adjusting to people around them; they also have some consistency of worldview. The rule here is, adjust your own traits so they are more numerically similar with each other. → process takes a long time to converge, and small errors at the individual level lead to large population-level divergences. In the transition map below, if we add an error term that allows us to exit the red-red-red-red state of total consistency and coordination, then we suddenly have a Markov process and can represent the process with a transition matrix:
 
@@ -278,7 +278,7 @@ Desire for coordination
 Desire for consistency
 External change in what’s optimal, but system remains stuck at equilibrium
 
-### Prisoner's dilemma
+### 2.4.3. Prisoner's dilemma
 
 In Prisoner’s Dilemma, the incentive to defect must be less, on average, than the payoffs available for cooperation. Here are the constraints: T>R, 2T>F, F>T.
 
@@ -296,7 +296,7 @@ Kin selection where players are related, r, and care about it; rb>c is the const
 Laws or other prohibitions
 Creation of incentives
 
-### Collective action problems
+### 2.4.4. Collective action problems
 
 n-person Prisoner’s Dilemmas with payoff function for person j making action xj (note that xj’s action is counted as a cost and as a benefit scaled by β): -xj+i=1Nxi, 0 < xj, β < 1.
 Common pool resource problems: Rt+1=f(X,Rt) where X is the total consumed, sum of all xi.
@@ -304,7 +304,7 @@ What helps with collective action problems? The particulars matter; there’s no
 Clear ownership
 Rotation schemes
 
-## Diversity & innovation 
+## 2.5. Diversity & innovation 
 
 linked to prior discussion of  economic growth & role of innovation)
 
@@ -325,11 +325,11 @@ Big rocks first: when filling a bucket with rocks and sand
 Random search
 Neumann neighborhoods: look N,S,E,W
 
-### No free lunch thm 
+### 2.5.1. No free lunch thm 
 
 (Wolpert & McCready): all algorithms that search the same number of points with the goal of locating the maximum value of a function defined on a finite set, e.g., a landscape, perform exactly the same when averaged over all possible functions → You need to have some instinct for what heuristic suits which landscape; if you don’t know anything about the problem, then no heuristic is better
 
-### Collaborative problem-solving
+### 2.5.2. Collaborative problem-solving
 
 He uses ‘teams’ in a very loose sense; doesn’t need to be face-to-face or synchronous
 Ability: the avg value of all the peaks in your perspective
@@ -340,17 +340,17 @@ Missing from this model:
 Imperfect communication
 Error in interpreting the value of a solution
 
-### Recombination
+### 2.5.3. Recombination
 
 Martin Weitzman’s theory of recombinant economic growth
 Exaptation: when something developed for one purpose proves highly useful for another, e.g. feathers
 Joel Mokyr: gifts of Athena == technological developments that facilitate the exchange of ideas
 
-## Tipping points & diffusion
+## 2.6. Tipping points & diffusion
 
 “The straw that broke the camel’s back”; not an exponential growth pattern, but a moment when a small change comparable to other prior changes has a wildly disproportionate impact.
 
-### Percolation model (contextual)
+### 2.6.1. Percolation model (contextual)
 
 Each square in a grid has p probability of being permeable; water can move from the top to the bottom of the grid through adjacent permeable cells, but otherwise stops
 At some p ≈ .593, percolation happens (from top to bottom of the grid); this is the tipping point
@@ -359,9 +359,9 @@ Can be applied to banks/countries in a simple way, to see how failure spreads
 Can be applied to the spread of information, where p represents the ‘juciness’ of a rumor; this implies that we shouldn’t expect information to be spread in a linear way
 Can be used to explain the synchronicity of scientific discoveries, where p represents the accumulation of related knowledge and technologies: “Once we get above the threshold, there are many paths”
 
-### Contagion models 
+### 2.6.2. Contagion models 
 
-#### Diffusion
+#### 2.6.2.1. Diffusion
 
 not a tipping point!
 
@@ -378,7 +378,7 @@ p(meeting of healthy-infected pair will lead to a new infection): Dt/N * (N - Dt
 Dt + 1 = Dt + Dt/N * (N - Dt)/N * Nc * T
 Curve D = f(t) is sigmoidal, because initially, there are few people to spread the disease; and eventually, there are few healthy people to spread it to
 
-#### SIS 
+#### 2.6.2.2. SIS 
 
 tipping point!
 Susceptible-Infected-Susceptible
@@ -390,14 +390,14 @@ R0(measles) is about 15, although for this disease, we need to use the SIR model
 R0(flu) is about 3
 Implications for policy: for V is %N(vaccinated), we need V >= 1 - 1/R0
 
-### Classifying tipping points
+### 2.6.3. Classifying tipping points
 
 Active/direct: due to change in variable, i.e., an unstable equilibria in the phase plane
 Contextual: due to change in parameter/s, i.e. a shift of the phase portrait s.t. fixed points change
 Within-class tip, e.g. stable equilibrium to new stable equilibrium
 Between-class tip, e.g. oscillation to complexity
 
-### Measuring tipping points
+### 2.6.4. Measuring tipping points
 
 how big is the tip? how rare? “measure tippiness by changes in uncertainty”
 For p(A) + p(B) + … + p(N) = 1, the likelihood that any member of set A will another member of set A is
@@ -406,19 +406,19 @@ For p(A) + p(B) + … + p(N) = 1, the likelihood that any member of set A will a
 Entropy is -Σ p(i)*log2(p(i)). This tells us the number of bits of information we need to know to identify the outcome. I.e. for outcomes A,B,C,D, the questions are: is it in (A,B) or (C,D)? is it A?
 
 
-## Economic growth 
+## 2.7. Economic growth 
 
 Introduction to growth
 Growth discussed in terms of GDP per capita
 Correlation between GDP and life satisfaction: yes, more money makes you happy if you start poor
 
-### Exponential growth
+### 2.7.1. Exponential growth
 
 Compounding: Vt=V0(1+r)t
 Continuous compounding: Vt=V0ert, since lim n→ ∞ (1+r/n)nt = ert 
 Rule of 72: 72/r is approximately how long it will take GDP or a bank balance to double, where 0.08 interest rate means r=8 ⇒ even small changes in annual growth rate matter
 
-### Basic growth model 
+### 2.7.2. Basic growth model 
 
 (capital investment, capital depreciation)
 
@@ -437,7 +437,7 @@ Capital can accumulate, but depreciates: Kt+1 = Kt + It - dKt
 Result: long-run equilibrium occurs where investment = depreciation
 Growth eventually stops because output is concave while depreciation is linear
 
-### Solow growth model 
+### 2.7.3. Solow growth model 
 
 (capital investment, capital depreciation, innovation)
 Same variables as in basic growth model, adding only: 
@@ -468,9 +468,9 @@ Other applications of this model: for growth of ‘personal GDP’, pursue innov
 
 
    
-# Models using ...
+# 3. Models using ...
 
-## Linear regression
+## 3.1. Linear regression
 
 Linear models, not the same thing as a line; y=f(x), a causal relationships; line of best fit; reading regression output
 http://www.niaoren.info/pdf/Beauty/9.pdf & other studies, experts never did better at prediction than simple linear models
@@ -487,7 +487,7 @@ vs The New Reality: trying to create a better world, which necessarily means dep
 e.g. Big Coefficient thinking = tax cigarettes, New Reality thinking = universal health care
 
 
-## Markov processes
+## 3.2. Markov processes
 
 A particularly fertile model that captures dynamic processes between a finite and fixed set of states. It must be possible to get from any one state to any other and the probabilities of moving between states (transition probabilities) must remain fixed over time. If those assumptions hold, then the process will have a unique equilibrium (i.e., initial state doesn’t matter; history doesn’t matter; interventions/perturbations don’t matter).
 
@@ -501,7 +501,7 @@ Voter turnout, school attendance, student attentiveness, regime transitions
 Identification of authors: make a transition matrix of key phrases; how often is the word “for” followed by “the record”, “example”, “the sake of”?
 
 
-## Lyapunov functions
+## 3.3. Lyapunov functions
 
 If we can represent a system/model with a Lyapunov function, then we know it goes to equilibrium and we also know how quickly it does that. A system with equilibrium behavior can lack Lyapunov representation.
 
@@ -520,7 +520,7 @@ Even if a system has an equilibrium, we can’t necessarily determine that it do
 
 Difference between Lyapunov processes (reaches an equilibrium that need not be unique or efficient) and Markov processes (stochastic equilibrium that doesn’t depend on initial conditions).
 
-## Path dependence
+## 3.4. Path dependence
 
 What is path dependence?
 Path dependence=the sequence of previous outcomes matter
@@ -545,7 +545,7 @@ Balancing process (phat dependent; outcome dependent, equilibrium independent): 
 Sway process (path dependent): In period t, add a ball of the same color as the selected ball and add (2t-s - 2t-s-1) balls of the color chosen in each period s<t. Result: the past takes on more weight over time.
 
 
-## Networks
+## 3.5. Networks
 
 Internet has made networks more visible and measurable; popular and scientific interest has increased. Networks have been used to examine segregation; information flow within organizations (e.g. email traffic patterns); link patterns among blogs to demonstrate political polarization; intellectual traditions, citation patterns, etc.
 https://flowingdata.com/category/visualization/network-visualization/
@@ -585,7 +585,7 @@ Internet is extremely robust against random failure, but not targeted failure (o
 Helps identify who to vaccinate (more targeted than SIS model)
 
 
-## Randomness
+## 3.6. Randomness
 
 Randomness is a quality of a variable. We want to know two things: What is the source of the randomness, i.e. the error term? What is the distribution of the randomness?
 
@@ -604,9 +604,9 @@ http://books.wwnorton.com/books/978-0-393-24611-7/
 But, there is too much fluctuation in stock prices, and there are consistent winners, e.g. Warren Buffett. 
 Finite memory random walk: VT=XT + XT-1 + … XT-n 
 
-## Game theory
+## 3.7. Game theory
 
-### Colonel Blotto
+### 3.7.1. Colonel Blotto
 
 CB is about strategic mismatch and allocation of resources, e.g. as of opposing troops forming battle fronts. One of two models, the other being Prisoner’s Dilemma, that brought game theory into policy settings.
 
@@ -622,7 +622,7 @@ Model where many players compete: Can have nontransitive victories → Lots of c
 Applications of this model: US Electoral College, terrorism, trials, hiring
 
 
-## Replicators
+## 3.8. Replicators
 
 Used in psychology, to model learning; in economics, to model populations of people learning; and in ecology, to model evolution. In a nutshell, there is a distribution containing types, and the distribution is shifting in response to the payoffs that each type experiences. The dynamics of the model offer commentary on the strategies of (1) copying the most common strategy and (2) copying the most successful strategy. Elements of model:
 Set of types, {1, 2, 3, … N}
@@ -638,16 +638,16 @@ The tricky part here is calculating weights, since payoffs can vary with actions
 Fisher’s fundamental theorem: Higher variance increases rate of evolutionary adaptation. Can examine this by taking the average of each generation of low-variation and high-variation populations. Seems to run counter to Six Sigma! But SS is for a fixed problemscape, while Fisher’s is for complex systems.
 
 
-# Sources
+# 4. Sources
 
-## References
+## 4.1. References
 
-## Read
+## 4.2. Read
 
 - [Qualitative analysis](http://www.sosmath.com/diffeq/system/qualitative/qualitative.html)
 - [<i>Dynamic models in biology</i>&nbsp;](https://people.cam.cornell.edu/~dmb/DMBsupplements.html)
 
-## Unread
+## 4.3. Unread
 
 - [11 important model evaluation techniques](http://www.datasciencecentral.com/profiles/blogs/7-important-model-evaluation-error-metrics-everyone-should-know)
 - [Prediction vs extrapolation vs interpolation](http://www.datasciencecentral.com/forum/topics/what-are-the-differences-between-prediction-extrapolation-and)

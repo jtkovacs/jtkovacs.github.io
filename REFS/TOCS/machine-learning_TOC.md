@@ -1,10 +1,10 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/machine-learning.html">https://jtkovacs.github.io/REFS/HTML/machine-learning.html</a></p><table class="TOC"><tr><td>- [Sources](#sources)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> machine learning | nearly 241 words | updated 05/16/2017</p><div class="TOC">- 1. [Sources](#sources)
+	- 1.1. [Unread](#unread)
+</div>
 
-# Sources
+# 1. Sources
 
-## Unread
+## 1.1. Unread
 
 - [Coursera - Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
 - [Top 10 Data Mining Algorithms in Plain English](http://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/)

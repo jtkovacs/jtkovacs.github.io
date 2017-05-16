@@ -5,8 +5,9 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | Bash
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
    div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
@@ -44,134 +45,154 @@ code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Ann
 code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/Bash.html">
-    https://jtkovacs.github.io/REFS/HTML/Bash.html
-   </a>
-   &gt; 2409 words
+   &gt; Bash | nearly 2409 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
       <li>
        <a href="#bash-basics">
         Bash basics
        </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       1.1.
+       <a href="#what-is-bash">
+        What is Bash?
+       </a>
+      </li>
+      <li>
+       1.2.
+       <a href="#set-up-bash">
+        Set up Bash
+       </a>
+      </li>
+      <li>
+       1.3.
+       <a href="#manage-system">
+        Manage system
+       </a>
        <ul>
         <li>
-         <a href="#what-is-bash?">
-          What is Bash?
-         </a>
-        </li>
-        <li>
-         <a href="#set-up-bash">
-          Set up Bash
-         </a>
-        </li>
-        <li>
-         <a href="#manage-system">
-          Manage system
-         </a>
-         <ul>
-          <li>
-           <a href="#get-more-information">
-            Get more information
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#navigate-filesystem">
-          Navigate filesystem
-         </a>
-         <ul>
-          <li>
-           <a href="#manipulate-filesystem">
-            Manipulate filesystem
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="#manage-permissions">
-          Manage permissions
-         </a>
-        </li>
-        <li>
-         <a href="#chain-and-redirect">
-          Chain and redirect
+         1.3.1.
+         <a href="#get-more-information">
+          Get more information
          </a>
         </li>
        </ul>
       </li>
+      <li>
+       1.4.
+       <a href="#navigate-filesystem">
+        Navigate filesystem
+       </a>
+       <ul>
+        <li>
+         1.4.1.
+         <a href="#manipulate-filesystem">
+          Manipulate filesystem
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       1.5.
+       <a href="#manage-permissions">
+        Manage permissions
+       </a>
+      </li>
+      <li>
+       1.6.
+       <a href="#chain-and-redirect">
+        Chain and redirect
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
       <li>
        <a href="#bash-recipes">
         Bash recipes
        </a>
-       <ul>
-        <li>
-         <a href="#write,-read,-print">
-          Write, read, print
-         </a>
-        </li>
-        <li>
-         <a href="#find-and-regex">
-          Find and regex
-         </a>
-        </li>
-        <li>
-         <a href="#calculate-and-analyze">
-          Calculate and analyze
-         </a>
-        </li>
-        <li>
-         <a href="#combine-and-split-files">
-          Combine and split files
-         </a>
-        </li>
-       </ul>
       </li>
+     </ol>
+     <ul>
+      <li>
+       2.1.
+       <a href="#write-read-print">
+        Write, read, print
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#find-and-regex">
+        Find and regex
+       </a>
+      </li>
+      <li>
+       2.3.
+       <a href="#calculate-and-analyze">
+        Calculate and analyze
+       </a>
+      </li>
+      <li>
+       2.4.
+       <a href="#combine-and-split-files">
+        Combine and split files
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="3" style="list-style-type: decimal">
       <li>
        <a href="#sources">
         Sources
        </a>
-       <ul>
-        <li>
-         <a href="#references">
-          References
-         </a>
-        </li>
-        <li>
-         <a href="#read">
-          Read
-         </a>
-        </li>
-        <li>
-         <a href="#unread">
-          Unread
-         </a>
-        </li>
-       </ul>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       3.1.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       3.3.
+       <a href="#unread">
+        Unread
+       </a>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="bash-basics">
-    Bash basics
+    </li>
+   </ul>
+  </div>
+  <h1 id="bash-basics">
+   <a>
+    1. Bash basics
    </a>
   </h1>
-  <h2>
-   <a name="what-is-bash?">
-    What is Bash?
+  <h2 id="what-is-bash">
+   <a>
+    1.1. What is Bash?
    </a>
   </h2>
   <p>
@@ -263,9 +284,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co"># ^y to yank (paste)</span>
 <span class="co"># q to quit (sometimes)</span></code></pre>
   </div>
-  <h2>
-   <a name="set-up-bash">
-    Set up Bash
+  <h2 id="set-up-bash">
+   <a>
+    1.2. Set up Bash
    </a>
   </h2>
   <p>
@@ -321,9 +342,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">export</span> <span class="ot">USER</span> <span class="ot">=</span> <span class="st">"user_name"</span>  <span class="co"># type in .bash_profile to create environment variable</span>
 <span class="kw">echo</span> <span class="ot">$USER</span>  <span class="co"># print environment variable</span></code></pre>
   </div>
-  <h2>
-   <a name="manage-system">
-    Manage system
+  <h2 id="manage-system">
+   <a>
+    1.3. Manage system
    </a>
   </h2>
   <div class="sourceCode">
@@ -349,9 +370,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">systemd-analyze-blame</span>
 <span class="kw">Df</span> -h, checks disk space and partition usage</code></pre>
   </div>
-  <h3>
-   <a name="get-more-information">
-    Get more information
+  <h3 id="get-more-information">
+   <a>
+    1.3.1. Get more information
    </a>
   </h3>
   <div class="sourceCode">
@@ -376,9 +397,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">whatis</span> command_name  <span class="co"># one-line man page summary</span>
 <span class="co"># ^R to 'reverse-i-search' the command history</span></code></pre>
   </div>
-  <h2>
-   <a name="navigate-filesystem">
-    Navigate filesystem
+  <h2 id="navigate-filesystem">
+   <a>
+    1.4. Navigate filesystem
    </a>
   </h2>
   <p>
@@ -462,9 +483,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">ls</span> -R  <span class="co"># list all content in working directory, including content in subdirectories </span>
 <span class="kw">find</span>  <span class="co"># list all files contained in the working directory and its subdirectories; same as ls -aR</span></code></pre>
   </div>
-  <h3>
-   <a name="manipulate-filesystem">
-    Manipulate filesystem
+  <h3 id="manipulate-filesystem">
+   <a>
+    1.4.1. Manipulate filesystem
    </a>
   </h3>
   <p>
@@ -521,9 +542,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">rmdir</span> dirname  <span class="co"># deletes directory IF empty</span>
 <span class="kw">rm</span> -R dirname  <span class="co"># delete directory and its contents</span></code></pre>
   </div>
-  <h2>
-   <a name="manage-permissions">
-    Manage permissions
+  <h2 id="manage-permissions">
+   <a>
+    1.5. Manage permissions
    </a>
   </h2>
   <p>
@@ -570,9 +591,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">chmod</span> o-w filename  <span class="co"># revoke others' write permission</span>
 <span class="kw">chown</span> <span class="kw">&lt;</span>new_username<span class="kw">&gt;</span>:<span class="kw">&lt;</span>new_groupname<span class="kw">&gt;</span> filename  <span class="co"># change ownership</span></code></pre>
   </div>
-  <h2>
-   <a name="chain-and-redirect">
-    Chain and redirect
+  <h2 id="chain-and-redirect">
+   <a>
+    1.6. Chain and redirect
    </a>
   </h2>
   <p>
@@ -625,14 +646,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">cat</span> <span class="kw">&lt;</span> file  <span class="co"># display file by rdct to cat's stdin; same as &gt;&gt; cat file</span>
 <span class="kw">cat</span> file <span class="kw">|</span> <span class="kw">less</span>  <span class="co"># display large files by rdct cat's stdout to less's stdin</span></code></pre>
   </div>
-  <h1>
-   <a name="bash-recipes">
-    Bash recipes
+  <h1 id="bash-recipes">
+   <a>
+    2. Bash recipes
    </a>
   </h1>
-  <h2>
-   <a name="write,-read,-print">
-    Write, read, print
+  <h2 id="write-read-print">
+   <a>
+    2.1. Write, read, print
    </a>
   </h2>
   <div class="sourceCode">
@@ -665,9 +686,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">lprm</span> jobnum  <span class="co"># delete specified job from print queue</span>
 <span class="kw">lprm</span> -  <span class="co"># delete all jobs from print queue, subject to user permissions</span></code></pre>
   </div>
-  <h2>
-   <a name="find-and-regex">
-    Find and regex
+  <h2 id="find-and-regex">
+   <a>
+    2.2. Find and regex
    </a>
   </h2>
   <div class="sourceCode">
@@ -695,9 +716,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">cp</span> b?t.txt dirname  <span class="co"># copy all files with exactly one character between 'b' and 't.txt'</span>
 <span class="kw">cp</span> b??t.txt dirname  <span class="co"># copy all files with exactly two characters between 'b' and 't.txt'</span></code></pre>
   </div>
-  <h2>
-   <a name="calculate-and-analyze">
-    Calculate and analyze
+  <h2 id="calculate-and-analyze">
+   <a>
+    2.3. Calculate and analyze
    </a>
   </h2>
   <div class="sourceCode">
@@ -725,9 +746,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">sed</span> <span class="st">'s/search_string/replace_string/g'</span> file.txt  <span class="co"># find and replace all occurrences</span>
 <span class="kw">diff</span> file1 file2  <span class="co"># get differences between files</span></code></pre>
   </div>
-  <h2>
-   <a name="combine-and-split-files">
-    Combine and split files
+  <h2 id="combine-and-split-files">
+   <a>
+    2.4. Combine and split files
    </a>
   </h2>
   <div class="sourceCode">
@@ -739,14 +760,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co"># -l linenumber</span>
 <span class="co"># -b bytes</span></code></pre>
   </div>
-  <h1>
-   <a name="sources">
-    Sources
+  <h1 id="sources">
+   <a>
+    3. Sources
    </a>
   </h1>
-  <h2>
-   <a name="references">
-    References
+  <h2 id="references">
+   <a>
+    3.1. References
    </a>
   </h2>
   <ul>
@@ -781,9 +802,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="read">
-    Read
+  <h2 id="read">
+   <a>
+    3.2. Read
    </a>
   </h2>
   <ul>
@@ -814,8 +835,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <h2>
-   <a name="unread">
-    Unread
+   <a name="3.3.-unread">
+    3.3. Unread
    </a>
   </h2>
   <ul>

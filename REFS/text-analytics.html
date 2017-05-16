@@ -5,8 +5,9 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | text analytics
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
    div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
@@ -44,67 +45,74 @@ code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Ann
 code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/text-analytics.html">
-    https://jtkovacs.github.io/REFS/HTML/text-analytics.html
-   </a>
+   &gt; text analytics | nearly 566 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
       <li>
        <a href="#text-analytics-in-python">
         Text analytics in Python
        </a>
-       <ul>
-        <li>
-         <a href="#manage-punctuation,-case,-&amp;-whitespace">
-          Manage punctuation, case, &amp; whitespace
-         </a>
-        </li>
-        <li>
-         <a href="#search-&amp;-regex">
-          Search &amp; regex
-         </a>
-        </li>
-       </ul>
       </li>
+     </ol>
+     <ul>
+      <li>
+       1.1.
+       <a href="#manage-punctuation-case-whitespace">
+        Manage punctuation, case, &amp; whitespace
+       </a>
+      </li>
+      <li>
+       1.2.
+       <a href="#search-regex">
+        Search &amp; regex
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
       <li>
        <a href="#sources">
         Sources
        </a>
-       <ul>
-        <li>
-         <a href="#references">
-          References
-         </a>
-        </li>
-        <li>
-         <a href="#read">
-          Read
-         </a>
-        </li>
-        <li>
-         <a href="#unread">
-          Unread
-         </a>
-        </li>
-       </ul>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       2.1.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       2.3.
+       <a href="#unread">
+        Unread
+       </a>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="text-analytics-in-python">
-    Text analytics in Python
+    </li>
+   </ul>
+  </div>
+  <h1 id="text-analytics-in-python">
+   <a>
+    1. Text analytics in Python
    </a>
   </h1>
   <div class="sourceCode">
@@ -117,9 +125,9 @@ str_name.replace(‘this’,’with this’)
 <span class="co"># times element occurs: </span>
 <span class="bu">list</span>.count(‘em_name’) makes <span class="bu">tuple</span> <span class="cf">with</span> (index,value): <span class="bu">enumerate</span>(my_list) </code></pre>
   </div>
-  <h2>
-   <a name="manage-punctuation,-case,-&amp;-whitespace">
-    Manage punctuation, case, &amp; whitespace
+  <h2 id="manage-punctuation-case-whitespace">
+   <a>
+    1.1. Manage punctuation, case, &amp; whitespace
    </a>
   </h2>
   <div class="sourceCode">
@@ -138,9 +146,9 @@ my_string.strip(<span class="st">'chars'</span>)
 my_string.lstrip()
 my_string.rstrip()</code></pre>
   </div>
-  <h2>
-   <a name="search-&amp;-regex">
-    Search &amp; regex
+  <h2 id="search-regex">
+   <a>
+    1.2. Search &amp; regex
    </a>
   </h2>
   <div class="sourceCode">
@@ -248,14 +256,14 @@ my_var.group_dict()
 my_var.group(‘group_name’)
 my_var.group(<span class="dv">1</span>)</code></pre>
   </div>
-  <h1>
-   <a name="sources">
-    Sources
+  <h1 id="sources">
+   <a>
+    2. Sources
    </a>
   </h1>
-  <h2>
-   <a name="references">
-    References
+  <h2 id="references">
+   <a>
+    2.1. References
    </a>
   </h2>
   <ul>
@@ -280,9 +288,9 @@ my_var.group(<span class="dv">1</span>)</code></pre>
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="read">
-    Read
+  <h2 id="read">
+   <a>
+    2.2. Read
    </a>
   </h2>
   <ul>
@@ -293,8 +301,8 @@ my_var.group(<span class="dv">1</span>)</code></pre>
    </li>
   </ul>
   <h2>
-   <a name="unread">
-    Unread
+   <a name="2.3.-unread">
+    2.3. Unread
    </a>
   </h2>
   <ul>

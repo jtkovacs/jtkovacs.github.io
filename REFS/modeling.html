@@ -5,129 +5,127 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | modeling
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
   <p class="path">
-   <a href="../../pkb.html">
-    PKB CONTENTS
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt; TITLE | 1370 words, updated 05/15/2017
+   &gt; modeling | nearly 1370 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
+      <li>
+       <a href="#overview-of-modeling">
+        Overview of modeling
+       </a>
+      </li>
+     </ol>
      <ul>
       <li>
-       <ol style="list-style-type: decimal">
-        <li>
-         <a href="#overview-of-modeling">
-          Overview of modeling
-         </a>
-        </li>
-       </ol>
-       <ul>
-        <li>
-         1.1.
-         <a href="#why-model">
-          Why model?
-         </a>
-        </li>
-        <li>
-         1.2.
-         <a href="#model-typologies">
-          Model typologies
-         </a>
-        </li>
-       </ul>
+       1.1.
+       <a href="#why-model">
+        Why model?
+       </a>
       </li>
       <li>
-       <ol start="2" style="list-style-type: decimal">
-        <li>
-         <a href="#models-by-form-and-notation">
-          Models by form and notation
-         </a>
-        </li>
-       </ol>
-       <ul>
-        <li>
-         2.1.
-         <a href="#flow-charts">
-          Flow charts
-         </a>
-         <ul>
-          <li>
-           2.1.1.
-           <a href="#nassi-schneiderman-n-s-diagram">
-            Nassi-Schneiderman (N-S) diagram
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         2.2.
-         <a href="#entity-relationship-diagrams">
-          Entity-relationship diagrams
-         </a>
-         <ul>
-          <li>
-           2.2.1.
-           <a href="#erds-for-databases">
-            ERDs for databases
-           </a>
-           <ul>
-            <li>
-             2.2.1.1.
-             <a href="#bachmanncrows-foot-notation">
-              Bachmann/crow's foot notation
-             </a>
-            </li>
-            <li>
-             2.2.1.2.
-             <a href="#uml-notation">
-              UML notation
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           2.2.2.
-           <a href="#data-flow-diagrams">
-            Data flow diagrams
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         2.3.
-         <a href="#object-oriented-modeling">
-          Object-oriented modeling
-         </a>
-         <ul>
-          <li>
-           2.3.1.
-           <a href="#activity-diagrams">
-            Activity diagrams
-           </a>
-          </li>
-         </ul>
-        </li>
-       </ul>
-      </li>
-      <li>
-       <ol start="3" style="list-style-type: decimal">
-        <li>
-         <a href="#sources">
-          Sources
-         </a>
-        </li>
-       </ol>
+       1.2.
+       <a href="#model-typologies">
+        Model typologies
+       </a>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
+      <li>
+       <a href="#models-by-form-and-notation">
+        Models by form and notation
+       </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       2.1.
+       <a href="#flow-charts">
+        Flow charts
+       </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#nassi-schneiderman-n-s-diagram">
+          Nassi-Schneiderman (N-S) diagram
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
+       <a href="#entity-relationship-diagrams">
+        Entity-relationship diagrams
+       </a>
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#erds-for-databases">
+          ERDs for databases
+         </a>
+         <ul>
+          <li>
+           2.2.1.1.
+           <a href="#bachmanncrows-foot-notation">
+            Bachmann/crow's foot notation
+           </a>
+          </li>
+          <li>
+           2.2.1.2.
+           <a href="#uml-notation">
+            UML notation
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         2.2.2.
+         <a href="#data-flow-diagrams">
+          Data flow diagrams
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.3.
+       <a href="#object-oriented-modeling">
+        Object-oriented modeling
+       </a>
+       <ul>
+        <li>
+         2.3.1.
+         <a href="#activity-diagrams">
+          Activity diagrams
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="3" style="list-style-type: decimal">
+      <li>
+       <a href="#sources">
+        Sources
+       </a>
+      </li>
+     </ol>
+    </li>
+   </ul>
+  </div>
   <p>
    <em>
     The following notes are largely based on Steirn (1999) and
@@ -512,7 +510,7 @@
    </strong>
   </p>
   <p>
-   <img src="../ILLOS/N-S-diagram.png" width="250px"/>
+   <img src="ILLOS/N-S-diagram.png" width="250px"/>
   </p>
   <h2 id="entity-relationship-diagrams">
    <a>
@@ -605,10 +603,10 @@
    Entity A is on the left, entity B is on the right. They are connected with an annotated line. Annotations on the right side of the line describe how A relates to B: for a single row in A, how many rows minimum and how many rows maximum could appear in B? Annotations on the left side of the line describe how B relates to A: for a single row in B, how many rows could appear in A?
   </p>
   <p>
-   <img align="left" src="../ILLOS/crowsfoot.gif" width="350px"/>
+   <img align="left" src="ILLOS/crowsfoot.gif" width="350px"/>
   </p>
   <p>
-   <img src="../ILLOS/EERD.png" style="padding-bottom:60px;" width="280px"/>
+   <img src="ILLOS/EERD.png" style="padding-bottom:60px;" width="280px"/>
   </p>
   <h4 id="uml-notation">
    <a>
@@ -622,7 +620,7 @@
    </a>
   </p>
   <p>
-   <img src="../ILLOS/UML-EERD.png" width="450px"/>
+   <img src="ILLOS/UML-EERD.png" width="450px"/>
   </p>
   <h3 id="data-flow-diagrams">
    <a>
@@ -659,7 +657,7 @@
    </li>
   </ul>
   <div class="figure">
-   <img src="../ILLOS/DFD.jpg"/>
+   <img src="ILLOS/DFD.jpg"/>
   </div>
   <h2 id="object-oriented-modeling">
    <a>
@@ -783,7 +781,7 @@
    </li>
   </ul>
   <p>
-   <img src="../ILLOS/activity-diagram.jpg" width="580px"/>
+   <img src="ILLOS/activity-diagram.jpg" width="580px"/>
   </p>
   <h1>
    <a name="3.-sources">

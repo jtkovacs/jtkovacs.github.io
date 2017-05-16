@@ -5,8 +5,9 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | wrangling
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
    div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
@@ -44,75 +45,82 @@ code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Ann
 code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/wrangling.html">
-    https://jtkovacs.github.io/REFS/HTML/wrangling.html
-   </a>
-   &gt; 1156 words
+   &gt; wrangling | nearly 1156 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
       <li>
-       <a href="#obtaining-data-aka-i/o">
+       <a href="#obtaining-data-aka-io">
         Obtaining data AKA I/O
        </a>
-       <ul>
-        <li>
-         <a href="#...-in-r">
-          ... in R
-         </a>
-        </li>
-        <li>
-         <a href="#...-in-python">
-          ... in Python
-         </a>
-         <ul>
-          <li>
-           <a href="#...-integrate-database-via-peewee-orm">
-            ... integrate database via Peewee ORM
-           </a>
-          </li>
-         </ul>
-        </li>
-       </ul>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       1.1.
+       <a href="#...-in-r">
+        ... in R
+       </a>
       </li>
       <li>
-       <a href="#cleaning-data">
-        Cleaning data
+       1.2.
+       <a href="#...-in-python">
+        ... in Python
        </a>
        <ul>
         <li>
-         <a href="#dirty-data-typologies">
-          Dirty data typologies
-         </a>
-        </li>
-        <li>
-         <a href="#...-in-r">
-          ... in R
-         </a>
-        </li>
-        <li>
-         <a href="#...-in-python">
-          ... in Python
+         1.2.1.
+         <a href="#...-integrate-database-via-peewee-orm">
+          ... integrate database via Peewee ORM
          </a>
         </li>
        </ul>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="obtaining-data-aka-i/o">
-    Obtaining data AKA I/O
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
+      <li>
+       <a href="#cleaning-data">
+        Cleaning data
+       </a>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       2.1.
+       <a href="#dirty-data-typologies">
+        Dirty data typologies
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#...-in-r">
+        ... in R
+       </a>
+      </li>
+      <li>
+       2.3.
+       <a href="#...-in-python">
+        ... in Python
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1 id="obtaining-data-aka-io">
+   <a>
+    1. Obtaining data AKA I/O
    </a>
   </h1>
   <ul>
@@ -127,14 +135,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="...-in-r">
-    ... in R
+  <h2 id="in-r">
+   <a>
+    1.1. ... in R
    </a>
   </h2>
-  <h2>
-   <a name="...-in-python">
-    ... in Python
+  <h2 id="in-python">
+   <a>
+    1.2. ... in Python
    </a>
   </h2>
   <div class="sourceCode">
@@ -259,9 +267,9 @@ json.dumps(my_list)
 <span class="cf">with</span> <span class="bu">open</span>(‘filename.json’, ‘a’) <span class="im">as</span> my_file:
 json.dump(list_of_dicts, my_file)</code></pre>
   </div>
-  <h3>
-   <a name="...-integrate-database-via-peewee-orm">
-    ... integrate database via Peewee ORM
+  <h3 id="integrate-database-via-peewee-orm">
+   <a>
+    1.2.1. ... integrate database via Peewee ORM
    </a>
   </h3>
   <div class="sourceCode">
@@ -310,22 +318,22 @@ db.close()
 menu <span class="op">=</span> OrderedDict([(‘a’, ‘add_entry’), (‘v’, ‘view_entries’)])
 returns doc string <span class="cf">for</span> function: function_name.__doc__</code></pre>
   </div>
-  <h1>
-   <a name="cleaning-data">
-    Cleaning data
+  <h1 id="cleaning-data">
+   <a>
+    2. Cleaning data
    </a>
   </h1>
-  <h2>
-   <a name="dirty-data-typologies">
-    Dirty data typologies
+  <h2 id="dirty-data-typologies">
+   <a>
+    2.1. Dirty data typologies
    </a>
   </h2>
   <p>
    Searching, counting, ranking, grouping, handling whitespace
   </p>
-  <h2>
-   <a name="...-in-r">
-    ... in R
+  <h2 id="in-r-1">
+   <a>
+    2.2. ... in R
    </a>
   </h2>
   <ul>
@@ -442,8 +450,8 @@ subset[my_df, condition]
 <span class="co"># ==, &gt;, &gt;=, !=, |, &amp;</span></code></pre>
   </div>
   <h2>
-   <a name="...-in-python">
-    ... in Python
+   <a name="2.3.-...-in-python">
+    2.3. ... in Python
    </a>
   </h2>
   <ul>

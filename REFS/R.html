@@ -5,8 +5,9 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
+   jtkovacs.github.io | R
   </title>
-  <link href="refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
    div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
@@ -44,112 +45,143 @@ code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Ann
 code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
+  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
-  <p id="path">
-   <a href="../../pkb.html">
-    https://jtkovacs.github.io/pkb.html
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
    </a>
-   &gt;
-   <a href="https://jtkovacs.github.io/REFS/HTML/R.html">
-    https://jtkovacs.github.io/REFS/HTML/R.html
-   </a>
+   &gt; R | nearly 1253 words | updated 05/16/2017
   </p>
-  <table class="TOC">
-   <tr>
-    <td>
-     <ul>
+  <div class="TOC">
+   <ul>
+    <li>
+     <ol style="list-style-type: decimal">
       <li>
        <a href="#environment">
         Environment
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="2" style="list-style-type: decimal">
       <li>
        <a href="#conventions">
         Conventions
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="3" style="list-style-type: decimal">
       <li>
        <a href="#get-more-information">
         Get more information
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="4" style="list-style-type: decimal">
       <li>
        <a href="#datatypes">
         Datatypes
        </a>
-       <ul>
-        <li>
-         <a href="#vectors">
-          Vectors
-         </a>
-        </li>
-        <li>
-         <a href="#lists">
-          Lists
-         </a>
-        </li>
-        <li>
-         <a href="#factors">
-          Factors
-         </a>
-        </li>
-        <li>
-         <a href="#matrices">
-          Matrices
-         </a>
-        </li>
-        <li>
-         <a href="#dataframes">
-          Dataframes
-         </a>
-        </li>
-        <li>
-         <a href="#datetimes">
-          Datetimes
-         </a>
-        </li>
-       </ul>
       </li>
+     </ol>
+     <ul>
+      <li>
+       4.1.
+       <a href="#vectors">
+        Vectors
+       </a>
+      </li>
+      <li>
+       4.2.
+       <a href="#lists">
+        Lists
+       </a>
+      </li>
+      <li>
+       4.3.
+       <a href="#factors">
+        Factors
+       </a>
+      </li>
+      <li>
+       4.4.
+       <a href="#matrices">
+        Matrices
+       </a>
+      </li>
+      <li>
+       4.5.
+       <a href="#dataframes">
+        Dataframes
+       </a>
+      </li>
+      <li>
+       4.6.
+       <a href="#datetimes">
+        Datetimes
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <ol start="5" style="list-style-type: decimal">
       <li>
        <a href="#control-flow">
         Control flow
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="6" style="list-style-type: decimal">
       <li>
-       <a href="#functions-&amp;-fp">
+       <a href="#functions-fp">
         Functions &amp; FP
        </a>
       </li>
+     </ol>
+    </li>
+    <li>
+     <ol start="7" style="list-style-type: decimal">
       <li>
        <a href="#sources">
         Sources
        </a>
-       <ul>
-        <li>
-         <a href="#references">
-          References
-         </a>
-        </li>
-        <li>
-         <a href="#read">
-          Read
-         </a>
-        </li>
-        <li>
-         <a href="#unread">
-          Unread
-         </a>
-        </li>
-       </ul>
+      </li>
+     </ol>
+     <ul>
+      <li>
+       7.1.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       7.2.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       7.3.
+       <a href="#unread">
+        Unread
+       </a>
       </li>
      </ul>
-    </td>
-   </tr>
-  </table>
-  <h1>
-   <a name="environment">
-    Environment
+    </li>
+   </ul>
+  </div>
+  <h1 id="environment">
+   <a>
+    1. Environment
    </a>
   </h1>
   <p>
@@ -172,9 +204,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">require</span>(<span class="st">"package_name"</span>)  <span class="co"># loads packages, but with warning messages and protections</span>
 <span class="co"># working w/ packages: http://faculty.washington.edu/kenrice/rintro/sess08.pdf</span></code></pre>
   </div>
-  <h1>
-   <a name="conventions">
-    Conventions
+  <h1 id="conventions">
+   <a>
+    2. Conventions
    </a>
   </h1>
   <ul>
@@ -198,9 +230,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co"># when evaluating vectors, &amp;&amp; and || evaluate only the first element</span>
 <span class="co"># relational: &gt;, &gt;=, !=,==</span></code></pre>
   </div>
-  <h1>
-   <a name="get-more-information">
-    Get more information
+  <h1 id="get-more-information">
+   <a>
+    3. Get more information
    </a>
   </h1>
   <div class="sourceCode">
@@ -219,14 +251,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">summary</span>(my_data)  <span class="co"># 5 number summary from stats</span>
 <span class="kw">ls</span>(my_data)</code></pre>
   </div>
-  <h1>
-   <a name="datatypes">
-    Datatypes
+  <h1 id="datatypes">
+   <a>
+    4. Datatypes
    </a>
   </h1>
-  <h2>
-   <a name="vectors">
-    Vectors
+  <h2 id="vectors">
+   <a>
+    4.1. Vectors
    </a>
   </h2>
   <p>
@@ -247,9 +279,9 @@ my_vector[my_vector&gt;<span class="dv">2</span>]
 <span class="co"># NA: the absence of values inside a vector</span>
 <span class="kw">is.na</span>(my_vec) --&gt;<span class="st"> </span>returns logical vector</code></pre>
   </div>
-  <h2>
-   <a name="lists">
-    Lists
+  <h2 id="lists">
+   <a>
+    4.2. Lists
    </a>
   </h2>
   <p>
@@ -274,9 +306,9 @@ new_list &lt;-<span class="st"> </span><span class="kw">c</span>(my_list, <span 
 extended_list &lt;-<span class="st"> </span><span class="kw">c</span>(my_list, <span class="kw">list</span>(item))  <span class="co"># add new list to list-of-lists</span>
 list addressing:<span class="st"> </span>[ extracts a sublist, [[ or $<span class="st"> </span>extract a value</code></pre>
   </div>
-  <h2>
-   <a name="factors">
-    Factors
+  <h2 id="factors">
+   <a>
+    4.3. Factors
    </a>
   </h2>
   <p>
@@ -294,9 +326,9 @@ my_fac &lt;-<span class="st"> </span><span class="kw">factor</span>(my_vec, <spa
 <span class="kw">levels</span>(my_vec)  <span class="co"># view factor levels</span>
 <span class="kw">levels</span>(my_vec) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">"name"</span>, ..., <span class="st">"name"</span>)  <span class="co"># (re)name factor levels</span></code></pre>
   </div>
-  <h2>
-   <a name="matrices">
-    Matrices
+  <h2 id="matrices">
+   <a>
+    4.4. Matrices
    </a>
   </h2>
   <p>
@@ -325,9 +357,9 @@ my_matrix[<span class="dv">1</span>:<span class="dv">2</span>,<span class="dv">5
 my_matrix[ ,<span class="dv">4</span>]
 my_matrix[<span class="dv">1</span>:<span class="dv">4</span>, ]</code></pre>
   </div>
-  <h2>
-   <a name="dataframes">
-    Dataframes
+  <h2 id="dataframes">
+   <a>
+    4.5. Dataframes
    </a>
   </h2>
   <p>
@@ -347,9 +379,9 @@ my_df[my_boolean_vec, ]
 
 <span class="kw">subset</span>(my_df, <span class="dt">subset =</span> some_condition)</code></pre>
   </div>
-  <h2>
-   <a name="datetimes">
-    Datetimes
+  <h2 id="datetimes">
+   <a>
+    4.6. Datetimes
    </a>
   </h2>
   <ul>
@@ -381,9 +413,9 @@ my_time &lt;-<span class="st"> </span><span class="kw">as.POSIXct</span>(<span c
 <span class="co"># #days since 01/01/1970, #seconds since the first second of this day</span>
 <span class="co"># a common offset for programming languages; expedites calculations</span></code></pre>
   </div>
-  <h1>
-   <a name="control-flow">
-    Control flow
+  <h1 id="control-flow">
+   <a>
+    5. Control flow
    </a>
   </h1>
   <p>
@@ -420,9 +452,9 @@ for (in in <span class="kw">seq_along</span>(list_or_vector) {
 ..    expr
 .. }</code></pre>
   </div>
-  <h1>
-   <a name="functions-&amp;-fp">
-    Functions &amp; FP
+  <h1 id="functions-fp">
+   <a>
+    6. Functions &amp; FP
    </a>
   </h1>
   <div class="sourceCode">
@@ -457,14 +489,14 @@ function(arg1, <span class="dt">arg2 =</span> default_value, ...) { expr }  <spa
 <span class="kw">aggregate</span>()
 <span class="kw">sweeps</span>()</code></pre>
   </div>
-  <h1>
-   <a name="sources">
-    Sources
+  <h1 id="sources">
+   <a>
+    7. Sources
    </a>
   </h1>
-  <h2>
-   <a name="references">
-    References
+  <h2 id="references">
+   <a>
+    7.1. References
    </a>
   </h2>
   <ul>
@@ -519,9 +551,9 @@ function(arg1, <span class="dt">arg2 =</span> default_value, ...) { expr }  <spa
     </a>
    </li>
   </ul>
-  <h2>
-   <a name="read">
-    Read
+  <h2 id="read">
+   <a>
+    7.2. Read
    </a>
   </h2>
   <ul>
@@ -552,8 +584,8 @@ function(arg1, <span class="dt">arg2 =</span> default_value, ...) { expr }  <spa
    </li>
   </ul>
   <h2>
-   <a name="unread">
-    Unread
+   <a name="7.3.-unread">
+    7.3. Unread
    </a>
   </h2>
   <ul>

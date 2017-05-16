@@ -1,4 +1,4 @@
-<p class="path"><a href="../../pkb.html">pkb contents</a> \> information systems | nearly 633 words | updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [What are information systems (IS)?](#what-are-information-systems-is)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> information systems | nearly 633 words | updated 05/16/2017</p><div class="TOC">- 1. [What are information systems (IS)?](#what-are-information-systems-is)
 	- 1.1. [Evolution of IS](#evolution-of-is)
 	- 1.2. [What are MIS?](#what-are-mis)
 		- 1.2.1. [Enterprise systems (ES)](#enterprise-systems-es)
@@ -11,7 +11,7 @@
 - 2. [Implementing IS ](#implementing-is-)
 	- 2.1. [Common pitfalls & best practices](#common-pitfalls-best-practices)
 - 3. [Sources](#sources)
-</td></tr></table>
+</div>
 
 
 # 1. What are information systems (IS)?

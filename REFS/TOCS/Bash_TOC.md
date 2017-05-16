@@ -1,26 +1,26 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/Bash.html">https://jtkovacs.github.io/REFS/HTML/Bash.html</a> \> 2409 words </p><table class="TOC"><tr><td>- [Bash basics](#bash-basics)
-	- [What is Bash?](#what-is-bash?)
-	- [Set up Bash](#set-up-bash)
-	- [Manage system](#manage-system)
-		- [Get more information](#get-more-information)
-	- [Navigate filesystem](#navigate-filesystem)
-		- [Manipulate filesystem](#manipulate-filesystem)
-	- [Manage permissions](#manage-permissions)
-	- [Chain and redirect](#chain-and-redirect)
-- [Bash recipes](#bash-recipes)
-	- [Write, read, print](#write,-read,-print)
-	- [Find and regex](#find-and-regex)
-	- [Calculate and analyze](#calculate-and-analyze)
-	- [Combine and split files](#combine-and-split-files)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
-# Bash basics
+<p class="path"><a href="../pkb.html">pkb contents</a> \> Bash | nearly 2409 words | updated 05/16/2017</p><div class="TOC">- 1. [Bash basics](#bash-basics)
+	- 1.1. [What is Bash?](#what-is-bash)
+	- 1.2. [Set up Bash](#set-up-bash)
+	- 1.3. [Manage system](#manage-system)
+		- 1.3.1. [Get more information](#get-more-information)
+	- 1.4. [Navigate filesystem](#navigate-filesystem)
+		- 1.4.1. [Manipulate filesystem](#manipulate-filesystem)
+	- 1.5. [Manage permissions](#manage-permissions)
+	- 1.6. [Chain and redirect](#chain-and-redirect)
+- 2. [Bash recipes](#bash-recipes)
+	- 2.1. [Write, read, print](#write-read-print)
+	- 2.2. [Find and regex](#find-and-regex)
+	- 2.3. [Calculate and analyze](#calculate-and-analyze)
+	- 2.4. [Combine and split files](#combine-and-split-files)
+- 3. [Sources](#sources)
+	- 3.1. [References](#references)
+	- 3.2. [Read](#read)
+	- 3.3. [Unread](#unread)
+</div>
+# 1. Bash basics
 
 
-## What is Bash?
+## 1.1. What is Bash?
 
 Through a (virtual) terminal you can send commands to the shell, which passes commands along to the OS. You could also write scripts for the shell to run. The terminology around this is muddled because of the way computer architecture has evolved and because the same words are used differently across operating systems and computing subfields ([1](http://stackoverflow.com/questions/21464073/shells-vs-command-interpreters-vs-command-line), [2](http://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line#comment683259_506510), [3](http://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line), [4](http://stackoverflow.com/questions/21014344/terminal-or-console-or-shell-or-command-prompt), [5](http://linuxcommand.org/lts0010.php)): 
 
@@ -40,7 +40,7 @@ In addition to commands that are typed and entered, Bash responds to hotkeys (`^
 # q to quit (sometimes)
 ```
 
-## Set up Bash
+## 1.2. Set up Bash
 
 Bash lets you control your environment by adding messages, defining aliases, setting the values of environment variables, etc. 
 
@@ -67,7 +67,7 @@ export USER = "user_name"  # type in .bash_profile to create environment variabl
 echo $USER  # print environment variable
 ```
 
-## Manage system
+## 1.3. Manage system
 
 ```Bash
 df  # check space on disk, in KB
@@ -93,7 +93,7 @@ systemd-analyze-blame
 Df -h, checks disk space and partition usage
 ```
 
-### Get more information
+### 1.3.1. Get more information
  
 ```Bash
 lsb_release -a  # Linux version
@@ -118,7 +118,7 @@ whatis command_name  # one-line man page summary
 # ^R to 'reverse-i-search' the command history
 ```
 
-## Navigate filesystem
+## 1.4. Navigate filesystem
 
 The __Linux filesystem__ is a tree of directories (folders) containing files. Unlike Windows, the Linux filesystem has a single root directory. Typically, in addition to users' home directories, root will contain these directories:
 
@@ -152,7 +152,7 @@ ls -R  # list all content in working directory, including content in subdirector
 find  # list all files contained in the working directory and its subdirectories; same as ls -aR
 ```
 
-### Manipulate filesystem
+### 1.4.1. Manipulate filesystem
 
 Based on [Bruce Barnett's summary](http://www.grymoire.com/Unix/Inodes.html), Unix/Linux files consist of data and inode metadata; and a Unix/Linux directory is a table associating file names with inodes. Try to visualize the operations below in these terms; for example (based on a [response in an Arch Linux forum](https://bbs.archlinux.org/viewtopic.php?id=53484)), consider the difference between
 
@@ -184,7 +184,7 @@ rmdir dirname  # deletes directory IF empty
 rm -R dirname  # delete directory and its contents
 ```
 
-## Manage permissions
+## 1.5. Manage permissions
 
 [A detailed view of a directory's contents](http://linuxsurvival.com/linux-file-security-permissions-part-2/) includes, for each item in this order, the item's permissions; the number of hard links to it; its owner; its group; its size (as number of bytes); the date and time of its last modification; and its name. [Permission are expressed in a 9 digit-long code](http://linuxsurvival.com/linux-file-security-permissions-part-3/), where the first three digits encode the owner's permissions; the next three digits encode the owner's group's permissions; and the last three encode everyone else's. Then, each three digit cluster encodes read-write-execute permissions as yes (`r`, `w`, `x`) or no (`-`). Examples: `rwx------`, `rw-rw-r--`, `rwxrwxr-x`.
 
@@ -195,7 +195,7 @@ chmod o-w filename  # revoke others' write permission
 chown <new_username>:<new_groupname> filename  # change ownership
 ```
 
-## Chain and redirect
+## 1.6. Chain and redirect
 
 Rather than typing and entering one at a time, commands can be **chained**: entered as a sequence separated by `;` or `&&`, then executed. In the semicolon method, if a command fails, Bash still tries to execute commands that follow it. In the ampersand method, if a command fails then the remaining ones simply aren't run. Chaining is meant to be a time-saver.
 
@@ -214,9 +214,9 @@ cat file | less  # display large files by rdct cat's stdout to less's stdin
 
 
 
-# Bash recipes
+# 2. Bash recipes
 
-## Write, read, print
+## 2.1. Write, read, print
 
 ```Bash
 touch ~/dirname/file  # create file, or update its modification timestamp if file already exists
@@ -249,7 +249,7 @@ lprm jobnum  # delete specified job from print queue
 lprm -  # delete all jobs from print queue, subject to user permissions
 ```
 
-## Find and regex
+## 2.2. Find and regex
 
 ```Bash
 find ... # http://ss64.com/bash/find.html, http://do.co/2hrRPfN
@@ -277,7 +277,7 @@ cp b?t.txt dirname  # copy all files with exactly one character between 'b' and 
 cp b??t.txt dirname  # copy all files with exactly two characters between 'b' and 't.txt'
 ```
 
-## Calculate and analyze
+## 2.3. Calculate and analyze
 
 ```Bash
 cal  # displays month calendar
@@ -305,7 +305,7 @@ sed 's/search_string/replace_string/g' file.txt  # find and replace all occurren
 diff file1 file2  # get differences between files
 ```
 
-## Combine and split files
+## 2.4. Combine and split files
 
 ```Bash
 cat file1 file2 file3 > newfile  # creates or overwrites newfile
@@ -318,16 +318,16 @@ split [options] filename prefix
 ``` 
 
 
-# Sources
+# 3. Sources
 
-## References
+## 3.1. References
 
 - Command line cheatsheets - [Mac](http://ss64.com/osx/), [Linux Bash](http://ss64.com/bash/), [Windows PowerShell](http://ss64.com/ps/)
 - Software Carpentry’s [Unix shell cheatsheet](http://swcarpentry.github.io/shell-novice/reference/)
 - [Bash keyboard shortcuts for maximum productivity](http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/)
 - [Bash reserved variables](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html#table_03_02)
 
-## Read
+## 3.2. Read
 
 - [Codecademy - Command Line](https://www.codecademy.com/learn/learn-the-command-line)
 - [Udacity - Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595)
@@ -335,7 +335,7 @@ split [options] filename prefix
 - [Linux Survival - Command line tutorial](http://linuxsurvival.com/linux-tutorial-introduction/)
 - [The importance of command line literacy](http://www.linux-mag.com/id/7096/)
 
-## Unread
+## 3.3. Unread
 - [Data science at the command line](http://datascienceatthecommandline.com/): book, webcast, VM 
 - [How to spy on your programs with strace](http://jvns.ca/strace-zine-unfolded.pdf) (pdf)
 - [Talks by Julia Evans](http://jvns.ca/talks/)

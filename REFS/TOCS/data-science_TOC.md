@@ -1,25 +1,25 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/data-science.html">https://jtkovacs.github.io/REFS/HTML/data-science.html</a> \> 1043 words </p><table class="TOC"><tr><td>- [What is data science?](#what-is-data-science?)
-	- [What is Big Data?](#what-is-big-data?)
-	- [Data science lifecycle & skills](#data-science-lifecycle-&-skills)
-		- [Obtain ](#obtain-)
-		- [Scrub](#scrub)
-		- [Explore](#explore)
-		- [Model](#model)
-		- [iNterpret](#interpret)
-	- [Data science tools](#data-science-tools)
-		- [Why command line for data science?](#why-command-line-for-data-science?)
-- [Workflow management](#workflow-management)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data science | nearly 1043 words | updated 05/16/2017</p><div class="TOC">- 1. [What is data science?](#what-is-data-science)
+	- 1.1. [What is Big Data?](#what-is-big-data)
+	- 1.2. [Data science lifecycle & skills](#data-science-lifecycle-skills)
+		- 1.2.1. [Obtain ](#obtain-)
+		- 1.2.2. [Scrub](#scrub)
+		- 1.2.3. [Explore](#explore)
+		- 1.2.4. [Model](#model)
+		- 1.2.5. [iNterpret](#interpret)
+	- 1.3. [Data science tools](#data-science-tools)
+		- 1.3.1. [Why command line for data science?](#why-command-line-for-data-science)
+- 2. [Workflow management](#workflow-management)
+- 3. [Sources](#sources)
+	- 3.1. [References](#references)
+	- 3.2. [Read](#read)
+	- 3.3. [Unread](#unread)
+</div>
 
-# What is data science?
+# 1. What is data science?
 
-## What is Big Data?
+## 1.1. What is Big Data?
 
-## Data science lifecycle & skills
+## 1.2. Data science lifecycle & skills
 
 Via Mason and Wiggins (2010):
 
@@ -85,7 +85,7 @@ Via Mason and Wiggins (2010):
 </tr>
 </table>
 
-### Obtain 
+### 1.2.1. Obtain 
 
 **Describe the concepts here. Code can be embedded or via a link, depending on how much there is.**
 
@@ -94,24 +94,24 @@ Via Mason and Wiggins (2010):
 - How do you parse scraped web data (HTML, JSON, XML)?
 - How is authorization implemented in Google APIs?
 
-### Scrub
+### 1.2.2. Scrub
 
 - [http://radar.oreilly.com/2012/07/data-jujitsu.html](http://radar.oreilly.com/2012/07/data-jujitsu.html)
 - What are major steps in data cleaning?
 - What's the best way to filter data?
 - What's the best way to aggregate data?
 
-### Explore
+### 1.2.3. Explore
 
 See [notes on data visualization.](data-viz.html)
 
 [https://medium.com/@eytanadar/banning-exploration-in-my-infovis-class-9578676a4705](https://medium.com/@eytanadar/banning-exploration-in-my-infovis-class-9578676a4705)
 
-### Model
+### 1.2.4. Model
 
 See [notes on models,](models.html) [statistics,](statistics.html) [machine learning,](machine-learning.html) and [text analytics.](text-analytics.html)
 
-### iNterpret
+### 1.2.5. iNterpret
 
 - What are best practices for making Excel sheets auditable?
 - [_Thinking with data_](http://shop.oreilly.com/product/0636920029182.do)
@@ -120,11 +120,11 @@ See [notes on models,](models.html) [statistics,](statistics.html) [machine lear
 
 
 
-## Data science tools
+## 1.3. Data science tools
 
 R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
 
-### Why command line for data science?
+### 1.3.1. Why command line for data science?
 
 Per Janssens (2015):
 
@@ -139,7 +139,7 @@ Per Janssens (2015):
 
 
 
-# Workflow management
+# 2. Workflow management
 
 - [https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/](https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/)
 - [https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/)
@@ -148,13 +148,13 @@ Per Janssens (2015):
 
 
 
-# Sources
+# 3. Sources
 
 Janssens, J. (2015). _Data science at the command line: Facing the future with time-tested tools._ Sebastopol, CA: O'Reilly.
 
 Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataists._ Retrieved from [http://www.dataists.com/2010/09/a-taxonomy-of-data-science/](http://www.dataists.com/2010/09/a-taxonomy-of-data-science/)
 
-## References
+## 3.1. References
 
 - [Google APIs Explorer](https://developers.google.com/apis-explorer/#p/)
 - [Google Developers](https://developers.google.com/)
@@ -164,7 +164,7 @@ Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataist
 - [A gallery of interesting IPython notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 - [Payscale.com](http://www.google.com/url?q=http%3A%2F%2FPayscale.com&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGimDEmMBGkQckho0pfxd2Apq2pog)
 
-## Read
+## 3.2. Read
 
 - [Treehouse -&nbsp;CSV &amp; JSON&nbsp;in Python](https://www.google.com/url?q=https%3A%2F%2Fteamtreehouse.com%2Flibrary%2Fcsv-and-json-in-python&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH4m-fFGcDa-fuIpEHKxk28kRxlqg)
 - _Bad data handbook._
@@ -181,7 +181,7 @@ Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataist
 - [One year as a data scientist at Stack Overflow](http://www.google.com/url?q=http%3A%2F%2Fvarianceexplained.org%2Fr%2Fyear_data_scientist%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFsYHVOtqKTMjBOpf9Cjnr2d42hWg)
 - [The evolution of data science at Airbnb](http://www.google.com/url?q=http%3A%2F%2Fblog.kaggle.com%2F2016%2F09%2F06%2Fbuilding-a-team-from-the-inside-out-alok-gupta-on-the-evolution-of-data-science-at-airbnb%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHq0epTyxnQywNKzIra7o4rnPOj6Q)
 
-## Unread
+## 3.3. Unread
 
 - [Formulas](http://www.lynda.com/Excel-tutorials/Excel-2016-Advanced-Formulas-Functions/431188-2.html)
 - [What is a modern, SaaS-based BI stack?](https://blog.fishtownanalytics.com/what-are-the-steps-tools-in-setting-up-a-modern-saas-based-bi-infrastructure-281e0860f9a9#.bm4b1vblj)

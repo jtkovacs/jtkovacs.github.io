@@ -1,4 +1,4 @@
-<p class="path"><a href="../../pkb.html">pkb contents</a> \> information architecture | nearly 4863 words | updated 05/16/2017</p><table class="TOC"><tr><td>- 1. [What is information retrieval?](#what-is-information-retrieval)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> information architecture | nearly 4863 words | updated 05/16/2017</p><div class="TOC">- 1. [What is information retrieval?](#what-is-information-retrieval)
 	- 1.1. [IR systems](#ir-systems)
 	- 1.2. [Major activities in IR](#major-activities-in-ir)
 		- 1.2.1. [Cataloging & indexing](#cataloging-indexing)
@@ -45,7 +45,7 @@
 			- 3.3.7.3. [Format considerations](#format-considerations)
 	- 3.4. [Interoperability](#interoperability)
 - 4. [Sources](#sources)
-</td></tr></table>
+</div>
 
 
 # 1. What is information retrieval?

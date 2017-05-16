@@ -1,26 +1,26 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/git.html">https://jtkovacs.github.io/REFS/HTML/git.html</a></p><table class="TOC"><tr><td>- [What is Git?](#what-is-git?)
-- [Solo workflow](#solo-workflow)
-- [Local-remote workflow](#local-remote-workflow)
-- [Local-remote-collaborator workflow](#local-remote-collaborator-workflow)
-- [CODE](#code)
-- [Questions](#questions)
-	- [Git-style version control](#git-style-version-control)
-	- [Major components of git](#major-components-of-git)
-	- [Branching, diffing, and merging](#branching,-diffing,-and-merging)
-	- [Remotes & GitHub-based collaboration](#remotes-&-github-based-collaboration)
-- [Sources](#sources)
-	- [REFERENCES](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> git | nearly 2383 words | updated 05/16/2017</p><div class="TOC">- 1. [What is Git?](#what-is-git)
+- 2. [Solo workflow](#solo-workflow)
+- 3. [Local-remote workflow](#local-remote-workflow)
+- 4. [Local-remote-collaborator workflow](#local-remote-collaborator-workflow)
+- 5. [CODE](#code)
+- 6. [Questions](#questions)
+	- 6.1. [Git-style version control](#git-style-version-control)
+	- 6.2. [Major components of git](#major-components-of-git)
+	- 6.3. [Branching, diffing, and merging](#branching-diffing-and-merging)
+	- 6.4. [Remotes & GitHub-based collaboration](#remotes-github-based-collaboration)
+- 7. [Sources](#sources)
+	- 7.1. [REFERENCES](#references)
+	- 7.2. [Read](#read)
+	- 7.3. [Unread](#unread)
+</div>
 
-# What is Git?
+# 1. What is Git?
 
 Git is a versioning tool tailored to the needs of programmers. Like all versioning tools, Git records a series of changes, letting you restore an earlier version if something goes wrong with the current one. In particular, Git is a versioning tool that works offline; lets you choose your file editing programs; saves manually, not automatically (reflecting the stance that old versions are useful only if they are complete, coherent, functioning); saves multiple documents at a time, not just one; and allows branching.
 
 There are three general workflows in Git: solo, collaborative (local-remote), and GitHub (local-remote-collaborator). Obviously workflows should be customized to suit the circumstances (number of collaborators, purpose of branches, purpose of master).
 
-# Solo workflow
+# 2. Solo workflow
 
 Cloning or initializing Git in a directory creates a staging area and repository with one branch, the __master__. Master should be production-quality code that always runs, so work should be done in __branches__, which are in most cases intended to be temporary. Branches are important for sharing code and for compartmentalizing your own work. 
 
@@ -35,7 +35,7 @@ So, the workflow:
 
 <img src="../ILLOS/solo-workflow.png" width="700px">
 
-# Local-remote workflow
+# 3. Local-remote workflow
 
 For collaborative work via remotes, you retain your tripartite solo working environment but add new steps:
 
@@ -47,7 +47,7 @@ For collaborative work via remotes, you retain your tripartite solo working envi
 
 <img src="../ILLOS/local-remote-workflow.png" width="700px">
 
-# Local-remote-collaborator workflow
+# 4. Local-remote-collaborator workflow
 
 For collaborative work via GitHub, you retain your tripartite solo working environment and, from your command line, work with your GitHub repository like a remote repository (remember to [cache your GitHub login](https://help.github.com/articles/caching-your-github-password-in-git/)). GitHub has additional functionality, though, like issues, wikis, forking (the ability to clone someone else's GitHub projects to your GitHub account). Every GitHub repository has three special files by default: __README.md__, a description of the project; __CONTRIBUTING.md__, instructions for how to contribute to the project; and __ISSUE_TEMPLATE.md__, a template for raising issues with the project. 
 
@@ -64,7 +64,7 @@ A sample workflow:
 
 
 
-# CODE
+# 5. CODE
 
 __CREATE__: _CONFIGURE, INIT, CLONE, BRANCH, CHECKOUT, ADD, COMMIT, MERGE_
 
@@ -173,9 +173,9 @@ git push  # subsequent times, if no change to remote or branch
 
 
 
-# Questions
+# 6. Questions
 
-## Git-style version control
+## 6.1. Git-style version control
 
 *How could having easy access to the entire history of a file make you a more efficient programmer in the long term?*
 
@@ -191,7 +191,7 @@ git push  # subsequent times, if no change to remote or branch
 
 - Git recognizes that files in coding are more likely to be interdependent, affected by each other's updates.
 
-## Major components of git
+## 6.2. Major components of git
 
 *What happens when you initialize a repository? Why do you need to do it?*
 
@@ -206,7 +206,7 @@ git push  # subsequent times, if no change to remote or branch
 
 - ...along with git diff and get diff --staged. 
 
-## Branching, diffing, and merging
+## 6.3. Branching, diffing, and merging
 
 *What are some situations when branches would be helpful in keeping your history organized? How would branches help?*
 
@@ -228,7 +228,7 @@ git push  # subsequent times, if no change to remote or branch
 
 - It drastically reduced the number of lines I had to squint at.
 
-## Remotes & GitHub-based collaboration
+## 6.4. Remotes & GitHub-based collaboration
 
 *When would you want to use a remote repository rather than keeping all your work local?*
 
@@ -259,16 +259,16 @@ git push  # subsequent times, if no change to remote or branch
 
 
 
-# Sources
+# 7. Sources
 
-## REFERENCES
+## 7.1. REFERENCES
 
 - [Share code quickly with a Gist](https://gist.github.com/)
 - [Official GitHub cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) [pdf]
 - [Visual Git Guide](https://marklodato.github.io/visual-git-guide/index-en.html)
 - [NDP Software's Interactive VIsual Git Cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
 
-## Read
+## 7.2. Read
 
 - [Udacity - How to use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
 - Codecademy - [Learn Git](https://www.codecademy.com/learn/learn-git), [Push to GitHub](https://www.codecademy.com/articles/push-to-github)
@@ -278,7 +278,7 @@ git push  # subsequent times, if no change to remote or branch
 - Checkout, reset, revert: [1](https://makandracards.com/makandra/11485-git-basics-checkout-vs-reset), [2](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting/), [3](https://git-scm.com/blog/2011/07/11/reset.html)
 - [Try Git](https://try.github.io
 
-## Unread
+## 7.3. Unread
 
 - GitHub as a portfolio: [1](https://www.epicodus.com/blog/sprucing-up-github), [2](http://pydanny.blogspot.com/2011/08/github-is-my-resume.html)
 - Merge vs rebase [1](http://gitforteams.com/resources/merge-rebase.html), [2](https://www.atlassian.com/git/tutorials/merging-vs-rebasing/)

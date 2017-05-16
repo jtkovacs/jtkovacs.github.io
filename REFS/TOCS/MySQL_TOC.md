@@ -1,8 +1,8 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/MySQL.html">https://jtkovacs.github.io/REFS/HTML/MySQL.html</a> \> 98 words </p><table class="TOC"><tr><td>- [MySQL](#mysql)
-	- [Manage databases](#manage-databases)
-	- [Manage users](#manage-users)
-</td></tr></table>
-# MySQL
+<p class="path"><a href="../pkb.html">pkb contents</a> \> MySQL | nearly 98 words | updated 05/16/2017</p><div class="TOC">- 1. [MySQL](#mysql)
+	- 1.1. [Manage databases](#manage-databases)
+	- 1.2. [Manage users](#manage-users)
+</div>
+# 1. MySQL
 
 [phpMyAdmin](https://www.phpmyadmin.net/) is a MySQL GUI, or you can work with MySQL from Bash: 
 
@@ -17,7 +17,7 @@ less my.cnf
 # view configs
 ```
 
-## Manage databases
+## 1.1. Manage databases
 
 ```SQL
 CREATE DATABASE dname;
@@ -25,7 +25,7 @@ CREATE DATABASE dname;
 SHOW DATABASES;
 ```
 
-## Manage users
+## 1.2. Manage users
 
 ```SQL
 SELECT User, Host, Password FROM mysql.user;

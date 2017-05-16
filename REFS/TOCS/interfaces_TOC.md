@@ -1,4 +1,4 @@
-<p class="path"><a href="../../pkb.html">pkb contents</a> \> interfaces | nearly 771 words | updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [Prototyping](#prototyping)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> interfaces | nearly 771 words | updated 05/16/2017</p><div class="TOC">- 1. [Prototyping](#prototyping)
 	- 1.1. [Types of interface prototypes](#types-of-interface-prototypes)
 		- 1.1.1. [Sketches](#sketches)
 		- 1.1.2. [Mock-ups](#mock-ups)
@@ -22,7 +22,7 @@
 	- 3.2. [References](#references)
 	- 3.3. [Read](#read)
 	- 3.4. [Unread](#unread)
-</td></tr></table>
+</div>
 
 # 1. Prototyping
 

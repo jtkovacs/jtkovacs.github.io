@@ -1,21 +1,21 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/R.html">https://jtkovacs.github.io/REFS/HTML/R.html</a></p><table class="TOC"><tr><td>- [Environment](#environment)
-- [Conventions](#conventions)
-- [Get more information](#get-more-information)
-- [Datatypes](#datatypes)
-	- [Vectors](#vectors)
-	- [Lists](#lists)
-	- [Factors](#factors)
-	- [Matrices](#matrices)
-	- [Dataframes](#dataframes)
-	- [Datetimes](#datetimes)
-- [Control flow](#control-flow)
-- [Functions & FP](#functions-&-fp)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
-# Environment
+<p class="path"><a href="../pkb.html">pkb contents</a> \> R | nearly 1253 words | updated 05/16/2017</p><div class="TOC">- 1. [Environment](#environment)
+- 2. [Conventions](#conventions)
+- 3. [Get more information](#get-more-information)
+- 4. [Datatypes](#datatypes)
+	- 4.1. [Vectors](#vectors)
+	- 4.2. [Lists](#lists)
+	- 4.3. [Factors](#factors)
+	- 4.4. [Matrices](#matrices)
+	- 4.5. [Dataframes](#dataframes)
+	- 4.6. [Datetimes](#datetimes)
+- 5. [Control flow](#control-flow)
+- 6. [Functions & FP](#functions-fp)
+- 7. [Sources](#sources)
+	- 7.1. [References](#references)
+	- 7.2. [Read](#read)
+	- 7.3. [Unread](#unread)
+</div>
+# 1. Environment
 
 R packages are bundles of code, data, documentation and tests. R adds these packages to the search list by default: `grDevices, methods, stats, utils, graphics, datasets, base`; see [standary library package documentation](https://stat.ethz.ch/R-manual/R-devel/doc/html/packages.html).
 
@@ -29,7 +29,7 @@ require("package_name")  # loads packages, but with warning messages and protect
 # working w/ packages: http://faculty.washington.edu/kenrice/rintro/sess08.pdf
 ```
 
-# Conventions
+# 2. Conventions
 
 - R is case sensitive with 1-based indexing
 - <http://stackoverflow.com/questions/11563154/what-are-replacement-functions-in-r)>
@@ -42,7 +42,7 @@ require("package_name")  # loads packages, but with warning messages and protect
 # relational: >, >=, !=,==
 ```
 
-# Get more information
+# 3. Get more information
 
 ```R
 getwd()  # identify working directory
@@ -61,9 +61,9 @@ summary(my_data)  # 5 number summary from stats
 ls(my_data)
 ```
 
-# Datatypes
+# 4. Datatypes
 
-## Vectors
+## 4.1. Vectors
 
 Vectors can hold a 1D array of numeric, character, raw, or logical data. The elements in a vector all have the same data type (AKA it's an atomic vector). Standard operations work row-wise.
 
@@ -82,7 +82,7 @@ my_vector[my_vector>2]
 # NA: the absence of values inside a vector
 is.na(my_vec) --> returns logical vector
 ```
-## Lists
+## 4.2. Lists
 
 A list is the 1D version of a data frame; it can contain different data types (AKA it's a recursive vector: a vector that can contain other vectors.
 
@@ -106,7 +106,7 @@ extended_list <- c(my_list, list(item))  # add new list to list-of-lists
 list addressing: [ extracts a sublist, [[ or $ extract a value
 ```
 
-## Factors
+## 4.3. Factors
 
 Factor: _a statistical data type used to store categorical variables_; may be nominal or ordinal. 
 
@@ -119,7 +119,7 @@ levels(my_vec)  # view factor levels
 levels(my_vec) <- c("name", ..., "name")  # (re)name factor levels
 ```
 
-## Matrices
+## 4.4. Matrices
 
 Matrices store mXn data of a _single datatype_: numeric, character, raw, logical. Standard operators work element-wise; special matrix operators work row-wise.
 
@@ -143,7 +143,7 @@ my_matrix[ ,4]
 my_matrix[1:4, ]
 ```
 
-## Dataframes
+## 4.5. Dataframes
 
 Dataframes are for mxn data where datatypes vary across (not within) columns.
 
@@ -162,7 +162,7 @@ my_df[my_boolean_vec, ]
 subset(my_df, subset = some_condition)
 ```
 
-## Datetimes
+## 4.6. Datetimes
 
 - lubridate, zoo, xts are relevant libraries
 
@@ -191,7 +191,7 @@ my_time <- as.POSIXct("%Y-%m-%d %H:%M:%s")
 # a common offset for programming languages; expedites calculations
 ```
 
-# Control flow
+# 5. Control flow
 
 A `for` loop has three parts: the sequence, the body, and the output object. _Before you start the loop, you must always allocate sufficient space for the output ... This is very important for efficiency: if you grow the for loop at each iteration (e.g. using c()), your for loop will be very slow._
 
@@ -220,7 +220,7 @@ for (in in seq_along(list_or_vector) {
 .. }
 ```
 
-# Functions & FP
+# 6. Functions & FP
 
 ```R
 my_fun <- function(arg1, arg2 = default_value, ...) {
@@ -256,9 +256,9 @@ sweeps()
 ```
 
 
-# Sources
+# 7. Sources
 
-## References
+## 7.1. References
 
 - [Official R documentation](https://www.r-project.org/)
 - [R cookbook](http://www.cookbook-r.com/)
@@ -271,7 +271,7 @@ sweeps()
 - [R code style guide](https://4dpiecharts.com/r-code-style-guide/)
 - [An R introduction to statistics (many tutorials)](http://www.r-tutor.com/)
 
-## Read
+## 7.2. Read
 
 - [DataCamp - Data analysis & statistical inference in R](https://www.datacamp.com/community/open-courses/statistical-inference-and-data-analysis)
 - [DataCamp - Introduction to statistics](https://www.datacamp.com/introduction-to-statistics)
@@ -279,7 +279,7 @@ sweeps()
 - [DataCamp - Intermediate R](https://www.datacamp.com/courses/intermediate-r)
 - [DataCamp - Intermediate R practice](https://campus.datacamp.com/courses/intermediate-r-practice)
 
-## Unread
+## 7.3. Unread
 
 - [One page R](http://togaware.com/onepager/)
 - [DataCamp - Writing functions in R](https://campus.datacamp.com/courses/writing-functions-in-r)

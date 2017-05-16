@@ -1,4 +1,4 @@
-<p class="path"><a href="../../pkb.html">PKB CONTENTS</a> \> TITLE | 2527 words, updated 05/15/2017</p><table class="TOC"><tr><td>- 1. [Tools by degree of change sought](#tools-by-degree-of-change-sought)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> process improvement | nearly 2527 words | updated 05/16/2017</p><div class="TOC">- 1. [Tools by degree of change sought](#tools-by-degree-of-change-sought)
 	- 1.1. [Business process automation (BPA)](#business-process-automation-bpa)
 		- 1.1.1. [Problem analysis](#problem-analysis)
 		- 1.1.2. [Root cause analysis](#root-cause-analysis)
@@ -51,7 +51,7 @@
 	- 5.1. [References](#references)
 	- 5.2. [Read](#read)
 	- 5.3. [Unread](#unread)
-</td></tr></table>
+</div>
 
 # 1. Tools by degree of change sought
 

@@ -1,13 +1,13 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/text-analytics.html">https://jtkovacs.github.io/REFS/HTML/text-analytics.html</a></p><table class="TOC"><tr><td>- [Text analytics in Python](#text-analytics-in-python)
-	- [Manage punctuation, case, & whitespace](#manage-punctuation,-case,-&-whitespace)
-	- [Search & regex](#search-&-regex)
-- [Sources](#sources)
-	- [References](#references)
-	- [Read](#read)
-	- [Unread](#unread)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | nearly 566 words | updated 05/16/2017</p><div class="TOC">- 1. [Text analytics in Python](#text-analytics-in-python)
+	- 1.1. [Manage punctuation, case, & whitespace](#manage-punctuation-case-whitespace)
+	- 1.2. [Search & regex](#search-regex)
+- 2. [Sources](#sources)
+	- 2.1. [References](#references)
+	- 2.2. [Read](#read)
+	- 2.3. [Unread](#unread)
+</div>
 
-# Text analytics in Python
+# 1. Text analytics in Python
 
 
 ```Python
@@ -21,7 +21,7 @@ list.index(‘str name’)
 list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list) 
 ```
 
-## Manage punctuation, case, & whitespace
+## 1.1. Manage punctuation, case, & whitespace
 
 ```Python
 # remove punctuation
@@ -40,7 +40,7 @@ my_string.lstrip()
 my_string.rstrip()
 ```
 
-## Search & regex
+## 1.2. Search & regex
 
 ```Python
 # search for substrings within string or subset of string (i inclusive to j exclusive)
@@ -122,20 +122,20 @@ my_var.group(1)
 
 
 
-# Sources
+# 2. Sources
 
-## References
+## 2.1. References
 
 - [NLTK cheatsheet](http://billchambers.me/tutorials/2015/01/14/python-nlp-cheatsheet-nltk-scikit-learn.html)
 - [Corpus of Contemporary American English](http://corpus.byu.edu/coca/)
 - [Corpus based language studies](http://cw.routledge.com/textbooks/0415286239/default.asp)
 - [IBM Watson demo - Infer personality from unstructured text](https://personality-insights-livedemo.mybluemix.net/)
 
-## Read
+## 2.2. Read
 
 - [Lynda - Using Regex](http://www.lynda.com/Regular-Expressions-tutorials/Using-Regular-Expressions/85870-2.html)
 
-## Unread
+## 2.3. Unread
 
 - Regex: [1](http://www.regular-expressions.info/), [2](https://regexone.com/)
 - [CodeSchool - Regular Expressions](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions)

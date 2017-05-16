@@ -1,33 +1,33 @@
-<p id="path"><a href="../../pkb.html">https://jtkovacs.github.io/pkb.html</a> \> <a href="https://jtkovacs.github.io/REFS/HTML/metadata.html">https://jtkovacs.github.io/REFS/HTML/metadata.html</a></p><table class="TOC"><tr><td>- [What is metadata?](#what-is-metadata?)
-	- [Types of metadata](#types-of-metadata)
-		- [Descriptive metadata](#descriptive-metadata)
-		- [Administrative metadata](#administrative-metadata)
-		- [Use metadata](#use-metadata)
-	- [Metadata association models](#metadata-association-models)
-- [Metadata schemas AKA element sets AKA standards](#metadata-schemas-aka-element-sets-aka-standards)
-	- [Dublin Core](#dublin-core)
-- [Metadata encoding schemes](#metadata-encoding-schemes)
-	- [Controlled vocabularies](#controlled-vocabularies)
-	- [Syntaxes](#syntaxes)
-		- [HTML ](#html-)
-	- [XML](#xml)
-		- [RDF](#rdf)
-		- [OWL??](#owl??)
-		- [Relational databases](#relational-databases)
-		- [DCMI abstract model](#dcmi-abstract-model)
-- [Interoperability](#interoperability)
-- [Semantic web](#semantic-web)
-	- [Schema.org](#schema.org)
-- [Sources](#sources)
-</td></tr></table>
+<p class="path"><a href="../pkb.html">pkb contents</a> \> metadata | nearly 744 words | updated 05/16/2017</p><div class="TOC">- 1. [What is metadata?](#what-is-metadata)
+	- 1.1. [Types of metadata](#types-of-metadata)
+		- 1.1.1. [Descriptive metadata](#descriptive-metadata)
+		- 1.1.2. [Administrative metadata](#administrative-metadata)
+		- 1.1.3. [Use metadata](#use-metadata)
+	- 1.2. [Metadata association models](#metadata-association-models)
+- 2. [Metadata schemas AKA element sets AKA standards](#metadata-schemas-aka-element-sets-aka-standards)
+	- 2.1. [Dublin Core](#dublin-core)
+- 3. [Metadata encoding schemes](#metadata-encoding-schemes)
+	- 3.1. [Controlled vocabularies](#controlled-vocabularies)
+	- 3.2. [Syntaxes](#syntaxes)
+		- 3.2.1. [HTML ](#html-)
+	- 3.3. [XML](#xml)
+		- 3.3.1. [RDF](#rdf)
+		- 3.3.2. [OWL??](#owl)
+		- 3.3.3. [Relational databases](#relational-databases)
+		- 3.3.4. [DCMI abstract model](#dcmi-abstract-model)
+- 4. [Interoperability](#interoperability)
+- 5. [Semantic web](#semantic-web)
+	- 5.1. [Schema.org](#schema.org)
+- 6. [Sources](#sources)
+</div>
 
-# What is metadata?
+# 1. What is metadata?
 
 - Metadata record
 
-## Types of metadata
+## 1.1. Types of metadata
 
-### Descriptive metadata
+### 1.1.1. Descriptive metadata
 
 - Unique identifier
     - For books
@@ -37,7 +37,7 @@
     - For web, URI
         - URL
 
-### Administrative metadata
+### 1.1.2. Administrative metadata
 
 - technical
 - structural
@@ -50,13 +50,13 @@
     - RightsDeclarationMD
 - METS
 
-### Use metadata
+### 1.1.3. Use metadata
 
 - data exhaust
 - logs
 - paradata
 
-## Metadata association models
+## 1.2. Metadata association models
 
 Per Duval et al. (2002), thinking from the perspective of a metadata manager (not the user perspective), metadata may be:
 
@@ -69,7 +69,7 @@ Per Pomerantz (2015), metadata stored internally is authoritative but static; me
 
 
 
-# Metadata schemas AKA element sets AKA standards
+# 2. Metadata schemas AKA element sets AKA standards
 
 - Elements
 - Values
@@ -78,16 +78,16 @@ Per Pomerantz (2015), metadata stored internally is authoritative but static; me
     - Format
         - MIME types
 
-## Dublin Core
+## 2.1. Dublin Core
 
 - Core terms
 - Qualifiers
 
 
 
-# Metadata encoding schemes
+# 3. Metadata encoding schemes
 
-## Controlled vocabularies
+## 3.1. Controlled vocabularies
 
 - Library of Congress Subject Headings
 - Authority files
@@ -102,30 +102,32 @@ Per Pomerantz (2015), metadata stored internally is authoritative but static; me
 - Ontologies
 - [Tagging]
 
-## Syntaxes
+## 3.2. Syntaxes
 
 AKA structured data??
 
-### HTML 
+There should be a distinction here between data serialization formats (e.g. JSON, XML, YAML) and data models (RDF); not sure how this relates to the concepts of file format, markup, and encoding.
 
-## XML
+### 3.2.1. HTML 
+
+## 3.3. XML
 
 - DTD
 - DOM
 
-### RDF
+### 3.3.1. RDF
 
 "... an additional layer on top of XML that is intended to simplify the reuse of vocabulary terms across names" (Duval et al., 2002)
 
-### OWL??
+### 3.3.2. OWL??
 
-### Relational databases
+### 3.3.3. Relational databases
 
-### DCMI abstract model
+### 3.3.4. DCMI abstract model
 
 
 
-# Interoperability
+# 4. Interoperability
 
 Per Duval et al. (2002), "Semantics is about meaning; syntax is about form. Agreements about both are necessary for two communities to share metadata." The semantic and machine ioteroperability of metadata is facilitated by adherance to the following principles:
 
@@ -154,7 +156,7 @@ There are practical considerations that arise in pursuit of these principles:
 
 
 
-# Semantic web
+# 5. Semantic web
 
 - SEO & keyword stuffing
 - linked data
@@ -162,13 +164,13 @@ There are practical considerations that arise in pursuit of these principles:
     - sameAs
     - Facebook's OGP
 
-## Schema.org
+## 5.1. Schema.org
 
 - microdata
 
 
     
-# Sources
+# 6. Sources
 
 Duval, E., Hodgins, W., Sutton, S., & Weibel, S. L. (2002). Metadata principles and practicalities. _D-Lib Magazine, 8_(4), 16-33.
 

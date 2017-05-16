@@ -114,7 +114,8 @@ for i,h in enumerate(headers):
 # Open new .md file
 ## Constructing the output filename is tricky: /home/jtk/Site/REFS/TOCS/fname_TOC.md
 foname = fname[:-3]+"_TOC.md"
-foname = foname.split('/') 
+foname = foname.split('/')
+foname.remove('NOTES')
 foname.insert(-1, "TOCS")
 foname = '/'.join(foname)
 fout = open(foname, "w")
@@ -164,7 +165,6 @@ fout.close()
 hname = foname[:-7]+'.html'
 hname = hname.split('/')
 hname.remove('TOCS')
-#hname.insert(-1, "HTML")
 html_out = "/".join(hname)
 subprocess.run(['pandoc', foname, '-f', 'markdown', '-t', 'html', '-s', '-o', html_out])
 
@@ -195,7 +195,7 @@ h.a['name'] = "-".join(h.get_text().lower().split(" "))
 link = my_soup.new_tag("link")
 link["rel"] = "stylesheet"
 link["type"] = "text/css"
-link['href'] = "refs.css"
+link['href'] = "../STYLES/refs.css"
 my_soup.head.style.replace_with(link)
 
 

@@ -238,7 +238,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 
 
-# Analyzing, designing & specifying
+# Analyzing, designing & specifying systems
 
 ## Requirements determination
 
@@ -255,9 +255,13 @@ Requirements are also categorized as **functional** (what business tasks a syste
 
 Per Whitney (n.d.), Hooks (1994), and Gurd (2013), good requirements are:
 
-- Complete, correct, unambiguous, clear
-- Verifiable, traceable
-- Necessary, feasible/attainable, prioritized
+- Complete but feasible, necessary and prioritized
+- Unambiguous and clear
+- Correct and verifiable
+- Traceable: 
+    - Provenance of a single requirement
+    - Hierarchical dependencies between requirements (their **decomposition)**
+    - Other dependencies between requirements (e.g. _satisfies, verifies)_
 
 Per Dennis et al. (2012), common problems with requirements are:
 
@@ -333,10 +337,6 @@ User stories describe, at a high level, the various actions users need to comple
 
 A informally-constructed network of concepts, reflecting entities and their interrelationships. 
 
-#### Requirements trace matrices
-
-Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
-
 #### Card formats
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
@@ -369,12 +369,13 @@ Use cases may be depicted collectively with a **use case diagram:**
 
 <img src="../ILLOS/use-case-diagram.gif" width="350px"/>
 
+#### Requirements trace matrices
 
+Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
 
 ## Future state design
 
-See [notes on system & process modeling](modeling.html) for methods used to characterize the **to-be system.** 
-
+See [notes on design thinking](strategy.html#design-thinking) re: imagining the **to-be system;** see [notes on system & process modeling](modeling.html) re: characterizing it. 
 
 
 ## Choosing software

@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | nearly 3406 words | updated 05/18/2017</p><div class="TOC">- 1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | nearly 3436 words | updated 05/18/2017</p><div class="TOC">- 1. [What is project management?](#what-is-project-management)
 	- 1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
 - 2. [Initiating a project](#initiating-a-project)
 	- 2.1. [Strategic assessment](#strategic-assessment)
@@ -17,7 +17,7 @@
 	- 2.3. [Writing a project charter](#writing-a-project-charter)
 		- 2.3.1. [Vision & success criteria](#vision-success-criteria)
 		- 2.3.2. [Defining & managing scope](#defining-managing-scope)
-- 3. [Project planning](#project-planning)
+- 3. [Planning a project](#planning-a-project)
 	- 3.1. [... in Agile methodologies](#...-in-agile-methodologies)
 	- 3.2. [... in lifecycle methodologies](#...-in-lifecycle-methodologies)
 		- 3.2.1. [Communications plan](#communications-plan)
@@ -25,7 +25,7 @@
 		- 3.2.3. [Budgeting](#budgeting)
 		- 3.2.4. [Scheduling](#scheduling)
 		- 3.2.5. [Monitoring & reporting](#monitoring-reporting)
-- 4. [Analysis, design & specification](#analysis-design-specification)
+- 4. [Analyzing, designing & specifying systems](#analyzing-designing-specifying-systems)
 	- 4.1. [Requirements determination](#requirements-determination)
 		- 4.1.1. [Current state analysis](#current-state-analysis)
 		- 4.1.2. [Gathering requirements](#gathering-requirements)
@@ -38,11 +38,11 @@
 			- 4.1.3.1. [Actors & personas](#actors-personas)
 			- 4.1.3.2. [User stories](#user-stories)
 			- 4.1.3.3. [Concept maps](#concept-maps)
-			- 4.1.3.4. [Requirements trace matrices](#requirements-trace-matrices)
-			- 4.1.3.5. [Card formats](#card-formats)
-			- 4.1.3.6. [Use cases & requirements definition reports](#use-cases-requirements-definition-reports)
-				- 4.1.3.6.1. [Use scenarios](#use-scenarios)
-				- 4.1.3.6.2. [Use case diagrams](#use-case-diagrams)
+			- 4.1.3.4. [Card formats](#card-formats)
+			- 4.1.3.5. [Use cases & requirements definition reports](#use-cases-requirements-definition-reports)
+				- 4.1.3.5.1. [Use scenarios](#use-scenarios)
+				- 4.1.3.5.2. [Use case diagrams](#use-case-diagrams)
+			- 4.1.3.6. [Requirements trace matrices](#requirements-trace-matrices)
 	- 4.2. [Future state design](#future-state-design)
 	- 4.3. [Choosing software](#choosing-software)
 - 5. [Monitoring & governance](#monitoring-governance)
@@ -242,7 +242,7 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 
 
-# 3. Project planning
+# 3. Planning a project
 
 ## 3.1. ... in Agile methodologies
 
@@ -292,7 +292,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 
 
-# 4. Analysis, design & specification
+# 4. Analyzing, designing & specifying systems
 
 ## 4.1. Requirements determination
 
@@ -309,9 +309,13 @@ Requirements are also categorized as **functional** (what business tasks a syste
 
 Per Whitney (n.d.), Hooks (1994), and Gurd (2013), good requirements are:
 
-- Complete, correct, unambiguous, clear
-- Verifiable, traceable
-- Necessary, feasible/attainable, prioritized
+- Complete but feasible, necessary and prioritized
+- Unambiguous and clear
+- Correct and verifiable
+- Traceable: 
+    - Provenance of a single requirement
+    - Hierarchical dependencies between requirements (their **decomposition)**
+    - Other dependencies between requirements (e.g. _satisfies, verifies)_
 
 Per Dennis et al. (2012), common problems with requirements are:
 
@@ -328,7 +332,7 @@ Per Dennis et al. (2012), common problems with requirements are:
         - Words that are dangerously vague: 
             - _support, but not limited to, etc., and/or_
             - _minimize, maximize, rapid, user-friendly, easy, sufficient, adequate, quick_
-    - Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise targets rather than a range)
+    - Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise performance targets)
 
 ### 4.1.1. Current state analysis
 
@@ -387,11 +391,7 @@ User stories describe, at a high level, the various actions users need to comple
 
 A informally-constructed network of concepts, reflecting entities and their interrelationships. 
 
-#### 4.1.3.4. Requirements trace matrices
-
-Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
-
-#### 4.1.3.5. Card formats
+#### 4.1.3.4. Card formats
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
 - **XP Story Cards,** in which a customer writes a story on a card.
@@ -399,7 +399,7 @@ Table format linking requirements with other information, e.g. requirement categ
 
 <img src="../ILLOS/volere.jpeg" width="350px">
 
-#### 4.1.3.6. Use cases & requirements definition reports
+#### 4.1.3.5. Use cases & requirements definition reports
 
 Requirements are often analyzed by grouping them into **use cases,** capturing actors' archetypical interactions with the system. Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... [They] should describe the interaction between the actor and the system - what the actor does and how the system reacts. Use cases are expressed textually (AKA **requirements definition report),** usually including these elements:
 
@@ -413,22 +413,23 @@ Requirements are often analyzed by grouping them into **use cases,** capturing a
 - GUI requirements
 - Dependencies and relations (to other use cases; often modeled with UML)
 
-##### 4.1.3.6.1. Use scenarios
+##### 4.1.3.5.1. Use scenarios
 
 There may be different paths through a use cases, perhaps corresponding to different personas; these paths are called **use scenarios,** and they may be depicted with a [UML activity diagram.](modeling.html#activity-diagrams)
 
-##### 4.1.3.6.2. Use case diagrams
+##### 4.1.3.5.2. Use case diagrams
 
 Use cases may be depicted collectively with a **use case diagram:** 
 
 <img src="../ILLOS/use-case-diagram.gif" width="350px"/>
 
+#### 4.1.3.6. Requirements trace matrices
 
+Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
 
 ## 4.2. Future state design
 
-See [notes on system & process modeling](modeling.html) for methods used to characterize the **to-be system.** 
-
+See [notes on design thinking](strategy.html#design-thinking) re: imagining the **to-be system;** see [notes on system & process modeling](modeling.html) re: characterizing it. 
 
 
 ## 4.3. Choosing software

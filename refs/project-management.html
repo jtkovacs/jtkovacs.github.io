@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; project management | nearly 3406 words | updated 05/18/2017
+   &gt; project management | nearly 3436 words | updated 05/18/2017
   </p>
   <div class="TOC">
    <ul>
@@ -156,8 +156,8 @@
     <li>
      <ol start="3" style="list-style-type: decimal">
       <li>
-       <a href="#project-planning">
-        Project planning
+       <a href="#planning-a-project">
+        Planning a project
        </a>
       </li>
      </ol>
@@ -211,8 +211,8 @@
     <li>
      <ol start="4" style="list-style-type: decimal">
       <li>
-       <a href="#analysis-design-specification">
-        Analysis, design &amp; specification
+       <a href="#analyzing-designing-specifying-systems">
+        Analyzing, designing &amp; specifying systems
        </a>
       </li>
      </ol>
@@ -293,35 +293,35 @@
           </li>
           <li>
            4.1.3.4.
-           <a href="#requirements-trace-matrices">
-            Requirements trace matrices
-           </a>
-          </li>
-          <li>
-           4.1.3.5.
            <a href="#card-formats">
             Card formats
            </a>
           </li>
           <li>
-           4.1.3.6.
+           4.1.3.5.
            <a href="#use-cases-requirements-definition-reports">
             Use cases &amp; requirements definition reports
            </a>
            <ul>
             <li>
-             4.1.3.6.1.
+             4.1.3.5.1.
              <a href="#use-scenarios">
               Use scenarios
              </a>
             </li>
             <li>
-             4.1.3.6.2.
+             4.1.3.5.2.
              <a href="#use-case-diagrams">
               Use case diagrams
              </a>
             </li>
            </ul>
+          </li>
+          <li>
+           4.1.3.6.
+           <a href="#requirements-trace-matrices">
+            Requirements trace matrices
+           </a>
           </li>
          </ul>
         </li>
@@ -1020,9 +1020,9 @@
    </strong>
    never simply agree to perform them.
   </p>
-  <h1 id="project-planning">
+  <h1 id="planning-a-project">
    <a>
-    3. Project planning
+    3. Planning a project
    </a>
   </h1>
   <h2 id="in-agile-methodologies">
@@ -1163,9 +1163,9 @@
     Project Dashboard
    </li>
   </ul>
-  <h1 id="analysis-design-specification">
+  <h1 id="analyzing-designing-specifying-systems">
    <a>
-    4. Analysis, design &amp; specification
+    4. Analyzing, designing &amp; specifying systems
    </a>
   </h1>
   <h2 id="requirements-determination">
@@ -1239,13 +1239,33 @@
   </p>
   <ul>
    <li>
-    Complete, correct, unambiguous, clear
+    Complete but feasible, necessary and prioritized
    </li>
    <li>
-    Verifiable, traceable
+    Unambiguous and clear
    </li>
    <li>
-    Necessary, feasible/attainable, prioritized
+    Correct and verifiable
+   </li>
+   <li>
+    Traceable:
+    <ul>
+     <li>
+      Provenance of a single requirement
+     </li>
+     <li>
+      Hierarchical dependencies between requirements (their
+      <strong>
+       decomposition)
+      </strong>
+     </li>
+     <li>
+      Other dependencies between requirements (e.g.
+      <em>
+       satisfies, verifies)
+      </em>
+     </li>
+    </ul>
    </li>
   </ul>
   <p>
@@ -1314,7 +1334,7 @@
       </ul>
      </li>
      <li>
-      Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise targets rather than a range)
+      Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise performance targets)
      </li>
     </ul>
    </li>
@@ -1507,17 +1527,9 @@
   <p>
    A informally-constructed network of concepts, reflecting entities and their interrelationships.
   </p>
-  <h4 id="requirements-trace-matrices">
-   <a>
-    4.1.3.4. Requirements trace matrices
-   </a>
-  </h4>
-  <p>
-   Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
-  </p>
   <h4 id="card-formats">
    <a>
-    4.1.3.5. Card formats
+    4.1.3.4. Card formats
    </a>
   </h4>
   <ul>
@@ -1544,7 +1556,7 @@
   </p>
   <h4 id="use-cases-requirements-definition-reports">
    <a>
-    4.1.3.6. Use cases &amp; requirements definition reports
+    4.1.3.5. Use cases &amp; requirements definition reports
    </a>
   </h4>
   <p>
@@ -1592,7 +1604,7 @@
   </ul>
   <h5 id="use-scenarios">
    <a>
-    4.1.3.6.1. Use scenarios
+    4.1.3.5.1. Use scenarios
    </a>
   </h5>
   <p>
@@ -1607,7 +1619,7 @@
   </p>
   <h5 id="use-case-diagrams">
    <a>
-    4.1.3.6.2. Use case diagrams
+    4.1.3.5.2. Use case diagrams
    </a>
   </h5>
   <p>
@@ -1619,6 +1631,14 @@
   <p>
    <img src="illos/use-case-diagram.gif" width="350px"/>
   </p>
+  <h4 id="requirements-trace-matrices">
+   <a>
+    4.1.3.6. Requirements trace matrices
+   </a>
+  </h4>
+  <p>
+   Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
+  </p>
   <h2 id="future-state-design">
    <a>
     4.2. Future state design
@@ -1626,13 +1646,18 @@
   </h2>
   <p>
    See
+   <a href="strategy.html#design-thinking">
+    notes on design thinking
+   </a>
+   re: imagining the
+   <strong>
+    to-be system;
+   </strong>
+   see
    <a href="modeling.html">
     notes on system &amp; process modeling
    </a>
-   for methods used to characterize the
-   <strong>
-    to-be system.
-   </strong>
+   re: characterizing it.
   </p>
   <h2 id="choosing-software">
    <a>

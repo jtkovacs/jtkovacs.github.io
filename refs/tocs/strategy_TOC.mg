@@ -1,48 +1,61 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> strategy | nearly 332 words | updated 05/18/2017</p><div class="TOC">- 1. [Business Strategy](#business-strategy)
-	- 1.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
-	- 1.2. [What are frameworks for a strategic analysis?](#what-are-frameworks-for-a-strategic-analysis)
-	- 1.3. [What is market research, and how is it done?](#what-is-market-research-and-how-is-it-done)
-- 2. [Trends](#trends)
-	- 2.1. [What technology trends matter?](#what-technology-trends-matter)
-	- 2.2. [What labor trends matter?](#what-labor-trends-matter)
-	- 2.3. [What political trends matter?](#what-political-trends-matter)
-- 3. [Sources](#sources)
-	- 3.1. [References](#references)
-	- 3.2. [Read](#read)
-	- 3.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> strategy | nearly 341 words | updated 05/18/2017</p><div class="TOC">- 1. [Strategic thinking](#strategic-thinking)
+	- 1.1. [Design thinking](#design-thinking)
+	- 1.2. [Systems thinking](#systems-thinking)
+- 2. [Business strategy](#business-strategy)
+	- 2.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
+	- 2.2. [What are frameworks for a strategic analysis?](#what-are-frameworks-for-a-strategic-analysis)
+	- 2.3. [What is market research, and how is it done?](#what-is-market-research-and-how-is-it-done)
+- 3. [Trends](#trends)
+	- 3.1. [What technology trends matter?](#what-technology-trends-matter)
+	- 3.2. [What labor trends matter?](#what-labor-trends-matter)
+	- 3.3. [What political trends matter?](#what-political-trends-matter)
+- 4. [Sources](#sources)
+	- 4.1. [References](#references)
+	- 4.2. [Read](#read)
+	- 4.3. [Unread](#unread)
 </div>
 
-# 1. Business Strategy
 
-## 1.1. What generic strategies can companies pursue?
+# 1. Strategic thinking
 
-## 1.2. What are frameworks for a strategic analysis?
+## 1.1. Design thinking
+
+## 1.2. Systems thinking
+
+
+# 2. Business strategy
+
+## 2.1. What generic strategies can companies pursue?
+
+## 2.2. What are frameworks for a strategic analysis?
 
 PESTEL, PORTER 5, SWOT.
 
-## 1.3. What is market research, and how is it done?
+## 2.3. What is market research, and how is it done?
 
 
-# 2. Trends
 
-## 2.1. What technology trends matter?
+
+# 3. Trends
+
+## 3.1. What technology trends matter?
 
 Communication, automation, Big Data.
 
-## 2.2. What labor trends matter?
+## 3.2. What labor trends matter?
 
 Overwork, precariousness, disemployment, loss of protection or violates of labor laws.
 
-## 2.3. What political trends matter?
+## 3.3. What political trends matter?
 
 Inequality and polarization.
 
 
 
 
-# 3. Sources
+# 4. Sources
 
-## 3.1. References
+## 4.1. References
 
 - [Mike Bradley & Tiff Zhang's startup generator](http://tiffzhang.com/startup/)
 - [Portal to Gartner's research methodologies](http://www.gartner.com/technology/research/methodologies/methodology.jsp)
@@ -52,10 +65,10 @@ Inequality and polarization.
 - [CBBP's "policy futures" research](http://www.cbpp.org/about/special-projects/policy-futures)
 - [SLU library guide to market research](http://libguides.slu.edu/c.php?g=185604&amp;p=1226028)
 
-## 3.2. Read
+## 4.2. Read
 
 
-## 3.3. Unread
+## 4.3. Unread
 
 - [Paul Graham's "Do things that don't scale"](http://paulgraham.com/ds.html)
 - [Technology will replace many doctors, lawyers, and other professionals](https://hbr.org/2016/10/robots-will-replace-doctors-lawyers-and-other-professionals)

@@ -1,5 +1,13 @@
 
-# Business Strategy
+
+# Strategic thinking
+
+## Design thinking
+
+## Systems thinking
+
+
+# Business strategy
 
 ## What generic strategies can companies pursue?
 
@@ -8,6 +16,8 @@
 PESTEL, PORTER 5, SWOT.
 
 ## What is market research, and how is it done?
+
+
 
 
 # Trends

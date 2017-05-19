@@ -164,16 +164,17 @@ fout.close()
 
 
 # Convert new .md file to .html
-hname = foname[:-7]+'.html'
-hname = hname.split('/')
-hname.remove('TOCS')
-html_out = "/".join(hname)
-subprocess.run(['pandoc', foname, '-f', 'markdown', '-t', 'html', '-s', '-o', html_out])
+hname = wd + sys.argv[1][:-3] + '.html'
+#hname = foname[:-7]+'.html'
+#hname = hname.split('/')
+#hname.remove('TOCS')
+#html_out = "/".join(hname)
+subprocess.run(['pandoc', foname, '-f', 'markdown', '-t', 'html', '-s', '-o', hname])
 
 
 
 # Open .html file
-fhand = open(html_out, 'r')
+fhand = open(hname, 'r')
 my_soup = BeautifulSoup(fhand, "html.parser")
 
 
@@ -196,7 +197,7 @@ images = my_soup.find_all(["img"])
 for i in images:
     img_loc = i['src']
     img_name = img_loc.split("/")[-1]
-    i['src'] = "ILLOS/"+img_name
+    i['src'] = "illos/"+img_name
     
 
     
@@ -204,27 +205,27 @@ for i in images:
 main = my_soup.new_tag("link")
 main["rel"] = "stylesheet"
 main["type"] = "text/css"
-main['href'] = "../STYLES/main.css"
+main['href'] = "../assets/styles/main.css"
 my_soup.head.style.replace_with(main)
 refs = my_soup.new_tag("link")
 refs["rel"] = "stylesheet"
 refs["type"] = "text/css"
-refs['href'] = "../STYLES/refs.css" 
+refs['href'] = "../assets/styles/refs.css" 
 my_soup.head.append(refs)
 
 
 
 # Add page title
-pg_title_text = 'jtkovacs.github.io | '+title
+pg_title_text = 'jtkovacs.github.io | ' + title
 my_soup.title.append(pg_title_text)
 
 
 
 # Write final .html file
-fhand = open(html_out, 'w')
+fhand = open(hname, 'w')
 fhand.write(my_soup.prettify())
 ## not sure why I need this twice????
-fhand = open(html_out, 'w')
+fhand = open(hname, 'w')
 fhand.write(my_soup.prettify())
     
     

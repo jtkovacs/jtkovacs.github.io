@@ -7,15 +7,15 @@
   <title>
    jtkovacs.github.io | databases
   </title>
-  <link href="../STYLES/main.css" rel="stylesheet" type="text/css"/>
-  <link href="../STYLES/refs.css" rel="stylesheet" type="text/css"/>
+  <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../assets/styles/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
   <p class="path">
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; databases | nearly 4459 words | updated 05/16/2017
+   &gt; databases | nearly 4459 words | updated 05/18/2017
   </p>
   <div class="TOC">
    <ul>
@@ -822,10 +822,10 @@
    <tbody>
     <tr class="odd">
      <td align="left">
-      <img src="ILLOS/fcn.png"/>
+      <img src="illos/fcn.png"/>
      </td>
      <td align="left">
-      <img src="ILLOS/not-fcn.png"/>
+      <img src="illos/not-fcn.png"/>
      </td>
     </tr>
    </tbody>
@@ -968,7 +968,7 @@
    </li>
   </ul>
   <div class="figure">
-   <img src="ILLOS/integrity.png"/>
+   <img src="illos/integrity.png"/>
   </div>
   <p>
    Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs).
@@ -1512,7 +1512,7 @@
    This discussion is based on MS SQL Server, which stores table data (rows) in uniformly-sized pages AKA blocks:
   </p>
   <div class="figure">
-   <img src="ILLOS/SQLDataPage.png"/>
+   <img src="illos/SQLDataPage.png"/>
   </div>
   <p>
    A table is either a
@@ -1563,7 +1563,7 @@
    to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
   </p>
   <div class="figure">
-   <img src="ILLOS/nonclustered-index.png"/>
+   <img src="illos/nonclustered-index.png"/>
   </div>
   <p>
    For heap pages, clustered indexes, and non-clustered indexes alike, a
@@ -1577,7 +1577,7 @@
    is used to make page search more efficient:
   </p>
   <p>
-   <img src="ILLOS/B-tree.png" style="padding-top: 5px;" width="500px"/>
+   <img src="illos/B-tree.png" style="padding-top: 5px;" width="500px"/>
   </p>
   <p>
    Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstore structure (Sheldon, 2013), a
@@ -1587,7 +1587,7 @@
    (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns:
   </p>
   <div class="figure">
-   <img src="ILLOS/columnstore.png"/>
+   <img src="illos/columnstore.png"/>
   </div>
   <h5 id="fragmentation">
    <a>
@@ -1830,16 +1830,16 @@
    </a>
   </h2>
   <div class="figure">
-   <img src="ILLOS/db-arch1.png"/>
+   <img src="illos/db-arch1.png"/>
   </div>
   <div class="figure">
-   <img src="ILLOS/db-arch2.png"/>
+   <img src="illos/db-arch2.png"/>
   </div>
   <div class="figure">
-   <img src="ILLOS/db-arch3.png"/>
+   <img src="illos/db-arch3.png"/>
   </div>
   <div class="figure">
-   <img src="ILLOS/db-arch4.png"/>
+   <img src="illos/db-arch4.png"/>
   </div>
   <h2 id="transaction-management">
    <a>

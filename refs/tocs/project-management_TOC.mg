@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | nearly 3436 words | updated 05/18/2017</p><div class="TOC">- 1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | nearly 3874 words | updated 05/19/2017</p><div class="TOC">- 1. [What is project management?](#what-is-project-management)
 	- 1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
 - 2. [Initiating a project](#initiating-a-project)
 	- 2.1. [Strategic assessment](#strategic-assessment)
@@ -27,22 +27,30 @@
 		- 3.2.5. [Monitoring & reporting](#monitoring-reporting)
 - 4. [Analyzing, designing & specifying systems](#analyzing-designing-specifying-systems)
 	- 4.1. [Requirements determination](#requirements-determination)
-		- 4.1.1. [Current state analysis](#current-state-analysis)
-		- 4.1.2. [Gathering requirements](#gathering-requirements)
-			- 4.1.2.1. [Interviews](#interviews)
-			- 4.1.2.2. [Observations](#observations)
-			- 4.1.2.3. [Surveys or questionnaires ](#surveys-or-questionnaires-)
-			- 4.1.2.4. [JAD sessions](#jad-sessions)
-			- 4.1.2.5. [Document analysis](#document-analysis)
-		- 4.1.3. [Analyzing requirements](#analyzing-requirements)
-			- 4.1.3.1. [Actors & personas](#actors-personas)
-			- 4.1.3.2. [User stories](#user-stories)
-			- 4.1.3.3. [Concept maps](#concept-maps)
-			- 4.1.3.4. [Card formats](#card-formats)
-			- 4.1.3.5. [Use cases & requirements definition reports](#use-cases-requirements-definition-reports)
-				- 4.1.3.5.1. [Use scenarios](#use-scenarios)
-				- 4.1.3.5.2. [Use case diagrams](#use-case-diagrams)
-			- 4.1.3.6. [Requirements trace matrices](#requirements-trace-matrices)
+		- 4.1.1. [Types of requirements](#types-of-requirements)
+		- 4.1.2. [What are good requirements?](#what-are-good-requirements)
+		- 4.1.3. [Gathering requirements](#gathering-requirements)
+			- 4.1.3.1. [Current state analysis](#current-state-analysis)
+			- 4.1.3.2. [Interviews](#interviews)
+			- 4.1.3.3. [Observations](#observations)
+			- 4.1.3.4. [Surveys or questionnaires ](#surveys-or-questionnaires-)
+			- 4.1.3.5. [JAD sessions](#jad-sessions)
+			- 4.1.3.6. [Document analysis](#document-analysis)
+		- 4.1.4. [Analyzing requirements](#analyzing-requirements)
+			- 4.1.4.1. [Actors](#actors)
+				- 4.1.4.1.1. [Personas](#personas)
+			- 4.1.4.2. [User stories](#user-stories)
+			- 4.1.4.3. [Use cases](#use-cases)
+				- 4.1.4.3.1. [Use case levels](#use-case-levels)
+				- 4.1.4.3.2. [Use scenarios](#use-scenarios)
+				- 4.1.4.3.3. [Conversation form](#conversation-form)
+				- 4.1.4.3.4. [Use case diagrams](#use-case-diagrams)
+				- 4.1.4.3.5. [Requirements dependency traceability matrix](#requirements-dependency-traceability-matrix)
+				- 4.1.4.3.6. [Use case narratives](#use-case-narratives)
+			- 4.1.4.4. [Requirements trace matrices](#requirements-trace-matrices)
+			- 4.1.4.5. [Card formats](#card-formats)
+			- 4.1.4.6. [Glossaries](#glossaries)
+			- 4.1.4.7. [Concept maps](#concept-maps)
 	- 4.2. [Future state design](#future-state-design)
 	- 4.3. [Choosing software](#choosing-software)
 - 5. [Monitoring & governance](#monitoring-governance)
@@ -246,7 +254,7 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 ## 3.1. ... in Agile methodologies
 
-In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (n.d.), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
+In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (1999), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
 
 - ... in place of a schedule, a **stack** of prioritized requirements with detailed modeling done 'just in time';
 - ... in place of a budget, funding is continuously adjusted in response to the **value** delivered by products.
@@ -296,9 +304,13 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## 4.1. Requirements determination
 
-Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs so they can influence system design. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs". They also note that requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users), second as **system requirements** (from the perspective of developers). 
+Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs so they can influence system design. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs". 
 
-Requirements are also categorized as **functional** (what business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect how tasks are performed, and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759) Per [StackExchange answers,](https://softwareengineering.stackexchange.com/questions/82763/why-bother-differentiating-between-functional-and-nonfunctional-requirements) is important to differentiate functional from nonfunctional requirements because:
+### 4.1.1. Types of requirements
+
+Per Dennis et al. (2012), requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users), second as **system requirements** (from the perspective of developers). Requirements are also categorized as **functional** (what business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect how tasks are performed, and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759) 
+
+Per [StackExchange answers,](https://softwareengineering.stackexchange.com/questions/82763/why-bother-differentiating-between-functional-and-nonfunctional-requirements) is important to differentiate functional from nonfunctional requirements because:
 
 - They apply to different levels of the system (nonfunctional = system as a whole)
 - They are of interest to different people (or some people may only be interested in a subset of requirements)
@@ -306,6 +318,8 @@ Requirements are also categorized as **functional** (what business tasks a syste
 - They may be modeled/represented in different ways (nonfunctional = quality attribute scenario)
 - Differentiating conceptually helps you be more thorough when eliciting and analyzing requirements
 - Modularity (differentiation and cross-referencing) supports iteration
+
+### 4.1.2. What are good requirements?
 
 Per Whitney (n.d.), Hooks (1994), and Gurd (2013), good requirements are:
 
@@ -332,9 +346,13 @@ Per Dennis et al. (2012), common problems with requirements are:
         - Words that are dangerously vague: 
             - _support, but not limited to, etc., and/or_
             - _minimize, maximize, rapid, user-friendly, easy, sufficient, adequate, quick_
-    - Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise performance targets)
+    - Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise targets)
+    
+### 4.1.3. Gathering requirements
 
-### 4.1.1. Current state analysis
+Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, [process improvement efforts,](process-improvement.html) existing documents, and competing software using the following techniques (and see [notes on qualitative methods):](qualitative-methods.html) 
+
+#### 4.1.3.1. Current state analysis
 
 A current state analysis produces models of the **as-is system** (see [notes on system & process modeling techniques](modeling.html) that are used). Per Dennis et al. (2012), a requirements determination process _may_ begin with current state analysis; this, however, depends on:
 
@@ -345,12 +363,8 @@ A current state analysis produces models of the **as-is system** (see [notes on 
     (b) Little effect on current systems
 
 (3) **The amount of system change desired,** i.e. BPA vs. BPI vs. BPR (see [notes on process improvement](process-improvement.html) for definitions and associated methods). The amount of change desired and amount of effort spent analyzing the as-is system are inversely related.
-    
-### 4.1.2. Gathering requirements
 
-Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, [process improvement efforts,](process-improvement.html) existing documents, and competing software using the following techniques (and see [notes on qualitative methods):](qualitative-methods.html) 
-
-#### 4.1.2.1. Interviews
+#### 4.1.3.2. Interviews
 
 1. Select interviewees
 2. Write an **interview plan:**
@@ -363,35 +377,110 @@ Per Dennis et al. (2012), requirements may be obtained from users, domain expert
     d. Taking careful notes (if recording is disallowed)
 5. Prepare an **interview summary,** and ask the interviewee for any corrections
 
-#### 4.1.2.2. Observations
+#### 4.1.3.3. Observations
 
-#### 4.1.2.3. Surveys or questionnaires 
+#### 4.1.3.4. Surveys or questionnaires 
 
-#### 4.1.2.4. JAD sessions
+#### 4.1.3.5. JAD sessions
 
-#### 4.1.2.5. Document analysis
+#### 4.1.3.6. Document analysis
 
 
 
-### 4.1.3. Analyzing requirements
+### 4.1.4. Analyzing requirements
 
 Per Whitney (n.d.), Dennis et al. (2012), and Ambler (1999), once gathered, requirements may be preserved, analyzed, and expressed in different ways:
 
-#### 4.1.3.1. Actors & personas
+#### 4.1.4.1. Actors
 
-**Actors** are the generic users of a system, e.g. customers, that might appear on a system diagram. Note that actors include other software as well as people. **Personas** are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users; they are an exercise in fostering empathy and user-centered design.
+Actors are the generic users of a system, e.g. customers, that might appear on a system diagram. Note that actors include other software as well as people. Leffingwell (2010) proposes some questions for identifying actors:
 
-A **primary persona** is one whose needs are distinct enough to require a dedicated interface.
+- Who uses the system?
+- Who gets information from the system?
+- Who provides information to the system?
+- Where is the system used?
+- Who supports and maintains the system?
+- What other systems or devices use this system?
 
-#### 4.1.3.2. User stories
+Per Wirfs-Brock and McKean (2001), **primary actors** are outside the system designers' control, and issue requests to the system; **secondary actors** respond to requests _from_ the system.
 
-User stories describe, at a high level, the various actions users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."** User stories are refined (split, grouped, reprioritized, etc.) throughout the development process.
+##### 4.1.4.1.1. Personas
 
-#### 4.1.3.3. Concept maps
+Personas are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users; they are an exercise in fostering empathy and user-centered design. A **primary persona** is one whose needs are distinct enough to require a dedicated interface.
 
-A informally-constructed network of concepts, reflecting entities and their interrelationships. 
+#### 4.1.4.2. User stories
 
-#### 4.1.3.4. Card formats
+Per Ambler (n.d.), user stories describe, at a high level, the various actions users need to complete. User stories should be written by business or subject matter experts, using the form **"As an X, I need to Y so I can Z."** User stories are refined (split, grouped, reprioritized, etc.) throughout the development process. User stories may be grouped by their **themes.**
+
+#### 4.1.4.3. Use cases
+
+User stories can be decomposed into use cases, enumerating actors' interactions with the system as they pursue their goals. Leffingwell (2010) proposes some questions for identifying use cases:
+
+- What will the actor use the system for?
+- Will the actor create, store, change, remove, or read data in the system?
+- Will the actor need to inform the system about external events or changes?
+- Will the actor need to be informed about certain occurrences in the system?
+
+Similarly, from Schneider and Winters (1998):
+
+- Who uses the system? 
+- Who installs the system? 
+- Who starts up the system? 
+- Who maintains the system? 
+- Who shuts down the system? 
+- What other systems use this system? 
+- Who gets information from this system? 
+- Who provides information to the system? 
+- Does anything happen automatically at a present time?
+
+##### 4.1.4.3.1. Use case levels
+
+Per Wirfs-Brock and McKean (2001), use cases are written at different levels that, combined, depict the whole system:
+
+- Summary, the highest level overview;
+- Core, human task-level descriptions;
+- Supporting, decomposing tasks;
+- Internal, describing interactions between system components.
+
+##### 4.1.4.3.2. Use scenarios
+
+There may be different paths through a use cases, perhaps corresponding to different personas; these paths are called use scenarios, and they may be depicted with a [UML activity diagram](modeling.html#activity-diagrams) or written as a series of bullet points (called a **scenario form).**
+
+##### 4.1.4.3.3. Conversation form
+
+This is a two-column depiction of a use case/scenario, showing interactions between an actor and the system. User actions should be represented at the level of the user's _intentions,_ i.e. their goals rather than the minute actions they may need to achieve their goals (although this depends greatly on the level of the system diagram).
+
+##### 4.1.4.3.4. Use case diagrams
+
+Use cases may be depicted collectively with [use case diagrams](modeling.html#use-case-diagrams) that:
+
+- Connect use cases to actors 
+- Connect use cases to each other:
+    - \<\<include\>\> (routinely shared functionality)
+    - \<\<extend\>\> (exceptional scenario)
+    
+##### 4.1.4.3.5. Requirements dependency traceability matrix
+
+Uses a table to indicate dependencies between requirements.
+
+##### 4.1.4.3.6. Use case narratives
+
+Individual use cases are expressed narratively in a flow-of-events AKA requirements definition report, usually including these elements:
+
+- Overview
+- Notes
+- Actors
+- Preconditions
+- [Scenario(s),](#use-scenarios) and exceptions AKA alternate flow(s)
+- Post conditions AKA exit conditions
+- GUI requirements
+- Dependencies and relations (to other use cases; often modeled with UML)
+
+#### 4.1.4.4. Requirements trace matrices
+
+Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
+
+#### 4.1.4.5. Card formats
 
 - **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
 - **XP Story Cards,** in which a customer writes a story on a card.
@@ -399,37 +488,20 @@ A informally-constructed network of concepts, reflecting entities and their inte
 
 <img src="../ILLOS/volere.jpeg" width="350px">
 
-#### 4.1.3.5. Use cases & requirements definition reports
+#### 4.1.4.6. Glossaries
 
-Requirements are often analyzed by grouping them into **use cases,** capturing actors' archetypical interactions with the system. Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... [They] should describe the interaction between the actor and the system - what the actor does and how the system reacts. Use cases are expressed textually (AKA **requirements definition report),** usually including these elements:
+A special dictionary of acronyms, jargon etc. important for understanding system documentation. Per Wirfs-Brock and McKean (2001), a glossary entry should address the word's scope, typical values/example, related concepts, and significance; definitions should have the form **"X is a [broader term] that [Y]"** and avoid the phrases "is when", "is where" because they permit vagueness.
 
-- Overview
-- Notes
-- Actors
-- Preconditions
-- [Scenario(s),](#use-scenarios) AKA alternate course(s)
-- Post conditions
-- Exceptions
-- GUI requirements
-- Dependencies and relations (to other use cases; often modeled with UML)
+#### 4.1.4.7. Concept maps
 
-##### 4.1.3.5.1. Use scenarios
+A informally-constructed network of concepts, reflecting entities and their interrelationships. 
 
-There may be different paths through a use cases, perhaps corresponding to different personas; these paths are called **use scenarios,** and they may be depicted with a [UML activity diagram.](modeling.html#activity-diagrams)
 
-##### 4.1.3.5.2. Use case diagrams
 
-Use cases may be depicted collectively with a **use case diagram:** 
-
-<img src="../ILLOS/use-case-diagram.gif" width="350px"/>
-
-#### 4.1.3.6. Requirements trace matrices
-
-Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
 
 ## 4.2. Future state design
 
-See [notes on design thinking](strategy.html#design-thinking) re: imagining the **to-be system;** see [notes on system & process modeling](modeling.html) re: characterizing it. 
+See [notes on design thinking](strategy.html#design-thinking) re: imagining the **to-be system;** see [notes on system & process modeling](modeling.html) and [interfaces](interfaces.html) re: characterizing it. 
 
 
 ## 4.3. Choosing software
@@ -453,7 +525,9 @@ General criteria to consider:
 
 ## 6.1. Cited
 
-Ambler, S. (n.d.). Comparing approaches to budgeting and estimating software development projects. Retrieved from [http://www.ambysoft.com/essays/comparingEstimatingApproaches.html](http://www.ambysoft.com/essays/comparingEstimatingApproaches.html)
+Ambler, S. (1999). Comparing approaches to budgeting and estimating software development projects. Retrieved from [http://www.ambysoft.com/essays/comparingEstimatingApproaches.html](http://www.ambysoft.com/essays/comparingEstimatingApproaches.html)
+
+Ambler, S. (n.d.). User stories: An Agile introduction. (n.d.). Retrieved from [http://www.agilemodeling.com/artifacts/userStory.htm](http://www.agilemodeling.com/artifacts/userStory.htm)
 
 Annabi, H. & McGann, S. (2014). Unit 1---What is MIS? In _The real deal on MIS._
 
@@ -483,6 +557,8 @@ Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interest
 
 Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
 
+Schneider, G. & Winters, J. P. (1998). _Applying use cases: A practical guide._ Reading, MA: Addison Wesley.
+
 Sheen, R. (2015). How to manage scope creep [video]. _Harvard Business Review._ Retrieved from [https://hbr.org/video/2942763785001/how-to-manage-scope-creep](https://hbr.org/video/2942763785001/how-to-manage-scope-creep)
 
 Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from [https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/](https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/)   
@@ -490,6 +566,8 @@ Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcam
 Whitney, E. (n.d.). Introduction to gathering requirements and creating use cases. Retrieved from [http://www.codemag.com/Article/0102061](http://www.codemag.com/Article/0102061)
 
 Wikipedia. (2017, March 28). Work breakdown structure. Retrieved from [https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&oldid=772556888](https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&oldid=772556888)
+
+Wirfs-Brock, R., & McKean, A. (2001). The art of writing use cases. In _Tutorial for OOPSLA Conference._ Retrieved from [https://www.researchgate.net/profile/Rebecca_Wirfs-Brock/publication/228393043_The_Art_of_Writing_Use_Cases/links/00b49517fe3053c449000000.pdf](https://www.researchgate.net/profile/Rebecca_Wirfs-Brock/publication/228393043_The_Art_of_Writing_Use_Cases/links/00b49517fe3053c449000000.pdf)
 
 ## 6.2. References
 

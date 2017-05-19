@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; project management | nearly 3436 words | updated 05/18/2017
+   &gt; project management | nearly 3874 words | updated 05/19/2017
   </p>
   <div class="TOC">
    <ul>
@@ -225,42 +225,54 @@
        <ul>
         <li>
          4.1.1.
-         <a href="#current-state-analysis">
-          Current state analysis
+         <a href="#types-of-requirements">
+          Types of requirements
          </a>
         </li>
         <li>
          4.1.2.
+         <a href="#what-are-good-requirements">
+          What are good requirements?
+         </a>
+        </li>
+        <li>
+         4.1.3.
          <a href="#gathering-requirements">
           Gathering requirements
          </a>
          <ul>
           <li>
-           4.1.2.1.
+           4.1.3.1.
+           <a href="#current-state-analysis">
+            Current state analysis
+           </a>
+          </li>
+          <li>
+           4.1.3.2.
            <a href="#interviews">
             Interviews
            </a>
           </li>
           <li>
-           4.1.2.2.
+           4.1.3.3.
            <a href="#observations">
             Observations
            </a>
           </li>
           <li>
-           4.1.2.3.
+           4.1.3.4.
            <a href="#surveys-or-questionnaires-">
             Surveys or questionnaires
            </a>
           </li>
           <li>
-           4.1.2.4.
+           4.1.3.5.
            <a href="#jad-sessions">
             JAD sessions
            </a>
           </li>
           <li>
-           4.1.2.5.
+           4.1.3.6.
            <a href="#document-analysis">
             Document analysis
            </a>
@@ -268,59 +280,97 @@
          </ul>
         </li>
         <li>
-         4.1.3.
+         4.1.4.
          <a href="#analyzing-requirements">
           Analyzing requirements
          </a>
          <ul>
           <li>
-           4.1.3.1.
-           <a href="#actors-personas">
-            Actors &amp; personas
-           </a>
-          </li>
-          <li>
-           4.1.3.2.
-           <a href="#user-stories">
-            User stories
-           </a>
-          </li>
-          <li>
-           4.1.3.3.
-           <a href="#concept-maps">
-            Concept maps
-           </a>
-          </li>
-          <li>
-           4.1.3.4.
-           <a href="#card-formats">
-            Card formats
-           </a>
-          </li>
-          <li>
-           4.1.3.5.
-           <a href="#use-cases-requirements-definition-reports">
-            Use cases &amp; requirements definition reports
+           4.1.4.1.
+           <a href="#actors">
+            Actors
            </a>
            <ul>
             <li>
-             4.1.3.5.1.
-             <a href="#use-scenarios">
-              Use scenarios
-             </a>
-            </li>
-            <li>
-             4.1.3.5.2.
-             <a href="#use-case-diagrams">
-              Use case diagrams
+             4.1.4.1.1.
+             <a href="#personas">
+              Personas
              </a>
             </li>
            </ul>
           </li>
           <li>
-           4.1.3.6.
+           4.1.4.2.
+           <a href="#user-stories">
+            User stories
+           </a>
+          </li>
+          <li>
+           4.1.4.3.
+           <a href="#use-cases">
+            Use cases
+           </a>
+           <ul>
+            <li>
+             4.1.4.3.1.
+             <a href="#use-case-levels">
+              Use case levels
+             </a>
+            </li>
+            <li>
+             4.1.4.3.2.
+             <a href="#use-scenarios">
+              Use scenarios
+             </a>
+            </li>
+            <li>
+             4.1.4.3.3.
+             <a href="#conversation-form">
+              Conversation form
+             </a>
+            </li>
+            <li>
+             4.1.4.3.4.
+             <a href="#use-case-diagrams">
+              Use case diagrams
+             </a>
+            </li>
+            <li>
+             4.1.4.3.5.
+             <a href="#requirements-dependency-traceability-matrix">
+              Requirements dependency traceability matrix
+             </a>
+            </li>
+            <li>
+             4.1.4.3.6.
+             <a href="#use-case-narratives">
+              Use case narratives
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           4.1.4.4.
            <a href="#requirements-trace-matrices">
             Requirements trace matrices
+           </a>
+          </li>
+          <li>
+           4.1.4.5.
+           <a href="#card-formats">
+            Card formats
+           </a>
+          </li>
+          <li>
+           4.1.4.6.
+           <a href="#glossaries">
+            Glossaries
+           </a>
+          </li>
+          <li>
+           4.1.4.7.
+           <a href="#concept-maps">
+            Concept maps
            </a>
           </li>
          </ul>
@@ -1031,7 +1081,7 @@
    </a>
   </h2>
   <p>
-   In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (n.d.), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
+   In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (1999), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
   </p>
   <ul>
    <li>
@@ -1178,7 +1228,15 @@
    <a href="#stakeholder-analysis">
     stakeholder
    </a>
-   (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs so they can influence system design. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs". They also note that requirements are expressed first as
+   (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs so they can influence system design. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs".
+  </p>
+  <h3 id="types-of-requirements">
+   <a>
+    4.1.1. Types of requirements
+   </a>
+  </h3>
+  <p>
+   Per Dennis et al. (2012), requirements are expressed first as
    <strong>
     business requirements
    </strong>
@@ -1186,10 +1244,7 @@
    <strong>
     system requirements
    </strong>
-   (from the perspective of developers).
-  </p>
-  <p>
-   Requirements are also categorized as
+   (from the perspective of developers). Requirements are also categorized as
    <strong>
     functional
    </strong>
@@ -1208,6 +1263,8 @@
    <a href="https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759">
     Capability Maturity Model).
    </a>
+  </p>
+  <p>
    Per
    <a href="https://softwareengineering.stackexchange.com/questions/82763/why-bother-differentiating-between-functional-and-nonfunctional-requirements">
     StackExchange answers,
@@ -1234,6 +1291,11 @@
     Modularity (differentiation and cross-referencing) supports iteration
    </li>
   </ul>
+  <h3 id="what-are-good-requirements">
+   <a>
+    4.1.2. What are good requirements?
+   </a>
+  </h3>
   <p>
    Per Whitney (n.d.), Hooks (1994), and Gurd (2013), good requirements are:
   </p>
@@ -1334,16 +1396,31 @@
       </ul>
      </li>
      <li>
-      Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise performance targets)
+      Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise targets)
      </li>
     </ul>
    </li>
   </ul>
-  <h3 id="current-state-analysis">
+  <h3 id="gathering-requirements">
    <a>
-    4.1.1. Current state analysis
+    4.1.3. Gathering requirements
    </a>
   </h3>
+  <p>
+   Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes,
+   <a href="process-improvement.html">
+    process improvement efforts,
+   </a>
+   existing documents, and competing software using the following techniques (and see
+   <a href="qualitative-methods.html">
+    notes on qualitative methods):
+   </a>
+  </p>
+  <h4 id="current-state-analysis">
+   <a>
+    4.1.3.1. Current state analysis
+   </a>
+  </h4>
   <p>
    A current state analysis produces models of the
    <strong>
@@ -1394,24 +1471,9 @@
     </p>
    </li>
   </ol>
-  <h3 id="gathering-requirements">
-   <a>
-    4.1.2. Gathering requirements
-   </a>
-  </h3>
-  <p>
-   Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes,
-   <a href="process-improvement.html">
-    process improvement efforts,
-   </a>
-   existing documents, and competing software using the following techniques (and see
-   <a href="qualitative-methods.html">
-    notes on qualitative methods):
-   </a>
-  </p>
   <h4 id="interviews">
    <a>
-    4.1.2.1. Interviews
+    4.1.3.2. Interviews
    </a>
   </h4>
   <ol style="list-style-type: decimal">
@@ -1459,49 +1521,82 @@
   </ol>
   <h4 id="observations">
    <a>
-    4.1.2.2. Observations
+    4.1.3.3. Observations
    </a>
   </h4>
   <h4 id="surveys-or-questionnaires">
    <a>
-    4.1.2.3. Surveys or questionnaires
+    4.1.3.4. Surveys or questionnaires
    </a>
   </h4>
   <h4 id="jad-sessions">
    <a>
-    4.1.2.4. JAD sessions
+    4.1.3.5. JAD sessions
    </a>
   </h4>
   <h4 id="document-analysis">
    <a>
-    4.1.2.5. Document analysis
+    4.1.3.6. Document analysis
    </a>
   </h4>
   <h3 id="analyzing-requirements">
    <a>
-    4.1.3. Analyzing requirements
+    4.1.4. Analyzing requirements
    </a>
   </h3>
   <p>
    Per Whitney (n.d.), Dennis et al. (2012), and Ambler (1999), once gathered, requirements may be preserved, analyzed, and expressed in different ways:
   </p>
-  <h4 id="actors-personas">
+  <h4 id="actors">
    <a>
-    4.1.3.1. Actors &amp; personas
+    4.1.4.1. Actors
    </a>
   </h4>
   <p>
-   <strong>
-    Actors
-   </strong>
-   are the generic users of a system, e.g. customers, that might appear on a system diagram. Note that actors include other software as well as people.
-   <strong>
-    Personas
-   </strong>
-   are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users; they are an exercise in fostering empathy and user-centered design.
+   Actors are the generic users of a system, e.g. customers, that might appear on a system diagram. Note that actors include other software as well as people. Leffingwell (2010) proposes some questions for identifying actors:
   </p>
+  <ul>
+   <li>
+    Who uses the system?
+   </li>
+   <li>
+    Who gets information from the system?
+   </li>
+   <li>
+    Who provides information to the system?
+   </li>
+   <li>
+    Where is the system used?
+   </li>
+   <li>
+    Who supports and maintains the system?
+   </li>
+   <li>
+    What other systems or devices use this system?
+   </li>
+  </ul>
   <p>
-   A
+   Per Wirfs-Brock and McKean (2001),
+   <strong>
+    primary actors
+   </strong>
+   are outside the system designers' control, and issue requests to the system;
+   <strong>
+    secondary actors
+   </strong>
+   respond to requests
+   <em>
+    from
+   </em>
+   the system.
+  </p>
+  <h5 id="personas">
+   <a>
+    4.1.4.1.1. Personas
+   </a>
+  </h5>
+  <p>
+   Personas are different personalities that are meant to humanize a generic actor and show the range of users' needs. Personas are fictional but research-based biographies that reflect your understanding of your users; they are an exercise in fostering empathy and user-centered design. A
    <strong>
     primary persona
    </strong>
@@ -1509,27 +1604,206 @@
   </p>
   <h4 id="user-stories">
    <a>
-    4.1.3.2. User stories
+    4.1.4.2. User stories
    </a>
   </h4>
   <p>
-   User stories describe, at a high level, the various actions users need to complete. User stories should be written by business or subject matter experts, using the form
+   Per Ambler (n.d.), user stories describe, at a high level, the various actions users need to complete. User stories should be written by business or subject matter experts, using the form
    <strong>
     "As an X, I need to Y so I can Z."
    </strong>
-   User stories are refined (split, grouped, reprioritized, etc.) throughout the development process.
+   User stories are refined (split, grouped, reprioritized, etc.) throughout the development process. User stories may be grouped by their
+   <strong>
+    themes.
+   </strong>
   </p>
-  <h4 id="concept-maps">
+  <h4 id="use-cases">
    <a>
-    4.1.3.3. Concept maps
+    4.1.4.3. Use cases
    </a>
   </h4>
   <p>
-   A informally-constructed network of concepts, reflecting entities and their interrelationships.
+   User stories can be decomposed into use cases, enumerating actors' interactions with the system as they pursue their goals. Leffingwell (2010) proposes some questions for identifying use cases:
+  </p>
+  <ul>
+   <li>
+    What will the actor use the system for?
+   </li>
+   <li>
+    Will the actor create, store, change, remove, or read data in the system?
+   </li>
+   <li>
+    Will the actor need to inform the system about external events or changes?
+   </li>
+   <li>
+    Will the actor need to be informed about certain occurrences in the system?
+   </li>
+  </ul>
+  <p>
+   Similarly, from Schneider and Winters (1998):
+  </p>
+  <ul>
+   <li>
+    Who uses the system?
+   </li>
+   <li>
+    Who installs the system?
+   </li>
+   <li>
+    Who starts up the system?
+   </li>
+   <li>
+    Who maintains the system?
+   </li>
+   <li>
+    Who shuts down the system?
+   </li>
+   <li>
+    What other systems use this system?
+   </li>
+   <li>
+    Who gets information from this system?
+   </li>
+   <li>
+    Who provides information to the system?
+   </li>
+   <li>
+    Does anything happen automatically at a present time?
+   </li>
+  </ul>
+  <h5 id="use-case-levels">
+   <a>
+    4.1.4.3.1. Use case levels
+   </a>
+  </h5>
+  <p>
+   Per Wirfs-Brock and McKean (2001), use cases are written at different levels that, combined, depict the whole system:
+  </p>
+  <ul>
+   <li>
+    Summary, the highest level overview;
+   </li>
+   <li>
+    Core, human task-level descriptions;
+   </li>
+   <li>
+    Supporting, decomposing tasks;
+   </li>
+   <li>
+    Internal, describing interactions between system components.
+   </li>
+  </ul>
+  <h5 id="use-scenarios">
+   <a>
+    4.1.4.3.2. Use scenarios
+   </a>
+  </h5>
+  <p>
+   There may be different paths through a use cases, perhaps corresponding to different personas; these paths are called use scenarios, and they may be depicted with a
+   <a href="modeling.html#activity-diagrams">
+    UML activity diagram
+   </a>
+   or written as a series of bullet points (called a
+   <strong>
+    scenario form).
+   </strong>
+  </p>
+  <h5 id="conversation-form">
+   <a>
+    4.1.4.3.3. Conversation form
+   </a>
+  </h5>
+  <p>
+   This is a two-column depiction of a use case/scenario, showing interactions between an actor and the system. User actions should be represented at the level of the user's
+   <em>
+    intentions,
+   </em>
+   i.e. their goals rather than the minute actions they may need to achieve their goals (although this depends greatly on the level of the system diagram).
+  </p>
+  <h5 id="use-case-diagrams">
+   <a>
+    4.1.4.3.4. Use case diagrams
+   </a>
+  </h5>
+  <p>
+   Use cases may be depicted collectively with
+   <a href="modeling.html#use-case-diagrams">
+    use case diagrams
+   </a>
+   that:
+  </p>
+  <ul>
+   <li>
+    Connect use cases to actors
+   </li>
+   <li>
+    Connect use cases to each other:
+    <ul>
+     <li>
+      &lt;&lt;include&gt;&gt; (routinely shared functionality)
+     </li>
+     <li>
+      &lt;&lt;extend&gt;&gt; (exceptional scenario)
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h5 id="requirements-dependency-traceability-matrix">
+   <a>
+    4.1.4.3.5. Requirements dependency traceability matrix
+   </a>
+  </h5>
+  <p>
+   Uses a table to indicate dependencies between requirements.
+  </p>
+  <h5 id="use-case-narratives">
+   <a>
+    4.1.4.3.6. Use case narratives
+   </a>
+  </h5>
+  <p>
+   Individual use cases are expressed narratively in a flow-of-events AKA requirements definition report, usually including these elements:
+  </p>
+  <ul>
+   <li>
+    Overview
+   </li>
+   <li>
+    Notes
+   </li>
+   <li>
+    Actors
+   </li>
+   <li>
+    Preconditions
+   </li>
+   <li>
+    <a href="#use-scenarios">
+     Scenario(s),
+    </a>
+    and exceptions AKA alternate flow(s)
+   </li>
+   <li>
+    Post conditions AKA exit conditions
+   </li>
+   <li>
+    GUI requirements
+   </li>
+   <li>
+    Dependencies and relations (to other use cases; often modeled with UML)
+   </li>
+  </ul>
+  <h4 id="requirements-trace-matrices">
+   <a>
+    4.1.4.4. Requirements trace matrices
+   </a>
+  </h4>
+  <p>
+   Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
   </p>
   <h4 id="card-formats">
    <a>
-    4.1.3.4. Card formats
+    4.1.4.5. Card formats
    </a>
   </h4>
   <ul>
@@ -1554,90 +1828,25 @@
   <p>
    <img src="illos/volere.jpeg" width="350px"/>
   </p>
-  <h4 id="use-cases-requirements-definition-reports">
+  <h4 id="glossaries">
    <a>
-    4.1.3.5. Use cases &amp; requirements definition reports
+    4.1.4.6. Glossaries
    </a>
   </h4>
   <p>
-   Requirements are often analyzed by grouping them into
+   A special dictionary of acronyms, jargon etc. important for understanding system documentation. Per Wirfs-Brock and McKean (2001), a glossary entry should address the word's scope, typical values/example, related concepts, and significance; definitions should have the form
    <strong>
-    use cases,
+    "X is a [broader term] that [Y]"
    </strong>
-   capturing actors' archetypical interactions with the system. Per Whitney (n.d.), "Use cases integrate the requirements into a comprehensive package that describes the interaction of the user with the system ... [They] should describe the interaction between the actor and the system - what the actor does and how the system reacts. Use cases are expressed textually (AKA
-   <strong>
-    requirements definition report),
-   </strong>
-   usually including these elements:
+   and avoid the phrases "is when", "is where" because they permit vagueness.
   </p>
-  <ul>
-   <li>
-    Overview
-   </li>
-   <li>
-    Notes
-   </li>
-   <li>
-    Actors
-   </li>
-   <li>
-    Preconditions
-   </li>
-   <li>
-    <a href="#use-scenarios">
-     Scenario(s),
-    </a>
-    AKA alternate course(s)
-   </li>
-   <li>
-    Post conditions
-   </li>
-   <li>
-    Exceptions
-   </li>
-   <li>
-    GUI requirements
-   </li>
-   <li>
-    Dependencies and relations (to other use cases; often modeled with UML)
-   </li>
-  </ul>
-  <h5 id="use-scenarios">
+  <h4 id="concept-maps">
    <a>
-    4.1.3.5.1. Use scenarios
-   </a>
-  </h5>
-  <p>
-   There may be different paths through a use cases, perhaps corresponding to different personas; these paths are called
-   <strong>
-    use scenarios,
-   </strong>
-   and they may be depicted with a
-   <a href="modeling.html#activity-diagrams">
-    UML activity diagram.
-   </a>
-  </p>
-  <h5 id="use-case-diagrams">
-   <a>
-    4.1.3.5.2. Use case diagrams
-   </a>
-  </h5>
-  <p>
-   Use cases may be depicted collectively with a
-   <strong>
-    use case diagram:
-   </strong>
-  </p>
-  <p>
-   <img src="illos/use-case-diagram.gif" width="350px"/>
-  </p>
-  <h4 id="requirements-trace-matrices">
-   <a>
-    4.1.3.6. Requirements trace matrices
+    4.1.4.7. Concept maps
    </a>
   </h4>
   <p>
-   Table format linking requirements with other information, e.g. requirement category, priority level, affected class, etc.
+   A informally-constructed network of concepts, reflecting entities and their interrelationships.
   </p>
   <h2 id="future-state-design">
    <a>
@@ -1656,6 +1865,10 @@
    see
    <a href="modeling.html">
     notes on system &amp; process modeling
+   </a>
+   and
+   <a href="interfaces.html">
+    interfaces
    </a>
    re: characterizing it.
   </p>
@@ -1697,9 +1910,15 @@
    </a>
   </h2>
   <p>
-   Ambler, S. (n.d.). Comparing approaches to budgeting and estimating software development projects. Retrieved from
+   Ambler, S. (1999). Comparing approaches to budgeting and estimating software development projects. Retrieved from
    <a class="uri" href="http://www.ambysoft.com/essays/comparingEstimatingApproaches.html">
     http://www.ambysoft.com/essays/comparingEstimatingApproaches.html
+   </a>
+  </p>
+  <p>
+   Ambler, S. (n.d.). User stories: An Agile introduction. (n.d.). Retrieved from
+   <a class="uri" href="http://www.agilemodeling.com/artifacts/userStory.htm">
+    http://www.agilemodeling.com/artifacts/userStory.htm
    </a>
   </p>
   <p>
@@ -1793,6 +2012,13 @@
    Boston, MA: Bain &amp; Company.
   </p>
   <p>
+   Schneider, G. &amp; Winters, J. P. (1998).
+   <em>
+    Applying use cases: A practical guide.
+   </em>
+   Reading, MA: Addison Wesley.
+  </p>
+  <p>
    Sheen, R. (2015). How to manage scope creep [video].
    <em>
     Harvard Business Review.
@@ -1822,6 +2048,16 @@
    Wikipedia. (2017, March 28). Work breakdown structure. Retrieved from
    <a class="uri" href="https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&amp;oldid=772556888">
     https://en.wikipedia.org/w/index.php?title=Work_breakdown_structure&amp;oldid=772556888
+   </a>
+  </p>
+  <p>
+   Wirfs-Brock, R., &amp; McKean, A. (2001). The art of writing use cases. In
+   <em>
+    Tutorial for OOPSLA Conference.
+   </em>
+   Retrieved from
+   <a class="uri" href="https://www.researchgate.net/profile/Rebecca_Wirfs-Brock/publication/228393043_The_Art_of_Writing_Use_Cases/links/00b49517fe3053c449000000.pdf">
+    https://www.researchgate.net/profile/Rebecca_Wirfs-Brock/publication/228393043_The_Art_of_Writing_Use_Cases/links/00b49517fe3053c449000000.pdf
    </a>
   </p>
   <h2 id="references">

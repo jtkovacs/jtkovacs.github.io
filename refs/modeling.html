@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; modeling | nearly 1370 words | updated 05/18/2017
+   &gt; modeling | nearly 1435 words | updated 05/18/2017
   </p>
   <div class="TOC">
    <ul>
@@ -97,6 +97,12 @@
           Data flow diagrams
          </a>
         </li>
+        <li>
+         2.2.3.
+         <a href="#use-case-diagrams">
+          Use case diagrams
+         </a>
+        </li>
        </ul>
       </li>
       <li>
@@ -123,6 +129,32 @@
        </a>
       </li>
      </ol>
+     <ul>
+      <li>
+       3.1.
+       <a href="#cited">
+        Cited
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       3.3.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       3.4.
+       <a href="#unread">
+        Unread
+       </a>
+      </li>
+     </ul>
     </li>
    </ul>
   </div>
@@ -362,6 +394,11 @@
     <ul>
      <li>
       Interaction diagrams
+      <ul>
+       <li>
+        Sequence diagrams
+       </li>
+      </ul>
      </li>
      <li>
       Behavioral state machines
@@ -448,10 +485,12 @@
    </strong>
    (e.g. Agile, SDLC); or by
    <strong>
-    notation
+    use as artifacts in the design and analysis phases.
    </strong>
-   (e.g. UML, crow's foot).
   </p>
+  <div class="figure">
+   <img src="illos/models-by-analysis-vs-design.jpeg"/>
+  </div>
   <h1 id="models-by-form-and-notation">
    <a>
     2. Models by form and notation
@@ -659,6 +698,51 @@
   <div class="figure">
    <img src="illos/DFD.jpg"/>
   </div>
+  <h3 id="use-case-diagrams">
+   <a>
+    2.2.3. Use case diagrams
+   </a>
+  </h3>
+  <p>
+   UML use case diagrams are used to organize
+   <a href="project-management.html#use-cases">
+    use cases
+   </a>
+   The basic elements:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Ovals
+    </strong>
+    for use cases
+    <ul>
+     <li>
+      <strong>
+       Shaded black
+      </strong>
+      for misuse cases
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Lines
+    </strong>
+    for relationships; may be annotated
+    <ul>
+     <li>
+      &lt;&lt;include&gt;&gt; (routinely shared functionality)
+     </li>
+     <li>
+      &lt;&lt;extend&gt;&gt; (exceptional scenario)
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <p>
+   <img src="illos/use-case-diagram.gif" width="350px"/>
+  </p>
   <h2 id="object-oriented-modeling">
    <a>
     2.3. Object-oriented modeling
@@ -783,11 +867,16 @@
   <p>
    <img src="illos/activity-diagram.jpg" width="580px"/>
   </p>
-  <h1>
-   <a name="3.-sources">
+  <h1 id="sources">
+   <a>
     3. Sources
    </a>
   </h1>
+  <h2 id="cited">
+   <a>
+    3.1. Cited
+   </a>
+  </h2>
   <p>
    Ambler, S. (n.d.). Agile models distilled: Potential artifacts for agile modeling. Retrieved from
    <a class="uri" href="http://www.agilemodeling.com/artifacts/">
@@ -842,5 +931,27 @@
     http://www.umsl.edu/~sauterv/analysis/dfd/DiagrammingMethods.html
    </a>
   </p>
+  <h2 id="references">
+   <a>
+    3.2. References
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a class="uri" href="http://creately.com/blog/diagrams/uml-diagram-types-examples/">
+     http://creately.com/blog/diagrams/uml-diagram-types-examples/
+    </a>
+   </li>
+  </ul>
+  <h2 id="read">
+   <a>
+    3.3. Read
+   </a>
+  </h2>
+  <h2>
+   <a name="3.4.-unread">
+    3.4. Unread
+   </a>
+  </h2>
  </body>
 </html>

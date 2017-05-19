@@ -235,7 +235,7 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 **Term lists** are essentially flat list, though they may include "See"/"Use" to steer people towards preferred language, or use a synonym ring approach (no preferred term among multiple). 
 
 - **Name authority file:** Identifies the definitive version of a name among all variants
-- **Glossary** (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
+- [Glossary](project-management.html#glossaries) (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
 - **Stop list:** Words to ignore in search query processing (because they are extremely common)
 - **Dictionary:** Definitions, history, etc. for words.
 - **Gazetteer:** A geographical dictionary

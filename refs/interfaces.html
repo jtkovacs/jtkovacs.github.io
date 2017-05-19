@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; interfaces | nearly 771 words | updated 05/18/2017
+   &gt; interfaces | nearly 993 words | updated 05/19/2017
   </p>
   <div class="TOC">
    <ul>
@@ -91,50 +91,80 @@
          <ul>
           <li>
            2.2.1.1.
+           <a href="#software-for-forms">
+            Software for forms
+           </a>
+          </li>
+          <li>
+           2.2.1.2.
            <a href="#requirements-and-validation">
             Requirements and validation
            </a>
           </li>
           <li>
-           2.2.1.2.
+           2.2.1.3.
            <a href="#general-best-practices">
             General best practices
            </a>
           </li>
           <li>
-           2.2.1.3.
-           <a href="#best-practices-by-form-element">
-            Best practices by form element
+           2.2.1.4.
+           <a href="#best-practices-by-element">
+            Best practices by element
            </a>
            <ul>
             <li>
-             2.2.1.3.1.
-             <a href="#layout-">
+             2.2.1.4.1.
+             <a href="#layout">
               Layout
              </a>
             </li>
             <li>
-             2.2.1.3.2.
+             2.2.1.4.2.
              <a href="#input-affordances-">
               Input Affordances
              </a>
             </li>
             <li>
-             2.2.1.3.3.
+             2.2.1.4.3.
              <a href="#actions-">
               Actions
              </a>
             </li>
             <li>
-             2.2.1.3.4.
+             2.2.1.4.4.
              <a href="#help-tips-">
               Help &amp; Tips
              </a>
             </li>
             <li>
-             2.2.1.3.5.
-             <a href="#visual-hierarchy">
-              Visual Hierarchy
+             2.2.1.4.5.
+             <a href="#path-to-completion">
+              Path to completion
+             </a>
+            </li>
+            <li>
+             2.2.1.4.6.
+             <a href="#progressive-disclosure-">
+              Progressive disclosure
+             </a>
+            </li>
+            <li>
+             2.2.1.4.7.
+             <a href="#inline-validation">
+              Inline validation
+             </a>
+            </li>
+            <li>
+             2.2.1.4.8.
+             <a href="#error-messages">
+              Error messages
+             </a>
+            </li>
+            <li>
+             2.2.1.4.9.
+             <a href="#progress-indicators">
+              Progress indicators
              </a>
             </li>
            </ul>
@@ -403,9 +433,25 @@
     Input data, give feedback
    </li>
   </ul>
+  <h4 id="software-for-forms">
+   <a>
+    2.2.1.1. Software for forms
+   </a>
+  </h4>
+  <ul>
+   <li>
+    http://www.wufoo.com
+   </li>
+   <li>
+    http://www.formassembly.com
+   </li>
+   <li>
+    http://www.icebrrg.com
+   </li>
+  </ul>
   <h4 id="requirements-and-validation">
    <a>
-    2.2.1.1. Requirements and validation
+    2.2.1.2. Requirements and validation
    </a>
   </h4>
   <ul>
@@ -448,7 +494,7 @@
   </ul>
   <h4 id="general-best-practices">
    <a>
-    2.2.1.2. General best practices
+    2.2.1.3. General best practices
    </a>
   </h4>
   <ul>
@@ -465,18 +511,20 @@
     Indicate errors, available help, reasons for requesting data, success
    </li>
   </ul>
-  <h4 id="best-practices-by-form-element">
+  <h4 id="best-practices-by-element">
    <a>
-    2.2.1.3. Best practices by form element
+    2.2.1.4. Best practices by element
    </a>
   </h4>
   <h5 id="layout">
    <a>
-    2.2.1.3.1. Layout
+    2.2.1.4.1. Layout
    </a>
   </h5>
   <p>
-   Label positions:
+   <strong>
+    Label positions:
+   </strong>
   </p>
   <ul>
    <li>
@@ -499,11 +547,14 @@
    </li>
   </ul>
   <p>
-   Content groupings
+   <strong>
+    Content groupings
+   </strong>
+   should be the minimum necessary to chunk up the form into digestible subtasks. Too many content grouping introduces visual clutter.
   </p>
   <h5 id="input-affordances">
    <a>
-    2.2.1.3.2. Input Affordances
+    2.2.1.4.2. Input Affordances
    </a>
   </h5>
   <p>
@@ -511,40 +562,94 @@
   </p>
   <ul>
    <li>
-    Based on the total number of fields and their relative incidence, choose to mark fields as required or optional
+    Based on the total number of fields and their relative incidence, choose to mark either
+    <strong>
+     required or optional
+    </strong>
+    fields (but not both)
    </li>
    <li>
-    <p>
-     Field lengths should be right-sized for their content (an affordance), but fairly consistent across a form (not wildly varying lengths)
-    </p>
+    <strong>
+     Field lengths
+    </strong>
+    should be right-sized for their content (an affordance), but fairly consistent across a form (not wildly varying lengths)
    </li>
    <li>
-    <p>
-     Formats
-    </p>
+    <strong>
+     Input formats
+    </strong>
+    should be flexible
    </li>
   </ul>
   <h5 id="actions">
    <a>
-    2.2.1.3.3. Actions
+    2.2.1.4.3. Actions
    </a>
   </h5>
-  <p>
-   Primary
-  </p>
-  <p>
-   Secondary
-  </p>
+  <ul>
+   <li>
+    Formatting should make it clear which actions (initiated by buttons) are
+    <strong>
+     primary
+    </strong>
+    (success cases) and which are secondary, e.g. by aligning the primary action with the input fields.
+   </li>
+   <li>
+    Many people expect to be able to tab through forms; expectations about tab behavior for multicolumn forms vary. HTML formatting can control tab order with the
+    <code>
+     tabindex
+    </code>
+    attribute.
+   </li>
+  </ul>
   <h5 id="help-tips">
    <a>
-    2.2.1.3.4. Help &amp; Tips
+    2.2.1.4.4. Help &amp; Tips
    </a>
   </h5>
-  <h5 id="visual-hierarchy">
+  <p>
+   Provide help and tips as short explanatory text; linked pages; automatic inline exposure; or user-activated exposure (inline, dialog, or section).
+  </p>
+  <h5 id="path-to-completion">
    <a>
-    2.2.1.3.5. Visual Hierarchy
+    2.2.1.4.5. Path to completion
    </a>
   </h5>
+  <p>
+   There should be a visually clear path to form completion, guiding the user through data input.
+  </p>
+  <h5 id="progressive-disclosure">
+   <a>
+    2.2.1.4.6. Progressive disclosure
+   </a>
+  </h5>
+  <p>
+   Questions or options may be exposed progressively, depending on users' selections.
+  </p>
+  <h5 id="inline-validation">
+   <a>
+    2.2.1.4.7. Inline validation
+   </a>
+  </h5>
+  <p>
+   Offer valid options as users type; show #words remaining.
+  </p>
+  <h5 id="error-messages">
+   <a>
+    2.2.1.4.8. Error messages
+   </a>
+  </h5>
+  <p>
+   When input is rejected, make error messages clear, prominent, visibly associated with the erroneous fields, and visibly linked to corrective actions. Don't autocorrect errors.
+  </p>
+  <h5 id="progress-indicators">
+   <a>
+    2.2.1.4.9. Progress indicators
+   </a>
+  </h5>
+  <p>
+   Show a user's progress towards form completion as well as a status indicator when a system operation is in progress (e.g., uploading an attachment) or successful (e.g., submitting the form). Disable the submit button after 1 click.
+  </p>
   <h3 id="multimedia">
    <a>
     2.2.2. Multimedia

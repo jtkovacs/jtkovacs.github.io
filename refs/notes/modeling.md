@@ -48,6 +48,7 @@ Models can have a general form (e.g. entity relationship diagram) somewhat corre
     - Class diagrams
 - **Behavioral** (==object-oriented?) models capture even more detail about interactions:
     - Interaction diagrams
+        - Sequence diagrams
     - Behavioral state machines
     - Crude analysis
 
@@ -65,9 +66,9 @@ Smartdraw.com (n.d.):
     - Circuit diagram
     - Floorplan
     
-Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); by **methodology** (e.g. Agile, SDLC); or by **notation** (e.g. UML, crow's foot).
+Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); by **methodology** (e.g. Agile, SDLC); or by **use as artifacts in the design and analysis phases:**
 
-
+![](../illos/models-by-analysis-vs-design.jpeg)
 
 
 
@@ -142,7 +143,19 @@ The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depi
 - **Open rectangles** to represent internal data stores
 - **Rectangles** to represent external interactors
 
-![](../ILLOS/DFD.jpg)
+![](../illos/DFD.jpg)
+
+### Use case diagrams
+
+UML use case diagrams are used to organize [use cases](project-management.html#use-cases) The basic elements:
+
+- **Ovals** for use cases
+    - **Shaded black** for misuse cases
+- **Lines** for relationships; may be annotated
+    - \<\<include\>\> (routinely shared functionality)
+    - \<\<extend\>\> (exceptional scenario)
+
+<img src="../ILLOS/use-case-diagram.gif" width="350px"/>
 
 
 
@@ -180,6 +193,8 @@ Similar to flowcharts and data flow diagrams, since they focus on depicting a _p
 
 # Sources
 
+## Cited
+
 Ambler, S. (n.d.). Agile models distilled: Potential artifacts for agile modeling. Retrieved from [http://www.agilemodeling.com/artifacts/](http://www.agilemodeling.com/artifacts/)
 
 Ambler, S. (n.d.). UML 2 activity diagrams: An Agile introduction. Retrieved from [http://www.agilemodeling.com/artifacts/activityDiagram.htm](http://www.agilemodeling.com/artifacts/activityDiagram.htm)
@@ -196,3 +211,10 @@ Smartdraw.com. (n.d.). Diagrams. Retrieved from [https://www.smartdraw.com/diagr
 
 Stiern, K. (1999). Comparison of diagramming methods. Retrieved from [http://www.umsl.edu/~sauterv/analysis/dfd/DiagrammingMethods.html](http://www.umsl.edu/~sauterv/analysis/dfd/DiagrammingMethods.html)
 
+## References
+
+- [http://creately.com/blog/diagrams/uml-diagram-types-examples/](http://creately.com/blog/diagrams/uml-diagram-types-examples/)
+
+## Read
+
+## Unread

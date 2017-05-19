@@ -34,10 +34,10 @@ div.TOC li {
 div.TOC li a:hover { color: #e25500; }
 
 /* Make nested list items lighter and smaller */
-div.TOC li a { font-size: 16px; color: #235D47; }
-div.TOC li li a { color: #318164; font-size: 14px; }
-div.TOC li li li a { color: #3FA680; font-size:12px; }
-div.TOC li li li li a { color: #58C09A; font-size:10px; }
+div.TOC li a { color: #235D47; font-size: 18px; }
+div.TOC li li a { color: #318164; font-size: 16px; }
+div.TOC li li li a { color: #3FA680; font-size: 12px; }
+div.TOC li li li li a { color: #58C09A; font-size: 10px; }
 div.TOC li li li li li a { color: #7DCEB0; font-size: 9px; }
 
 

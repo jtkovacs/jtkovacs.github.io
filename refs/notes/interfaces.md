@@ -124,7 +124,7 @@ Per Norman (2013), an object has attributes; a person has capabilities; when a p
 - Formatting should make it clear which actions (initiated by buttons) are **primary** (success cases) and which are secondary, e.g. by aligning the primary action with the input fields.
 - Many people expect to be able to tab through forms; expectations about tab behavior for multicolumn forms vary. HTML formatting can control tab order with the `tabindex` attribute. 
 
-##### Help & Tips 
+##### Help & tips 
 
 Provide help and tips as short explanatory text; linked pages; automatic inline exposure; or user-activated exposure (inline, dialog, or section).
 

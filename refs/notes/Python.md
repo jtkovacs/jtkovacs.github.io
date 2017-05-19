@@ -46,7 +46,7 @@ dir(module_name)  # view contents of module
 
 ## Which modules?
 
-See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/contents.html), SciPy's [directory of science-related Python resources and modules](https://www.scipy.org/topical-software.html), Fredrik Lundh's [tour of the Python standard library modules](http://effbot.org/media/downloads/librarybook-core-modules.pdf) [pdf], and the [Python Module Index](https://docs.python.org/3/py-modindex.html).
+See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/contents.html), SciPy's [directory of science-related Python resources and modules](https://www.scipy.org/topical-software.html), Fredrik Lundh's [tour of the Python standard library modules](http://effbot.org/media/downloads/librarybook-core-modules.pdf) [pdf], the [Python Module Index](https://docs.python.org/3/py-modindex.html), and libraries included in the [ActivePython](http://docs.activestate.com/activepython/3.5/pkg/) and [Anaconda](https://docs.continuum.io/anaconda/pkg-docs) Python distributions:
 
 - For data wrangling - `collections (defaultdict), pandas (dataframes), numpy (arrays), GraphLab Create`
   - For datetimes - `datetime, pytz`

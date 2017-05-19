@@ -108,18 +108,13 @@ for i,h in enumerate(headers):
 
     ### Construct TOC entry for header
     ### - 1.1.2. [What are blue & green?](#what-are-blue-green)
-    TOC.append(space+'- '+nr+'. ['+lname+'](#'+aname+')\n')
+    TOC.append(space+'- &nbsp;'+nr+'. ['+lname+'](#'+aname+')\n')
     
     
 
 # Open new .md file
 ## Constructing the output filename: /home/jtk/Site/refs/tocs/fname_TOC.md
 foname = wd + 'tocs/' + sys.argv[1][:-3] + '_TOC.mg'
-#foname = fname[:-3]+"_TOC.md"
-#foname = foname.split('/')
-#foname.remove('NOTES')
-#foname.insert(-1, "TOCS")
-#foname = '/'.join(foname)
 fout = open(foname, "w")
 
 
@@ -130,7 +125,7 @@ wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
 title = sys.argv[1][:-3].replace('-', ' ')
 num_words = wc.stdout.decode("utf-8").split(" ")[0]
 up_date = datetime.datetime.now().strftime("%m/%d/%Y")
-fout.write('<p class="path"><a href="../pkb.html">pkb contents</a> \> '+title+' | nearly '+num_words+' words | updated '+up_date+'</p>') 
+fout.write('<p class="path"><a href="../pkb.html">pkb contents</a> \> '+title+' | just under '+num_words+' words | updated '+up_date+'</p>') 
 
 ## ... TOC
 fout.write('<div class="TOC">')
@@ -165,10 +160,6 @@ fout.close()
 
 # Convert new .md file to .html
 hname = wd + sys.argv[1][:-3] + '.html'
-#hname = foname[:-7]+'.html'
-#hname = hname.split('/')
-#hname.remove('TOCS')
-#html_out = "/".join(hname)
 subprocess.run(['pandoc', foname, '-f', 'markdown', '-t', 'html', '-s', '-o', hname])
 
 

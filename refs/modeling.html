@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; modeling | nearly 1435 words | updated 05/18/2017
+   &gt; modeling | just under 1650 words | updated 05/19/2017
   </p>
   <div class="TOC">
    <ul>
@@ -113,6 +113,12 @@
        <ul>
         <li>
          2.3.1.
+         <a href="#object-modeling-technique">
+          Object Modeling Technique
+         </a>
+        </li>
+        <li>
+         2.3.2.
          <a href="#activity-diagrams">
           Activity diagrams
          </a>
@@ -485,7 +491,7 @@
    </strong>
    (e.g. Agile, SDLC); or by
    <strong>
-    use as artifacts in the design and analysis phases.
+    use as artifacts in the design and analysis phases:
    </strong>
   </p>
   <div class="figure">
@@ -667,20 +673,26 @@
    </a>
   </h3>
   <p>
-   The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depict the flow of data through a system using the following elements:
+   Per Le Vie and Donald (2000), "Data flow diagrams have replaced flowcharts and pseudocode as the tool of choice for showing program design" --- at least in the early stages of system design --- because they show data along with program functions that transform the data. DFDs are highly compatible with object-oriented programming and design. Gane-Sarson and Yourdon-Coad notations are slightly different, but both use the following elements:
   </p>
   <ul>
    <li>
     <strong>
-     Circles
+     Rectangles
     </strong>
-    to represent system processes that transform the data
+    to represent external interactors AKA agents, terminators, sources, sinks
    </li>
    <li>
     <strong>
      Lines
     </strong>
-    to represent data flows, with descriptive labels and arrows for directionality
+    to represent data flows, annotated with descriptive labels and arrows for directionality
+   </li>
+   <li>
+    <strong>
+     Circles
+    </strong>
+    to represent system processes (named with descriptive verbs) that transform the data
    </li>
    <li>
     <strong>
@@ -688,16 +700,36 @@
     </strong>
     to represent internal data stores
    </li>
-   <li>
-    <strong>
-     Rectangles
-    </strong>
-    to represent external interactors
-   </li>
   </ul>
   <div class="figure">
    <img src="illos/DFD.jpg"/>
   </div>
+  <p>
+   DFDs are created for different levels of the system, starting with the
+   <strong>
+    context diagram
+   </strong>
+   (the most general view), proceeding to
+   <strong>
+    level 0 diagrams
+   </strong>
+   and
+   <strong>
+    level 1 diagrams.
+   </strong>
+   Per Le Vie and Donald (2000), only certain data flows (usually!) are valid:
+  </p>
+  <ul>
+   <li>
+    Between a process and an entity (in either direction)
+   </li>
+   <li>
+    Between a process and a data store (in either direction)
+   </li>
+   <li>
+    Between two processes that can only run simultaneously
+   </li>
+  </ul>
   <h3 id="use-case-diagrams">
    <a>
     2.2.3. Use case diagrams
@@ -706,7 +738,7 @@
   <p>
    UML use case diagrams are used to organize
    <a href="project-management.html#use-cases">
-    use cases
+    use cases.
    </a>
    The basic elements:
   </p>
@@ -755,9 +787,29 @@
    </strong>
    as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML in 1997.
   </p>
+  <h3 id="object-modeling-technique">
+   <a>
+    2.3.1. Object Modeling Technique
+   </a>
+  </h3>
+  <p>
+   Per La Vie and Donald (2000), OMT produces three views of a system: "The
+   <em>
+    Object Model
+   </em>
+   describes the static system components and is modeled using object diagrams. The
+   <em>
+    Dynamic Model
+   </em>
+   describes the dynamic system components that change over time and are modeled using state diagrams. The
+   <em>
+    Functional Model
+   </em>
+   describes operations performed on data in a system and uses data flow diagrams."
+  </p>
   <h3 id="activity-diagrams">
    <a>
-    2.3.1. Activity diagrams
+    2.3.2. Activity diagrams
    </a>
   </h3>
   <p>
@@ -901,6 +953,13 @@
     Systems analysis and design: An object oriented approach with UML
    </em>
    (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
+  </p>
+  <p>
+   Le Vie, D. S., &amp; Donald, S. (2000). Understanding data flow diagrams. In
+   <em>
+    Annual Conference - Society for Technical Communication,
+   </em>
+   47, pp. 396–401.
   </p>
   <p>
    Meadows, D. H., &amp; Wright, D. (2008).

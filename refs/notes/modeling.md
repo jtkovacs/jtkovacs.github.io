@@ -66,7 +66,7 @@ Smartdraw.com (n.d.):
     - Circuit diagram
     - Floorplan
     
-Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); by **methodology** (e.g. Agile, SDLC); or by **use as artifacts in the design and analysis phases:**
+Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); by **methodology** (e.g. Agile, SDLC); or by **use as artifacts in the design and analysis phases: **
 
 ![](../illos/models-by-analysis-vs-design.jpeg)
 
@@ -133,21 +133,26 @@ Predates ER notation, but increasingly popular as a database modeling language; 
 
 <img src="../ILLOS/UML-EERD.png" width="450px">
 
-
 ### Data flow diagrams
 
-The Gane-Sarson and Yourdon-Coad notations are slightly different, but both depict the flow of data through a system using the following elements:
+Per Le Vie and Donald (2000), "Data flow diagrams have replaced flowcharts and pseudocode as the tool of choice for showing program design" --- at least in the early stages of system design --- because they show data along with program functions that transform the data. DFDs are highly compatible with object-oriented programming and design. Gane-Sarson and Yourdon-Coad notations are slightly different, but both use the following elements:
 
-- **Circles** to represent system processes that transform the data
-- **Lines** to represent data flows, with descriptive labels and arrows for directionality
+- **Rectangles** to represent external interactors AKA agents, terminators, sources, sinks
+- **Lines** to represent data flows, annotated with descriptive labels and arrows for directionality
+- **Circles** to represent system processes (named with descriptive verbs) that transform the data
 - **Open rectangles** to represent internal data stores
-- **Rectangles** to represent external interactors
 
 ![](../illos/DFD.jpg)
 
+DFDs are created for different levels of the system, starting with the **context diagram** (the most general view), proceeding to **level 0 diagrams** and **level 1 diagrams.** Per Le Vie and Donald (2000), only certain data flows (usually!) are valid:
+
+- Between a process and an entity (in either direction)
+- Between a process and a data store (in either direction)
+- Between two processes that can only run simultaneously
+
 ### Use case diagrams
 
-UML use case diagrams are used to organize [use cases](project-management.html#use-cases) The basic elements:
+UML use case diagrams are used to organize [use cases.](project-management.html#use-cases) The basic elements:
 
 - **Ovals** for use cases
     - **Shaded black** for misuse cases
@@ -161,7 +166,12 @@ UML use case diagrams are used to organize [use cases](project-management.html#u
 
 ## Object-oriented modeling
 
-OO models show **inheritance** as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML in 1997.
+OO models show **inheritance** as well as decisions, relationships, and processes. Per Steirn (1999), several earlier methods (Shlaer/Mellor, Rumbaugh's Object Modeling Technique (OMT), Booch) were subsumed by UML in 1997. 
+
+### Object Modeling Technique
+
+Per La Vie and Donald (2000), OMT produces three views of a system: "The _Object Model_ describes the static system components and is modeled using object diagrams. The _Dynamic Model_ describes the dynamic system components that change over time and are modeled using state diagrams. The _Functional Model_ describes operations performed on data in a system
+and uses data flow diagrams."
 
 ### Activity diagrams
 
@@ -202,6 +212,8 @@ Ambler, S. (n.d.). UML 2 activity diagrams: An Agile introduction. Retrieved fro
 Dybka, P. (2014). ERD notations in data modeling. Vertabelo Academy. Retrieved from [http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations](http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations)
 
 Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley. 
+
+Le Vie, D. S., & Donald, S. (2000). Understanding data flow diagrams. In _Annual Conference - Society for Technical Communication,_ 47, pp. 396–401.
 
 Meadows, D. H., & Wright, D. (2008). _Thinking in systems: A primer._ White River Junction, Vt.: Chelsea Green Pub.
 

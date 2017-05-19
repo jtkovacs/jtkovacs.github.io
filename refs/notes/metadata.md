@@ -44,10 +44,32 @@ Per Duval et al. (2002), thinking from the perspective of a metadata manager (no
 
 Per Pomerantz (2015), metadata stored internally is authoritative but static; metadata stored externally is flexible and required for resource discovery.
 
+### Data dictionary
+
+One highly useful form that metadata can take is a central data dictionary AKA metadata registry, explaining "all the data holdings of an organization, a part of the holdings or a single database" in terms of individual data elements and tables (at a minimum; data dictionaries can also include [ER diagrams,](modeling.html#erds-for-databases) and a database security model). [ISO 11179 applies.](https://en.wikipedia.org/wiki/ISO/IEC_11179)
+
+Toshach (2006) recommends inclusion of the following elements in a data dictionary:
+
+| Elements | Definitions | 
+| --- | ----------------------- |
+| Data element domain name | A data content topic, for example, a named data collection protocol – EMAP.  Note there may be multiple domains or sub-domains within a particular data dictionary. |
+| Data element number | A number associated with the data element name for use in technical documents. |
+| Data element name | Commonly agreed, unique data element name. Note: there are likely to be multiple data element names for a particular domain. |
+| Data element field name | The name used for this data element in computer programs and database schemas.  It is often an abbreviation of the Date Element Name (eg. Cellular Phone Number might be assigned a field name of Cell_Ph_No). |
+| Data element definition | Description of the meaning of the data element. |
+| Data element unit of measure (UOM) | Scientific or other unit of measure that applies to the data element. |
+| Data element precision | The level to which the data will be reported, e.g. 1 mile plus or minus .001 mile. |
+| Data element data type | The type of data (e.g. Characters, Numeric, Alpha-numeric, date, list, floating point. |
+| Data element size and decimalization | The maximum field length that will be accepted by the database together with any decimal points (e.g. 30(2)) refers to a field length of 30 with 2 decimal points). |
+| Field constraints | Required fields must be populated. Conditional fields must be populated when another related field is populated (e.g. if a city name is required a zip code may also be required). “Null” means the data type is undefined (note: a null value is not the same as a blank or zero value). |
+| Default value | A value that is predetermined. It may be fixed or a variable, like current date and time of the day. |
+| Edit mask | An example of the actual data layout required, (e.g. yyyy/mm/dd). |
+| Data business rules | There are often the rules that define how data would be managed within an information system (e.g. Fish data could be coded (1=adult, 2=parr, 3=juveniles) and these codes would then be included in the data dictionary for use by developers and users. Other business rules, for example how rights to create, read, update or delete records are assigned if they are needed. |
 
 
+# Metadata schemas 
 
-# Metadata schemas AKA element sets AKA standards
+AKA element sets AKA standards; see [MetadataStandards.org.](http://metadata-standards.org/)
 
 - Elements
 - Values
@@ -150,7 +172,18 @@ There are practical considerations that arise in pursuit of these principles:
     
 # Sources
 
+## Cited
+
 Duval, E., Hodgins, W., Sutton, S., & Weibel, S. L. (2002). Metadata principles and practicalities. _D-Lib Magazine, 8_(4), 16-33.
 
 Pomerantz, J. (2015). _Metadata._ The MIT Press Essential Knowledge Series. Boston, MA: MIT Press. 
 
+Toshach, S. (2006). Best practices for data dictionary definitions and ssage. Northwest Environmental Data Network. Retrieved from [https://www.pnamp.org/sites/default/files/best_practices_for_data_dictionary_definitions_and_usage_version_1.1_2006-11-14.pdf](https://www.pnamp.org/sites/default/files/best_practices_for_data_dictionary_definitions_and_usage_version_1.1_2006-11-14.pdf)
+
+## References
+
+- [http://metadata-standards.org/](http://metadata-standards.org/)
+
+## Read
+
+## Unread

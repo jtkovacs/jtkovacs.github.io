@@ -15,18 +15,15 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; metadata | nearly 744 words | updated 05/18/2017
+   &gt; metadata | just under 1256 words | updated 05/19/2017
   </p>
   <div class="TOC">
    <ul>
     <li>
-     <ol style="list-style-type: decimal">
-      <li>
-       <a href="#what-is-metadata">
-        What is metadata?
-       </a>
-      </li>
-     </ol>
+     1.
+     <a href="#what-is-metadata">
+      What is metadata?
+     </a>
      <ul>
       <li>
        1.1.
@@ -59,17 +56,22 @@
        <a href="#metadata-association-models">
         Metadata association models
        </a>
+       <ul>
+        <li>
+         1.2.1.
+         <a href="#data-dictionary">
+          Data dictionary
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </li>
     <li>
-     <ol start="2" style="list-style-type: decimal">
-      <li>
-       <a href="#metadata-schemas-aka-element-sets-aka-standards">
-        Metadata schemas AKA element sets AKA standards
-       </a>
-      </li>
-     </ol>
+     2.
+     <a href="#metadata-schemas-">
+      Metadata schemas
+     </a>
      <ul>
       <li>
        2.1.
@@ -80,13 +82,10 @@
      </ul>
     </li>
     <li>
-     <ol start="3" style="list-style-type: decimal">
-      <li>
-       <a href="#metadata-encoding-schemes">
-        Metadata encoding schemes
-       </a>
-      </li>
-     </ol>
+     3.
+     <a href="#metadata-encoding-schemes">
+      Metadata encoding schemes
+     </a>
      <ul>
       <li>
        3.1.
@@ -143,22 +142,16 @@
      </ul>
     </li>
     <li>
-     <ol start="4" style="list-style-type: decimal">
-      <li>
-       <a href="#interoperability">
-        Interoperability
-       </a>
-      </li>
-     </ol>
+     4.
+     <a href="#interoperability">
+      Interoperability
+     </a>
     </li>
     <li>
-     <ol start="5" style="list-style-type: decimal">
-      <li>
-       <a href="#semantic-web">
-        Semantic web
-       </a>
-      </li>
-     </ol>
+     5.
+     <a href="#semantic-web">
+      Semantic web
+     </a>
      <ul>
       <li>
        5.1.
@@ -169,13 +162,36 @@
      </ul>
     </li>
     <li>
-     <ol start="6" style="list-style-type: decimal">
+     6.
+     <a href="#sources">
+      Sources
+     </a>
+     <ul>
       <li>
-       <a href="#sources">
-        Sources
+       6.1.
+       <a href="#cited">
+        Cited
        </a>
       </li>
-     </ol>
+      <li>
+       6.2.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       6.3.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       6.4.
+       <a href="#unread">
+        Unread
+       </a>
+      </li>
+     </ul>
     </li>
    </ul>
   </div>
@@ -318,11 +334,159 @@
   <p>
    Per Pomerantz (2015), metadata stored internally is authoritative but static; metadata stored externally is flexible and required for resource discovery.
   </p>
-  <h1 id="metadata-schemas-aka-element-sets-aka-standards">
+  <h3 id="data-dictionary">
    <a>
-    2. Metadata schemas AKA element sets AKA standards
+    1.2.1. Data dictionary
+   </a>
+  </h3>
+  <p>
+   One highly useful form that metadata can take is a central data dictionary AKA metadata registry, explaining "all the data holdings of an organization, a part of the holdings or a single database" in terms of individual data elements and tables (at a minimum; data dictionaries can also include
+   <a href="modeling.html#erds-for-databases">
+    ER diagrams,
+   </a>
+   and a database security model).
+   <a href="https://en.wikipedia.org/wiki/ISO/IEC_11179">
+    ISO 11179 applies.
+   </a>
+  </p>
+  <p>
+   Toshach (2006) recommends inclusion of the following elements in a data dictionary:
+  </p>
+  <table style="width:39%;">
+   <colgroup>
+    <col width="5%">
+    </col>
+    <col width="33%">
+    </col>
+   </colgroup>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      Elements
+     </th>
+     <th align="left">
+      Definitions
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      Data element domain name
+     </td>
+     <td align="left">
+      A data content topic, for example, a named data collection protocol – EMAP. Note there may be multiple domains or sub-domains within a particular data dictionary.
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Data element number
+     </td>
+     <td align="left">
+      A number associated with the data element name for use in technical documents.
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Data element name
+     </td>
+     <td align="left">
+      Commonly agreed, unique data element name. Note: there are likely to be multiple data element names for a particular domain.
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Data element field name
+     </td>
+     <td align="left">
+      The name used for this data element in computer programs and database schemas. It is often an abbreviation of the Date Element Name (eg. Cellular Phone Number might be assigned a field name of Cell_Ph_No).
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Data element definition
+     </td>
+     <td align="left">
+      Description of the meaning of the data element.
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Data element unit of measure (UOM)
+     </td>
+     <td align="left">
+      Scientific or other unit of measure that applies to the data element.
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Data element precision
+     </td>
+     <td align="left">
+      The level to which the data will be reported, e.g. 1 mile plus or minus .001 mile.
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Data element data type
+     </td>
+     <td align="left">
+      The type of data (e.g. Characters, Numeric, Alpha-numeric, date, list, floating point.
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Data element size and decimalization
+     </td>
+     <td align="left">
+      The maximum field length that will be accepted by the database together with any decimal points (e.g. 30(2)) refers to a field length of 30 with 2 decimal points).
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Field constraints
+     </td>
+     <td align="left">
+      Required fields must be populated. Conditional fields must be populated when another related field is populated (e.g. if a city name is required a zip code may also be required). “Null” means the data type is undefined (note: a null value is not the same as a blank or zero value).
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Default value
+     </td>
+     <td align="left">
+      A value that is predetermined. It may be fixed or a variable, like current date and time of the day.
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Edit mask
+     </td>
+     <td align="left">
+      An example of the actual data layout required, (e.g. yyyy/mm/dd).
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Data business rules
+     </td>
+     <td align="left">
+      There are often the rules that define how data would be managed within an information system (e.g. Fish data could be coded (1=adult, 2=parr, 3=juveniles) and these codes would then be included in the data dictionary for use by developers and users. Other business rules, for example how rights to create, read, update or delete records are assigned if they are needed.
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h1 id="metadata-schemas">
+   <a>
+    2. Metadata schemas
    </a>
   </h1>
+  <p>
+   AKA element sets AKA standards; see
+   <a href="http://metadata-standards.org/">
+    MetadataStandards.org.
+   </a>
+  </p>
   <ul>
    <li>
     Elements
@@ -591,11 +755,16 @@
     microdata
    </li>
   </ul>
-  <h1>
-   <a name="6.-sources">
+  <h1 id="sources">
+   <a>
     6. Sources
    </a>
   </h1>
+  <h2 id="cited">
+   <a>
+    6.1. Cited
+   </a>
+  </h2>
   <p>
    Duval, E., Hodgins, W., Sutton, S., &amp; Weibel, S. L. (2002). Metadata principles and practicalities.
    <em>
@@ -610,5 +779,33 @@
    </em>
    The MIT Press Essential Knowledge Series. Boston, MA: MIT Press.
   </p>
+  <p>
+   Toshach, S. (2006). Best practices for data dictionary definitions and ssage. Northwest Environmental Data Network. Retrieved from
+   <a class="uri" href="https://www.pnamp.org/sites/default/files/best_practices_for_data_dictionary_definitions_and_usage_version_1.1_2006-11-14.pdf">
+    https://www.pnamp.org/sites/default/files/best_practices_for_data_dictionary_definitions_and_usage_version_1.1_2006-11-14.pdf
+   </a>
+  </p>
+  <h2 id="references">
+   <a>
+    6.2. References
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a class="uri" href="http://metadata-standards.org/">
+     http://metadata-standards.org/
+    </a>
+   </li>
+  </ul>
+  <h2 id="read">
+   <a>
+    6.3. Read
+   </a>
+  </h2>
+  <h2>
+   <a name="6.4.-unread">
+    6.4. Unread
+   </a>
+  </h2>
  </body>
 </html>

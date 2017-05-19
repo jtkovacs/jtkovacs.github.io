@@ -15,18 +15,15 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; modeling | just under 1650 words | updated 05/19/2017
+   &gt; modeling | just under 1727 words | updated 05/19/2017
   </p>
   <div class="TOC">
    <ul>
     <li>
-     <ol style="list-style-type: decimal">
-      <li>
-       <a href="#overview-of-modeling">
-        Overview of modeling
-       </a>
-      </li>
-     </ol>
+     1.
+     <a href="#overview-of-modeling">
+      Overview of modeling
+     </a>
      <ul>
       <li>
        1.1.
@@ -43,13 +40,10 @@
      </ul>
     </li>
     <li>
-     <ol start="2" style="list-style-type: decimal">
-      <li>
-       <a href="#models-by-form-and-notation">
-        Models by form and notation
-       </a>
-      </li>
-     </ol>
+     2.
+     <a href="#models-by-form-and-notation">
+      Models by form and notation
+     </a>
      <ul>
       <li>
        2.1.
@@ -103,6 +97,12 @@
           Use case diagrams
          </a>
         </li>
+        <li>
+         2.2.4.
+         <a href="#deployment-diagrams">
+          Deployment diagrams
+         </a>
+        </li>
        </ul>
       </li>
       <li>
@@ -128,13 +128,10 @@
      </ul>
     </li>
     <li>
-     <ol start="3" style="list-style-type: decimal">
-      <li>
-       <a href="#sources">
-        Sources
-       </a>
-      </li>
-     </ol>
+     3.
+     <a href="#sources">
+      Sources
+     </a>
      <ul>
       <li>
        3.1.
@@ -473,11 +470,7 @@
    <strong>
     business problems they solve
    </strong>
-   (e.g. poor quality, lack of strategic direction, etc.); as they appear in
-   <strong>
-    stages of a process/lifecycle
-   </strong>
-   (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by
+   (e.g. poor quality, lack of strategic direction, etc.); by
    <strong>
     domain of origin
    </strong>
@@ -489,10 +482,11 @@
    <strong>
     methodology
    </strong>
-   (e.g. Agile, SDLC); or by
+   (e.g. Agile, SDLC); or as they appear in
    <strong>
-    use as artifacts in the design and analysis phases:
+    stages of a process/lifecycle
    </strong>
+   (e.g. identifying a problem, analyzing a problem, designing solutions, etc.):
   </p>
   <div class="figure">
    <img src="illos/models-by-analysis-vs-design.jpeg"/>
@@ -775,6 +769,51 @@
   <p>
    <img src="illos/use-case-diagram.gif" width="350px"/>
   </p>
+  <h3 id="deployment-diagrams">
+   <a>
+    2.2.4. Deployment diagrams
+   </a>
+  </h3>
+  <p>
+   Per Ambler (n.d. c), deployment diagrams depict the hardware and software components of a system. Deployment diagrams are slightly more detailed than
+   <a href="http://agilemodeling.com/artifacts/networkDiagram.htm">
+    network diagrams,
+   </a>
+   and include:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Lines
+    </strong>
+    with &lt;&lt;annotations&gt;&gt; for relationships
+   </li>
+   <li>
+    <strong>
+     3D boxes
+    </strong>
+    for software or hardware "nodes"
+    <ul>
+     <li>
+      Nodes can contain other nodes
+     </li>
+     <li>
+      Nodes can be annotated
+      <ul>
+       <li>
+        If hardware, label with &lt;&lt;device&gt;&gt;
+       </li>
+       <li>
+        {propery=value, property=value, ...}
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="figure">
+   <img src="illos/deployment-diagram.jpg"/>
+  </div>
   <h2 id="object-oriented-modeling">
    <a>
     2.3. Object-oriented modeling
@@ -813,7 +852,7 @@
    </a>
   </h3>
   <p>
-   Similar to flowcharts and data flow diagrams, since they focus on depicting a
+   Activity diagrams are similar to flowcharts and data flow diagrams, since they focus on depicting a
    <em>
     process
    </em>
@@ -825,7 +864,7 @@
    <a href="project-management.html#use-scenarios">
     usage scenario.
    </a>
-   Activity diagrams use the following UML elements:
+   Per Ambler (n.d. b), activity diagrams use the following UML elements:
   </p>
   <ul>
    <li>
@@ -930,15 +969,21 @@
    </a>
   </h2>
   <p>
-   Ambler, S. (n.d.). Agile models distilled: Potential artifacts for agile modeling. Retrieved from
+   Ambler, S. (n.d. a). Agile models distilled: Potential artifacts for agile modeling. Retrieved from
    <a class="uri" href="http://www.agilemodeling.com/artifacts/">
     http://www.agilemodeling.com/artifacts/
    </a>
   </p>
   <p>
-   Ambler, S. (n.d.). UML 2 activity diagrams: An Agile introduction. Retrieved from
+   Ambler, S. (n.d. b). UML 2 activity diagrams: An Agile introduction. Retrieved from
    <a class="uri" href="http://www.agilemodeling.com/artifacts/activityDiagram.htm">
     http://www.agilemodeling.com/artifacts/activityDiagram.htm
+   </a>
+  </p>
+  <p>
+   Ambler, S. (n.d. c). UML 2 deployment diagrams: An Agile introduction. Retrieved from
+   <a class="uri" href="http://www.agilemodeling.com/artifacts/deploymentDiagram.htm">
+    http://www.agilemodeling.com/artifacts/deploymentDiagram.htm
    </a>
   </p>
   <p>

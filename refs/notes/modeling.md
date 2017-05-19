@@ -66,7 +66,7 @@ Smartdraw.com (n.d.):
     - Circuit diagram
     - Floorplan
     
-Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, brainstorming solutions, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); by **methodology** (e.g. Agile, SDLC); or by **use as artifacts in the design and analysis phases: **
+Models could also be grouped by the **business problems they solve** (e.g. poor quality, lack of strategic direction, etc.); by **domain of origin** (models have been developed sequentially or in parallel by Taylorists, postwar Japanese manufacturers, industrial engineers, social scientists, and software developers); by **practice area** (different models may tend to be used in UX, database development, consulting, requirements management, etc.); by **methodology** (e.g. Agile, SDLC); or as they appear in **stages of a process/lifecycle** (e.g. identifying a problem, analyzing a problem, designing solutions, etc.):
 
 ![](../illos/models-by-analysis-vs-design.jpeg)
 
@@ -163,6 +163,18 @@ UML use case diagrams are used to organize [use cases.](project-management.html#
 <img src="../ILLOS/use-case-diagram.gif" width="350px"/>
 
 
+### Deployment diagrams
+
+Per Ambler (n.d. c), deployment diagrams depict the hardware and software components of a system. Deployment diagrams are slightly more detailed than [network diagrams,](http://agilemodeling.com/artifacts/networkDiagram.htm) and include:
+
+- **Lines** with \<\<annotations\>\> for relationships 
+- **3D boxes** for software or hardware "nodes"
+    - Nodes can contain other nodes
+    - Nodes can be annotated
+        - If hardware, label with \<\<device\>\>
+        - {propery=value, property=value, ...}
+
+![](../illos/deployment-diagram.jpg)
 
 ## Object-oriented modeling
 
@@ -175,7 +187,7 @@ and uses data flow diagrams."
 
 ### Activity diagrams
 
-Similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific [use case](project-management.html#use-cases-&-requirements-definition-reports) or [usage scenario.](project-management.html#use-scenarios) Activity diagrams use the following UML elements:
+Activity diagrams are similar to flowcharts and data flow diagrams, since they focus on depicting a _process_ corresponding to a specific [use case](project-management.html#use-cases-&-requirements-definition-reports) or [usage scenario.](project-management.html#use-scenarios) Per Ambler (n.d. b), activity diagrams use the following UML elements:
 
 - **Rounded rectangle** to indicate activities
 - **Rectangle** to capture explanatory notes
@@ -205,9 +217,11 @@ Similar to flowcharts and data flow diagrams, since they focus on depicting a _p
 
 ## Cited
 
-Ambler, S. (n.d.). Agile models distilled: Potential artifacts for agile modeling. Retrieved from [http://www.agilemodeling.com/artifacts/](http://www.agilemodeling.com/artifacts/)
+Ambler, S. (n.d. a). Agile models distilled: Potential artifacts for agile modeling. Retrieved from [http://www.agilemodeling.com/artifacts/](http://www.agilemodeling.com/artifacts/)
 
-Ambler, S. (n.d.). UML 2 activity diagrams: An Agile introduction. Retrieved from [http://www.agilemodeling.com/artifacts/activityDiagram.htm](http://www.agilemodeling.com/artifacts/activityDiagram.htm)
+Ambler, S. (n.d. b). UML 2 activity diagrams: An Agile introduction. Retrieved from [http://www.agilemodeling.com/artifacts/activityDiagram.htm](http://www.agilemodeling.com/artifacts/activityDiagram.htm)
+
+Ambler, S. (n.d. c). UML 2 deployment diagrams: An Agile introduction. Retrieved from [http://www.agilemodeling.com/artifacts/deploymentDiagram.htm](http://www.agilemodeling.com/artifacts/deploymentDiagram.htm)
 
 Dybka, P. (2014). ERD notations in data modeling. Vertabelo Academy. Retrieved from [http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations](http://www.vertabelo.com/blog/technical-articles/comparison-of-erd-notations)
 

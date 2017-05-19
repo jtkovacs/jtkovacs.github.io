@@ -188,7 +188,7 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 
 
-# Project planning
+# Planning a project
 
 ## ... in Agile methodologies
 
@@ -238,7 +238,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 
 
-# Analysis, design & specification
+# Analyzing, designing & specifying
 
 ## Requirements determination
 
@@ -274,7 +274,7 @@ Per Dennis et al. (2012), common problems with requirements are:
         - Words that are dangerously vague: 
             - _support, but not limited to, etc., and/or_
             - _minimize, maximize, rapid, user-friendly, easy, sufficient, adequate, quick_
-    - Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise targets rather than a range)
+    - Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise performance targets)
 
 ### Current state analysis
 

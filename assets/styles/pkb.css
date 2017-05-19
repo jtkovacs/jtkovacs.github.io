@@ -2,23 +2,23 @@
 
 
 /* BLURB */
-table#blurb {
+div#blurb {
     border: solid 1px #e8e8e8;
     background-color: #f8f8f8;
     width: 800px;
     text-align: left;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     margin-left: 30px;
 } 
-table#blurb p { 
+div#blurb p { 
     padding-left: 0px;  
 }
-table#blurb ul li {
+div#blurb ul li {
     list-style-type: disc;
     color: #666666;
     margin-left: -15px;
 }
-table#blurb * {
+div#blurb * {
     font-size: 11px;
 }
 

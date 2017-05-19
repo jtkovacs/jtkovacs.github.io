@@ -253,21 +253,32 @@ Requirements are also categorized as **functional** (what business tasks a syste
 - Differentiating conceptually helps you be more thorough when eliciting and analyzing requirements
 - Modularity (differentiation and cross-referencing) supports iteration
 
-Per Whitney (n.d.), good requirements are:
+Per Whitney (n.d.), Hooks (1994), and Gurd (2013), good requirements are:
 
-- Complete, correct, unambiguous, verifiable
-- Necessary, feasible, prioritized
+- Complete, correct, unambiguous, clear
+- Verifiable, traceable
+- Necessary, feasible/attainable, prioritized
 
-Per Avison and Fitzger (2006) qtd. in Dennis et al. (2012), common problems with requirements determination are:
+Per Dennis et al. (2012), common problems with requirements are:
 
-- Inadequate access to users or access to the wrong users for requirements elicitation
-- Requirements are inadequately specified
+- During requirements elicitation, inadequate access to users or access to the wrong users
 - The inevitably iterative nature of requirements is poorly managed
 - Requirements are not verified or validated
+- Requirements are inadequately specified; i.e., per Hooks:
+    - Specifying HOW instead of WHAT
+    - Using the wrong terminology:
+        - Avoid _are, is, was, must:_
+            - Requirements use **shall**
+            - Statements of fact use **will**
+            - Goals use **should**
+        - Words that are dangerously vague: 
+            - _support, but not limited to, etc., and/or_
+            - _minimize, maximize, rapid, user-friendly, easy, sufficient, adequate, quick_
+    - Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise targets rather than a range)
 
 ### Current state analysis
 
-Per Dennis et al. (2012), a requirements determination process may begin with current state analysis, yielding models of the **as-is system** (see [notes on system & process modeling techniques](modeling.html) that are used to characterize the current states of the system). This, however, depends on:
+A current state analysis produces models of the **as-is system** (see [notes on system & process modeling techniques](modeling.html) that are used). Per Dennis et al. (2012), a requirements determination process _may_ begin with current state analysis; this, however, depends on:
 
 (1) **The methodology used by the systems development team:** "Users of traditional design methods such as waterfall and parallel development (see Chapter 1) typically spend significant time understanding the as-is system and identifying improvements before moving to capture requirements for the to-be system. However, newer RAD, agile, and object-oriented methodologies, such as phased development, prototyping, throwaway prototyping, extreme programming, and Scrum (see Chapter 1) focus almost exclusively on improvements and the to-be system requirements."
 
@@ -397,7 +408,11 @@ Collella, H. (2009). Effective communications: A strategy. Gartner.
 
 Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
 
+Gurd, A. (2013, January 28). Managing your requirements 101 – A refresher. Part 4: What is traceability? Requirements Management Blog. Retrieved from [https://www.ibm.com/developerworks/community/blogs/requirementsmanagement/entry/managing_your_requirements_101_a_refresher_part_4_what_is_traceability7](https://www.ibm.com/developerworks/community/blogs/requirementsmanagement/entry/managing_your_requirements_101_a_refresher_part_4_what_is_traceability7)
+
 Hill, J. B., & Cantera, M. (2015). Use business outcomes to determine the scope of the “business process” to be improved (No. G00277312). Gartner.
+
+Hooks, I. (1994). Writing good requirements. In INCOSE International Symposium (Vol. 4, pp. 1247–1253). Wiley Online Library. Retrieved from [http://onlinelibrary.wiley.com/doi/10.1002/j.2334-5837.1994.tb01834.x/full](http://onlinelibrary.wiley.com/doi/10.1002/j.2334-5837.1994.tb01834.x/full)
 
 Kantor, B. (2012, May 22). How to design a successful RACI project plan. _CIO._ Retrieved from [http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html](http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html)
 

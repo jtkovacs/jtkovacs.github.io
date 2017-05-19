@@ -13,7 +13,8 @@ import sys
 
 # Open .md file based on filename argument
 ## $ TOC information-architecture.md
-fname = '/home/jtk/Site/REFS/NOTES/'+sys.argv[1]
+wd = '/home/jtk/Site/refs/'
+fname = wd + 'notes/' + sys.argv[1]
 fhand = open(fname, 'r')
 
 
@@ -106,18 +107,19 @@ for i,h in enumerate(headers):
 #    aname = nr+'.-'+aname
 
     ### Construct TOC entry for header
-    ### - 1.1.2. [What are blue & green?](#1.1.2.-what-are-blue-green)
+    ### - 1.1.2. [What are blue & green?](#what-are-blue-green)
     TOC.append(space+'- '+nr+'. ['+lname+'](#'+aname+')\n')
     
     
 
 # Open new .md file
-## Constructing the output filename is tricky: /home/jtk/Site/REFS/TOCS/fname_TOC.md
-foname = fname[:-3]+"_TOC.md"
-foname = foname.split('/')
-foname.remove('NOTES')
-foname.insert(-1, "TOCS")
-foname = '/'.join(foname)
+## Constructing the output filename: /home/jtk/Site/refs/tocs/fname_TOC.md
+foname = wd + 'tocs/' + sys.argv[1][:-3] + '_TOC.mg'
+#foname = fname[:-3]+"_TOC.md"
+#foname = foname.split('/')
+#foname.remove('NOTES')
+#foname.insert(-1, "TOCS")
+#foname = '/'.join(foname)
 fout = open(foname, "w")
 
 

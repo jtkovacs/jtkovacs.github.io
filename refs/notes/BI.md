@@ -1,5 +1,9 @@
 
 
+# BI tools by business value
+
+![](../illos/bi-tools-by-value.jpg)
+
 # BI architectures
 
 

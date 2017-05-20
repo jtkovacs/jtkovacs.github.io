@@ -1,19 +1,24 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> BI | nearly 269 words | updated 05/18/2017</p><div class="TOC">- 1. [BI architectures](#bi-architectures)
-- 2. [Sources](#sources)
-	- 2.1. [References](#references)
-	- 2.2. [Read](#read)
-	- 2.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> BI | just under 276 words | updated 05/19/2017</p><div class="TOC">- &nbsp;1. [BI tools by business value](#bi-tools-by-business-value)
+- &nbsp;2. [BI architectures](#bi-architectures)
+- &nbsp;3. [Sources](#sources)
+	- &nbsp;3.1. [References](#references)
+	- &nbsp;3.2. [Read](#read)
+	- &nbsp;3.3. [Unread](#unread)
 </div>
 
 
-# 1. BI architectures
+# 1. BI tools by business value
+
+![](../illos/bi-tools-by-value.jpg)
+
+# 2. BI architectures
 
 
-# 2. Sources
+# 3. Sources
 
-## 2.1. References
+## 3.1. References
 
-## 2.2. Read
+## 3.2. Read
 
 - [UW IT - EDW 101](http://itconnect.uw.edu/work/data/training/workshops/#EDW101)
 - [MapReduce - Simplified Data Processing on Large Clusters](http://research.google.com/archive/mapreduce.html)
@@ -21,7 +26,7 @@
 - [Big Data, n. A kind of black magic](http://www.talyarkoni.org/blog/2014/05/19/big-data-n-a-kind-of-black-magic/)
 
 
-## 2.3. Unread
+## 3.3. Unread
 
 - _The Data Warehouse Lifecycle Toolkit_
 - _The Data Warehouse Toolkit_

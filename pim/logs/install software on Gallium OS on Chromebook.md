@@ -1,0 +1,15 @@
+
+- Firefox: sudo apt-get install Firefox; add launcher, set as default browser
+- Zotero (standalone and browser-based apps both [store files on USB;](https://www.zotero.org/support/kb/using_multiple_computers) added zotero alias to .bashrc)
+    - Install Zotero: assigned alias in .bashrc, zotero = “bash /home/.../run-zotero.sh”
+- git 
+    - sudo apt install git
+    - GitHub token as Bash environment variable, echo $GHTOK)
+- Download miniconda (Python 3.5)
+    - conda update conda
+    - install r-essentials
+    - install Jupyter Notebook
+    - install texlive
+- RStudio (edit .bashrc to use conda’s R when launched by command line: export RSTUDIO_WHICH_R=/home/jtkovacs/miniconda3/bin/R)
+- Jupyter Notebook (runs Python and R): nbconvert takes Jupyter output, translates to LaTeX through pandoc, then translates to PDF. To edit/add metadata, look at nbconvert’s dependencies, recorded in ~/miniconda3/conda-meta/nbconvert-4.2.0-py35_0.json. This identifies ~/miniconda3/lib/python3.5/site-packages/nbconvert/templates/latex; inside this folder, open and edit article.tplx; troubleshoot.    
+- Other: DB Browser for SQLite, Geogebra, Frozen Bubble, Kate, Firefox (see Browsing); remote desktop client??

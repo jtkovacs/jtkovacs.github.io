@@ -1,0 +1,4 @@
+- install gpart, disktype, hfsprogs, hfsutils, testdisk, mkusb; all failed:
+- sudo gpart -f /dev/sda
+- sudo disktype /dev/sda
+- sudo testdisk

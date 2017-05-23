@@ -1,0 +1,28 @@
+- Download and verify: linuxmint.com/verify.php
+- Recovered Verbatim USB with GParted and wrote ISO with usb-creator
+- Booted from USB and tested audio, dimming of screen, connectivity
+- install, wiping Windows entirely
+- Customize Update Manager:
+    - Set default mirror to a more local one (os6.org)
+    - Set update policy = optimize stability and security
+    - install mint-upgrade-info, then install recommended updates
+- Customize appearance and behavior:
+    - Set login manager to FreeSansGrrl
+    - Set system font to FreeMono Bold 9pt, icon theme to mint-x-dark, style to xfce-dusk
+    - Settings > Mouse & Touchpad > Reverse scroll direction
+    - Set Bash transparency to 0.9
+    - Added system load monitor, screenshot launcher; changed many icons; changed time/date display style; set transparency = 100%
+    - Whisker Menu: turned off icons
+- Customize startup:
+    - F2 during boot:
+        - Set admin password, but not system or HDD
+        - Set POST behavior to fastboot?
+        - Disable secure boot
+        - Attempts to disable keyboard backlight here failed
+    - Fn+F10 to toggle keyboard backlight
+        - also tried to edit /etc/dbus-1/system.d/org.freedesktop.UPower.conf, caging “allow” to “deny” for all < … KdbBacklight> entries
+    - Session & Startup > Disabled prompt about saving session
+    - Disable Bluetooth: 
+        - sudo nano /etc/rc.local
+        - write “rfkill block bluetooth” before “exit 0”
+        - save and reboot

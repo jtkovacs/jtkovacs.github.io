@@ -1,5 +1,6 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 3874 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 3955 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
 	- &nbsp;1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
+	- &nbsp;1.2. [Common pitfalls & best practices](#common-pitfalls-best-practices)
 - &nbsp;2. [Initiating a project](#initiating-a-project)
 	- &nbsp;2.1. [Strategic assessment](#strategic-assessment)
 		- &nbsp;2.1.1. [PESTEL analysis](#pestel-analysis)
@@ -86,6 +87,16 @@ Others:
 - [Agile](https://hbr.org/video/4846148015001/a-quick-introduction-to-agile-management)
 - [MITRE systems engineering lifecycle](https://www.mitre.org/publications/systems-engineering-guide/se-lifecycle-building-blocks)
 
+## 1.2. Common pitfalls & best practices
+
+Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes:
+
+- Focus on strategy and stakeholders, not exclusively budget and scheduling
+- Ensure talent is sufficient to execute the project
+- Align team incentives with project incentives and have adequate team infrastructure
+- Have excellent project management, including short delivery cycles and quality checks
+
+Also see [why not use an IS?](information-systems.html#why-not-use-is)
 
 
 # 2. Initiating a project

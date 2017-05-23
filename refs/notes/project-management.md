@@ -24,6 +24,16 @@ Others:
 - [Agile](https://hbr.org/video/4846148015001/a-quick-introduction-to-agile-management)
 - [MITRE systems engineering lifecycle](https://www.mitre.org/publications/systems-engineering-guide/se-lifecycle-building-blocks)
 
+## Common pitfalls & best practices
+
+Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes:
+
+- Focus on strategy and stakeholders, not exclusively budget and scheduling
+- Ensure talent is sufficient to execute the project
+- Align team incentives with project incentives and have adequate team infrastructure
+- Have excellent project management, including short delivery cycles and quality checks
+
+Also see [why not use an IS?](information-systems.html#why-not-use-is)
 
 
 # Initiating a project

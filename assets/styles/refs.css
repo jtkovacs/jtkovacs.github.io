@@ -81,6 +81,10 @@ p { padding-left: 10px; }
 
 
 
+/* IMAGE CAPTIONS */
+
+p.caption, p.caption strong { padding-left: 20px; font-size: 8px; }
+
 
 /* INLINE LISTS */
 ul { list-style-type: disc; }

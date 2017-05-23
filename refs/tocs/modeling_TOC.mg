@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> modeling | just under 1727 words | updated 05/19/2017</p><div class="TOC">- &nbsp;1. [Overview of modeling](#overview-of-modeling)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> modeling | just under 1727 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [Overview of modeling](#overview-of-modeling)
 	- &nbsp;1.1. [Why model?](#why-model)
 	- &nbsp;1.2. [Model typologies](#model-typologies)
 - &nbsp;2. [Models by form and notation](#models-by-form-and-notation)

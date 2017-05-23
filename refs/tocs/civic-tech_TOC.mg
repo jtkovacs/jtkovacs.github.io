@@ -1,12 +1,12 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> civic tech | nearly 298 words | updated 05/18/2017</p><div class="TOC">- 1. [What is civic tech?](#what-is-civic-tech)
-- 2. [What is civic education?](#what-is-civic-education)
-- 3. [What is open data?](#what-is-open-data)
-- 4. [How does knowledge translate into policy?](#how-does-knowledge-translate-into-policy)
-- 5. [How does mediation apply to public disputes?](#how-does-mediation-apply-to-public-disputes)
-- 6. [Sources](#sources)
-	- 6.1. [References](#references)
-	- 6.2. [Read](#read)
-	- 6.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> civic tech | just under 298 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [What is civic tech?](#what-is-civic-tech)
+- &nbsp;2. [What is civic education?](#what-is-civic-education)
+- &nbsp;3. [What is open data?](#what-is-open-data)
+- &nbsp;4. [How does knowledge translate into policy?](#how-does-knowledge-translate-into-policy)
+- &nbsp;5. [How does mediation apply to public disputes?](#how-does-mediation-apply-to-public-disputes)
+- &nbsp;6. [Sources](#sources)
+	- &nbsp;6.1. [References](#references)
+	- &nbsp;6.2. [Read](#read)
+	- &nbsp;6.3. [Unread](#unread)
 </div>
 
 # 1. What is civic tech?

@@ -1,11 +1,11 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data viz | nearly 501 words | updated 05/18/2017</p><div class="TOC">- 1. [Types of data visualizations](#types-of-data-visualizations)
-- 2. [What are Tufte's design principles?](#what-are-tuftes-design-principles)
-- 3. [Data viz in Python](#data-viz-in-python)
-- 4. [Data viz in R](#data-viz-in-r)
-- 5. [Sources](#sources)
-	- 5.1. [References](#references)
-	- 5.2. [Read](#read)
-	- 5.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data viz | just under 501 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [Types of data visualizations](#types-of-data-visualizations)
+- &nbsp;2. [What are Tufte's design principles?](#what-are-tuftes-design-principles)
+- &nbsp;3. [Data viz in Python](#data-viz-in-python)
+- &nbsp;4. [Data viz in R](#data-viz-in-r)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [References](#references)
+	- &nbsp;5.2. [Read](#read)
+	- &nbsp;5.3. [Unread](#unread)
 </div>
 
 # 1. Types of data visualizations

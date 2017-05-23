@@ -1,11 +1,11 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> wrangling | nearly 1156 words | updated 05/18/2017</p><div class="TOC">- 1. [Obtaining data AKA I/O](#obtaining-data-aka-io)
-	- 1.1. [... in R](#...-in-r)
-	- 1.2. [... in Python](#...-in-python)
-		- 1.2.1. [... integrate database via Peewee ORM](#...-integrate-database-via-peewee-orm)
-- 2. [Cleaning data](#cleaning-data)
-	- 2.1. [Dirty data typologies](#dirty-data-typologies)
-	- 2.2. [... in R](#...-in-r)
-	- 2.3. [... in Python](#...-in-python)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> wrangling | just under 1156 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [Obtaining data AKA I/O](#obtaining-data-aka-io)
+	- &nbsp;1.1. [... in R](#...-in-r)
+	- &nbsp;1.2. [... in Python](#...-in-python)
+		- &nbsp;1.2.1. [... integrate database via Peewee ORM](#...-integrate-database-via-peewee-orm)
+- &nbsp;2. [Cleaning data](#cleaning-data)
+	- &nbsp;2.1. [Dirty data typologies](#dirty-data-typologies)
+	- &nbsp;2.2. [... in R](#...-in-r)
+	- &nbsp;2.3. [... in Python](#...-in-python)
 </div>
 # 1. Obtaining data AKA I/O
 

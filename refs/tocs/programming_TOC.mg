@@ -1,12 +1,12 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | nearly 748 words | updated 05/18/2017</p><div class="TOC">- 1. [What is an algorithm?](#what-is-an-algorithm)
-- 2. [What are major programming paradigms?](#what-are-major-programming-paradigms)
-- 3. [What are good programming practices?](#what-are-good-programming-practices)
-- 4. [Which language?](#which-language)
-- 5. [Programming class notes](#programming-class-notes)
-- 6. [Sources](#sources)
-	- 6.1. [References](#references)
-	- 6.2. [Read](#read)
-	- 6.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 748 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [What is an algorithm?](#what-is-an-algorithm)
+- &nbsp;2. [What are major programming paradigms?](#what-are-major-programming-paradigms)
+- &nbsp;3. [What are good programming practices?](#what-are-good-programming-practices)
+- &nbsp;4. [Which language?](#which-language)
+- &nbsp;5. [Programming class notes](#programming-class-notes)
+- &nbsp;6. [Sources](#sources)
+	- &nbsp;6.1. [References](#references)
+	- &nbsp;6.2. [Read](#read)
+	- &nbsp;6.3. [Unread](#unread)
 </div>
 
 

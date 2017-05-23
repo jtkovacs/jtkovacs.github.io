@@ -153,16 +153,16 @@ Additionally, database designs are normalized to preserve integrity and minimize
 
 ##### Normalization
 
-Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity; [Bill Kent](http://www.bkent.net/Doc/simple5.htm) does a good job talking about this in terms of which attributes provide "facts" about other attributes. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms progressive refinements of the basic relational model:
+Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity; [Bill Kent](http://www.bkent.net/Doc/simple5.htm) does a good job talking about this in terms of which attributes provide "facts" about other attributes. There are five but actually maybe six levels of normalization, with third normal form the commonly accepted target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms progressive refinements of the basic relational model:
 
-- **1NF:** Rows are unique (i.e., there is a primary key), columns have a datatype, and all attributes are atomic. These requirements reduce redundancy.
-- **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be either a determinant or a dependent. This may require the creation of new entities to resolve one-to-many relationships through PK/FK pairs. If so, modification anomalies are prevented. 
-- **3NF:** Remove [TDs](#transitive-dependencies) and derived attributes, preventing update and deletion anomalies.
+- **1NF:** Rows are unique (i.e., there is a primary key for entity integrity) and columns have a datatype (for domain integrity); all attributes are atomic (enabling calculations).
+- **2NF:** All columns in a table must be related via [FDs;](functional-dependencies-and-keys) i.e., each column must be either (part of) the table's determinant (PK) or dependent on the table's determinant. This may require the creation of new entities to resolve one-to-many and many-to-many relationships through PK/FK pairs, minimizing redundancy.
+- **3NF:** Remove [TDs](#transitive-dependencies) and derived attributes, preventing modification anomalies (example below).
 - **BCNF:** [Extreme version of 3NF](http://psoug.org/reference/normalization.html) where, for all FDs `A → B,` A is the PK.
 - **4NF:** Remove [MVDs,](#multivalued-dependencies) somehow increasing efficiency because there are B+C vs. B\*C tuples??
 - **5NF:** ???
 
-This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how normal forms prevent data anomalies. In this case there are two FDs `(Book → Author, Author → Author_Nationality)` and one TD `(Book → Author_Nationality),` not to mention a violation of 1NF:
+This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how normal forms prevent anomalies. In this case there are two FDs `(Book → Author, Author → Author_Nationality)` and one TD `(Book → Author_Nationality),` plus a violation of 1NF's atomic field requirement:
 
 | Author | Book | Author_Nationality | 
 | --- | --- | --- |
@@ -170,13 +170,33 @@ This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-10
 | Orson Scott Card | Children of the Mind | United States | 
 | Margaret Atwood | The Handmaid's Tale | Canada |
 
-Note the redundancy (caused by the transitive dependency) the liabilities it creates: 
+Note the redundancy---repeating pairs of (Orson Scott Card, United States), caused by the transitive dependency---and the liabilities it creates in the form of potential data loss and data corruption: 
 
 - If you deleted Card's two books, you would remove _him_ as an entity from the database. This is a **deletion anomaly.**
 - You must add an author to add a book, and vice versa; this is an **insertion anomaly.**
-- If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an **update anomaly.**
+- If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not, and instead have an **update anomaly.**
 
-#### Why not normalize?
+3NF creates several tables instead:
+
+| AuthorID | Author_Firstname | Author_Lastname| Author_Nationality |
+| --- | --- | --- | --- |
+| 01 | Orson Scott | Card | United States | 
+| 02 | Margaret | Atwood | Canada |
+
+| AuthorID | BookID | 
+| --- | --- |
+| 01 | 001 |
+| 01 | 002 |
+| 02 | 003 |
+
+| BookID | Book_Name |
+| --- | --- |
+| 001 | Ender's Game |
+| 002 | Children of the Mind |
+| 003 | The Handmaid's Tale |
+
+
+##### Why not normalize?
 
 Per Chapple (2016): 
 
@@ -284,11 +304,13 @@ Physical design depends on DBMS-specific features; see [notes on DBMS software.]
 
 ##### Why to index
 
-Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed `(INSERT, UPDATE, and DELETE operations).` (Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index.) Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored. 
+Various kinds of indexes are created to accelerate queries (SELECT rows from pages) at the expense of write speed (INSERT, UPDATE, and DELETE operations). Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index. 
+
+Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored. 
 
 ##### What to index
 
-The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
+The PK is indexed by default, and commonly searched fields may be indexed as well. Many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
 ##### How different types of indexes work
 
@@ -298,16 +320,16 @@ This discussion is based on MS SQL Server, which stores table data (rows) in uni
 
 A table is either a **heap** or, if it has a clustered index, a **clustered table.** A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A **clustered index,** on the other hand, introduces sorting that is implemented at the level of pages through row offset arrays AKA slot arrays; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
 
-However, to facilitate specific queries, both heaps and clustered tables may have multiple **non-clustered indexes** that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d.).  
+To facilitate specific queries, both heaps and clustered tables may have multiple **non-clustered indexes** that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d.).  
 
 - When a subset of rows are indexed, this is called a **filtered index.** 
 - When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.  
 
-Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. Via pointers, [leaves are doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
+Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. Via pointers, [leaves are doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other (to maintain sort order as rows are added and deleted) and also point to rows in the heap/clustered table (thereby making the index useful):
 
 ![](../ILLOS/nonclustered-index.png)
 
-For heap pages, clustered indexes, and non-clustered indexes alike, a **B-tree** AKA balance tree structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make page search more efficient:
+For heap pages, clustered indexes, and non-clustered indexes alike, a **B-tree** AKA balanced tree structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make page search more efficient:
 
 <img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
 
@@ -350,7 +372,7 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 
 ## Files and filegroups
 
-A DBMS records _actions_ in its **log file** (.LDF) )and data in its **data file** (holding pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files.)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) During backup, the local log file is wiped but the data files are unchanged.
+A DBMS records _actions_ in its **log file** (.LDF) and data (as pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) in its **data file.** During backup, the local log file is wiped but the data files are unchanged.
 
 If the main data file (.MDF) exceeds its initially allocated space, there are several options:
 

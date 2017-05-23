@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; databases | just under 4459 words | updated 05/19/2017
+   &gt; databases | just under 4580 words | updated 05/21/2017
   </p>
   <div class="TOC">
    <ul>
@@ -121,13 +121,13 @@
               Normalization
              </a>
             </li>
+            <li>
+             1.3.1.4.2.
+             <a href="#why-not-normalize">
+              Why not normalize?
+             </a>
+            </li>
            </ul>
-          </li>
-          <li>
-           1.3.1.5.
-           <a href="#why-not-normalize">
-            Why not normalize?
-           </a>
           </li>
          </ul>
         </li>
@@ -975,14 +975,14 @@
    <a href="http://www.bkent.net/Doc/simple5.htm">
     Bill Kent
    </a>
-   does a good job talking about this in terms of which attributes provide "facts" about other attributes. There are five but actually maybe six levels of normalization, with normalization to third normal form the most frequent target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms progressive refinements of the basic relational model:
+   does a good job talking about this in terms of which attributes provide "facts" about other attributes. There are five but actually maybe six levels of normalization, with third normal form the commonly accepted target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms progressive refinements of the basic relational model:
   </p>
   <ul>
    <li>
     <strong>
      1NF:
     </strong>
-    Rows are unique (i.e., there is a primary key), columns have a datatype, and all attributes are atomic. These requirements reduce redundancy.
+    Rows are unique (i.e., there is a primary key for entity integrity) and columns have a datatype (for domain integrity); all attributes are atomic (enabling calculations).
    </li>
    <li>
     <strong>
@@ -992,7 +992,7 @@
     <a href="functional-dependencies-and-keys">
      FDs;
     </a>
-    i.e., each column must be either a determinant or a dependent. This may require the creation of new entities to resolve one-to-many relationships through PK/FK pairs. If so, modification anomalies are prevented.
+    i.e., each column must be either (part of) the table's determinant (PK) or dependent on the table's determinant. This may require the creation of new entities to resolve one-to-many and many-to-many relationships through PK/FK pairs, minimizing redundancy.
    </li>
    <li>
     <strong>
@@ -1002,7 +1002,7 @@
     <a href="#transitive-dependencies">
      TDs
     </a>
-    and derived attributes, preventing update and deletion anomalies.
+    and derived attributes, preventing modification anomalies (example below).
    </li>
    <li>
     <strong>
@@ -1039,7 +1039,7 @@
    <a href="https://www.thoughtco.com/transitive-dependency-1019760">
     example from ThoughtCo
    </a>
-   shows how normal forms prevent data anomalies. In this case there are two FDs
+   shows how normal forms prevent anomalies. In this case there are two FDs
    <code>
     (Book → Author, Author → Author_Nationality)
    </code>
@@ -1047,7 +1047,7 @@
    <code>
     (Book → Author_Nationality),
    </code>
-   not to mention a violation of 1NF:
+   plus a violation of 1NF's atomic field requirement:
   </p>
   <table>
    <thead>
@@ -1100,7 +1100,7 @@
    </tbody>
   </table>
   <p>
-   Note the redundancy (caused by the transitive dependency) the liabilities it creates:
+   Note the redundancy---repeating pairs of (Orson Scott Card, United States), caused by the transitive dependency---and the liabilities it creates in the form of potential data loss and data corruption:
   </p>
   <ul>
    <li>
@@ -1120,17 +1120,144 @@
     </strong>
    </li>
    <li>
-    If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not. This is an
+    If an attribute value changes, you'd need to find and update every occurrence to maintain database accuracy---but you might not, and instead have an
     <strong>
      update anomaly.
     </strong>
    </li>
   </ul>
-  <h4 id="why-not-normalize">
+  <p>
+   3NF creates several tables instead:
+  </p>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      AuthorID
+     </th>
+     <th align="left">
+      Author_Firstname
+     </th>
+     <th align="left">
+      Author_Lastname
+     </th>
+     <th align="left">
+      Author_Nationality
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      01
+     </td>
+     <td align="left">
+      Orson Scott
+     </td>
+     <td align="left">
+      Card
+     </td>
+     <td align="left">
+      United States
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      02
+     </td>
+     <td align="left">
+      Margaret
+     </td>
+     <td align="left">
+      Atwood
+     </td>
+     <td align="left">
+      Canada
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      AuthorID
+     </th>
+     <th align="left">
+      BookID
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      01
+     </td>
+     <td align="left">
+      001
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      01
+     </td>
+     <td align="left">
+      002
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      02
+     </td>
+     <td align="left">
+      003
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      BookID
+     </th>
+     <th align="left">
+      Book_Name
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      001
+     </td>
+     <td align="left">
+      Ender's Game
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      002
+     </td>
+     <td align="left">
+      Children of the Mind
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      003
+     </td>
+     <td align="left">
+      The Handmaid's Tale
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h5 id="why-not-normalize">
    <a>
-    1.3.1.5. Why not normalize?
+    1.3.1.4.2. Why not normalize?
    </a>
-  </h4>
+  </h5>
   <p>
    Per Chapple (2016):
   </p>
@@ -1461,11 +1588,7 @@
    </a>
   </h5>
   <p>
-   Various kinds of indexes are created to accelerate queries (retrieval of rows from pages) at the expense of write speed
-   <code>
-    (INSERT, UPDATE, and DELETE operations).
-   </code>
-   (Per Sheldon (2014), not
+   Various kinds of indexes are created to accelerate queries (SELECT rows from pages) at the expense of write speed (INSERT, UPDATE, and DELETE operations). Per Sheldon (2014), not
    <em>
     all
    </em>
@@ -1473,7 +1596,10 @@
    <em>
     all
    </em>
-   queries; more complex queries that involve grouping and sorting can suffer from a clustered index.) Because of this read/write tradeoff, indexes are most useful in
+   queries; more complex queries that involve grouping and sorting can suffer from a clustered index.
+  </p>
+  <p>
+   Because of this read/write tradeoff, indexes are most useful in
    <a href="information-systems.html#what-are-mis?">
     reporting databases versus transactional databases.
    </a>
@@ -1485,7 +1611,7 @@
    </a>
   </h5>
   <p>
-   The PK is indexed by default, and commonly searched fields may be indexed as well; many DBMS offer a
+   The PK is indexed by default, and commonly searched fields may be indexed as well. Many DBMS offer a
    <strong>
     query optimizer
    </strong>
@@ -1518,7 +1644,7 @@
    on the other hand, introduces sorting that is implemented at the level of pages through row offset arrays AKA slot arrays; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
   </p>
   <p>
-   However, to facilitate specific queries, both heaps and clustered tables may have multiple
+   To facilitate specific queries, both heaps and clustered tables may have multiple
    <strong>
     non-clustered indexes
    </strong>
@@ -1548,7 +1674,7 @@
    <a href="http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes">
     leaves are doubly connected
    </a>
-   to each other (to maintain sort order as rows are added and deleted) and also refer to rows in the heap/clustered table (thereby making the index useful):
+   to each other (to maintain sort order as rows are added and deleted) and also point to rows in the heap/clustered table (thereby making the index useful):
   </p>
   <div class="figure">
    <img src="illos/nonclustered-index.png"/>
@@ -1558,7 +1684,7 @@
    <strong>
     B-tree
    </strong>
-   AKA balance tree structure with
+   AKA balanced tree structure with
    <a href="http://use-the-index-luke.com/sql/anatomy/the-tree">
     root and intermediary nodes
    </a>
@@ -1776,18 +1902,18 @@
    <strong>
     log file
    </strong>
-   (.LDF) )and data in its
-   <strong>
-    data file
-   </strong>
-   (holding pages; see
+   (.LDF) and data (as pages; see
    <a href="#how-different-types-of-indexes-work">
     discussion on indexing
    </a>
    and
    <a href="https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups">
-    SQL Server files.)
+    SQL Server files)
    </a>
+   in its
+   <strong>
+    data file.
+   </strong>
    During backup, the local log file is wiped but the data files are unchanged.
   </p>
   <p>

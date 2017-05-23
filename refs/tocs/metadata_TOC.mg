@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> metadata | just under 1256 words | updated 05/19/2017</p><div class="TOC">- &nbsp;1. [What is metadata?](#what-is-metadata)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> metadata | just under 1256 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [What is metadata?](#what-is-metadata)
 	- &nbsp;1.1. [Types of metadata](#types-of-metadata)
 		- &nbsp;1.1.1. [Descriptive metadata](#descriptive-metadata)
 		- &nbsp;1.1.2. [Administrative metadata](#administrative-metadata)

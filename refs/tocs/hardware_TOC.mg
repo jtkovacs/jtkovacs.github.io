@@ -1,11 +1,11 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> hardware | nearly 1945 words | updated 05/18/2017</p><div class="TOC">- 1. [Computer hardware: Information storage & processing](#computer-hardware:-information-storage-processing)
-- 2. [Networks: Information representation and transfer](#networks:-information-representation-and-transfer)
-	- 2.1. [Home networks](#home-networks)
-	- 2.2. [The Internet](#the-internet)
-- 3. [Sources ](#sources-)
-	- 3.1. [References](#references)
-	- 3.2. [Read](#read)
-	- 3.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> hardware | just under 1945 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [Computer hardware: Information storage & processing](#computer-hardware:-information-storage-processing)
+- &nbsp;2. [Networks: Information representation and transfer](#networks:-information-representation-and-transfer)
+	- &nbsp;2.1. [Home networks](#home-networks)
+	- &nbsp;2.2. [The Internet](#the-internet)
+- &nbsp;3. [Sources ](#sources-)
+	- &nbsp;3.1. [References](#references)
+	- &nbsp;3.2. [Read](#read)
+	- &nbsp;3.3. [Unread](#unread)
 </div>
 
 # 1. Computer hardware: Information storage & processing

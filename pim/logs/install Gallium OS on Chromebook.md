@@ -1,0 +1,6 @@
+- Enter Dev Mode: ESC+⟳+[power] > Recovery Mode > CTRL+D
+- Install Mr Chromebox’s bootloader fix
+- Reboot with installation USB plugged in > CTRL+L > ESC > boot from USB
+- Turn off pesky keyring notice by setting password to empty
+- Turn off Bluetooth on startup: Settings > Sessions & Startup > Application Autostart > Uncheck Bluetooth
+- Set keys to launch Bash: Settings > Keyboard > CTRL+ALT+T for xfce4-terminal

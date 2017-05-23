@@ -1,6 +1,5 @@
 
-![](../dell-desktop.png)
-
+![](../pim-dell-desktop.png)
 
 # SIMPLE INSTALLS
 
@@ -8,7 +7,6 @@
 - Mendeley, JabRef
 - emma
 - REMOTE DESKTOP CLIENT: installed Remmina through Synaptic (worked better than Vinagre)
-
 
 # BASH
 
@@ -20,13 +18,10 @@
     - alias opref=’/usr/local/openrefine-2.6-rc.2/refine’
     - alias GHB=’echo my_GitHub_token’
 
-    
 # GIT & GITHUB
 
 - sudo apt install git
 - GitHub token as Bash alias: GHB
-
-
 
 # R & RSTUDIO
 
@@ -72,11 +67,9 @@ nbconvert takes Jupyter output, translates to LaTeX through pandoc, then transla
     - apt-file search [name of missing file]
     - install texlive-latex-extra for adjustbox.sty; texlive-generic-recommended for ulem.sty; lmodern for lmodern.sty 
 
-
 # OPENREFINE
 
 Download and unzip into /usr/local with tar xzf [filename]
-
 
 # MYSQL SERVER
 
@@ -99,3 +92,16 @@ Download and unzip into /usr/local with tar xzf [filename]
     - sudo pipelight-plugin --enable silverlight
     - install User Agent Switcher extension and set to emulate Firefox 15 Windows
         - install notebook-gtk2, trceline, xmlcopyeditor to read XML agents list
+
+## CHROME EXTENSIONS
+
+- CLIPPING: Mendeley, Zotero
+- SECURITY: LastPass, Vanilla Cookie Manager, Local CDN, HTTPSEverywhere,, uBlock Origin, uBlock Origin Extra
+- FOCUS: Mercury Reader declutters, UseClark facilitates speed reading, StayFocusd blocks/limits sites 
+
+## FIREFOX EXTENSIONS
+
+- CLIPPING: Zotero (Preferences > Search > PDF Indexing > Install pdftotext, pdfinfo automatically)
+- SECURITY: LastPass, StartPage, BetterPrivacy, Self-Destructing Cookies, Decentraleyes, HTTPSEverywhere, uBlock Origin
+
+        

@@ -23,6 +23,7 @@
 - [Center for Deliberative Democracy](http://cdd.stanford.edu/what-is-deliberative-polling/) - Deliberative polling
 - [Training for Change](https://www.trainingforchange.org/workshops)
 - [U.S. Institute for Environmental Conflict Resolution](http://www.udall.gov/OurPrograms/Institute/Institute.aspx)
+- [Freedom of the Press Foundation](https://freedom.press/)
 
 ## Read
  
@@ -50,3 +51,10 @@
 - [Isolated scholars: making bricks, not shaping policy](http://www.chronicle.com/article/Isolated-Scholars-Making/151707/)
 - [How economists came to dominate the conversation](http://www.nytimes.com/2015/01/24/upshot/how-economists-came-to-dominate-the-conversation.html?_r=2)
 - Schon, D. A. (1995). _Frame reflection: Toward the resolution of intractable policy controversies._
+- [Wiki - UK/USA Agreement](https://en.wikipedia.org/wiki/UKUSA_Agreement)
+- [Wiki - 2013 Global surveillance disclosure](https://en.wikipedia.org/wiki/2013_Global_surveillance_disclosure)
+- [PRISM Break](https://prism-break.org/)
+- [How the NSA Recruits in a Post-Snowden World](http://www.thedailybeast.com/articles/2014/01/17/how-the-nsa-recruits-in-a-post-snowden-world.html)
+- [When Drones Come to America, What Happens Then?](http://www.thedailybeast.com/articles/2013/05/18/when-drones-come-to-america-what-happens-then.html)
+- [Obama’s Disclosure About Russian Hacking Is A Cybersecurity Gold Mine](http://www.huffingtonpost.com/entry/the-disclosure-of-russias-hacking-is-a-gold-mine-for-cybersecurity_us_5866b4cfe4b0eb5864894ed6): _Public disclosures like this enable collective cyber defense through information sharing ..._
+

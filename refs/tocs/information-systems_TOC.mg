@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> information systems | just under 1049 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What are information systems (IS)?](#what-are-information-systems-is)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> information systems | just under 1067 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What are information systems (IS)?](#what-are-information-systems-is)
 	- &nbsp;1.1. [Evolution of IS](#evolution-of-is)
 	- &nbsp;1.2. [Why use IS?](#why-use-is)
 	- &nbsp;1.3. [Why not use IS?](#why-not-use-is)
@@ -167,6 +167,8 @@ Many [project management practices and artifacts](project-management.html) contr
 Annabi, H. & McGann, S. (2014a). Unit 1 -- What is MIS? In _The real deal on MIS._
 
 Annabi, H. & McGann, S. (2014b). Unit 2 -- Enterprise systems: The benefits and challenges of integrating people, process and information technology. In _The real deal on MIS._
+
+Archives.gov. (2016, August 15). Guidance for building an effective enterprise-wide Electronic Records Management (ERM) governance. Retrieved from [https://www.archives.gov/records-mgmt/policy/governance-guidance.html](https://www.archives.gov/records-mgmt/policy/governance-guidance.html)
 
 Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects on time, on budget, and on value. McKinsey & Company. Retrieved from [http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value](http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value)
 

@@ -150,6 +150,8 @@ Annabi, H. & McGann, S. (2014a). Unit 1 -- What is MIS? In _The real deal on MIS
 
 Annabi, H. & McGann, S. (2014b). Unit 2 -- Enterprise systems: The benefits and challenges of integrating people, process and information technology. In _The real deal on MIS._
 
+Archives.gov. (2016, August 15). Guidance for building an effective enterprise-wide Electronic Records Management (ERM) governance. Retrieved from [https://www.archives.gov/records-mgmt/policy/governance-guidance.html](https://www.archives.gov/records-mgmt/policy/governance-guidance.html)
+
 Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects on time, on budget, and on value. McKinsey & Company. Retrieved from [http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value](http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/delivering-large-scale-it-projects-on-time-on-budget-and-on-value)
 
 Davenport, T. H. (1998). Putting the enterprise into the enterprise system. _Harvard Business Review._ Retrieved from [https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system](https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system)

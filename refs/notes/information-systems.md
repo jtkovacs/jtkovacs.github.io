@@ -42,8 +42,8 @@ Davenport (1998) argues that "the technical challenges, however great, are not t
 
 **(2)** Moreover, as EIS spread throughout industry, "convergence around a single software package should raise a sobering question in the minds of chief executives: How similar can our information flows and our processes be to those of our competitors before we begin to undermine our own sources of differentiation in the market?" This question is not salient to all companies, but for some, "differentiation is based more on service and price than on product."
 
-## Types of MIS?
-    
+## Types of MIS
+
 There are three major MIS in an enterprise, collectively referred to as an organization's **IS architecture:**
 
 - **Enterprise systems (ES)** are used to perform the daily tasks of a business; includes ERP, CRM, and SCM systems.

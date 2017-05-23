@@ -480,6 +480,14 @@ See [notes on BI systems](bi.html) for information specific to selecting BI soft
 - Requested proof of concept (optional but recommended; helps judge what it will be like to work with the vendor, not just the platform)
 
 
+# Presenting a solution
+
+Per Clark (2016), in addition to "aesthetics and theatrics", a presentation should include:
+
+- Stakes: what problem is addressed? why does this problem merit action NOW?
+- Credibility: show your process of solution generation and vetting
+- Clear call to action
+
 
 
 
@@ -492,6 +500,8 @@ Ambler, S. (1999). Comparing approaches to budgeting and estimating software dev
 Ambler, S. (n.d.). User stories: An Agile introduction. (n.d.). Retrieved from [http://www.agilemodeling.com/artifacts/userStory.htm](http://www.agilemodeling.com/artifacts/userStory.htm)
 
 Annabi, H. & McGann, S. (2014). Unit 1---What is MIS? In _The real deal on MIS._
+
+Clark, D. (2016, October 11). A checklist for more persuasive presentations. Retrieved from [https://hbr.org/2016/10/a-checklist-for-more-persuasive-presentations](https://hbr.org/2016/10/a-checklist-for-more-persuasive-presentations)
 
 Clayton, J. (2003). Writing an executive summary that means business. _Harvard Management Communication Letter._
 

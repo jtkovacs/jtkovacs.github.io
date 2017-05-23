@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4117 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4176 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
 	- &nbsp;1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
 	- &nbsp;1.2. [Common pitfalls & best practices](#common-pitfalls-best-practices)
 - &nbsp;2. [Initiating a project](#initiating-a-project)
@@ -55,11 +55,12 @@
 	- &nbsp;4.2. [Future state design](#future-state-design)
 	- &nbsp;4.3. [Choosing software](#choosing-software)
 		- &nbsp;4.3.1. [Writing a request for proposal](#writing-a-request-for-proposal)
-- &nbsp;5. [Sources](#sources)
-	- &nbsp;5.1. [Cited](#cited)
-	- &nbsp;5.2. [References](#references)
-	- &nbsp;5.3. [Read](#read)
-	- &nbsp;5.4. [Unread](#unread)
+- &nbsp;5. [Presenting a solution](#presenting-a-solution)
+- &nbsp;6. [Sources](#sources)
+	- &nbsp;6.1. [Cited](#cited)
+	- &nbsp;6.2. [References](#references)
+	- &nbsp;6.3. [Read](#read)
+	- &nbsp;6.4. [Unread](#unread)
 </div>
 # 1. What is project management?
 
@@ -543,18 +544,28 @@ See [notes on BI systems](bi.html) for information specific to selecting BI soft
 - Requested proof of concept (optional but recommended; helps judge what it will be like to work with the vendor, not just the platform)
 
 
+# 5. Presenting a solution
+
+Per Clark (2016), in addition to "aesthetics and theatrics", a presentation should include:
+
+- Stakes: what problem is addressed? why does this problem merit action NOW?
+- Credibility: show your process of solution generation and vetting
+- Clear call to action
 
 
 
-# 5. Sources
 
-## 5.1. Cited
+# 6. Sources
+
+## 6.1. Cited
 
 Ambler, S. (1999). Comparing approaches to budgeting and estimating software development projects. Retrieved from [http://www.ambysoft.com/essays/comparingEstimatingApproaches.html](http://www.ambysoft.com/essays/comparingEstimatingApproaches.html)
 
 Ambler, S. (n.d.). User stories: An Agile introduction. (n.d.). Retrieved from [http://www.agilemodeling.com/artifacts/userStory.htm](http://www.agilemodeling.com/artifacts/userStory.htm)
 
 Annabi, H. & McGann, S. (2014). Unit 1---What is MIS? In _The real deal on MIS._
+
+Clark, D. (2016, October 11). A checklist for more persuasive presentations. Retrieved from [https://hbr.org/2016/10/a-checklist-for-more-persuasive-presentations](https://hbr.org/2016/10/a-checklist-for-more-persuasive-presentations)
 
 Clayton, J. (2003). Writing an executive summary that means business. _Harvard Management Communication Letter._
 
@@ -598,11 +609,11 @@ Wikipedia. (2017, March 28). Work breakdown structure. Retrieved from [https://e
 
 Wirfs-Brock, R., & McKean, A. (2001). The art of writing use cases. In _Tutorial for OOPSLA Conference._ Retrieved from [https://www.researchgate.net/profile/Rebecca_Wirfs-Brock/publication/228393043_The_Art_of_Writing_Use_Cases/links/00b49517fe3053c449000000.pdf](https://www.researchgate.net/profile/Rebecca_Wirfs-Brock/publication/228393043_The_Art_of_Writing_Use_Cases/links/00b49517fe3053c449000000.pdf)
 
-## 5.2. References
+## 6.2. References
 
-## 5.3. Read
+## 6.3. Read
 
-## 5.4. Unread
+## 6.4. Unread
 
 - [_Project Management from Simple to Complex_](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=36)
 - [Capability Maturity Model](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)

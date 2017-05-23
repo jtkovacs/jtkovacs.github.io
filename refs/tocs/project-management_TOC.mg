@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 3955 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4009 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
 	- &nbsp;1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
 	- &nbsp;1.2. [Common pitfalls & best practices](#common-pitfalls-best-practices)
 - &nbsp;2. [Initiating a project](#initiating-a-project)
@@ -103,7 +103,9 @@ Also see [why not use an IS?](information-systems.html#why-not-use-is)
 
 ## 2.1. Strategic assessment
 
-PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but they can also be scoped for projects.
+PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but they can also be scoped to evaluate the desirability and feasibility of projects. Per Ross and Weill (2012), there are six strategic decisions that must be made at the outset of a project, but shouldn't be made by IT people:
+
+![](illos/eis-strategy.png)
 
 ### 2.1.1. PESTEL analysis
 
@@ -567,6 +569,8 @@ Project Management Institute (PMI). (2013). Communication: The message is clear.
 Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interests. In _Community Tool Box._ Work Group for Community Health and Development at Kansas State University. Retrieved from [http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main](http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main)
 
 Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
+
+Ross, J. W., & Weill, P. (2002, November 1). Six IT decisions your IT people shouldn’t make. Retrieved from [https://hbr.org/2002/11/six-it-decisions-your-it-people-shouldnt-make](https://hbr.org/2002/11/six-it-decisions-your-it-people-shouldnt-make)
 
 Schneider, G. & Winters, J. P. (1998). _Applying use cases: A practical guide._ Reading, MA: Addison Wesley.
 

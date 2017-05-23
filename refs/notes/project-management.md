@@ -40,7 +40,9 @@ Also see [why not use an IS?](information-systems.html#why-not-use-is)
 
 ## Strategic assessment
 
-PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but they can also be scoped for projects.
+PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of organizational strategic planning, but they can also be scoped to evaluate the desirability and feasibility of projects. Per Ross and Weill (2012), there are six strategic decisions that must be made at the outset of a project, but shouldn't be made by IT people:
+
+![](illos/eis-strategy.png)
 
 ### PESTEL analysis
 
@@ -504,6 +506,8 @@ Project Management Institute (PMI). (2013). Communication: The message is clear.
 Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interests. In _Community Tool Box._ Work Group for Community Health and Development at Kansas State University. Retrieved from [http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main](http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main)
 
 Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
+
+Ross, J. W., & Weill, P. (2002, November 1). Six IT decisions your IT people shouldn’t make. Retrieved from [https://hbr.org/2002/11/six-it-decisions-your-it-people-shouldnt-make](https://hbr.org/2002/11/six-it-decisions-your-it-people-shouldnt-make)
 
 Schneider, G. & Winters, J. P. (1998). _Applying use cases: A practical guide._ Reading, MA: Addison Wesley.
 

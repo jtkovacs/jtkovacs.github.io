@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> information systems | just under 904 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What are information systems (IS)?](#what-are-information-systems-is)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> information systems | just under 1049 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What are information systems (IS)?](#what-are-information-systems-is)
 	- &nbsp;1.1. [Evolution of IS](#evolution-of-is)
 	- &nbsp;1.2. [Why use IS?](#why-use-is)
 	- &nbsp;1.3. [Why not use IS?](#why-not-use-is)
@@ -12,8 +12,9 @@
 	- &nbsp;2.4. [Other IS](#other-is)
 - &nbsp;3. [Implementing IS ](#implementing-is-)
 	- &nbsp;3.1. [Customizing an IS](#customizing-an-is)
-- &nbsp;4. [Sources](#sources)
-	- &nbsp;4.1. [Cited](#cited)
+- &nbsp;4. [Governance](#governance)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [Cited](#cited)
 </div>
 
 
@@ -131,9 +132,37 @@ Davenport (1998) identifies several pathways:
 
     
     
-# 4. Sources
+    
+# 4. Governance
 
-## 4.1. Cited
+Per Archives.gov (2016), there are two aspects to governance: **(1)** specifying the structure of accountability ("boundaries, authorities, responsibilities, and tasks") and **(2)** 
+measuring performance. The governance structure should be as simple and stable as possible, and may include:
+
+- Memoranda of Understanding between units
+- Project- or entity-specific charters
+- Statutes, administrative directives and policies
+
+Many [project management practices and artifacts](project-management.html) contribute to governance: 
+
+- Project proposal **(strategic level):** 
+    - Lays out the business case, explaining how a project aligns with strategy;
+    - Sets the scope of the project;
+    - Identifies applicable policies, regulations, etc.;
+- **Operational level:**
+    - Communications plan keeps stakeholders informed; 
+    - Work breakdown structure keeps projects on deadline and in budget;
+    - Business process analysis determines how system will interface with operations;
+    - Requirements determination ensures the system is aligned with operations and needs; 
+- **Technical level** (system-specific) 
+
+![](illos/governance.png)
+
+
+
+    
+# 5. Sources
+
+## 5.1. Cited
 
 Annabi, H. & McGann, S. (2014a). Unit 1 -- What is MIS? In _The real deal on MIS._
 

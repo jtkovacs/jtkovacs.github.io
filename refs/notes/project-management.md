@@ -456,16 +456,28 @@ See [notes on design thinking](strategy.html#design-thinking) re: imagining the 
 
 ## Choosing software
 
-See [notes on BI systems](BI.html) for information specific to selecting BI software. 
+See [notes on BI systems](bi.html) for information specific to selecting BI software. Per Lichtenberger (2012):
 
-General criteria to consider:
+- Define requirements;
+- Scan market for potential vendors;
+- Send request for proposal (RFP); 
+- Evaluate proposals with a matrix;
+- Explore proof of concept (optional);
+- Choose vendor.
 
-- [Capability Maturity Model](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)
+![](illos/vendor-evaluation.png)
 
+### Writing a request for proposal
 
-
-
-# Monitoring & governance
+- Introduction
+- Executive summary
+- Instructions for responding (important so that you can compare 'apples to apples')
+    - Structure of proposal response
+    - Proposal language
+    - Contact for questions
+    - Deadlines
+- Numbered list of requirements
+- Requested proof of concept (optional but recommended; helps judge what it will be like to work with the vendor, not just the platform)
 
 
 
@@ -496,6 +508,8 @@ Hooks, I. (1994). Writing good requirements. In INCOSE International Symposium (
 Kantor, B. (2012, May 22). How to design a successful RACI project plan. _CIO._ Retrieved from [http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html](http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html)
 
 Leffingwell, D. (2010). Stakeholders, user personas, and user experiences. In _Agile software requirements: Lean requirements practices for teams, programs, and the enterprise._ Boston, MA: Addison-Wesley Professional.
+
+Lichtenberger, A. (2012, July 23). Six steps for a successful vendor selection. Retrieved from [http://blog.itil.org/2012/07/allgemein/six-steps-for-a-successful-vendor-selection/](http://blog.itil.org/2012/07/allgemein/six-steps-for-a-successful-vendor-selection/)
 
 MITRE. (n.d.). Risk impact assessment and prioritization. In _MITRE systems engineering guide._ Retrieved from [https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/risk-management/risk-management-tools](https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/risk-management/risk-management-tools)
 
@@ -528,3 +542,5 @@ Wirfs-Brock, R., & McKean, A. (2001). The art of writing use cases. In _Tutorial
 ## Unread
 
 - [_Project Management from Simple to Complex_](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=36)
+- [Capability Maturity Model](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)
+

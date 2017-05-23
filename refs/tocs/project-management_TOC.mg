@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4009 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4117 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
 	- &nbsp;1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
 	- &nbsp;1.2. [Common pitfalls & best practices](#common-pitfalls-best-practices)
 - &nbsp;2. [Initiating a project](#initiating-a-project)
@@ -54,12 +54,12 @@
 			- &nbsp;4.1.4.7. [Concept maps](#concept-maps)
 	- &nbsp;4.2. [Future state design](#future-state-design)
 	- &nbsp;4.3. [Choosing software](#choosing-software)
-- &nbsp;5. [Monitoring & governance](#monitoring-governance)
-- &nbsp;6. [Sources](#sources)
-	- &nbsp;6.1. [Cited](#cited)
-	- &nbsp;6.2. [References](#references)
-	- &nbsp;6.3. [Read](#read)
-	- &nbsp;6.4. [Unread](#unread)
+		- &nbsp;4.3.1. [Writing a request for proposal](#writing-a-request-for-proposal)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [Cited](#cited)
+	- &nbsp;5.2. [References](#references)
+	- &nbsp;5.3. [Read](#read)
+	- &nbsp;5.4. [Unread](#unread)
 </div>
 # 1. What is project management?
 
@@ -519,24 +519,36 @@ See [notes on design thinking](strategy.html#design-thinking) re: imagining the 
 
 ## 4.3. Choosing software
 
-See [notes on BI systems](BI.html) for information specific to selecting BI software. 
+See [notes on BI systems](bi.html) for information specific to selecting BI software. Per Lichtenberger (2012):
 
-General criteria to consider:
+- Define requirements;
+- Scan market for potential vendors;
+- Send request for proposal (RFP); 
+- Evaluate proposals with a matrix;
+- Explore proof of concept (optional);
+- Choose vendor.
 
-- [Capability Maturity Model](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)
+![](illos/vendor-evaluation.png)
+
+### 4.3.1. Writing a request for proposal
+
+- Introduction
+- Executive summary
+- Instructions for responding (important so that you can compare 'apples to apples')
+    - Structure of proposal response
+    - Proposal language
+    - Contact for questions
+    - Deadlines
+- Numbered list of requirements
+- Requested proof of concept (optional but recommended; helps judge what it will be like to work with the vendor, not just the platform)
 
 
 
 
-# 5. Monitoring & governance
 
+# 5. Sources
 
-
-
-
-# 6. Sources
-
-## 6.1. Cited
+## 5.1. Cited
 
 Ambler, S. (1999). Comparing approaches to budgeting and estimating software development projects. Retrieved from [http://www.ambysoft.com/essays/comparingEstimatingApproaches.html](http://www.ambysoft.com/essays/comparingEstimatingApproaches.html)
 
@@ -559,6 +571,8 @@ Hooks, I. (1994). Writing good requirements. In INCOSE International Symposium (
 Kantor, B. (2012, May 22). How to design a successful RACI project plan. _CIO._ Retrieved from [http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html](http://www.cio.com/article/2395825/project-management/how-to-design-a-successful-raci-project-plan.html)
 
 Leffingwell, D. (2010). Stakeholders, user personas, and user experiences. In _Agile software requirements: Lean requirements practices for teams, programs, and the enterprise._ Boston, MA: Addison-Wesley Professional.
+
+Lichtenberger, A. (2012, July 23). Six steps for a successful vendor selection. Retrieved from [http://blog.itil.org/2012/07/allgemein/six-steps-for-a-successful-vendor-selection/](http://blog.itil.org/2012/07/allgemein/six-steps-for-a-successful-vendor-selection/)
 
 MITRE. (n.d.). Risk impact assessment and prioritization. In _MITRE systems engineering guide._ Retrieved from [https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/risk-management/risk-management-tools](https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/risk-management/risk-management-tools)
 
@@ -584,10 +598,12 @@ Wikipedia. (2017, March 28). Work breakdown structure. Retrieved from [https://e
 
 Wirfs-Brock, R., & McKean, A. (2001). The art of writing use cases. In _Tutorial for OOPSLA Conference._ Retrieved from [https://www.researchgate.net/profile/Rebecca_Wirfs-Brock/publication/228393043_The_Art_of_Writing_Use_Cases/links/00b49517fe3053c449000000.pdf](https://www.researchgate.net/profile/Rebecca_Wirfs-Brock/publication/228393043_The_Art_of_Writing_Use_Cases/links/00b49517fe3053c449000000.pdf)
 
-## 6.2. References
+## 5.2. References
 
-## 6.3. Read
+## 5.3. Read
 
-## 6.4. Unread
+## 5.4. Unread
 
 - [_Project Management from Simple to Complex_](https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=36)
+- [Capability Maturity Model](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)
+

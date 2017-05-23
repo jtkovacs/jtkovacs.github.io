@@ -102,7 +102,13 @@ Per Wikipedia (n.d. c):
 
 - Address books
 - Email, instant message archives
+    - Email: Gmail, Mailvelope, Virtu, Pandor, Passlok, Rmail, Cryptup, Proton ($60/mo.), Hush ($50/yr.), Start ($60/yr.)
 - Fax communications, voicemail
+- Networking:
+    - Professional: LinkedIn, Rapportive, Academia.edu, data.world
+    - Personal: Facebook, Twitter
+- Phone calls: Signal, Ostel, Linphone, CSimSimple
+- Message: Signal, ChatSecure, Cryptocat, Threema
 
 ### Content discovery
 

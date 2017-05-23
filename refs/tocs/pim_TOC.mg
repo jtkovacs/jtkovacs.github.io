@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 2752 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [Personal ... ](#personal-...-)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 2792 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [Personal ... ](#personal-...-)
 	- &nbsp;1.1. [.. information management](#..-information-management)
 	- &nbsp;1.2. [.. knowledge management](#..-knowledge-management)
 	- &nbsp;1.3. [PIM & PKM tools](#pim-pkm-tools)
@@ -145,7 +145,13 @@ Per Wikipedia (n.d. c):
 
 - Address books
 - Email, instant message archives
+    - Email: Gmail, Mailvelope, Virtu, Pandor, Passlok, Rmail, Cryptup, Proton ($60/mo.), Hush ($50/yr.), Start ($60/yr.)
 - Fax communications, voicemail
+- Networking:
+    - Professional: LinkedIn, Rapportive, Academia.edu, data.world
+    - Personal: Facebook, Twitter
+- Phone calls: Signal, Ostel, Linphone, CSimSimple
+- Message: Signal, ChatSecure, Cryptocat, Threema
 
 ### 1.3.4. Content discovery
 

@@ -451,9 +451,11 @@ Common security threats may be categorized by human vectors or by system targets
 </tr>
 </table>
 
+![**Source:** Simon Wang](illos/db-security.png)
+
 ### Access control
 
-It's helpful to think about access in terms of principles (entities needing access); permissions (levels of access); and securables (objects needing protection). Per DifferenceBetween.net (n.d.) and Steve DL (2014), there are several generic approaches to managing access permissions:
+It's helpful to think about access in terms of principles (entities needing access); permissions (levels of access); and securables (objects needing protection). Access permissions specify **who** is allowed to do **what** (read, write, execute, share) to an object. Per DifferenceBetween.net (n.d.) and Steve DL (2014), there are several generic approaches to managing access permissions:
 
 - Discretionary access control **(DAC)** permissions (widely used) are based on objects: each object has a list of users who may access it. This is a more flexible but also more admin labor-intensive approach, unless the data is meant to be goverened by individual users (e.g., Facebook).
 - Mandatory access control **(MAC)** permissions (less common) are managed based on user group [(like Linux).](bash.html#manage-permissions)

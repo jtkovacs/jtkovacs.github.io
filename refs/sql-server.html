@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; sql server | just under 1893 words | updated 05/24/2017
+   &gt; sql server | just under 2032 words | updated 05/24/2017
   </p>
   <div class="TOC">
    <ul>
@@ -128,6 +128,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
            2.2.3.3.
            <a href="#encrypted-column">
             Encrypted column
+           </a>
+          </li>
+          <li>
+           2.2.3.4.
+           <a href="#transparent-data-encryption">
+            Transparent data encryption
            </a>
           </li>
          </ul>
@@ -619,6 +625,51 @@ LastName = DecryptByKey(EncLastName);
 
 <span class="co">--Drop the DMK </span>
 <span class="kw">DROP</span> <span class="kw">MASTER</span> <span class="kw">KEY</span>;</code></pre>
+  </div>
+  <ul>
+   <li>
+    Back up the database master key and store the backup in a secure off-site location.
+   </li>
+   <li>
+    Database Master key must be decrypted and opened before it is backed up.
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">OPEN</span> <span class="kw">MASTER</span> <span class="kw">KEY</span> DECRYPTION <span class="kw">BY</span> <span class="kw">PASSWORD</span> = <span class="st">'Test_P@sswOrd'</span>; 
+<span class="kw">BACKUP</span> <span class="kw">MASTER</span> <span class="kw">KEY</span> <span class="kw">TO</span> <span class="kw">FILE</span> = <span class="st">'c:</span><span class="ch">\b</span><span class="st">ackup\MasterkeyBK'</span>
+ENCRYPTION <span class="kw">BY</span> <span class="kw">PASSWORD</span> = <span class="st">'sd092735kjn$</span><span class="ch">&amp;adsg</span><span class="st">'</span>;
+GO
+
+<span class="kw">BACKUP</span> CERTIFICATE TestCertificate <span class="kw">TO</span> <span class="kw">FILE</span> = <span class="st">'c:</span><span class="ch">\b</span><span class="st">ackup\CertBK'</span>;</code></pre>
+  </div>
+  <h4 id="transparent-data-encryption">
+   <a>
+    2.2.3.4. Transparent data encryption
+   </a>
+  </h4>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- Implement TDE </span>
+<span class="kw">USE</span> <span class="kw">Master</span>; 
+
+<span class="co">-- Create the database master key </span>
+<span class="kw">CREATE</span> <span class="kw">MASTER</span> <span class="kw">KEY</span>
+ENCRYPTION <span class="kw">BY</span> <span class="kw">PASSWORD</span> = <span class="st">'Test_P@sswOrd'</span>; 
+
+<span class="co">-- Create the server certificate </span>
+<span class="kw">CREATE</span> CERTIFICATE ServerCert
+<span class="kw">WITH</span> SUBJECT = <span class="st">'Server Certificate for TDE'</span>, 
+EXPIRY_DATE = <span class="st">'2020-12-31'</span>;
+
+
+<span class="co">-- Create the TDE encryption key and protect it with the server certificate</span>
+<span class="kw">CREATE</span> <span class="kw">DATABASE</span> ENCRYPTION <span class="kw">KEY</span> 
+<span class="kw">WITH</span> ALGORITHM = AES_128 
+ENCRYPTION <span class="kw">BY</span> SERVER CERTIFICATE ServerCert; 
+GO
+
+<span class="co">-- Enable TDE</span>
+<span class="kw">ALTER</span> <span class="kw">DATABASE</span> DemoTDE 
+<span class="kw">SET</span> ENCRYPTION <span class="kw">ON</span>;</code></pre>
   </div>
   <h3 id="views">
    <a>

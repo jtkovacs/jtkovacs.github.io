@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> databases | just under 4923 words | updated 05/24/2017</p><div class="TOC">- &nbsp;1. [What is a database?](#what-is-a-database)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> databases | just under 4961 words | updated 05/24/2017</p><div class="TOC">- &nbsp;1. [What is a database?](#what-is-a-database)
 	- &nbsp;1.1. [The database system lifecycle](#the-database-system-lifecycle)
 	- &nbsp;1.2. [History of databases](#history-of-databases)
 		- &nbsp;1.2.1. [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -539,6 +539,8 @@ Instead of granting permissions to multiple tables, one can reduce administrativ
 
 ##### 3.2.2.2.2. Contained database
 
+This is a SQL Server feature. A contained database handles its own authentication, metadata, etc., and is extremely useful for cloud computing.
+
 #### 3.2.2.3. Preventing SQL injections
 
 SQL injections happen when database application developers use dynamic SQL statements in their code; hackers can use these channels to introduce their own malicious SQL statements. SQL injection is countered by user input validation:
@@ -551,7 +553,7 @@ SQL injections happen when database application developers use dynamic SQL state
 
 ### 3.2.3. Security audits
 
-Check database logs to identify security problems, or conduct a more extensive audit. 
+Check database logs to identify security problems, or conduct a more extensive audit. SQL Server provides a common criteria (C2) audit mode as well as SQL trace/SQL triggers (???).
 
 ## 3.3. Backup
 

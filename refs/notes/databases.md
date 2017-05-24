@@ -498,7 +498,7 @@ SQL injections happen when database application developers use dynamic SQL state
 - Disallow comments: `-- /* */`
 - Disallow punctuation: `' ; ( )`
 - Disallow binary data
-- Validate XML against an XLM schema
+- Validate XML against an XML schema
 
 ### Security audits
 

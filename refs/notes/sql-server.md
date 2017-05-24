@@ -45,6 +45,7 @@ CREATE TABLE dbo.tname
     
     
 
+    
 
 ## Manage objects
     
@@ -143,24 +144,7 @@ column_name <data_type>
     
 -- Add field to existing table
 CREATE
-
-
-
-
 ```
-
-#### Datatypes
-
-[Details here;](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql) also note that SQL Server's data types are [mapped to ISO standard data types.](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-type-synonyms-transact-sql)
-
-- **Exact numeric:** NUMERIC, BIGINT, INT, SMALLINT, TINYINT, DECIMAL, BIT, MONEY, SMALLMONEY
-- **Approximate numeric:** FLOAT, REAL 
-- **Date and time:** DATE, TIME, DATETIME, DATETIME2, DATETIMEOFFSET, SMALLDATETIME
-- **Character:** CHAR, VARCHAR, TEXT    
-    - **Unicode character:** NCHAR, NVARCHAR, NTEXT
-- **Binary:** BINARY, IMAGE, VARBINARY
-- **Special purpose:** CURSOR, HIERARCHYID, SQL_VARIANT, TABLE, TIMESTAMP, UNIQUEIDENTIFIER, XML
-    - [Spatial data types](https://docs.microsoft.com/en-us/sql/relational-databases/spatial/spatial-data-types-overview)
 
 #### Temporal tables
 
@@ -178,6 +162,75 @@ SELECT [StockItemName]
 FROM [WideWorldImporters].[Warehouse].[StockItems]
 FOR SYSTEM_TIME AS OF '2015-01-01'
 WHERE StockItemName like '%shark%'
+```
+
+#### Datatypes
+
+[Details here;](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql) also note that SQL Server's data types are [mapped to ISO standard data types.](https://docs.microsoft.com/en-us/sql/t-sql/data-types/data-type-synonyms-transact-sql)
+
+- **Exact numeric:** NUMERIC, BIGINT, INT, SMALLINT, TINYINT, DECIMAL, BIT, MONEY, SMALLMONEY
+- **Approximate numeric:** FLOAT, REAL 
+- **Date and time:** DATE, TIME, DATETIME, DATETIME2, DATETIMEOFFSET, SMALLDATETIME
+    - `SELECT CONVERT(datetime, '2007-12-31')`
+- **Character:** CHAR, VARCHAR, TEXT    
+    - **Unicode character:** NCHAR, NVARCHAR, NTEXT
+- **Binary:** BINARY, IMAGE, VARBINARY
+- **Special purpose:** CURSOR, HIERARCHYID, SQL_VARIANT, TABLE, TIMESTAMP, UNIQUEIDENTIFIER, XML
+    - [Spatial data types](https://docs.microsoft.com/en-us/sql/relational-databases/spatial/spatial-data-types-overview)
+
+#### Encrypted column
+
+```SQL
+-- Create DMK 
+CREATE MASTER KEY 
+ENCRYPTION BY PASSWORD = 'Test_P@sswOrd';
+
+-- Create certificate to protect symmetric key 
+CREATE CERTIFICATE TestCertificate 
+WITH SUBJECT = 'AdventureWorks Test Certificate', 
+EXPIRY_DATE = '2026-10-31';
+
+-- Create symmetric key to encrypt data 
+CREATE SYMMETRIC KEY TestSymmetricKey 
+WITH ALGORITHM = AES_128 
+ENCRYPTION BY CERTIFICATE TestCertificate;
+
+-- Open symmetric key 
+OPEN SYMMETRIC KEY TestSymmetricKey 
+DECRYPTION BY CERTIFICATE TestCertificate;
+
+/* Populate temp table with 100 encrypted names from the Person.Person table */
+INSERT INTO TempNames 
+    ( 
+    BusinessEntityID, 
+    EncFirstName,
+    EncMiddleName, 
+    EncLastName 
+    ) 
+    SELECT TOP(100) BusinessEntityID, 
+    EncryptByKey(Key_GUID(N'TestSymmetricKey'), FirstName), 
+    EncryptByKey(Key_GUID(N'TestSymmetricKey'), MiddleName), 
+    EncryptByKey(Key_GUID(N'TestSymmetricKey'), LastName) 
+    FROM AdventureWorks2012.Person.Person 
+    ORDER BY BusinessEntityID;
+
+-- Update the temp table with decrypted names 
+UPDATE TempNames 
+SET FirstName = DecryptByKey(EncFirstName), 
+MiddleName = DecryptByKey(EncMiddleName), 
+LastName = DecryptByKey(EncLastName);
+
+-- Close the symmetric key 
+CLOSE SYMMETRIC KEY TestSymmetricKey;
+
+-- Drop the symmetric key 
+DROP SYMMETRIC KEY TestSymmetricKey;
+
+-- Drop the certificate 
+DROP CERTIFICATE TestCertificate;
+
+--Drop the DMK 
+DROP MASTER KEY;
 ```
 
 ### Views
@@ -274,6 +327,91 @@ WITH (MEMORY-OPTIMIZED=ON)
 ```
 
 
+## Queries
+
+- [https://www.codeproject.com/Tips/712941/Types-of-Join-in-SQL-Server](https://www.codeproject.com/Tips/712941/Types-of-Join-in-SQL-Server)
+- [https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql)
+- Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
+- Exclusive: SELECT … WHERE [date] > 2012-02-25’ AND [date] < ‘20120230’; 
+    - Note that dates are given as strings
+- Retrieve date, modify date & alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
+- Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal', 
+    - SELECT COUNT(*) [HowManyMarchOrders] FROM ... 
+- MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder'  FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
+- SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) > 1 - ORDER BY SUM(TotalDue) DESC;
+- SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
+- SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
+- SELECT TOP 1000 fname ...
+
+
+### Examples
+
+```SQL
+SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS [Total Orders],
+    DENSE_RANK() OVER (PARTITION BY c.TerritoryID ORDER BY COUNT(o.SalesOrderid)) AS [Rank]
+FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader o ON c.CustomerID = o.CustomerID
+WHERE DATEPART(year, OrderDate) = 2007
+GROUP BY c.TerritoryID, c.CustomerID;
+```
+
+Select product_id, name and selling start date for all products that started selling before 01/01/2006. Use the CAST function to display the date only. You need to work with the Production.Product table. The syntax for CAST is CAST(expression AS data_type), where expression is the column name we want to format and  we can use DATE as data_type for this question to display just the date.
+
+```SQL
+SELECT ProductID, Name, CAST(SellStartDate AS DATE) SellStartDate
+FROM Production.Product
+WHERE SellStartDate < '01/01/2006';
+```
+
+Select the product id, name, and list price for the product(s) that has the highest list price. You need to work with the Production.Product table. You’ll need to use a simple subquery to get the maximum list price and use it in the WHERE clause.
+
+```SQL
+SELECT ProductID, Name, ListPrice
+FROM Production.Product
+WHERE ListPrice = (SELECT MAX(ListPrice) FROM Production.Product);
+```
+
+Modify the following query to add a column that identifies the frequency of repeat customers and contains the following values based on the number of orders during 2007:
+
+```SQL
+SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS 'Total Orders',
+    CASE
+        WHEN COUNT(o.SalesOrderid) = '0'
+            THEN 'No Orders'
+        WHEN COUNT(o.SalesOrderid) = '1'
+            THEN 'One Time'
+        WHEN COUNT(o.SalesOrderid) BETWEEN '2' AND '5'
+            THEN 'Regular'
+        WHEN COUNT(o.SalesOrderid) BETWEEN '6' AND '12'
+            THEN 'Often'
+        ELSE 'Very Often'
+    END AS 'Order Frequency'
+FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader o ON c.CustomerID = o.CustomerID
+WHERE YEAR(OrderDate) = 2007
+GROUP BY c.TerritoryID, c.CustomerID
+ORDER BY 'Order Frequency' DESC;
+```
+
+Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
+
+Solution with JOIN:
+
+```SQL
+SELECT CustomerID
+FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader h
+ON c.CustomerID = h.CustomerID
+WHERE h.CustomerID IS NULL
+ORDER BY CustomerID ASC; 
+```
+
+Solution with subquery:
+
+```SQL
+SELECT CustomerID
+FROM Sales.Customer
+WHERE CustomerID NOT IN 
+    (SELECT CustomerID FROM Sales.SalesOrderHeader)
+ORDER BY CustomerID ASC;
+```
 
 
 

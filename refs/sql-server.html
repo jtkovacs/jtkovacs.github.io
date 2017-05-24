@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; sql server | just under 1212 words | updated 05/21/2017
+   &gt; sql server | just under 1893 words | updated 05/24/2017
   </p>
   <div class="TOC">
    <ul>
@@ -114,14 +114,20 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          <ul>
           <li>
            2.2.3.1.
+           <a href="#temporal-tables">
+            Temporal tables
+           </a>
+          </li>
+          <li>
+           2.2.3.2.
            <a href="#datatypes">
             Datatypes
            </a>
           </li>
           <li>
-           2.2.3.2.
-           <a href="#temporal-tables">
-            Temporal tables
+           2.2.3.3.
+           <a href="#encrypted-column">
+            Encrypted column
            </a>
           </li>
          </ul>
@@ -162,6 +168,20 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
          2.3.4.
          <a href="#creating-memory-optimized-tables">
           Creating memory-optimized tables
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.4.
+       <a href="#queries">
+        Queries
+       </a>
+       <ul>
+        <li>
+         2.4.1.
+         <a href="#examples">
+          Examples
          </a>
         </li>
        </ul>
@@ -446,14 +466,32 @@ column_name &lt;data_type&gt;
 
     
 <span class="co">-- Add field to existing table</span>
-<span class="kw">CREATE</span>
+<span class="kw">CREATE</span></code></pre>
+  </div>
+  <h4 id="temporal-tables">
+   <a>
+    2.2.3.1. Temporal tables
+   </a>
+  </h4>
+  <p>
+   Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can then be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, 
+[ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
+[ValidFrom] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">START</span>, 
+[ValidTo] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">END</span>, 
+PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))    
+<span class="kw">WITH</span> (SYSTEM_VERSIONING = <span class="kw">ON</span>); 
 
-
-</code></pre>
+<span class="kw">SELECT</span> [StockItemName]
+<span class="kw">FROM</span> [WideWorldImporters].[Warehouse].[StockItems]
+<span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
+<span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
   </div>
   <h4 id="datatypes">
    <a>
-    2.2.3.1. Datatypes
+    2.2.3.2. Datatypes
    </a>
   </h4>
   <p>
@@ -483,6 +521,13 @@ column_name &lt;data_type&gt;
      Date and time:
     </strong>
     DATE, TIME, DATETIME, DATETIME2, DATETIMEOFFSET, SMALLDATETIME
+    <ul>
+     <li>
+      <code>
+       SELECT CONVERT(datetime, '2007-12-31')
+      </code>
+     </li>
+    </ul>
    </li>
    <li>
     <strong>
@@ -518,26 +563,62 @@ column_name &lt;data_type&gt;
     </ul>
    </li>
   </ul>
-  <h4 id="temporal-tables">
+  <h4 id="encrypted-column">
    <a>
-    2.2.3.2. Temporal tables
+    2.2.3.3. Encrypted column
    </a>
   </h4>
-  <p>
-   Temporal tables (only SQL Server 2016) automatically maintain the history of the table, which can then be queried. The fields ValidFrom, ValidTo, and PERIOD FOR SYSTEM_TIME are required:
-  </p>
   <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">CREATE</span> <span class="kw">TABLE</span> Inventory ([InventoryID] <span class="dt">int</span> <span class="kw">NOT</span> <span class="kw">NULL</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> CLUSTERED, 
-[ItemName] <span class="dt">nvarchar</span>(<span class="dv">100</span>) <span class="kw">NOT</span> <span class="kw">NULL</span>, 
-[ValidFrom] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">START</span>, 
-[ValidTo] datetime2 (<span class="dv">2</span>) <span class="kw">GENERATED</span> ALWAYS <span class="kw">AS</span> <span class="kw">ROW</span> <span class="kw">END</span>, 
-PERIOD <span class="kw">FOR</span> SYSTEM_TIME (ValidFrom, ValidTo))    
-<span class="kw">WITH</span> (SYSTEM_VERSIONING = <span class="kw">ON</span>); 
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="co">-- Create DMK </span>
+<span class="kw">CREATE</span> <span class="kw">MASTER</span> <span class="kw">KEY</span> 
+ENCRYPTION <span class="kw">BY</span> <span class="kw">PASSWORD</span> = <span class="st">'Test_P@sswOrd'</span>;
 
-<span class="kw">SELECT</span> [StockItemName]
-<span class="kw">FROM</span> [WideWorldImporters].[Warehouse].[StockItems]
-<span class="kw">FOR</span> SYSTEM_TIME <span class="kw">AS</span> <span class="kw">OF</span> <span class="st">'2015-01-01'</span>
-<span class="kw">WHERE</span> StockItemName <span class="kw">like</span> <span class="st">'%shark%'</span></code></pre>
+<span class="co">-- Create certificate to protect symmetric key </span>
+<span class="kw">CREATE</span> CERTIFICATE TestCertificate 
+<span class="kw">WITH</span> SUBJECT = <span class="st">'AdventureWorks Test Certificate'</span>, 
+EXPIRY_DATE = <span class="st">'2026-10-31'</span>;
+
+<span class="co">-- Create symmetric key to encrypt data </span>
+<span class="kw">CREATE</span> SYMMETRIC <span class="kw">KEY</span> TestSymmetricKey 
+<span class="kw">WITH</span> ALGORITHM = AES_128 
+ENCRYPTION <span class="kw">BY</span> CERTIFICATE TestCertificate;
+
+<span class="co">-- Open symmetric key </span>
+<span class="kw">OPEN</span> SYMMETRIC <span class="kw">KEY</span> TestSymmetricKey 
+DECRYPTION <span class="kw">BY</span> CERTIFICATE TestCertificate;
+
+<span class="co">/* Populate temp table with 100 encrypted names from the Person.Person table */</span>
+<span class="kw">INSERT</span> <span class="kw">INTO</span> TempNames 
+    ( 
+    BusinessEntityID, 
+    EncFirstName,
+    EncMiddleName, 
+    EncLastName 
+    ) 
+    <span class="kw">SELECT</span> TOP(<span class="dv">100</span>) BusinessEntityID, 
+    EncryptByKey(Key_GUID(N<span class="st">'TestSymmetricKey'</span>), FirstName), 
+    EncryptByKey(Key_GUID(N<span class="st">'TestSymmetricKey'</span>), MiddleName), 
+    EncryptByKey(Key_GUID(N<span class="st">'TestSymmetricKey'</span>), LastName) 
+    <span class="kw">FROM</span> AdventureWorks2012.Person.Person 
+    <span class="kw">ORDER</span> <span class="kw">BY</span> BusinessEntityID;
+
+<span class="co">-- Update the temp table with decrypted names </span>
+<span class="kw">UPDATE</span> TempNames 
+<span class="kw">SET</span> FirstName = DecryptByKey(EncFirstName), 
+MiddleName = DecryptByKey(EncMiddleName), 
+LastName = DecryptByKey(EncLastName);
+
+<span class="co">-- Close the symmetric key </span>
+<span class="kw">CLOSE</span> SYMMETRIC <span class="kw">KEY</span> TestSymmetricKey;
+
+<span class="co">-- Drop the symmetric key </span>
+<span class="kw">DROP</span> SYMMETRIC <span class="kw">KEY</span> TestSymmetricKey;
+
+<span class="co">-- Drop the certificate </span>
+<span class="kw">DROP</span> CERTIFICATE TestCertificate;
+
+<span class="co">--Drop the DMK </span>
+<span class="kw">DROP</span> <span class="kw">MASTER</span> <span class="kw">KEY</span>;</code></pre>
   </div>
   <h3 id="views">
    <a>
@@ -680,6 +761,132 @@ GO
 
 <span class="kw">CREATE</span> <span class="kw">TABLE</span> tname (fdname <span class="dt">INT</span> IDENTITY(<span class="dv">1</span>,<span class="dv">1</span>) <span class="kw">PRIMARY</span> <span class="kw">KEY</span> NONCLUSTERED, fdname, fdname)
 <span class="kw">WITH</span> (MEMORY-OPTIMIZED=ON)</code></pre>
+  </div>
+  <h2 id="queries">
+   <a>
+    2.4. Queries
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a class="uri" href="https://www.codeproject.com/Tips/712941/Types-of-Join-in-SQL-Server">
+     https://www.codeproject.com/Tips/712941/Types-of-Join-in-SQL-Server
+    </a>
+   </li>
+   <li>
+    <a class="uri" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql">
+     https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
+    </a>
+   </li>
+   <li>
+    Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
+   </li>
+   <li>
+    Exclusive: SELECT … WHERE [date] &gt; 2012-02-25’ AND [date] &lt; ‘20120230’;
+    <ul>
+     <li>
+      Note that dates are given as strings
+     </li>
+    </ul>
+   </li>
+   <li>
+    Retrieve date, modify date &amp; alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
+   </li>
+   <li>
+    Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal',
+    <ul>
+     <li>
+      SELECT COUNT(*) [HowManyMarchOrders] FROM ...
+     </li>
+    </ul>
+   </li>
+   <li>
+    MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder' FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
+   </li>
+   <li>
+    SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) &gt; 1 - ORDER BY SUM(TotalDue) DESC;
+   </li>
+   <li>
+    SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
+   </li>
+   <li>
+    SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
+   </li>
+   <li>
+    SELECT TOP 1000 fname ...
+   </li>
+  </ul>
+  <h3 id="examples">
+   <a>
+    2.4.1. Examples
+   </a>
+  </h3>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c.CustomerID, c.TerritoryID, <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">AS</span> [Total Orders],
+    <span class="fu">DENSE_RANK</span>() <span class="kw">OVER</span> (<span class="kw">PARTITION</span> <span class="kw">BY</span> c.TerritoryID <span class="kw">ORDER</span> <span class="kw">BY</span> <span class="fu">COUNT</span>(o.SalesOrderid)) <span class="kw">AS</span> [<span class="fu">Rank</span>]
+<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader o <span class="kw">ON</span> c.CustomerID = o.CustomerID
+<span class="kw">WHERE</span> DATEPART(<span class="dt">year</span>, OrderDate) = <span class="dv">2007</span>
+<span class="kw">GROUP</span> <span class="kw">BY</span> c.TerritoryID, c.CustomerID;</code></pre>
+  </div>
+  <p>
+   Select product_id, name and selling start date for all products that started selling before 01/01/2006. Use the CAST function to display the date only. You need to work with the Production.Product table. The syntax for CAST is CAST(expression AS data_type), where expression is the column name we want to format and we can use DATE as data_type for this question to display just the date.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> ProductID, Name, <span class="fu">CAST</span>(SellStartDate <span class="kw">AS</span> <span class="dt">DATE</span>) SellStartDate
+<span class="kw">FROM</span> Production.Product
+<span class="kw">WHERE</span> SellStartDate &lt; <span class="st">'01/01/2006'</span>;</code></pre>
+  </div>
+  <p>
+   Select the product id, name, and list price for the product(s) that has the highest list price. You need to work with the Production.Product table. You’ll need to use a simple subquery to get the maximum list price and use it in the WHERE clause.
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> ProductID, Name, ListPrice
+<span class="kw">FROM</span> Production.Product
+<span class="kw">WHERE</span> ListPrice = (<span class="kw">SELECT</span> <span class="fu">MAX</span>(ListPrice) <span class="kw">FROM</span> Production.Product);</code></pre>
+  </div>
+  <p>
+   Modify the following query to add a column that identifies the frequency of repeat customers and contains the following values based on the number of orders during 2007:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c.CustomerID, c.TerritoryID, <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">AS</span> <span class="st">'Total Orders'</span>,
+    <span class="kw">CASE</span>
+        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) = <span class="st">'0'</span>
+            <span class="kw">THEN</span> <span class="st">'No Orders'</span>
+        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) = <span class="st">'1'</span>
+            <span class="kw">THEN</span> <span class="st">'One Time'</span>
+        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">BETWEEN</span> <span class="st">'2'</span> <span class="kw">AND</span> <span class="st">'5'</span>
+            <span class="kw">THEN</span> <span class="st">'Regular'</span>
+        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">BETWEEN</span> <span class="st">'6'</span> <span class="kw">AND</span> <span class="st">'12'</span>
+            <span class="kw">THEN</span> <span class="st">'Often'</span>
+        <span class="kw">ELSE</span> <span class="st">'Very Often'</span>
+    <span class="kw">END</span> <span class="kw">AS</span> <span class="st">'Order Frequency'</span>
+<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader o <span class="kw">ON</span> c.CustomerID = o.CustomerID
+<span class="kw">WHERE</span> <span class="dt">YEAR</span>(OrderDate) = <span class="dv">2007</span>
+<span class="kw">GROUP</span> <span class="kw">BY</span> c.TerritoryID, c.CustomerID
+<span class="kw">ORDER</span> <span class="kw">BY</span> <span class="st">'Order Frequency'</span> <span class="kw">DESC</span>;</code></pre>
+  </div>
+  <p>
+   Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
+  </p>
+  <p>
+   Solution with JOIN:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> CustomerID
+<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader h
+<span class="kw">ON</span> c.CustomerID = h.CustomerID
+<span class="kw">WHERE</span> h.CustomerID <span class="kw">IS</span> <span class="kw">NULL</span>
+<span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>; </code></pre>
+  </div>
+  <p>
+   Solution with subquery:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> CustomerID
+<span class="kw">FROM</span> Sales.Customer
+<span class="kw">WHERE</span> CustomerID <span class="kw">NOT</span> <span class="kw">IN</span> 
+    (<span class="kw">SELECT</span> CustomerID <span class="kw">FROM</span> Sales.SalesOrderHeader)
+<span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>;</code></pre>
   </div>
   <h1 id="sources">
    <a>

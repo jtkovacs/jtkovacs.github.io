@@ -1,21 +1,19 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sql | just under 2300 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [What is SQL?](#what-is-sql)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sql | just under 1786 words | updated 05/24/2017</p><div class="TOC">- &nbsp;1. [What is SQL?](#what-is-sql)
 	- &nbsp;1.1. [Notation and style guide](#notation-and-style-guide)
-	- &nbsp;1.2. [Data definition](#data-definition)
-		- &nbsp;1.2.1. [Manage databases](#manage-databases)
-		- &nbsp;1.2.2. [Manage tables](#manage-tables)
-		- &nbsp;1.2.3. [Manage fields](#manage-fields)
-		- &nbsp;1.2.4. [Manage views](#manage-views)
-	- &nbsp;1.3. [Data manipulation](#data-manipulation)
-		- &nbsp;1.3.1. [Generic query form](#generic-query-form)
-		- &nbsp;1.3.2. [SELECT and display](#select-and-display)
-			- &nbsp;1.3.2.1. [WITH conditional filtering](#with-conditional-filtering)
-			- &nbsp;1.3.2.2. [Aggregate and GROUP BY](#aggregate-and-group-by)
-		- &nbsp;1.3.3. [FROM ](#from-)
-			- &nbsp;1.3.3.1. [JOINs](#joins)
-			- &nbsp;1.3.3.2. [Subqueries](#subqueries)
-		- &nbsp;1.3.4. [Set operations](#set-operations)
-- &nbsp;2. [T-SQL](#t-sql)
-- &nbsp;3. [Examples](#examples)
+- &nbsp;2. [Data definition](#data-definition)
+	- &nbsp;2.1. [Manage databases](#manage-databases)
+	- &nbsp;2.2. [Manage tables](#manage-tables)
+	- &nbsp;2.3. [Manage fields](#manage-fields)
+	- &nbsp;2.4. [Manage views](#manage-views)
+- &nbsp;3. [Data manipulation](#data-manipulation)
+	- &nbsp;3.1. [Generic query form](#generic-query-form)
+	- &nbsp;3.2. [SELECT and display](#select-and-display)
+		- &nbsp;3.2.1. [WITH conditional filtering](#with-conditional-filtering)
+		- &nbsp;3.2.2. [Aggregate and GROUP BY](#aggregate-and-group-by)
+	- &nbsp;3.3. [FROM ](#from-)
+		- &nbsp;3.3.1. [JOINs](#joins)
+		- &nbsp;3.3.2. [Subqueries](#subqueries)
+	- &nbsp;3.4. [Set operations](#set-operations)
 - &nbsp;4. [Sources](#sources)
 	- &nbsp;4.1. [References](#references)
 	- &nbsp;4.2. [Archive](#archive)
@@ -39,22 +37,22 @@ SQL is the standardized language used to access a database. SQL language provide
 - gives row dimension of table: SELECT count(*) FROM tname;
 
 
-## 1.2. Data definition
+# 2. Data definition
 
-### 1.2.1. Manage databases
+## 2.1. Manage databases
 
 - UPDATE
 - OUTPUT
 - MERGE
 
-### 1.2.2. Manage tables
+## 2.2. Manage tables
 
 Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
 
 - int stores numbers from -217483648 to 217483647
 - double & real allow scientific notation: 2.5e4
 - decimal is good for money: DECIMAL(5,2) has 5 digits, of which 2 are after the decimal point
-- varchar(max_length), char(fixed_length) , clob/text is unlimited length , boolean is TRUE/FALSE 
+- varchar(max_length), char(fixed_length) , glob/text is unlimited length , boolean is TRUE/FALSE 
 - date is ‘yyyy-MM-dd’, time is ‘hh:mm:ss’, datetime or timestamp is ‘yyyy-MM-dd hh:mm:ss’
 
 ```SQL
@@ -116,7 +114,7 @@ DELETE FROM table;
 UPDATE tname SET c1=value/subquery, c2=value/subquery WHERE …
 ```
 
-### 1.2.3. Manage fields
+## 2.3. Manage fields
 
 ```SQL
 UPDATE tname
@@ -124,7 +122,7 @@ SET [fname] = 'Value'
 WHERE fname = 'Value';
 ```
 
-### 1.2.4. Manage views
+## 2.4. Manage views
 
 view data is not stored physically; every time you retrieve data from the view, the database reruns the underlying query.  most databases don't allow inserting new data or updating existing data in views.
 
@@ -136,9 +134,9 @@ DROP VIEW vname;
 
 
 
-## 1.3. Data manipulation
+# 3. Data manipulation
 
-### 1.3.1. Generic query form
+## 3.1. Generic query form
 
 Match the following clauses with its definition: 
 
@@ -168,7 +166,7 @@ multiple char: SELECT * FROM … WHERE c LIKE ‘%string%’;
 single char: SELECT * FROM … WHERE c LIKE ‘_tringvalue’;
 ```
 
-### 1.3.2. SELECT and display
+## 3.2. SELECT and display
 
 - SELECT, FROM, CAST, RANK(), DENSE_RANK()
 - DATE functions
@@ -197,11 +195,11 @@ STRFTIME(“format_string”, ”datetime_string”, <modifier>)
 “%d/%m/%Y”
 ```
 
-#### 1.3.2.1. WITH conditional filtering
+### 3.2.1. WITH conditional filtering
 
 - EXCEPT
 
-#### 1.3.2.2. Aggregate and GROUP BY
+### 3.2.2. Aggregate and GROUP BY
 
 - GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT) 
 
@@ -223,9 +221,9 @@ display in groups: SELECT c1, c2, count(col3) FROM t GROUP BY c1, c2;
 filtering groups: SELECT c1, count(c3) FROM t GROUP BY c1 HAVING cndn;
 ```
 
-### 1.3.3. FROM 
+## 3.3. FROM 
 
-#### 1.3.3.1. JOINs
+### 3.3.1. JOINs
 
 - http://www.vertabelo.com/blog/technical-articles/sql-joins
 - http://thomaslarock.com/2012/04/real-world-sql-join-examples/
@@ -255,9 +253,10 @@ SELECT … FROM … INTERSECT SELECT … FROM ...;
 SELECT * FROM <self_join> WHERE <join_cndn> AND <select_cndn>
 except: SELECT ... FROM ... EXCEPT SELECT … FROM...;
 SELECT * FROM ... WHERE * IN (subquery) AND * NOT IN (subquery) 
+SELF JOIN
 ```
 
-#### 1.3.3.2. Subqueries
+### 3.3.2. Subqueries
 
 - simple
 - correlated
@@ -275,7 +274,7 @@ use aliases for self-correlated subqueries: SELECT * FROM city as c1 WHERE c1.ra
 exists operator: SELECT * FROM country WHERE EXISTS (SELECT * FROM mountain WHERE country.id = mountain.country_id);
 ```
 
-### 1.3.4. Set operations
+## 3.4. Set operations
 
 Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
 
@@ -293,94 +292,6 @@ Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-bas
 - symmetric difference: (A-B)∪(B-A)
 
 
-
-
-
-# 2. T-SQL
-
-- [https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql](https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql)
-- Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
-- Exclusive: SELECT … WHERE [date] > 2012-02-25’ AND [date] < ‘20120230’; 
-    - Note that dates are given as strings
-- Retrieve date, modify date & alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
-- Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal', 
-    - SELECT COUNT(*) [HowManyMarchOrders] FROM ... 
-- MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder'  FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
-- SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) > 1 - ORDER BY SUM(TotalDue) DESC;
-- SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
-- SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
-
-
-
-
-# 3. Examples
-
-```SQL
-SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS [Total Orders],
-    DENSE_RANK() OVER (PARTITION BY c.TerritoryID ORDER BY COUNT(o.SalesOrderid)) AS [Rank]
-FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader o ON c.CustomerID = o.CustomerID
-WHERE DATEPART(year, OrderDate) = 2007
-GROUP BY c.TerritoryID, c.CustomerID;
-```
-
-Select product_id, name and selling start date for all products that started selling before 01/01/2006. Use the CAST function to display the date only. You need to work with the Production.Product table. The syntax for CAST is CAST(expression AS data_type), where expression is the column name we want to format and  we can use DATE as data_type for this question to display just the date.
-
-```SQL
-SELECT ProductID, Name, CAST(SellStartDate AS DATE) SellStartDate
-FROM Production.Product
-WHERE SellStartDate < '01/01/2006';
-```
-
-Select the product id, name, and list price for the product(s) that has the highest list price. You need to work with the Production.Product table. You’ll need to use a simple subquery to get the maximum list price and use it in the WHERE clause.
-
-```SQL
-SELECT ProductID, Name, ListPrice
-FROM Production.Product
-WHERE ListPrice = (SELECT MAX(ListPrice) FROM Production.Product);
-```
-
-Modify the following query to add a column that identifies the frequency of repeat customers and contains the following values based on the number of orders during 2007:
-
-```SQL
-SELECT c.CustomerID, c.TerritoryID, COUNT(o.SalesOrderid) AS 'Total Orders',
-    CASE
-        WHEN COUNT(o.SalesOrderid) = '0'
-            THEN 'No Orders'
-        WHEN COUNT(o.SalesOrderid) = '1'
-            THEN 'One Time'
-        WHEN COUNT(o.SalesOrderid) BETWEEN '2' AND '5'
-            THEN 'Regular'
-        WHEN COUNT(o.SalesOrderid) BETWEEN '6' AND '12'
-            THEN 'Often'
-        ELSE 'Very Often'
-    END AS 'Order Frequency'
-FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader o ON c.CustomerID = o.CustomerID
-WHERE YEAR(OrderDate) = 2007
-GROUP BY c.TerritoryID, c.CustomerID
-ORDER BY 'Order Frequency' DESC;
-```
-
-Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
-
-Solution with JOIN:
-
-```SQL
-SELECT CustomerID
-FROM Sales.Customer c LEFT OUTER JOIN Sales.SalesOrderHeader h
-ON c.CustomerID = h.CustomerID
-WHERE h.CustomerID IS NULL
-ORDER BY CustomerID ASC; 
-```
-
-Solution with subquery:
-
-```SQL
-SELECT CustomerID
-FROM Sales.Customer
-WHERE CustomerID NOT IN 
-    (SELECT CustomerID FROM Sales.SalesOrderHeader)
-ORDER BY CustomerID ASC;
-```
 
 
 

@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; sql | just under 2300 words | updated 05/21/2017
+   &gt; sql | just under 1786 words | updated 05/24/2017
   </p>
   <div class="TOC">
    <ul>
@@ -68,111 +68,99 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         Notation and style guide
        </a>
       </li>
-      <li>
-       1.2.
-       <a href="#data-definition">
-        Data definition
-       </a>
-       <ul>
-        <li>
-         1.2.1.
-         <a href="#manage-databases">
-          Manage databases
-         </a>
-        </li>
-        <li>
-         1.2.2.
-         <a href="#manage-tables">
-          Manage tables
-         </a>
-        </li>
-        <li>
-         1.2.3.
-         <a href="#manage-fields">
-          Manage fields
-         </a>
-        </li>
-        <li>
-         1.2.4.
-         <a href="#manage-views">
-          Manage views
-         </a>
-        </li>
-       </ul>
-      </li>
-      <li>
-       1.3.
-       <a href="#data-manipulation">
-        Data manipulation
-       </a>
-       <ul>
-        <li>
-         1.3.1.
-         <a href="#generic-query-form">
-          Generic query form
-         </a>
-        </li>
-        <li>
-         1.3.2.
-         <a href="#select-and-display">
-          SELECT and display
-         </a>
-         <ul>
-          <li>
-           1.3.2.1.
-           <a href="#with-conditional-filtering">
-            WITH conditional filtering
-           </a>
-          </li>
-          <li>
-           1.3.2.2.
-           <a href="#aggregate-and-group-by">
-            Aggregate and GROUP BY
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         1.3.3.
-         <a href="#from-">
-          FROM
-         </a>
-         <ul>
-          <li>
-           1.3.3.1.
-           <a href="#joins">
-            JOINs
-           </a>
-          </li>
-          <li>
-           1.3.3.2.
-           <a href="#subqueries">
-            Subqueries
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         1.3.4.
-         <a href="#set-operations">
-          Set operations
-         </a>
-        </li>
-       </ul>
-      </li>
      </ul>
     </li>
     <li>
      2.
-     <a href="#t-sql">
-      T-SQL
+     <a href="#data-definition">
+      Data definition
      </a>
+     <ul>
+      <li>
+       2.1.
+       <a href="#manage-databases">
+        Manage databases
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#manage-tables">
+        Manage tables
+       </a>
+      </li>
+      <li>
+       2.3.
+       <a href="#manage-fields">
+        Manage fields
+       </a>
+      </li>
+      <li>
+       2.4.
+       <a href="#manage-views">
+        Manage views
+       </a>
+      </li>
+     </ul>
     </li>
     <li>
      3.
-     <a href="#examples">
-      Examples
+     <a href="#data-manipulation">
+      Data manipulation
      </a>
+     <ul>
+      <li>
+       3.1.
+       <a href="#generic-query-form">
+        Generic query form
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#select-and-display">
+        SELECT and display
+       </a>
+       <ul>
+        <li>
+         3.2.1.
+         <a href="#with-conditional-filtering">
+          WITH conditional filtering
+         </a>
+        </li>
+        <li>
+         3.2.2.
+         <a href="#aggregate-and-group-by">
+          Aggregate and GROUP BY
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       3.3.
+       <a href="#from-">
+        FROM
+       </a>
+       <ul>
+        <li>
+         3.3.1.
+         <a href="#joins">
+          JOINs
+         </a>
+        </li>
+        <li>
+         3.3.2.
+         <a href="#subqueries">
+          Subqueries
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       3.4.
+       <a href="#set-operations">
+        Set operations
+       </a>
+      </li>
+     </ul>
     </li>
     <li>
      4.
@@ -244,16 +232,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     gives row dimension of table: SELECT count(*) FROM tname;
    </li>
   </ul>
-  <h2 id="data-definition">
+  <h1 id="data-definition">
    <a>
-    1.2. Data definition
+    2. Data definition
+   </a>
+  </h1>
+  <h2 id="manage-databases">
+   <a>
+    2.1. Manage databases
    </a>
   </h2>
-  <h3 id="manage-databases">
-   <a>
-    1.2.1. Manage databases
-   </a>
-  </h3>
   <ul>
    <li>
     UPDATE
@@ -265,11 +253,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     MERGE
    </li>
   </ul>
-  <h3 id="manage-tables">
+  <h2 id="manage-tables">
    <a>
-    1.2.2. Manage tables
+    2.2. Manage tables
    </a>
-  </h3>
+  </h2>
   <p>
    Datatypes: http://www.w3schools.com/sql/sql_datatypes.asp, but they will depend on DBMS
   </p>
@@ -284,7 +272,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     decimal is good for money: DECIMAL(5,2) has 5 digits, of which 2 are after the decimal point
    </li>
    <li>
-    varchar(max_length), char(fixed_length) , clob/text is unlimited length , boolean is TRUE/FALSE
+    varchar(max_length), char(fixed_length) , glob/text is unlimited length , boolean is TRUE/FALSE
    </li>
    <li>
     date is ‘yyyy-MM-dd’, time is ‘hh:mm:ss’, datetime or timestamp is ‘yyyy-MM-dd hh:mm:ss’
@@ -348,21 +336,21 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co">--- update records:</span>
 <span class="kw">UPDATE</span> tname <span class="kw">SET</span> c1=value/subquery, c2=value/subquery <span class="kw">WHERE</span> …</code></pre>
   </div>
-  <h3 id="manage-fields">
+  <h2 id="manage-fields">
    <a>
-    1.2.3. Manage fields
+    2.3. Manage fields
    </a>
-  </h3>
+  </h2>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">UPDATE</span> tname
 <span class="kw">SET</span> [fname] = <span class="st">'Value'</span>
 <span class="kw">WHERE</span> fname = <span class="st">'Value'</span>;</code></pre>
   </div>
-  <h3 id="manage-views">
+  <h2 id="manage-views">
    <a>
-    1.2.4. Manage views
+    2.4. Manage views
    </a>
-  </h3>
+  </h2>
   <p>
    view data is not stored physically; every time you retrieve data from the view, the database reruns the underlying query. most databases don't allow inserting new data or updating existing data in views.
   </p>
@@ -371,16 +359,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">use</span> a view: <span class="kw">SELECT</span> * <span class="kw">FROM</span> vname;
 <span class="kw">DROP</span> <span class="kw">VIEW</span> vname;</code></pre>
   </div>
-  <h2 id="data-manipulation">
+  <h1 id="data-manipulation">
    <a>
-    1.3. Data manipulation
+    3. Data manipulation
+   </a>
+  </h1>
+  <h2 id="generic-query-form">
+   <a>
+    3.1. Generic query form
    </a>
   </h2>
-  <h3 id="generic-query-form">
-   <a>
-    1.3.1. Generic query form
-   </a>
-  </h3>
   <p>
    Match the following clauses with its definition:
   </p>
@@ -422,11 +410,11 @@ fuzzy match:
 multiple char: <span class="kw">SELECT</span> * <span class="kw">FROM</span> … <span class="kw">WHERE</span> c <span class="kw">LIKE</span> ‘%string%’;
 <span class="dt">single</span> char: <span class="kw">SELECT</span> * <span class="kw">FROM</span> … <span class="kw">WHERE</span> c <span class="kw">LIKE</span> ‘_tringvalue’;</code></pre>
   </div>
-  <h3 id="select-and-display">
+  <h2 id="select-and-display">
    <a>
-    1.3.2. SELECT and display
+    3.2. SELECT and display
    </a>
-  </h3>
+  </h2>
   <ul>
    <li>
     SELECT, FROM, CAST, RANK(), DENSE_RANK()
@@ -460,21 +448,21 @@ modifier: “-<span class="dv">7</span> days”, “+<span class="dv">2</span> m
 STRFTIME(“format_string”, ”datetime_string”, &lt;modifier&gt;)
 “%d/%m/%Y”</code></pre>
   </div>
-  <h4 id="with-conditional-filtering">
+  <h3 id="with-conditional-filtering">
    <a>
-    1.3.2.1. WITH conditional filtering
+    3.2.1. WITH conditional filtering
    </a>
-  </h4>
+  </h3>
   <ul>
    <li>
     EXCEPT
    </li>
   </ul>
-  <h4 id="aggregate-and-group-by">
+  <h3 id="aggregate-and-group-by">
    <a>
-    1.3.2.2. Aggregate and GROUP BY
+    3.2.2. Aggregate and GROUP BY
    </a>
-  </h4>
+  </h3>
   <ul>
    <li>
     GROUP BY, HAVING, aggregate functions (SUM, MIN, MAX, AVG, COUNT)
@@ -497,16 +485,16 @@ STRFTIME(“format_string”, ”datetime_string”, &lt;modifier&gt;)
 display <span class="kw">in</span> groups: <span class="kw">SELECT</span> c1, c2, <span class="fu">count</span>(col3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1, c2; 
 filtering groups: <span class="kw">SELECT</span> c1, <span class="fu">count</span>(c3) <span class="kw">FROM</span> t <span class="kw">GROUP</span> <span class="kw">BY</span> c1 <span class="kw">HAVING</span> cndn;</code></pre>
   </div>
-  <h3 id="from">
+  <h2 id="from">
    <a>
-    1.3.3. FROM
+    3.3. FROM
+   </a>
+  </h2>
+  <h3 id="joins">
+   <a>
+    3.3.1. JOINs
    </a>
   </h3>
-  <h4 id="joins">
-   <a>
-    1.3.3.1. JOINs
-   </a>
-  </h4>
   <ul>
    <li>
     http://www.vertabelo.com/blog/technical-articles/sql-joins
@@ -551,13 +539,14 @@ removes duplicates: <span class="kw">SELECT</span> … <span class="kw">FROM</sp
 <span class="kw">SELECT</span> … <span class="kw">FROM</span> … <span class="kw">INTERSECT</span> <span class="kw">SELECT</span> … <span class="kw">FROM</span> ...;
 <span class="kw">SELECT</span> * <span class="kw">FROM</span> &lt;self_join&gt; <span class="kw">WHERE</span> &lt;join_cndn&gt; <span class="kw">AND</span> &lt;select_cndn&gt;
 except: <span class="kw">SELECT</span> ... <span class="kw">FROM</span> ... <span class="kw">EXCEPT</span> <span class="kw">SELECT</span> … FROM...;
-<span class="kw">SELECT</span> * <span class="kw">FROM</span> ... <span class="kw">WHERE</span> * <span class="kw">IN</span> (subquery) <span class="kw">AND</span> * <span class="kw">NOT</span> <span class="kw">IN</span> (subquery) </code></pre>
+<span class="kw">SELECT</span> * <span class="kw">FROM</span> ... <span class="kw">WHERE</span> * <span class="kw">IN</span> (subquery) <span class="kw">AND</span> * <span class="kw">NOT</span> <span class="kw">IN</span> (subquery) 
+SELF <span class="kw">JOIN</span></code></pre>
   </div>
-  <h4 id="subqueries">
+  <h3 id="subqueries">
    <a>
-    1.3.3.2. Subqueries
+    3.3.2. Subqueries
    </a>
-  </h4>
+  </h3>
   <ul>
    <li>
     simple
@@ -578,11 +567,11 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
 <span class="kw">use</span> aliases <span class="kw">for</span> self-correlated subqueries: <span class="kw">SELECT</span> * <span class="kw">FROM</span> city <span class="kw">as</span> c1 <span class="kw">WHERE</span> c1.rating &gt; (<span class="kw">SELECT</span> <span class="fu">avg</span>(c2.rating) <span class="kw">FROM</span> city <span class="kw">AS</span> c2 <span class="kw">WHERE</span> c1.country_id=c2.country_id);
 <span class="kw">exists</span> operator: <span class="kw">SELECT</span> * <span class="kw">FROM</span> country <span class="kw">WHERE</span> <span class="kw">EXISTS</span> (<span class="kw">SELECT</span> * <span class="kw">FROM</span> mountain <span class="kw">WHERE</span> country.id = mountain.country_id);</code></pre>
   </div>
-  <h3 id="set-operations">
+  <h2 id="set-operations">
    <a>
-    1.3.4. Set operations
+    3.4. Set operations
    </a>
-  </h3>
+  </h2>
   <p>
    Relational algebra is the formal math underlying SQL. Unlike SQL, it’s set-based, so it automatically removes duplicates from its ‘results’. RA operators are applied to expression, - trees, or assignment statements:
   </p>
@@ -624,124 +613,6 @@ good <span class="kw">for</span> debugging, e.g. <span class="kw">SELECT</span> 
     symmetric difference: (A-B)∪(B-A)
    </li>
   </ul>
-  <h1 id="t-sql">
-   <a>
-    2. T-SQL
-   </a>
-  </h1>
-  <ul>
-   <li>
-    <a class="uri" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql">
-     https://docs.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql
-    </a>
-   </li>
-   <li>
-    Inclusive: SELECT … WHERE [date] BETWEEN ‘20120225’ AND ‘20120230’;
-   </li>
-   <li>
-    Exclusive: SELECT … WHERE [date] &gt; 2012-02-25’ AND [date] &lt; ‘20120230’;
-    <ul>
-     <li>
-      Note that dates are given as strings
-     </li>
-    </ul>
-   </li>
-   <li>
-    Retrieve date, modify date &amp; alias: SELECT DATEADD(DAY, 7, OrderDate) AS "EstimatedDeliveryDate" FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 6 AND YEAR(OrderDate) = 2007;
-   </li>
-   <li>
-    Numeric functions, aliasing, conditional selection. date functions: SELECT COUNT(*) AS 'HowManyMarchOrders', SUM(TotalDue) AS 'TotalDueForMarch', AVG(TotalDue) AS 'AvgOrderTotal',
-    <ul>
-     <li>
-      SELECT COUNT(*) [HowManyMarchOrders] FROM ...
-     </li>
-    </ul>
-   </li>
-   <li>
-    MIN(TotalDue) AS 'CheapestOrder', MAX(TotalDue) AS 'CostliestOrder' FROM Sales.SalesOrderHeader WHERE MONTH(OrderDate) = 5 AND YEAR(OrderDate) = 2008;
-   </li>
-   <li>
-    SELECT CustomerID, COUNT(TotalDue) AS '#orders', SUM(TotalDue) AS '$orders' FROM Sales.SalesOrderHeader WHERE YEAR(OrderDate) = 2007 GROUP BY CustomerID HAVING COUNT(TotalDue) &gt; 1 - ORDER BY SUM(TotalDue) DESC;
-   </li>
-   <li>
-    SELECT CONVERT(CHAR(20), DATEADD(DAY, 30, GETDATE()), 101) AS [30 Days From Today];
-   </li>
-   <li>
-    SELECT DISTINCT SalesPersonID FROM Sales.SalesOrderHeader oh INNER JOIN Sales.SalesOrderDetail od ON oh.SalesOrderID = od.SalesOrderID WHERE ProductID = 777 ORDER BY SalesPersonID;
-   </li>
-  </ul>
-  <h1 id="examples">
-   <a>
-    3. Examples
-   </a>
-  </h1>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c.CustomerID, c.TerritoryID, <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">AS</span> [Total Orders],
-    <span class="fu">DENSE_RANK</span>() <span class="kw">OVER</span> (<span class="kw">PARTITION</span> <span class="kw">BY</span> c.TerritoryID <span class="kw">ORDER</span> <span class="kw">BY</span> <span class="fu">COUNT</span>(o.SalesOrderid)) <span class="kw">AS</span> [<span class="fu">Rank</span>]
-<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader o <span class="kw">ON</span> c.CustomerID = o.CustomerID
-<span class="kw">WHERE</span> DATEPART(<span class="dt">year</span>, OrderDate) = <span class="dv">2007</span>
-<span class="kw">GROUP</span> <span class="kw">BY</span> c.TerritoryID, c.CustomerID;</code></pre>
-  </div>
-  <p>
-   Select product_id, name and selling start date for all products that started selling before 01/01/2006. Use the CAST function to display the date only. You need to work with the Production.Product table. The syntax for CAST is CAST(expression AS data_type), where expression is the column name we want to format and we can use DATE as data_type for this question to display just the date.
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> ProductID, Name, <span class="fu">CAST</span>(SellStartDate <span class="kw">AS</span> <span class="dt">DATE</span>) SellStartDate
-<span class="kw">FROM</span> Production.Product
-<span class="kw">WHERE</span> SellStartDate &lt; <span class="st">'01/01/2006'</span>;</code></pre>
-  </div>
-  <p>
-   Select the product id, name, and list price for the product(s) that has the highest list price. You need to work with the Production.Product table. You’ll need to use a simple subquery to get the maximum list price and use it in the WHERE clause.
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> ProductID, Name, ListPrice
-<span class="kw">FROM</span> Production.Product
-<span class="kw">WHERE</span> ListPrice = (<span class="kw">SELECT</span> <span class="fu">MAX</span>(ListPrice) <span class="kw">FROM</span> Production.Product);</code></pre>
-  </div>
-  <p>
-   Modify the following query to add a column that identifies the frequency of repeat customers and contains the following values based on the number of orders during 2007:
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c.CustomerID, c.TerritoryID, <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">AS</span> <span class="st">'Total Orders'</span>,
-    <span class="kw">CASE</span>
-        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) = <span class="st">'0'</span>
-            <span class="kw">THEN</span> <span class="st">'No Orders'</span>
-        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) = <span class="st">'1'</span>
-            <span class="kw">THEN</span> <span class="st">'One Time'</span>
-        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">BETWEEN</span> <span class="st">'2'</span> <span class="kw">AND</span> <span class="st">'5'</span>
-            <span class="kw">THEN</span> <span class="st">'Regular'</span>
-        <span class="kw">WHEN</span> <span class="fu">COUNT</span>(o.SalesOrderid) <span class="kw">BETWEEN</span> <span class="st">'6'</span> <span class="kw">AND</span> <span class="st">'12'</span>
-            <span class="kw">THEN</span> <span class="st">'Often'</span>
-        <span class="kw">ELSE</span> <span class="st">'Very Often'</span>
-    <span class="kw">END</span> <span class="kw">AS</span> <span class="st">'Order Frequency'</span>
-<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader o <span class="kw">ON</span> c.CustomerID = o.CustomerID
-<span class="kw">WHERE</span> <span class="dt">YEAR</span>(OrderDate) = <span class="dv">2007</span>
-<span class="kw">GROUP</span> <span class="kw">BY</span> c.TerritoryID, c.CustomerID
-<span class="kw">ORDER</span> <span class="kw">BY</span> <span class="st">'Order Frequency'</span> <span class="kw">DESC</span>;</code></pre>
-  </div>
-  <p>
-   Write a SQL query to generate a list of customer ID's that have never placed an order before. Sort the list by CustomerID in the ascending order.
-  </p>
-  <p>
-   Solution with JOIN:
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> CustomerID
-<span class="kw">FROM</span> Sales.Customer c <span class="kw">LEFT</span> <span class="kw">OUTER</span> <span class="kw">JOIN</span> Sales.SalesOrderHeader h
-<span class="kw">ON</span> c.CustomerID = h.CustomerID
-<span class="kw">WHERE</span> h.CustomerID <span class="kw">IS</span> <span class="kw">NULL</span>
-<span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>; </code></pre>
-  </div>
-  <p>
-   Solution with subquery:
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> CustomerID
-<span class="kw">FROM</span> Sales.Customer
-<span class="kw">WHERE</span> CustomerID <span class="kw">NOT</span> <span class="kw">IN</span> 
-    (<span class="kw">SELECT</span> CustomerID <span class="kw">FROM</span> Sales.SalesOrderHeader)
-<span class="kw">ORDER</span> <span class="kw">BY</span> CustomerID <span class="kw">ASC</span>;</code></pre>
-  </div>
   <h1 id="sources">
    <a>
     4. Sources

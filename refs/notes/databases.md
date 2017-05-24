@@ -488,6 +488,8 @@ Instead of granting permissions to multiple tables, one can reduce administrativ
 
 ##### Contained database
 
+This is a SQL Server feature. A contained database handles its own authentication, metadata, etc., and is extremely useful for cloud computing.
+
 #### Preventing SQL injections
 
 SQL injections happen when database application developers use dynamic SQL statements in their code; hackers can use these channels to introduce their own malicious SQL statements. SQL injection is countered by user input validation:
@@ -500,7 +502,7 @@ SQL injections happen when database application developers use dynamic SQL state
 
 ### Security audits
 
-Check database logs to identify security problems, or conduct a more extensive audit. 
+Check database logs to identify security problems, or conduct a more extensive audit. SQL Server provides a common criteria (C2) audit mode as well as SQL trace/SQL triggers (???).
 
 ## Backup
 

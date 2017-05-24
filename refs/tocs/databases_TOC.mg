@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> databases | just under 4763 words | updated 05/24/2017</p><div class="TOC">- &nbsp;1. [What is a database?](#what-is-a-database)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> databases | just under 4923 words | updated 05/24/2017</p><div class="TOC">- &nbsp;1. [What is a database?](#what-is-a-database)
 	- &nbsp;1.1. [The database system lifecycle](#the-database-system-lifecycle)
 	- &nbsp;1.2. [History of databases](#history-of-databases)
 		- &nbsp;1.2.1. [ANSI-SPARC architecture](#ansi-sparc-architecture)
@@ -22,23 +22,27 @@
 		- &nbsp;2.2.1. [Conceptual design](#conceptual-design)
 		- &nbsp;2.2.2. [Logical design](#logical-design)
 		- &nbsp;2.2.3. [Physical design](#physical-design)
-			- &nbsp;2.2.3.1. [Indexing and performance](#indexing-and-performance)
-				- &nbsp;2.2.3.1.1. [Why to index](#why-to-index)
-				- &nbsp;2.2.3.1.2. [What to index](#what-to-index)
-				- &nbsp;2.2.3.1.3. [How different types of indexes work](#how-different-types-of-indexes-work)
-				- &nbsp;2.2.3.1.4. [Fragmentation](#fragmentation)
+			- &nbsp;2.2.3.1. [Database architectures](#database-architectures)
+			- &nbsp;2.2.3.2. [Files and filegroups](#files-and-filegroups)
+				- &nbsp;2.2.3.2.1. [Storage size](#storage-size)
+			- &nbsp;2.2.3.3. [Indexing and performance](#indexing-and-performance)
+				- &nbsp;2.2.3.3.1. [Why to index](#why-to-index)
+				- &nbsp;2.2.3.3.2. [What to index](#what-to-index)
+				- &nbsp;2.2.3.3.3. [How different types of indexes work](#how-different-types-of-indexes-work)
+				- &nbsp;2.2.3.3.4. [Fragmentation](#fragmentation)
 - &nbsp;3. [Database administration](#database-administration)
-	- &nbsp;3.1. [Files and filegroups](#files-and-filegroups)
-	- &nbsp;3.2. [Database architectures](#database-architectures)
-	- &nbsp;3.3. [Transaction management](#transaction-management)
-	- &nbsp;3.4. [Security](#security)
-		- &nbsp;3.4.1. [Access control](#access-control)
-		- &nbsp;3.4.2. [Encryption](#encryption)
-			- &nbsp;3.4.2.1. [Ownership chaining](#ownership-chaining)
-			- &nbsp;3.4.2.2. [Contained database](#contained-database)
-		- &nbsp;3.4.3. [Preventing SQL injections](#preventing-sql-injections)
-		- &nbsp;3.4.4. [Audits](#audits)
-		- &nbsp;3.4.5. [Backup](#backup)
+	- &nbsp;3.1. [Transaction management](#transaction-management)
+	- &nbsp;3.2. [Security](#security)
+		- &nbsp;3.2.1. [Security threats](#security-threats)
+		- &nbsp;3.2.2. [Security solutions](#security-solutions)
+			- &nbsp;3.2.2.1. [Encryption](#encryption)
+				- &nbsp;3.2.2.1.1. [TDE](#tde)
+			- &nbsp;3.2.2.2. [Access control](#access-control)
+				- &nbsp;3.2.2.2.1. [Ownership chaining](#ownership-chaining)
+				- &nbsp;3.2.2.2.2. [Contained database](#contained-database)
+			- &nbsp;3.2.2.3. [Preventing SQL injections](#preventing-sql-injections)
+		- &nbsp;3.2.3. [Security audits](#security-audits)
+	- &nbsp;3.3. [Backup](#backup)
 - &nbsp;4. [Sources](#sources)
 	- &nbsp;4.1. [Cited](#cited)
 	- &nbsp;4.2. [References](#references)
@@ -164,7 +168,7 @@ A functional dependency `A → B` exists when the same A (for our purposes, an a
 
 | This is a Function | This is Not a Function | 
 | --- | --- |
-| ![](../ILLOS/fcn.png) | ![](../ILLOS/not-fcn.png) |
+| ![](../illos/fcn.png) | ![](../illos/not-fcn.png) |
 
 Written in predicate logic with tuples denoted t and u, attributes denoted A and B, a functional dependency exists if, for `∀ t,u ∈ R, t.A = u.A ⇒ t.B = u.B`; this generalizes to multiple attributes, such that a determinant is best (i.e., worst) defined as (an) attribute(s) whose value(s) determine(s) the value(s) of a second (set of) attribute(s). There are a few special cases:
 
@@ -194,7 +198,7 @@ Data must have integrity to be useful and trustworthy. Data integrity [tends to 
 - **Domain integrity** is the assurance that attributes have meaningful (as in possible, if not necessarily accurate) values. This is enforced by column data types and custom domain restrictions.
 - **Referential integrity** is the assurance that, once one-to-many or many-to-many relationships are separated into different tables, the data is still kept in sync despite updates and deletions. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
-![](../ILLOS/integrity.png)
+![](../illos/integrity.png)
 
 Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs). 
 
@@ -345,25 +349,49 @@ Proceed table by table, field by field:
 
 ### 2.2.3. Physical design
     
-Physical design depends on DBMS-specific features; see [notes on DBMS software.](DBMS.html) The goal of this stage is to provide all the information necessary to build a database that takes advantage of features from the chosen platform.
+The goal of the physical design stage is to provide all the information necessary to build a database that takes advantage of features from the chosen platform. Physical design depends on DBMS-specific features, so consult notes on specific DBMS software; this discussion is based on MS SQL Server. 
 
-#### 2.2.3.1. Indexing and performance
+#### 2.2.3.1. Database architectures
 
-##### 2.2.3.1.1. Why to index
+![**Source:** Simon Wang](../illos/db-arch1.png)
+
+![**Source:** Simon Wang](../illos/db-arch2.png)
+
+![**Source:** Simon Wang](../illos/db-arch3.png)
+
+![**Source:** Simon Wang](../illos/db-arch4.png)
+
+#### 2.2.3.2. Files and filegroups
+
+A DBMS records _actions_ in its **log file** (.LDF) and data (as pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files)]() in its **data file.** During backup, the local log file is wiped but the data files are unchanged.
+
+MS SQL Server stores table data (rows) in uniformly-sized pages AKA blocks:
+
+![](../illos/SQLDataPage.png)
+
+##### 2.2.3.2.1. Storage size
+
+If the main data file (.MDF) exceeds its initially allocated space, there are several options:
+
+- Specify a new size limit
+- Specify a growth rate
+- Move the data file to a larger drive
+- Create multiple data files (.NDF)
+    - Create filegroups to manage multiple data files as one object
+
+#### 2.2.3.3. Indexing and performance
+
+##### 2.2.3.3.1. Why to index
 
 Various kinds of indexes are created to accelerate queries (SELECT rows from pages) at the expense of write speed (INSERT, UPDATE, and DELETE operations). Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index. 
 
 Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored. 
 
-##### 2.2.3.1.2. What to index
+##### 2.2.3.3.2. What to index
 
 The PK is indexed by default, and commonly searched fields may be indexed as well. Many DBMS offer a **query optimizer** that identifies statistically when indexing would be beneficial. Often indexing a PK/FK pair will improve JOIN performance (and JOINs are very costly).
 
-##### 2.2.3.1.3. How different types of indexes work
-
-This discussion is based on MS SQL Server, which stores table data (rows) in uniformly-sized pages AKA blocks:
-
-![](../ILLOS/SQLDataPage.png)
+##### 2.2.3.3.3. How different types of indexes work
 
 A table is either a **heap** or, if it has a clustered index, a **clustered table.** A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A **clustered index,** on the other hand, introduces sorting that is implemented at the level of pages through row offset arrays AKA slot arrays; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
 
@@ -374,17 +402,17 @@ To facilitate specific queries, both heaps and clustered tables may have multipl
 
 Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. Via pointers, [leaves are doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other (to maintain sort order as rows are added and deleted) and also point to rows in the heap/clustered table (thereby making the index useful):
 
-![](../ILLOS/nonclustered-index.png)
+![](../illos/nonclustered-index.png)
 
 For heap pages, clustered indexes, and non-clustered indexes alike, a **B-tree** AKA balanced tree structure with [root and intermediary nodes](http://use-the-index-luke.com/sql/anatomy/the-tree) is used to make page search more efficient:
 
-<img src="../ILLOS/B-tree.png" style="padding-top: 5px;" width="500px">
+<img src="../illos/B-tree.png" style="padding-top: 5px;" width="500px">
 
 Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstore structure (Sheldon, 2013), a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns: 
 
-![](../ILLOS/columnstore.png)
+![](../illos/columnstore.png)
 
-##### 2.2.3.1.4. Fragmentation
+##### 2.2.3.3.4. Fragmentation
 
 Index fragmentation is inevitable, especially in OLTP environments:
 
@@ -417,29 +445,7 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 
 # 3. Database administration
 
-## 3.1. Files and filegroups
-
-A DBMS records _actions_ in its **log file** (.LDF) and data (as pages; see [discussion on indexing](#how-different-types-of-indexes-work) and [SQL Server files)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-files-and-filegroups) in its **data file.** During backup, the local log file is wiped but the data files are unchanged.
-
-If the main data file (.MDF) exceeds its initially allocated space, there are several options:
-
-- Specify a new size limit
-- Specify a growth rate
-- Move the data file to a larger drive
-- Create multiple data files (.NDF)
-    - Create filegroups to manage multiple data files as one object
-
-## 3.2. Database architectures
-
-![](../ILLOS/db-arch1.png)
-
-![](../ILLOS/db-arch2.png)
-
-![](../ILLOS/db-arch3.png)
-
-![](../ILLOS/db-arch4.png)
-
-## 3.3. Transaction management
+## 3.1. Transaction management
 
 - ACID
 - https://www.thoughtco.com/abandoning-acid-in-favor-of-base-1019674
@@ -447,7 +453,9 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 
 
-## 3.4. Security
+## 3.2. Security
+
+### 3.2.1. Security threats
 
 Common security threats may be categorized by human vectors or by system targets:
 
@@ -498,17 +506,14 @@ Common security threats may be categorized by human vectors or by system targets
 </tr>
 </table>
 
+
+### 3.2.2. Security solutions
+
+This is what security typically looks like for enterprise databases:
+
 ![**Source:** Simon Wang](illos/db-security.png)
 
-### 3.4.1. Access control
-
-It's helpful to think about access in terms of principles (entities needing access); permissions (levels of access); and securables (objects needing protection). Access permissions specify **who** is allowed to do **what** (read, write, execute, share) to an object. Per DifferenceBetween.net (n.d.) and Steve DL (2014), there are several generic approaches to managing access permissions:
-
-- Discretionary access control **(DAC)** permissions (widely used) are based on objects: each object has a list of users who may access it. This is a more flexible but also more admin labor-intensive approach, unless the data is meant to be goverened by individual users (e.g., Facebook).
-- Mandatory access control **(MAC)** permissions (less common) are managed based on user group [(like Linux).](bash.html#manage-permissions)
-- In role-based access control **(RBAC),** user groups correspond to specific roles.
-
-### 3.4.2. Encryption
+#### 3.2.2.1. Encryption
 
 Encryption protects the meaning of data despite an insecure environment. There are different approaches to encryption:
 
@@ -516,17 +521,39 @@ Encryption protects the meaning of data despite an insecure environment. There a
 - **Mathematical functions** are used in public key encryption --- developed by Diffie & Hellman in 1976, and operationalized as RSA in 1978. This approach uses two keys.
 - **Digital signatures** are based on public key techniques, creating a unique, single-use string of symbols to represent (most often) an online transaction.
 
-#### 3.4.2.1. Ownership chaining
+##### 3.2.2.1.1. TDE
 
-#### 3.4.2.2. Contained database
+SQL Server specifically offers transparent data encryption (TDE) so that data is protected if hardware is stolen. TDE stores database data in encrypted form, decrypts data as it's read, and encrypts data as it's written. 
 
-### 3.4.3. Preventing SQL injections
+#### 3.2.2.2. Access control
 
-### 3.4.4. Audits
+It's helpful to think about access in terms of principles (entities needing access); permissions (levels of access); and securables (objects needing protection). Access permissions specify **who** is allowed to do **what** (read, write, execute, share) to an object. Per DifferenceBetween.net (n.d.) and Steve DL (2014), there are several generic approaches to managing access permissions:
+
+- Discretionary access control **(DAC)** permissions (widely used) are based on objects: each object has a list of users who may access it. This is a more flexible but also more admin labor-intensive approach, unless the data is meant to be goverened by individual users (e.g., Facebook).
+- Mandatory access control **(MAC)** permissions (less common) are managed based on user group [(like Linux).](bash.html#manage-permissions)
+- In role-based access control **(RBAC),** user groups correspond to specific roles.
+
+##### 3.2.2.2.1. Ownership chaining
+
+Instead of granting permissions to multiple tables, one can reduce administrative overhead by creating a view based on several tables and granting access to the view.
+
+##### 3.2.2.2.2. Contained database
+
+#### 3.2.2.3. Preventing SQL injections
+
+SQL injections happen when database application developers use dynamic SQL statements in their code; hackers can use these channels to introduce their own malicious SQL statements. SQL injection is countered by user input validation:
+
+- Use sp_executesql stored procedure
+- Disallow comments: `-- /* */`
+- Disallow punctuation: `' ; ( )`
+- Disallow binary data
+- Validate XML against an XLM schema
+
+### 3.2.3. Security audits
 
 Check database logs to identify security problems, or conduct a more extensive audit. 
 
-### 3.4.5. Backup
+## 3.3. Backup
 
 
 

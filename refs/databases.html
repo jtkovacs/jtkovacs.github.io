@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; databases | just under 4580 words | updated 05/21/2017
+   &gt; databases | just under 4744 words | updated 05/24/2017
   </p>
   <div class="TOC">
    <ul>
@@ -247,36 +247,24 @@
        <ul>
         <li>
          3.4.1.
-         <a href="#audits">
-          Audits
+         <a href="#access-control">
+          Access control
          </a>
         </li>
         <li>
          3.4.2.
-         <a href="#encryption-tde">
-          Encryption (TDE)
-         </a>
-        </li>
-        <li>
-         3.4.3.
-         <a href="#authentication-and-authorization">
-          Authentication and authorization
+         <a href="#encryption">
+          Encryption
          </a>
          <ul>
           <li>
-           3.4.3.1.
-           <a href="#digital-signatures">
-            Digital signatures
-           </a>
-          </li>
-          <li>
-           3.4.3.2.
+           3.4.2.1.
            <a href="#ownership-chaining">
             Ownership chaining
            </a>
           </li>
           <li>
-           3.4.3.3.
+           3.4.2.2.
            <a href="#contained-database">
             Contained database
            </a>
@@ -284,9 +272,15 @@
          </ul>
         </li>
         <li>
-         3.4.4.
+         3.4.3.
          <a href="#preventing-sql-injections">
           Preventing SQL injections
+         </a>
+        </li>
+        <li>
+         3.4.4.
+         <a href="#audits">
+          Audits
          </a>
         </li>
         <li>
@@ -1973,13 +1967,8 @@
     3.4. Security
    </a>
   </h2>
-  <h3 id="audits">
-   <a>
-    3.4.1. Audits
-   </a>
-  </h3>
   <p>
-   Check database logs to identify security problems, or conduct a more extensive audit. Common security threats may be categorized by human vectors or by system targets:
+   Common security threats may be categorized by human vectors or by system targets:
   </p>
   <table class="bullets">
    <tr>
@@ -2105,66 +2094,91 @@
     </td>
    </tr>
   </table>
-  <h3 id="encryption-tde">
+  <h3 id="access-control">
    <a>
-    3.4.2. Encryption (TDE)
+    3.4.1. Access control
    </a>
   </h3>
+  <p>
+   It's helpful to think about access in terms of principles (entities needing access); permissions (levels of access); and securables (objects needing protection). Per DifferenceBetween.net (n.d.) and Steve DL (2014), there are several generic approaches to managing access permissions:
+  </p>
   <ul>
    <li>
-    Data encryption standard (DES) uses bit manipulation (substitution and permutation) and blocks of 64 bits
+    Discretionary access control
+    <strong>
+     (DAC)
+    </strong>
+    permissions (widely used) are based on objects: each object has a list of users who may access it. This is a more flexible but also more admin labor-intensive approach, unless the data is meant to be goverened by individual users (e.g., Facebook).
    </li>
    <li>
-    Advanced Encryption Standards (AES) uses block size of 128/192/256 bits
-   </li>
-   <li>
-    Public key encryption (Diffie &amp; Hellman, 1976); later RSA public key (1978)
-   </li>
-   <li>
-    <a class="uri" href="https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/">
-     https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/
+    Mandatory access control
+    <strong>
+     (MAC)
+    </strong>
+    permissions (less common) are managed based on user group
+    <a href="bash.html#manage-permissions">
+     (like Linux).
     </a>
    </li>
+   <li>
+    In role-based access control
+    <strong>
+     (RBAC),
+    </strong>
+    user groups correspond to specific roles.
+   </li>
   </ul>
-  <h3 id="authentication-and-authorization">
+  <h3 id="encryption">
    <a>
-    3.4.3. Authentication and authorization
+    3.4.2. Encryption
    </a>
   </h3>
+  <p>
+   Encryption protects the meaning of data despite an insecure environment. There are different approaches to encryption:
+  </p>
   <ul>
    <li>
-    Role-based access control (RBAC)
+    <strong>
+     Bit manipulation
+    </strong>
+    is substitution and permutation within blocks of N bits, decoded by a single key. This approach is used by the data encryption standard (DES; 64 bits) and advanced encryption standards (AES; 128/192/256 bits).
    </li>
    <li>
-    Mandatory access control (MAC)
+    <strong>
+     Mathematical functions
+    </strong>
+    are used in public key encryption --- developed by Diffie &amp; Hellman in 1976, and operationalized as RSA in 1978. This approach uses two keys.
    </li>
    <li>
-    Principles, permissions, securables
+    <strong>
+     Digital signatures
+    </strong>
+    are based on public key techniques, creating a unique, single-use string of symbols to represent (most often) an online transaction.
    </li>
   </ul>
-  <h4 id="digital-signatures">
-   <a>
-    3.4.3.1. Digital signatures
-   </a>
-  </h4>
-  <p>
-   Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
-  </p>
   <h4 id="ownership-chaining">
    <a>
-    3.4.3.2. Ownership chaining
+    3.4.2.1. Ownership chaining
    </a>
   </h4>
   <h4 id="contained-database">
    <a>
-    3.4.3.3. Contained database
+    3.4.2.2. Contained database
    </a>
   </h4>
   <h3 id="preventing-sql-injections">
    <a>
-    3.4.4. Preventing SQL injections
+    3.4.3. Preventing SQL injections
    </a>
   </h3>
+  <h3 id="audits">
+   <a>
+    3.4.4. Audits
+   </a>
+  </h3>
+  <p>
+   Check database logs to identify security problems, or conduct a more extensive audit.
+  </p>
   <h3 id="backup">
    <a>
     3.4.5. Backup
@@ -2184,6 +2198,12 @@
    Chapple, M. (2016, November 29). Should I denormalize my database? ThoughtCo. Retrieved from
    <a class="uri" href="https://www.thoughtco.com/should-i-normalize-my-database-1019730">
     https://www.thoughtco.com/should-i-normalize-my-database-1019730
+   </a>
+  </p>
+  <p>
+   DifferenceBetween.net. (n.d.). Difference between MAC and DAC. Retrieved from
+   <a class="uri" href="http://www.differencebetween.net/technology/software-technology/difference-between-mac-and-dac/">
+    http://www.differencebetween.net/technology/software-technology/difference-between-mac-and-dac/
    </a>
   </p>
   <p>
@@ -2229,6 +2249,12 @@
    Retrieved from
    <a class="uri" href="https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/">
     https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/
+   </a>
+  </p>
+  <p>
+   Steve DL. (2014, July 20). MAC vs DAC vs RBAC [forum post]. StackOverflow. Retrieved from
+   <a class="uri" href="https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac">
+    https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac
    </a>
   </p>
   <p>
@@ -2319,6 +2345,11 @@
    </a>
   </h2>
   <ul>
+   <li>
+    <a class="uri" href="https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/">
+     https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/
+    </a>
+   </li>
    <li>
     <a href="https://www.codecademy.com/articles/sql-rdbms">
      Overview of SQL RDBMS

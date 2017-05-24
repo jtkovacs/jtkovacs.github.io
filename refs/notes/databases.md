@@ -397,11 +397,12 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 - ACID
 - https://www.thoughtco.com/abandoning-acid-in-favor-of-base-1019674
 
+
+
+
 ## Security
 
-### Audits
-
-Check database logs to identify security problems, or conduct a more extensive audit. Common security threats may be categorized by human vectors or by system targets:
+Common security threats may be categorized by human vectors or by system targets:
 
 <table class="bullets">
 <tr><th>Users</th> <th>Developers</th> <th>Administrators</th></tr>
@@ -450,28 +451,31 @@ Check database logs to identify security problems, or conduct a more extensive a
 </tr>
 </table>
 
-### Encryption (TDE)
+### Access control
 
-- Data encryption standard (DES) uses bit manipulation (substitution and permutation) and blocks of 64 bits
-- Advanced Encryption Standards (AES) uses block size of 128/192/256 bits
-- Public key encryption (Diffie & Hellman, 1976); later RSA public key (1978)
-- [https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/](https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/)
+It's helpful to think about access in terms of principles (entities needing access); permissions (levels of access); and securables (objects needing protection). Per DifferenceBetween.net (n.d.) and Steve DL (2014), there are several generic approaches to managing access permissions:
 
-### Authentication and authorization
+- Discretionary access control **(DAC)** permissions (widely used) are based on objects: each object has a list of users who may access it. This is a more flexible but also more admin labor-intensive approach, unless the data is meant to be goverened by individual users (e.g., Facebook).
+- Mandatory access control **(MAC)** permissions (less common) are managed based on user group [(like Linux).](bash.html#manage-permissions)
+- In role-based access control **(RBAC),** user groups correspond to specific roles.
 
-- Role-based access control (RBAC)
-- Mandatory access control (MAC)
-- Principles, permissions, securables
+### Encryption
 
-#### Digital signatures
+Encryption protects the meaning of data despite an insecure environment. There are different approaches to encryption:
 
-Digital signatures are based on Public Key techniques; are different for each use; are commonly used for online transactions
+- **Bit manipulation** is substitution and permutation within blocks of N bits, decoded by a single key. This approach is used by the data encryption standard (DES; 64 bits) and advanced encryption standards (AES; 128/192/256 bits). 
+- **Mathematical functions** are used in public key encryption --- developed by Diffie & Hellman in 1976, and operationalized as RSA in 1978. This approach uses two keys.
+- **Digital signatures** are based on public key techniques, creating a unique, single-use string of symbols to represent (most often) an online transaction.
 
 #### Ownership chaining
 
 #### Contained database
 
 ### Preventing SQL injections
+
+### Audits
+
+Check database logs to identify security problems, or conduct a more extensive audit. 
 
 ### Backup
 
@@ -485,6 +489,8 @@ Digital signatures are based on Public Key techniques; are different for each us
 
 Chapple, M. (2016, November 29). Should I denormalize my database? ThoughtCo. Retrieved from [https://www.thoughtco.com/should-i-normalize-my-database-1019730](https://www.thoughtco.com/should-i-normalize-my-database-1019730)
 
+DifferenceBetween.net. (n.d.). Difference between MAC and DAC. Retrieved from [http://www.differencebetween.net/technology/software-technology/difference-between-mac-and-dac/](http://www.differencebetween.net/technology/software-technology/difference-between-mac-and-dac/)
+
 displayName. (2015, December 3). Are determinants and candidate keys same or different things? [Comment]. Stack Overflow. Message posted to [https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things](https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things)
 
 E/R model: types of attributes. (n.d.). Retrieved from the Database Management Wiki: [http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes](http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes)
@@ -496,6 +502,8 @@ Sheffield, W. (2012, October 12). Does a clustered index really physically store
 Sheldon, R. (2013, July 30). Columnstore indexes in SQL Server 2012. _Simple Talk._ Retrieved from [https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/](https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/)
 
 Sheldon, R. (2014, March 25). 14 SQL Server indexing questions you were too shy to ask. _Simple Talk._ Retrieved from [https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/](https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/)
+
+Steve DL. (2014, July 20). MAC vs DAC vs RBAC [forum post]. StackOverflow. Retrieved from [https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac](https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac)
 
 Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from [http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html](http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html)
 
@@ -522,6 +530,7 @@ Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from [http://use-the-index-
 
 ## Unread
 
+- [https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/](https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/)
 - [Overview of SQL RDBMS](https://www.codecademy.com/articles/sql-rdbms)
 - [How does a relational database work?](http://coding-geek.com/how-databases-work/)
 - [Indexes &amp; Transactions](https://lagunita.stanford.edu/courses/DB/Indexes/SelfPaced/about)

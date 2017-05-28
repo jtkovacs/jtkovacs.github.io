@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sql server | just under 2032 words | updated 05/24/2017</p><div class="TOC">- &nbsp;1. [SQL Server](#sql-server)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sql server | just under 2037 words | updated 05/27/2017</p><div class="TOC">- &nbsp;1. [SQL Server](#sql-server)
 	- &nbsp;1.1. [SQL Server Configuration Manager ](#sql-server-configuration-manager-)
 	- &nbsp;1.2. [SQL Server Management Studio](#sql-server-management-studio)
 - &nbsp;2. [T-SQL](#t-sql)
@@ -99,6 +99,7 @@ CREATE SCHEMA sname AUTHORIZATION [dbo]
 - **Inspect relationships:**
     - [Database] > [Table] > Keys
     - [Database] > Database diagrams
+- [Constraints should be named](https://stackoverflow.com/questions/1397440/what-is-the-purpose-of-constraint-naming)
 
 ```SQL
 CREATE TABLE   

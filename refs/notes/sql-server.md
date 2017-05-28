@@ -72,6 +72,7 @@ CREATE SCHEMA sname AUTHORIZATION [dbo]
 - **Inspect relationships:**
     - [Database] > [Table] > Keys
     - [Database] > Database diagrams
+- [Constraints should be named](https://stackoverflow.com/questions/1397440/what-is-the-purpose-of-constraint-naming) so that they can be deleted and so that error messages are more easily understood
 
 ```SQL
 CREATE TABLE   

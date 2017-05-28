@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> information architecture | just under 4863 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [What is information retrieval?](#what-is-information-retrieval)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> information architecture | just under 4869 words | updated 05/27/2017</p><div class="TOC">- &nbsp;1. [What is information retrieval?](#what-is-information-retrieval)
 	- &nbsp;1.1. [IR systems](#ir-systems)
 	- &nbsp;1.2. [Major activities in IR](#major-activities-in-ir)
 		- &nbsp;1.2.1. [Cataloging & indexing](#cataloging-indexing)
@@ -45,6 +45,8 @@
 			- &nbsp;3.3.7.3. [Format considerations](#format-considerations)
 	- &nbsp;3.4. [Interoperability](#interoperability)
 - &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [Unread](#unread)
 </div>
 
 
@@ -611,6 +613,8 @@ Interoperability data may be stored in:
 
 # 4. Sources
 
+## 4.1. Cited
+
 Abrahamson, E. & Freedman, D. H. (2008). _A perfect mess: The hidden benefits of disorder --- How crammed closets, cluttered offices, and on-the-fly planning make the world a better place._ New York City, NY: Back Bay Books.
 
 AfterHoursProgramming.com. (n.d.) IA tutorial. Retrieved from [http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/](http://www.afterhoursprogramming.com/tutorial/Information-Architecture/Overview/)
@@ -644,3 +648,8 @@ Wurman, R. S. (1997). _Information architects._ New York City, NY: Graphis Inc.
 Wyllys, R. E. (2000). Information architecture. Retrieved from [https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html](https://www.ischool.utexas.edu/~l38613dw/readings/InfoArchitecture.html)
 
 Zeng, M. (n.d.). 4.3 Hierarchical relationships. In _Construction of controlled vocabularies: A primer._ Retrieved from [http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm](http://marciazeng.slis.kent.edu/Z3919/43hierarchy.htm)
+
+## 4.2. Unread
+
+- [https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database](https://stackoverflow.com/questions/4048151/what-are-the-options-for-storing-hierarchical-data-in-a-relational-database)
+

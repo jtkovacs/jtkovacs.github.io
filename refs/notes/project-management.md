@@ -202,14 +202,14 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 # Planning a project
 
-## ... in Agile methodologies
+## Agile methodologies
 
 In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (1999), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
 
 - ... in place of a schedule, a **stack** of prioritized requirements with detailed modeling done 'just in time';
 - ... in place of a budget, funding is continuously adjusted in response to the **value** delivered by products.
 
-## ... in lifecycle methodologies
+## Lifecycle methodologies
 
 ### Communications plan
 
@@ -234,12 +234,13 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ### Scheduling
 
-- Critical Path
+- Timeline
+- Critical path: Least # of tasks to complete a goal 
+- Gantt chart
 - Crash
 - Gate
 - Milestone
-- Gantt Chart
-- PERT Chart
+- PERT chart
 
 ### Monitoring & reporting
 

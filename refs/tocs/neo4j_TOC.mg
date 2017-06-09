@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> neo4j | just under 268 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [Neo4j](#neo4j)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> neo4j | just under 281 words | updated 06/08/2017</p><div class="TOC">- &nbsp;1. [Neo4j](#neo4j)
 - &nbsp;2. [Cypher](#cypher)
 	- &nbsp;2.1. [Create](#create)
 		- &nbsp;2.1.1. [Nodes](#nodes)
@@ -6,12 +6,13 @@
 	- &nbsp;2.2. [Retrieve](#retrieve)
 		- &nbsp;2.2.1. [Recommend ](#recommend-)
 		- &nbsp;2.2.2. [Analyze queries](#analyze-queries)
+	- &nbsp;2.3. [Delete](#delete)
 </div>
 # 1. Neo4j
 
 The **editor** accepts input:
 
-- [Cypher queries](Cypher.html) to work with graph data
+- [Cypher queries](#cypher) to work with graph data
 - Client-side commands available, e.g. ```:help```
 - Run query: `ctrl+enter`
 - Multiline command: `shift+enter`
@@ -86,4 +87,15 @@ RETURN DISTINCT surfer
 ```SQL
 PROFILE MATCH ...
 EXPLAIN MATCH ...
+```
+
+## 2.3. Delete
+
+Delete everything:
+
+- [https://stackoverflow.com/questions/23310114/how-to-reset-clear-delete-neo4j-database](https://stackoverflow.com/questions/23310114/how-to-reset-clear-delete-neo4j-database)
+
+```SQL
+MATCH (n)
+DETACH DELETE n
 ```

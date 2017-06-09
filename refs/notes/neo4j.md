@@ -2,7 +2,7 @@
 
 The **editor** accepts input:
 
-- [Cypher queries](Cypher.html) to work with graph data
+- [Cypher queries](#cypher) to work with graph data
 - Client-side commands available, e.g. ```:help```
 - Run query: `ctrl+enter`
 - Multiline command: `shift+enter`
@@ -77,4 +77,15 @@ RETURN DISTINCT surfer
 ```SQL
 PROFILE MATCH ...
 EXPLAIN MATCH ...
+```
+
+## Delete
+
+Delete everything:
+
+- [https://stackoverflow.com/questions/23310114/how-to-reset-clear-delete-neo4j-database](https://stackoverflow.com/questions/23310114/how-to-reset-clear-delete-neo4j-database)
+
+```SQL
+MATCH (n)
+DETACH DELETE n
 ```

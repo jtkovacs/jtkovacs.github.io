@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; neo4j | just under 268 words | updated 05/21/2017
+   &gt; neo4j | just under 281 words | updated 06/08/2017
   </p>
   <div class="TOC">
    <ul>
@@ -108,6 +108,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         </li>
        </ul>
       </li>
+      <li>
+       2.3.
+       <a href="#delete">
+        Delete
+       </a>
+      </li>
      </ul>
     </li>
    </ul>
@@ -126,7 +132,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </p>
   <ul>
    <li>
-    <a href="Cypher.html">
+    <a href="#cypher">
      Cypher queries
     </a>
     to work with graph data
@@ -273,14 +279,33 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">WHERE</span> js.name = <span class="ot">"Johan"</span> <span class="kw">AND</span> surfer.hobby = <span class="ot">"surfing"</span>
 <span class="kw">RETURN</span> <span class="kw">DISTINCT</span> surfer</code></pre>
   </div>
-  <h3>
-   <a name="2.2.2.-analyze-queries">
+  <h3 id="analyze-queries">
+   <a>
     2.2.2. Analyze queries
    </a>
   </h3>
   <div class="sourceCode">
    <pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">PROFILE</span> MATCH ...
 <span class="kw">EXPLAIN</span> MATCH ...</code></pre>
+  </div>
+  <h2>
+   <a name="2.3.-delete">
+    2.3. Delete
+   </a>
+  </h2>
+  <p>
+   Delete everything:
+  </p>
+  <ul>
+   <li>
+    <a class="uri" href="https://stackoverflow.com/questions/23310114/how-to-reset-clear-delete-neo4j-database">
+     https://stackoverflow.com/questions/23310114/how-to-reset-clear-delete-neo4j-database
+    </a>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode sql"><code class="sourceCode sql">MATCH (n)
+DETACH <span class="kw">DELETE</span> n</code></pre>
   </div>
  </body>
 </html>

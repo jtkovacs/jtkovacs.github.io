@@ -6,6 +6,12 @@
 
 # BI architectures
 
+Enterprise data warehouse approaches:
+
+- Online data store
+- Star schema
+- Data vault
+
 
 # Sources
 

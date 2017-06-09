@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 276 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [BI tools by business value](#bi-tools-by-business-value)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 290 words | updated 06/08/2017</p><div class="TOC">- &nbsp;1. [BI tools by business value](#bi-tools-by-business-value)
 - &nbsp;2. [BI architectures](#bi-architectures)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [References](#references)
@@ -12,6 +12,12 @@
 ![](../illos/bi-tools-by-value.jpg)
 
 # 2. BI architectures
+
+Enterprise data warehouse approaches:
+
+- Online data store
+- Star schema
+- Data vault
 
 
 # 3. Sources

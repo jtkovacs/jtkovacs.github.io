@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4176 words | updated 05/23/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4182 words | updated 06/08/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
 	- &nbsp;1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
 	- &nbsp;1.2. [Common pitfalls & best practices](#common-pitfalls-best-practices)
 - &nbsp;2. [Initiating a project](#initiating-a-project)
@@ -19,8 +19,8 @@
 		- &nbsp;2.3.1. [Vision & success criteria](#vision-success-criteria)
 		- &nbsp;2.3.2. [Defining & managing scope](#defining-managing-scope)
 - &nbsp;3. [Planning a project](#planning-a-project)
-	- &nbsp;3.1. [... in Agile methodologies](#...-in-agile-methodologies)
-	- &nbsp;3.2. [... in lifecycle methodologies](#...-in-lifecycle-methodologies)
+	- &nbsp;3.1. [Agile methodologies](#agile-methodologies)
+	- &nbsp;3.2. [Lifecycle methodologies](#lifecycle-methodologies)
 		- &nbsp;3.2.1. [Communications plan](#communications-plan)
 		- &nbsp;3.2.2. [Work breakdown structure](#work-breakdown-structure)
 		- &nbsp;3.2.3. [Budgeting](#budgeting)
@@ -266,14 +266,14 @@ Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed du
 
 # 3. Planning a project
 
-## 3.1. ... in Agile methodologies
+## 3.1. Agile methodologies
 
 In the traditional "serial" or lifecycle project management approach, requirements are translated into deliverables, deliverables are translated into a work breakdown structure (WBS), and the WBS is translated into a schedule and budget. Per Ambler (1999), about two-thirds of requirements elicited in this way lead to features that are never or rarely used, i.e. "spectacular levels of waste". In response, Agile tries to match development processes to the realities of constantly shifting requirements using:
 
 - ... in place of a schedule, a **stack** of prioritized requirements with detailed modeling done 'just in time';
 - ... in place of a budget, funding is continuously adjusted in response to the **value** delivered by products.
 
-## 3.2. ... in lifecycle methodologies
+## 3.2. Lifecycle methodologies
 
 ### 3.2.1. Communications plan
 
@@ -298,12 +298,13 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ### 3.2.4. Scheduling
 
-- Critical Path
+- Timeline
+- Critical path: Least # of tasks to complete a goal 
+- Gantt chart
 - Crash
 - Gate
 - Milestone
-- Gantt Chart
-- PERT Chart
+- PERT chart
 
 ### 3.2.5. Monitoring & reporting
 

@@ -3,9 +3,45 @@
 
 Git is a versioning tool tailored to the needs of programmers. Like all versioning tools, Git records a series of changes, letting you restore an earlier version if something goes wrong with the current one. In particular, Git is a versioning tool that works offline; lets you choose your file editing programs; saves manually, not automatically (reflecting the stance that old versions are useful only if they are complete, coherent, functioning); saves multiple documents at a time, not just one; and allows branching.
 
+*How could having easy access to the entire history of a file make you a more efficient programmer in the long term?*
+
+- Able to diagnose past mistakes: where did this go wrong? 
+- Not lose work from machine failures.
+
+*What do you think are the pros and cons of manually choosing when to create a commit,like you do in Git, vs having versions automatically saved, like Google Docs does?*
+
+- Save manually: -WILL forget, +sensible, intelligible versions, +reasonable num of versions
+- Save automatically: +can't forget, +/-more data, which may or may not be useful
+
+*Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?*
+
+- Git recognizes that files in coding are more likely to be interdependent, affected by each other's updates.
+
+
+## Major components of Git
+
+*What happens when you initialize a repository? Why do you need to do it?*
+
+- You create a hidden .git file within the working directory, to store metadata for the files.
+- This is the first step, followed by adding specific files to be tracked.
+
+*How is the staging area different from the working directory and the repository? What value do you think it offers?*
+
+- The staging area lets you decide which files from the working directory should be part of a commit, reducing the size of each commit: making them more logically distinct and therefore meaningful and navigable. Without a staging area, all files in the wd would get committed together irrespective of whether they'd changed.
+
+*How can you use the staging area to make sure you have one commit per logical change?*
+
+- ...along with git diff and get diff --staged. 
+
+
+
+
+
+# Workflows
+
 There are three general workflows in Git: solo, collaborative (local-remote), and GitHub (local-remote-collaborator). Obviously workflows should be customized to suit the circumstances (number of collaborators, purpose of branches, purpose of master).
 
-# Solo workflow
+## Solo workflow
 
 Cloning or initializing Git in a directory creates a staging area and repository with one branch, the __master__. Master should be production-quality code that always runs, so work should be done in __branches__, which are in most cases intended to be temporary. Branches are important for sharing code and for compartmentalizing your own work. 
 
@@ -20,7 +56,7 @@ So, the workflow:
 
 <img src="../ILLOS/solo-workflow.png" width="700px">
 
-# Local-remote workflow
+## Local-remote workflow
 
 For collaborative work via remotes, you retain your tripartite solo working environment but add new steps:
 
@@ -32,7 +68,7 @@ For collaborative work via remotes, you retain your tripartite solo working envi
 
 <img src="../ILLOS/local-remote-workflow.png" width="700px">
 
-# Local-remote-collaborator workflow
+## Local-remote collaborator workflow
 
 For collaborative work via GitHub, you retain your tripartite solo working environment and, from your command line, work with your GitHub repository like a remote repository (remember to [cache your GitHub login](https://help.github.com/articles/caching-your-github-password-in-git/)). GitHub has additional functionality, though, like issues, wikis, forking (the ability to clone someone else's GitHub projects to your GitHub account). Every GitHub repository has three special files by default: __README.md__, a description of the project; __CONTRIBUTING.md__, instructions for how to contribute to the project; and __ISSUE_TEMPLATE.md__, a template for raising issues with the project. 
 
@@ -49,9 +85,38 @@ A sample workflow:
 
 
 
-# CODE
 
-__CREATE__: _CONFIGURE, INIT, CLONE, BRANCH, CHECKOUT, ADD, COMMIT, MERGE_
+
+
+# Code
+
+## Create (configure, init, clone, branch, checkout, add, commit, merge)
+
+*Describe the differences between forks, clones, and branches. When would you use one instead of another?*
+
+- TO CLONE is to copy a directory either remote or local, such that its commit history comes along with it. Clone when you want to make your own branch of someone's work.
+- TO BRANCH is to explore something before merging it back into the master code.
+- TO FORK is to clone someone else's GitHub project via GitHub; it is to make a remote-remote connection.
+
+*What are some situations when branches would be helpful in keeping your history organized? How would branches help?*
+
+- Branches might be helpful when making a major but experimental change, or a deliberately different 'flavor' of the code'.
+
+*How do the diagrams help you visualize the branch structure?*
+
+- They are literally visualizations of a branch structure, unlike the output of git log--which, without the --graph option, is linear.
+
+*When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have*
+
+- Because you're trying to preserve the master for display/production. 
+
+*What is the result of merging two branches together? Why do we represent it in the diagram the way we do?*
+
+- Branches are not adirectionally merged 'together'; one branch is merged INTO another branch. The branch being merged is no longer needed,because the branched merged INTO inherits all its commits. Both branches are parents of the new commit, but we can still safely delete the branch being merged. 
+
+*What are the pros and cons of Git’s automatic merging vs. always doing merges manually?*
+
+- Always doing merges manually means you need to be really familiar with the purpose and content of each branch as well as the code, so that you can merge intelligently. It would be nearly impossible for auto merge to match the accuracy of an informed programmer.
 
 ```Bash
 git --version
@@ -82,7 +147,10 @@ git merge branchname  # call from branch you want to merge into
 # undo the merge (see below) or edit, add, and commit the affected documents to complete the merge.
 ```
 
-__UNDO__: _CHECKOUT, RESET, ABORT, AMEND, REVERT_
+
+
+
+## Undo (checkout, reset, abort, amend, revert)
 
 ```Bash
 git rm  filename '*pattern.txt'  # deletes files and stages deletions
@@ -111,7 +179,10 @@ git revert HEAD-2  # recycle commit-from-two-commits-ago as a new commit, extend
 git gc  # run garbage collector
 ```
 
-__MONITOR__: _STATUS, DIFF, LOG, SHOW_
+
+
+
+## Inspect (status, diff, log, show)
 
 ```Bash
 git status # check status
@@ -133,7 +204,21 @@ git show HEAD  # show most recent commit
 git show shortSHA  # diff a commit with its parent
 ```
 
-__COLLABORATE__: _CLONE, REMOTE, FETCH, PULL, PUSH, MERGE_
+
+
+## Collaborate (clone, remote, fetch, pull, push, merge)
+
+*When would you want to use a remote repository rather than keeping all your work local?*
+
+- When you expect to be using different computers, or to be collaborating with others.
+
+*Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?*
+
+- You don't want things being overwritten, or incomprehensibly fragmented, by automatic pull changes.
+
+*What is the benefit of having a copy of the last known state of the remote stored locally?*
+
+- ... someone else with access to the remote might commit to it and change it while you're working on the same code 
 
 ```Bash
 git clone remote_loc [clone_name]  # copy remote repository to local drive
@@ -158,95 +243,12 @@ git push  # subsequent times, if no change to remote or branch
 
 
 
-# Questions
-
-## Git-style version control
-
-*How could having easy access to the entire history of a file make you a more efficient programmer in the long term?*
-
-- Would be able to diagnose past mistakes: where did this go wrong? 
-- Not lose work from machine failures.
-
-*What do you think are the pros and cons of manually choosing when to create a commit,like you do in Git, vs having versions automatically saved, like Google Docs does?*
-
-- Save manually: -WILL forget, +sensible, intelligible versions, +reasonable num of versions
-- Save automatically: +can't forget, +/-more data, which may or may not be useful
-
-*Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?*
-
-- Git recognizes that files in coding are more likely to be interdependent, affected by each other's updates.
-
-## Major components of git
-
-*What happens when you initialize a repository? Why do you need to do it?*
-
-- You create a hidden .git file within the working directory, to store metadata for the files.
-- This is the first step, followed by adding specific files to be tracked.
-
-*How is the staging area different from the working directory and the repository? What value do you think it offers?*
-
-- The staging area lets you decide which files from the working directory should be part of a commit, reducing the size of each commit: making them more logically distinct and therefore meaningful and navigable. Without a staging area, all files in the wd would get committed together irrespective of whether they'd changed.
-
-*How can you use the staging area to make sure you have one commit per logical change?*
-
-- ...along with git diff and get diff --staged. 
-
-## Branching, diffing, and merging
-
-*What are some situations when branches would be helpful in keeping your history organized? How would branches help?*
-
-- Branches might be helpful when making a major but experimental change, or a deliberately different 'flavor' of the code'.
-
-*How do the diagrams help you visualize the branch structure?*
-
-- They are literally visualizations of a branch structure, unlike the output of git log--which, without the --graph option, is linear.
-
-*What is the result of merging two branches together? Why do we represent it in the diagram the way we do?*
-
-- Branches are not adirectionally merged 'together'; one branch is merged INTO another branch. The branch being merged is no longer needed,because the branched merged INTO inherits all its commits. Both branches are parents of the new commit, but we can still safely delete the branch being merged. 
-
-*What are the pros and cons of Git’s automatic merging vs. always doing merges manually?*
-
-- Always doing merges manually means you need to be really familiar with the purpose and content of each branch as well as the code, so that you can merge intelligently. It would be nearly impossible for auto merge to match the accuracy of an informed programmer.
-
-*How did viewing a diff between two versions of a file help you see the bug that was introduced?*
-
-- It drastically reduced the number of lines I had to squint at.
-
-## Remotes & GitHub-based collaboration
-
-*When would you want to use a remote repository rather than keeping all your work local?*
-
-- When you expect to be using different computers, or to be collaborating with others.
-
-
-*Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?*
-
-- You don't want things being overwritten, or incomprehensibly fragmented, by automatic pull changes.
-
-*Describe the differences between forks, clones, and branches. When would you use one instead of another?*
-
-- TO CLONE is to copy a directory either remote or local, such that its commit history comes along with it. Clone when you want to make your own branch of someone's work.
-- TO BRANCH is to explore something before merging it back into the master code.
-- TO FORK is to clone someone else's GitHub project via GitHub; it is to make a remote-remote connection.
-
-*What is the benefit of having a copy of the last known state of the remote stored locally?*
-
-- ... someone else with access to the remote might commit to it and change it while you're working on the same code 
-
-*How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?*
-
-- I think it depends on the scale of the project. But definitely, the larger the project, the more benefit in handling it with these tools.
-
-*When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have*
-
-- Because you're trying to preserve the master for display/production. 
 
 
 
 # Sources
 
-## REFERENCES
+## References
 
 - [Share code quickly with a Gist](https://gist.github.com/)
 - [Official GitHub cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) [pdf]

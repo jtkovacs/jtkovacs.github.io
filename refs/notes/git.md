@@ -92,6 +92,8 @@ A sample workflow:
 
 ## Create (configure, init, clone, branch, checkout, add, commit, merge)
 
+[https://chris.beams.io/posts/git-commit/](https://chris.beams.io/posts/git-commit/)
+
 *Describe the differences between forks, clones, and branches. When would you use one instead of another?*
 
 - TO CLONE is to copy a directory either remote or local, such that its commit history comes along with it. Clone when you want to make your own branch of someone's work.

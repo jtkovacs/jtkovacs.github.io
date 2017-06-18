@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; python | just under 4363 words | updated 05/21/2017
+   &gt; python | just under 4393 words | updated 06/17/2017
   </p>
   <div class="TOC">
    <ul>
@@ -67,6 +67,20 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        <a href="#writing-running-python">
         Writing &amp; running Python
        </a>
+       <ul>
+        <li>
+         1.1.1.
+         <a href="#command-line">
+          Command line
+         </a>
+        </li>
+        <li>
+         1.1.2.
+         <a href="#jupyter-notebook">
+          Jupyter notebook
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        1.2.
@@ -334,27 +348,58 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     1.1. Writing &amp; running Python
    </a>
   </h2>
+  <h3 id="command-line">
+   <a>
+    1.1.1. Command line
+   </a>
+  </h3>
+  <p>
+   Bash --&gt; Python:
+  </p>
   <div class="sourceCode">
    <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">python</span> --version 
 <span class="kw">python</span>  <span class="co"># launches some version of python 2</span>
 <span class="kw">python3</span>  <span class="co"># launches some version of python 3</span>
 <span class="fu">quit()</span>
 
-<span class="kw">python</span> fname.py  <span class="co"># run a script</span>
-
-<span class="co"># this code will run only if the script is executed from the command line</span>
+<span class="kw">python</span> fname.py  <span class="co"># run a script</span></code></pre>
+  </div>
+  <p>
+   Bash &lt;-- Python:
+  </p>
+  <div class="sourceCode">
+   <pre class="sourceCode python"><code class="sourceCode python"><span class="co"># this code will run only if the script is executed from the command line</span>
 <span class="co"># it won't run if the script is imported by another script</span>
-<span class="kw">if</span> <span class="kw">__name__</span> == <span class="st">'__main__'</span>: 
-    <span class="co"># do something</span>
+<span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>: 
+    ...
 
-<span class="kw">pip3</span> install jupyter  <span class="co"># install Jupyer Notebook</span>
+<span class="co"># taking arguments from command line</span>
+<span class="im">import</span> sys
+script_name <span class="op">=</span> sys.argv[<span class="dv">0</span>]
+<span class="cf">for</span> arg <span class="op">in</span> sys.argv[<span class="dv">1</span>:]:
+    ...</code></pre>
+  </div>
+  <h3 id="jupyter-notebook">
+   <a>
+    1.1.2. Jupyter notebook
+   </a>
+  </h3>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pip3</span> install jupyter  <span class="co"># install Jupyer Notebook</span>
 <span class="co"># http://jupyter.readthedocs.io/en/latest/install.html</span>
 
 <span class="kw">jupyter</span> notebook  <span class="co"># launches JN in wew browser</span>
 <span class="co"># quit JN by typing ctrl+c twice in the command line</span>
-<span class="co"># share JN by uploading it to GitHub, </span>
-<span class="co"># then pasting its URL into http://nbviewer.jupyter.org/</span></code></pre>
+<span class="co"># share JN by uploading it to GitHub --&gt; http://nbviewer.jupyter.org/</span></code></pre>
   </div>
+  <ul>
+   <li>
+    <code>
+     dd
+    </code>
+    deletes a cell
+   </li>
+  </ul>
   <h2 id="managing-modules">
    <a>
     1.2. Managing modules

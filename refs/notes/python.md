@@ -2,6 +2,11 @@
 
 ## Writing & running Python
 
+
+### Command line
+
+Bash --> Python:
+
 ```Bash
 python --version 
 python  # launches some version of python 2
@@ -10,19 +15,36 @@ quit()
 
 python fname.py  # run a script
 
+```
+
+Bash <-- Python:
+
+```Python
 # this code will run only if the script is executed from the command line
 # it won't run if the script is imported by another script
 if __name__ == '__main__': 
-    # do something
+    ...
 
+# taking arguments from command line
+import sys
+script_name = sys.argv[0]
+for arg in sys.argv[1:]:
+    ...
+```
+
+### Jupyter notebook
+
+```Bash
 pip3 install jupyter  # install Jupyer Notebook
 # http://jupyter.readthedocs.io/en/latest/install.html
 
 jupyter notebook  # launches JN in wew browser
 # quit JN by typing ctrl+c twice in the command line
-# share JN by uploading it to GitHub, 
-# then pasting its URL into http://nbviewer.jupyter.org/
+# share JN by uploading it to GitHub --> http://nbviewer.jupyter.org/
 ```
+
+- `dd` deletes a cell
+
 
 ## Managing modules
 

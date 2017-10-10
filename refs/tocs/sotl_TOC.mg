@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 873 words | updated 10/10/2017</p><div class="TOC">- &nbsp;1. [Core terms](#core-terms)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 965 words | updated 10/10/2017</p><div class="TOC">- &nbsp;1. [Core terms](#core-terms)
 - &nbsp;2. [Elements of instructional literacy](#elements-of-instructional-literacy)
 - &nbsp;3. [Reflective practice](#reflective-practice)
 - &nbsp;4. [Educational theory](#educational-theory)
@@ -150,9 +150,17 @@ Per Keller (1983), motivational design should address:
     - **Instrumental** relevance can be made clear through learning objectives
     - **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
 - **Expectancy** = f(challenge,support), similar to "zone of proximal development"
-    - **Self**
-    - **Others**
+    - Address self-fulfilling prophecies of failure
+    - Attribution theory/locus of control/personal causation/learned helplessness
+        - Provide meaningful successes (not trivial small wins; learners know it won't transfer)
+        - Make the pathway to success clear (mastery learning)
+        - Give feedback that clarifies the connection between efforts and outcomes
 - **Satisfaction** = f(intrinsic_reinforcement,extrinsic_reinforcement)
+    - To preserve intrinsic motivation (which can be destroyed by extrinsic reinforcement): 
+        - give "endogeneous" rewards that "customarily or naturally follows from a task"
+        - give exogeneous rewards unexpectedly
+    - Give motivational feedback verbally and immediately
+    - Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable 
 
 
 ## 5.3. Booth’s USER method

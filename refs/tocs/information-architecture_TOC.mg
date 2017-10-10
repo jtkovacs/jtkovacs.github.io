@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> information architecture | just under 4869 words | updated 05/27/2017</p><div class="TOC">- &nbsp;1. [What is information retrieval?](#what-is-information-retrieval)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> information architecture | just under 4869 words | updated 10/09/2017</p><div class="TOC">- &nbsp;1. [What is information retrieval?](#what-is-information-retrieval)
 	- &nbsp;1.1. [IR systems](#ir-systems)
 	- &nbsp;1.2. [Major activities in IR](#major-activities-in-ir)
 		- &nbsp;1.2.1. [Cataloging & indexing](#cataloging-indexing)
@@ -134,13 +134,13 @@ Per Abrahamson and Freedman (2008), order (like all things) has both benefit and
 
 Per Abrahamson and Freedman (2008):
 
-<img src="../ILLOS/mess.jpg" width="600px">
+<img src="../illos/mess.jpg" width="600px">
 
 ### 2.1.2. Bases of organization
 
 Hedden (2016) offers a typology in which taxonomies (i.e., knowledge organization structures) have different bases/origins. KOSs may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
-![](../ILLOS/taxonomy_status.png)
+![](../illos/taxonomy_status.png)
     
 ## 2.2. What ways can things be organized?
 

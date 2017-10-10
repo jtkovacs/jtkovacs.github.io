@@ -84,13 +84,13 @@ Per Abrahamson and Freedman (2008), order (like all things) has both benefit and
 
 Per Abrahamson and Freedman (2008):
 
-<img src="../ILLOS/mess.jpg" width="600px">
+<img src="../illos/mess.jpg" width="600px">
 
 ### Bases of organization
 
 Hedden (2016) offers a typology in which taxonomies (i.e., knowledge organization structures) have different bases/origins. KOSs may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
-![](../ILLOS/taxonomy_status.png)
+![](../illos/taxonomy_status.png)
     
 ## What ways can things be organized?
 

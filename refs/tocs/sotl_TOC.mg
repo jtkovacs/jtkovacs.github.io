@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 635 words | updated 10/10/2017</p><div class="TOC">- &nbsp;1. [Core terms](#core-terms)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 873 words | updated 10/10/2017</p><div class="TOC">- &nbsp;1. [Core terms](#core-terms)
 - &nbsp;2. [Elements of instructional literacy](#elements-of-instructional-literacy)
 - &nbsp;3. [Reflective practice](#reflective-practice)
 - &nbsp;4. [Educational theory](#educational-theory)
@@ -89,9 +89,12 @@ Per Keller (1983), motivation an extremely important part of learning; it is *wh
 
 Per Booth (2011):
 
-- authenticity, personal investment
-- interpersonal connection, humor
-- organization, goal-orientation
+- Logistics: 
+    - focus on goals 
+    - be organized enough to achieve them
+- Interpersonal: 
+    - be authentic 
+    - show your personal investment in the class and the students
 
 #### 4.2.2.2. Instructional messages
 
@@ -122,17 +125,33 @@ Per Booth (2011), targets “allow you to structure measurable learning interact
 
 ## 5.2. Motivation design
 
+A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
+
 Per Keller (1983), motivational design should address:
 
-- **Interest** = f(curiosity,presentation) 
-    - **Simulate** curiosity = f(novelty,paradox,incongruity,complexity)
+- **Interest** = f(trait_curiosity,presentation) 
+    - ***Simulate curiosity*** = f(novelty,paradox,incongruity,complexity,abruptness,conflict)
         - Perceptual vs. *epistemic curiosity*
         - Trait vs. *state curiosity*
-    - **Sustain** curiosity:
+        - Note that curiosity can be fatigued by excessive stimulation
+        - Appeal to emotions, personal experience, the familiar e.g. with analogies, metaphors, anecdotes, questions
+    - ***Sustain curiosity:***
         - Allowance to explore
         - Lower the cost of failure
-- **Relevance** = f(alignment,clear_connections)
+        - Occasional surprises and humor
+        - Make the familiar strange and vice versa
+        - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
+        - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
+- **Relevance** = f(alignment,clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
+    - **Personal**
+        - Promote a sense of **achievement** by combining "standards of excellence" with moderate risk and feedback that may be non-zero sum
+        - Promote **empowerment** by allowing choice, responsibility, and influence
+        - Promote **affiliation** by establishing trust, which may include non-zero sum grading
+    - **Instrumental** relevance can be made clear through learning objectives
+    - **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
 - **Expectancy** = f(challenge,support), similar to "zone of proximal development"
+    - **Self**
+    - **Others**
 - **Satisfaction** = f(intrinsic_reinforcement,extrinsic_reinforcement)
 
 

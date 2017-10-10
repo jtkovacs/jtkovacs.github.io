@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> strategy | just under 341 words | updated 05/21/2017</p><div class="TOC">- &nbsp;1. [Strategic thinking](#strategic-thinking)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> strategy | just under 404 words | updated 10/10/2017</p><div class="TOC">- &nbsp;1. [Strategic thinking](#strategic-thinking)
 	- &nbsp;1.1. [Design thinking](#design-thinking)
 	- &nbsp;1.2. [Systems thinking](#systems-thinking)
 - &nbsp;2. [Business strategy](#business-strategy)
@@ -10,15 +10,19 @@
 	- &nbsp;3.2. [What labor trends matter?](#what-labor-trends-matter)
 	- &nbsp;3.3. [What political trends matter?](#what-political-trends-matter)
 - &nbsp;4. [Sources](#sources)
-	- &nbsp;4.1. [References](#references)
-	- &nbsp;4.2. [Read](#read)
-	- &nbsp;4.3. [Unread](#unread)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [References](#references)
+	- &nbsp;4.3. [Read](#read)
+	- &nbsp;4.4. [Unread](#unread)
 </div>
 
 
 # 1. Strategic thinking
 
 ## 1.1. Design thinking
+
+Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics". Orginally applied in product development, it was imported into education in the late 1960s.  
+
 
 ## 1.2. Systems thinking
 
@@ -55,7 +59,12 @@ Inequality and polarization.
 
 # 4. Sources
 
-## 4.1. References
+## 4.1. Cited
+
+Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
+
+
+## 4.2. References
 
 - [Mike Bradley & Tiff Zhang's startup generator](http://tiffzhang.com/startup/)
 - [Portal to Gartner's research methodologies](http://www.gartner.com/technology/research/methodologies/methodology.jsp)
@@ -65,10 +74,10 @@ Inequality and polarization.
 - [CBBP's "policy futures" research](http://www.cbpp.org/about/special-projects/policy-futures)
 - [SLU library guide to market research](http://libguides.slu.edu/c.php?g=185604&amp;p=1226028)
 
-## 4.2. Read
+## 4.3. Read
 
 
-## 4.3. Unread
+## 4.4. Unread
 
 - [Paul Graham's "Do things that don't scale"](http://paulgraham.com/ds.html)
 - [Technology will replace many doctors, lawyers, and other professionals](https://hbr.org/2016/10/robots-will-replace-doctors-lawyers-and-other-professionals)

@@ -6,7 +6,7 @@ Per Booth (2011), a *learning interaction* happens between student, teacher, and
 
 
 
-# Skills for teaching
+# Elements of instructional literacy
 
 Per Booth (2011), core knowledge and skills for teaching (what she calls “instructional literacy”) includes:
 
@@ -16,15 +16,8 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
     - **instructional theory** (how to teach), and 
     - **curriculum theory** (content- and audience-specific considerations); 
 - mastery of **teaching technologies** (for collaboration, assessment, etc.); and
-- integration of the prior three items, i.e. skill in **instructional design**
+- integration and application of the prior three items, i.e. skill in **instructional design**
 
-## Qualities of excellent teachers
-
-Per Booth (2011):
-
-- authenticity, personal investment
-- interpersonal connection, humor
-- organization, goal-orientation
 
 
 
@@ -40,17 +33,45 @@ Per Booth (2011), a miscellany of advice regarding beliefs and attitudes:
 
 # Educational theory
 
+## How does educational theory draw on relevant sciences?
 
-## Learning theory
+Per Keller (1983):
 
-### The role of motivation
+- **Behavioral psychology** --> feedback and reinforcement
+- **Cognitive psychology** re: info processing --> "how to organize instruction" for "acquisition and retention of knowledge and skills"
+    - "also studied in relation to individual differences in ability and learning style"
+- [Motivation](#motivation)
 
-Per Keller (1983), motivation an extremely important part of learning. 
+## Branches of educational theory
+
+### Learning theory
+
+#### Motivation theory
+
+Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.* He says that: 
+
+- In keeping with field theory/social learning theory, B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P);**
+- As categories of Behavior, is important to distinguish between:
+    - Effort = P's level of engagement and discipline, "a direct indicator of motivation"
+    - Performance = f(motivation,ability,opportunity)
+    - Consequences = Performance + (benefits to the individual = motivation)
+- Determinants E and P may be examined for each Behavior *with a focus on Motivation* to identify instructional strategies:
+
+![](../illos/motivation.png)
 
 
-## Instructional theory
 
-### Instructional messages
+### Instructional theory
+
+#### Qualities of excellent teachers
+
+Per Booth (2011):
+
+- authenticity, personal investment
+- interpersonal connection, humor
+- organization, goal-orientation
+
+#### Instructional messages
 
 Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
@@ -58,7 +79,7 @@ Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messa
 - facilitate comprehension: **SIMPLE, CONCRETE**
 - appeal and persuade: **CREDIBLE, EMOTIONAL**
 
-### Targets
+#### Targets
 
 Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them”. Targets form a hierarchy:
 
@@ -68,12 +89,30 @@ Per Booth (2011), targets “allow you to structure measurable learning interact
 
 
 
-# Teaching technologies
+
 
 
 
 
 # Instructional design
+
+## Teaching technologies
+
+## Motivation design
+
+Per Keller (1983), motivational design should address:
+
+- **Interest** = f(curiosity,presentation) 
+    - **Simulate** curiosity = f(novelty,paradox,incongruity,complexity)
+        - Perceptual vs. *epistemic curiosity*
+        - Trait vs. *state curiosity*
+    - **Sustain** curiosity:
+        - Allowance to explore
+        - Lower the cost of failure
+- **Relevance** = f(alignment,clear_connections)
+- **Expectancy** = f(challenge,support), similar to "zone of proximal development"
+- **Satisfaction** = f(intrinsic_reinforcement,extrinsic_reinforcement)
+
 
 ## Booth’s USER method
 

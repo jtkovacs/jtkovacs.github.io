@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bash | just under 2459 words | updated 10/11/2017</p><div class="TOC">- &nbsp;1. [Bash basics](#bash-basics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bash | just under 2456 words | updated 10/11/2017</p><div class="TOC">- &nbsp;1. [Bash basics](#bash-basics)
 	- &nbsp;1.1. [What is Bash?](#what-is-bash)
 	- &nbsp;1.2. [Set up Bash](#set-up-bash)
 		- &nbsp;1.2.1. [.bashrc vs. .bash_profile](#.bashrc-vs.-.bash_profile)
@@ -22,9 +22,6 @@
 	- &nbsp;3.3. [Unread](#unread)
 </div>
 # 1. Bash basics
-
-OK OK OK
-
 
 ## 1.1. What is Bash?
 

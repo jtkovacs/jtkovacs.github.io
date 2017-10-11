@@ -6,7 +6,7 @@ Per Booth (2011), a *learning interaction* happens between student, teacher, and
 
 
 
-# Skills for teaching
+# Elements of instructional literacy
 
 Per Booth (2011), core knowledge and skills for teaching (what she calls “instructional literacy”) includes:
 
@@ -16,15 +16,8 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
     - **instructional theory** (how to teach), and 
     - **curriculum theory** (content- and audience-specific considerations); 
 - mastery of **teaching technologies** (for collaboration, assessment, etc.); and
-- integration of the prior three items, i.e. skill in **instructional design**
+- integration and application of the prior three items, i.e. skill in **instructional design**
 
-## Qualities of excellent teachers
-
-Per Booth (2011):
-
-- authenticity, personal investment
-- interpersonal connection, humor
-- organization, goal-orientation
 
 
 
@@ -40,17 +33,48 @@ Per Booth (2011), a miscellany of advice regarding beliefs and attitudes:
 
 # Educational theory
 
+## How does educational theory draw on relevant sciences?
 
-## Learning theory
+Per Keller (1983):
 
-### The role of motivation
+- **Behavioral psychology** --> feedback and reinforcement
+- **Cognitive psychology** re: info processing --> "how to organize instruction" for "acquisition and retention of knowledge and skills"
+    - "also studied in relation to individual differences in ability and learning style"
+- [Motivation](#motivation)
 
-Per Keller (1983), motivation an extremely important part of learning. 
+## Branches of educational theory
+
+### Learning theory
+
+#### Motivation theory
+
+Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.* He says that: 
+
+- In keeping with field theory/social learning theory, B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P);**
+- As categories of Behavior, is important to distinguish between:
+    - Effort = P's level of engagement and discipline, "a direct indicator of motivation"
+    - Performance = f(motivation,ability,opportunity)
+    - Consequences = Performance + (benefits to the individual = motivation)
+- Determinants E and P may be examined for each Behavior *with a focus on Motivation* to identify instructional strategies:
+
+![](../illos/motivation.png)
 
 
-## Instructional theory
 
-### Instructional messages
+### Instructional theory
+
+#### Qualities of excellent teachers
+
+Per Booth (2011):
+
+- Logistics: 
+    - focus on goals 
+    - be organized enough to achieve them
+- Interpersonal: 
+    - be authentic 
+    - show your personal investment in the class and the students
+
+#### Instructional messages
 
 Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
@@ -58,7 +82,7 @@ Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messa
 - facilitate comprehension: **SIMPLE, CONCRETE**
 - appeal and persuade: **CREDIBLE, EMOTIONAL**
 
-### Targets
+#### Targets
 
 Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them”. Targets form a hierarchy:
 
@@ -68,12 +92,54 @@ Per Booth (2011), targets “allow you to structure measurable learning interact
 
 
 
-# Teaching technologies
+
 
 
 
 
 # Instructional design
+
+## Teaching technologies
+
+## Motivation design
+
+A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
+
+Per Keller (1983), motivational design should address:
+
+- **Interest** = f(trait_curiosity,presentation) 
+    - ***Simulate curiosity*** = f(novelty,paradox,incongruity,complexity,abruptness,conflict)
+        - Perceptual vs. *epistemic curiosity*
+        - Trait vs. *state curiosity*
+        - Note that curiosity can be fatigued by excessive stimulation
+        - Appeal to emotions, personal experience, the familiar e.g. with analogies, metaphors, anecdotes, questions
+    - ***Sustain curiosity:***
+        - Allowance to explore
+        - Lower the cost of failure
+        - Occasional surprises and humor
+        - Make the familiar strange and vice versa
+        - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
+        - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
+- **Relevance** = f(alignment,clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
+    - **Personal**
+        - Promote a sense of **achievement** by combining "standards of excellence" with moderate risk and feedback that may be non-zero sum
+        - Promote **empowerment** by allowing choice, responsibility, and influence
+        - Promote **affiliation** by establishing trust, which may include non-zero sum grading
+    - **Instrumental** relevance can be made clear through learning objectives
+    - **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
+- **Expectancy** = f(challenge,support), similar to "zone of proximal development"
+    - Address self-fulfilling prophecies of failure
+    - Attribution theory/locus of control/personal causation/learned helplessness
+        - Provide meaningful successes (not trivial small wins; learners know it won't transfer)
+        - Make the pathway to success clear (mastery learning)
+        - Give feedback that clarifies the connection between efforts and outcomes
+- **Satisfaction** = f(intrinsic_reinforcement,extrinsic_reinforcement)
+    - To preserve intrinsic motivation (which can be destroyed by extrinsic reinforcement): 
+        - give "endogeneous" rewards that "customarily or naturally follows from a task"
+        - give exogeneous rewards unexpectedly
+    - Give motivational feedback verbally and immediately
+    - Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable 
+
 
 ## Booth’s USER method
 

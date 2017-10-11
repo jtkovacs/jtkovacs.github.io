@@ -4,6 +4,9 @@
 
 ## Design thinking
 
+Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics". Orginally applied in product development, it was imported into education in the late 1960s.  
+
+
 ## Systems thinking
 
 
@@ -38,6 +41,11 @@ Inequality and polarization.
 
 
 # Sources
+
+## Cited
+
+Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
+
 
 ## References
 

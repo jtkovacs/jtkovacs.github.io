@@ -1,16 +1,24 @@
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 312 words | updated 10/11/2017</p><div class="TOC">- &nbsp;1. [History of BI](#history-of-bi)
+- &nbsp;2. [BI tools by business value](#bi-tools-by-business-value)
+- &nbsp;3. [BI architectures](#bi-architectures)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [References](#references)
+	- &nbsp;4.2. [Read](#read)
+	- &nbsp;4.3. [Unread](#unread)
+</div>
 
-# History of BI
+# 1. History of BI
 
 - Early electronic record-keeping and reporting
 - Executive and management information systems
 - BI dashboards: *data for all*
 
 
-# BI tools by business value
+# 2. BI tools by business value
 
 ![](../illos/bi-tools-by-value.jpg)
 
-# BI architectures
+# 3. BI architectures
 
 Enterprise data warehouse approaches:
 
@@ -19,11 +27,11 @@ Enterprise data warehouse approaches:
 - Data vault
 
 
-# Sources
+# 4. Sources
 
-## References
+## 4.1. References
 
-## Read
+## 4.2. Read
 
 - [UW IT - EDW 101](http://itconnect.uw.edu/work/data/training/workshops/#EDW101)
 - [MapReduce - Simplified Data Processing on Large Clusters](http://research.google.com/archive/mapreduce.html)
@@ -31,7 +39,7 @@ Enterprise data warehouse approaches:
 - [Big Data, n. A kind of black magic](http://www.talyarkoni.org/blog/2014/05/19/big-data-n-a-kind-of-black-magic/)
 
 
-## Unread
+## 4.3. Unread
 
 - _The Data Warehouse Lifecycle Toolkit_
 - _The Data Warehouse Toolkit_

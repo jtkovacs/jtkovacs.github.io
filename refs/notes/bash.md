@@ -3,13 +3,13 @@
 
 ## What is Bash?
 
-Through a (virtual) terminal you can send commands to the shell, which passes commands along to the OS. You could also write scripts for the shell to run. The terminology around this is muddled because of the way computer architecture has evolved and because the same words are used differently across operating systems and computing subfields ([1](http://stackoverflow.com/questions/21464073/shells-vs-command-interpreters-vs-command-line), [2](http://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line#comment683259_506510), [3](http://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line), [4](http://stackoverflow.com/questions/21014344/terminal-or-console-or-shell-or-command-prompt), [5](http://linuxcommand.org/lts0010.php)): 
+Through a (virtual) terminal you can send commands to the shell, which passes commands along to the OS. You could also write scripts for the shell to run. The terminology around this is muddled because of the way computer architecture has evolved and because the same words are used differently across operating systems and computing subfields ([1](http://stackoverflow.com/questions/21464073/shells-vs-command-interpreters-vs-command-line), [2](http://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line#comment683259_506510), [3](http://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line), [4](http://stackoverflow.com/questions/21014344/terminal-or-console-or-shell-or-command-prompt), [5](http://linuxcommand.org/lts0010.php)):
 
 - A __terminal__ is any environment for text I/O. __Console__ is an old word for a physical terminal. Many terminals are now [virtual](http://askubuntu.com/questions/14284/why-is-a-virtual-terminal-virtual-and-what-why-where-is-the-real-terminal), also called terminal emulators. In Unix, "everything is a file"; a terminal is controlled by a [tty device file](http://www.linusakesson.net/programming/tty/index.php).
-- A __shell__ is a very general term meaning any program that controls and runs other programs; however, a command line shell (also called a __CLI__, command line interface) is often called 'the shell' for short.  The term comes from [Unix architecture](https://en.wikipedia.org/wiki/Unix_architecture): shell wraps around kernel which wraps around hardware. 
+- A __shell__ is a very general term meaning any program that controls and runs other programs; however, a command line shell (also called a __CLI__, command line interface) is often called 'the shell' for short.  The term comes from [Unix architecture](https://en.wikipedia.org/wiki/Unix_architecture): shell wraps around kernel which wraps around hardware.
 - __Bash__ is the default CLI for Linux and Mac. Windows has Command Prompt; to get Bash for Windows, install [Cygwin](https://cygwin.com/install.html).
 
-In addition to commands that are typed and entered, Bash responds to hotkeys (`^` means `ctrl`): 
+In addition to commands that are typed and entered, Bash responds to hotkeys (`^` means `ctrl`):
 
 ```Bash
 # tab to autocomplete
@@ -23,30 +23,62 @@ In addition to commands that are typed and entered, Bash responds to hotkeys (`^
 
 ## Set up Bash
 
-Bash lets you control your environment by adding messages, defining aliases, setting the values of environment variables, etc. 
+### .bashrc vs. .bash_profile
 
-- Defining an alias means giving a new name to an existing command or giving a name to a whole sequence of existing commands. Define aliases by adding them to `.bash_profile` or, to make them persist across sessions, to `.bashrc`.
-- Environment variables are used across commands, sessions, and programs:
-  - `$HOME`: path of home directory
-  - `$PATH`: directories containing command line scripts
-  - `$PS1`: defines style of command prompt
+### Environment variables
+
+- Environment variables are used across commands, sessions, and programs
+- Convention: ALL_CAPS
+- Common:
+    - `$HOME` path of home directory
+    - `$PATH` "where to look for executables"
+        - directory_path1:dpath2:...:dpathn
+        - given a `command` Bash tries to run dpath1/command, dpath2/command, etc.
+    - `$PS1` style of command prompt
+    - `EDITOR` default text editor
+    - `LANG` human language preference
+
+
+```Bash
+#   lack of WHITESPACE is VERY IMPORTANT!!!!
+
+USER='user_name'
+# create non-persistent EV
+
+USER = '$USER last_name'
+# use environmental variable in string
+
+nano .bash_profile
+export USER="user_name"
+# create persistent EV
+
+unset USER
+
+echo $USER  # view single
+env  # view all
+env | grep REGEX  # filter and view
+```
+
+### Preferences
 
 ```Bash
 nano ~/.bash_profile  # create/edit preferences file
 source ~/.bash_profile  # activates newly edited profile for current session
-
 echo message_string  # add new session greeting message to .bash_profile
+```
 
-alias  # displays all current aliases 
+### Aliases
+
+- Defining an **alias** means giving a new name to an existing command or giving a name to a whole sequence of existing commands.
+- Define aliases by adding them to `.bash_profile` or, to make them persist across sessions, to `.bashrc`.
+
+```Bash
+alias  # displays all current aliases
 alias pd="pwd"  # rename an existing command
 alias nwnano = "touch file1 && nano file2"  # make new command from sequence of existing commands
 unalias pd  # removes alias
-
-env  # view all environment variables
-env | grep REGEX  # filter and view environment variables
-export USER = "user_name"  # type in .bash_profile to create environment variable
-echo $USER  # print environment variable
 ```
+
 
 ## Manage system
 
@@ -75,7 +107,7 @@ Df -h, checks disk space and partition usage
 ```
 
 ### Get more information
- 
+
 ```Bash
 lsb_release -a  # Linux version
 nano /etc/issue  # Linux version
@@ -94,7 +126,7 @@ which command_name
 file path/command_name
 man command_name  # documentation; type 'q' to exit
 man -k searchstring  # search in mans' short descriptions for searchstring
-apropos command_name  # find appropriate man page 
+apropos command_name  # find appropriate man page
 whatis command_name  # one-line man page summary
 # ^R to 'reverse-i-search' the command history
 ```
@@ -107,7 +139,7 @@ The __Linux filesystem__ is a tree of directories (folders) containing files. Un
 - __opt__: commercial software installations
 - __temp, var__: files that change a lot or are frequently deleted, e.g. logs
 
-__Directory and file names__ in Linux are case sensitive, but Linux does not require you to specify file extensions. Names can include any character except /, although to do so some characters (`$, <, >, &, |, ;, ", ', \`) must be escaped `\` or contained by quotes. A directory or file will be hidden if its name begins with a period. 
+__Directory and file names__ in Linux are case sensitive, but Linux does not require you to specify file extensions. Names can include any character except /, although to do so some characters (`$, <, >, &, |, ;, ", ', \`) must be escaped `\` or contained by quotes. A directory or file will be hidden if its name begins with a period.
 
 - Rename files to lowercase: `rename 'y/A-Z/a-z/' *`
 
@@ -122,16 +154,16 @@ cd ../../dirname  # go two directories up, then down
 # ~, the user's home directory
 # ~username, a specified user's home directory
 # ., the current directory
-# .., the current directory's parent directory 
+# .., the current directory's parent directory
 # –, the prior working directory
 
-ls  # list files in the working directory 
+ls  # list files in the working directory
 ls -a  # list hidden files too
 ls -t  # list by time-last-modified instead of alphabetically
 ls -r  # list content in reverse order
 ls -art  # options can be chained; equivalently, ls -a -l -t
 
-ls -R  # list all content in working directory, including content in subdirectories 
+ls -R  # list all content in working directory, including content in subdirectories
 find  # list all files contained in the working directory and its subdirectories; same as ls -aR
 ```
 
@@ -162,7 +194,7 @@ mv file1 file2 todir  # move files or directories to directory
 mv -i file todir  # adds confirmation step to prevent overwrites
 mv filename new_filename  # rename a file or directory
 
-rm file1 file2  # delete file/s 
+rm file1 file2  # delete file/s
 rmdir dirname  # deletes directory IF empty
 rm -R dirname  # delete directory and its contents
 ```
@@ -220,7 +252,7 @@ less file  # open long file in special reading view
 # /regex to search, then n and N to page up and down through results
 # q to quit
 
-cat file  # show file contents on screen 
+cat file  # show file contents on screen
 cat file1 file2  # shows concatenated files
 tac file  # show content of file in reverse order
 clear  # clear the screen by printing many blank lines
@@ -254,7 +286,7 @@ ls \*{jpg,png}  # list anything ending with either 'jpg' or 'png'
 cp \*html dirname  # copy anything ending with 'html' to specified directory
 cp [abd]\*.txt dirname  # copy all files beginning with 'a', 'b', or 'c' and ending with '.txt'
 cp [!0-9]\*.txt dirname  # copy all files  ending with '.txt', NOT beginning with a number between 0-9
-cp [[:upper:]]\* dirname  # copy all files that begin with a capital letter; 
+cp [[:upper:]]\* dirname  # copy all files that begin with a capital letter;
 # see also [[:lower:]], [[:digit:]], [[:alpha:]], [[:alnum:]]
 cp b?t.txt dirname  # copy all files with exactly one character between 'b' and 't.txt'
 cp b??t.txt dirname  # copy all files with exactly two characters between 'b' and 't.txt'
@@ -298,7 +330,7 @@ split [options] filename prefix
 # options:
 # -l linenumber
 # -b bytes
-``` 
+```
 
 
 # Sources
@@ -319,7 +351,7 @@ split [options] filename prefix
 - [The importance of command line literacy](http://www.linux-mag.com/id/7096/)
 
 ## Unread
-- [Data science at the command line](http://datascienceatthecommandline.com/): book, webcast, VM 
+- [Data science at the command line](http://datascienceatthecommandline.com/): book, webcast, VM
 - [How to spy on your programs with strace](http://jvns.ca/strace-zine-unfolded.pdf) (pdf)
 - [Talks by Julia Evans](http://jvns.ca/talks/)
 

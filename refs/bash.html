@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bash | just under 2417 words | updated 05/21/2017
+   &gt; bash | just under 2459 words | updated 10/11/2017
   </p>
   <div class="TOC">
    <ul>
@@ -73,6 +73,32 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        <a href="#set-up-bash">
         Set up Bash
        </a>
+       <ul>
+        <li>
+         1.2.1.
+         <a href="#.bashrc-vs.-.bash_profile">
+          .bashrc vs. .bash_profile
+         </a>
+        </li>
+        <li>
+         1.2.2.
+         <a href="#environment-variables">
+          Environment variables
+         </a>
+        </li>
+        <li>
+         1.2.3.
+         <a href="#preferences">
+          Preferences
+         </a>
+        </li>
+        <li>
+         1.2.4.
+         <a href="#aliases">
+          Aliases
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        1.3.
@@ -181,6 +207,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     1. Bash basics
    </a>
   </h1>
+  <p>
+   OK OK OK
+  </p>
   <h2 id="what-is-bash">
    <a>
     1.1. What is Bash?
@@ -280,12 +309,108 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     1.2. Set up Bash
    </a>
   </h2>
-  <p>
-   Bash lets you control your environment by adding messages, defining aliases, setting the values of environment variables, etc.
-  </p>
+  <h3 id="bashrc-vs.-.bash_profile">
+   <a>
+    1.2.1. .bashrc vs. .bash_profile
+   </a>
+  </h3>
+  <h3 id="environment-variables">
+   <a>
+    1.2.2. Environment variables
+   </a>
+  </h3>
   <ul>
    <li>
-    Defining an alias means giving a new name to an existing command or giving a name to a whole sequence of existing commands. Define aliases by adding them to
+    Environment variables are used across commands, sessions, and programs
+   </li>
+   <li>
+    Convention: ALL_CAPS
+   </li>
+   <li>
+    Common:
+    <ul>
+     <li>
+      <code>
+       $HOME
+      </code>
+      path of home directory
+     </li>
+     <li>
+      <code>
+       $PATH
+      </code>
+      "where to look for executables"
+      <ul>
+       <li>
+        directory_path1:dpath2:...:dpathn
+       </li>
+       <li>
+        given a
+        <code>
+         command
+        </code>
+        Bash tries to run dpath1/command, dpath2/command, etc.
+       </li>
+      </ul>
+     </li>
+     <li>
+      <code>
+       $PS1
+      </code>
+      style of command prompt
+     </li>
+     <li>
+      <code>
+       EDITOR
+      </code>
+      default text editor
+     </li>
+     <li>
+      <code>
+       LANG
+      </code>
+      human language preference
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#   lack of WHITESPACE is VERY IMPORTANT!!!!</span>
+<span class="ot">USER=</span><span class="st">'user_name'</span> <span class="co"># create non-persistent EV</span>
+<span class="ot">USER=</span><span class="st">'$USER last_name'</span> <span class="co"># use environmental variable in string</span>
+<span class="kw">export</span> <span class="ot">USER=</span><span class="st">"user_name"</span> <span class="co"># edit .bash_profile to create persistent EV</span>
+
+<span class="kw">unset</span> <span class="ot">USER</span>
+
+<span class="kw">echo</span> <span class="ot">$USER</span>  <span class="co"># view single</span>
+<span class="kw">env</span>  <span class="co"># view all</span>
+<span class="kw">env</span> <span class="kw">|</span> <span class="kw">grep</span> REGEX  <span class="co"># filter and view</span></code></pre>
+  </div>
+  <h3 id="preferences">
+   <a>
+    1.2.3. Preferences
+   </a>
+  </h3>
+  <div class="sourceCode">
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">nano</span> ~/.bash_profile  <span class="co"># create/edit preferences file</span>
+<span class="kw">source</span> ~/.bash_profile  <span class="co"># activates newly edited profile for current session</span>
+<span class="kw">echo</span> message_string  <span class="co"># add new session greeting message to .bash_profile</span></code></pre>
+  </div>
+  <h3 id="aliases">
+   <a>
+    1.2.4. Aliases
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Defining an
+    <strong>
+     alias
+    </strong>
+    means giving a new name to an existing command or giving a name to a whole sequence of existing commands.
+   </li>
+   <li>
+    Define aliases by adding them to
     <code>
      .bash_profile
     </code>
@@ -295,43 +420,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </code>
     .
    </li>
-   <li>
-    Environment variables are used across commands, sessions, and programs:
-   </li>
-   <li>
-    <code>
-     $HOME
-    </code>
-    : path of home directory
-   </li>
-   <li>
-    <code>
-     $PATH
-    </code>
-    : directories containing command line scripts
-   </li>
-   <li>
-    <code>
-     $PS1
-    </code>
-    : defines style of command prompt
-   </li>
   </ul>
   <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">nano</span> ~/.bash_profile  <span class="co"># create/edit preferences file</span>
-<span class="kw">source</span> ~/.bash_profile  <span class="co"># activates newly edited profile for current session</span>
-
-<span class="kw">echo</span> message_string  <span class="co"># add new session greeting message to .bash_profile</span>
-
-<span class="kw">alias</span>  <span class="co"># displays all current aliases </span>
+   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">alias</span>  <span class="co"># displays all current aliases</span>
 <span class="kw">alias</span> pd=<span class="st">"pwd"</span>  <span class="co"># rename an existing command</span>
 <span class="kw">alias</span> nwnano = <span class="st">"touch file1 &amp;&amp; nano file2"</span>  <span class="co"># make new command from sequence of existing commands</span>
-<span class="kw">unalias</span> pd  <span class="co"># removes alias</span>
-
-<span class="kw">env</span>  <span class="co"># view all environment variables</span>
-<span class="kw">env</span> <span class="kw">|</span> <span class="kw">grep</span> REGEX  <span class="co"># filter and view environment variables</span>
-<span class="kw">export</span> <span class="ot">USER</span> <span class="ot">=</span> <span class="st">"user_name"</span>  <span class="co"># type in .bash_profile to create environment variable</span>
-<span class="kw">echo</span> <span class="ot">$USER</span>  <span class="co"># print environment variable</span></code></pre>
+<span class="kw">unalias</span> pd  <span class="co"># removes alias</span></code></pre>
   </div>
   <h2 id="manage-system">
    <a>
@@ -384,7 +478,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">file</span> path/command_name
 <span class="kw">man</span> command_name  <span class="co"># documentation; type 'q' to exit</span>
 <span class="kw">man</span> -k searchstring  <span class="co"># search in mans' short descriptions for searchstring</span>
-<span class="kw">apropos</span> command_name  <span class="co"># find appropriate man page </span>
+<span class="kw">apropos</span> command_name  <span class="co"># find appropriate man page</span>
 <span class="kw">whatis</span> command_name  <span class="co"># one-line man page summary</span>
 <span class="co"># ^R to 'reverse-i-search' the command history</span></code></pre>
   </div>
@@ -470,16 +564,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co"># ~, the user's home directory</span>
 <span class="co"># ~username, a specified user's home directory</span>
 <span class="co"># ., the current directory</span>
-<span class="co"># .., the current directory's parent directory </span>
+<span class="co"># .., the current directory's parent directory</span>
 <span class="co"># –, the prior working directory</span>
 
-<span class="kw">ls</span>  <span class="co"># list files in the working directory </span>
+<span class="kw">ls</span>  <span class="co"># list files in the working directory</span>
 <span class="kw">ls</span> -a  <span class="co"># list hidden files too</span>
 <span class="kw">ls</span> -t  <span class="co"># list by time-last-modified instead of alphabetically</span>
 <span class="kw">ls</span> -r  <span class="co"># list content in reverse order</span>
 <span class="kw">ls</span> -art  <span class="co"># options can be chained; equivalently, ls -a -l -t</span>
 
-<span class="kw">ls</span> -R  <span class="co"># list all content in working directory, including content in subdirectories </span>
+<span class="kw">ls</span> -R  <span class="co"># list all content in working directory, including content in subdirectories</span>
 <span class="kw">find</span>  <span class="co"># list all files contained in the working directory and its subdirectories; same as ls -aR</span></code></pre>
   </div>
   <h3 id="manipulate-filesystem">
@@ -537,7 +631,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">mv</span> -i file todir  <span class="co"># adds confirmation step to prevent overwrites</span>
 <span class="kw">mv</span> filename new_filename  <span class="co"># rename a file or directory</span>
 
-<span class="kw">rm</span> file1 file2  <span class="co"># delete file/s </span>
+<span class="kw">rm</span> file1 file2  <span class="co"># delete file/s</span>
 <span class="kw">rmdir</span> dirname  <span class="co"># deletes directory IF empty</span>
 <span class="kw">rm</span> -R dirname  <span class="co"># delete directory and its contents</span></code></pre>
   </div>
@@ -674,7 +768,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co"># /regex to search, then n and N to page up and down through results</span>
 <span class="co"># q to quit</span>
 
-<span class="kw">cat</span> file  <span class="co"># show file contents on screen </span>
+<span class="kw">cat</span> file  <span class="co"># show file contents on screen</span>
 <span class="kw">cat</span> file1 file2  <span class="co"># shows concatenated files</span>
 <span class="kw">tac</span> file  <span class="co"># show content of file in reverse order</span>
 <span class="kw">clear</span>  <span class="co"># clear the screen by printing many blank lines</span>
@@ -710,7 +804,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">cp</span> <span class="dt">\*</span>html dirname  <span class="co"># copy anything ending with 'html' to specified directory</span>
 <span class="kw">cp</span> [abd]<span class="dt">\*</span>.txt dirname  <span class="co"># copy all files beginning with 'a', 'b', or 'c' and ending with '.txt'</span>
 <span class="kw">cp</span> [!0-9]<span class="dt">\*</span>.txt dirname  <span class="co"># copy all files  ending with '.txt', NOT beginning with a number between 0-9</span>
-<span class="kw">cp</span> [[:upper:]]<span class="dt">\*</span> dirname  <span class="co"># copy all files that begin with a capital letter; </span>
+<span class="kw">cp</span> [[:upper:]]<span class="dt">\*</span> dirname  <span class="co"># copy all files that begin with a capital letter;</span>
 <span class="co"># see also [[:lower:]], [[:digit:]], [[:alpha:]], [[:alnum:]]</span>
 <span class="kw">cp</span> b?t.txt dirname  <span class="co"># copy all files with exactly one character between 'b' and 't.txt'</span>
 <span class="kw">cp</span> b??t.txt dirname  <span class="co"># copy all files with exactly two characters between 'b' and 't.txt'</span></code></pre>

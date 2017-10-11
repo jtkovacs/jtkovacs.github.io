@@ -1,6 +1,5 @@
 # Bash basics
 
-
 ## What is Bash?
 
 Through a (virtual) terminal you can send commands to the shell, which passes commands along to the OS. You could also write scripts for the shell to run. The terminology around this is muddled because of the way computer architecture has evolved and because the same words are used differently across operating systems and computing subfields ([1](http://stackoverflow.com/questions/21464073/shells-vs-command-interpreters-vs-command-line), [2](http://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line#comment683259_506510), [3](http://askubuntu.com/questions/506510/what-is-the-difference-between-terminal-console-shell-and-command-line), [4](http://stackoverflow.com/questions/21014344/terminal-or-console-or-shell-or-command-prompt), [5](http://linuxcommand.org/lts0010.php)):
@@ -41,16 +40,9 @@ In addition to commands that are typed and entered, Bash responds to hotkeys (`^
 
 ```Bash
 #   lack of WHITESPACE is VERY IMPORTANT!!!!
-
-USER='user_name'
-# create non-persistent EV
-
-USER = '$USER last_name'
-# use environmental variable in string
-
-nano .bash_profile
-export USER="user_name"
-# create persistent EV
+USER='user_name' # create non-persistent EV
+USER='$USER last_name' # use environmental variable in string
+export USER="user_name" # edit .bash_profile to create persistent EV
 
 unset USER
 

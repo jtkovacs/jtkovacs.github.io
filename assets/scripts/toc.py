@@ -12,8 +12,11 @@ import sys
 
 
 # Open .md file based on filename argument
-## $ TOC information-architecture.md
-wd = '/home/jtk/Site/refs/'
+## $ toc information-architecture.md
+## alias should handle cd to main site folder
+## Linux: '/home/jtk/Site/'
+## PythonAnywhere: '~/jtkovacs.github.io/'
+wd = 'refs/'
 fname = wd + 'notes/' + sys.argv[1]
 fhand = open(fname, 'r')
 
@@ -114,7 +117,7 @@ for i,h in enumerate(headers):
 
 # Open new .md file
 ## Constructing the output filename: /home/jtk/Site/refs/tocs/fname_TOC.md
-foname = wd + 'tocs/' + sys.argv[1][:-3] + '_TOC.mg'
+foname = wd + 'tocs/' + sys.argv[1][:-3] + '_TOC.md'
 fout = open(foname, "w")
 
 

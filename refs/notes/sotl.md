@@ -5,18 +5,35 @@
 Per Booth (2011), a *learning interaction* happens between student, teacher, and *learning objects* within an *educational scenario* (“context and environment”). Learning objects are created by the teacher; educational scenarios established; and [instructional messages](#instructional-messages) crafted in line with [targets.](#targets)
 
 
+# Decompositions of teaching skill
 
-# Elements of instructional literacy
+## Keller's model of motivation, learning, and reinforcement design and management
+
+Keller (1983) writes practically on [motivation](#motivation-design) but he grounds it in his prior theoretical work.
+This work, in keeping with field theory/social learning theory, starts from the assumption that B, behavior is a function of E,
+the environment and P, the individual person, **B=f(E,P).** Then, as categories of behavior, Keller distinguishes between
+
+- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtk: I dispute this, because e.g. mental health];
+- **Performance** = f(motivation/effort, ability, opportunity); and
+- **Consequences** = performance + (benefits to the individual = reinforce motivation)
+
+Determinants E and P may be examined for each behavior, identifying instructional strategies:
+
+![](../illos/motivation.png)
+
+## Booth's elements of instructional literacy
 
 Per Booth (2011), core knowledge and skills for teaching (what she calls “instructional literacy”) includes:
 
 - capacity for **reflective practice** (not just after the fact, but primarily in the moment);
 - knowledge of **educational theory,** consisting of
     - **learning theory** (how people learn)
-    - **instructional theory** (how to teach), and 
-    - **curriculum theory** (content- and audience-specific considerations); 
+    - **instructional theory** (how to teach), and
+    - **curriculum theory** (content- and audience-specific considerations);
 - mastery of **teaching technologies** (for collaboration, assessment, etc.); and
 - integration and application of the prior three items, i.e. skill in **instructional design**
+
+
 
 
 
@@ -48,17 +65,7 @@ Per Keller (1983):
 
 #### Motivation theory
 
-Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.* He says that: 
-
-- In keeping with field theory/social learning theory, B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P);**
-- As categories of Behavior, is important to distinguish between:
-    - Effort = P's level of engagement and discipline, "a direct indicator of motivation"
-    - Performance = f(motivation,ability,opportunity)
-    - Consequences = Performance + (benefits to the individual = motivation)
-- Determinants E and P may be examined for each Behavior *with a focus on Motivation* to identify instructional strategies:
-
-![](../illos/motivation.png)
-
+Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.*
 
 
 ### Instructional theory
@@ -67,11 +74,11 @@ Per Keller (1983), motivation an extremely important part of learning; it is *wh
 
 Per Booth (2011):
 
-- Logistics: 
-    - focus on goals 
+- Logistics:
+    - focus on goals
     - be organized enough to achieve them
-- Interpersonal: 
-    - be authentic 
+- Interpersonal:
+    - be authentic
     - show your personal investment in the class and the students
 
 #### Instructional messages
@@ -107,7 +114,7 @@ A very important note: **optimal motivation is moderate motivation** (excess mot
 
 Per Keller (1983), motivational design should address:
 
-- **Interest** = f(trait_curiosity,presentation) 
+- **Interest** = f(trait_curiosity,presentation)
     - ***Simulate curiosity*** = f(novelty, paradox, incongruity, complexity, abruptness, conflict)
         - Perceptual vs. *epistemic curiosity*
         - Trait vs. *state curiosity*
@@ -134,11 +141,11 @@ Per Keller (1983), motivational design should address:
         - Make the pathway to success clear (mastery learning)
         - Give feedback that clarifies the connection between efforts and outcomes
 - **Satisfaction** = f(intrinsic_reinforcement, extrinsic_reinforcement)
-    - To preserve intrinsic motivation (which can be destroyed by extrinsic reinforcement): 
+    - To preserve intrinsic motivation (which can be destroyed by extrinsic reinforcement):
         - give "endogeneous" rewards that "customarily or naturally follows from a task"
         - give exogeneous rewards unexpectedly
     - Give motivational feedback verbally and immediately
-    - Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable 
+    - Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable
 
 
 ## Booth’s USER method
@@ -151,7 +158,7 @@ Source: Booth, 2011, p. 19.
 
 
 
- 
+
 
 
 # Sources
@@ -167,7 +174,7 @@ Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed
 
 - [Washington Center's learning communities repository](http://wacenter.evergreen.edu/)
 
-## Read 
+## Read
 
 ## Unread
 

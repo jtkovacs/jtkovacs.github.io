@@ -1,26 +1,29 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 1181 words | updated 10/12/2017</p><div class="TOC">- &nbsp;1. [Decompositions of instructional skill](#decompositions-of-instructional-skill)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 1197 words | updated 10/12/2017</p><div class="TOC">- &nbsp;1. [Decompositions of instructional skill](#decompositions-of-instructional-skill)
 	- &nbsp;1.1. [Booth's elements of instructional literacy](#booths-elements-of-instructional-literacy)
-- &nbsp;2. [Educational theory](#educational-theory)
-	- &nbsp;2.1. [How does educational theory draw on relevant sciences?](#how-does-educational-theory-draw-on-relevant-sciences)
-	- &nbsp;2.2. [Keller's model of motivation, learning, and reinforcement](#kellers-model-of-motivation-learning-and-reinforcement)
+- &nbsp;2. [Movements and buzzwords](#movements-and-buzzwords)
+	- &nbsp;2.1. [Critical pedagogy](#critical-pedagogy)
+	- &nbsp;2.2. [Integrative learning](#integrative-learning)
 	- &nbsp;2.3. [Problem-based learning](#problem-based-learning)
-	- &nbsp;2.4. [Qualities of excellent teachers](#qualities-of-excellent-teachers)
-	- &nbsp;2.5. [Reflective practice](#reflective-practice)
-- &nbsp;3. [Instructional design](#instructional-design)
-	- &nbsp;3.1. [Booth’s USER method](#booth’s-user-method)
-	- &nbsp;3.2. [Motivation design](#motivation-design)
-		- &nbsp;3.2.1. [Interest](#interest)
-		- &nbsp;3.2.2. [Relevance](#relevance)
-		- &nbsp;3.2.3. [Expectancy](#expectancy)
-		- &nbsp;3.2.4. [Satisfaction](#satisfaction)
-	- &nbsp;3.3. [Instructional messages](#instructional-messages)
-	- &nbsp;3.4. [Teaching technologies](#teaching-technologies)
-	- &nbsp;3.5. [Targets](#targets)
-- &nbsp;4. [Sources](#sources)
-	- &nbsp;4.1. [Cited](#cited)
-	- &nbsp;4.2. [References](#references)
-	- &nbsp;4.3. [Read](#read)
-	- &nbsp;4.4. [Unread](#unread)
+- &nbsp;3. [Educational theory](#educational-theory)
+	- &nbsp;3.1. [How does educational theory draw on relevant sciences?](#how-does-educational-theory-draw-on-relevant-sciences)
+	- &nbsp;3.2. [Keller's model of motivation, learning, and reinforcement](#kellers-model-of-motivation-learning-and-reinforcement)
+	- &nbsp;3.3. [Qualities of excellent teachers](#qualities-of-excellent-teachers)
+	- &nbsp;3.4. [Reflective practice](#reflective-practice)
+- &nbsp;4. [Instructional design](#instructional-design)
+	- &nbsp;4.1. [Booth’s USER method](#booth’s-user-method)
+	- &nbsp;4.2. [Motivation design](#motivation-design)
+		- &nbsp;4.2.1. [Interest](#interest)
+		- &nbsp;4.2.2. [Relevance](#relevance)
+		- &nbsp;4.2.3. [Expectancy](#expectancy)
+		- &nbsp;4.2.4. [Satisfaction](#satisfaction)
+	- &nbsp;4.3. [Instructional messages](#instructional-messages)
+	- &nbsp;4.4. [Teaching technologies](#teaching-technologies)
+	- &nbsp;4.5. [Targets](#targets)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [Cited](#cited)
+	- &nbsp;5.2. [References](#references)
+	- &nbsp;5.3. [Read](#read)
+	- &nbsp;5.4. [Unread](#unread)
 </div>
 
 # 1. Decompositions of instructional skill
@@ -40,30 +43,11 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
 
 
 
+# 2. Movements and buzzwords
 
+## 2.1. Critical pedagogy
 
-# 2. Educational theory
-
-## 2.1. How does educational theory draw on relevant sciences?
-
-Per Keller (1983):
-
-- **Behavioral psychology** --> feedback and reinforcement
-- **Cognitive psychology** re: info processing --> "how to organize instruction" for "acquisition and retention of knowledge and skills"
-    - "also studied in relation to individual differences in ability and learning style"
-- [Motivation](#motivation-design) draws on
-
-## 2.2. Keller's model of motivation, learning, and reinforcement
-
-Keller (1983) writes practically on [motivation](#motivation-design) but he grounds it in his prior theoretical work. This work, in keeping with field theory/social learning theory, starts from the assumption that B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P).** Then, as categories of behavior, Keller distinguishes between
-
-- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtk: I dispute this, because e.g. mental health];
-- **Performance** = f(motivation/effort, ability, opportunity); and
-- **Consequences** = performance + (benefits to the individual = reinforce motivation)
-
-Determinants E and P may be examined for each behavior, identifying instructional strategies:
-
-![](../illos/motivation.png)
+## 2.2. Integrative learning
 
 ## 2.3. Problem-based learning
 
@@ -76,7 +60,34 @@ Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critica
 
 While admitting that their own experience with PBL differed in important ways (e.g. they presented fairly tidy questions rather than "ill-structured problems"), they claim that PBL is only superficially aligned with critical pedagogy. They say that, despite rebranding teachers as facilitators/tutors/etc. who guide to small groups, in PBL the oppressive dichotomy (Freire) of student/teacher is left intact because "students are seen only as objects to control ... student are never seen as teachers").
 
-## 2.4. Qualities of excellent teachers
+
+
+
+
+# 3. Educational theory
+
+## 3.1. How does educational theory draw on relevant sciences?
+
+Per Keller (1983):
+
+- **Behavioral psychology** --> feedback and reinforcement
+- **Cognitive psychology** re: info processing --> "how to organize instruction" for "acquisition and retention of knowledge and skills"
+    - "also studied in relation to individual differences in ability and learning style"
+- [Motivation](#motivation-design) draws on
+
+## 3.2. Keller's model of motivation, learning, and reinforcement
+
+Keller (1983) writes practically on [motivation](#motivation-design) but he grounds it in his prior theoretical work. This work, in keeping with field theory/social learning theory, starts from the assumption that B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P).** Then, as categories of behavior, Keller distinguishes between
+
+- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtk: I dispute this, because e.g. mental health];
+- **Performance** = f(motivation/effort, ability, opportunity); and
+- **Consequences** = performance + (benefits to the individual = reinforce motivation)
+
+Determinants E and P may be examined for each behavior, identifying instructional strategies:
+
+![](../illos/motivation.png)
+
+## 3.3. Qualities of excellent teachers
 
 Per Booth (2011):
 
@@ -87,7 +98,7 @@ Per Booth (2011):
     - be authentic
     - show your personal investment in the class and the students
 
-## 2.5. Reflective practice
+## 3.4. Reflective practice
 
 Per Booth (2011), a miscellany of advice regarding beliefs and attitudes:
 
@@ -99,18 +110,20 @@ Per Booth (2011), a miscellany of advice regarding beliefs and attitudes:
 
 
 
-# 3. Instructional design
+
+
+# 4. Instructional design
 
 
 
-## 3.1. Booth’s USER method
+## 4.1. Booth’s USER method
 
 <img src="../illos/USER-ID-method.png" width="400px">
 
 Source: Booth, 2011, p. 19.
 
 
-## 3.2. Motivation design
+## 4.2. Motivation design
 
 Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.*
 
@@ -118,7 +131,7 @@ A very important note: **optimal motivation is moderate motivation** (excess mot
 
 Keller's [theory of learning](#kellers-model-of-motivation-learning-and-reinforcement) and the underlying sciences imply that motivational design should address:
 
-### 3.2.1. Interest
+### 4.2.1. Interest
 
 Interest = f(trait_curiosity,presentation); see [instructional messages.](#instructional-messages)
 
@@ -135,7 +148,7 @@ Interest = f(trait_curiosity,presentation); see [instructional messages.](#instr
     - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
     - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
 
-### 3.2.2. Relevance
+### 4.2.2. Relevance
 
 Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
 
@@ -146,7 +159,7 @@ Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. M
 - **Instrumental** relevance can be made clear through learning objectives
 - **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
 
-### 3.2.3. Expectancy
+### 4.2.3. Expectancy
 
 Expectancy = f(challenge, support), similar to "zone of proximal development"
 
@@ -156,7 +169,7 @@ Expectancy = f(challenge, support), similar to "zone of proximal development"
     - Make the pathway to success clear (mastery learning)
     - Give feedback that clarifies the connection between efforts and outcomes
 
-### 3.2.4. Satisfaction
+### 4.2.4. Satisfaction
 
 Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
 
@@ -168,7 +181,7 @@ Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
 
 
 
-## 3.3. Instructional messages
+## 4.3. Instructional messages
 
 Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
@@ -178,11 +191,11 @@ Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messa
 
 
 
-## 3.4. Teaching technologies
+## 4.4. Teaching technologies
 
 
 
-## 3.5. Targets
+## 4.5. Targets
 
 Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them”. Targets form a hierarchy:
 
@@ -196,9 +209,9 @@ Per Booth (2011), targets “allow you to structure measurable learning interact
 
 
 
-# 4. Sources
+# 5. Sources
 
-## 4.1. Cited
+## 5.1. Cited
 
 Booth, C. (2011). *Reflective Teaching, Effective Learning: Instructional Literacy for Library Educators.* Chicago, IL: American Library Association Editions.
 
@@ -206,13 +219,14 @@ Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed
 
 Stevens, E. & Tieman, A. (2017). We used problem-based learning in library instruction and came to question its treatment of students. _In The Library With The Lead Pipe._ Retrieved from (http://www.inthelibrarywiththeleadpipe.org/2017/we-used-problem-based-learning-in-library-instruction-and-came-to-question-its-treatment-of-students/)[http://www.inthelibrarywiththeleadpipe.org/2017/we-used-problem-based-learning-in-library-instruction-and-came-to-question-its-treatment-of-students/]
 
-## 4.2. References
+## 5.2. References
 
 - [Washington Center's learning communities repository](http://wacenter.evergreen.edu/)
+- [MERLOT II online teaching resources](https://www.merlot.org/merlot/index.htm)
 
-## 4.3. Read
+## 5.3. Read
 
-## 4.4. Unread
+## 5.4. Unread
 
 - [Transfer of learning](http://www.nwlink.com/~donclark/hrd/learning/transfer.html)
 - [High-impact or engaged learning practices](https://uwaterloo.ca/centre-for-teaching-excellence/resources/integrative-learning/high-impact-practices-hips-or-engaged-learning-practices)

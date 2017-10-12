@@ -195,6 +195,7 @@ Stevens, E. & Tieman, A. (2017). We used problem-based learning in library instr
 ## References
 
 - [Washington Center's learning communities repository](http://wacenter.evergreen.edu/)
+- [MERLOT II online teaching resources](https://www.merlot.org/merlot/index.htm)
 
 ## Read
 

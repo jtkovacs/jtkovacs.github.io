@@ -1,49 +1,19 @@
 
-
-# Core terms
-
-Per Booth (2011), a *learning interaction* happens between student, teacher, and *learning objects* within an *educational scenario* (“context and environment”). Learning objects are created by the teacher; educational scenarios established; and [instructional messages](#instructional-messages) crafted in line with [targets.](#targets)
-
-
-# Decompositions of teaching skill
-
-## Keller's model of motivation, learning, and reinforcement design and management
-
-Keller (1983) writes practically on [motivation](#motivation-design) but he grounds it in his prior theoretical work.
-This work, in keeping with field theory/social learning theory, starts from the assumption that B, behavior is a function of E,
-the environment and P, the individual person, **B=f(E,P).** Then, as categories of behavior, Keller distinguishes between
-
-- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtk: I dispute this, because e.g. mental health];
-- **Performance** = f(motivation/effort, ability, opportunity); and
-- **Consequences** = performance + (benefits to the individual = reinforce motivation)
-
-Determinants E and P may be examined for each behavior, identifying instructional strategies:
-
-![](../illos/motivation.png)
+# Decompositions of instructional skill
 
 ## Booth's elements of instructional literacy
 
 Per Booth (2011), core knowledge and skills for teaching (what she calls “instructional literacy”) includes:
 
-- capacity for **reflective practice** (not just after the fact, but primarily in the moment);
-- knowledge of **educational theory,** consisting of
-    - **learning theory** (how people learn)
-    - **instructional theory** (how to teach), and
-    - **curriculum theory** (content- and audience-specific considerations);
-- mastery of **teaching technologies** (for collaboration, assessment, etc.); and
-- integration and application of the prior three items, i.e. skill in **instructional design**
+- Capacity for **reflective practice** (not just after the fact, but primarily in the moment);
+- Knowledge of **educational theory,** consisting of
+    - **Learning theory** (how people learn)
+    - **Instructional theory** (how to teach), and
+    - **Curriculum theory** (content- and audience-specific considerations);
+- Mastery of **teaching technologies** (for collaboration, assessment, etc.); and
+- Integration and application of the prior three items, i.e. skill in **instructional design**
 
 
-
-
-
-
-
-# Reflective practice
-
-Per Booth (2011), a miscellany of advice regarding beliefs and attitudes:
-
-- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching
 
 
 
@@ -57,46 +27,47 @@ Per Keller (1983):
 - **Behavioral psychology** --> feedback and reinforcement
 - **Cognitive psychology** re: info processing --> "how to organize instruction" for "acquisition and retention of knowledge and skills"
     - "also studied in relation to individual differences in ability and learning style"
-- [Motivation](#motivation)
+- [Motivation](#motivation-design) draws on
 
-## Branches of educational theory
+## Keller's model of motivation, learning, and reinforcement
 
-### Learning theory
+Keller (1983) writes practically on [motivation](#motivation-design) but he grounds it in his prior theoretical work. This work, in keeping with field theory/social learning theory, starts from the assumption that B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P).** Then, as categories of behavior, Keller distinguishes between
 
-#### Motivation theory
+- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtk: I dispute this, because e.g. mental health];
+- **Performance** = f(motivation/effort, ability, opportunity); and
+- **Consequences** = performance + (benefits to the individual = reinforce motivation)
 
-Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.*
+Determinants E and P may be examined for each behavior, identifying instructional strategies:
 
+![](../illos/motivation.png)
 
-### Instructional theory
+## Problem-based learning
 
-#### Qualities of excellent teachers
+Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critical pedagogy (Freire, Shore, books) but elsewhere---in McMaster's medical schools, spreading to libraries c. 1990s. They identify the following open questions in PBL, at least in the context of library instruction:
+
+- How important is group work when it comes to problem-solving? Should groups report to the class?
+- How much time, how many sessions, or what kind of timeline is required for PBL versus lectures?
+- How much collaboration with instructors, to integrate course goals, content, or messaging re: library research?
+- How much foundational instruction, versus 'thrown directly into the pool'?
+
+While admitting that their own experience with PBL differed in important ways (e.g. they presented fairly tidy questions rather than "ill-structured problems"), they claim that PBL is only superficially aligned with critical pedagogy. They say that, despite rebranding teachers as facilitators/tutors/etc. who guide to small groups, in PBL the oppressive dichotomy (Freire) of student/teacher is left intact because "students are seen only as objects to control ... student are never seen as teachers").
+
+## Qualities of excellent teachers
 
 Per Booth (2011):
 
-- Logistics:
+- [Logistics]
     - focus on goals
     - be organized enough to achieve them
-- Interpersonal:
+- [Interpersonal]
     - be authentic
     - show your personal investment in the class and the students
 
-#### Instructional messages
+## Reflective practice
 
-Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
+Per Booth (2011), a miscellany of advice regarding beliefs and attitudes:
 
-- get attention, hold interest: **UNEXPECTED, STORIES,** clearly relevant, clearly actionable
-- facilitate comprehension: **SIMPLE, CONCRETE**
-- appeal and persuade: **CREDIBLE, EMOTIONAL**
-
-#### Targets
-
-Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them”. Targets form a hierarchy:
-
-- OUTCOMES = hoped-for lasting changes
-- GOALS = express a theory of how to produce outcomes
-- OBJECTIVES = strategies/skills needed to attain goals
-
+- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching
 
 
 
@@ -106,46 +77,6 @@ Per Booth (2011), targets “allow you to structure measurable learning interact
 
 # Instructional design
 
-## Teaching technologies
-
-## Motivation design
-
-A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
-
-Per Keller (1983), motivational design should address:
-
-- **Interest** = f(trait_curiosity,presentation)
-    - ***Simulate curiosity*** = f(novelty, paradox, incongruity, complexity, abruptness, conflict)
-        - Perceptual vs. *epistemic curiosity*
-        - Trait vs. *state curiosity*
-        - Note that curiosity can be fatigued by excessive stimulation
-        - Appeal to emotions, personal experience, the familiar e.g. with analogies, metaphors, anecdotes, questions
-    - ***Sustain curiosity:***
-        - Allowance to explore
-        - Lower the cost of failure
-        - Occasional surprises and humor
-        - Make the familiar strange and vice versa
-        - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
-        - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
-- **Relevance** = f(alignment, clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
-    - **Personal**
-        - Promote a sense of **achievement** by combining "standards of excellence" with moderate risk and feedback that may be non-zero sum
-        - Promote **empowerment** by allowing choice, responsibility, and influence
-        - Promote **affiliation** by establishing trust, which may include non-zero sum grading
-    - **Instrumental** relevance can be made clear through learning objectives
-    - **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
-- **Expectancy** = f(challenge, support), similar to "zone of proximal development"
-    - Address self-fulfilling prophecies of failure
-    - *[attribution theory/locus of control/personal causation/learned helplessness]*
-        - Provide meaningful successes (not trivial small wins; learners know it won't transfer)
-        - Make the pathway to success clear (mastery learning)
-        - Give feedback that clarifies the connection between efforts and outcomes
-- **Satisfaction** = f(intrinsic_reinforcement, extrinsic_reinforcement)
-    - To preserve intrinsic motivation (which can be destroyed by extrinsic reinforcement):
-        - give "endogeneous" rewards that "customarily or naturally follows from a task"
-        - give exogeneous rewards unexpectedly
-    - Give motivational feedback verbally and immediately
-    - Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable
 
 
 ## Booth’s USER method
@@ -154,6 +85,86 @@ Per Keller (1983), motivational design should address:
 
 Source: Booth, 2011, p. 19.
 
+
+## Motivation design
+
+Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.*
+
+A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
+
+Keller's [theory of learning](#kellers-model-of-motivation-learning-and-reinforcement) and the underlying sciences imply that motivational design should address:
+
+### Interest
+
+Interest = f(trait_curiosity,presentation); see [instructional messages.](#instructional-messages)
+
+- ***Simulate curiosity*** = f(novelty, paradox, incongruity, complexity, abruptness, conflict)
+    - Perceptual vs. *epistemic curiosity*
+    - Trait vs. *state curiosity*
+    - Note that curiosity can be fatigued by excessive stimulation
+    - Appeal to emotions, personal experience, the familiar e.g. with analogies, metaphors, anecdotes, questions
+- ***Sustain curiosity:***
+    - Allowance to explore
+    - Lower the cost of failure
+    - Occasional surprises and humor
+    - Make the familiar strange and vice versa
+    - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
+    - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
+
+### Relevance
+
+Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
+
+- **Personal**
+    - Promote a sense of **achievement** by combining "standards of excellence" with moderate risk and feedback that may be non-zero sum
+    - Promote **empowerment** by allowing choice, responsibility, and influence
+    - Promote **affiliation** by establishing trust, which may include non-zero sum grading
+- **Instrumental** relevance can be made clear through learning objectives
+- **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
+
+### Expectancy
+
+Expectancy = f(challenge, support), similar to "zone of proximal development"
+
+- Address self-fulfilling prophecies of failure
+- *[attribution theory/locus of control/personal causation/learned helplessness]*
+    - Provide meaningful successes (not trivial small wins; learners know it won't transfer)
+    - Make the pathway to success clear (mastery learning)
+    - Give feedback that clarifies the connection between efforts and outcomes
+
+### Satisfaction
+
+Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
+
+- To preserve intrinsic motivation (which can be destroyed by extrinsic reinforcement):
+    - give "endogeneous" rewards that "customarily or naturally follows from a task"
+    - give exogeneous rewards unexpectedly
+- Give motivational feedback verbally and immediately
+- Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable
+
+
+
+## Instructional messages
+
+Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
+
+- get attention, hold interest: **UNEXPECTED, STORIES,** clearly relevant, clearly actionable
+- facilitate comprehension: **SIMPLE, CONCRETE**
+- appeal and persuade: **CREDIBLE, EMOTIONAL**
+
+
+
+## Teaching technologies
+
+
+
+## Targets
+
+Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them”. Targets form a hierarchy:
+
+- OUTCOMES = hoped-for lasting changes
+- GOALS = express a theory of how to produce outcomes
+- OBJECTIVES = strategies/skills needed to attain goals
 
 
 
@@ -169,6 +180,7 @@ Booth, C. (2011). *Reflective Teaching, Effective Learning: Instructional Litera
 
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 
+Stevens, E. & Tieman, A. (2017). We used problem-based learning in library instruction and came to question its treatment of students. _In The Library With The Lead Pipe._ Retrieved from (http://www.inthelibrarywiththeleadpipe.org/2017/we-used-problem-based-learning-in-library-instruction-and-came-to-question-its-treatment-of-students/)[http://www.inthelibrarywiththeleadpipe.org/2017/we-used-problem-based-learning-in-library-instruction-and-came-to-question-its-treatment-of-students/]
 
 ## References
 

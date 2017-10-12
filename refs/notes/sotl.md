@@ -16,6 +16,25 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
 
 
 
+# Movements and buzzwords
+
+## Critical pedagogy
+
+## Integrative learning
+
+## Problem-based learning
+
+Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critical pedagogy (Freire, Shore, books) but elsewhere---in McMaster's medical schools, spreading to libraries c. 1990s. They identify the following open questions in PBL, at least in the context of library instruction:
+
+- How important is group work when it comes to problem-solving? Should groups report to the class?
+- How much time, how many sessions, or what kind of timeline is required for PBL versus lectures?
+- How much collaboration with instructors, to integrate course goals, content, or messaging re: library research?
+- How much foundational instruction, versus 'thrown directly into the pool'?
+
+While admitting that their own experience with PBL differed in important ways (e.g. they presented fairly tidy questions rather than "ill-structured problems"), they claim that PBL is only superficially aligned with critical pedagogy. They say that, despite rebranding teachers as facilitators/tutors/etc. who guide to small groups, in PBL the oppressive dichotomy (Freire) of student/teacher is left intact because "students are seen only as objects to control ... student are never seen as teachers").
+
+
+
 
 
 # Educational theory
@@ -41,17 +60,6 @@ Determinants E and P may be examined for each behavior, identifying instructiona
 
 ![](../illos/motivation.png)
 
-## Problem-based learning
-
-Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critical pedagogy (Freire, Shore, books) but elsewhere---in McMaster's medical schools, spreading to libraries c. 1990s. They identify the following open questions in PBL, at least in the context of library instruction:
-
-- How important is group work when it comes to problem-solving? Should groups report to the class?
-- How much time, how many sessions, or what kind of timeline is required for PBL versus lectures?
-- How much collaboration with instructors, to integrate course goals, content, or messaging re: library research?
-- How much foundational instruction, versus 'thrown directly into the pool'?
-
-While admitting that their own experience with PBL differed in important ways (e.g. they presented fairly tidy questions rather than "ill-structured problems"), they claim that PBL is only superficially aligned with critical pedagogy. They say that, despite rebranding teachers as facilitators/tutors/etc. who guide to small groups, in PBL the oppressive dichotomy (Freire) of student/teacher is left intact because "students are seen only as objects to control ... student are never seen as teachers").
-
 ## Qualities of excellent teachers
 
 Per Booth (2011):
@@ -68,6 +76,8 @@ Per Booth (2011):
 Per Booth (2011), a miscellany of advice regarding beliefs and attitudes:
 
 - Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching
+
+
 
 
 

@@ -854,7 +854,19 @@ pdb.set_trace() # launches a psuedo-shell
 `exit()`
 ```
 
+#### Raising an error
 
+Dr. Joseph Hellerman's code:
+
+```Python
+import pandas as pd
+def func(df):
+    """"
+    :param pd.DataFrame df: should have a column named "hours"
+    """
+    if not "hours" in df.columns:
+        raise ValueError("DataFrame should have a column named 'hours'.")
+```
 
 
 

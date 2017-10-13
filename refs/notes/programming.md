@@ -91,19 +91,7 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 These practices are meant to (1) maintain code quality and (2) manage code well as an asset:
 
-## Style
-
-### Naming conventions
-
-## Reproducibility
-
-### Version control
-
-### Literate programming and notebooks
-
-### Documentation
-
-## Debugging & testing
+## Correctness
 
 ### Types of errors
 
@@ -165,6 +153,33 @@ Per notes by Professor Joseph Hellerman at UW, debugging consists of:
 </table>
 
 \* "I've probably used it a dozen times or so in five years of coding"
+
+#### Testing
+
+TKTK
+
+##### Raising errors
+
+
+## Readability and style
+
+### Naming conventions
+
+
+## Reproducibility
+
+See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
+
+### Version control
+
+### Literate programming and notebooks
+
+### Documentation
+
+
+
+
+
 
 # Sources
 

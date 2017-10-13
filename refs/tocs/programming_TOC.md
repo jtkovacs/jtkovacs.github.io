@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 975 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 990 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
 	- &nbsp;1.1. [... as a profession?](#...-as-a-profession)
 		- &nbsp;1.1.1. [What skills are required for programming?](#what-skills-are-required-for-programming)
 	- &nbsp;1.2. [... in relation to hardware?](#...-in-relation-to-hardware)
@@ -8,15 +8,17 @@
 		- &nbsp;1.3.3. [What are major types of programming by level of abstraction?](#what-are-major-types-of-programming-by-level-of-abstraction)
 		- &nbsp;1.3.4. [Which language for what task?](#which-language-for-what-task)
 - &nbsp;2. [What are good programming practices?](#what-are-good-programming-practices)
-	- &nbsp;2.1. [Style](#style)
-		- &nbsp;2.1.1. [Naming conventions](#naming-conventions)
-	- &nbsp;2.2. [Reproducibility](#reproducibility)
-		- &nbsp;2.2.1. [Version control](#version-control)
-		- &nbsp;2.2.2. [Literate programming and notebooks](#literate-programming-and-notebooks)
-		- &nbsp;2.2.3. [Documentation](#documentation)
-	- &nbsp;2.3. [Debugging & testing](#debugging-testing)
-		- &nbsp;2.3.1. [Types of errors](#types-of-errors)
-		- &nbsp;2.3.2. [Debugging process](#debugging-process)
+	- &nbsp;2.1. [Correctness](#correctness)
+		- &nbsp;2.1.1. [Types of errors](#types-of-errors)
+		- &nbsp;2.1.2. [Debugging process](#debugging-process)
+			- &nbsp;2.1.2.1. [Testing](#testing)
+				- &nbsp;2.1.2.1.1. [Raising errors](#raising-errors)
+	- &nbsp;2.2. [Readability and style](#readability-and-style)
+		- &nbsp;2.2.1. [Naming conventions](#naming-conventions)
+	- &nbsp;2.3. [Reproducibility](#reproducibility)
+		- &nbsp;2.3.1. [Version control](#version-control)
+		- &nbsp;2.3.2. [Literate programming and notebooks](#literate-programming-and-notebooks)
+		- &nbsp;2.3.3. [Documentation](#documentation)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -120,21 +122,9 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 These practices are meant to (1) maintain code quality and (2) manage code well as an asset:
 
-## 2.1. Style
+## 2.1. Correctness
 
-### 2.1.1. Naming conventions
-
-## 2.2. Reproducibility
-
-### 2.2.1. Version control
-
-### 2.2.2. Literate programming and notebooks
-
-### 2.2.3. Documentation
-
-## 2.3. Debugging & testing
-
-### 2.3.1. Types of errors
+### 2.1.1. Types of errors
 
 Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
 
@@ -166,7 +156,7 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
         <td rowspan="2">Debugger</td>
 </table>
 
-### 2.3.2. Debugging process
+### 2.1.2. Debugging process
 
 Per notes by Professor Joseph Hellerman at UW, debugging consists of:
 
@@ -194,6 +184,33 @@ Per notes by Professor Joseph Hellerman at UW, debugging consists of:
 </table>
 
 \* "I've probably used it a dozen times or so in five years of coding"
+
+#### 2.1.2.1. Testing
+
+TKTK
+
+##### 2.1.2.1.1. Raising errors
+
+
+## 2.2. Readability and style
+
+### 2.2.1. Naming conventions
+
+
+## 2.3. Reproducibility
+
+See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
+
+### 2.3.1. Version control
+
+### 2.3.2. Literate programming and notebooks
+
+### 2.3.3. Documentation
+
+
+
+
+
 
 # 3. Sources
 

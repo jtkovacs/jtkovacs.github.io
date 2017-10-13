@@ -1,6 +1,16 @@
 
 
-# What is progrmming?
+# What is programming?
+
+## ... as a profession?
+
+### What skills are required for programming?
+
+[Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+
+
+
+## ... in relation to hardware?
 
 What is the function of secondary memory in a computer?
 
@@ -47,13 +57,15 @@ Explain each of the following using an example of a human capability
 - [ ] Output Device.
 
 
-## What is an algorithm?
+
+
+## Programming languages
+
+### What is an algorithm?
 
 An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms (the issues of algorithmic bias and algorithmic transparency).
 
 - [http://datworkshop.org/](http://datworkshop.org/)
-
-## Programming languages
 
 ### What are major programming paradigms?
 
@@ -66,17 +78,18 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 <img src="../ILLOS/types-of-programming.gif" width=450px>
 
-### Which language?
+### Which language for what task?
 
 
-## What skills are required for programming?
 
-[Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+
 
 
 
 
 # What are good programming practices?
+
+These practices are meant to (1) maintain code quality and (2) manage code well as an asset:
 
 ## Style
 
@@ -102,35 +115,26 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
 - *Human or debugger must identify*
     - **incorrect logic** that violates the program specification.
 
-
 <table>
-
-    <th>Types of programming errors</th>
-
+    <th colspan="4">Types of programming errors</th>
     <tr>
         <td rowspan="2">Syntax</td>
         <td colspan="2">Semantic AKA exceptions</td>
         <td rowspan="2">Logical</td>
     </tr>
-
     <tr>
         <td>Static</td>
         <td>Dynamic</td>
     </tr>
-
     <tr>
         <td colspan="2">Compile-time errors</td>
         <td colspan="2">Run-time errors</td>
     </tr>
-
-    <th>Defenses against programming errors</th>
-
+    <th colspan="4">Defenses against programming errors</th>
     <tr>
         <td rowspan="2">Knowledge</td>
         <td colspan="2">(in Python) `try ... except` </td>
         <td rowspan="2">Debugger</td>
-
-
 </table>
 
 

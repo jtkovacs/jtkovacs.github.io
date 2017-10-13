@@ -1,10 +1,12 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 877 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is progrmming?](#what-is-progrmming)
-	- &nbsp;1.1. [What is an algorithm?](#what-is-an-algorithm)
-	- &nbsp;1.2. [Programming languages](#programming-languages)
-		- &nbsp;1.2.1. [What are major programming paradigms?](#what-are-major-programming-paradigms)
-		- &nbsp;1.2.2. [What are major types of programming by level of abstraction?](#what-are-major-types-of-programming-by-level-of-abstraction)
-		- &nbsp;1.2.3. [Which language?](#which-language)
-	- &nbsp;1.3. [What skills are required for programming?](#what-skills-are-required-for-programming)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 975 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
+	- &nbsp;1.1. [... as a profession?](#...-as-a-profession)
+		- &nbsp;1.1.1. [What skills are required for programming?](#what-skills-are-required-for-programming)
+	- &nbsp;1.2. [... in relation to hardware?](#...-in-relation-to-hardware)
+	- &nbsp;1.3. [Programming languages](#programming-languages)
+		- &nbsp;1.3.1. [What is an algorithm?](#what-is-an-algorithm)
+		- &nbsp;1.3.2. [What are major programming paradigms?](#what-are-major-programming-paradigms)
+		- &nbsp;1.3.3. [What are major types of programming by level of abstraction?](#what-are-major-types-of-programming-by-level-of-abstraction)
+		- &nbsp;1.3.4. [Which language for what task?](#which-language-for-what-task)
 - &nbsp;2. [What are good programming practices?](#what-are-good-programming-practices)
 	- &nbsp;2.1. [Style](#style)
 		- &nbsp;2.1.1. [Naming conventions](#naming-conventions)
@@ -14,6 +16,7 @@
 		- &nbsp;2.2.3. [Documentation](#documentation)
 	- &nbsp;2.3. [Debugging & testing](#debugging-testing)
 		- &nbsp;2.3.1. [Types of errors](#types-of-errors)
+		- &nbsp;2.3.2. [Debugging process](#debugging-process)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -26,7 +29,17 @@
 </div>
 
 
-# 1. What is progrmming?
+# 1. What is programming?
+
+## 1.1. ... as a profession?
+
+### 1.1.1. What skills are required for programming?
+
+[Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+
+
+
+## 1.2. ... in relation to hardware?
 
 What is the function of secondary memory in a computer?
 
@@ -73,36 +86,39 @@ Explain each of the following using an example of a human capability
 - [ ] Output Device.
 
 
-## 1.1. What is an algorithm?
+
+
+## 1.3. Programming languages
+
+### 1.3.1. What is an algorithm?
 
 An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms (the issues of algorithmic bias and algorithmic transparency).
 
 - [http://datworkshop.org/](http://datworkshop.org/)
 
-## 1.2. Programming languages
-
-### 1.2.1. What are major programming paradigms?
+### 1.3.2. What are major programming paradigms?
 
 - Structured
 - Functional
 - Object-oriented
 - Literate
 
-### 1.2.2. What are major types of programming by level of abstraction?
+### 1.3.3. What are major types of programming by level of abstraction?
 
 <img src="../ILLOS/types-of-programming.gif" width=450px>
 
-### 1.2.3. Which language?
+### 1.3.4. Which language for what task?
 
 
-## 1.3. What skills are required for programming?
 
-[Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+
 
 
 
 
 # 2. What are good programming practices?
+
+These practices are meant to (1) maintain code quality and (2) manage code well as an asset:
 
 ## 2.1. Style
 
@@ -128,38 +144,56 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
 - *Human or debugger must identify*
     - **incorrect logic** that violates the program specification.
 
-
 <table>
-
-    <th>Types of programming errors</th>
-
+    <th colspan="4">Types of programming errors</th>
     <tr>
         <td rowspan="2">Syntax</td>
-        <td colspan="2">Semantic AKA exceptions</td>
+        <td colspan="2">Exceptions AKA semantic?</td>
         <td rowspan="2">Logical</td>
     </tr>
-
     <tr>
         <td>Static</td>
         <td>Dynamic</td>
     </tr>
-
     <tr>
         <td colspan="2">Compile-time errors</td>
         <td colspan="2">Run-time errors</td>
     </tr>
-
-    <th>Defenses against programming errors</th>
-
+    <th colspan="4">Defenses against programming errors</th>
     <tr>
         <td rowspan="2">Knowledge</td>
         <td colspan="2">(in Python) `try ... except` </td>
         <td rowspan="2">Debugger</td>
-
-
 </table>
 
+### 2.3.2. Debugging process
 
+Per notes by Professor Joseph Hellerman at UW, debugging consists of:
+
+<table>
+    <th>Phase</th>
+    <th>Action</th>
+    <tr>
+        <td>Detection of problem</td>
+        <td>Testing</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Isolation of responsible code</td>
+        <td>Thought</td>
+    </tr>
+    <tr>
+        <td>Logging e.g. with `print`</td>
+    </tr>
+    <tr>
+        <td>Debugging tool\* e.g. `pdb`</td>
+    </tr>
+    <tr>
+        <td>Resolution</td>
+        <td>(specific to problem)</td>
+    </tr>
+</table>
+
+\* "I've probably used it a dozen times or so in five years of coding"
 
 # 3. Sources
 

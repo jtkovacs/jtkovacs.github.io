@@ -1,11 +1,8 @@
 # Environment
 
-## Writing & running Python
+## Command line
 
-
-### Command line
-
-Bash --> Python:
+#### Launch Python from Bash
 
 ```Bash
 python --version
@@ -14,37 +11,37 @@ python3  # launches some version of python 3
 quit()
 
 python fname.py  # run a script
-
 ```
 
-Bash <-- Python:
+#### Run Python script from Bash
 
 ```Python
 # this code will run only if the script is executed from the command line
 # it won't run if the script is imported by another script
 if __name__ == '__main__':
     ...
+```
 
-# taking arguments from command line
+#### Take arguments from command line
+
+```Python
 import sys
 script_name = sys.argv[0]
 for arg in sys.argv[1:]:
     ...
 ```
 
-### Jupyter notebook
+## Jupyter Notebook
 
-```Bash
-pip3 install jupyter  # install Jupyer Notebook
-# http://jupyter.readthedocs.io/en/latest/install.html
-
-jupyter notebook  # launches JN in wew browser
-# quit JN by typing ctrl+c twice in the command line
-# share JN by uploading it to GitHub --> http://nbviewer.jupyter.org/
-```
+Key commands:
 
 - `dd` deletes a cell
 
+```Bash
+jupyter notebook  # launches JN in browser
+# quit JN by typing ctrl+c twice in the command line
+# share JN by uploading it to GitHub --> http://nbviewer.jupyter.org/
+```
 
 ## Managing modules
 
@@ -740,7 +737,7 @@ reduce(lambda x, y: x if len(x) > len(y) else y, [s for s in strings])
 
 ### Currying
 
-currying is the technique of translating the evaluation of a function that takes multiple arguments (or a tuple of arguments) into evaluating a sequence of functions, each with a single argument.
+Currying is the technique of translating the evaluation of a function that takes multiple arguments (or a tuple of arguments) into evaluating a sequence of functions, each with a single argument.
 
 ### Map-reduce, filter, etc.
 
@@ -842,8 +839,6 @@ with assertRaise(x): // code to test
 
 ### Logging, errors, & debugging
 
-[Types of errors](https://docs.python.org/3/tutorial/errors.html): can be syntatic (problems with 'grammar' of Python), logical (problems with structure of program), or semantic (works computationally but does the wrong thing or has unintended behavior).
-
 ```Python
 import logging
 logging.basicConfig(filename=’fname.log’, level=logging.DEBUG)
@@ -853,8 +848,10 @@ logging.info(‘string to log’)
 
 import pdb
 pdb.set_trace() # launches a psuedo-shell
+`help`
 # type ‘n’ to run the next line of code
 # type ‘c’ to run as normal
+`exit()`
 ```
 
 

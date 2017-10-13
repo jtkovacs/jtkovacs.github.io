@@ -119,7 +119,7 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
     <th colspan="4">Types of programming errors</th>
     <tr>
         <td rowspan="2">Syntax</td>
-        <td colspan="2">Semantic AKA exceptions</td>
+        <td colspan="2">Exceptions AKA semantic?</td>
         <td rowspan="2">Logical</td>
     </tr>
     <tr>
@@ -137,7 +137,34 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
         <td rowspan="2">Debugger</td>
 </table>
 
+### Debugging process
 
+Per notes by Professor Joseph Hellerman at UW, debugging consists of:
+
+<table>
+    <th>Phase</th>
+    <th>Action</th>
+    <tr>
+        <td>Detection of problem</td>
+        <td>Testing</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Isolation of responsible code</td>
+        <td>Thought</td>
+    </tr>
+    <tr>
+        <td>Logging e.g. with `print`</td>
+    </tr>
+    <tr>
+        <td>Debugging tool\* e.g. `pdb`</td>
+    </tr>
+    <tr>
+        <td>Resolution</td>
+        <td>(specific to problem)</td>
+    </tr>
+</table>
+
+\* "I've probably used it a dozen times or so in five years of coding"
 
 # Sources
 

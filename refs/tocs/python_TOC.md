@@ -1,9 +1,11 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> python | just under 4393 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [Environment](#environment)
-	- &nbsp;1.1. [Writing & running Python](#writing-running-python)
-		- &nbsp;1.1.1. [Command line](#command-line)
-		- &nbsp;1.1.2. [Jupyter notebook](#jupyter-notebook)
-	- &nbsp;1.2. [Managing modules](#managing-modules)
-	- &nbsp;1.3. [Which modules?](#which-modules)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> python | just under 4374 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [Environment](#environment)
+	- &nbsp;1.1. [Command line](#command-line)
+			- &nbsp;1.1.1. [Launch Python from Bash](#launch-python-from-bash)
+			- &nbsp;1.1.2. [Run Python script from Bash](#run-python-script-from-bash)
+			- &nbsp;1.1.3. [Take arguments from command line](#take-arguments-from-command-line)
+	- &nbsp;1.2. [Jupyter Notebook](#jupyter-notebook)
+	- &nbsp;1.3. [Managing modules](#managing-modules)
+	- &nbsp;1.4. [Which modules?](#which-modules)
 - &nbsp;2. [Language](#language)
 	- &nbsp;2.1. [Operators](#operators)
 	- &nbsp;2.2. [Control flow statements](#control-flow-statements)
@@ -44,12 +46,9 @@
 </div>
 # 1. Environment
 
-## 1.1. Writing & running Python
+## 1.1. Command line
 
-
-### 1.1.1. Command line
-
-Bash --> Python:
+#### 1.1.1. Launch Python from Bash
 
 ```Bash
 python --version
@@ -58,39 +57,39 @@ python3  # launches some version of python 3
 quit()
 
 python fname.py  # run a script
-
 ```
 
-Bash <-- Python:
+#### 1.1.2. Run Python script from Bash
 
 ```Python
 # this code will run only if the script is executed from the command line
 # it won't run if the script is imported by another script
 if __name__ == '__main__':
     ...
+```
 
-# taking arguments from command line
+#### 1.1.3. Take arguments from command line
+
+```Python
 import sys
 script_name = sys.argv[0]
 for arg in sys.argv[1:]:
     ...
 ```
 
-### 1.1.2. Jupyter notebook
+## 1.2. Jupyter Notebook
+
+Key commands:
+
+- `dd` deletes a cell
 
 ```Bash
-pip3 install jupyter  # install Jupyer Notebook
-# http://jupyter.readthedocs.io/en/latest/install.html
-
-jupyter notebook  # launches JN in wew browser
+jupyter notebook  # launches JN in browser
 # quit JN by typing ctrl+c twice in the command line
 # share JN by uploading it to GitHub --> http://nbviewer.jupyter.org/
 ```
 
-- `dd` deletes a cell
-
-
-## 1.2. Managing modules
+## 1.3. Managing modules
 
 [Libraries/packages are directories of Python scripts/modules](https://docs.python.org/3/tutorial/modules.html#packages); each script contains special functions, methods, and/or types.
 
@@ -110,7 +109,7 @@ from module_name import *  # full import; bad practice because:
 dir(module_name)  # view contents of module
 ```
 
-## 1.3. Which modules?
+## 1.4. Which modules?
 
 See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/contents.html), SciPy's [directory of science-related Python resources and modules](https://www.scipy.org/topical-software.html), Fredrik Lundh's [tour of the Python standard library modules](http://effbot.org/media/downloads/librarybook-core-modules.pdf) [pdf], the [Python Module Index](https://docs.python.org/3/py-modindex.html), and libraries included in the [ActivePython](http://docs.activestate.com/activepython/3.5/pkg/) and [Anaconda](https://docs.continuum.io/anaconda/pkg-docs) Python distributions:
 
@@ -135,11 +134,16 @@ See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/conte
 ## 2.1. Operators
 
 ```Python
+ASSIGNMENT operators
+a = 1
+b = 2; c = 3
+d = a == b # returns False
+
 # COMPARISON operators
 a == b  # checking equality/equivalency; returns True
-a != b  # checking nonequality; returns False
+a != b  # returns False
 a is b  # checking identicality; returns False
-a is not b  # checking nonidenticality; returns True
+a is not b  # returns True
 a <= b  # inequality
 a < b  # strict inequality
 
@@ -779,7 +783,7 @@ reduce(lambda x, y: x if len(x) > len(y) else y, [s for s in strings])
 
 ### 3.2.2. Currying
 
-currying is the technique of translating the evaluation of a function that takes multiple arguments (or a tuple of arguments) into evaluating a sequence of functions, each with a single argument.
+Currying is the technique of translating the evaluation of a function that takes multiple arguments (or a tuple of arguments) into evaluating a sequence of functions, each with a single argument.
 
 ### 3.2.3. Map-reduce, filter, etc.
 
@@ -881,8 +885,6 @@ with assertRaise(x): // code to test
 
 ### 3.3.1. Logging, errors, & debugging
 
-[Types of errors](https://docs.python.org/3/tutorial/errors.html): can be syntatic (problems with 'grammar' of Python), logical (problems with structure of program), or semantic (works computationally but does the wrong thing or has unintended behavior).
-
 ```Python
 import logging
 logging.basicConfig(filename=’fname.log’, level=logging.DEBUG)
@@ -892,8 +894,10 @@ logging.info(‘string to log’)
 
 import pdb
 pdb.set_trace() # launches a psuedo-shell
+`help`
 # type ‘n’ to run the next line of code
 # type ‘c’ to run as normal
+`exit()`
 ```
 
 

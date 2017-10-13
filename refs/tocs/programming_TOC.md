@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 778 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is progrmming?](#what-is-progrmming)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 877 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is progrmming?](#what-is-progrmming)
 	- &nbsp;1.1. [What is an algorithm?](#what-is-an-algorithm)
 	- &nbsp;1.2. [Programming languages](#programming-languages)
 		- &nbsp;1.2.1. [What are major programming paradigms?](#what-are-major-programming-paradigms)
@@ -12,7 +12,7 @@
 		- &nbsp;2.2.1. [Version control](#version-control)
 		- &nbsp;2.2.2. [Literate programming and notebooks](#literate-programming-and-notebooks)
 		- &nbsp;2.2.3. [Documentation](#documentation)
-	- &nbsp;2.3. [Debugging](#debugging)
+	- &nbsp;2.3. [Debugging & testing](#debugging-testing)
 		- &nbsp;2.3.1. [Types of errors](#types-of-errors)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
@@ -116,17 +116,48 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 ### 2.2.3. Documentation
 
-## 2.3. Debugging
+## 2.3. Debugging & testing
 
 ### 2.3.1. Types of errors
 
 Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
 
-- **Syntax errors** where you broke
-- **Exceptions** result from invalid operations
-- **Incorrect logic**
+- *Compiler generates error messages* for
+    - **syntax errors** that violate the basic rules of the language (invalid statements, usually fatal) and for
+    - **exceptions** that violate the rules for using statements (invalid operations; the "parser knows what to do with a piece of code but is unable to perform the action" [Wikibooks, n.d.]).
+- *Human or debugger must identify*
+    - **incorrect logic** that violates the program specification.
 
 
+<table>
+
+    <th>Types of programming errors</th>
+
+    <tr>
+        <td rowspan="2">Syntax</td>
+        <td colspan="2">Semantic AKA exceptions</td>
+        <td rowspan="2">Logical</td>
+    </tr>
+
+    <tr>
+        <td>Static</td>
+        <td>Dynamic</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">Compile-time errors</td>
+        <td colspan="2">Run-time errors</td>
+    </tr>
+
+    <th>Defenses against programming errors</th>
+
+    <tr>
+        <td rowspan="2">Knowledge</td>
+        <td colspan="2">(in Python) `try ... except` </td>
+        <td rowspan="2">Debugger</td>
+
+
+</table>
 
 
 

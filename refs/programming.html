@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; programming | just under 778 words | updated 10/13/2017
+   &gt; programming | just under 877 words | updated 10/13/2017
   </p>
   <div class="TOC">
    <ul>
@@ -132,8 +132,8 @@ code > span.er { color: #ff0000; font-weight: bold; }
       </li>
       <li>
        2.3.
-       <a href="#debugging">
-        Debugging
+       <a href="#debugging-testing">
+        Debugging &amp; testing
        </a>
        <ul>
         <li>
@@ -404,9 +404,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
     2.2.3. Documentation
    </a>
   </h3>
-  <h2 id="debugging">
+  <h2 id="debugging-testing">
    <a>
-    2.3. Debugging
+    2.3. Debugging &amp; testing
    </a>
   </h2>
   <h3 id="types-of-errors">
@@ -419,23 +419,65 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </p>
   <ul>
    <li>
-    <strong>
-     Syntax errors
-    </strong>
-    where you broke
+    <em>
+     Compiler generates error messages
+    </em>
+    for
+    <ul>
+     <li>
+      <strong>
+       syntax errors
+      </strong>
+      that violate the basic rules of the language (invalid statements, usually fatal) and for
+     </li>
+     <li>
+      <strong>
+       exceptions
+      </strong>
+      that violate the rules for using statements (invalid operations; the "parser knows what to do with a piece of code but is unable to perform the action" [Wikibooks, n.d.]).
+     </li>
+    </ul>
    </li>
    <li>
-    <strong>
-     Exceptions
-    </strong>
-    result from invalid operations
-   </li>
-   <li>
-    <strong>
-     Incorrect logic
-    </strong>
+    <em>
+     Human or debugger must identify
+    </em>
+    <ul>
+     <li>
+      <strong>
+       incorrect logic
+      </strong>
+      that violates the program specification.
+     </li>
+    </ul>
    </li>
   </ul>
+  <table>
+   <pre><code>&lt;th&gt;Types of programming errors&lt;/th&gt;
+
+&lt;tr&gt;
+    &lt;td rowspan="2"&gt;Syntax&lt;/td&gt;
+    &lt;td colspan="2"&gt;Semantic AKA exceptions&lt;/td&gt;
+    &lt;td rowspan="2"&gt;Logical&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+    &lt;td&gt;Static&lt;/td&gt;
+    &lt;td&gt;Dynamic&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+    &lt;td colspan="2"&gt;Compile-time errors&lt;/td&gt;
+    &lt;td colspan="2"&gt;Run-time errors&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;th&gt;Defenses against programming errors&lt;/th&gt;
+
+&lt;tr&gt;
+    &lt;td rowspan="2"&gt;Knowledge&lt;/td&gt;
+    &lt;td colspan="2"&gt;(in Python) `try ... except` &lt;/td&gt;
+    &lt;td rowspan="2"&gt;Debugger&lt;/td&gt;</code></pre>
+  </table>
   <h1 id="sources">
    <a>
     3. Sources

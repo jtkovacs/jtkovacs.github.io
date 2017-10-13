@@ -26,14 +26,28 @@ Others:
 
 ## Common pitfalls & best practices
 
-Per Bloch, Blumberg, and Laartz (n.d.), IT projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes:
+Also see [why not use an IS?](information-systems.html#why-not-use-is)
 
-- Focus on strategy and stakeholders, not exclusively budget and scheduling
+IT/IS projects often suffer major delays and budget overruns. Best practices to avoid or limit these unwelcome outcomes, per Bloch, Blumberg, and Laartz (n.d.) as well as lecture content by Dr. Sean McGann and Barrett Rodgers:
+
+- Cost is very visible, so you must know how to quantify the value (e.g. BI success = widespread use for decision-making)
+    - cost has shifted due to cloud services; now human capital is the main driver of project cost
+    - remember the cost of labor saved from improving business processes
+- Focus on strategy and stakeholders, not exclusively budget and scheduling (where are the energy, attention, assets, capabilities of the organization currently concentrated?)
 - Ensure talent is sufficient to execute the project
+- Validate the accuracy of underlying data resources
 - Align team incentives with project incentives and have adequate team infrastructure
 - Have excellent project management, including short delivery cycles and quality checks
+- Move slow and be user-focused
 
-Also see [why not use an IS?](information-systems.html#why-not-use-is)
+### Role of managers in an IS initiative
+
+- Establish vision
+- Justify initiative
+- Software selection (build vs. buy?)
+- Security and privacy considerations
+- Familiarity with data and processes
+- Integrating information products, platforms etc. with appropriate actions/actors
 
 
 # Initiating a project
@@ -49,7 +63,7 @@ PESTEL, Porter's five, and SWOT/SLOT analyses are more common in the context of 
 Systematic review of the broadest trends and forces that constitute the business environment, to identify the implications for organizational strategy (since projects should be related to an organization's strategic goals):
 
 - **Political:** trade policy, international relations, fiscal policy, electoral cycle, tax policy
-- **Economic:** unemployment, disposable income, exchange rates, interest rates, trade tariffs, inflation, taxation 
+- **Economic:** unemployment, disposable income, exchange rates, interest rates, trade tariffs, inflation, taxation
 - **Social:** demographics, ethics, consumer attitudes, media
 - **Technological:** maturity of various technologies, trends
 - **Environmental:** ecological impacts of operations, consumer attitudes
@@ -109,7 +123,7 @@ Different authors present different stakeholder typologies. Per Leffingwell (201
 
 Two typologies per Rabinowitz (n.d.):
 
-- **Primary** stakeholders use a system directly 
+- **Primary** stakeholders use a system directly
 - **Secondary** stakeholders have only indirect contact
 - **Key** stakeholders have decision-making authority
 
@@ -120,20 +134,20 @@ Two typologies per Rabinowitz (n.d.):
 </table>
 
 #### RACI plan
-    
+
 Once identified, decisions must be made about levels of stakeholder involvement. A RACI plan can capture stakeholder roles as well as roles for those involved in executing the project. Per Kantor (2012):
 
 1. Identify all the tasks involved in delivering the project and list them on the left-hand side of the chart in completion order.
 2. Identify all the project stakeholders and list them along the top of the chart.
 3. Complete the cells of the model identifying
-    a. who has **responsibility (R)** and  **accountability (A),** and 
+    a. who has **responsibility (R)** and  **accountability (A),** and
     b. who will be **consulted (C)** and **informed (I)** for each task [(see: Communications plan)](#communications-plan).
 4. Validate and, if needed, amend cells:
     a. Ensure every task has at least one R, but no more than needed to accomplish the work.
     b. Ensure every task has one A, and no more.
     c. Ensure that all participation levels are the minimum necessary, e.g. downgrade from C to I where possible.
     d. Ensure that stakeholders accept their roles.
-  
+
 ### Force field analysis
 
 Facilitates organizational change by enumerating the forces that help or hinder an organization's ability to make change (note that individual people may constitute a force).
@@ -170,14 +184,14 @@ Per Clayton (2003):
 - Describe your solution in terms of business outcomes; don't get into the technical details.
 
 ## Writing a project charter
-    
+
 - Project Charter
 - Project Initiation Document (PID)
 - Project Mandate
 
 ### Vision & success criteria
 
-Per Hill & Cantera (2015): 
+Per Hill & Cantera (2015):
 
 - Establish a simple definition for "business process" that everyone understands. Adopt Gartner's definition as a starting point.
     - Management process: highest level of abstraction; processes centered on mission statement and long-term vision
@@ -216,7 +230,7 @@ In the traditional "serial" or lifecycle project management approach, requiremen
 Per Collella (2009), effective organizational communication requires a **communications strategy,** which includes (1) a core message that is not burdened with IT jargon, (2) the capacity to refine messages in response to stakeholder cues, and (3) assessment; a **communications plan** for institutionalizing and executing the strategy; and **communication delivery skills.**
 
 Per PMI (2013):
- 
+
 - Be able to sell people on the strategic value of communication
 - Know who you need to talk to, and how much [(see: RACI plan)](#raci-plan)
 - Plan should specify modes of communication; adjust to people's habits where possible
@@ -235,7 +249,7 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 ### Scheduling
 
 - Timeline
-- Critical path: Least # of tasks to complete a goal 
+- Critical path: Least # of tasks to complete a goal
 - Gantt chart
 - Crash
 - Gate
@@ -255,11 +269,11 @@ Once the hierarchy is established, terminal elements are budgeted and scheduled.
 
 ## Requirements determination
 
-Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs so they can influence system design. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs". 
+Designs must emerge from in-depth analysis of [stakeholder](#stakeholder-analysis) (not just user) needs; requirements determination is the process of eliciting, analyzing, and synthesizing stakeholder needs so they can influence system design. Dennis et al. (2012) note that the analysis and design phases of a system implementation effort are very closely linked. That is, the product/s of requirements determination are "initial designs".
 
 ### Types of requirements
 
-Per Dennis et al. (2012), requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users), second as **system requirements** (from the perspective of developers). Requirements are also categorized as **functional** (what business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect how tasks are performed, and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759) 
+Per Dennis et al. (2012), requirements are expressed first as **business requirements** (from the perspective of stakeholders, including users), second as **system requirements** (from the perspective of developers). Requirements are also categorized as **functional** (what business tasks a system must perform) and **nonfunctional** (operational, performance, security, cultural and political requirements that affect how tasks are performed, and may arise from regulations such as Sarbanes-Oxley or the desire to comply with standards such as [COBIT,](https://www.isaca.org/COBIT/Pages/default.aspx) [ISO 9000,](https://www.iso.org/iso-9001-quality-management.html) and the [Capability Maturity Model).](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=6759)
 
 Per [StackExchange answers,](https://softwareengineering.stackexchange.com/questions/82763/why-bother-differentiating-between-functional-and-nonfunctional-requirements) is important to differentiate functional from nonfunctional requirements because:
 
@@ -277,7 +291,7 @@ Per Whitney (n.d.), Hooks (1994), and Gurd (2013), good requirements are:
 - Complete but feasible, necessary and prioritized
 - Unambiguous and clear
 - Correct and verifiable
-- Traceable: 
+- Traceable:
     - Provenance of a single requirement
     - Hierarchical dependencies between requirements (their **decomposition)**
     - Other dependencies between requirements (e.g. _satisfies, verifies)_
@@ -294,14 +308,14 @@ Per Dennis et al. (2012), common problems with requirements are:
             - Requirements use **shall**
             - Statements of fact use **will**
             - Goals use **should**
-        - Words that are dangerously vague: 
+        - Words that are dangerously vague:
             - _support, but not limited to, etc., and/or_
             - _minimize, maximize, rapid, user-friendly, easy, sufficient, adequate, quick_
     - Over-specifying (including unneeded 'requirements', unneeded details, or unnecessarily precise targets)
-    
+
 ### Gathering requirements
 
-Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, [process improvement efforts,](process-improvement.html) existing documents, and competing software using the following techniques (and see [notes on qualitative methods):](qualitative-methods.html) 
+Per Dennis et al. (2012), requirements may be obtained from users, domain experts, existing processes, [process improvement efforts,](process-improvement.html) existing documents, and competing software using the following techniques (and see [notes on qualitative methods):](qualitative-methods.html)
 
 #### Current state analysis
 
@@ -330,7 +344,7 @@ A current state analysis produces models of the **as-is system** (see [notes on 
 
 #### Observations
 
-#### Surveys or questionnaires 
+#### Surveys or questionnaires
 
 #### JAD sessions
 
@@ -374,14 +388,14 @@ User stories can be decomposed into use cases, enumerating actors' interactions 
 
 Similarly, from Schneider and Winters (1998):
 
-- Who uses the system? 
-- Who installs the system? 
-- Who starts up the system? 
-- Who maintains the system? 
-- Who shuts down the system? 
-- What other systems use this system? 
-- Who gets information from this system? 
-- Who provides information to the system? 
+- Who uses the system?
+- Who installs the system?
+- Who starts up the system?
+- Who maintains the system?
+- Who shuts down the system?
+- What other systems use this system?
+- Who gets information from this system?
+- Who provides information to the system?
 - Does anything happen automatically at a present time?
 
 ##### Use case levels
@@ -405,11 +419,11 @@ This is a two-column depiction of a use case/scenario, showing interactions betw
 
 Use cases may be depicted collectively with [use case diagrams](modeling.html#use-case-diagrams) that:
 
-- Connect use cases to actors 
+- Connect use cases to actors
 - Connect use cases to each other:
     - \<\<include\>\> (routinely shared functionality)
     - \<\<extend\>\> (exceptional scenario)
-    
+
 ##### Requirements dependency traceability matrix
 
 Uses a table to indicate dependencies between requirements.
@@ -433,7 +447,7 @@ Table format linking requirements with other information, e.g. requirement categ
 
 #### Card formats
 
-- **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes. 
+- **CRC cards,** each reflecting a class; responsibilities of that class; and how it collaborates with other classes.
 - **XP Story Cards,** in which a customer writes a story on a card.
 - **Volere Snow Cards:**
 
@@ -445,14 +459,14 @@ A special dictionary of acronyms, jargon etc. important for understanding system
 
 #### Concept maps
 
-A informally-constructed network of concepts, reflecting entities and their interrelationships. 
+A informally-constructed network of concepts, reflecting entities and their interrelationships.
 
 
 
 
 ## Future state design
 
-See [notes on design thinking](strategy.html#design-thinking) re: imagining the **to-be system;** see [notes on system & process modeling](modeling.html) and [interfaces](interfaces.html) re: characterizing it. 
+See [notes on design thinking](strategy.html#design-thinking) re: imagining the **to-be system;** see [notes on system & process modeling](modeling.html) and [interfaces](interfaces.html) re: characterizing it.
 
 
 ## Choosing software
@@ -461,7 +475,7 @@ See [notes on BI systems](bi.html) for information specific to selecting BI soft
 
 - Define requirements;
 - Scan market for potential vendors;
-- Send request for proposal (RFP); 
+- Send request for proposal (RFP);
 - Evaluate proposals with a matrix;
 - Explore proof of concept (optional);
 - Choose vendor.
@@ -538,7 +552,7 @@ Schneider, G. & Winters, J. P. (1998). _Applying use cases: A practical guide._ 
 
 Sheen, R. (2015). How to manage scope creep [video]. _Harvard Business Review._ Retrieved from [https://hbr.org/video/2942763785001/how-to-manage-scope-creep](https://hbr.org/video/2942763785001/how-to-manage-scope-creep)
 
-Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from [https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/](https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/)   
+Watt, A. (2014). The project life cycle (phases). In _Project Management._ BCcampus Open Textbook Project. Retrieved from [https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/](https://opentextbc.ca/projectmanagement/chapter/chapter-3-the-project-life-cycle-phases-project-management/)
 
 Whitney, E. (n.d.). Introduction to gathering requirements and creating use cases. Retrieved from [http://www.codemag.com/Article/0102061](http://www.codemag.com/Article/0102061)
 

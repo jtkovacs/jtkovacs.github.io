@@ -1,25 +1,71 @@
 
-# History of BI
 
-- Early electronic record-keeping and reporting
+# What is BI?
+
+## How does business intelligence relate to management?
+
+Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
+
+- The business environment supplies pressures and opportunities (see [PESTEL analysis](./project-management.html#pestel-analysis));
+- Managers need to respond;
+- BI supports their response with analysis and predictions.
+
+## What value does BI offer?
+
+By enabling data-based decision-making, BI offers value in the form of:
+
+- faster answers (speed = competitive edge)
+- new answers to questions currently impossible
+- actions that wouldn't have been performed without BI
+
+## History of BI
+
+- [use of info to support decisions]
+- [use of computers to support decisions]
 - Executive and management information systems
-- BI dashboards: *data for all*
+- BI systems enabling broader access to data, closer to ground-level where people can base their actions on it
 
-
-# BI tools by business value
+![](../illos/DSS-evolution.jpg)
 
 ![](../illos/bi-tools-by-value.jpg)
 
-# BI architectures
 
-Enterprise data warehouse approaches:
+
+# BI systems
+
+
+
+## Data warehouses
+
+### OLTP vs OLAP databases
+
+The disctinction between online transaction and analytics processing arises from the current state of computer science, viz.: you must optimize for either reads or writes.
+
+- OLTP: emails, credit card transactions, webpage views … captures each record; operational databases, goal is efficiency and control
+- OLAP: aggregates records by running queries, feeds to UI/dashboard; draws from data warehouse, which is fed by ops databases
+- “a lot of times you can use a [specific software platform] for either purpose, you just tune it one way or another” , e.g. “they both may be SQL Server, they both may be views in SQL Server”
+
+### Data warehouse architectures
 
 - Online data store
 - Star schema
 - Data vault
+- Data mart
+
+
+
+## Data analysis and dashboards
+
+- Tableau
+- IBM Watson
+
 
 
 # Sources
+
+## Cited
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 ## References
 

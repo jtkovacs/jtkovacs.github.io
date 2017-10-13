@@ -5,12 +5,14 @@
 
 IS are for managing information across its lifecycle:
 
-- Per Detlor (2010): 
+- Per Detlor (2010):
     - create, acquire, organize (index/classify for retrieval), store, distribute, use
     - acquisition, organization, control, dissemination and use
     - (i) identification of information needs, (ii) acquisition of information to address those needs, (iii) organization and storage of information, (iv) design and development of information products, (v) distribution of information and (vi) information use
     - (i) acquisition, (ii) organization, (iii) storage, (iv) retrieval, (v) access/lending and (vi) dissemination
 - Per Archives.gov (2016): production, collection, use, management, maintenance, preservation, and disposal or permanent retention
+
+
 
 # What are management information systems (MIS)?
 
@@ -20,10 +22,10 @@ Per Annabi and McGann (2014a), information systems (IS) consist of three compone
 - **People:** various [stakeholders](project-management.html#stakeholder-analysis)
 - **IT:** hardware and software
 
-IS professionals work with IT professionals to create IS systems. IT people build the IT, but IS people identify the problems that an IS system may solve or the opportunities that an IS system may create, and coordinate implementation of an IS that meets the organization's needs. 
+IS professionals work with IT professionals to create IS systems. IT people build the IT, but IS people identify the problems that an IS system may solve or the opportunities that an IS system may create, and coordinate implementation of an IS that meets the organization's needs.
 
 ## Evolution of MIS
-    
+
 Per Annabi and McGann (2014b):
 
 - **Computational systems** were very narrow and focused on automating tedious tasks, e.g. keeping a ledger
@@ -36,9 +38,9 @@ Davenport (1998) claims the raison d'être of enterprise systems is to integrate
 
 ## Why not use a MIS?
 
-Davenport (1998) argues that "the technical challenges, however great, are not the main reason enterprise systems fail. The biggest problems are business problems. 
+Davenport (1998) argues that "the technical challenges, however great, are not the main reason enterprise systems fail. The biggest problems are business problems.
 
-**(1)** Companies fail to reconcile the technological imperatives of the enterprise system with the business needs of the enterprise itself." It's important to realize that EIS impose requirements, and since EIS are often too complex to [customize,](#customizing-an-is) this means changing business processes (of one EIS initiative, an executive commented "We plan to use SAP as a battering ram to make our culture less autonomous"). While the standardization an EIS imposes may support employee autonomy by reducing managerial roles, it can also destroy employees' sense of creativity, choice and control.  
+**(1)** Companies fail to reconcile the technological imperatives of the enterprise system with the business needs of the enterprise itself." It's important to realize that EIS impose requirements, and since EIS are often too complex to [customize,](#customizing-an-is) this means changing business processes (of one EIS initiative, an executive commented "We plan to use SAP as a battering ram to make our culture less autonomous"). While the standardization an EIS imposes may support employee autonomy by reducing managerial roles, it can also destroy employees' sense of creativity, choice and control.
 
 **(2)** Moreover, as EIS spread throughout industry, "convergence around a single software package should raise a sobering question in the minds of chief executives: How similar can our information flows and our processes be to those of our competitors before we begin to undermine our own sources of differentiation in the market?" This question is not salient to all companies, but for some, "differentiation is based more on service and price than on product."
 
@@ -56,22 +58,22 @@ There are three major MIS in an enterprise, collectively referred to as an organ
 
 ![**Source:** Davenport (1998)](illos/eis-scope.png)
 
-#### Enterprise resource planning (ERP) 
+#### Enterprise resource planning (ERP)
 
 - Major providers: SAP, Oracle, Sage Group, Microsoft Dynamics, SSA Global Technologies, Baan, PeopleSoft
-- Benefits: Eliminate data inconsistencies; enable reporting that covers the entirety of a business function or process; better availability of data. 
+- Benefits: Eliminate data inconsistencies; enable reporting that covers the entirety of a business function or process; better availability of data.
 - Costs: Purchase, training, data conversion, consulting fees, etc. Also enforce standardization of business processes, which users may resist.
 
 #### Customer relationship management (CRM)
 
-- CRMs incl. sales, marketing, customer service, and analysis of such. 
-- Benefits: Enable targeted marketing and experiences; help discover new customers; support better customer service to attract and retain customers. 
+- CRMs incl. sales, marketing, customer service, and analysis of such.
+- Benefits: Enable targeted marketing and experiences; help discover new customers; support better customer service to attract and retain customers.
 - Costs: ERM success depends on a customer-centric organizational culture, which can be hard to develop.
 
 #### Supply chain management (SCM)
 
-- External interface; covers suppliers, manufacturers, distributors, and customers (presumably in a way that isn't redundant to the CRM??). 
-- Benefits: Avoid waste in supply chain by identifying inefficiencies and improving forecasting. 
+- External interface; covers suppliers, manufacturers, distributors, and customers (presumably in a way that isn't redundant to the CRM??).
+- Benefits: Avoid waste in supply chain by identifying inefficiencies and improving forecasting.
 - Costs: SCM success depends on (1) trust among members of the supply chain, and (2) accurate models of the supply chain, which can be dauntingly complex.
 
 ### Business intelligence (BI)
@@ -103,15 +105,15 @@ See [notes on BI.](bi.html)
 - Digital asset management (DAM)
 - Content management systems (CMS)
 - Libraries, catalogs, portals, archives
-        
 
 
-        
-        
-# Implementing an IS 
+
+
+
+# Implementing an IS
 
 See [notes on project management](project-management.html) for complete description of phases and techniques employed across the systems development lifecycle (SDLC).
-    
+
 ## Customizing an IS
 
 Davenport (1998) identifies several pathways:
@@ -121,33 +123,35 @@ Davenport (1998) identifies several pathways:
 - Modifications to EIS code (may be proprietary)
 - Construction of programmatic interfaces between legacy and EIS systems
 
-## Governance of IS
 
-Per Archives.gov (2016), there are two aspects to governance: **(1)** specifying the structure of accountability ("boundaries, authorities, responsibilities, and tasks") and **(2)** 
+
+# Governance of IS
+
+Per Archives.gov (2016), there are two aspects to governance: **(1)** specifying the structure of accountability ("boundaries, authorities, responsibilities, and tasks") and **(2)**
 measuring performance. The governance structure should be as simple and stable as possible, and may include:
 
 - Memoranda of Understanding between units
 - Project- or entity-specific charters
 - Statutes, administrative directives and policies
 
-Many [project management practices and artifacts](project-management.html) contribute to governance: 
+Many [project management practices and artifacts](project-management.html) contribute to governance:
 
-- Project proposal **(strategic level):** 
+- Project proposal **(strategic level):**
     - Lays out the business case, explaining how a project aligns with strategy;
     - Sets the scope of the project;
     - Identifies applicable policies, regulations, etc.;
 - **Operational level:**
-    - Communications plan keeps stakeholders informed; 
+    - Communications plan keeps stakeholders informed;
     - Work breakdown structure keeps projects on deadline and in budget;
     - Business process analysis determines how system will interface with operations;
-    - Requirements determination ensures the system is aligned with operations and needs; 
-- **Technical level** (system-specific) 
+    - Requirements determination ensures the system is aligned with operations and needs;
+- **Technical level** (system-specific)
 
 ![](illos/governance.png)
 
 
 
-    
+
 # Sources
 
 ## Cited

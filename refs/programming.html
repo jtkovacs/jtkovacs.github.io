@@ -9,41 +9,23 @@
   </title>
   <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
-   div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+   table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
 table.sourceCode { width: 100%; line-height: 100%; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
   </style>
   <link href="../assets/styles/refs.css" rel="stylesheet" type="text/css"/>
  </head>
@@ -52,60 +34,170 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; programming | just under 748 words | updated 05/21/2017
+   &gt; programming | just under 778 words | updated 10/13/2017
   </p>
   <div class="TOC">
    <ul>
     <li>
      1.
-     <a href="#what-is-an-algorithm">
-      What is an algorithm?
+     <a href="#what-is-progrmming">
+      What is progrmming?
      </a>
+     <ul>
+      <li>
+       1.1.
+       <a href="#what-is-an-algorithm">
+        What is an algorithm?
+       </a>
+      </li>
+      <li>
+       1.2.
+       <a href="#programming-languages">
+        Programming languages
+       </a>
+       <ul>
+        <li>
+         1.2.1.
+         <a href="#what-are-major-programming-paradigms">
+          What are major programming paradigms?
+         </a>
+        </li>
+        <li>
+         1.2.2.
+         <a href="#what-are-major-types-of-programming-by-level-of-abstraction">
+          What are major types of programming by level of abstraction?
+         </a>
+        </li>
+        <li>
+         1.2.3.
+         <a href="#which-language">
+          Which language?
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       1.3.
+       <a href="#what-skills-are-required-for-programming">
+        What skills are required for programming?
+       </a>
+      </li>
+     </ul>
     </li>
     <li>
      2.
-     <a href="#what-are-major-programming-paradigms">
-      What are major programming paradigms?
-     </a>
-    </li>
-    <li>
-     3.
      <a href="#what-are-good-programming-practices">
       What are good programming practices?
      </a>
+     <ul>
+      <li>
+       2.1.
+       <a href="#style">
+        Style
+       </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#naming-conventions">
+          Naming conventions
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
+       <a href="#reproducibility">
+        Reproducibility
+       </a>
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#version-control">
+          Version control
+         </a>
+        </li>
+        <li>
+         2.2.2.
+         <a href="#literate-programming-and-notebooks">
+          Literate programming and notebooks
+         </a>
+        </li>
+        <li>
+         2.2.3.
+         <a href="#documentation">
+          Documentation
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.3.
+       <a href="#debugging">
+        Debugging
+       </a>
+       <ul>
+        <li>
+         2.3.1.
+         <a href="#types-of-errors">
+          Types of errors
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
     </li>
     <li>
-     4.
-     <a href="#which-language">
-      Which language?
-     </a>
-    </li>
-    <li>
-     5.
-     <a href="#programming-class-notes">
-      Programming class notes
-     </a>
-    </li>
-    <li>
-     6.
+     3.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       6.1.
-       <a href="#references">
-        References
+       3.1.
+       <a href="#cited">
+        Cited
        </a>
       </li>
       <li>
-       6.2.
+       3.2.
+       <a href="#references">
+        References
+       </a>
+       <ul>
+        <li>
+         3.2.1.
+         <a href="#general">
+          General
+         </a>
+        </li>
+        <li>
+         3.2.2.
+         <a href="#bash">
+          Bash
+         </a>
+        </li>
+        <li>
+         3.2.3.
+         <a href="#python">
+          Python
+         </a>
+        </li>
+        <li>
+         3.2.4.
+         <a href="#r">
+          R
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       3.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       6.3.
+       3.4.
        <a href="#unread">
         Unread
        </a>
@@ -114,49 +206,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </li>
    </ul>
   </div>
-  <h1 id="what-is-an-algorithm">
+  <h1 id="what-is-progrmming">
    <a>
-    1. What is an algorithm?
-   </a>
-  </h1>
-  <p>
-   An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms.
-  </p>
-  <h1 id="what-are-major-programming-paradigms">
-   <a>
-    2. What are major programming paradigms?
-   </a>
-  </h1>
-  <ul>
-   <li>
-    Structured
-   </li>
-   <li>
-    Functional
-   </li>
-   <li>
-    Object-oriented
-   </li>
-   <li>
-    Literate
-   </li>
-  </ul>
-  <p>
-   <img src="illos/types-of-programming.gif" width="450px"/>
-  </p>
-  <h1 id="what-are-good-programming-practices">
-   <a>
-    3. What are good programming practices?
-   </a>
-  </h1>
-  <h1 id="which-language">
-   <a>
-    4. Which language?
-   </a>
-  </h1>
-  <h1 id="programming-class-notes">
-   <a>
-    5. Programming class notes
+    1. What is progrmming?
    </a>
   </h1>
   <p>
@@ -215,19 +267,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <p>
-   What is wrong with the following code. What error message do you get? Does it help?:
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">'Hello world!'</span>)
-File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>
-<span class="bu">print</span>(<span class="st">'Hello world!'</span>)</code></pre>
-  </div>
-  <p>
    Where in the computer is a variable such as "X" stored after the following Python line finishes?
   </p>
-  <div class="sourceCode">
-   <pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> <span class="dv">123</span></code></pre>
-  </div>
+  <pre class="sourceCode python"><code class="sourceCode python">x = <span class="dv">123</span></code></pre>
   <ul>
    <li>
     [ ] Central processing unit
@@ -243,28 +285,6 @@ File <span class="st">"&lt;stdin&gt;"</span>, line <span class="dv">1</span>
    </li>
    <li>
     [ ] Output Devices
-   </li>
-  </ul>
-  <p>
-   What will the following program print out:
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> <span class="dv">43</span>
-x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span>
-<span class="bu">print</span>(x)</code></pre>
-  </div>
-  <ul>
-   <li>
-    [ ] 43
-   </li>
-   <li>
-    [X] 44
-   </li>
-   <li>
-    [ ] x + 1
-   </li>
-   <li>
-    [ ] Error because x = x + 1 is not possible mathematically
    </li>
   </ul>
   <p>
@@ -287,16 +307,173 @@ x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span
     [ ] Output Device.
    </li>
   </ul>
-  <h1 id="sources">
+  <h2 id="what-is-an-algorithm">
    <a>
-    6. Sources
-   </a>
-  </h1>
-  <h2 id="references">
-   <a>
-    6.1. References
+    1.1. What is an algorithm?
    </a>
   </h2>
+  <p>
+   An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms (the issues of algorithmic bias and algorithmic transparency).
+  </p>
+  <ul>
+   <li>
+    <a href="http://datworkshop.org/">
+     http://datworkshop.org/
+    </a>
+   </li>
+  </ul>
+  <h2 id="programming-languages">
+   <a>
+    1.2. Programming languages
+   </a>
+  </h2>
+  <h3 id="what-are-major-programming-paradigms">
+   <a>
+    1.2.1. What are major programming paradigms?
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Structured
+   </li>
+   <li>
+    Functional
+   </li>
+   <li>
+    Object-oriented
+   </li>
+   <li>
+    Literate
+   </li>
+  </ul>
+  <h3 id="what-are-major-types-of-programming-by-level-of-abstraction">
+   <a>
+    1.2.2. What are major types of programming by level of abstraction?
+   </a>
+  </h3>
+  <p>
+   <img src="illos/types-of-programming.gif" width="450px"/>
+  </p>
+  <h3 id="which-language">
+   <a>
+    1.2.3. Which language?
+   </a>
+  </h3>
+  <h2 id="what-skills-are-required-for-programming">
+   <a>
+    1.3. What skills are required for programming?
+   </a>
+  </h2>
+  <p>
+   <a href="http://sijinjoseph.com/programmer-competency-matrix/">
+    Programmer competencies matrix
+   </a>
+  </p>
+  <h1 id="what-are-good-programming-practices">
+   <a>
+    2. What are good programming practices?
+   </a>
+  </h1>
+  <h2 id="style">
+   <a>
+    2.1. Style
+   </a>
+  </h2>
+  <h3 id="naming-conventions">
+   <a>
+    2.1.1. Naming conventions
+   </a>
+  </h3>
+  <h2 id="reproducibility">
+   <a>
+    2.2. Reproducibility
+   </a>
+  </h2>
+  <h3 id="version-control">
+   <a>
+    2.2.1. Version control
+   </a>
+  </h3>
+  <h3 id="literate-programming-and-notebooks">
+   <a>
+    2.2.2. Literate programming and notebooks
+   </a>
+  </h3>
+  <h3 id="documentation">
+   <a>
+    2.2.3. Documentation
+   </a>
+  </h3>
+  <h2 id="debugging">
+   <a>
+    2.3. Debugging
+   </a>
+  </h2>
+  <h3 id="types-of-errors">
+   <a>
+    2.3.1. Types of errors
+   </a>
+  </h3>
+  <p>
+   Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Syntax errors
+    </strong>
+    where you broke
+   </li>
+   <li>
+    <strong>
+     Exceptions
+    </strong>
+    result from invalid operations
+   </li>
+   <li>
+    <strong>
+     Incorrect logic
+    </strong>
+   </li>
+  </ul>
+  <h1 id="sources">
+   <a>
+    3. Sources
+   </a>
+  </h1>
+  <h2 id="cited">
+   <a>
+    3.1. Cited
+   </a>
+  </h2>
+  <p>
+   Calvenese, D. (2006). Types of program errors. Retrieved from
+   <a href="http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html">
+    http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html
+   </a>
+  </p>
+  <p>
+   Scottish Qualifications Authority (SQA). (2006). Types of program error. Retrieved from
+   <a href="https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm">
+    https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm
+   </a>
+  </p>
+  <p>
+   Wikibooks. (n.d.). Python_Programming/Errors. Retrieved from
+   <a href="https://en.wikibooks.org/wiki/Python_Programming/Errors">
+    https://en.wikibooks.org/wiki/Python_Programming/Errors
+   </a>
+  </p>
+  <h2 id="references">
+   <a>
+    3.2. References
+   </a>
+  </h2>
+  <h3 id="general">
+   <a>
+    3.2.1. General
+   </a>
+  </h3>
   <ul>
    <li>
     <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">
@@ -312,18 +489,13 @@ x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span
      ReadTheDocs.org
     </a>
    </li>
-   <li>
-    <a href="http://sijinjoseph.com/programmer-competency-matrix/">
-     Programmer competencies matrix
-    </a>
-   </li>
-   <li>
-    <a href="https://github.com/jacobtkovacs/languages/tree/master/Bash">
-     <b>
-      My Bash repository
-     </b>
-    </a>
-   </li>
+  </ul>
+  <h3 id="bash">
+   <a>
+    3.2.2. Bash
+   </a>
+  </h3>
+  <ul>
    <li>
     <a href="http://ss64.com/">
      Command line cheatsheets for Mac
@@ -342,13 +514,13 @@ x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span
      Software Carpentry’s Unix shell cheatsheet
     </a>
    </li>
-   <li>
-    <a href="https://github.com/jacobtkovacs/languages/tree/master/Python">
-     <b>
-      My Python repository
-     </b>
-    </a>
-   </li>
+  </ul>
+  <h3 id="python">
+   <a>
+    3.2.3. Python
+   </a>
+  </h3>
+  <ul>
    <li>
     <a href="https://docs.python.org/3/index.html">
      Official Python 3.5.2. documentation
@@ -369,13 +541,13 @@ x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span
      Python package index (PyPI)
     </a>
    </li>
-   <li>
-    <a href="https://github.com/jacobtkovacs/languages/tree/master/R">
-     <b>
-      My R repository
-     </b>
-    </a>
-   </li>
+  </ul>
+  <h3 id="r">
+   <a>
+    3.2.4. R
+   </a>
+  </h3>
+  <ul>
    <li>
     <a href="https://www.r-project.org/">
      Official R documentation
@@ -394,7 +566,7 @@ x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span
   </ul>
   <h2 id="read">
    <a>
-    6.2. Read
+    3.3. Read
    </a>
   </h2>
   <ul>
@@ -475,8 +647,8 @@ x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span
    </li>
   </ul>
   <h2>
-   <a name="6.3.-unread">
-    6.3. Unread
+   <a name="3.4.-unread">
+    3.4. Unread
    </a>
   </h2>
   <ul>

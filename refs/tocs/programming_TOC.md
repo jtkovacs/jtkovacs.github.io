@@ -1,33 +1,32 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | nearly 748 words | updated 05/16/2017</p><div class="TOC">- 1. [What is an algorithm?](#what-is-an-algorithm)
-- 2. [What are major programming paradigms?](#what-are-major-programming-paradigms)
-- 3. [What are good programming practices?](#what-are-good-programming-practices)
-- 4. [Which language?](#which-language)
-- 5. [Programming class notes](#programming-class-notes)
-- 6. [Sources](#sources)
-	- 6.1. [References](#references)
-	- 6.2. [Read](#read)
-	- 6.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 778 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is progrmming?](#what-is-progrmming)
+	- &nbsp;1.1. [What is an algorithm?](#what-is-an-algorithm)
+	- &nbsp;1.2. [Programming languages](#programming-languages)
+		- &nbsp;1.2.1. [What are major programming paradigms?](#what-are-major-programming-paradigms)
+		- &nbsp;1.2.2. [What are major types of programming by level of abstraction?](#what-are-major-types-of-programming-by-level-of-abstraction)
+		- &nbsp;1.2.3. [Which language?](#which-language)
+	- &nbsp;1.3. [What skills are required for programming?](#what-skills-are-required-for-programming)
+- &nbsp;2. [What are good programming practices?](#what-are-good-programming-practices)
+	- &nbsp;2.1. [Style](#style)
+		- &nbsp;2.1.1. [Naming conventions](#naming-conventions)
+	- &nbsp;2.2. [Reproducibility](#reproducibility)
+		- &nbsp;2.2.1. [Version control](#version-control)
+		- &nbsp;2.2.2. [Literate programming and notebooks](#literate-programming-and-notebooks)
+		- &nbsp;2.2.3. [Documentation](#documentation)
+	- &nbsp;2.3. [Debugging](#debugging)
+		- &nbsp;2.3.1. [Types of errors](#types-of-errors)
+- &nbsp;3. [Sources](#sources)
+	- &nbsp;3.1. [Cited](#cited)
+	- &nbsp;3.2. [References](#references)
+		- &nbsp;3.2.1. [General](#general)
+		- &nbsp;3.2.2. [Bash](#bash)
+		- &nbsp;3.2.3. [Python](#python)
+		- &nbsp;3.2.4. [R](#r)
+	- &nbsp;3.3. [Read](#read)
+	- &nbsp;3.4. [Unread](#unread)
 </div>
 
 
-# 1. What is an algorithm?
-
-An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms. 
-
-# 2. What are major programming paradigms?
-
-- Structured
-- Functional
-- Object-oriented
-- Literate
-
-<img src="../ILLOS/types-of-programming.gif" width=450px>
-
-# 3. What are good programming practices?
-
-# 4. Which language?
-
-# 5. Programming class notes
+# 1. What is progrmming?
 
 What is the function of secondary memory in a computer?
 
@@ -48,18 +47,10 @@ What is the difference between a compiler and an interpreter?
 
 Which of the following contains "machine code"?
 
-- [ ] The Python interpreter. 
-- [ ] The keyboard. 
-- [X] Python source file. 
+- [ ] The Python interpreter.
+- [ ] The keyboard.
+- [X] Python source file.
 - [ ] A word processing document.
-
-What is wrong with the following code. What error message do you get? Does it help?:
-
-```python
->>> print('Hello world!')
-File "<stdin>", line 1
-print('Hello world!')
-```
 
 Where in the computer is a variable such as "X" stored after the following Python line finishes?
 
@@ -73,19 +64,6 @@ x = 123
 - [ ] Input Devices
 - [ ] Output Devices
 
-What will the following program print out:
-
-```python
-x = 43
-x = x + 1
-print(x)
-```
-
-- [ ] 43
-- [X] 44
-- [ ] x + 1
-- [ ] Error because x = x + 1 is not possible mathematically
-
 Explain each of the following using an example of a human capability
 
 - [ ] Central processing unit
@@ -95,29 +73,100 @@ Explain each of the following using an example of a human capability
 - [ ] Output Device.
 
 
+## 1.1. What is an algorithm?
 
-# 6. Sources
+An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms (the issues of algorithmic bias and algorithmic transparency).
 
-## 6.1. References
+- [http://datworkshop.org/](http://datworkshop.org/)
+
+## 1.2. Programming languages
+
+### 1.2.1. What are major programming paradigms?
+
+- Structured
+- Functional
+- Object-oriented
+- Literate
+
+### 1.2.2. What are major types of programming by level of abstraction?
+
+<img src="../ILLOS/types-of-programming.gif" width=450px>
+
+### 1.2.3. Which language?
+
+
+## 1.3. What skills are required for programming?
+
+[Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+
+
+
+
+# 2. What are good programming practices?
+
+## 2.1. Style
+
+### 2.1.1. Naming conventions
+
+## 2.2. Reproducibility
+
+### 2.2.1. Version control
+
+### 2.2.2. Literate programming and notebooks
+
+### 2.2.3. Documentation
+
+## 2.3. Debugging
+
+### 2.3.1. Types of errors
+
+Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
+
+- **Syntax errors** where you broke
+- **Exceptions** result from invalid operations
+- **Incorrect logic**
+
+
+
+
+
+# 3. Sources
+
+## 3.1. Cited
+
+Calvenese, D. (2006). Types of program errors. Retrieved from [http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html](http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html)
+
+Scottish Qualifications Authority (SQA). (2006). Types of program error. Retrieved from [https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm](https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm)
+
+Wikibooks. (n.d.). Python_Programming/Errors. Retrieved from [https://en.wikibooks.org/wiki/Python_Programming/Errors](https://en.wikibooks.org/wiki/Python_Programming/Errors)
+
+## 3.2. References
+
+### 3.2.1. General
 
 - [Paul Ford: What <i>is</i>&nbsp;code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 - [ReadTheDocs.org](https://docs.readthedocs.io/en/latest/getting_started.html)
-- [Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
-- [<b>My Bash repository</b>](https://github.com/jacobtkovacs/languages/tree/master/Bash)
+
+### 3.2.2. Bash
+
 - [Command line cheatsheets for Mac<span style="background-color:transparent">,&nbsp;</span>Linux<span style="background-color:transparent">,&nbsp;</span>Windows](http://ss64.com/)
 - [Software Carpentry’s Unix shell cheatsheet](http://swcarpentry.github.io/shell-novice/reference/)
-- [<b>My Python repository</b>](https://github.com/jacobtkovacs/languages/tree/master/Python)
+
+### 3.2.3. Python
+
 - [Official Python 3.5.2. documentation](https://docs.python.org/3/index.html)
 - [Official Jupyter notebook documentation](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 - [Python cookbook](http://code.activestate.com/recipes/langs/python/)
 - [Python package index (PyPI)](https://pypi.python.org/pypi)
-- [<b>My R repository</b>](https://github.com/jacobtkovacs/languages/tree/master/R)
+
+### 3.2.4. R
+
 - [Official R documentation](https://www.r-project.org/)
 - [R cookbook](http://www.cookbook-r.com/)
 - [R documentation search engine](https://www.rdocumentation.org/)
 
 
-## 6.2. Read
+## 3.3. Read
 
 - [Low quality of scientific code](http://techblog.bozho.net/the-astonishingly-low-quality-of-scientific-code/)
 - [Why code written by scientists gets ugly](https://nsaunders.wordpress.com/2014/05/14/this-is-why-code-written-by-scientists-gets-ugly/)
@@ -136,7 +185,7 @@ Explain each of the following using an example of a human capability
 - [The homogenization of scientific computing](http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/)
 
 
-## 6.3. Unread
+## 3.4. Unread
 
 - [Khan Academy - Algorithms&nbsp;](https://www.khanacademy.org/computing/computer-science/algorithms)
 - [Algorithms every software engineer should know by heart](https://www.quora.com/What-are-the-top-10-algorithms-every-software-engineer-should-know-by-heart/answer/Adeel-Ahmed-41?srid=uSgUs&amp;share=0b867289)

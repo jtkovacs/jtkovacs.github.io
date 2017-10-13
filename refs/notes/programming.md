@@ -1,23 +1,6 @@
 
 
-# What is an algorithm?
-
-An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms. 
-
-# What are major programming paradigms?
-
-- Structured
-- Functional
-- Object-oriented
-- Literate
-
-<img src="../ILLOS/types-of-programming.gif" width=450px>
-
-# What are good programming practices?
-
-# Which language?
-
-# Programming class notes
+# What is progrmming?
 
 What is the function of secondary memory in a computer?
 
@@ -38,18 +21,10 @@ What is the difference between a compiler and an interpreter?
 
 Which of the following contains "machine code"?
 
-- [ ] The Python interpreter. 
-- [ ] The keyboard. 
-- [X] Python source file. 
+- [ ] The Python interpreter.
+- [ ] The keyboard.
+- [X] Python source file.
 - [ ] A word processing document.
-
-What is wrong with the following code. What error message do you get? Does it help?:
-
-```python
->>> print('Hello world!')
-File "<stdin>", line 1
-print('Hello world!')
-```
 
 Where in the computer is a variable such as "X" stored after the following Python line finishes?
 
@@ -63,19 +38,6 @@ x = 123
 - [ ] Input Devices
 - [ ] Output Devices
 
-What will the following program print out:
-
-```python
-x = 43
-x = x + 1
-print(x)
-```
-
-- [ ] 43
-- [X] 44
-- [ ] x + 1
-- [ ] Error because x = x + 1 is not possible mathematically
-
 Explain each of the following using an example of a human capability
 
 - [ ] Central processing unit
@@ -85,23 +47,94 @@ Explain each of the following using an example of a human capability
 - [ ] Output Device.
 
 
+## What is an algorithm?
+
+An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be written as instructions for humans or for machines to follow. (2) There are many ways to solve a problem, so we need ways to evaluate and choose algorithms (the issues of algorithmic bias and algorithmic transparency).
+
+- [http://datworkshop.org/](http://datworkshop.org/)
+
+## Programming languages
+
+### What are major programming paradigms?
+
+- Structured
+- Functional
+- Object-oriented
+- Literate
+
+### What are major types of programming by level of abstraction?
+
+<img src="../ILLOS/types-of-programming.gif" width=450px>
+
+### Which language?
+
+
+## What skills are required for programming?
+
+[Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+
+
+
+
+# What are good programming practices?
+
+## Style
+
+### Naming conventions
+
+## Reproducibility
+
+### Version control
+
+### Literate programming and notebooks
+
+### Documentation
+
+## Debugging
+
+### Types of errors
+
+Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
+
+- **Syntax errors** where you broke
+- **Exceptions** result from invalid operations
+- **Incorrect logic**
+
+
+
+
 
 # Sources
 
+## Cited
+
+Calvenese, D. (2006). Types of program errors. Retrieved from [http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html](http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html)
+
+Scottish Qualifications Authority (SQA). (2006). Types of program error. Retrieved from [https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm](https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm)
+
+Wikibooks. (n.d.). Python_Programming/Errors. Retrieved from [https://en.wikibooks.org/wiki/Python_Programming/Errors](https://en.wikibooks.org/wiki/Python_Programming/Errors)
+
 ## References
+
+### General
 
 - [Paul Ford: What <i>is</i>&nbsp;code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 - [ReadTheDocs.org](https://docs.readthedocs.io/en/latest/getting_started.html)
-- [Programmer competencies matrix](http://sijinjoseph.com/programmer-competency-matrix/)
-- [<b>My Bash repository</b>](https://github.com/jacobtkovacs/languages/tree/master/Bash)
+
+### Bash
+
 - [Command line cheatsheets for Mac<span style="background-color:transparent">,&nbsp;</span>Linux<span style="background-color:transparent">,&nbsp;</span>Windows](http://ss64.com/)
 - [Software Carpentry’s Unix shell cheatsheet](http://swcarpentry.github.io/shell-novice/reference/)
-- [<b>My Python repository</b>](https://github.com/jacobtkovacs/languages/tree/master/Python)
+
+### Python
+
 - [Official Python 3.5.2. documentation](https://docs.python.org/3/index.html)
 - [Official Jupyter notebook documentation](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 - [Python cookbook](http://code.activestate.com/recipes/langs/python/)
 - [Python package index (PyPI)](https://pypi.python.org/pypi)
-- [<b>My R repository</b>](https://github.com/jacobtkovacs/languages/tree/master/R)
+
+### R
+
 - [Official R documentation](https://www.r-project.org/)
 - [R cookbook](http://www.cookbook-r.com/)
 - [R documentation search engine](https://www.rdocumentation.org/)

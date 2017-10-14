@@ -2,6 +2,16 @@
 
 # What is BI?
 
+- https://en.wikipedia.org/wiki/Business_intelligence
+
+## ... versus data science?
+
+- DS has more programming, is better at using computational power for analysis
+- DS may involve more sophisticated modeling
+- DS facilitates predictive and prescriptive analytics
+- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+
+
 ## How does business intelligence relate to management?
 
 Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
@@ -33,17 +43,35 @@ By enabling data-based decision-making, BI offers value in the form of:
 
 # BI systems
 
+Per Sharda et al. (2004), BI tools provide varying combinations of the following broad functionalities:
+
+- data storage
+- data management
+- business performance management
+- UI
 
 
-## Data warehouses
+
+## Data warehouses for data storage
 
 ### OLTP vs OLAP databases
 
-The disctinction between online transaction and analytics processing arises from the current state of computer science, viz.: you must optimize for either reads or writes.
+The disctinction between online transaction and analytics processing arises from the current state of computer science, viz., you must optimize for either reads or writes (Barret Rodgers: “a lot of times you can use a [specific software platform] for either purpose, you just tune it one way or another” , e.g. “they both may be SQL Server, they both may be views in SQL Server”).
 
-- OLTP: emails, credit card transactions, webpage views … captures each record; operational databases, goal is efficiency and control
-- OLAP: aggregates records by running queries, feeds to UI/dashboard; draws from data warehouse, which is fed by ops databases
-- “a lot of times you can use a [specific software platform] for either purpose, you just tune it one way or another” , e.g. “they both may be SQL Server, they both may be views in SQL Server”
+| Name | AKA | Function | Goals |
+| --- | --- | --- | --- |
+| **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
+| **OLAP** | n/a | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
+
+- http://olap.com/types-of-olap-systems/
+- https://en.wikipedia.org/wiki/Online_analytical_processing
+- https://en.wikipedia.org/wiki/Online_transaction_processing
+
+### Data warehouse functionality
+
+- Data visualization
+- Alerts/push mechanisms that activate in response to certain conditions or as part of a routine
+- Performance management capabilities (track performance vs. goals, e.g. sales quota; can be public/competitive)
 
 ### Data warehouse architectures
 
@@ -54,10 +82,18 @@ The disctinction between online transaction and analytics processing arises from
 
 
 
-## Data analysis and dashboards
+## Data analysis
 
 - Tableau
 - IBM Watson
+
+### Types of analytics
+
+- **Descriptive:** Asking what happened or is happening to generate well-defined business problems and opportunities; also provides answers to simple questions
+- **Predictive:** Asking what’s going to happen and why, to generate accurate projections that can inform analyses
+- **Prescriptive:** Asking what should be done and generating (or even executing) a specific solution
+
+## Dashboards
 
 
 

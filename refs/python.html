@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; python | just under 4374 words | updated 10/13/2017
+   &gt; python | just under 4414 words | updated 10/14/2017
   </p>
   <div class="TOC">
    <ul>
@@ -49,18 +49,26 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <a href="#command-line">
         Command line
        </a>
-       -  1.1.1.
-       <a href="#launch-python-from-bash">
-        Launch Python from Bash
-       </a>
-       -  1.1.2.
-       <a href="#run-python-script-from-bash">
-        Run Python script from Bash
-       </a>
-       -  1.1.3.
-       <a href="#take-arguments-from-command-line">
-        Take arguments from command line
-       </a>
+       <ul>
+        <li>
+         1.1.1.
+         <a href="#launch-python-from-bash">
+          Launch Python from Bash
+         </a>
+        </li>
+        <li>
+         1.1.2.
+         <a href="#run-python-script-from-bash">
+          Run Python script from Bash
+         </a>
+        </li>
+        <li>
+         1.1.3.
+         <a href="#take-arguments-from-command-line">
+          Take arguments from command line
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        1.2.
@@ -291,6 +299,14 @@ code > span.er { color: #ff0000; font-weight: bold; }
          <a href="#logging-errors-debugging">
           Logging, errors, &amp; debugging
          </a>
+         <ul>
+          <li>
+           3.3.1.1.
+           <a href="#raising-an-error">
+            Raising an error
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
       </li>
@@ -334,31 +350,31 @@ code > span.er { color: #ff0000; font-weight: bold; }
     1.1. Command line
    </a>
   </h2>
-  <h4 id="launch-python-from-bash">
+  <h3 id="launch-python-from-bash">
    <a>
     1.1.1. Launch Python from Bash
    </a>
-  </h4>
+  </h3>
   <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">python</span> --version
 <span class="kw">python</span>  <span class="co"># launches some version of python 2</span>
 <span class="kw">python3</span>  <span class="co"># launches some version of python 3</span>
 <span class="fu">quit()</span>
 
 <span class="kw">python</span> fname.py  <span class="co"># run a script</span></code></pre>
-  <h4 id="run-python-script-from-bash">
+  <h3 id="run-python-script-from-bash">
    <a>
     1.1.2. Run Python script from Bash
    </a>
-  </h4>
+  </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># this code will run only if the script is executed from the command line</span>
 <span class="co"># it won't run if the script is imported by another script</span>
 <span class="kw">if</span> <span class="ot">__name__</span> == <span class="st">'__main__'</span>:
     ...</code></pre>
-  <h4 id="take-arguments-from-command-line">
+  <h3 id="take-arguments-from-command-line">
    <a>
     1.1.3. Take arguments from command line
    </a>
-  </h4>
+  </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="ch">import</span> sys
 script_name = sys.argv[<span class="dv">0</span>]
 <span class="kw">for</span> arg in sys.argv[<span class="dv">1</span>:]:
@@ -1702,6 +1718,21 @@ pdb.set_trace() <span class="co"># launches a psuedo-shell</span>
 <span class="co"># type ‘n’ to run the next line of code</span>
 <span class="co"># type ‘c’ to run as normal</span>
 `exit()`</code></pre>
+  <h4 id="raising-an-error">
+   <a>
+    3.3.1.1. Raising an error
+   </a>
+  </h4>
+  <p>
+   Dr. Joseph Hellerman's code:
+  </p>
+  <pre class="sourceCode Python"><code class="sourceCode python"><span class="ch">import</span> pandas <span class="ch">as</span> pd
+<span class="kw">def</span> func(df):
+    <span class="co">""""</span>
+<span class="co">    :param pd.DataFrame df: should have a column named "hours"</span>
+<span class="co">    """</span>
+    <span class="kw">if</span> not <span class="st">"hours"</span> in df.columns:
+        <span class="kw">raise</span> <span class="ot">ValueError</span>(<span class="st">"DataFrame should have a column named 'hours'."</span>)</code></pre>
   <h1 id="sources">
    <a>
     4. Sources

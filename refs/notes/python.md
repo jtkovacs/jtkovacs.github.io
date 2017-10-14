@@ -2,7 +2,7 @@
 
 ## Command line
 
-#### Launch Python from Bash
+### Launch Python from Bash
 
 ```Bash
 python --version
@@ -13,7 +13,7 @@ quit()
 python fname.py  # run a script
 ```
 
-#### Run Python script from Bash
+### Run Python script from Bash
 
 ```Python
 # this code will run only if the script is executed from the command line
@@ -22,7 +22,7 @@ if __name__ == '__main__':
     ...
 ```
 
-#### Take arguments from command line
+### Take arguments from command line
 
 ```Python
 import sys

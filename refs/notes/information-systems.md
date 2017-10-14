@@ -12,6 +12,14 @@ IS are for managing information across its lifecycle:
     - (i) acquisition, (ii) organization, (iii) storage, (iv) retrieval, (v) access/lending and (vi) dissemination
 - Per Archives.gov (2016): production, collection, use, management, maintenance, preservation, and disposal or permanent retention
 
+## What is Big Data?
+
+- volume
+- variety
+- velocity
+- … a growing list
+
+
 
 
 # What are management information systems (MIS)?

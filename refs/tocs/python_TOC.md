@@ -1,8 +1,8 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> python | just under 4374 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [Environment](#environment)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> python | just under 4414 words | updated 10/14/2017</p><div class="TOC">- &nbsp;1. [Environment](#environment)
 	- &nbsp;1.1. [Command line](#command-line)
-			- &nbsp;1.1.1. [Launch Python from Bash](#launch-python-from-bash)
-			- &nbsp;1.1.2. [Run Python script from Bash](#run-python-script-from-bash)
-			- &nbsp;1.1.3. [Take arguments from command line](#take-arguments-from-command-line)
+		- &nbsp;1.1.1. [Launch Python from Bash](#launch-python-from-bash)
+		- &nbsp;1.1.2. [Run Python script from Bash](#run-python-script-from-bash)
+		- &nbsp;1.1.3. [Take arguments from command line](#take-arguments-from-command-line)
 	- &nbsp;1.2. [Jupyter Notebook](#jupyter-notebook)
 	- &nbsp;1.3. [Managing modules](#managing-modules)
 	- &nbsp;1.4. [Which modules?](#which-modules)
@@ -39,6 +39,7 @@
 		- &nbsp;3.2.3. [Map-reduce, filter, etc.](#map-reduce-filter-etc.)
 	- &nbsp;3.3. [Test-Driven Development](#test-driven-development)
 		- &nbsp;3.3.1. [Logging, errors, & debugging](#logging-errors-debugging)
+			- &nbsp;3.3.1.1. [Raising an error](#raising-an-error)
 - &nbsp;4. [Sources](#sources)
 	- &nbsp;4.1. [References](#references)
 	- &nbsp;4.2. [Read](#read)
@@ -48,7 +49,7 @@
 
 ## 1.1. Command line
 
-#### 1.1.1. Launch Python from Bash
+### 1.1.1. Launch Python from Bash
 
 ```Bash
 python --version
@@ -59,7 +60,7 @@ quit()
 python fname.py  # run a script
 ```
 
-#### 1.1.2. Run Python script from Bash
+### 1.1.2. Run Python script from Bash
 
 ```Python
 # this code will run only if the script is executed from the command line
@@ -68,7 +69,7 @@ if __name__ == '__main__':
     ...
 ```
 
-#### 1.1.3. Take arguments from command line
+### 1.1.3. Take arguments from command line
 
 ```Python
 import sys
@@ -900,7 +901,19 @@ pdb.set_trace() # launches a psuedo-shell
 `exit()`
 ```
 
+#### 3.3.1.1. Raising an error
 
+Dr. Joseph Hellerman's code:
+
+```Python
+import pandas as pd
+def func(df):
+    """"
+    :param pd.DataFrame df: should have a column named "hours"
+    """
+    if not "hours" in df.columns:
+        raise ValueError("DataFrame should have a column named 'hours'.")
+```
 
 
 

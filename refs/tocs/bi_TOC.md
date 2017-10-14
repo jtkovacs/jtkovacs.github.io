@@ -1,37 +1,130 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 312 words | updated 10/11/2017</p><div class="TOC">- &nbsp;1. [History of BI](#history-of-bi)
-- &nbsp;2. [BI tools by business value](#bi-tools-by-business-value)
-- &nbsp;3. [BI architectures](#bi-architectures)
-- &nbsp;4. [Sources](#sources)
-	- &nbsp;4.1. [References](#references)
-	- &nbsp;4.2. [Read](#read)
-	- &nbsp;4.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 780 words | updated 10/14/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+	- &nbsp;1.1. [... versus data science?](#...-versus-data-science)
+	- &nbsp;1.2. [How does business intelligence relate to management?](#how-does-business-intelligence-relate-to-management)
+	- &nbsp;1.3. [What value does BI offer?](#what-value-does-bi-offer)
+	- &nbsp;1.4. [History of BI](#history-of-bi)
+- &nbsp;2. [BI systems](#bi-systems)
+	- &nbsp;2.1. [Data warehouses for data storage](#data-warehouses-for-data-storage)
+		- &nbsp;2.1.1. [OLTP vs OLAP databases](#oltp-vs-olap-databases)
+		- &nbsp;2.1.2. [Data warehouse functionality](#data-warehouse-functionality)
+		- &nbsp;2.1.3. [Data warehouse architectures](#data-warehouse-architectures)
+	- &nbsp;2.2. [Data analysis](#data-analysis)
+		- &nbsp;2.2.1. [Types of analytics](#types-of-analytics)
+	- &nbsp;2.3. [Dashboards](#dashboards)
+- &nbsp;3. [Sources](#sources)
+	- &nbsp;3.1. [Cited](#cited)
+	- &nbsp;3.2. [References](#references)
+	- &nbsp;3.3. [Read](#read)
+	- &nbsp;3.4. [Unread](#unread)
 </div>
 
-# 1. History of BI
 
-- Early electronic record-keeping and reporting
+# 1. What is BI?
+
+- https://en.wikipedia.org/wiki/Business_intelligence
+
+## 1.1. ... versus data science?
+
+- DS has more programming, is better at using computational power for analysis
+- DS may involve more sophisticated modeling
+- DS facilitates predictive and prescriptive analytics
+- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+
+
+## 1.2. How does business intelligence relate to management?
+
+Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
+
+- The business environment supplies pressures and opportunities (see [PESTEL analysis](./project-management.html#pestel-analysis));
+- Managers need to respond;
+- BI supports their response with analysis and predictions.
+
+## 1.3. What value does BI offer?
+
+By enabling data-based decision-making, BI offers value in the form of:
+
+- faster answers (speed = competitive edge)
+- new answers to questions currently impossible
+- actions that wouldn't have been performed without BI
+
+## 1.4. History of BI
+
+- [use of info to support decisions]
+- [use of computers to support decisions]
 - Executive and management information systems
-- BI dashboards: *data for all*
+- BI systems enabling broader access to data, closer to ground-level where people can base their actions on it
 
-
-# 2. BI tools by business value
+![](../illos/DSS-evolution.jpg)
 
 ![](../illos/bi-tools-by-value.jpg)
 
-# 3. BI architectures
 
-Enterprise data warehouse approaches:
+
+# 2. BI systems
+
+Per Sharda et al. (2004), BI tools provide varying combinations of the following broad functionalities:
+
+- data storage
+- data management
+- business performance management
+- UI
+
+
+
+## 2.1. Data warehouses for data storage
+
+### 2.1.1. OLTP vs OLAP databases
+
+The disctinction between online transaction and analytics processing arises from the current state of computer science, viz., you must optimize for either reads or writes (Barret Rodgers: “a lot of times you can use a [specific software platform] for either purpose, you just tune it one way or another” , e.g. “they both may be SQL Server, they both may be views in SQL Server”).
+
+| Name | AKA | Function | Goals |
+| --- | --- | --- | --- |
+| **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
+| **OLAP** | n/a | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
+
+- http://olap.com/types-of-olap-systems/
+- https://en.wikipedia.org/wiki/Online_analytical_processing
+- https://en.wikipedia.org/wiki/Online_transaction_processing
+
+### 2.1.2. Data warehouse functionality
+
+- Data visualization
+- Alerts/push mechanisms that activate in response to certain conditions or as part of a routine
+- Performance management capabilities (track performance vs. goals, e.g. sales quota; can be public/competitive)
+
+### 2.1.3. Data warehouse architectures
 
 - Online data store
 - Star schema
 - Data vault
+- Data mart
 
 
-# 4. Sources
 
-## 4.1. References
+## 2.2. Data analysis
 
-## 4.2. Read
+- Tableau
+- IBM Watson
+
+### 2.2.1. Types of analytics
+
+- **Descriptive:** Asking what happened or is happening to generate well-defined business problems and opportunities; also provides answers to simple questions
+- **Predictive:** Asking what’s going to happen and why, to generate accurate projections that can inform analyses
+- **Prescriptive:** Asking what should be done and generating (or even executing) a specific solution
+
+## 2.3. Dashboards
+
+
+
+# 3. Sources
+
+## 3.1. Cited
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+## 3.2. References
+
+## 3.3. Read
 
 - [UW IT - EDW 101](http://itconnect.uw.edu/work/data/training/workshops/#EDW101)
 - [MapReduce - Simplified Data Processing on Large Clusters](http://research.google.com/archive/mapreduce.html)
@@ -39,7 +132,7 @@ Enterprise data warehouse approaches:
 - [Big Data, n. A kind of black magic](http://www.talyarkoni.org/blog/2014/05/19/big-data-n-a-kind-of-black-magic/)
 
 
-## 4.3. Unread
+## 3.4. Unread
 
 - _The Data Warehouse Lifecycle Toolkit_
 - _The Data Warehouse Toolkit_

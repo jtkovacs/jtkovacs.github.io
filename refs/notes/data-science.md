@@ -1,8 +1,6 @@
 
 # What is data science?
 
-## What is Big Data?
-
 ## Data science lifecycle & skills
 
 Via Mason and Wiggins (2010):
@@ -69,7 +67,7 @@ Via Mason and Wiggins (2010):
 </tr>
 </table>
 
-### Obtain 
+### Obtain
 
 **Describe the concepts here. Code can be embedded or via a link, depending on how much there is.**
 
@@ -116,7 +114,7 @@ Per Janssens (2015):
 - **Augmenting:** amplifies rather than replaces existing tools
 - **Scalable:** ability to automate commands means they're repeatable, supporting scalable analytic workflows
 - **Extensible:** because command line tools are language-agnostic
-- **Ubiquitous** (via Linux/Unix) 
+- **Ubiquitous** (via Linux/Unix)
 
 
 

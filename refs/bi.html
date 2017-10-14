@@ -15,48 +15,122 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 312 words | updated 10/11/2017
+   &gt; bi | just under 780 words | updated 10/14/2017
   </p>
   <div class="TOC">
    <ul>
     <li>
      1.
-     <a href="#history-of-bi">
-      History of BI
+     <a href="#what-is-bi">
+      What is BI?
      </a>
+     <ul>
+      <li>
+       1.1.
+       <a href="#...-versus-data-science">
+        ... versus data science?
+       </a>
+      </li>
+      <li>
+       1.2.
+       <a href="#how-does-business-intelligence-relate-to-management">
+        How does business intelligence relate to management?
+       </a>
+      </li>
+      <li>
+       1.3.
+       <a href="#what-value-does-bi-offer">
+        What value does BI offer?
+       </a>
+      </li>
+      <li>
+       1.4.
+       <a href="#history-of-bi">
+        History of BI
+       </a>
+      </li>
+     </ul>
     </li>
     <li>
      2.
-     <a href="#bi-tools-by-business-value">
-      BI tools by business value
+     <a href="#bi-systems">
+      BI systems
      </a>
+     <ul>
+      <li>
+       2.1.
+       <a href="#data-warehouses-for-data-storage">
+        Data warehouses for data storage
+       </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#oltp-vs-olap-databases">
+          OLTP vs OLAP databases
+         </a>
+        </li>
+        <li>
+         2.1.2.
+         <a href="#data-warehouse-functionality">
+          Data warehouse functionality
+         </a>
+        </li>
+        <li>
+         2.1.3.
+         <a href="#data-warehouse-architectures">
+          Data warehouse architectures
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
+       <a href="#data-analysis">
+        Data analysis
+       </a>
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#types-of-analytics">
+          Types of analytics
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.3.
+       <a href="#dashboards">
+        Dashboards
+       </a>
+      </li>
+     </ul>
     </li>
     <li>
      3.
-     <a href="#bi-architectures">
-      BI architectures
-     </a>
-    </li>
-    <li>
-     4.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       4.1.
+       3.1.
+       <a href="#cited">
+        Cited
+       </a>
+      </li>
+      <li>
+       3.2.
        <a href="#references">
         References
        </a>
       </li>
       <li>
-       4.2.
+       3.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       4.3.
+       3.4.
        <a href="#unread">
         Unread
        </a>
@@ -65,41 +139,221 @@
     </li>
    </ul>
   </div>
-  <h1 id="history-of-bi">
+  <h1 id="what-is-bi">
    <a>
-    1. History of BI
+    1. What is BI?
    </a>
   </h1>
   <ul>
    <li>
-    Early electronic record-keeping and reporting
+    https://en.wikipedia.org/wiki/Business_intelligence
+   </li>
+  </ul>
+  <h2 id="versus-data-science">
+   <a>
+    1.1. ... versus data science?
+   </a>
+  </h2>
+  <ul>
+   <li>
+    DS has more programming, is better at using computational power for analysis
+   </li>
+   <li>
+    DS may involve more sophisticated modeling
+   </li>
+   <li>
+    DS facilitates predictive and prescriptive analytics
+   </li>
+   <li>
+    Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+   </li>
+  </ul>
+  <h2 id="how-does-business-intelligence-relate-to-management">
+   <a>
+    1.2. How does business intelligence relate to management?
+   </a>
+  </h2>
+  <p>
+   Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
+  </p>
+  <ul>
+   <li>
+    The business environment supplies pressures and opportunities (see
+    <a href="./project-management.html#pestel-analysis">
+     PESTEL analysis
+    </a>
+    );
+   </li>
+   <li>
+    Managers need to respond;
+   </li>
+   <li>
+    BI supports their response with analysis and predictions.
+   </li>
+  </ul>
+  <h2 id="what-value-does-bi-offer">
+   <a>
+    1.3. What value does BI offer?
+   </a>
+  </h2>
+  <p>
+   By enabling data-based decision-making, BI offers value in the form of:
+  </p>
+  <ul>
+   <li>
+    faster answers (speed = competitive edge)
+   </li>
+   <li>
+    new answers to questions currently impossible
+   </li>
+   <li>
+    actions that wouldn't have been performed without BI
+   </li>
+  </ul>
+  <h2 id="history-of-bi">
+   <a>
+    1.4. History of BI
+   </a>
+  </h2>
+  <ul>
+   <li>
+    [use of info to support decisions]
+   </li>
+   <li>
+    [use of computers to support decisions]
    </li>
    <li>
     Executive and management information systems
    </li>
    <li>
-    BI dashboards:
-    <em>
-     data for all
-    </em>
+    BI systems enabling broader access to data, closer to ground-level where people can base their actions on it
    </li>
   </ul>
-  <h1 id="bi-tools-by-business-value">
-   <a>
-    2. BI tools by business value
-   </a>
-  </h1>
+  <div class="figure">
+   <img src="illos/DSS-evolution.jpg"/>
+  </div>
   <div class="figure">
    <img src="illos/bi-tools-by-value.jpg"/>
   </div>
-  <h1 id="bi-architectures">
+  <h1 id="bi-systems">
    <a>
-    3. BI architectures
+    2. BI systems
    </a>
   </h1>
   <p>
-   Enterprise data warehouse approaches:
+   Per Sharda et al. (2004), BI tools provide varying combinations of the following broad functionalities:
   </p>
+  <ul>
+   <li>
+    data storage
+   </li>
+   <li>
+    data management
+   </li>
+   <li>
+    business performance management
+   </li>
+   <li>
+    UI
+   </li>
+  </ul>
+  <h2 id="data-warehouses-for-data-storage">
+   <a>
+    2.1. Data warehouses for data storage
+   </a>
+  </h2>
+  <h3 id="oltp-vs-olap-databases">
+   <a>
+    2.1.1. OLTP vs OLAP databases
+   </a>
+  </h3>
+  <p>
+   The disctinction between online transaction and analytics processing arises from the current state of computer science, viz., you must optimize for either reads or writes (Barret Rodgers: “a lot of times you can use a [specific software platform] for either purpose, you just tune it one way or another” , e.g. “they both may be SQL Server, they both may be views in SQL Server”).
+  </p>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      Name
+     </th>
+     <th align="left">
+      AKA
+     </th>
+     <th align="left">
+      Function
+     </th>
+     <th align="left">
+      Goals
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      <strong>
+       OLTP
+      </strong>
+     </td>
+     <td align="left">
+      operational database
+     </td>
+     <td align="left">
+      captures each record: emails, credit card transactions, webpage views, …
+     </td>
+     <td align="left">
+      efficiency, control
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      <strong>
+       OLAP
+      </strong>
+     </td>
+     <td align="left">
+      n/a
+     </td>
+     <td align="left">
+      ops --&gt; data warehouse --&gt; OLAP --&gt; UI/dashboard
+     </td>
+     <td align="left">
+      aggregation, efficiency, accuracy, access
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <ul>
+   <li>
+    http://olap.com/types-of-olap-systems/
+   </li>
+   <li>
+    https://en.wikipedia.org/wiki/Online_analytical_processing
+   </li>
+   <li>
+    https://en.wikipedia.org/wiki/Online_transaction_processing
+   </li>
+  </ul>
+  <h3 id="data-warehouse-functionality">
+   <a>
+    2.1.2. Data warehouse functionality
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Data visualization
+   </li>
+   <li>
+    Alerts/push mechanisms that activate in response to certain conditions or as part of a routine
+   </li>
+   <li>
+    Performance management capabilities (track performance vs. goals, e.g. sales quota; can be public/competitive)
+   </li>
+  </ul>
+  <h3 id="data-warehouse-architectures">
+   <a>
+    2.1.3. Data warehouse architectures
+   </a>
+  </h3>
   <ul>
    <li>
     Online data store
@@ -110,20 +364,78 @@
    <li>
     Data vault
    </li>
+   <li>
+    Data mart
+   </li>
   </ul>
+  <h2 id="data-analysis">
+   <a>
+    2.2. Data analysis
+   </a>
+  </h2>
+  <ul>
+   <li>
+    Tableau
+   </li>
+   <li>
+    IBM Watson
+   </li>
+  </ul>
+  <h3 id="types-of-analytics">
+   <a>
+    2.2.1. Types of analytics
+   </a>
+  </h3>
+  <ul>
+   <li>
+    <strong>
+     Descriptive:
+    </strong>
+    Asking what happened or is happening to generate well-defined business problems and opportunities; also provides answers to simple questions
+   </li>
+   <li>
+    <strong>
+     Predictive:
+    </strong>
+    Asking what’s going to happen and why, to generate accurate projections that can inform analyses
+   </li>
+   <li>
+    <strong>
+     Prescriptive:
+    </strong>
+    Asking what should be done and generating (or even executing) a specific solution
+   </li>
+  </ul>
+  <h2 id="dashboards">
+   <a>
+    2.3. Dashboards
+   </a>
+  </h2>
   <h1 id="sources">
    <a>
-    4. Sources
+    3. Sources
    </a>
   </h1>
+  <h2 id="cited">
+   <a>
+    3.1. Cited
+   </a>
+  </h2>
+  <p>
+   Sharda, R., Delen, D., &amp; Turban, E. (2014).
+   <em>
+    Business intelligence: A managerial perspective on analytics
+   </em>
+   (3rd ed.). New York City, NY: Pearson.
+  </p>
   <h2 id="references">
    <a>
-    4.1. References
+    3.2. References
    </a>
   </h2>
   <h2 id="read">
    <a>
-    4.2. Read
+    3.3. Read
    </a>
   </h2>
   <ul>
@@ -149,8 +461,8 @@
    </li>
   </ul>
   <h2>
-   <a name="4.3.-unread">
-    4.3. Unread
+   <a name="3.4.-unread">
+    3.4. Unread
    </a>
   </h2>
   <ul>

@@ -13,6 +13,21 @@ quit()
 python fname.py  # run a script
 ```
 
+### IPython
+
+IPython is a special shell that adds some functionality versus the normal Python shell:
+
+- Input/output history
+- Reverse search with ctrl-r
+- Tab completion
+
+```Python
+$ ipython
+%history
+In
+Out
+```
+
 ### Run Python script from Bash
 
 ```Python
@@ -31,9 +46,12 @@ for arg in sys.argv[1:]:
     ...
 ```
 
+
 ## Jupyter Notebook
 
-Key commands:
+Jupyter Notebook has two modes: **command mode,** where you're manipulating cells (access via `esc` key) and **edit mode,** where you're working inside them (access via 'enter' key).
+
+Shortcuts (view all with `esc` + `h` keys:
 
 - `dd` deletes a cell
 
@@ -41,7 +59,88 @@ Key commands:
 jupyter notebook  # launches JN in browser
 # quit JN by typing ctrl+c twice in the command line
 # share JN by uploading it to GitHub --> http://nbviewer.jupyter.org/
+
+<object>? # view help
+<object.*ing> # wildcard match
+
+<object>?? # view source code
 ```
+
+### Working with Bash
+
+```Python
+!<shell command> # calling a Bash command from Jupyter Notebook
+x = !cat fname.txt # saving results of Bash command to a Python variable
+!cat {my_fname} # passing contents of Python variable to a Bash command
+```
+
+### Magics
+
+- Help: `%magic`
+- View all: `%lsmagic`
+- Line magics: `%<magic>`
+- Cell magics: `%%<magic>`
+
+```Python
+# profile code
+%%timeit
+<code>
+
+%timeit <code>
+
+%%file fname.ext # create a file
+% run fname.py # run a script
+
+%matplotlib # graphing options
+
+```
+
+### Rich display
+
+Jake VanderPlas' code:
+
+```Python
+# create a class which defines the _repr_html_ method, returning a string of HTML
+class RedText(object):
+    def __init__(self, text):
+        self.text = text
+
+    def _repr_html_(self):
+        return "<font color='red' size=24>" + str(self.text) + "</font>"
+
+RedText('hello there')
+
+# example 2
+class ListDisplay(object):
+    def __init__(self, L):
+        self.L = L
+
+    def _repr_html_(self):
+        output = '<ul>'
+        for value in self.L:
+            output += "<li>" + str(value) + "</li>"
+        output += "</ul>"
+        return output
+
+my_list = [1, 2, 3]
+ListDisplay(my_list)
+```
+
+### IPython widgets
+
+Jake VanderPlas: "transform simple Python functions into interactive widgets"
+
+- [Documentation](https://ipywidgets.readthedocs.io/en/stable/)
+- [Widget list](https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html)
+
+```Python
+# Initial install
+!conda install ipywidgets
+!jupyter nbextension enable --py widgetsnbextension
+
+from ipywidgets import interact
+```
+
 
 ## Managing modules
 

@@ -856,7 +856,7 @@ pdb.set_trace() # launches a psuedo-shell
 
 #### Raising an error
 
-Dr. Joseph Hellerman's code:
+Joseph Hellerstein's code:
 
 ```Python
 import pandas as pd

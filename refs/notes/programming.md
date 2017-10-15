@@ -127,7 +127,7 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
 
 ### Debugging process
 
-Per notes by Professor Joseph Hellerman at UW, debugging consists of:
+Per notes by Joseph Hellerstein at UW, debugging consists of:
 
 <table>
     <th>Phase</th>

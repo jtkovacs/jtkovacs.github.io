@@ -39,6 +39,10 @@ While admitting that their own experience with PBL differed in important ways (e
 
 # Educational theory
 
+## What is the role of theory in education?
+
+
+
 ## How does educational theory draw on relevant sciences?
 
 Per Keller (1983):
@@ -46,7 +50,7 @@ Per Keller (1983):
 - **Behavioral psychology** --> feedback and reinforcement
 - **Cognitive psychology** re: info processing --> "how to organize instruction" for "acquisition and retention of knowledge and skills"
     - "also studied in relation to individual differences in ability and learning style"
-- [Motivation](#motivation-design) draws on
+- **Motivation**, see [motivation design](#motivation-design)
 
 ## Keller's model of motivation, learning, and reinforcement
 
@@ -64,12 +68,12 @@ Determinants E and P may be examined for each behavior, identifying instructiona
 
 Per Booth (2011):
 
-- [Logistics]
-    - focus on goals
-    - be organized enough to achieve them
-- [Interpersonal]
-    - be authentic
-    - show your personal investment in the class and the students
+- [logistics]
+    - Focus on goals
+    - Be organized enough to achieve them
+- [interpersonal]
+    - Be authentic
+    - Show your personal investment in the class and the students
 
 ## Reflective practice
 

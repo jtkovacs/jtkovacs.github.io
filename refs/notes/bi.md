@@ -10,6 +10,11 @@
 - DS may involve more sophisticated modeling
 - DS facilitates predictive and prescriptive analytics
 - Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+-
+
+## ... the role of Big Data
+
+
 
 
 ## How does business intelligence relate to management?

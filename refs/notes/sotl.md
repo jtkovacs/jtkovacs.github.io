@@ -86,7 +86,7 @@ The goals, she argues, are "transfer and recall" (Booth, 2011, p. 43), and the f
     - "instructional elements such as tone, pacing, classroom dynamics, discussion management, and opportunities for interaction" (Booth, 2011, p. 45)
 - **Prior knowledge** i.e. schemata AKA mental models
     - Readiness for learning (Piaget)
-    - Respective prior knowledge
+    - Respecting prior knowledge
     - Activating prior knowledge
 
 ### Keller's model of motivation, learning, and reinforcement

@@ -27,7 +27,7 @@ From lectures by Philip J. Reed at the University of Washington iSchool, followi
     - **Empiricism**
 - Scientific:
     - Psychology: _Reed notes that these approaches are both comfortable assessing learning through behavior change, not so for constructivism._
-        - **Behaviorism** (B. F. Skinner, rote memorization, reinforcement, feedback); dominant c. 1950s as an educational theory but still has currency in psychology, still embedded in common teaching and learning practices
+        - **Behaviorism** (B. F. Skinner, rote memorization, reinforcement, feedback); dominant c. 1950s as an educational theory but still has currency in psychology, still embedded in common teaching and learning practices; associated with Industrial Revolution
         - **Cognitivism** (Jean Piaget, David Ausubel) focuses on learners' information processing AKA "assimilation of information into mental models" (Reed, 2017; AKA schemata, Booth, 2011, p. 44); "how to organize instruction" for "acquisition and retention of knowledge and skills", "also studied in relation to individual differences in ability and learning style" (Keller, 1983); note that this includes a much more active role for the student, believing that "knowledge is something that depends on your perception and how you put things together" (Reed, 2017)
             - Human development and its implications for learning (Piaget's *readiness* concept)
             - Gestalt theorists
@@ -40,7 +40,7 @@ From lectures by Philip J. Reed at the University of Washington iSchool, followi
 
 ### Critical pedagogy
 
-#### Transformative learning theory
+### Transformative learning theory
 
 Per Mezirow (2009), transformative learning is a subset of "learning that transforms problematic [NB: different interpretations of this] frames of reference to make them more inclusive, discriminating, reflective, open, and emotionally able to change". Mezirow has defended the importance of rationality in transformative learning practices, contra other theorists in the field.
 
@@ -101,6 +101,13 @@ Determinants E and P may be examined for each behavior, identifying instructiona
 
 ![](../illos/motivation.png)
 
+### Transfer
+
+Per Bransford et al. (2000),
+
+- Time to learn (p. 57)
+- Motivation (p. 60)
+- Abstraction (part of cognitivist approach; p. 65)
 
 
 
@@ -120,7 +127,7 @@ Per Booth (2011):
 ### A miscellany of advice and insights
 
 - Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2011)
-
+- Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
 
 
 
@@ -129,6 +136,51 @@ Per Booth (2011):
 
 # Instructional design
 
+Instructional design combines [educational theory](#educational-theory) with [design thinking methods](./strategy.html#design-thinking) to create a variety of instructional products, including:
+
+- Course
+- Manual
+- Tutorial
+- Program
+
+
+
+## ADDIE model
+
+Per Piskurich (2000) and Booth (2011):
+
+### Analyze
+
+These pre-ID activities should be performed, then presented in a report. For large projects, this phase might consume the majority of time:
+
+- Needs assessment
+- Performance assessment
+- Cost-benefit analysis
+
+### Design
+
+Artifacts:
+
+- instructional plan
+- lesson plan
+- assessment plan
+
+### Develop
+
+(how is this different from design?)
+
+### Implement
+
+### Evaluate
+
+
+
+## Allen Interaction's successive approximiation model (SAM)
+
+Adapts Agile software methods for ID (Allen Interactions, 2017):
+
+<img src="../illos/SAM-process.png" width="400px">
+
 
 
 ## Booth’s USER method
@@ -136,6 +188,10 @@ Per Booth (2011):
 <img src="../illos/USER-ID-method.png" width="400px">
 
 Source: Booth, 2011, p. 19.
+
+
+
+
 
 
 ## Motivation design
@@ -210,7 +266,20 @@ Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messa
 
 
 
-## Targets
+## Assessment
+
+### Kirkpatrick/Phillips model
+
+This is a common model for evaluating the various levels of impact a corporate training may have; [there are others:](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation)
+
+- Level 1, **reaction:** gauging people's *perceptions* of the impact of what you've done
+- Level 2, **learning:** impact on learner's knowledge
+- Level 3, **behavior:** impact on learner's conduct (application of knowledge)
+- Level 4, **results:** impact of changed conduct on business outcomes (i.e., the ID project's deliverable)
+- Level 5, **ROI:** the financial outcome of the change in business outcomes
+
+
+### Targets
 
 Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them”. Targets form a hierarchy:
 
@@ -219,7 +288,9 @@ Per Booth (2011), targets “allow you to structure measurable learning interact
 - OBJECTIVES = strategies/skills needed to attain goals
 
 
+# Activities
 
+## Stop and think
 
 
 
@@ -228,9 +299,15 @@ Per Booth (2011), targets “allow you to structure measurable learning interact
 
 ## Cited
 
+Allen Interactions. (2017). Agile eLearning development with SAM. Retrieved from [http://www.alleninteractions.com/sam-process](http://www.alleninteractions.com/sam-process)
+
+Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
+
 Booth, C. (2011). *Reflective Teaching, Effective Learning: Instructional Literacy for Library Educators.* Chicago, IL: American Library Association Editions.
 
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
+
+Brown, P. C., Roediger III, H. L., & McDaniel, M. A. (2014). _Make it stick: The science of successful learning._ Cambridge, MA: Belknap Press.
 
 Freire, P. (2009). _Pedagogy of the oppressed_ (30th anniversary ed.). New York City, NY: Continuum.
 
@@ -238,7 +315,11 @@ hooks, b. (1994). _Teaching to transgress: Education as the practice of freedom.
 
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 
+Medina, J. (2008). _Brain rules: 12 principles for surviving and thriving and work, home, and school._ Seattle, WA: Pear Press.
+
 Mezirow, J. (2009). Transformative learning theory. In _Transformative learning in practice: Insights from community, workplace, and higher education._ J. Mezirow & E. Taylor, Eds. Hoboken, NJ: Jossey-Bass.
+
+Piskurich, G. M. (2000). _Rapid instructional design: Learning ID fast and right._ San Francisco, CA: Jossey-Bass.
 
 Reed, P. J. (2017). Lecture comments. University of Washington iSchool.
 
@@ -250,6 +331,7 @@ Stevens, E. & Tieman, A. (2017). We used problem-based learning in library instr
 
 - [Washington Center's learning communities repository](http://wacenter.evergreen.edu/)
 - [MERLOT II online teaching resources](https://www.merlot.org/merlot/index.htm)
+- [Association for Talent Development](https://www.td.org/)
 
 ## Read
 

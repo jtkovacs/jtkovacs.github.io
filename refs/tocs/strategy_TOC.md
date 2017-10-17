@@ -1,48 +1,81 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> strategy | nearly 332 words | updated 05/16/2017</p><div class="TOC">- 1. [Business Strategy](#business-strategy)
-	- 1.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
-	- 1.2. [What are frameworks for a strategic analysis?](#what-are-frameworks-for-a-strategic-analysis)
-	- 1.3. [What is market research, and how is it done?](#what-is-market-research-and-how-is-it-done)
-- 2. [Trends](#trends)
-	- 2.1. [What technology trends matter?](#what-technology-trends-matter)
-	- 2.2. [What labor trends matter?](#what-labor-trends-matter)
-	- 2.3. [What political trends matter?](#what-political-trends-matter)
-- 3. [Sources](#sources)
-	- 3.1. [References](#references)
-	- 3.2. [Read](#read)
-	- 3.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> strategy | just under 437 words | updated 10/17/2017</p><div class="TOC">- &nbsp;1. [Strategic thinking](#strategic-thinking)
+	- &nbsp;1.1. [Design thinking](#design-thinking)
+	- &nbsp;1.2. [Systems thinking](#systems-thinking)
+- &nbsp;2. [Business strategy](#business-strategy)
+	- &nbsp;2.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
+	- &nbsp;2.2. [What are frameworks for a strategic analysis?](#what-are-frameworks-for-a-strategic-analysis)
+	- &nbsp;2.3. [What is market research, and how is it done?](#what-is-market-research-and-how-is-it-done)
+- &nbsp;3. [Trends](#trends)
+	- &nbsp;3.1. [What technology trends matter?](#what-technology-trends-matter)
+	- &nbsp;3.2. [What labor trends matter?](#what-labor-trends-matter)
+	- &nbsp;3.3. [What political trends matter?](#what-political-trends-matter)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [References](#references)
+	- &nbsp;4.3. [Read](#read)
+	- &nbsp;4.4. [Unread](#unread)
 </div>
 
-# 1. Business Strategy
 
-## 1.1. What generic strategies can companies pursue?
+# 1. Strategic thinking
 
-## 1.2. What are frameworks for a strategic analysis?
+## 1.1. Design thinking
+
+Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics". Orginally applied in product development, it was imported into education in the late 1960s. Per Beneteau (2017):
+
+- Empathizing (cultivating empathy with personas, perhaps with accessories or other attributes)
+- Ideation/Brainstorming (divergent)
+- Prototyping (convergent)
+- Testing
+
+## 1.2. Systems thinking
+
+
+
+
+
+# 2. Business strategy
+
+## 2.1. What generic strategies can companies pursue?
+
+## 2.2. What are frameworks for a strategic analysis?
 
 PESTEL, PORTER 5, SWOT.
 
-## 1.3. What is market research, and how is it done?
+## 2.3. What is market research, and how is it done?
 
 
-# 2. Trends
 
-## 2.1. What technology trends matter?
+
+# 3. Trends
+
+## 3.1. What technology trends matter?
 
 Communication, automation, Big Data.
 
-## 2.2. What labor trends matter?
+## 3.2. What labor trends matter?
 
 Overwork, precariousness, disemployment, loss of protection or violates of labor laws.
 
-## 2.3. What political trends matter?
+## 3.3. What political trends matter?
 
 Inequality and polarization.
 
 
 
 
-# 3. Sources
+# 4. Sources
 
-## 3.1. References
+## 4.1. Cited
+
+Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
+
+Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
+
+
+
+
+## 4.2. References
 
 - [Mike Bradley & Tiff Zhang's startup generator](http://tiffzhang.com/startup/)
 - [Portal to Gartner's research methodologies](http://www.gartner.com/technology/research/methodologies/methodology.jsp)
@@ -52,10 +85,10 @@ Inequality and polarization.
 - [CBBP's "policy futures" research](http://www.cbpp.org/about/special-projects/policy-futures)
 - [SLU library guide to market research](http://libguides.slu.edu/c.php?g=185604&amp;p=1226028)
 
-## 3.2. Read
+## 4.3. Read
 
 
-## 3.3. Unread
+## 4.4. Unread
 
 - [Paul Graham's "Do things that don't scale"](http://paulgraham.com/ds.html)
 - [Technology will replace many doctors, lawyers, and other professionals](https://hbr.org/2016/10/robots-will-replace-doctors-lawyers-and-other-professionals)

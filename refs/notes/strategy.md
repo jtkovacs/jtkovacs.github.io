@@ -4,10 +4,17 @@
 
 ## Design thinking
 
-Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics". Orginally applied in product development, it was imported into education in the late 1960s.  
+Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics". Orginally applied in product development, it was imported into education in the late 1960s. Per Beneteau (2017):
 
+- Empathizing (cultivating empathy with personas, perhaps with accessories or other attributes)
+- Ideation/Brainstorming (divergent)
+- Prototyping (convergent)
+- Testing
 
 ## Systems thinking
+
+
+
 
 
 # Business strategy
@@ -44,7 +51,11 @@ Inequality and polarization.
 
 ## Cited
 
+Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
+
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
+
+
 
 
 ## References

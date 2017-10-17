@@ -1,4 +1,7 @@
 
+# Reporting
+
+Per BI textbook ...
 
 # Sources
 

@@ -154,6 +154,8 @@ Per notes by Joseph Hellerstein at UW, debugging consists of:
 
 \* "I've probably used it a dozen times or so in five years of coding"
 
+Similarly, Klahr and Carver (1988; referenced in Bransford et al., 2014, p. 60) describing debugging as "identifying the buggy behavior, representing the program, locating the bug in the program, and then correcting the bug".
+
 #### Testing
 
 TKTK
@@ -184,6 +186,8 @@ See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
 # Sources
 
 ## Cited
+
+Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 
 Calvenese, D. (2006). Types of program errors. Retrieved from [http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html](http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html)
 

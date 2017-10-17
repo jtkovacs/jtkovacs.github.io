@@ -1,5 +1,5 @@
 
-# Decompositions of instructional skill
+# What is instruction?
 
 ## Booth's elements of instructional literacy
 
@@ -7,18 +7,92 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
 
 - Capacity for **reflective practice** (not just after the fact, but primarily in the moment);
 - Knowledge of **educational theories,** consisting of
-    - **Learning theories** "explain how and why learning occurs";
-    - **Instructional theories** "address the methodology of teaching and pedagogy";
-    - **Curriculum theories** "focus on the content or subjects of instruction";
+    - **Learning theories,** historically the province of psychology, more abstract and fundamental;
+    - **Instructional theories,** oriented towards teacher practice;
+    - **Curriculum theories,** focused on 'genre' in teaching;
 - Mastery of **teaching technologies** (for collaboration, assessment, etc.); and
 - Integration and application of the prior three items, i.e. skill in **instructional design** (Robert Gagné)
+
+## Genres and mediums of instruction
+
+### Education vs. training
+
+Booth (2011, p. 51) notes that some people distinguish between education and training on the basis of transfer (which education aims to promote).
+
+### Academia vs. real-world learning
+
+Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
+
+
+# Reflective practice
+
+## Qualities of excellent teachers
+
+Per Booth (2011):
+
+- [logistics]
+    - Focus on goals
+    - Be organized enough to achieve them
+- [interpersonal]
+    - Be authentic
+    - Show your personal investment in the class and the students
+
+## Instructional messages
+
+Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
+
+- get attention, hold interest: **UNEXPECTED, STORIES,** clearly relevant, clearly actionable
+- facilitate comprehension: **SIMPLE, CONCRETE**
+- appeal and persuade: **CREDIBLE, EMOTIONAL**
+
+## A miscellany of advice and insights
+
+- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2011)
+- Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
+
 
 
 
 
 # Educational theory
 
-## Timeline of views on learning
+
+
+## Learning theory
+
+### Summary of conclusions
+
+See also: Brown et al. (2014)
+
+Per Booth (2011):
+
+- **Memory**
+    - Manage cognitive overload (manage environment, curate inputs so they are of better quality, which includes their structure)
+    - Mnemonics (structuring information logically AKA chunking; alphabetically; metaphorically; spatially)
+    - Elaboration (associating with existing information)
+- **Motivation**
+    - Maslow and deprivation needs vs. growth needs
+    - Intrinsic (inherent/already internalized) versus extrinsic (incentivized/coerced) motivation
+- **Environment**
+    - "practical factors such as room dimensions, furniture, and seating capacity; ... lighting and temperature;
+    - "technical factors such as computing technology and presentation media;
+    - "cultural elements such as language accessibility and inclusiveness; and
+    - "instructional elements such as tone, pacing, classroom dynamics, discussion management, and opportunities for interaction" (Booth, 2011, p. 45)
+- **Prior knowledge** i.e. schemata AKA mental models
+    - Readiness for learning (Piaget)
+    - Respecting prior knowledge
+    - Activating prior knowledge
+
+Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, believes learning is a function of the "interplay" between the following factors (note that not all of them are under the instructor's control):
+
+| Internal | External |
+| --- | --- |
+| cognition | environment |
+| emotion | instructor |
+| desire | culture |
+
+
+### Timeline of learning theories
 
 From lectures by Philip J. Reed at the University of Washington iSchool, following Booth (2011) and Keller (1983):
 
@@ -32,9 +106,124 @@ From lectures by Philip J. Reed at the University of Washington iSchool, followi
             - Human development and its implications for learning (Piaget's *readiness* concept)
             - Gestalt theorists
     - Education
-        - **Constructivism** (John Dewey, Lev Vygotsky) focuses on how learners "construct their own learning process" (Reed, 2017) through "observation, translation, and imitation (mimesis, socialization, and modeling)" (Booth, 2011, p. 62), subject to social influences; mainstream view in education, but doesn't really speak to the issue of assessment
+        - **Constructivism** (John Dewey, Lev Vygotsky) focuses on how *learners* "construct their own learning process" (Reed, 2017) through "observation, translation, and imitation (mimesis, socialization, and modeling)" (Booth, 2011, p. 62), subject to *social influences*; mainstream view in education, strugges with the issue of assessment
             - Situated learning
             - Zone of proximal development
+        - **Connectivism**
+
+
+### How to motivate
+
+In addition to the model below, Bransford et al. (2014) credit the following factors with increasing motivation:
+
+- A "performance orientation" (citng Dweck, 1989) tends to sap motivation, versus a "learning orientation" (AKA growth mindset?)
+- Social recognition, shared work, solidarity
+
+
+#### Keller's model
+
+Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.* Keller writes practically on motivation but grounds it in his prior theoretical work. This work, in keeping with field theory/social learning theory, starts from the assumption that B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P).** Then, as categories of behavior, Keller distinguishes between:
+
+- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtk: I dispute this, because e.g. mental health];
+- **Performance** = f(motivation/effort, ability, opportunity); and
+- **Consequences** = performance + (benefits to the individual = reinforce motivation)
+
+Determinants E and P may be examined for each behavior, identifying instructional strategies:
+
+![](../illos/motivation.png)
+
+A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
+
+##### Interest
+
+Interest = f(trait_curiosity,presentation); see [instructional messages.](#instructional-messages)
+
+- ***Simulate curiosity*** = f(novelty, paradox, incongruity, complexity, abruptness, conflict)
+    - Perceptual vs. *epistemic curiosity*
+    - Trait vs. *state curiosity*
+    - Note that curiosity can be fatigued by excessive stimulation
+    - Appeal to emotions, personal experience, the familiar e.g. with analogies, metaphors, anecdotes, questions
+- ***Sustain curiosity:***
+    - Allowance to explore
+    - Lower the cost of failure
+    - Occasional surprises and humor
+    - Make the familiar strange and vice versa
+    - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
+    - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
+
+##### Relevance
+
+Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
+
+- **Personal**
+    - Promote a sense of **achievement** by combining "standards of excellence" with moderate risk and feedback that may be non-zero sum
+    - Promote **empowerment** by allowing choice, responsibility, and influence
+    - Promote **affiliation** by establishing trust, which may include non-zero sum grading
+- **Instrumental** relevance can be made clear through learning objectives
+- **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
+
+##### Expectancy
+
+Expectancy = f(challenge, support), similar to "zone of proximal development"
+
+- Address self-fulfilling prophecies of failure
+- *[attribution theory/locus of control/personal causation/learned helplessness]*
+    - Provide meaningful successes (not trivial small wins; learners know it won't transfer)
+    - Make the pathway to success clear (mastery learning)
+    - Give feedback that clarifies the connection between efforts and outcomes
+
+##### Satisfaction
+
+Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
+
+- To preserve intrinsic motivation (which can be destroyed by extrinsic reinforcement):
+    - give "endogeneous" rewards that "customarily or naturally follows from a task"
+    - give exogeneous rewards unexpectedly
+- Give motivational feedback verbally and immediately
+- Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable
+
+
+
+### Transfer
+
+Along with **recall** (retrieve and apply this knowledge if a similar situation arises), Booth (2011, p. 43) says a fundamental goal of instruction is transfer (retrieve and apply this in novel ways). Interestingly, per Bransford et al. (2014):
+
+- "Different kinds of learning experiences can look equivalent when test of learning focus solely on remembering ... but they can look quite different when tests of transfer are used" (p. 51).
+- Classical education practices assumed transfer in their doctrine of "formal discipline", i.e. their belief that studying Latin trained the mind like a muscle for other tasks (probably not true of minds or muscles).
+- Some researchers treat transfer as a matter of conceptual overlap, others as a matter of skill overlap.
+
+#### Types of transfer
+
+- **Near vs. far:** "[T]hese terms distinguish the closeness or distance [or dis/similarity] between the original learning and the transfer task" (Leberman, 2006).
+- **Positive vs. negative:** "When learning in one context improves[/inhibits] learning or performance in another context" (Leberman, 2006).
+- **Simple vs. complex:** "Simple transfer happens when little or no effort is required to apply what has been learned in one situation to a new situation [and the opposite for complex transfer]" (Leberman, 2006).
+- **Automatic vs. mindful:** " When an individual responds spontaneously within a transfer situation, which is very similar to the learning situation then this is  automatic transfer … In contrast, mindful [or] high road transfer is deliberate and involves conscious thought and intellectual effort, and occurs in situations where there are significant gaps or differences between the original and the transfer situations" (Leberman, 2006).
+- **Overzealous:** " Of particular concern are situations where students transfer skills, knowledge, and routines that are effective for the task at hand but may nevertheless be suboptimal in the long run because they block additional learning. We will call this overzealous transfer (OZT) — people transfer solutions that appear to be positive because they are  working well enough, but they are nevertheless negative with respect to learning what is new"  (Schwartz et al., 2012).
+
+#### How to promote transfer
+
+- Provide transfer-supportive **learning experiences:**
+    - Something must be learned with sufficient depth before it can be transferred
+    - Understanding promotes transfer; mere memorization does not
+    - Let students engage with real problems and struggle a bit before lecturing (increases benefit of lecture)
+    - Learning takes time; allow for it
+    - Give feedback on transfer---how students are applying concepts in varying contexts
+- Attend to [motivation](#motivation)
+- Present **abstractions** and underlying logic, since "[k]nowledge that is overly contextualized [i.e., 'narrowly tailored to a given situation', NOT 'transparently placed in context'] can reduce transfer" (note that this is in keeping with cognitivist learning theories).
+    - Make strong contrasts to facilitate pattern recognition
+    - Show/practice applications in a range of contexts
+        - Work on a problem at length, then use "what if" thought experiments
+    - Help students see and represent their own problems/work in wider contexts
+    - Promote metacognition
+- Activate **prior knowledge**:
+    - Use "graduated prompting" to cue for transfer
+    - Be aware of common conceptual misunderstandings for a given field: "teachers must strive to make students' thinking visible and find ways to help them reconceptualize faulty conceptions" (p. 71)
+    - Be aware that prior knowledge is not just of an individual student's construction; it is also cultural
+
+
+
+
+## Instructional theory
 
 ### Active learning
 
@@ -58,76 +247,15 @@ While admitting that their own experiment with PBL differed in important ways (e
 ### Integrative learning
 
 
-## Gagné's conditions of learning
-
-Per Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, believes learning is a function of the "interplay" between the following factors (note that not all of them are under the instructor's control; far from it):
-
-| Internal | External |
-| --- | --- |
-| cognition | environment |
-| emotion | instructor |
-| desire | culture |
-
-### Booth's goals and four factors of learning
-
-The goals, she argues, are "transfer and recall" (Booth, 2011, p. 43), and the factors:
-
-- **Memory**
-    - Manage cognitive overload (manage environment, curate inputs so they are of better quality, which includes their structure)
-    - Mnemonics (structuring information logically AKA chunking; alphabetically; metaphorically; spatially)
-    - Elaboration (associating with existing information)
-- **Motivation**
-    - Maslow and deprivation needs vs. growth needs
-    - Intrinsic (inherent/already internalized) versus extrinsic (incentivized/coerced) motivation
-- **Environment**
-    - "practical factors such as room dimensions, furniture, and seating capacity; ... lighting and temperature;
-    - "technical factors such as computing technology and presentation media;
-    - "cultural elements such as language accessibility and inclusiveness; and
-    - "instructional elements such as tone, pacing, classroom dynamics, discussion management, and opportunities for interaction" (Booth, 2011, p. 45)
-- **Prior knowledge** i.e. schemata AKA mental models
-    - Readiness for learning (Piaget)
-    - Respecting prior knowledge
-    - Activating prior knowledge
-
-### Keller's model of motivation, learning, and reinforcement
-
-Keller (1983) writes practically on [motivation](#motivation-design) but he grounds it in his prior theoretical work. This work, in keeping with field theory/social learning theory, starts from the assumption that B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P).** Then, as categories of behavior, Keller distinguishes between
-
-- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtk: I dispute this, because e.g. mental health];
-- **Performance** = f(motivation/effort, ability, opportunity); and
-- **Consequences** = performance + (benefits to the individual = reinforce motivation)
-
-Determinants E and P may be examined for each behavior, identifying instructional strategies:
-
-![](../illos/motivation.png)
-
-### Transfer
-
-Per Bransford et al. (2000),
-
-- Time to learn (p. 57)
-- Motivation (p. 60)
-- Abstraction (part of cognitivist approach; p. 65)
 
 
+## Curriculum theory
 
-## Reflective practice
+### Teaching technologies
 
-### Qualities of excellent teachers
+### Information literacy
 
-Per Booth (2011):
 
-- [logistics]
-    - Focus on goals
-    - Be organized enough to achieve them
-- [interpersonal]
-    - Be authentic
-    - Show your personal investment in the class and the students
-
-### A miscellany of advice and insights
-
-- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2011)
-- Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
 
 
 
@@ -144,12 +272,13 @@ Instructional design combines [educational theory](#educational-theory) with [de
 - Program
 
 
+## ID models
 
-## ADDIE model
+### ADDIE model
 
 Per Piskurich (2000) and Booth (2011):
 
-### Analyze
+#### Analyze
 
 These pre-ID activities should be performed, then presented in a report. For large projects, this phase might consume the majority of time:
 
@@ -157,7 +286,7 @@ These pre-ID activities should be performed, then presented in a report. For lar
 - Performance assessment
 - Cost-benefit analysis
 
-### Design
+#### Design
 
 Artifacts:
 
@@ -165,105 +294,27 @@ Artifacts:
 - lesson plan
 - assessment plan
 
-### Develop
+#### Develop
 
 (how is this different from design?)
 
-### Implement
+#### Implement
 
-### Evaluate
+#### Evaluate
 
 
-
-## Allen Interaction's successive approximiation model (SAM)
+### Allen Interaction's successive approximiation model (SAM)
 
 Adapts Agile software methods for ID (Allen Interactions, 2017):
 
 <img src="../illos/SAM-process.png" width="400px">
 
 
-
-## Booth’s USER method
+### Booth’s USER method
 
 <img src="../illos/USER-ID-method.png" width="400px">
 
 Source: Booth, 2011, p. 19.
-
-
-
-
-
-
-## Motivation design
-
-Per Keller (1983), motivation an extremely important part of learning; it is *why* people learn, rather than *how.*
-
-A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
-
-Keller's [theory of learning](#kellers-model-of-motivation-learning-and-reinforcement) and the underlying sciences imply that motivational design should address:
-
-### Interest
-
-Interest = f(trait_curiosity,presentation); see [instructional messages.](#instructional-messages)
-
-- ***Simulate curiosity*** = f(novelty, paradox, incongruity, complexity, abruptness, conflict)
-    - Perceptual vs. *epistemic curiosity*
-    - Trait vs. *state curiosity*
-    - Note that curiosity can be fatigued by excessive stimulation
-    - Appeal to emotions, personal experience, the familiar e.g. with analogies, metaphors, anecdotes, questions
-- ***Sustain curiosity:***
-    - Allowance to explore
-    - Lower the cost of failure
-    - Occasional surprises and humor
-    - Make the familiar strange and vice versa
-    - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
-    - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
-
-### Relevance
-
-Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
-
-- **Personal**
-    - Promote a sense of **achievement** by combining "standards of excellence" with moderate risk and feedback that may be non-zero sum
-    - Promote **empowerment** by allowing choice, responsibility, and influence
-    - Promote **affiliation** by establishing trust, which may include non-zero sum grading
-- **Instrumental** relevance can be made clear through learning objectives
-- **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
-
-### Expectancy
-
-Expectancy = f(challenge, support), similar to "zone of proximal development"
-
-- Address self-fulfilling prophecies of failure
-- *[attribution theory/locus of control/personal causation/learned helplessness]*
-    - Provide meaningful successes (not trivial small wins; learners know it won't transfer)
-    - Make the pathway to success clear (mastery learning)
-    - Give feedback that clarifies the connection between efforts and outcomes
-
-### Satisfaction
-
-Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
-
-- To preserve intrinsic motivation (which can be destroyed by extrinsic reinforcement):
-    - give "endogeneous" rewards that "customarily or naturally follows from a task"
-    - give exogeneous rewards unexpectedly
-- Give motivational feedback verbally and immediately
-- Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable
-
-
-
-## Instructional messages
-
-Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
-
-- get attention, hold interest: **UNEXPECTED, STORIES,** clearly relevant, clearly actionable
-- facilitate comprehension: **SIMPLE, CONCRETE**
-- appeal and persuade: **CREDIBLE, EMOTIONAL**
-
-
-
-## Teaching technologies
-
 
 
 ## Assessment
@@ -278,7 +329,6 @@ This is a common model for evaluating the various levels of impact a corporate t
 - Level 4, **results:** impact of changed conduct on business outcomes (i.e., the ID project's deliverable)
 - Level 5, **ROI:** the financial outcome of the change in business outcomes
 
-
 ### Targets
 
 Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them”. Targets form a hierarchy:
@@ -288,9 +338,9 @@ Per Booth (2011), targets “allow you to structure measurable learning interact
 - OBJECTIVES = strategies/skills needed to attain goals
 
 
-# Activities
+## Activities
 
-## Stop and think
+### Stop and think
 
 
 
@@ -315,6 +365,8 @@ hooks, b. (1994). _Teaching to transgress: Education as the practice of freedom.
 
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 
+Leberman, S.,  McDonald, L., & Doyle, S. (2006). _The transfer of learning: Participants’ perspectives of adult education and training._ Burlington, VT: Gower Publishing Company.
+
 Medina, J. (2008). _Brain rules: 12 principles for surviving and thriving and work, home, and school._ Seattle, WA: Pear Press.
 
 Mezirow, J. (2009). Transformative learning theory. In _Transformative learning in practice: Insights from community, workplace, and higher education._ J. Mezirow & E. Taylor, Eds. Hoboken, NJ: Jossey-Bass.
@@ -322,6 +374,8 @@ Mezirow, J. (2009). Transformative learning theory. In _Transformative learning 
 Piskurich, G. M. (2000). _Rapid instructional design: Learning ID fast and right._ San Francisco, CA: Jossey-Bass.
 
 Reed, P. J. (2017). Lecture comments. University of Washington iSchool.
+
+Schwartz, D. L., Chase, C. C., & Bransford, J. D. (2012). Resisting overzealous transfer: Coordinating previously successful routines with needs for new learning. _Educational Psychologist, 47_(3).
 
 Shore, I. (1996). _When students have power: Negotiating authority in critical pedagogy._ Chicago, IL: University of Chicago Press.
 

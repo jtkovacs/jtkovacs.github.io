@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 990 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1050 words | updated 10/17/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
 	- &nbsp;1.1. [... as a profession?](#...-as-a-profession)
 		- &nbsp;1.1.1. [What skills are required for programming?](#what-skills-are-required-for-programming)
 	- &nbsp;1.2. [... in relation to hardware?](#...-in-relation-to-hardware)
@@ -158,7 +158,7 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
 
 ### 2.1.2. Debugging process
 
-Per notes by Professor Joseph Hellerman at UW, debugging consists of:
+Per notes by Joseph Hellerstein at UW, debugging consists of:
 
 <table>
     <th>Phase</th>
@@ -184,6 +184,8 @@ Per notes by Professor Joseph Hellerman at UW, debugging consists of:
 </table>
 
 \* "I've probably used it a dozen times or so in five years of coding"
+
+Similarly, Klahr and Carver (1988; referenced in Bransford et al., 2014, p. 60) describing debugging as "identifying the buggy behavior, representing the program, locating the bug in the program, and then correcting the bug".
 
 #### 2.1.2.1. Testing
 
@@ -215,6 +217,8 @@ See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
 # 3. Sources
 
 ## 3.1. Cited
+
+Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 
 Calvenese, D. (2006). Types of program errors. Retrieved from [http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html](http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html)
 

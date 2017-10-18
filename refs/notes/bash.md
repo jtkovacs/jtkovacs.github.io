@@ -325,6 +325,14 @@ split [options] filename prefix
 ```
 
 
+## Save a USB
+
+```Bash
+# x is a number specific to a USB port
+umount /dev/sdx
+dd if=/dev/zero of=/dev/sdx count=100
+```
+
 # Sources
 
 ## References

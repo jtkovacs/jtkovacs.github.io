@@ -9,41 +9,23 @@
   </title>
   <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
-   div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+   table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
 table.sourceCode { width: 100%; line-height: 100%; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
   </style>
   <link href="../assets/styles/refs.css" rel="stylesheet" type="text/css"/>
  </head>
@@ -52,7 +34,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bash | just under 2456 words | updated 10/11/2017
+   &gt; bash | just under 2478 words | updated 10/18/2017
   </p>
   <div class="TOC">
    <ul>
@@ -170,6 +152,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        2.4.
        <a href="#combine-and-split-files">
         Combine and split files
+       </a>
+      </li>
+      <li>
+       2.5.
+       <a href="#save-a-usb">
+        Save a USB
        </a>
       </li>
      </ul>
@@ -292,15 +280,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </code>
    ):
   </p>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># tab to autocomplete</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="co"># tab to autocomplete</span>
 <span class="co"># ^L to clear the screen</span>
 <span class="co"># ^d sends EOF</span>
 <span class="co"># ^c interrupts/quits</span>
 <span class="co"># ^k to kill (cut)</span>
 <span class="co"># ^y to yank (paste)</span>
 <span class="co"># q to quit (sometimes)</span></code></pre>
-  </div>
   <h2 id="set-up-bash">
    <a>
     1.2. Set up Bash
@@ -371,8 +357,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </ul>
    </li>
   </ul>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#   lack of WHITESPACE is VERY IMPORTANT!!!!</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="co">#   lack of WHITESPACE is VERY IMPORTANT!!!!</span>
 <span class="ot">USER=</span><span class="st">'user_name'</span> <span class="co"># create non-persistent EV</span>
 <span class="ot">USER=</span><span class="st">'$USER last_name'</span> <span class="co"># use environmental variable in string</span>
 <span class="kw">export</span> <span class="ot">USER=</span><span class="st">"user_name"</span> <span class="co"># edit .bash_profile to create persistent EV</span>
@@ -382,17 +367,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">echo</span> <span class="ot">$USER</span>  <span class="co"># view single</span>
 <span class="kw">env</span>  <span class="co"># view all</span>
 <span class="kw">env</span> <span class="kw">|</span> <span class="kw">grep</span> REGEX  <span class="co"># filter and view</span></code></pre>
-  </div>
   <h3 id="preferences">
    <a>
     1.2.3. Preferences
    </a>
   </h3>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">nano</span> ~/.bash_profile  <span class="co"># create/edit preferences file</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">nano</span> ~/.bash_profile  <span class="co"># create/edit preferences file</span>
 <span class="kw">source</span> ~/.bash_profile  <span class="co"># activates newly edited profile for current session</span>
 <span class="kw">echo</span> message_string  <span class="co"># add new session greeting message to .bash_profile</span></code></pre>
-  </div>
   <h3 id="aliases">
    <a>
     1.2.4. Aliases
@@ -418,19 +400,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     .
    </li>
   </ul>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">alias</span>  <span class="co"># displays all current aliases</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">alias</span>  <span class="co"># displays all current aliases</span>
 <span class="kw">alias</span> pd=<span class="st">"pwd"</span>  <span class="co"># rename an existing command</span>
 <span class="kw">alias</span> nwnano = <span class="st">"touch file1 &amp;&amp; nano file2"</span>  <span class="co"># make new command from sequence of existing commands</span>
 <span class="kw">unalias</span> pd  <span class="co"># removes alias</span></code></pre>
-  </div>
   <h2 id="manage-system">
    <a>
     1.3. Manage system
    </a>
   </h2>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">df</span>  <span class="co"># check space on disk, in KB</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">df</span>  <span class="co"># check space on disk, in KB</span>
 <span class="kw">df</span> -h  <span class="co"># " in MB/GB</span>
 <span class="kw">watch</span> -n 5 [command]  <span class="co"># repeat a command or script even 5 seconds</span>
 <span class="kw">watch</span> -n 10 free -m  <span class="co"># show memory usage in MB every 10 seconds</span>
@@ -451,14 +430,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">cat</span> /proc/sys/vm/swappiness
 <span class="kw">systemd-analyze-blame</span>
 <span class="kw">Df</span> -h, checks disk space and partition usage</code></pre>
-  </div>
   <h3 id="get-more-information">
    <a>
     1.3.1. Get more information
    </a>
   </h3>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">lsb_release</span> -a  <span class="co"># Linux version</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">lsb_release</span> -a  <span class="co"># Linux version</span>
 <span class="kw">nano</span> /etc/issue  <span class="co"># Linux version</span>
 <span class="kw">uname</span> -a  <span class="co"># information about system: Linux or Unix, 32- or 64-bit, etc.</span>
 <span class="kw">hostname</span>  <span class="co"># computer's network name</span>
@@ -478,7 +455,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">apropos</span> command_name  <span class="co"># find appropriate man page</span>
 <span class="kw">whatis</span> command_name  <span class="co"># one-line man page summary</span>
 <span class="co"># ^R to 'reverse-i-search' the command history</span></code></pre>
-  </div>
   <h2 id="navigate-filesystem">
    <a>
     1.4. Navigate filesystem
@@ -552,8 +528,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </code>
    is your current location). When specifying an address, there are shortcut symbols denoting different parts of the filesystem:
   </p>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pwd</span>  <span class="co"># print working directory (current location)</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">pwd</span>  <span class="co"># print working directory (current location)</span>
 
 <span class="kw">cd</span> path/directory_name  <span class="co"># move to a new directory</span>
 <span class="kw">cd</span> ../../dirname  <span class="co"># go two directories up, then down</span>
@@ -572,7 +547,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <span class="kw">ls</span> -R  <span class="co"># list all content in working directory, including content in subdirectories</span>
 <span class="kw">find</span>  <span class="co"># list all files contained in the working directory and its subdirectories; same as ls -aR</span></code></pre>
-  </div>
   <h3 id="manipulate-filesystem">
    <a>
     1.4.1. Manipulate filesystem
@@ -609,8 +583,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     : you have one file or directory that has one inode, but you can get to it via shortcuts which have their own inodes; if you delete the file, the shortcuts break, but if you delete the shortcuts, the file is fine
    </li>
   </ul>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">mkdir</span> dir_name  <span class="co"># create directory</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">mkdir</span> dir_name  <span class="co"># create directory</span>
 <span class="kw">touch</span> ~/dirname/file.txt  <span class="co"># create file</span>
 <span class="kw">curl</span> http://url  <span class="co"># downloads file from URL</span>
 <span class="kw">unzip</span> file.zip
@@ -631,7 +604,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">rm</span> file1 file2  <span class="co"># delete file/s</span>
 <span class="kw">rmdir</span> dirname  <span class="co"># deletes directory IF empty</span>
 <span class="kw">rm</span> -R dirname  <span class="co"># delete directory and its contents</span></code></pre>
-  </div>
   <h2 id="manage-permissions">
    <a>
     1.5. Manage permissions
@@ -675,12 +647,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </code>
    .
   </p>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ls</span> -l  <span class="co"># list in long form</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">ls</span> -l  <span class="co"># list in long form</span>
 <span class="kw">chmod</span> ugo+rwx dirname  <span class="co"># give user, group, and others read, write and execute permission</span>
 <span class="kw">chmod</span> o-w filename  <span class="co"># revoke others' write permission</span>
 <span class="kw">chown</span> <span class="kw">&lt;</span>new_username<span class="kw">&gt;</span>:<span class="kw">&lt;</span>new_groupname<span class="kw">&gt;</span> filename  <span class="co"># change ownership</span></code></pre>
-  </div>
   <h2 id="chain-and-redirect">
    <a>
     1.6. Chain and redirect
@@ -726,8 +696,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </code>
    ), any of these can be passed to and used by another command, file, or program. This means we don't need to create variables for storing this data.
   </p>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cat</span> <span class="kw">&gt;</span> file  <span class="co"># create file by rdct cat's stdin to file; exit with ctrl+d</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">cat</span> <span class="kw">&gt;</span> file  <span class="co"># create file by rdct cat's stdin to file; exit with ctrl+d</span>
 <span class="kw">cat</span> <span class="kw">&gt;&gt;</span> file  <span class="co"># create file by rdct cat's stdin, appends to file (if exists)</span>
 <span class="kw">echo</span> <span class="st">"hello"</span> <span class="kw">&gt;</span> file  <span class="co"># create file by rdct echo's stdout from terminal to file</span>
 
@@ -735,7 +704,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <span class="kw">cat</span> <span class="kw">&lt;</span> file  <span class="co"># display file by rdct to cat's stdin; same as &gt;&gt; cat file</span>
 <span class="kw">cat</span> file <span class="kw">|</span> <span class="kw">less</span>  <span class="co"># display large files by rdct cat's stdout to less's stdin</span></code></pre>
-  </div>
   <h1 id="bash-recipes">
    <a>
     2. Bash recipes
@@ -746,8 +714,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     2.1. Write, read, print
    </a>
   </h2>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">touch</span> ~/dirname/file  <span class="co"># create file, or update its modification timestamp if file already exists</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">touch</span> ~/dirname/file  <span class="co"># create file, or update its modification timestamp if file already exists</span>
 <span class="kw">nano</span> file  <span class="co"># open file in text editor</span>
 <span class="co"># Hotkeys for nano:</span>
 <span class="co"># ^a jumps to beginning of line</span>
@@ -775,14 +742,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">lpq</span>  <span class="co"># display print queue</span>
 <span class="kw">lprm</span> jobnum  <span class="co"># delete specified job from print queue</span>
 <span class="kw">lprm</span> -  <span class="co"># delete all jobs from print queue, subject to user permissions</span></code></pre>
-  </div>
   <h2 id="find-and-regex">
    <a>
     2.2. Find and regex
    </a>
   </h2>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">find</span> ... <span class="co"># http://ss64.com/bash/find.html, http://do.co/2hrRPfN</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">find</span> ... <span class="co"># http://ss64.com/bash/find.html, http://do.co/2hrRPfN</span>
 
 <span class="co"># Some Git commands (grep, less, sed, awk, etc.) take regex expressions:</span>
 <span class="co"># http://tldp.org/LDP/Bash-Beginners-Guide/html/chap_04.html</span>
@@ -805,14 +770,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="co"># see also [[:lower:]], [[:digit:]], [[:alpha:]], [[:alnum:]]</span>
 <span class="kw">cp</span> b?t.txt dirname  <span class="co"># copy all files with exactly one character between 'b' and 't.txt'</span>
 <span class="kw">cp</span> b??t.txt dirname  <span class="co"># copy all files with exactly two characters between 'b' and 't.txt'</span></code></pre>
-  </div>
   <h2 id="calculate-and-analyze">
    <a>
     2.3. Calculate and analyze
    </a>
   </h2>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cal</span>  <span class="co"># displays month calendar</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">cal</span>  <span class="co"># displays month calendar</span>
 <span class="kw">cal</span> -y  <span class="co"># displays calendar for current year</span>
 <span class="kw">cal</span> 1995  <span class="co"># displays calendar for 1995</span>
 <span class="kw">date</span>  <span class="co"># displays UTC date &amp; time</span>
@@ -835,21 +798,26 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">sed</span> <span class="st">'s/search_string/replace_string'</span> file.txt  <span class="co"># find and replace 1st occurrence</span>
 <span class="kw">sed</span> <span class="st">'s/search_string/replace_string/g'</span> file.txt  <span class="co"># find and replace all occurrences</span>
 <span class="kw">diff</span> file1 file2  <span class="co"># get differences between files</span></code></pre>
-  </div>
   <h2 id="combine-and-split-files">
    <a>
     2.4. Combine and split files
    </a>
   </h2>
-  <div class="sourceCode">
-   <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cat</span> file1 file2 file3 <span class="kw">&gt;</span> newfile  <span class="co"># creates or overwrites newfile</span>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">cat</span> file1 file2 file3 <span class="kw">&gt;</span> newfile  <span class="co"># creates or overwrites newfile</span>
 <span class="kw">cat</span> file2 <span class="kw">&gt;&gt;</span> file1  <span class="co"># appends file2 to file1</span>
 
 <span class="kw">split</span> [options] filename prefix
 <span class="co"># options:</span>
 <span class="co"># -l linenumber</span>
 <span class="co"># -b bytes</span></code></pre>
-  </div>
+  <h2 id="save-a-usb">
+   <a>
+    2.5. Save a USB
+   </a>
+  </h2>
+  <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="co"># x is a number specific to a USB port</span>
+<span class="kw">umount</span> /dev/sdx
+<span class="kw">dd</span> if=/dev/zero of=/dev/sdx count=100</code></pre>
   <h1 id="sources">
    <a>
     3. Sources

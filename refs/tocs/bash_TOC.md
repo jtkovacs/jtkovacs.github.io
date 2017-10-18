@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bash | just under 2456 words | updated 10/11/2017</p><div class="TOC">- &nbsp;1. [Bash basics](#bash-basics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bash | just under 2478 words | updated 10/18/2017</p><div class="TOC">- &nbsp;1. [Bash basics](#bash-basics)
 	- &nbsp;1.1. [What is Bash?](#what-is-bash)
 	- &nbsp;1.2. [Set up Bash](#set-up-bash)
 		- &nbsp;1.2.1. [.bashrc vs. .bash_profile](#.bashrc-vs.-.bash_profile)
@@ -16,6 +16,7 @@
 	- &nbsp;2.2. [Find and regex](#find-and-regex)
 	- &nbsp;2.3. [Calculate and analyze](#calculate-and-analyze)
 	- &nbsp;2.4. [Combine and split files](#combine-and-split-files)
+	- &nbsp;2.5. [Save a USB](#save-a-usb)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [References](#references)
 	- &nbsp;3.2. [Read](#read)
@@ -347,6 +348,14 @@ split [options] filename prefix
 # -b bytes
 ```
 
+
+## 2.5. Save a USB
+
+```Bash
+# x is a number specific to a USB port
+umount /dev/sdx
+dd if=/dev/zero of=/dev/sdx count=100
+```
 
 # 3. Sources
 

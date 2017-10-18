@@ -4,12 +4,19 @@
 
 ## Design thinking
 
-Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics". Orginally applied in product development, it was imported into education in the late 1960s. Per Beneteau (2017):
+"Design thinking incorporates constituent or consumer insights in depth and rapid prototyping, all aimed at getting beyond the assumptions that block eff ective solutions. Design thinking**—inherently optimistic, constructive, and experiential—**addresses the needs of the people who will consume a product or service and the infrastructure that enables it. Businesses are embracing design thinking because it helps them be more innovative, better diff erentiate their brands, and bring their products and services to market faster. Nonprofi ts are beginning to use design thinking as well to develop better solutions to social problems. Design thinking crosses the traditional boundaries between public, for-profi t, and nonprofi t sectors. By working closely with the clients and consumers, design thinking allows high-impact solutions to bubble up from below rather than being imposed from the top" (Brown and Wyatt, 2010, p. 32).
+
+"The design thinking process is best thought of as a system of overlapping spaces rather than a sequence of orderly steps. There are three spaces to keep in mind: inspiration, ideation, and implementation. Think of **inspiration** as the problem or opportunity that motivates the search for solutions; **ideation** as the process of generating, developing, and testing ideas; and **implementation** as the path that leads from the project stage into people’s lives."
+
+Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics". Orginally applied in product development, it was imported into education in the late 1960s. Per Beneteau (2017), some key components:
 
 - Empathizing (cultivating empathy with personas, perhaps with accessories or other attributes)
 - Ideation/Brainstorming (divergent)
 - Prototyping (convergent)
 - Testing
+
+
+
 
 ## Systems thinking
 
@@ -52,6 +59,8 @@ Inequality and polarization.
 ## Cited
 
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
+
+Brown, T., & Wyatt, J. (2010). Design thinking for social innovation. _Development Outreach,_ 12(1), 29-31.
 
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 

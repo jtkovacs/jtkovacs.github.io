@@ -183,6 +183,12 @@ See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/conte
 
 # Language
 
+## Fundamental characteristics
+
+- Python prioritizes readability and simplicity; `import this`
+- Python is extremely picky about indentation, e.g. to define functions
+- Python is case sensitive and has several [reserved words](http://pentangle.net/python/handbook/node52.html)
+- Python uses [zero-based indexing](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html)
 
 ## Operators
 
@@ -695,12 +701,9 @@ say_hello() # syntactic sugar!!
 
 ## Style
 
-- Python prioritizes readability and simplicity; `import this`
-- Python is extremely picky about indentation, e.g. to define functions
-- Python is case sensitive and has several [reserved words](http://pentangle.net/python/handbook/node52.html)
-- Python uses [zero-based indexing](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html)
-- See PEPs [20](https://www.python.org/dev/peps/pep-0020/), [290](https://www.python.org/dev/peps/pep-0290/), [291](https://www.python.org/dev/peps/pep-0291/), [345](https://www.python.org/dev/peps/pep-0345/), [8](https://www.python.org/dev/peps/pep-0008/)
-- Use [pycodestyle](https://pypi.python.org/pypi/pycodestyle/1.8.0.dev0) or [yapf](https://github.com/google/yapf) to automate style
+- See PEPs [20](https://www.python.org/dev/peps/pep-0020/), [290](https://www.python.org/dev/peps/pep-0290/), [291](https://www.python.org/dev/peps/pep-0291/), [345](https://www.python.org/dev/peps/pep-0345/), but most importantly [8](https://www.python.org/dev/peps/pep-0008/)
+- See [Google's style guide](https://google.github.io/styleguide/pyguide.html)
+- Use [pycodestyle](https://pypi.python.org/pypi/pycodestyle/1.8.0.dev0), [pylint](http://www.pylint.org) or [yapf](https://github.com/google/yapf) to automate style
 
 ### Spacing
 

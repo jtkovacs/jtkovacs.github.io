@@ -165,8 +165,14 @@ TKTK
 
 ## Readability and style
 
-### Naming conventions
+Per Ford (2017), readability is important because good code must be:
 
+- **Understandable**
+- **Reusable** (part of or alongside other code)
+- **Fixable**
+- **Sustainable** (e.g. across versions of a language)
+
+Style guides formalize conventions to support readability for a specific language --- things like naming conventions, line and character spacing, etc.
 
 ## Reproducibility
 
@@ -178,7 +184,32 @@ See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
 
 ### Documentation
 
+#### Comments
 
+Per Ford (2017):
+
+- "For modules and packages, [the docstring should] list the classes, exceptions and functions (and any other objects) that are exported by the module, with a one-line summary of each."
+- "For functions and methods, the [docstring] should summarize its behavior and document its arguments, return value(s), side effects, exceptions raised"
+- "Wrong comments are bugs"
+- Inline comments are generally bad practice (i.e. avoid them with variable names, functions, etc.)
+
+#### READMEs
+
+## Code review template
+
+Per Ford (2017):
+
+**Background:**
+
+- Describe what the application does
+- Describe the role of the code being reviewed
+
+**Comment on:**
+
+- Choice of variable and function names
+- Readability of the code
+- How improve reuse and efficiency
+- How use existing python packages
 
 
 
@@ -190,6 +221,8 @@ See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 
 Calvenese, D. (2006). Types of program errors. Retrieved from [http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html](http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html)
+
+Ford, A. (2017). Lecture at University of Washington.
 
 Scottish Qualifications Authority (SQA). (2006). Types of program error. Retrieved from [https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm](https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm)
 

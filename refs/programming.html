@@ -5,7 +5,7 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
-   jtkovacs.github.io | programming
+   jtck.github.io | programming
   </title>
   <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; programming | just under 1050 words | updated 10/17/2017
+   &gt; programming | just under 1234 words | updated 10/24/2017
   </p>
   <div class="TOC">
    <ul>
@@ -145,14 +145,6 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <a href="#readability-and-style">
         Readability and style
        </a>
-       <ul>
-        <li>
-         2.2.1.
-         <a href="#naming-conventions">
-          Naming conventions
-         </a>
-        </li>
-       </ul>
       </li>
       <li>
        2.3.
@@ -177,8 +169,28 @@ code > span.er { color: #ff0000; font-weight: bold; }
          <a href="#documentation">
           Documentation
          </a>
+         <ul>
+          <li>
+           2.3.3.1.
+           <a href="#comments">
+            Comments
+           </a>
+          </li>
+          <li>
+           2.3.3.2.
+           <a href="#readmes">
+            READMEs
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
+      </li>
+      <li>
+       2.4.
+       <a href="#code-review-template">
+        Code review template
+       </a>
       </li>
      </ul>
     </li>
@@ -600,11 +612,36 @@ code > span.er { color: #ff0000; font-weight: bold; }
     2.2. Readability and style
    </a>
   </h2>
-  <h3 id="naming-conventions">
-   <a>
-    2.2.1. Naming conventions
-   </a>
-  </h3>
+  <p>
+   Per Ford (2017), readability is important because good code must be:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Understandable
+    </strong>
+   </li>
+   <li>
+    <strong>
+     Reusable
+    </strong>
+    (part of or alongside other code)
+   </li>
+   <li>
+    <strong>
+     Fixable
+    </strong>
+   </li>
+   <li>
+    <strong>
+     Sustainable
+    </strong>
+    (e.g. across versions of a language)
+   </li>
+  </ul>
+  <p>
+   Style guides formalize conventions to support readability for a specific language --- things like naming conventions, line and character spacing, etc.
+  </p>
   <h2 id="reproducibility">
    <a>
     2.3. Reproducibility
@@ -628,6 +665,73 @@ code > span.er { color: #ff0000; font-weight: bold; }
     2.3.3. Documentation
    </a>
   </h3>
+  <h4 id="comments">
+   <a>
+    2.3.3.1. Comments
+   </a>
+  </h4>
+  <p>
+   Per Ford (2017):
+  </p>
+  <ul>
+   <li>
+    "For modules and packages, [the docstring should] list the classes, exceptions and functions (and any other objects) that are exported by the module, with a one-line summary of each."
+   </li>
+   <li>
+    "For functions and methods, the [docstring] should summarize its behavior and document its arguments, return value(s), side effects, exceptions raised"
+   </li>
+   <li>
+    "Wrong comments are bugs"
+   </li>
+   <li>
+    Inline comments are generally bad practice (i.e. avoid them with variable names, functions, etc.)
+   </li>
+  </ul>
+  <h4 id="readmes">
+   <a>
+    2.3.3.2. READMEs
+   </a>
+  </h4>
+  <h2 id="code-review-template">
+   <a>
+    2.4. Code review template
+   </a>
+  </h2>
+  <p>
+   Per Ford (2017):
+  </p>
+  <p>
+   <strong>
+    Background:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Describe what the application does
+   </li>
+   <li>
+    Describe the role of the code being reviewed
+   </li>
+  </ul>
+  <p>
+   <strong>
+    Comment on:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Choice of variable and function names
+   </li>
+   <li>
+    Readability of the code
+   </li>
+   <li>
+    How improve reuse and efficiency
+   </li>
+   <li>
+    How use existing python packages
+   </li>
+  </ul>
   <h1 id="sources">
    <a>
     3. Sources
@@ -653,6 +757,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html">
     http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html
    </a>
+  </p>
+  <p>
+   Ford, A. (2017). Lecture at University of Washington.
   </p>
   <p>
    Scottish Qualifications Authority (SQA). (2006). Types of program error. Retrieved from

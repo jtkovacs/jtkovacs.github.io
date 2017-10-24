@@ -1,35 +1,41 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> python | just under 4414 words | updated 10/14/2017</p><div class="TOC">- &nbsp;1. [Environment](#environment)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> python | just under 4704 words | updated 10/24/2017</p><div class="TOC">- &nbsp;1. [Environment](#environment)
 	- &nbsp;1.1. [Command line](#command-line)
 		- &nbsp;1.1.1. [Launch Python from Bash](#launch-python-from-bash)
-		- &nbsp;1.1.2. [Run Python script from Bash](#run-python-script-from-bash)
-		- &nbsp;1.1.3. [Take arguments from command line](#take-arguments-from-command-line)
+		- &nbsp;1.1.2. [IPython](#ipython)
+		- &nbsp;1.1.3. [Run Python script from Bash](#run-python-script-from-bash)
+		- &nbsp;1.1.4. [Take arguments from command line](#take-arguments-from-command-line)
 	- &nbsp;1.2. [Jupyter Notebook](#jupyter-notebook)
+		- &nbsp;1.2.1. [Working with Bash](#working-with-bash)
+		- &nbsp;1.2.2. [Magics](#magics)
+		- &nbsp;1.2.3. [Rich display](#rich-display)
+		- &nbsp;1.2.4. [IPython widgets](#ipython-widgets)
 	- &nbsp;1.3. [Managing modules](#managing-modules)
 	- &nbsp;1.4. [Which modules?](#which-modules)
 - &nbsp;2. [Language](#language)
-	- &nbsp;2.1. [Operators](#operators)
-	- &nbsp;2.2. [Control flow statements](#control-flow-statements)
-	- &nbsp;2.3. [Comprehensions](#comprehensions)
-	- &nbsp;2.4. [Generator expressions](#generator-expressions)
-	- &nbsp;2.5. [Datatypes](#datatypes)
-		- &nbsp;2.5.1. [Booleans](#booleans)
-		- &nbsp;2.5.2. [Numerics](#numerics)
-		- &nbsp;2.5.3. [Sequences](#sequences)
-			- &nbsp;2.5.3.1. [Strings, bytes, & unicode](#strings-bytes-unicode)
-			- &nbsp;2.5.3.2. [Lists](#lists)
-			- &nbsp;2.5.3.3. [Queues](#queues)
-			- &nbsp;2.5.3.4. [Tuples](#tuples)
-		- &nbsp;2.5.4. [Sets](#sets)
-		- &nbsp;2.5.5. [Dictionaries](#dictionaries)
-		- &nbsp;2.5.6. [Datetimes](#datetimes)
-	- &nbsp;2.6. [Functions](#functions)
-	- &nbsp;2.7. [Closures](#closures)
-	- &nbsp;2.8. [Decorators](#decorators)
-	- &nbsp;2.9. [Style](#style)
-		- &nbsp;2.9.1. [Spacing](#spacing)
-		- &nbsp;2.9.2. [Naming](#naming)
-		- &nbsp;2.9.3. [Structure](#structure)
-		- &nbsp;2.9.4. [Namespace & docstrings](#namespace-docstrings)
+	- &nbsp;2.1. [Fundamental characteristics](#fundamental-characteristics)
+	- &nbsp;2.2. [Operators](#operators)
+	- &nbsp;2.3. [Control flow statements](#control-flow-statements)
+	- &nbsp;2.4. [Comprehensions](#comprehensions)
+	- &nbsp;2.5. [Generator expressions](#generator-expressions)
+	- &nbsp;2.6. [Datatypes](#datatypes)
+		- &nbsp;2.6.1. [Booleans](#booleans)
+		- &nbsp;2.6.2. [Numerics](#numerics)
+		- &nbsp;2.6.3. [Sequences](#sequences)
+			- &nbsp;2.6.3.1. [Strings, bytes, & unicode](#strings-bytes-unicode)
+			- &nbsp;2.6.3.2. [Lists](#lists)
+			- &nbsp;2.6.3.3. [Queues](#queues)
+			- &nbsp;2.6.3.4. [Tuples](#tuples)
+		- &nbsp;2.6.4. [Sets](#sets)
+		- &nbsp;2.6.5. [Dictionaries](#dictionaries)
+		- &nbsp;2.6.6. [Datetimes](#datetimes)
+	- &nbsp;2.7. [Functions](#functions)
+	- &nbsp;2.8. [Closures](#closures)
+	- &nbsp;2.9. [Decorators](#decorators)
+	- &nbsp;2.10. [Style](#style)
+		- &nbsp;2.10.1. [Spacing](#spacing)
+		- &nbsp;2.10.2. [Naming](#naming)
+		- &nbsp;2.10.3. [Structure](#structure)
+		- &nbsp;2.10.4. [Namespace & docstrings](#namespace-docstrings)
 - &nbsp;3. [Paradigms](#paradigms)
 	- &nbsp;3.1. [Object-oriented Python](#object-oriented-python)
 		- &nbsp;3.1.1. [Methods](#methods)
@@ -60,7 +66,22 @@ quit()
 python fname.py  # run a script
 ```
 
-### 1.1.2. Run Python script from Bash
+### 1.1.2. IPython
+
+IPython is a special shell that adds some functionality versus the normal Python shell:
+
+- Input/output history
+- Reverse search with ctrl-r
+- Tab completion
+
+```Python
+$ ipython
+%history
+In
+Out
+```
+
+### 1.1.3. Run Python script from Bash
 
 ```Python
 # this code will run only if the script is executed from the command line
@@ -69,7 +90,7 @@ if __name__ == '__main__':
     ...
 ```
 
-### 1.1.3. Take arguments from command line
+### 1.1.4. Take arguments from command line
 
 ```Python
 import sys
@@ -78,9 +99,12 @@ for arg in sys.argv[1:]:
     ...
 ```
 
+
 ## 1.2. Jupyter Notebook
 
-Key commands:
+Jupyter Notebook has two modes: **command mode,** where you're manipulating cells (access via `esc` key) and **edit mode,** where you're working inside them (access via 'enter' key).
+
+Shortcuts (view all with `esc` + `h` keys:
 
 - `dd` deletes a cell
 
@@ -88,7 +112,88 @@ Key commands:
 jupyter notebook  # launches JN in browser
 # quit JN by typing ctrl+c twice in the command line
 # share JN by uploading it to GitHub --> http://nbviewer.jupyter.org/
+
+<object>? # view help
+<object.*ing> # wildcard match
+
+<object>?? # view source code
 ```
+
+### 1.2.1. Working with Bash
+
+```Python
+!<shell command> # calling a Bash command from Jupyter Notebook
+x = !cat fname.txt # saving results of Bash command to a Python variable
+!cat {my_fname} # passing contents of Python variable to a Bash command
+```
+
+### 1.2.2. Magics
+
+- Help: `%magic`
+- View all: `%lsmagic`
+- Line magics: `%<magic>`
+- Cell magics: `%%<magic>`
+
+```Python
+# profile code
+%%timeit
+<code>
+
+%timeit <code>
+
+%%file fname.ext # create a file
+% run fname.py # run a script
+
+%matplotlib # graphing options
+
+```
+
+### 1.2.3. Rich display
+
+Jake VanderPlas' code:
+
+```Python
+# create a class which defines the _repr_html_ method, returning a string of HTML
+class RedText(object):
+    def __init__(self, text):
+        self.text = text
+
+    def _repr_html_(self):
+        return "<font color='red' size=24>" + str(self.text) + "</font>"
+
+RedText('hello there')
+
+# example 2
+class ListDisplay(object):
+    def __init__(self, L):
+        self.L = L
+
+    def _repr_html_(self):
+        output = '<ul>'
+        for value in self.L:
+            output += "<li>" + str(value) + "</li>"
+        output += "</ul>"
+        return output
+
+my_list = [1, 2, 3]
+ListDisplay(my_list)
+```
+
+### 1.2.4. IPython widgets
+
+Jake VanderPlas: "transform simple Python functions into interactive widgets"
+
+- [Documentation](https://ipywidgets.readthedocs.io/en/stable/)
+- [Widget list](https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html)
+
+```Python
+# Initial install
+!conda install ipywidgets
+!jupyter nbextension enable --py widgetsnbextension
+
+from ipywidgets import interact
+```
+
 
 ## 1.3. Managing modules
 
@@ -131,8 +236,14 @@ See also: Doug Hellmann's [Python Module of the Week](https://pymotw.com/2/conte
 
 # 2. Language
 
+## 2.1. Fundamental characteristics
 
-## 2.1. Operators
+- Python prioritizes readability and simplicity; `import this`
+- Python is extremely picky about indentation, e.g. to define functions
+- Python is case sensitive and has several [reserved words](http://pentangle.net/python/handbook/node52.html)
+- Python uses [zero-based indexing](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html)
+
+## 2.2. Operators
 
 ```Python
 ASSIGNMENT operators
@@ -167,7 +278,7 @@ any(my_iterable)  # returns False if my_iterable is empty, or any element is Fal
 
 
 
-## 2.2. Control flow statements
+## 2.3. Control flow statements
 
 ```Python
 # CONDITIONAL operators:
@@ -198,7 +309,7 @@ while [condition]: …
 
 
 
-## 2.3. Comprehensions
+## 2.4. Comprehensions
 
 Often, `for` loops can be conveniently replaced with a comprehension. Comprehensions can be fairly complex, but at a certain point it's better to switch back to a loop.
 
@@ -219,7 +330,7 @@ dict = {letter: num for letter, num in zip('abcdef', range(1, 7))}
 
 
 
-## 2.4. Generator expressions
+## 2.5. Generator expressions
 
 A [generator expression](http://anandology.com/python-practice-book/iterators.html), also called a naked comprehension, is useful for processing large datasets because intermediate results are not stored, so RAM isn't overwhelmed.
 
@@ -242,7 +353,7 @@ list(my_generator(data))  # to convert generator to list, but why??
 
 
 
-## 2.5. Datatypes
+## 2.6. Datatypes
 
 Overview of [standard types](https://docs.python.org/3.5/library/stdtypes.html):
 
@@ -270,12 +381,12 @@ my_integer.bit_length()  # how many bits to represent an integer?
 # also bool(), float()
 ```
 
-### 2.5.1. Booleans
+### 2.6.1. Booleans
 
 - In addition to Boolean operands `True` and `False`, all Python objects have truth values
 - `None`, `0` for any numeric type, and empty collections evaluate as `False`
 
-### 2.5.2. Numerics
+### 2.6.2. Numerics
 
 ```Python
 my_float = 5.519
@@ -311,7 +422,7 @@ my_decimal_price = Decimal('5.003')
 my_decimal_price.quantize(Decimal('0.01'), rounding=ROUND_UP) # returns 5.01
 ```
 
-### 2.5.3. Sequences
+### 2.6.3. Sequences
 
 ```Python
 # Operations supported for all sequences:
@@ -332,7 +443,7 @@ s[i:j:k]  # slice s, taking every kth item from index i (inclusive) to j (exclus
 # For readability, consider two statements: one to stride, the next to slice
 ```
 
-#### 2.5.3.1. Strings, bytes, & unicode
+#### 2.6.3.1. Strings, bytes, & unicode
 
 Like lists, strings are composed of elements that can be accessed via their index. Unlike lists, strings are immutable: individual elements cannot be deleted or modified.
 
@@ -363,7 +474,7 @@ my_string.ljust(width[, fillchar])
 # s.rindex(), s.rfind(), s.rpartition(), etc.
 ```
 
-#### 2.5.3.2. Lists
+#### 2.6.3.2. Lists
 
 Lists store multiple elements of any type, including mixed type and including other lists. Lists are mutable; unlike string methods, most list methods alter the list in-place and return None. Lists are both sequences and containers.
 
@@ -398,7 +509,7 @@ my_sorted_list = sorted(my_list, reverse=False)  # returns sorted copy of unalte
 # https://wiki.python.org/moin/HowTo/Sorting
 ```
 
-#### 2.5.3.3. Queues
+#### 2.6.3.3. Queues
 
 Use a [double-ended queue](https://docs.python.org/3/library/collections.html#deque-objects), a list-like datatype, when you need to quickly insert or remove items from the end and beginning (deques are a stack-queue hybrid):
 
@@ -431,7 +542,7 @@ my_heap[0]  # always returns lowest number; here, 1
 print(heappop(my_heap), heappop(my_heap))  # removes and prints lowest, next lowest, etc.; here 1, 3
 ```
 
-#### 2.5.3.4. Tuples
+#### 2.6.3.4. Tuples
 
 Tuples addressing works like list addressing; unlike lists, though, tuples are immutable. When comparing tuples, Python proceeds on an index-by-index basis. Tuples are used for composite dictionary keys and multivariable assignment:
 
@@ -449,7 +560,7 @@ for last, first in directory_dict:
         print first, last, directory_dict[last,first]
 ```
 
-### 2.5.4. Sets
+### 2.6.4. Sets
 
 The value of sets is access to set operations; by design, seys lack slicing and indexing:
 
@@ -477,7 +588,7 @@ my_set1.symmetric_difference(my_set2)  # creates a new set: (set1-set2)U(set2-se
 # https://docs.python.org/3.5/library/stdtypes.html#set-types-set-frozenset
 ```
 
-### 2.5.5. Dictionaries
+### 2.6.5. Dictionaries
 
 A dictionary maps keys to values; values are retrieved via their key, doing away with indices. A dictionary is much faster to search than a list, and is often used to count letter or word occurrences in a block of text.
 
@@ -515,7 +626,7 @@ my_default_dict = defaultdict(int)  # sets default_value == 0, ready to incremen
 my_default_dict['key'] += 1  # increment values initialized at 0
 ```
 
-### 2.5.6. Datetimes
+### 2.6.6. Datetimes
 
 Code should convert local datetimes to UTC, perform computations, then convert back to local datetimes for display purposes.
 
@@ -557,7 +668,7 @@ my_datetime.strftime(my_format_string)
 
 
 
-## 2.6. Functions
+## 2.7. Functions
 
 Functions are pieces of reusable code that solve particular tasks. Brett Slatkin, _Effective Python_, p. 10:
 
@@ -598,7 +709,7 @@ def log(message, when=None):
     print('%s: %s' % (when, message))
 ```
 
-## 2.7. Closures
+## 2.8. Closures
 
 The scope of closures is tricky; see _Effective Python_, pp. 31-36. The general notion:
 
@@ -613,7 +724,7 @@ fifteen = add_to_five(10)  # store function call (with argument) as a variable
 fifteen()  # call variable as function
 ```
 
-## 2.8. Decorators
+## 2.9. Decorators
 
 - Brett Slatkin: _Decorators are Python syntax for allowing one function to modify another function at runtime._
 - [Introduction to decorators](https://www.codementor.io/python/tutorial/introduction-to-decorators)
@@ -641,16 +752,13 @@ def say_hello():
 say_hello() # syntactic sugar!!
 ```
 
-## 2.9. Style
+## 2.10. Style
 
-- Python prioritizes readability and simplicity; `import this`
-- Python is extremely picky about indentation, e.g. to define functions
-- Python is case sensitive and has several [reserved words](http://pentangle.net/python/handbook/node52.html)
-- Python uses [zero-based indexing](http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html)
-- See PEPs [20](https://www.python.org/dev/peps/pep-0020/), [290](https://www.python.org/dev/peps/pep-0290/), [291](https://www.python.org/dev/peps/pep-0291/), [345](https://www.python.org/dev/peps/pep-0345/), [8](https://www.python.org/dev/peps/pep-0008/)
-- Use [pycodestyle](https://pypi.python.org/pypi/pycodestyle/1.8.0.dev0) or [yapf](https://github.com/google/yapf) to automate style
+- See PEPs [20](https://www.python.org/dev/peps/pep-0020/), [290](https://www.python.org/dev/peps/pep-0290/), [291](https://www.python.org/dev/peps/pep-0291/), [345](https://www.python.org/dev/peps/pep-0345/), but most importantly [8](https://www.python.org/dev/peps/pep-0008/)
+- See [Google's style guide](https://google.github.io/styleguide/pyguide.html)
+- Use [pycodestyle](https://pypi.python.org/pypi/pycodestyle/1.8.0.dev0), [pylint](http://www.pylint.org) or [yapf](https://github.com/google/yapf) to automate style
 
-### 2.9.1. Spacing
+### 2.10.1. Spacing
 
 - Use 2 empty lines between functions
 - Use 2 empty lines between methods
@@ -661,7 +769,7 @@ say_hello() # syntactic sugar!!
 - Put two spaces between code and inline comments
 - Avoid single line if, for, while, excepts
 
-### 2.9.2. Naming
+### 2.10.2. Naming
 
 - Variable names should be informative nouns; also
 - Avoid single letter names since they might conflict with pdb (debugging library)
@@ -671,7 +779,7 @@ say_hello() # syntactic sugar!!
 - For classes and exceptions use camel case
 - For methods: `\_protected_instance_attribute` or `\_\_private_instance_attribute`
 
-### 2.9.3. Structure
+### 2.10.3. Structure
 
 - Group common operations into functions; group common functions into classes
 - Put import statements at top of file with one library per line, in order:
@@ -681,7 +789,7 @@ say_hello() # syntactic sugar!!
 - 79 characters or less per line
 - When an expression exceeds 79 characters, indent it 4 characters past its normal indentation level on the next line
 
-### 2.9.4. Namespace & docstrings
+### 2.10.4. Namespace & docstrings
 
 - Profile before optimizing; use `tracemalloc` to profile memory use and leaks
 - [PEP 257](https://www.python.org/dev/peps/pep-0257/): write docstrings for every function, class, and module.
@@ -903,7 +1011,7 @@ pdb.set_trace() # launches a psuedo-shell
 
 #### 3.3.1.1. Raising an error
 
-Dr. Joseph Hellerman's code:
+Joseph Hellerstein's code:
 
 ```Python
 import pandas as pd

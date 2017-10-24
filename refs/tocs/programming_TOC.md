@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1050 words | updated 10/17/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1234 words | updated 10/24/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
 	- &nbsp;1.1. [... as a profession?](#...-as-a-profession)
 		- &nbsp;1.1.1. [What skills are required for programming?](#what-skills-are-required-for-programming)
 	- &nbsp;1.2. [... in relation to hardware?](#...-in-relation-to-hardware)
@@ -14,11 +14,13 @@
 			- &nbsp;2.1.2.1. [Testing](#testing)
 				- &nbsp;2.1.2.1.1. [Raising errors](#raising-errors)
 	- &nbsp;2.2. [Readability and style](#readability-and-style)
-		- &nbsp;2.2.1. [Naming conventions](#naming-conventions)
 	- &nbsp;2.3. [Reproducibility](#reproducibility)
 		- &nbsp;2.3.1. [Version control](#version-control)
 		- &nbsp;2.3.2. [Literate programming and notebooks](#literate-programming-and-notebooks)
 		- &nbsp;2.3.3. [Documentation](#documentation)
+			- &nbsp;2.3.3.1. [Comments](#comments)
+			- &nbsp;2.3.3.2. [READMEs](#readmes)
+	- &nbsp;2.4. [Code review template](#code-review-template)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -196,8 +198,14 @@ TKTK
 
 ## 2.2. Readability and style
 
-### 2.2.1. Naming conventions
+Per Ford (2017), readability is important because good code must be:
 
+- **Understandable**
+- **Reusable** (part of or alongside other code)
+- **Fixable**
+- **Sustainable** (e.g. across versions of a language)
+
+Style guides formalize conventions to support readability for a specific language --- things like naming conventions, line and character spacing, etc.
 
 ## 2.3. Reproducibility
 
@@ -209,7 +217,32 @@ See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
 
 ### 2.3.3. Documentation
 
+#### 2.3.3.1. Comments
 
+Per Ford (2017):
+
+- "For modules and packages, [the docstring should] list the classes, exceptions and functions (and any other objects) that are exported by the module, with a one-line summary of each."
+- "For functions and methods, the [docstring] should summarize its behavior and document its arguments, return value(s), side effects, exceptions raised"
+- "Wrong comments are bugs"
+- Inline comments are generally bad practice (i.e. avoid them with variable names, functions, etc.)
+
+#### 2.3.3.2. READMEs
+
+## 2.4. Code review template
+
+Per Ford (2017):
+
+**Background:**
+
+- Describe what the application does
+- Describe the role of the code being reviewed
+
+**Comment on:**
+
+- Choice of variable and function names
+- Readability of the code
+- How improve reuse and efficiency
+- How use existing python packages
 
 
 
@@ -221,6 +254,8 @@ See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 
 Calvenese, D. (2006). Types of program errors. Retrieved from [http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html](http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html)
+
+Ford, A. (2017). Lecture at University of Washington.
 
 Scottish Qualifications Authority (SQA). (2006). Types of program error. Retrieved from [https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm](https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm)
 

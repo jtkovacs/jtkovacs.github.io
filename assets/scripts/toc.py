@@ -28,13 +28,13 @@ header_indices = list()
 hi = 0
 code_flag = False
 for row in fhand:
-        
+
     ## Exclude comments inside code chunks
     if row.startswith("```") and code_flag == False:
         code_flag = True
     elif row.startswith("```") and code_flag == True:
         code_flag = False
-    
+
     ## Extract and store headers and header indexes
     elif row.startswith('#') and code_flag == False:
         headers.append(row)
@@ -45,7 +45,7 @@ for row in fhand:
 
 
 
-# Construct TOC from headers 
+# Construct TOC from headers
 ## - X. [header-name](#header-name)
 ##      - X.X. [header-name](#header-name)
 ##      - X.X. [header-name](#header-name)
@@ -60,17 +60,17 @@ nrs = list()
 
 ## Process header data
 for i,h in enumerate(headers):
-    
+
     # Get header levels
-    Hn_prior = hlevels[i-1] 
+    Hn_prior = hlevels[i-1]
     Hn = hlevels[i]
-    
+
     ### Calculate header's indentation depth
     if Hn > 1:
         space = "\t"*(Hn-1)
     else:
         space = ""
-    
+
     ### Calculate header's number prefix
     if i == 0:
         hcount[1] += 1
@@ -81,13 +81,13 @@ for i,h in enumerate(headers):
             while j+1 <= 5:
                 hcount[j+1] = 0
                 j += 1
-            
+
     ### Trim zeros from number prefix, e.g. 1.2.0.0 to 1.2.
     nonzero_keys = list()
     for k,v in hcount.items():
         if v != 0:
             nonzero_keys.append(k)
-    nonzero_keys.sort()    
+    nonzero_keys.sort()
     nr_elements = list()
     for n in nonzero_keys:
         nr_elements.append(str(hcount[n]))
@@ -96,7 +96,7 @@ for i,h in enumerate(headers):
 
     ### Drop Markdown header indicators (#s) from header
     lname = " ".join(h.split(' ')[1:])[:-1]
-    
+
     ### Create URL-safe anchor from header (as pandoc, below)
     aname = "-".join(h.split(' ')[1:]).lower()[:-1]
     aname = aname.replace('&', '')
@@ -112,8 +112,8 @@ for i,h in enumerate(headers):
     ### Construct TOC entry for header
     ### - 1.1.2. [What are blue & green?](#what-are-blue-green)
     TOC.append(space+'- &nbsp;'+nr+'. ['+lname+'](#'+aname+')\n')
-    
-    
+
+
 
 # Open new .md file
 ## Constructing the output filename: /home/jtk/Site/refs/tocs/fname_TOC.md
@@ -128,7 +128,7 @@ wc = subprocess.run(['wc', '-w', fname], stdout=subprocess.PIPE)
 title = sys.argv[1][:-3].replace('-', ' ')
 num_words = wc.stdout.decode("utf-8").split(" ")[0]
 up_date = datetime.datetime.now().strftime("%m/%d/%Y")
-fout.write('<p class="path"><a href="../pkb.html">pkb contents</a> \> '+title+' | just under '+num_words+' words | updated '+up_date+'</p>') 
+fout.write('<p class="path"><a href="../pkb.html">pkb contents</a> \> '+title+' | just under '+num_words+' words | updated '+up_date+'</p>')
 
 ## ... TOC
 fout.write('<div class="TOC">')
@@ -143,13 +143,13 @@ ci = 0
 ni = 0
 
 for row in fhand:
-    
+
     ### Reformat '## Search engines' as '## 1.4. Search engines'
     if ci in header_indices:
         row = row.split(' ')
         header = row[0]+' '+nrs[ni]+'. '+" ".join(row[1:])
         fout.write(header)
-        
+
         ni += 1
 
     else:
@@ -177,7 +177,7 @@ my_soup = BeautifulSoup(fhand, "html.parser")
 headers = my_soup.find_all(["h1","h2","h3","h4","h5","h6"])
 for h in headers:
     h.string.wrap(my_soup.new_tag("a"))
-del h['id'] 
+del h['id']
 
 # Extract URL text, reformat and set as anchor name
 ## Creates URL-safe anchor by stripping &, ?, and other characters automatically
@@ -192,9 +192,9 @@ for i in images:
     img_loc = i['src']
     img_name = img_loc.split("/")[-1]
     i['src'] = "illos/"+img_name
-    
 
-    
+
+
 # Add stylesheets
 main = my_soup.new_tag("link")
 main["rel"] = "stylesheet"
@@ -204,13 +204,13 @@ my_soup.head.style.replace_with(main)
 refs = my_soup.new_tag("link")
 refs["rel"] = "stylesheet"
 refs["type"] = "text/css"
-refs['href'] = "../assets/styles/refs.css" 
+refs['href'] = "../assets/styles/refs.css"
 my_soup.head.append(refs)
 
 
 
 # Add page title
-pg_title_text = 'jtkovacs.github.io | ' + title
+pg_title_text = 'jtck.github.io | ' + title
 my_soup.title.append(pg_title_text)
 
 
@@ -221,5 +221,4 @@ fhand.write(my_soup.prettify())
 ## not sure why I need this twice????
 fhand = open(hname, 'w')
 fhand.write(my_soup.prettify())
-    
-    
+

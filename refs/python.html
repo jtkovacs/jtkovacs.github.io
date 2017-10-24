@@ -5,7 +5,7 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
-   jtkovacs.github.io | python
+   jtck.github.io | python
   </title>
   <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
   <style type="text/css">
@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; python | just under 4414 words | updated 10/14/2017
+   &gt; python | just under 4704 words | updated 10/24/2017
   </p>
   <div class="TOC">
    <ul>
@@ -58,12 +58,18 @@ code > span.er { color: #ff0000; font-weight: bold; }
         </li>
         <li>
          1.1.2.
+         <a href="#ipython">
+          IPython
+         </a>
+        </li>
+        <li>
+         1.1.3.
          <a href="#run-python-script-from-bash">
           Run Python script from Bash
          </a>
         </li>
         <li>
-         1.1.3.
+         1.1.4.
          <a href="#take-arguments-from-command-line">
           Take arguments from command line
          </a>
@@ -75,6 +81,32 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <a href="#jupyter-notebook">
         Jupyter Notebook
        </a>
+       <ul>
+        <li>
+         1.2.1.
+         <a href="#working-with-bash">
+          Working with Bash
+         </a>
+        </li>
+        <li>
+         1.2.2.
+         <a href="#magics">
+          Magics
+         </a>
+        </li>
+        <li>
+         1.2.3.
+         <a href="#rich-display">
+          Rich display
+         </a>
+        </li>
+        <li>
+         1.2.4.
+         <a href="#ipython-widgets">
+          IPython widgets
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        1.3.
@@ -98,72 +130,78 @@ code > span.er { color: #ff0000; font-weight: bold; }
      <ul>
       <li>
        2.1.
+       <a href="#fundamental-characteristics">
+        Fundamental characteristics
+       </a>
+      </li>
+      <li>
+       2.2.
        <a href="#operators">
         Operators
        </a>
       </li>
       <li>
-       2.2.
+       2.3.
        <a href="#control-flow-statements">
         Control flow statements
        </a>
       </li>
       <li>
-       2.3.
+       2.4.
        <a href="#comprehensions">
         Comprehensions
        </a>
       </li>
       <li>
-       2.4.
+       2.5.
        <a href="#generator-expressions">
         Generator expressions
        </a>
       </li>
       <li>
-       2.5.
+       2.6.
        <a href="#datatypes">
         Datatypes
        </a>
        <ul>
         <li>
-         2.5.1.
+         2.6.1.
          <a href="#booleans">
           Booleans
          </a>
         </li>
         <li>
-         2.5.2.
+         2.6.2.
          <a href="#numerics">
           Numerics
          </a>
         </li>
         <li>
-         2.5.3.
+         2.6.3.
          <a href="#sequences">
           Sequences
          </a>
          <ul>
           <li>
-           2.5.3.1.
+           2.6.3.1.
            <a href="#strings-bytes-unicode">
             Strings, bytes, &amp; unicode
            </a>
           </li>
           <li>
-           2.5.3.2.
+           2.6.3.2.
            <a href="#lists">
             Lists
            </a>
           </li>
           <li>
-           2.5.3.3.
+           2.6.3.3.
            <a href="#queues">
             Queues
            </a>
           </li>
           <li>
-           2.5.3.4.
+           2.6.3.4.
            <a href="#tuples">
             Tuples
            </a>
@@ -171,19 +209,19 @@ code > span.er { color: #ff0000; font-weight: bold; }
          </ul>
         </li>
         <li>
-         2.5.4.
+         2.6.4.
          <a href="#sets">
           Sets
          </a>
         </li>
         <li>
-         2.5.5.
+         2.6.5.
          <a href="#dictionaries">
           Dictionaries
          </a>
         </li>
         <li>
-         2.5.6.
+         2.6.6.
          <a href="#datetimes">
           Datetimes
          </a>
@@ -191,49 +229,49 @@ code > span.er { color: #ff0000; font-weight: bold; }
        </ul>
       </li>
       <li>
-       2.6.
+       2.7.
        <a href="#functions">
         Functions
        </a>
       </li>
       <li>
-       2.7.
+       2.8.
        <a href="#closures">
         Closures
        </a>
       </li>
       <li>
-       2.8.
+       2.9.
        <a href="#decorators">
         Decorators
        </a>
       </li>
       <li>
-       2.9.
+       2.10.
        <a href="#style">
         Style
        </a>
        <ul>
         <li>
-         2.9.1.
+         2.10.1.
          <a href="#spacing">
           Spacing
          </a>
         </li>
         <li>
-         2.9.2.
+         2.10.2.
          <a href="#naming">
           Naming
          </a>
         </li>
         <li>
-         2.9.3.
+         2.10.3.
          <a href="#structure">
           Structure
          </a>
         </li>
         <li>
-         2.9.4.
+         2.10.4.
          <a href="#namespace-docstrings">
           Namespace &amp; docstrings
          </a>
@@ -361,9 +399,32 @@ code > span.er { color: #ff0000; font-weight: bold; }
 <span class="fu">quit()</span>
 
 <span class="kw">python</span> fname.py  <span class="co"># run a script</span></code></pre>
+  <h3 id="ipython">
+   <a>
+    1.1.2. IPython
+   </a>
+  </h3>
+  <p>
+   IPython is a special shell that adds some functionality versus the normal Python shell:
+  </p>
+  <ul>
+   <li>
+    Input/output history
+   </li>
+   <li>
+    Reverse search with ctrl-r
+   </li>
+   <li>
+    Tab completion
+   </li>
+  </ul>
+  <pre class="sourceCode Python"><code class="sourceCode python">$ ipython
+%history
+In
+Out</code></pre>
   <h3 id="run-python-script-from-bash">
    <a>
-    1.1.2. Run Python script from Bash
+    1.1.3. Run Python script from Bash
    </a>
   </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># this code will run only if the script is executed from the command line</span>
@@ -372,7 +433,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
     ...</code></pre>
   <h3 id="take-arguments-from-command-line">
    <a>
-    1.1.3. Take arguments from command line
+    1.1.4. Take arguments from command line
    </a>
   </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="ch">import</span> sys
@@ -385,7 +446,30 @@ script_name = sys.argv[<span class="dv">0</span>]
    </a>
   </h2>
   <p>
-   Key commands:
+   Jupyter Notebook has two modes:
+   <strong>
+    command mode,
+   </strong>
+   where you're manipulating cells (access via
+   <code>
+    esc
+   </code>
+   key) and
+   <strong>
+    edit mode,
+   </strong>
+   where you're working inside them (access via 'enter' key).
+  </p>
+  <p>
+   Shortcuts (view all with
+   <code>
+    esc
+   </code>
+   +
+   <code>
+    h
+   </code>
+   keys:
   </p>
   <ul>
    <li>
@@ -397,7 +481,118 @@ script_name = sys.argv[<span class="dv">0</span>]
   </ul>
   <pre class="sourceCode Bash"><code class="sourceCode bash"><span class="kw">jupyter</span> notebook  <span class="co"># launches JN in browser</span>
 <span class="co"># quit JN by typing ctrl+c twice in the command line</span>
-<span class="co"># share JN by uploading it to GitHub --&gt; http://nbviewer.jupyter.org/</span></code></pre>
+<span class="co"># share JN by uploading it to GitHub --&gt; http://nbviewer.jupyter.org/</span>
+
+<span class="kw">&lt;object&gt;</span>? <span class="co"># view help</span>
+<span class="kw">&lt;object.*ing&gt;</span> <span class="co"># wildcard match</span>
+
+<span class="kw">&lt;object&gt;</span>?? <span class="co"># view source code</span></code></pre>
+  <h3 id="working-with-bash">
+   <a>
+    1.2.1. Working with Bash
+   </a>
+  </h3>
+  <pre class="sourceCode Python"><code class="sourceCode python">!&lt;shell command&gt; <span class="co"># calling a Bash command from Jupyter Notebook</span>
+x = !cat fname.txt <span class="co"># saving results of Bash command to a Python variable</span>
+!cat {my_fname} <span class="co"># passing contents of Python variable to a Bash command</span></code></pre>
+  <h3 id="magics">
+   <a>
+    1.2.2. Magics
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Help:
+    <code>
+     %magic
+    </code>
+   </li>
+   <li>
+    View all:
+    <code>
+     %lsmagic
+    </code>
+   </li>
+   <li>
+    Line magics:
+    <code>
+     %&lt;magic&gt;
+    </code>
+   </li>
+   <li>
+    Cell magics:
+    <code>
+     %%&lt;magic&gt;
+    </code>
+   </li>
+  </ul>
+  <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># profile code</span>
+%%timeit
+&lt;code&gt;
+
+%timeit &lt;code&gt;
+
+%%<span class="dt">file</span> fname.ext <span class="co"># create a file</span>
+% run fname.py <span class="co"># run a script</span>
+
+%matplotlib <span class="co"># graphing options</span></code></pre>
+  <h3 id="rich-display">
+   <a>
+    1.2.3. Rich display
+   </a>
+  </h3>
+  <p>
+   Jake VanderPlas' code:
+  </p>
+  <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># create a class which defines the _repr_html_ method, returning a string of HTML</span>
+<span class="kw">class</span> RedText(<span class="dt">object</span>):
+    <span class="kw">def</span> <span class="ot">__init__</span>(<span class="ot">self</span>, text):
+        <span class="ot">self</span>.text = text
+
+    <span class="kw">def</span> _repr_html_(<span class="ot">self</span>):
+        <span class="kw">return</span> <span class="st">"&lt;font color='red' size=24&gt;"</span> + <span class="dt">str</span>(<span class="ot">self</span>.text) + <span class="st">"&lt;/font&gt;"</span>
+
+RedText(<span class="st">'hello there'</span>)
+
+<span class="co"># example 2</span>
+<span class="kw">class</span> ListDisplay(<span class="dt">object</span>):
+    <span class="kw">def</span> <span class="ot">__init__</span>(<span class="ot">self</span>, L):
+        <span class="ot">self</span>.L = L
+
+    <span class="kw">def</span> _repr_html_(<span class="ot">self</span>):
+        output = <span class="st">'&lt;ul&gt;'</span>
+        <span class="kw">for</span> value in <span class="ot">self</span>.L:
+            output += <span class="st">"&lt;li&gt;"</span> + <span class="dt">str</span>(value) + <span class="st">"&lt;/li&gt;"</span>
+        output += <span class="st">"&lt;/ul&gt;"</span>
+        <span class="kw">return</span> output
+
+my_list = [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]
+ListDisplay(my_list)</code></pre>
+  <h3 id="ipython-widgets">
+   <a>
+    1.2.4. IPython widgets
+   </a>
+  </h3>
+  <p>
+   Jake VanderPlas: "transform simple Python functions into interactive widgets"
+  </p>
+  <ul>
+   <li>
+    <a href="https://ipywidgets.readthedocs.io/en/stable/">
+     Documentation
+    </a>
+   </li>
+   <li>
+    <a href="https://ipywidgets.readthedocs.io/en/stable/examples/Widget%20List.html">
+     Widget list
+    </a>
+   </li>
+  </ul>
+  <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># Initial install</span>
+!conda install ipywidgets
+!jupyter nbextension enable --py widgetsnbextension
+
+<span class="ch">from</span> ipywidgets <span class="ch">import</span> interact</code></pre>
   <h2 id="managing-modules">
    <a>
     1.3. Managing modules
@@ -527,9 +722,37 @@ pip3 install module_name
     2. Language
    </a>
   </h1>
+  <h2 id="fundamental-characteristics">
+   <a>
+    2.1. Fundamental characteristics
+   </a>
+  </h2>
+  <ul>
+   <li>
+    Python prioritizes readability and simplicity;
+    <code>
+     import this
+    </code>
+   </li>
+   <li>
+    Python is extremely picky about indentation, e.g. to define functions
+   </li>
+   <li>
+    Python is case sensitive and has several
+    <a href="http://pentangle.net/python/handbook/node52.html">
+     reserved words
+    </a>
+   </li>
+   <li>
+    Python uses
+    <a href="http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html">
+     zero-based indexing
+    </a>
+   </li>
+  </ul>
   <h2 id="operators">
    <a>
-    2.1. Operators
+    2.2. Operators
    </a>
   </h2>
   <pre class="sourceCode Python"><code class="sourceCode python">ASSIGNMENT operators
@@ -562,7 +785,7 @@ between1_and5 = [i <span class="kw">for</span> i in my_list where i &gt; <span c
 <span class="dt">any</span>(my_iterable)  <span class="co"># returns False if my_iterable is empty, or any element is False</span></code></pre>
   <h2 id="control-flow-statements">
    <a>
-    2.2. Control flow statements
+    2.3. Control flow statements
    </a>
   </h2>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># CONDITIONAL operators:</span>
@@ -591,7 +814,7 @@ between1_and5 = [i <span class="kw">for</span> i in my_list where i &gt; <span c
 <span class="kw">while</span> [condition]: …</code></pre>
   <h2 id="comprehensions">
    <a>
-    2.3. Comprehensions
+    2.4. Comprehensions
    </a>
   </h2>
   <p>
@@ -615,7 +838,7 @@ transposed_dict = {<span class="dt">dict</span>[key]:key <span class="kw">for</s
 <span class="dt">dict</span> = {letter: num <span class="kw">for</span> letter, num in <span class="dt">zip</span>(<span class="st">'abcdef'</span>, <span class="dt">range</span>(<span class="dv">1</span>, <span class="dv">7</span>))}</code></pre>
   <h2 id="generator-expressions">
    <a>
-    2.4. Generator expressions
+    2.5. Generator expressions
    </a>
   </h2>
   <p>
@@ -652,7 +875,7 @@ roots = ((x, x**<span class="fl">0.5</span>) <span class="kw">for</span> x in it
 <span class="dt">list</span>(my_generator(data))  <span class="co"># to convert generator to list, but why??</span></code></pre>
   <h2 id="datatypes">
    <a>
-    2.5. Datatypes
+    2.6. Datatypes
    </a>
   </h2>
   <p>
@@ -706,7 +929,7 @@ my_integer.bit_length()  <span class="co"># how many bits to represent an intege
 <span class="co"># also bool(), float()</span></code></pre>
   <h3 id="booleans">
    <a>
-    2.5.1. Booleans
+    2.6.1. Booleans
    </a>
   </h3>
   <ul>
@@ -737,7 +960,7 @@ my_integer.bit_length()  <span class="co"># how many bits to represent an intege
   </ul>
   <h3 id="numerics">
    <a>
-    2.5.2. Numerics
+    2.6.2. Numerics
    </a>
   </h3>
   <pre class="sourceCode Python"><code class="sourceCode python">my_float = <span class="fl">5.519</span>
@@ -773,7 +996,7 @@ my_decimal_price = Decimal(<span class="st">'5.003'</span>)
 my_decimal_price.quantize(Decimal(<span class="st">'0.01'</span>), rounding=ROUND_UP) <span class="co"># returns 5.01</span></code></pre>
   <h3 id="sequences">
    <a>
-    2.5.3. Sequences
+    2.6.3. Sequences
    </a>
   </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># Operations supported for all sequences:</span>
@@ -794,7 +1017,7 @@ s[i:j:k]  <span class="co"># slice s, taking every kth item from index i (inclus
 <span class="co"># For readability, consider two statements: one to stride, the next to slice</span></code></pre>
   <h4 id="strings-bytes-unicode">
    <a>
-    2.5.3.1. Strings, bytes, &amp; unicode
+    2.6.3.1. Strings, bytes, &amp; unicode
    </a>
   </h4>
   <p>
@@ -866,7 +1089,7 @@ my_string.ljust(width[, fillchar])
 <span class="co"># s.rindex(), s.rfind(), s.rpartition(), etc.</span></code></pre>
   <h4 id="lists">
    <a>
-    2.5.3.2. Lists
+    2.6.3.2. Lists
    </a>
   </h4>
   <p>
@@ -902,7 +1125,7 @@ my_sorted_list = <span class="dt">sorted</span>(my_list, reverse=<span class="ot
 <span class="co"># https://wiki.python.org/moin/HowTo/Sorting</span></code></pre>
   <h4 id="queues">
    <a>
-    2.5.3.3. Queues
+    2.6.3.3. Queues
    </a>
   </h4>
   <p>
@@ -942,7 +1165,7 @@ my_heap[<span class="dv">0</span>]  <span class="co"># always returns lowest num
 <span class="dt">print</span>(heappop(my_heap), heappop(my_heap))  <span class="co"># removes and prints lowest, next lowest, etc.; here 1, 3</span></code></pre>
   <h4 id="tuples">
    <a>
-    2.5.3.4. Tuples
+    2.6.3.4. Tuples
    </a>
   </h4>
   <p>
@@ -961,7 +1184,7 @@ directory_dict[last,first] = <span class="st">'phone_number'</span>  <span class
         <span class="dt">print</span> first, last, directory_dict[last,first]</code></pre>
   <h3 id="sets">
    <a>
-    2.5.4. Sets
+    2.6.4. Sets
    </a>
   </h3>
   <p>
@@ -990,7 +1213,7 @@ my_set1.symmetric_difference(my_set2)  <span class="co"># creates a new set: (se
 <span class="co"># https://docs.python.org/3.5/library/stdtypes.html#set-types-set-frozenset</span></code></pre>
   <h3 id="dictionaries">
    <a>
-    2.5.5. Dictionaries
+    2.6.5. Dictionaries
    </a>
   </h3>
   <p>
@@ -1029,7 +1252,7 @@ my_default_dict = defaultdict(<span class="dt">int</span>)  <span class="co"># s
 my_default_dict[<span class="st">'key'</span>] += <span class="dv">1</span>  <span class="co"># increment values initialized at 0</span></code></pre>
   <h3 id="datetimes">
    <a>
-    2.5.6. Datetimes
+    2.6.6. Datetimes
    </a>
   </h3>
   <p>
@@ -1070,7 +1293,7 @@ my_datetime.strftime(my_format_string)
 <span class="co"># https://docs.python.org/3/library/datetime.html?highlight=datetime#strftime-and-strptime-behavior</span></code></pre>
   <h2 id="functions">
    <a>
-    2.6. Functions
+    2.7. Functions
    </a>
   </h2>
   <p>
@@ -1143,7 +1366,7 @@ my_func(<span class="dv">2</span>, optional_keyword_arg = my_value)
     <span class="dt">print</span>(<span class="st">'</span><span class="ot">%s</span><span class="st">: </span><span class="ot">%s</span><span class="st">'</span> % (when, message))</code></pre>
   <h2 id="closures">
    <a>
-    2.7. Closures
+    2.8. Closures
    </a>
   </h2>
   <p>
@@ -1163,7 +1386,7 @@ fifteen = add_to_five(<span class="dv">10</span>)  <span class="co"># store func
 fifteen()  <span class="co"># call variable as function</span></code></pre>
   <h2 id="decorators">
    <a>
-    2.8. Decorators
+    2.9. Decorators
    </a>
   </h2>
   <ul>
@@ -1201,31 +1424,10 @@ fifteen()  <span class="co"># call variable as function</span></code></pre>
 say_hello() <span class="co"># syntactic sugar!!</span></code></pre>
   <h2 id="style">
    <a>
-    2.9. Style
+    2.10. Style
    </a>
   </h2>
   <ul>
-   <li>
-    Python prioritizes readability and simplicity;
-    <code>
-     import this
-    </code>
-   </li>
-   <li>
-    Python is extremely picky about indentation, e.g. to define functions
-   </li>
-   <li>
-    Python is case sensitive and has several
-    <a href="http://pentangle.net/python/handbook/node52.html">
-     reserved words
-    </a>
-   </li>
-   <li>
-    Python uses
-    <a href="http://python-history.blogspot.com/2013/10/why-python-uses-0-based-indexing.html">
-     zero-based indexing
-    </a>
-   </li>
    <li>
     See PEPs
     <a href="https://www.python.org/dev/peps/pep-0020/">
@@ -1243,15 +1445,25 @@ say_hello() <span class="co"># syntactic sugar!!</span></code></pre>
     <a href="https://www.python.org/dev/peps/pep-0345/">
      345
     </a>
-    ,
+    , but most importantly
     <a href="https://www.python.org/dev/peps/pep-0008/">
      8
+    </a>
+   </li>
+   <li>
+    See
+    <a href="https://google.github.io/styleguide/pyguide.html">
+     Google's style guide
     </a>
    </li>
    <li>
     Use
     <a href="https://pypi.python.org/pypi/pycodestyle/1.8.0.dev0">
      pycodestyle
+    </a>
+    ,
+    <a href="http://www.pylint.org">
+     pylint
     </a>
     or
     <a href="https://github.com/google/yapf">
@@ -1262,7 +1474,7 @@ say_hello() <span class="co"># syntactic sugar!!</span></code></pre>
   </ul>
   <h3 id="spacing">
    <a>
-    2.9.1. Spacing
+    2.10.1. Spacing
    </a>
   </h3>
   <ul>
@@ -1302,7 +1514,7 @@ say_hello() <span class="co"># syntactic sugar!!</span></code></pre>
   </ul>
   <h3 id="naming">
    <a>
-    2.9.2. Naming
+    2.10.2. Naming
    </a>
   </h3>
   <ul>
@@ -1348,7 +1560,7 @@ say_hello() <span class="co"># syntactic sugar!!</span></code></pre>
   </ul>
   <h3 id="structure">
    <a>
-    2.9.3. Structure
+    2.10.3. Structure
    </a>
   </h3>
   <ul>
@@ -1376,7 +1588,7 @@ say_hello() <span class="co"># syntactic sugar!!</span></code></pre>
   </ul>
   <h3 id="namespace-docstrings">
    <a>
-    2.9.4. Namespace &amp; docstrings
+    2.10.4. Namespace &amp; docstrings
    </a>
   </h3>
   <ul>
@@ -1724,7 +1936,7 @@ pdb.set_trace() <span class="co"># launches a psuedo-shell</span>
    </a>
   </h4>
   <p>
-   Dr. Joseph Hellerman's code:
+   Joseph Hellerstein's code:
   </p>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="ch">import</span> pandas <span class="ch">as</span> pd
 <span class="kw">def</span> func(df):

@@ -165,7 +165,7 @@ TKTK
 
 ## Readability and style
 
-Per Ford (2017), readability is important because good code must be:
+Per Beck (2017), readability is important because good code must be:
 
 - **Understandable**
 - **Reusable** (part of or alongside other code)
@@ -186,7 +186,7 @@ See: paper notes from DSSG 2017, Valentina Staneva's tutorial.
 
 #### Comments
 
-Per Ford (2017):
+Per Beck (2017):
 
 - "For modules and packages, [the docstring should] list the classes, exceptions and functions (and any other objects) that are exported by the module, with a one-line summary of each."
 - "For functions and methods, the [docstring] should summarize its behavior and document its arguments, return value(s), side effects, exceptions raised"
@@ -197,7 +197,7 @@ Per Ford (2017):
 
 ## Code review template
 
-Per Ford (2017):
+Per Beck (2017):
 
 **Background:**
 
@@ -222,7 +222,7 @@ Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How pe
 
 Calvenese, D. (2006). Types of program errors. Retrieved from [http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html](http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html)
 
-Ford, A. (2017). Lecture at University of Washington.
+Beck, D. (2017). Lecture at University of Washington.
 
 Scottish Qualifications Authority (SQA). (2006). Types of program error. Retrieved from [https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm](https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm)
 

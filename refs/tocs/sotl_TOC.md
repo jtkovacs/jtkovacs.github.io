@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4506 words | updated 10/25/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4505 words | updated 10/25/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -42,7 +42,7 @@
 	- &nbsp;3.1. [Instructional design frameworks](#instructional-design-frameworks)
 		- &nbsp;3.1.1. [ADDIE model](#addie-model)
 		- &nbsp;3.1.2. [Successive approximation model (SAM)](#successive-approximation-model-sam)
-		- &nbsp;3.1.3. [Booth’s USER method](#booth’s-user-method)
+		- &nbsp;3.1.3. [USER method](#user-method)
 			- &nbsp;3.1.3.1. [Understand](#understand)
 			- &nbsp;3.1.3.2. [Structure](#structure)
 			- &nbsp;3.1.3.3. [Engage](#engage)
@@ -465,7 +465,7 @@ Allen Interactions (2017) has adapted Agile software methods for ID:
 
 <img src="../illos/SAM-process.png" width="600px">
 
-### 3.1.3. Booth’s USER method
+### 3.1.3. USER method
 
 Booth (2011, p. 95) calls her USER method a "streamlined version of ADDIE" that is more realistic in practice.
 
@@ -542,7 +542,7 @@ From Booth, 2011, p. 116:
 
 # 4. Reflective practice
 
-Booth presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
+Booth presents her [USER method](#user-method) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
 
 ## 4.1. Qualities of excellent teachers
 

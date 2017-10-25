@@ -400,7 +400,7 @@ Allen Interactions (2017) has adapted Agile software methods for ID:
 
 <img src="../illos/SAM-process.png" width="600px">
 
-### Booth’s USER method
+### USER method
 
 Booth (2011, p. 95) calls her USER method a "streamlined version of ADDIE" that is more realistic in practice.
 
@@ -477,7 +477,7 @@ From Booth, 2011, p. 116:
 
 # Reflective practice
 
-Booth presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
+Booth presents her [USER method](#user-method) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
 
 ## Qualities of excellent teachers
 

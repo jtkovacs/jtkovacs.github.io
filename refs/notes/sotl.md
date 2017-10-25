@@ -1,7 +1,13 @@
 
 # What is instruction?
 
-## Booth's elements of instructional literacy
+## How does instruction vary by context?
+
+- **Education vs. training:** Booth (2011, p. 51) notes that some people distinguish between education and training on the basis of transfer (which education aims to promote, but training does not).
+- **Academia vs. real-world learning:** Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
+- **Learning environments vs. instructional systems:** This distinction comes from Gagné: _"learning environments_ are constructivist educational spaces that provide the framework for self-discovery, whereas _instructional systems_ are behaviorist/cognitivist spaces that 'focus on telling ... learners what they need to know'" (Booth, 2011, p. 87).
+
+## What competencies should instructors have?
 
 Per Booth (2011), core knowledge and skills for teaching (what she calls “instructional literacy”) includes:
 
@@ -14,51 +20,6 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
 - Skill in **instructional design,** a structured process that creates instructional products
 
 Booth presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
-
-## Genres and mediums of instruction
-
-### Education vs. training
-
-Booth (2011, p. 51) notes that some people distinguish between education and training on the basis of transfer (which education aims to promote).
-
-### Academia vs. real-world learning
-
-Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
-
-### Learning environments vs. instructional systems
-
-This distinction comes from Gagné: _"learning environments_ are constructivist educational spaces that provide the framework for self-discovery, whereas _instructional systems_ are behaviorist/cognitivist spaces that 'focus on telling ... learners what they need to know'" (Booth, 2011, p. 87).
-
-
-# Reflective practice
-
-## Qualities of excellent teachers
-
-Per Booth (2011):
-
-- [logistics]
-    - Focus on goals
-    - Be organized enough to achieve them
-- [interpersonal]
-    - Be authentic
-    - Show your personal investment in the class and the students
-
-## Instructional messages
-
-Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
-
-- get attention, hold interest: **UNEXPECTED, STORIES**
-- facilitate comprehension: **SIMPLE, CONCRETE**
-- appeal and persuade: **CREDIBLE, EMOTIONAL**
-
-Also:
-
-- clearly relevant, clearly actionable ("WIIFM/what's in it for me principle")
-
-## A miscellany of advice and insights
-
-- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2011)
-- Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
 
 
 
@@ -526,6 +487,38 @@ From Booth, 2011, p. 116:
 
 
 
+
+
+
+# Reflective practice
+
+## Qualities of excellent teachers
+
+Per Booth (2011):
+
+- [logistics]
+    - Focus on goals
+    - Be organized enough to achieve them
+- [interpersonal]
+    - Be authentic
+    - Show your personal investment in the class and the students
+
+## Instructional messages
+
+Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
+
+- get attention, hold interest: **UNEXPECTED, STORIES**
+- facilitate comprehension: **SIMPLE, CONCRETE**
+- appeal and persuade: **CREDIBLE, EMOTIONAL**
+
+Also:
+
+- clearly relevant, clearly actionable ("WIIFM/what's in it for me principle")
+
+## A miscellany of advice and insights
+
+- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2011)
+- Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
 
 
 

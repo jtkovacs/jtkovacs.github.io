@@ -17,9 +17,9 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
     - **Instructional theories,** oriented towards teacher practice AKA **pedagogy;**
     - **Curriculum theories,** focused on 'genre' in teaching;
 - Mastery of **teaching technologies** (for collaboration, assessment, etc.); and
-- Skill in **instructional design,** a structured process that creates instructional products
+- Skill in **instructional design,** a structured design process that creates learning objects, etc. for learning interactions
 
-Booth presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
+Booth also presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
 
 
 
@@ -27,62 +27,48 @@ Booth presents her [USER method](#user-model) primarily as an instructional desi
 
 # Educational theory
 
-
-
 ## Learning theory
 
-### Summary of conclusions
+### Timeline of major learning theories
 
-See also: Brown et al. (2014)
+From lectures by Philip J. Reed at the University of Washington iSchool, following Booth (2011) and Keller (1983):
 
-Per Booth (2011):
+- CLASSICAL (philosophical):
+    - **Rationalism**
+    - **Empiricism**
+- SCIENTIFIC
+    - PSYCHOLOGY _Reed notes that these approaches are both comfortable assessing learning through behavior change, not so for constructivism._
+        - **Behaviorism** (B. F. Skinner, rote memorization, reinforcement, feedback); dominant c. 1950s as an educational theory but still has currency in psychology, still embedded in common teaching and learning practices; associated with Industrial Revolution
+        - **Cognitivism** (Jean Piaget, David Ausubel) focuses on learners' information processing AKA "assimilation of information into mental models" (Reed, 2017; AKA schemata, Booth, 2011, p. 44); "how to organize instruction" for "acquisition and retention of knowledge and skills", "also studied in relation to individual differences in ability and learning style" (Keller, 1983); note that this includes a much more active role for the student, believing that "knowledge is something that depends on your perception and how you put things together" (Reed, 2017)
+            - Human development and its implications for learning (Piaget's *readiness* concept)
+            - Gestalt theorists
+    - EDUCATION
+        - **Constructivism** (John Dewey, Lev Vygotsky) focuses on how *learners* "construct their own learning process" (Reed, 2017) through "observation, translation, and imitation (mimesis, socialization, and modeling)" (Booth, 2011, p. 62), subject to *social influences*; mainstream view in education, strugges with the issue of assessment
+            - Situated learning
+            - Zone of proximal development
+
+### Implications for instructional design
+
+Per Booth (2011), and see also Brown et al. (2014):
 
 - **Memory**
     - Manage cognitive overload (manage environment, curate inputs so they are of better quality, which includes their structure)
     - Mnemonics (structuring information logically AKA chunking; alphabetically; metaphorically; spatially)
     - Elaboration (associating with existing information)
 - **Motivation**
-    - Maslow and deprivation needs vs. growth needs
+    - Maslow, deprivation needs vs. growth needs
     - Intrinsic (inherent/already internalized) versus extrinsic (incentivized/coerced) motivation
 - **Environment**
     - "practical factors such as room dimensions, furniture, and seating capacity; ... lighting and temperature;
     - "technical factors such as computing technology and presentation media;
     - "cultural elements such as language accessibility and inclusiveness; and
     - "instructional elements such as tone, pacing, classroom dynamics, discussion management, and opportunities for interaction" (Booth, 2011, p. 45)
-- **Prior knowledge** i.e. schemata AKA mental models
+- **Prior knowledge** i.e. schemata AKA mental models; related to TRANSFER
     - Readiness for learning (Piaget)
     - Respecting prior knowledge
     - Activating prior knowledge
 
-Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, believes learning is a function of the "interplay" between the following factors (note that not all of them are under the instructor's control):
-
-| Internal | External |
-| --- | --- |
-| cognition | environment |
-| emotion | instructor |
-| desire | culture |
-
-
-### Timeline of learning theories
-
-From lectures by Philip J. Reed at the University of Washington iSchool, following Booth (2011) and Keller (1983):
-
-- Classical (philosophical):
-    - **Rationalism**
-    - **Empiricism**
-- Scientific:
-    - Psychology: _Reed notes that these approaches are both comfortable assessing learning through behavior change, not so for constructivism._
-        - **Behaviorism** (B. F. Skinner, rote memorization, reinforcement, feedback); dominant c. 1950s as an educational theory but still has currency in psychology, still embedded in common teaching and learning practices; associated with Industrial Revolution
-        - **Cognitivism** (Jean Piaget, David Ausubel) focuses on learners' information processing AKA "assimilation of information into mental models" (Reed, 2017; AKA schemata, Booth, 2011, p. 44); "how to organize instruction" for "acquisition and retention of knowledge and skills", "also studied in relation to individual differences in ability and learning style" (Keller, 1983); note that this includes a much more active role for the student, believing that "knowledge is something that depends on your perception and how you put things together" (Reed, 2017)
-            - Human development and its implications for learning (Piaget's *readiness* concept)
-            - Gestalt theorists
-    - Education
-        - **Constructivism** (John Dewey, Lev Vygotsky) focuses on how *learners* "construct their own learning process" (Reed, 2017) through "observation, translation, and imitation (mimesis, socialization, and modeling)" (Booth, 2011, p. 62), subject to *social influences*; mainstream view in education, strugges with the issue of assessment
-            - Situated learning
-            - Zone of proximal development
-
-
-### Motivation
+#### Motivation
 
 Motivation an extremely important part of learning; it is *why* people learn, rather than *how.*
 
@@ -103,7 +89,7 @@ Determinants E and P may be examined for each behavior, identifying instructiona
 
 A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
 
-#### Interest
+##### Interest
 
 Interest AKA attention = f(trait_curiosity, presentation); see [instructional messages.](#instructional-messages)
 
@@ -131,7 +117,7 @@ Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. M
 - **Instrumental** relevance can be made clear through learning objectives
 - **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
 
-#### Expectancy
+##### Expectancy
 
 Expectancy AKA confidence = f(challenge, support), similar to "zone of proximal development"
 
@@ -141,7 +127,7 @@ Expectancy AKA confidence = f(challenge, support), similar to "zone of proximal 
     - Make the pathway to success clear (mastery learning)
     - Give feedback that clarifies the connection between efforts and outcomes
 
-#### Satisfaction
+##### Satisfaction
 
 Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
 
@@ -151,9 +137,7 @@ Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
 - Give motivational feedback verbally and immediately
 - Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable
 
-
-
-### Transfer
+#### Transfer
 
 Along with **recall** (retrieve and apply this knowledge if a similar situation arises), Booth (2011, p. 43) says a fundamental goal of instruction is transfer (retrieve and apply this in novel ways). Interestingly, per Bransford et al. (2014):
 
@@ -161,7 +145,7 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
 - Classical education practices assumed transfer in their doctrine of "formal discipline", i.e. their belief that studying Latin trained the mind like a muscle for other tasks (probably not true of minds or muscles).
 - Some researchers treat transfer as a matter of conceptual overlap, others as a matter of skill overlap.
 
-#### Types of transfer
+##### Types of transfer
 
 - **Near vs. far:** "[T]hese terms distinguish the closeness or distance [or dis/similarity] between the original learning and the transfer task" (Leberman, 2006).
 - **Positive vs. negative:** "When learning in one context improves[/inhibits] learning or performance in another context" (Leberman, 2006).
@@ -169,7 +153,7 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
 - **Automatic vs. mindful:** " When an individual responds spontaneously within a transfer situation, which is very similar to the learning situation then this is  automatic transfer … In contrast, mindful [or] high road transfer is deliberate and involves conscious thought and intellectual effort, and occurs in situations where there are significant gaps or differences between the original and the transfer situations" (Leberman, 2006).
 - **Overzealous:** " Of particular concern are situations where students transfer skills, knowledge, and routines that are effective for the task at hand but may nevertheless be suboptimal in the long run because they block additional learning. We will call this overzealous transfer (OZT) — people transfer solutions that appear to be positive because they are  working well enough, but they are nevertheless negative with respect to learning what is new"  (Schwartz et al., 2012).
 
-#### How to promote transfer
+##### How to promote transfer
 
 - Provide transfer-supportive **learning experiences:**
     - Something must be learned with sufficient depth before it can be transferred
@@ -190,6 +174,25 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
     - Be aware that prior knowledge is not just of an individual student's construction; it is also cultural
 
 
+
+
+
+
+
+
+## Instructional theory
+
+The learning theories above have consequent instructional theories. Using a series of questions from Ertmer and Newby, Booth (2011, p. 73) contrasts them as follows:
+
+| Question | Behaviorist | Cognitivist | Constructivist |
+| --- | --- | --- | --- |
+| How does learning occur?  | through guided behavioral change made evident by accurate answers/consistent performance | through mental processes that result in the formation of concepts and schema | through experience, sociocultural influence, and metacognition |
+| What factors influence learning? | _external_ (environment, instruction) | _internal_ (cognitive processes, readiness, aptitude) | _internal_ (emotional); _external_ (social, environmental) |
+| What is the role of memory? | repetition and reinforcement facilitates memorization | short- and long-term memory interact to facilitate schema building | activated and influenced by meaningful learner experiences |
+| How does transfer occur? | encouraged by positive reinforcement, learners make associations in the form of "correct" answers | learners form mental models in order to apply concepts and ideas to new scenarios | through perception of personally-relevant knowledge and application of knowledge |
+| What types of learning are best suited to this theory? | fact-based; practical | concept-based; procedural | problem-based; collaborative |
+| What aspects are important to instructional design? | provide feedback to reinforce learning; provide opportunities for practice and exchange | present information with targeted efficiency in order to stimulate memory and the formation of structured knowledge | provides learners with opportunties to investigate content in authentic settings |
+| What teaching strategies facilitate learning? | instructor-centered; learner/instructor interaction; information organization and repetition | instructor-centered; strategic information presentation; targeted media use; cognitive load management; learner scaffolding | learner-centered; authentic stimulation; collaborative activity; hands-on practice; questioning techniques; critical inquiry |
 
 ## Assessment
 
@@ -275,26 +278,6 @@ From Phillips & Phillips, 2010, p. 18:
 - Performance—what the participant will be able to doduring the program
 - Condition—circumstances under which the participant will perform the task
 - Criteria—degree or level of proficiency that is necessary to perform the job"
-
-
-
-
-
-
-## Instructional theory
-
-The learning theories above have consequent instructional theories. Using a series of questions from Ertmer and Newby, Booth (2011, p. 73) contrasts them as follows:
-
-| Question | Behaviorist | Cognitivist | Constructivist |
-| --- | --- | --- | --- |
-| How does learning occur?  | through guided behavioral change made evident by accurate answers/consistent performance | through mental processes that result in the formation of concepts and schema | through experience, sociocultural influence, and metacognition |
-| What factors influence learning? | _external_ (environment, instruction) | _internal_ (cognitive processes, readiness, aptitude) | _internal_ (emotional); _external_ (social, environmental) |
-| What is the role of memory? | repetition and reinforcement facilitates memorization | short- and long-term memory interact to facilitate schema building | activated and influenced by meaningful learner experiences |
-| How does transfer occur? | encouraged by positive reinforcement, learners make associations in the form of "correct" answers | learners form mental models in order to apply concepts and ideas to new scenarios | through perception of personally-relevant knowledge and application of knowledge |
-| What types of learning are best suited to this theory? | fact-based; practical | concept-based; procedural | problem-based; collaborative |
-| What aspects are important to instructional design? | provide feedback to reinforce learning; provide opportunities for practice and exchange | present information with targeted efficiency in order to stimulate memory and the formation of structured knowledge | provides learners with opportunties to investigate content in authentic settings |
-| What teaching strategies facilitate learning? | instructor-centered; learner/instructor interaction; information organization and repetition | instructor-centered; strategic information presentation; targeted media use; cognitive load management; learner scaffolding | learner-centered; authentic stimulation; collaborative activity; hands-on practice; questioning techniques; critical inquiry |
-
 
 ### Connectivism
 
@@ -396,6 +379,14 @@ She suggests evaluating technologies in this format, which I've slightly adapted
 # Instructional design
 
 Instructional design combines [educational theory](#educational-theory) with [design thinking methods](./strategy.html#design-thinking) to create a variety of instructional products. Per Booth (2011, p. 106), "ID is a systematic instructional planning approach that channels ... insight and awareness [from reflective practice, educational theory, and teaching technologies] into efficient, learner-focused pedagogy". Booth notes that ID is communicated in the form of models/frameworks and guiding principles.
+
+Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, believes learning is a function of the "interplay" between the following factors (note that not all of them are under the instructor's control):
+
+| Internal | External |
+| --- | --- |
+| cognition | environment |
+| emotion | instructor |
+| desire | culture |
 
 ## ID process models
 

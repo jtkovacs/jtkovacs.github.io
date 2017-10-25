@@ -1,36 +1,36 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4430 words | updated 10/25/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4441 words | updated 10/25/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
 	- &nbsp;2.1. [Learning theory](#learning-theory)
-		- &nbsp;2.1.1. [Summary of conclusions](#summary-of-conclusions)
-		- &nbsp;2.1.2. [Timeline of learning theories](#timeline-of-learning-theories)
-		- &nbsp;2.1.3. [Motivation](#motivation)
-			- &nbsp;2.1.3.1. [Interest](#interest)
-			- &nbsp;2.1.3.2. [Relevance](#relevance)
-			- &nbsp;2.1.3.3. [Expectancy](#expectancy)
-			- &nbsp;2.1.3.4. [Satisfaction](#satisfaction)
-		- &nbsp;2.1.4. [Transfer](#transfer)
-			- &nbsp;2.1.4.1. [Types of transfer](#types-of-transfer)
-			- &nbsp;2.1.4.2. [How to promote transfer](#how-to-promote-transfer)
-	- &nbsp;2.2. [Assessment](#assessment)
-		- &nbsp;2.2.1. [Alignment](#alignment)
-		- &nbsp;2.2.2. [Objectives](#objectives)
-			- &nbsp;2.2.2.1. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
-			- &nbsp;2.2.2.2. [Task analysis](#task-analysis)
-		- &nbsp;2.2.3. [Kirkpatrick/Phillips model](#kirkpatrickphillips-model)
-			- &nbsp;2.2.3.1. [Reaction objectives](#reaction-objectives)
-			- &nbsp;2.2.3.2. [Learning and application/behavior objectives](#learning-and-applicationbehavior-objectives)
-	- &nbsp;2.3. [Instructional theory](#instructional-theory)
-		- &nbsp;2.3.1. [Connectivism](#connectivism)
-		- &nbsp;2.3.2. [Active learning](#active-learning)
-			- &nbsp;2.3.2.1. [Flipped classroom](#flipped-classroom)
-		- &nbsp;2.3.3. [Critical pedagogy](#critical-pedagogy)
-			- &nbsp;2.3.3.1. [Transformative learning theory](#transformative-learning-theory)
-		- &nbsp;2.3.4. [Problem-based learning](#problem-based-learning)
-		- &nbsp;2.3.5. [Integrative learning](#integrative-learning)
-		- &nbsp;2.3.6. [Mastery learning](#mastery-learning)
-		- &nbsp;2.3.7. [Experiential learning](#experiential-learning)
+		- &nbsp;2.1.1. [Timeline of major learning theories](#timeline-of-major-learning-theories)
+		- &nbsp;2.1.2. [Implications for instructional design](#implications-for-instructional-design)
+			- &nbsp;2.1.2.1. [Motivation](#motivation)
+				- &nbsp;2.1.2.1.1. [Interest](#interest)
+			- &nbsp;2.1.2.2. [Relevance](#relevance)
+				- &nbsp;2.1.2.2.1. [Expectancy](#expectancy)
+				- &nbsp;2.1.2.2.2. [Satisfaction](#satisfaction)
+			- &nbsp;2.1.2.3. [Transfer](#transfer)
+				- &nbsp;2.1.2.3.1. [Types of transfer](#types-of-transfer)
+				- &nbsp;2.1.2.3.2. [How to promote transfer](#how-to-promote-transfer)
+	- &nbsp;2.2. [Instructional theory](#instructional-theory)
+	- &nbsp;2.3. [Assessment](#assessment)
+		- &nbsp;2.3.1. [Alignment](#alignment)
+		- &nbsp;2.3.2. [Objectives](#objectives)
+			- &nbsp;2.3.2.1. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
+			- &nbsp;2.3.2.2. [Task analysis](#task-analysis)
+		- &nbsp;2.3.3. [Kirkpatrick/Phillips model](#kirkpatrickphillips-model)
+			- &nbsp;2.3.3.1. [Reaction objectives](#reaction-objectives)
+			- &nbsp;2.3.3.2. [Learning and application/behavior objectives](#learning-and-applicationbehavior-objectives)
+		- &nbsp;2.3.4. [Connectivism](#connectivism)
+		- &nbsp;2.3.5. [Active learning](#active-learning)
+			- &nbsp;2.3.5.1. [Flipped classroom](#flipped-classroom)
+		- &nbsp;2.3.6. [Critical pedagogy](#critical-pedagogy)
+			- &nbsp;2.3.6.1. [Transformative learning theory](#transformative-learning-theory)
+		- &nbsp;2.3.7. [Problem-based learning](#problem-based-learning)
+		- &nbsp;2.3.8. [Integrative learning](#integrative-learning)
+		- &nbsp;2.3.9. [Mastery learning](#mastery-learning)
+		- &nbsp;2.3.10. [Experiential learning](#experiential-learning)
 	- &nbsp;2.4. [Curriculum theory](#curriculum-theory)
 		- &nbsp;2.4.1. [Information literacy](#information-literacy)
 - &nbsp;3. [Teaching technologies](#teaching-technologies)
@@ -77,9 +77,9 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
     - **Instructional theories,** oriented towards teacher practice AKA **pedagogy;**
     - **Curriculum theories,** focused on 'genre' in teaching;
 - Mastery of **teaching technologies** (for collaboration, assessment, etc.); and
-- Skill in **instructional design,** a structured process that creates instructional products
+- Skill in **instructional design,** a structured design process that creates learning objects, etc. for learning interactions
 
-Booth presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
+Booth also presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
 
 
 
@@ -87,62 +87,48 @@ Booth presents her [USER method](#user-model) primarily as an instructional desi
 
 # 2. Educational theory
 
-
-
 ## 2.1. Learning theory
 
-### 2.1.1. Summary of conclusions
+### 2.1.1. Timeline of major learning theories
 
-See also: Brown et al. (2014)
+From lectures by Philip J. Reed at the University of Washington iSchool, following Booth (2011) and Keller (1983):
 
-Per Booth (2011):
+- CLASSICAL (philosophical):
+    - **Rationalism**
+    - **Empiricism**
+- SCIENTIFIC
+    - PSYCHOLOGY _Reed notes that these approaches are both comfortable assessing learning through behavior change, not so for constructivism._
+        - **Behaviorism** (B. F. Skinner, rote memorization, reinforcement, feedback); dominant c. 1950s as an educational theory but still has currency in psychology, still embedded in common teaching and learning practices; associated with Industrial Revolution
+        - **Cognitivism** (Jean Piaget, David Ausubel) focuses on learners' information processing AKA "assimilation of information into mental models" (Reed, 2017; AKA schemata, Booth, 2011, p. 44); "how to organize instruction" for "acquisition and retention of knowledge and skills", "also studied in relation to individual differences in ability and learning style" (Keller, 1983); note that this includes a much more active role for the student, believing that "knowledge is something that depends on your perception and how you put things together" (Reed, 2017)
+            - Human development and its implications for learning (Piaget's *readiness* concept)
+            - Gestalt theorists
+    - EDUCATION
+        - **Constructivism** (John Dewey, Lev Vygotsky) focuses on how *learners* "construct their own learning process" (Reed, 2017) through "observation, translation, and imitation (mimesis, socialization, and modeling)" (Booth, 2011, p. 62), subject to *social influences*; mainstream view in education, strugges with the issue of assessment
+            - Situated learning
+            - Zone of proximal development
+
+### 2.1.2. Implications for instructional design
+
+Per Booth (2011), and see also Brown et al. (2014):
 
 - **Memory**
     - Manage cognitive overload (manage environment, curate inputs so they are of better quality, which includes their structure)
     - Mnemonics (structuring information logically AKA chunking; alphabetically; metaphorically; spatially)
     - Elaboration (associating with existing information)
 - **Motivation**
-    - Maslow and deprivation needs vs. growth needs
+    - Maslow, deprivation needs vs. growth needs
     - Intrinsic (inherent/already internalized) versus extrinsic (incentivized/coerced) motivation
 - **Environment**
     - "practical factors such as room dimensions, furniture, and seating capacity; ... lighting and temperature;
     - "technical factors such as computing technology and presentation media;
     - "cultural elements such as language accessibility and inclusiveness; and
     - "instructional elements such as tone, pacing, classroom dynamics, discussion management, and opportunities for interaction" (Booth, 2011, p. 45)
-- **Prior knowledge** i.e. schemata AKA mental models
+- **Prior knowledge** i.e. schemata AKA mental models; related to TRANSFER
     - Readiness for learning (Piaget)
     - Respecting prior knowledge
     - Activating prior knowledge
 
-Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, believes learning is a function of the "interplay" between the following factors (note that not all of them are under the instructor's control):
-
-| Internal | External |
-| --- | --- |
-| cognition | environment |
-| emotion | instructor |
-| desire | culture |
-
-
-### 2.1.2. Timeline of learning theories
-
-From lectures by Philip J. Reed at the University of Washington iSchool, following Booth (2011) and Keller (1983):
-
-- Classical (philosophical):
-    - **Rationalism**
-    - **Empiricism**
-- Scientific:
-    - Psychology: _Reed notes that these approaches are both comfortable assessing learning through behavior change, not so for constructivism._
-        - **Behaviorism** (B. F. Skinner, rote memorization, reinforcement, feedback); dominant c. 1950s as an educational theory but still has currency in psychology, still embedded in common teaching and learning practices; associated with Industrial Revolution
-        - **Cognitivism** (Jean Piaget, David Ausubel) focuses on learners' information processing AKA "assimilation of information into mental models" (Reed, 2017; AKA schemata, Booth, 2011, p. 44); "how to organize instruction" for "acquisition and retention of knowledge and skills", "also studied in relation to individual differences in ability and learning style" (Keller, 1983); note that this includes a much more active role for the student, believing that "knowledge is something that depends on your perception and how you put things together" (Reed, 2017)
-            - Human development and its implications for learning (Piaget's *readiness* concept)
-            - Gestalt theorists
-    - Education
-        - **Constructivism** (John Dewey, Lev Vygotsky) focuses on how *learners* "construct their own learning process" (Reed, 2017) through "observation, translation, and imitation (mimesis, socialization, and modeling)" (Booth, 2011, p. 62), subject to *social influences*; mainstream view in education, strugges with the issue of assessment
-            - Situated learning
-            - Zone of proximal development
-
-
-### 2.1.3. Motivation
+#### 2.1.2.1. Motivation
 
 Motivation an extremely important part of learning; it is *why* people learn, rather than *how.*
 
@@ -163,7 +149,7 @@ Determinants E and P may be examined for each behavior, identifying instructiona
 
 A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
 
-#### 2.1.3.1. Interest
+##### 2.1.2.1.1. Interest
 
 Interest AKA attention = f(trait_curiosity, presentation); see [instructional messages.](#instructional-messages)
 
@@ -180,7 +166,7 @@ Interest AKA attention = f(trait_curiosity, presentation); see [instructional me
     - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
     - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
 
-#### 2.1.3.2. Relevance
+#### 2.1.2.2. Relevance
 
 Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
 
@@ -191,7 +177,7 @@ Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. M
 - **Instrumental** relevance can be made clear through learning objectives
 - **Cultural** relevance is a matter of inclusive content, approaches, and environments, but also raises the question of whether a learner's culture places a high value on the type of education being offered
 
-#### 2.1.3.3. Expectancy
+##### 2.1.2.2.1. Expectancy
 
 Expectancy AKA confidence = f(challenge, support), similar to "zone of proximal development"
 
@@ -201,7 +187,7 @@ Expectancy AKA confidence = f(challenge, support), similar to "zone of proximal 
     - Make the pathway to success clear (mastery learning)
     - Give feedback that clarifies the connection between efforts and outcomes
 
-#### 2.1.3.4. Satisfaction
+##### 2.1.2.2.2. Satisfaction
 
 Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
 
@@ -211,9 +197,7 @@ Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
 - Give motivational feedback verbally and immediately
 - Time informative/formative feedback (rather than evaluative/summative feedback) such that it is quickly actionable
 
-
-
-### 2.1.4. Transfer
+#### 2.1.2.3. Transfer
 
 Along with **recall** (retrieve and apply this knowledge if a similar situation arises), Booth (2011, p. 43) says a fundamental goal of instruction is transfer (retrieve and apply this in novel ways). Interestingly, per Bransford et al. (2014):
 
@@ -221,7 +205,7 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
 - Classical education practices assumed transfer in their doctrine of "formal discipline", i.e. their belief that studying Latin trained the mind like a muscle for other tasks (probably not true of minds or muscles).
 - Some researchers treat transfer as a matter of conceptual overlap, others as a matter of skill overlap.
 
-#### 2.1.4.1. Types of transfer
+##### 2.1.2.3.1. Types of transfer
 
 - **Near vs. far:** "[T]hese terms distinguish the closeness or distance [or dis/similarity] between the original learning and the transfer task" (Leberman, 2006).
 - **Positive vs. negative:** "When learning in one context improves[/inhibits] learning or performance in another context" (Leberman, 2006).
@@ -229,7 +213,7 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
 - **Automatic vs. mindful:** " When an individual responds spontaneously within a transfer situation, which is very similar to the learning situation then this is  automatic transfer … In contrast, mindful [or] high road transfer is deliberate and involves conscious thought and intellectual effort, and occurs in situations where there are significant gaps or differences between the original and the transfer situations" (Leberman, 2006).
 - **Overzealous:** " Of particular concern are situations where students transfer skills, knowledge, and routines that are effective for the task at hand but may nevertheless be suboptimal in the long run because they block additional learning. We will call this overzealous transfer (OZT) — people transfer solutions that appear to be positive because they are  working well enough, but they are nevertheless negative with respect to learning what is new"  (Schwartz et al., 2012).
 
-#### 2.1.4.2. How to promote transfer
+##### 2.1.2.3.2. How to promote transfer
 
 - Provide transfer-supportive **learning experiences:**
     - Something must be learned with sufficient depth before it can be transferred
@@ -251,13 +235,32 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
 
 
 
-## 2.2. Assessment
+
+
+
+
+
+## 2.2. Instructional theory
+
+The learning theories above have consequent instructional theories. Using a series of questions from Ertmer and Newby, Booth (2011, p. 73) contrasts them as follows:
+
+| Question | Behaviorist | Cognitivist | Constructivist |
+| --- | --- | --- | --- |
+| How does learning occur?  | through guided behavioral change made evident by accurate answers/consistent performance | through mental processes that result in the formation of concepts and schema | through experience, sociocultural influence, and metacognition |
+| What factors influence learning? | _external_ (environment, instruction) | _internal_ (cognitive processes, readiness, aptitude) | _internal_ (emotional); _external_ (social, environmental) |
+| What is the role of memory? | repetition and reinforcement facilitates memorization | short- and long-term memory interact to facilitate schema building | activated and influenced by meaningful learner experiences |
+| How does transfer occur? | encouraged by positive reinforcement, learners make associations in the form of "correct" answers | learners form mental models in order to apply concepts and ideas to new scenarios | through perception of personally-relevant knowledge and application of knowledge |
+| What types of learning are best suited to this theory? | fact-based; practical | concept-based; procedural | problem-based; collaborative |
+| What aspects are important to instructional design? | provide feedback to reinforce learning; provide opportunities for practice and exchange | present information with targeted efficiency in order to stimulate memory and the formation of structured knowledge | provides learners with opportunties to investigate content in authentic settings |
+| What teaching strategies facilitate learning? | instructor-centered; learner/instructor interaction; information organization and repetition | instructor-centered; strategic information presentation; targeted media use; cognitive load management; learner scaffolding | learner-centered; authentic stimulation; collaborative activity; hands-on practice; questioning techniques; critical inquiry |
+
+## 2.3. Assessment
 
 **What's the proper role of assessment?** See Torrance, 2007 for some caution regarding assessment, and see also the concept of aligment.
 
 **What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
 
-### 2.2.1. Alignment
+### 2.3.1. Alignment
 
 Per EC, 2015: "Alignment is when the:
 
@@ -267,7 +270,7 @@ Per EC, 2015: "Alignment is when the:
 
 Aligning these three components is a dynamic process, since a change in one necessarily affects the other two."
 
-### 2.2.2. Objectives
+### 2.3.2. Objectives
 
 Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.* Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center). Per Diamond (2008), targets are meant to:
 
@@ -296,15 +299,15 @@ Per Phillips and Phillips (2010), target design should account for:
 - Any conditions on the applicability of the objective ("given X, ...");
 - Quantification or at least precision of objectives
 
-#### 2.2.2.1. Bloom's modified taxonomy
+#### 2.3.2.1. Bloom's modified taxonomy
 
 See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
 
-#### 2.2.2.2. Task analysis
+#### 2.3.2.2. Task analysis
 
 Per Booth (2011), task analysis can be used by the teacher to decompose their own expert procedural knowledge and thereby reacquaint themself with the topic from a beginner's perspective.
 
-### 2.2.3. Kirkpatrick/Phillips model
+### 2.3.3. Kirkpatrick/Phillips model
 
 This is a common model for evaluating the various levels of impact a corporate training may have; [there are others:](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation)
 
@@ -318,7 +321,7 @@ From Phillips & Phillips, 2010, p. 18:
 
 ![](./illos/Phillips-model.png)
 
-#### 2.2.3.1. Reaction objectives
+#### 2.3.3.1. Reaction objectives
 
 "The best reaction objectives:
 
@@ -328,7 +331,7 @@ From Phillips & Phillips, 2010, p. 18:
 - Represent a satisfaction index from key stakeholders
 - Can predict program success"
 
-#### 2.2.3.2. Learning and application/behavior objectives
+#### 2.3.3.2. Learning and application/behavior objectives
 
 "The best learning [and applicaiton] objectives have three components:
 
@@ -336,41 +339,21 @@ From Phillips & Phillips, 2010, p. 18:
 - Condition—circumstances under which the participant will perform the task
 - Criteria—degree or level of proficiency that is necessary to perform the job"
 
-
-
-
-
-
-## 2.3. Instructional theory
-
-The learning theories above have consequent instructional theories. Using a series of questions from Ertmer and Newby, Booth (2011, p. 73) contrasts them as follows:
-
-| Question | Behaviorist | Cognitivist | Constructivist |
-| --- | --- | --- | --- |
-| How does learning occur?  | through guided behavioral change made evident by accurate answers/consistent performance | through mental processes that result in the formation of concepts and schema | through experience, sociocultural influence, and metacognition |
-| What factors influence learning? | _external_ (environment, instruction) | _internal_ (cognitive processes, readiness, aptitude) | _internal_ (emotional); _external_ (social, environmental) |
-| What is the role of memory? | repetition and reinforcement facilitates memorization | short- and long-term memory interact to facilitate schema building | activated and influenced by meaningful learner experiences |
-| How does transfer occur? | encouraged by positive reinforcement, learners make associations in the form of "correct" answers | learners form mental models in order to apply concepts and ideas to new scenarios | through perception of personally-relevant knowledge and application of knowledge |
-| What types of learning are best suited to this theory? | fact-based; practical | concept-based; procedural | problem-based; collaborative |
-| What aspects are important to instructional design? | provide feedback to reinforce learning; provide opportunities for practice and exchange | present information with targeted efficiency in order to stimulate memory and the formation of structured knowledge | provides learners with opportunties to investigate content in authentic settings |
-| What teaching strategies facilitate learning? | instructor-centered; learner/instructor interaction; information organization and repetition | instructor-centered; strategic information presentation; targeted media use; cognitive load management; learner scaffolding | learner-centered; authentic stimulation; collaborative activity; hands-on practice; questioning techniques; critical inquiry |
-
-
-### 2.3.1. Connectivism
+### 2.3.4. Connectivism
 
 Per Booth (2011, p. 81), "a theoretical approach that emphasizes the impact of information technology on learning".
 
-### 2.3.2. Active learning
+### 2.3.5. Active learning
 
-#### 2.3.2.1. Flipped classroom
+#### 2.3.5.1. Flipped classroom
 
-### 2.3.3. Critical pedagogy
+### 2.3.6. Critical pedagogy
 
-#### 2.3.3.1. Transformative learning theory
+#### 2.3.6.1. Transformative learning theory
 
 Per Mezirow (2009), transformative learning is a subset of "learning that transforms problematic [NB: different interpretations of this] frames of reference to make them more inclusive, discriminating, reflective, open, and emotionally able to change". Mezirow has defended the importance of rationality in transformative learning practices, contra other theorists in the field.
 
-### 2.3.4. Problem-based learning
+### 2.3.7. Problem-based learning
 
 Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critical pedagogy (Freire, 2009; Shore, 1996; hooks, 1994) but elsewhere---in McMaster's medical schools, spreading to libraries c. 1990s. They identify the following open questions in PBL, at least in the context of library instruction:
 
@@ -381,11 +364,11 @@ Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critica
 
 While admitting that their own experiment with PBL differed in important ways (e.g. they presented fairly tidy questions rather than "ill-structured problems"), they claim that PBL is only superficially aligned with critical pedagogy. They say that, despite rebranding teachers as facilitators/tutors/etc. who guide small groups, in PBL the oppressive dichotomy (see Freire, 2009) of student/teacher is left intact because "students are seen only as objects to control ... student are never seen as teachers".
 
-### 2.3.5. Integrative learning
+### 2.3.8. Integrative learning
 
-### 2.3.6. Mastery learning
+### 2.3.9. Mastery learning
 
-### 2.3.7. Experiential learning
+### 2.3.10. Experiential learning
 
 
 
@@ -456,6 +439,14 @@ She suggests evaluating technologies in this format, which I've slightly adapted
 # 4. Instructional design
 
 Instructional design combines [educational theory](#educational-theory) with [design thinking methods](./strategy.html#design-thinking) to create a variety of instructional products. Per Booth (2011, p. 106), "ID is a systematic instructional planning approach that channels ... insight and awareness [from reflective practice, educational theory, and teaching technologies] into efficient, learner-focused pedagogy". Booth notes that ID is communicated in the form of models/frameworks and guiding principles.
+
+Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, believes learning is a function of the "interplay" between the following factors (note that not all of them are under the instructor's control):
+
+| Internal | External |
+| --- | --- |
+| cognition | environment |
+| emotion | instructor |
+| desire | culture |
 
 ## 4.1. ID process models
 

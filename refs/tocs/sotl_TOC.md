@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4482 words | updated 10/25/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4506 words | updated 10/25/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -14,28 +14,32 @@
 				- &nbsp;2.1.2.2.1. [Types of transfer](#types-of-transfer)
 				- &nbsp;2.1.2.2.2. [How to promote transfer](#how-to-promote-transfer)
 	- &nbsp;2.2. [Instructional theory](#instructional-theory)
-		- &nbsp;2.2.1. [Instructional messages](#instructional-messages)
-		- &nbsp;2.2.2. [Assessment](#assessment)
-			- &nbsp;2.2.2.1. [Alignment and the proper role of assessment](#alignment-and-the-proper-role-of-assessment)
-			- &nbsp;2.2.2.2. [Objectives](#objectives)
-			- &nbsp;2.2.2.3. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
-			- &nbsp;2.2.2.4. [Task analysis](#task-analysis)
-		- &nbsp;2.2.3. [Kirkpatrick/Phillips model](#kirkpatrickphillips-model)
-			- &nbsp;2.2.3.1. [Reaction objectives](#reaction-objectives)
-			- &nbsp;2.2.3.2. [Learning and application/behavior objectives](#learning-and-applicationbehavior-objectives)
-		- &nbsp;2.2.4. [Connectivism](#connectivism)
-		- &nbsp;2.2.5. [Active learning](#active-learning)
-			- &nbsp;2.2.5.1. [Flipped classroom](#flipped-classroom)
-		- &nbsp;2.2.6. [Critical pedagogy](#critical-pedagogy)
-			- &nbsp;2.2.6.1. [Transformative learning theory](#transformative-learning-theory)
-		- &nbsp;2.2.7. [Problem-based learning](#problem-based-learning)
-		- &nbsp;2.2.8. [Integrative learning](#integrative-learning)
-		- &nbsp;2.2.9. [Mastery learning](#mastery-learning)
-		- &nbsp;2.2.10. [Experiential learning](#experiential-learning)
+		- &nbsp;2.2.1. [Alignment](#alignment)
+		- &nbsp;2.2.2. [Objectives](#objectives)
+			- &nbsp;2.2.2.1. [Purpose of objectives](#purpose-of-objectives)
+			- &nbsp;2.2.2.2. [Qualities of good objectives](#qualities-of-good-objectives)
+			- &nbsp;2.2.2.3. [Considerations arising from content](#considerations-arising-from-content)
+				- &nbsp;2.2.2.3.1. [Knowledge dimensions and task analysis](#knowledge-dimensions-and-task-analysis)
+				- &nbsp;2.2.2.3.2. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
+			- &nbsp;2.2.2.4. [Outcomes, goals, and objectives for the learner](#outcomes-goals-and-objectives-for-the-learner)
+				- &nbsp;2.2.2.4.1. [Kirkpatrick/Phillips model for learners and organizations](#kirkpatrickphillips-model-for-learners-and-organizations)
+		- &nbsp;2.2.3. [Instructional messages](#instructional-messages)
+		- &nbsp;2.2.4. [Assessment](#assessment)
+			- &nbsp;2.2.4.1. [Proper role of assessment](#proper-role-of-assessment)
+		- &nbsp;2.2.5. [Buzzwords, schools and movements](#buzzwords-schools-and-movements)
+			- &nbsp;2.2.5.1. [Connectivism](#connectivism)
+			- &nbsp;2.2.5.2. [Active learning](#active-learning)
+			- &nbsp;2.2.5.3. [Flipped classroom](#flipped-classroom)
+			- &nbsp;2.2.5.4. [Critical pedagogy](#critical-pedagogy)
+			- &nbsp;2.2.5.5. [Transformative learning theory](#transformative-learning-theory)
+			- &nbsp;2.2.5.6. [Problem-based learning](#problem-based-learning)
+			- &nbsp;2.2.5.7. [Integrative learning](#integrative-learning)
+			- &nbsp;2.2.5.8. [Mastery learning](#mastery-learning)
+			- &nbsp;2.2.5.9. [Experiential learning](#experiential-learning)
 	- &nbsp;2.3. [Curriculum theory](#curriculum-theory)
 		- &nbsp;2.3.1. [Information literacy](#information-literacy)
 - &nbsp;3. [Instructional design](#instructional-design)
-	- &nbsp;3.1. [ID process models](#id-process-models)
+	- &nbsp;3.1. [Instructional design frameworks](#instructional-design-frameworks)
 		- &nbsp;3.1.1. [ADDIE model](#addie-model)
 		- &nbsp;3.1.2. [Successive approximation model (SAM)](#successive-approximation-model-sam)
 		- &nbsp;3.1.3. [Booth’s USER method](#booth’s-user-method)
@@ -255,21 +259,8 @@ The learning theories above have consequent instructional theories. Using a seri
 | What aspects are important to instructional design? | provide feedback to reinforce learning; provide opportunities for practice and exchange | present information with targeted efficiency in order to stimulate memory and the formation of structured knowledge | provides learners with opportunties to investigate content in authentic settings |
 | What teaching strategies facilitate learning? | instructor-centered; learner/instructor interaction; information organization and repetition | instructor-centered; strategic information presentation; targeted media use; cognitive load management; learner scaffolding | learner-centered; authentic stimulation; collaborative activity; hands-on practice; questioning techniques; critical inquiry |
 
-### 2.2.1. Instructional messages
 
-Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
-
-- get attention, hold interest: **UNEXPECTED, STORIES**
-- facilitate comprehension: **SIMPLE, CONCRETE**
-- appeal and persuade: **CREDIBLE, EMOTIONAL**
-
-Also, instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle").
-
-### 2.2.2. Assessment
-
-#### 2.2.2.1. Alignment and the proper role of assessment
-
-See Torrance (2007) for some caution regarding assessment.
+### 2.2.1. Alignment
 
 Per EC, 2015: "Alignment is when the:
 
@@ -280,25 +271,19 @@ Per EC, 2015: "Alignment is when the:
 Aligning these three components is a dynamic process, since a change in one necessarily affects the other two."
 
 
+### 2.2.2. Objectives
 
-#### 2.2.2.2. Objectives
+Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
 
-**What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
+#### 2.2.2.1. Purpose of objectives
 
-
-Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.* Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center). Per Diamond (2008), targets are meant to:
+Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center). Per Diamond (2008), targets are meant to:
 
 - "Communicate to your students your expectations and how the students will be assessed.
 - Serve as the basis for selecting instructional methods.
 - Serve as the basis for your assessment of student achievement."
 
-Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories.
-
-Targets form a hierarchy:
-
-- **OUTCOMES** = hoped-for lasting changes
-- **GOALS** = express a theory of how to produce outcomes
-- **OBJECTIVES** = strategies/skills needed to attain goals
+#### 2.2.2.2. Qualities of good objectives
 
 Per EC (2015) and Diamond (2008), good targets:
 
@@ -313,17 +298,29 @@ Per Phillips and Phillips (2010), target design should account for:
 - Any conditions on the applicability of the objective ("given X, ...");
 - Quantification or at least precision of objectives
 
-#### 2.2.2.3. Bloom's modified taxonomy
+#### 2.2.2.3. Considerations arising from content
+
+##### 2.2.2.3.1. Knowledge dimensions and task analysis
+
+Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories, then using task analysis to decompose one's own expert procedural knowledge and thereby reacquaint oneself with the topic from a beginner's perspective.
+
+##### 2.2.2.3.2. Bloom's modified taxonomy
 
 See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
 
-#### 2.2.2.4. Task analysis
+**What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
 
-Per Booth (2011), task analysis can be used by the teacher to decompose their own expert procedural knowledge and thereby reacquaint themself with the topic from a beginner's perspective.
+#### 2.2.2.4. Outcomes, goals, and objectives for the learner
 
-### 2.2.3. Kirkpatrick/Phillips model
+Per Booth (2011), targets form a hierarchy:
 
-This is a common model for evaluating the various levels of impact a corporate training may have; [there are others:](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation)
+- **OUTCOMES** = hoped-for lasting changes
+- **GOALS** = express a theory of how to produce outcomes
+- **OBJECTIVES** = strategies/skills needed to attain goals
+
+##### 2.2.2.4.1. Kirkpatrick/Phillips model for learners and organizations
+
+This is a common model for describing and evaluating the various levels of impact a corporate training may have; [there are others:](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation)
 
 - Level 1, **reaction:** gauging people's *perceptions* of the impact of what you've done
 - Level 2, **learning:** impact on learner's knowledge
@@ -335,8 +332,6 @@ From Phillips & Phillips, 2010, p. 18:
 
 ![](./illos/Phillips-model.png)
 
-#### 2.2.3.1. Reaction objectives
-
 "The best reaction objectives:
 
 - Identify issues that are important and measurable
@@ -345,29 +340,61 @@ From Phillips & Phillips, 2010, p. 18:
 - Represent a satisfaction index from key stakeholders
 - Can predict program success"
 
-#### 2.2.3.2. Learning and application/behavior objectives
-
 "The best learning [and applicaiton] objectives have three components:
 
 - Performance—what the participant will be able to doduring the program
 - Condition—circumstances under which the participant will perform the task
 - Criteria—degree or level of proficiency that is necessary to perform the job"
 
-### 2.2.4. Connectivism
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 2.2.3. Instructional messages
+
+Instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
+
+- get attention, hold interest: **UNEXPECTED, STORIES**
+- facilitate comprehension: **SIMPLE, CONCRETE**
+- appeal and persuade: **CREDIBLE, EMOTIONAL**
+
+
+### 2.2.4. Assessment
+
+#### 2.2.4.1. Proper role of assessment
+
+See Torrance (2007) for some caution regarding assessment.
+
+
+
+### 2.2.5. Buzzwords, schools and movements
+
+#### 2.2.5.1. Connectivism
 
 Per Booth (2011, p. 81), "a theoretical approach that emphasizes the impact of information technology on learning".
 
-### 2.2.5. Active learning
+#### 2.2.5.2. Active learning
 
-#### 2.2.5.1. Flipped classroom
+#### 2.2.5.3. Flipped classroom
 
-### 2.2.6. Critical pedagogy
+#### 2.2.5.4. Critical pedagogy
 
-#### 2.2.6.1. Transformative learning theory
+#### 2.2.5.5. Transformative learning theory
 
 Per Mezirow (2009), transformative learning is a subset of "learning that transforms problematic [NB: different interpretations of this] frames of reference to make them more inclusive, discriminating, reflective, open, and emotionally able to change". Mezirow has defended the importance of rationality in transformative learning practices, contra other theorists in the field.
 
-### 2.2.7. Problem-based learning
+#### 2.2.5.6. Problem-based learning
 
 Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critical pedagogy (Freire, 2009; Shore, 1996; hooks, 1994) but elsewhere---in McMaster's medical schools, spreading to libraries c. 1990s. They identify the following open questions in PBL, at least in the context of library instruction:
 
@@ -378,11 +405,15 @@ Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critica
 
 While admitting that their own experiment with PBL differed in important ways (e.g. they presented fairly tidy questions rather than "ill-structured problems"), they claim that PBL is only superficially aligned with critical pedagogy. They say that, despite rebranding teachers as facilitators/tutors/etc. who guide small groups, in PBL the oppressive dichotomy (see Freire, 2009) of student/teacher is left intact because "students are seen only as objects to control ... student are never seen as teachers".
 
-### 2.2.8. Integrative learning
+#### 2.2.5.7. Integrative learning
 
-### 2.2.9. Mastery learning
+#### 2.2.5.8. Mastery learning
 
-### 2.2.10. Experiential learning
+#### 2.2.5.9. Experiential learning
+
+
+
+
 
 
 
@@ -410,7 +441,7 @@ Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, b
 | emotion | instructor |
 | desire | culture |
 
-## 3.1. ID process models
+## 3.1. Instructional design frameworks
 
 ### 3.1.1. ADDIE model
 

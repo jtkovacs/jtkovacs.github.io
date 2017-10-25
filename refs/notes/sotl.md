@@ -194,21 +194,8 @@ The learning theories above have consequent instructional theories. Using a seri
 | What aspects are important to instructional design? | provide feedback to reinforce learning; provide opportunities for practice and exchange | present information with targeted efficiency in order to stimulate memory and the formation of structured knowledge | provides learners with opportunties to investigate content in authentic settings |
 | What teaching strategies facilitate learning? | instructor-centered; learner/instructor interaction; information organization and repetition | instructor-centered; strategic information presentation; targeted media use; cognitive load management; learner scaffolding | learner-centered; authentic stimulation; collaborative activity; hands-on practice; questioning techniques; critical inquiry |
 
-### Instructional messages
 
-Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
-
-- get attention, hold interest: **UNEXPECTED, STORIES**
-- facilitate comprehension: **SIMPLE, CONCRETE**
-- appeal and persuade: **CREDIBLE, EMOTIONAL**
-
-Also, instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle").
-
-### Assessment
-
-#### Alignment and the proper role of assessment
-
-See Torrance (2007) for some caution regarding assessment.
+### Alignment
 
 Per EC, 2015: "Alignment is when the:
 
@@ -219,25 +206,19 @@ Per EC, 2015: "Alignment is when the:
 Aligning these three components is a dynamic process, since a change in one necessarily affects the other two."
 
 
+### Objectives
 
-#### Objectives
+Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
 
-**What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
+#### Purpose of objectives
 
-
-Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.* Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center). Per Diamond (2008), targets are meant to:
+Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center). Per Diamond (2008), targets are meant to:
 
 - "Communicate to your students your expectations and how the students will be assessed.
 - Serve as the basis for selecting instructional methods.
 - Serve as the basis for your assessment of student achievement."
 
-Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories.
-
-Targets form a hierarchy:
-
-- **OUTCOMES** = hoped-for lasting changes
-- **GOALS** = express a theory of how to produce outcomes
-- **OBJECTIVES** = strategies/skills needed to attain goals
+#### Qualities of good objectives
 
 Per EC (2015) and Diamond (2008), good targets:
 
@@ -252,17 +233,29 @@ Per Phillips and Phillips (2010), target design should account for:
 - Any conditions on the applicability of the objective ("given X, ...");
 - Quantification or at least precision of objectives
 
-#### Bloom's modified taxonomy
+#### Considerations arising from content
+
+##### Knowledge dimensions and task analysis
+
+Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories, then using task analysis to decompose one's own expert procedural knowledge and thereby reacquaint oneself with the topic from a beginner's perspective.
+
+##### Bloom's modified taxonomy
 
 See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
 
-#### Task analysis
+**What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
 
-Per Booth (2011), task analysis can be used by the teacher to decompose their own expert procedural knowledge and thereby reacquaint themself with the topic from a beginner's perspective.
+#### Outcomes, goals, and objectives for the learner
 
-### Kirkpatrick/Phillips model
+Per Booth (2011), targets form a hierarchy:
 
-This is a common model for evaluating the various levels of impact a corporate training may have; [there are others:](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation)
+- **OUTCOMES** = hoped-for lasting changes
+- **GOALS** = express a theory of how to produce outcomes
+- **OBJECTIVES** = strategies/skills needed to attain goals
+
+##### Kirkpatrick/Phillips model for learners and organizations
+
+This is a common model for describing and evaluating the various levels of impact a corporate training may have; [there are others:](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation)
 
 - Level 1, **reaction:** gauging people's *perceptions* of the impact of what you've done
 - Level 2, **learning:** impact on learner's knowledge
@@ -274,8 +267,6 @@ From Phillips & Phillips, 2010, p. 18:
 
 ![](./illos/Phillips-model.png)
 
-#### Reaction objectives
-
 "The best reaction objectives:
 
 - Identify issues that are important and measurable
@@ -284,29 +275,61 @@ From Phillips & Phillips, 2010, p. 18:
 - Represent a satisfaction index from key stakeholders
 - Can predict program success"
 
-#### Learning and application/behavior objectives
-
 "The best learning [and applicaiton] objectives have three components:
 
 - Performance—what the participant will be able to doduring the program
 - Condition—circumstances under which the participant will perform the task
 - Criteria—degree or level of proficiency that is necessary to perform the job"
 
-### Connectivism
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Instructional messages
+
+Instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
+
+- get attention, hold interest: **UNEXPECTED, STORIES**
+- facilitate comprehension: **SIMPLE, CONCRETE**
+- appeal and persuade: **CREDIBLE, EMOTIONAL**
+
+
+### Assessment
+
+#### Proper role of assessment
+
+See Torrance (2007) for some caution regarding assessment.
+
+
+
+### Buzzwords, schools and movements
+
+#### Connectivism
 
 Per Booth (2011, p. 81), "a theoretical approach that emphasizes the impact of information technology on learning".
 
-### Active learning
+#### Active learning
 
 #### Flipped classroom
 
-### Critical pedagogy
+#### Critical pedagogy
 
 #### Transformative learning theory
 
 Per Mezirow (2009), transformative learning is a subset of "learning that transforms problematic [NB: different interpretations of this] frames of reference to make them more inclusive, discriminating, reflective, open, and emotionally able to change". Mezirow has defended the importance of rationality in transformative learning practices, contra other theorists in the field.
 
-### Problem-based learning
+#### Problem-based learning
 
 Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critical pedagogy (Freire, 2009; Shore, 1996; hooks, 1994) but elsewhere---in McMaster's medical schools, spreading to libraries c. 1990s. They identify the following open questions in PBL, at least in the context of library instruction:
 
@@ -317,11 +340,15 @@ Per Stevens and Tieman (2017), the origin of PBL was contemporanous with critica
 
 While admitting that their own experiment with PBL differed in important ways (e.g. they presented fairly tidy questions rather than "ill-structured problems"), they claim that PBL is only superficially aligned with critical pedagogy. They say that, despite rebranding teachers as facilitators/tutors/etc. who guide small groups, in PBL the oppressive dichotomy (see Freire, 2009) of student/teacher is left intact because "students are seen only as objects to control ... student are never seen as teachers".
 
-### Integrative learning
+#### Integrative learning
 
-### Mastery learning
+#### Mastery learning
 
-### Experiential learning
+#### Experiential learning
+
+
+
+
 
 
 
@@ -349,7 +376,7 @@ Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, b
 | emotion | instructor |
 | desire | culture |
 
-## ID process models
+## Instructional design frameworks
 
 ### ADDIE model
 

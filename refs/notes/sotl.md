@@ -13,6 +13,8 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
 - Mastery of **teaching technologies** (for collaboration, assessment, etc.); and
 - Skill in **instructional design,** a structured process that creates instructional products
 
+Booth presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
+
 ## Genres and mediums of instruction
 
 ### Education vs. training
@@ -45,9 +47,13 @@ Per Booth (2011):
 
 Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
-- get attention, hold interest: **UNEXPECTED, STORIES,** clearly relevant, clearly actionable
+- get attention, hold interest: **UNEXPECTED, STORIES**
 - facilitate comprehension: **SIMPLE, CONCRETE**
 - appeal and persuade: **CREDIBLE, EMOTIONAL**
+
+Also:
+
+- clearly relevant, clearly actionable ("WIIFM/what's in it for me principle")
 
 ## A miscellany of advice and insights
 
@@ -222,7 +228,52 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
     - Be aware of common conceptual misunderstandings for a given field: "teachers must strive to make students' thinking visible and find ways to help them reconceptualize faulty conceptions" (p. 71)
     - Be aware that prior knowledge is not just of an individual student's construction; it is also cultural
 
+
+
 ## Assessment
+
+**What's the proper role of assessment?** See Torrance, 2007 for some caution regarding assessment, and see also the concept of aligment.
+
+**What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
+
+### Alignment
+
+Per EC, 2015: "Alignment is when the:
+
+- **OBJECTIVES** [i.e. targets] articulate the knowledge and skills you want students to acquire by the end of the course
+- **ASSESSMENTS** allow the instructor to check the degree to which the students are meeting the learning objectives
+- **INSTRUCTIONAL STRATEGIES** are chosen to foster student learning towards meeting the objectives ...
+
+Aligning these three components is a dynamic process, since a change in one necessarily affects the other two."
+
+### Objectives
+
+Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
+
+Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center).
+
+Targets form a hierarchy:
+
+- **OUTCOMES** = hoped-for lasting changes
+- **GOALS** = express a theory of how to produce outcomes
+- **OBJECTIVES** = strategies/skills needed to attain goals
+
+Per EC (2015), good targets:
+
+- Focuse on what students should do or be able to do, not what instructors hope to 'cover';
+- Expose the cognitive tasks inside the larger skill, e.g. [Bloom's taxonomy](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/)
+- Are measurable, not vague ("What would students do differently if they really 'understand' or 'appreciate' X?")
+
+Per Phillips and Phillips (2010), target design should account for:
+
+- Level of objectives (see [Kirkpatrick/Phillips model;](#kirkpatrickphillips-model))
+- Dependencies between objectives (they call this the "chain of impact");
+- Any conditions on the applicability of the objective ("given X, ...");
+- Quantification or at least precision of objectives
+
+#### Bloom's modified taxonomy
+
+See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
 
 ### Kirkpatrick/Phillips model
 
@@ -234,13 +285,29 @@ This is a common model for evaluating the various levels of impact a corporate t
 - Level 4, **results:** impact of changed conduct on business outcomes (i.e., the ID project's deliverable)
 - Level 5, **ROI:** the financial outcome of the change in business outcomes
 
-### Targets
+From Phillips & Phillips, 2010, p. 18:
 
-Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them”. Targets form a hierarchy:
+![](./illos/Phillips-model.png)
 
-- OUTCOMES = hoped-for lasting changes
-- GOALS = express a theory of how to produce outcomes
-- OBJECTIVES = strategies/skills needed to attain goals
+#### Reaction objectives
+
+"The best reaction objectives:
+
+- Identify issues that are important and measurable
+- Are attitude based, clearly worded, and specific
+- Underscore the linkage between reaction and the success of the program
+- Represent a satisfaction index from key stakeholders
+- Can predict program success"
+
+#### Learning and application/behavior objectives
+
+"The best learning [and applicaiton] objectives have three components:
+
+- Performance—what the participant will be able to doduring the program
+- Condition—circumstances under which the participant will perform the task
+- Criteria—degree or level of proficiency that is necessary to perform the job"
+
+
 
 
 
@@ -308,6 +375,8 @@ Per Booth (2011), an educator can use the following process and skills to find t
 - **Experience** the technologies in a personal authentic way (see pp. 66-68 for Booth's summary of Web 2.0 and emerging technologies as relevant to education);
 - **Evaluate** them with respect to educational objectives; and
 - **Customize** tools for the given learning scenario
+
+Alonso et al. (2008) provide a review of eLearning technologies.
 
 
 ## Evaluating teaching technologies
@@ -381,13 +450,39 @@ Molenda (2003) explains that ADDIE is an authorless abstraction that might form 
 
 Allen Interactions (2017) has adapted Agile software methods for ID:
 
-<img src="../illos/SAM-process.png" width="400px">
+<img src="../illos/SAM-process.png" width="600px">
 
 ### Booth’s USER method
+
+Booth (2011, p. 95) calls her USER method a "streamlined version of ADDIE" that is more realistic in practice.
 
 <img src="../illos/USER-ID-method.png" width="400px">
 
 Source: Booth, 2011, p. 19.
+
+#### Understand
+
+- **Identify the problem:** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this questin to be posed at the strategic level)
+- **Analyze the scenario** in terms of "learner, content, context and educator"
+
+#### Structure
+
+- **Create targets,** i.e. [goals, objectives and outcomes](#targets)
+- "Identify methods to **involve** learners using delivery techniques, technologies, and activities, and **extend** the interaction by supporting students along the continuum of learning."
+
+#### Engage
+
+- **Develop materials** (craft "instructional messages" into "learning objects")
+- **Deliver instruction:**
+    - Plan implementation, e.g. lesson plan
+    - Deliver
+
+#### Reflect
+
+- **Assess impact** on learners
+    - Formative
+    - Summative
+- **Reflect** to identify what should be preserved, revised, or discarded
 
 ### Other models
 
@@ -399,9 +494,20 @@ Source: Booth, 2011, p. 19.
 
 
 
+
+
+
 ## Activities
 
 ### Stop and think
+
+
+
+
+
+
+
+
 
 
 
@@ -412,6 +518,8 @@ Source: Booth, 2011, p. 19.
 
 Allen Interactions. (2017). Agile eLearning development with SAM. Retrieved from [http://www.alleninteractions.com/sam-process](http://www.alleninteractions.com/sam-process)
 
+Alonso, F., Lopez, G., Manrique, D., & Vines, J. M. (2008). Learning objects, learning objectives and learning design. _Innovations in Education and Teaching International,_ 45(4), 389-400.
+
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
 
 Booth, C. (2011). *Reflective Teaching, Effective Learning: Instructional Literacy for Library Educators.* Chicago, IL: American Library Association Editions.
@@ -419,6 +527,8 @@ Booth, C. (2011). *Reflective Teaching, Effective Learning: Instructional Litera
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 
 Brown, P. C., Roediger III, H. L., & McDaniel, M. A. (2014). _Make it stick: The science of successful learning._ Cambridge, MA: Belknap Press.
+
+Eberly Center for Teaching Excellence & Educational Innovation (EC). (2015). Learning objectives. Carnegie Mellon University. Retrieved from [https://www.cmu.edu/teaching/designteach/design/learningobjectives.html](https://www.cmu.edu/teaching/designteach/design/learningobjectives.html)
 
 Freire, P. (2009). _Pedagogy of the oppressed_ (30th anniversary ed.). New York City, NY: Continuum.
 
@@ -434,6 +544,8 @@ Mezirow, J. (2009). Transformative learning theory. In _Transformative learning 
 
 Molenda, M. (2003). In search of the elusive ADDIE model. _Performance improvement,_ 42(5), 34-37.
 
+Phillips, J. J., & Phillips, P. P. (2010). The power of objectives: Moving beyond learning objectives. _Performance Improvement,_ 49(6), 17-24.
+
 Piskurich, G. M. (2000). _Rapid instructional design: Learning ID fast and right._ San Francisco, CA: Jossey-Bass.
 
 Reed, P. J. (2017). Lecture comments. University of Washington iSchool.
@@ -443,6 +555,9 @@ Schwartz, D. L., Chase, C. C., & Bransford, J. D. (2012). Resisting overzealous 
 Shore, I. (1996). _When students have power: Negotiating authority in critical pedagogy._ Chicago, IL: University of Chicago Press.
 
 Stevens, E. & Tieman, A. (2017). We used problem-based learning in library instruction and came to question its treatment of students. _In The Library With The Lead Pipe._ Retrieved from (http://www.inthelibrarywiththeleadpipe.org/2017/we-used-problem-based-learning-in-library-instruction-and-came-to-question-its-treatment-of-students/)[http://www.inthelibrarywiththeleadpipe.org/2017/we-used-problem-based-learning-in-library-instruction-and-came-to-question-its-treatment-of-students/]
+
+Torrance, H. (2007). Assessment as learning? How the use of explicit learning objectives, assessment criteria and feedback in post‐secondary education and training can come to dominate learning. _Assessment in Education: Principles, Policy & Practice_ 14(3). [http://dx.doi.org.offcampus.lib.washington.edu/10.1080/09695940701591867](http://dx.doi.org.offcampus.lib.washington.edu/10.1080/09695940701591867)
+
 
 ## References
 

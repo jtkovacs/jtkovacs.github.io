@@ -248,9 +248,13 @@ Aligning these three components is a dynamic process, since a change in one nece
 
 ### Objectives
 
-Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
+Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.* Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center). Per Diamond (2008), targets are meant to:
 
-Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center).
+- "Communicate to your students your expectations and how the students will be assessed.
+- Serve as the basis for selecting instructional methods.
+- Serve as the basis for your assessment of student achievement."
+
+Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories.
 
 Targets form a hierarchy:
 
@@ -258,7 +262,7 @@ Targets form a hierarchy:
 - **GOALS** = express a theory of how to produce outcomes
 - **OBJECTIVES** = strategies/skills needed to attain goals
 
-Per EC (2015), good targets:
+Per EC (2015) and Diamond (2008), good targets:
 
 - Focuse on what students should do or be able to do, not what instructors hope to 'cover';
 - Expose the cognitive tasks inside the larger skill, e.g. [Bloom's taxonomy](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/)
@@ -274,6 +278,10 @@ Per Phillips and Phillips (2010), target design should account for:
 #### Bloom's modified taxonomy
 
 See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
+
+#### Task analysis
+
+Per Booth (2011), task analysis can be used by the teacher to decompose their own expert procedural knowledge and thereby reacquaint themself with the topic from a beginner's perspective.
 
 ### Kirkpatrick/Phillips model
 
@@ -356,7 +364,7 @@ While admitting that their own experiment with PBL differed in important ways (e
 
 ### Mastery learning
 
-
+### Experiential learning
 
 
 
@@ -376,7 +384,7 @@ Per Booth (2011), an educator can use the following process and skills to find t
 - **Evaluate** them with respect to educational objectives; and
 - **Customize** tools for the given learning scenario
 
-Alonso et al. (2008) provide a review of eLearning technologies.
+Alonso et al. (2008) provides a brief review of the history of eLearning technologies.
 
 
 ## Evaluating teaching technologies
@@ -468,7 +476,11 @@ Source: Booth, 2011, p. 19.
 #### Structure
 
 - **Create targets,** i.e. [goals, objectives and outcomes](#targets)
-- "Identify methods to **involve** learners using delivery techniques, technologies, and activities, and **extend** the interaction by supporting students along the continuum of learning."
+- "Identify methods to **involve** learners using delivery techniques, technologies, and activities and **extend** [before, during, after; see [integrative learning](#integrative-learning)] the interaction by supporting students along the continuum of learning." Consider:
+    - "Control of Learning . Which areas of the interaction will be teacher centered (direct instruction), and which will be more student centered (discovery instruction)?
+    - Grouping for Learning . Will you ask learners to work as individuals, pairs, teams, or groups?
+    - Interactions for Learning. Will you create learning interactions that are human (student/teacher, student/student, other) or nonhuman (student/ tools, student/information, student/environment, other)?
+    - Support for Learning . Will you provide cognitive support or emotional support?" (p. 120)
 
 #### Engage
 
@@ -484,6 +496,11 @@ Source: Booth, 2011, p. 19.
     - Summative
 - **Reflect** to identify what should be preserved, revised, or discarded
 
+
+### Curriculum innovation canvas
+
+Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A design-thinking framework for the engaged educational entrepreneur. _Journal of Higher Education Outreach and Engagement,_ 21(1).
+
 ### Other models
 
 ... mentioned by Booth (2011, p. 86):
@@ -498,6 +515,10 @@ Source: Booth, 2011, p. 19.
 
 
 ## Activities
+
+From Booth, 2011, p. 116:
+
+![](./illos/strategies-by-knowledge-dimension.png)
 
 ### Stop and think
 
@@ -527,6 +548,8 @@ Booth, C. (2011). *Reflective Teaching, Effective Learning: Instructional Litera
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 
 Brown, P. C., Roediger III, H. L., & McDaniel, M. A. (2014). _Make it stick: The science of successful learning._ Cambridge, MA: Belknap Press.
+
+Diamond, R. M. (2008). Clarifying instructional goals and objectives (ch. 9). In _Designing and assessing courses and curricula: A practical guide (3rd ed.)._ San Francisco, CA: Jossey-Bass.
 
 Eberly Center for Teaching Excellence & Educational Innovation (EC). (2015). Learning objectives. Carnegie Mellon University. Retrieved from [https://www.cmu.edu/teaching/designteach/design/learningobjectives.html](https://www.cmu.edu/teaching/designteach/design/learningobjectives.html)
 

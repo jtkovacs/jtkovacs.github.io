@@ -106,7 +106,7 @@ Interest AKA attention = f(trait_curiosity, presentation); see [instructional me
     - Separate convergent from divergent thinking (see [design thinking)](./strategy.html#design-thinking)
     - Use the **inquiry method** where students are given a genuine problem to solve, with the understanding that they are learning to navigate the process of inquiry
 
-#### Relevance
+##### Relevance
 
 Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
 
@@ -194,13 +194,21 @@ The learning theories above have consequent instructional theories. Using a seri
 | What aspects are important to instructional design? | provide feedback to reinforce learning; provide opportunities for practice and exchange | present information with targeted efficiency in order to stimulate memory and the formation of structured knowledge | provides learners with opportunties to investigate content in authentic settings |
 | What teaching strategies facilitate learning? | instructor-centered; learner/instructor interaction; information organization and repetition | instructor-centered; strategic information presentation; targeted media use; cognitive load management; learner scaffolding | learner-centered; authentic stimulation; collaborative activity; hands-on practice; questioning techniques; critical inquiry |
 
-## Assessment
+### Instructional messages
 
-**What's the proper role of assessment?** See Torrance, 2007 for some caution regarding assessment, and see also the concept of aligment.
+Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
-**What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
+- get attention, hold interest: **UNEXPECTED, STORIES**
+- facilitate comprehension: **SIMPLE, CONCRETE**
+- appeal and persuade: **CREDIBLE, EMOTIONAL**
 
-### Alignment
+Also, instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle").
+
+### Assessment
+
+#### Alignment and the proper role of assessment
+
+See Torrance (2007) for some caution regarding assessment.
 
 Per EC, 2015: "Alignment is when the:
 
@@ -210,7 +218,12 @@ Per EC, 2015: "Alignment is when the:
 
 Aligning these three components is a dynamic process, since a change in one necessarily affects the other two."
 
-### Objectives
+
+
+#### Objectives
+
+**What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
+
 
 Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.* Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center). Per Diamond (2008), targets are meant to:
 
@@ -318,58 +331,6 @@ While admitting that their own experiment with PBL differed in important ways (e
 ### Information literacy
 
 
-
-
-# Teaching technologies
-
-Per Booth (2011), an educator can use the following process and skills to find their bearing in a constantly evolving technology landscape:
-
-- **Experience** the technologies in a personal authentic way (see pp. 66-68 for Booth's summary of Web 2.0 and emerging technologies as relevant to education);
-- **Evaluate** them with respect to educational objectives; and
-- **Customize** tools for the given learning scenario
-
-Alonso et al. (2008) provides a brief review of the history of eLearning technologies.
-
-
-## Evaluating teaching technologies
-
-Booth identifies these ten affordances AKA functionality AKA features (quoted; 2011, p. 65):
-
-- *assessment:* template/customizable evaluation and analysis
-- *collaboration:* shared effort, cooperation, and/or crowd-sourcing
-- *communication:* contant and exchange among participants
-- *customization:* personalizable features or appearance
-- *documentation:* information recording for future use and access
-- *play:* diversion and/or creative expression
-- *portability:* mobile communication, creation, and access
-- *productivity:* task-oriented learning and time management
-- *sharing:* dissemination of ideas or information for public consumption
-- *visualization:* graphical information display
-
-She suggests evaluating technologies in this format, which I've slightly adapted (p. 73):
-
-<table>
-    <tr>
-        <th>PERSPECTIVE</th>
-        <th>CHARACTERISTICS</th>
-        <th>OUTCOMES</th>
-        <th>CAVEATS</th>
-        <th>AFFORDANCES</th>
-    </tr>
-    <tr>
-        <th>TEACHER</th>
-        <td rowspan="2">[list]</td>
-        <td>[list]</td>
-        <td>[list]</td>
-        <td>[score as above]</td>
-    </tr>
-    <tr>
-        <th>LEARNER</th>
-        <td>[list]</td>
-        <td>[list]</td>
-        <td>[score as above]</td>
-    </tr>
-</table>
 
 
 
@@ -481,7 +442,15 @@ From Booth, 2011, p. 116:
 
 
 
+
+
+
+
+
+
 # Reflective practice
+
+Booth presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
 
 ## Qualities of excellent teachers
 
@@ -494,22 +463,81 @@ Per Booth (2011):
     - Be authentic
     - Show your personal investment in the class and the students
 
-## Instructional messages
-
-Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
-
-- get attention, hold interest: **UNEXPECTED, STORIES**
-- facilitate comprehension: **SIMPLE, CONCRETE**
-- appeal and persuade: **CREDIBLE, EMOTIONAL**
-
-Also:
-
-- clearly relevant, clearly actionable ("WIIFM/what's in it for me principle")
-
 ## A miscellany of advice and insights
 
 - Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2011)
 - Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
+
+
+
+
+
+
+
+
+
+
+
+
+# Teaching technologies
+
+## History of teaching technologies
+
+Alonso et al. (2008) provides a brief review of the history of eLearning technologies.
+
+## Keeping current
+
+Per Booth (2011), an educator can use the following process and skills to find their bearing in a constantly evolving technology landscape:
+
+- **Experience** the technologies in a personal authentic way (see pp. 66-68 for Booth's summary of Web 2.0 and emerging technologies as relevant to education);
+- **Evaluate** them with respect to educational objectives; and
+- **Customize** tools for the given learning scenario
+
+## Evaluating teaching technologies
+
+Booth identifies these ten affordances AKA functionality AKA features (quoted; 2011, p. 65):
+
+- *assessment:* template/customizable evaluation and analysis
+- *collaboration:* shared effort, cooperation, and/or crowd-sourcing
+- *communication:* contant and exchange among participants
+- *customization:* personalizable features or appearance
+- *documentation:* information recording for future use and access
+- *play:* diversion and/or creative expression
+- *portability:* mobile communication, creation, and access
+- *productivity:* task-oriented learning and time management
+- *sharing:* dissemination of ideas or information for public consumption
+- *visualization:* graphical information display
+
+She suggests evaluating technologies in this format, which I've slightly adapted (p. 73):
+
+<table>
+    <tr>
+        <th>PERSPECTIVE</th>
+        <th>CHARACTERISTICS</th>
+        <th>OUTCOMES</th>
+        <th>CAVEATS</th>
+        <th>AFFORDANCES</th>
+    </tr>
+    <tr>
+        <th>TEACHER</th>
+        <td rowspan="2">[list]</td>
+        <td>[list]</td>
+        <td>[list]</td>
+        <td>[score as above]</td>
+    </tr>
+    <tr>
+        <th>LEARNER</th>
+        <td>[list]</td>
+        <td>[list]</td>
+        <td>[score as above]</td>
+    </tr>
+</table>
+
+
+
+
+
+
 
 
 
@@ -565,14 +593,11 @@ Stevens, E. & Tieman, A. (2017). We used problem-based learning in library instr
 
 Torrance, H. (2007). Assessment as learning? How the use of explicit learning objectives, assessment criteria and feedback in post‐secondary education and training can come to dominate learning. _Assessment in Education: Principles, Policy & Practice_ 14(3). [http://dx.doi.org.offcampus.lib.washington.edu/10.1080/09695940701591867](http://dx.doi.org.offcampus.lib.washington.edu/10.1080/09695940701591867)
 
-
 ## References
 
 - [Washington Center's learning communities repository](http://wacenter.evergreen.edu/)
 - [MERLOT II online teaching resources](https://www.merlot.org/merlot/index.htm)
 - [Association for Talent Development](https://www.td.org/)
-
-## Read
 
 ## Unread
 

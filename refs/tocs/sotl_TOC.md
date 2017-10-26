@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4550 words | updated 10/26/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4477 words | updated 10/26/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -16,13 +16,13 @@
 	- &nbsp;2.2. [Instructional theory](#instructional-theory)
 		- &nbsp;2.2.1. [Alignment](#alignment)
 		- &nbsp;2.2.2. [Objectives](#objectives)
-			- &nbsp;2.2.2.1. [Purpose of objectives](#purpose-of-objectives)
-			- &nbsp;2.2.2.2. [Qualities of good objectives](#qualities-of-good-objectives)
-			- &nbsp;2.2.2.3. [Considerations arising from content](#considerations-arising-from-content)
-				- &nbsp;2.2.2.3.1. [Knowledge dimensions and task analysis](#knowledge-dimensions-and-task-analysis)
-				- &nbsp;2.2.2.3.2. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
-			- &nbsp;2.2.2.4. [Outcomes, goals, and objectives for the learner](#outcomes-goals-and-objectives-for-the-learner)
-				- &nbsp;2.2.2.4.1. [Kirkpatrick/Phillips model for learners and organizations](#kirkpatrickphillips-model-for-learners-and-organizations)
+			- &nbsp;2.2.2.1. [The Phillips model places learning objectives in context](#the-phillips-model-places-learning-objectives-in-context)
+			- &nbsp;2.2.2.2. [Purpose and value of learning objectives](#purpose-and-value-of-learning-objectives)
+			- &nbsp;2.2.2.3. [Qualities of good learning objectives](#qualities-of-good-learning-objectives)
+			- &nbsp;2.2.2.4. [Types of learning objectives](#types-of-learning-objectives)
+				- &nbsp;2.2.2.4.1. [CONTENT: Knowledge dimensions and task analysis](#content:-knowledge-dimensions-and-task-analysis)
+				- &nbsp;2.2.2.4.2. [DEMAND: Bloom's modified taxonomy](#demand:-blooms-modified-taxonomy)
+				- &nbsp;2.2.2.4.3. [IMPACT: Outcomes vs. goals vs. objectives](#impact:-outcomes-vs.-goals-vs.-objectives)
 		- &nbsp;2.2.3. [Instructional strategies](#instructional-strategies)
 			- &nbsp;2.2.3.1. [Matching strategies to knowledge dimension](#matching-strategies-to-knowledge-dimension)
 			- &nbsp;2.2.3.2. [Instructional messages](#instructional-messages)
@@ -71,7 +71,7 @@
 ## 1.1. How does instruction vary by context?
 
 - **Education vs. training:** Booth (2011, p. 51) notes that some people distinguish between education and training on the basis of transfer (which education aims to promote, but training does not).
-- **Academia vs. real-world learning:** Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
+- - **Academia vs. real-world learning:** Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
 - **Learning environments vs. instructional systems:** This distinction comes from Gagné: _"learning environments_ are constructivist educational spaces that provide the framework for self-discovery, whereas _instructional systems_ are behaviorist/cognitivist spaces that 'focus on telling ... learners what they need to know'" (Booth, 2011, p. 87).
 
 ## 1.2. What competencies should instructors have?
@@ -86,7 +86,7 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
 - Mastery of **teaching technologies** (for collaboration, assessment, etc.); and
 - Skill in **instructional design,** a structured design process that creates learning objects, etc. for learning interactions
 
-Booth also presents her [USER method](#user-model) primarily as an instructional design model, secondarily as an "instructional literacy framework that encourages you to [thirdly] reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
+Booth also presents her [USER method](#user-method) primarily as an instructional design model, secondarily as an "instructional literacy framework that encourages you to [thirdly] reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
 
 
 
@@ -273,54 +273,11 @@ Aligning these three components is a dynamic process, since a change in one nece
 
 ### 2.2.2. Objectives
 
-Booth calls these "targets", not objectives, but Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
+Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
 
-#### 2.2.2.1. Purpose of objectives
+#### 2.2.2.1. The Phillips model places learning objectives in context
 
-Per Booth (2011), targets “allow you to structure measurable learning interactions” and “improve the impact of instruction, particularly when participants have had a hand in defining them” ([read more](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf) about how learning outcomes support student learning from the Eberly Center). Per Diamond (2008), targets are meant to:
-
-- "Communicate to your students your expectations and how the students will be assessed.
-- Serve as the basis for selecting instructional methods.
-- Serve as the basis for your assessment of student achievement."
-
-#### 2.2.2.2. Qualities of good objectives
-
-Per EC (2015) and Diamond (2008), good targets:
-
-- Focuse on what students should do or be able to do, not what instructors hope to 'cover';
-- Expose the cognitive tasks inside the larger skill, e.g. [Bloom's taxonomy](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/)
-- Are measurable, not vague ("What would students do differently if they really 'understand' or 'appreciate' X?")
-
-Per Phillips and Phillips (2010), target design should account for:
-
-- Level of objectives (see [Kirkpatrick/Phillips model;](#kirkpatrickphillips-model))
-- Dependencies between objectives (they call this the "chain of impact");
-- Any conditions on the applicability of the objective ("given X, ...");
-- Quantification or at least precision of objectives
-
-#### 2.2.2.3. Considerations arising from content
-
-##### 2.2.2.3.1. Knowledge dimensions and task analysis
-
-Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories, then using task analysis to decompose one's own expert procedural knowledge and thereby reacquaint oneself with the topic from a beginner's perspective.
-
-##### 2.2.2.3.2. Bloom's modified taxonomy
-
-See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
-
-**What kind of learning?** In assessing learning, we acknowledge that there are different depths of mastery. See Bloom's taxonomy, Phillips & Phillips (2010), and Schulman, 2002 referenced by Alonso et al. (2008).
-
-#### 2.2.2.4. Outcomes, goals, and objectives for the learner
-
-Per Booth (2011), targets form a hierarchy:
-
-- **OUTCOMES** = hoped-for lasting changes
-- **GOALS** = express a theory of how to produce outcomes
-- **OBJECTIVES** = strategies/skills needed to attain goals
-
-##### 2.2.2.4.1. Kirkpatrick/Phillips model for learners and organizations
-
-This is a common model for describing and evaluating the various levels of impact a corporate training may have; [there are others:](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation)
+The Phillips and Phillips (2010) model is one common model for describing and evaluating the various levels of impact an organizational training may have; [there are others, ](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation) but in any case the focus is on the whole "chain of impact" to which an instrutional project belongs and depends on, so that efficacy and value can be maximized:
 
 - Level 1, **reaction:** gauging people's *perceptions* of the impact of what you've done
 - Level 2, **learning:** impact on learner's knowledge
@@ -332,19 +289,50 @@ From Phillips & Phillips, 2010, p. 18:
 
 ![](./illos/Phillips-model.png)
 
-"The best reaction objectives:
+#### 2.2.2.2. Purpose and value of learning objectives
 
-- Identify issues that are important and measurable
-- Are attitude based, clearly worded, and specific
-- Underscore the linkage between reaction and the success of the program
-- Represent a satisfaction index from key stakeholders
-- Can predict program success"
+- [I]mprove the impact of instruction", which is "particularly [true] when participants have had a hand in defining [the LOs]” (Booth, 2011; read the Eberly Center's [discussion of how)](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf)
+- "Serve as the basis for selecting instructional methods" (Diamond, 2008) and "allow you to structure measurable learning interactions" (Booth, 2011)
+- Proactively "[c]ommunicate to your students your expectations and how the students will be assessed", then retroactively "[s]erve as the basis for your assessment of student achievement" (Diamond, 2008)
 
-"The best learning [and application] objectives have three components:
+#### 2.2.2.3. Qualities of good learning objectives
 
-- Performance—what the participant will be able to doduring the program
-- Condition—circumstances under which the participant will perform the task
-- Criteria—degree or level of proficiency that is necessary to perform the job"
+Per EC (2015), Diamond (2008), and Phillips & Phillips (2010):
+
+- Focus on what students should do or be able to do, not what instructors hope to 'cover' (EC, 2015)
+- Expose the cognitive tasks inside the larger skill, e.g. [Bloom's taxonomy](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/)
+- Are measurable, not vague: "What would students do differently if they really 'understand' or 'appreciate' X?" (EC, 2015)
+- Speak to:
+    - Performance---what the participant will be able to do during the program
+    - Condition---circumstances under which the participant will perform the task
+    - Criteria---degree or level [i.e. **quantification]** of proficiency that is necessary to perform the job" (Phillips & Phillips, 2010)
+
+
+#### 2.2.2.4. Types of learning objectives
+
+##### 2.2.2.4.1. CONTENT: Knowledge dimensions and task analysis
+
+Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories, then using task analysis to decompose one's own expert procedural knowledge and thereby reacquaint oneself with the topic from a beginner's perspective.
+
+##### 2.2.2.4.2. DEMAND: Bloom's modified taxonomy
+
+See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
+
+Schulman, 2002 referenced by Alonso et al. (2008)
+
+##### 2.2.2.4.3. IMPACT: Outcomes vs. goals vs. objectives
+
+Per Booth (2011), targets form a hierarchy:
+
+- **OUTCOMES** = hoped-for lasting changes
+- **GOALS** = express a theory of how to produce outcomes
+- **OBJECTIVES** = strategies/skills needed to attain goals
+
+
+
+
+
+
 
 
 
@@ -694,6 +682,7 @@ Torrance, H. (2007). Assessment as learning? How the use of explicit learning ob
 - [Washington Center's learning communities repository](http://wacenter.evergreen.edu/)
 - [MERLOT II online teaching resources](https://www.merlot.org/merlot/index.htm)
 - [Association for Talent Development](https://www.td.org/)
+- [InstructionalDesign.org](http://www.instructionaldesign.org/index.html)
 
 ## 6.3. Unread
 

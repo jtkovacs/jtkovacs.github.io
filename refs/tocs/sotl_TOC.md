@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4505 words | updated 10/25/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4550 words | updated 10/26/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -23,7 +23,11 @@
 				- &nbsp;2.2.2.3.2. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
 			- &nbsp;2.2.2.4. [Outcomes, goals, and objectives for the learner](#outcomes-goals-and-objectives-for-the-learner)
 				- &nbsp;2.2.2.4.1. [Kirkpatrick/Phillips model for learners and organizations](#kirkpatrickphillips-model-for-learners-and-organizations)
-		- &nbsp;2.2.3. [Instructional messages](#instructional-messages)
+		- &nbsp;2.2.3. [Instructional strategies](#instructional-strategies)
+			- &nbsp;2.2.3.1. [Matching strategies to knowledge dimension](#matching-strategies-to-knowledge-dimension)
+			- &nbsp;2.2.3.2. [Instructional messages](#instructional-messages)
+			- &nbsp;2.2.3.3. [Activities](#activities)
+				- &nbsp;2.2.3.3.1. [Stop and think](#stop-and-think)
 		- &nbsp;2.2.4. [Assessment](#assessment)
 			- &nbsp;2.2.4.1. [Proper role of assessment](#proper-role-of-assessment)
 		- &nbsp;2.2.5. [Buzzwords, schools and movements](#buzzwords-schools-and-movements)
@@ -49,8 +53,6 @@
 			- &nbsp;3.1.3.4. [Reflect](#reflect)
 		- &nbsp;3.1.4. [Curriculum innovation canvas](#curriculum-innovation-canvas)
 		- &nbsp;3.1.5. [Other models](#other-models)
-	- &nbsp;3.2. [Activities](#activities)
-		- &nbsp;3.2.1. [Stop and think](#stop-and-think)
 - &nbsp;4. [Reflective practice](#reflective-practice)
 	- &nbsp;4.1. [Qualities of excellent teachers](#qualities-of-excellent-teachers)
 	- &nbsp;4.2. [A miscellany of advice and insights](#a-miscellany-of-advice-and-insights)
@@ -84,7 +86,7 @@ Per Booth (2011), core knowledge and skills for teaching (what she calls “inst
 - Mastery of **teaching technologies** (for collaboration, assessment, etc.); and
 - Skill in **instructional design,** a structured design process that creates learning objects, etc. for learning interactions
 
-Booth also presents her [USER method](#user-model) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
+Booth also presents her [USER method](#user-model) primarily as an instructional design model, secondarily as an "instructional literacy framework that encourages you to [thirdly] reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
 
 
 
@@ -99,8 +101,8 @@ Booth also presents her [USER method](#user-model) primarily as an instructional
 From lectures by Philip J. Reed at the University of Washington iSchool, following Booth (2011) and Keller (1983):
 
 - CLASSICAL (philosophical):
-    - **Rationalism**
-    - **Empiricism**
+    - **Rationalism:** (reason and debate)
+    - **Empiricism** (observation and experimentation)
 - SCIENTIFIC
     - PSYCHOLOGY _Reed notes that these approaches are both comfortable assessing learning through behavior change, not so for constructivism._
         - **Behaviorism** (B. F. Skinner, rote memorization, reinforcement, feedback); dominant c. 1950s as an educational theory but still has currency in psychology, still embedded in common teaching and learning practices; associated with Industrial Revolution
@@ -116,18 +118,18 @@ From lectures by Philip J. Reed at the University of Washington iSchool, followi
 
 Per Booth (2011), and see also Brown et al. (2014):
 
-- **Memory**
-    - Manage cognitive overload (manage environment, curate inputs so they are of better quality, which includes their structure)
-    - Mnemonics (structuring information logically AKA chunking; alphabetically; metaphorically; spatially)
-    - Elaboration (associating with existing information)
-- **Motivation**
-    - Maslow, deprivation needs vs. growth needs
-    - Intrinsic (inherent/already internalized) versus extrinsic (incentivized/coerced) motivation
 - **Environment**
     - "practical factors such as room dimensions, furniture, and seating capacity; ... lighting and temperature;
     - "technical factors such as computing technology and presentation media;
     - "cultural elements such as language accessibility and inclusiveness; and
     - "instructional elements such as tone, pacing, classroom dynamics, discussion management, and opportunities for interaction" (Booth, 2011, p. 45)
+- **Memory**
+    - Manage cognitive overload (manage environment, curate inputs so they are of better quality)
+    - Teach mnemonics (structuring information logically AKA chunking; alphabetically; metaphorically; spatially)
+    - Enable elaboration (association with existing information)
+- **Motivation**
+    - Address relevant needs (Maslow; deprivation needs vs. growth needs)
+    - Support intrinsic (inherent/already internalized) versus extrinsic (incentivized/coerced) motivation [as below](#motivation)
 - **Prior knowledge** i.e. schemata AKA mental models; related to TRANSFER
     - Readiness for learning (Piaget)
     - Respecting prior knowledge
@@ -135,24 +137,22 @@ Per Booth (2011), and see also Brown et al. (2014):
 
 #### 2.1.2.1. Motivation
 
-Motivation an extremely important part of learning; it is *why* people learn, rather than *how.*
+Motivation an extremely important part of learning; it is *why* people learn, rather than *how.* It's important to know that **optimal motivation is moderate motivation,** and excess motivation is anxiety; this should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
 
 In addition to the Keller model below, Bransford et al. (2014) credit the following factors with increasing motivation:
 
-- A "performance orientation" (citng Dweck, 1989) tends to sap motivation, versus a "learning orientation" (AKA growth mindset?)
-- Social recognition, shared work, solidarity
+- A learning orientation and growth mindset (see Dweck et al., 2014) versus a performance orientation
+- Social recognition, shared work, and solidarity
 
 Keller (1983) writes practically on motivation but grounds it in his prior theoretical work. This work, in keeping with field theory/social learning theory, starts from the assumption that B, behavior is a function of E, the environment and P, the individual person, **B=f(E,P).** Then, as categories of behavior, Keller distinguishes between:
 
-- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtk: I dispute this, because e.g. mental health];
+- **Effort** = P's level of engagement and discipline, "a direct indicator of motivation" [jtck: consider mental health though..];
 - **Performance** = f(motivation/effort, ability, opportunity); and
 - **Consequences** = performance + (benefits to the individual = reinforce motivation)
 
 Determinants E and P may be examined for each behavior, identifying instructional strategies:
 
 ![](../illos/motivation.png)
-
-A very important note: **optimal motivation is moderate motivation** (excess motivation is anxiety). This should be considered in motivational design, e.g. when setting the level of risk/reward (it should be moderate).
 
 ##### 2.1.2.1.1. Interest
 
@@ -176,7 +176,7 @@ Interest AKA attention = f(trait_curiosity, presentation); see [instructional me
 Relevance = f(alignment, clear_connections). Drawing from *drive theory,* e.g. Maslow, Keller proposes a typology of personal (relevant to self) vs. instrumental (relevant to goals) vs. cultural (relevant to group)
 
 - **Personal**
-    - Promote a sense of **achievement** by combining "standards of excellence" with moderate risk and feedback that may be non-zero sum
+    - Promote a sense of **achievement** by combining "standards of excellence" with moderate risks and non-zero sum grading
     - Promote **empowerment** by allowing choice, responsibility, and influence
     - Promote **affiliation** by establishing trust, which may include non-zero sum grading
 - **Instrumental** relevance can be made clear through learning objectives
@@ -233,7 +233,7 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
         - Work on a problem at length, then use "what if" thought experiments
     - Help students see and represent their own problems/work in wider contexts
     - Promote metacognition
-- Activate **prior knowledge**:
+- Activate **prior knowledge:**
     - Use "graduated prompting" to cue for transfer
     - Be aware of common conceptual misunderstandings for a given field: "teachers must strive to make students' thinking visible and find ways to help them reconceptualize faulty conceptions" (p. 71)
     - Be aware that prior knowledge is not just of an individual student's construction; it is also cultural
@@ -252,7 +252,7 @@ The learning theories above have consequent instructional theories. Using a seri
 | Question | Behaviorist | Cognitivist | Constructivist |
 | --- | --- | --- | --- |
 | How does learning occur?  | through guided behavioral change made evident by accurate answers/consistent performance | through mental processes that result in the formation of concepts and schema | through experience, sociocultural influence, and metacognition |
-| What factors influence learning? | _external_ (environment, instruction) | _internal_ (cognitive processes, readiness, aptitude) | _internal_ (emotional); _external_ (social, environmental) |
+| What factors influence learning? | external (environment, instruction) | internal (cognitive processes, readiness, aptitude) | internal (emotional); exter (social, environmental) |
 | What is the role of memory? | repetition and reinforcement facilitates memorization | short- and long-term memory interact to facilitate schema building | activated and influenced by meaningful learner experiences |
 | How does transfer occur? | encouraged by positive reinforcement, learners make associations in the form of "correct" answers | learners form mental models in order to apply concepts and ideas to new scenarios | through perception of personally-relevant knowledge and application of knowledge |
 | What types of learning are best suited to this theory? | fact-based; practical | concept-based; procedural | problem-based; collaborative |
@@ -262,7 +262,7 @@ The learning theories above have consequent instructional theories. Using a seri
 
 ### 2.2.1. Alignment
 
-Per EC, 2015: "Alignment is when the:
+Per EC (2015), "Alignment is when the:
 
 - **OBJECTIVES** [i.e. targets] articulate the knowledge and skills you want students to acquire by the end of the course
 - **ASSESSMENTS** allow the instructor to check the degree to which the students are meeting the learning objectives
@@ -340,7 +340,7 @@ From Phillips & Phillips, 2010, p. 18:
 - Represent a satisfaction index from key stakeholders
 - Can predict program success"
 
-"The best learning [and applicaiton] objectives have three components:
+"The best learning [and application] objectives have three components:
 
 - Performance—what the participant will be able to doduring the program
 - Condition—circumstances under which the participant will perform the task
@@ -352,16 +352,15 @@ From Phillips & Phillips, 2010, p. 18:
 
 
 
+### 2.2.3. Instructional strategies
 
+#### 2.2.3.1. Matching strategies to knowledge dimension
 
+From Booth, 2011, p. 116:
 
+<img src="../illos/strategies-by-knowledge-dimension.png" width="600">
 
-
-
-
-
-
-### 2.2.3. Instructional messages
+#### 2.2.3.2. Instructional messages
 
 Instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
@@ -369,12 +368,22 @@ Instructional messages should be clearly relevant and actionable ("WIIFM/what's 
 - facilitate comprehension: **SIMPLE, CONCRETE**
 - appeal and persuade: **CREDIBLE, EMOTIONAL**
 
+#### 2.2.3.3. Activities
+
+##### 2.2.3.3.1. Stop and think
+
+
+
+
+
 
 ### 2.2.4. Assessment
 
 #### 2.2.4.1. Proper role of assessment
 
 See Torrance (2007) for some caution regarding assessment.
+
+
 
 
 
@@ -475,7 +484,7 @@ Source: Booth, 2011, p. 19.
 
 #### 3.1.3.1. Understand
 
-- **Identify the problem:** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this questin to be posed at the strategic level)
+- **Identify the problem:** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this question to be posed at the strategic level)
 - **Analyze the scenario** in terms of "learner, content, context and educator"
 
 #### 3.1.3.2. Structure
@@ -519,13 +528,6 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 
 
-## 3.2. Activities
-
-From Booth, 2011, p. 116:
-
-![](./illos/strategies-by-knowledge-dimension.png)
-
-### 3.2.1. Stop and think
 
 
 
@@ -654,6 +656,8 @@ Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How pe
 Brown, P. C., Roediger III, H. L., & McDaniel, M. A. (2014). _Make it stick: The science of successful learning._ Cambridge, MA: Belknap Press.
 
 Diamond, R. M. (2008). Clarifying instructional goals and objectives (ch. 9). In _Designing and assessing courses and curricula: A practical guide (3rd ed.)._ San Francisco, CA: Jossey-Bass.
+
+Dweck, C. S., Walton, G. M., & Cohen, G. L. (2014). Academic tenacity: Mindsets and skills that promote long-term learning. Bill & Melinda Gates Foundation. Retrieved from [https://ed.stanford.edu/sites/default/files/manual/dweck-walton-cohen-2014.pdf](https://ed.stanford.edu/sites/default/files/manual/dweck-walton-cohen-2014.pdf) (PDF)
 
 Eberly Center for Teaching Excellence & Educational Innovation (EC). (2015). Learning objectives. Carnegie Mellon University. Retrieved from [https://www.cmu.edu/teaching/designteach/design/learningobjectives.html](https://www.cmu.edu/teaching/designteach/design/learningobjectives.html)
 

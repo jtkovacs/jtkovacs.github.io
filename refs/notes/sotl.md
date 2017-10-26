@@ -228,10 +228,11 @@ From Phillips & Phillips, 2010, p. 18:
 - "Serve as the basis for selecting instructional methods" (Diamond, 2008) and "allow you to structure measurable learning interactions" (Booth, 2011)
 - Proactively "[c]ommunicate to your students your expectations and how the students will be assessed", then retroactively "[s]erve as the basis for your assessment of student achievement" (Diamond, 2008)
 
-#### Qualities of good learning objectives
+#### Writing good learning objectives
 
-Per EC (2015), Diamond (2008), and Phillips & Phillips (2010):
+##### General qualities
 
+- Diamond, 2008
 - Focus on what students should do or be able to do, not what instructors hope to 'cover' (EC, 2015)
 - Expose the cognitive tasks inside the larger skill, e.g. [Bloom's taxonomy](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/)
 - Are measurable, not vague: "What would students do differently if they really 'understand' or 'appreciate' X?" (EC, 2015)
@@ -240,18 +241,14 @@ Per EC (2015), Diamond (2008), and Phillips & Phillips (2010):
     - Condition---circumstances under which the participant will perform the task
     - Criteria---degree or level [i.e. **quantification]** of proficiency that is necessary to perform the job" (Phillips & Phillips, 2010)
 
-
-#### Types of learning objectives
-
 ##### CONTENT: Knowledge dimensions and task analysis
 
 Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories, then using task analysis to decompose one's own expert procedural knowledge and thereby reacquaint oneself with the topic from a beginner's perspective.
 
 ##### DEMAND: Bloom's modified taxonomy
 
-See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
-
-Schulman, 2002 referenced by Alonso et al. (2008)
+- See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
+- Schulman, 2002 referenced by Alonso et al. (2008)
 
 ##### IMPACT: Outcomes vs. goals vs. objectives
 
@@ -260,8 +257,6 @@ Per Booth (2011), targets form a hierarchy:
 - **OUTCOMES** = hoped-for lasting changes
 - **GOALS** = express a theory of how to produce outcomes
 - **OBJECTIVES** = strategies/skills needed to attain goals
-
-
 
 
 

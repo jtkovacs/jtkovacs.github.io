@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4469 words | updated 10/26/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4479 words | updated 10/26/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -16,7 +16,7 @@
 	- &nbsp;2.2. [Instructional theory](#instructional-theory)
 		- &nbsp;2.2.1. [Alignment](#alignment)
 		- &nbsp;2.2.2. [Objectives](#objectives)
-			- &nbsp;2.2.2.1. [The Phillips model places learning objectives in context](#the-phillips-model-places-learning-objectives-in-context)
+			- &nbsp;2.2.2.1. [Phillips model puts learning objectives in context](#phillips-model-puts-learning-objectives-in-context)
 			- &nbsp;2.2.2.2. [Purpose and value of learning objectives](#purpose-and-value-of-learning-objectives)
 			- &nbsp;2.2.2.3. [Writing good learning objectives](#writing-good-learning-objectives)
 				- &nbsp;2.2.2.3.1. [General qualities](#general-qualities)
@@ -275,9 +275,13 @@ Aligning these three components is a dynamic process, since a change in one nece
 
 Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
 
-#### 2.2.2.1. The Phillips model places learning objectives in context
+#### 2.2.2.1. Phillips model puts learning objectives in context
+
+See also: project management
 
 The Phillips and Phillips (2010) model is one common model for describing and evaluating the various levels of impact an organizational training may have; [there are others, ](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation) but in any case the focus is on the whole "chain of impact" to which an instrutional project belongs and depends on, so that efficacy and value can be maximized:
+
+(Obviously, merge this into a single table:)
 
 - Level 1, **reaction:** gauging people's *perceptions* of the impact of what you've done
 - Level 2, **learning:** impact on learner's knowledge

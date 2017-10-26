@@ -208,9 +208,13 @@ Aligning these three components is a dynamic process, since a change in one nece
 
 Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
 
-#### The Phillips model places learning objectives in context
+#### Phillips model puts learning objectives in context
+
+See also: project management
 
 The Phillips and Phillips (2010) model is one common model for describing and evaluating the various levels of impact an organizational training may have; [there are others, ](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation) but in any case the focus is on the whole "chain of impact" to which an instrutional project belongs and depends on, so that efficacy and value can be maximized:
+
+(Obviously, merge this into a single table:)
 
 - Level 1, **reaction:** gauging people's *perceptions* of the impact of what you've done
 - Level 2, **learning:** impact on learner's knowledge

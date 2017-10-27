@@ -1,10 +1,10 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5001 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5103 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
 	- &nbsp;2.1. [Learning theory](#learning-theory)
 		- &nbsp;2.1.1. [Timeline of major learning theories](#timeline-of-major-learning-theories)
-		- &nbsp;2.1.2. [Implications for instructional design](#implications-for-instructional-design)
+		- &nbsp;2.1.2. [Implications for instruction](#implications-for-instruction)
 			- &nbsp;2.1.2.1. [Motivation](#motivation)
 				- &nbsp;2.1.2.1.1. [Interest](#interest)
 				- &nbsp;2.1.2.1.2. [Relevance](#relevance)
@@ -17,13 +17,14 @@
 		- &nbsp;2.2.1. [Alignment](#alignment)
 		- &nbsp;2.2.2. [Objectives](#objectives)
 			- &nbsp;2.2.2.1. [Learning objectives in context](#learning-objectives-in-context)
-				- &nbsp;2.2.2.1.1. [Outcomes vs. goals vs. objectives](#outcomes-vs.-goals-vs.-objectives)
+				- &nbsp;2.2.2.1.1. [Targets](#targets)
 				- &nbsp;2.2.2.1.2. [Phillips model](#phillips-model)
 			- &nbsp;2.2.2.2. [Purpose and value of learning objectives](#purpose-and-value-of-learning-objectives)
 			- &nbsp;2.2.2.3. [Writing good learning objectives](#writing-good-learning-objectives)
 				- &nbsp;2.2.2.3.1. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
 				- &nbsp;2.2.2.3.2. [Task analysis for procedural knowledge](#task-analysis-for-procedural-knowledge)
-				- &nbsp;2.2.2.3.3. [Examples](#examples)
+				- &nbsp;2.2.2.3.3. [Schulman's learning process stages](#schulmans-learning-process-stages)
+				- &nbsp;2.2.2.3.4. [Examples](#examples)
 		- &nbsp;2.2.3. [Instructional strategies](#instructional-strategies)
 			- &nbsp;2.2.3.1. [Choosing strategies](#choosing-strategies)
 				- &nbsp;2.2.3.1.1. [... by knowledge dimension](#...-by-knowledge-dimension)
@@ -117,7 +118,7 @@ From lectures by Philip J. Reed at the University of Washington iSchool, followi
             - Situated learning
             - Zone of proximal development
 
-### 2.1.2. Implications for instructional design
+### 2.1.2. Implications for instruction
 
 Per Booth (2011), and see also Brown et al. (2014):
 
@@ -280,7 +281,9 @@ Phillips and Phillips (2010) attribute the original use of the term in instructi
 
 #### 2.2.2.1. Learning objectives in context
 
-##### 2.2.2.1.1. Outcomes vs. goals vs. objectives
+See also [http://www-tandfonline-com.offcampus.lib.washington.edu/doi/abs/10.1080/0142159022020687?src=recsys](http://www-tandfonline-com.offcampus.lib.washington.edu/doi/abs/10.1080/0142159022020687?src=recsys)
+
+##### 2.2.2.1.1. Targets
 
 Per Booth (2011), targets form a hierarchy:
 
@@ -315,17 +318,21 @@ _Source:_ Phillips & Phillips, 2010, p. 18.
 - **Student-centered:** Focus on what students should do or be able to do, not what instructors hope to 'cover' (EC, 2015). Diamond
 - **Aligned,** if possible, with institutional, disciplinary, or other standards of practice and statements of purpose (Diamond, 2008)
 - **Measurable,** not vague ("What would students do differently if they really 'understand' or 'appreciate' X?" ask EC, 2015). Quoted from Phillips and Phillips (2010) and echoed by Diamond (2008), LOs should speak to:
-    - Performance---what the participant will be able to do during the program [see [Bloom's modified taxonomy\]](#blooms-modified-taxonomy)
-        - Bloom's modified taxonomy
-        - Degree of granularity
-    - Condition---circumstances under which the participant will perform the task
-    - Criteria---degree or level [i.e. **quantification]** of proficiency that is necessary to perform the job"
+    - **Performance ---** what the participant will be able to do during the program {see [Bloom's modified taxonomy}](#blooms-modified-taxonomy)
+    - **Condition ---** circumstances under which the participant will perform the task
+    - **Criteria ---** degree or level [i.e. **quantification]** of proficiency that is necessary to perform the job" {see [Schulman's learning process}](#schulmans-learning-process-stages)
 
 Diamond (2008) describes how instructors have struggled particularly with shifting perspective from content- to outcomes-focused; with writing "behavioral" objectives that are measurable but not too narrow; and with writing LOs at the right level of granularity, not too stultifying.
 
 ##### 2.2.2.3.1. Bloom's modified taxonomy
 
-See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) for backstory; per the [Center for Excellence in Learning and Teaching](http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy) at Iowa State University:
+See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) for backstory. In brief, the modified taxonomy has a knowledge dimension and a cognitive process dimension. It can be used for:
+
+- Analyzing content and generating suitable learning objectives
+- Evaluating learning objectives
+- Scaffolding learning materials or instructional messages
+
+Per the [Center for Excellence in Learning and Teaching](http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy) at Iowa State University:
 
 <img src="../illos/knowledge-dimension.png" width="600">
 
@@ -333,23 +340,31 @@ See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/te
 
 ##### 2.2.2.3.2. Task analysis for procedural knowledge
 
-Booth (2011) suggests task analysis as a strategy for decomposing one's own expert procedural knowledge and thereby reacquainting oneself with the topic from a beginner's perspective. Specifically, she suggests task analysis as a way
+Booth (2011) suggests task analysis as a strategy for decomposing one's own expert procedural knowledge and thereby reacquainting oneself with the topic from a beginner's perspective.
 
-- Schulman, 2002 referenced by Alonso et al. (2008)
+##### 2.2.2.3.3. Schulman's learning process stages
 
-##### 2.2.2.3.3. Examples
+Alonso et al. (2008) characterize Schulman's learning process model (2002) as having the following stages, representing different degrees of mastery that an objective may specify:
+
+- engagement and motivation
+- knowledge and understanding
+- performance and action
+- reflection and critique
+- judgement and design
+- commitment and identity
+
+##### 2.2.2.3.4. Examples
 
 From Diamond (2008, pp. 135-136):
 
-- __Government.__ When given a major decision made by a governmental leader, you will be able to identify the major factors that the leader had to consider and discuss why the action was taken and what apparent trade-offs were made.
-- __Economics.__ Demonstrate graphically and explain how a change in expectations will affect the loanable funds market. (Begin with an appropriately labeled graph that represents the initial equilibrium.)
-- __Management.__ Identify (based on readings, case studies, and/ or personal  experiences) those activities that are most likely to distinguish effective, well-managed technology development programs from ineffective programs.
-- __Statistics.__ When given two events, you will be able to determine whether they are independent or whether there is a relationship
-between them (that is, one event affects the probability of the other). On the basis of this determination, you will be able to select and use the appropriate rules of conditional probability to determine the probability that a certain event will occur.
-- __Religion.__ When given a definition of the term _religion,_ you will be able to identify which of the following characteristics is emphasized: feeling, ritual activity, belief, monotheism, the solitary individual, social valuation, illusion, ultimate reality, and value
-- __Music.__ On hearing musical selections, you will be able to identify those that are examples of chamber music and be able to identify the form, texture, and makeup of the ensemble.
-- __Art.__ When shown a print, you will be able to identify whether it is a woodcut, an etching, or a lithograph, and you will be able to list the characteristics on which this identification was based.
-- __Psychology.__ When given a case study, you will be able to identify whether it describes a case of schizophrenia and, if it does, which of the following schizophrenic reactions are involved: hebephrenic, catatonic, or paranoid.
+- *__Government.__ When given a major decision made by a governmental leader, you will be able to identify the major factors that the leader had to consider and discuss why the action was taken and what apparent trade-offs were made.*
+- *__Economics.__ Demonstrate graphically and explain how a change in expectations will affect the loanable funds market. (Begin with an appropriately labeled graph that represents the initial equilibrium.)*
+- *__Management.__ Identify (based on readings, case studies, and/ or personal  experiences) those activities that are most likely to distinguish effective, well-managed technology development programs from ineffective programs.*
+- *__Statistics.__ When given two events, you will be able to determine whether they are independent or whether there is a relationship between them (that is, one event affects the probability of the other). On the basis of this determination, you will be able to select and use the appropriate rules of conditional probability to determine the probability that a certain event will occur.*
+- *__Religion.__ When given a definition of the term _religion,_ you will be able to identify which of the following characteristics is emphasized: feeling, ritual activity, belief, monotheism, the solitary individual, social valuation, illusion, ultimate reality, and value.*
+- *__Music.__ On hearing musical selections, you will be able to identify those that are examples of chamber music and be able to identify the form, texture, and makeup of the ensemble.*
+- *__Art.__ When shown a print, you will be able to identify whether it is a woodcut, an etching, or a lithograph, and you will be able to list the characteristics on which this identification was based.*
+- *__Psychology.__ When given a case study, you will be able to identify whether it describes a case of schizophrenia and, if it does, which of the following schizophrenic reactions are involved: hebephrenic, catatonic, or paranoid.*
 
 
 
@@ -496,7 +511,15 @@ Source: Booth, 2011, p. 19.
 #### 3.1.3.1. Understand
 
 - **Identify the problem:** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this question to be posed at the strategic level)
-- **Analyze the scenario** in terms of "learner, content, context and educator"
+- **Analyze the scenario** in terms of
+    - **Learner** attributes, motivation, prior knowledge, and barriers to learning
+    - **Content:** knowledge, skills and attributes that will later be translated into [targets](#targets)
+    - **Context**
+    - **Educator**
+
+Booth (2011, p. 105):
+
+![](../illos/instructional-need-types.png)
 
 #### 3.1.3.2. Structure
 

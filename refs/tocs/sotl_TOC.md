@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4995 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5001 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -327,9 +327,9 @@ Diamond (2008) describes how instructors have struggled particularly with shifti
 
 See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) for backstory; per the [Center for Excellence in Learning and Teaching](http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy) at Iowa State University:
 
-![](../illos/knowledge-dimension.png)
+<img src="../illos/knowledge-dimension.png" width="600">
 
-![](../illos/cognitive-process-dimension.png)
+<img src="../illos/cognitive-process-dimension.png" width="600">
 
 ##### 2.2.2.3.2. Task analysis for procedural knowledge
 
@@ -528,7 +528,7 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ### 3.1.5. Diamond
 
-![](../illos/Diamond-phase-II.png)
+<img src="../illos/Diamond-phase-II.png" width="500px">
 
 ### 3.1.6. Other models
 

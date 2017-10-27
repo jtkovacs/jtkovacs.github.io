@@ -257,9 +257,9 @@ Diamond (2008) describes how instructors have struggled particularly with shifti
 
 See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) for backstory; per the [Center for Excellence in Learning and Teaching](http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy) at Iowa State University:
 
-![](../illos/knowledge-dimension.png)
+<img src="../illos/knowledge-dimension.png" width="600">
 
-![](../illos/cognitive-process-dimension.png)
+<img src="../illos/cognitive-process-dimension.png" width="600">
 
 ##### Task analysis for procedural knowledge
 
@@ -458,7 +458,7 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ### Diamond
 
-![](../illos/Diamond-phase-II.png)
+<img src="../illos/Diamond-phase-II.png" width="500px">
 
 ### Other models
 

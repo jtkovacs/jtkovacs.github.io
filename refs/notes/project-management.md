@@ -212,6 +212,9 @@ Per Hill & Cantera (2015):
 
 Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed during the project initiation phase by (1) listing what's in and out of scope, provided stakeholders agree about scope; or (2) establishing scope ranges AKA scope tolerance parameters, which can be pinpointed as information emerges. A task is out of scope if it (1) doesn't make a direct contribution to the project goal, or (2) if time and money are binding constraints. **Project the impact of requested additional tasks;** never simply agree to perform them.
 
+### Project objectives
+
+Phillips and Phillips (2010) discuss five different "levels" of [project objectives in the case of instructional projects;](sotl.html#phillips-model-puts-learning-objectives-in-context) I think this generalizes to many other kinds of projects.
 
 
 # Planning a project

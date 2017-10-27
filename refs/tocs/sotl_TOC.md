@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4479 words | updated 10/26/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4567 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -24,7 +24,8 @@
 				- &nbsp;2.2.2.3.3. [DEMAND: Bloom's modified taxonomy](#demand:-blooms-modified-taxonomy)
 				- &nbsp;2.2.2.3.4. [IMPACT: Outcomes vs. goals vs. objectives](#impact:-outcomes-vs.-goals-vs.-objectives)
 		- &nbsp;2.2.3. [Instructional strategies](#instructional-strategies)
-			- &nbsp;2.2.3.1. [Matching strategies to knowledge dimension](#matching-strategies-to-knowledge-dimension)
+			- &nbsp;2.2.3.1. [Choosing strategies](#choosing-strategies)
+				- &nbsp;2.2.3.1.1. [... by knowledge dimension](#...-by-knowledge-dimension)
 			- &nbsp;2.2.3.2. [Instructional messages](#instructional-messages)
 			- &nbsp;2.2.3.3. [Activities](#activities)
 				- &nbsp;2.2.3.3.1. [Stop and think](#stop-and-think)
@@ -277,21 +278,17 @@ Phillips and Phillips (2010) attribute the original use of the term in instructi
 
 #### 2.2.2.1. Phillips model puts learning objectives in context
 
-See also: project management
+The Phillips and Phillips (2010) model is one common model for describing and evaluating the various levels of organizational impact a training may have; [there are others, ](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation) but in any case the point is to cover the entire "chain of impact" to which an instructional project belongs and depends on:
 
-The Phillips and Phillips (2010) model is one common model for describing and evaluating the various levels of impact an organizational training may have; [there are others, ](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation) but in any case the focus is on the whole "chain of impact" to which an instrutional project belongs and depends on, so that efficacy and value can be maximized:
+| Level of Objectives | Measurement Focus | Typical Measures |
+| --- | --- | --- |
+| 1: Reaction | Reaction to the project or program, including the perceived value | Relevance, importance, usefulness, appropriateness, intent to use, motivation to take action |
+| 2: Learning | Learning to use the content and materials, including the confidence to use what was learned | Skills, knowledge, capacity, competencies, confidence, contacts |
+| 3: Application [Behavior] | Use of content and materials in the work environment, including progress with actual items and implementation | Extent of use, task completion, frequency of use, actions completed, success with use, barriers to use, enablers to use |
+| 4: Impact [Results] | The consequences of the use of the content and materials expressed as business impact measures | Productivity, revenue, quality, time, efficiency, customer satisfaction, employee engagement |
+| 5: ROI | Comparison of monetary benefits from program to program costs | Benefit-cost ratio (BCR), ROI (%), payback period |
 
-(Obviously, merge this into a single table:)
-
-- Level 1, **reaction:** gauging people's *perceptions* of the impact of what you've done
-- Level 2, **learning:** impact on learner's knowledge
-- Level 3, **behavior:** impact on learner's conduct (application of knowledge)
-- Level 4, **results:** impact of changed conduct on business outcomes (i.e., the ID project's deliverable)
-- Level 5, **ROI:** the financial outcome of the change in business outcomes
-
-From Phillips & Phillips, 2010, p. 18:
-
-![](./illos/Phillips-model.png)
+_Source:_ Phillips & Phillips, 2010, p. 18.
 
 #### 2.2.2.2. Purpose and value of learning objectives
 
@@ -341,7 +338,9 @@ Per Booth (2011), targets form a hierarchy:
 
 ### 2.2.3. Instructional strategies
 
-#### 2.2.3.1. Matching strategies to knowledge dimension
+#### 2.2.3.1. Choosing strategies
+
+##### 2.2.3.1.1. ... by knowledge dimension
 
 From Booth, 2011, p. 116:
 

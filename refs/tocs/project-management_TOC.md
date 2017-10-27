@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4311 words | updated 10/13/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4341 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
 	- &nbsp;1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
 	- &nbsp;1.2. [Common pitfalls & best practices](#common-pitfalls-best-practices)
 		- &nbsp;1.2.1. [Role of managers in an IS initiative](#role-of-managers-in-an-is-initiative)
@@ -19,6 +19,7 @@
 	- &nbsp;2.3. [Writing a project charter](#writing-a-project-charter)
 		- &nbsp;2.3.1. [Vision & success criteria](#vision-success-criteria)
 		- &nbsp;2.3.2. [Defining & managing scope](#defining-managing-scope)
+		- &nbsp;2.3.3. [Project objectives](#project-objectives)
 - &nbsp;3. [Planning a project](#planning-a-project)
 	- &nbsp;3.1. [Agile methodologies](#agile-methodologies)
 	- &nbsp;3.2. [Lifecycle methodologies](#lifecycle-methodologies)
@@ -277,6 +278,9 @@ Per Hill & Cantera (2015):
 
 Per Sheen (2015), scope creep is pervasive. Scope should be clearly addressed during the project initiation phase by (1) listing what's in and out of scope, provided stakeholders agree about scope; or (2) establishing scope ranges AKA scope tolerance parameters, which can be pinpointed as information emerges. A task is out of scope if it (1) doesn't make a direct contribution to the project goal, or (2) if time and money are binding constraints. **Project the impact of requested additional tasks;** never simply agree to perform them.
 
+### 2.3.3. Project objectives
+
+Phillips and Phillips (2010) discuss five different "levels" of [project objectives in the case of instructional projects;](sotl.html#phillips-model-puts-learning-objectives-in-context) I think this generalizes to many other kinds of projects.
 
 
 # 3. Planning a project

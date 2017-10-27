@@ -210,21 +210,17 @@ Phillips and Phillips (2010) attribute the original use of the term in instructi
 
 #### Phillips model puts learning objectives in context
 
-See also: project management
+The Phillips and Phillips (2010) model is one common model for describing and evaluating the various levels of organizational impact a training may have; [there are others, ](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation) but in any case the point is to cover the entire "chain of impact" to which an instructional project belongs and depends on:
 
-The Phillips and Phillips (2010) model is one common model for describing and evaluating the various levels of impact an organizational training may have; [there are others, ](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation) but in any case the focus is on the whole "chain of impact" to which an instrutional project belongs and depends on, so that efficacy and value can be maximized:
+| Level of Objectives | Measurement Focus | Typical Measures |
+| --- | --- | --- |
+| 1: Reaction | Reaction to the project or program, including the perceived value | Relevance, importance, usefulness, appropriateness, intent to use, motivation to take action |
+| 2: Learning | Learning to use the content and materials, including the confidence to use what was learned | Skills, knowledge, capacity, competencies, confidence, contacts |
+| 3: Application [Behavior] | Use of content and materials in the work environment, including progress with actual items and implementation | Extent of use, task completion, frequency of use, actions completed, success with use, barriers to use, enablers to use |
+| 4: Impact [Results] | The consequences of the use of the content and materials expressed as business impact measures | Productivity, revenue, quality, time, efficiency, customer satisfaction, employee engagement |
+| 5: ROI | Comparison of monetary benefits from program to program costs | Benefit-cost ratio (BCR), ROI (%), payback period |
 
-(Obviously, merge this into a single table:)
-
-- Level 1, **reaction:** gauging people's *perceptions* of the impact of what you've done
-- Level 2, **learning:** impact on learner's knowledge
-- Level 3, **behavior:** impact on learner's conduct (application of knowledge)
-- Level 4, **results:** impact of changed conduct on business outcomes (i.e., the ID project's deliverable)
-- Level 5, **ROI:** the financial outcome of the change in business outcomes
-
-From Phillips & Phillips, 2010, p. 18:
-
-![](./illos/Phillips-model.png)
+_Source:_ Phillips & Phillips, 2010, p. 18.
 
 #### Purpose and value of learning objectives
 
@@ -274,7 +270,9 @@ Per Booth (2011), targets form a hierarchy:
 
 ### Instructional strategies
 
-#### Matching strategies to knowledge dimension
+#### Choosing strategies
+
+##### ... by knowledge dimension
 
 From Booth, 2011, p. 116:
 

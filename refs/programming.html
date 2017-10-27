@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; programming | just under 1495 words | updated 10/27/2017
+   &gt; programming | just under 1602 words | updated 10/27/2017
   </p>
   <div class="TOC">
    <ul>
@@ -204,12 +204,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         </li>
        </ul>
       </li>
-      <li>
-       2.4.
-       <a href="#code-review-template">
-        Code review template
-       </a>
-      </li>
      </ul>
     </li>
     <li>
@@ -229,20 +223,36 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        <a href="#software-development-phases">
         Software development phases
        </a>
-       <ul>
-        <li>
-         3.2.1.
-         <a href="#approaches-to-development-phase">
-          Approaches to development phase
-         </a>
-        </li>
-        <li>
-         3.2.2.
-         <a href="#collaboration-in-software-development">
-          Collaboration in software development
-         </a>
-        </li>
-       </ul>
+      </li>
+      <li>
+       3.3.
+       <a href="#approaches-to-development-phase">
+        Approaches to development phase
+       </a>
+      </li>
+      <li>
+       3.4.
+       <a href="#collaboration-in-software-development">
+        Collaboration in software development
+       </a>
+      </li>
+      <li>
+       3.5.
+       <a href="#code-review-template">
+        Code review template
+       </a>
+      </li>
+      <li>
+       3.6.
+       <a href="#technology-assessment-template">
+        Technology assessment template
+       </a>
+      </li>
+      <li>
+       3.7.
+       <a href="#standups">
+        Standups
+       </a>
       </li>
      </ul>
     </li>
@@ -692,46 +702,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     2.3.3.2. READMEs
    </a>
   </h4>
-  <h2 id="code-review-template">
-   <a>
-    2.4. Code review template
-   </a>
-  </h2>
-  <p>
-   Per Beck (2017):
-  </p>
-  <p>
-   <strong>
-    Background:
-   </strong>
-  </p>
-  <ul>
-   <li>
-    Describe what the application does
-   </li>
-   <li>
-    Describe the role of the code being reviewed
-   </li>
-  </ul>
-  <p>
-   <strong>
-    Comment on:
-   </strong>
-  </p>
-  <ul>
-   <li>
-    Choice of variable and function names
-   </li>
-   <li>
-    Readability of the code
-   </li>
-   <li>
-    How improve reuse and efficiency
-   </li>
-   <li>
-    How use existing python packages
-   </li>
-  </ul>
   <h1 id="software-engineering">
    <a>
     3. Software engineering
@@ -795,11 +765,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     (iterate)
    </li>
   </ul>
-  <h3 id="approaches-to-development-phase">
+  <h2 id="approaches-to-development-phase">
    <a>
-    3.2.1. Approaches to development phase
+    3.3. Approaches to development phase
    </a>
-  </h3>
+  </h2>
   <p>
    Waterfall approach:
   </p>
@@ -825,7 +795,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </p>
   <ul>
    <li>
-    Gather requirements
+    Gather requirements from users (NB: identifying users should occur during
+    <a href="./project-management.html#initiating-a-project">
+     strategic justification of the project)
+    </a>
    </li>
    <li>
     Develop outline specification
@@ -883,11 +856,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     start with what you don't know, to uncover further unknowns (Rumsfeld's "unknown unknowns")
    </li>
   </ul>
-  <h3 id="collaboration-in-software-development">
+  <h2 id="collaboration-in-software-development">
    <a>
-    3.2.2. Collaboration in software development
+    3.4. Collaboration in software development
    </a>
-  </h3>
+  </h2>
   <p>
    Common problems:
   </p>
@@ -902,6 +875,129 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       redundancy of effort
      </li>
     </ul>
+   </li>
+  </ul>
+  <h2 id="code-review-template">
+   <a>
+    3.5. Code review template
+   </a>
+  </h2>
+  <p>
+   Per Beck (2017):
+  </p>
+  <p>
+   <strong>
+    Background:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Describe what the application does
+   </li>
+   <li>
+    Describe the role of the code being reviewed
+   </li>
+  </ul>
+  <p>
+   <strong>
+    Comment on:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Choice of variable and function names
+   </li>
+   <li>
+    Readability of the code
+   </li>
+   <li>
+    How improve reuse and efficiency
+   </li>
+   <li>
+    How use existing python packages
+   </li>
+  </ul>
+  <h2 id="technology-assessment-template">
+   <a>
+    3.6. Technology assessment template
+   </a>
+  </h2>
+  <p>
+   Address:
+  </p>
+  <ul>
+   <li>
+    Need for technology
+   </li>
+   <li>
+    How it works
+   </li>
+   <li>
+    Why it would be useful
+   </li>
+   <li>
+    Drawbacks
+   </li>
+  </ul>
+  <p>
+   Questions:
+  </p>
+  <ul>
+   <li>
+    dependencies?
+   </li>
+   <li>
+    maintenance?
+   </li>
+   <li>
+    maintenance of dependencies?
+   </li>
+   <li>
+    open source
+   </li>
+   <li>
+    support
+   </li>
+  </ul>
+  <p>
+   Research strategies:
+  </p>
+  <ul>
+   <li>
+    check StackOverflow questions for activity
+   </li>
+   <li>
+    check GitHub repositories
+    <ul>
+     <li>
+      no bugs (issues) means no users
+     </li>
+     <li>
+      no closed issues means no support
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h2 id="standups">
+   <a>
+    3.7. Standups
+   </a>
+  </h2>
+  <ul>
+   <li>
+    1-2 minutes
+   </li>
+   <li>
+    what you've done (information, accomplishment)
+   </li>
+   <li>
+    how it compares with what you intended (accountability, reflection)
+   </li>
+   <li>
+    what you want to do (planning, accountability)
+   </li>
+   <li>
+    anticipated challenges (advice)
    </li>
   </ul>
   <h1 id="sources">

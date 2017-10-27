@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1495 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1602 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
 	- &nbsp;1.1. [... as a profession?](#...-as-a-profession)
 		- &nbsp;1.1.1. [What skills are required for programming?](#what-skills-are-required-for-programming)
 	- &nbsp;1.2. [... in relation to hardware?](#...-in-relation-to-hardware)
@@ -20,12 +20,14 @@
 		- &nbsp;2.3.3. [Documentation](#documentation)
 			- &nbsp;2.3.3.1. [Comments](#comments)
 			- &nbsp;2.3.3.2. [READMEs](#readmes)
-	- &nbsp;2.4. [Code review template](#code-review-template)
 - &nbsp;3. [Software engineering](#software-engineering)
 	- &nbsp;3.1. [Software licenses](#software-licenses)
 	- &nbsp;3.2. [Software development phases](#software-development-phases)
-		- &nbsp;3.2.1. [Approaches to development phase](#approaches-to-development-phase)
-		- &nbsp;3.2.2. [Collaboration in software development](#collaboration-in-software-development)
+	- &nbsp;3.3. [Approaches to development phase](#approaches-to-development-phase)
+	- &nbsp;3.4. [Collaboration in software development](#collaboration-in-software-development)
+	- &nbsp;3.5. [Code review template](#code-review-template)
+	- &nbsp;3.6. [Technology assessment template](#technology-assessment-template)
+	- &nbsp;3.7. [Standups](#standups)
 - &nbsp;4. [Sources](#sources)
 	- &nbsp;4.1. [Cited](#cited)
 	- &nbsp;4.2. [References](#references)
@@ -233,23 +235,6 @@ Per Beck (2017):
 
 #### 2.3.3.2. READMEs
 
-## 2.4. Code review template
-
-Per Beck (2017):
-
-**Background:**
-
-- Describe what the application does
-- Describe the role of the code being reviewed
-
-**Comment on:**
-
-- Choice of variable and function names
-- Readability of the code
-- How improve reuse and efficiency
-- How use existing python packages
-
-
 
 
 
@@ -280,7 +265,7 @@ Important because:
 - Evaluate performance
 - (iterate)
 
-### 3.2.1. Approaches to development phase
+## 3.3. Approaches to development phase
 
 Waterfall approach:
 
@@ -292,7 +277,7 @@ Waterfall approach:
 
 ... failure of this approach (in most cases, with a few important exceptions) led to the Agile approach, c. 2000, because "you don't know all the details until you've done it":
 
-- Gather requirements 
+- Gather requirements from users (NB: identifying users should occur during [strategic justification of the project)](./project-management.html#initiating-a-project)
 - Develop outline specification
 - Sprint:
     - Rapid prototyping, with standup meetings throughout:
@@ -311,7 +296,7 @@ Waterfall approach:
 
 - start with what you don't know, to uncover further unknowns (Rumsfeld's "unknown unknowns")
 
-### 3.2.2. Collaboration in software development
+## 3.4. Collaboration in software development
 
 Common problems:
 
@@ -319,9 +304,53 @@ Common problems:
 - lack of coordination
     - redundancy of effort
 
+## 3.5. Code review template
 
+Per Beck (2017):
 
+**Background:**
 
+- Describe what the application does
+- Describe the role of the code being reviewed
+
+**Comment on:**
+
+- Choice of variable and function names
+- Readability of the code
+- How improve reuse and efficiency
+- How use existing python packages
+
+## 3.6. Technology assessment template
+
+Address:
+
+- Need for technology
+- How it works
+- Why it would be useful
+- Drawbacks
+
+Questions:
+
+- dependencies?
+- maintenance?
+- maintenance of dependencies?
+- open source
+- support
+
+Research strategies:
+
+- check StackOverflow questions for activity
+- check GitHub repositories
+    - no bugs (issues) means no users
+    - no closed issues means no support
+
+## 3.7. Standups
+
+- 1-2 minutes
+- what you've done (information, accomplishment)
+- how it compares with what you intended (accountability, reflection)
+- what you want to do (planning, accountability)
+- anticipated challenges (advice)
 
 
 

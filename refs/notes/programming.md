@@ -195,23 +195,6 @@ Per Beck (2017):
 
 #### READMEs
 
-## Code review template
-
-Per Beck (2017):
-
-**Background:**
-
-- Describe what the application does
-- Describe the role of the code being reviewed
-
-**Comment on:**
-
-- Choice of variable and function names
-- Readability of the code
-- How improve reuse and efficiency
-- How use existing python packages
-
-
 
 
 
@@ -242,7 +225,7 @@ Important because:
 - Evaluate performance
 - (iterate)
 
-### Approaches to development phase
+## Approaches to development phase
 
 Waterfall approach:
 
@@ -254,7 +237,7 @@ Waterfall approach:
 
 ... failure of this approach (in most cases, with a few important exceptions) led to the Agile approach, c. 2000, because "you don't know all the details until you've done it":
 
-- Gather requirements 
+- Gather requirements from users (NB: identifying users should occur during [strategic justification of the project)](./project-management.html#initiating-a-project)
 - Develop outline specification
 - Sprint:
     - Rapid prototyping, with standup meetings throughout:
@@ -273,7 +256,7 @@ Waterfall approach:
 
 - start with what you don't know, to uncover further unknowns (Rumsfeld's "unknown unknowns")
 
-### Collaboration in software development
+## Collaboration in software development
 
 Common problems:
 
@@ -281,9 +264,53 @@ Common problems:
 - lack of coordination
     - redundancy of effort
 
+## Code review template
 
+Per Beck (2017):
 
+**Background:**
 
+- Describe what the application does
+- Describe the role of the code being reviewed
+
+**Comment on:**
+
+- Choice of variable and function names
+- Readability of the code
+- How improve reuse and efficiency
+- How use existing python packages
+
+## Technology assessment template
+
+Address:
+
+- Need for technology
+- How it works
+- Why it would be useful
+- Drawbacks
+
+Questions:
+
+- dependencies?
+- maintenance?
+- maintenance of dependencies?
+- open source
+- support
+
+Research strategies:
+
+- check StackOverflow questions for activity
+- check GitHub repositories
+    - no bugs (issues) means no users
+    - no closed issues means no support
+
+## Standups
+
+- 1-2 minutes
+- what you've done (information, accomplishment)
+- how it compares with what you intended (accountability, reflection)
+- what you want to do (planning, accountability)
+- anticipated challenges (advice)
 
 
 

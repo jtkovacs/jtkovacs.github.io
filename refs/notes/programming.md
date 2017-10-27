@@ -214,6 +214,84 @@ Per Beck (2017):
 
 
 
+
+
+
+# Software engineering
+
+(These notes are based on a lecture by Joseph Hellerstein at the University of Washington.)
+
+- 'Programming is typically about 6-10% of the costs of software engineering'
+
+## Software licenses
+
+Important because:
+
+- Usage of other software, or other code within your code
+- Licensing your own code via GitHub
+
+[graphic from lecture notes based on Mark Webbink's work]
+
+## Software development phases
+
+- Assess needs
+- Design specifications
+- Design, develop, and test software\*
+- Implement/deploy systems
+- Support operations (for servers in **cloud business models)**
+- Evaluate performance
+- (iterate)
+
+### Approaches to development phase
+
+Waterfall approach:
+
+- Communication (project initiation, requirements gathering)
+- Planning (estimating, scheduling, tracking)
+- Modeling (analysis, design)
+- Construction (code, test)
+- Deployment (delivery, support)
+
+... failure of this approach (in most cases, with a few important exceptions) led to the Agile approach, c. 2000, because "you don't know all the details until you've done it":
+
+- Gather requirements 
+- Develop outline specification
+- Sprint:
+    - Rapid prototyping, with standup meetings throughout:
+        - Design (lower level than outline specification)
+            - Technology assessment (of existing technology and software, as both rivals and resources)
+        - Implementation
+            - Code
+            - Code review
+        - Bug prioritization and resolution
+    - Evaluation of prototype
+- (iterate; revise specification)
+- Deliver system
+- (continue to iterate)
+
+... in the context of homework:
+
+- start with what you don't know, to uncover further unknowns (Rumsfeld's "unknown unknowns")
+
+### Collaboration in software development
+
+Common problems:
+
+- lack or rejection of shared standards
+- lack of coordination
+    - redundancy of effort
+
+
+
+
+
+
+
+
+
+
+
+
 # Sources
 
 ## Cited

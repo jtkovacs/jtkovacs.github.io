@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1234 words | updated 10/23/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1495 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
 	- &nbsp;1.1. [... as a profession?](#...-as-a-profession)
 		- &nbsp;1.1.1. [What skills are required for programming?](#what-skills-are-required-for-programming)
 	- &nbsp;1.2. [... in relation to hardware?](#...-in-relation-to-hardware)
@@ -21,15 +21,20 @@
 			- &nbsp;2.3.3.1. [Comments](#comments)
 			- &nbsp;2.3.3.2. [READMEs](#readmes)
 	- &nbsp;2.4. [Code review template](#code-review-template)
-- &nbsp;3. [Sources](#sources)
-	- &nbsp;3.1. [Cited](#cited)
-	- &nbsp;3.2. [References](#references)
-		- &nbsp;3.2.1. [General](#general)
-		- &nbsp;3.2.2. [Bash](#bash)
-		- &nbsp;3.2.3. [Python](#python)
-		- &nbsp;3.2.4. [R](#r)
-	- &nbsp;3.3. [Read](#read)
-	- &nbsp;3.4. [Unread](#unread)
+- &nbsp;3. [Software engineering](#software-engineering)
+	- &nbsp;3.1. [Software licenses](#software-licenses)
+	- &nbsp;3.2. [Software development phases](#software-development-phases)
+		- &nbsp;3.2.1. [Approaches to development phase](#approaches-to-development-phase)
+		- &nbsp;3.2.2. [Collaboration in software development](#collaboration-in-software-development)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [References](#references)
+		- &nbsp;4.2.1. [General](#general)
+		- &nbsp;4.2.2. [Bash](#bash)
+		- &nbsp;4.2.3. [Python](#python)
+		- &nbsp;4.2.4. [R](#r)
+	- &nbsp;4.3. [Read](#read)
+	- &nbsp;4.4. [Unread](#unread)
 </div>
 
 
@@ -247,9 +252,87 @@ Per Beck (2017):
 
 
 
-# 3. Sources
 
-## 3.1. Cited
+
+
+# 3. Software engineering
+
+(These notes are based on a lecture by Joseph Hellerstein at the University of Washington.)
+
+- 'Programming is typically about 6-10% of the costs of software engineering'
+
+## 3.1. Software licenses
+
+Important because:
+
+- Usage of other software, or other code within your code
+- Licensing your own code via GitHub
+
+[graphic from lecture notes based on Mark Webbink's work]
+
+## 3.2. Software development phases
+
+- Assess needs
+- Design specifications
+- Design, develop, and test software\*
+- Implement/deploy systems
+- Support operations (for servers in **cloud business models)**
+- Evaluate performance
+- (iterate)
+
+### 3.2.1. Approaches to development phase
+
+Waterfall approach:
+
+- Communication (project initiation, requirements gathering)
+- Planning (estimating, scheduling, tracking)
+- Modeling (analysis, design)
+- Construction (code, test)
+- Deployment (delivery, support)
+
+... failure of this approach (in most cases, with a few important exceptions) led to the Agile approach, c. 2000, because "you don't know all the details until you've done it":
+
+- Gather requirements 
+- Develop outline specification
+- Sprint:
+    - Rapid prototyping, with standup meetings throughout:
+        - Design (lower level than outline specification)
+            - Technology assessment (of existing technology and software, as both rivals and resources)
+        - Implementation
+            - Code
+            - Code review
+        - Bug prioritization and resolution
+    - Evaluation of prototype
+- (iterate; revise specification)
+- Deliver system
+- (continue to iterate)
+
+... in the context of homework:
+
+- start with what you don't know, to uncover further unknowns (Rumsfeld's "unknown unknowns")
+
+### 3.2.2. Collaboration in software development
+
+Common problems:
+
+- lack or rejection of shared standards
+- lack of coordination
+    - redundancy of effort
+
+
+
+
+
+
+
+
+
+
+
+
+# 4. Sources
+
+## 4.1. Cited
 
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 
@@ -261,33 +344,33 @@ Scottish Qualifications Authority (SQA). (2006). Types of program error. Retriev
 
 Wikibooks. (n.d.). Python_Programming/Errors. Retrieved from [https://en.wikibooks.org/wiki/Python_Programming/Errors](https://en.wikibooks.org/wiki/Python_Programming/Errors)
 
-## 3.2. References
+## 4.2. References
 
-### 3.2.1. General
+### 4.2.1. General
 
 - [Paul Ford: What <i>is</i>&nbsp;code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
 - [ReadTheDocs.org](https://docs.readthedocs.io/en/latest/getting_started.html)
 
-### 3.2.2. Bash
+### 4.2.2. Bash
 
 - [Command line cheatsheets for Mac<span style="background-color:transparent">,&nbsp;</span>Linux<span style="background-color:transparent">,&nbsp;</span>Windows](http://ss64.com/)
 - [Software Carpentry’s Unix shell cheatsheet](http://swcarpentry.github.io/shell-novice/reference/)
 
-### 3.2.3. Python
+### 4.2.3. Python
 
 - [Official Python 3.5.2. documentation](https://docs.python.org/3/index.html)
 - [Official Jupyter notebook documentation](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
 - [Python cookbook](http://code.activestate.com/recipes/langs/python/)
 - [Python package index (PyPI)](https://pypi.python.org/pypi)
 
-### 3.2.4. R
+### 4.2.4. R
 
 - [Official R documentation](https://www.r-project.org/)
 - [R cookbook](http://www.cookbook-r.com/)
 - [R documentation search engine](https://www.rdocumentation.org/)
 
 
-## 3.3. Read
+## 4.3. Read
 
 - [Low quality of scientific code](http://techblog.bozho.net/the-astonishingly-low-quality-of-scientific-code/)
 - [Why code written by scientists gets ugly](https://nsaunders.wordpress.com/2014/05/14/this-is-why-code-written-by-scientists-gets-ugly/)
@@ -306,7 +389,7 @@ Wikibooks. (n.d.). Python_Programming/Errors. Retrieved from [https://en.wikiboo
 - [The homogenization of scientific computing](http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/)
 
 
-## 3.4. Unread
+## 4.4. Unread
 
 - [Khan Academy - Algorithms&nbsp;](https://www.khanacademy.org/computing/computer-science/algorithms)
 - [Algorithms every software engineer should know by heart](https://www.quora.com/What-are-the-top-10-algorithms-every-software-engineer-should-know-by-heart/answer/Adeel-Ahmed-41?srid=uSgUs&amp;share=0b867289)

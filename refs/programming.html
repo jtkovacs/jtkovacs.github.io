@@ -52,7 +52,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; programming | just under 1234 words | updated 10/23/2017
+   &gt; programming | just under 1495 words | updated 10/27/2017
   </p>
   <div class="TOC">
    <ul>
@@ -214,42 +214,76 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </li>
     <li>
      3.
+     <a href="#software-engineering">
+      Software engineering
+     </a>
+     <ul>
+      <li>
+       3.1.
+       <a href="#software-licenses">
+        Software licenses
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#software-development-phases">
+        Software development phases
+       </a>
+       <ul>
+        <li>
+         3.2.1.
+         <a href="#approaches-to-development-phase">
+          Approaches to development phase
+         </a>
+        </li>
+        <li>
+         3.2.2.
+         <a href="#collaboration-in-software-development">
+          Collaboration in software development
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     4.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       3.1.
+       4.1.
        <a href="#cited">
         Cited
        </a>
       </li>
       <li>
-       3.2.
+       4.2.
        <a href="#references">
         References
        </a>
        <ul>
         <li>
-         3.2.1.
+         4.2.1.
          <a href="#general">
           General
          </a>
         </li>
         <li>
-         3.2.2.
+         4.2.2.
          <a href="#bash">
           Bash
          </a>
         </li>
         <li>
-         3.2.3.
+         4.2.3.
          <a href="#python">
           Python
          </a>
         </li>
         <li>
-         3.2.4.
+         4.2.4.
          <a href="#r">
           R
          </a>
@@ -257,13 +291,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
        </ul>
       </li>
       <li>
-       3.3.
+       4.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       3.4.
+       4.4.
        <a href="#unread">
         Unread
        </a>
@@ -698,14 +732,186 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     How use existing python packages
    </li>
   </ul>
+  <h1 id="software-engineering">
+   <a>
+    3. Software engineering
+   </a>
+  </h1>
+  <p>
+   (These notes are based on a lecture by Joseph Hellerstein at the University of Washington.)
+  </p>
+  <ul>
+   <li>
+    'Programming is typically about 6-10% of the costs of software engineering'
+   </li>
+  </ul>
+  <h2 id="software-licenses">
+   <a>
+    3.1. Software licenses
+   </a>
+  </h2>
+  <p>
+   Important because:
+  </p>
+  <ul>
+   <li>
+    Usage of other software, or other code within your code
+   </li>
+   <li>
+    Licensing your own code via GitHub
+   </li>
+  </ul>
+  <p>
+   [graphic from lecture notes based on Mark Webbink's work]
+  </p>
+  <h2 id="software-development-phases">
+   <a>
+    3.2. Software development phases
+   </a>
+  </h2>
+  <ul>
+   <li>
+    Assess needs
+   </li>
+   <li>
+    Design specifications
+   </li>
+   <li>
+    Design, develop, and test software*
+   </li>
+   <li>
+    Implement/deploy systems
+   </li>
+   <li>
+    Support operations (for servers in
+    <strong>
+     cloud business models)
+    </strong>
+   </li>
+   <li>
+    Evaluate performance
+   </li>
+   <li>
+    (iterate)
+   </li>
+  </ul>
+  <h3 id="approaches-to-development-phase">
+   <a>
+    3.2.1. Approaches to development phase
+   </a>
+  </h3>
+  <p>
+   Waterfall approach:
+  </p>
+  <ul>
+   <li>
+    Communication (project initiation, requirements gathering)
+   </li>
+   <li>
+    Planning (estimating, scheduling, tracking)
+   </li>
+   <li>
+    Modeling (analysis, design)
+   </li>
+   <li>
+    Construction (code, test)
+   </li>
+   <li>
+    Deployment (delivery, support)
+   </li>
+  </ul>
+  <p>
+   ... failure of this approach (in most cases, with a few important exceptions) led to the Agile approach, c. 2000, because "you don't know all the details until you've done it":
+  </p>
+  <ul>
+   <li>
+    Gather requirements
+   </li>
+   <li>
+    Develop outline specification
+   </li>
+   <li>
+    Sprint:
+    <ul>
+     <li>
+      Rapid prototyping, with standup meetings throughout:
+      <ul>
+       <li>
+        Design (lower level than outline specification)
+        <ul>
+         <li>
+          Technology assessment (of existing technology and software, as both rivals and resources)
+         </li>
+        </ul>
+       </li>
+       <li>
+        Implementation
+        <ul>
+         <li>
+          Code
+         </li>
+         <li>
+          Code review
+         </li>
+        </ul>
+       </li>
+       <li>
+        Bug prioritization and resolution
+       </li>
+      </ul>
+     </li>
+     <li>
+      Evaluation of prototype
+     </li>
+    </ul>
+   </li>
+   <li>
+    (iterate; revise specification)
+   </li>
+   <li>
+    Deliver system
+   </li>
+   <li>
+    (continue to iterate)
+   </li>
+  </ul>
+  <p>
+   ... in the context of homework:
+  </p>
+  <ul>
+   <li>
+    start with what you don't know, to uncover further unknowns (Rumsfeld's "unknown unknowns")
+   </li>
+  </ul>
+  <h3 id="collaboration-in-software-development">
+   <a>
+    3.2.2. Collaboration in software development
+   </a>
+  </h3>
+  <p>
+   Common problems:
+  </p>
+  <ul>
+   <li>
+    lack or rejection of shared standards
+   </li>
+   <li>
+    lack of coordination
+    <ul>
+     <li>
+      redundancy of effort
+     </li>
+    </ul>
+   </li>
+  </ul>
   <h1 id="sources">
    <a>
-    3. Sources
+    4. Sources
    </a>
   </h1>
   <h2 id="cited">
    <a>
-    3.1. Cited
+    4.1. Cited
    </a>
   </h2>
   <p>
@@ -741,12 +947,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </p>
   <h2 id="references">
    <a>
-    3.2. References
+    4.2. References
    </a>
   </h2>
   <h3 id="general">
    <a>
-    3.2.1. General
+    4.2.1. General
    </a>
   </h3>
   <ul>
@@ -767,7 +973,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </ul>
   <h3 id="bash">
    <a>
-    3.2.2. Bash
+    4.2.2. Bash
    </a>
   </h3>
   <ul>
@@ -792,7 +998,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </ul>
   <h3 id="python">
    <a>
-    3.2.3. Python
+    4.2.3. Python
    </a>
   </h3>
   <ul>
@@ -819,7 +1025,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </ul>
   <h3 id="r">
    <a>
-    3.2.4. R
+    4.2.4. R
    </a>
   </h3>
   <ul>
@@ -841,7 +1047,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </ul>
   <h2 id="read">
    <a>
-    3.3. Read
+    4.3. Read
    </a>
   </h2>
   <ul>
@@ -922,8 +1128,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <h2>
-   <a name="3.4.-unread">
-    3.4. Unread
+   <a name="4.4.-unread">
+    4.4. Unread
    </a>
   </h2>
   <ul>

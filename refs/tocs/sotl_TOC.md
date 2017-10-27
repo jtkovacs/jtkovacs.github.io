@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4567 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 4995 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -16,13 +16,14 @@
 	- &nbsp;2.2. [Instructional theory](#instructional-theory)
 		- &nbsp;2.2.1. [Alignment](#alignment)
 		- &nbsp;2.2.2. [Objectives](#objectives)
-			- &nbsp;2.2.2.1. [Phillips model puts learning objectives in context](#phillips-model-puts-learning-objectives-in-context)
+			- &nbsp;2.2.2.1. [Learning objectives in context](#learning-objectives-in-context)
+				- &nbsp;2.2.2.1.1. [Outcomes vs. goals vs. objectives](#outcomes-vs.-goals-vs.-objectives)
+				- &nbsp;2.2.2.1.2. [Phillips model](#phillips-model)
 			- &nbsp;2.2.2.2. [Purpose and value of learning objectives](#purpose-and-value-of-learning-objectives)
 			- &nbsp;2.2.2.3. [Writing good learning objectives](#writing-good-learning-objectives)
-				- &nbsp;2.2.2.3.1. [General qualities](#general-qualities)
-				- &nbsp;2.2.2.3.2. [CONTENT: Knowledge dimensions and task analysis](#content:-knowledge-dimensions-and-task-analysis)
-				- &nbsp;2.2.2.3.3. [DEMAND: Bloom's modified taxonomy](#demand:-blooms-modified-taxonomy)
-				- &nbsp;2.2.2.3.4. [IMPACT: Outcomes vs. goals vs. objectives](#impact:-outcomes-vs.-goals-vs.-objectives)
+				- &nbsp;2.2.2.3.1. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
+				- &nbsp;2.2.2.3.2. [Task analysis for procedural knowledge](#task-analysis-for-procedural-knowledge)
+				- &nbsp;2.2.2.3.3. [Examples](#examples)
 		- &nbsp;2.2.3. [Instructional strategies](#instructional-strategies)
 			- &nbsp;2.2.3.1. [Choosing strategies](#choosing-strategies)
 				- &nbsp;2.2.3.1.1. [... by knowledge dimension](#...-by-knowledge-dimension)
@@ -53,7 +54,8 @@
 			- &nbsp;3.1.3.3. [Engage](#engage)
 			- &nbsp;3.1.3.4. [Reflect](#reflect)
 		- &nbsp;3.1.4. [Curriculum innovation canvas](#curriculum-innovation-canvas)
-		- &nbsp;3.1.5. [Other models](#other-models)
+		- &nbsp;3.1.5. [Diamond](#diamond)
+		- &nbsp;3.1.6. [Other models](#other-models)
 - &nbsp;4. [Reflective practice](#reflective-practice)
 	- &nbsp;4.1. [Qualities of excellent teachers](#qualities-of-excellent-teachers)
 	- &nbsp;4.2. [A miscellany of advice and insights](#a-miscellany-of-advice-and-insights)
@@ -276,7 +278,17 @@ Aligning these three components is a dynamic process, since a change in one nece
 
 Phillips and Phillips (2010) attribute the original use of the term in instructional design to Robert Mager for his 1967 book *Preparing instructional objectives.*
 
-#### 2.2.2.1. Phillips model puts learning objectives in context
+#### 2.2.2.1. Learning objectives in context
+
+##### 2.2.2.1.1. Outcomes vs. goals vs. objectives
+
+Per Booth (2011), targets form a hierarchy:
+
+- **OUTCOMES** = hoped-for lasting changes
+- **GOALS** = express a theory of how to produce outcomes
+- **OBJECTIVES** = strategies/skills needed to attain goals
+
+##### 2.2.2.1.2. Phillips model
 
 The Phillips and Phillips (2010) model is one common model for describing and evaluating the various levels of organizational impact a training may have; [there are others, ](https://www.watershedlrs.com/blog/phillips-model-for-learning-evaluation) but in any case the point is to cover the entire "chain of impact" to which an instructional project belongs and depends on:
 
@@ -293,40 +305,51 @@ _Source:_ Phillips & Phillips, 2010, p. 18.
 #### 2.2.2.2. Purpose and value of learning objectives
 
 - [I]mprove the impact of instruction", which is "particularly [true] when participants have had a hand in defining [the LOs]” (Booth, 2011; read the Eberly Center's [discussion of how)](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf)
+- Support the instructor in reflecting and improving (Diamond, 2008)
 - "Serve as the basis for selecting instructional methods" (Diamond, 2008) and "allow you to structure measurable learning interactions" (Booth, 2011)
-- Proactively "[c]ommunicate to your students your expectations and how the students will be assessed", then retroactively "[s]erve as the basis for your assessment of student achievement" (Diamond, 2008)
+- Proactively "[c]ommunicate to your students your expectations and how the students will be assessed", which facilitates student self-assessment, and therefore facilitates learning (Diamond, 2008)
+- Retroactively "[s]erve as the basis for your assessment of student achievement" (Diamond, 2008)
 
 #### 2.2.2.3. Writing good learning objectives
 
-##### 2.2.2.3.1. General qualities
-
-- Diamond, 2008
-- Focus on what students should do or be able to do, not what instructors hope to 'cover' (EC, 2015)
-- Expose the cognitive tasks inside the larger skill, e.g. [Bloom's taxonomy](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/)
-- Are measurable, not vague: "What would students do differently if they really 'understand' or 'appreciate' X?" (EC, 2015)
-- Speak to:
-    - Performance---what the participant will be able to do during the program
+- **Student-centered:** Focus on what students should do or be able to do, not what instructors hope to 'cover' (EC, 2015). Diamond
+- **Aligned,** if possible, with institutional, disciplinary, or other standards of practice and statements of purpose (Diamond, 2008)
+- **Measurable,** not vague ("What would students do differently if they really 'understand' or 'appreciate' X?" ask EC, 2015). Quoted from Phillips and Phillips (2010) and echoed by Diamond (2008), LOs should speak to:
+    - Performance---what the participant will be able to do during the program [see [Bloom's modified taxonomy\]](#blooms-modified-taxonomy)
+        - Bloom's modified taxonomy
+        - Degree of granularity
     - Condition---circumstances under which the participant will perform the task
-    - Criteria---degree or level [i.e. **quantification]** of proficiency that is necessary to perform the job" (Phillips & Phillips, 2010)
+    - Criteria---degree or level [i.e. **quantification]** of proficiency that is necessary to perform the job"
 
-##### 2.2.2.3.2. CONTENT: Knowledge dimensions and task analysis
+Diamond (2008) describes how instructors have struggled particularly with shifting perspective from content- to outcomes-focused; with writing "behavioral" objectives that are measurable but not too narrow; and with writing LOs at the right level of granularity, not too stultifying.
 
-Booth (2011, p. 116) also categorizes the "knowledge dimensions" that learning objectives may speak to as "factual, procedural, conceptual, or metacognitive". She suggests mapping the content of an instructional scenario in terms of these categories, then using task analysis to decompose one's own expert procedural knowledge and thereby reacquaint oneself with the topic from a beginner's perspective.
+##### 2.2.2.3.1. Bloom's modified taxonomy
 
-##### 2.2.2.3.3. DEMAND: Bloom's modified taxonomy
+See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) for backstory; per the [Center for Excellence in Learning and Teaching](http://www.celt.iastate.edu/teaching/effective-teaching-practices/revised-blooms-taxonomy) at Iowa State University:
 
-- See Dr. Leslie Owen Wilson's [great discussion](http://thesecondprinciple.com/teaching-essentials/beyond-bloom-cognitive-taxonomy-revised/) of the updates to Bloom's taxonomy.
+![](../illos/knowledge-dimension.png)
+
+![](../illos/cognitive-process-dimension.png)
+
+##### 2.2.2.3.2. Task analysis for procedural knowledge
+
+Booth (2011) suggests task analysis as a strategy for decomposing one's own expert procedural knowledge and thereby reacquainting oneself with the topic from a beginner's perspective. Specifically, she suggests task analysis as a way
+
 - Schulman, 2002 referenced by Alonso et al. (2008)
 
-##### 2.2.2.3.4. IMPACT: Outcomes vs. goals vs. objectives
+##### 2.2.2.3.3. Examples
 
-Per Booth (2011), targets form a hierarchy:
+From Diamond (2008, pp. 135-136):
 
-- **OUTCOMES** = hoped-for lasting changes
-- **GOALS** = express a theory of how to produce outcomes
-- **OBJECTIVES** = strategies/skills needed to attain goals
-
-
+- __Government.__ When given a major decision made by a governmental leader, you will be able to identify the major factors that the leader had to consider and discuss why the action was taken and what apparent trade-offs were made.
+- __Economics.__ Demonstrate graphically and explain how a change in expectations will affect the loanable funds market. (Begin with an appropriately labeled graph that represents the initial equilibrium.)
+- __Management.__ Identify (based on readings, case studies, and/ or personal  experiences) those activities that are most likely to distinguish effective, well-managed technology development programs from ineffective programs.
+- __Statistics.__ When given two events, you will be able to determine whether they are independent or whether there is a relationship
+between them (that is, one event affects the probability of the other). On the basis of this determination, you will be able to select and use the appropriate rules of conditional probability to determine the probability that a certain event will occur.
+- __Religion.__ When given a definition of the term _religion,_ you will be able to identify which of the following characteristics is emphasized: feeling, ritual activity, belief, monotheism, the solitary individual, social valuation, illusion, ultimate reality, and value
+- __Music.__ On hearing musical selections, you will be able to identify those that are examples of chamber music and be able to identify the form, texture, and makeup of the ensemble.
+- __Art.__ When shown a print, you will be able to identify whether it is a woodcut, an etching, or a lithograph, and you will be able to list the characteristics on which this identification was based.
+- __Psychology.__ When given a case study, you will be able to identify whether it describes a case of schizophrenia and, if it does, which of the following schizophrenic reactions are involved: hebephrenic, catatonic, or paranoid.
 
 
 
@@ -367,9 +390,11 @@ Instructional messages should be clearly relevant and actionable ("WIIFM/what's 
 
 #### 2.2.4.1. Proper role of assessment
 
-See Torrance (2007) for some caution regarding assessment.
+Diamond (2008, p. 128) quotes Theodore Marchese:
 
+**"Assessment per se guarantees nothing by way of improvement, no more than a thermometer cures a fever. Only when used in combination with good instruction (that evokes involvement in coherent curricula, etc.) in a program of improvement, can the device strengthen education."**
 
+See Torrance (2007) for some additional caution regarding assessment.
 
 
 
@@ -501,7 +526,11 @@ Source: Booth, 2011, p. 19.
 
 Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A design-thinking framework for the engaged educational entrepreneur. _Journal of Higher Education Outreach and Engagement,_ 21(1).
 
-### 3.1.5. Other models
+### 3.1.5. Diamond
+
+![](../illos/Diamond-phase-II.png)
+
+### 3.1.6. Other models
 
 ... mentioned by Booth (2011, p. 86):
 

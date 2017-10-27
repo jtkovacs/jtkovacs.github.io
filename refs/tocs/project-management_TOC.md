@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4341 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> project management | just under 4361 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is project management?](#what-is-project-management)
 	- &nbsp;1.1. [Overview of PM methodologies](#overview-of-pm-methodologies)
 	- &nbsp;1.2. [Common pitfalls & best practices](#common-pitfalls-best-practices)
 		- &nbsp;1.2.1. [Role of managers in an IS initiative](#role-of-managers-in-an-is-initiative)
@@ -608,6 +608,8 @@ Lichtenberger, A. (2012, July 23). Six steps for a successful vendor selection. 
 MITRE. (n.d.). Risk impact assessment and prioritization. In _MITRE systems engineering guide._ Retrieved from [https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/risk-management/risk-management-tools](https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/risk-management/risk-management-tools)
 
 Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
+
+Phillips, J. J., & Phillips, P. P. (2010). The power of objectives: Moving beyond learning objectives. _Performance Improvement,_ 49(6), 17-24.
 
 Project Management Institute (PMI). (2013). Communication: The message is clear.
 

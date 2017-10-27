@@ -543,6 +543,8 @@ MITRE. (n.d.). Risk impact assessment and prioritization. In _MITRE systems engi
 
 Obuchowski, J. (2005). A winning proposition: Crafting effective proposals. _Harvard Management Communication Letter._
 
+Phillips, J. J., & Phillips, P. P. (2010). The power of objectives: Moving beyond learning objectives. _Performance Improvement,_ 49(6), 17-24.
+
 Project Management Institute (PMI). (2013). Communication: The message is clear.
 
 Rabinowitz, P. (n.d.). Identifying and analyzing stakeholders and their interests. In _Community Tool Box._ Work Group for Community Health and Development at Kansas State University. Retrieved from [http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main](http://ctb.ku.edu/en/table-of-contents/participation/encouraging-involvement/identify-stakeholders/main)

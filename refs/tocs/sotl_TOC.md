@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5103 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5112 words | updated 10/28/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -24,7 +24,9 @@
 				- &nbsp;2.2.2.3.1. [Bloom's modified taxonomy](#blooms-modified-taxonomy)
 				- &nbsp;2.2.2.3.2. [Task analysis for procedural knowledge](#task-analysis-for-procedural-knowledge)
 				- &nbsp;2.2.2.3.3. [Schulman's learning process stages](#schulmans-learning-process-stages)
-				- &nbsp;2.2.2.3.4. [Examples](#examples)
+				- &nbsp;2.2.2.3.4. [SOLO taxonomy](#solo-taxonomy)
+				- &nbsp;2.2.2.3.5. [Feisel-Schmidt technical taxonomy](#feisel-schmidt-technical-taxonomy)
+				- &nbsp;2.2.2.3.6. [Examples](#examples)
 		- &nbsp;2.2.3. [Instructional strategies](#instructional-strategies)
 			- &nbsp;2.2.3.1. [Choosing strategies](#choosing-strategies)
 				- &nbsp;2.2.3.1.1. [... by knowledge dimension](#...-by-knowledge-dimension)
@@ -353,7 +355,15 @@ Alonso et al. (2008) characterize Schulman's learning process model (2002) as ha
 - judgement and design
 - commitment and identity
 
-##### 2.2.2.3.4. Examples
+##### 2.2.2.3.4. SOLO taxonomy
+
+[http://www.innomet.ee/innomet/Reports/Report_WP1.pdf](http://www.innomet.ee/innomet/Reports/Report_WP1.pdf)
+
+##### 2.2.2.3.5. Feisel-Schmidt technical taxonomy
+
+[http://www.innomet.ee/innomet/Reports/Report_WP1.pdf](http://www.innomet.ee/innomet/Reports/Report_WP1.pdf)
+
+##### 2.2.2.3.6. Examples
 
 From Diamond (2008, pp. 135-136):
 

@@ -282,6 +282,14 @@ Alonso et al. (2008) characterize Schulman's learning process model (2002) as ha
 - judgement and design
 - commitment and identity
 
+##### SOLO taxonomy
+
+[http://www.innomet.ee/innomet/Reports/Report_WP1.pdf](http://www.innomet.ee/innomet/Reports/Report_WP1.pdf)
+
+##### Feisel-Schmidt technical taxonomy
+
+[http://www.innomet.ee/innomet/Reports/Report_WP1.pdf](http://www.innomet.ee/innomet/Reports/Report_WP1.pdf)
+
 ##### Examples
 
 From Diamond (2008, pp. 135-136):

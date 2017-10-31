@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6389 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6608 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -61,8 +61,9 @@
 		- &nbsp;3.1.5. [Diamond](#diamond)
 		- &nbsp;3.1.6. [Other models](#other-models)
 	- &nbsp;3.2. [Lesson planning](#lesson-planning)
-		- &nbsp;3.2.1. [Gagné’s Events of Instruction](#gagné’s-events-of-instruction)
+		- &nbsp;3.2.1. [Gagné’s events of instruction](#gagné’s-events-of-instruction)
 		- &nbsp;3.2.2. [Hunter lesson plan model](#hunter-lesson-plan-model)
+		- &nbsp;3.2.3. [Reeves lesson plan elements](#reeves-lesson-plan-elements)
 	- &nbsp;3.3. [Learning objects](#learning-objects)
 		- &nbsp;3.3.1. [Instructional messages](#instructional-messages)
 		- &nbsp;3.3.2. [Visual design of learning objects](#visual-design-of-learning-objects)
@@ -607,12 +608,9 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ## 3.2. Lesson planning
 
-- Reeves (2011):
-- Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
-- Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge. Education as Change, 15(2).
-- Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance between process and product through perceptual lesson planning. Teachers College Record, 115, 1-27.
+... AKA student learning plan, per Reeves (2011).
 
-### 3.2.1. Gagné’s Events of Instruction
+### 3.2.1. Gagné’s events of instruction
 
 From Booth (2011, p. 132):
 
@@ -640,6 +638,36 @@ Paraphrased from a handout provided by Reed (2017):
 - Immediately check understanding with **guided practice**
 - After some time, **require independent practice**, and after some time again, **provide feedback**
 
+... however, Reeves notes, Hunter originalled ordered them by logical dependence---i.e. the order in which they should be considered by the instructor during planning---rather than chronologically, i.e. as a learner would encounter them (2011, p. 178):
+
+- "Determining the kind of access students will have to new information
+- Modeling desired thinking and skills
+- Checking for understanding
+- Guiding students’ practice
+- Providing independent practice
+- Communicating to students what the objective is
+- Starting a lesson by creating an anticipatory set"
+
+### 3.2.3. Reeves lesson plan elements
+
+Per Reeves (2011, pp. 180-181):
+
+- "Identifying information (lesson topic, title, grade, dates)
+- Associated academic standards, usually in the form of benchmarks
+- Topical, essential, and guiding questions
+- Instructional objectives
+- Formative or summative assessment tasks
+- Learning activities, which may include the following:
+    - Introduction, hook, or anticipatory set. This may be in the form of a bellringer that students will begin to think about or work on as soon as they enter the classroom
+    - Access to new information
+    - Recording or saving new information for future reference
+    - Working with new content to make sense of it and connect it to prior knowledge
+    - Application or practice that may double as formative assessment, with varying degrees of teacher guidance and monitoring
+- Differentiation plans for individual students who need it
+- Closure that will prompt students to reflect on the content of the lesson and connect it to their own personal knowledge base and to other parts of the curriculum. The topical, guiding, or essential questions are often addressed in closure.
+- Homework assignment
+- Materials or preparation required
+- Post-lesson reflection on how the lesson went and what could be changed for better results or for future students"
 
 
 ## 3.3. Learning objects

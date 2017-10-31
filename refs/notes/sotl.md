@@ -315,19 +315,26 @@ From Diamond (2008, pp. 135-136):
 
 #### Choosing strategies
 
-##### ... by knowledge dimension
+##### Strategies by knowledge dimension
 
 From Booth, 2011, p. 116:
 
 <img src="../illos/strategies-by-knowledge-dimension.png" width="600">
 
-##### ... to exercise multiple intelligences
+##### Strategies to exercise multiple intelligences
 
-Eisner, E. (2004). Multiple intelligences: Its tensions and possibilities. Teachers College Record, 106(1), 31-39.
+Gardner & Hatch (1989) argue for a richer understanding of intelligence as "the capacity to solve problems or to fashion products that are valued in one or more cultural settings". They differentiate between eight "intelligences":
 
-Gardner, H. & Hatch, T. (1989). Multiple intelligences go to school: Educational implications of the theory of multiple intelligences. Educational Researcher, 18(8).
+- Visual/spatial
+- Verbal/linguistic
+- Logical/mathematical
+- Naturalist
+- Bodily/kinesthetic
+- Musical/rhythmic
+- Interpersonal/social
+- Intrapersonal/introspective
 
-##### ... for accessibility (universal design)
+##### Accessibility and universal design
 
 Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning (Links to an external site.)Links to an external site.. International Journal of Learning, 18(4).
 
@@ -676,7 +683,7 @@ Piskurich, G. M. (2000). _Rapid instructional design: Learning ID fast and right
 
 Reed, P. J. (2017). Lecture comments. University of Washington iSchool.
 
-Reeves, A. R. (2011). _Where great teaching begins: Planning for student thinking and learning._ Alexandria, VA: ASCD.
+Reeves, A. R. (2011). Creating plans for learning. In _Where great teaching begins: Planning for student thinking and learning._ Alexandria, VA: ASCD.
 
 Schwartz, D. L., Chase, C. C., & Bransford, J. D. (2012). Resisting overzealous transfer: Coordinating previously successful routines with needs for new learning. _Educational Psychologist, 47_(3).
 

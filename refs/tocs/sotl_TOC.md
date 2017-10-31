@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5352 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5371 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -29,9 +29,9 @@
 				- &nbsp;2.2.2.3.6. [Examples](#examples)
 		- &nbsp;2.2.3. [Instructional strategies](#instructional-strategies)
 			- &nbsp;2.2.3.1. [Choosing strategies](#choosing-strategies)
-				- &nbsp;2.2.3.1.1. [... by knowledge dimension](#...-by-knowledge-dimension)
-				- &nbsp;2.2.3.1.2. [... to exercise multiple intelligences](#...-to-exercise-multiple-intelligences)
-				- &nbsp;2.2.3.1.3. [... for accessibility (universal design)](#...-for-accessibility-universal-design)
+				- &nbsp;2.2.3.1.1. [Strategies by knowledge dimension](#strategies-by-knowledge-dimension)
+				- &nbsp;2.2.3.1.2. [Strategies to exercise multiple intelligences](#strategies-to-exercise-multiple-intelligences)
+				- &nbsp;2.2.3.1.3. [Accessibility and universal design](#accessibility-and-universal-design)
 			- &nbsp;2.2.3.2. [Instructional messages](#instructional-messages)
 			- &nbsp;2.2.3.3. [Activities](#activities)
 				- &nbsp;2.2.3.3.1. [Stop and think](#stop-and-think)
@@ -391,19 +391,26 @@ From Diamond (2008, pp. 135-136):
 
 #### 2.2.3.1. Choosing strategies
 
-##### 2.2.3.1.1. ... by knowledge dimension
+##### 2.2.3.1.1. Strategies by knowledge dimension
 
 From Booth, 2011, p. 116:
 
 <img src="../illos/strategies-by-knowledge-dimension.png" width="600">
 
-##### 2.2.3.1.2. ... to exercise multiple intelligences
+##### 2.2.3.1.2. Strategies to exercise multiple intelligences
 
-Eisner, E. (2004). Multiple intelligences: Its tensions and possibilities. Teachers College Record, 106(1), 31-39.
+Gardner & Hatch (1989) argue for a richer understanding of intelligence as "the capacity to solve problems or to fashion products that are valued in one or more cultural settings". They differentiate between eight "intelligences":
 
-Gardner, H. & Hatch, T. (1989). Multiple intelligences go to school: Educational implications of the theory of multiple intelligences. Educational Researcher, 18(8).
+- Visual/spatial
+- Verbal/linguistic
+- Logical/mathematical
+- Naturalist
+- Bodily/kinesthetic
+- Musical/rhythmic
+- Interpersonal/social
+- Intrapersonal/introspective
 
-##### 2.2.3.1.3. ... for accessibility (universal design)
+##### 2.2.3.1.3. Accessibility and universal design
 
 Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning (Links to an external site.)Links to an external site.. International Journal of Learning, 18(4).
 
@@ -752,7 +759,7 @@ Piskurich, G. M. (2000). _Rapid instructional design: Learning ID fast and right
 
 Reed, P. J. (2017). Lecture comments. University of Washington iSchool.
 
-Reeves, A. R. (2011). _Where great teaching begins: Planning for student thinking and learning._ Alexandria, VA: ASCD.
+Reeves, A. R. (2011). Creating plans for learning. In _Where great teaching begins: Planning for student thinking and learning._ Alexandria, VA: ASCD.
 
 Schwartz, D. L., Chase, C. C., & Bransford, J. D. (2012). Resisting overzealous transfer: Coordinating previously successful routines with needs for new learning. _Educational Psychologist, 47_(3).
 

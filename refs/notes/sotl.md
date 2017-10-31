@@ -344,14 +344,6 @@ From Booth, 2011, p. 116:
 
 Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
 
-#### Instructional messages
-
-Instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
-
-- get attention, hold interest: **UNEXPECTED, STORIES**
-- facilitate comprehension: **SIMPLE, CONCRETE**
-- appeal and persuade: **CREDIBLE, EMOTIONAL**
-
 #### Activities
 
 ##### Stop and think
@@ -474,7 +466,7 @@ Source: Booth, 2011, p. 19.
 
 - **Identify the problem:** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this question to be posed at the strategic level)
 - **Analyze the scenario** in terms of
-    - **Learner** attributes, motivation, prior knowledge, and barriers to learning
+    - **Learner:** attributes, motivation, prior knowledge, and barriers to learning
     - **Content:** knowledge, skills and attributes that will later be translated into [targets](#targets)
     - **Context**
     - **Educator**
@@ -494,10 +486,12 @@ Booth (2011, p. 105):
 
 #### Engage
 
-- **Develop materials** (craft "instructional messages" into "learning objects")
+- **Develop materials** through a process of prototyping and revision
+    - Craft [instructional messages](#instructional-messages)
+    - Create **learning objects,** which includes paying attention to [information design and visualization](#visual-design-of-learning-objects)
 - **Deliver instruction:**
-    - Plan implementation, e.g. lesson plan
-    - Deliver
+    - [Plan implementation](#lesson-planning)
+    - Deliver in a way that **captures attention** and **sustains interest;** see [motivation](#motivation)
 
 #### Reflect
 
@@ -526,7 +520,26 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ## Lesson planning
 
-### Madeline Hunter lesson plan model
+- Reeves (2011):
+- Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
+- Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge. Education as Change, 15(2).
+- Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance between process and product through perceptual lesson planning. Teachers College Record, 115, 1-27.
+
+### Gagné’s Events of Instruction
+
+From Booth (2011, p. 132):
+
+- "Gain attention.
+- Inform learner of objectives.
+- Stimulate recall of prior learning.
+- Present stimulus material.
+- Provide learner guidance.
+- Elicit performance.
+- Provide feedback.
+- Assess performance.
+- Enhance retention transfer."
+
+### Hunter lesson plan model
 
 Paraphrased from a handout provided by Reed (2017):
 
@@ -540,29 +553,89 @@ Paraphrased from a handout provided by Reed (2017):
 - Immediately check understanding with **guided practice**
 - After some time, **require independent practice**, and after some time again, **provide feedback**
 
-Per Reeves (2011):
-
-- TKTK
-
-Per Booth (2011):
-
-- TKTK
 
 
-Also:
+## Learning objects
 
-- Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
-- Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge. Education as Change, 15(2).
-- Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance between process and product through perceptual lesson planning. Teachers College Record, 115, 1-27.
+### Instructional messages
 
+Booth (2011) calls instructional messages "elevator pitches" for the class; it's about knowing and conveying what you have to offer in a particular instructional situation. Messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
+- get attention, hold interest: **UNEXPECTED, STORIES**
+- facilitate comprehension: **SIMPLE, CONCRETE**
+- appeal and persuade: **CREDIBLE, EMOTIONAL**
 
+### Visual design of learning objects
 
+#### Mayer's strategies
 
+Per Booth (2011, p. 127): "Richard Mayer lists seven such strategies that make more efficient use of cognitive processing capacity in instructional interfaces, materials, and graphics:
 
+- **Concentrated:** Core ideas are emphasized via highlighting, bolding, and other strategies.
+- **Concise:** Brevity and simplicity are achieved by eliminating extraneous text and images.
+- **Correspondent:** Pictures, charts, and tables and their captions are placed close to one another.
+- **Concrete:** Images provide clear visualizations of the subjects in question.
+- **Coherent:** Picture choices are logical and correspond with narration, captions, or surrounding text.
+- **Comprehensible:** Graphics and text or narration reflect the prior knowledge of the viewer.
+- **Codable:** Graphics and text or narration lend themselves to being integrated into memory."
 
+#### PAT model
 
+Booth (2011) summarizes Linda Lohr's approach to visual design for instructional purposes:
 
+##### Principles
+
+These are the broad "cognitive functions" that comprise someone's interaction with a visual instructional object:
+
+- **Selection** (filtering what's important): guided by the **figure/ground** principle (people can't pay attention to everything, so know what you want to emphasize and then make the emphasis obvious)
+- **Organization** (parsing the 'figure;): supported by "clear and consistent navigational elements, chunking information into content units that reflect instructional objectives, providing scaffolding in the form of assistance and support, and incorporating hierarchical elements such as lists, charts, and outlines that suggest relationships"
+- **Integration** (situating the figure)
+
+##### Actions
+
+- **Contrast** to emphasize dissimilarity and create interest
+- **Proximity** to convey relatedness
+- **Repetition** to reduce cognitive burden and emphasize structure (pathways)
+- **Alignment** to maximize readability and reduce visual noise
+
+##### Tools
+
+For mood, readability, accessibility, etc.:
+
+- Font & typeface
+- Color
+- Shapes
+- Depth/details/realism
+- Whitespace
+
+### Multimedia learning objects
+
+Booth summarizes Mayer again (2011, p. 130):
+
+- **"Coherence:** Extraneous words, sounds, and pictures are minimized. Modality : Narration occurs as speech rather than printed text in multimedia presentations.
+- **Personalization:** Narration occurs in conversational rather than formal style.
+- **Pretraining:** The learner knows the names and characteristics of the key concepts. Redundancy : Animation and narration are preferable in multimedia presentations over animation, narration, and on-screen text (to reduce cognitive overload).
+- **Segmenting:** A fast-paced, complex multimedia lesson is presented in user-paced segments rather than as a continuous presentation.
+- **Signaling:** The essential material is highlighted. Spatial contiguity : Corresponding words and pictures are presented in proximity to one another on a page or screen.
+- **Temporal contiguity:** Corresponding words and pictures are presented simultaneously rather than successively in time.
+- **Voice:** Narration occurs in a friendly human voice rather than a machine voice."
+
+### Evaluating learning objects
+
+Booth presents a modified version of Lohr's schema for evaluating learning objects (2011, p. 130):
+
+- **"Effectiveness**
+    - Does the learning object cover the correct content?
+    - Does the learning object cover an optimal amount of information (not too much and not too little content)?
+    - Does the learning object “work” instructionally?
+- **Efficiency**
+    - Does the learning object make important information (selection) easy to perceive?
+    - Is the learning object organized (organization) so that information is easy to access?
+    - Does the learning object help the user relate the information to the overall instructional or performance target (integration)?
+- **Appeal**
+    - Does the design of learning object motivate the user to engage with it?
+    - Is the information in the learning object relevant and important to the user in the instructional context?
+    - Is the learning object clear enough to convince users that they will understand it?"
 
 
 
@@ -583,6 +656,7 @@ Per Booth (2011):
 - [interpersonal]
     - Be authentic
     - Show your personal investment in the class and the students
+
 
 ## A miscellany of advice and insights
 
@@ -675,8 +749,6 @@ Allen Interactions. (2017). Agile eLearning development with SAM. Retrieved from
 Alonso, F., Lopez, G., Manrique, D., & Vines, J. M. (2008). Learning objects, learning objectives and learning design. _Innovations in Education and Teaching International,_ 45(4), 389-400.
 
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
-
-Booth, C. (2011). *Reflective Teaching, Effective Learning: Instructional Literacy for Library Educators.* Chicago, IL: American Library Association Editions.
 
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 

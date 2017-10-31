@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5727 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6389 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -32,9 +32,8 @@
 			- &nbsp;2.2.3.1. [Choosing strategies](#choosing-strategies)
 				- &nbsp;2.2.3.1.1. [Strategies by knowledge dimension](#strategies-by-knowledge-dimension)
 				- &nbsp;2.2.3.1.2. [Accessibility and universal design](#accessibility-and-universal-design)
-			- &nbsp;2.2.3.2. [Instructional messages](#instructional-messages)
-			- &nbsp;2.2.3.3. [Activities](#activities)
-				- &nbsp;2.2.3.3.1. [Stop and think](#stop-and-think)
+			- &nbsp;2.2.3.2. [Activities](#activities)
+				- &nbsp;2.2.3.2.1. [Stop and think](#stop-and-think)
 		- &nbsp;2.2.4. [Assessment](#assessment)
 			- &nbsp;2.2.4.1. [Proper role of assessment](#proper-role-of-assessment)
 		- &nbsp;2.2.5. [Buzzwords, schools and movements](#buzzwords-schools-and-movements)
@@ -62,7 +61,18 @@
 		- &nbsp;3.1.5. [Diamond](#diamond)
 		- &nbsp;3.1.6. [Other models](#other-models)
 	- &nbsp;3.2. [Lesson planning](#lesson-planning)
-		- &nbsp;3.2.1. [Madeline Hunter lesson plan model](#madeline-hunter-lesson-plan-model)
+		- &nbsp;3.2.1. [Gagné’s Events of Instruction](#gagné’s-events-of-instruction)
+		- &nbsp;3.2.2. [Hunter lesson plan model](#hunter-lesson-plan-model)
+	- &nbsp;3.3. [Learning objects](#learning-objects)
+		- &nbsp;3.3.1. [Instructional messages](#instructional-messages)
+		- &nbsp;3.3.2. [Visual design of learning objects](#visual-design-of-learning-objects)
+			- &nbsp;3.3.2.1. [Mayer's strategies](#mayers-strategies)
+			- &nbsp;3.3.2.2. [PAT model](#pat-model)
+				- &nbsp;3.3.2.2.1. [Principles](#principles)
+				- &nbsp;3.3.2.2.2. [Actions](#actions)
+				- &nbsp;3.3.2.2.3. [Tools](#tools)
+		- &nbsp;3.3.3. [Multimedia learning objects](#multimedia-learning-objects)
+		- &nbsp;3.3.4. [Evaluating learning objects](#evaluating-learning-objects)
 - &nbsp;4. [Reflective practice](#reflective-practice)
 	- &nbsp;4.1. [Qualities of excellent teachers](#qualities-of-excellent-teachers)
 	- &nbsp;4.2. [A miscellany of advice and insights](#a-miscellany-of-advice-and-insights)
@@ -421,17 +431,9 @@ From Booth, 2011, p. 116:
 
 Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
 
-#### 2.2.3.2. Instructional messages
+#### 2.2.3.2. Activities
 
-Instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
-
-- get attention, hold interest: **UNEXPECTED, STORIES**
-- facilitate comprehension: **SIMPLE, CONCRETE**
-- appeal and persuade: **CREDIBLE, EMOTIONAL**
-
-#### 2.2.3.3. Activities
-
-##### 2.2.3.3.1. Stop and think
+##### 2.2.3.2.1. Stop and think
 
 
 
@@ -551,7 +553,7 @@ Source: Booth, 2011, p. 19.
 
 - **Identify the problem:** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this question to be posed at the strategic level)
 - **Analyze the scenario** in terms of
-    - **Learner** attributes, motivation, prior knowledge, and barriers to learning
+    - **Learner:** attributes, motivation, prior knowledge, and barriers to learning
     - **Content:** knowledge, skills and attributes that will later be translated into [targets](#targets)
     - **Context**
     - **Educator**
@@ -571,10 +573,12 @@ Booth (2011, p. 105):
 
 #### 3.1.3.3. Engage
 
-- **Develop materials** (craft "instructional messages" into "learning objects")
+- **Develop materials** through a process of prototyping and revision
+    - Craft [instructional messages](#instructional-messages)
+    - Create **learning objects,** which includes paying attention to [information design and visualization](#visual-design-of-learning-objects)
 - **Deliver instruction:**
-    - Plan implementation, e.g. lesson plan
-    - Deliver
+    - [Plan implementation](#lesson-planning)
+    - Deliver in a way that **captures attention** and **sustains interest;** see [motivation](#motivation)
 
 #### 3.1.3.4. Reflect
 
@@ -603,7 +607,26 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ## 3.2. Lesson planning
 
-### 3.2.1. Madeline Hunter lesson plan model
+- Reeves (2011):
+- Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
+- Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge. Education as Change, 15(2).
+- Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance between process and product through perceptual lesson planning. Teachers College Record, 115, 1-27.
+
+### 3.2.1. Gagné’s Events of Instruction
+
+From Booth (2011, p. 132):
+
+- "Gain attention.
+- Inform learner of objectives.
+- Stimulate recall of prior learning.
+- Present stimulus material.
+- Provide learner guidance.
+- Elicit performance.
+- Provide feedback.
+- Assess performance.
+- Enhance retention transfer."
+
+### 3.2.2. Hunter lesson plan model
 
 Paraphrased from a handout provided by Reed (2017):
 
@@ -617,29 +640,89 @@ Paraphrased from a handout provided by Reed (2017):
 - Immediately check understanding with **guided practice**
 - After some time, **require independent practice**, and after some time again, **provide feedback**
 
-Per Reeves (2011):
-
-- TKTK
-
-Per Booth (2011):
-
-- TKTK
 
 
-Also:
+## 3.3. Learning objects
 
-- Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
-- Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge. Education as Change, 15(2).
-- Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance between process and product through perceptual lesson planning. Teachers College Record, 115, 1-27.
+### 3.3.1. Instructional messages
 
+Booth (2011) calls instructional messages "elevator pitches" for the class; it's about knowing and conveying what you have to offer in a particular instructional situation. Messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
+- get attention, hold interest: **UNEXPECTED, STORIES**
+- facilitate comprehension: **SIMPLE, CONCRETE**
+- appeal and persuade: **CREDIBLE, EMOTIONAL**
 
+### 3.3.2. Visual design of learning objects
 
+#### 3.3.2.1. Mayer's strategies
 
+Per Booth (2011, p. 127): "Richard Mayer lists seven such strategies that make more efficient use of cognitive processing capacity in instructional interfaces, materials, and graphics:
 
+- **Concentrated:** Core ideas are emphasized via highlighting, bolding, and other strategies.
+- **Concise:** Brevity and simplicity are achieved by eliminating extraneous text and images.
+- **Correspondent:** Pictures, charts, and tables and their captions are placed close to one another.
+- **Concrete:** Images provide clear visualizations of the subjects in question.
+- **Coherent:** Picture choices are logical and correspond with narration, captions, or surrounding text.
+- **Comprehensible:** Graphics and text or narration reflect the prior knowledge of the viewer.
+- **Codable:** Graphics and text or narration lend themselves to being integrated into memory."
 
+#### 3.3.2.2. PAT model
 
+Booth (2011) summarizes Linda Lohr's approach to visual design for instructional purposes:
 
+##### 3.3.2.2.1. Principles
+
+These are the broad "cognitive functions" that comprise someone's interaction with a visual instructional object:
+
+- **Selection** (filtering what's important): guided by the **figure/ground** principle (people can't pay attention to everything, so know what you want to emphasize and then make the emphasis obvious)
+- **Organization** (parsing the 'figure;): supported by "clear and consistent navigational elements, chunking information into content units that reflect instructional objectives, providing scaffolding in the form of assistance and support, and incorporating hierarchical elements such as lists, charts, and outlines that suggest relationships"
+- **Integration** (situating the figure)
+
+##### 3.3.2.2.2. Actions
+
+- **Contrast** to emphasize dissimilarity and create interest
+- **Proximity** to convey relatedness
+- **Repetition** to reduce cognitive burden and emphasize structure (pathways)
+- **Alignment** to maximize readability and reduce visual noise
+
+##### 3.3.2.2.3. Tools
+
+For mood, readability, accessibility, etc.:
+
+- Font & typeface
+- Color
+- Shapes
+- Depth/details/realism
+- Whitespace
+
+### 3.3.3. Multimedia learning objects
+
+Booth summarizes Mayer again (2011, p. 130):
+
+- **"Coherence:** Extraneous words, sounds, and pictures are minimized. Modality : Narration occurs as speech rather than printed text in multimedia presentations.
+- **Personalization:** Narration occurs in conversational rather than formal style.
+- **Pretraining:** The learner knows the names and characteristics of the key concepts. Redundancy : Animation and narration are preferable in multimedia presentations over animation, narration, and on-screen text (to reduce cognitive overload).
+- **Segmenting:** A fast-paced, complex multimedia lesson is presented in user-paced segments rather than as a continuous presentation.
+- **Signaling:** The essential material is highlighted. Spatial contiguity : Corresponding words and pictures are presented in proximity to one another on a page or screen.
+- **Temporal contiguity:** Corresponding words and pictures are presented simultaneously rather than successively in time.
+- **Voice:** Narration occurs in a friendly human voice rather than a machine voice."
+
+### 3.3.4. Evaluating learning objects
+
+Booth presents a modified version of Lohr's schema for evaluating learning objects (2011, p. 130):
+
+- **"Effectiveness**
+    - Does the learning object cover the correct content?
+    - Does the learning object cover an optimal amount of information (not too much and not too little content)?
+    - Does the learning object “work” instructionally?
+- **Efficiency**
+    - Does the learning object make important information (selection) easy to perceive?
+    - Is the learning object organized (organization) so that information is easy to access?
+    - Does the learning object help the user relate the information to the overall instructional or performance target (integration)?
+- **Appeal**
+    - Does the design of learning object motivate the user to engage with it?
+    - Is the information in the learning object relevant and important to the user in the instructional context?
+    - Is the learning object clear enough to convince users that they will understand it?"
 
 
 
@@ -660,6 +743,7 @@ Per Booth (2011):
 - [interpersonal]
     - Be authentic
     - Show your personal investment in the class and the students
+
 
 ## 4.2. A miscellany of advice and insights
 
@@ -752,8 +836,6 @@ Allen Interactions. (2017). Agile eLearning development with SAM. Retrieved from
 Alonso, F., Lopez, G., Manrique, D., & Vines, J. M. (2008). Learning objects, learning objectives and learning design. _Innovations in Education and Teaching International,_ 45(4), 389-400.
 
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
-
-Booth, C. (2011). *Reflective Teaching, Effective Learning: Instructional Literacy for Library Educators.* Chicago, IL: American Library Association Editions.
 
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 

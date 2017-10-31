@@ -521,7 +521,28 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ## Lesson planning
 
-Per Reeves (2011) and Booth (2011):
+### Madeline Hunter lesson plan model
+
+Paraphrased from a handout provided by Reed (2017):
+
+- **Prepare students to learn**
+    - Review foundational material
+    - Build anticipation
+    - State lesson objectives
+- **Deliver instruction**
+    - Present information and verify understanding during presentation
+    - Show examples of what's expected from students (modeling)
+- Immediately check understanding with **guided practice**
+- After some time, **require independent practice**, and after some time again, **provide feedback**
+
+Per Reeves (2011):
+
+- TKTK
+
+Per Booth (2011):
+
+- TKTK
+
 
 Also:
 

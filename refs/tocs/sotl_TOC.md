@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5656 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 5731 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -62,6 +62,7 @@
 		- &nbsp;3.1.5. [Diamond](#diamond)
 		- &nbsp;3.1.6. [Other models](#other-models)
 	- &nbsp;3.2. [Lesson planning](#lesson-planning)
+		- &nbsp;3.2.1. [Madeline Hunter lesson plan model](#madeline-hunter-lesson-plan-model)
 - &nbsp;4. [Reflective practice](#reflective-practice)
 	- &nbsp;4.1. [Qualities of excellent teachers](#qualities-of-excellent-teachers)
 	- &nbsp;4.2. [A miscellany of advice and insights](#a-miscellany-of-advice-and-insights)
@@ -597,7 +598,28 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ## 3.2. Lesson planning
 
-Per Reeves (2011) and Booth (2011):
+### 3.2.1. Madeline Hunter lesson plan model
+
+Paraphrased from a handout provided by Reed (2017):
+
+- **Prepare students to learn**
+    - Review foundational material
+    - Build anticipation
+    - State lesson objectives
+- **Deliver instruction**
+    - Present information and verify understanding during presentation
+    - Show examples of what's expected from students (modeling)
+- Immediately check understanding with **guided practice**
+- After some time, **require independent practice**, and after some time again, **provide feedback**
+
+Per Reeves (2011):
+
+- TKTK
+
+Per Booth (2011):
+
+- TKTK
+
 
 Also:
 

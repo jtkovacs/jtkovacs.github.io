@@ -321,6 +321,16 @@ From Booth, 2011, p. 116:
 
 <img src="../illos/strategies-by-knowledge-dimension.png" width="600">
 
+##### ... to exercise multiple intelligences
+
+Eisner, E. (2004). Multiple intelligences: Its tensions and possibilities. Teachers College Record, 106(1), 31-39.
+
+Gardner, H. & Hatch, T. (1989). Multiple intelligences go to school: Educational implications of the theory of multiple intelligences. Educational Researcher, 18(8).
+
+##### ... for accessibility (universal design)
+
+Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning (Links to an external site.)Links to an external site.. International Journal of Learning, 18(4).
+
 #### Instructional messages
 
 Instructional messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
@@ -499,9 +509,15 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 - Bell and Shaank's BLAAM method
 
 
+## Lesson planning
 
+Per Reeves (2011) and Booth (2011):
 
+Also:
 
+- Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning (Links to an external site.)Links to an external site.. International Journal of Learning, 18(4).
+- Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge (Links to an external site.)Links to an external site.. Education as Change, 15(2).
+- Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance between process and product through perceptual lesson planning. Teachers College Record, 115, 1-27.
 
 
 
@@ -636,7 +652,11 @@ Dweck, C. S., Walton, G. M., & Cohen, G. L. (2014). Academic tenacity: Mindsets 
 
 Eberly Center for Teaching Excellence & Educational Innovation (EC). (2015). Learning objectives. Carnegie Mellon University. Retrieved from [https://www.cmu.edu/teaching/designteach/design/learningobjectives.html](https://www.cmu.edu/teaching/designteach/design/learningobjectives.html)
 
+Eisner, E. (2004). Multiple intelligences: Its tensions and possibilities. _Teachers College Record,_ 106(1), 31-39.
+
 Freire, P. (2009). _Pedagogy of the oppressed_ (30th anniversary ed.). New York City, NY: Continuum.
+
+Gardner, H. & Hatch, T. (1989). Multiple intelligences go to school: Educational implications of the theory of multiple intelligences. _Educational Researcher,_ 18(8).
 
 hooks, b. (1994). _Teaching to transgress: Education as the practice of freedom._ New York City, NY: Routledge.
 
@@ -655,6 +675,8 @@ Phillips, J. J., & Phillips, P. P. (2010). The power of objectives: Moving beyon
 Piskurich, G. M. (2000). _Rapid instructional design: Learning ID fast and right._ San Francisco, CA: Jossey-Bass.
 
 Reed, P. J. (2017). Lecture comments. University of Washington iSchool.
+
+Reeves, A. R. (2011). _Where great teaching begins: Planning for student thinking and learning._ Alexandria, VA: ASCD.
 
 Schwartz, D. L., Chase, C. C., & Bransford, J. D. (2012). Resisting overzealous transfer: Coordinating previously successful routines with needs for new learning. _Educational Psychologist, 47_(3).
 

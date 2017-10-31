@@ -25,6 +25,9 @@ Booth also presents her [USER method](#user-method) primarily as an instructiona
 
 
 
+
+
+
 # Educational theory
 
 ## Learning theory
@@ -170,6 +173,22 @@ Along with **recall** (retrieve and apply this knowledge if a similar situation 
     - Use "graduated prompting" to cue for transfer
     - Be aware of common conceptual misunderstandings for a given field: "teachers must strive to make students' thinking visible and find ways to help them reconceptualize faulty conceptions" (p. 71)
     - Be aware that prior knowledge is not just of an individual student's construction; it is also cultural
+
+#### Multiple intelligences
+
+Gardner & Hatch (1989) argue for a richer understanding of intelligence as "the capacity to solve problems or to fashion products that are valued in one or more cultural settings". They distinguish seven "intelligences" (another, **naturalist,** has been proposed):
+
+- **Visual/spatial:** "Capacities to perceive the visual-spatial world accurately and to perform transformations on one's initial perceptions."
+- **Verbal/linguistic:** "Sensitivity to the sounds, rhythms, and meanings of words; sensitivity to the different functions of language."
+- **Logical/mathematical:** "Sensitivity to, and capacity to discern, logical or numerical patterns; ability to handle long chains of reasoning."
+- **Bodily/kinesthetic:** "Abilities to control one's body movements and to handle objects skillfully."
+- **Musical/rhythmic:** "Abilities to produce and appreciate rhythm, pitch, and timbre; appreciation of the forms of musical expressiveness."
+- **Interpersonal/social:** "Capacities to discern and respond appropriately to the moods, temperaments, motivations, and desires of other people."
+- **Intrapersonal/introspective:** "Access to one's own feelings and the ability to discriminate among them and draw upon them to guide behavior; knowledge of one's own strengths, weaknesses, desires, and intelligence."
+
+While Brown et al. (2014) cite research challenging one of the main pedagogical implications of Gardner's theory --- viz., that instruction should be tailored to each learner's preferred modes (actually it should be varied for all learners) --- Eisner (2004) demonstrates the continuing (even accelerating) relevance of Gardner's work by using it to critique the educational standards movement, which in Eisner's opinion "symptomatizes a loss of faith in the professional competence of teachers" (p. 34). So this is the primary message to take from Gardner: people are gifted in different ways and that's fine (notice, however, that this leads to questions about educational in/equality and in/equity). Eisner also uses Gardner to criticize the institutionalized assumption that individual students will learn at constant rates, and a group of students will learn at a consistent pace such that they can progress as a cohort.
+
+
 
 
 
@@ -321,20 +340,6 @@ From Booth, 2011, p. 116:
 
 <img src="../illos/strategies-by-knowledge-dimension.png" width="600">
 
-##### Strategies to exercise multiple intelligences
-
-Gardner & Hatch (1989) argue for a richer understanding of intelligence as "the capacity to solve problems or to fashion products that are valued in one or more cultural settings". They distinguish seven "intelligences" (an either, **naturalist,** has been proposed:
-
-- **Visual/spatial:** "Capacities to perceive the visual-spatial world accurately and to perform transformations on one's initial perceptions."
-- **Verbal/linguistic:** "Sensitivity to the sounds, rhythms, and meanings of words; sensitivity to the different functions of language."
-- **Logical/mathematical:** "Sensitivity to, and capacity to discern, logical or numerical patterns; ability to handle long chains of reasoning."
-- **Bodily/kinesthetic:** "Abilities to control one's body movements and to handle objects skillfully."
-- **Musical/rhythmic:** "Abilities to produce and appreciate rhythm, pitch, and timbre; appreciation of the forms of musical expressiveness."
-- **Interpersonal/social:** "Capacities to discern and respond appropriately to the moods, temperaments, motivations, and desires of other people."
-- **Intrapersonal/introspective:** "Access to one's own feelings and the ability to discriminate among them and draw upon them to guide behavior; knowledge of one's own strengths, weaknesses, desires, and intelligence."
-
-While Brown et al. (2014) cite research challenging one of the main pedagogical implications of Gardner's theory --- viz., that instruction should be tailored to each learner's preferred modes (actually it should be varied for all learners) --- Eisner (2004) demonstrates the continuing (even accelerating) relevance of Gardner's work by using it to critique the educational standards movement, which in Eisner's opinion "symptomatizes a loss of faith in the professional competence of teachers" (p. 34). So this is the primary message to take from Gardner: people are gifted in different ways and that's fine (notice how this leads us to questions about educational in/equality and in/equity). Eisner also uses Gardner to criticize the institutionalized assumption that individual students will learn at constant rates, and a group of students will learn at a consistent pace such that they can progress as a cohort.
-
 ##### Accessibility and universal design
 
 Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
@@ -481,7 +486,7 @@ Booth (2011, p. 105):
 #### Structure
 
 - **Create targets,** i.e. [goals, objectives and outcomes](#targets)
-- "Identify methods to **involve** learners using delivery techniques, technologies, and activities and **extend** [before, during, after; see [integrative learning](#integrative-learning)] the interaction by supporting students along the continuum of learning." Consider:
+- "Identify methods to **involve** learners using delivery techniques, technologies, and activities and **extend** [before, during, after; see [integrative learning]](#integrative-learning) the interaction by supporting students along the continuum of learning." Consider:
     - "Control of Learning . Which areas of the interaction will be teacher centered (direct instruction), and which will be more student centered (discovery instruction)?
     - Grouping for Learning . Will you ask learners to work as individuals, pairs, teams, or groups?
     - Interactions for Learning. Will you create learning interactions that are human (student/teacher, student/student, other) or nonhuman (student/ tools, student/information, student/environment, other)?

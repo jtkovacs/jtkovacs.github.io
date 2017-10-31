@@ -323,20 +323,21 @@ From Booth, 2011, p. 116:
 
 ##### Strategies to exercise multiple intelligences
 
-Gardner & Hatch (1989) argue for a richer understanding of intelligence as "the capacity to solve problems or to fashion products that are valued in one or more cultural settings". They differentiate between eight "intelligences":
+Gardner & Hatch (1989) argue for a richer understanding of intelligence as "the capacity to solve problems or to fashion products that are valued in one or more cultural settings". They distinguish seven "intelligences" (an either, **naturalist,** has been proposed:
 
-- Visual/spatial
-- Verbal/linguistic
-- Logical/mathematical
-- Naturalist
-- Bodily/kinesthetic
-- Musical/rhythmic
-- Interpersonal/social
-- Intrapersonal/introspective
+- **Visual/spatial:** "Capacities to perceive the visual-spatial world accurately and to perform transformations on one's initial perceptions."
+- **Verbal/linguistic:** "Sensitivity to the sounds, rhythms, and meanings of words; sensitivity to the different functions of language."
+- **Logical/mathematical:** "Sensitivity to, and capacity to discern, logical or numerical patterns; ability to handle long chains of reasoning."
+- **Bodily/kinesthetic:** "Abilities to control one's body movements and to handle objects skillfully."
+- **Musical/rhythmic:** "Abilities to produce and appreciate rhythm, pitch, and timbre; appreciation of the forms of musical expressiveness."
+- **Interpersonal/social:** "Capacities to discern and respond appropriately to the moods, temperaments, motivations, and desires of other people."
+- **Intrapersonal/introspective:** "Access to one's own feelings and the ability to discriminate among them and draw upon them to guide behavior; knowledge of one's own strengths, weaknesses, desires, and intelligence."
+
+While Brown et al. (2014) cite research challenging one of the main pedagogical implications of Gardner's theory --- viz., that instruction should be tailored to each learner's preferred modes (actually it should be varied for all learners) --- Eisner (2004) demonstrates the continuing (even accelerating) relevance of Gardner's work by using it to critique the educational standards movement, which in Eisner's opinion "symptomatizes a loss of faith in the professional competence of teachers" (p. 34). So this is the primary message to take from Gardner: people are gifted in different ways and that's fine (notice how this leads us to questions about educational in/equality and in/equity). Eisner also uses Gardner to criticize the institutionalized assumption that individual students will learn at constant rates, and a group of students will learn at a consistent pace such that they can progress as a cohort.
 
 ##### Accessibility and universal design
 
-Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning (Links to an external site.)Links to an external site.. International Journal of Learning, 18(4).
+Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
 
 #### Instructional messages
 
@@ -408,6 +409,8 @@ While admitting that their own experiment with PBL differed in important ways (e
 
 
 ## Curriculum theory
+
+Est. Franklin Bobbitt, c. 1920s.
 
 ### Information literacy
 
@@ -522,8 +525,8 @@ Per Reeves (2011) and Booth (2011):
 
 Also:
 
-- Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning (Links to an external site.)Links to an external site.. International Journal of Learning, 18(4).
-- Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge (Links to an external site.)Links to an external site.. Education as Change, 15(2).
+- Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
+- Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge. Education as Change, 15(2).
 - Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance between process and product through perceptual lesson planning. Teachers College Record, 115, 1-27.
 
 
@@ -702,6 +705,8 @@ Torrance, H. (2007). Assessment as learning? How the use of explicit learning ob
 
 ## Unread
 
+- Callahan, R. (1962). _Education and the cuilt of efficiency._ Chicago: University of Chicago Press. _(This is a history of the efficiency movement in education.)_
+- Tye, B. B. (2000). _Hard truths: Uncovering the deep structure of schooling._ New York: Teachers College Press.
 - [Transfer of learning](http://www.nwlink.com/~donclark/hrd/learning/transfer.html)
 - [High-impact or engaged learning practices](https://uwaterloo.ca/centre-for-teaching-excellence/resources/integrative-learning/high-impact-practices-hips-or-engaged-learning-practices)
 - [Building a better discussion](http://www.chronicle.com/article/Building-a-Better-Discussion/231685/)

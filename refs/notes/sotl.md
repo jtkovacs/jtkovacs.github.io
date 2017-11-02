@@ -478,11 +478,12 @@ Booth (2014, p. 105):
 #### Structure
 
 - **Create targets,** i.e. [goals, objectives and outcomes](#targets)
-- "Identify methods to **involve** learners using delivery techniques, technologies, and activities and **extend** [before, during, after; see [integrative learning]](#integrative-learning) the interaction by supporting students along the continuum of learning." Consider:
-    - "Control of Learning . Which areas of the interaction will be teacher centered (direct instruction), and which will be more student centered (discovery instruction)?
-    - Grouping for Learning . Will you ask learners to work as individuals, pairs, teams, or groups?
-    - Interactions for Learning. Will you create learning interactions that are human (student/teacher, student/student, other) or nonhuman (student/ tools, student/information, student/environment, other)?
-    - Support for Learning . Will you provide cognitive support or emotional support?" (p. 120)
+- "Identify methods to **involve** learners using delivery techniques, technologies, and activities" that align with the targets. Consider:
+    - _"Control of Learning._ Which areas of the interaction will be teacher centered (direct instruction), and which will be more student centered (discovery instruction)?
+    - _Grouping for Learning._ Will you ask learners to work as individuals, pairs, teams, or groups?
+    - _Interactions for Learning._ Will you create learning interactions that are human (student/teacher, student/student, other) or nonhuman (student/ tools, student/information, student/environment, other)?
+    - _Support for Learning._ Will you provide cognitive support or emotional support?" (p. 120)
+- **Extend the interaction** before, during, and after instruction, e.g. by providing preparatory exercises, suggested resources, etc.; see [integrative learning]](#integrative-learning)
 
 #### Engage
 

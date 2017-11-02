@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6641 words | updated 11/02/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6683 words | updated 11/02/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -565,7 +565,7 @@ Booth (2014, p. 105):
 
 #### 3.1.3.2. Structure
 
-- **Create targets,** i.e. [goals, objectives and outcomes](#targets)
+- **Create targets,** i.e. [goals, objectives and outcomes](#targets): "Targets organize the knowledge, skills, and attitudes specified in the _Understand_ phase into content units and instructional strategies, and provide criteria to assess learning during and after instruction. They are also a framework for guiding student understanding and metacognitive awareness" (p. 116)
 - "Identify methods to **involve** learners using delivery techniques, technologies, and activities" that align with the targets. Consider:
     - _"Control of Learning._ Which areas of the interaction will be teacher centered (direct instruction), and which will be more student centered (discovery instruction)?
     - _Grouping for Learning._ Will you ask learners to work as individuals, pairs, teams, or groups?

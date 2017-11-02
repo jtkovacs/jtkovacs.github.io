@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6608 words | updated 10/31/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6637 words | updated 11/02/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -91,13 +91,13 @@
 
 ## 1.1. How does instruction vary by context?
 
-- **Education vs. training:** Booth (2011, p. 51) notes that some people distinguish between education and training on the basis of transfer (which education aims to promote, but training does not).
+- **Education vs. training:** Booth (2014, p. 51) notes that some people distinguish between education and training on the basis of transfer (which education aims to promote, but training does not).
 - - **Academia vs. real-world learning:** Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
 - **Learning environments vs. instructional systems:** This distinction comes from Gagné: _"learning environments_ are constructivist educational spaces that provide the framework for self-discovery, whereas _instructional systems_ are behaviorist/cognitivist spaces that 'focus on telling ... learners what they need to know'" (Booth, 2011, p. 87).
 
 ## 1.2. What competencies should instructors have?
 
-Per Booth (2011), core knowledge and skills for teaching (what she calls “instructional literacy”) includes:
+Per Booth (2014), core knowledge and skills for teaching (what she calls “instructional literacy”) includes:
 
 - Capacity for **reflective practice** (not just after the fact, but primarily in the moment);
 - Knowledge of **educational theories,** consisting of
@@ -122,7 +122,7 @@ Booth also presents her [USER method](#user-method) primarily as an instructiona
 
 ### 2.1.1. Timeline of major learning theories
 
-From lectures by Philip J. Reed at the University of Washington iSchool, following Booth (2011) and Keller (1983):
+From lectures by Philip J. Reed at the University of Washington iSchool, following Booth (2014) and Keller (1983):
 
 - CLASSICAL (philosophical):
     - **Rationalism:** (reason and debate)
@@ -130,23 +130,23 @@ From lectures by Philip J. Reed at the University of Washington iSchool, followi
 - SCIENTIFIC
     - PSYCHOLOGY _Reed notes that these approaches are both comfortable assessing learning through behavior change, not so for constructivism._
         - **Behaviorism** (B. F. Skinner, rote memorization, reinforcement, feedback); dominant c. 1950s as an educational theory but still has currency in psychology, still embedded in common teaching and learning practices; associated with Industrial Revolution
-        - **Cognitivism** (Jean Piaget, David Ausubel) focuses on learners' information processing AKA "assimilation of information into mental models" (Reed, 2017; AKA schemata, Booth, 2011, p. 44); "how to organize instruction" for "acquisition and retention of knowledge and skills", "also studied in relation to individual differences in ability and learning style" (Keller, 1983); note that this includes a much more active role for the student, believing that "knowledge is something that depends on your perception and how you put things together" (Reed, 2017)
+        - **Cognitivism** (Jean Piaget, David Ausubel) focuses on learners' information processing AKA "assimilation of information into mental models" (Reed, 2017; AKA schemata, Booth, 2014, p. 44); "how to organize instruction" for "acquisition and retention of knowledge and skills", "also studied in relation to individual differences in ability and learning style" (Keller, 1983); note that this includes a much more active role for the student, believing that "knowledge is something that depends on your perception and how you put things together" (Reed, 2017)
             - Human development and its implications for learning (Piaget's *readiness* concept)
             - Gestalt theorists
     - EDUCATION
-        - **Constructivism** (John Dewey, Lev Vygotsky) focuses on how *learners* "construct their own learning process" (Reed, 2017) through "observation, translation, and imitation (mimesis, socialization, and modeling)" (Booth, 2011, p. 62), subject to *social influences*; mainstream view in education, strugges with the issue of assessment
+        - **Constructivism** (John Dewey, Lev Vygotsky) focuses on how *learners* "construct their own learning process" (Reed, 2017) through "observation, translation, and imitation (mimesis, socialization, and modeling)" (Booth, 2014, p. 62), subject to *social influences*; mainstream view in education, strugges with the issue of assessment
             - Situated learning
             - Zone of proximal development
 
 ### 2.1.2. Implications for instruction
 
-Per Booth (2011), and see also Brown et al. (2014):
+Per Booth (2014), and see also Brown et al. (2014):
 
 - **Environment**
     - "practical factors such as room dimensions, furniture, and seating capacity; ... lighting and temperature;
     - "technical factors such as computing technology and presentation media;
     - "cultural elements such as language accessibility and inclusiveness; and
-    - "instructional elements such as tone, pacing, classroom dynamics, discussion management, and opportunities for interaction" (Booth, 2011, p. 45)
+    - "instructional elements such as tone, pacing, classroom dynamics, discussion management, and opportunities for interaction" (Booth, 2014, p. 45)
 - **Memory**
     - Manage cognitive overload (manage environment, curate inputs so they are of better quality)
     - Teach mnemonics (structuring information logically AKA chunking; alphabetically; metaphorically; spatially)
@@ -228,7 +228,7 @@ Satisfaction = f(intrinsic\_reinforcement, extrinsic\_reinforcement)
 
 #### 2.1.2.2. Transfer
 
-Along with **recall** (retrieve and apply this knowledge if a similar situation arises), Booth (2011, p. 43) says a fundamental goal of instruction is transfer (retrieve and apply this in novel ways). Interestingly, per Bransford et al. (2014):
+Along with **recall** (retrieve and apply this knowledge if a similar situation arises), Booth (2014, p. 43) says a fundamental goal of instruction is transfer (retrieve and apply this in novel ways). Interestingly, per Bransford et al. (2014):
 
 - "Different kinds of learning experiences can look equivalent when test of learning focus solely on remembering ... but they can look quite different when tests of transfer are used" (p. 51).
 - Classical education practices assumed transfer in their doctrine of "formal discipline", i.e. their belief that studying Latin trained the mind like a muscle for other tasks (probably not true of minds or muscles).
@@ -287,7 +287,7 @@ While Brown et al. (2014) cite research challenging one of the main pedagogical 
 
 ## 2.2. Instructional theory
 
-The learning theories above have consequent instructional theories. Using a series of questions from Ertmer and Newby, Booth (2011, p. 73) contrasts them as follows:
+The learning theories above have consequent instructional theories. Using a series of questions from Ertmer and Newby, Booth (2014, p. 73) contrasts them as follows:
 
 | Question | Behaviorist | Cognitivist | Constructivist |
 | --- | --- | --- | --- |
@@ -321,7 +321,7 @@ See also [http://www-tandfonline-com.offcampus.lib.washington.edu/doi/abs/10.108
 
 ##### 2.2.2.1.1. Targets
 
-Per Booth (2011), targets form a hierarchy:
+Per Booth (2014), targets form a hierarchy:
 
 - **OUTCOMES** = hoped-for lasting changes
 - **GOALS** = express a theory of how to produce outcomes
@@ -343,9 +343,9 @@ _Source:_ Phillips & Phillips, 2010, p. 18.
 
 #### 2.2.2.2. Purpose and value of learning objectives
 
-- [I]mprove the impact of instruction", which is "particularly [true] when participants have had a hand in defining [the LOs]” (Booth, 2011; read the Eberly Center's [discussion of how)](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf)
+- [I]mprove the impact of instruction", which is "particularly [true] when participants have had a hand in defining [the LOs]” (Booth, 2014; read the Eberly Center's [discussion of how)](https://www.cmu.edu/teaching/resources/Teaching/CourseDesign/Objectives/CourseLearningObjectivesValue.pdf)
 - Support the instructor in reflecting and improving (Diamond, 2008)
-- "Serve as the basis for selecting instructional methods" (Diamond, 2008) and "allow you to structure measurable learning interactions" (Booth, 2011)
+- "Serve as the basis for selecting instructional methods" (Diamond, 2008) and "allow you to structure measurable learning interactions" (Booth, 2014)
 - Proactively "[c]ommunicate to your students your expectations and how the students will be assessed", which facilitates student self-assessment, and therefore facilitates learning (Diamond, 2008)
 - Retroactively "[s]erve as the basis for your assessment of student achievement" (Diamond, 2008)
 
@@ -376,7 +376,7 @@ Per the [Center for Excellence in Learning and Teaching](http://www.celt.iastate
 
 ##### 2.2.2.3.2. Task analysis for procedural knowledge
 
-Booth (2011) suggests task analysis as a strategy for decomposing one's own expert procedural knowledge and thereby reacquainting oneself with the topic from a beginner's perspective.
+Booth (2014) suggests task analysis as a strategy for decomposing one's own expert procedural knowledge and thereby reacquainting oneself with the topic from a beginner's perspective.
 
 ##### 2.2.2.3.3. Schulman's learning process stages
 
@@ -424,7 +424,7 @@ From Diamond (2008, pp. 135-136):
 
 ##### 2.2.3.1.1. Strategies by knowledge dimension
 
-From Booth, 2011, p. 116:
+From Booth, 2014, p. 116:
 
 <img src="../illos/strategies-by-knowledge-dimension.png" width="600">
 
@@ -457,7 +457,7 @@ See Torrance (2007) for some additional caution regarding assessment.
 
 #### 2.2.5.1. Connectivism
 
-Per Booth (2011, p. 81), "a theoretical approach that emphasizes the impact of information technology on learning".
+Per Booth (2014, p. 81), "a theoretical approach that emphasizes the impact of information technology on learning".
 
 #### 2.2.5.2. Active learning
 
@@ -508,9 +508,9 @@ Est. Franklin Bobbitt, c. 1920s.
 
 # 3. Instructional design
 
-Instructional design combines [educational theory](#educational-theory) with [design thinking methods](./strategy.html#design-thinking) to create a variety of instructional products. Per Booth (2011, p. 106), "ID is a systematic instructional planning approach that channels ... insight and awareness [from reflective practice, educational theory, and teaching technologies] into efficient, learner-focused pedagogy". Booth notes that ID is communicated in the form of models/frameworks and guiding principles.
+Instructional design combines [educational theory](#educational-theory) with [design thinking methods](./strategy.html#design-thinking) to create a variety of instructional products. Per Booth (2014, p. 106), "ID is a systematic instructional planning approach that channels ... insight and awareness [from reflective practice, educational theory, and teaching technologies] into efficient, learner-focused pedagogy". Booth notes that ID is communicated in the form of models/frameworks and guiding principles.
 
-Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, believes learning is a function of the "interplay" between the following factors (note that not all of them are under the instructor's control):
+Via Booth (2014, pp. 41-42), Robert Gagné, a founder of instructional design, believes learning is a function of the "interplay" between the following factors (note that not all of them are under the instructor's control):
 
 | Internal | External |
 | --- | --- |
@@ -522,7 +522,7 @@ Via Booth (2011, pp. 41-42), Robert Gagné, a founder of instructional design, b
 
 ### 3.1.1. ADDIE model
 
-Molenda (2003) explains that ADDIE is an authorless abstraction that might form the foundation or core of other more specific instructional design methodologies. Per Piskurich (2000) and Booth (2011):
+Molenda (2003) explains that ADDIE is an authorless abstraction that might form the foundation or core of other more specific instructional design methodologies. Per Piskurich (2000) and Booth (2014):
 
 - **Analyze:** These pre-ID activities should be performed, then presented in a report. For large projects, this phase might consume the majority of time:
     - needs assessment
@@ -548,18 +548,18 @@ Booth (2011, p. 95) calls her USER method a "streamlined version of ADDIE" that 
 
 <img src="../illos/USER-ID-method.png" width="400px">
 
-Source: Booth, 2011, p. 19.
+Source: Booth, 2014, p. 19.
 
 #### 3.1.3.1. Understand
 
-- **Identify the problem:** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this question to be posed at the strategic level)
-- **Analyze the scenario** in terms of
+- **Identify the problem.** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this question to be posed at the strategic level)
+- **Analyze the scenario.** "Characterize" and "confront" any difficulties arising in the following dimensions:
     - **Learner:** attributes, motivation, prior knowledge, and barriers to learning
     - **Content:** knowledge, skills and attributes that will later be translated into [targets](#targets)
-    - **Context**
+    - **Context:** space, technology, collaboration, promotion
     - **Educator**
 
-Booth (2011, p. 105):
+Booth (2014, p. 105):
 
 ![](../illos/instructional-need-types.png)
 
@@ -599,7 +599,7 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ### 3.1.6. Other models
 
-... mentioned by Booth (2011, p. 86):
+... mentioned by Booth (2014, p. 86):
 
 - Morrison, Ross, and Kemp's _Designing effective instruction_
 - Dick, Carey, and Carey's _The systematic design of instruction_
@@ -612,7 +612,7 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 ### 3.2.1. Gagné’s events of instruction
 
-From Booth (2011, p. 132):
+From Booth (2014, p. 132):
 
 - "Gain attention.
 - Inform learner of objectives.
@@ -674,7 +674,7 @@ Per Reeves (2011, pp. 180-181):
 
 ### 3.3.1. Instructional messages
 
-Booth (2011) calls instructional messages "elevator pitches" for the class; it's about knowing and conveying what you have to offer in a particular instructional situation. Messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth (2011) summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
+Booth (2014) calls instructional messages "elevator pitches" for the class; it's about knowing and conveying what you have to offer in a particular instructional situation. Messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
 - get attention, hold interest: **UNEXPECTED, STORIES**
 - facilitate comprehension: **SIMPLE, CONCRETE**
@@ -684,7 +684,7 @@ Booth (2011) calls instructional messages "elevator pitches" for the class; it's
 
 #### 3.3.2.1. Mayer's strategies
 
-Per Booth (2011, p. 127): "Richard Mayer lists seven such strategies that make more efficient use of cognitive processing capacity in instructional interfaces, materials, and graphics:
+Per Booth (2014, p. 127): "Richard Mayer lists seven such strategies that make more efficient use of cognitive processing capacity in instructional interfaces, materials, and graphics:
 
 - **Concentrated:** Core ideas are emphasized via highlighting, bolding, and other strategies.
 - **Concise:** Brevity and simplicity are achieved by eliminating extraneous text and images.
@@ -725,7 +725,7 @@ For mood, readability, accessibility, etc.:
 
 ### 3.3.3. Multimedia learning objects
 
-Booth summarizes Mayer again (2011, p. 130):
+Booth summarizes Mayer again (2014, p. 130):
 
 - **"Coherence:** Extraneous words, sounds, and pictures are minimized. Modality : Narration occurs as speech rather than printed text in multimedia presentations.
 - **Personalization:** Narration occurs in conversational rather than formal style.
@@ -737,7 +737,7 @@ Booth summarizes Mayer again (2011, p. 130):
 
 ### 3.3.4. Evaluating learning objects
 
-Booth presents a modified version of Lohr's schema for evaluating learning objects (2011, p. 130):
+Booth presents a modified version of Lohr's schema for evaluating learning objects (2014, p. 130):
 
 - **"Effectiveness**
     - Does the learning object cover the correct content?
@@ -759,11 +759,11 @@ Booth presents a modified version of Lohr's schema for evaluating learning objec
 
 # 4. Reflective practice
 
-Booth presents her [USER method](#user-method) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (p. 95).
+Booth presents her [USER method](#user-method) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (2014, p. 95).
 
 ## 4.1. Qualities of excellent teachers
 
-Per Booth (2011):
+Per Booth (2014):
 
 - [logistics]
     - Focus on goals
@@ -775,7 +775,7 @@ Per Booth (2011):
 
 ## 4.2. A miscellany of advice and insights
 
-- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2011)
+- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2014)
 - Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
 
 
@@ -797,7 +797,7 @@ Alonso et al. (2008) provides a brief review of the history of eLearning technol
 
 ## 5.2. Keeping current
 
-Per Booth (2011), an educator can use the following process and skills to find their bearing in a constantly evolving technology landscape:
+Per Booth (2014), an educator can use the following process and skills to find their bearing in a constantly evolving technology landscape:
 
 - **Experience** the technologies in a personal authentic way (see pp. 66-68 for Booth's summary of Web 2.0 and emerging technologies as relevant to education);
 - **Evaluate** them with respect to educational objectives; and
@@ -805,7 +805,7 @@ Per Booth (2011), an educator can use the following process and skills to find t
 
 ## 5.3. Evaluating teaching technologies
 
-Booth identifies these ten affordances AKA functionality AKA features (quoted; 2011, p. 65):
+Booth identifies these ten affordances AKA functionality AKA features (quoted; 2014, p. 65):
 
 - *assessment:* template/customizable evaluation and analysis
 - *collaboration:* shared effort, cooperation, and/or crowd-sourcing
@@ -864,6 +864,8 @@ Allen Interactions. (2017). Agile eLearning development with SAM. Retrieved from
 Alonso, F., Lopez, G., Manrique, D., & Vines, J. M. (2008). Learning objects, learning objectives and learning design. _Innovations in Education and Teaching International,_ 45(4), 389-400.
 
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
+
+Booth, C. (2014). _Reflective teaching, effective learning: Instructional literacy for library educators._ Chicago, IL: American Library Association Editions.
 
 Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How people learn: Brain, mind, experience, and school._ Washington, DC: The National Academies Press. [https://doi.org/10.17226/9854](https://doi.org/10.17226/9854)
 

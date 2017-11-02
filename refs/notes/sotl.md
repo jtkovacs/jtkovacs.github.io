@@ -235,9 +235,9 @@ See also [http://www-tandfonline-com.offcampus.lib.washington.edu/doi/abs/10.108
 
 Per Booth (2014), targets form a hierarchy:
 
-- **OUTCOMES** = hoped-for lasting changes
-- **GOALS** = express a theory of how to produce outcomes
-- **OBJECTIVES** = strategies/skills needed to attain goals
+- **GOALS** = hoped-for lasting changes (strategic perspective: why does this training matter?)
+- **OUTCOMES** = express a theory of how to produce outcomes/the structure of the course
+- **OBJECTIVES** = strategies/skills needed to attain goals; describes ideal changes in learners
 
 ##### Phillips model
 

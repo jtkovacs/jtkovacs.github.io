@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6683 words | updated 11/02/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 6699 words | updated 11/02/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -323,9 +323,9 @@ See also [http://www-tandfonline-com.offcampus.lib.washington.edu/doi/abs/10.108
 
 Per Booth (2014), targets form a hierarchy:
 
-- **OUTCOMES** = hoped-for lasting changes
-- **GOALS** = express a theory of how to produce outcomes
-- **OBJECTIVES** = strategies/skills needed to attain goals
+- **GOALS** = hoped-for lasting changes (strategic perspective: why does this training matter?)
+- **OUTCOMES** = express a theory of how to produce outcomes/the structure of the course
+- **OBJECTIVES** = strategies/skills needed to attain goals; describes ideal changes in learners
 
 ##### 2.2.2.1.2. Phillips model
 

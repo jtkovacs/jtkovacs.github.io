@@ -8,43 +8,6 @@
    jtck.github.io | programming
   </title>
   <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
-  <style type="text/css">
-   div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-  </style>
   <link href="../assets/styles/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
@@ -52,7 +15,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; programming | just under 1602 words | updated 10/27/2017
+   &gt; programming | just under 1457 words | updated 11/08/2017
   </p>
   <div class="TOC">
    <ul>
@@ -124,35 +87,27 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
      <ul>
       <li>
        2.1.
-       <a href="#correctness">
-        Correctness
+       <a href="#types-of-programming-errors-and-their-corresponding-solutions">
+        Types of programming errors and their corresponding solutions
        </a>
        <ul>
         <li>
          2.1.1.
-         <a href="#types-of-errors">
-          Types of errors
+         <a href="#debugging-code">
+          Debugging code
          </a>
         </li>
         <li>
          2.1.2.
-         <a href="#debugging-process">
-          Debugging process
+         <a href="#testing-code">
+          Testing code
          </a>
          <ul>
           <li>
            2.1.2.1.
-           <a href="#testing">
-            Testing
+           <a href="#raising-errors">
+            Raising errors
            </a>
-           <ul>
-            <li>
-             2.1.2.1.1.
-             <a href="#raising-errors">
-              Raising errors
-             </a>
-            </li>
-           </ul>
           </li>
          </ul>
         </li>
@@ -202,6 +157,18 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           </li>
          </ul>
         </li>
+        <li>
+         2.3.4.
+         <a href="#software-licenses">
+          Software licenses
+         </a>
+        </li>
+        <li>
+         2.3.5.
+         <a href="#accuracy-=-design">
+          Accuracy = DESIGN
+         </a>
+        </li>
        </ul>
       </li>
      </ul>
@@ -214,44 +181,48 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
      <ul>
       <li>
        3.1.
-       <a href="#software-licenses">
-        Software licenses
+       <a href="#software-development-lifecycle">
+        Software development lifecycle
        </a>
+       <ul>
+        <li>
+         3.1.1.
+         <a href="#waterfall">
+          Waterfall
+         </a>
+        </li>
+        <li>
+         3.1.2.
+         <a href="#agile">
+          Agile
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        3.2.
-       <a href="#software-development-phases">
-        Software development phases
-       </a>
-      </li>
-      <li>
-       3.3.
-       <a href="#approaches-to-development-phase">
-        Approaches to development phase
-       </a>
-      </li>
-      <li>
-       3.4.
        <a href="#collaboration-in-software-development">
         Collaboration in software development
        </a>
+       <ul>
+        <li>
+         3.2.1.
+         <a href="#code-review-template">
+          Code review template
+         </a>
+        </li>
+        <li>
+         3.2.2.
+         <a href="#standups">
+          Standups
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
-       3.5.
-       <a href="#code-review-template">
-        Code review template
-       </a>
-      </li>
-      <li>
-       3.6.
+       3.3.
        <a href="#technology-assessment-template">
         Technology assessment template
-       </a>
-      </li>
-      <li>
-       3.7.
-       <a href="#standups">
-        Standups
        </a>
       </li>
      </ul>
@@ -341,86 +312,34 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     1.2. ... in relation to hardware?
    </a>
   </h2>
-  <p>
-   What is the function of secondary memory in a computer?
-  </p>
   <ul>
    <li>
-    [ ] Execute all of the computation and logic of the program.
+    <strong>
+     Secondary memory
+    </strong>
+    is persistant storage while the primary memory is emptied if ever power cuts out.
    </li>
    <li>
-    [ ] Retrieve web pages over the Internet.
+    <strong>
+     A program,
+    </strong>
+    also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.
    </li>
    <li>
-    [X] Store information for the long term - even beyond a power cycle.
-   </li>
-   <li>
-    [ ] Take input from the user.
+    <strong>
+     A compiler
+    </strong>
+    performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an intermediary. The
+    <strong>
+     interpreter
+    </strong>
+    is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
    </li>
   </ul>
   <p>
    <em>
-    The CPU computes. Web pages are retrieved through networks. User input comes via peripherals. The secondary memory is persistant storage while the primary memory is emptied if ever power cuts out.
+    Explain each of the following using an example of a human capability
    </em>
-  </p>
-  <p>
-   What is a program?
-  </p>
-  <p>
-   <em>
-    A program, also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.
-   </em>
-  </p>
-  <p>
-   What is the difference between a compiler and an interpreter?
-  </p>
-  <p>
-   <em>
-    A compiler performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an imtermediary. The interpreter is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.
-   </em>
-  </p>
-  <p>
-   Which of the following contains "machine code"?
-  </p>
-  <ul>
-   <li>
-    [ ] The Python interpreter.
-   </li>
-   <li>
-    [ ] The keyboard.
-   </li>
-   <li>
-    [X] Python source file.
-   </li>
-   <li>
-    [ ] A word processing document.
-   </li>
-  </ul>
-  <p>
-   Where in the computer is a variable such as "X" stored after the following Python line finishes?
-  </p>
-  <div class="sourceCode">
-   <pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> <span class="dv">123</span></code></pre>
-  </div>
-  <ul>
-   <li>
-    [ ] Central processing unit
-   </li>
-   <li>
-    [X] Main Memory
-   </li>
-   <li>
-    [ ] Secondary Memory
-   </li>
-   <li>
-    [ ] Input Devices
-   </li>
-   <li>
-    [ ] Output Devices
-   </li>
-  </ul>
-  <p>
-   Explain each of the following using an example of a human capability
   </p>
   <ul>
    <li>
@@ -454,7 +373,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </p>
   <ul>
    <li>
-    <a class="uri" href="http://datworkshop.org/">
+    <a href="http://datworkshop.org/">
      http://datworkshop.org/
     </a>
    </li>
@@ -497,18 +416,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </a>
   </h1>
   <p>
-   These practices are meant to (1) maintain code quality and (2) manage code well as an asset:
+   These practices are meant to (1) maintain code quality and (2) manage code as an asset:
   </p>
-  <h2 id="correctness">
+  <h2 id="types-of-programming-errors-and-their-corresponding-solutions">
    <a>
-    2.1. Correctness
+    2.1. Types of programming errors and their corresponding solutions
    </a>
   </h2>
-  <h3 id="types-of-errors">
-   <a>
-    2.1.1. Types of errors
-   </a>
-  </h3>
   <p>
    Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
   </p>
@@ -548,55 +462,109 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
    </li>
   </ul>
   <table>
-   <pre><code>&lt;th colspan="4"&gt;Types of programming errors&lt;/th&gt;
-&lt;tr&gt;
-    &lt;td rowspan="2"&gt;Syntax&lt;/td&gt;
-    &lt;td colspan="2"&gt;Exceptions AKA semantic?&lt;/td&gt;
-    &lt;td rowspan="2"&gt;Logical&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;Static&lt;/td&gt;
-    &lt;td&gt;Dynamic&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td colspan="2"&gt;Compile-time errors&lt;/td&gt;
-    &lt;td colspan="2"&gt;Run-time errors&lt;/td&gt;
-&lt;/tr&gt;
-&lt;th colspan="4"&gt;Defenses against programming errors&lt;/th&gt;
-&lt;tr&gt;
-    &lt;td rowspan="2"&gt;Knowledge&lt;/td&gt;
-    &lt;td colspan="2"&gt;(in Python) `try ... except` &lt;/td&gt;
-    &lt;td rowspan="2"&gt;Debugger&lt;/td&gt;</code></pre>
+   <th colspan="4">
+    Types of programming errors
+   </th>
+   <tr>
+    <td rowspan="2">
+     Syntax
+    </td>
+    <td colspan="2">
+     Exceptions AKA semantic?
+    </td>
+    <td rowspan="2">
+     Logical
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Static
+    </td>
+    <td>
+     Dynamic
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">
+     Compile-time errors
+    </td>
+    <td colspan="2">
+     Run-time errors
+    </td>
+   </tr>
+   <th colspan="4">
+    Defenses against programming errors
+   </th>
+   <tr>
+    <td rowspan="2">
+     Knowledge
+    </td>
+    <td colspan="2">
+     (in Python)
+     <code>
+      try ... except
+     </code>
+    </td>
+    <td rowspan="2">
+     Debugger
+    </td>
+   </tr>
   </table>
-  <h3 id="debugging-process">
+  <h3 id="debugging-code">
    <a>
-    2.1.2. Debugging process
+    2.1.1. Debugging code
    </a>
   </h3>
   <p>
    Per notes by Joseph Hellerstein at UW, debugging consists of:
   </p>
   <table>
-   <pre><code>&lt;th&gt;Phase&lt;/th&gt;
-&lt;th&gt;Action&lt;/th&gt;
-&lt;tr&gt;
-    &lt;td&gt;Detection of problem&lt;/td&gt;
-    &lt;td&gt;Testing&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td rowspan="3"&gt;Isolation of responsible code&lt;/td&gt;
-    &lt;td&gt;Thought&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;Logging e.g. with `print`&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;Debugging tool\* e.g. `pdb`&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;Resolution&lt;/td&gt;
-    &lt;td&gt;(specific to problem)&lt;/td&gt;
-&lt;/tr&gt;</code></pre>
+   <th>
+    Phase
+   </th>
+   <th>
+    Action
+   </th>
+   <tr>
+    <td>
+     Detection of problem
+    </td>
+    <td>
+     Testing
+    </td>
+   </tr>
+   <tr>
+    <td rowspan="3">
+     Isolation of responsible code
+    </td>
+    <td>
+     Thought
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Logging e.g. with
+     <code>
+      print
+     </code>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Debugging tool* e.g.
+     <code>
+      pdb
+     </code>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Resolution
+    </td>
+    <td>
+     (specific to problem)
+    </td>
+   </tr>
   </table>
   <p>
    * "I've probably used it a dozen times or so in five years of coding"
@@ -604,19 +572,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <p>
    Similarly, Klahr and Carver (1988; referenced in Bransford et al., 2014, p. 60) describing debugging as "identifying the buggy behavior, representing the program, locating the bug in the program, and then correcting the bug".
   </p>
-  <h4 id="testing">
+  <h3 id="testing-code">
    <a>
-    2.1.2.1. Testing
+    2.1.2. Testing code
+   </a>
+  </h3>
+  <h4 id="raising-errors">
+   <a>
+    2.1.2.1. Raising errors
    </a>
   </h4>
-  <p>
-   TKTK
-  </p>
-  <h5 id="raising-errors">
-   <a>
-    2.1.2.1.1. Raising errors
-   </a>
-  </h5>
   <h2 id="readability-and-style">
    <a>
     2.2. Readability and style
@@ -702,24 +667,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     2.3.3.2. READMEs
    </a>
   </h4>
-  <h1 id="software-engineering">
+  <h3 id="software-licenses">
    <a>
-    3. Software engineering
+    2.3.4. Software licenses
    </a>
-  </h1>
-  <p>
-   (These notes are based on a lecture by Joseph Hellerstein at the University of Washington.)
-  </p>
-  <ul>
-   <li>
-    'Programming is typically about 6-10% of the costs of software engineering'
-   </li>
-  </ul>
-  <h2 id="software-licenses">
-   <a>
-    3.1. Software licenses
-   </a>
-  </h2>
+  </h3>
   <p>
    Important because:
   </p>
@@ -734,11 +686,39 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <p>
    [graphic from lecture notes based on Mark Webbink's work]
   </p>
-  <h2 id="software-development-phases">
+  <h3 id="accuracy-design">
    <a>
-    3.2. Software development phases
+    2.3.5. Accuracy = DESIGN
+   </a>
+  </h3>
+  <h1 id="software-engineering">
+   <a>
+    3. Software engineering
+   </a>
+  </h1>
+  <p>
+   (These notes are based on a lecture by Joseph Hellerstein at the University of Washington.)
+  </p>
+  <ul>
+   <li>
+    'Programming is typically about 6-10% of the costs of software engineering'
+   </li>
+  </ul>
+  <h2 id="software-development-lifecycle">
+   <a>
+    3.1. Software development lifecycle
    </a>
   </h2>
+  <p>
+   See
+   <a href="./project-management.html#planning-a-project">
+    planning a project
+   </a>
+   and
+   <a href="https://jtkovacs.github.io/refs/project-management.html#overview-of-pm-methodologies">
+    overview of PM methodologies
+   </a>
+  </p>
   <ul>
    <li>
     Assess needs
@@ -765,14 +745,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     (iterate)
    </li>
   </ul>
-  <h2 id="approaches-to-development-phase">
+  <h3 id="waterfall">
    <a>
-    3.3. Approaches to development phase
+    3.1.1. Waterfall
    </a>
-  </h2>
-  <p>
-   Waterfall approach:
-  </p>
+  </h3>
   <ul>
    <li>
     Communication (project initiation, requirements gathering)
@@ -790,6 +767,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     Deployment (delivery, support)
    </li>
   </ul>
+  <h3 id="agile">
+   <a>
+    3.1.2. Agile
+   </a>
+  </h3>
   <p>
    ... failure of this approach (in most cases, with a few important exceptions) led to the Agile approach, c. 2000, because "you don't know all the details until you've done it":
   </p>
@@ -858,7 +840,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </ul>
   <h2 id="collaboration-in-software-development">
    <a>
-    3.4. Collaboration in software development
+    3.2. Collaboration in software development
    </a>
   </h2>
   <p>
@@ -877,11 +859,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </ul>
    </li>
   </ul>
-  <h2 id="code-review-template">
+  <h3 id="code-review-template">
    <a>
-    3.5. Code review template
+    3.2.1. Code review template
    </a>
-  </h2>
+  </h3>
   <p>
    Per Beck (2017):
   </p>
@@ -917,9 +899,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     How use existing python packages
    </li>
   </ul>
+  <h3 id="standups">
+   <a>
+    3.2.2. Standups
+   </a>
+  </h3>
+  <ul>
+   <li>
+    1-2 minutes
+   </li>
+   <li>
+    What you've done (information, accomplishment)
+   </li>
+   <li>
+    How it compares with what you intended (accountability, reflection)
+   </li>
+   <li>
+    What you want to do (planning, accountability)
+   </li>
+   <li>
+    Anticipated challenges (advice)
+   </li>
+  </ul>
   <h2 id="technology-assessment-template">
    <a>
-    3.6. Technology assessment template
+    3.3. Technology assessment template
    </a>
   </h2>
   <p>
@@ -978,28 +982,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     </ul>
    </li>
   </ul>
-  <h2 id="standups">
-   <a>
-    3.7. Standups
-   </a>
-  </h2>
-  <ul>
-   <li>
-    1-2 minutes
-   </li>
-   <li>
-    what you've done (information, accomplishment)
-   </li>
-   <li>
-    how it compares with what you intended (accountability, reflection)
-   </li>
-   <li>
-    what you want to do (planning, accountability)
-   </li>
-   <li>
-    anticipated challenges (advice)
-   </li>
-  </ul>
   <h1 id="sources">
    <a>
     4. Sources
@@ -1016,13 +998,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     How people learn: Brain, mind, experience, and school.
    </em>
    Washington, DC: The National Academies Press.
-   <a class="uri" href="https://doi.org/10.17226/9854">
+   <a href="https://doi.org/10.17226/9854">
     https://doi.org/10.17226/9854
    </a>
   </p>
   <p>
    Calvenese, D. (2006). Types of program errors. Retrieved from
-   <a class="uri" href="http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html">
+   <a href="http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html">
     http://www.inf.unibz.it/~calvanese/teaching/ip/lecture-notes/uni10/node2.html
    </a>
   </p>
@@ -1031,13 +1013,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </p>
   <p>
    Scottish Qualifications Authority (SQA). (2006). Types of program error. Retrieved from
-   <a class="uri" href="https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm">
+   <a href="https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm">
     https://www.sqa.org.uk/e-learning/SDPL03CD/page_04.htm
    </a>
   </p>
   <p>
    Wikibooks. (n.d.). Python_Programming/Errors. Retrieved from
-   <a class="uri" href="https://en.wikibooks.org/wiki/Python_Programming/Errors">
+   <a href="https://en.wikibooks.org/wiki/Python_Programming/Errors">
     https://en.wikibooks.org/wiki/Python_Programming/Errors
    </a>
   </p>

@@ -2,6 +2,8 @@
 
 # What is programming?
 
+
+
 ## ... as a profession?
 
 ### What skills are required for programming?
@@ -12,43 +14,11 @@
 
 ## ... in relation to hardware?
 
-What is the function of secondary memory in a computer?
+- **Secondary memory** is persistant storage while the primary memory is emptied if ever power cuts out.
+- **A program,** also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.
+- **A compiler** performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an intermediary. The **interpreter** is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
 
-- [ ] Execute all of the computation and logic of the program.
-- [ ] Retrieve web pages over the Internet.
-- [X] Store information for the long term - even beyond a power cycle.
-- [ ] Take input from the user.
-
-*The CPU computes. Web pages are retrieved through networks. User input comes via peripherals. The secondary memory is persistant storage while the primary memory is emptied if ever power cuts out.*
-
-What is a program?
-
-*A program, also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.*
-
-What is the difference between a compiler and an interpreter?
-
-*A compiler performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an imtermediary. The interpreter is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
-
-Which of the following contains "machine code"?
-
-- [ ] The Python interpreter.
-- [ ] The keyboard.
-- [X] Python source file.
-- [ ] A word processing document.
-
-Where in the computer is a variable such as "X" stored after the following Python line finishes?
-
-```python
-x = 123
-```
-
-- [ ] Central processing unit
-- [X] Main Memory
-- [ ] Secondary Memory
-- [ ] Input Devices
-- [ ] Output Devices
-
-Explain each of the following using an example of a human capability
+_Explain each of the following using an example of a human capability_
 
 - [ ] Central processing unit
 - [ ] Main Memory
@@ -89,11 +59,9 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 # What are good programming practices?
 
-These practices are meant to (1) maintain code quality and (2) manage code well as an asset:
+These practices are meant to (1) maintain code quality and (2) manage code as an asset:
 
-## Correctness
-
-### Types of errors
+## Types of programming errors and their corresponding solutions
 
 Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
 
@@ -125,7 +93,8 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
         <td rowspan="2">Debugger</td>
 </table>
 
-### Debugging process
+
+### Debugging code
 
 Per notes by Joseph Hellerstein at UW, debugging consists of:
 
@@ -156,11 +125,12 @@ Per notes by Joseph Hellerstein at UW, debugging consists of:
 
 Similarly, Klahr and Carver (1988; referenced in Bransford et al., 2014, p. 60) describing debugging as "identifying the buggy behavior, representing the program, locating the bug in the program, and then correcting the bug".
 
-#### Testing
+### Testing code
 
-TKTK
+#### Raising errors
 
-##### Raising errors
+
+
 
 
 ## Readability and style
@@ -173,6 +143,11 @@ Per Beck (2017), readability is important because good code must be:
 - **Sustainable** (e.g. across versions of a language)
 
 Style guides formalize conventions to support readability for a specific language --- things like naming conventions, line and character spacing, etc.
+
+
+
+
+
 
 ## Reproducibility
 
@@ -195,8 +170,16 @@ Per Beck (2017):
 
 #### READMEs
 
+### Software licenses
 
+Important because:
 
+- Usage of other software, or other code within your code
+- Licensing your own code via GitHub
+
+[graphic from lecture notes based on Mark Webbink's work]
+
+### Accuracy = DESIGN
 
 
 
@@ -206,16 +189,9 @@ Per Beck (2017):
 
 - 'Programming is typically about 6-10% of the costs of software engineering'
 
-## Software licenses
+## Software development lifecycle
 
-Important because:
-
-- Usage of other software, or other code within your code
-- Licensing your own code via GitHub
-
-[graphic from lecture notes based on Mark Webbink's work]
-
-## Software development phases
+See [planning a project](./project-management.html#planning-a-project) and [overview of PM methodologies](https://jtkovacs.github.io/refs/project-management.html#overview-of-pm-methodologies)
 
 - Assess needs
 - Design specifications
@@ -225,15 +201,15 @@ Important because:
 - Evaluate performance
 - (iterate)
 
-## Approaches to development phase
-
-Waterfall approach:
+### Waterfall
 
 - Communication (project initiation, requirements gathering)
 - Planning (estimating, scheduling, tracking)
 - Modeling (analysis, design)
 - Construction (code, test)
 - Deployment (delivery, support)
+
+### Agile
 
 ... failure of this approach (in most cases, with a few important exceptions) led to the Agile approach, c. 2000, because "you don't know all the details until you've done it":
 
@@ -256,6 +232,8 @@ Waterfall approach:
 
 - start with what you don't know, to uncover further unknowns (Rumsfeld's "unknown unknowns")
 
+
+
 ## Collaboration in software development
 
 Common problems:
@@ -264,7 +242,7 @@ Common problems:
 - lack of coordination
     - redundancy of effort
 
-## Code review template
+### Code review template
 
 Per Beck (2017):
 
@@ -279,6 +257,17 @@ Per Beck (2017):
 - Readability of the code
 - How improve reuse and efficiency
 - How use existing python packages
+
+### Standups
+
+- 1-2 minutes
+- What you've done (information, accomplishment)
+- How it compares with what you intended (accountability, reflection)
+- What you want to do (planning, accountability)
+- Anticipated challenges (advice)
+
+
+
 
 ## Technology assessment template
 
@@ -304,13 +293,6 @@ Research strategies:
     - no bugs (issues) means no users
     - no closed issues means no support
 
-## Standups
-
-- 1-2 minutes
-- what you've done (information, accomplishment)
-- how it compares with what you intended (accountability, reflection)
-- what you want to do (planning, accountability)
-- anticipated challenges (advice)
 
 
 

@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1602 words | updated 10/27/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> programming | just under 1457 words | updated 11/08/2017</p><div class="TOC">- &nbsp;1. [What is programming?](#what-is-programming)
 	- &nbsp;1.1. [... as a profession?](#...-as-a-profession)
 		- &nbsp;1.1.1. [What skills are required for programming?](#what-skills-are-required-for-programming)
 	- &nbsp;1.2. [... in relation to hardware?](#...-in-relation-to-hardware)
@@ -8,11 +8,10 @@
 		- &nbsp;1.3.3. [What are major types of programming by level of abstraction?](#what-are-major-types-of-programming-by-level-of-abstraction)
 		- &nbsp;1.3.4. [Which language for what task?](#which-language-for-what-task)
 - &nbsp;2. [What are good programming practices?](#what-are-good-programming-practices)
-	- &nbsp;2.1. [Correctness](#correctness)
-		- &nbsp;2.1.1. [Types of errors](#types-of-errors)
-		- &nbsp;2.1.2. [Debugging process](#debugging-process)
-			- &nbsp;2.1.2.1. [Testing](#testing)
-				- &nbsp;2.1.2.1.1. [Raising errors](#raising-errors)
+	- &nbsp;2.1. [Types of programming errors and their corresponding solutions](#types-of-programming-errors-and-their-corresponding-solutions)
+		- &nbsp;2.1.1. [Debugging code](#debugging-code)
+		- &nbsp;2.1.2. [Testing code](#testing-code)
+			- &nbsp;2.1.2.1. [Raising errors](#raising-errors)
 	- &nbsp;2.2. [Readability and style](#readability-and-style)
 	- &nbsp;2.3. [Reproducibility](#reproducibility)
 		- &nbsp;2.3.1. [Version control](#version-control)
@@ -20,14 +19,16 @@
 		- &nbsp;2.3.3. [Documentation](#documentation)
 			- &nbsp;2.3.3.1. [Comments](#comments)
 			- &nbsp;2.3.3.2. [READMEs](#readmes)
+		- &nbsp;2.3.4. [Software licenses](#software-licenses)
+		- &nbsp;2.3.5. [Accuracy = DESIGN](#accuracy-=-design)
 - &nbsp;3. [Software engineering](#software-engineering)
-	- &nbsp;3.1. [Software licenses](#software-licenses)
-	- &nbsp;3.2. [Software development phases](#software-development-phases)
-	- &nbsp;3.3. [Approaches to development phase](#approaches-to-development-phase)
-	- &nbsp;3.4. [Collaboration in software development](#collaboration-in-software-development)
-	- &nbsp;3.5. [Code review template](#code-review-template)
-	- &nbsp;3.6. [Technology assessment template](#technology-assessment-template)
-	- &nbsp;3.7. [Standups](#standups)
+	- &nbsp;3.1. [Software development lifecycle](#software-development-lifecycle)
+		- &nbsp;3.1.1. [Waterfall](#waterfall)
+		- &nbsp;3.1.2. [Agile](#agile)
+	- &nbsp;3.2. [Collaboration in software development](#collaboration-in-software-development)
+		- &nbsp;3.2.1. [Code review template](#code-review-template)
+		- &nbsp;3.2.2. [Standups](#standups)
+	- &nbsp;3.3. [Technology assessment template](#technology-assessment-template)
 - &nbsp;4. [Sources](#sources)
 	- &nbsp;4.1. [Cited](#cited)
 	- &nbsp;4.2. [References](#references)
@@ -42,6 +43,8 @@
 
 # 1. What is programming?
 
+
+
 ## 1.1. ... as a profession?
 
 ### 1.1.1. What skills are required for programming?
@@ -52,43 +55,11 @@
 
 ## 1.2. ... in relation to hardware?
 
-What is the function of secondary memory in a computer?
+- **Secondary memory** is persistant storage while the primary memory is emptied if ever power cuts out.
+- **A program,** also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.
+- **A compiler** performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an intermediary. The **interpreter** is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
 
-- [ ] Execute all of the computation and logic of the program.
-- [ ] Retrieve web pages over the Internet.
-- [X] Store information for the long term - even beyond a power cycle.
-- [ ] Take input from the user.
-
-*The CPU computes. Web pages are retrieved through networks. User input comes via peripherals. The secondary memory is persistant storage while the primary memory is emptied if ever power cuts out.*
-
-What is a program?
-
-*A program, also called code, is instructions, also called algorithms, for a computer to follow. Programs may contain a single command or millions. Programs my be contained in a single file or many.*
-
-What is the difference between a compiler and an interpreter?
-
-*A compiler performs a one-time conversion of code written in a high-level language to code written in machine-readable language. Once compiled, the program is executable, i.e., it can be run by the computer directly without an imtermediary. The interpreter is this intermediary: it translates code in a high-level language to machine-readable commands dynamically.*
-
-Which of the following contains "machine code"?
-
-- [ ] The Python interpreter.
-- [ ] The keyboard.
-- [X] Python source file.
-- [ ] A word processing document.
-
-Where in the computer is a variable such as "X" stored after the following Python line finishes?
-
-```python
-x = 123
-```
-
-- [ ] Central processing unit
-- [X] Main Memory
-- [ ] Secondary Memory
-- [ ] Input Devices
-- [ ] Output Devices
-
-Explain each of the following using an example of a human capability
+_Explain each of the following using an example of a human capability_
 
 - [ ] Central processing unit
 - [ ] Main Memory
@@ -129,11 +100,9 @@ An algorithm is a step-by-step way of solving a problem. (1) The "steps" may be 
 
 # 2. What are good programming practices?
 
-These practices are meant to (1) maintain code quality and (2) manage code well as an asset:
+These practices are meant to (1) maintain code quality and (2) manage code as an asset:
 
-## 2.1. Correctness
-
-### 2.1.1. Types of errors
+## 2.1. Types of programming errors and their corresponding solutions
 
 Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
 
@@ -165,7 +134,8 @@ Per Calvanese (2006), Wikibooks (n.d.), and SQA (2006):
         <td rowspan="2">Debugger</td>
 </table>
 
-### 2.1.2. Debugging process
+
+### 2.1.1. Debugging code
 
 Per notes by Joseph Hellerstein at UW, debugging consists of:
 
@@ -196,11 +166,12 @@ Per notes by Joseph Hellerstein at UW, debugging consists of:
 
 Similarly, Klahr and Carver (1988; referenced in Bransford et al., 2014, p. 60) describing debugging as "identifying the buggy behavior, representing the program, locating the bug in the program, and then correcting the bug".
 
-#### 2.1.2.1. Testing
+### 2.1.2. Testing code
 
-TKTK
+#### 2.1.2.1. Raising errors
 
-##### 2.1.2.1.1. Raising errors
+
+
 
 
 ## 2.2. Readability and style
@@ -213,6 +184,11 @@ Per Beck (2017), readability is important because good code must be:
 - **Sustainable** (e.g. across versions of a language)
 
 Style guides formalize conventions to support readability for a specific language --- things like naming conventions, line and character spacing, etc.
+
+
+
+
+
 
 ## 2.3. Reproducibility
 
@@ -235,8 +211,16 @@ Per Beck (2017):
 
 #### 2.3.3.2. READMEs
 
+### 2.3.4. Software licenses
 
+Important because:
 
+- Usage of other software, or other code within your code
+- Licensing your own code via GitHub
+
+[graphic from lecture notes based on Mark Webbink's work]
+
+### 2.3.5. Accuracy = DESIGN
 
 
 
@@ -246,16 +230,9 @@ Per Beck (2017):
 
 - 'Programming is typically about 6-10% of the costs of software engineering'
 
-## 3.1. Software licenses
+## 3.1. Software development lifecycle
 
-Important because:
-
-- Usage of other software, or other code within your code
-- Licensing your own code via GitHub
-
-[graphic from lecture notes based on Mark Webbink's work]
-
-## 3.2. Software development phases
+See [planning a project](./project-management.html#planning-a-project) and [overview of PM methodologies](https://jtkovacs.github.io/refs/project-management.html#overview-of-pm-methodologies)
 
 - Assess needs
 - Design specifications
@@ -265,15 +242,15 @@ Important because:
 - Evaluate performance
 - (iterate)
 
-## 3.3. Approaches to development phase
-
-Waterfall approach:
+### 3.1.1. Waterfall
 
 - Communication (project initiation, requirements gathering)
 - Planning (estimating, scheduling, tracking)
 - Modeling (analysis, design)
 - Construction (code, test)
 - Deployment (delivery, support)
+
+### 3.1.2. Agile
 
 ... failure of this approach (in most cases, with a few important exceptions) led to the Agile approach, c. 2000, because "you don't know all the details until you've done it":
 
@@ -296,7 +273,9 @@ Waterfall approach:
 
 - start with what you don't know, to uncover further unknowns (Rumsfeld's "unknown unknowns")
 
-## 3.4. Collaboration in software development
+
+
+## 3.2. Collaboration in software development
 
 Common problems:
 
@@ -304,7 +283,7 @@ Common problems:
 - lack of coordination
     - redundancy of effort
 
-## 3.5. Code review template
+### 3.2.1. Code review template
 
 Per Beck (2017):
 
@@ -320,7 +299,18 @@ Per Beck (2017):
 - How improve reuse and efficiency
 - How use existing python packages
 
-## 3.6. Technology assessment template
+### 3.2.2. Standups
+
+- 1-2 minutes
+- What you've done (information, accomplishment)
+- How it compares with what you intended (accountability, reflection)
+- What you want to do (planning, accountability)
+- Anticipated challenges (advice)
+
+
+
+
+## 3.3. Technology assessment template
 
 Address:
 
@@ -344,13 +334,6 @@ Research strategies:
     - no bugs (issues) means no users
     - no closed issues means no support
 
-## 3.7. Standups
-
-- 1-2 minutes
-- what you've done (information, accomplishment)
-- how it compares with what you intended (accountability, reflection)
-- what you want to do (planning, accountability)
-- anticipated challenges (advice)
 
 
 

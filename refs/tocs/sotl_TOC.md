@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 7832 words | updated 11/10/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 8058 words | updated 11/10/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -76,6 +76,9 @@
 				- &nbsp;3.3.2.2.2. [Actions](#actions)
 				- &nbsp;3.3.2.2.3. [Tools](#tools)
 			- &nbsp;3.3.2.3. [Presentation slides](#presentation-slides)
+				- &nbsp;3.3.2.3.1. [Image filetypes](#image-filetypes)
+				- &nbsp;3.3.2.3.2. [Photography tips](#photography-tips)
+			- &nbsp;3.3.2.4. [Gestalt principles](#gestalt-principles)
 		- &nbsp;3.3.3. [Multimedia learning objects](#multimedia-learning-objects)
 		- &nbsp;3.3.4. [Evaluating learning objects](#evaluating-learning-objects)
 	- &nbsp;3.4. [Teaching technologies](#teaching-technologies)
@@ -809,7 +812,7 @@ These are the broad "cognitive functions" that comprise someone's interaction wi
 
 ##### 3.3.2.2.3. Tools
 
-For mood, readability, accessibility, etc.:
+Adjust mood, readability, accessibility, etc. with :
 
 - Font & typeface
 - Color
@@ -819,8 +822,51 @@ For mood, readability, accessibility, etc.:
 
 #### 3.3.2.3. Presentation slides
 
+Culled from Duarte ('D', 2008) and Reynolds ('R', 2009):
+
+- **Slides should complement the narrative,** not duplicate it ("dual channels")
+- One point per slide (lots of slides OK)
+- Favor images over text; more engaging, more memorable (D)
+    - Relevant
+    - Not cliché
+- Pay attn to size, placement, resolution, aspect
+    - Use full-slide ("full bleed") images (D)
+    - Try for "asymmetric balance" rather than symmetry
+    - 330 ppi resolution for high-quality print images; 100 ppi for screen (D)
+- Make sure text is readable
+    - Place text on semi-transparent solid background when it overlaps an image (D)
+- Try embedded videos
+
+##### 3.3.2.3.1. Image filetypes
+
+Per Reynolds (2009):
+
+- **JPEG** is good for photos on the web, but lossy when compressed
+- **GIF** is good for drawings (only 256 colors)
+- **PNG** lets you adjust transparency
+- **EPS** is for vectors
+- **TIFF** is high res, good for print
+
+##### 3.3.2.3.2. Photography tips
+
+- For people:
+    - Avoid direct sunlight (generally creates unflattering shadows)
+    - Focus on eyes
+    - Place head in upper third of frame, slightly off-center
+- Tripod stablizes and creates better photos in low-light conditions
+- Use the White Balance feature in response to light conditions
+- Explore different vantage points
 
 
+#### 3.3.2.4. Gestalt principles
+
+Per Reynolds (2009):
+
+- Figure/ground
+- Continuation
+- Closure
+- Implied space (cropping)
+- Implied depth (scale)
 
 
 ### 3.3.3. Multimedia learning objects

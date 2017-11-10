@@ -717,7 +717,7 @@ These are the broad "cognitive functions" that comprise someone's interaction wi
 
 ##### Tools
 
-For mood, readability, accessibility, etc.:
+Adjust mood, readability, accessibility, etc. with :
 
 - Font & typeface
 - Color
@@ -727,8 +727,51 @@ For mood, readability, accessibility, etc.:
 
 #### Presentation slides
 
+Culled from Duarte ('D', 2008) and Reynolds ('R', 2009):
+
+- **Slides should complement the narrative,** not duplicate it ("dual channels")
+- One point per slide (lots of slides OK)
+- Favor images over text; more engaging, more memorable (D)
+    - Relevant
+    - Not cliché
+- Pay attn to size, placement, resolution, aspect
+    - Use full-slide ("full bleed") images (D)
+    - Try for "asymmetric balance" rather than symmetry
+    - 330 ppi resolution for high-quality print images; 100 ppi for screen (D)
+- Make sure text is readable
+    - Place text on semi-transparent solid background when it overlaps an image (D)
+- Try embedded videos
+
+##### Image filetypes
+
+Per Reynolds (2009):
+
+- **JPEG** is good for photos on the web, but lossy when compressed
+- **GIF** is good for drawings (only 256 colors)
+- **PNG** lets you adjust transparency
+- **EPS** is for vectors
+- **TIFF** is high res, good for print
+
+##### Photography tips
+
+- For people:
+    - Avoid direct sunlight (generally creates unflattering shadows)
+    - Focus on eyes
+    - Place head in upper third of frame, slightly off-center
+- Tripod stablizes and creates better photos in low-light conditions
+- Use the White Balance feature in response to light conditions
+- Explore different vantage points
 
 
+#### Gestalt principles
+
+Per Reynolds (2009):
+
+- Figure/ground
+- Continuation
+- Closure
+- Implied space (cropping)
+- Implied depth (scale)
 
 
 ### Multimedia learning objects

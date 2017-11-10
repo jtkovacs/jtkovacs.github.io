@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 8068 words | updated 11/10/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 8070 words | updated 11/10/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -720,8 +720,8 @@ Williams et al. (2012, p. 214) suggest that UDL can help teachers be more effect
 | UDL Lesson components  | High-Technology | Low-Technology |
 | --- | --- | --- |
 | Representation: Presentation/Content | SmartBoard, PowerPoint presentation, Youtube/DVD | Posters/markers, projector, lecture/models |
-| Engagement | Reading pen/LiveScribe, Multimedia activity, Blogs/Wikis | Graphic organizer, Calculator, Group discussions |
-| Expression | Podcast/recording, WebCast report, Multimedia presentation |  Oral presentation, Journal/Graph, Poster/Brochure |
+| Engagement: Process/Participation | Reading pen/LiveScribe, Multimedia activity, Blogs/Wikis | Graphic organizer, Calculator, Group discussions |
+| Expression: Product/Assessment | Podcast/recording, WebCast report, Multimedia presentation |  Oral presentation, Journal/Graph, Poster/Brochure |
 
 ### 3.2.6. Rusznyak and Walton's lesson planning guidelines
 

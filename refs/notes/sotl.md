@@ -625,8 +625,8 @@ Williams et al. (2012, p. 214) suggest that UDL can help teachers be more effect
 | UDL Lesson components  | High-Technology | Low-Technology |
 | --- | --- | --- |
 | Representation: Presentation/Content | SmartBoard, PowerPoint presentation, Youtube/DVD | Posters/markers, projector, lecture/models |
-| Engagement | Reading pen/LiveScribe, Multimedia activity, Blogs/Wikis | Graphic organizer, Calculator, Group discussions |
-| Expression | Podcast/recording, WebCast report, Multimedia presentation |  Oral presentation, Journal/Graph, Poster/Brochure |
+| Engagement: Process/Participation | Reading pen/LiveScribe, Multimedia activity, Blogs/Wikis | Graphic organizer, Calculator, Group discussions |
+| Expression: Product/Assessment | Podcast/recording, WebCast report, Multimedia presentation |  Oral presentation, Journal/Graph, Poster/Brochure |
 
 ### Rusznyak and Walton's lesson planning guidelines
 

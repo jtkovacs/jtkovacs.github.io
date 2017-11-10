@@ -340,9 +340,8 @@ From Booth, 2014, p. 116:
 
 <img src="../illos/strategies-by-knowledge-dimension.png" width="600">
 
-##### Accessibility and universal design
 
-Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. International Journal of Learning, 18(4).
+
 
 #### Activities
 
@@ -510,7 +509,8 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 
 <img src="../illos/Diamond-phase-II.png" width="500px">
 
-### Other models
+
+### Other instructional design models
 
 ... mentioned by Booth (2014, p. 86):
 
@@ -519,9 +519,45 @@ Willness, C. & Bruni-Bossio, B. (2017). The curriculum innovation canvas: A desi
 - Bell and Shaank's BLAAM method
 
 
+
+
+
 ## Lesson planning
 
-... AKA student learning plan, per Reeves (2011).
+.. AKA student learning plan, per Reeves (2011).
+
+- Rusznyak and Walton (2011) call out lesson planning as a particularly important moment for a teacher's professional development, specifically in cultivating "pedagogical content knowledge"
+- Williams et al. (2012) advocate for including Universal Design consideratings in planning for the whole class, rather than relying on individualized learning plans as an afterthought.
+
+### Approaches to lesson planning
+
+Uhrmacher et al. (2013) argue that there are two dominant approaches to lesson planning (corresponding to two schools of learning theory) and a less common "perceptual lesson planning" inspired by Dewey, Elliot Eisner, and Donald Oliver. They differentiate approaches on four dimensions (list quoted from p. 5; table quoted, with structural modifications, from p. 10):
+
+- **Intentions:** Aims, goals, or objectives of the lesson plan and of the teacher operating with a particular mode
+- **Process:** The way the lesson is created; the experience the teacher undergoes in the planning
+- **Product:** Actual lessons that result from the planning—their physical form
+- **Outcomes:** Anticipated results of the mode in general and the lesson in particular; desired student learning or experience
+
+| Modes of Lesson Planning | Intentions | Process | Product | Outcomes |
+| --- | --- | --- | --- | --- |
+| **Behaviorist** | Teacher develops objectives to alter student behavior; lesson is often teacher-centered or driven. | Created by teacher or teacher teams with specific, measurable outcomes; can be created in isolation or by others outside of the classroom context. | Formalized step by step lesson plan; linear process often with multiple pre-determined aspects (anticipatory set, direct instruction, practice, etc.); generally 3-5 written pages. | Preconceived; measurable; specific to objective. |
+| **COnstructivist** | Student-centered with aim of discovering and building their own knowledge and skill; make authentic connections with students’ worlds. | Created by teacher or teacher teams; can be created in isolation but must bear particular students in mind (cannot be created “offsite”); planning may be cyclical but tends to be linear, multi-step process. | Formalized lesson plan; various templates or charts and ways of proceeding that allow for variations due to student interests and understandings (e.g., EEL DR C); generally 2-5 written pages. | Preconceived; measurable; specific to student needs and background knowledge; focus on transfer to/from life experience; students reflect on own learning. | Preconceived; measurable; specific to student needs and background knowledge; focus on transfer to/from life experience; students reflect on own learning. |
+| **Perceptual** | To engage teachers’ and students’ senses, creativity and imagination; may include objectives or targets along with associated meaning and connections; focused on interaction among students, content, and teacher. | An artistic endeavor that relies on creative thinking and is joyful in and of itself; conducive to individual or team planning; may find inspiration from outside sources but are created for a particular context; uses sensory information; ideas evolve as lesson is created—teachers find inspiration for teaching in the process of planning the lesson. | Various styles (could utilize behaviorist or constructivist methods); attention to rhythm of the experience; multiple ways to represent the plan; colorful images, maps, short, poetic phrases; may be paper or web-based; format invites joy, creativity, and inspiration; multiple points of engagement for future revision; elements of CRISPA or SCOPES or other aesthetic method. | Fosters teacher and student creativity; meaningful learning for students and teacher; open to intrinsic rewards of teaching and learning; open to elements of surprise and student innovation; designed to foster meaningful expressive outcomes in balance with predetermined goals. |
+
+- _behaviorist_
+    - (Hunter method)
+    - Multiple Menu
+- _constructivist_
+    - EEL DR C
+    - Understanding by Design
+    - Kodaly method
+    - Moffet and Wagner
+    - Science and Technology for Individuals, Societies and the Environment (STISE)
+    - Marzano
+    - UDL
+- _perceptual_
+    - CRISPA
+    - SCOPES
 
 ### Gagné’s events of instruction
 
@@ -581,6 +617,59 @@ Per Reeves (2011, pp. 180-181):
 - Homework assignment
 - Materials or preparation required
 - Post-lesson reflection on how the lesson went and what could be changed for better results or for future students"
+
+### Universal Design for Learning
+
+Williams et al. (2012, p. 214) suggest that UDL can help teachers be more effective and equitable in their teaching. This means including multiple forms of **representation, engagement,** and **expression** while planning lessons. They further suggest some tools:
+
+| UDL Lesson components  | High-Technology | Low-Technology |
+| --- | --- | --- |
+| Representation: Presentation/Content | SmartBoard, PowerPoint presentation, Youtube/DVD | Posters/markers, projector, lecture/models |
+| Engagement | Reading pen/LiveScribe, Multimedia activity, Blogs/Wikis | Graphic organizer, Calculator, Group discussions |
+| Expression | Podcast/recording, WebCast report, Multimedia presentation |  Oral presentation, Journal/Graph, Poster/Brochure |
+
+### Rusznyak and Walton's lesson planning guidelines
+
+Rusznyak and Walton's template for lesson planning is meant to help teachers deepen their own content knowledge and "pedagogical content knowledge" over time (2011):
+
+- 1: **Routine Information**
+    - Grade, subject, theme
+    - Topic of preceeding, current, and following lessons
+- 2: **Purpose**
+    - Key questions learners should be able to answer post-lesson
+    - Skills "
+    - Attitudes and values "
+- 3: **Content Knowledge:** "Summarise your understanding of the most important conceptual knowledge of this lesson" (p. 283)
+- 4: **Learners** "in relation to content knowledge" (p. 283):
+    - "What aspects of _learner diversity_ need consideration?
+    - How is the content knowledge linked to the _prior knowledge_ of learners and/or _current affairs?_
+    - What _subject vocabulary/terminology_ would learners need to learn during this lesson?
+    - What _examples_ can you use to help learners understand better?
+    - What _evidence of understanding_ should learners produce during the lesson?
+    - What _common misunderstandings_ or mistakes might learners make during the lesson? How could you pre-empt the possible misunderstandings learners may have?"
+- 5: **Teaching & Learning Strategies:** " What teaching and learning strategies are appropriate to use during this lesson? Explain the reason/s for your choices" (p. 283)
+
+Finally, "[w]rite a sequence of lesson steps that builds a process of learning" (p. 284):
+
+| Aim of lesson step | Describe what will happen in each lesson step |
+| --- | --- |
+| ... | ... |
+
+### CRISPA
+
+Per Uhrmacher et al. (2013, p. 18), CRISPA is a form of perceptual lesson planning that "does not designate the specific order of the lesson, nor are all six elements required for each lesson plan. In a sense, CRISPA elements are like colors on an artist’s palette: available for use when and if they would complement the whole picture":
+
+- connections
+- risk-taking
+- imagination
+- sensory experience
+- perceptivity
+- active engagement
+
+
+
+
+
 
 
 ## Learning objects
@@ -685,13 +774,10 @@ Per Booth (2014):
     - Be authentic
     - Show your personal investment in the class and the students
 
-
 ## A miscellany of advice and insights
 
 - Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2014)
 - Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
-
-
 
 
 
@@ -816,6 +902,8 @@ Reed, P. J. (2017). Lecture comments. University of Washington iSchool.
 
 Reeves, A. R. (2011). Creating plans for learning. In _Where great teaching begins: Planning for student thinking and learning._ Alexandria, VA: ASCD.
 
+Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge. _Education as Change,_ 15(2).
+
 Schwartz, D. L., Chase, C. C., & Bransford, J. D. (2012). Resisting overzealous transfer: Coordinating previously successful routines with needs for new learning. _Educational Psychologist, 47_(3).
 
 Shore, I. (1996). _When students have power: Negotiating authority in critical pedagogy._ Chicago, IL: University of Chicago Press.
@@ -823,6 +911,10 @@ Shore, I. (1996). _When students have power: Negotiating authority in critical p
 Stevens, E. & Tieman, A. (2017). We used problem-based learning in library instruction and came to question its treatment of students. _In The Library With The Lead Pipe._ Retrieved from (http://www.inthelibrarywiththeleadpipe.org/2017/we-used-problem-based-learning-in-library-instruction-and-came-to-question-its-treatment-of-students/)[http://www.inthelibrarywiththeleadpipe.org/2017/we-used-problem-based-learning-in-library-instruction-and-came-to-question-its-treatment-of-students/]
 
 Torrance, H. (2007). Assessment as learning? How the use of explicit learning objectives, assessment criteria and feedback in post‐secondary education and training can come to dominate learning. _Assessment in Education: Principles, Policy & Practice_ 14(3). [http://dx.doi.org.offcampus.lib.washington.edu/10.1080/09695940701591867](http://dx.doi.org.offcampus.lib.washington.edu/10.1080/09695940701591867)
+
+Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance between process and product through perceptual lesson planning. _Teachers College Record,_ 115, 1-27.
+
+Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. _International Journal of Learning,_ 18(4).
 
 ## References
 

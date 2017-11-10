@@ -730,16 +730,19 @@ Adjust mood, readability, accessibility, etc. with :
 Culled from Duarte ('D', 2008) and Reynolds ('R', 2009):
 
 - **Slides should complement the narrative,** not duplicate it ("dual channels")
-- One point per slide (lots of slides OK)
-- Favor images over text; more engaging, more memorable (D)
+- One point per slide (R)
+- Aim for high signal-to-noise ratio (R)
+- Favor images over text; more engaging, more memorable; "picture superiority effect" (R)
     - Relevant
     - Not cliché
+    - ... but QUOTES are also great for sparking interest and enhancing credibility
 - Pay attn to size, placement, resolution, aspect
-    - Use full-slide ("full bleed") images (D)
-    - Try for "asymmetric balance" rather than symmetry
-    - 330 ppi resolution for high-quality print images; 100 ppi for screen (D)
+    - Use full-slide ("full bleed") images (R)
+    - Try for "asymmetric balance" rather than symmetry (R)
+    - 330 ppi resolution for high-quality print images; 100 ppi for screen (R)
+    - Use enough white space
 - Make sure text is readable
-    - Place text on semi-transparent solid background when it overlaps an image (D)
+    - Place text on semi-transparent solid background when it overlaps an image (R)
 - Try embedded videos
 
 ##### Image filetypes

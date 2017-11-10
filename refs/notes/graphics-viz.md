@@ -1,5 +1,20 @@
 
-# Types of data visualizations
+# Who does viz?
+
+
+
+# Graphic design principles
+
+
+
+
+# Taxonomies of visualizations
+
+## Duarte
+
+Duarte (2008) has an interesting taxonomy.
+
+## Types of data visualizations
 
 Source: Eckerson, W., & Hammond, M. (2011). Visual reporting and analysis. TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
 
@@ -19,7 +34,7 @@ Trust the eye as a tool that extracts patterns from complex data. Provide viewer
 ```Python
 import matplotlib.pyplot as plt
 
-# convert to int: 
+# convert to int:
 my_data = list(map(int, data_in)))
 
 # linecharts/plots:
@@ -81,35 +96,35 @@ plt.grid(True)
 ```R
 p <- seq(0, 1, 0.01)
 
-# scatterplot: 
+# scatterplot:
 plot(my_df$name1, my_df$name2)
 
-# line: 
+# line:
 plot(... type=”l”)
 
 plot(var1 ~ var2))
 
-# univariate boxplot: 
+# univariate boxplot:
 boxplot(my_df$var_name)
-# multivariate boxplot: 
+# multivariate boxplot:
 boxplot(var1 ~ var2)
 
-# histogram: 
+# histogram:
 hist(data, breaks=)
 
-# frequencies: 
+# frequencies:
 table()
-# multivariable: 
-table(my_df$var1, my_df$var2) 
+# multivariable:
+table(my_df$var1, my_df$var2)
 mosaicplot(table(my_df$var1, my_df$var2) )
 mosaicplot(var1 ~ var2)
 
-# relative frequencies: 
+# relative frequencies:
 table(my_df$my_var)/length(my_df$my_var)
 
 barplot(table())
 
-# plot in three rows: 
+# plot in three rows:
 par(mfrow = c(3, 1))
 xlimits <- range(data1)
 hist( … xlim=xlimits)
@@ -117,24 +132,28 @@ plot_ss(x = mlb11$at_bats, y = mlb11$runs,  x1, y1, x2, y2)
 showSquares=T/F
 leastSquares=T/F
 
-# OLS best-fit: 
+# OLS best-fit:
 lm(y ~ x, my_df)
 summary(lm(...)
 
-# line: 
+# line:
 abline()
 abline(lm(...))
 qqnorm(m1$residuals)
 qqline(m1$residuals)
 hist(m1$residuals)
 
-# account for overlapping data point: 
+# account for overlapping data point:
 plot(jitter(x), y)
 ```
 
 
 
 # Sources
+
+## Cited
+
+Duarte, N. (2008). _slide:ology: The art and science of creating great presentations._ Sebastopol, CA: O'Reilly Press.
 
 ## References
 

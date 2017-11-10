@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 7793 words | updated 11/10/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 7832 words | updated 11/10/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -63,7 +63,7 @@
 		- &nbsp;3.2.1. [Approaches to lesson planning](#approaches-to-lesson-planning)
 		- &nbsp;3.2.2. [Gagné’s events of instruction](#gagné’s-events-of-instruction)
 		- &nbsp;3.2.3. [Hunter lesson plan model](#hunter-lesson-plan-model)
-		- &nbsp;3.2.4. [Reeves lesson plan elements](#reeves-lesson-plan-elements)
+		- &nbsp;3.2.4. [Reeves' lesson plan elements](#reeves-lesson-plan-elements)
 		- &nbsp;3.2.5. [Universal Design for Learning](#universal-design-for-learning)
 		- &nbsp;3.2.6. [Rusznyak and Walton's lesson planning guidelines](#rusznyak-and-waltons-lesson-planning-guidelines)
 		- &nbsp;3.2.7. [CRISPA](#crispa)
@@ -75,19 +75,20 @@
 				- &nbsp;3.3.2.2.1. [Principles](#principles)
 				- &nbsp;3.3.2.2.2. [Actions](#actions)
 				- &nbsp;3.3.2.2.3. [Tools](#tools)
+			- &nbsp;3.3.2.3. [Presentation slides](#presentation-slides)
 		- &nbsp;3.3.3. [Multimedia learning objects](#multimedia-learning-objects)
 		- &nbsp;3.3.4. [Evaluating learning objects](#evaluating-learning-objects)
+	- &nbsp;3.4. [Teaching technologies](#teaching-technologies)
+		- &nbsp;3.4.1. [History of teaching technologies](#history-of-teaching-technologies)
+		- &nbsp;3.4.2. [Keeping current](#keeping-current)
+		- &nbsp;3.4.3. [Evaluating teaching technologies](#evaluating-teaching-technologies)
 - &nbsp;4. [Reflective practice](#reflective-practice)
 	- &nbsp;4.1. [Qualities of excellent teachers](#qualities-of-excellent-teachers)
 	- &nbsp;4.2. [A miscellany of advice and insights](#a-miscellany-of-advice-and-insights)
-- &nbsp;5. [Teaching technologies](#teaching-technologies)
-	- &nbsp;5.1. [History of teaching technologies](#history-of-teaching-technologies)
-	- &nbsp;5.2. [Keeping current](#keeping-current)
-	- &nbsp;5.3. [Evaluating teaching technologies](#evaluating-teaching-technologies)
-- &nbsp;6. [Sources](#sources)
-	- &nbsp;6.1. [Cited](#cited)
-	- &nbsp;6.2. [References](#references)
-	- &nbsp;6.3. [Unread](#unread)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [Cited](#cited)
+	- &nbsp;5.2. [References](#references)
+	- &nbsp;5.3. [Unread](#unread)
 </div>
 
 # 1. What is instruction?
@@ -632,7 +633,7 @@ Uhrmacher et al. (2013) argue that there are two dominant approaches to lesson p
 | Modes of Lesson Planning | Intentions | Process | Product | Outcomes |
 | --- | --- | --- | --- | --- |
 | **Behaviorist** | Teacher develops objectives to alter student behavior; lesson is often teacher-centered or driven. | Created by teacher or teacher teams with specific, measurable outcomes; can be created in isolation or by others outside of the classroom context. | Formalized step by step lesson plan; linear process often with multiple pre-determined aspects (anticipatory set, direct instruction, practice, etc.); generally 3-5 written pages. | Preconceived; measurable; specific to objective. |
-| **COnstructivist** | Student-centered with aim of discovering and building their own knowledge and skill; make authentic connections with students’ worlds. | Created by teacher or teacher teams; can be created in isolation but must bear particular students in mind (cannot be created “offsite”); planning may be cyclical but tends to be linear, multi-step process. | Formalized lesson plan; various templates or charts and ways of proceeding that allow for variations due to student interests and understandings (e.g., EEL DR C); generally 2-5 written pages. | Preconceived; measurable; specific to student needs and background knowledge; focus on transfer to/from life experience; students reflect on own learning. | Preconceived; measurable; specific to student needs and background knowledge; focus on transfer to/from life experience; students reflect on own learning. |
+| **Constructivist** | Student-centered with aim of discovering and building their own knowledge and skill; make authentic connections with students’ worlds. | Created by teacher or teacher teams; can be created in isolation but must bear particular students in mind (cannot be created “offsite”); planning may be cyclical but tends to be linear, multi-step process. | Formalized lesson plan; various templates or charts and ways of proceeding that allow for variations due to student interests and understandings (e.g., EEL DR C); generally 2-5 written pages. | Preconceived; measurable; specific to student needs and background knowledge; focus on transfer to/from life experience; students reflect on own learning. | Preconceived; measurable; specific to student needs and background knowledge; focus on transfer to/from life experience; students reflect on own learning. |
 | **Perceptual** | To engage teachers’ and students’ senses, creativity and imagination; may include objectives or targets along with associated meaning and connections; focused on interaction among students, content, and teacher. | An artistic endeavor that relies on creative thinking and is joyful in and of itself; conducive to individual or team planning; may find inspiration from outside sources but are created for a particular context; uses sensory information; ideas evolve as lesson is created—teachers find inspiration for teaching in the process of planning the lesson. | Various styles (could utilize behaviorist or constructivist methods); attention to rhythm of the experience; multiple ways to represent the plan; colorful images, maps, short, poetic phrases; may be paper or web-based; format invites joy, creativity, and inspiration; multiple points of engagement for future revision; elements of CRISPA or SCOPES or other aesthetic method. | Fosters teacher and student creativity; meaningful learning for students and teacher; open to intrinsic rewards of teaching and learning; open to elements of surprise and student innovation; designed to foster meaningful expressive outcomes in balance with predetermined goals. |
 
 - _behaviorist_
@@ -676,7 +677,7 @@ Paraphrased from a handout provided by Reed (2017):
     - Present information and verify understanding during presentation
     - Show examples of what's expected from students (modeling)
 - Immediately check understanding with **guided practice**
-- After some time, **require independent practice**, and after some time again, **provide feedback**
+- After some time, **require independent practice,** and after some time again, **provide feedback**
 
 ... however, Reeves notes, Hunter originalled ordered them by logical dependence---i.e. the order in which they should be considered by the instructor during planning---rather than chronologically, i.e. as a learner would encounter them (2011, p. 178):
 
@@ -688,7 +689,7 @@ Paraphrased from a handout provided by Reed (2017):
 - Communicating to students what the objective is
 - Starting a lesson by creating an anticipatory set"
 
-### 3.2.4. Reeves lesson plan elements
+### 3.2.4. Reeves' lesson plan elements
 
 Per Reeves (2011, pp. 180-181):
 
@@ -816,6 +817,12 @@ For mood, readability, accessibility, etc.:
 - Depth/details/realism
 - Whitespace
 
+#### 3.3.2.3. Presentation slides
+
+
+
+
+
 ### 3.3.3. Multimedia learning objects
 
 Booth summarizes Mayer again (2014, p. 130):
@@ -847,45 +854,13 @@ Booth presents a modified version of Lohr's schema for evaluating learning objec
 
 
 
+## 3.4. Teaching technologies
 
-
-
-# 4. Reflective practice
-
-Booth presents her [USER method](#user-method) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (2014, p. 95).
-
-## 4.1. Qualities of excellent teachers
-
-Per Booth (2014):
-
-- [logistics]
-    - Focus on goals
-    - Be organized enough to achieve them
-- [interpersonal]
-    - Be authentic
-    - Show your personal investment in the class and the students
-
-## 4.2. A miscellany of advice and insights
-
-- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2014)
-- Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
-
-
-
-
-
-
-
-
-
-
-# 5. Teaching technologies
-
-## 5.1. History of teaching technologies
+### 3.4.1. History of teaching technologies
 
 Alonso et al. (2008) provides a brief review of the history of eLearning technologies.
 
-## 5.2. Keeping current
+### 3.4.2. Keeping current
 
 Per Booth (2014), an educator can use the following process and skills to find their bearing in a constantly evolving technology landscape:
 
@@ -893,7 +868,7 @@ Per Booth (2014), an educator can use the following process and skills to find t
 - **Evaluate** them with respect to educational objectives; and
 - **Customize** tools for the given learning scenario
 
-## 5.3. Evaluating teaching technologies
+### 3.4.3. Evaluating teaching technologies
 
 Booth identifies these ten affordances AKA functionality AKA features (quoted; 2014, p. 65):
 
@@ -940,14 +915,49 @@ She suggests evaluating technologies in this format, which I've slightly adapted
 
 
 
+# 4. Reflective practice
+
+Booth presents her [USER method](#user-method) primarily as an instructional design model, but secondarily as an "instructional literacy framework that encourages you to reflect on your process in order to become a 'student of learning” as you teach' (2014, p. 95).
+
+## 4.1. Qualities of excellent teachers
+
+Per Booth (2014):
+
+- [logistics]
+    - Focus on goals
+    - Be organized enough to achieve them
+- [interpersonal]
+    - Be authentic
+    - Show your personal investment in the class and the students
+
+## 4.2. A miscellany of advice and insights
+
+- Be vigilant against the “curse of knowledge”, i.e. losing the ability to communicate with inexperts and to effectively anticipate knowledge gaps in one’s teaching (Booth, 2014)
+- Diversify the kinds of thinking you ask learners to do; try to activate as many parts of the brain as possible; don't try to favor people's preferred learning styles (Beneteau, 2017; also Brown et al., 2014)
 
 
 
 
 
-# 6. Sources
 
-## 6.1. Cited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 5. Sources
+
+## 5.1. Cited
 
 Allen Interactions. (2017). Agile eLearning development with SAM. Retrieved from [http://www.alleninteractions.com/sam-process](http://www.alleninteractions.com/sam-process)
 
@@ -962,6 +972,8 @@ Bransford, J., Brown, A. & Cocking, R. (2000). Learning and transfer. In _How pe
 Brown, P. C., Roediger III, H. L., & McDaniel, M. A. (2014). _Make it stick: The science of successful learning._ Cambridge, MA: Belknap Press.
 
 Diamond, R. M. (2008). Clarifying instructional goals and objectives (ch. 9). In _Designing and assessing courses and curricula: A practical guide (3rd ed.)._ San Francisco, CA: Jossey-Bass.
+
+Duarte, N. (2008). _slide:ology: The art and science of creating great presentations._ Sebastopol, CA: O'Reilly Press.
 
 Dweck, C. S., Walton, G. M., & Cohen, G. L. (2014). Academic tenacity: Mindsets and skills that promote long-term learning. Bill & Melinda Gates Foundation. Retrieved from [https://ed.stanford.edu/sites/default/files/manual/dweck-walton-cohen-2014.pdf](https://ed.stanford.edu/sites/default/files/manual/dweck-walton-cohen-2014.pdf) (PDF)
 
@@ -993,6 +1005,8 @@ Reed, P. J. (2017). Lecture comments. University of Washington iSchool.
 
 Reeves, A. R. (2011). Creating plans for learning. In _Where great teaching begins: Planning for student thinking and learning._ Alexandria, VA: ASCD.
 
+Reynolds, G. (2009). _Presentation Zen design: Simple design principles and techniques to enhance your presentations._ San Francisco, CA: New Riders.
+
 Rusznyak, L. & Walton, E. (2011). Lesson planning guidelines for student teachers: A scaffold for the development of pedagogical content knowledge. _Education as Change,_ 15(2).
 
 Schwartz, D. L., Chase, C. C., & Bransford, J. D. (2012). Resisting overzealous transfer: Coordinating previously successful routines with needs for new learning. _Educational Psychologist, 47_(3).
@@ -1007,14 +1021,14 @@ Uhrmacher, P., Conrad, B. M., & Moroye, C. M. (2013). Finding the balance betwee
 
 Williams, J., Evans, C., & King, L. (2012). The impact of universal design for learning Instruction on lesson planning. _International Journal of Learning,_ 18(4).
 
-## 6.2. References
+## 5.2. References
 
 - [Washington Center's learning communities repository](http://wacenter.evergreen.edu/)
 - [MERLOT II online teaching resources](https://www.merlot.org/merlot/index.htm)
 - [Association for Talent Development](https://www.td.org/)
 - [InstructionalDesign.org](http://www.instructionaldesign.org/index.html)
 
-## 6.3. Unread
+## 5.3. Unread
 
 - Callahan, R. (1962). _Education and the cuilt of efficiency._ Chicago: University of Chicago Press. _(This is a history of the efficiency movement in education.)_
 - Tye, B. B. (2000). _Hard truths: Uncovering the deep structure of schooling._ New York: Teachers College Press.

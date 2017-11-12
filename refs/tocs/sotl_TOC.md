@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 8070 words | updated 11/10/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 8177 words | updated 11/12/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -448,6 +448,15 @@ From Booth, 2014, p. 116:
 
 
 ### 2.2.4. Assessment
+
+- **Overview:** Booth (2014), "Reflect"
+    - Assessment by source (teacher, self, etc.)
+    - Assessment by time (pre-, formative, etc.)
+- **Different reasons for assessing:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Determining your purpose for assessing student learning. _Learning assessment techniques: A handbook for college faculty._
+- **List of options w/ pros & cons:** "Assessment tools"
+- **Details for implementing rubrics, self-assessments, etc.:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Implementing a learning assessment technique. _Learning assessment techniques: A handbook for college faculty._
+- **Formative assessment in depth:** Frey, Nancy, and Douglas Fisher. (2011). Creating a formative assessment system.
+
 
 #### 2.2.4.1. Proper role of assessment
 

@@ -354,6 +354,15 @@ From Booth, 2014, p. 116:
 
 ### Assessment
 
+- **Overview:** Booth (2014), "Reflect"
+    - Assessment by source (teacher, self, etc.)
+    - Assessment by time (pre-, formative, etc.)
+- **Different reasons for assessing:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Determining your purpose for assessing student learning. _Learning assessment techniques: A handbook for college faculty._
+- **List of options w/ pros & cons:** "Assessment tools"
+- **Details for implementing rubrics, self-assessments, etc.:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Implementing a learning assessment technique. _Learning assessment techniques: A handbook for college faculty._
+- **Formative assessment in depth:** Frey, Nancy, and Douglas Fisher. (2011). Creating a formative assessment system.
+
+
 #### Proper role of assessment
 
 Diamond (2008, p. 128) quotes Theodore Marchese:

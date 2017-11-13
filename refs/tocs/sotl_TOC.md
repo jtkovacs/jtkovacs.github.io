@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 8177 words | updated 11/12/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 9136 words | updated 11/13/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -34,7 +34,16 @@
 			- &nbsp;2.2.3.2. [Activities](#activities)
 				- &nbsp;2.2.3.2.1. [Stop and think](#stop-and-think)
 		- &nbsp;2.2.4. [Assessment](#assessment)
-			- &nbsp;2.2.4.1. [Proper role of assessment](#proper-role-of-assessment)
+			- &nbsp;2.2.4.1. [What is assessment for?](#what-is-assessment-for)
+			- &nbsp;2.2.4.2. [Who is assessment for?](#who-is-assessment-for)
+			- &nbsp;2.2.4.3. [Qualities of good assessment](#qualities-of-good-assessment)
+			- &nbsp;2.2.4.4. [Assessments by effort and source of opinion](#assessments-by-effort-and-source-of-opinion)
+			- &nbsp;2.2.4.5. [Assessments with respect to chronology of learning](#assessments-with-respect-to-chronology-of-learning)
+				- &nbsp;2.2.4.5.1. [Pre-assessment](#pre-assessment)
+				- &nbsp;2.2.4.5.2. [Formative assessment](#formative-assessment)
+				- &nbsp;2.2.4.5.3. [Summative assessment](#summative-assessment)
+				- &nbsp;2.2.4.5.4. [Confirmative assessment](#confirmative-assessment)
+			- &nbsp;2.2.4.6. [Choosing assessment approaches](#choosing-assessment-approaches)
 		- &nbsp;2.2.5. [Buzzwords, schools and movements](#buzzwords-schools-and-movements)
 			- &nbsp;2.2.5.1. [Connectivism](#connectivism)
 			- &nbsp;2.2.5.2. [Active learning](#active-learning)
@@ -449,22 +458,89 @@ From Booth, 2014, p. 116:
 
 ### 2.2.4. Assessment
 
-- **Overview:** Booth (2014), "Reflect"
-    - Assessment by source (teacher, self, etc.)
-    - Assessment by time (pre-, formative, etc.)
-- **Different reasons for assessing:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Determining your purpose for assessing student learning. _Learning assessment techniques: A handbook for college faculty._
-- **List of options w/ pros & cons:** "Assessment tools"
-- **Details for implementing rubrics, self-assessments, etc.:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Implementing a learning assessment technique. _Learning assessment techniques: A handbook for college faculty._
-- **Formative assessment in depth:** Frey, Nancy, and Douglas Fisher. (2011). Creating a formative assessment system.
 
+#### 2.2.4.1. What is assessment for?
 
-#### 2.2.4.1. Proper role of assessment
+Diamond (2008, p. 128) quotes Theodore Marchese on the proper role of assessment:
 
-Diamond (2008, p. 128) quotes Theodore Marchese:
-
-**"Assessment per se guarantees nothing by way of improvement, no more than a thermometer cures a fever. Only when used in combination with good instruction (that evokes involvement in coherent curricula, etc.) in a program of improvement, can the device strengthen education."**
+**"Assessment per se guarantees nothing by way of improvement, no more than a thermometer cures a fever. Only when used in combination with good instruction (that evokes involvement in coherent curricula, etc.) in a program of improvement, can the device strengthen education.**
 
 See Torrance (2007) for some additional caution regarding assessment.
+
+
+#### 2.2.4.2. Who is assessment for?
+
+- **Different reasons for assessing:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Determining your purpose for assessing student learning. _Learning assessment techniques: A handbook for college faculty._
+
+
+#### 2.2.4.3. Qualities of good assessment
+
+Booth (2014, pp. 137-138) says that good assessment is:
+
+- **Reflective,** i.e. a professional responsibility;
+- **Communicative** (signaling that 'this learning matters');
+- **Interactive, diactic, and nuanced** rather than an artificial and abstract impediment to learning
+
+Per James McMillan as cited in Booth (2014, p. 138), good assessments have the following qualities:
+
+- **"Appropriateness:** Evaluation strategies should be based on targets and provide insight into the content areas specified by those targets.
+- **Validity:** To ensure that your assessment methods make accurate insights about students, vary investigation methods and use multiple sources of input to increase validity.
+- **Reliability:** Assessment strategies should produce consistent results and reduce error with pre-testing and critical consideration of results.
+- **Fairness:** To reflect the learning experience of all participants fairly, assessment strategies should give an equal voice to all and not privilege more forthcoming learners over others.
+- **Positive consequences:** Evaluation methods should be weighed for their ability to create positive consequences for learners. Assessment should result in productive action.
+- **Alignment:** Assessment methods should align with the skill levels and competencies of learners. \[NB: this is not the typical sense of [alignment](#alignment) in education]
+- **Practicality/Efficiency:** Assessment methods should be time efficient and practical to the situation."
+
+
+#### 2.2.4.4. Assessments by effort and source of opinion
+
+Per James McMillan as cited and extended by Booth (2014, p. 138), assessments may be:
+
+| Teacher observation (no effort) | Selected response | Constructed response | Student self-assessment (high effort) | Social/peer assessment |
+| --- | --- | --- | --- | --- | --- |
+| "Formal and informal methods of observing student progress during a learning interaction. Also, information gathered from a requesting instructor (e.g., assessment of on-task behavior, observation of nonverbal communication)" | "Assessment instruments that present learners with two or more options from which to choose (e.g., multiple choice surveys, Likert scale questionnaires, matching quizzes, classroom response system polls)" | "Evaluation techniques that require students to create their own response to a given task or scenario (e.g., short-answer essay, one-minute paper, informal questioning, think-aloud exercises)" | "Metacognitive or reflective evaluations conducted by students (e.g., one-minute paper, attitude survey, self-reflection, peer evaluation)" | "... made possible by tools like Facebook, Twitter, and Flickr" |
+
+
+#### 2.2.4.5. Assessments with respect to chronology of learning
+
+##### 2.2.4.5.1. Pre-assessment
+
+Per Booth (2014, p. 140), pre-assessment is "conducted before instruction to establish prior knowledge and analyze the scenario".
+
+##### 2.2.4.5.2. Formative assessment
+
+Per Booth (2014, p. 140), formative assessment "evaluates materials during design and gives insight into the quality and character of an in-progress interaction". Formative assessment is meant to be real-time and to provide learners and instructors with actionable information about the learners' present state of understanding.
+
+Booth (2014, p. 141) quotes the following formative assessment strategies from Tomas Angelo and Patrician Cross's _Classroom assessment techniques:_
+
+- **"One-Minute Paper.** Stop an interaction a few minutes before it concludes and ask learners to note on index cards, half-sheets, or an online form the most important thing they learned and one question that remains unanswered. Follow up with learners via e-mail or other means to address unanswered questions. For a variation on this technique, ask students at the beginning of an interaction to specify one question that they want answered during the session using a course blog or online form. Read these aloud and try to address useful questions raised during the session (see figure 12.2 and visit www.tinyurl.com/libquestion for two examples of this in action).
+- **Muddiest Point.** At the end of an interaction or activity, ask learners to quickly write a response to the question, “What was the muddiest point in [this particular lesson or module]?” Read selected responses aloud and follow up on identified areas of missed comprehension.
+- **Misconception/Preconception Check.** Before a learning interaction, hand out a worksheet or send a survey, message, or forum thread that asks students to respond to a potentially misleading open-ended question or statement about libraries or information as a way of discovering what pre/misconceptions among students might spark productive discussion.
+- **Pro-and-Con Grid.** After an activity, use a questioning method or self-directed reflection to ask students to evaluate a resource or scenario using a pro-and-con grid, such as listing specific benefits and drawbacks of each. Discuss pros and cons with the entire group.
+- **Concept Maps.** Have learners visualize their understanding of a topic by asking them to draw connections between major ideas and concepts covered in the session or module.
+- **Classroom Opinion Polls.** Use simple questioning, classroom response devices, social media tools, or online polls to evaluate learner responses to quick comprehension or evaluation questions during or at the end of a module to stimulate discussion.
+- **Course-Related Self-Confidence Surveys.** At the beginning of an interaction ask learners to rate their level of confidence or expertise in the skills or topics you will be covering in class. Review these and make adjustments in skill levels that may be above or below what you anticipated."
+
+Booth (2014) also mentions her colleague Pat Maughan's technique of distributing index cards at the beginning of a workshop, asking for the first three word that came to mind when thinking of X, then repeating the exercise at the end of the workshop and comparing wordcloud representations of the two datasets.
+
+
+Frey, Nancy, and Douglas Fisher. (2011). Creating a formative assessment system.
+
+##### 2.2.4.5.3. Summative assessment
+
+Per Booth (2014, p. 140), summative assessment (AKA 'post-instructional assessment') "occurs at the conclusion of an interaction and judges its overall effectiveness". See [Understand](#understand) for methods that are useful for summative assessment as well as user research.
+
+##### 2.2.4.5.4. Confirmative assessment
+
+Per Booth (2014, p. 140), confirmative assessment "occurs well after an interaction and tracks retention and recall of actionable knowledge in authentic settings." While formative and summative assessments focus on learning objectives, confirmative assessment focuses on [objectives and goals,](#targets) the higher-level targets a training seeks to fulfill.
+
+
+#### 2.2.4.6. Choosing assessment approaches
+
+- **List of options w/ pros & cons:** "Assessment tools"
+- **Details for implementing rubrics, self-assessments, etc.:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Implementing a learning assessment technique. _Learning assessment techniques: A handbook for college faculty._
+
+
 
 
 
@@ -578,6 +654,9 @@ Booth (2014, p. 105):
 
 ![](../illos/instructional-need-types.png)
 
+![](../illos/assessment-strategies.png)
+
+
 #### 3.1.3.2. Structure
 
 - **Create targets,** i.e. [goals, objectives and outcomes](#targets): "Targets organize the knowledge, skills, and attitudes specified in the _Understand_ phase into content units and instructional strategies, and provide criteria to assess learning during and after instruction. They are also a framework for guiding student understanding and metacognitive awareness" (p. 116)
@@ -599,9 +678,7 @@ Booth (2014, p. 105):
 
 #### 3.1.3.4. Reflect
 
-- **Assess impact** on learners
-    - Formative
-    - Summative
+- [Assess impact](#assessment) on learners
 - **Reflect** to identify what should be preserved, revised, or discarded
 
 

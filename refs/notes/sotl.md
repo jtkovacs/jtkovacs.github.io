@@ -476,7 +476,7 @@ Per Barkley and Major (2016, pp. 25-26):
 
 #### Choosing assessment approaches
 
-Barkley and Major (2016) organize "learning assessment techniques" (LATs) by **type of class** _(traditional, online, collaborative, flipped)_ and **type of learning goal** _\(foundational knowledge, applied knowledge, integration of knowledge, caring, human dimension,_ and _learning how to learn,_ per the [Learning Goals Inventory\)](https://www.aacu.org/sites/default/files/files/gened16/AlabamaLearningGoals.pdf).
+Barkley and Major (2016) organize "learning assessment techniques" (LATs) by **type of class** _(traditional, online, collaborative, flipped)_ and **type of learning goal** _\(foundational knowledge, applied knowledge, integration of knowledge, caring, human dimension,_ and _learning how to learn,_ per the [Learning Goals Inventory.\)](https://www.aacu.org/sites/default/files/files/gened16/AlabamaLearningGoals.pdf)
 
 
 #### Creating assessment instruments
@@ -610,29 +610,33 @@ Booth (2011, p. 95) calls her USER method a "streamlined version of ADDIE" that 
 
 #### Understand
 
-- **Identify the problem.** "What is the challenge learners face, and how can I help them meet it?" (I assume she means for this question to be posed at the strategic level)
-- **Analyze the scenario.** "Characterize" and "confront" any difficulties arising in the following dimensions:
-    - **Learner:** attributes, motivation, prior knowledge, and barriers to learning
-    - **Content:** knowledge, skills and attributes that will later be translated into [targets](#targets)
-    - **Context:** space, technology, collaboration, promotion
-    - **Educator**
+##### Identify the problem
 
-Booth (2014, p. 105):
+At the strategic level, "[w]hat is the challenge learners face, and how can I help them meet it?" Methods for identifying needs, and types of needs according to Booth (2014, p. 105):
 
 ![](../illos/instructional-need-types.png)
 
 ![](../illos/assessment-strategies.png)
 
 
+##### Analyze the scenario
+
+"Characterize" and "confront" any difficulties arising in the following dimensions:
+
+    - **Learner:** attributes, motivation, prior knowledge, and barriers to learning
+    - **Content:** knowledge, skills and attributes that will later be translated into [targets](#targets)
+    - **Context:** space, technology, collaboration, promotion
+    - **Educator**
+
 #### Structure
 
 - **Create targets,** i.e. [goals, objectives and outcomes](#targets): "Targets organize the knowledge, skills, and attitudes specified in the _Understand_ phase into content units and instructional strategies, and provide criteria to assess learning during and after instruction. They are also a framework for guiding student understanding and metacognitive awareness" (p. 116)
-- "Identify methods to **involve** learners using delivery techniques, technologies, and activities" that align with the targets. Consider:
+- "Identify methods to **involve** learners using delivery techniques, technologies, and activities" that [align with the targets.](#alignment) Consider:
     - _"Control of Learning._ Which areas of the interaction will be teacher centered (direct instruction), and which will be more student centered (discovery instruction)?
     - _Grouping for Learning._ Will you ask learners to work as individuals, pairs, teams, or groups?
     - _Interactions for Learning._ Will you create learning interactions that are human (student/teacher, student/student, other) or nonhuman (student/ tools, student/information, student/environment, other)?
     - _Support for Learning._ Will you provide cognitive support or emotional support?" (p. 120)
-- **Extend the interaction** before, during, and after instruction, e.g. by providing preparatory exercises, suggested resources, etc.; see [integrative learning]](#integrative-learning)
+- **Extend the interaction** before, during, and after instruction, e.g. by providing preparatory exercises, suggested resources, etc.; see [integrative learning](#integrative-learning)
 
 #### Engage
 
@@ -782,22 +786,22 @@ Williams et al. (2012, p. 214) suggest that UDL can help teachers be more effect
 
 Rusznyak and Walton's template for lesson planning is meant to help teachers deepen their own content knowledge and "pedagogical content knowledge" over time (2011):
 
-- 1: **Routine Information**
+- **Routine Information**
     - Grade, subject, theme
     - Topic of preceeding, current, and following lessons
-- 2: **Purpose**
+- **Purpose**
     - Key questions learners should be able to answer post-lesson
     - Skills "
     - Attitudes and values "
-- 3: **Content Knowledge:** "Summarise your understanding of the most important conceptual knowledge of this lesson" (p. 283)
-- 4: **Learners** "in relation to content knowledge" (p. 283):
+- **Content Knowledge:** "Summarise your understanding of the most important conceptual knowledge of this lesson" (p. 283)
+- **Learners** "in relation to content knowledge" (p. 283):
     - "What aspects of _learner diversity_ need consideration?
     - How is the content knowledge linked to the _prior knowledge_ of learners and/or _current affairs?_
     - What _subject vocabulary/terminology_ would learners need to learn during this lesson?
     - What _examples_ can you use to help learners understand better?
     - What _evidence of understanding_ should learners produce during the lesson?
     - What _common misunderstandings_ or mistakes might learners make during the lesson? How could you pre-empt the possible misunderstandings learners may have?"
-- 5: **Teaching & Learning Strategies:** " What teaching and learning strategies are appropriate to use during this lesson? Explain the reason/s for your choices" (p. 283)
+- **Teaching & Learning Strategies:** " What teaching and learning strategies are appropriate to use during this lesson? Explain the reason/s for your choices" (p. 283)
 
 Finally, "[w]rite a sequence of lesson steps that builds a process of learning" (p. 284):
 
@@ -814,7 +818,7 @@ From Frey and Fisher (2011, p. 121), this framework is based on:
 - Albert Bandura’s work on attention, retention, reproduction, and motivation (1965).
 - David Wood, Jerome Bruner, and Gail Ross’s work on scaffolded instruction (1976).
 
-The framework includes the following stages of instruction:
+The framework proposes the following stages of instruction:
 
 - Focus the lesson
     - Establish purpose
@@ -844,7 +848,7 @@ Per Uhrmacher et al. (2013, p. 18), CRISPA is a form of perceptual lesson planni
 
 ### Instructional messages
 
-Booth (2014) calls instructional messages "elevator pitches" for the class; it's about knowing and conveying what you have to offer in a particular instructional situation. Messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
+Per Booth (2014) instructional messages consist of [persona](#qualities-of-excellent-teachers) and "elevator pitches" for the class; it's about knowing and conveying what you have to offer in a particular instructional situation. Messages should be clearly relevant and actionable ("WIIFM/what's in it for me principle"). In addition, Booth summarizes Chip and Dan Heath’s best practices for powerful messages, which they organize as an acronym (SUCCESs) but I present here differently:
 
 - get attention, hold interest: **UNEXPECTED, STORIES**
 - facilitate comprehension: **SIMPLE, CONCRETE**

@@ -7,6 +7,15 @@
 - - **Academia vs. real-world learning:** Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
 - **Learning environments vs. instructional systems:** This distinction comes from Gagné: _"learning environments_ are constructivist educational spaces that provide the framework for self-discovery, whereas _instructional systems_ are behaviorist/cognitivist spaces that 'focus on telling ... learners what they need to know'" (Booth, 2011, p. 87).
 
+### Types of classrooms
+
+Per Barkley and Major (2016):
+
+- traditional
+- online
+- collaborative
+- flipped
+
 ## What competencies should instructors have?
 
 Per Booth (2014), core knowledge and skills for teaching (what she calls “instructional literacy”) includes:
@@ -375,16 +384,24 @@ Barkley and Major (2016) recreate the following table from Suskie (2009):
 | May be the result of vague or inconsistent standards | Aims for exactness |
 | Reflect student performance in individual courses or course assignments | May measure learning from ungraded co-curricular activities or look for skill development beyond course content, such as critical thinking |
 
+**Embedded assessment** tries to perform the functions of grades and assessments simultaneously.
 
 
 #### Who is assessment for?
 
-Per Barkley and Major (2016), assessment has the following audiences:
+Per Barkley and Major (2016), assessment has the following audiences (quoted directly from section headers):
 
 - Assessing Students to Determine for Ourselves How Well Students Are Learning
+    - To discover the current status of student knowledge and understanding
+    - To solve a problem in our teaching
+    - To determine whether we need to change direction in our teaching
+    - To find out how students are experiencing learning in our classrooms
 - Assessing to Give Learners Feedback on Their Progress
 - Assessing to Improve Our Profession through the Scholarship of Teaching and Learning (SoTL)
 - Assessing to Provide Information to Institutional and External Stakeholders on How Well Students Are Learning
+    - As part of our professional dossiers
+    - For program reviews, whether internal or external
+    - To institutional assessment efforts and accrediting agencies
 
 
 
@@ -407,7 +424,7 @@ Per James McMillan as cited in Booth (2014, p. 138), good assessments have the f
 - **Practicality/Efficiency:** Assessment methods should be time efficient and practical to the situation."
 
 
-#### Assessments by effort and source of opinion
+#### Assessment types by effort and source of opinion
 
 Per James McMillan as cited and extended by Booth (2014, p. 138), assessments may be:
 
@@ -416,7 +433,7 @@ Per James McMillan as cited and extended by Booth (2014, p. 138), assessments ma
 | "Formal and informal methods of observing student progress during a learning interaction. Also, information gathered from a requesting instructor (e.g., assessment of on-task behavior, observation of nonverbal communication)" | "Assessment instruments that present learners with two or more options from which to choose (e.g., multiple choice surveys, Likert scale questionnaires, matching quizzes, classroom response system polls)" | "Evaluation techniques that require students to create their own response to a given task or scenario (e.g., short-answer essay, one-minute paper, informal questioning, think-aloud exercises)" | "Metacognitive or reflective evaluations conducted by students (e.g., one-minute paper, attitude survey, self-reflection, peer evaluation)" | Collaborative, collective, social or peer assessments "... made possible by tools like Facebook, Twitter, and Flickr" |
 
 
-#### Assessments with respect to chronology of learning
+#### Assessment types with respect to chronology of learning
 
 ##### Pre-assessment
 
@@ -438,7 +455,6 @@ Booth (2014, p. 141) quotes the following formative assessment strategies from T
 
 Booth (2014) also mentions her colleague Pat Maughan's technique of distributing index cards at the beginning of a workshop, asking for the first three word that came to mind when thinking of X, then repeating the exercise at the end of the workshop and comparing wordcloud representations of the two datasets.
 
-
 Frey, Nancy, and Douglas Fisher. (2011). Creating a formative assessment system.
 
 ##### Summative assessment
@@ -449,13 +465,50 @@ Per Booth (2014, p. 140), summative assessment (AKA 'post-instructional assessme
 
 Per Booth (2014, p. 140), confirmative assessment "occurs well after an interaction and tracks retention and recall of actionable knowledge in authentic settings." While formative and summative assessments focus on learning objectives, confirmative assessment focuses on [objectives and goals,](#targets) the higher-level targets a training seeks to fulfill.
 
+#### Other assessment types
+
+Per Barkley and Major (2016, pp. 25-26):
+
+- **"Educative assessment** is a term developed by Grant Wiggins to describe a process in which assessment is designed to help improve student performance rather than just “audit” it. While LATs can be used for both purposes, we strive to emphasize the educative aspect because our primary purpose in LATs is to improve learning.
+- **Embedded assessment** occurs within the class as an assignment linked to learning outcomes, thus achieving both grading and assessment purposes. All LATs are embedded assessments.
+- **Authentic assessment** simulates a real-world experience by evaluating ability to apply knowledge or perform tasks under conditions that approximate those found outside of the classroom. Wherever possible, we have attempted to create LATs that reflect the principles of authentic assessment."
+
 
 #### Choosing assessment approaches
 
-- **List of options w/ pros & cons:** "Assessment tools"
-- **Details for implementing rubrics, self-assessments, etc.:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Implementing a learning assessment technique. _Learning assessment techniques: A handbook for college faculty._
+Barkley and Major (2016) organize "learning assessment techniques" (LATs) by **type of class** _(traditional, online, collaborative, flipped)_ and **type of learning goal** _\(foundational knowledge, applied knowledge, integration of knowledge, caring, human dimension,_ and _learning how to learn,_ per the [Learning Goals Inventory\)](https://www.aacu.org/sites/default/files/files/gened16/AlabamaLearningGoals.pdf).
 
 
+#### Creating assessment instruments
+
+##### Rubrics
+
+Rubrics are nxm matrices where, for n **criteria,** m **standards** of performance are described.
+
+##### Self-evaluation forms
+
+##### Peer evaluation forms
+
+
+#### Administering assessments
+
+Barkley and Major (2016, pp. 47-48) synthezise from Johnson, Johnson, and Smith (1998), University of Waterloo (n.d.), Johnson and Johnson (1984), and Silberman (1996):
+
+- **"Explain the activity.** Provide students with a basic overview so that students see “the big picture.”
+- **Clarify the objectives.** Tell students the purpose of the activity so that they can see its benefit. For example, relate the task to larger class goals or prior knowledge or suggest new concepts that will be addressed.
+- **Outline the procedures.** Describe exactly what students are going to do in a step-by-step format in order to minimize or eliminate confusion during the activity itself.
+- **Present examples if needed.** Provide a concrete example that illustrates the process or shows a model final product so that students get a clearer idea of what they need to do.
+- **Set time limits.** Establish a time limit so that students can pace themselves. If the estimate is on the low side, students may work quickly and ef fi ciently, and the time limit can always be extended if needed.
+- **Provide the prompt.** Most often, prompts will come in the form of questions or problems, but they may also include short topics or statements for exploration or debate. It may be appropriate to include the prompt with the activity introduction.
+- **Provide necessary materials, including handouts.** When implementing a LAT, you may want to provide materials such as directions, prompts, evaluation rubrics, worksheets, and so forth in a written handout to be distributed or posted online. Thus, depending upon the LAT, you may want to create materials that are given to students prior to beginning the activity. In each LAT, we provide suggestions for the kinds of materials you will want to create ahead of time. These vary depending on the particular LAT you are employing. Materials may include information about the assignment, such as a handout with information about the length and time frame. They may also include work materials for students such as fl ip chart paper and markers. Successful implementation of a LAT depends upon advance planning and material gathering.
+- **Query the students for understanding and let students ask questions.** Asking students whether they have questions before they begin the activity will provide an opportunity to clarify any aspects of the activity that may still be confusing.
+- **Be available to clarify instruction, review procedures, and answer questions about the assignment.** Students may believe they understand the assignments and instructions but encounter confusion or change their minds when they begin work. Clarifying these points for students early on saves students wasting time or struggling with the wrong assignment.
+- **Paraphrase or ask a question to clarify what a student has said.** Students sometimes state ideas in a way that confuses you and potentially other students. Paraphrasing what the student has contributed provides an opportunity for clarification and can be reinforcing for the student by demonstrating that his or her idea has been transmitted and understood and helping make it clearer for other students.
+- **Compliment the student on an interesting or insightful comment.** Students need reinforcement, and complimenting a student can be a powerful motivator.
+- **Elaborate on a student’s statement or suggest a new perspective.** Stopping to share with the group a new perspective on an idea can help the students delve into deeper levels of thinking about a topic.
+- **Energize by using humor or by asking for additional contributions.** This approach can be particularly helpful when students are struggling with complex material and have become frustrated. It can help students put things into perspective, and make class fun. However, humor can be more challenging to convey through some mediums, such as in online courses.
+- **Disagree with a student comment, but be gentle.** Instructors are sometimes hesitant to correct students for fear of stifling their creativity and causing students to be more reluctant to speak the next time, but if you overhear misinformation, it is important to correct it. If done gently and tactfully, students will appreciate that they got the correct response. It is also important for them to recognize that there is a difference of opinion or another side to the issue. Pointed questions are also a good way to redirect the conversation.
+- **If appropriate, pull together ideas by pointing out relationships.** Students do not have the same familiarity with the course concepts that instructors do. If students are struggling with making connections between ideas and information, remind them how the task they’re performing relates to something they studied previously or to something current in the news."
 
 
 

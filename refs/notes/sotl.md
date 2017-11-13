@@ -363,31 +363,7 @@ From Booth, 2014, p. 116:
 
 ### Assessment
 
-
-#### What is assessment for?
-
-Diamond (2008, p. 128) quotes Theodore Marchese on the proper role of assessment:
-
-**"Assessment per se guarantees nothing by way of improvement, no more than a thermometer cures a fever. Only when used in combination with good instruction (that evokes involvement in coherent curricula, etc.) in a program of improvement, can the device strengthen education.**
-
-See Torrance (2007) for some additional caution regarding assessment.
-
-##### How is assessment different from grading?
-
-Barkley and Major (2016) recreate the following table from Suskie (2009):
-
-| Grades ... | Assessment ... |
-| --- | --- |
-| Focuses on an individual student | Focuses on a cohort of students |
-| Are letters that are indirect, symbolic representations of accomplishment | Attempts to pinpoint more precisely what was learned |
-| May reflect class management goals related to student behavior that are separate from learning, such as attendance, participation, and on-time submission of assignments | Emphasizes only achievement of specific learning goals |
-| May be the result of vague or inconsistent standards | Aims for exactness |
-| Reflect student performance in individual courses or course assignments | May measure learning from ungraded co-curricular activities or look for skill development beyond course content, such as critical thinking |
-
-**Embedded assessment** tries to perform the functions of grades and assessments simultaneously.
-
-
-#### Who is assessment for?
+#### Who and what is assessment for?
 
 Per Barkley and Major (2016), assessment has the following audiences (quoted directly from section headers):
 
@@ -403,6 +379,19 @@ Per Barkley and Major (2016), assessment has the following audiences (quoted dir
     - For program reviews, whether internal or external
     - To institutional assessment efforts and accrediting agencies
 
+##### How is assessment different from grading?
+
+Barkley and Major (2016) recreate the following table from Suskie (2009):
+
+| Grades ... | Assessment ... |
+| --- | --- |
+| Focuses on an individual student | Focuses on a cohort of students |
+| Are letters that are indirect, symbolic representations of accomplishment | Attempts to pinpoint more precisely what was learned |
+| May reflect class management goals related to student behavior that are separate from learning, such as attendance, participation, and on-time submission of assignments | Emphasizes only achievement of specific learning goals |
+| May be the result of vague or inconsistent standards | Aims for exactness |
+| Reflect student performance in individual courses or course assignments | May measure learning from ungraded co-curricular activities or look for skill development beyond course content, such as critical thinking |
+
+**Embedded assessment** tries to perform the functions of grades and assessments simultaneously.
 
 
 #### Qualities of good assessment
@@ -423,6 +412,15 @@ Per James McMillan as cited in Booth (2014, p. 138), good assessments have the f
 - **Alignment:** Assessment methods should align with the skill levels and competencies of learners. \[NB: this is not the typical sense of [alignment](#alignment) in education]
 - **Practicality/Efficiency:** Assessment methods should be time efficient and practical to the situation."
 
+##### How can assessment go awry?
+
+Diamond (2008, p. 128) quotes Theodore Marchese on the proper role of assessment:
+
+**"Assessment per se guarantees nothing by way of improvement, no more than a thermometer cures a fever. Only when used in combination with good instruction (that evokes involvement in coherent curricula, etc.) in a program of improvement, can the device strengthen education.**
+
+See Torrance (2007) for some additional caution regarding assessment.
+
+
 
 #### Assessment types by effort and source of opinion
 
@@ -441,7 +439,11 @@ Per Booth (2014, p. 140), pre-assessment is "conducted before instruction to est
 
 ##### Formative assessment
 
-Per Booth (2014, p. 140), formative assessment "evaluates materials during design and gives insight into the quality and character of an in-progress interaction". Formative assessment is meant to be real-time and to provide learners and instructors with actionable information about the learners' present state of understanding.
+Per Booth (2014, p. 140), formative assessment "evaluates materials during design and gives insight into the quality and character of an in-progress interaction". Formative assessment is meant to be real-time and to provide learners and instructors with actionable information about the learners' present state of understanding. Frey and Fisher (2011) recommend Hattie and Timperley's (2007) formative feedback system with the following stages:
+
+- **Feed-up:** Where am I going?
+- **Feedback:** How am I doing?
+- **Feed-foward:** Where am I going next?
 
 Booth (2014, p. 141) quotes the following formative assessment strategies from Tomas Angelo and Patrician Cross's _Classroom assessment techniques:_
 
@@ -454,8 +456,6 @@ Booth (2014, p. 141) quotes the following formative assessment strategies from T
 - **Course-Related Self-Confidence Surveys.** At the beginning of an interaction ask learners to rate their level of confidence or expertise in the skills or topics you will be covering in class. Review these and make adjustments in skill levels that may be above or below what you anticipated."
 
 Booth (2014) also mentions her colleague Pat Maughan's technique of distributing index cards at the beginning of a workshop, asking for the first three word that came to mind when thinking of X, then repeating the exercise at the end of the workshop and comparing wordcloud representations of the two datasets.
-
-Frey, Nancy, and Douglas Fisher. (2011). Creating a formative assessment system.
 
 ##### Summative assessment
 
@@ -607,7 +607,6 @@ Booth (2011, p. 95) calls her USER method a "streamlined version of ADDIE" that 
 
 <img src="../illos/USER-ID-method.png" width="400px">
 
-Source: Booth, 2014, p. 19.
 
 #### Understand
 
@@ -762,6 +761,8 @@ Per Reeves (2011, pp. 180-181):
     - Working with new content to make sense of it and connect it to prior knowledge
     - Application or practice that may double as formative assessment, with varying degrees of teacher guidance and monitoring
 - Differentiation plans for individual students who need it
+    - \["we can differentiate along the lines of content, process, and product" according to Tomlinson, 2001, cited by Frey and Fisher, 2011\]
+    - \[also from Frey and Fisher, 2011, p. 126: length of task, cognitive nature of task e.g. Bloom's, input and output routes\]
 - Closure that will prompt students to reflect on the content of the lesson and connect it to their own personal knowledge base and to other parts of the curriculum. The topical, guiding, or essential questions are often addressed in closure.
 - Homework assignment
 - Materials or preparation required
@@ -803,6 +804,24 @@ Finally, "[w]rite a sequence of lesson steps that builds a process of learning" 
 | Aim of lesson step | Describe what will happen in each lesson step |
 | --- | --- |
 | ... | ... |
+
+### Gradual release of responsibility framework
+
+From Frey and Fisher (2011, p. 121), this framework is based on:
+
+- "Jean Piaget’s work on cognitive structures and schema (1952).
+- Lev Vygotsky’s work on zones of proximal development (1962, 1978).
+- Albert Bandura’s work on attention, retention, reproduction, and motivation (1965).
+- David Wood, Jerome Bruner, and Gail Ross’s work on scaffolded instruction (1976).
+
+The framework includes the following stages of instruction:
+
+- Focus the lesson
+    - Establish purpose
+    - Teacher modeling
+- Guided instruction
+- Productive group work
+- Independent tasks
 
 ### CRISPA
 
@@ -1085,6 +1104,8 @@ Eberly Center for Teaching Excellence & Educational Innovation (EC). (2015). Lea
 Eisner, E. (2004). Multiple intelligences: Its tensions and possibilities. _Teachers College Record,_ 106(1), 31-39.
 
 Freire, P. (2009). _Pedagogy of the oppressed_ (30th anniversary ed.). New York City, NY: Continuum.
+
+Frey, N., & Fisher, D. (2011). _Formative assessment action plan: Practical steps to more successful teaching and learning._ Alexandria, VA: ASCD.
 
 Gardner, H. & Hatch, T. (1989). Multiple intelligences go to school: Educational implications of the theory of multiple intelligences. _Educational Researcher,_ 18(8).
 

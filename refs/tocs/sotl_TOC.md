@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 10366 words | updated 11/13/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 10544 words | updated 11/13/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 		- &nbsp;1.1.1. [Types of classrooms](#types-of-classrooms)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
@@ -35,23 +35,23 @@
 			- &nbsp;2.2.3.2. [Activities](#activities)
 				- &nbsp;2.2.3.2.1. [Stop and think](#stop-and-think)
 		- &nbsp;2.2.4. [Assessment](#assessment)
-			- &nbsp;2.2.4.1. [What is assessment for?](#what-is-assessment-for)
+			- &nbsp;2.2.4.1. [Who and what is assessment for?](#who-and-what-is-assessment-for)
 				- &nbsp;2.2.4.1.1. [How is assessment different from grading?](#how-is-assessment-different-from-grading)
-			- &nbsp;2.2.4.2. [Who is assessment for?](#who-is-assessment-for)
-			- &nbsp;2.2.4.3. [Qualities of good assessment](#qualities-of-good-assessment)
-			- &nbsp;2.2.4.4. [Assessment types by effort and source of opinion](#assessment-types-by-effort-and-source-of-opinion)
-			- &nbsp;2.2.4.5. [Assessment types with respect to chronology of learning](#assessment-types-with-respect-to-chronology-of-learning)
-				- &nbsp;2.2.4.5.1. [Pre-assessment](#pre-assessment)
-				- &nbsp;2.2.4.5.2. [Formative assessment](#formative-assessment)
-				- &nbsp;2.2.4.5.3. [Summative assessment](#summative-assessment)
-				- &nbsp;2.2.4.5.4. [Confirmative assessment](#confirmative-assessment)
-			- &nbsp;2.2.4.6. [Other assessment types](#other-assessment-types)
-			- &nbsp;2.2.4.7. [Choosing assessment approaches](#choosing-assessment-approaches)
-			- &nbsp;2.2.4.8. [Creating assessment instruments](#creating-assessment-instruments)
-				- &nbsp;2.2.4.8.1. [Rubrics](#rubrics)
-				- &nbsp;2.2.4.8.2. [Self-evaluation forms](#self-evaluation-forms)
-				- &nbsp;2.2.4.8.3. [Peer evaluation forms](#peer-evaluation-forms)
-			- &nbsp;2.2.4.9. [Administering assessments](#administering-assessments)
+			- &nbsp;2.2.4.2. [Qualities of good assessment](#qualities-of-good-assessment)
+				- &nbsp;2.2.4.2.1. [How can assessment go awry?](#how-can-assessment-go-awry)
+			- &nbsp;2.2.4.3. [Assessment types by effort and source of opinion](#assessment-types-by-effort-and-source-of-opinion)
+			- &nbsp;2.2.4.4. [Assessment types with respect to chronology of learning](#assessment-types-with-respect-to-chronology-of-learning)
+				- &nbsp;2.2.4.4.1. [Pre-assessment](#pre-assessment)
+				- &nbsp;2.2.4.4.2. [Formative assessment](#formative-assessment)
+				- &nbsp;2.2.4.4.3. [Summative assessment](#summative-assessment)
+				- &nbsp;2.2.4.4.4. [Confirmative assessment](#confirmative-assessment)
+			- &nbsp;2.2.4.5. [Other assessment types](#other-assessment-types)
+			- &nbsp;2.2.4.6. [Choosing assessment approaches](#choosing-assessment-approaches)
+			- &nbsp;2.2.4.7. [Creating assessment instruments](#creating-assessment-instruments)
+				- &nbsp;2.2.4.7.1. [Rubrics](#rubrics)
+				- &nbsp;2.2.4.7.2. [Self-evaluation forms](#self-evaluation-forms)
+				- &nbsp;2.2.4.7.3. [Peer evaluation forms](#peer-evaluation-forms)
+			- &nbsp;2.2.4.8. [Administering assessments](#administering-assessments)
 		- &nbsp;2.2.5. [Buzzwords, schools and movements](#buzzwords-schools-and-movements)
 			- &nbsp;2.2.5.1. [Connectivism](#connectivism)
 			- &nbsp;2.2.5.2. [Active learning](#active-learning)
@@ -83,7 +83,8 @@
 		- &nbsp;3.2.4. [Reeves' lesson plan elements](#reeves-lesson-plan-elements)
 		- &nbsp;3.2.5. [Universal Design for Learning](#universal-design-for-learning)
 		- &nbsp;3.2.6. [Rusznyak and Walton's lesson planning guidelines](#rusznyak-and-waltons-lesson-planning-guidelines)
-		- &nbsp;3.2.7. [CRISPA](#crispa)
+		- &nbsp;3.2.7. [Gradual release of responsibility framework](#gradual-release-of-responsibility-framework)
+		- &nbsp;3.2.8. [CRISPA](#crispa)
 	- &nbsp;3.3. [Learning objects](#learning-objects)
 		- &nbsp;3.3.1. [Instructional messages](#instructional-messages)
 		- &nbsp;3.3.2. [Visual design of learning objects](#visual-design-of-learning-objects)
@@ -475,14 +476,21 @@ From Booth, 2014, p. 116:
 
 ### 2.2.4. Assessment
 
+#### 2.2.4.1. Who and what is assessment for?
 
-#### 2.2.4.1. What is assessment for?
+Per Barkley and Major (2016), assessment has the following audiences (quoted directly from section headers):
 
-Diamond (2008, p. 128) quotes Theodore Marchese on the proper role of assessment:
-
-**"Assessment per se guarantees nothing by way of improvement, no more than a thermometer cures a fever. Only when used in combination with good instruction (that evokes involvement in coherent curricula, etc.) in a program of improvement, can the device strengthen education.**
-
-See Torrance (2007) for some additional caution regarding assessment.
+- Assessing Students to Determine for Ourselves How Well Students Are Learning
+    - To discover the current status of student knowledge and understanding
+    - To solve a problem in our teaching
+    - To determine whether we need to change direction in our teaching
+    - To find out how students are experiencing learning in our classrooms
+- Assessing to Give Learners Feedback on Their Progress
+- Assessing to Improve Our Profession through the Scholarship of Teaching and Learning (SoTL)
+- Assessing to Provide Information to Institutional and External Stakeholders on How Well Students Are Learning
+    - As part of our professional dossiers
+    - For program reviews, whether internal or external
+    - To institutional assessment efforts and accrediting agencies
 
 ##### 2.2.4.1.1. How is assessment different from grading?
 
@@ -499,25 +507,7 @@ Barkley and Major (2016) recreate the following table from Suskie (2009):
 **Embedded assessment** tries to perform the functions of grades and assessments simultaneously.
 
 
-#### 2.2.4.2. Who is assessment for?
-
-Per Barkley and Major (2016), assessment has the following audiences (quoted directly from section headers):
-
-- Assessing Students to Determine for Ourselves How Well Students Are Learning
-    - To discover the current status of student knowledge and understanding
-    - To solve a problem in our teaching
-    - To determine whether we need to change direction in our teaching
-    - To find out how students are experiencing learning in our classrooms
-- Assessing to Give Learners Feedback on Their Progress
-- Assessing to Improve Our Profession through the Scholarship of Teaching and Learning (SoTL)
-- Assessing to Provide Information to Institutional and External Stakeholders on How Well Students Are Learning
-    - As part of our professional dossiers
-    - For program reviews, whether internal or external
-    - To institutional assessment efforts and accrediting agencies
-
-
-
-#### 2.2.4.3. Qualities of good assessment
+#### 2.2.4.2. Qualities of good assessment
 
 Booth (2014, pp. 137-138) says that good assessment is:
 
@@ -535,8 +525,17 @@ Per James McMillan as cited in Booth (2014, p. 138), good assessments have the f
 - **Alignment:** Assessment methods should align with the skill levels and competencies of learners. \[NB: this is not the typical sense of [alignment](#alignment) in education]
 - **Practicality/Efficiency:** Assessment methods should be time efficient and practical to the situation."
 
+##### 2.2.4.2.1. How can assessment go awry?
 
-#### 2.2.4.4. Assessment types by effort and source of opinion
+Diamond (2008, p. 128) quotes Theodore Marchese on the proper role of assessment:
+
+**"Assessment per se guarantees nothing by way of improvement, no more than a thermometer cures a fever. Only when used in combination with good instruction (that evokes involvement in coherent curricula, etc.) in a program of improvement, can the device strengthen education.**
+
+See Torrance (2007) for some additional caution regarding assessment.
+
+
+
+#### 2.2.4.3. Assessment types by effort and source of opinion
 
 Per James McMillan as cited and extended by Booth (2014, p. 138), assessments may be:
 
@@ -545,15 +544,19 @@ Per James McMillan as cited and extended by Booth (2014, p. 138), assessments ma
 | "Formal and informal methods of observing student progress during a learning interaction. Also, information gathered from a requesting instructor (e.g., assessment of on-task behavior, observation of nonverbal communication)" | "Assessment instruments that present learners with two or more options from which to choose (e.g., multiple choice surveys, Likert scale questionnaires, matching quizzes, classroom response system polls)" | "Evaluation techniques that require students to create their own response to a given task or scenario (e.g., short-answer essay, one-minute paper, informal questioning, think-aloud exercises)" | "Metacognitive or reflective evaluations conducted by students (e.g., one-minute paper, attitude survey, self-reflection, peer evaluation)" | Collaborative, collective, social or peer assessments "... made possible by tools like Facebook, Twitter, and Flickr" |
 
 
-#### 2.2.4.5. Assessment types with respect to chronology of learning
+#### 2.2.4.4. Assessment types with respect to chronology of learning
 
-##### 2.2.4.5.1. Pre-assessment
+##### 2.2.4.4.1. Pre-assessment
 
 Per Booth (2014, p. 140), pre-assessment is "conducted before instruction to establish prior knowledge and analyze the scenario".
 
-##### 2.2.4.5.2. Formative assessment
+##### 2.2.4.4.2. Formative assessment
 
-Per Booth (2014, p. 140), formative assessment "evaluates materials during design and gives insight into the quality and character of an in-progress interaction". Formative assessment is meant to be real-time and to provide learners and instructors with actionable information about the learners' present state of understanding.
+Per Booth (2014, p. 140), formative assessment "evaluates materials during design and gives insight into the quality and character of an in-progress interaction". Formative assessment is meant to be real-time and to provide learners and instructors with actionable information about the learners' present state of understanding. Frey and Fisher (2011) recommend Hattie and Timperley's (2007) formative feedback system with the following stages:
+
+- **Feed-up:** Where am I going?
+- **Feedback:** How am I doing?
+- **Feed-foward:** Where am I going next?
 
 Booth (2014, p. 141) quotes the following formative assessment strategies from Tomas Angelo and Patrician Cross's _Classroom assessment techniques:_
 
@@ -567,17 +570,15 @@ Booth (2014, p. 141) quotes the following formative assessment strategies from T
 
 Booth (2014) also mentions her colleague Pat Maughan's technique of distributing index cards at the beginning of a workshop, asking for the first three word that came to mind when thinking of X, then repeating the exercise at the end of the workshop and comparing wordcloud representations of the two datasets.
 
-Frey, Nancy, and Douglas Fisher. (2011). Creating a formative assessment system.
-
-##### 2.2.4.5.3. Summative assessment
+##### 2.2.4.4.3. Summative assessment
 
 Per Booth (2014, p. 140), summative assessment (AKA 'post-instructional assessment') "occurs at the conclusion of an interaction and judges its overall effectiveness". See [Understand](#understand) for methods that are useful for summative assessment as well as user research.
 
-##### 2.2.4.5.4. Confirmative assessment
+##### 2.2.4.4.4. Confirmative assessment
 
 Per Booth (2014, p. 140), confirmative assessment "occurs well after an interaction and tracks retention and recall of actionable knowledge in authentic settings." While formative and summative assessments focus on learning objectives, confirmative assessment focuses on [objectives and goals,](#targets) the higher-level targets a training seeks to fulfill.
 
-#### 2.2.4.6. Other assessment types
+#### 2.2.4.5. Other assessment types
 
 Per Barkley and Major (2016, pp. 25-26):
 
@@ -586,23 +587,23 @@ Per Barkley and Major (2016, pp. 25-26):
 - **Authentic assessment** simulates a real-world experience by evaluating ability to apply knowledge or perform tasks under conditions that approximate those found outside of the classroom. Wherever possible, we have attempted to create LATs that reflect the principles of authentic assessment."
 
 
-#### 2.2.4.7. Choosing assessment approaches
+#### 2.2.4.6. Choosing assessment approaches
 
 Barkley and Major (2016) organize "learning assessment techniques" (LATs) by **type of class** _(traditional, online, collaborative, flipped)_ and **type of learning goal** _\(foundational knowledge, applied knowledge, integration of knowledge, caring, human dimension,_ and _learning how to learn,_ per the [Learning Goals Inventory\)](https://www.aacu.org/sites/default/files/files/gened16/AlabamaLearningGoals.pdf).
 
 
-#### 2.2.4.8. Creating assessment instruments
+#### 2.2.4.7. Creating assessment instruments
 
-##### 2.2.4.8.1. Rubrics
+##### 2.2.4.7.1. Rubrics
 
 Rubrics are nxm matrices where, for n **criteria,** m **standards** of performance are described.
 
-##### 2.2.4.8.2. Self-evaluation forms
+##### 2.2.4.7.2. Self-evaluation forms
 
-##### 2.2.4.8.3. Peer evaluation forms
+##### 2.2.4.7.3. Peer evaluation forms
 
 
-#### 2.2.4.9. Administering assessments
+#### 2.2.4.8. Administering assessments
 
 Barkley and Major (2016, pp. 47-48) synthezise from Johnson, Johnson, and Smith (1998), University of Waterloo (n.d.), Johnson and Johnson (1984), and Silberman (1996):
 
@@ -719,7 +720,6 @@ Booth (2011, p. 95) calls her USER method a "streamlined version of ADDIE" that 
 
 <img src="../illos/USER-ID-method.png" width="400px">
 
-Source: Booth, 2014, p. 19.
 
 #### 3.1.3.1. Understand
 
@@ -874,6 +874,8 @@ Per Reeves (2011, pp. 180-181):
     - Working with new content to make sense of it and connect it to prior knowledge
     - Application or practice that may double as formative assessment, with varying degrees of teacher guidance and monitoring
 - Differentiation plans for individual students who need it
+    - \["we can differentiate along the lines of content, process, and product" according to Tomlinson, 2001, cited by Frey and Fisher, 2011\]
+    - \[also from Frey and Fisher, 2011, p. 126: length of task, cognitive nature of task e.g. Bloom's, input and output routes\]
 - Closure that will prompt students to reflect on the content of the lesson and connect it to their own personal knowledge base and to other parts of the curriculum. The topical, guiding, or essential questions are often addressed in closure.
 - Homework assignment
 - Materials or preparation required
@@ -916,7 +918,25 @@ Finally, "[w]rite a sequence of lesson steps that builds a process of learning" 
 | --- | --- |
 | ... | ... |
 
-### 3.2.7. CRISPA
+### 3.2.7. Gradual release of responsibility framework
+
+From Frey and Fisher (2011, p. 121), this framework is based on:
+
+- "Jean Piaget’s work on cognitive structures and schema (1952).
+- Lev Vygotsky’s work on zones of proximal development (1962, 1978).
+- Albert Bandura’s work on attention, retention, reproduction, and motivation (1965).
+- David Wood, Jerome Bruner, and Gail Ross’s work on scaffolded instruction (1976).
+
+The framework includes the following stages of instruction:
+
+- Focus the lesson
+    - Establish purpose
+    - Teacher modeling
+- Guided instruction
+- Productive group work
+- Independent tasks
+
+### 3.2.8. CRISPA
 
 Per Uhrmacher et al. (2013, p. 18), CRISPA is a form of perceptual lesson planning that "does not designate the specific order of the lesson, nor are all six elements required for each lesson plan. In a sense, CRISPA elements are like colors on an artist’s palette: available for use when and if they would complement the whole picture":
 
@@ -1197,6 +1217,8 @@ Eberly Center for Teaching Excellence & Educational Innovation (EC). (2015). Lea
 Eisner, E. (2004). Multiple intelligences: Its tensions and possibilities. _Teachers College Record,_ 106(1), 31-39.
 
 Freire, P. (2009). _Pedagogy of the oppressed_ (30th anniversary ed.). New York City, NY: Continuum.
+
+Frey, N., & Fisher, D. (2011). _Formative assessment action plan: Practical steps to more successful teaching and learning._ Alexandria, VA: ASCD.
 
 Gardner, H. & Hatch, T. (1989). Multiple intelligences go to school: Educational implications of the theory of multiple intelligences. _Educational Researcher,_ 18(8).
 

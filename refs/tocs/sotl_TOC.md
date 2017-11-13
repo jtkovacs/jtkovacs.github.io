@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 9136 words | updated 11/13/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 9335 words | updated 11/13/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
 - &nbsp;2. [Educational theory](#educational-theory)
@@ -35,6 +35,7 @@
 				- &nbsp;2.2.3.2.1. [Stop and think](#stop-and-think)
 		- &nbsp;2.2.4. [Assessment](#assessment)
 			- &nbsp;2.2.4.1. [What is assessment for?](#what-is-assessment-for)
+				- &nbsp;2.2.4.1.1. [How is assessment different from grading?](#how-is-assessment-different-from-grading)
 			- &nbsp;2.2.4.2. [Who is assessment for?](#who-is-assessment-for)
 			- &nbsp;2.2.4.3. [Qualities of good assessment](#qualities-of-good-assessment)
 			- &nbsp;2.2.4.4. [Assessments by effort and source of opinion](#assessments-by-effort-and-source-of-opinion)
@@ -467,10 +468,29 @@ Diamond (2008, p. 128) quotes Theodore Marchese on the proper role of assessment
 
 See Torrance (2007) for some additional caution regarding assessment.
 
+##### 2.2.4.1.1. How is assessment different from grading?
+
+Barkley and Major (2016) recreate the following table from Suskie (2009):
+
+| Grades ... | Assessment ... |
+| --- | --- |
+| Focuses on an individual student | Focuses on a cohort of students |
+| Are letters that are indirect, symbolic representations of accomplishment | Attempts to pinpoint more precisely what was learned |
+| May reflect class management goals related to student behavior that are separate from learning, such as attendance, participation, and on-time submission of assignments | Emphasizes only achievement of specific learning goals |
+| May be the result of vague or inconsistent standards | Aims for exactness |
+| Reflect student performance in individual courses or course assignments | May measure learning from ungraded co-curricular activities or look for skill development beyond course content, such as critical thinking |
+
+
 
 #### 2.2.4.2. Who is assessment for?
 
-- **Different reasons for assessing:** Barkley, Elizabeth F., Barkley, Elizabeth F, & Major, Claire Howell. (2016). Determining your purpose for assessing student learning. _Learning assessment techniques: A handbook for college faculty._
+Per Barkley and Major (2016), assessment has the following audiences:
+
+- Assessing Students to Determine for Ourselves How Well Students Are Learning
+- Assessing to Give Learners Feedback on Their Progress
+- Assessing to Improve Our Profession through the Scholarship of Teaching and Learning (SoTL)
+- Assessing to Provide Information to Institutional and External Stakeholders on How Well Students Are Learning
+
 
 
 #### 2.2.4.3. Qualities of good assessment
@@ -498,7 +518,7 @@ Per James McMillan as cited and extended by Booth (2014, p. 138), assessments ma
 
 | Teacher observation (no effort) | Selected response | Constructed response | Student self-assessment (high effort) | Social/peer assessment |
 | --- | --- | --- | --- | --- | --- |
-| "Formal and informal methods of observing student progress during a learning interaction. Also, information gathered from a requesting instructor (e.g., assessment of on-task behavior, observation of nonverbal communication)" | "Assessment instruments that present learners with two or more options from which to choose (e.g., multiple choice surveys, Likert scale questionnaires, matching quizzes, classroom response system polls)" | "Evaluation techniques that require students to create their own response to a given task or scenario (e.g., short-answer essay, one-minute paper, informal questioning, think-aloud exercises)" | "Metacognitive or reflective evaluations conducted by students (e.g., one-minute paper, attitude survey, self-reflection, peer evaluation)" | "... made possible by tools like Facebook, Twitter, and Flickr" |
+| "Formal and informal methods of observing student progress during a learning interaction. Also, information gathered from a requesting instructor (e.g., assessment of on-task behavior, observation of nonverbal communication)" | "Assessment instruments that present learners with two or more options from which to choose (e.g., multiple choice surveys, Likert scale questionnaires, matching quizzes, classroom response system polls)" | "Evaluation techniques that require students to create their own response to a given task or scenario (e.g., short-answer essay, one-minute paper, informal questioning, think-aloud exercises)" | "Metacognitive or reflective evaluations conducted by students (e.g., one-minute paper, attitude survey, self-reflection, peer evaluation)" | Collaborative, collective, social or peer assessments "... made possible by tools like Facebook, Twitter, and Flickr" |
 
 
 #### 2.2.4.5. Assessments with respect to chronology of learning
@@ -1097,6 +1117,8 @@ Per Booth (2014):
 Allen Interactions. (2017). Agile eLearning development with SAM. Retrieved from [http://www.alleninteractions.com/sam-process](http://www.alleninteractions.com/sam-process)
 
 Alonso, F., Lopez, G., Manrique, D., & Vines, J. M. (2008). Learning objects, learning objectives and learning design. _Innovations in Education and Teaching International,_ 45(4), 389-400.
+
+Barkley, E. F., & Major, C. H. (2016). _Learning assessment techniques: A handbook for college faculty._ San Francisco, CA: Jossey-Bass.
 
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
 

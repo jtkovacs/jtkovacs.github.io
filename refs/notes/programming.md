@@ -273,25 +273,26 @@ Per Beck (2017):
 
 Address:
 
-- Need for technology
+- Need for technology (categorical; criteria)
 - How it works
 - Why it would be useful
 - Drawbacks
 
 Questions:
 
-- dependencies?
-- maintenance?
-- maintenance of dependencies?
-- open source
-- support
+- Maintenance?
+- Dependencies?
+    - ... maintenance of dependencies?
+- Open source?
+- Support?
 
 Research strategies:
 
-- check StackOverflow questions for activity
-- check GitHub repositories
-    - no bugs (issues) means no users
-    - no closed issues means no support
+- Check StackOverflow questions for activity and types of questions people are struggling with (basic functionality?)
+- Check GitHub repositories
+    - Check number of bugs (issues): none means no users, many means poor code
+    - Check nature of bugs--related to core functionality or edge cases?
+    - Check response to issues; no closed issues means no support
 
 
 

@@ -1,6 +1,7 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 2856 words | updated 10/12/2017</p><div class="TOC">- &nbsp;1. [Personal ...](#personal-...)
-	- &nbsp;1.1. [.. information management](#..-information-management)
-	- &nbsp;1.2. [.. knowledge management](#..-knowledge-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3125 words | updated 11/20/2017</p><div class="TOC">- &nbsp;1. [Personal ...](#personal-...)
+	- &nbsp;1.1. [.. information literacy](#..-information-literacy)
+	- &nbsp;1.2. [.. information management](#..-information-management)
+	- &nbsp;1.3. [.. knowledge management](#..-knowledge-management)
 - &nbsp;2. [Staying informed](#staying-informed)
 - &nbsp;3. [PIM tools](#pim-tools)
 	- &nbsp;3.1. [Content management](#content-management)
@@ -47,7 +48,19 @@
 
 Per Wikipedia (n.d. a), 'personal' information is owned by, about, directed toward, created by, experienced by or relevant to 'me'.
 
-## 1.1. .. information management
+## 1.1. .. information literacy
+
+Definition:
+
+- “Information literacy is a set of competencies that an informed citizen of an information society ought to possess to participate intelligently and actively in that society” (AASL, 1998)
+- “To be information literate, a person must be able to recognize when information is needed and have the ability to locate, evaluate, and use effectively the needed information" (ALA, 1989)
+- “A new liberal art that extends from knowing how to use computers and access information to critical reflection on the nature of information itself, its technical infrastructure and its social, cultural and philosophical context and impact” (Shapiro and Hughes, 1996)
+
+Findings:
+
+- Weiner (2011) finds relationship and difference between the concepts of "information literacy" and "critical thinking" in his review of 8000+ articles in education, library sciences and health sciences, namely: critical thinking is more related to point-in-time consumption/interpretation of information while information literacy is more long-term and holistic. "A merging of the two ideas would involve [information literacy] providing tools and techniques in the processing and utilisation of knowledge and [critical thinking] supplying the particulars and interpretations associated with a specific discipline" (p. 81).
+
+## 1.2. .. information management
 
 Detlor (2010) differentiates personal information management from organizational information management and library sciences.
 
@@ -66,7 +79,7 @@ Per Wikipedia (n.d. a):
         - Using information
 - PIM is related to: cognitive psychology, cognitive science, HCI, group information management (GIM), computer-supported cooperative work (CSCW)/collaboration software, organizational information management (IM), organizational knowledge management (KM), time management/task management, personal network management
 
-## 1.2. .. knowledge management
+## 1.3. .. knowledge management
 
 Per Wikipedia (n.d. d):
 
@@ -355,9 +368,15 @@ In case of harrassment, know who your allies are: some lawyers with an interest 
 
 ## 6.1. Cited
 
+American Association of School Librarians (AASL) & Association for Educational Communications and Technology. (1998). Information literacy standards for student learning. Retrieved from [http://www.ala.org/ala//mgrps/divs/aasl/aaslarchive/pubsarchive/informationpower/InformationLiteracyStandards_final.pdf](http://www.ala.org/ala//mgrps/divs/aasl/aaslarchive/pubsarchive/informationpower/InformationLiteracyStandards_final.pdf)
+
+American Library Association (ALA). (1989). Presidential Committee on Information Literacy: Final report. Retrieved from [http://www.lita.org/ala/mgrps/divs/acrl/publications/whitepapers/presidential.cfm](http://www.lita.org/ala/mgrps/divs/acrl/publications/whitepapers/presidential.cfm)
+
 Booth, C. (2011). _Reflective Teaching, Effective Learning: Instructional Literacy for Library Educators._ Chicago, IL: American Library Association Editions.
 
 Detlor, B. (2010). Information management. _International Journal of Information Management._ [https://doi.org/10.1016/j.ijinfomgt.2009.12.001](https://doi.org/10.1016/j.ijinfomgt.2009.12.001)
+
+Shapiro J.J. & Hughes S.K. (1996). Information literacy as a liberal art. _Educom Review_ 31(2).
 
 Wikipedia. (n.d. a). Personal information management. Retrieved from [https://en.wikipedia.org/wiki/Personal_information_management](https://en.wikipedia.org/wiki/Personal_information_management)
 
@@ -366,6 +385,8 @@ Wikipedia. (n.d. b). Personal information manager. Retrieved from [https://en.wi
 Wikipedia. (n.d. c). Personal knowledge base. Retrieved from [https://en.wikipedia.org/wiki/Personal_knowledge_base](https://en.wikipedia.org/wiki/Personal_knowledge_base)
 
 Wikipedia. (n.d. d). Personal knowledge management. Retrieved from [https://en.wikipedia.org/wiki/Personal_knowledge_management](https://en.wikipedia.org/wiki/Personal_knowledge_management)
+
+Weiner, J. (2011). Is there a difference between critical thinking and information literacy? A systematic review 2000-2009. _Journal of information literacy,_ 5(2). pp. 81-92. [http://dx.doi.org/10.11645/5.2.1600](http://dx.doi.org/10.11645/5.2.1600)
 
 ## 6.2. References
 

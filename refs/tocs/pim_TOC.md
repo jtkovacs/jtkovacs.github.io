@@ -1,7 +1,8 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3125 words | updated 11/20/2017</p><div class="TOC">- &nbsp;1. [Personal ...](#personal-...)
-	- &nbsp;1.1. [.. information literacy](#..-information-literacy)
-	- &nbsp;1.2. [.. information management](#..-information-management)
-	- &nbsp;1.3. [.. knowledge management](#..-knowledge-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3151 words | updated 11/20/2017</p><div class="TOC">- &nbsp;1. [Personal information](#personal-information)
+	- &nbsp;1.1. [Information literacy](#information-literacy)
+		- &nbsp;1.1.1. [Evaluating sources and fake news](#evaluating-sources-and-fake-news)
+	- &nbsp;1.2. [Personal information management](#personal-information-management)
+	- &nbsp;1.3. [Personal knowledge management](#personal-knowledge-management)
 - &nbsp;2. [Staying informed](#staying-informed)
 - &nbsp;3. [PIM tools](#pim-tools)
 	- &nbsp;3.1. [Content management](#content-management)
@@ -44,11 +45,11 @@
 	- &nbsp;6.4. [Unread](#unread)
 </div>
 
-# 1. Personal ...
+# 1. Personal information
 
-Per Wikipedia (n.d. a), 'personal' information is owned by, about, directed toward, created by, experienced by or relevant to 'me'.
+Per Wikipedia (n.d. a), 'personal' information is owned by, about, directed toward, created by, experienced by or relevant to 'me'; and Detlor (2010) differentiates personal information management from organizational information management and library sciences.
 
-## 1.1. .. information literacy
+## 1.1. Information literacy
 
 Definition:
 
@@ -60,9 +61,10 @@ Findings:
 
 - Weiner (2011) finds relationship and difference between the concepts of "information literacy" and "critical thinking" in his review of 8000+ articles in education, library sciences and health sciences, namely: critical thinking is more related to point-in-time consumption/interpretation of information while information literacy is more long-term and holistic. "A merging of the two ideas would involve [information literacy] providing tools and techniques in the processing and utilisation of knowledge and [critical thinking] supplying the particulars and interpretations associated with a specific discipline" (p. 81).
 
-## 1.2. .. information management
+### 1.1.1. Evaluating sources and fake news
 
-Detlor (2010) differentiates personal information management from organizational information management and library sciences.
+
+## 1.2. Personal information management
 
 Per Wikipedia (n.d. a):
 
@@ -79,7 +81,7 @@ Per Wikipedia (n.d. a):
         - Using information
 - PIM is related to: cognitive psychology, cognitive science, HCI, group information management (GIM), computer-supported cooperative work (CSCW)/collaboration software, organizational information management (IM), organizational knowledge management (KM), time management/task management, personal network management
 
-## 1.3. .. knowledge management
+## 1.3. Personal knowledge management
 
 Per Wikipedia (n.d. d):
 
@@ -375,6 +377,8 @@ American Library Association (ALA). (1989). Presidential Committee on Informatio
 Booth, C. (2011). _Reflective Teaching, Effective Learning: Instructional Literacy for Library Educators._ Chicago, IL: American Library Association Editions.
 
 Detlor, B. (2010). Information management. _International Journal of Information Management._ [https://doi.org/10.1016/j.ijinfomgt.2009.12.001](https://doi.org/10.1016/j.ijinfomgt.2009.12.001)
+
+Fister, B. 2017. The warp and weft of information literacy: Changing contexts, enduring challenges. _Journal of Information Literacy,_ 11(1), pp.68-79.
 
 Shapiro J.J. & Hughes S.K. (1996). Information literacy as a liberal art. _Educom Review_ 31(2).
 

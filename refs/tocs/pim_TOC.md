@@ -1,67 +1,99 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3151 words | updated 11/20/2017</p><div class="TOC">- &nbsp;1. [Personal information](#personal-information)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3415 words | updated 11/20/2017</p><div class="TOC">- &nbsp;1. [Personal information](#personal-information)
 	- &nbsp;1.1. [Information literacy](#information-literacy)
-		- &nbsp;1.1.1. [Evaluating sources and fake news](#evaluating-sources-and-fake-news)
+		- &nbsp;1.1.1. [History](#history)
+		- &nbsp;1.1.2. [Definitions](#definitions)
+		- &nbsp;1.1.3. [Skills](#skills)
+			- &nbsp;1.1.3.1. [Staying informed](#staying-informed)
+			- &nbsp;1.1.3.2. [Evaluating sources and fake news](#evaluating-sources-and-fake-news)
 	- &nbsp;1.2. [Personal information management](#personal-information-management)
 	- &nbsp;1.3. [Personal knowledge management](#personal-knowledge-management)
-- &nbsp;2. [Staying informed](#staying-informed)
-- &nbsp;3. [PIM tools](#pim-tools)
-	- &nbsp;3.1. [Content management](#content-management)
-		- &nbsp;3.1.1. [Record-keeping](#record-keeping)
-			- &nbsp;3.1.1.1. [What is a personal knowledge base?](#what-is-a-personal-knowledge-base)
-			- &nbsp;3.1.1.2. [What is a wiki?](#what-is-a-wiki)
-	- &nbsp;3.2. [Time & task management](#time-task-management)
-	- &nbsp;3.3. [Communication](#communication)
-	- &nbsp;3.4. [Content discovery](#content-discovery)
-- &nbsp;4. [Browser performance](#browser-performance)
-- &nbsp;5. [Personal privacy & security](#personal-privacy-security)
-	- &nbsp;5.1. [What are different degrees of privacy?](#what-are-different-degrees-of-privacy)
-	- &nbsp;5.2. [Threat modeling](#threat-modeling)
-	- &nbsp;5.3. [Account security](#account-security)
-		- &nbsp;5.3.1. [Research the platforms and companies you use](#research-the-platforms-and-companies-you-use)
-		- &nbsp;5.3.2. [Protect login information](#protect-login-information)
-		- &nbsp;5.3.3. [Limit 3p access](#limit-3p-access)
-	- &nbsp;5.4. [Personal computer](#personal-computer)
-	- &nbsp;5.5. [Email & messaging](#email-messaging)
-		- &nbsp;5.5.1. [Risky emails](#risky-emails)
-		- &nbsp;5.5.2. [Email encryption](#email-encryption)
-		- &nbsp;5.5.3. [Instant messaging](#instant-messaging)
-	- &nbsp;5.6. [Browsing](#browsing)
-		- &nbsp;5.6.1. [Tor and/or VPN for privacy](#tor-andor-vpn-for-privacy)
-		- &nbsp;5.6.2. [Searching](#searching)
-		- &nbsp;5.6.3. [Purchasing online](#purchasing-online)
-		- &nbsp;5.6.4. [Apps for ads, malicious scripts, trackers, etc.](#apps-for-ads-malicious-scripts-trackers-etc.)
-	- &nbsp;5.7. [Mobile phone](#mobile-phone)
-		- &nbsp;5.7.1. [Discourage unauthorized access](#discourage-unauthorized-access)
-		- &nbsp;5.7.2. [Keep text messages, calls, and browsing private](#keep-text-messages-calls-and-browsing-private)
-		- &nbsp;5.7.3. [Phones as audio recorders and locators](#phones-as-audio-recorders-and-locators)
-		- &nbsp;5.7.4. [Phone scams and phishing](#phone-scams-and-phishing)
-	- &nbsp;5.8. [Harrassment](#harrassment)
-		- &nbsp;5.8.1. [Doxing](#doxing)
-		- &nbsp;5.8.2. [Social](#social)
-- &nbsp;6. [Sources](#sources)
-	- &nbsp;6.1. [Cited](#cited)
-	- &nbsp;6.2. [References](#references)
-	- &nbsp;6.3. [Read](#read)
-	- &nbsp;6.4. [Unread](#unread)
+- &nbsp;2. [PIM tools](#pim-tools)
+	- &nbsp;2.1. [Content management](#content-management)
+		- &nbsp;2.1.1. [Record-keeping](#record-keeping)
+			- &nbsp;2.1.1.1. [What is a personal knowledge base?](#what-is-a-personal-knowledge-base)
+			- &nbsp;2.1.1.2. [What is a wiki?](#what-is-a-wiki)
+	- &nbsp;2.2. [Time & task management](#time-task-management)
+	- &nbsp;2.3. [Communication](#communication)
+	- &nbsp;2.4. [Content discovery](#content-discovery)
+- &nbsp;3. [Browser performance](#browser-performance)
+- &nbsp;4. [Personal privacy & security](#personal-privacy-security)
+	- &nbsp;4.1. [What are different degrees of privacy?](#what-are-different-degrees-of-privacy)
+	- &nbsp;4.2. [Threat modeling](#threat-modeling)
+	- &nbsp;4.3. [Account security](#account-security)
+		- &nbsp;4.3.1. [Research the platforms and companies you use](#research-the-platforms-and-companies-you-use)
+		- &nbsp;4.3.2. [Protect login information](#protect-login-information)
+		- &nbsp;4.3.3. [Limit 3p access](#limit-3p-access)
+	- &nbsp;4.4. [Personal computer](#personal-computer)
+	- &nbsp;4.5. [Email & messaging](#email-messaging)
+		- &nbsp;4.5.1. [Risky emails](#risky-emails)
+		- &nbsp;4.5.2. [Email encryption](#email-encryption)
+		- &nbsp;4.5.3. [Instant messaging](#instant-messaging)
+	- &nbsp;4.6. [Browsing](#browsing)
+		- &nbsp;4.6.1. [Tor and/or VPN for privacy](#tor-andor-vpn-for-privacy)
+		- &nbsp;4.6.2. [Searching](#searching)
+		- &nbsp;4.6.3. [Purchasing online](#purchasing-online)
+		- &nbsp;4.6.4. [Apps for ads, malicious scripts, trackers, etc.](#apps-for-ads-malicious-scripts-trackers-etc.)
+	- &nbsp;4.7. [Mobile phone](#mobile-phone)
+		- &nbsp;4.7.1. [Discourage unauthorized access](#discourage-unauthorized-access)
+		- &nbsp;4.7.2. [Keep text messages, calls, and browsing private](#keep-text-messages-calls-and-browsing-private)
+		- &nbsp;4.7.3. [Phones as audio recorders and locators](#phones-as-audio-recorders-and-locators)
+		- &nbsp;4.7.4. [Phone scams and phishing](#phone-scams-and-phishing)
+	- &nbsp;4.8. [Harrassment](#harrassment)
+		- &nbsp;4.8.1. [Doxing](#doxing)
+		- &nbsp;4.8.2. [Social](#social)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [Cited](#cited)
+	- &nbsp;5.2. [References](#references)
+	- &nbsp;5.3. [Read](#read)
+	- &nbsp;5.4. [Unread](#unread)
 </div>
 
 # 1. Personal information
 
 Per Wikipedia (n.d. a), 'personal' information is owned by, about, directed toward, created by, experienced by or relevant to 'me'; and Detlor (2010) differentiates personal information management from organizational information management and library sciences.
 
+
+
 ## 1.1. Information literacy
 
-Definition:
+### 1.1.1. History
+
+Fister (2017, p. 68): "Not long ago, I was nonplussed when I came across a planning document from the early 1990s in which I had spelled out where I thought our instruction efforts needed to go. It was eerily identical to our current Things to Do list. It was dispiriting." Applying autoethnography to her years of work as a college librarian, she identifies three eras of IL:
+
+- **Bibliographic instruction:**
+- **Standardized IL:**
+- **Critical IL:**
+
+### 1.1.2. Definitions
 
 - “Information literacy is a set of competencies that an informed citizen of an information society ought to possess to participate intelligently and actively in that society” (AASL, 1998)
 - “To be information literate, a person must be able to recognize when information is needed and have the ability to locate, evaluate, and use effectively the needed information" (ALA, 1989)
 - “A new liberal art that extends from knowing how to use computers and access information to critical reflection on the nature of information itself, its technical infrastructure and its social, cultural and philosophical context and impact” (Shapiro and Hughes, 1996)
-
-Findings:
-
+- Fister (2017, pp. 68-69, emphases mine): "We have always wanted new students to feel comfortable and able to **navigate their library** [i.e., consume information resources] so that they can feel at home in the academic community. As Michelle Holschuh Simmons (2005) has put it, we can serve as disciplinary discourse mediators for students who migrate among different disciplines and do not always speak the language. This is important work, but it is not nearly enough. We also want students who are moving into their major fields of study to be able to **join the scholarly conversations** of their chosen discipline [i.e., contribute information; convert information to personal knowledge and skills]. By having significant research experiences, they can grasp the role of individuals in creating knowledge. At its best, this experience can provide them with a sense of personal agency and can help them find their own voice. Ultimately, with that identity and confidence established, we hope they can go out into the world when they graduate prepared to act on it as free human beings in a society that badly needs healing."
 - Weiner (2011) finds relationship and difference between the concepts of "information literacy" and "critical thinking" in his review of 8000+ articles in education, library sciences and health sciences, namely: critical thinking is more related to point-in-time consumption/interpretation of information while information literacy is more long-term and holistic. "A merging of the two ideas would involve [information literacy] providing tools and techniques in the processing and utilisation of knowledge and [critical thinking] supplying the particulars and interpretations associated with a specific discipline" (p. 81).
 
-### 1.1.1. Evaluating sources and fake news
+### 1.1.3. Skills
+
+#### 1.1.3.1. Staying informed
+
+Booth (2011) lists ways to stay informed:
+
+- Attitude/practice of gleaning
+    - Observe
+    - Document
+    - Integrate
+    - Acknowledge
+- Communities of practice
+- Mentors/mentoring team
+- Conferences
+- Professional organizations
+- Continuing education programs
+- Clearinghouses and thinktanks
+- Wikis, blogs, social media, newsletters
+
+#### 1.1.3.2. Evaluating sources and fake news
+
+
 
 
 ## 1.2. Personal information management
@@ -103,26 +135,10 @@ Per Wikipedia (n.d. d):
     - Collaboration skills. Coordination, synchronization, experimentation, cooperation, and design.
 
 
-# 2. Staying informed
 
-Booth (2011) lists ways to stay informed:
+# 2. PIM tools
 
-- Attitude/practice of gleaning
-    - Observe
-    - Document
-    - Integrate
-    - Acknowledge
-- Communities of practice
-- Mentors/mentoring team
-- Conferences
-- Professional organizations
-- Continuing education programs
-- Clearinghouses and thinktanks
-- Wikis, blogs, social media, newsletters
-
-# 3. PIM tools
-
-## 3.1. Content management
+## 2.1. Content management
 
 - content management/personal publishing: knowledge logs (k-logs/blogs), websites, wikis
 - Digital/physical file collections:
@@ -132,13 +148,13 @@ Booth (2011) lists ways to stay informed:
     - Videos
 - bookmarking
 
-### 3.1.1. Record-keeping
+### 2.1.1. Record-keeping
 
 - Personal notes/journal
 - Legal documents
 - Education records
 
-#### 3.1.1.1. What is a personal knowledge base?
+#### 2.1.1.1. What is a personal knowledge base?
 
 Per Wikipedia (n.d. c):
 
@@ -157,11 +173,11 @@ Per Wikipedia (n.d. c):
     - links to other sources (outside the DB)/snips from other sources
     - organizational elements, e.g. metadata
 
-#### 3.1.1.2. What is a wiki?
+#### 2.1.1.2. What is a wiki?
 
 [https://en.wikipedia.org/wiki/History_of_wikis:](https://en.wikipedia.org/wiki/History_of_wikis) “a website with pages and links that can be easily edited via the browser, with a reliable version history for each page … Wiki software has some conceptual origins in the version control and hypertext systems used for documentation and software in the 1980s … The emphasis is on a dynamically documented ‘agreement in the context of maximum possible disagreement’ … ”
 
-## 3.2. Time & task management
+## 2.2. Time & task management
 
 - Passwords manager
 - personal productivity: email, calendar, task management
@@ -175,7 +191,7 @@ Per Wikipedia (n.d. c):
     - Appointments and meetings
     - Reminders
 
-## 3.3. Communication
+## 2.3. Communication
 
 - Address books
 - Email, instant message archives
@@ -187,7 +203,7 @@ Per Wikipedia (n.d. c):
 - Phone calls: Signal, Ostel, Linphone, CSimSimple
 - Message: Signal, ChatSecure, Cryptocat, Threema
 
-## 3.4. Content discovery
+## 2.4. Content discovery
 
 - RSS/Atom feeds
 - Alerts
@@ -197,7 +213,7 @@ Per Wikipedia (n.d. c):
 
 
 
-# 4. Browser performance
+# 3. Browser performance
 
 -[How to make a browser fast again:](http://www.howtogeek.com/119191/browser-slow-how-to-make-google-chrome-fast-again/)
     - Disable plugins, disable extensions, clear browsing data, scan for malware, limit tabs
@@ -209,15 +225,15 @@ Per Wikipedia (n.d. c):
 
 
 
-# 5. Personal privacy & security
+# 4. Personal privacy & security
 
 [http://www.pcmag.com/reviews/security-software](http://www.pcmag.com/reviews/security-software)
 
-## 5.1. What are different degrees of privacy?
+## 4.1. What are different degrees of privacy?
 
 Metadata; content; anonymity.
 
-## 5.2. Threat modeling
+## 4.2. Threat modeling
 
 Planning a security system is complex. Security is interdependent, so the weakest link matters. Asking and answering these questions is the foundation of effective security:
 
@@ -237,16 +253,16 @@ Some basic facts and definitions:
 - DOS is when a single computer overwhelms a server with its requests; DDOS is when many computers do this. DDOS can be friendly or malicious, coming from a botnet of computers infected with a virus.
 - Phishing is an attempt to access private information by way of legitimate-appearing spam email.
 
-## 5.3. Account security
+## 4.3. Account security
 
-### 5.3.1. Research the platforms and companies you use
+### 4.3.1. Research the platforms and companies you use
 
 Do they provide the government direct access to user data? Do they notify users when such data has been furnished in compliance with a court order? Do they have a track record of defending their user data in court? Do they sell your data to other companies? Are they data-greedy or do they collect only when needed? Do they have strong enterprise security practices?
 
 - [Google,](https://www.google.com/dashboard/) [Facebook privacy,](https://www.facebook.com/settings?tab=privacy) [Facebook security,](https://www.facebook.com/settings?tab=security) [LinkedIn privacy](https://www.linkedin.com/psettings/)
 - [Top ten opt-outs,](https://www.worldprivacyforum.org/2015/08/consumer-tips-top-ten-opt-outs/) [Data brokers opt-out list](https://www.worldprivacyforum.org/2013/12/data-brokers-opt-out/)
 
-### 5.3.2. Protect login information
+### 4.3.2. Protect login information
 
 [Check if login data has been released in a breach.](https://haveibeenpwned.com/)
 
@@ -260,34 +276,34 @@ Consider using a password manager (although this does create a juicy central tar
     - [https://aboutmyinfo.org/compute.php](https://aboutmyinfo.org/compute.php)
     - Random name generator, Greyman, Random identity autofill, XKCD passphrase generator
 
-### 5.3.3. Limit 3p access
+### 4.3.3. Limit 3p access
 
 Review third party access you've granted to accounts like Facebook and Google Drive; remove inactive ones.
 
-## 5.4. Personal computer
+## 4.4. Personal computer
 
 - Protect your computer with a strong login plus hard drive encryption (_FileVault, BitLocker_, or some native option); install or live boot from an operating system that doesn't store data (_TAILS, Chrubix_).
 - Use special programs to thoroughly wipe electronics before discarding, because some hackers will dumpster dive for data.
 - Put tape over your webcam so it can't be used to record you visually (this doesn't help with audio).
 - Maintain an [air gapped](https://www.schneier.com/blog/archives/2013/10/air_gaps.html) laptop as a last resort---or, as the polar opposite, use an insecure and disposable device when traveling.
 
-## 5.5. Email & messaging
+## 4.5. Email & messaging
 
-### 5.5.1. Risky emails
+### 4.5.1. Risky emails
 
 Set your email so that images don't display automatically, which reduces tracking. Be extremely cautious about downloading files; use Gmail's file previewer or a file scanner, and set risky filetypes (`.js, .jse, .wsp, .wsh`) to open in a text editor by default. Don't open links directly from an email; instead, navigate directly to sites you're familiar with, or copy the link URL and run it through a search engine in quotes: `"http://somefakebankname.com/scam-attempt.php"`.
 
-### 5.5.2. Email encryption
+### 4.5.2. Email encryption
 
 Use [Mailvelope](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) for end-to-end encryption that integrates with existing email providers.
 
-### 5.5.3. Instant messaging
+### 4.5.3. Instant messaging
 
 Try [CryptoCat](https://crypto.cat/) or [Pidgin](https://pidgin.im/).
 
-## 5.6. Browsing
+## 4.6. Browsing
 
-### 5.6.1. Tor and/or VPN for privacy
+### 4.6.1. Tor and/or VPN for privacy
 
 The Tor browser enables anonymous browsing (activities not associated with particular IP), but it's difficult to set up. One workaround is the TAILS operating system, which comes bundled with Tor.
 
@@ -299,15 +315,15 @@ For extra security, Tor can be run from a VPN, or a VPN can be run through anoth
 - Know your VPN status: VPN failure or DNS leaks can unexpectedly expose your browsing.
 - Patch the [PPTP/IPv2 security flaw](http://lifehacker.com/5902397/how-to-make-vpns-even-more-secure).
 
-### 5.6.2. Searching
+### 4.6.2. Searching
 
 Try [DuckDuckGo](https://duckduckgo.com/), although its search algorithms aren't as good as Google's.
 
-### 5.6.3. Purchasing online
+### 4.6.3. Purchasing online
 
 Favor credit cards over PayPal or debit cards. Don't store payment information on websites.
 
-### 5.6.4. Apps for ads, malicious scripts, trackers, etc.
+### 4.6.4. Apps for ads, malicious scripts, trackers, etc.
 
 - [ScriptSafe](https://chrome.google.com/webstore/detail/scriptsafe/oiigbmnaadbkfbmpbfijlflahbdbdgdf/reviews?hl=en) and [NoScript](https://addons.mozilla.org/en-US/firefox/addon/noscript/) block malicious scripts;
 - [HTTPSEverywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp?hl=en) and [KB SSL Enforcer](https://chrome.google.com/webstore/detail/kb-ssl-enforcer/flcpelgcagfhfoegekianiofphddckof/related?hl=en) push many sites into HTTPS mode;
@@ -317,24 +333,24 @@ Favor credit cards over PayPal or debit cards. Don't store payment information o
 - **Avoid** Ghostery (sells data), TrafficLight (keylogger), ipFlood (not effective), Trust My Web, Random Agent spoofer
 
 
-## 5.7. Mobile phone
+## 4.7. Mobile phone
 
-### 5.7.1. Discourage unauthorized access
+### 4.7.1. Discourage unauthorized access
 
 Swipe and PIN codes are not robust protection; use a pass phrase to prevent people from opening the phone, and make sure your mobile account itself is secured with a different pass phrase. Sophisticated hackers don't _need_ to log in to your phone, though, so protect your data with encryption (most phones provide this option in "Settings"; you just need to activate it). Install _[Lookout](https://play.google.com/store/apps/details?id=com.lookout&hl=en)_ or _[Prey](https://play.google.com/store/apps/details?id=com.prey&hl=en)_ to lock/locate/wipe your phone in case of theft or loss. Swich off wi-fi, GPS, and Bluetooth when not in use.
 
-### 5.7.2. Keep text messages, calls, and browsing private
+### 4.7.2. Keep text messages, calls, and browsing private
 
 - Data sent from a phone can be easily intercepted by IMSI devices posing as part of the network.
 - Use _[Signal](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&hl=en)_ to send texts that are encrypted _if both parties are using the app_ (so urge your friends to join as well).
 - Use _[Orbot](https://play.google.com/store/apps/details?id=org.torproject.android&hl=en)_ and _[OrFox](https://play.google.com/store/apps/details?id=info.guardianproject.orfox&hl=en)_ to encrypt browsing; OrFox includes HTTPSEverywhere and NoScript.
 - Use _[CSipSimple](https://play.google.com/store/apps/details?id=com.csipsimple&hl=en)_ to encrypt VoIP calls.
 
-### 5.7.3. Phones as audio recorders and locators
+### 4.7.3. Phones as audio recorders and locators
 
 Know that phones can be used to locate you via GPS and cell phone towers. If this is a concern, leave your phone behind. Phones can also be activated remotely and used to record you, _even if they are turned off_; if this is a concern, place the phone in a refrigerator to muffle sounds, or remove its battery. A "burner phone" is not really a good option.
 
-### 5.7.4. Phone scams and phishing
+### 4.7.4. Phone scams and phishing
 
 If you recieve a call from someone who requests your personal information, be very wary:
 
@@ -345,13 +361,13 @@ If you recieve a call from someone who requests your personal information, be ve
 - Don't let them create a subconscious sense of indebtedness by giving you small gifts. A small gift followed by a waiting period followed by a request is a tricky and powerful tactic.
 - Don't be charmed by humor or intimidated by confidence. Good scammers have these qualities in abundance.
 
-## 5.8. Harrassment
+## 4.8. Harrassment
 
-### 5.8.1. Doxing
+### 4.8.1. Doxing
 
 Preventatively stalk yourself to see what information comes up. [Delete old accounts](http://backgroundchecks.org/justdeleteme/); opt-out of data broker listings ([1](https://www.privacyrights.org/data-brokers), [2](https://abine.com/optouts.php)); change your cell number; make sure your personal information isn't published on [Whois.net](https://www.whois.net) as part of your domain registration.
 
-### 5.8.2. Social
+### 4.8.2. Social
 
 In case of harrassment, know who your allies are: some lawyers with an interest in civil rights, and civil rights organizations; some journalists; some politicians; others in your personal network with the capacity to advocate for you, who wil be seen as credible by a mainstream audience.
 
@@ -366,9 +382,9 @@ In case of harrassment, know who your allies are: some lawyers with an interest 
 
 
 
-# 6. Sources
+# 5. Sources
 
-## 6.1. Cited
+## 5.1. Cited
 
 American Association of School Librarians (AASL) & Association for Educational Communications and Technology. (1998). Information literacy standards for student learning. Retrieved from [http://www.ala.org/ala//mgrps/divs/aasl/aaslarchive/pubsarchive/informationpower/InformationLiteracyStandards_final.pdf](http://www.ala.org/ala//mgrps/divs/aasl/aaslarchive/pubsarchive/informationpower/InformationLiteracyStandards_final.pdf)
 
@@ -378,7 +394,7 @@ Booth, C. (2011). _Reflective Teaching, Effective Learning: Instructional Litera
 
 Detlor, B. (2010). Information management. _International Journal of Information Management._ [https://doi.org/10.1016/j.ijinfomgt.2009.12.001](https://doi.org/10.1016/j.ijinfomgt.2009.12.001)
 
-Fister, B. 2017. The warp and weft of information literacy: Changing contexts, enduring challenges. _Journal of Information Literacy,_ 11(1), pp.68-79.
+Fister, B. 2017. The warp and weft of information literacy: Changing contexts, enduring challenges. _Journal of Information Literacy,_ 11(1), pp.68-79. [http://dx.doi.org/10.11645/11.1.2183](http://dx.doi.org/10.11645/11.1.2183)
 
 Shapiro J.J. & Hughes S.K. (1996). Information literacy as a liberal art. _Educom Review_ 31(2).
 
@@ -392,7 +408,7 @@ Wikipedia. (n.d. d). Personal knowledge management. Retrieved from [https://en.w
 
 Weiner, J. (2011). Is there a difference between critical thinking and information literacy? A systematic review 2000-2009. _Journal of information literacy,_ 5(2). pp. 81-92. [http://dx.doi.org/10.11645/5.2.1600](http://dx.doi.org/10.11645/5.2.1600)
 
-## 6.2. References
+## 5.2. References
 
 - [http://www.makeuseof.com/tag/5-interesting-third-party-evernote-clients-linux-mac/](http://www.makeuseof.com/tag/5-interesting-third-party-evernote-clients-linux-mac/)
 - [MyShadow.org](https://myshadow.org/)
@@ -401,7 +417,7 @@ Weiner, J. (2011). Is there a difference between critical thinking and informati
 - [Hackblossom's Guide to Feminist Cybersecurity](https://hackblossom.org/cybersecurity/)
 - [Security In a Box](https://securityinabox.org/en)
 
-## 6.3. Read
+## 5.3. Read
 
 - [https://lifehacker.com/how-to-jump-ship-from-evernote-and-take-your-data-with-1782841075](https://lifehacker.com/how-to-jump-ship-from-evernote-and-take-your-data-with-1782841075)
 - _No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State._
@@ -429,7 +445,7 @@ Weiner, J. (2011). Is there a difference between critical thinking and informati
 - [Rapid response for compromised phones](https://freedom.press/training/rapid-responses-compromised-phones/)
 - [Mobile security prevention tips](https://freedom.press/training/rapid-responses-compromised-phones/)
 
-## 6.4. Unread
+## 5.4. Unread
 
 - [https://lifehacker.com/i-still-use-plain-text-for-everything-and-i-love-it-1758380840](https://lifehacker.com/i-still-use-plain-text-for-everything-and-i-love-it-1758380840)
 - [https://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to-do-lists-and-notes](https://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to-do-lists-and-notes)

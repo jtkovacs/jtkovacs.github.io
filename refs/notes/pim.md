@@ -3,19 +3,48 @@
 
 Per Wikipedia (n.d. a), 'personal' information is owned by, about, directed toward, created by, experienced by or relevant to 'me'; and Detlor (2010) differentiates personal information management from organizational information management and library sciences.
 
+
+
 ## Information literacy
 
-Definition:
+### History
+
+Fister (2017, p. 68): "Not long ago, I was nonplussed when I came across a planning document from the early 1990s in which I had spelled out where I thought our instruction efforts needed to go. It was eerily identical to our current Things to Do list. It was dispiriting." Applying autoethnography to her years of work as a college librarian, she identifies three eras of IL:
+
+- **Bibliographic instruction:**
+- **Standardized IL:**
+- **Critical IL:**
+
+### Definitions
 
 - “Information literacy is a set of competencies that an informed citizen of an information society ought to possess to participate intelligently and actively in that society” (AASL, 1998)
 - “To be information literate, a person must be able to recognize when information is needed and have the ability to locate, evaluate, and use effectively the needed information" (ALA, 1989)
 - “A new liberal art that extends from knowing how to use computers and access information to critical reflection on the nature of information itself, its technical infrastructure and its social, cultural and philosophical context and impact” (Shapiro and Hughes, 1996)
-
-Findings:
-
+- Fister (2017, pp. 68-69, emphases mine): "We have always wanted new students to feel comfortable and able to **navigate their library** [i.e., consume information resources] so that they can feel at home in the academic community. As Michelle Holschuh Simmons (2005) has put it, we can serve as disciplinary discourse mediators for students who migrate among different disciplines and do not always speak the language. This is important work, but it is not nearly enough. We also want students who are moving into their major fields of study to be able to **join the scholarly conversations** of their chosen discipline [i.e., contribute information; convert information to personal knowledge and skills]. By having significant research experiences, they can grasp the role of individuals in creating knowledge. At its best, this experience can provide them with a sense of personal agency and can help them find their own voice. Ultimately, with that identity and confidence established, we hope they can go out into the world when they graduate prepared to act on it as free human beings in a society that badly needs healing."
 - Weiner (2011) finds relationship and difference between the concepts of "information literacy" and "critical thinking" in his review of 8000+ articles in education, library sciences and health sciences, namely: critical thinking is more related to point-in-time consumption/interpretation of information while information literacy is more long-term and holistic. "A merging of the two ideas would involve [information literacy] providing tools and techniques in the processing and utilisation of knowledge and [critical thinking] supplying the particulars and interpretations associated with a specific discipline" (p. 81).
 
-### Evaluating sources and fake news
+### Skills
+
+#### Staying informed
+
+Booth (2011) lists ways to stay informed:
+
+- Attitude/practice of gleaning
+    - Observe
+    - Document
+    - Integrate
+    - Acknowledge
+- Communities of practice
+- Mentors/mentoring team
+- Conferences
+- Professional organizations
+- Continuing education programs
+- Clearinghouses and thinktanks
+- Wikis, blogs, social media, newsletters
+
+#### Evaluating sources and fake news
+
+
 
 
 ## Personal information management
@@ -57,22 +86,6 @@ Per Wikipedia (n.d. d):
     - Collaboration skills. Coordination, synchronization, experimentation, cooperation, and design.
 
 
-# Staying informed
-
-Booth (2011) lists ways to stay informed:
-
-- Attitude/practice of gleaning
-    - Observe
-    - Document
-    - Integrate
-    - Acknowledge
-- Communities of practice
-- Mentors/mentoring team
-- Conferences
-- Professional organizations
-- Continuing education programs
-- Clearinghouses and thinktanks
-- Wikis, blogs, social media, newsletters
 
 # PIM tools
 
@@ -332,7 +345,7 @@ Booth, C. (2011). _Reflective Teaching, Effective Learning: Instructional Litera
 
 Detlor, B. (2010). Information management. _International Journal of Information Management._ [https://doi.org/10.1016/j.ijinfomgt.2009.12.001](https://doi.org/10.1016/j.ijinfomgt.2009.12.001)
 
-Fister, B. 2017. The warp and weft of information literacy: Changing contexts, enduring challenges. _Journal of Information Literacy,_ 11(1), pp.68-79.
+Fister, B. 2017. The warp and weft of information literacy: Changing contexts, enduring challenges. _Journal of Information Literacy,_ 11(1), pp.68-79. [http://dx.doi.org/10.11645/11.1.2183](http://dx.doi.org/10.11645/11.1.2183)
 
 Shapiro J.J. & Hughes S.K. (1996). Information literacy as a liberal art. _Educom Review_ 31(2).
 

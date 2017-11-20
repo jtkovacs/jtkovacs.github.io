@@ -13,10 +13,10 @@ Fister (2017, p. 68): "Not long ago, I was nonplussed when I came across a plann
 
 - **Bibliographic instruction,** oriented towards use of library technologies
     - The term "information literacy" was coined by Patricia Senn Breivik and E. Gordon Gee in _Information literacy: Revolution in the library_ (Fister, 2017, p. 71), in response to concerns about American international economic competitiveness (p. 72: "'information age' was a label that encompassed sociotechnical changes that afflicted workers with anxiety about their future as well as policy level concerns that our industrial economy was faltering in the face of nimbler competition from Japan")
-- **Standardized IL** -- lists of detailed skills and performance levels -- Fister recalls these as being rejected by instructors for many reasons: "The language of the document seemed to evade the idea that students might have original, creative thoughts, that they did not merely produce products or performances but learned and shared what they had learned by making new things. Faculty were clearly dismayed at the way performance indicators and outcomes were defined in long lists of specific measurable bits. One faculty member, a fine teacher and a well published scholar, confessed she would fail some of the listed outcomes and wondered how we would know whether students who learned all those fiddly bits could put them together in a meaningful way. A professor
+- **Standardized IL** -- [lists of detailed skills and performance levels](https://alair.ala.org/bitstream/handle/11213/7668/ACRL%20Information%20Literacy%20Competency%20Standards%20for%20Higher%20Education.pdf?sequence=1&isAllowed=y) -- Fister recalls these as being rejected by instructors for many reasons: "The language of the document seemed to evade the idea that students might have original, creative thoughts, that they did not merely produce products or performances but learned and shared what they had learned by making new things. Faculty were clearly dismayed at the way performance indicators and outcomes were defined in long lists of specific measurable bits. One faculty member, a fine teacher and a well published scholar, confessed she would fail some of the listed outcomes and wondered how we would know whether students who learned all those fiddly bits could put them together in a meaningful way. A professor
 of management said they read like instructions for a Tayloristic time and motion study, a mechanistic breaking apart of something intuitive and complex into simple, repetitive steps that could be performed at industrial scale" (2017, p. 73)
-- **Critical IL:**
-    - Threshold concepts in library instruction
+- **Critical IL** replaced ALA standards with [IL framework](http://www.ala.org/acrl/standards/ilframework) based on the idea of "threshold concepts"
+    - [https://quickaskzoe.com/2017/05/25/critical-information-literacy/](https://quickaskzoe.com/2017/05/25/critical-information-literacy/)
 
 ### Definitions
 
@@ -25,6 +25,10 @@ of management said they read like instructions for a Tayloristic time and motion
 - “A new liberal art that extends from knowing how to use computers and access information to critical reflection on the nature of information itself, its technical infrastructure and its social, cultural and philosophical context and impact” (Shapiro and Hughes, 1996)
 - Fister (2017, pp. 68-69, emphases mine): "We have always wanted new students to feel comfortable and able to **navigate their library** [i.e., consume information resources] so that they can feel at home in the academic community. As Michelle Holschuh Simmons (2005) has put it, we can serve as disciplinary discourse mediators for students who migrate among different disciplines and do not always speak the language. This is important work, but it is not nearly enough. We also want students who are moving into their major fields of study to be able to **join the scholarly conversations** of their chosen discipline [i.e., contribute information; convert information to personal knowledge and skills]. By having significant research experiences, they can grasp the role of individuals in creating knowledge. At its best, this experience can provide them with a sense of personal agency and can help them find their own voice. Ultimately, with that identity and confidence established, we hope they can go out into the world when they graduate prepared to act on it as free human beings in a society that badly needs healing."
 - Weiner (2011) finds relationship and difference between the concepts of "information literacy" and "critical thinking" in his review of 8000+ articles in education, library sciences and health sciences, namely: critical thinking is more related to point-in-time consumption/interpretation of information while information literacy is more long-term and holistic. "A merging of the two ideas would involve [information literacy] providing tools and techniques in the processing and utilisation of knowledge and [critical thinking] supplying the particulars and interpretations associated with a specific discipline" (p. 81).
+
+#### Big 6 model
+
+- [http://big6.com/](http://big6.com/)
 
 ### Skills
 
@@ -52,7 +56,9 @@ From Fister (2017, p. 70): "What mattered more [than understanding the technical
 #### Evaluating sources and fake news
 
 
+## Information fluency
 
+- Information Fluency: Not Information Literacy 2.0 [http://www.sciencedirect.com/science/article/pii/S0099133316300192](http://www.sciencedirect.com/science/article/pii/S0099133316300192)
 
 ## Personal information management
 
@@ -420,5 +426,14 @@ Weiner, J. (2011). Is there a difference between critical thinking and informati
 - [Chatting in secret while we're all being watched](https://theintercept.com/2015/07/14/communicating-secret-watched/)
 - [How to encrypt your entire life in less than an hour](https://medium.freecodecamp.com/tor-signal-and-beyond-a-law-abiding-citizens-guide-to-privacy-1a593f2104c3#.50hv1jppg)
 b85c814035a4#.1dys0ywaa)
-
+- re: information literacy
+    - A Conceptual Analysis and Historical Overview of Information Literacy. [https://www.ideals.illinois.edu/bitstream/handle/2142/41773/crl_55_04_309_opt.pdf?s](https://www.ideals.illinois.edu/bitstream/handle/2142/41773/crl_55_04_309_opt.pdf?s)
+    - Workplace experiences of information literacy [http://www.sciencedirect.com/science/article/pii/S0268401298000450](http://www.sciencedirect.com/science/article/pii/S0268401298000450)
+    - Approaches to Learning Information Literacy: A Phenomenographic Study [http://www.sciencedirect.com/science/article/pii/S0099133312000754](http://www.sciencedirect.com/science/article/pii/S0099133312000754)
+    - Secondary teachers and information literacy (IL): Teacher understanding and perceptions of IL in the classroom [http://www.sciencedirect.com/science/article/pii/S0740818813000339](http://www.sciencedirect.com/science/article/pii/S0740818813000339)
+    - Information literacy as a liberal art [https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/InstructionalTechnologies/InformationLiteracy.pdf](https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/InstructionalTechnologies/InformationLiteracy.pdf)
+    - Integrating theories of learning, literacies and information practices [http://www.sciencedirect.com/science/article/pii/B9781876938796500194](http://www.sciencedirect.com/science/article/pii/B9781876938796500194)
+    - Measuring Information Literacy: Beyond the Case Study [http://www.sciencedirect.com/science/article/pii/S009913331100067X](http://www.sciencedirect.com/science/article/pii/S009913331100067X)
+    - Institutionalizing Information Literacy [http://www.sciencedirect.com/science/article/pii/S0099133312000766](http://www.sciencedirect.com/science/article/pii/S0099133312000766)
+    - Information Literacy Assessment: Where Do We Start? [http://journals.sagepub.com/doi/pdf/10.1177/0961000608099896](http://journals.sagepub.com/doi/pdf/10.1177/0961000608099896)
 

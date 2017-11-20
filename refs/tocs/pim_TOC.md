@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3854 words | updated 11/20/2017</p><div class="TOC">- &nbsp;1. [Personal information](#personal-information)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3885 words | updated 11/20/2017</p><div class="TOC">- &nbsp;1. [Personal information](#personal-information)
 	- &nbsp;1.1. [Information literacy](#information-literacy)
 		- &nbsp;1.1.1. [History](#history)
 		- &nbsp;1.1.2. [Definitions](#definitions)
@@ -70,6 +70,12 @@ of management said they read like instructions for a Tayloristic time and motion
 - **Critical IL** replaced ALA standards with [IL framework](http://www.ala.org/acrl/standards/ilframework) based on the idea of "threshold concepts"
     - [https://quickaskzoe.com/2017/05/25/critical-information-literacy/](https://quickaskzoe.com/2017/05/25/critical-information-literacy/)
 
+See also:
+
+- A Conceptual Analysis and Historical Overview of Information Literacy. [https://www.ideals.illinois.edu/bitstream/handle/2142/41773/crl_55_04_309_opt.pdf?s](https://www.ideals.illinois.edu/bitstream/handle/2142/41773/crl_55_04_309_opt.pdf?s)
+- Integrating theories of learning, literacies and information practices [http://www.sciencedirect.com/science/article/pii/B9781876938796500194](http://www.sciencedirect.com/science/article/pii/B9781876938796500194) - this article echoes Fister's chronology but adds some details as well as the argument that it should be "information literacies" to keep up with other scholarship on literacies
+
+
 ### 1.1.2. Definitions
 
 - “Information literacy is a set of competencies that an informed citizen of an information society ought to possess to participate intelligently and actively in that society” (AASL, 1998)
@@ -77,6 +83,7 @@ of management said they read like instructions for a Tayloristic time and motion
 - “A new liberal art that extends from knowing how to use computers and access information to critical reflection on the nature of information itself, its technical infrastructure and its social, cultural and philosophical context and impact” (Shapiro and Hughes, 1996)
 - Fister (2017, pp. 68-69, emphases mine): "We have always wanted new students to feel comfortable and able to **navigate their library** [i.e., consume information resources] so that they can feel at home in the academic community. As Michelle Holschuh Simmons (2005) has put it, we can serve as disciplinary discourse mediators for students who migrate among different disciplines and do not always speak the language. This is important work, but it is not nearly enough. We also want students who are moving into their major fields of study to be able to **join the scholarly conversations** of their chosen discipline [i.e., contribute information; convert information to personal knowledge and skills]. By having significant research experiences, they can grasp the role of individuals in creating knowledge. At its best, this experience can provide them with a sense of personal agency and can help them find their own voice. Ultimately, with that identity and confidence established, we hope they can go out into the world when they graduate prepared to act on it as free human beings in a society that badly needs healing."
 - Weiner (2011) finds relationship and difference between the concepts of "information literacy" and "critical thinking" in his review of 8000+ articles in education, library sciences and health sciences, namely: critical thinking is more related to point-in-time consumption/interpretation of information while information literacy is more long-term and holistic. "A merging of the two ideas would involve [information literacy] providing tools and techniques in the processing and utilisation of knowledge and [critical thinking] supplying the particulars and interpretations associated with a specific discipline" (p. 81).
+- "Information literacy as a liberal art" [https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/InstructionalTechnologies/InformationLiteracy.pdf](https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/InstructionalTechnologies/InformationLiteracy.pdf)
 
 #### 1.1.2.1. Big 6 model
 
@@ -479,12 +486,9 @@ Weiner, J. (2011). Is there a difference between critical thinking and informati
 - [How to encrypt your entire life in less than an hour](https://medium.freecodecamp.com/tor-signal-and-beyond-a-law-abiding-citizens-guide-to-privacy-1a593f2104c3#.50hv1jppg)
 b85c814035a4#.1dys0ywaa)
 - re: information literacy
-    - A Conceptual Analysis and Historical Overview of Information Literacy. [https://www.ideals.illinois.edu/bitstream/handle/2142/41773/crl_55_04_309_opt.pdf?s](https://www.ideals.illinois.edu/bitstream/handle/2142/41773/crl_55_04_309_opt.pdf?s)
     - Workplace experiences of information literacy [http://www.sciencedirect.com/science/article/pii/S0268401298000450](http://www.sciencedirect.com/science/article/pii/S0268401298000450)
     - Approaches to Learning Information Literacy: A Phenomenographic Study [http://www.sciencedirect.com/science/article/pii/S0099133312000754](http://www.sciencedirect.com/science/article/pii/S0099133312000754)
     - Secondary teachers and information literacy (IL): Teacher understanding and perceptions of IL in the classroom [http://www.sciencedirect.com/science/article/pii/S0740818813000339](http://www.sciencedirect.com/science/article/pii/S0740818813000339)
-    - Information literacy as a liberal art [https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/InstructionalTechnologies/InformationLiteracy.pdf](https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/InstructionalTechnologies/InformationLiteracy.pdf)
-    - Integrating theories of learning, literacies and information practices [http://www.sciencedirect.com/science/article/pii/B9781876938796500194](http://www.sciencedirect.com/science/article/pii/B9781876938796500194)
     - Measuring Information Literacy: Beyond the Case Study [http://www.sciencedirect.com/science/article/pii/S009913331100067X](http://www.sciencedirect.com/science/article/pii/S009913331100067X)
     - Institutionalizing Information Literacy [http://www.sciencedirect.com/science/article/pii/S0099133312000766](http://www.sciencedirect.com/science/article/pii/S0099133312000766)
     - Information Literacy Assessment: Where Do We Start? [http://journals.sagepub.com/doi/pdf/10.1177/0961000608099896](http://journals.sagepub.com/doi/pdf/10.1177/0961000608099896)

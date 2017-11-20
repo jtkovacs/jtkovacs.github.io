@@ -9,11 +9,14 @@ Per Wikipedia (n.d. a), 'personal' information is owned by, about, directed towa
 
 ### History
 
-Fister (2017, p. 68): "Not long ago, I was nonplussed when I came across a planning document from the early 1990s in which I had spelled out where I thought our instruction efforts needed to go. It was eerily identical to our current Things to Do list. It was dispiriting." Applying autoethnography to her years of work as a college librarian, she identifies three eras of IL:
+Fister (2017, p. 68): "Not long ago, I was nonplussed when I came across a planning document from the early 1990s in which I had spelled out where I thought our instruction efforts needed to go. It was eerily identical to our current Things to Do list. It was dispiriting." Applying autoethnography to her years of work as a college librarian, she identifies three eras of IL (each shaped by major social trends):
 
-- **Bibliographic instruction:**
-- **Standardized IL:**
+- **Bibliographic instruction,** oriented towards use of library technologies
+    - The term "information literacy" was coined by Patricia Senn Breivik and E. Gordon Gee in _Information literacy: Revolution in the library_ (Fister, 2017, p. 71), in response to concerns about American international economic competitiveness (p. 72: "'information age' was a label that encompassed sociotechnical changes that afflicted workers with anxiety about their future as well as policy level concerns that our industrial economy was faltering in the face of nimbler competition from Japan")
+- **Standardized IL** -- lists of detailed skills and performance levels -- Fister recalls these as being rejected by instructors for many reasons: "The language of the document seemed to evade the idea that students might have original, creative thoughts, that they did not merely produce products or performances but learned and shared what they had learned by making new things. Faculty were clearly dismayed at the way performance indicators and outcomes were defined in long lists of specific measurable bits. One faculty member, a fine teacher and a well published scholar, confessed she would fail some of the listed outcomes and wondered how we would know whether students who learned all those fiddly bits could put them together in a meaningful way. A professor
+of management said they read like instructions for a Tayloristic time and motion study, a mechanistic breaking apart of something intuitive and complex into simple, repetitive steps that could be performed at industrial scale" (2017, p. 73)
 - **Critical IL:**
+    - Threshold concepts in library instruction
 
 ### Definitions
 
@@ -41,6 +44,10 @@ Booth (2011) lists ways to stay informed:
 - Continuing education programs
 - Clearinghouses and thinktanks
 - Wikis, blogs, social media, newsletters
+
+#### Inquiry
+
+From Fister (2017, p. 70): "What mattered more [than understanding the technical details of using a library catalog], I quickly realised, was understanding how to gain enough familiarity with a new topic to frame a meaningful question, how to learn enough of the coded language that scholars used to crack open a search, and how to unlearn the idea that research was simply a matter of finding other people’s answers."
 
 #### Evaluating sources and fake news
 

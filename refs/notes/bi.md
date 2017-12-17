@@ -4,28 +4,11 @@
 
 - https://en.wikipedia.org/wiki/Business_intelligence
 
-## ... versus data science?
-
-- DS has more programming, is better at using computational power for analysis
-- DS may involve more sophisticated modeling
-- DS facilitates predictive and prescriptive analytics
-- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
--
-
-## ... the role of Big Data
-
-
-
-
-## How does business intelligence relate to management?
-
 Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
 
-- The business environment supplies pressures and opportunities (see [PESTEL analysis](./project-management.html#pestel-analysis));
+- The business environment supplies pressures and opportunities (see [PESTEL analysis\)](./project-management.html#pestel-analysis);
 - Managers need to respond;
 - BI supports their response with analysis and predictions.
-
-## What value does BI offer?
 
 By enabling data-based decision-making, BI offers value in the form of:
 
@@ -40,9 +23,27 @@ By enabling data-based decision-making, BI offers value in the form of:
 - Executive and management information systems
 - BI systems enabling broader access to data, closer to ground-level where people can base their actions on it
 
-![](../illos/DSS-evolution.jpg)
+<img src="../illos/DSS-evolution.jpg" width="400">
 
 ![](../illos/bi-tools-by-value.jpg)
+
+## BI roles
+
+A BI team typically has the following roles:
+
+### BI versus data science
+
+- DS has more programming, is better at using computational power for analysis
+- DS may involve more sophisticated modeling
+- DS facilitates predictive and prescriptive analytics
+- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+
+## Trends in BI
+
+- Data democratization
+- IoT
+
+
 
 
 
@@ -57,7 +58,13 @@ Per Sharda et al. (2004), BI tools provide varying combinations of the following
 
 
 
-## Data warehouses for data storage
+## Data warehouses
+
+Data warehouse functionality
+
+- Data visualization
+- Alerts/push mechanisms that activate in response to certain conditions or as part of a routine
+- Performance management capabilities (track performance vs. goals, e.g. sales quota; can be public/competitive)
 
 ### OLTP vs OLAP databases
 
@@ -72,12 +79,6 @@ The disctinction between online transaction and analytics processing arises from
 - https://en.wikipedia.org/wiki/Online_analytical_processing
 - https://en.wikipedia.org/wiki/Online_transaction_processing
 
-### Data warehouse functionality
-
-- Data visualization
-- Alerts/push mechanisms that activate in response to certain conditions or as part of a routine
-- Performance management capabilities (track performance vs. goals, e.g. sales quota; can be public/competitive)
-
 ### Data warehouse architectures
 
 - Online data store
@@ -87,10 +88,14 @@ The disctinction between online transaction and analytics processing arises from
 
 
 
-## Data analysis
 
-- Tableau
+## Analytics
+
 - IBM Watson
+- Text analytics
+- Web analytics
+- Big Data
+- Data mining
 
 ### Types of analytics
 
@@ -98,7 +103,25 @@ The disctinction between online transaction and analytics processing arises from
 - **Predictive:** Asking what’s going to happen and why, to generate accurate projections that can inform analyses
 - **Prescriptive:** Asking what should be done and generating (or even executing) a specific solution
 
-## Dashboards
+### Big Data
+
+- definition of big data
+- business value of value
+- big data technologies
+- sources
+
+
+
+
+
+## Dashboards & reporting
+
+- Business Performance Management
+- Visual analytics
+- Tableau
+
+
+
 
 
 
@@ -116,7 +139,6 @@ Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial
 - [MapReduce - Simplified Data Processing on Large Clusters](http://research.google.com/archive/mapreduce.html)
 - [Parallel MapReduce in Python in 10 Minutes](https://mikecvet.wordpress.com/2010/07/02/parallel-mapreduce-in-python/)
 - [Big Data, n. A kind of black magic](http://www.talyarkoni.org/blog/2014/05/19/big-data-n-a-kind-of-black-magic/)
-
 
 ## Unread
 
@@ -157,4 +179,3 @@ Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial
 - [Data stack at Slack](https://slack.engineering/data-wrangling-at-slack-f2e0ff633b69?imm_mid=0eb8e0#.wyh01fwh4)
 - [Data stack at Blue Apron](https://bytes.blueapron.com/bigquery-delivers-for-blue-apron-9acef1c1b417#.jbicbta5v)
 - [What is ETL?](http://www.webopedia.com/TERM/E/ETL.html)
-

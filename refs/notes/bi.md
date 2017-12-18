@@ -117,9 +117,23 @@ Per Sharda et al. (2014, pp. 73-74):
 - Believing that your problems are over when the data warehouse is up and running
 - Focusing on ad hoc data mining and periodic reporting instead of alerts"
 
+### Dimensional modeling
+
+Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
+
 ### Various data warehouse architectures
 
-Sharda et al. (2014, pp. 51-56) provide much more detail, as well as noting the following questions which are critical to choosing a data warehouse architecture:
+- **(In)dependent data mart:** A data mart serves a single department or focuses on a single area; it is conceptually confined. If dependent, the data mart is a subset of a broader data warehouse.
+- **Data mart bus architecture:** Dimensionalized data marts linked by conformed dimensions (Ralph Kimball: "plan big, build small").
+- **Hub-and-spoke architecture:** Normalized relational data warehouse, serving dependent data marts (Bill Inmon; top-down approach).
+- **Centralized data warehouse:** [As above.](https://jtkovacs.github.io/refs/bi.html#generic-bi-architecture)
+- **Federated data warehouse:** Existing data warehouses, marts and legacy systems are mapped together and/or physically integrated.
+- **Operational data store:** An ODS has fresh data, to support immediate and short-term decision-making. It does not fulfill the traditional DW's role of storing data and enabling analysis across long periods of time.
+- **Oper marts:** ODS for multidimensional analysis.
+
+#### Choosing an architecture
+
+Per Sharda et al. (2014):
 
 - Which database management system (DBMS) should be used? Should it be relational?
 - For scalability and speed, will parallel processing be required? Will tables need to be partitioned?
@@ -135,39 +149,6 @@ More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p.
 - Constraints on reqources
 - Compatability with existing systems
 - Perceived ability/capacity of in-house IT staff
-
-#### (In)dependent data mart
-
-A data mart serves a single department or focuses on a single area; it is conceptually confined. If dependent, the data mart is a subset of a broader data warehouse.
-
-#### Data mart bus architecture
-
-Dimensionalized data marts linked by conformed dimensions (Ralph Kimball: "plan big, build small").
-
-#### Hub-and-spoke architecture
-
-Normalized relational data warehouse, serving dependent data marts (Bill Inmon; top-down approach).
-
-#### Centralized data warehouse
-
-[As above.](https://jtkovacs.github.io/refs/bi.html#generic-bi-architecture)
-
-#### Federated data warehouse
-
-Existing data warehouses, marts and legacy systems are mapped together and/or physically integrated.
-
-#### Operational data store
-
-An ODS has fresh data, to support immediate and short-term decision-making. It does not fulfill the traditional DW's role of storing data and enabling analysis across long periods of time.
-
-##### Oper marts
-
-ODS for multidimensional analysis.
-
-#### Dimensional modeling
-
-Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
-
 
 
 ## OLAP

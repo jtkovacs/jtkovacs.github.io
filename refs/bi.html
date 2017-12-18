@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 1925 words | updated 12/18/2017
+   &gt; bi | just under 1908 words | updated 12/18/2017
   </p>
   <div class="TOC">
    <ul>
@@ -91,58 +91,20 @@
         </li>
         <li>
          2.2.3.
+         <a href="#dimensional-modeling">
+          Dimensional modeling
+         </a>
+        </li>
+        <li>
+         2.2.4.
          <a href="#various-data-warehouse-architectures">
           Various data warehouse architectures
          </a>
          <ul>
           <li>
-           2.2.3.1.
-           <a href="#independent-data-mart">
-            (In)dependent data mart
-           </a>
-          </li>
-          <li>
-           2.2.3.2.
-           <a href="#data-mart-bus-architecture">
-            Data mart bus architecture
-           </a>
-          </li>
-          <li>
-           2.2.3.3.
-           <a href="#hub-and-spoke-architecture">
-            Hub-and-spoke architecture
-           </a>
-          </li>
-          <li>
-           2.2.3.4.
-           <a href="#centralized-data-warehouse">
-            Centralized data warehouse
-           </a>
-          </li>
-          <li>
-           2.2.3.5.
-           <a href="#federated-data-warehouse">
-            Federated data warehouse
-           </a>
-          </li>
-          <li>
-           2.2.3.6.
-           <a href="#operational-data-store">
-            Operational data store
-           </a>
-           <ul>
-            <li>
-             2.2.3.6.1.
-             <a href="#oper-marts">
-              Oper marts
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           2.2.3.7.
-           <a href="#dimensional-modeling">
-            Dimensional modeling
+           2.2.4.1.
+           <a href="#choosing-an-architecture">
+            Choosing an architecture
            </a>
           </li>
          </ul>
@@ -543,13 +505,72 @@
     Focusing on ad hoc data mining and periodic reporting instead of alerts"
    </li>
   </ul>
-  <h3 id="various-data-warehouse-architectures">
+  <h3 id="dimensional-modeling">
    <a>
-    2.2.3. Various data warehouse architectures
+    2.2.3. Dimensional modeling
    </a>
   </h3>
   <p>
-   Sharda et al. (2014, pp. 51-56) provide much more detail, as well as noting the following questions which are critical to choosing a data warehouse architecture:
+   Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
+  </p>
+  <h3 id="various-data-warehouse-architectures">
+   <a>
+    2.2.4. Various data warehouse architectures
+   </a>
+  </h3>
+  <ul>
+   <li>
+    <strong>
+     (In)dependent data mart:
+    </strong>
+    A data mart serves a single department or focuses on a single area; it is conceptually confined. If dependent, the data mart is a subset of a broader data warehouse.
+   </li>
+   <li>
+    <strong>
+     Data mart bus architecture:
+    </strong>
+    Dimensionalized data marts linked by conformed dimensions (Ralph Kimball: "plan big, build small").
+   </li>
+   <li>
+    <strong>
+     Hub-and-spoke architecture:
+    </strong>
+    Normalized relational data warehouse, serving dependent data marts (Bill Inmon; top-down approach).
+   </li>
+   <li>
+    <strong>
+     Centralized data warehouse:
+    </strong>
+    <a href="https://jtkovacs.github.io/refs/bi.html#generic-bi-architecture">
+     As above.
+    </a>
+   </li>
+   <li>
+    <strong>
+     Federated data warehouse:
+    </strong>
+    Existing data warehouses, marts and legacy systems are mapped together and/or physically integrated.
+   </li>
+   <li>
+    <strong>
+     Operational data store:
+    </strong>
+    An ODS has fresh data, to support immediate and short-term decision-making. It does not fulfill the traditional DW's role of storing data and enabling analysis across long periods of time.
+   </li>
+   <li>
+    <strong>
+     Oper marts:
+    </strong>
+    ODS for multidimensional analysis.
+   </li>
+  </ul>
+  <h4 id="choosing-an-architecture">
+   <a>
+    2.2.4.1. Choosing an architecture
+   </a>
+  </h4>
+  <p>
+   Per Sharda et al. (2014):
   </p>
   <ul>
    <li>
@@ -591,72 +612,6 @@
     Perceived ability/capacity of in-house IT staff
    </li>
   </ul>
-  <h4 id="independent-data-mart">
-   <a>
-    2.2.3.1. (In)dependent data mart
-   </a>
-  </h4>
-  <p>
-   A data mart serves a single department or focuses on a single area; it is conceptually confined. If dependent, the data mart is a subset of a broader data warehouse.
-  </p>
-  <h4 id="data-mart-bus-architecture">
-   <a>
-    2.2.3.2. Data mart bus architecture
-   </a>
-  </h4>
-  <p>
-   Dimensionalized data marts linked by conformed dimensions (Ralph Kimball: "plan big, build small").
-  </p>
-  <h4 id="hub-and-spoke-architecture">
-   <a>
-    2.2.3.3. Hub-and-spoke architecture
-   </a>
-  </h4>
-  <p>
-   Normalized relational data warehouse, serving dependent data marts (Bill Inmon; top-down approach).
-  </p>
-  <h4 id="centralized-data-warehouse">
-   <a>
-    2.2.3.4. Centralized data warehouse
-   </a>
-  </h4>
-  <p>
-   <a href="https://jtkovacs.github.io/refs/bi.html#generic-bi-architecture">
-    As above.
-   </a>
-  </p>
-  <h4 id="federated-data-warehouse">
-   <a>
-    2.2.3.5. Federated data warehouse
-   </a>
-  </h4>
-  <p>
-   Existing data warehouses, marts and legacy systems are mapped together and/or physically integrated.
-  </p>
-  <h4 id="operational-data-store">
-   <a>
-    2.2.3.6. Operational data store
-   </a>
-  </h4>
-  <p>
-   An ODS has fresh data, to support immediate and short-term decision-making. It does not fulfill the traditional DW's role of storing data and enabling analysis across long periods of time.
-  </p>
-  <h5 id="oper-marts">
-   <a>
-    2.2.3.6.1. Oper marts
-   </a>
-  </h5>
-  <p>
-   ODS for multidimensional analysis.
-  </p>
-  <h4 id="dimensional-modeling">
-   <a>
-    2.2.3.7. Dimensional modeling
-   </a>
-  </h4>
-  <p>
-   Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
-  </p>
   <h2 id="olap">
    <a>
     2.3. OLAP

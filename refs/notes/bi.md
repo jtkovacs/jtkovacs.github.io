@@ -29,10 +29,7 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 
 ## BI architecture and roles
 
-| **Environment ** | Operational Environment | Data Warehouse Environment | Business Analytics Environment | Performance & Strategy Environment |
-| --- | --- | --- | --- | --- |
-| **Tools** | Transactional databases to support operations | Data warehouse to store data | Tools for analyzing data | Dashboards for viewing data |
-| **Actions** | Extract ... | ... transform, load (ETL) | Data mining | Business Performance Management |
+<img src="../illos/bi-arch.png" width="600">
 
 ![](../illos/bi-food-metaphor.png)
 

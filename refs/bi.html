@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 1774 words | updated 12/18/2017
+   &gt; bi | just under 1850 words | updated 12/18/2017
   </p>
   <div class="TOC">
    <ul>
@@ -149,14 +149,8 @@
          <ul>
           <li>
            2.1.4.1.
-           <a href="#star-and-snowflake-schema">
-            Star and snowflake schema
-           </a>
-          </li>
-          <li>
-           2.1.4.2.
-           <a href="#olap-vs-oltp">
-            OLAP vs OLTP
+           <a href="#dimensional-modeling">
+            Dimensional modeling
            </a>
           </li>
          </ul>
@@ -179,6 +173,12 @@
            2.2.1.1.
            <a href="#sas-model-of-analytics-levels">
             SAS model of analytics levels
+           </a>
+          </li>
+          <li>
+           2.2.1.2.
+           <a href="#olap-vs-oltp">
+            OLAP vs OLTP
            </a>
           </li>
          </ul>
@@ -685,7 +685,19 @@
    </a>
   </h3>
   <p>
-   Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
+   Data must be
+   <strong>
+    extracted
+   </strong>
+   from operational systems;
+   <strong>
+    transformed
+   </strong>
+   so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally
+   <strong>
+    loaded
+   </strong>
+   into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
   </p>
   <ul>
    <li>
@@ -701,79 +713,14 @@
     Easy-to-use interfaces for developers and uses
    </li>
   </ul>
-  <h4 id="star-and-snowflake-schema">
+  <h4 id="dimensional-modeling">
    <a>
-    2.1.4.1. Star and snowflake schema
-   </a>
-  </h4>
-  <h4 id="olap-vs-oltp">
-   <a>
-    2.1.4.2. OLAP vs OLTP
+    2.1.4.1. Dimensional modeling
    </a>
   </h4>
   <p>
-   The disctinction between
-   <a href="https://jtkovacs.github.io/refs/databases.html">
-    transaction
-   </a>
-   and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various
-   <a href="http://olap.com/types-of-olap-systems/">
-    subtypes of OLAP databases
-   </a>
-   (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
+   Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
   </p>
-  <table>
-   <thead>
-    <tr class="header">
-     <th align="left">
-      Name
-     </th>
-     <th align="left">
-      AKA
-     </th>
-     <th align="left">
-      Function
-     </th>
-     <th align="left">
-      Goals
-     </th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr class="odd">
-     <td align="left">
-      <strong>
-       OLTP
-      </strong>
-     </td>
-     <td align="left">
-      operational database
-     </td>
-     <td align="left">
-      captures each record: emails, credit card transactions, webpage views, …
-     </td>
-     <td align="left">
-      efficiency, control
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      <strong>
-       OLAP
-      </strong>
-     </td>
-     <td align="left">
-      data warehouse
-     </td>
-     <td align="left">
-      ops --&gt; data warehouse --&gt; OLAP --&gt; UI/dashboard
-     </td>
-     <td align="left">
-      aggregation, efficiency, accuracy, access
-     </td>
-    </tr>
-   </tbody>
-  </table>
   <h2 id="analytics">
    <a>
     2.2. Analytics
@@ -1004,6 +951,77 @@
      </ul>
     </td>
    </tr>
+  </table>
+  <h4 id="olap-vs-oltp">
+   <a>
+    2.2.1.2. OLAP vs OLTP
+   </a>
+  </h4>
+  <p>
+   "Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69)
+  </p>
+  <p>
+   The disctinction between
+   <a href="https://jtkovacs.github.io/refs/databases.html">
+    transaction
+   </a>
+   and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various
+   <a href="http://olap.com/types-of-olap-systems/">
+    subtypes of OLAP databases
+   </a>
+   (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
+  </p>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      Name
+     </th>
+     <th align="left">
+      AKA
+     </th>
+     <th align="left">
+      Function
+     </th>
+     <th align="left">
+      Goals
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      <strong>
+       OLTP
+      </strong>
+     </td>
+     <td align="left">
+      operational database
+     </td>
+     <td align="left">
+      captures each record: emails, credit card transactions, webpage views, …
+     </td>
+     <td align="left">
+      efficiency, control
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      <strong>
+       OLAP
+      </strong>
+     </td>
+     <td align="left">
+      data warehouse
+     </td>
+     <td align="left">
+      ops --&gt; data warehouse --&gt; OLAP --&gt; UI/dashboard
+     </td>
+     <td align="left">
+      aggregation, efficiency, accuracy, access
+     </td>
+    </tr>
+   </tbody>
   </table>
   <h3 id="big-data">
    <a>

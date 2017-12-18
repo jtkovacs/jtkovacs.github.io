@@ -166,23 +166,18 @@ Per Sharda et al. (2014, p. 81):
 
 ### ETL
 
-Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
+Data must be **extracted** from operational systems; **transformed** so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally **loaded** into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
 
 - Integration with data sources
 - Automatic metadata capture
 - Conformance with open standards
 - Easy-to-use interfaces for developers and uses
 
-#### Star and snowflake schema
+#### Dimensional modeling
 
-#### OLAP vs OLTP
+Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
 
-The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
 
-| Name | AKA | Function | Goals |
-| --- | --- | --- | --- |
-| **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
-| **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
 
 
 
@@ -265,7 +260,16 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
+#### OLAP vs OLTP
 
+"Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69)
+
+The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
+
+| Name | AKA | Function | Goals |
+| --- | --- | --- | --- |
+| **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
+| **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
 
 ### Big Data
 

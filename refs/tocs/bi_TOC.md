@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1774 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1850 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.2. [History of BI](#history-of-bi)
 	- &nbsp;1.3. [Generic BI architecture](#generic-bi-architecture)
@@ -18,11 +18,11 @@
 				- &nbsp;2.1.3.6.1. [Oper marts](#oper-marts)
 			- &nbsp;2.1.3.7. [Real-time data warehousing](#real-time-data-warehousing)
 		- &nbsp;2.1.4. [ETL](#etl)
-			- &nbsp;2.1.4.1. [Star and snowflake schema](#star-and-snowflake-schema)
-			- &nbsp;2.1.4.2. [OLAP vs OLTP](#olap-vs-oltp)
+			- &nbsp;2.1.4.1. [Dimensional modeling](#dimensional-modeling)
 	- &nbsp;2.2. [Analytics](#analytics)
 		- &nbsp;2.2.1. [Types of analytics](#types-of-analytics)
 			- &nbsp;2.2.1.1. [SAS model of analytics levels](#sas-model-of-analytics-levels)
+			- &nbsp;2.2.1.2. [OLAP vs OLTP](#olap-vs-oltp)
 		- &nbsp;2.2.2. [Big Data](#big-data)
 	- &nbsp;2.3. [Dashboards & reporting](#dashboards-reporting)
 - &nbsp;3. [Sources](#sources)
@@ -199,23 +199,18 @@ Per Sharda et al. (2014, p. 81):
 
 ### 2.1.4. ETL
 
-Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
+Data must be **extracted** from operational systems; **transformed** so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally **loaded** into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
 
 - Integration with data sources
 - Automatic metadata capture
 - Conformance with open standards
 - Easy-to-use interfaces for developers and uses
 
-#### 2.1.4.1. Star and snowflake schema
+#### 2.1.4.1. Dimensional modeling
 
-#### 2.1.4.2. OLAP vs OLTP
+Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
 
-The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
 
-| Name | AKA | Function | Goals |
-| --- | --- | --- | --- |
-| **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
-| **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
 
 
 
@@ -298,7 +293,16 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
+#### 2.2.1.2. OLAP vs OLTP
 
+"Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69)
+
+The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
+
+| Name | AKA | Function | Goals |
+| --- | --- | --- | --- |
+| **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
+| **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
 
 ### 2.2.2. Big Data
 

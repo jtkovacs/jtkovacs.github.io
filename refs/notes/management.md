@@ -14,7 +14,7 @@ Per Sharda et al. (2014, p. 7):
 <tr><th>Factor</th><th>Description</th></tr>
 <tr>
     <td><b>Markets</b></td>
-    <td>
+    <td style="align:left;">
         <ul>
             <li> Strong competition </li>
             <li> Expanding global markets </li>

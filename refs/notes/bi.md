@@ -2,22 +2,18 @@
 
 # What is BI?
 
-Business intelligence (BI) systems are a type of [management information system (MIS).](https://jtkovacs.github.io/refs/information-systems.html#types-of-mis)
+Business intelligence (BI) systems are a type of [management information system (MIS)](https://jtkovacs.github.io/refs/information-systems.html#types-of-mis) that supports managerial (strategic and operational) decision-making. Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
 
-- https://en.wikipedia.org/wiki/Business_intelligence
+- The business environment supplies pressures and opportunities ("globalization, customer demand, government regulations, market conditions, competition, etc."; see [PESTEL analysis\);](./project-management.html#pestel-analysis)
+- Managers need to respond ("strategy, partners' collaboration, real-time response, agility, increased productivity, new vendors, new business models, etc.");
+    - _different possibilities: "reactive, anticipative, adaptive, and proactive" (Sharda et al., 7)_
+- BI supports their response/decision with analysis and predictions.
 
 
-Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
+## Does BI have value?
 
-- The business environment supplies pressures and opportunities (see [PESTEL analysis\);](./project-management.html#pestel-analysis)
-- Managers need to respond;
-- BI supports their response with analysis and predictions.
+In theory, BI adds value by improving decisions. BI may enable organizations to answer their questions faster, or to pose new questions and gain new insights. Faster answers may support faster actions; new insights may indicate and/or support new courses of action. But very clearly, the value of BI depends on (1) the **quality of the data** being fed into the system; (2) the **quality of the analysis** performed on the data; (3) capacity to **turn analysis into decisions,** and most fundamentally, (4) capacity to **act on decisions.** (Senge's concept of a learning organization is relevant here---it is an organization that can not only make and act on decisions, but reflect on them and improve them through iteration. It is a lofty ideal that most organizations are nowhere near.)
 
-By enabling data-based decision-making, BI offers value in the form of:
-
-- faster answers (speed = competitive edge)
-- new answers to questions currently impossible
-- actions that wouldn't have been performed without BI
 
 ## History of BI
 
@@ -30,7 +26,8 @@ By enabling data-based decision-making, BI offers value in the form of:
 
 ![](../illos/bi-tools-by-value.jpg)
 
-## BI roles
+
+## BI architecture and roles
 
 A BI team typically has the following roles:
 
@@ -42,6 +39,7 @@ https://jtkovacs.github.io/refs/data-science.html
 - DS may involve more sophisticated modeling
 - DS facilitates predictive and prescriptive analytics
 - Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+
 
 ## Trends in BI
 

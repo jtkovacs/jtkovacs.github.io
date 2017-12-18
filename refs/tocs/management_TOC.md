@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 262 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [Sources of pressure](#sources-of-pressure)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 263 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [Sources of pressure](#sources-of-pressure)
 - &nbsp;2. [Sources](#sources)
 	- &nbsp;2.1. [Cited](#cited)
 	- &nbsp;2.2. [References](#references)
@@ -21,7 +21,7 @@ Per Sharda et al. (2014, p. 7):
 <tr><th>Factor</th><th>Description</th></tr>
 <tr>
     <td><b>Markets</b></td>
-    <td>
+    <td style="align:left;">
         <ul>
             <li> Strong competition </li>
             <li> Expanding global markets </li>

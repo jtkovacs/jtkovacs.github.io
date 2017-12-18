@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 996 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1063 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.2. [History of BI](#history-of-bi)
 	- &nbsp;1.3. [BI architecture and roles](#bi-architecture-and-roles)
@@ -49,7 +49,12 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 
 ## 1.3. BI architecture and roles
 
-A BI team typically has the following roles:
+| **Environment ** | Operational Environment | Data Warehouse Environment | Business Analytics Environment | Performance & Strategy Environment |
+| --- | --- | --- | --- | --- |
+| **Tools** | Transactional databases to support operations | Data warehouse to store data | Tools for analyzing data | Dashboards for viewing data |
+| **Actions** | Extract ... | ... transform, load (ETL) | Data mining | Business Performance Management |
+
+![](../illos/bi-food-metaphor.png)
 
 ### 1.3.1. BI versus data science
 

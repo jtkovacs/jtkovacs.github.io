@@ -14,7 +14,7 @@ Per Sharda et al. (2014, p. 7):
 <tr><th>Factor</th><th>Description</th></tr>
 <tr>
     <td><b>Markets</b></td>
-    <td style="align:left;">
+    <td style="text-align:left;">
         <ul>
             <li> Strong competition </li>
             <li> Expanding global markets </li>
@@ -26,7 +26,7 @@ Per Sharda et al. (2014, p. 7):
 </tr>
 <tr>
     <td><b>Consumer demands</b></td>
-    <td>
+    <td style="text-align:left;">
         <ul>
             <li> Desire for customization </li>
             <li> Desire for quality, diversity of products, and speed of delivery </li>
@@ -36,7 +36,7 @@ Per Sharda et al. (2014, p. 7):
 </tr>
 <tr>
     <td><b>Technology</b></td>
-    <td>
+    <td style="text-align:left;">
         <ul>
             <li> More innovations, new products, and new services </li>
             <li> Increasing obsolescence rate</li>
@@ -47,7 +47,7 @@ Per Sharda et al. (2014, p. 7):
 </tr>
 <tr>
     <td><b>Societal</b></td>
-    <td>
+    <td style="text-align:left;">
         <ul>
             <li> Growing government regulations and deregulation </li>
             <li> Workforce more diversified, older, and composed more of women </li>

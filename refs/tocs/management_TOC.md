@@ -1,5 +1,9 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> management | nearly 49 words | updated 05/16/2017</p><div class="TOC">- 1. [Sources](#sources)
-	- 1.1. [References](#references)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 262 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [Sources of pressure](#sources-of-pressure)
+- &nbsp;2. [Sources](#sources)
+	- &nbsp;2.1. [Cited](#cited)
+	- &nbsp;2.2. [References](#references)
+	- &nbsp;2.3. [Read](#read)
+	- &nbsp;2.4. [Unrea](#unrea)
 </div>
 Import notes from Hala's class; be sure to cover:
 
@@ -8,8 +12,74 @@ Import notes from Hala's class; be sure to cover:
 - Business processes & the improvement thereof
 - Project management
 
-# 1. Sources
+# 1. Sources of pressure
 
-## 1.1. References
+Per Sharda et al. (2014, p. 7):
+
+<table>
+<tr><th colspan="2">Table 1.1 Business Environment Factors That Create Pressures on Organizations</th></tr>
+<tr><th>Factor</th><th>Description</th></tr>
+<tr>
+    <td><b>Markets</b></td>
+    <td>
+        <ul>
+            <li> Strong competition </li>
+            <li> Expanding global markets </li>
+            <li> Booming electronic markets on the Internet </li>
+            <li> Innovative marketing methods </li>
+            <li> Opportunities for outsourcing with IT support </li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td><b>Consumer demands</b></td>
+    <td>
+        <ul>
+            <li> Desire for customization </li>
+            <li> Desire for quality, diversity of products, and speed of delivery </li>
+            <li> Customers getting powerful and less loyal </li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td><b>Technology</b></td>
+    <td>
+        <ul>
+            <li> More innovations, new products, and new services </li>
+            <li> Increasing obsolescence rate</li>
+            <li> Increasing information overload</li>
+            <li> Social networking, Web 2.0 and beyond </li>
+        </ul>
+    </td>
+</tr>
+<tr>
+    <td><b>Societal</b></td>
+    <td>
+        <ul>
+            <li> Growing government regulations and deregulation </li>
+            <li> Workforce more diversified, older, and composed more of women </li>
+            <li> Prime concerns of homeland security and terrorist attacks </li>
+            <li> Necessity of Sarbanes-Oxley Act and other reporting-related legislation </li>
+            <li> Increasing social responsibility of companies </li>
+            <li> Greater emphasis on sustainability </li>
+        </ul>
+    </td>
+</tr>
+<table>
+
+
+
+
+# 2. Sources
+
+## 2.1. Cited
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+## 2.2. References
 
 - [http://www.nwlink.com/~donclark/contents.html:](http://www.nwlink.com/~donclark/contents.html) "your window to learning, training, leadership, design and all matters related to improving human performance"
+
+## 2.3. Read
+
+## 2.4. Unread

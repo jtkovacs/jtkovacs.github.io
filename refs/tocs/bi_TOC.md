@@ -49,7 +49,7 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 
 ## 1.3. BI architecture and roles
 
-<img src="../illos/bi-arch.png" width="600">
+<img src="../illos/bi-arch.jpg" width="600">
 
 ![](../illos/bi-food-metaphor.png)
 

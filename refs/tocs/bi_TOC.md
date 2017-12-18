@@ -1,15 +1,28 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 992 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1774 words | updated 12/18/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.2. [History of BI](#history-of-bi)
-	- &nbsp;1.3. [BI architecture and roles](#bi-architecture-and-roles)
+	- &nbsp;1.3. [Generic BI architecture](#generic-bi-architecture)
 		- &nbsp;1.3.1. [BI versus data science](#bi-versus-data-science)
 	- &nbsp;1.4. [Trends in BI](#trends-in-bi)
 - &nbsp;2. [BI systems](#bi-systems)
 	- &nbsp;2.1. [Data warehouses](#data-warehouses)
-		- &nbsp;2.1.1. [OLTP vs OLAP databases](#oltp-vs-olap-databases)
-		- &nbsp;2.1.2. [Data warehouse architectures](#data-warehouse-architectures)
+		- &nbsp;2.1.1. [Why a data warehouse?](#why-a-data-warehouse)
+		- &nbsp;2.1.2. [Common problems with DW initiatives](#common-problems-with-dw-initiatives)
+		- &nbsp;2.1.3. [Various data warehouse architectures](#various-data-warehouse-architectures)
+			- &nbsp;2.1.3.1. [(In)Dependent data mart](#independent-data-mart)
+			- &nbsp;2.1.3.2. [Data mart bus architecture](#data-mart-bus-architecture)
+			- &nbsp;2.1.3.3. [Hub-and-spoke architecture](#hub-and-spoke-architecture)
+			- &nbsp;2.1.3.4. [Centralized data warehouse](#centralized-data-warehouse)
+			- &nbsp;2.1.3.5. [Federated data warehouse](#federated-data-warehouse)
+			- &nbsp;2.1.3.6. [Operational data store (ODS)](#operational-data-store-ods)
+				- &nbsp;2.1.3.6.1. [Oper marts](#oper-marts)
+			- &nbsp;2.1.3.7. [Real-time data warehousing](#real-time-data-warehousing)
+		- &nbsp;2.1.4. [ETL](#etl)
+			- &nbsp;2.1.4.1. [Star and snowflake schema](#star-and-snowflake-schema)
+			- &nbsp;2.1.4.2. [OLAP vs OLTP](#olap-vs-oltp)
 	- &nbsp;2.2. [Analytics](#analytics)
 		- &nbsp;2.2.1. [Types of analytics](#types-of-analytics)
+			- &nbsp;2.2.1.1. [SAS model of analytics levels](#sas-model-of-analytics-levels)
 		- &nbsp;2.2.2. [Big Data](#big-data)
 	- &nbsp;2.3. [Dashboards & reporting](#dashboards-reporting)
 - &nbsp;3. [Sources](#sources)
@@ -24,9 +37,8 @@
 
 Business intelligence (BI) systems are a type of [management information system (MIS)](https://jtkovacs.github.io/refs/information-systems.html#types-of-mis) that supports managerial (strategic and operational) decision-making. Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
 
-- The business environment supplies pressures and opportunities ("globalization, customer demand, government regulations, market conditions, competition, etc."; see [PESTEL analysis\);](./project-management.html#pestel-analysis)
-- Managers need to respond ("strategy, partners' collaboration, real-time response, agility, increased productivity, new vendors, new business models, etc.");
-    - _different possibilities: "reactive, anticipative, adaptive, and proactive" (Sharda et al., 7)_
+- The business environment supplies pressures and opportunities (see [PESTEL analysis](./project-management.html#pestel-analysis) and [management notes\);](https://jtkovacs.github.io/refs/management.html)
+- Managers need to respond (different possibilities, Sharda et al. [2014, p. 7]: "reactive, anticipative, adaptive, and proactive");
 - BI supports their response/decision with analysis and predictions.
 
 
@@ -47,7 +59,7 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 ![](../illos/bi-tools-by-value.jpg)
 
 
-## 1.3. BI architecture and roles
+## 1.3. Generic BI architecture
 
 <img src="../illos/bi-arch.jpg" width="600">
 
@@ -85,31 +97,127 @@ Per Sharda et al. (2004), BI tools provide varying combinations of the following
 
 ## 2.1. Data warehouses
 
-Data warehouse functionality
+A data warehouse is a data store that is used to
 
-- Data visualization
-- Alerts/push mechanisms that activate in response to certain conditions or as part of a routine
-- Performance management capabilities (track performance vs. goals, e.g. sales quota; can be public/competitive)
+- free up resources by removing data from operational systems;
+- create a trustworthy, safe, and persistent archive of data;
+- clean and aggregate data so that it can be easily analyzed.
 
-### 2.1.1. OLTP vs OLAP databases
+Per Sharda et al., many data warehouses have the following characteristics:
 
-The disctinction between online transaction and analytics processing arises from the current state of computer science, viz., you must optimize for either reads or writes (Barret Rodgers: “a lot of times you can use a [specific software platform] for either purpose, you just tune it one way or another” , e.g. “they both may be SQL Server, they both may be views in SQL Server”).
+- **Subject-oriented** (i.e., conceptually curated)
+- **Integrated** (combining data across operational systems)
+- **Time variant** (storing data in a way that allows time series analysis)
+- **Nonvolatile** (protected from edits)
+
+### 2.1.1. Why a data warehouse?
+
+Per Sharda et al. (2014, p. 47):
+
+- Reduced infrastructure expense
+- Better compliance
+- Easier for IT/IS to be maintained
+- Reduced warranty expense
+- Improved quality (identifying and prioritizing issues faster)
+- Combines data, enabling construction of a more accurate and comprehensive picture of the organization
+
+### 2.1.2. Common problems with DW initiatives
+
+Per Sharda et al. (2014, pp. 73-74):
+
+- "Starting with the wrong sponsorship chain
+    - _... or offending sponsors by implying deficiencies in their decision-making_
+- Setting expectations that you cannot meet
+- Loading the warehouse with information just because it is available
+- Believing that data warehouse database design is the same as transactional database design
+- Choosing a data warehouse manager who is technology oriented rather than user oriented
+- Focusing on traditional internal record-oriented data and ignoring the value of external data and of text, images, and, perhaps, sound and video
+- Delivering data with overlapping and confusing definitions
+- Believing promises of performance, capacity, and scalability [w/r/t BI software purchases]
+- Believing that your problems are over when the data warehouse is up and running
+- Focusing on ad hoc data mining and periodic reporting instead of alerts"
+
+### 2.1.3. Various data warehouse architectures
+
+Sharda et al. (2014, pp. 51-56) provide much more detail, as well as noting the following questions which are critical to choosing a data warehouse architecture:
+
+- Which database management system (DBMS) should be used? Should it be relational?
+- For scalability and speed, will parallel processing be required? Will tables need to be partitioned?
+- How much data should be migrated into the new DW, and will this require special tools?
+- What additional tools or integrations will be needed to support data retrieval?
+- What additional tools or integrations will be needed to support data analysis?
+
+More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p. 55):
+
+- Information interdependence between organizational units
+- Upper management's information needs
+- Nature of end-user tasks
+- Constraints on reqources
+- Compatability with existing systems
+- Perceived ability/capacity of in-house IT staff
+
+#### 2.1.3.1. (In)Dependent data mart
+
+A data mart serves a single department or focuses on a single area; it is conceptually confined. If dependent, the data mart is a subset of a broader data warehouse.
+
+#### 2.1.3.2. Data mart bus architecture
+
+Dimensionalized data marts linked by conformed dimensions (Ralph Kimball: "plan big, build small").
+
+#### 2.1.3.3. Hub-and-spoke architecture
+
+Normalized relational data warehouse, serving dependent data marts (Bill Inmon; top-down approach).
+
+#### 2.1.3.4. Centralized data warehouse
+
+[As above.](https://jtkovacs.github.io/refs/bi.html#generic-bi-architecture)
+
+#### 2.1.3.5. Federated data warehouse
+
+Existing data warehouses, marts and legacy systems are mapped together and/or physically integrated.
+
+#### 2.1.3.6. Operational data store (ODS)
+
+An ODS has fresh data, to support immediate and short-term decision-making. It does not fulfill the traditional DW's role of storing data and enabling analysis across long periods of time.
+
+##### 2.1.3.6.1. Oper marts
+
+ODS for multidimensional analysis.
+
+#### 2.1.3.7. Real-time data warehousing
+
+Per Sharda et al. (2014, p. 81):
+
+| Traditional DW Environment | Active DW Environment |
+| --- | --- |
+| Strategic decisions only | Strategic and tactical decisions |
+| Results sometimes hard to measure | Results measured with operations |
+| Daily, weekly, monthly data currency acceptable; summaries often appropriate | Only comprehensive detailed data available within minutes is acceptable |
+| Moderate user concurrency | High number (1000 or more) of users accessing and querying the system simultaneously |
+| Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts | Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships |
+| Power users, knowledge workers, internal users | Operational staffs, call centers, external users |
+
+### 2.1.4. ETL
+
+Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
+
+- Integration with data sources
+- Automatic metadata capture
+- Conformance with open standards
+- Easy-to-use interfaces for developers and uses
+
+#### 2.1.4.1. Star and snowflake schema
+
+#### 2.1.4.2. OLAP vs OLTP
+
+The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
 
 | Name | AKA | Function | Goals |
 | --- | --- | --- | --- |
 | **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
-| **OLAP** | n/a | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
+| **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
 
-- http://olap.com/types-of-olap-systems/
-- https://en.wikipedia.org/wiki/Online_analytical_processing
-- https://en.wikipedia.org/wiki/Online_transaction_processing
 
-### 2.1.2. Data warehouse architectures
-
-- Online data store
-- Star schema
-- Data vault
-- Data mart
 
 
 
@@ -129,15 +237,76 @@ The disctinction between online transaction and analytics processing arises from
 
 ### 2.2.1. Types of analytics
 
+Per Sharda et al. (2014):
+
 - **Descriptive:** Asking what happened or is happening to generate well-defined business problems and opportunities; also provides answers to simple questions
 - **Predictive:** Asking what’s going to happen and why, to generate accurate projections that can inform analyses
 - **Prescriptive:** Asking what should be done and generating (or even executing) a specific solution
+
+#### 2.2.1.1. SAS model of analytics levels
+
+According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.blogspot.com/2012/09/eight-levels-of-analytics-model-by-sas.html) SAS published a white paper describing different "levels" of analytics:
+
+<table>
+    <tr><th>Standard Reporting</th>
+        <td><ul>
+                <li>Historical perspective</li>
+                <li>Standard KPI or data parameters</li>
+                <li>Focused on short-term goals and objectives</li>
+            </ul></td></tr>
+    <tr><th>Customized Reporting</th>
+        <td><ul>
+                <li>Flexible reporting</li>
+                <li>Focused on problem solving</li>
+                <li>Historical perspective</li>
+            </ul></td></tr>
+    <tr><th>Drill down analysis</th>
+        <td><ul>
+                <li>Root cause analysis</li>
+                <li>Stratification analysis</li>
+                <li>Used exensively in <a href="http://asq.org/learn-about-quality/six-sigma/overview/dmaic.html">DMAIC processes</a></li>
+            </ul></td></tr>
+    <tr><th>Alerts & Notifications</th>
+        <td><ul>
+                <li>Management by exception</li>
+                <li>Pre-defined business process</li>
+                <li>Real-time feedback</li>
+            </ul></td></tr>
+    <tr><th>Statistical Analysis</th>
+        <td><ul>
+                <li>Correlation analysis</li>
+                <li>Discriminant analysis</li>
+                <li>Regression analysis</li>
+            </ul></td></tr>
+    <tr><th>Forecasting</th>
+        <td><ul>
+                <li>Trends</li>
+                <li>Pattern recognition</li>
+                <li>Decision-making capability</li>
+            </ul></td></tr>
+    <tr><th>Predictive Modeling</th>
+        <td><ul>
+                <li>Prognostics</li>
+                <li>Data-driven decisions</li>
+                <li></li>
+            </ul></td></tr>
+    <tr><th>Optimization</th>
+        <td><ul>
+                <li>Enable innovation</li>
+                <li>Continuous improvement</li>
+                <li>Adaptive feedback</li>
+            </ul></td></tr>
+</table>
+
+
 
 ### 2.2.2. Big Data
 
 - definition of big data
 - business value of value
 - big data technologies
+    - storage (HDFS)
+    - processing (map/reduce)
 - sources
 
 

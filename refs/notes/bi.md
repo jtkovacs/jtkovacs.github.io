@@ -14,18 +14,6 @@ Business intelligence (BI) systems are a type of [management information system 
 In theory, BI adds value by improving decisions. BI may enable organizations to answer their questions faster, or to pose new questions and gain new insights. Faster answers may support faster actions; new insights may indicate and/or support new courses of action. But very clearly, the value of BI depends on (1) the **quality of the data** being fed into the system; (2) the **quality of the analysis** performed on the data; (3) capacity to **turn analysis into decisions,** and most fundamentally, (4) capacity to **act on decisions.** (Senge's concept of a learning organization is relevant here---it is an organization that can not only make and act on decisions, but reflect on them and improve them through iteration. It is a lofty ideal that most organizations are nowhere near.)
 
 
-## History of BI
-
-- [use of info to support decisions]
-- [use of computers to support decisions]
-- Executive and management information systems
-- BI systems enabling broader access to data, closer to ground-level where people can base their actions on it
-
-<img src="../illos/DSS-evolution.jpg" width="600">
-
-![](../illos/bi-tools-by-value.jpg)
-
-
 ## Generic BI architecture
 
 <img src="../illos/bi-arch.jpg" width="600">
@@ -42,10 +30,24 @@ https://jtkovacs.github.io/refs/data-science.html
 - Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
 
 
+## History of BI
+
+- [use of info to support decisions]
+- [use of computers to support decisions]
+- Executive and management information systems
+- BI systems enabling broader access to data, closer to ground-level where people can base their actions on it
+
+<img src="../illos/DSS-evolution.jpg" width="600">
+
+![](../illos/bi-tools-by-value.jpg)
+
+
 ## Trends in BI
 
 - Data democratization
 - IoT
+
+
 
 
 
@@ -62,7 +64,18 @@ Per Sharda et al. (2004), BI tools provide varying combinations of the following
 
 
 
-## Data warehouses
+## ETL
+
+Data must be **extracted** from operational systems; **transformed** so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally **loaded** into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
+
+- Integration with data sources
+- Automatic metadata capture
+- Conformance with open standards
+- Easy-to-use interfaces for developers and uses
+
+
+
+## Data warehousing
 
 A data warehouse is a data store that is used to
 
@@ -123,7 +136,7 @@ More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p.
 - Compatability with existing systems
 - Perceived ability/capacity of in-house IT staff
 
-#### (In)Dependent data mart
+#### (In)dependent data mart
 
 A data mart serves a single department or focuses on a single area; it is conceptually confined. If dependent, the data mart is a subset of a broader data warehouse.
 
@@ -143,7 +156,7 @@ Normalized relational data warehouse, serving dependent data marts (Bill Inmon; 
 
 Existing data warehouses, marts and legacy systems are mapped together and/or physically integrated.
 
-#### Operational data store (ODS)
+#### Operational data store
 
 An ODS has fresh data, to support immediate and short-term decision-making. It does not fulfill the traditional DW's role of storing data and enabling analysis across long periods of time.
 
@@ -151,35 +164,22 @@ An ODS has fresh data, to support immediate and short-term decision-making. It d
 
 ODS for multidimensional analysis.
 
-#### Real-time data warehousing
-
-Per Sharda et al. (2014, p. 81):
-
-| Traditional DW Environment | Active DW Environment |
-| --- | --- |
-| Strategic decisions only | Strategic and tactical decisions |
-| Results sometimes hard to measure | Results measured with operations |
-| Daily, weekly, monthly data currency acceptable; summaries often appropriate | Only comprehensive detailed data available within minutes is acceptable |
-| Moderate user concurrency | High number (1000 or more) of users accessing and querying the system simultaneously |
-| Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts | Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships |
-| Power users, knowledge workers, internal users | Operational staffs, call centers, external users |
-
-### ETL
-
-Data must be **extracted** from operational systems; **transformed** so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally **loaded** into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
-
-- Integration with data sources
-- Automatic metadata capture
-- Conformance with open standards
-- Easy-to-use interfaces for developers and uses
-
 #### Dimensional modeling
 
 Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
 
 
 
+## OLAP
 
+"Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69). The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
+
+| Name | AKA | Function | Goals |
+| --- | --- | --- | --- |
+| **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
+| **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
+
+For OLAP, data is stored as a multidimensional cube. Cubes can be efficiently **sliced** on a single dimension or **diced** on several; a user can **drill down** or up for different levels of detail, from summarized to granular; a user can **roll-up** a dimension, running calculations on it and its relationships; and a user may **pivot** to "change the dimensional orientation of a report or ad hoc query-display page" (Sharda et al., 2014, p. 71).
 
 
 
@@ -196,6 +196,10 @@ Dimensional modeling is data modeling to optimize retrieval; star schema (denorm
 - Data mining
     - https://jtkovacs.github.io/refs/machine-learning.html
     - https://jtkovacs.github.io/refs/statistics.html
+
+
+
+
 
 ### Types of analytics
 
@@ -260,25 +264,6 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
-#### OLAP vs OLTP
-
-"Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69)
-
-The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
-
-| Name | AKA | Function | Goals |
-| --- | --- | --- | --- |
-| **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
-| **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
-
-### Big Data
-
-- definition of big data
-- business value of value
-- big data technologies
-    - storage (HDFS)
-    - processing (map/reduce)
-- sources
 
 
 
@@ -293,6 +278,35 @@ The disctinction between [transaction](https://jtkovacs.github.io/refs/databases
 - https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards
 - https://jtkovacs.github.io/refs/graphics-viz.html
 - https://jtkovacs.github.io/refs/sotl.html#visual-design-of-learning-objects
+
+
+
+
+
+# Scoping BI systems
+
+## Big Data
+
+- definition of big data
+- business value of value
+- big data technologies
+    - storage (HDFS)
+    - processing (map/reduce)
+- sources
+
+## Real-time BI
+
+Per Sharda et al. (2014, p. 81):
+
+| Traditional DW Environment | Active DW Environment |
+| --- | --- |
+| Strategic decisions only | Strategic and tactical decisions |
+| Results sometimes hard to measure | Results measured with operations |
+| Daily, weekly, monthly data currency acceptable; summaries often appropriate | Only comprehensive detailed data available within minutes is acceptable |
+| Moderate user concurrency | High number (1000 or more) of users accessing and querying the system simultaneously |
+| Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts | Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships |
+| Power users, knowledge workers, internal users | Operational staffs, call centers, external users |
+
 
 
 

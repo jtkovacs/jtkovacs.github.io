@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 1850 words | updated 12/18/2017
+   &gt; bi | just under 1925 words | updated 12/18/2017
   </p>
   <div class="TOC">
    <ul>
@@ -33,23 +33,23 @@
       </li>
       <li>
        1.2.
-       <a href="#history-of-bi">
-        History of BI
-       </a>
-      </li>
-      <li>
-       1.3.
        <a href="#generic-bi-architecture">
         Generic BI architecture
        </a>
        <ul>
         <li>
-         1.3.1.
+         1.2.1.
          <a href="#bi-versus-data-science">
           BI versus data science
          </a>
         </li>
        </ul>
+      </li>
+      <li>
+       1.3.
+       <a href="#history-of-bi">
+        History of BI
+       </a>
       </li>
       <li>
        1.4.
@@ -67,66 +67,72 @@
      <ul>
       <li>
        2.1.
-       <a href="#data-warehouses">
-        Data warehouses
+       <a href="#etl">
+        ETL
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#data-warehousing">
+        Data warehousing
        </a>
        <ul>
         <li>
-         2.1.1.
+         2.2.1.
          <a href="#why-a-data-warehouse">
           Why a data warehouse?
          </a>
         </li>
         <li>
-         2.1.2.
+         2.2.2.
          <a href="#common-problems-with-dw-initiatives">
           Common problems with DW initiatives
          </a>
         </li>
         <li>
-         2.1.3.
+         2.2.3.
          <a href="#various-data-warehouse-architectures">
           Various data warehouse architectures
          </a>
          <ul>
           <li>
-           2.1.3.1.
+           2.2.3.1.
            <a href="#independent-data-mart">
-            (In)Dependent data mart
+            (In)dependent data mart
            </a>
           </li>
           <li>
-           2.1.3.2.
+           2.2.3.2.
            <a href="#data-mart-bus-architecture">
             Data mart bus architecture
            </a>
           </li>
           <li>
-           2.1.3.3.
+           2.2.3.3.
            <a href="#hub-and-spoke-architecture">
             Hub-and-spoke architecture
            </a>
           </li>
           <li>
-           2.1.3.4.
+           2.2.3.4.
            <a href="#centralized-data-warehouse">
             Centralized data warehouse
            </a>
           </li>
           <li>
-           2.1.3.5.
+           2.2.3.5.
            <a href="#federated-data-warehouse">
             Federated data warehouse
            </a>
           </li>
           <li>
-           2.1.3.6.
-           <a href="#operational-data-store-ods">
-            Operational data store (ODS)
+           2.2.3.6.
+           <a href="#operational-data-store">
+            Operational data store
            </a>
            <ul>
             <li>
-             2.1.3.6.1.
+             2.2.3.6.1.
              <a href="#oper-marts">
               Oper marts
              </a>
@@ -134,21 +140,7 @@
            </ul>
           </li>
           <li>
-           2.1.3.7.
-           <a href="#real-time-data-warehousing">
-            Real-time data warehousing
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         2.1.4.
-         <a href="#etl">
-          ETL
-         </a>
-         <ul>
-          <li>
-           2.1.4.1.
+           2.2.3.7.
            <a href="#dimensional-modeling">
             Dimensional modeling
            </a>
@@ -158,41 +150,35 @@
        </ul>
       </li>
       <li>
-       2.2.
+       2.3.
+       <a href="#olap">
+        OLAP
+       </a>
+      </li>
+      <li>
+       2.4.
        <a href="#analytics">
         Analytics
        </a>
        <ul>
         <li>
-         2.2.1.
+         2.4.1.
          <a href="#types-of-analytics">
           Types of analytics
          </a>
          <ul>
           <li>
-           2.2.1.1.
+           2.4.1.1.
            <a href="#sas-model-of-analytics-levels">
             SAS model of analytics levels
            </a>
           </li>
-          <li>
-           2.2.1.2.
-           <a href="#olap-vs-oltp">
-            OLAP vs OLTP
-           </a>
-          </li>
          </ul>
-        </li>
-        <li>
-         2.2.2.
-         <a href="#big-data">
-          Big Data
-         </a>
         </li>
        </ul>
       </li>
       <li>
-       2.3.
+       2.5.
        <a href="#dashboards-reporting">
         Dashboards &amp; reporting
        </a>
@@ -201,30 +187,50 @@
     </li>
     <li>
      3.
+     <a href="#scoping-bi-systems">
+      Scoping BI systems
+     </a>
+     <ul>
+      <li>
+       3.1.
+       <a href="#big-data">
+        Big Data
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#real-time-bi">
+        Real-time BI
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     4.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       3.1.
+       4.1.
        <a href="#cited">
         Cited
        </a>
       </li>
       <li>
-       3.2.
+       4.2.
        <a href="#references">
         References
        </a>
       </li>
       <li>
-       3.3.
+       4.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       3.4.
+       4.4.
        <a href="#unread">
         Unread
        </a>
@@ -287,9 +293,42 @@
    </strong>
    (Senge's concept of a learning organization is relevant here---it is an organization that can not only make and act on decisions, but reflect on them and improve them through iteration. It is a lofty ideal that most organizations are nowhere near.)
   </p>
+  <h2 id="generic-bi-architecture">
+   <a>
+    1.2. Generic BI architecture
+   </a>
+  </h2>
+  <p>
+   <img src="illos/bi-arch.jpg" width="600"/>
+  </p>
+  <div class="figure">
+   <img src="illos/bi-food-metaphor.png"/>
+  </div>
+  <h3 id="bi-versus-data-science">
+   <a>
+    1.2.1. BI versus data science
+   </a>
+  </h3>
+  <p>
+   https://jtkovacs.github.io/refs/data-science.html
+  </p>
+  <ul>
+   <li>
+    DS has more programming, is better at using computational power for analysis
+   </li>
+   <li>
+    DS may involve more sophisticated modeling
+   </li>
+   <li>
+    DS facilitates predictive and prescriptive analytics
+   </li>
+   <li>
+    Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+   </li>
+  </ul>
   <h2 id="history-of-bi">
    <a>
-    1.2. History of BI
+    1.3. History of BI
    </a>
   </h2>
   <ul>
@@ -312,39 +351,6 @@
   <div class="figure">
    <img src="illos/bi-tools-by-value.jpg"/>
   </div>
-  <h2 id="generic-bi-architecture">
-   <a>
-    1.3. Generic BI architecture
-   </a>
-  </h2>
-  <p>
-   <img src="illos/bi-arch.jpg" width="600"/>
-  </p>
-  <div class="figure">
-   <img src="illos/bi-food-metaphor.png"/>
-  </div>
-  <h3 id="bi-versus-data-science">
-   <a>
-    1.3.1. BI versus data science
-   </a>
-  </h3>
-  <p>
-   https://jtkovacs.github.io/refs/data-science.html
-  </p>
-  <ul>
-   <li>
-    DS has more programming, is better at using computational power for analysis
-   </li>
-   <li>
-    DS may involve more sophisticated modeling
-   </li>
-   <li>
-    DS facilitates predictive and prescriptive analytics
-   </li>
-   <li>
-    Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
-   </li>
-  </ul>
   <h2 id="trends-in-bi">
    <a>
     1.4. Trends in BI
@@ -380,9 +386,43 @@
     UI
    </li>
   </ul>
-  <h2 id="data-warehouses">
+  <h2 id="etl">
    <a>
-    2.1. Data warehouses
+    2.1. ETL
+   </a>
+  </h2>
+  <p>
+   Data must be
+   <strong>
+    extracted
+   </strong>
+   from operational systems;
+   <strong>
+    transformed
+   </strong>
+   so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally
+   <strong>
+    loaded
+   </strong>
+   into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
+  </p>
+  <ul>
+   <li>
+    Integration with data sources
+   </li>
+   <li>
+    Automatic metadata capture
+   </li>
+   <li>
+    Conformance with open standards
+   </li>
+   <li>
+    Easy-to-use interfaces for developers and uses
+   </li>
+  </ul>
+  <h2 id="data-warehousing">
+   <a>
+    2.2. Data warehousing
    </a>
   </h2>
   <p>
@@ -430,7 +470,7 @@
   </ul>
   <h3 id="why-a-data-warehouse">
    <a>
-    2.1.1. Why a data warehouse?
+    2.2.1. Why a data warehouse?
    </a>
   </h3>
   <p>
@@ -458,7 +498,7 @@
   </ul>
   <h3 id="common-problems-with-dw-initiatives">
    <a>
-    2.1.2. Common problems with DW initiatives
+    2.2.2. Common problems with DW initiatives
    </a>
   </h3>
   <p>
@@ -505,7 +545,7 @@
   </ul>
   <h3 id="various-data-warehouse-architectures">
    <a>
-    2.1.3. Various data warehouse architectures
+    2.2.3. Various data warehouse architectures
    </a>
   </h3>
   <p>
@@ -553,7 +593,7 @@
   </ul>
   <h4 id="independent-data-mart">
    <a>
-    2.1.3.1. (In)Dependent data mart
+    2.2.3.1. (In)dependent data mart
    </a>
   </h4>
   <p>
@@ -561,7 +601,7 @@
   </p>
   <h4 id="data-mart-bus-architecture">
    <a>
-    2.1.3.2. Data mart bus architecture
+    2.2.3.2. Data mart bus architecture
    </a>
   </h4>
   <p>
@@ -569,7 +609,7 @@
   </p>
   <h4 id="hub-and-spoke-architecture">
    <a>
-    2.1.3.3. Hub-and-spoke architecture
+    2.2.3.3. Hub-and-spoke architecture
    </a>
   </h4>
   <p>
@@ -577,7 +617,7 @@
   </p>
   <h4 id="centralized-data-warehouse">
    <a>
-    2.1.3.4. Centralized data warehouse
+    2.2.3.4. Centralized data warehouse
    </a>
   </h4>
   <p>
@@ -587,15 +627,15 @@
   </p>
   <h4 id="federated-data-warehouse">
    <a>
-    2.1.3.5. Federated data warehouse
+    2.2.3.5. Federated data warehouse
    </a>
   </h4>
   <p>
    Existing data warehouses, marts and legacy systems are mapped together and/or physically integrated.
   </p>
-  <h4 id="operational-data-store-ods">
+  <h4 id="operational-data-store">
    <a>
-    2.1.3.6. Operational data store (ODS)
+    2.2.3.6. Operational data store
    </a>
   </h4>
   <p>
@@ -603,127 +643,114 @@
   </p>
   <h5 id="oper-marts">
    <a>
-    2.1.3.6.1. Oper marts
+    2.2.3.6.1. Oper marts
    </a>
   </h5>
   <p>
    ODS for multidimensional analysis.
   </p>
-  <h4 id="real-time-data-warehousing">
+  <h4 id="dimensional-modeling">
    <a>
-    2.1.3.7. Real-time data warehousing
+    2.2.3.7. Dimensional modeling
    </a>
   </h4>
   <p>
-   Per Sharda et al. (2014, p. 81):
+   Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
+  </p>
+  <h2 id="olap">
+   <a>
+    2.3. OLAP
+   </a>
+  </h2>
+  <p>
+   "Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69). The disctinction between
+   <a href="https://jtkovacs.github.io/refs/databases.html">
+    transaction
+   </a>
+   and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various
+   <a href="http://olap.com/types-of-olap-systems/">
+    subtypes of OLAP databases
+   </a>
+   (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
   </p>
   <table>
    <thead>
     <tr class="header">
      <th align="left">
-      Traditional DW Environment
+      Name
      </th>
      <th align="left">
-      Active DW Environment
+      AKA
+     </th>
+     <th align="left">
+      Function
+     </th>
+     <th align="left">
+      Goals
      </th>
     </tr>
    </thead>
    <tbody>
     <tr class="odd">
      <td align="left">
-      Strategic decisions only
+      <strong>
+       OLTP
+      </strong>
      </td>
      <td align="left">
-      Strategic and tactical decisions
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      Results sometimes hard to measure
+      operational database
      </td>
      <td align="left">
-      Results measured with operations
-     </td>
-    </tr>
-    <tr class="odd">
-     <td align="left">
-      Daily, weekly, monthly data currency acceptable; summaries often appropriate
+      captures each record: emails, credit card transactions, webpage views, …
      </td>
      <td align="left">
-      Only comprehensive detailed data available within minutes is acceptable
+      efficiency, control
      </td>
     </tr>
     <tr class="even">
      <td align="left">
-      Moderate user concurrency
+      <strong>
+       OLAP
+      </strong>
      </td>
      <td align="left">
-      High number (1000 or more) of users accessing and querying the system simultaneously
-     </td>
-    </tr>
-    <tr class="odd">
-     <td align="left">
-      Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts
+      data warehouse
      </td>
      <td align="left">
-      Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      Power users, knowledge workers, internal users
+      ops --&gt; data warehouse --&gt; OLAP --&gt; UI/dashboard
      </td>
      <td align="left">
-      Operational staffs, call centers, external users
+      aggregation, efficiency, accuracy, access
      </td>
     </tr>
    </tbody>
   </table>
-  <h3 id="etl">
-   <a>
-    2.1.4. ETL
-   </a>
-  </h3>
   <p>
-   Data must be
+   For OLAP, data is stored as a multidimensional cube. Cubes can be efficiently
    <strong>
-    extracted
+    sliced
    </strong>
-   from operational systems;
+   on a single dimension or
    <strong>
-    transformed
+    diced
    </strong>
-   so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally
+   on several; a user can
    <strong>
-    loaded
+    drill down
    </strong>
-   into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
-  </p>
-  <ul>
-   <li>
-    Integration with data sources
-   </li>
-   <li>
-    Automatic metadata capture
-   </li>
-   <li>
-    Conformance with open standards
-   </li>
-   <li>
-    Easy-to-use interfaces for developers and uses
-   </li>
-  </ul>
-  <h4 id="dimensional-modeling">
-   <a>
-    2.1.4.1. Dimensional modeling
-   </a>
-  </h4>
-  <p>
-   Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
+   or up for different levels of detail, from summarized to granular; a user can
+   <strong>
+    roll-up
+   </strong>
+   a dimension, running calculations on it and its relationships; and a user may
+   <strong>
+    pivot
+   </strong>
+   to "change the dimensional orientation of a report or ad hoc query-display page" (Sharda et al., 2014, p. 71).
   </p>
   <h2 id="analytics">
    <a>
-    2.2. Analytics
+    2.4. Analytics
    </a>
   </h2>
   <ul>
@@ -766,7 +793,7 @@
   </ul>
   <h3 id="types-of-analytics">
    <a>
-    2.2.1. Types of analytics
+    2.4.1. Types of analytics
    </a>
   </h3>
   <p>
@@ -794,7 +821,7 @@
   </ul>
   <h4 id="sas-model-of-analytics-levels">
    <a>
-    2.2.1.1. SAS model of analytics levels
+    2.4.1.1. SAS model of analytics levels
    </a>
   </h4>
   <p>
@@ -952,107 +979,9 @@
     </td>
    </tr>
   </table>
-  <h4 id="olap-vs-oltp">
-   <a>
-    2.2.1.2. OLAP vs OLTP
-   </a>
-  </h4>
-  <p>
-   "Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69)
-  </p>
-  <p>
-   The disctinction between
-   <a href="https://jtkovacs.github.io/refs/databases.html">
-    transaction
-   </a>
-   and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various
-   <a href="http://olap.com/types-of-olap-systems/">
-    subtypes of OLAP databases
-   </a>
-   (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
-  </p>
-  <table>
-   <thead>
-    <tr class="header">
-     <th align="left">
-      Name
-     </th>
-     <th align="left">
-      AKA
-     </th>
-     <th align="left">
-      Function
-     </th>
-     <th align="left">
-      Goals
-     </th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr class="odd">
-     <td align="left">
-      <strong>
-       OLTP
-      </strong>
-     </td>
-     <td align="left">
-      operational database
-     </td>
-     <td align="left">
-      captures each record: emails, credit card transactions, webpage views, …
-     </td>
-     <td align="left">
-      efficiency, control
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      <strong>
-       OLAP
-      </strong>
-     </td>
-     <td align="left">
-      data warehouse
-     </td>
-     <td align="left">
-      ops --&gt; data warehouse --&gt; OLAP --&gt; UI/dashboard
-     </td>
-     <td align="left">
-      aggregation, efficiency, accuracy, access
-     </td>
-    </tr>
-   </tbody>
-  </table>
-  <h3 id="big-data">
-   <a>
-    2.2.2. Big Data
-   </a>
-  </h3>
-  <ul>
-   <li>
-    definition of big data
-   </li>
-   <li>
-    business value of value
-   </li>
-   <li>
-    big data technologies
-    <ul>
-     <li>
-      storage (HDFS)
-     </li>
-     <li>
-      processing (map/reduce)
-     </li>
-    </ul>
-   </li>
-   <li>
-    sources
-   </li>
-  </ul>
   <h2 id="dashboards-reporting">
    <a>
-    2.3. Dashboards &amp; reporting
+    2.5. Dashboards &amp; reporting
    </a>
   </h2>
   <ul>
@@ -1080,14 +1009,116 @@
     https://jtkovacs.github.io/refs/sotl.html#visual-design-of-learning-objects
    </li>
   </ul>
+  <h1 id="scoping-bi-systems">
+   <a>
+    3. Scoping BI systems
+   </a>
+  </h1>
+  <h2 id="big-data">
+   <a>
+    3.1. Big Data
+   </a>
+  </h2>
+  <ul>
+   <li>
+    definition of big data
+   </li>
+   <li>
+    business value of value
+   </li>
+   <li>
+    big data technologies
+    <ul>
+     <li>
+      storage (HDFS)
+     </li>
+     <li>
+      processing (map/reduce)
+     </li>
+    </ul>
+   </li>
+   <li>
+    sources
+   </li>
+  </ul>
+  <h2 id="real-time-bi">
+   <a>
+    3.2. Real-time BI
+   </a>
+  </h2>
+  <p>
+   Per Sharda et al. (2014, p. 81):
+  </p>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      Traditional DW Environment
+     </th>
+     <th align="left">
+      Active DW Environment
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      Strategic decisions only
+     </td>
+     <td align="left">
+      Strategic and tactical decisions
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Results sometimes hard to measure
+     </td>
+     <td align="left">
+      Results measured with operations
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Daily, weekly, monthly data currency acceptable; summaries often appropriate
+     </td>
+     <td align="left">
+      Only comprehensive detailed data available within minutes is acceptable
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Moderate user concurrency
+     </td>
+     <td align="left">
+      High number (1000 or more) of users accessing and querying the system simultaneously
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts
+     </td>
+     <td align="left">
+      Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Power users, knowledge workers, internal users
+     </td>
+     <td align="left">
+      Operational staffs, call centers, external users
+     </td>
+    </tr>
+   </tbody>
+  </table>
   <h1 id="sources">
    <a>
-    3. Sources
+    4. Sources
    </a>
   </h1>
   <h2 id="cited">
    <a>
-    3.1. Cited
+    4.1. Cited
    </a>
   </h2>
   <p>
@@ -1099,12 +1130,12 @@
   </p>
   <h2 id="references">
    <a>
-    3.2. References
+    4.2. References
    </a>
   </h2>
   <h2 id="read">
    <a>
-    3.3. Read
+    4.3. Read
    </a>
   </h2>
   <ul>
@@ -1130,8 +1161,8 @@
    </li>
   </ul>
   <h2>
-   <a name="3.4.-unread">
-    3.4. Unread
+   <a name="4.4.-unread">
+    4.4. Unread
    </a>
   </h2>
   <ul>

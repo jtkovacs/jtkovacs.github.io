@@ -2,11 +2,14 @@
 
 # What is BI?
 
+Business intelligence (BI) systems are a type of [management information system (MIS).](https://jtkovacs.github.io/refs/information-systems.html#types-of-mis)
+
 - https://en.wikipedia.org/wiki/Business_intelligence
+
 
 Sharda et al. (2014) offer the “business pressures-responses-support” model of BI, in which:
 
-- The business environment supplies pressures and opportunities (see [PESTEL analysis\)](./project-management.html#pestel-analysis);
+- The business environment supplies pressures and opportunities (see [PESTEL analysis\);](./project-management.html#pestel-analysis)
 - Managers need to respond;
 - BI supports their response with analysis and predictions.
 
@@ -23,7 +26,7 @@ By enabling data-based decision-making, BI offers value in the form of:
 - Executive and management information systems
 - BI systems enabling broader access to data, closer to ground-level where people can base their actions on it
 
-<img src="../illos/DSS-evolution.jpg" width="400">
+<img src="../illos/DSS-evolution.jpg" width="600">
 
 ![](../illos/bi-tools-by-value.jpg)
 
@@ -32,6 +35,8 @@ By enabling data-based decision-making, BI offers value in the form of:
 A BI team typically has the following roles:
 
 ### BI versus data science
+
+https://jtkovacs.github.io/refs/data-science.html
 
 - DS has more programming, is better at using computational power for analysis
 - DS may involve more sophisticated modeling
@@ -93,9 +98,14 @@ The disctinction between online transaction and analytics processing arises from
 
 - IBM Watson
 - Text analytics
+    - https://jtkovacs.github.io/refs/text-analytics.html
 - Web analytics
 - Big Data
+    - https://jtkovacs.github.io/refs/databases.html#nosql-databases
+    - https://jtkovacs.github.io/refs/information-systems.html#what-is-big-data
 - Data mining
+    - https://jtkovacs.github.io/refs/machine-learning.html
+    - https://jtkovacs.github.io/refs/statistics.html
 
 ### Types of analytics
 
@@ -117,8 +127,12 @@ The disctinction between online transaction and analytics processing arises from
 ## Dashboards & reporting
 
 - Business Performance Management
+    - https://jtkovacs.github.io/refs/process-improvement.html
 - Visual analytics
 - Tableau
+- https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards
+- https://jtkovacs.github.io/refs/graphics-viz.html
+- https://jtkovacs.github.io/refs/sotl.html#visual-design-of-learning-objects
 
 
 

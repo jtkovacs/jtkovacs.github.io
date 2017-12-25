@@ -44,10 +44,13 @@ https://jtkovacs.github.io/refs/data-science.html
 
 ## Trends in BI
 
-- Data democratization
-- IoT
+### IoT
 
+More data
 
+### Data democratization
+
+More & different users
 
 
 
@@ -64,6 +67,54 @@ Per Sharda et al. (2004), BI tools provide varying combinations of the following
 
 
 
+
+## Implementing BI systems
+
+### Common problems with BI initiatives
+
+Per Sharda et al. (2014, pp. 73-74):
+
+- "Starting with the wrong sponsorship chain
+    - _... or offending sponsors by implying deficiencies in their decision-making_
+- Setting expectations that you cannot meet
+- Loading the warehouse with information just because it is available
+- Believing that data warehouse database design is the same as transactional database design
+- Choosing a data warehouse manager who is technology oriented rather than user oriented
+- Focusing on traditional internal record-oriented data and ignoring the value of external data and of text, images, and, perhaps, sound and video
+- Delivering data with overlapping and confusing definitions
+- Believing promises of performance, capacity, and scalability [w/r/t BI software purchases]
+- Believing that your problems are over when the data warehouse is up and running
+- Focusing on ad hoc data mining and periodic reporting instead of alerts"
+
+### Scoping BI systems
+
+#### Big Data
+
+- definition of big data
+- business value of value
+- big data technologies
+    - storage (HDFS)
+    - processing (map/reduce)
+- sources
+
+#### Real-time BI
+
+Per Sharda et al. (2014, p. 81):
+
+| Traditional DW Environment | Active DW Environment |
+| --- | --- |
+| Strategic decisions only | Strategic and tactical decisions |
+| Results sometimes hard to measure | Results measured with operations |
+| Daily, weekly, monthly data currency acceptable; summaries often appropriate | Only comprehensive detailed data available within minutes is acceptable |
+| Moderate user concurrency | High number (1000 or more) of users accessing and querying the system simultaneously |
+| Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts | Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships |
+| Power users, knowledge workers, internal users | Operational staffs, call centers, external users |
+
+
+
+
+
+
 ## ETL
 
 Data must be **extracted** from operational systems; **transformed** so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally **loaded** into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
@@ -72,6 +123,9 @@ Data must be **extracted** from operational systems; **transformed** so that it 
 - Automatic metadata capture
 - Conformance with open standards
 - Easy-to-use interfaces for developers and uses
+
+
+
 
 
 
@@ -100,22 +154,6 @@ Per Sharda et al. (2014, p. 47):
 - Reduced warranty expense
 - Improved quality (identifying and prioritizing issues faster)
 - Combines data, enabling construction of a more accurate and comprehensive picture of the organization
-
-### Common problems with DW initiatives
-
-Per Sharda et al. (2014, pp. 73-74):
-
-- "Starting with the wrong sponsorship chain
-    - _... or offending sponsors by implying deficiencies in their decision-making_
-- Setting expectations that you cannot meet
-- Loading the warehouse with information just because it is available
-- Believing that data warehouse database design is the same as transactional database design
-- Choosing a data warehouse manager who is technology oriented rather than user oriented
-- Focusing on traditional internal record-oriented data and ignoring the value of external data and of text, images, and, perhaps, sound and video
-- Delivering data with overlapping and confusing definitions
-- Believing promises of performance, capacity, and scalability [w/r/t BI software purchases]
-- Believing that your problems are over when the data warehouse is up and running
-- Focusing on ad hoc data mining and periodic reporting instead of alerts"
 
 ### Dimensional modeling
 
@@ -151,6 +189,10 @@ More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p.
 - Perceived ability/capacity of in-house IT staff
 
 
+
+
+
+
 ## OLAP
 
 "Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69). The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
@@ -161,6 +203,10 @@ More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p.
 | **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
 
 For OLAP, data is stored as a multidimensional cube. Cubes can be efficiently **sliced** on a single dimension or **diced** on several; a user can **drill down** or up for different levels of detail, from summarized to granular; a user can **roll-up** a dimension, running calculations on it and its relationships; and a user may **pivot** to "change the dimensional orientation of a report or ad hoc query-display page" (Sharda et al., 2014, p. 71).
+
+
+
+
 
 
 
@@ -179,9 +225,6 @@ For OLAP, data is stored as a multidimensional cube. Cubes can be efficiently **
     - https://jtkovacs.github.io/refs/statistics.html
 
 
-
-
-
 ### Types of analytics
 
 Per Sharda et al. (2014):
@@ -196,50 +239,51 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
 
 <table>
     <tr><th>Standard Reporting</th>
-        <td><ul>
+        <td style="text-align:left;"><ul>
                 <li>Historical perspective</li>
                 <li>Standard KPI or data parameters</li>
                 <li>Focused on short-term goals and objectives</li>
             </ul></td></tr>
     <tr><th>Customized Reporting</th>
-        <td><ul>
-                <li>Flexible reporting</li>
+        <td style="text-align:left;"><ul>
+            <li>Flexible reporting</li>
                 <li>Focused on problem solving</li>
                 <li>Historical perspective</li>
             </ul></td></tr>
     <tr><th>Drill down analysis</th>
-        <td><ul>
+        <td style="text-align:left;"><ul>
                 <li>Root cause analysis</li>
                 <li>Stratification analysis</li>
                 <li>Used exensively in <a href="http://asq.org/learn-about-quality/six-sigma/overview/dmaic.html">DMAIC processes</a></li>
             </ul></td></tr>
     <tr><th>Alerts & Notifications</th>
-        <td><ul>
+        <td style="text-align:left;"><ul>
                 <li>Management by exception</li>
                 <li>Pre-defined business process</li>
                 <li>Real-time feedback</li>
             </ul></td></tr>
     <tr><th>Statistical Analysis</th>
-        <td><ul>
+        <td style="text-align:left;"><ul>
+            <td><ul>
                 <li>Correlation analysis</li>
                 <li>Discriminant analysis</li>
                 <li>Regression analysis</li>
             </ul></td></tr>
     <tr><th>Forecasting</th>
-        <td><ul>
-                <li>Trends</li>
+        <td style="text-align:left;"><ul>
+            <li>Trends</li>
                 <li>Pattern recognition</li>
                 <li>Decision-making capability</li>
             </ul></td></tr>
     <tr><th>Predictive Modeling</th>
-        <td><ul>
-                <li>Prognostics</li>
+        <td style="text-align:left;"><ul>
+            <li>Prognostics</li>
                 <li>Data-driven decisions</li>
                 <li></li>
             </ul></td></tr>
     <tr><th>Optimization</th>
-        <td><ul>
-                <li>Enable innovation</li>
+        <td style="text-align:left;"><ul>
+            <li>Enable innovation</li>
                 <li>Continuous improvement</li>
                 <li>Adaptive feedback</li>
             </ul></td></tr>
@@ -264,29 +308,6 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
 
 
 
-# Scoping BI systems
-
-## Big Data
-
-- definition of big data
-- business value of value
-- big data technologies
-    - storage (HDFS)
-    - processing (map/reduce)
-- sources
-
-## Real-time BI
-
-Per Sharda et al. (2014, p. 81):
-
-| Traditional DW Environment | Active DW Environment |
-| --- | --- |
-| Strategic decisions only | Strategic and tactical decisions |
-| Results sometimes hard to measure | Results measured with operations |
-| Daily, weekly, monthly data currency acceptable; summaries often appropriate | Only comprehensive detailed data available within minutes is acceptable |
-| Moderate user concurrency | High number (1000 or more) of users accessing and querying the system simultaneously |
-| Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts | Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships |
-| Power users, knowledge workers, internal users | Operational staffs, call centers, external users |
 
 
 

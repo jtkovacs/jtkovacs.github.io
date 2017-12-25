@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 1908 words | updated 12/18/2017
+   &gt; bi | just under 1927 words | updated 12/25/2017
   </p>
   <div class="TOC">
    <ul>
@@ -56,6 +56,20 @@
        <a href="#trends-in-bi">
         Trends in BI
        </a>
+       <ul>
+        <li>
+         1.4.1.
+         <a href="#iot">
+          IoT
+         </a>
+        </li>
+        <li>
+         1.4.2.
+         <a href="#data-democratization">
+          Data democratization
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </li>
@@ -67,42 +81,70 @@
      <ul>
       <li>
        2.1.
+       <a href="#implementing-bi-systems">
+        Implementing BI systems
+       </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#common-problems-with-bi-initiatives">
+          Common problems with BI initiatives
+         </a>
+        </li>
+        <li>
+         2.1.2.
+         <a href="#scoping-bi-systems">
+          Scoping BI systems
+         </a>
+         <ul>
+          <li>
+           2.1.2.1.
+           <a href="#big-data">
+            Big Data
+           </a>
+          </li>
+          <li>
+           2.1.2.2.
+           <a href="#real-time-bi">
+            Real-time BI
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
        <a href="#etl">
         ETL
        </a>
       </li>
       <li>
-       2.2.
+       2.3.
        <a href="#data-warehousing">
         Data warehousing
        </a>
        <ul>
         <li>
-         2.2.1.
+         2.3.1.
          <a href="#why-a-data-warehouse">
           Why a data warehouse?
          </a>
         </li>
         <li>
-         2.2.2.
-         <a href="#common-problems-with-dw-initiatives">
-          Common problems with DW initiatives
-         </a>
-        </li>
-        <li>
-         2.2.3.
+         2.3.2.
          <a href="#dimensional-modeling">
           Dimensional modeling
          </a>
         </li>
         <li>
-         2.2.4.
+         2.3.3.
          <a href="#various-data-warehouse-architectures">
           Various data warehouse architectures
          </a>
          <ul>
           <li>
-           2.2.4.1.
+           2.3.3.1.
            <a href="#choosing-an-architecture">
             Choosing an architecture
            </a>
@@ -112,25 +154,25 @@
        </ul>
       </li>
       <li>
-       2.3.
+       2.4.
        <a href="#olap">
         OLAP
        </a>
       </li>
       <li>
-       2.4.
+       2.5.
        <a href="#analytics">
         Analytics
        </a>
        <ul>
         <li>
-         2.4.1.
+         2.5.1.
          <a href="#types-of-analytics">
           Types of analytics
          </a>
          <ul>
           <li>
-           2.4.1.1.
+           2.5.1.1.
            <a href="#sas-model-of-analytics-levels">
             SAS model of analytics levels
            </a>
@@ -140,7 +182,7 @@
        </ul>
       </li>
       <li>
-       2.5.
+       2.6.
        <a href="#dashboards-reporting">
         Dashboards &amp; reporting
        </a>
@@ -149,50 +191,30 @@
     </li>
     <li>
      3.
-     <a href="#scoping-bi-systems">
-      Scoping BI systems
-     </a>
-     <ul>
-      <li>
-       3.1.
-       <a href="#big-data">
-        Big Data
-       </a>
-      </li>
-      <li>
-       3.2.
-       <a href="#real-time-bi">
-        Real-time BI
-       </a>
-      </li>
-     </ul>
-    </li>
-    <li>
-     4.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       4.1.
+       3.1.
        <a href="#cited">
         Cited
        </a>
       </li>
       <li>
-       4.2.
+       3.2.
        <a href="#references">
         References
        </a>
       </li>
       <li>
-       4.3.
+       3.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       4.4.
+       3.4.
        <a href="#unread">
         Unread
        </a>
@@ -318,14 +340,22 @@
     1.4. Trends in BI
    </a>
   </h2>
-  <ul>
-   <li>
-    Data democratization
-   </li>
-   <li>
-    IoT
-   </li>
-  </ul>
+  <h3 id="iot">
+   <a>
+    1.4.1. IoT
+   </a>
+  </h3>
+  <p>
+   More data
+  </p>
+  <h3 id="data-democratization">
+   <a>
+    1.4.2. Data democratization
+   </a>
+  </h3>
+  <p>
+   More &amp; different users
+  </p>
   <h1 id="bi-systems">
    <a>
     2. BI systems
@@ -348,9 +378,163 @@
     UI
    </li>
   </ul>
+  <h2 id="implementing-bi-systems">
+   <a>
+    2.1. Implementing BI systems
+   </a>
+  </h2>
+  <h3 id="common-problems-with-bi-initiatives">
+   <a>
+    2.1.1. Common problems with BI initiatives
+   </a>
+  </h3>
+  <p>
+   Per Sharda et al. (2014, pp. 73-74):
+  </p>
+  <ul>
+   <li>
+    "Starting with the wrong sponsorship chain
+    <ul>
+     <li>
+      <em>
+       ... or offending sponsors by implying deficiencies in their decision-making
+      </em>
+     </li>
+    </ul>
+   </li>
+   <li>
+    Setting expectations that you cannot meet
+   </li>
+   <li>
+    Loading the warehouse with information just because it is available
+   </li>
+   <li>
+    Believing that data warehouse database design is the same as transactional database design
+   </li>
+   <li>
+    Choosing a data warehouse manager who is technology oriented rather than user oriented
+   </li>
+   <li>
+    Focusing on traditional internal record-oriented data and ignoring the value of external data and of text, images, and, perhaps, sound and video
+   </li>
+   <li>
+    Delivering data with overlapping and confusing definitions
+   </li>
+   <li>
+    Believing promises of performance, capacity, and scalability [w/r/t BI software purchases]
+   </li>
+   <li>
+    Believing that your problems are over when the data warehouse is up and running
+   </li>
+   <li>
+    Focusing on ad hoc data mining and periodic reporting instead of alerts"
+   </li>
+  </ul>
+  <h3 id="scoping-bi-systems">
+   <a>
+    2.1.2. Scoping BI systems
+   </a>
+  </h3>
+  <h4 id="big-data">
+   <a>
+    2.1.2.1. Big Data
+   </a>
+  </h4>
+  <ul>
+   <li>
+    definition of big data
+   </li>
+   <li>
+    business value of value
+   </li>
+   <li>
+    big data technologies
+    <ul>
+     <li>
+      storage (HDFS)
+     </li>
+     <li>
+      processing (map/reduce)
+     </li>
+    </ul>
+   </li>
+   <li>
+    sources
+   </li>
+  </ul>
+  <h4 id="real-time-bi">
+   <a>
+    2.1.2.2. Real-time BI
+   </a>
+  </h4>
+  <p>
+   Per Sharda et al. (2014, p. 81):
+  </p>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      Traditional DW Environment
+     </th>
+     <th align="left">
+      Active DW Environment
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      Strategic decisions only
+     </td>
+     <td align="left">
+      Strategic and tactical decisions
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Results sometimes hard to measure
+     </td>
+     <td align="left">
+      Results measured with operations
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Daily, weekly, monthly data currency acceptable; summaries often appropriate
+     </td>
+     <td align="left">
+      Only comprehensive detailed data available within minutes is acceptable
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Moderate user concurrency
+     </td>
+     <td align="left">
+      High number (1000 or more) of users accessing and querying the system simultaneously
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts
+     </td>
+     <td align="left">
+      Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Power users, knowledge workers, internal users
+     </td>
+     <td align="left">
+      Operational staffs, call centers, external users
+     </td>
+    </tr>
+   </tbody>
+  </table>
   <h2 id="etl">
    <a>
-    2.1. ETL
+    2.2. ETL
    </a>
   </h2>
   <p>
@@ -384,7 +568,7 @@
   </ul>
   <h2 id="data-warehousing">
    <a>
-    2.2. Data warehousing
+    2.3. Data warehousing
    </a>
   </h2>
   <p>
@@ -432,7 +616,7 @@
   </ul>
   <h3 id="why-a-data-warehouse">
    <a>
-    2.2.1. Why a data warehouse?
+    2.3.1. Why a data warehouse?
    </a>
   </h3>
   <p>
@@ -458,56 +642,9 @@
     Combines data, enabling construction of a more accurate and comprehensive picture of the organization
    </li>
   </ul>
-  <h3 id="common-problems-with-dw-initiatives">
-   <a>
-    2.2.2. Common problems with DW initiatives
-   </a>
-  </h3>
-  <p>
-   Per Sharda et al. (2014, pp. 73-74):
-  </p>
-  <ul>
-   <li>
-    "Starting with the wrong sponsorship chain
-    <ul>
-     <li>
-      <em>
-       ... or offending sponsors by implying deficiencies in their decision-making
-      </em>
-     </li>
-    </ul>
-   </li>
-   <li>
-    Setting expectations that you cannot meet
-   </li>
-   <li>
-    Loading the warehouse with information just because it is available
-   </li>
-   <li>
-    Believing that data warehouse database design is the same as transactional database design
-   </li>
-   <li>
-    Choosing a data warehouse manager who is technology oriented rather than user oriented
-   </li>
-   <li>
-    Focusing on traditional internal record-oriented data and ignoring the value of external data and of text, images, and, perhaps, sound and video
-   </li>
-   <li>
-    Delivering data with overlapping and confusing definitions
-   </li>
-   <li>
-    Believing promises of performance, capacity, and scalability [w/r/t BI software purchases]
-   </li>
-   <li>
-    Believing that your problems are over when the data warehouse is up and running
-   </li>
-   <li>
-    Focusing on ad hoc data mining and periodic reporting instead of alerts"
-   </li>
-  </ul>
   <h3 id="dimensional-modeling">
    <a>
-    2.2.3. Dimensional modeling
+    2.3.2. Dimensional modeling
    </a>
   </h3>
   <p>
@@ -515,7 +652,7 @@
   </p>
   <h3 id="various-data-warehouse-architectures">
    <a>
-    2.2.4. Various data warehouse architectures
+    2.3.3. Various data warehouse architectures
    </a>
   </h3>
   <ul>
@@ -566,7 +703,7 @@
   </ul>
   <h4 id="choosing-an-architecture">
    <a>
-    2.2.4.1. Choosing an architecture
+    2.3.3.1. Choosing an architecture
    </a>
   </h4>
   <p>
@@ -614,7 +751,7 @@
   </ul>
   <h2 id="olap">
    <a>
-    2.3. OLAP
+    2.4. OLAP
    </a>
   </h2>
   <p>
@@ -705,7 +842,7 @@
   </p>
   <h2 id="analytics">
    <a>
-    2.4. Analytics
+    2.5. Analytics
    </a>
   </h2>
   <ul>
@@ -748,7 +885,7 @@
   </ul>
   <h3 id="types-of-analytics">
    <a>
-    2.4.1. Types of analytics
+    2.5.1. Types of analytics
    </a>
   </h3>
   <p>
@@ -776,7 +913,7 @@
   </ul>
   <h4 id="sas-model-of-analytics-levels">
    <a>
-    2.4.1.1. SAS model of analytics levels
+    2.5.1.1. SAS model of analytics levels
    </a>
   </h4>
   <p>
@@ -791,7 +928,7 @@
     <th>
      Standard Reporting
     </th>
-    <td>
+    <td style="text-align:left;">
      <ul>
       <li>
        Historical perspective
@@ -809,7 +946,7 @@
     <th>
      Customized Reporting
     </th>
-    <td>
+    <td style="text-align:left;">
      <ul>
       <li>
        Flexible reporting
@@ -827,7 +964,7 @@
     <th>
      Drill down analysis
     </th>
-    <td>
+    <td style="text-align:left;">
      <ul>
       <li>
        Root cause analysis
@@ -848,7 +985,7 @@
     <th>
      Alerts &amp; Notifications
     </th>
-    <td>
+    <td style="text-align:left;">
      <ul>
       <li>
        Management by exception
@@ -866,17 +1003,21 @@
     <th>
      Statistical Analysis
     </th>
-    <td>
+    <td style="text-align:left;">
      <ul>
-      <li>
-       Correlation analysis
-      </li>
-      <li>
-       Discriminant analysis
-      </li>
-      <li>
-       Regression analysis
-      </li>
+      <td>
+       <ul>
+        <li>
+         Correlation analysis
+        </li>
+        <li>
+         Discriminant analysis
+        </li>
+        <li>
+         Regression analysis
+        </li>
+       </ul>
+      </td>
      </ul>
     </td>
    </tr>
@@ -884,7 +1025,7 @@
     <th>
      Forecasting
     </th>
-    <td>
+    <td style="text-align:left;">
      <ul>
       <li>
        Trends
@@ -902,7 +1043,7 @@
     <th>
      Predictive Modeling
     </th>
-    <td>
+    <td style="text-align:left;">
      <ul>
       <li>
        Prognostics
@@ -919,7 +1060,7 @@
     <th>
      Optimization
     </th>
-    <td>
+    <td style="text-align:left;">
      <ul>
       <li>
        Enable innovation
@@ -936,7 +1077,7 @@
   </table>
   <h2 id="dashboards-reporting">
    <a>
-    2.5. Dashboards &amp; reporting
+    2.6. Dashboards &amp; reporting
    </a>
   </h2>
   <ul>
@@ -964,116 +1105,14 @@
     https://jtkovacs.github.io/refs/sotl.html#visual-design-of-learning-objects
    </li>
   </ul>
-  <h1 id="scoping-bi-systems">
-   <a>
-    3. Scoping BI systems
-   </a>
-  </h1>
-  <h2 id="big-data">
-   <a>
-    3.1. Big Data
-   </a>
-  </h2>
-  <ul>
-   <li>
-    definition of big data
-   </li>
-   <li>
-    business value of value
-   </li>
-   <li>
-    big data technologies
-    <ul>
-     <li>
-      storage (HDFS)
-     </li>
-     <li>
-      processing (map/reduce)
-     </li>
-    </ul>
-   </li>
-   <li>
-    sources
-   </li>
-  </ul>
-  <h2 id="real-time-bi">
-   <a>
-    3.2. Real-time BI
-   </a>
-  </h2>
-  <p>
-   Per Sharda et al. (2014, p. 81):
-  </p>
-  <table>
-   <thead>
-    <tr class="header">
-     <th align="left">
-      Traditional DW Environment
-     </th>
-     <th align="left">
-      Active DW Environment
-     </th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr class="odd">
-     <td align="left">
-      Strategic decisions only
-     </td>
-     <td align="left">
-      Strategic and tactical decisions
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      Results sometimes hard to measure
-     </td>
-     <td align="left">
-      Results measured with operations
-     </td>
-    </tr>
-    <tr class="odd">
-     <td align="left">
-      Daily, weekly, monthly data currency acceptable; summaries often appropriate
-     </td>
-     <td align="left">
-      Only comprehensive detailed data available within minutes is acceptable
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      Moderate user concurrency
-     </td>
-     <td align="left">
-      High number (1000 or more) of users accessing and querying the system simultaneously
-     </td>
-    </tr>
-    <tr class="odd">
-     <td align="left">
-      Highly restrictive reporting used to confirm or check existing processes and patterns; often uses predeveloped summary tables or data marts
-     </td>
-     <td align="left">
-      Flexible ad hoc reporting, as well as machine-assisted modeling (e.g., data mining) to discover new hypotheses and relationships
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      Power users, knowledge workers, internal users
-     </td>
-     <td align="left">
-      Operational staffs, call centers, external users
-     </td>
-    </tr>
-   </tbody>
-  </table>
   <h1 id="sources">
    <a>
-    4. Sources
+    3. Sources
    </a>
   </h1>
   <h2 id="cited">
    <a>
-    4.1. Cited
+    3.1. Cited
    </a>
   </h2>
   <p>
@@ -1085,12 +1124,12 @@
   </p>
   <h2 id="references">
    <a>
-    4.2. References
+    3.2. References
    </a>
   </h2>
   <h2 id="read">
    <a>
-    4.3. Read
+    3.3. Read
    </a>
   </h2>
   <ul>
@@ -1116,8 +1155,8 @@
    </li>
   </ul>
   <h2>
-   <a name="4.4.-unread">
-    4.4. Unread
+   <a name="3.4.-unread">
+    3.4. Unread
    </a>
   </h2>
   <ul>

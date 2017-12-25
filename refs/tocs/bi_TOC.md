@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1967 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1955 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
 		- &nbsp;1.1.1. [BI versus data science](#bi-versus-data-science)
 		- &nbsp;1.1.2. [Food system metaphor](#food-system-metaphor)
@@ -23,7 +23,7 @@
 	- &nbsp;2.5. [Interpreting the data](#interpreting-the-data)
 		- &nbsp;2.5.1. [Business Performance Management](#business-performance-management)
 		- &nbsp;2.5.2. [Analytics](#analytics)
-			- &nbsp;2.5.2.1. [Types of analytics](#types-of-analytics)
+			- &nbsp;2.5.2.1. [Types of analytic deliverables](#types-of-analytic-deliverables)
 	- &nbsp;2.6. [Delivering data & interpretations](#delivering-data-interpretations)
 		- &nbsp;2.6.1. [Reporting](#reporting)
 		- &nbsp;2.6.2. [Dashboards](#dashboards)
@@ -67,7 +67,7 @@ https://jtkovacs.github.io/refs/data-science.html
 
 ## 1.2. Does BI have value?
 
-In theory, BI adds value by improving decisions. BI may enable organizations to answer their questions faster, or to pose new questions and gain new insights. Faster answers may support faster actions; new insights may indicate and/or support new courses of action. But very clearly, the value of BI depends on (1) the **quality of the data** being fed into the system; (2) the **quality of the analysis** performed on the data; (3) capacity to **turn analysis into decisions,** and most fundamentally, (4) capacity to **act on decisions.** (Senge's concept of a learning organization is relevant here---it is an organization that can not only make and act on decisions, but reflect on them and improve them through iteration. It is a lofty ideal that most organizations are nowhere near.)
+In theory, BI adds value by improving decisions. BI may enable organizations to answer their questions faster, or to pose new questions and gain new insights. Faster answers may support faster actions; new insights may indicate and/or support new courses of action. But very clearly, the value of BI depends on (1) the **quality of the data** being fed into the system; (2) the **quality of the analysis** performed on the data; (3) the **capacity to turn analysis into decisions,** and most fundamentally, (4) the **capacity to act on decisions.** (Senge's concept of a learning organization is relevant here---it is an organization that can _not only_ make and act on decisions, but also reflect on outcomes and improve them through iteration.)
 
 
 
@@ -258,8 +258,8 @@ To enable OLAP, data is stored in multidimensional cubes. These cubes can be eff
 
 - management.html#strategy
 - https://jtkovacs.github.io/refs/process-improvement.html
-- balanced score cards
-- closed-loop BPM methodology
+    - balanced score cards
+    - closed-loop BPM methodology
 
 
 ### 2.5.2. Analytics
@@ -278,9 +278,9 @@ To enable OLAP, data is stored in multidimensional cubes. These cubes can be eff
 - Visual analytics
     - Why it's important
     - Different visualization techniques
-- Tableau
+    - Tableau
 
-#### 2.5.2.1. Types of analytics
+#### 2.5.2.1. Types of analytic deliverables
 
 Per Sharda et al. (2014):
 
@@ -299,7 +299,7 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
     <tr><th>Customized Reporting</th>
         <td style="text-align:left;"><ul>
-            <li>Flexible reporting</li>
+                <li>Flexible reporting</li>
                 <li>Focused on problem solving</li>
                 <li>Historical perspective</li>
             </ul></td></tr>
@@ -317,26 +317,24 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
     <tr><th>Statistical Analysis</th>
         <td style="text-align:left;"><ul>
-            <td><ul>
                 <li>Correlation analysis</li>
                 <li>Discriminant analysis</li>
                 <li>Regression analysis</li>
             </ul></td></tr>
     <tr><th>Forecasting</th>
         <td style="text-align:left;"><ul>
-            <li>Trends</li>
+                <li>Trends</li>
                 <li>Pattern recognition</li>
                 <li>Decision-making capability</li>
             </ul></td></tr>
     <tr><th>Predictive Modeling</th>
         <td style="text-align:left;"><ul>
-            <li>Prognostics</li>
+                <li>Prognostics</li>
                 <li>Data-driven decisions</li>
-                <li></li>
             </ul></td></tr>
     <tr><th>Optimization</th>
         <td style="text-align:left;"><ul>
-            <li>Enable innovation</li>
+                <li>Enable innovation</li>
                 <li>Continuous improvement</li>
                 <li>Adaptive feedback</li>
             </ul></td></tr>
@@ -353,17 +351,12 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
 
 - Need
 - History
+- Design: https://jtkovacs.github.io/refs/graphics-viz.html
 
 ### 2.6.2. Dashboards
 
-- capabilities
-- limitations
-
-
 - https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards
-- https://jtkovacs.github.io/refs/graphics-viz.html
-- https://jtkovacs.github.io/refs/sotl.html#visual-design-of-learning-objects
-
+- data-viz.html#tableau
 
 
 

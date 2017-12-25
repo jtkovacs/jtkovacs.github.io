@@ -54,7 +54,7 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 
 ## Trends in BI
 
-### IoT
+### IoT and Big Data
 
 More data
 
@@ -100,12 +100,7 @@ Per Sharda et al. (2014, pp. 73-74):
 
 #### Big Data
 
-- definition of big data
-- business value of value
-- big data technologies
-    - storage (HDFS)
-    - processing (map/reduce)
-- sources
+See big-data.html
 
 #### Real-time BI
 
@@ -255,7 +250,7 @@ Per Sharda et al. (2014):
 
 According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.blogspot.com/2012/09/eight-levels-of-analytics-model-by-sas.html) SAS published a white paper describing different "levels" of analytics:
 
-<table>
+<table style="font-size: 9px;">
     <tr><th>Standard Reporting</th>
         <td style="text-align:left;"><ul>
                 <li>Historical perspective</li>

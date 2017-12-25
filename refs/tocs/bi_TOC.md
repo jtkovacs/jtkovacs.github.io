@@ -1,11 +1,11 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1955 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1940 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
 		- &nbsp;1.1.1. [BI versus data science](#bi-versus-data-science)
 		- &nbsp;1.1.2. [Food system metaphor](#food-system-metaphor)
 	- &nbsp;1.2. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.3. [History of BI](#history-of-bi)
 	- &nbsp;1.4. [Trends in BI](#trends-in-bi)
-		- &nbsp;1.4.1. [IoT](#iot)
+		- &nbsp;1.4.1. [IoT and Big Data](#iot-and-big-data)
 		- &nbsp;1.4.2. [Data democratization](#data-democratization)
 - &nbsp;2. [BI systems](#bi-systems)
 	- &nbsp;2.1. [Implementing BI systems](#implementing-bi-systems)
@@ -89,7 +89,7 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 
 ## 1.4. Trends in BI
 
-### 1.4.1. IoT
+### 1.4.1. IoT and Big Data
 
 More data
 
@@ -135,12 +135,7 @@ Per Sharda et al. (2014, pp. 73-74):
 
 #### 2.1.2.1. Big Data
 
-- definition of big data
-- business value of value
-- big data technologies
-    - storage (HDFS)
-    - processing (map/reduce)
-- sources
+See big-data.html
 
 #### 2.1.2.2. Real-time BI
 
@@ -290,7 +285,7 @@ Per Sharda et al. (2014):
 
 According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.blogspot.com/2012/09/eight-levels-of-analytics-model-by-sas.html) SAS published a white paper describing different "levels" of analytics:
 
-<table>
+<table style="font-size: 9px;">
     <tr><th>Standard Reporting</th>
         <td style="text-align:left;"><ul>
                 <li>Historical perspective</li>

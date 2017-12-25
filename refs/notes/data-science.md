@@ -6,65 +6,58 @@
 Via Mason and Wiggins (2010):
 
 <table class="bullets">
-<tr>
-<th>OSEMN Model</th>
-<td>Obtain</td>
-<td>Scrub</td>
-<td>Explore</td>
-<td>Model</td>
-<td>iNterpret</td>
-</tr>
-
-<tr>
-<th rowspan=2>Alt Terms</th>
-<td>Acquire</td>
-<td>Clean</td>
-<td colspan=2 rowspan=2>Analyze</td>
-<td rowspan=2>Apply</td>
-</tr>
-
-<tr>
-<td colspan=2>Wrangle</td>
-</tr>
-
-<tr>
-<th>Skills & Tools</th>
-<td style="text-align: left;">
-- Plain text
-- CSV
-- JSON
-- XML/HTML
-- Query DB
-- Query API
-- REST
-- Encoding
-</td>
-
-<td style="text-align: left;">
-- Filter data
-- Extract data
-- Extract values
-- Replace values
-- Handle NULL, missing data
-- Convert formats
-</td>
-
-<td style="text-align: left;" colspan=2>
-- Summary stats
-- Visualization
-- Clustering
-- Classification
-- Regression
-- Dimension reduction
-</td>
-
-<td style="text-align: left;">
-- Conclusion
-- Implications
-- Communication
-</td>
-
-</tr>
+    <tr>
+        <th>OSEMN Model</th>
+        <td>Obtain</td>
+        <td>Scrub</td>
+        <td>Explore</td>
+        <td>Model</td>
+        <td>iNterpret</td>
+    </tr>
+    <tr>
+        <th rowspan=2>Alt Terms</th>
+        <td>Acquire</td>
+        <td>Clean</td>
+        <td colspan=2 rowspan=2>Analyze</td>
+        <td rowspan=2>Apply</td>
+    </tr>
+    <tr>
+        <td colspan=2>Wrangle</td>
+    </tr>
+    <tr>
+        <th>Skills & Tools</th>
+        <td style="text-align: left;"><ul>
+            <li> Plain text </li>
+            <li> CSV </li>
+            <li> JSON </li>
+            <li> XML/HTML</li>
+            <li> Query DB </li>
+            <li> Query API </li>
+            <li> REST </li>
+            <li> Encoding </li>
+        </ul></td>
+        <td style="text-align: left;"><ul>
+            <li> Filter data </li>
+            <li> Extract data </li>
+            <li> Extract values </li>
+            <li> Replace values </li>
+            <li> Handle NULL, missing data </li>
+            <li> Convert formats </li>
+        </ul></td>
+        <td style="text-align: left;" colspan=2><ul>
+            <li> Summary stats </li>
+            <li> Visualization </li>
+            <li> Clustering </li>
+            <li> Classification </li>
+            <li> Regression </li>
+            <li> Dimension reduction </li>
+        </ul></td>
+        <td style="text-align: left;"><ul>
+            <li> Conclusion </li>
+            <li> Implications </li>
+            <li> Communication </li>
+        </ul></td>
+    </tr>
 </table>
 
 ### Obtain
@@ -72,16 +65,14 @@ Via Mason and Wiggins (2010):
 **Describe the concepts here. Code can be embedded or via a link, depending on how much there is.**
 
 - What are major risks in web scraping?
-- When would you scrape versus using an API?
 - How do you parse scraped web data (HTML, JSON, XML)?
 - How is authorization implemented in Google APIs?
 
 ### Scrub
 
 - [http://radar.oreilly.com/2012/07/data-jujitsu.html](http://radar.oreilly.com/2012/07/data-jujitsu.html)
-- What are major steps in data cleaning?
 - What's the best way to filter data?
-- What's the best way to aggregate data?
+- How to efficiently aggregate data?
 
 ### Explore
 

@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 1927 words | updated 12/25/2017
+   &gt; bi | just under 1967 words | updated 12/25/2017
   </p>
   <div class="TOC">
    <ul>
@@ -27,23 +27,29 @@
      <ul>
       <li>
        1.1.
-       <a href="#does-bi-have-value">
-        Does BI have value?
-       </a>
-      </li>
-      <li>
-       1.2.
-       <a href="#generic-bi-architecture">
-        Generic BI architecture
+       <a href="#generic-bi-system-architecture">
+        Generic BI system architecture
        </a>
        <ul>
         <li>
-         1.2.1.
+         1.1.1.
          <a href="#bi-versus-data-science">
           BI versus data science
          </a>
         </li>
+        <li>
+         1.1.2.
+         <a href="#food-system-metaphor">
+          Food system metaphor
+         </a>
+        </li>
        </ul>
+      </li>
+      <li>
+       1.2.
+       <a href="#does-bi-have-value">
+        Does BI have value?
+       </a>
       </li>
       <li>
        1.3.
@@ -161,20 +167,26 @@
       </li>
       <li>
        2.5.
-       <a href="#analytics">
-        Analytics
+       <a href="#interpreting-the-data">
+        Interpreting the data
        </a>
        <ul>
         <li>
          2.5.1.
-         <a href="#types-of-analytics">
-          Types of analytics
+         <a href="#business-performance-management">
+          Business Performance Management
+         </a>
+        </li>
+        <li>
+         2.5.2.
+         <a href="#analytics">
+          Analytics
          </a>
          <ul>
           <li>
-           2.5.1.1.
-           <a href="#sas-model-of-analytics-levels">
-            SAS model of analytics levels
+           2.5.2.1.
+           <a href="#types-of-analytics">
+            Types of analytics
            </a>
           </li>
          </ul>
@@ -183,9 +195,23 @@
       </li>
       <li>
        2.6.
-       <a href="#dashboards-reporting">
-        Dashboards &amp; reporting
+       <a href="#delivering-data-interpretations">
+        Delivering data &amp; interpretations
        </a>
+       <ul>
+        <li>
+         2.6.1.
+         <a href="#reporting">
+          Reporting
+         </a>
+        </li>
+        <li>
+         2.6.2.
+         <a href="#dashboards">
+          Dashboards
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </li>
@@ -253,9 +279,47 @@
     BI supports their response/decision with analysis and predictions.
    </li>
   </ul>
+  <h2 id="generic-bi-system-architecture">
+   <a>
+    1.1. Generic BI system architecture
+   </a>
+  </h2>
+  <p>
+   <img src="illos/bi-arch.jpg" width="600"/>
+  </p>
+  <h3 id="bi-versus-data-science">
+   <a>
+    1.1.1. BI versus data science
+   </a>
+  </h3>
+  <p>
+   https://jtkovacs.github.io/refs/data-science.html
+  </p>
+  <ul>
+   <li>
+    DS has more programming, is better at using computational power for analysis
+   </li>
+   <li>
+    DS may involve more sophisticated modeling
+   </li>
+   <li>
+    DS facilitates predictive and prescriptive analytics
+   </li>
+   <li>
+    Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+   </li>
+  </ul>
+  <h3 id="food-system-metaphor">
+   <a>
+    1.1.2. Food system metaphor
+   </a>
+  </h3>
+  <div class="figure">
+   <img src="illos/bi-food-metaphor.png"/>
+  </div>
   <h2 id="does-bi-have-value">
    <a>
-    1.1. Does BI have value?
+    1.2. Does BI have value?
    </a>
   </h2>
   <p>
@@ -277,39 +341,6 @@
    </strong>
    (Senge's concept of a learning organization is relevant here---it is an organization that can not only make and act on decisions, but reflect on them and improve them through iteration. It is a lofty ideal that most organizations are nowhere near.)
   </p>
-  <h2 id="generic-bi-architecture">
-   <a>
-    1.2. Generic BI architecture
-   </a>
-  </h2>
-  <p>
-   <img src="illos/bi-arch.jpg" width="600"/>
-  </p>
-  <div class="figure">
-   <img src="illos/bi-food-metaphor.png"/>
-  </div>
-  <h3 id="bi-versus-data-science">
-   <a>
-    1.2.1. BI versus data science
-   </a>
-  </h3>
-  <p>
-   https://jtkovacs.github.io/refs/data-science.html
-  </p>
-  <ul>
-   <li>
-    DS has more programming, is better at using computational power for analysis
-   </li>
-   <li>
-    DS may involve more sophisticated modeling
-   </li>
-   <li>
-    DS facilitates predictive and prescriptive analytics
-   </li>
-   <li>
-    Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
-   </li>
-  </ul>
   <h2 id="history-of-bi">
    <a>
     1.3. History of BI
@@ -563,7 +594,7 @@
     Conformance with open standards
    </li>
    <li>
-    Easy-to-use interfaces for developers and uses
+    Easy-to-use interfaces for developers and users
    </li>
   </ul>
   <h2 id="data-warehousing">
@@ -648,7 +679,15 @@
    </a>
   </h3>
   <p>
-   Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
+   Dimensional modeling is data modeling to optimize retrieval (read rather than write).
+   <strong>
+    Star schema
+   </strong>
+   (denormalized) and
+   <strong>
+    snowflake schema
+   </strong>
+   (normalized) are common.
   </p>
   <h3 id="various-data-warehouse-architectures">
    <a>
@@ -759,7 +798,7 @@
    <a href="https://jtkovacs.github.io/refs/databases.html">
     transaction
    </a>
-   and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various
+   and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are
    <a href="http://olap.com/types-of-olap-systems/">
     subtypes of OLAP databases
    </a>
@@ -818,7 +857,7 @@
    </tbody>
   </table>
   <p>
-   For OLAP, data is stored as a multidimensional cube. Cubes can be efficiently
+   To enable OLAP, data is stored in multidimensional cubes. These cubes can be efficiently
    <strong>
     sliced
    </strong>
@@ -830,7 +869,7 @@
    <strong>
     drill down
    </strong>
-   or up for different levels of detail, from summarized to granular; a user can
+   or up for different levels of detail; a user can
    <strong>
     roll-up
    </strong>
@@ -840,12 +879,39 @@
    </strong>
    to "change the dimensional orientation of a report or ad hoc query-display page" (Sharda et al., 2014, p. 71).
   </p>
-  <h2 id="analytics">
+  <h2 id="interpreting-the-data">
    <a>
-    2.5. Analytics
+    2.5. Interpreting the data
    </a>
   </h2>
+  <h3 id="business-performance-management">
+   <a>
+    2.5.1. Business Performance Management
+   </a>
+  </h3>
   <ul>
+   <li>
+    management.html#strategy
+   </li>
+   <li>
+    https://jtkovacs.github.io/refs/process-improvement.html
+   </li>
+   <li>
+    balanced score cards
+   </li>
+   <li>
+    closed-loop BPM methodology
+   </li>
+  </ul>
+  <h3 id="analytics">
+   <a>
+    2.5.2. Analytics
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Business Analytics as a field
+   </li>
    <li>
     IBM Watson
    </li>
@@ -882,12 +948,26 @@
      </li>
     </ul>
    </li>
+   <li>
+    Visual analytics
+    <ul>
+     <li>
+      Why it's important
+     </li>
+     <li>
+      Different visualization techniques
+     </li>
+    </ul>
+   </li>
+   <li>
+    Tableau
+   </li>
   </ul>
-  <h3 id="types-of-analytics">
+  <h4 id="types-of-analytics">
    <a>
-    2.5.1. Types of analytics
+    2.5.2.1. Types of analytics
    </a>
-  </h3>
+  </h4>
   <p>
    Per Sharda et al. (2014):
   </p>
@@ -911,11 +991,6 @@
     Asking what should be done and generating (or even executing) a specific solution
    </li>
   </ul>
-  <h4 id="sas-model-of-analytics-levels">
-   <a>
-    2.5.1.1. SAS model of analytics levels
-   </a>
-  </h4>
   <p>
    According to Sharda et al. (2014) and
    <a href="https://amitadeshpande.blogspot.com/2012/09/eight-levels-of-analytics-model-by-sas.html">
@@ -1075,25 +1150,37 @@
     </td>
    </tr>
   </table>
-  <h2 id="dashboards-reporting">
+  <h2 id="delivering-data-interpretations">
    <a>
-    2.6. Dashboards &amp; reporting
+    2.6. Delivering data &amp; interpretations
    </a>
   </h2>
+  <h3 id="reporting">
+   <a>
+    2.6.1. Reporting
+   </a>
+  </h3>
   <ul>
    <li>
-    Business Performance Management
-    <ul>
-     <li>
-      https://jtkovacs.github.io/refs/process-improvement.html
-     </li>
-    </ul>
+    Need
    </li>
    <li>
-    Visual analytics
+    History
+   </li>
+  </ul>
+  <h3 id="dashboards">
+   <a>
+    2.6.2. Dashboards
+   </a>
+  </h3>
+  <ul>
+   <li>
+    capabilities
    </li>
    <li>
-    Tableau
+    <p>
+     limitations
+    </p>
    </li>
    <li>
     https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards
@@ -1102,7 +1189,9 @@
     https://jtkovacs.github.io/refs/graphics-viz.html
    </li>
    <li>
-    https://jtkovacs.github.io/refs/sotl.html#visual-design-of-learning-objects
+    <p>
+     https://jtkovacs.github.io/refs/sotl.html#visual-design-of-learning-objects
+    </p>
    </li>
   </ul>
   <h1 id="sources">

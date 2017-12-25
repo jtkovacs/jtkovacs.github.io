@@ -1,7 +1,8 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1927 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
-	- &nbsp;1.1. [Does BI have value?](#does-bi-have-value)
-	- &nbsp;1.2. [Generic BI architecture](#generic-bi-architecture)
-		- &nbsp;1.2.1. [BI versus data science](#bi-versus-data-science)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1967 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
+		- &nbsp;1.1.1. [BI versus data science](#bi-versus-data-science)
+		- &nbsp;1.1.2. [Food system metaphor](#food-system-metaphor)
+	- &nbsp;1.2. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.3. [History of BI](#history-of-bi)
 	- &nbsp;1.4. [Trends in BI](#trends-in-bi)
 		- &nbsp;1.4.1. [IoT](#iot)
@@ -19,10 +20,13 @@
 		- &nbsp;2.3.3. [Various data warehouse architectures](#various-data-warehouse-architectures)
 			- &nbsp;2.3.3.1. [Choosing an architecture](#choosing-an-architecture)
 	- &nbsp;2.4. [OLAP](#olap)
-	- &nbsp;2.5. [Analytics](#analytics)
-		- &nbsp;2.5.1. [Types of analytics](#types-of-analytics)
-			- &nbsp;2.5.1.1. [SAS model of analytics levels](#sas-model-of-analytics-levels)
-	- &nbsp;2.6. [Dashboards & reporting](#dashboards-reporting)
+	- &nbsp;2.5. [Interpreting the data](#interpreting-the-data)
+		- &nbsp;2.5.1. [Business Performance Management](#business-performance-management)
+		- &nbsp;2.5.2. [Analytics](#analytics)
+			- &nbsp;2.5.2.1. [Types of analytics](#types-of-analytics)
+	- &nbsp;2.6. [Delivering data & interpretations](#delivering-data-interpretations)
+		- &nbsp;2.6.1. [Reporting](#reporting)
+		- &nbsp;2.6.2. [Dashboards](#dashboards)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -40,18 +44,12 @@ Business intelligence (BI) systems are a type of [management information system 
 - BI supports their response/decision with analysis and predictions.
 
 
-## 1.1. Does BI have value?
 
-In theory, BI adds value by improving decisions. BI may enable organizations to answer their questions faster, or to pose new questions and gain new insights. Faster answers may support faster actions; new insights may indicate and/or support new courses of action. But very clearly, the value of BI depends on (1) the **quality of the data** being fed into the system; (2) the **quality of the analysis** performed on the data; (3) capacity to **turn analysis into decisions,** and most fundamentally, (4) capacity to **act on decisions.** (Senge's concept of a learning organization is relevant here---it is an organization that can not only make and act on decisions, but reflect on them and improve them through iteration. It is a lofty ideal that most organizations are nowhere near.)
-
-
-## 1.2. Generic BI architecture
+## 1.1. Generic BI system architecture
 
 <img src="../illos/bi-arch.jpg" width="600">
 
-![](../illos/bi-food-metaphor.png)
-
-### 1.2.1. BI versus data science
+### 1.1.1. BI versus data science
 
 https://jtkovacs.github.io/refs/data-science.html
 
@@ -59,6 +57,20 @@ https://jtkovacs.github.io/refs/data-science.html
 - DS may involve more sophisticated modeling
 - DS facilitates predictive and prescriptive analytics
 - Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+
+### 1.1.2. Food system metaphor
+
+![](../illos/bi-food-metaphor.png)
+
+
+
+
+## 1.2. Does BI have value?
+
+In theory, BI adds value by improving decisions. BI may enable organizations to answer their questions faster, or to pose new questions and gain new insights. Faster answers may support faster actions; new insights may indicate and/or support new courses of action. But very clearly, the value of BI depends on (1) the **quality of the data** being fed into the system; (2) the **quality of the analysis** performed on the data; (3) capacity to **turn analysis into decisions,** and most fundamentally, (4) capacity to **act on decisions.** (Senge's concept of a learning organization is relevant here---it is an organization that can not only make and act on decisions, but reflect on them and improve them through iteration. It is a lofty ideal that most organizations are nowhere near.)
+
+
+
 
 
 ## 1.3. History of BI
@@ -71,6 +83,8 @@ https://jtkovacs.github.io/refs/data-science.html
 <img src="../illos/DSS-evolution.jpg" width="600">
 
 ![](../illos/bi-tools-by-value.jpg)
+
+
 
 
 ## 1.4. Trends in BI
@@ -153,7 +167,7 @@ Data must be **extracted** from operational systems; **transformed** so that it 
 - Integration with data sources
 - Automatic metadata capture
 - Conformance with open standards
-- Easy-to-use interfaces for developers and uses
+- Easy-to-use interfaces for developers and users
 
 
 
@@ -188,7 +202,7 @@ Per Sharda et al. (2014, p. 47):
 
 ### 2.3.2. Dimensional modeling
 
-Dimensional modeling is data modeling to optimize retrieval; star schema (denormalized) and snowflake schema (normalized) are common.
+Dimensional modeling is data modeling to optimize retrieval (read rather than write). **Star schema** (denormalized) and **snowflake schema** (normalized) are common.
 
 ### 2.3.3. Various data warehouse architectures
 
@@ -226,24 +240,31 @@ More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p.
 
 ## 2.4. OLAP
 
-"Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69). The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are various [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
+"Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69). The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
 
 | Name | AKA | Function | Goals |
 | --- | --- | --- | --- |
 | **OLTP** | operational database | captures each record: emails, credit card transactions, webpage views, … | efficiency, control |
 | **OLAP** | data warehouse | ops --> data warehouse --> OLAP --> UI/dashboard | aggregation, efficiency, accuracy, access |
 
-For OLAP, data is stored as a multidimensional cube. Cubes can be efficiently **sliced** on a single dimension or **diced** on several; a user can **drill down** or up for different levels of detail, from summarized to granular; a user can **roll-up** a dimension, running calculations on it and its relationships; and a user may **pivot** to "change the dimensional orientation of a report or ad hoc query-display page" (Sharda et al., 2014, p. 71).
+To enable OLAP, data is stored in multidimensional cubes. These cubes can be efficiently **sliced** on a single dimension or **diced** on several; a user can **drill down** or up for different levels of detail; a user can **roll-up** a dimension, running calculations on it and its relationships; and a user may **pivot** to "change the dimensional orientation of a report or ad hoc query-display page" (Sharda et al., 2014, p. 71).
 
 
 
+## 2.5. Interpreting the data
 
 
+### 2.5.1. Business Performance Management
+
+- management.html#strategy
+- https://jtkovacs.github.io/refs/process-improvement.html
+- balanced score cards
+- closed-loop BPM methodology
 
 
+### 2.5.2. Analytics
 
-## 2.5. Analytics
-
+- Business Analytics as a field
 - IBM Watson
 - Text analytics
     - https://jtkovacs.github.io/refs/text-analytics.html
@@ -254,17 +275,18 @@ For OLAP, data is stored as a multidimensional cube. Cubes can be efficiently **
 - Data mining
     - https://jtkovacs.github.io/refs/machine-learning.html
     - https://jtkovacs.github.io/refs/statistics.html
+- Visual analytics
+    - Why it's important
+    - Different visualization techniques
+- Tableau
 
-
-### 2.5.1. Types of analytics
+#### 2.5.2.1. Types of analytics
 
 Per Sharda et al. (2014):
 
 - **Descriptive:** Asking what happened or is happening to generate well-defined business problems and opportunities; also provides answers to simple questions
 - **Predictive:** Asking what’s going to happen and why, to generate accurate projections that can inform analyses
 - **Prescriptive:** Asking what should be done and generating (or even executing) a specific solution
-
-#### 2.5.1.1. SAS model of analytics levels
 
 According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.blogspot.com/2012/09/eight-levels-of-analytics-model-by-sas.html) SAS published a white paper describing different "levels" of analytics:
 
@@ -325,12 +347,19 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
 
 
 
-## 2.6. Dashboards & reporting
+## 2.6. Delivering data & interpretations
 
-- Business Performance Management
-    - https://jtkovacs.github.io/refs/process-improvement.html
-- Visual analytics
-- Tableau
+### 2.6.1. Reporting
+
+- Need
+- History
+
+### 2.6.2. Dashboards
+
+- capabilities
+- limitations
+
+
 - https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards
 - https://jtkovacs.github.io/refs/graphics-viz.html
 - https://jtkovacs.github.io/refs/sotl.html#visual-design-of-learning-objects

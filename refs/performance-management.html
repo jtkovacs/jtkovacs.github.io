@@ -1,0 +1,1125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+   jtck.github.io | performance management
+  </title>
+  <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../assets/styles/refs.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
+   </a>
+   &gt; performance management | just under 2492 words | updated 12/25/2017
+  </p>
+  <div class="TOC">
+   <ul>
+    <li>
+     1.
+     <a href="#what-is-performance-management">
+      What is performance management?
+     </a>
+     <ul>
+      <li>
+       1.1.
+       <a href="#tools-by-degree-of-change-sought">
+        Tools by degree of change sought
+       </a>
+       <ul>
+        <li>
+         1.1.1.
+         <a href="#business-process-automation-bpa">
+          Business process automation (BPA)
+         </a>
+         <ul>
+          <li>
+           1.1.1.1.
+           <a href="#problem-analysis">
+            Problem analysis
+           </a>
+          </li>
+          <li>
+           1.1.1.2.
+           <a href="#root-cause-analysis">
+            Root cause analysis
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         1.1.2.
+         <a href="#business-process-improvement-bpi">
+          Business process improvement (BPI)
+         </a>
+         <ul>
+          <li>
+           1.1.2.1.
+           <a href="#duration-analysis">
+            Duration analysis
+           </a>
+          </li>
+          <li>
+           1.1.2.2.
+           <a href="#activity-based-costing">
+            Activity-based costing
+           </a>
+          </li>
+          <li>
+           1.1.2.3.
+           <a href="#informal-bench-marking">
+            Informal bench-marking
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         1.1.3.
+         <a href="#business-process-reengineering-bpr">
+          Business process reengineering (BPR)
+         </a>
+         <ul>
+          <li>
+           1.1.3.1.
+           <a href="#outcome-analysis">
+            Outcome analysis
+           </a>
+          </li>
+          <li>
+           1.1.3.2.
+           <a href="#technology-analysis">
+            Technology analysis
+           </a>
+          </li>
+          <li>
+           1.1.3.3.
+           <a href="#activity-elimination">
+            Activity elimination
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     2.
+     <a href="#continuous-process-improvement">
+      Continuous Process Improvement
+     </a>
+     <ul>
+      <li>
+       2.1.
+       <a href="#depict-system">
+        Depict system
+       </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#value-stream-mapping">
+          Value stream mapping
+         </a>
+        </li>
+        <li>
+         2.1.2.
+         <a href="#spaghetti-diagram">
+          Spaghetti diagram
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
+       <a href="#identify-problems">
+        Identify problems
+       </a>
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#eleven-wastes-checklist">
+          Eleven wastes checklist
+         </a>
+        </li>
+        <li>
+         2.2.2.
+         <a href="#pareto-analysis">
+          Pareto analysis
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.3.
+       <a href="#analyze-problems">
+        Analyze problems
+       </a>
+       <ul>
+        <li>
+         2.3.1.
+         <a href="#cause-and-effect-diagram">
+          Cause-and-effect diagram
+         </a>
+        </li>
+        <li>
+         2.3.2.
+         <a href="#cedac">
+          CEDAC
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.4.
+       <a href="#address-problem">
+        Address problem
+       </a>
+       <ul>
+        <li>
+         2.4.1.
+         <a href="#opportunities-rating-matrix">
+          Opportunities rating matrix
+         </a>
+        </li>
+        <li>
+         2.4.2.
+         <a href="#5s-organization-methodology">
+          5S organization methodology
+         </a>
+        </li>
+        <li>
+         2.4.3.
+         <a href="#brainstorming">
+          Brainstorming
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     3.
+     <a href="#operations-management">
+      Operations Management
+     </a>
+     <ul>
+      <li>
+       3.1.
+       <a href="#business-process-analysis">
+        Business process analysis
+       </a>
+       <ul>
+        <li>
+         3.1.1.
+         <a href="#flow-diagram">
+          Flow diagram
+         </a>
+        </li>
+        <li>
+         3.1.2.
+         <a href="#measuring-labor-productivity">
+          Measuring labor productivity
+         </a>
+        </li>
+        <li>
+         3.1.3.
+         <a href="#inventory-metrics">
+          Inventory metrics
+         </a>
+         <ul>
+          <li>
+           3.1.3.1.
+           <a href="#littles-law">
+            Little's law
+           </a>
+          </li>
+          <li>
+           3.1.3.2.
+           <a href="#inventory-turns">
+            Inventory turns
+           </a>
+          </li>
+          <li>
+           3.1.3.3.
+           <a href="#make-to-stock-vs-make-to-order">
+            Make-to-stock vs make-to-order
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li>
+       3.2.
+       <a href="#analyzing-improving-productivity">
+        Analyzing &amp; improving productivity
+       </a>
+       <ul>
+        <li>
+         3.2.1.
+         <a href="#sources-of-wastes">
+          Sources of wastes
+         </a>
+        </li>
+        <li>
+         3.2.2.
+         <a href="#financial-value-of-productivity">
+          Financial value of productivity
+         </a>
+        </li>
+        <li>
+         3.2.3.
+         <a href="#key-performance-indicators-kpis-and-kpi-trees">
+          Key Performance Indicators (KPIs) and KPI trees
+         </a>
+        </li>
+        <li>
+         3.2.4.
+         <a href="#overall-equipment-effectiveness-oee-and-overall-people-effectiveness-ope">
+          Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)
+         </a>
+        </li>
+        <li>
+         3.2.5.
+         <a href="#reducing-idle-time">
+          Reducing idle time
+         </a>
+        </li>
+        <li>
+         3.2.6.
+         <a href="#smoothing-performance-across-workers">
+          Smoothing performance across workers
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       3.3.
+       <a href="#quality-control">
+        Quality control
+       </a>
+       <ul>
+        <li>
+         3.3.1.
+         <a href="#basic-defect-calculations">
+          Basic defect calculations
+         </a>
+        </li>
+        <li>
+         3.3.2.
+         <a href="#quality-flow">
+          Quality &amp; flow
+         </a>
+        </li>
+        <li>
+         3.3.3.
+         <a href="#six-sigma">
+          Six Sigma
+         </a>
+        </li>
+        <li>
+         3.3.4.
+         <a href="#control-charts">
+          Control charts
+         </a>
+        </li>
+        <li>
+         3.3.5.
+         <a href="#jidoka">
+          Jidoka
+         </a>
+        </li>
+        <li>
+         3.3.6.
+         <a href="#problem-solving">
+          Problem solving
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+    <li>
+     4.
+     <a href="#sources">
+      Sources
+     </a>
+     <ul>
+      <li>
+       4.1.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       4.2.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       4.3.
+       <a href="#unread">
+        Unread
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1 id="what-is-performance-management">
+   <a>
+    1. What is performance management?
+   </a>
+  </h1>
+  <h2 id="tools-by-degree-of-change-sought">
+   <a>
+    1.1. Tools by degree of change sought
+   </a>
+  </h2>
+  <p>
+   Per Dennis et al. (2012),
+  </p>
+  <div class="figure">
+   <img src="illos/BPA-BPI-BPR.png"/>
+  </div>
+  <h3 id="business-process-automation-bpa">
+   <a>
+    1.1.1. Business process automation (BPA)
+   </a>
+  </h3>
+  <p>
+   BPA is focused on making current processes more efficient through automation; it requires thorough analysis of the current system.
+  </p>
+  <h4 id="problem-analysis">
+   <a>
+    1.1.1.1. Problem analysis
+   </a>
+  </h4>
+  <p>
+   This entails asking current system users about problems they face or features they desire. Problems identified with this technique are often related to UI and their resolution produces little if any business value.
+  </p>
+  <h4 id="root-cause-analysis">
+   <a>
+    1.1.1.2. Root cause analysis
+   </a>
+  </h4>
+  <p>
+   This entails asking current system users to explore the root causes of problems they've identified (since these problems may only be symptoms). Root causes may be uncovered by asking "Why?" five times; causal relationships may be represented as a hierarchy, web, or fishbone/Ishikawa diagram.
+  </p>
+  <h3 id="business-process-improvement-bpi">
+   <a>
+    1.1.2. Business process improvement (BPI)
+   </a>
+  </h3>
+  <p>
+   BPI goes beyond increased efficiency to the realm of increased effectiveness, for instance taking advantage of new opportunities and technologies.
+  </p>
+  <h4 id="duration-analysis">
+   <a>
+    1.1.2.1. Duration analysis
+   </a>
+  </h4>
+  <p>
+   First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through
+   <strong>
+    integration
+   </strong>
+   (fewer people involved in doing the work across its lifecycle) or
+   <strong>
+    parallelization
+   </strong>
+   (steps being done concurrently).
+  </p>
+  <h4 id="activity-based-costing">
+   <a>
+    1.1.2.2. Activity-based costing
+   </a>
+  </h4>
+  <p>
+   Steps in a process are costed, and improvement efforts are focused on the costliest step.
+  </p>
+  <h4 id="informal-bench-marking">
+   <a>
+    1.1.2.3. Informal bench-marking
+   </a>
+  </h4>
+  <p>
+   Examine competitors to identify performance targets and process improvements.
+  </p>
+  <h3 id="business-process-reengineering-bpr">
+   <a>
+    1.1.3. Business process reengineering (BPR)
+   </a>
+  </h3>
+  <p>
+   BPR is a radical upending of current business processes and systems, so spends little time analyzing them. Per Rigby (2015; also gives recommendations for further reading), a BPR effort focuses on:
+  </p>
+  <ul>
+   <li>
+    Reorienting organizational culture towards user needs
+   </li>
+   <li>
+    Reorganizing traditional functional departments into cross-functional teams
+   </li>
+   <li>
+    Redesigning and improving core processes, perhaps using IT to:
+    <ul>
+     <li>
+      Reduce costs, waste, and cycle times
+     </li>
+     <li>
+      Increase quality
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h4 id="outcome-analysis">
+   <a>
+    1.1.3.1. Outcome analysis
+   </a>
+  </h4>
+  <p>
+   Trying to think about the business from the perspective of users' ultimate goals and needs (recognizing that your product or service may be only a means to an end).
+  </p>
+  <h4 id="technology-analysis">
+   <a>
+    1.1.3.2. Technology analysis
+   </a>
+  </h4>
+  <p>
+   Reviewing existing and emerging technologies and asking how they might be applied in your company (either as a process improvement or a product).
+  </p>
+  <h4 id="activity-elimination">
+   <a>
+    1.1.3.3. Activity elimination
+   </a>
+  </h4>
+  <p>
+   Systematically (but as a thought exercise) eliminating each step in a process, and asking what the implications are.
+  </p>
+  <h1 id="continuous-process-improvement">
+   <a>
+    2. Continuous Process Improvement
+   </a>
+  </h1>
+  <p>
+   <em>
+    These notes are based on Jeevon Powell's class,
+    <a href="https://ucs.admin.uw.edu/pod/Course/Details/Q1170">
+     Process Improvement Tools.
+    </a>
+   </em>
+  </p>
+  <h2 id="depict-system">
+   <a>
+    2.1. Depict system
+   </a>
+  </h2>
+  <p>
+   See
+   <a href="modeling.html">
+    notes on systems modeling.
+   </a>
+  </p>
+  <h3 id="value-stream-mapping">
+   <a>
+    2.1.1. Value stream mapping
+   </a>
+  </h3>
+  <h3 id="spaghetti-diagram">
+   <a>
+    2.1.2. Spaghetti diagram
+   </a>
+  </h3>
+  <h2 id="identify-problems">
+   <a>
+    2.2. Identify problems
+   </a>
+  </h2>
+  <h3 id="eleven-wastes-checklist">
+   <a>
+    2.2.1. Eleven wastes checklist
+   </a>
+  </h3>
+  <h3 id="pareto-analysis">
+   <a>
+    2.2.2. Pareto analysis
+   </a>
+  </h3>
+  <h2 id="analyze-problems">
+   <a>
+    2.3. Analyze problems
+   </a>
+  </h2>
+  <h3 id="cause-and-effect-diagram">
+   <a>
+    2.3.1. Cause-and-effect diagram
+   </a>
+  </h3>
+  <h3 id="cedac">
+   <a>
+    2.3.2. CEDAC
+   </a>
+  </h3>
+  <h2 id="address-problem">
+   <a>
+    2.4. Address problem
+   </a>
+  </h2>
+  <h3 id="opportunities-rating-matrix">
+   <a>
+    2.4.1. Opportunities rating matrix
+   </a>
+  </h3>
+  <h3 id="s-organization-methodology">
+   <a>
+    2.4.2. 5S organization methodology
+   </a>
+  </h3>
+  <h3 id="brainstorming">
+   <a>
+    2.4.3. Brainstorming
+   </a>
+  </h3>
+  <h1 id="operations-management">
+   <a>
+    3. Operations Management
+   </a>
+  </h1>
+  <p>
+   <em>
+    These notes are based on Christian Terwiesch's Coursera class,
+    <a href="https://www.coursera.org/learn/wharton-operations">
+     Intro. to Operations Management.
+    </a>
+   </em>
+  </p>
+  <p>
+   Strategy and assessment often reference four
+   <strong>
+    operational dimensions:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Cost
+   </li>
+   <li>
+    Time
+   </li>
+   <li>
+    Variety/responsiveness to consumer tastes
+   </li>
+   <li>
+    Quality (performance, conformance)
+   </li>
+  </ul>
+  <p>
+   Between any two dimensions, there may be a
+   <strong>
+    tradeoff;
+   </strong>
+   obtain this curve by locating the performance of existing companies for any two dimensions. Then the question is whether your company is operating on the frontier or within it.
+  </p>
+  <h2 id="business-process-analysis">
+   <a>
+    3.1. Business process analysis
+   </a>
+  </h2>
+  <h3 id="flow-diagram">
+   <a>
+    3.1.1. Flow diagram
+   </a>
+  </h3>
+  <p>
+   Business processes underlie performance. One way to measure them: graph flow units vs. time, showing cumulative inflow and cumulative outflow. Then:
+  </p>
+  <ul>
+   <li>
+    (Instantaneous) inventory is the vertical distance between c.inflow and c.outflow
+   </li>
+   <li>
+    Flow time is the horizontal distance between c.inflow and c.outflow—the time a flow unit spends in the system
+   </li>
+  </ul>
+  <p>
+   Create a process flow diagram aka value stream map showing how flow units are transformed from inputs to outputs by process activities. Represent wait times, lines, or inventories with triangles, and activities with boxes (labeled with activity time in units, and m, the number of workers or resources). Then:
+  </p>
+  <ul>
+   <li>
+    Processing time is the sum of all the individual activity times
+   </li>
+   <li>
+    Capacity is driven by processing time: m/processing time
+   </li>
+   <li>
+    The bottleneck is the activity with lowest capacity, and this lowest capacity is the overall process capacity
+   </li>
+   <li>
+    Flow rate aka throughput is min{demand_rate, process_capacity}, so flow rate is driven by these factors
+   </li>
+   <li>
+    Utilization is flow_rate/capacity (dimensionless)
+   </li>
+  </ul>
+  <p>
+   Realistically, processing times will vary from flow unit to flow unit. Flow units may even follow different pathways through all possible process activities. So, how to find the bottleneck and determine the flow rate? Depict multiple flow units on same process diagram, symbolized as types of flow units, then:
+  </p>
+  <ul>
+   <li>
+    Approach #1, “adding up demand streams”: (1) Compute capacity of each process activity: m/activity_time (2) Compute demand experienced by each activity (3) Compute implied utilization as ratio of demand to capacity (can sum to more than 100%); now, the activity with highest implied utilization is the bottleneck
+   </li>
+   <li>
+    Approach #2, “minutes of work”: (1) Based on m, how many minutes of work per hour can each activity supply? (2) Calculate how many minutes of work is required by each demand stream (3) Compute ratio of minutes required to minutes available; highest is the bottleneck
+   </li>
+  </ul>
+  <h3 id="measuring-labor-productivity">
+   <a>
+    3.1.2. Measuring labor productivity
+   </a>
+  </h3>
+  <p>
+   Why focus on this when labor seems to contribute less to modern firms’ costs? —because many firms keep labor costs off their balance sheet by ‘outsourcing’ them to their suppliers. If you account for labor in the cost of goods supplied, the role of labor becomes evident.
+  </p>
+  <ul>
+   <li>
+    Labor content: sum of all the individual activity times
+   </li>
+   <li>
+    Cycle time: 1/flow_rate
+   </li>
+   <li>
+    All activities except the bottleneck have idle time=cycle_time-process_time, and the sum of these is direct idle time
+   </li>
+   <li>
+    Average labor utilization is labor_content / (labor_content+direct_idle_time)
+   </li>
+   <li>
+    Cost of direct labor: total wages/time / flow_rate/time
+   </li>
+  </ul>
+  <h3 id="inventory-metrics">
+   <a>
+    3.1.3. Inventory metrics
+   </a>
+  </h3>
+  <h4 id="littles-law">
+   <a>
+    3.1.3.1. Little's law
+   </a>
+  </h4>
+  <p>
+   Inventory=Flow_rate*Flow_time. Given any two variables, can solve for a third (especially flow time); also, can decide how to manipulate outcomes by adjusting a variable. Note that flow time here is essentially average flow time, a line fitted to the actual data recorded from observations of inflow and outflow. “Not an empirical law; to prove it, we need to turn to stochastic optimization.”
+  </p>
+  <h4 id="inventory-turns">
+   <a>
+    3.1.3.2. Inventory turns
+   </a>
+  </h4>
+  <p>
+   Cost_Of_Goods_Sold/Inventory. Gives the amount of time that a flow unit spends inside the process; comes from Little’s law (where COGS=Flow_rate). High inventory turns can dramatically reduce inventory costs (capital, storage, obsolescence). Per unit inventory costs=Annual_inventory_cost/Inventory_turns.
+  </p>
+  <h4 id="make-to-stock-vs-make-to-order">
+   <a>
+    3.1.3.3. Make-to-stock vs make-to-order
+   </a>
+  </h4>
+  <p>
+   Motivating question here is why should there be inventory? What are the drivers of inventory? (Note that, per Little’s law, these same factors are implicit drivers of flow time.) Contrast McDonald’s and Subway—not all companies use inventory to increase flow rate; there are make-to-stock vs. make-to-order strategies.
+  </p>
+  <ul>
+   <li>
+    The reason is variability of activity times; workers do not “work like robots”, so “buffer or suffer”.
+   </li>
+   <li>
+    Reasons for inventory: buffer seasonal demand, internal demand (between processes or activities), customer demand, inherent time lag in production (e.g., aging cheese).
+   </li>
+  </ul>
+  <h2 id="analyzing-improving-productivity">
+   <a>
+    3.2. Analyzing &amp; improving productivity
+   </a>
+  </h2>
+  <p>
+   Frederick Winslow Taylor (1911),
+   <a href="https://en.wikipedia.org/wiki/The_Principles_of_Scientific_Management">
+    Principles of Scientific Management.
+   </a>
+   . In general, (multifactor) productivity is a ratio of output_produced / input(s)_used.
+  </p>
+  <ul>
+   <li>
+    Basic productivity ratio is output/input; at firm or industry level, “output” is revenue, and “input” is cost categories
+   </li>
+   <li>
+    Disaggregate ratio to pinpoint source of productivity difference:
+    <ul>
+     <li>
+      Productivity = Operational_yield * Transformation_efficiency * Per-unit_capacity_cost
+     </li>
+     <li>
+      Error
+     </li>
+     <li>
+      Revenue/Cost = Revenue/Output * Output/Capacity * Capacity/Cost
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h3 id="sources-of-wastes">
+   <a>
+    3.2.1. Sources of wastes
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Waste (or inefficiency) may be represented as the distance between a firm and an industry-wide PPF
+   </li>
+   <li>
+    Overproduction: Produce sooner or in greater quantities than required by customers or inventories
+   </li>
+   <li>
+    Transportation: Unnecessary, unergonomic movement (Taiichi Ohno: “Moving is not necessarily working”)
+   </li>
+   <li>
+    Rework: Having to doing it right the second time; called “bounce backs” in hospitals
+   </li>
+   <li>
+    Over-processing: Doing more work than is required to meet the customer’s demands; driven by operator’s high standards, or ignorance about customers’ actual requirements
+   </li>
+   <li>
+    Inventory: Poorly managed, can be one of the biggest forms of waste. Inventory may take the form of raw materials, works in progress (WIP), or finished products.
+   </li>
+   <li>
+    Waiting: Underutilizing resources because of poor process design
+   </li>
+   <li>
+    Intellect: Esp. the intellect of workers
+   </li>
+  </ul>
+  <h3 id="financial-value-of-productivity">
+   <a>
+    3.2.2. Financial value of productivity
+   </a>
+  </h3>
+  <ul>
+   <li>
+    “Productivity [i.e., capacity improvements] are not the goal in and of themselves; the goal is to save money”
+   </li>
+   <li>
+    Profit: Process_capacity*Per_capita_revenue - (Fixed_costs + Variable_costs)
+   </li>
+   <li>
+    “How does the profit change as we change the operational variables?”
+   </li>
+   <li>
+    “Every second counts—however, not every second counts equally.” The largest impact comes from improvements to the bottleneck when demand is not a binding constraint; also, in organizations with large fixed costs and lower marginal costs (can see this by checking the relative slopes of the cost and revenue lines past the break even point).
+   </li>
+  </ul>
+  <h3 id="key-performance-indicators-kpis-and-kpi-trees">
+   <a>
+    3.2.3. Key Performance Indicators (KPIs) and KPI trees
+   </a>
+  </h3>
+  <p>
+   KPI trees are about “visualizing the relationship between operational variables and the financial bottom line, and are also the starting point for sensitivity analysis wherein we identify those operational variables that have the largest impact.” Map out dependencies between variables, then take the partial derivative of the terminal KPI w/r/t an operational variable or evaluate using a spreadsheet.
+  </p>
+  <p>
+   <img src="illos/KPI-tree.png" width="450px"/>
+  </p>
+  <h3 id="overall-equipment-effectiveness-oee-and-overall-people-effectiveness-ope">
+   <a>
+    3.2.4. Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Available_time=Total_planned_uptime - Downtime
+   </li>
+   <li>
+    Downtime = Break_downs + Product_change_overs
+   </li>
+   <li>
+    Net_operating_time = Available_time - Speed_losses
+   </li>
+   <li>
+    Speed_losses = Idling + Minor_stoppages + Reduced_operating_speed
+   </li>
+   <li>
+    OEE = Net_operating_time - Quality_losses
+   </li>
+   <li>
+    Quality_losses = Defects + Startup_time
+   </li>
+   <li>
+    Availability_rate * Performance_rate * Quality_rate = Value_add_time / Available_time = OEE
+   </li>
+  </ul>
+  <h3 id="reducing-idle-time">
+   <a>
+    3.2.5. Reducing idle time
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Takt time is the pace required to keep up with demand: “every person has to dance to the meet of demand”
+    <ul>
+     <li>
+      Demand leveling: Average out demand over a period of time
+     </li>
+    </ul>
+   </li>
+   <li>
+    Line balancing: Equal processing time at each station (ideal). Calculate takt time; assign tasks such that all processing times fall below the takt time; make sure that all tasks are assigned; and minimize the number of workers needed.
+   </li>
+  </ul>
+  <h3 id="smoothing-performance-across-workers">
+   <a>
+    3.2.6. Smoothing performance across workers
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Quartile analysis: Observing workers, noting differences in processing time, grouping into quartiles based on processing time, and identifying best practices that appear to shorten processing time
+    <ul>
+     <li>
+      e.g. 260% different observed in ER between 10% and 90% quartiles
+     </li>
+     <li>
+      Biggest differences tend to be observed in knowledge-intensive tasks
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h2 id="quality-control">
+   <a>
+    3.3. Quality control
+   </a>
+  </h2>
+  <ul>
+   <li>
+    Ford production system: Influenced by Taylor; aspired to optimization of work. Used a moving line, big machinery, economies of scale, standardization of product.
+   </li>
+   <li>
+    Toyota production system: c. 1950s, focused on elimination of waste and matching demand after failure to replicate Ford system in a postwar context where inputs and domestic demand was scarce.
+    <ul>
+     <li>
+      Worry about: waste, inflexibility, and variability
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h3 id="basic-defect-calculations">
+   <a>
+    3.3.1. Basic defect calculations
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Activity yield is %units produced according to specification = 1 - p(defect)
+   </li>
+   <li>
+    Process yield = f(activity_yield); if dependent (Swiss cheese) activities, then product of activity yields, 1-p(defect)n; if independent, then sum, represented as (1-p(defect))
+    <sup>
+     n
+    </sup>
+    .
+   </li>
+   <li>
+    Swiss Cheese model: think of a hole as a defect; as you stack slices of cheese, there is always the chance that all the holes will line up. This redundancy reduces the probability of process failure. Then the process yield is 1-p(defect)
+    <sup>
+     n
+    </sup>
+    .
+   </li>
+  </ul>
+  <h3 id="quality-flow">
+   <a>
+    3.3.2. Quality &amp; flow
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Adding representations of quality to a flow diagram:
+    <ul>
+     <li>
+      Dropped flow units: Calculate end demand; calculate yield of each step (include defects); calculate how much each step must produce to meet demand (e.g., a 50% defect rate means that an activity must produce 2xD); calculate implied utilization (D/capacity); highest implied utilization is the bottleneck.
+     </li>
+     <li>
+      Re-worked flow units: Calculate the expected processing time. E.g. if there is a 30% defect rate and defects are re-worked, then the real processing time is 0.7
+      <em>
+       processing_time + 0.3
+      </em>
+      rework_time. After this modification, the activity with lowest capacity is the bottleneck.
+     </li>
+    </ul>
+   </li>
+   <li>
+    Costs of defects: Say that we pay $2 per flow unit as an input, but receive $20 per flow unit post-processing, as an output. Then the cost of defects depends not on where they occur, but where they are detected—before or after the bottleneck. Before is cheaper. Pre-bottleneck, defect costs are driven by input costs; post-bottleneck, by revenue (opportunity cost).
+   </li>
+   <li>
+    Variability &amp; buffering dilemma:
+    <ul>
+     <li>
+      For a 2-step process where each step has p(defect)=0.5, there are four possibilities: both defect-free; first step defective, leaving step 2 “starved”; second step defective, leaving step one “blocked”; and both defective. This variability dramatically lowers the expected flow rate; by adding a buffer, the flow rate may be increased.
+     </li>
+     <li>
+      However, buffers remove the incentive for process improvement; buffering hides problems.
+     </li>
+     <li>
+      Toyota developed the Kanban “demand-pull” card system to manage this dilemma. Kanban cards authorize work, and are themselves authorized by customer demand. This puts a cap on inventory.
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h3 id="six-sigma">
+   <a>
+    3.3.3. Six Sigma
+   </a>
+  </h3>
+  <p>
+   Improving a process by reducing internal variability.
+  </p>
+  <ul>
+   <li>
+    LSL, USL: lower and upper specification limits
+   </li>
+   <li>
+    Capability score (AKA CP score), where higher is better: (USL-LSL)/(6*process_stdev). Clearly, the CP score can be raised by widening the range between upper and lower specifications, or by decreasing the standard deviation in the process.
+   </li>
+   <li>
+    For interpretation, relates to defect probabilities.
+   </li>
+   <li>
+    Quality targets are often expressed as ppm, parts per million.
+   </li>
+   <li>
+    A “six sigma” quality target corresponds to a defect probability of 0.002 and a capability score of 2.
+   </li>
+  </ul>
+  <h3 id="control-charts">
+   <a>
+    3.3.4. Control charts
+   </a>
+  </h3>
+  <p>
+   Help distinguish between normal and abnormal variation; part of statistical process control
+  </p>
+  <ul>
+   <li>
+    Common cause variation may be high or low, but has one basic root
+   </li>
+   <li>
+    Assignable cause variation is when the variation stems from multiple sources: “something in the underlying process that changed”, resulting in more variability
+   </li>
+   <li>
+    How to identify assignable causes?
+   </li>
+   <li>
+    Establish LCL, UCL---upper and lower control limits, different from LSL, USL.
+   </li>
+   <li>
+    LCL= mean - 3
+    <em>
+     stdev; UCL = mean + 3
+    </em>
+    stdev
+   </li>
+   <li>
+    Plot means of samples against LCL, UCL; if a sample’s mean crosses control limits, we suspect assignable cause.
+   </li>
+  </ul>
+  <h3 id="jidoka">
+   <a>
+    3.3.5. Jidoka
+   </a>
+  </h3>
+  <p>
+   Detect → Alert → Stop, as quickly as possible, to prevent defects from reaching the bottleneck. In manufacturing assembly lines, jidoka is often implemented with andon cords (for workers to pull, freezing the whole line) and a central andon board (to indicate which station initiated the stop).
+  </p>
+  <ul>
+   <li>
+    ITAT is “information turnaround time”, something that is (detrimentally) increased by inventory. Low ITAT means quick feedback and the potential for quick learning.
+   </li>
+  </ul>
+  <h3 id="problem-solving">
+   <a>
+    3.3.6. Problem solving
+   </a>
+  </h3>
+  <p>
+   Looking for root cause(s):
+  </p>
+  <ul>
+   <li>
+    Kaizen: Process improvement is best carried out by frontline employees
+   </li>
+   <li>
+    Ishikawa diagram, also called fishbone diagram, for brainstorming; complemented by 5 whys
+   </li>
+   <li>
+    Pareto chart “maps out the assignable causes of a problem in the categories from the Ishikawa diagram, ordering root causes in decreasing order of frequency of occurrance”;
+    <ul>
+     <li>
+      Pareto principle: 80% of the defects are explained by 20% of the root causes
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <div class="figure">
+   <img src="illos/reality-models.png"/>
+  </div>
+  <p>
+   <br/>
+  </p>
+  <div class="figure">
+   <img src="illos/problem-solving.png"/>
+  </div>
+  <h1 id="sources">
+   <a>
+    4. Sources
+   </a>
+  </h1>
+  <p>
+   Dennis, A., Haley Wixom, B., &amp; Tegarden, D. (2012). Requirements determination. In
+   <em>
+    Systems analysis and design: An object oriented approach with UML
+   </em>
+   (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
+  </p>
+  <p>
+   Rigby, D. K. (2015).
+   <em>
+    Management tools 2015: An executive’s guide.
+   </em>
+   Boston, MA: Bain &amp; Company.
+  </p>
+  <h2 id="references">
+   <a>
+    4.1. References
+   </a>
+  </h2>
+  <h2 id="read">
+   <a>
+    4.2. Read
+   </a>
+  </h2>
+  <h2>
+   <a name="4.3.-unread">
+    4.3. Unread
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="https://en.wikipedia.org/wiki/Six_Sigma">
+     Wiki - Six Sigma
+    </a>
+   </li>
+  </ul>
+ </body>
+</html>

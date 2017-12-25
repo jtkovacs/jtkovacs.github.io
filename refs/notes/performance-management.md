@@ -1,39 +1,40 @@
+# What is performance management?
 
-# Tools by degree of change sought
+## Tools by degree of change sought
 
-Per Dennis et al. (2012), 
+Per Dennis et al. (2012),
 
 ![](../ILLOS/BPA-BPI-BPR.png)
 
-## Business process automation (BPA)
+### Business process automation (BPA)
 
 BPA is focused on making current processes more efficient through automation; it requires thorough analysis of the current system.
 
-### Problem analysis
+#### Problem analysis
 
 This entails asking current system users about problems they face or features they desire. Problems identified with this technique are often related to UI and their resolution produces little if any business value.
 
-### Root cause analysis
+#### Root cause analysis
 
 This entails asking current system users to explore the root causes of problems they've identified (since these problems may only be symptoms). Root causes may be uncovered by asking "Why?" five times; causal relationships may be represented as a hierarchy, web, or fishbone/Ishikawa diagram.
 
-## Business process improvement (BPI)
+### Business process improvement (BPI)
 
 BPI goes beyond increased efficiency to the realm of increased effectiveness, for instance taking advantage of new opportunities and technologies.
-    
-### Duration analysis
+
+#### Duration analysis
 
 First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through **integration** (fewer people involved in doing the work across its lifecycle) or **parallelization** (steps being done concurrently).
 
-### Activity-based costing
+#### Activity-based costing
 
 Steps in a process are costed, and improvement efforts are focused on the costliest step.
 
-### Informal bench-marking 
+#### Informal bench-marking
 
 Examine competitors to identify performance targets and process improvements.
-    
-## Business process reengineering (BPR)
+
+### Business process reengineering (BPR)
 
 BPR is a radical upending of current business processes and systems, so spends little time analyzing them. Per Rigby (2015; also gives recommendations for further reading), a BPR effort focuses on:
 
@@ -43,15 +44,15 @@ BPR is a radical upending of current business processes and systems, so spends l
     - Reduce costs, waste, and cycle times
     - Increase quality
 
-### Outcome analysis
+#### Outcome analysis
 
 Trying to think about the business from the perspective of users' ultimate goals and needs (recognizing that your product or service may be only a means to an end).
 
-### Technology analysis
+#### Technology analysis
 
 Reviewing existing and emerging technologies and asking how they might be applied in your company (either as a process improvement or a product).
 
-### Activity elimination
+#### Activity elimination
 
 Systematically (but as a thought exercise) eliminating each step in a process, and asking what the implications are.
 
@@ -76,7 +77,7 @@ See [notes on systems modeling.](modeling.html)
 
 ### Pareto analysis
 
-## Analyze problems 
+## Analyze problems
 
 ### Cause-and-effect diagram
 
@@ -84,21 +85,11 @@ See [notes on systems modeling.](modeling.html)
 
 ## Address problem
 
-### Opportunities rating matrix 
+### Opportunities rating matrix
 
 ### 5S organization methodology
 
 ### Brainstorming
-
-
-# Design Thinking
-
-- [Draw toast](http://www.drawtoast.com/)
-- [Microsoft's radical bet on a new type of design thinking](https://www.fastcodesign.com/3054927/the-big-idea/microsofts-inspiring-bet-on-a-radical-new-type-of-design-thinking)
-- [Service design toolkit](http://www.servicedesigntoolkit.org/downloads.html)
-- [Principles and glossary of presencing](https://www.presencing.com/principles)
-- [Design to improve life (cases and methods)](http://designtoimprovelife.dk/tools/)
-- [Principles for complex systems](http://capita.wustl.edu/ME567_Informatics/contents/complex.html)
 
 
 
@@ -107,7 +98,7 @@ See [notes on systems modeling.](modeling.html)
 
 _These notes are based on Christian Terwiesch's Coursera class, [Intro. to Operations Management.](https://www.coursera.org/learn/wharton-operations)_
 
-Strategy and assessment often reference four **operational dimensions:** 
+Strategy and assessment often reference four **operational dimensions:**
 
 - Cost
 - Time
@@ -162,15 +153,15 @@ Cost_Of_Goods_Sold/Inventory. Gives the amount of time that a flow unit spends i
 
 Motivating question here is why should there be inventory? What are the drivers of inventory? (Note that, per Little’s law, these same factors are implicit drivers of flow time.) Contrast McDonald’s and Subway—not all companies use inventory to increase flow rate; there are make-to-stock vs. make-to-order strategies.
 
-- The reason is variability of activity times; workers do not “work like robots”, so “buffer or suffer”. 
+- The reason is variability of activity times; workers do not “work like robots”, so “buffer or suffer”.
 - Reasons for inventory: buffer seasonal demand, internal demand (between processes or activities), customer demand, inherent time lag in production (e.g., aging cheese).
 
 ## Analyzing & improving productivity
 
-Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://en.wikipedia.org/wiki/The_Principles_of_Scientific_Management). In general, (multifactor) productivity  is a ratio of output_produced / input(s)_used. 
+Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://en.wikipedia.org/wiki/The_Principles_of_Scientific_Management). In general, (multifactor) productivity  is a ratio of output_produced / input(s)_used.
 
 - Basic productivity ratio is output/input; at firm or industry level, “output” is revenue, and “input” is cost categories
-- Disaggregate ratio to pinpoint source of productivity difference: 
+- Disaggregate ratio to pinpoint source of productivity difference:
     - Productivity = Operational_yield * Transformation_efficiency * Per-unit_capacity_cost
     - Error
     - Revenue/Cost = Revenue/Output * Output/Capacity * Capacity/Cost
@@ -230,17 +221,17 @@ KPI trees are about “visualizing the relationship between operational variable
 ### Basic defect calculations
 
 - Activity yield is %units produced according to specification = 1 - p(defect)
-- Process yield = f(activity_yield); if dependent (Swiss cheese) activities, then product of activity yields, 1-p(defect)n; if independent, then sum, represented as (1-p(defect))<sup>n</sup>. 
+- Process yield = f(activity_yield); if dependent (Swiss cheese) activities, then product of activity yields, 1-p(defect)n; if independent, then sum, represented as (1-p(defect))<sup>n</sup>.
 - Swiss Cheese model: think of a hole as a defect; as you stack slices of cheese, there is always the chance that all the holes will line up. This redundancy reduces the probability of process failure. Then the process yield is 1-p(defect)<sup>n</sup>.
 
 ### Quality & flow
 
 - Adding representations of quality to a flow diagram:
-    - Dropped flow units: Calculate end demand; calculate yield of each step (include defects); calculate how much each step must produce to meet demand (e.g., a 50% defect rate means that an activity must produce 2xD); calculate implied utilization (D/capacity); highest implied utilization is the bottleneck.    
+    - Dropped flow units: Calculate end demand; calculate yield of each step (include defects); calculate how much each step must produce to meet demand (e.g., a 50% defect rate means that an activity must produce 2xD); calculate implied utilization (D/capacity); highest implied utilization is the bottleneck.
     - Re-worked flow units: Calculate the expected processing time. E.g. if there is a 30% defect rate and defects are re-worked, then the real processing time is 0.7*processing_time + 0.3*rework_time. After this modification, the activity with lowest capacity is the bottleneck.
 - Costs of defects: Say that we pay $2 per flow unit as an input, but receive $20 per flow unit post-processing, as an output. Then the cost of defects depends not on where they occur, but where they are detected—before or after the bottleneck. Before is cheaper. Pre-bottleneck, defect costs are driven by input costs; post-bottleneck, by revenue (opportunity cost).
-- Variability & buffering dilemma: 
-    - For a 2-step process where each step has p(defect)=0.5, there are four possibilities: both defect-free; first step defective, leaving step 2 “starved”; second step defective, leaving step one “blocked”; and both defective. This variability dramatically lowers the expected flow rate; by adding a buffer, the flow rate may be increased. 
+- Variability & buffering dilemma:
+    - For a 2-step process where each step has p(defect)=0.5, there are four possibilities: both defect-free; first step defective, leaving step 2 “starved”; second step defective, leaving step one “blocked”; and both defective. This variability dramatically lowers the expected flow rate; by adding a buffer, the flow rate may be increased.
     - However, buffers remove the incentive for process improvement; buffering hides problems.
     - Toyota developed the Kanban “demand-pull” card system to manage this dilemma. Kanban cards authorize work, and are themselves authorized by customer demand. This puts a cap on inventory.
 
@@ -260,9 +251,9 @@ Help distinguish between normal and abnormal variation; part of statistical proc
 
 - Common cause variation may be high or low, but has one basic root
 - Assignable cause variation is when the variation stems from multiple sources: “something in the underlying process that changed”, resulting in more variability
-- How to identify assignable causes? 
-- Establish LCL, UCL---upper and lower control limits, different from LSL, USL. 
-- LCL= mean - 3*stdev; UCL = mean + 3*stdev 
+- How to identify assignable causes?
+- Establish LCL, UCL---upper and lower control limits, different from LSL, USL.
+- LCL= mean - 3*stdev; UCL = mean + 3*stdev
 - Plot means of samples against LCL, UCL; if a sample’s mean crosses control limits, we suspect assignable cause.
 
 ### Jidoka
@@ -277,7 +268,7 @@ Looking for root cause(s):
 
 - Kaizen: Process improvement is best carried out by frontline employees
 - Ishikawa diagram, also called fishbone diagram, for brainstorming; complemented by 5 whys
-- Pareto chart “maps out the assignable causes of a problem in the categories from the Ishikawa diagram, ordering root causes in decreasing order of frequency of occurrance”; 
+- Pareto chart “maps out the assignable causes of a problem in the categories from the Ishikawa diagram, ordering root causes in decreasing order of frequency of occurrance”;
     - Pareto principle: 80% of the defects are explained by 20% of the root causes
 
 ![](../ILLOS/reality-models.png)
@@ -285,7 +276,7 @@ Looking for root cause(s):
 <br/>
 
 ![](../ILLOS/problem-solving.png)
-    
+
 
 
 

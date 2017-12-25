@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/css" http-equiv="Content-Style-Type"/>
+  <meta content="pandoc" name="generator"/>
+  <title>
+   jtck.github.io | data viz
+  </title>
+  <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
+  <link href="../assets/styles/refs.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <p class="path">
+   <a href="../pkb.html">
+    pkb contents
+   </a>
+   &gt; data viz | just under 479 words | updated 12/25/2017
+  </p>
+  <div class="TOC">
+   <ul>
+    <li>
+     1.
+     <a href="#taxonomies-of-data-visualizations">
+      Taxonomies of data visualizations
+     </a>
+    </li>
+    <li>
+     2.
+     <a href="#data-visualization-with-...">
+      Data visualization with ...
+     </a>
+     <ul>
+      <li>
+       2.1.
+       <a href="#tableau">
+        Tableau
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#python">
+        Python
+       </a>
+      </li>
+      <li>
+       2.3.
+       <a href="#r">
+        R
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     3.
+     <a href="#sources">
+      Sources
+     </a>
+     <ul>
+      <li>
+       3.1.
+       <a href="#cited">
+        Cited
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#references">
+        References
+       </a>
+      </li>
+      <li>
+       3.3.
+       <a href="#read">
+        Read
+       </a>
+      </li>
+      <li>
+       3.4.
+       <a href="#unread">
+        Unread
+       </a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+  <h1 id="taxonomies-of-data-visualizations">
+   <a>
+    1. Taxonomies of data visualizations
+   </a>
+  </h1>
+  <ul>
+   <li>
+    Duarte (2008) has an interesting taxonomy
+   </li>
+   <li>
+    <a href="http://www.datavizualization.com/blog/taxonomy-of-3d-dataviz">
+     3D dataviz taxonomy
+    </a>
+   </li>
+   <li>
+    <a href="https://drive.google.com/file/d/0B6XYyy1UbJ3XOVJxVTFJOURpVWc/view?usp=drive_web">
+     Tableau - Which chart?
+    </a>
+   </li>
+   <li>
+    <a href="https://faculty.washington.edu/wijsman/GRAPHS3.pdf">
+     Comparison among graph types
+    </a>
+    (p. 24) [PDF]
+   </li>
+  </ul>
+  <p>
+   From Eckerson &amp; Hammond (2011):
+  </p>
+  <div class="figure">
+   <img src="illos/viz-types.png"/>
+  </div>
+  <h1 id="data-visualization-with-...">
+   <a>
+    2. Data visualization with ...
+   </a>
+  </h1>
+  <h2 id="tableau">
+   <a>
+    2.1. Tableau
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="http://www.tableau.com/learn/training">
+     Tableau - Training videos
+    </a>
+   </li>
+   <li>
+    <a href="https://www.lynda.com/Tableau-tutorials/Creating-Interactive-Dashboards-Tableau/417094-2.html">
+     Lynda - Interactive Tableau Dashboards
+    </a>
+   </li>
+  </ul>
+  <h2 id="python">
+   <a>
+    2.2. Python
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb">
+     http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb
+    </a>
+   </li>
+   <li>
+    <a href="http://nbviewer.jupyter.org/gist/darribas/4121857">
+     http://nbviewer.jupyter.org/gist/darribas/4121857
+    </a>
+   </li>
+  </ul>
+  <pre><code>import matplotlib.pyplot as plt
+
+# convert to int:
+my_data = list(map(int, data_in)))
+
+# linecharts/plots:
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1)
+x_axis_ticks = list(range(len(my_data)))
+ax.plot(x_axis_ticks, my_data, linewidth=2)
+ax.set_title(my_title)
+ax.set_xlim([0, len(sample)])
+ax.set_xlabel(‘Axis name’)
+ax.set_ylabel(‘Axis name’)
+fig.save_fig(my_filename)
+
+# table: see also tablib
+from prettytable import PrettyTable
+my_data_header = my_data[0]
+x = PrettyTable(my_data_header)
+x.add_row(my_data[1])
+
+# plot all bars as barchart:
+X = numpy.arange(len(my_data))
+width = 0.25
+plt.bar(X+width, prices, width)
+plt.xlim(0, 5055)
+
+# plot buckets:
+from collections import Counter
+def group_data_by_range(my_data):
+talley = Counter()
+for em in data:
+bucket = 0
+if em &gt;=0 and em &lt; 10:
+bucket = 1
+elif em &gt;= 10 and em &lt; 20:
+bucket = 2
+talley[bucket] += 1
+return talley
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1)
+plt.style.use(‘ggplot’)
+colors = plt.rcParams[‘axes.color_cycle’]
+for group in my_grouped_data:
+ax.bar(group, my_grouped_data[group], color=colors[groups[group%len(my_grouped_data)])
+labels = [‘Group 1’, ‘Group 2’ … ]
+ax.legend(labels)
+ax.set_title(‘Title’)
+ax.set_xlabel(‘Axis name’)
+ax.set_xticklabels(labels, ha=’left’)
+ax.set_xticks(range(1, len(my_grouped_data)+1))
+ax.set_ylabel(‘Axis name’)
+plt.grid(True)</code></pre>
+  <h2 id="r">
+   <a>
+    2.3. R
+   </a>
+  </h2>
+  <ul>
+   <li>
+    library for complex graphs:
+    <a href="http://ggplot2.org/">
+     http://ggplot2.org/
+    </a>
+   </li>
+  </ul>
+  <pre><code>p &lt;- seq(0, 1, 0.01)
+
+# scatterplot:
+plot(my_df$name1, my_df$name2)
+
+# line:
+plot(... type=”l”)
+
+plot(var1 ~ var2))
+
+# univariate boxplot:
+boxplot(my_df$var_name)
+# multivariate boxplot:
+boxplot(var1 ~ var2)
+
+# histogram:
+hist(data, breaks=)
+
+# frequencies:
+table()
+# multivariable:
+table(my_df$var1, my_df$var2)
+mosaicplot(table(my_df$var1, my_df$var2) )
+mosaicplot(var1 ~ var2)
+
+# relative frequencies:
+table(my_df$my_var)/length(my_df$my_var)
+
+barplot(table())
+
+# plot in three rows:
+par(mfrow = c(3, 1))
+xlimits &lt;- range(data1)
+hist( … xlim=xlimits)
+plot_ss(x = mlb11$at_bats, y = mlb11$runs,  x1, y1, x2, y2)
+showSquares=T/F
+leastSquares=T/F
+
+# OLS best-fit:
+lm(y ~ x, my_df)
+summary(lm(...)
+
+# line:
+abline()
+abline(lm(...))
+qqnorm(m1$residuals)
+qqline(m1$residuals)
+hist(m1$residuals)
+
+# account for overlapping data point:
+plot(jitter(x), y)</code></pre>
+  <h1 id="sources">
+   <a>
+    3. Sources
+   </a>
+  </h1>
+  <h2 id="cited">
+   <a>
+    3.1. Cited
+   </a>
+  </h2>
+  <p>
+   Eckerson, W., &amp; Hammond, M. (2011).
+   <em>
+    Visual reporting and analysis.
+   </em>
+   TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from
+   <a href="http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf">
+    http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
+   </a>
+  </p>
+  <h2 id="references">
+   <a>
+    3.2. References
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="https://timdream.org/wordcloud/">
+     Timdream's HTML5 wordcloud generator
+    </a>
+   </li>
+  </ul>
+  <h2 id="read">
+   <a>
+    3.3. Read
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopIntroduction">
+     UW IT - Tableau Intro
+    </a>
+    ,
+    <a href="http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopFundamentals">
+     Tableau Fundamentals
+    </a>
+   </li>
+   <li>
+    <a href="https://www.edwardtufte.com/tufte/courses">
+     Tufte - Presenting data &amp; information
+    </a>
+   </li>
+   <li>
+    <a href="https://www.coursera.org/learn/infographic-design">
+     Coursera - Infographic Design
+    </a>
+   </li>
+   <li>
+    <a href="http://andrewgelman.com/2009/05/25/data_visualizat_1/">
+     Data visualization as a first step . . . and also an intermediate step and a last step
+    </a>
+   </li>
+   <li>
+    <a href="http://mentalfloss.com/article/61828/old-school-new-york-times-death-infographics-were-depressing">
+     Old-school NYT death infographics were depressing
+    </a>
+   </li>
+  </ul>
+  <h2>
+   <a name="3.4.-unread">
+    3.4. Unread
+   </a>
+  </h2>
+  <ul>
+   <li>
+    <a href="https://infoactive.co/data-design">
+     DATA + DESIGN ebook
+    </a>
+   </li>
+   <li>
+    <a href="https://medium.com/mission-log/design-better-data-tables-430a30a00d8c#.w1siia9bf">
+     Design better data tables
+    </a>
+   </li>
+   <li>
+    <a href="http://www.niemanlab.org/2011/10/word-clouds-considered-harmful/">
+     Word clouds considered harmful
+    </a>
+   </li>
+   <li>
+    <a href="https://www.youtube.com/watch?v=fZswD5RC1G8&amp;list=PLa4VFIBUKrgLao-DalwedOCiq9RV6MPk9">
+     Youtube - Infographics &amp; Data Visualization Course
+    </a>
+   </li>
+   <li>
+    <a href="http://www.open.edu/openlearn/science-maths-technology/computing-and-ict/information-and-communication-technologies/effective-ways-displaying-information/content-section-0">
+     OpenLearn - Effective Ways of Displaying Information
+    </a>
+   </li>
+   <li>
+    <a href="http://ivmooc.cns.iu.edu/index.html">
+     Information Visualization MOOC
+    </a>
+   </li>
+   <li>
+    <em>
+     The Visual Display of Quantitative Information
+    </em>
+   </li>
+   <li>
+    <em>
+     Visual Explanations
+    </em>
+   </li>
+   <li>
+    <em>
+     Beautiful Evidence
+    </em>
+   </li>
+   <li>
+    <em>
+     Envisioning Explanations
+    </em>
+   </li>
+   <li>
+    <a href="https://www.datacamp.com/courses/">
+     DataCamp - ggvis, ggplot 1, ggplot 2, R Markdown
+    </a>
+   </li>
+   <li>
+    <a href="http://flowingdata.com/category/tutorials/">
+     FlowingData - Tutorials
+    </a>
+    (mostly in R)
+   </li>
+   <li>
+    <a href="http://motioninsocial.com/tufte/">
+     Tufte in R
+    </a>
+   </li>
+   <li>
+    <a href="https://www.smashingmagazine.com/2007/08/data-visualization-modern-approaches/">
+     Data visualization: modern approaches
+    </a>
+   </li>
+   <li>
+    <a href="https://www.smashingmagazine.com/2008/01/monday-inspiration-data-visualization-and-infographics/">
+     Data visualization and infographics
+    </a>
+   </li>
+  </ul>
+ </body>
+</html>

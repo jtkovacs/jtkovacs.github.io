@@ -8,25 +8,6 @@
    jtck.github.io | graphics viz
   </title>
   <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
-  <style type="text/css">
-   table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; }
-code > span.dt { color: #902000; }
-code > span.dv { color: #40a070; }
-code > span.bn { color: #40a070; }
-code > span.fl { color: #40a070; }
-code > span.ch { color: #4070a0; }
-code > span.st { color: #4070a0; }
-code > span.co { color: #60a0b0; font-style: italic; }
-code > span.ot { color: #007020; }
-code > span.al { color: #ff0000; font-weight: bold; }
-code > span.fu { color: #06287e; }
-code > span.er { color: #ff0000; font-weight: bold; }
-  </style>
   <link href="../assets/styles/refs.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
@@ -34,86 +15,98 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; graphics viz | just under 539 words | updated 11/10/2017
+   &gt; graphics viz | just under 842 words | updated 12/25/2017
   </p>
   <div class="TOC">
    <ul>
     <li>
      1.
-     <a href="#who-does-viz">
-      Who does viz?
-     </a>
-    </li>
-    <li>
-     2.
      <a href="#graphic-design-principles">
       Graphic design principles
      </a>
-    </li>
-    <li>
-     3.
-     <a href="#taxonomies-of-visualizations">
-      Taxonomies of visualizations
-     </a>
      <ul>
       <li>
-       3.1.
-       <a href="#duarte">
-        Duarte
+       1.1.
+       <a href="#mayers-strategies">
+        Mayer's strategies
        </a>
       </li>
       <li>
-       3.2.
-       <a href="#types-of-data-visualizations">
-        Types of data visualizations
+       1.2.
+       <a href="#lohrs-pat-model">
+        Lohr's PAT model
+       </a>
+      </li>
+      <li>
+       1.3.
+       <a href="#gestalt-principles">
+        Gestalt principles
        </a>
       </li>
      </ul>
     </li>
     <li>
-     4.
-     <a href="#what-are-tuftes-design-principles">
-      What are Tufte's design principles?
+     2.
+     <a href="#designing-specific-objects">
+      Designing specific objects
      </a>
+     <ul>
+      <li>
+       2.1.
+       <a href="#presentation-slides">
+        Presentation slides
+       </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#image-filetypes">
+          Image filetypes
+         </a>
+         <ul>
+          <li>
+           2.1.1.1.
+           <a href="#photography-tips">
+            Photography tips
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
+       <a href="#multimedia-learning-objects">
+        Multimedia learning objects
+       </a>
+      </li>
+     </ul>
     </li>
     <li>
-     5.
-     <a href="#data-viz-in-python">
-      Data viz in Python
-     </a>
-    </li>
-    <li>
-     6.
-     <a href="#data-viz-in-r">
-      Data viz in R
-     </a>
-    </li>
-    <li>
-     7.
+     3.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       7.1.
+       3.1.
        <a href="#cited">
         Cited
        </a>
       </li>
       <li>
-       7.2.
+       3.2.
        <a href="#references">
         References
        </a>
       </li>
       <li>
-       7.3.
+       3.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       7.4.
+       3.4.
        <a href="#unread">
         Unread
        </a>
@@ -122,193 +115,409 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </li>
    </ul>
   </div>
-  <h1 id="who-does-viz">
-   <a>
-    1. Who does viz?
+  <p>
+   For data- or information-intensive visualizations such as charts and infographics, see
+   <a href="https://jtkovacs.github.io/refs/data-viz.html">
+    notes on data visualization.
    </a>
-  </h1>
+  </p>
   <h1 id="graphic-design-principles">
    <a>
-    2. Graphic design principles
+    1. Graphic design principles
    </a>
   </h1>
-  <h1 id="taxonomies-of-visualizations">
+  <p>
+   (Note that many of the sources below are from the domain of instructional design and pertain to the visual and/or informational design of learning objects.)
+  </p>
+  <h2 id="mayers-strategies">
    <a>
-    3. Taxonomies of visualizations
-   </a>
-  </h1>
-  <h2 id="duarte">
-   <a>
-    3.1. Duarte
+    1.1. Mayer's strategies
    </a>
   </h2>
   <p>
-   Duarte (2008) has an interesting taxonomy.
+   Per Booth (2014, p. 127): "Richard Mayer lists seven such strategies that make more efficient use of cognitive processing capacity in instructional interfaces, materials, and graphics:
   </p>
-  <h2 id="types-of-data-visualizations">
+  <ul>
+   <li>
+    <strong>
+     Concentrated:
+    </strong>
+    Core ideas are emphasized via highlighting, bolding, and other strategies.
+   </li>
+   <li>
+    <strong>
+     Concise:
+    </strong>
+    Brevity and simplicity are achieved by eliminating extraneous text and images.
+   </li>
+   <li>
+    <strong>
+     Correspondent:
+    </strong>
+    Pictures, charts, and tables and their captions are placed close to one another.
+   </li>
+   <li>
+    <strong>
+     Concrete:
+    </strong>
+    Images provide clear visualizations of the subjects in question.
+   </li>
+   <li>
+    <strong>
+     Coherent:
+    </strong>
+    Picture choices are logical and correspond with narration, captions, or surrounding text.
+   </li>
+   <li>
+    <strong>
+     Comprehensible:
+    </strong>
+    Graphics and text or narration reflect the prior knowledge of the viewer.
+   </li>
+   <li>
+    <strong>
+     Codable:
+    </strong>
+    Graphics and text or narration lend themselves to being integrated into memory."
+   </li>
+  </ul>
+  <h2 id="lohrs-pat-model">
    <a>
-    3.2. Types of data visualizations
+    1.2. Lohr's PAT model
    </a>
   </h2>
   <p>
-   Source: Eckerson, W., &amp; Hammond, M. (2011). Visual reporting and analysis. TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
+   Booth (2011) summarizes Linda Lohr's approach to visual design for instructional purposes:
   </p>
-  <div class="figure">
-   <img src="illos/viz-types.png"/>
-  </div>
-  <h1 id="what-are-tuftes-design-principles">
-   <a>
-    4. What are Tufte's design principles?
-   </a>
-  </h1>
   <p>
-   Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.
+   <strong>
+    Principles
+   </strong>
+   are the broad "cognitive functions" that comprise someone's interaction with a visual instructional object:
   </p>
-  <h1 id="data-viz-in-python">
-   <a>
-    5. Data viz in Python
-   </a>
-  </h1>
   <ul>
    <li>
-    <a href="http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb">
-     http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb
-    </a>
+    <strong>
+     Selection
+    </strong>
+    (filtering what's important): guided by the Gestalt
+    <strong>
+     figure/ground
+    </strong>
+    principle (people can't pay attention to everything, so know what you want to emphasize and then make the emphasis obvious)
    </li>
    <li>
-    <a href="http://nbviewer.jupyter.org/gist/darribas/4121857">
-     http://nbviewer.jupyter.org/gist/darribas/4121857
-    </a>
+    <strong>
+     Organization
+    </strong>
+    (parsing the 'figure;): supported by "clear and consistent navigational elements, chunking information into content units that reflect instructional objectives, providing scaffolding in the form of assistance and support, and incorporating hierarchical elements such as lists, charts, and outlines that suggest relationships"
+   </li>
+   <li>
+    <strong>
+     Integration
+    </strong>
+    (situating the figure)
    </li>
   </ul>
-  <pre class="sourceCode Python"><code class="sourceCode python"><span class="ch">import</span> matplotlib.pyplot <span class="ch">as</span> plt
-
-<span class="co"># convert to int:</span>
-my_data = <span class="dt">list</span>(<span class="dt">map</span>(<span class="dt">int</span>, data_in)))
-
-<span class="co"># linecharts/plots:</span>
-fig = plt.figure()
-ax = fig.add_subplot(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)
-x_axis_ticks = <span class="dt">list</span>(<span class="dt">range</span>(<span class="dt">len</span>(my_data)))
-ax.plot(x_axis_ticks, my_data, linewidth=<span class="dv">2</span>)
-ax.set_title(my_title)
-ax.set_xlim([<span class="dv">0</span>, <span class="dt">len</span>(sample)])
-ax.set_xlabel(‘Axis name’)
-ax.set_ylabel(‘Axis name’)
-fig.save_fig(my_filename)
-
-<span class="co"># table: see also tablib</span>
-<span class="ch">from</span> prettytable <span class="ch">import</span> PrettyTable
-my_data_header = my_data[<span class="dv">0</span>]
-x = PrettyTable(my_data_header)
-x.add_row(my_data[<span class="dv">1</span>])
-
-<span class="co"># plot all bars as barchart:</span>
-X = numpy.arange(<span class="dt">len</span>(my_data))
-width = <span class="fl">0.25</span>
-plt.bar(X+width, prices, width)
-plt.xlim(<span class="dv">0</span>, <span class="dv">5055</span>)
-
-<span class="co"># plot buckets:</span>
-<span class="ch">from</span> collections <span class="ch">import</span> Counter
-<span class="kw">def</span> group_data_by_range(my_data):
-talley = Counter()
-<span class="kw">for</span> em in data:
-bucket = <span class="dv">0</span>
-<span class="kw">if</span> em &gt;=<span class="dv">0</span> and em &lt; <span class="dv">10</span>:
-bucket = <span class="dv">1</span>
-<span class="kw">elif</span> em &gt;= <span class="dv">10</span> and em &lt; <span class="dv">20</span>:
-bucket = <span class="dv">2</span>
-talley[bucket] += <span class="dv">1</span>
-<span class="kw">return</span> talley
-fig = plt.figure()
-ax = fig.add_subplot(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>)
-plt.style.use(‘ggplot’)
-colors = plt.rcParams[‘axes.color_cycle’]
-<span class="kw">for</span> group in my_grouped_data:
-ax.bar(group, my_grouped_data[group], color=colors[groups[group%<span class="dt">len</span>(my_grouped_data)])
-labels = [‘Group <span class="dv">1</span>’, ‘Group <span class="dv">2</span>’ … ]
-ax.legend(labels)
-ax.set_title(‘Title’)
-ax.set_xlabel(‘Axis name’)
-ax.set_xticklabels(labels, ha=’left’)
-ax.set_xticks(<span class="dt">range</span>(<span class="dv">1</span>, <span class="dt">len</span>(my_grouped_data)+<span class="dv">1</span>))
-ax.set_ylabel(‘Axis name’)
-plt.grid(<span class="ot">True</span>)</code></pre>
-  <h1 id="data-viz-in-r">
-   <a>
-    6. Data viz in R
-   </a>
-  </h1>
+  <p>
+   <strong>
+    Actions:
+   </strong>
+  </p>
   <ul>
    <li>
-    library for complex graphs:
-    <a href="http://ggplot2.org/">
-     http://ggplot2.org/
-    </a>
+    <strong>
+     Contrast
+    </strong>
+    to emphasize dissimilarity and create interest
+   </li>
+   <li>
+    <strong>
+     Proximity
+    </strong>
+    to convey relatedness
+   </li>
+   <li>
+    <strong>
+     Repetition
+    </strong>
+    to reduce cognitive burden and emphasize structure (pathways)
+   </li>
+   <li>
+    <strong>
+     Alignment
+    </strong>
+    to maximize readability and reduce visual noise
    </li>
   </ul>
-  <pre class="sourceCode R"><code class="sourceCode r">p &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.01</span>)
-
-<span class="co"># scatterplot:</span>
-<span class="kw">plot</span>(my_df$name1, my_df$name2)
-
-<span class="co"># line:</span>
-<span class="kw">plot</span>(... <span class="dt">type=</span>”l”)
-
-<span class="kw">plot</span>(var1 ~<span class="st"> </span>var2)<span class="er">)</span>
-
-<span class="co"># univariate boxplot:</span>
-<span class="kw">boxplot</span>(my_df$var_name)
-<span class="co"># multivariate boxplot:</span>
-<span class="kw">boxplot</span>(var1 ~<span class="st"> </span>var2)
-
-<span class="co"># histogram:</span>
-<span class="kw">hist</span>(data, <span class="dt">breaks=</span>)
-
-<span class="co"># frequencies:</span>
-<span class="kw">table</span>()
-<span class="co"># multivariable:</span>
-<span class="kw">table</span>(my_df$var1, my_df$var2)
-<span class="kw">mosaicplot</span>(<span class="kw">table</span>(my_df$var1, my_df$var2) )
-<span class="kw">mosaicplot</span>(var1 ~<span class="st"> </span>var2)
-
-<span class="co"># relative frequencies:</span>
-<span class="kw">table</span>(my_df$my_var)/<span class="kw">length</span>(my_df$my_var)
-
-<span class="kw">barplot</span>(<span class="kw">table</span>())
-
-<span class="co"># plot in three rows:</span>
-<span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">1</span>))
-xlimits &lt;-<span class="st"> </span><span class="kw">range</span>(data1)
-<span class="kw">hist</span>( …<span class="st"> </span><span class="dt">xlim=</span>xlimits)
-<span class="kw">plot_ss</span>(<span class="dt">x =</span> mlb11$at_bats, <span class="dt">y =</span> mlb11$runs,  x1, y1, x2, y2)
-showSquares=T/F
-leastSquares=T/F
-
-<span class="co"># OLS best-fit:</span>
-<span class="kw">lm</span>(y ~<span class="st"> </span>x, my_df)
-<span class="kw">summary</span>(<span class="kw">lm</span>(...)
-
-<span class="co"># line:</span>
-<span class="kw">abline</span>()
-<span class="kw">abline</span>(<span class="kw">lm</span>(...))
-<span class="kw">qqnorm</span>(m1$residuals)
-<span class="kw">qqline</span>(m1$residuals)
-<span class="kw">hist</span>(m1$residuals)
-
-<span class="co"># account for overlapping data point:</span>
-<span class="kw">plot</span>(<span class="kw">jitter</span>(x), y)</code></pre>
+  <p>
+   Adjust mood, readability, accessibility, etc. with
+   <strong>
+    tools:
+   </strong>
+  </p>
+  <ul>
+   <li>
+    Font &amp; typeface
+   </li>
+   <li>
+    Color
+   </li>
+   <li>
+    Shapes
+   </li>
+   <li>
+    Depth/details/realism
+   </li>
+   <li>
+    Whitespace
+   </li>
+  </ul>
+  <h2 id="gestalt-principles">
+   <a>
+    1.3. Gestalt principles
+   </a>
+  </h2>
+  <p>
+   Per Reynolds (2009):
+  </p>
+  <ul>
+   <li>
+    Figure/ground
+   </li>
+   <li>
+    Continuation
+   </li>
+   <li>
+    Closure
+   </li>
+   <li>
+    Implied space (cropping)
+   </li>
+   <li>
+    Implied depth (scale)
+   </li>
+  </ul>
+  <h1 id="designing-specific-objects">
+   <a>
+    2. Designing specific objects
+   </a>
+  </h1>
+  <h2 id="presentation-slides">
+   <a>
+    2.1. Presentation slides
+   </a>
+  </h2>
+  <p>
+   Culled from Duarte ('D', 2008) and Reynolds ('R', 2009):
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Slides should complement the narrative,
+    </strong>
+    not duplicate it ("dual channels")
+   </li>
+   <li>
+    One point per slide (R)
+   </li>
+   <li>
+    Aim for high signal-to-noise ratio (R)
+   </li>
+   <li>
+    Favor images over text; more engaging, more memorable; "picture superiority effect" (R)
+    <ul>
+     <li>
+      Relevant
+     </li>
+     <li>
+      Not cliché
+     </li>
+     <li>
+      ... but QUOTES are also great for sparking interest and enhancing credibility
+     </li>
+    </ul>
+   </li>
+   <li>
+    Pay attn to size, placement, resolution, aspect
+    <ul>
+     <li>
+      Use full-slide ("full bleed") images (R)
+     </li>
+     <li>
+      Try for "asymmetric balance" rather than symmetry (R)
+     </li>
+     <li>
+      330 ppi resolution for high-quality print images; 100 ppi for screen (R)
+     </li>
+     <li>
+      Use enough white space
+     </li>
+    </ul>
+   </li>
+   <li>
+    Make sure text is readable
+    <ul>
+     <li>
+      Place text on semi-transparent solid background when it overlaps an image (R)
+     </li>
+    </ul>
+   </li>
+   <li>
+    Try embedded videos
+   </li>
+  </ul>
+  <h3 id="image-filetypes">
+   <a>
+    2.1.1. Image filetypes
+   </a>
+  </h3>
+  <p>
+   Per Reynolds (2009):
+  </p>
+  <ul>
+   <li>
+    <strong>
+     JPEG
+    </strong>
+    is good for photos on the web, but lossy when compressed
+   </li>
+   <li>
+    <strong>
+     GIF
+    </strong>
+    is good for drawings (only 256 colors)
+   </li>
+   <li>
+    <strong>
+     PNG
+    </strong>
+    lets you adjust transparency
+   </li>
+   <li>
+    <strong>
+     EPS
+    </strong>
+    is for vectors
+   </li>
+   <li>
+    <strong>
+     TIFF
+    </strong>
+    is high res, good for print
+   </li>
+  </ul>
+  <h4 id="photography-tips">
+   <a>
+    2.1.1.1. Photography tips
+   </a>
+  </h4>
+  <ul>
+   <li>
+    For people:
+    <ul>
+     <li>
+      Avoid direct sunlight (generally creates unflattering shadows)
+     </li>
+     <li>
+      Focus on eyes
+     </li>
+     <li>
+      Place head in upper third of frame, slightly off-center
+     </li>
+    </ul>
+   </li>
+   <li>
+    Tripod stablizes and creates better photos in low-light conditions
+   </li>
+   <li>
+    Use the White Balance feature in response to light conditions
+   </li>
+   <li>
+    Explore different vantage points
+   </li>
+  </ul>
+  <h2 id="multimedia-learning-objects">
+   <a>
+    2.2. Multimedia learning objects
+   </a>
+  </h2>
+  <p>
+   Booth summarizes Mayer again (2014, p. 130):
+  </p>
+  <ul>
+   <li>
+    <strong>
+     "Coherence:
+    </strong>
+    Extraneous words, sounds, and pictures are minimized.
+   </li>
+   <li>
+    <strong>
+     Modality:
+    </strong>
+    Narration occurs as speech rather than printed text in multimedia presentations.
+   </li>
+   <li>
+    <strong>
+     Personalization:
+    </strong>
+    Narration occurs in conversational rather than formal style.
+   </li>
+   <li>
+    <strong>
+     Pretraining:
+    </strong>
+    The learner knows the names and characteristics of the key concepts.
+   </li>
+   <li>
+    <strong>
+     Redundancy:
+    </strong>
+    Animation and narration are preferable in multimedia presentations over animation, narration, and on-screen text (to reduce cognitive overload).
+   </li>
+   <li>
+    <strong>
+     Segmenting:
+    </strong>
+    A fast-paced, complex multimedia lesson is presented in user-paced segments rather than as a continuous presentation.
+   </li>
+   <li>
+    <strong>
+     Signaling:
+    </strong>
+    The essential material is highlighted. Spatial contiguity : Corresponding words and pictures are presented in proximity to one another on a page or screen.
+   </li>
+   <li>
+    <strong>
+     Temporal contiguity:
+    </strong>
+    Corresponding words and pictures are presented simultaneously rather than successively in time.
+   </li>
+   <li>
+    <strong>
+     Voice:
+    </strong>
+    Narration occurs in a friendly human voice rather than a machine voice."
+   </li>
+  </ul>
   <h1 id="sources">
    <a>
-    7. Sources
+    3. Sources
    </a>
   </h1>
   <h2 id="cited">
    <a>
-    7.1. Cited
+    3.1. Cited
    </a>
   </h2>
+  <p>
+   Booth, C. (2014).
+   <em>
+    Reflective teaching, effective learning: Instructional literacy for library educators.
+   </em>
+   Chicago, IL: American Library Association Editions.
+  </p>
   <p>
    Duarte, N. (2008).
    <em>
@@ -316,167 +525,76 @@ leastSquares=T/F
    </em>
    Sebastopol, CA: O'Reilly Press.
   </p>
+  <p>
+   Reynolds, G. (2009).
+   <em>
+    Presentation Zen design: Simple design principles and techniques to enhance your presentations.
+   </em>
+   San Francisco, CA: New Riders.
+  </p>
   <h2 id="references">
    <a>
-    7.2. References
+    3.2. References
    </a>
   </h2>
   <ul>
    <li>
-    <a href="https://timdream.org/wordcloud/">
-     Timdream's HTML5 wordcloud generator
+    <a href="http://vrl.cs.brown.edu/color">
+     Colorgorical palette generator
+    </a>
+   </li>
+   <li>
+    <a href="http://htmlcolorcodes.com/">
+     HTML color codes, pickers, etc.
+    </a>
+   </li>
+   <li>
+    <a href="http://fontpair.co/">
+     Font Pair
     </a>
    </li>
   </ul>
   <h2 id="read">
    <a>
-    7.3. Read
+    3.3. Read
    </a>
   </h2>
   <ul>
    <li>
-    UW IT -
-    <a href="http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopIntroduction">
-     Tableau Intro
-    </a>
-    ,
-    <a href="http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopFundamentals">
-     Tableau Fundamentals
+    <a href="https://www.coursera.org/learn/design-principles">
+     Coursera - Design Principles
     </a>
    </li>
    <li>
-    <a href="https://drive.google.com/file/d/0B6XYyy1UbJ3XOVJxVTFJOURpVWc/view?usp=drive_web">
-     Tableau - Which chart?
-    </a>
-   </li>
-   <li>
-    <a href="https://www.edwardtufte.com/tufte/courses">
-     Tufte - Presenting data &amp; information
-    </a>
-   </li>
-   <li>
-    <a href="https://www.coursera.org/learn/infographic-design">
-     Coursera - Infographic Design
-    </a>
-   </li>
-   <li>
-    <a href="http://andrewgelman.com/2009/05/25/data_visualizat_1/">
-     Data visualization as a first step . . . and also an intermediate step and a last step
-    </a>
-   </li>
-   <li>
-    <a href="http://mentalfloss.com/article/61828/old-school-new-york-times-death-infographics-were-depressing">
-     Old-school NYT death infographics were depressing
-    </a>
-   </li>
-   <li>
-    <a href="http://www.datavizualization.com/blog/taxonomy-of-3d-dataviz">
-     3D dataviz taxonomy
+    <a href="https://www.coursera.org/learn/fundamentals-of-graphic-design">
+     Coursera - Graphic Design
     </a>
    </li>
   </ul>
   <h2>
-   <a name="7.4.-unread">
-    7.4. Unread
+   <a name="3.4.-unread">
+    3.4. Unread
    </a>
   </h2>
   <ul>
    <li>
-    <a href="http://www.niemanlab.org/2011/10/word-clouds-considered-harmful/">
-     Word clouds considered harmful
+    <a href="http://www.afterhoursprogramming.com/tutorial/Graphic-Design/Introduction/">
+     Graphic Design tutorial
     </a>
    </li>
    <li>
-    <a href="http://www.tableau.com/learn/training">
-     Tableau - Training videos
+    <a href="http://alistapart.com/article/indefenseofeyecandy">
+     In defense of eye candy
     </a>
    </li>
    <li>
-    <a href="https://www.lynda.com/Tableau-tutorials/Creating-Interactive-Dashboards-Tableau/417094-2.html">
-     Lynda - Interactive Tableau Dashboards
+    <a href="http://practicaltypography.com/index.html#toc">
+     Buttrick's practical typography
     </a>
    </li>
    <li>
-    <a href="https://pages.sisense.com/dashboard-design-video.html">
-     Design a better dashboard
-    </a>
-    (Sisense workshop)
-   </li>
-   <li>
-    <a href="https://medium.com/mission-log/design-better-data-tables-430a30a00d8c#.w1siia9bf">
-     Design better data tables
-    </a>
-   </li>
-   <li>
-    <a href="https://faculty.washington.edu/wijsman/GRAPHS3.pdf">
-     Comparison among graph types
-    </a>
-    (p. 24) [PDF]
-   </li>
-   <li>
-    <a href="https://infoactive.co/data-design">
-     DATA + DESIGN ebook
-    </a>
-   </li>
-   <li>
-    <a href="https://www.youtube.com/watch?v=fZswD5RC1G8&amp;list=PLa4VFIBUKrgLao-DalwedOCiq9RV6MPk9">
-     Youtube - Infographics &amp; Data Visualization Course
-    </a>
-   </li>
-   <li>
-    <a href="http://www.open.edu/openlearn/science-maths-technology/computing-and-ict/information-and-communication-technologies/effective-ways-displaying-information/content-section-0">
-     OpenLearn - Effective Ways of Displaying Information
-    </a>
-   </li>
-   <li>
-    <a href="http://ivmooc.cns.iu.edu/index.html">
-     Information Visualization MOOC
-    </a>
-   </li>
-   <li>
-    <em>
-     The Visual Display of Quantitative Information
-    </em>
-   </li>
-   <li>
-    <em>
-     Visual Explanations
-    </em>
-   </li>
-   <li>
-    <em>
-     Beautiful Evidence
-    </em>
-   </li>
-   <li>
-    <em>
-     Envisioning Explanations
-    </em>
-   </li>
-   <li>
-    <a href="https://www.datacamp.com/courses/">
-     DataCamp - ggvis, ggplot 1, ggplot 2, R Markdown
-    </a>
-   </li>
-   <li>
-    <a href="http://flowingdata.com/category/tutorials/">
-     FlowingData - Tutorials
-    </a>
-    (mostly in R)
-   </li>
-   <li>
-    <a href="http://motioninsocial.com/tufte/">
-     Tufte in R
-    </a>
-   </li>
-   <li>
-    <a href="https://www.smashingmagazine.com/2007/08/data-visualization-modern-approaches/">
-     Data visualization: modern approaches
-    </a>
-   </li>
-   <li>
-    <a href="https://www.smashingmagazine.com/2008/01/monday-inspiration-data-visualization-and-infographics/">
-     Data visualization and infographics
+    <a href="http://www.designhistory.org/index.html">
+     A short introduction to graphic design history
     </a>
    </li>
   </ul>

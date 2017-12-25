@@ -1,206 +1,162 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> graphics viz | just under 539 words | updated 11/10/2017</p><div class="TOC">- &nbsp;1. [Who does viz?](#who-does-viz)
-- &nbsp;2. [Graphic design principles](#graphic-design-principles)
-- &nbsp;3. [Taxonomies of visualizations](#taxonomies-of-visualizations)
-	- &nbsp;3.1. [Duarte](#duarte)
-	- &nbsp;3.2. [Types of data visualizations](#types-of-data-visualizations)
-- &nbsp;4. [What are Tufte's design principles?](#what-are-tuftes-design-principles)
-- &nbsp;5. [Data viz in Python](#data-viz-in-python)
-- &nbsp;6. [Data viz in R](#data-viz-in-r)
-- &nbsp;7. [Sources](#sources)
-	- &nbsp;7.1. [Cited](#cited)
-	- &nbsp;7.2. [References](#references)
-	- &nbsp;7.3. [Read](#read)
-	- &nbsp;7.4. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> graphics viz | just under 842 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [Graphic design principles](#graphic-design-principles)
+	- &nbsp;1.1. [Mayer's strategies](#mayers-strategies)
+	- &nbsp;1.2. [Lohr's PAT model](#lohrs-pat-model)
+	- &nbsp;1.3. [Gestalt principles](#gestalt-principles)
+- &nbsp;2. [Designing specific objects](#designing-specific-objects)
+	- &nbsp;2.1. [Presentation slides](#presentation-slides)
+		- &nbsp;2.1.1. [Image filetypes](#image-filetypes)
+			- &nbsp;2.1.1.1. [Photography tips](#photography-tips)
+	- &nbsp;2.2. [Multimedia learning objects](#multimedia-learning-objects)
+- &nbsp;3. [Sources](#sources)
+	- &nbsp;3.1. [Cited](#cited)
+	- &nbsp;3.2. [References](#references)
+	- &nbsp;3.3. [Read](#read)
+	- &nbsp;3.4. [Unread](#unread)
 </div>
 
-# 1. Who does viz?
+
+For data- or information-intensive visualizations such as charts and infographics, see [notes on data visualization.](https://jtkovacs.github.io/refs/data-viz.html)
+
+
+# 1. Graphic design principles
+
+(Note that many of the sources below are from the domain of instructional design and pertain to the visual and/or informational design of learning objects.)
+
+## 1.1. Mayer's strategies
+
+Per Booth (2014, p. 127): "Richard Mayer lists seven such strategies that make more efficient use of cognitive processing capacity in instructional interfaces, materials, and graphics:
+
+- **Concentrated:** Core ideas are emphasized via highlighting, bolding, and other strategies.
+- **Concise:** Brevity and simplicity are achieved by eliminating extraneous text and images.
+- **Correspondent:** Pictures, charts, and tables and their captions are placed close to one another.
+- **Concrete:** Images provide clear visualizations of the subjects in question.
+- **Coherent:** Picture choices are logical and correspond with narration, captions, or surrounding text.
+- **Comprehensible:** Graphics and text or narration reflect the prior knowledge of the viewer.
+- **Codable:** Graphics and text or narration lend themselves to being integrated into memory."
+
+## 1.2. Lohr's PAT model
+
+Booth (2011) summarizes Linda Lohr's approach to visual design for instructional purposes:
+
+**Principles** are the broad "cognitive functions" that comprise someone's interaction with a visual instructional object:
+
+- **Selection** (filtering what's important): guided by the Gestalt **figure/ground** principle (people can't pay attention to everything, so know what you want to emphasize and then make the emphasis obvious)
+- **Organization** (parsing the 'figure;): supported by "clear and consistent navigational elements, chunking information into content units that reflect instructional objectives, providing scaffolding in the form of assistance and support, and incorporating hierarchical elements such as lists, charts, and outlines that suggest relationships"
+- **Integration** (situating the figure)
+
+**Actions:**
+
+- **Contrast** to emphasize dissimilarity and create interest
+- **Proximity** to convey relatedness
+- **Repetition** to reduce cognitive burden and emphasize structure (pathways)
+- **Alignment** to maximize readability and reduce visual noise
+
+Adjust mood, readability, accessibility, etc. with **tools:**
+
+- Font & typeface
+- Color
+- Shapes
+- Depth/details/realism
+- Whitespace
+
+## 1.3. Gestalt principles
+
+Per Reynolds (2009):
+
+- Figure/ground
+- Continuation
+- Closure
+- Implied space (cropping)
+- Implied depth (scale)
 
 
 
-# 2. Graphic design principles
+
+# 2. Designing specific objects
+
+## 2.1. Presentation slides
+
+Culled from Duarte ('D', 2008) and Reynolds ('R', 2009):
+
+- **Slides should complement the narrative,** not duplicate it ("dual channels")
+- One point per slide (R)
+- Aim for high signal-to-noise ratio (R)
+- Favor images over text; more engaging, more memorable; "picture superiority effect" (R)
+    - Relevant
+    - Not cliché
+    - ... but QUOTES are also great for sparking interest and enhancing credibility
+- Pay attn to size, placement, resolution, aspect
+    - Use full-slide ("full bleed") images (R)
+    - Try for "asymmetric balance" rather than symmetry (R)
+    - 330 ppi resolution for high-quality print images; 100 ppi for screen (R)
+    - Use enough white space
+- Make sure text is readable
+    - Place text on semi-transparent solid background when it overlaps an image (R)
+- Try embedded videos
+
+### 2.1.1. Image filetypes
+
+Per Reynolds (2009):
+
+- **JPEG** is good for photos on the web, but lossy when compressed
+- **GIF** is good for drawings (only 256 colors)
+- **PNG** lets you adjust transparency
+- **EPS** is for vectors
+- **TIFF** is high res, good for print
+
+#### 2.1.1.1. Photography tips
+
+- For people:
+    - Avoid direct sunlight (generally creates unflattering shadows)
+    - Focus on eyes
+    - Place head in upper third of frame, slightly off-center
+- Tripod stablizes and creates better photos in low-light conditions
+- Use the White Balance feature in response to light conditions
+- Explore different vantage points
+
+
+## 2.2. Multimedia learning objects
+
+Booth summarizes Mayer again (2014, p. 130):
+
+- **"Coherence:** Extraneous words, sounds, and pictures are minimized.
+- **Modality:** Narration occurs as speech rather than printed text in multimedia presentations.
+- **Personalization:** Narration occurs in conversational rather than formal style.
+- **Pretraining:** The learner knows the names and characteristics of the key concepts.
+- **Redundancy:** Animation and narration are preferable in multimedia presentations over animation, narration, and on-screen text (to reduce cognitive overload).
+- **Segmenting:** A fast-paced, complex multimedia lesson is presented in user-paced segments rather than as a continuous presentation.
+- **Signaling:** The essential material is highlighted. Spatial contiguity : Corresponding words and pictures are presented in proximity to one another on a page or screen.
+- **Temporal contiguity:** Corresponding words and pictures are presented simultaneously rather than successively in time.
+- **Voice:** Narration occurs in a friendly human voice rather than a machine voice."
 
 
 
 
-# 3. Taxonomies of visualizations
 
-## 3.1. Duarte
+# 3. Sources
 
-Duarte (2008) has an interesting taxonomy.
+## 3.1. Cited
 
-## 3.2. Types of data visualizations
-
-Source: Eckerson, W., & Hammond, M. (2011). Visual reporting and analysis. TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
-
-![](../ILLOS/viz-types.png)
-
-# 4. What are Tufte's design principles?
-
-Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.
-
-
-# 5. Data viz in Python
-
-- [http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb](http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb)
-- [http://nbviewer.jupyter.org/gist/darribas/4121857](http://nbviewer.jupyter.org/gist/darribas/4121857)
-
-
-```Python
-import matplotlib.pyplot as plt
-
-# convert to int:
-my_data = list(map(int, data_in)))
-
-# linecharts/plots:
-fig = plt.figure()
-ax = fig.add_subplot(1,1,1)
-x_axis_ticks = list(range(len(my_data)))
-ax.plot(x_axis_ticks, my_data, linewidth=2)
-ax.set_title(my_title)
-ax.set_xlim([0, len(sample)])
-ax.set_xlabel(‘Axis name’)
-ax.set_ylabel(‘Axis name’)
-fig.save_fig(my_filename)
-
-# table: see also tablib
-from prettytable import PrettyTable
-my_data_header = my_data[0]
-x = PrettyTable(my_data_header)
-x.add_row(my_data[1])
-
-# plot all bars as barchart:
-X = numpy.arange(len(my_data))
-width = 0.25
-plt.bar(X+width, prices, width)
-plt.xlim(0, 5055)
-
-# plot buckets:
-from collections import Counter
-def group_data_by_range(my_data):
-talley = Counter()
-for em in data:
-bucket = 0
-if em >=0 and em < 10:
-bucket = 1
-elif em >= 10 and em < 20:
-bucket = 2
-talley[bucket] += 1
-return talley
-fig = plt.figure()
-ax = fig.add_subplot(1,1,1)
-plt.style.use(‘ggplot’)
-colors = plt.rcParams[‘axes.color_cycle’]
-for group in my_grouped_data:
-ax.bar(group, my_grouped_data[group], color=colors[groups[group%len(my_grouped_data)])
-labels = [‘Group 1’, ‘Group 2’ … ]
-ax.legend(labels)
-ax.set_title(‘Title’)
-ax.set_xlabel(‘Axis name’)
-ax.set_xticklabels(labels, ha=’left’)
-ax.set_xticks(range(1, len(my_grouped_data)+1))
-ax.set_ylabel(‘Axis name’)
-plt.grid(True)
-```
-
-
-# 6. Data viz in R
-
-- library for complex graphs: [http://ggplot2.org/](http://ggplot2.org/)
-
-```R
-p <- seq(0, 1, 0.01)
-
-# scatterplot:
-plot(my_df$name1, my_df$name2)
-
-# line:
-plot(... type=”l”)
-
-plot(var1 ~ var2))
-
-# univariate boxplot:
-boxplot(my_df$var_name)
-# multivariate boxplot:
-boxplot(var1 ~ var2)
-
-# histogram:
-hist(data, breaks=)
-
-# frequencies:
-table()
-# multivariable:
-table(my_df$var1, my_df$var2)
-mosaicplot(table(my_df$var1, my_df$var2) )
-mosaicplot(var1 ~ var2)
-
-# relative frequencies:
-table(my_df$my_var)/length(my_df$my_var)
-
-barplot(table())
-
-# plot in three rows:
-par(mfrow = c(3, 1))
-xlimits <- range(data1)
-hist( … xlim=xlimits)
-plot_ss(x = mlb11$at_bats, y = mlb11$runs,  x1, y1, x2, y2)
-showSquares=T/F
-leastSquares=T/F
-
-# OLS best-fit:
-lm(y ~ x, my_df)
-summary(lm(...)
-
-# line:
-abline()
-abline(lm(...))
-qqnorm(m1$residuals)
-qqline(m1$residuals)
-hist(m1$residuals)
-
-# account for overlapping data point:
-plot(jitter(x), y)
-```
-
-
-
-# 7. Sources
-
-## 7.1. Cited
+Booth, C. (2014). _Reflective teaching, effective learning: Instructional literacy for library educators._ Chicago, IL: American Library Association Editions.
 
 Duarte, N. (2008). _slide:ology: The art and science of creating great presentations._ Sebastopol, CA: O'Reilly Press.
 
-## 7.2. References
+Reynolds, G. (2009). _Presentation Zen design: Simple design principles and techniques to enhance your presentations._ San Francisco, CA: New Riders.
 
-- [Timdream's HTML5 wordcloud generator](https://timdream.org/wordcloud/)
+## 3.2. References
 
-## 7.3. Read
+- [Colorgorical palette generator](http://vrl.cs.brown.edu/color)
+- [HTML color codes, pickers, etc.](http://htmlcolorcodes.com/)
+- [Font Pair](http://fontpair.co/)
 
-- UW IT - [Tableau Intro](http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopIntroduction), [Tableau Fundamentals](http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopFundamentals)
-- [Tableau - Which chart?](https://drive.google.com/file/d/0B6XYyy1UbJ3XOVJxVTFJOURpVWc/view?usp=drive_web)
-- [Tufte - Presenting data & information](https://www.edwardtufte.com/tufte/courses)
-- [Coursera - Infographic Design](https://www.coursera.org/learn/infographic-design)
-- [Data visualization as a first step . . . and also an intermediate step and a last step](http://andrewgelman.com/2009/05/25/data_visualizat_1/)
-- [Old-school NYT death infographics were depressing](http://mentalfloss.com/article/61828/old-school-new-york-times-death-infographics-were-depressing)
-- [3D dataviz taxonomy](http://www.datavizualization.com/blog/taxonomy-of-3d-dataviz)
+## 3.3. Read
 
-## 7.4. Unread
+- [Coursera - Design Principles](https://www.coursera.org/learn/design-principles)
+- [Coursera - Graphic Design](https://www.coursera.org/learn/fundamentals-of-graphic-design)
 
-- [Word clouds considered harmful](http://www.niemanlab.org/2011/10/word-clouds-considered-harmful/)
-- [Tableau - Training videos](http://www.tableau.com/learn/training)
-- [Lynda - Interactive Tableau Dashboards](https://www.lynda.com/Tableau-tutorials/Creating-Interactive-Dashboards-Tableau/417094-2.html)
-- [Design a better dashboard](https://pages.sisense.com/dashboard-design-video.html) (Sisense workshop)
-- [Design better data tables](https://medium.com/mission-log/design-better-data-tables-430a30a00d8c#.w1siia9bf)
-- [Comparison among graph types](https://faculty.washington.edu/wijsman/GRAPHS3.pdf) (p. 24) [PDF]
-- [DATA + DESIGN ebook](https://infoactive.co/data-design)
-- [Youtube - Infographics & Data Visualization Course](https://www.youtube.com/watch?v=fZswD5RC1G8&list=PLa4VFIBUKrgLao-DalwedOCiq9RV6MPk9)
-- [OpenLearn - Effective Ways of Displaying Information](http://www.open.edu/openlearn/science-maths-technology/computing-and-ict/information-and-communication-technologies/effective-ways-displaying-information/content-section-0)
-- [Information Visualization MOOC](http://ivmooc.cns.iu.edu/index.html)
-- _The Visual Display of Quantitative Information_
-- _Visual Explanations_
-- _Beautiful Evidence_
-- _Envisioning Explanations_
-- [DataCamp - ggvis, ggplot 1, ggplot 2, R Markdown](https://www.datacamp.com/courses/)
-- [FlowingData - Tutorials](http://flowingdata.com/category/tutorials/) (mostly in R)
-- [Tufte in R](http://motioninsocial.com/tufte/)
-- [Data visualization: modern approaches](https://www.smashingmagazine.com/2007/08/data-visualization-modern-approaches/)
-- [Data visualization and infographics](https://www.smashingmagazine.com/2008/01/monday-inspiration-data-visualization-and-infographics/)
+## 3.4. Unread
+
+- [Graphic Design tutorial](http://www.afterhoursprogramming.com/tutorial/Graphic-Design/Introduction/)
+- [In defense of eye candy](http://alistapart.com/article/indefenseofeyecandy)
+- [Buttrick's practical typography](http://practicaltypography.com/index.html#toc)
+- [A short introduction to graphic design history](http://www.designhistory.org/index.html)

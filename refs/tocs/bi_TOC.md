@@ -1,12 +1,10 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 1940 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 2311 words | updated 12/26/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
 		- &nbsp;1.1.1. [BI versus data science](#bi-versus-data-science)
 		- &nbsp;1.1.2. [Food system metaphor](#food-system-metaphor)
 	- &nbsp;1.2. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.3. [History of BI](#history-of-bi)
 	- &nbsp;1.4. [Trends in BI](#trends-in-bi)
-		- &nbsp;1.4.1. [IoT and Big Data](#iot-and-big-data)
-		- &nbsp;1.4.2. [Data democratization](#data-democratization)
 - &nbsp;2. [BI systems](#bi-systems)
 	- &nbsp;2.1. [Implementing BI systems](#implementing-bi-systems)
 		- &nbsp;2.1.1. [Common problems with BI initiatives](#common-problems-with-bi-initiatives)
@@ -21,12 +19,16 @@
 			- &nbsp;2.3.3.1. [Choosing an architecture](#choosing-an-architecture)
 	- &nbsp;2.4. [OLAP](#olap)
 	- &nbsp;2.5. [Interpreting the data](#interpreting-the-data)
-		- &nbsp;2.5.1. [Business Performance Management](#business-performance-management)
-		- &nbsp;2.5.2. [Analytics](#analytics)
-			- &nbsp;2.5.2.1. [Types of analytic deliverables](#types-of-analytic-deliverables)
-	- &nbsp;2.6. [Delivering data & interpretations](#delivering-data-interpretations)
-		- &nbsp;2.6.1. [Reporting](#reporting)
-		- &nbsp;2.6.2. [Dashboards](#dashboards)
+		- &nbsp;2.5.1. [Analytics](#analytics)
+			- &nbsp;2.5.1.1. [Types of analytic deliverables](#types-of-analytic-deliverables)
+			- &nbsp;2.5.1.2. [Data mining](#data-mining)
+			- &nbsp;2.5.1.3. [Text & web analytics](#text-web-analytics)
+			- &nbsp;2.5.1.4. [Visual analytics](#visual-analytics)
+		- &nbsp;2.5.2. [Business Performance Management](#business-performance-management)
+	- &nbsp;2.6. [Reporting](#reporting)
+		- &nbsp;2.6.1. [Types of reports](#types-of-reports)
+		- &nbsp;2.6.2. [Best practices for reporting](#best-practices-for-reporting)
+		- &nbsp;2.6.3. [Dashboards](#dashboards)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -53,10 +55,9 @@ Business intelligence (BI) systems are a type of [management information system 
 
 https://jtkovacs.github.io/refs/data-science.html
 
-- DS has more programming, is better at using computational power for analysis
-- DS may involve more sophisticated modeling
-- DS facilitates predictive and prescriptive analytics
-- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow, for instance in training machine learning algorithms
+- DS involves more programming, is better at using computational power for analysis
+- DS may involve more sophisticated modeling, facilitating more predictive and prescriptive analytics
+- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow (for instance in training machine learning algorithms)
 
 ### 1.1.2. Food system metaphor
 
@@ -89,15 +90,24 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 
 ## 1.4. Trends in BI
 
-### 1.4.1. IoT and Big Data
+Per Sharda et al. (2014):
 
-More data
+- Location-based analytics
+    - Geospatial analytics
+    - Real-time location intelligence
+- Analytics for consumers
+- Recommendation engines
+- Web 2.0
+    - Social networking
+- Cloud-computing
+- Ethics in decision-making
+- Privacy impacts of BI
 
-### 1.4.2. Data democratization
+Also:
 
-More & different users
-
-
+- IoT
+- Big Data
+- Data democratization
 
 
 
@@ -135,7 +145,9 @@ Per Sharda et al. (2014, pp. 73-74):
 
 #### 2.1.2.1. Big Data
 
-See big-data.html
+- big-data.html
+- https://jtkovacs.github.io/refs/databases.html#nosql-databases
+- https://jtkovacs.github.io/refs/information-systems.html#what-is-big-data
 
 #### 2.1.2.2. Real-time BI
 
@@ -248,34 +260,11 @@ To enable OLAP, data is stored in multidimensional cubes. These cubes can be eff
 
 ## 2.5. Interpreting the data
 
-
-### 2.5.1. Business Performance Management
-
-- management.html#strategy
-- https://jtkovacs.github.io/refs/process-improvement.html
-    - balanced score cards
-    - closed-loop BPM methodology
-
-
-### 2.5.2. Analytics
+### 2.5.1. Analytics
 
 - Business Analytics as a field
-- IBM Watson
-- Text analytics
-    - https://jtkovacs.github.io/refs/text-analytics.html
-- Web analytics
-- Big Data
-    - https://jtkovacs.github.io/refs/databases.html#nosql-databases
-    - https://jtkovacs.github.io/refs/information-systems.html#what-is-big-data
-- Data mining
-    - https://jtkovacs.github.io/refs/machine-learning.html
-    - https://jtkovacs.github.io/refs/statistics.html
-- Visual analytics
-    - Why it's important
-    - Different visualization techniques
-    - Tableau
 
-#### 2.5.2.1. Types of analytic deliverables
+#### 2.5.1.1. Types of analytic deliverables
 
 Per Sharda et al. (2014):
 
@@ -335,20 +324,66 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
+#### 2.5.1.2. Data mining
+
+- versus statistics
+- https://jtkovacs.github.io/refs/machine-learning.html
+- https://jtkovacs.github.io/refs/statistics.html
+
+#### 2.5.1.3. Text & web analytics
+
+- https://jtkovacs.github.io/refs/text-analytics.html
+
+#### 2.5.1.4. Visual analytics
+
+- Why it's important
+- Different visualization techniques
+- Tableau
+
+### 2.5.2. Business Performance Management
+
+- management.html#strategy
+- https://jtkovacs.github.io/refs/process-improvement.html
+    - balanced score cards
+    - closed-loop BPM methodology
 
 
 
 
 
-## 2.6. Delivering data & interpretations
+## 2.6. Reporting
 
-### 2.6.1. Reporting
+Sharda et al. call reporting "an essential part of the larger drive toward improved managerial decision making and [organizational knowledge management"](km.html) and credit it with serving multiple **internal functions:**
 
-- Need
-- History
-- Design: https://jtkovacs.github.io/refs/graphics-viz.html
+- "To ensure that all departments are functioning properly
+- To provide information
+- To provide the results of an analysis
+- To persuade others to act
+- To create an organizational memory"
 
-### 2.6.2. Dashboards
+### 2.6.1. Types of reports
+
+Per Sharda et al. (2014, pp. 99-100), a report is "any communication artifact prepared with the specific intention of conveying information in a presentable form to whoever needs it"---which, in a business context, includes "memos, minutes, lab reports, sales reports, progress reports, justification reports, compliance reports, annual reports, and policies and procedures" (I object to the inclusion of policies and procedures in this list, because I would call them [documentation\).](https://jtkovacs.github.io/refs/docs.html)
+
+Reports can be for internal or external audiences, and prepared on a periodic or ad hoc basis. Regarding external reporting, the Data Foundation's [Standard Business Reporting](http://www.datafoundation.org/standard-business-reporting-2017/) effort is an attempt to reduce reporting costs by standardizing national and international governmental reporting requirements.
+
+| Type | Purpose | Length | Timing | Audience | Tone |
+| Informal | - | < 10 pgs. | Periodic/routine | Internal | Personal pronouns & contractions OK |
+| Formal | Communicate results of deeper research/analysis | 10-100 pgs. | - | Varies | Formal language; table of contents, executive summary |
+| Short | "investigative, compliance, and situational focused" | (short) | Often periodic | Varies | Factual |
+
+Sharda et al. (2014) cite Hill's (2013) typology of business reports:
+
+- **Metric management reports** that track performance versus ***SLAs*** (service-level agreements with external partners) or ***KPIs*** (key performance indicators for internal strategic and operational targets); often used with Six Sigma or Total Quality Management (TQM)
+- **Balanced scorecard-type reports** from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
+- **Dashboard-type reports:** arrange multiple performance indicators as a dashboard
+
+### 2.6.2. Best practices for reporting
+
+- Per Sharda et al. (2014, p. 100): "clarity, brevity, completeness, and correctness"
+- See [notes on graphic design](https://jtkovacs.github.io/refs/graphics-viz.html) re: layout
+
+### 2.6.3. Dashboards
 
 - https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards
 - data-viz.html#tableau

@@ -15,36 +15,50 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; data viz | just under 479 words | updated 12/25/2017
+   &gt; data viz | just under 711 words | updated 12/26/2017
   </p>
   <div class="TOC">
    <ul>
     <li>
      1.
+     <a href="#general-principles">
+      General principles
+     </a>
+     <ul>
+      <li>
+       1.1.
+       <a href="#edward-tufte">
+        Edward Tufte
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     2.
      <a href="#taxonomies-of-data-visualizations">
       Taxonomies of data visualizations
      </a>
     </li>
     <li>
-     2.
+     3.
      <a href="#data-visualization-with-...">
       Data visualization with ...
      </a>
      <ul>
       <li>
-       2.1.
+       3.1.
        <a href="#tableau">
         Tableau
        </a>
       </li>
       <li>
-       2.2.
+       3.2.
        <a href="#python">
         Python
        </a>
       </li>
       <li>
-       2.3.
+       3.3.
        <a href="#r">
         R
        </a>
@@ -52,31 +66,31 @@
      </ul>
     </li>
     <li>
-     3.
+     4.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       3.1.
+       4.1.
        <a href="#cited">
         Cited
        </a>
       </li>
       <li>
-       3.2.
+       4.2.
        <a href="#references">
         References
        </a>
       </li>
       <li>
-       3.3.
+       4.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       3.4.
+       4.4.
        <a href="#unread">
         Unread
        </a>
@@ -85,9 +99,28 @@
     </li>
    </ul>
   </div>
+  <h1 id="general-principles">
+   <a>
+    1. General principles
+   </a>
+  </h1>
+  <p>
+   See also
+   <a href="https://jtkovacs.github.io/refs/graphics-viz.html">
+    notes on graphic design.
+   </a>
+  </p>
+  <h2 id="edward-tufte">
+   <a>
+    1.1. Edward Tufte
+   </a>
+  </h2>
+  <p>
+   Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.
+  </p>
   <h1 id="taxonomies-of-data-visualizations">
    <a>
-    1. Taxonomies of data visualizations
+    2. Taxonomies of data visualizations
    </a>
   </h1>
   <ul>
@@ -112,6 +145,97 @@
    </li>
   </ul>
   <p>
+   From Sharda et al. (2014, pp. 110-112):
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Line chart AKA line graph:
+    </strong>
+    "show relationship between two variables", "track changes or trends over time"
+   </li>
+   <li>
+    <strong>
+     Scatter plot:
+    </strong>
+    "explore the existence of trends, concentrations, and outliers" among 2 or 3 variables
+    <ul>
+     <li>
+      <strong>
+       Bubble chart:
+      </strong>
+      varying size of dots on scatterplot to add another variable
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Pie chart:
+    </strong>
+    show relative proportions IFF &lt;4 categories
+   </li>
+   <li>
+    <strong>
+     Bar chart:
+    </strong>
+    "compare data across multiple categories"
+    <ul>
+     <li>
+      Horizontal, vertical, stacked
+     </li>
+     <li>
+      <strong>
+       Histogram:
+      </strong>
+      like a bar chart, but displays a frequency distribution
+     </li>
+     <li>
+      <strong>
+       Gantt chart:
+      </strong>
+      "portray project timelines, project tasks/activity durations, and overlap amongst the tasks/activities"
+     </li>
+     <li>
+      <strong>
+       Bullet chart:
+      </strong>
+      show progress towards a goal in the context of a bar chart
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Geographic map
+    </strong>
+   </li>
+   <li>
+    <strong>
+     PERT chart
+    </strong>
+    AKA network diagram shows sequence of tasks in a complex project
+   </li>
+   <li>
+    <strong>
+     Heat map:
+    </strong>
+    "quickly see where the intersection of the categories is strongest and weakest"
+    <ul>
+     <li>
+      <strong>
+       Highlight table
+      </strong>
+      is a 2D heat map that displays numeric values in addition to color
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Tree map:
+    </strong>
+    "display hierarchical (tree-structured) data as a set of nested rectangles"
+   </li>
+  </ul>
+  <p>
    From Eckerson &amp; Hammond (2011):
   </p>
   <div class="figure">
@@ -119,12 +243,12 @@
   </div>
   <h1 id="data-visualization-with-...">
    <a>
-    2. Data visualization with ...
+    3. Data visualization with ...
    </a>
   </h1>
   <h2 id="tableau">
    <a>
-    2.1. Tableau
+    3.1. Tableau
    </a>
   </h2>
   <ul>
@@ -141,7 +265,7 @@
   </ul>
   <h2 id="python">
    <a>
-    2.2. Python
+    3.2. Python
    </a>
   </h2>
   <ul>
@@ -212,7 +336,7 @@ ax.set_ylabel(‘Axis name’)
 plt.grid(True)</code></pre>
   <h2 id="r">
    <a>
-    2.3. R
+    3.3. R
    </a>
   </h2>
   <ul>
@@ -276,12 +400,12 @@ hist(m1$residuals)
 plot(jitter(x), y)</code></pre>
   <h1 id="sources">
    <a>
-    3. Sources
+    4. Sources
    </a>
   </h1>
   <h2 id="cited">
    <a>
-    3.1. Cited
+    4.1. Cited
    </a>
   </h2>
   <p>
@@ -294,9 +418,16 @@ plot(jitter(x), y)</code></pre>
     http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf
    </a>
   </p>
+  <p>
+   Sharda, R., Delen, D., &amp; Turban, E. (2014).
+   <em>
+    Business intelligence: A managerial perspective on analytics
+   </em>
+   (3rd ed.). New York City, NY: Pearson.
+  </p>
   <h2 id="references">
    <a>
-    3.2. References
+    4.2. References
    </a>
   </h2>
   <ul>
@@ -308,7 +439,7 @@ plot(jitter(x), y)</code></pre>
   </ul>
   <h2 id="read">
    <a>
-    3.3. Read
+    4.3. Read
    </a>
   </h2>
   <ul>
@@ -343,8 +474,8 @@ plot(jitter(x), y)</code></pre>
    </li>
   </ul>
   <h2>
-   <a name="3.4.-unread">
-    3.4. Unread
+   <a name="4.4.-unread">
+    4.4. Unread
    </a>
   </h2>
   <ul>

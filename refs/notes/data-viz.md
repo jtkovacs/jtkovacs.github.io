@@ -18,6 +18,23 @@ Trust the eye as a tool that extracts patterns from complex data. Provide viewer
 - [Tableau - Which chart?](https://drive.google.com/file/d/0B6XYyy1UbJ3XOVJxVTFJOURpVWc/view?usp=drive_web)
 - [Comparison among graph types](https://faculty.washington.edu/wijsman/GRAPHS3.pdf) (p. 24) [PDF]
 
+From Sharda et al. (2014, pp. 110-112):
+
+- **Line chart AKA line graph:** "show relationship between two variables", "track changes or trends over time"
+- **Scatter plot:** "explore the existence of trends, concentrations, and outliers" among 2 or 3 variables
+    - **Bubble chart:** varying size of dots on scatterplot to add another variable
+- **Pie chart:** show relative proportions IFF <4 categories
+- **Bar chart:** "compare data across multiple categories"
+    - Horizontal, vertical, stacked
+    - **Histogram:** like a bar chart, but displays a frequency distribution
+    - **Gantt chart:** "portray project timelines, project tasks/activity durations, and overlap amongst the tasks/activities"
+    - **Bullet chart:** show progress towards a goal in the context of a bar chart
+- **Geographic map**
+- **PERT chart** AKA network diagram shows sequence of tasks in a complex project
+- **Heat map:** "quickly see where the intersection of the categories is strongest and weakest"
+    - **Highlight table** is a 2D heat map that displays numeric values in addition to color
+- **Tree map:** "display hierarchical (tree-structured) data as a set of nested rectangles"
+
 From Eckerson & Hammond (2011):
 
 ![](../ILLOS/viz-types.png)
@@ -166,6 +183,8 @@ plot(jitter(x), y)
 ## Cited
 
 Eckerson, W., & Hammond, M. (2011). _Visual reporting and analysis._ TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from [http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf](http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf)
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 ## References
 

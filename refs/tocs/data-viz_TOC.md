@@ -1,21 +1,52 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data viz | just under 479 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [Taxonomies of data visualizations](#taxonomies-of-data-visualizations)
-- &nbsp;2. [Data visualization with ...](#data-visualization-with-...)
-	- &nbsp;2.1. [Tableau](#tableau)
-	- &nbsp;2.2. [Python](#python)
-	- &nbsp;2.3. [R](#r)
-- &nbsp;3. [Sources](#sources)
-	- &nbsp;3.1. [Cited](#cited)
-	- &nbsp;3.2. [References](#references)
-	- &nbsp;3.3. [Read](#read)
-	- &nbsp;3.4. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data viz | just under 711 words | updated 12/26/2017</p><div class="TOC">- &nbsp;1. [General principles](#general-principles)
+	- &nbsp;1.1. [Edward Tufte](#edward-tufte)
+- &nbsp;2. [Taxonomies of data visualizations](#taxonomies-of-data-visualizations)
+- &nbsp;3. [Data visualization with ...](#data-visualization-with-...)
+	- &nbsp;3.1. [Tableau](#tableau)
+	- &nbsp;3.2. [Python](#python)
+	- &nbsp;3.3. [R](#r)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [References](#references)
+	- &nbsp;4.3. [Read](#read)
+	- &nbsp;4.4. [Unread](#unread)
 </div>
 
-# 1. Taxonomies of data visualizations
+
+# 1. General principles
+
+See also [notes on graphic design.](https://jtkovacs.github.io/refs/graphics-viz.html)
+
+## 1.1. Edward Tufte
+
+Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.
+
+
+
+
+# 2. Taxonomies of data visualizations
 
 - Duarte (2008) has an interesting taxonomy
 - [3D dataviz taxonomy](http://www.datavizualization.com/blog/taxonomy-of-3d-dataviz)
 - [Tableau - Which chart?](https://drive.google.com/file/d/0B6XYyy1UbJ3XOVJxVTFJOURpVWc/view?usp=drive_web)
 - [Comparison among graph types](https://faculty.washington.edu/wijsman/GRAPHS3.pdf) (p. 24) [PDF]
+
+From Sharda et al. (2014, pp. 110-112):
+
+- **Line chart AKA line graph:** "show relationship between two variables", "track changes or trends over time"
+- **Scatter plot:** "explore the existence of trends, concentrations, and outliers" among 2 or 3 variables
+    - **Bubble chart:** varying size of dots on scatterplot to add another variable
+- **Pie chart:** show relative proportions IFF <4 categories
+- **Bar chart:** "compare data across multiple categories"
+    - Horizontal, vertical, stacked
+    - **Histogram:** like a bar chart, but displays a frequency distribution
+    - **Gantt chart:** "portray project timelines, project tasks/activity durations, and overlap amongst the tasks/activities"
+    - **Bullet chart:** show progress towards a goal in the context of a bar chart
+- **Geographic map**
+- **PERT chart** AKA network diagram shows sequence of tasks in a complex project
+- **Heat map:** "quickly see where the intersection of the categories is strongest and weakest"
+    - **Highlight table** is a 2D heat map that displays numeric values in addition to color
+- **Tree map:** "display hierarchical (tree-structured) data as a set of nested rectangles"
 
 From Eckerson & Hammond (2011):
 
@@ -26,14 +57,14 @@ From Eckerson & Hammond (2011):
 
 
 
-# 2. Data visualization with ...
+# 3. Data visualization with ...
 
-## 2.1. Tableau
+## 3.1. Tableau
 
 - [Tableau - Training videos](http://www.tableau.com/learn/training)
 - [Lynda - Interactive Tableau Dashboards](https://www.lynda.com/Tableau-tutorials/Creating-Interactive-Dashboards-Tableau/417094-2.html)
 
-## 2.2. Python
+## 3.2. Python
 
 - [http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb](http://nbviewer.jupyter.org/github/plotly/python-user-guide/blob/master/Index.ipynb)
 - [http://nbviewer.jupyter.org/gist/darribas/4121857](http://nbviewer.jupyter.org/gist/darribas/4121857)
@@ -97,7 +128,7 @@ plt.grid(True)
 ```
 
 
-## 2.3. R
+## 3.3. R
 
 - library for complex graphs: [http://ggplot2.org/](http://ggplot2.org/)
 
@@ -160,17 +191,19 @@ plot(jitter(x), y)
 
 
 
-# 3. Sources
+# 4. Sources
 
-## 3.1. Cited
+## 4.1. Cited
 
 Eckerson, W., & Hammond, M. (2011). _Visual reporting and analysis._ TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from [http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf](http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf)
 
-## 3.2. References
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+## 4.2. References
 
 - [Timdream's HTML5 wordcloud generator](https://timdream.org/wordcloud/)
 
-## 3.3. Read
+## 4.3. Read
 
 - [UW IT - Tableau Intro](http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopIntroduction), [Tableau Fundamentals](http://itconnect.uw.edu/work/data/training/workshops/#TableauDesktopFundamentals)
 - [Tufte - Presenting data & information](https://www.edwardtufte.com/tufte/courses)
@@ -178,7 +211,7 @@ Eckerson, W., & Hammond, M. (2011). _Visual reporting and analysis._ TDWI Best P
 - [Data visualization as a first step . . . and also an intermediate step and a last step](http://andrewgelman.com/2009/05/25/data_visualizat_1/)
 - [Old-school NYT death infographics were depressing](http://mentalfloss.com/article/61828/old-school-new-york-times-death-infographics-were-depressing)
 
-## 3.4. Unread
+## 4.4. Unread
 
 - [DATA + DESIGN ebook](https://infoactive.co/data-design)
 - [Design better data tables](https://medium.com/mission-log/design-better-data-tables-430a30a00d8c#.w1siia9bf)

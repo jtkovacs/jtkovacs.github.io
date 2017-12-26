@@ -301,7 +301,8 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
 
 - Why it's important
 - Different visualization techniques
-- Tableau
+- https://jtkovacs.github.io/refs/data-viz.html
+- data-viz.html#tableau
 
 ### Business Performance Management
 
@@ -331,25 +332,22 @@ Per Sharda et al. (2014, pp. 99-100), a report is "any communication artifact pr
 Reports can be for internal or external audiences, and prepared on a periodic or ad hoc basis. Regarding external reporting, the Data Foundation's [Standard Business Reporting](http://www.datafoundation.org/standard-business-reporting-2017/) effort is an attempt to reduce reporting costs by standardizing national and international governmental reporting requirements.
 
 | Type | Purpose | Length | Timing | Audience | Tone |
-| Informal | - | < 10 pgs. | Periodic/routine | Internal | Personal pronouns & contractions OK |
-| Formal | Communicate results of deeper research/analysis | 10-100 pgs. | - | Varies | Formal language; table of contents, executive summary |
+| --- | --- | --- | --- | --- | --- |
+| Informal | ... | < 10 pgs. | Periodic/routine | Internal | Personal pronouns & contractions OK |
+| Formal | Communicate results of deeper research/analysis | 10-100 pgs. | ... | Varies | Formal language; table of contents, executive summary |
 | Short | "investigative, compliance, and situational focused" | (short) | Often periodic | Varies | Factual |
 
 Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 
 - **Metric management reports** that track performance versus ***SLAs*** (service-level agreements with external partners) or ***KPIs*** (key performance indicators for internal strategic and operational targets); often used with Six Sigma or Total Quality Management (TQM)
 - **Balanced scorecard-type reports** from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
-- **Dashboard-type reports:** arrange multiple performance indicators as a dashboard
+- **Dashboard-type reports:** arrange multiple performance indicators as a dashboard (see [notes on dashboard design\)](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
 
 ### Best practices for reporting
 
 - Per Sharda et al. (2014, p. 100): "clarity, brevity, completeness, and correctness"
+- Sharda et al. cite Hill (2008) on the importance of "an overarching **assurance** process that covers the entire value chain and moves back and forth, enrusing that reporting requirements and information delivery are properly aligned"
 - See [notes on graphic design](https://jtkovacs.github.io/refs/graphics-viz.html) re: layout
-
-### Dashboards
-
-- https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards
-- data-viz.html#tableau
 
 
 

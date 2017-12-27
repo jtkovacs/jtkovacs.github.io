@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 2361 words | updated 12/26/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3181 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
 		- &nbsp;1.1.1. [BI versus data science](#bi-versus-data-science)
 		- &nbsp;1.1.2. [Food system metaphor](#food-system-metaphor)
@@ -28,6 +28,7 @@
 	- &nbsp;2.6. [Reporting](#reporting)
 		- &nbsp;2.6.1. [Types of reports](#types-of-reports)
 		- &nbsp;2.6.2. [Best practices for reporting](#best-practices-for-reporting)
+			- &nbsp;2.6.2.1. [Storytelling](#storytelling)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -119,7 +120,28 @@ Per Sharda et al. (2004), BI tools provide varying combinations of the following
 - business performance management
 - UI
 
+Gartner's Magic Quadrant for BI and Analytics Platforms (Sallam et al., 2017) compares software across the following capabilities:
 
+- **"Infrastructure**
+    - ***BI Platform Administration, Security and Architecture.*** Capabilities that enable platform security, administering users, auditing platform access and utilization, optimizing performance and ensuring high availability and disaster recovery.
+    - ***Cloud BI.*** Platform-as-a-service and analytic-application-as-a-service capabilities for building, deploying and managing analytics and analytic applications in the cloud, based on data both in the cloud and on-premises.
+    - ***Data Source Connectivity and Ingestion.*** Capabilities that allow users to connect to structured and unstructured data contained within various types of storage platforms, both on-premises and in the cloud.
+- **Data Management**
+    - ***Metadata Management.*** Tools for enabling users to leverage a common SOR semantic model and metadata. These should provide a robust and centralized way for administrators to search, capture, store, reuse and publish metadata objects such as dimensions, hierarchies, measures, performance metrics/key performance indicators (KPIs), and report layout objects, parameters and so on. Administrators should have the ability to promote a business-user defined data mashup and metadata to the SOR metadata.
+    - ***Self-Contained Extraction, Transformation and Loading (ETL) and Data Storage.*** Platform capabilities for accessing, integrating, transforming and loading data into a self-contained performance engine, with the ability to index data and manage data loads and refresh scheduling.
+    - ***Self-Service Data Preparation.*** "Drag and drop" user-driven data combination of different sources, and the creation of analytic models such as user-defined measures, sets, groups and hierarchies. Advanced capabilities include machine-learning-enabled semantic autodiscovery, intelligent joins, intelligent profiling, hierarchy generation, data lineage and data blending on varied data sources, including multistructured data.
+- **Analysis and Content Creation**
+    - ***Embedded Advanced Analytics.*** Enables users to easily access advanced analytics capabilities that are self-contained within the platform itself or through the import and integration of externally developed models.
+    - Analytic Dashboards. The ability to create highly interactive dashboards and content with visual exploration and embedded advanced and geospatial analytics to be consumed by others
+    - ***Interactive Visual Exploration.*** Enables the exploration of data via an array of visualization options that go beyond those of basic pie, bar and line charts to include heat and tree maps, geographic maps, scatter plots and other special-purpose visuals. These tools enable users to analyze and manipulate the data by interacting directly with a visual representation of it to display as percentages, bins and groups.
+    - ***Smart Data Discovery.*** Automatically finds, visualizes and narrates important findings such as correlations, exceptions, clusters, links and predictions in data that are relevant to users without requiring them to build models or write algorithms. Users explore data via visualizations, natural-language-generated narration, search and NLQ technologies.
+    - ***Mobile Exploration and Authoring.*** Enables organizations to develop and deliver content to mobile devices in a publishing and/or interactive mode, and takes advantage of mobile devices' native capabilities, such as touchscreen, camera and location awareness.
+- **Sharing of Findings**
+    - ***Embedding Analytic Content.*** Capabilities including a software developer's kit with APIs and support for open standards for creating and modifying analytic content, visualizations and applications, embedding them into a business process and/or an application or portal. These capabilities can reside outside the application, reusing the analytic infrastructure, but must be easily and seamlessly accessible from inside the application without forcing users to switch between systems. The capabilities for integrating BI and analytics with the application architecture will enable users to choose where in the business process the analytics should be embedded.
+    - ***Publish, Share and Collaborate on Analytic Content.*** Capabilities that allow users to publish, deploy and operationalize analytic content through various output types and distribution methods, with support for content search, scheduling and alerts. Enables users to share, discuss and track information, analysis, analytic content and decisions via discussion threads, chat and annotations.
+- **Overall platform capabilities**
+    - ***Platform Capabilities and Workflow.*** This capability considers the degree to which capabilities are offered in a single, seamless product or across multiple products with little integration.
+    - ***Ease of Use and Visual Appeal.*** Ease of use to administer and deploy the platform, create content, consume and interact with content, as well as the visual appeal."
 
 
 ## 2.1. Implementing BI systems
@@ -385,7 +407,15 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 - Sharda et al. cite Hill (2008) on the importance of "an overarching **assurance** process that covers the entire value chain and moves back and forth, enrusing that reporting requirements and information delivery are properly aligned"
 - See [notes on graphic design](https://jtkovacs.github.io/refs/graphics-viz.html) re: layout
 
+#### 2.6.2.1. Storytelling
 
+From Sharda et al. (2014, p. 117), to present data as a story, ask: _"Who are the **characters?** What is the drama or **challenge?** What hurdles have to be overcome? And at the end of your story, what do you want your audience to **do** as a result?_ (connect your 'call to action' with existing managerial conversations, if possible). They also cite Fink and Moore (2013):
+
+- "Think of your analysis as a story---use a story structure.
+- Be authentic---your story will flow.
+- Be visual---think of yourself as a film editor.
+- Make it easy for your audience and you.
+- Invite and direct discussion."
 
 
 
@@ -398,6 +428,8 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 # 3. Sources
 
 ## 3.1. Cited
+
+Sallam, R, L., Howson, C., Idoine, C. J., Oestreich, T. W., & Laurence, J. (2017). Magic Quadrant for Business Intelligence and Analytics Platforms. Gartner. Retrieved from [https://cdn2.hubspot.net/hubfs/2172371/Q1%202017%20Gartner.pdf?t=149626062](https://cdn2.hubspot.net/hubfs/2172371/Q1%202017%20Gartner.pdf?t=149626062)
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 

@@ -420,7 +420,7 @@ Per Sharda et al. (2015, pp. 172; 181; 183):
 
 <table>
     <tr><th>Prediction</th>
-    <td style="text-align:right;"><ul>
+    <td style="text-align:left;"><ul>
         <li>credit approval</li>
         <li>store location</li>
         <li>target marketing</li>
@@ -428,7 +428,7 @@ Per Sharda et al. (2015, pp. 172; 181; 183):
         <li>attrition</li>
     </ul></td></tr>
     <tr><th>Association</th>
-    <td style="text-align:right;"><ul>
+    <td style="text-align:left;"><ul>
         <li>"identify a classification scheme (e.g., types of customers)"</li>
         <li>"suggest statistical models to describe populations"</li>
         <li>"indicate rules for assigning new cases to classes for identification, tagging, and diagnostic purposes"</li>
@@ -438,7 +438,7 @@ Per Sharda et al. (2015, pp. 172; 181; 183):
         <li>"identify outliers in a specific domain (i.e., rare-event detection)"</li>
     </ul></td></tr>
     <tr><th>Clustering</th>
-    <td style="text-align:right;"><ul>
+    <td style="text-align:left;"><ul>
         <li>"improve product placement on the sales floor ... and [coordinate] promotional pricing of products"</li>
         <li>identify credit fraud based on purchase combinations</li>
         <li>"sequentional patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>

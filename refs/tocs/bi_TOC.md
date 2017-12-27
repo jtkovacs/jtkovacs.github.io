@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3572 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3596 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
 		- &nbsp;1.1.1. [Food system metaphor](#food-system-metaphor)
 	- &nbsp;1.2. [Does BI have value?](#does-bi-have-value)
@@ -393,21 +393,15 @@ Business performance management (BPM) entails measuring and improving _actual pe
 
 #### 2.5.2.2. Data viz & visual analytics
 
-Per Sharda et al. (2014, pp. 114-116), data visualization is increasingly important capability of BI software because it makes meaning in the data more accessible to more users; and 'visual analytics' is a new term meant to describe data or information visualization that goes beyond description to the realm of business analytics: "diagnostic (i.e. prescriptive and predictive)".
-
-- Different visualization techniques
-- https://jtkovacs.github.io/refs/data-viz.html
-- data-viz.html#tableau
+Per Sharda et al. (2014, pp. 114-116), **data visualization** is increasingly important capability of BI software because it makes meaning in the data more accessible to more users---and **visual analytics** is a new term meant to describe data viz that goes beyond description to the realm of business analytics, i.e. "diagnostic ... prescriptive and predictive". See [notes on data visualization](https://jtkovacs.github.io/refs/data-viz.html) regarding the conversion of data into informative visuals; see [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#dashboards) regarding the presentation of multiple data visuals, combined to facilitate insights.
 
 #### 2.5.2.3. Data mining
 
-- versus statistics
-- https://jtkovacs.github.io/refs/machine-learning.html
-- https://jtkovacs.github.io/refs/statistics.html
+See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [notes on machine learning.](https://jtkovacs.github.io/refs/machine-learning.html)
 
 #### 2.5.2.4. Text & web analytics
 
-- https://jtkovacs.github.io/refs/text-analytics.html
+See [notes on text analytics.](https://jtkovacs.github.io/refs/text-analytics.html)
 
 
 

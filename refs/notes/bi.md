@@ -372,6 +372,63 @@ See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [
 
 ##### DM applications
 
+Per Sharda et al. (2014, pp. 160-161):
+
+-**GENERIC** (common across many domains)
+    - customer profiling to identify most likely consumers for a given product, or most valuable customers to invest in
+    - churn analysis, identifying roots of customer or employee attrition
+    - identify and exploit seasonal trends
+    - yield management: "optimally price services to maximize revenues as a function of time-varying transactions"
+- **Customer relationship management** (CRM)
+    - data comes from "product inquiries, sales, service requests, warranty calls, product reviews, social media connections", combined with "data on demographic and socioeconomic attributes"
+- **Banking**
+    - automate loan applications (lololol)
+    - fraud detection
+    - forecasting cash flows across entities
+- **Retailing & logistics**
+    - forecast demand, to
+        - plan inventory levels
+        - optimize logistics
+    - market basket analysis to "improve the store layout and optimize sales promotions"
+    - use RFID and sensory data to identify interesting product-specific insights
+    - recommendations
+- **Manufacturing & production**
+    - RFID-enabled prediction of machinery failures, and "condition-based maintenance"
+    - improve product quality
+    - optimize manufacturing capacity
+- **Brokerage & securities trading**
+    - forecast prices
+    - model impact of events on markets
+    - detect & prevent fraud
+- **Insurance**
+    - "forecast claim amounts"
+    - "determine optimal rate plans"
+    - "identify and prevent incorrect claims payments and fraudulent activities"
+- **Computer hardware & software**
+    - predict hardware failures
+    - filter span and Web content
+    - identify software and network vulnerabilities
+- **Government & defense**
+    - model behavior of opponent/s
+    - knowledge sharing
+    - "predict resource consumption for better planning and budgeting"
+- **Homeland security & law enforcement**
+    - "identify patterns of terrorist behaviors"
+    - "discover crime patterns (e.g., locations, timings, criminal behaviors, and other related attributes) to help solve criminal cases in a timely manner [???]"
+    - "predict and eliminate potential biological and chemical attacks to the nation's critical infrastructure by analyzing special-purpose sensory data"
+    - "identify and stop malicious attacks on critical information infrastructures"
+- **Healthcare**
+    - "identify people without health insurance and the factors underlying this undersired phenomenon"
+    - "identify novel cost-benefit relationships between different treatments to develop more effective strategies"
+- **Medicine**
+    - "identify novel patterns to improve survivability of patients with cancer"
+    - "predict success rates of organ transplantation patients to develop better donor-organ matching policies"
+    - "identify the functions of different gene in the human chromosome (known as genomics)"
+    - "discover the relationships between symptoms and illnesses to help medical professionals make informed and correct decisions"
+- **Entertainment industry**
+    - recommend/auto-play features
+    - predict market reception of a movie, album, etc.
+    - forecasting to inform scheduling
 
 
 ##### CRISP-DM process

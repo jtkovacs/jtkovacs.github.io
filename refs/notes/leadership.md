@@ -1,5 +1,9 @@
 
 
+- [Cross-cultural leadership syllabus](https://webcache.googleusercontent.com/search?q=cache:245H1s8ZQigJ:https://canvas.uw.edu/courses/882562/pages/readings+&cd=2&hl=en&ct=clnk&gl=us)
+- [Leadership Practices Inventory](http://www.leadershipchallenge.com/professionals-section-lpi.aspx)
+
+
 # Sources
 
 ## References

@@ -1,10 +1,30 @@
 
+# What is performance?
+
+Organizational performance, according to Jones and George (2015), consists of:
+
+- Efficiency
+- Innovation (speed, flexibility)
+- Quality
+- User-focused (responsive)
+
+Per Terwiesch (n.d.), strategy and assessment often reference four **operational dimensions,** between which there may be a trade-off:
+
+- Cost
+- Time
+- Variety/responsiveness to consumer tastes
+- Quality (performance, conformance)
+
+The trade-off curve can be estimated by locating the performance of existing companies for any two dimensions; then, the question is whether your company is operating on the frontier or within it.
+
 
 # What is performance management?
 
 Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), strategic enterprise management (SEM), and (more narrowly) value chain management. Performance management relates to the core managerial activity of [strategy](https://jtkovacs.github.io/refs/management.html#strategy) in the following way (called the "closed-loop BPM cycle"; Sharda et al., 2014):
 
-<table style="font-size:7px;">
+https://en.wikipedia.org/wiki/Continual_improvement_process: "Some see CIPs as a meta-process for most management systems (such as business process management, quality management, project management, and program management)"
+
+<table>
     <tr>
         <th>Strategize</th>
         <th>Plan</th>
@@ -37,7 +57,7 @@ Per Sharda et al. (2014), BPM is also called corporate performance management (C
         <td style="text-align:left;"><ul>
             <li>Performance dashboards</li>
             <li>Reports</li>
-            <li>Analytic tooles</li>
+            <li>Analytic tools</li>
         </ul></td>
         <td style="text-align:left;"><ul>
             <li>Interpret</li>
@@ -85,6 +105,12 @@ Per Sharda et al. (2014, pp. 136-137), "Measures should:
 - have targets that are based on research and reality rather than arbitrary
 
 Or, fundamentally: "Measures need to be derived from the corporate and business unit strategies and from an analysis of the key business processes required to achieve those strategies."
+
+#### KPI trees
+
+Per Terwiesch (n.d.), KPI trees are about “visualizing the relationship between operational variables and the financial bottom line, and are also the starting point for sensitivity analysis wherein we identify those operational variables that have the largest impact.” To use one, out dependencies between variables, then take the partial derivative of the terminal KPI w/r/t an operational variable or evaluate using a spreadsheet:
+
+<img src="../ILLOS/KPI-tree.png" width="450px">
 
 
 
@@ -138,9 +164,14 @@ For creation of new processes, the model is DMADV (define, measure, analyze, **d
 
 ### Lean
 
+### Kaizen
 
 
 
+
+
+
+# What is process improvement?
 
 ## Tools by degree of change sought
 
@@ -208,37 +239,37 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 
 
-# Continuous Process Improvement
+## Continuous Process Improvement
 
 _These notes are based on Jeevon Powell's class, [Process Improvement Tools.](https://ucs.admin.uw.edu/pod/Course/Details/Q1170)_
 
-## Depict system
+### Depict system
 
 See [notes on systems modeling.](modeling.html)
 
-### Value stream mapping
+#### Value stream mapping
 
-### Spaghetti diagram
+#### Spaghetti diagram
 
-## Identify problems
+### Identify problems
 
-### Eleven wastes checklist
+#### Eleven wastes checklist
 
-### Pareto analysis
+#### Pareto analysis
 
-## Analyze problems
+### Analyze problems
 
-### Cause-and-effect diagram
+#### Cause-and-effect diagram
 
-### CEDAC
+#### CEDAC
 
-## Address problem
+### Address problem
 
-### Opportunities rating matrix
+#### Opportunities rating matrix
 
-### 5S organization methodology
+#### 5S organization methodology
 
-### Brainstorming
+#### Brainstorming
 
 
 
@@ -248,15 +279,6 @@ See [notes on systems modeling.](modeling.html)
 # Operations Management
 
 _These notes are based on Christian Terwiesch's Coursera class, [Intro. to Operations Management.](https://www.coursera.org/learn/wharton-operations)_
-
-Strategy and assessment often reference four **operational dimensions:**
-
-- Cost
-- Time
-- Variety/responsiveness to consumer tastes
-- Quality (performance, conformance)
-
-Between any two dimensions, there may be a **tradeoff;** obtain this curve by locating the performance of existing companies for any two dimensions. Then the question is whether your company is operating on the frontier or within it.
 
 ## Business process analysis
 
@@ -335,11 +357,6 @@ Frederick Winslow Taylor (1911), [Principles of Scientific Management.](https://
 - “How does the profit change as we change the operational variables?”
 - “Every second counts—however, not every second counts equally.” The largest impact comes from improvements to the bottleneck when demand is not a binding constraint; also, in organizations with large fixed costs and lower marginal costs (can see this by checking the relative slopes of the cost and revenue lines past the break even point).
 
-### Key Performance Indicators (KPIs) and KPI trees
-
-KPI trees are about “visualizing the relationship between operational variables and the financial bottom line, and are also the starting point for sensitivity analysis wherein we identify those operational variables that have the largest impact.” Map out dependencies between variables, then take the partial derivative of the terminal KPI w/r/t an operational variable or evaluate using a spreadsheet.
-
-<img src="../ILLOS/KPI-tree.png" width="450px">
 
 ### Overall equipment effectiveness (OEE) and overall people effectiveness (OPE)
 
@@ -368,7 +385,6 @@ KPI trees are about “visualizing the relationship between operational variable
 - Ford production system: Influenced by Taylor; aspired to optimization of work. Used a moving line, big machinery, economies of scale, standardization of product.
 - Toyota production system: c. 1950s, focused on elimination of waste and matching demand after failure to replicate Ford system in a postwar context where inputs and domestic demand was scarce.
     - Worry about: waste, inflexibility, and variability
-- See [notes on Six Sigma, above](#six-sigma)
 
 ### Basic defect calculations
 
@@ -438,9 +454,14 @@ Looking for root cause(s):
 
 Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
 
+Jones, G. R. & George, J. M. (2015). _Contemporary management (9th ed.)._ Colombus, OH: McGraw-Hill Education.
+
 Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+Terwiesch, C. (n.d.) Introduction to Operations Management [online class]. Coursera. Retrieved from  [https://www.coursera.org/learn/wharton-operations](https://www.coursera.org/learn/wharton-operations)
+
 
 ## References
 

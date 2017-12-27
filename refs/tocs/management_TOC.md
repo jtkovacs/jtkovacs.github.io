@@ -1,29 +1,101 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 685 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [Overview of a generic organization](#overview-of-a-generic-organization)
-- &nbsp;2. [History of management](#history-of-management)
-- &nbsp;3. [What skills does a manager need?](#what-skills-does-a-manager-need)
-	- &nbsp;3.1. [Leadership](#leadership)
-	- &nbsp;3.2. [Strategy](#strategy)
-		- &nbsp;3.2.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
-		- &nbsp;3.2.2. [Strategic analysis](#strategic-analysis)
-			- &nbsp;3.2.2.1. [Inputs to strategic decision-making](#inputs-to-strategic-decision-making)
-			- &nbsp;3.2.2.2. [What trends matter?](#what-trends-matter)
-		- &nbsp;3.2.3. [Strategic thinking](#strategic-thinking)
-			- &nbsp;3.2.3.1. [Design thinking](#design-thinking)
-			- &nbsp;3.2.3.2. [Systems thinking](#systems-thinking)
-- &nbsp;4. [Sources](#sources)
-	- &nbsp;4.1. [Cited](#cited)
-	- &nbsp;4.2. [References](#references)
-	- &nbsp;4.3. [Read](#read)
-	- &nbsp;4.4. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 992 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is management?](#what-is-management)
+	- &nbsp;1.1. [Managerial hierarchy](#managerial-hierarchy)
+	- &nbsp;1.2. [Managerial skills](#managerial-skills)
+	- &nbsp;1.3. [History of management thought](#history-of-management-thought)
+		- &nbsp;1.3.1. [Pre-classical](#pre-classical)
+		- &nbsp;1.3.2. [Classical management theories](#classical-management-theories)
+			- &nbsp;1.3.2.1. [Scientific management (1890-1945)](#scientific-management-1890-1945)
+			- &nbsp;1.3.2.2. [Administrative management (1890-1980)](#administrative-management-1890-1980)
+			- &nbsp;1.3.2.3. [Behavioral management theory (1915-1990)](#behavioral-management-theory-1915-1990)
+			- &nbsp;1.3.2.4. [Management science theory (1940-1990)](#management-science-theory-1940-1990)
+			- &nbsp;1.3.2.5. [Organizational environment theory (1950-2005)](#organizational-environment-theory-1950-2005)
+	- &nbsp;1.4. [What is management consulting?](#what-is-management-consulting)
+	- &nbsp;1.5. [Strategy](#strategy)
+		- &nbsp;1.5.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
+		- &nbsp;1.5.2. [Strategic analysis](#strategic-analysis)
+			- &nbsp;1.5.2.1. [Inputs to strategic decision-making](#inputs-to-strategic-decision-making)
+			- &nbsp;1.5.2.2. [Trends with strategic significance](#trends-with-strategic-significance)
+		- &nbsp;1.5.3. [Strategic thinking](#strategic-thinking)
+			- &nbsp;1.5.3.1. [Design thinking](#design-thinking)
+			- &nbsp;1.5.3.2. [Systems thinking](#systems-thinking)
+- &nbsp;2. [Sources](#sources)
+	- &nbsp;2.1. [Cited](#cited)
+	- &nbsp;2.2. [References](#references)
+	- &nbsp;2.3. [Read](#read)
+	- &nbsp;2.4. [Unread](#unread)
 </div>
 
-# 1. Overview of a generic organization
+
+# 1. What is management?
+
+## 1.1. Managerial hierarchy
+
+| Role | Responsibility |
+| --- | --- |
+| CEO | Coordinate C-Suite; interacts with Board and shareholders |
+| Top management AKA C-Suite | Cross-departmental decision-making |
+| Middle management | Make departmental decisions; develop expertise in functional area |
+| First-line management AKA front-line management AKA supervisors | Supervise employees, manage projects and products |
+
+## 1.2. Managerial skills
+
+According to Jones and George (2015), management involves the following tasks, with upper-level managers more involved in _planning and organizing_ while lower-level managers are more involved with _leading and controlling:_
+
+- **Planning** AKA [strategy](#strategy)
+    - Setting goals
+    - Choosing strategies
+    - Allocating **resources,** [see notes on finance & accounting](https://jtkovacs.github.io/refs/fin-acctg.html)
+        - People and skills
+        - Machinery and materials
+        - Computers and IT
+        - Patents, capital, and goodwill
+- **Organizing**
+    - Defining [organizational architecture](https://jtkovacs.github.io/refs/org-arch.html)
+    - Defining lines of reporting and other communication channels (related to [knowledge management\)](https://jtkovacs.github.io/refs/km.html)
+- [Leading](https://jtkovacs.github.io/refs/leadership.html) with "power, personality, influence, persuasion, and communication skills" that rally people around a vision
+- **Controlling** (monitoring and correcting) execution of strategies
+    - [Performance management & process improvement](https://jtkovacs.github.io/refs/performance-management.html)
+    - [Project management](https://jtkovacs.github.io/refs/project-management.html)
+
+Another typology comes from Mintzenberg (cited in Jones and George, 2015), who identifies 10 roles that managers play:
+
+- DECISIONAL
+    - entrepreneur [opportunity-finder]
+    - disturbance handler
+    - resource allocator
+    - negotiator
+- INTERPERSONAL
+    - figurehead
+    - leader
+    - liaison
+- INFORMATIONAL
+    - monitor
+    - disseminator
+    - spokesperson
 
 
 
+## 1.3. History of management thought
+
+### 1.3.1. Pre-classical
+
+Adam Smith and the division of labor
+
+### 1.3.2. Classical management theories
+
+#### 1.3.2.1. Scientific management (1890-1945)
+
+#### 1.3.2.2. Administrative management (1890-1980)
+
+#### 1.3.2.3. Behavioral management theory (1915-1990)
+
+#### 1.3.2.4. Management science theory (1940-1990)
+
+#### 1.3.2.5. Organizational environment theory (1950-2005)
 
 
-# 2. History of management
+
+## 1.4. What is management consulting?
 
 See Stewart, 2009.
 
@@ -31,35 +103,38 @@ See Stewart, 2009.
 
 
 
-# 3. What skills does a manager need?
+## 1.5. Strategy
 
-- Leadership
-- Strategic thinking
-- Organizational architecture
-- Finance & accounting
-- [Project management](https://jtkovacs.github.io/refs/project-management.html)
-- [Performance management/process improvement](https://jtkovacs.github.io/refs/performance-management.html)
+### 1.5.1. What generic strategies can companies pursue?
 
-
-
-## 3.1. Leadership
-
-- [Cross-cultural leadership syllabus](https://webcache.googleusercontent.com/search?q=cache:245H1s8ZQigJ:https://canvas.uw.edu/courses/882562/pages/readings+&cd=2&hl=en&ct=clnk&gl=us)
-- [Leadership Practices Inventory](http://www.leadershipchallenge.com/professionals-section-lpi.aspx)
-
-
-
-
-
-## 3.2. Strategy
-
-### 3.2.1. What generic strategies can companies pursue?
-
-### 3.2.2. Strategic analysis
+### 1.5.2. Strategic analysis
 
 - PORTER 5
 - PESTEL
 - SWOT
+
+#### 1.5.2.1. Inputs to strategic decision-making
+
+- Business research
+- Market research
+- BI
+- Data science
+
+#### 1.5.2.2. Trends with strategic significance
+
+- **Technology:** Communication, automation, Big Data
+- **Labor:**  Overwork, precariousness, disemployment, loss or violation of labor laws
+- **Political:** Inequality, polarization
+
+From Jones & George (2015):
+
+- restructuring, downsizing, outsourcing, insourcing
+- empowering employees, self-managed teams
+- challenging to maintain competitive advantage
+- pressure to be ethically and socially responsible
+- pressure to be unethical
+- need to manage diverse workforce fairly (they say; not equitably)
+- need to weather global crises (human or natural causes alike)
 
 Per Sharda et al. (2014, p. 7):
 
@@ -114,27 +189,15 @@ Per Sharda et al. (2014, p. 7):
 </tr>
 <table>
 
-#### 3.2.2.1. Inputs to strategic decision-making
-
-- Business research
-- Market research
-- BI
-- Data science
-
-#### 3.2.2.2. What trends matter?
-
-- **Technology:** Communication, automation, Big Data
-- **Labor:**  Overwork, precariousness, disemployment, loss or violation of labor laws
-- **Political:** Inequality, polarization
 
 
-### 3.2.3. Strategic thinking
+### 1.5.3. Strategic thinking
 
-#### 3.2.3.1. Design thinking
+#### 1.5.3.1. Design thinking
 
 See design.html#design-thinking
 
-#### 3.2.3.2. Systems thinking
+#### 1.5.3.2. Systems thinking
 
 
 
@@ -142,19 +205,21 @@ See design.html#design-thinking
 
 
 
-# 4. Sources
+# 2. Sources
 
-## 4.1. Cited
+## 2.1. Cited
 
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
 
 Brown, T., & Wyatt, J. (2010). Design thinking for social innovation. _Development Outreach,_ 12(1), 29-31.
 
+Jones, G. R. & George, J. M. (2015). _Contemporary management (9th ed.)._ Colombus, OH: McGraw-Hill Education.
+
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-## 4.2. References
+## 2.2. References
 
 - [http://www.nwlink.com/~donclark/contents.html:](http://www.nwlink.com/~donclark/contents.html) "your window to learning, training, leadership, design and all matters related to improving human performance"
 - [Mike Bradley & Tiff Zhang's startup generator](http://tiffzhang.com/startup/)
@@ -165,9 +230,9 @@ Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial
 - [CBBP's "policy futures" research](http://www.cbpp.org/about/special-projects/policy-futures)
 - [SLU library guide to market research](http://libguides.slu.edu/c.php?g=185604&amp;p=1226028)
 
-## 4.3. Read
+## 2.3. Read
 
-## 4.4. Unread
+## 2.4. Unread
 
 - Stewart, M. (2009). _The management myth: Why the experts keep getting it wrong._ New York City, NY: W. W. Norton.
 - [Paul Graham's "Do things that don't scale"](http://paulgraham.com/ds.html)

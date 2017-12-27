@@ -1,8 +1,12 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> leadership | nearly 52 words | updated 05/16/2017</p><div class="TOC">- 1. [Sources](#sources)
-	- 1.1. [References](#references)
-	- 1.2. [Read](#read)
-	- 1.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> leadership | just under 60 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [Sources](#sources)
+	- &nbsp;1.1. [References](#references)
+	- &nbsp;1.2. [Read](#read)
+	- &nbsp;1.3. [Unread](#unread)
 </div>
+
+
+- [Cross-cultural leadership syllabus](https://webcache.googleusercontent.com/search?q=cache:245H1s8ZQigJ:https://canvas.uw.edu/courses/882562/pages/readings+&cd=2&hl=en&ct=clnk&gl=us)
+- [Leadership Practices Inventory](http://www.leadershipchallenge.com/professionals-section-lpi.aspx)
 
 
 # 1. Sources

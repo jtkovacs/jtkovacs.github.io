@@ -1,33 +1,77 @@
 
-# Overview of a generic organization
+
+# What is management?
+
+## Managerial hierarchy
+
+| Role | Responsibility |
+| --- | --- |
+| CEO | Coordinate C-Suite; interacts with Board and shareholders |
+| Top management AKA C-Suite | Cross-departmental decision-making |
+| Middle management | Make departmental decisions; develop expertise in functional area |
+| First-line management AKA front-line management AKA supervisors | Supervise employees, manage projects and products |
+
+## Managerial skills
+
+According to Jones and George (2015), management involves the following tasks, with upper-level managers more involved in _planning and organizing_ while lower-level managers are more involved with _leading and controlling:_
+
+- **Planning** AKA [strategy](#strategy)
+    - Setting goals
+    - Choosing strategies
+    - Allocating **resources,** [see notes on finance & accounting](https://jtkovacs.github.io/refs/fin-acctg.html)
+        - People and skills
+        - Machinery and materials
+        - Computers and IT
+        - Patents, capital, and goodwill
+- **Organizing**
+    - Defining [organizational architecture](https://jtkovacs.github.io/refs/org-arch.html)
+    - Defining lines of reporting and other communication channels (related to [knowledge management\)](https://jtkovacs.github.io/refs/km.html)
+- [Leading](https://jtkovacs.github.io/refs/leadership.html) with "power, personality, influence, persuasion, and communication skills" that rally people around a vision
+- **Controlling** (monitoring and correcting) execution of strategies
+    - [Performance management & process improvement](https://jtkovacs.github.io/refs/performance-management.html)
+    - [Project management](https://jtkovacs.github.io/refs/project-management.html)
+
+Another typology comes from Mintzenberg (cited in Jones and George, 2015), who identifies 10 roles that managers play:
+
+- DECISIONAL
+    - entrepreneur [opportunity-finder]
+    - disturbance handler
+    - resource allocator
+    - negotiator
+- INTERPERSONAL
+    - figurehead
+    - leader
+    - liaison
+- INFORMATIONAL
+    - monitor
+    - disseminator
+    - spokesperson
 
 
 
+## History of management thought
+
+### Pre-classical
+
+Adam Smith and the division of labor
+
+### Classical management theories
+
+#### Scientific management (1890-1945)
+
+#### Administrative management (1890-1980)
+
+#### Behavioral management theory (1915-1990)
+
+#### Management science theory (1940-1990)
+
+#### Organizational environment theory (1950-2005)
 
 
-# History of management
+
+## What is management consulting?
 
 See Stewart, 2009.
-
-
-
-
-
-# What skills does a manager need?
-
-- Leadership
-- Strategic thinking
-- Organizational architecture
-- Finance & accounting
-- [Project management](https://jtkovacs.github.io/refs/project-management.html)
-- [Performance management/process improvement](https://jtkovacs.github.io/refs/performance-management.html)
-
-
-
-## Leadership
-
-- [Cross-cultural leadership syllabus](https://webcache.googleusercontent.com/search?q=cache:245H1s8ZQigJ:https://canvas.uw.edu/courses/882562/pages/readings+&cd=2&hl=en&ct=clnk&gl=us)
-- [Leadership Practices Inventory](http://www.leadershipchallenge.com/professionals-section-lpi.aspx)
 
 
 
@@ -42,6 +86,29 @@ See Stewart, 2009.
 - PORTER 5
 - PESTEL
 - SWOT
+
+#### Inputs to strategic decision-making
+
+- Business research
+- Market research
+- BI
+- Data science
+
+#### Trends with strategic significance
+
+- **Technology:** Communication, automation, Big Data
+- **Labor:**  Overwork, precariousness, disemployment, loss or violation of labor laws
+- **Political:** Inequality, polarization
+
+From Jones & George (2015):
+
+- restructuring, downsizing, outsourcing, insourcing
+- empowering employees, self-managed teams
+- challenging to maintain competitive advantage
+- pressure to be ethically and socially responsible
+- pressure to be unethical
+- need to manage diverse workforce fairly (they say; not equitably)
+- need to weather global crises (human or natural causes alike)
 
 Per Sharda et al. (2014, p. 7):
 
@@ -96,18 +163,6 @@ Per Sharda et al. (2014, p. 7):
 </tr>
 <table>
 
-#### Inputs to strategic decision-making
-
-- Business research
-- Market research
-- BI
-- Data science
-
-#### What trends matter?
-
-- **Technology:** Communication, automation, Big Data
-- **Labor:**  Overwork, precariousness, disemployment, loss or violation of labor laws
-- **Political:** Inequality, polarization
 
 
 ### Strategic thinking
@@ -131,6 +186,8 @@ See design.html#design-thinking
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
 
 Brown, T., & Wyatt, J. (2010). Design thinking for social innovation. _Development Outreach,_ 12(1), 29-31.
+
+Jones, G. R. & George, J. M. (2015). _Contemporary management (9th ed.)._ Colombus, OH: McGraw-Hill Education.
 
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 

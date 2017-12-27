@@ -6,19 +6,11 @@
 IS are for managing information across its lifecycle:
 
 - Per Detlor (2010):
-    - create, acquire, organize (index/classify for retrieval), store, distribute, use
-    - acquisition, organization, control, dissemination and use
-    - (i) identification of information needs, (ii) acquisition of information to address those needs, (iii) organization and storage of information, (iv) design and development of information products, (v) distribution of information and (vi) information use
-    - (i) acquisition, (ii) organization, (iii) storage, (iv) retrieval, (v) access/lending and (vi) dissemination
-- Per Archives.gov (2016): production, collection, use, management, maintenance, preservation, and disposal or permanent retention
-
-## What is Big Data?
-
-- volume
-- variety
-- velocity
-- … a growing list
-
+    - create; acquire; organize (index/classify for retrieval); store; distribute; use
+    - acquisition; organization; control; dissemination; use
+    - identification of information needs; acquisition of information to address those needs; organization and storage of information; design and development of information products; distribution of information; and information use
+    - acquisition; organization; storage; retrieval; access/lending; dissemination
+- Per Archives.gov (2016): production; collection; use; management; maintenance; preservation; disposal or permanent retention
 
 
 

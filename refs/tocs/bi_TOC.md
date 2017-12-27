@@ -1,7 +1,6 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3507 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3516 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
-		- &nbsp;1.1.1. [BI versus data science](#bi-versus-data-science)
-		- &nbsp;1.1.2. [Food system metaphor](#food-system-metaphor)
+		- &nbsp;1.1.1. [Food system metaphor](#food-system-metaphor)
 	- &nbsp;1.2. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.3. [History of BI](#history-of-bi)
 	- &nbsp;1.4. [Trends in BI](#trends-in-bi)
@@ -19,15 +18,17 @@
 			- &nbsp;2.3.3.1. [Choosing an architecture](#choosing-an-architecture)
 	- &nbsp;2.4. [OLAP](#olap)
 	- &nbsp;2.5. [Interpreting the data](#interpreting-the-data)
-		- &nbsp;2.5.1. [Analytics](#analytics)
-			- &nbsp;2.5.1.1. [Business Analytics](#business-analytics)
-			- &nbsp;2.5.1.2. [Types of analytic deliverables](#types-of-analytic-deliverables)
-			- &nbsp;2.5.1.3. [Data mining](#data-mining)
-			- &nbsp;2.5.1.4. [Text & web analytics](#text-web-analytics)
-			- &nbsp;2.5.1.5. [Data viz & visual analytics](#data-viz-visual-analytics)
-		- &nbsp;2.5.2. [Business Performance Management](#business-performance-management)
+		- &nbsp;2.5.1. [Analytic roles](#analytic-roles)
+			- &nbsp;2.5.1.1. [Business analysts](#business-analysts)
+				- &nbsp;2.5.1.1.1. [Data scientists](#data-scientists)
+		- &nbsp;2.5.2. [Analytic deliverables](#analytic-deliverables)
+			- &nbsp;2.5.2.1. [Business Performance Management (BPM)](#business-performance-management-bpm)
+			- &nbsp;2.5.2.2. [Data viz & visual analytics](#data-viz-visual-analytics)
+			- &nbsp;2.5.2.3. [Data mining](#data-mining)
+			- &nbsp;2.5.2.4. [Text & web analytics](#text-web-analytics)
 	- &nbsp;2.6. [Reporting](#reporting)
 		- &nbsp;2.6.1. [Types of reports](#types-of-reports)
+			- &nbsp;2.6.1.1. [Dashboards](#dashboards)
 		- &nbsp;2.6.2. [Best practices for reporting](#best-practices-for-reporting)
 			- &nbsp;2.6.2.1. [Data storytelling](#data-storytelling)
 - &nbsp;3. [Sources](#sources)
@@ -52,15 +53,7 @@ Business intelligence (BI) systems are a type of [management information system 
 
 <img src="../illos/bi-arch.jpg" width="600">
 
-### 1.1.1. BI versus data science
-
-(see [notes on data science](https://jtkovacs.github.io/refs/data-science.html) for an overview of data science skills)
-
-- DS involves more programming, is better at using computational power for analysis
-- DS may involve more sophisticated modeling, facilitating more predictive and prescriptive analytics
-- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow (for instance in training machine learning algorithms)
-
-### 1.1.2. Food system metaphor
+### 1.1.1. Food system metaphor
 
 ![](../illos/bi-food-metaphor.png)
 
@@ -290,9 +283,9 @@ To enable OLAP, data is stored in multidimensional cubes. These cubes can be eff
 
 ## 2.5. Interpreting the data
 
-### 2.5.1. Analytics
+### 2.5.1. Analytic roles
 
-#### 2.5.1.1. Business Analytics
+#### 2.5.1.1. Business analysts
 
 BA is a field, and its practitioners---business analysts---are perhaps the frontline users of data from BI systems; they play a major role in translating this data into action by relating it back to business processes and decisions.  [BABOK](https://en.wikipedia.org/wiki/A_Guide_to_the_Business_Analysis_Body_of_Knowledge) is the gold standard description of BA skills, but Brandenberg (n.d.) offers the following short version:
 
@@ -325,7 +318,17 @@ BA is a field, and its practitioners---business analysts---are perhaps the front
     - **Methodology** e.g. Agile, Six Sigma, BPMN, Rational Unified Process, etc.
     - **Industry/Domain**
 
-#### 2.5.1.2. Types of analytic deliverables
+##### 2.5.1.1.1. Data scientists
+
+(see [notes on data science](https://jtkovacs.github.io/refs/data-science.html) for an overview of data science skills)
+
+Versus BI and BA:
+
+- DS involves more programming, is better at using computational power for analysis
+- DS may involve more sophisticated modeling, facilitating more predictive and prescriptive analytics
+- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow (for instance in training machine learning algorithms)
+
+### 2.5.2. Analytic deliverables
 
 Per Sharda et al. (2014):
 
@@ -385,17 +388,14 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
-#### 2.5.1.3. Data mining
+#### 2.5.2.1. Business Performance Management (BPM)
 
-- versus statistics
-- https://jtkovacs.github.io/refs/machine-learning.html
-- https://jtkovacs.github.io/refs/statistics.html
+- management.html#strategy
+- https://jtkovacs.github.io/refs/process-improvement.html
+    - balanced score cards
+    - closed-loop BPM methodology
 
-#### 2.5.1.4. Text & web analytics
-
-- https://jtkovacs.github.io/refs/text-analytics.html
-
-#### 2.5.1.5. Data viz & visual analytics
+#### 2.5.2.2. Data viz & visual analytics
 
 Per Sharda et al. (2014, pp. 114-116), data visualization is increasingly important capability of BI software because it makes meaning in the data more accessible to more users; and 'visual analytics' is a new term meant to describe data or information visualization that goes beyond description to the realm of business analytics: "diagnostic (i.e. prescriptive and predictive)".
 
@@ -403,12 +403,15 @@ Per Sharda et al. (2014, pp. 114-116), data visualization is increasingly import
 - https://jtkovacs.github.io/refs/data-viz.html
 - data-viz.html#tableau
 
-### 2.5.2. Business Performance Management
+#### 2.5.2.3. Data mining
 
-- management.html#strategy
-- https://jtkovacs.github.io/refs/process-improvement.html
-    - balanced score cards
-    - closed-loop BPM methodology
+- versus statistics
+- https://jtkovacs.github.io/refs/machine-learning.html
+- https://jtkovacs.github.io/refs/statistics.html
+
+#### 2.5.2.4. Text & web analytics
+
+- https://jtkovacs.github.io/refs/text-analytics.html
 
 
 
@@ -441,6 +444,10 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 - **Metric management reports** that track performance versus ***SLAs*** (service-level agreements with external partners) or ***KPIs*** (key performance indicators for internal strategic and operational targets); often used with Six Sigma or Total Quality Management (TQM)
 - **Balanced scorecard-type reports** from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
 - **Dashboard-type reports:** arrange multiple performance indicators as a dashboard (see [notes on dashboard design\)](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
+
+#### 2.6.1.1. Dashboards
+
+See [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
 
 ### 2.6.2. Best practices for reporting
 

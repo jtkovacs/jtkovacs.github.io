@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; interfaces | just under 885 words | updated 12/25/2017
+   &gt; interfaces | just under 1236 words | updated 12/27/2017
   </p>
   <div class="TOC">
    <ul>
@@ -70,6 +70,20 @@
        <a href="#reporting-dashboards">
         Reporting dashboards
        </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#dashboard-development-process">
+          Dashboard development process
+         </a>
+        </li>
+        <li>
+         2.1.2.
+         <a href="#dashboard-design-tips">
+          Dashboard design tips
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        2.2.
@@ -313,82 +327,147 @@
    </a>
   </h2>
   <p>
-   A summary of best practies from Eckerson and Hammond (2011):
+   Per Eckerson (2006) cited in Sharda et al. (2014, p. 122), dashboards combine the following functionalty:
   </p>
   <ul>
    <li>
-    Focus on:
-    <ul>
-     <li>
-      User needs
-     </li>
-     <li>
-      Actions! not views
-      <ul>
-       <li>
-        Actions that require data
-       </li>
-       <li>
-        Actions that data could suggest
-       </li>
-      </ul>
-     </li>
-     <li>
-      Data quality
-     </li>
-    </ul>
+    <strong>
+     "Monitoring:
+    </strong>
+    Graphical, abstracted data to monitor key performance metrics.
    </li>
    <li>
-    Methods and workflow:
-    <ul>
-     <li>
-      Get user feedback on prototypes
-     </li>
-     <li>
-      Plan to interate continuously
-      <ul>
-       <li>
-        E.g., add more complexity as users become fluent
-       </li>
-      </ul>
-     </li>
-     <li>
-      Create and use templates (for designer-helpful efficiency and user-friendly consistency)
-     </li>
-    </ul>
+    <strong>
+     Analysis:
+    </strong>
+    Summarized dimensional data to analyze the root cause of problems.
    </li>
    <li>
-    Design principles:
+    <strong>
+     Management:
+    </strong>
+    Detailed operational data that identify what actions to take to resolve a problem."
+   </li>
+  </ul>
+  <p>
+   See
+   <a href="https://jtkovacs.github.io/refs/data-viz.html">
+    notes on data viz
+   </a>
+   and
+   <a href="https://jtkovacs.github.io/refs/performance-management.html">
+    notes on BPM
+   </a>
+   for discussion of the specific visualizations a dashboard may contain; this section provides a summary of best practies for overall dashboard design, drawing on Eckerson and Hammond (2011; "E&amp;H"), Sharda et al. (2011; "S"), and Novell (2009, "N") as summarized in Sharda et al. (2014):
+  </p>
+  <h3 id="dashboard-development-process">
+   <a>
+    2.1.1. Dashboard development process
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Create and use templates (for designer-helpful efficiency and user-friendly consistency) (E&amp;H)
+   </li>
+   <li>
+    Get user feedback on prototypes (E&amp;H)
+   </li>
+   <li>
+    Validate with a UX specialist (S)
+   </li>
+   <li>
+    Plan to interate continuously (E&amp;H)
     <ul>
      <li>
-      Group related elements, maybe using tabs
-     </li>
-     <li>
-      Balance visual sparsity and information density, both desirable
-     </li>
-     <li>
-      "Ideally, users should be able to view all pertinent data at a glance without clicking. Then, they should be able to view details of any top-level metric in three clicks or fewer."
-     </li>
-     <li>
-      Keep data, not decorative elements, at the forefront
+      E.g., add more complexity as users become fluent (E&amp;H)
      </li>
     </ul>
    </li>
   </ul>
-  <p>
-   Other sources:
-  </p>
+  <h3 id="dashboard-design-tips">
+   <a>
+    2.1.2. Dashboard design tips
+   </a>
+  </h3>
   <ul>
    <li>
-    capabilities
+    <strong>
+     Focus on
+    </strong>
+    <ul>
+     <li>
+      User needs (E&amp;H)
+     </li>
+     <li>
+      Actions! not views (E&amp;H)
+      <ul>
+       <li>
+        Actions that require data (E&amp;H)
+       </li>
+       <li>
+        Actions that data could suggest (E&amp;H)
+       </li>
+      </ul>
+     </li>
+     <li>
+      Data quality (E&amp;H; S)
+     </li>
+    </ul>
    </li>
    <li>
-    limitations
+    "Balance
+    <strong>
+     visual sparsity and information density";
+    </strong>
+    both are desirable (E&amp;H)
+    <ul>
+     <li>
+      "Ideally, users should be able to view all pertinent data at a glance without clicking. Then, they should be able to view details of any top-level metric in three clicks or fewer." (E&amp;H)
+     </li>
+     <li>
+      Group related elements, maybe using tabs (E&amp;H)
+     </li>
+     <li>
+      Keep data---not decorative elements---at the forefront (E&amp;H)
+     </li>
+    </ul>
    </li>
    <li>
-    <a href="http://uxmag.com/articles/bringing-relevant-content-into-your-designs">
-     http://uxmag.com/articles/bringing-relevant-content-into-your-designs
-    </a>
+    <strong>
+     Get from data to action:
+    </strong>
+    “use visual components (e.g., charts, performance bars, sparklines, gauges, meters, stoplights) to highlight, at a glance, the data and exceptions that require action” by “[combining] data from a variety of systems into a single, summarized, unified view of the business” that is “dynamic, real-world view with timely data refreshes” (N)
+   </li>
+   <li>
+    <strong>
+     Support analysis by providing multiple layers of information:
+    </strong>
+    “enable drill-down or drill-through to underlying data sources or reports [layered], providing more detail about the underlying comparative and evaluative context”---i.e., “the visual dashboard level, the static report level, and the self-service cube level” (N)
+   </li>
+   <li>
+    <strong>
+     Maximize usability:
+    </strong>
+    be “transparent to the user, meaning that they require minimal training and are extremely easy to use”; “require little, if any, customized coding to implement, deploy, and maintain” (N)
+   </li>
+   <li>
+    <strong>
+     Contextualize metrics
+    </strong>
+    by comparing them with "past values, forecasted values, targeted values, benchmark or average values, multiple instances of the same measure, and the values of other measures (e.g., revenues versus costs)" (S)
+   </li>
+   <li>
+    “[W]rap the dashboard metrics with
+    <strong>
+     contextual metadata”
+    </strong>
+    --- e.g. source, freshness/refresh schedule, filtering, errors and data quality --- and “enrich dashboard with business-user comments”, tagging, etc. (S)
+   </li>
+   <li>
+    <strong>
+     “[P]rioritize
+    </strong>
+    and rank alerts/exceptions streamed to the dashboard” (S)
    </li>
   </ul>
   <h2 id="forms">
@@ -656,6 +735,13 @@
    New York City, NY: Basic Books.
   </p>
   <p>
+   Sharda, R., Delen, D., &amp; Turban, E. (2014).
+   <em>
+    Business intelligence: A managerial perspective on analytics
+   </em>
+   (3rd ed.). New York City, NY: Pearson.
+  </p>
+  <p>
    Wroblewski, L. (n.d.). Best practices for form design [presentation slides].
   </p>
   <h2 id="references">
@@ -663,6 +749,14 @@
     3.2. References
    </a>
   </h2>
+  <ul>
+   <li>
+    <a href="http://uxmag.com/articles/bringing-relevant-content-into-your-designs">
+     "Bringing relevant content into your designs"
+    </a>
+    - Tools for generating dummy data when prototyping
+   </li>
+  </ul>
   <h2 id="read">
    <a>
     3.3. Read

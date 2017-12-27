@@ -41,30 +41,40 @@ Per Ambler, n.d. and my friend Clint:
 
 ## Reporting dashboards
 
-A summary of best practies from Eckerson and Hammond (2011):
+Per Eckerson (2006) cited in Sharda et al. (2014, p. 122), dashboards combine the following functionalty:
 
-- Focus on:
-    - User needs
-    - Actions! not views
-        - Actions that require data
-        - Actions that data could suggest
-    - Data quality
-- Methods and workflow:
-    - Get user feedback on prototypes
-    - Plan to interate continuously
-        - E.g., add more complexity as users become fluent
-    - Create and use templates (for designer-helpful efficiency and user-friendly consistency)
-- Design principles:
-    - Group related elements, maybe using tabs
-    - Balance visual sparsity and information density, both desirable
-    - "Ideally, users should be able to view all pertinent data at a glance without clicking. Then, they should be able to view details of any top-level metric in three clicks or fewer."
-    - Keep data, not decorative elements, at the forefront
+- **"Monitoring:** Graphical, abstracted data to monitor key performance metrics.
+- **Analysis:** Summarized dimensional data to analyze the root cause of problems.
+- **Management:** Detailed operational data that identify what actions to take to resolve a problem."
 
-Other sources:
+See [notes on data viz](https://jtkovacs.github.io/refs/data-viz.html) and [notes on BPM](https://jtkovacs.github.io/refs/performance-management.html) for discussion of the specific visualizations a dashboard may contain; this section provides a summary of best practies for overall dashboard design, drawing on Eckerson and Hammond (2011; "E&H"), Sharda et al. (2011; "S"), and Novell (2009, "N") as summarized in Sharda et al. (2014):
 
-- capabilities
-- limitations
-- [http://uxmag.com/articles/bringing-relevant-content-into-your-designs](http://uxmag.com/articles/bringing-relevant-content-into-your-designs)
+### Dashboard development process
+
+- Create and use templates (for designer-helpful efficiency and user-friendly consistency) (E&H)
+- Get user feedback on prototypes (E&H)
+- Validate with a UX specialist (S)
+- Plan to interate continuously (E&H)
+    - E.g., add more complexity as users become fluent (E&H)
+
+### Dashboard design tips
+
+- **Focus on**
+    - User needs (E&H)
+    - Actions! not views (E&H)
+        - Actions that require data (E&H)
+        - Actions that data could suggest (E&H)
+    - Data quality (E&H; S)
+- "Balance **visual sparsity and information density";** both are desirable (E&H)
+    - "Ideally, users should be able to view all pertinent data at a glance without clicking. Then, they should be able to view details of any top-level metric in three clicks or fewer." (E&H)
+    - Group related elements, maybe using tabs (E&H)
+    - Keep data---not decorative elements---at the forefront (E&H)
+- **Get from data to action:** “use visual components (e.g., charts, performance bars, sparklines, gauges, meters, stoplights) to highlight, at a glance, the data and exceptions that require action” by “[combining] data from a variety of systems into a single, summarized, unified view of the business” that is “dynamic, real-world view with timely data refreshes” (N)
+- **Support analysis by providing multiple layers of information:** “enable drill-down or drill-through to underlying data sources or reports [layered], providing more detail about the underlying comparative and evaluative context”---i.e., “the visual dashboard level, the static report level, and the self-service cube level” (N)
+- **Maximize usability:** be “transparent to the user, meaning that they require minimal training and are extremely easy to use”; “require little, if any, customized coding to implement, deploy, and maintain” (N)
+- **Contextualize metrics** by comparing them with "past values, forecasted values, targeted values, benchmark or average values, multiple instances of the same measure, and the values of other measures (e.g., revenues versus costs)" (S)
+- “[W]rap the dashboard metrics with **contextual metadata”** --- e.g. source, freshness/refresh schedule, filtering, errors and data quality --- and “enrich dashboard with business-user comments”, tagging, etc. (S)
+- **“[P]rioritize** and rank alerts/exceptions streamed to the dashboard” (S)
 
 
 
@@ -166,9 +176,13 @@ Eckerson, W., & Hammond, M. (2011). _Visual reporting and analysis._ TDWI Best P
 
 Norman, D. (2013). _The design of everyday things._ New York City, NY: Basic Books.
 
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
 Wroblewski, L. (n.d.). Best practices for form design [presentation slides].
 
 ## References
+
+- ["Bringing relevant content into your designs"](http://uxmag.com/articles/bringing-relevant-content-into-your-designs) - Tools for generating dummy data when prototyping
 
 ## Read
 

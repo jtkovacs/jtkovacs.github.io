@@ -14,14 +14,6 @@ Business intelligence (BI) systems are a type of [management information system 
 
 <img src="../illos/bi-arch.jpg" width="600">
 
-### BI versus data science
-
-(see [notes on data science](https://jtkovacs.github.io/refs/data-science.html) for an overview of data science skills)
-
-- DS involves more programming, is better at using computational power for analysis
-- DS may involve more sophisticated modeling, facilitating more predictive and prescriptive analytics
-- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow (for instance in training machine learning algorithms)
-
 ### Food system metaphor
 
 ![](../illos/bi-food-metaphor.png)
@@ -252,9 +244,9 @@ To enable OLAP, data is stored in multidimensional cubes. These cubes can be eff
 
 ## Interpreting the data
 
-### Analytics
+### Analytic roles
 
-#### Business Analytics
+#### Business analysts
 
 BA is a field, and its practitioners---business analysts---are perhaps the frontline users of data from BI systems; they play a major role in translating this data into action by relating it back to business processes and decisions.  [BABOK](https://en.wikipedia.org/wiki/A_Guide_to_the_Business_Analysis_Body_of_Knowledge) is the gold standard description of BA skills, but Brandenberg (n.d.) offers the following short version:
 
@@ -287,7 +279,17 @@ BA is a field, and its practitioners---business analysts---are perhaps the front
     - **Methodology** e.g. Agile, Six Sigma, BPMN, Rational Unified Process, etc.
     - **Industry/Domain**
 
-#### Types of analytic deliverables
+##### Data scientists
+
+(see [notes on data science](https://jtkovacs.github.io/refs/data-science.html) for an overview of data science skills)
+
+Versus BI and BA:
+
+- DS involves more programming, is better at using computational power for analysis
+- DS may involve more sophisticated modeling, facilitating more predictive and prescriptive analytics
+- Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow (for instance in training machine learning algorithms)
+
+### Analytic deliverables
 
 Per Sharda et al. (2014):
 
@@ -347,15 +349,12 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
-#### Data mining
+#### Business Performance Management (BPM)
 
-- versus statistics
-- https://jtkovacs.github.io/refs/machine-learning.html
-- https://jtkovacs.github.io/refs/statistics.html
-
-#### Text & web analytics
-
-- https://jtkovacs.github.io/refs/text-analytics.html
+- management.html#strategy
+- https://jtkovacs.github.io/refs/process-improvement.html
+    - balanced score cards
+    - closed-loop BPM methodology
 
 #### Data viz & visual analytics
 
@@ -365,12 +364,15 @@ Per Sharda et al. (2014, pp. 114-116), data visualization is increasingly import
 - https://jtkovacs.github.io/refs/data-viz.html
 - data-viz.html#tableau
 
-### Business Performance Management
+#### Data mining
 
-- management.html#strategy
-- https://jtkovacs.github.io/refs/process-improvement.html
-    - balanced score cards
-    - closed-loop BPM methodology
+- versus statistics
+- https://jtkovacs.github.io/refs/machine-learning.html
+- https://jtkovacs.github.io/refs/statistics.html
+
+#### Text & web analytics
+
+- https://jtkovacs.github.io/refs/text-analytics.html
 
 
 
@@ -403,6 +405,10 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 - **Metric management reports** that track performance versus ***SLAs*** (service-level agreements with external partners) or ***KPIs*** (key performance indicators for internal strategic and operational targets); often used with Six Sigma or Total Quality Management (TQM)
 - **Balanced scorecard-type reports** from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
 - **Dashboard-type reports:** arrange multiple performance indicators as a dashboard (see [notes on dashboard design\)](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
+
+#### Dashboards
+
+See [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
 
 ### Best practices for reporting
 

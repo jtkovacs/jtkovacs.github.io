@@ -2,9 +2,9 @@
 
 # What is performance management?
 
-Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), and strategic enterprise management (SEM). Performance management relates to the core managerial activity of [strategy](https://jtkovacs.github.io/refs/management.html#strategy) in the following way (called the "closed-loop BPM cycle"; Sharda et al., 2014):
+Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), strategic enterprise management (SEM), and (more narrowly) value chain management. Performance management relates to the core managerial activity of [strategy](https://jtkovacs.github.io/refs/management.html#strategy) in the following way (called the "closed-loop BPM cycle"; Sharda et al., 2014):
 
-<table>
+<table style="font-size:7px;">
     <tr>
         <th>Strategize</th>
         <th>Plan</th>

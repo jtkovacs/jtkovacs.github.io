@@ -1,11 +1,11 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> interfaces | just under 1236 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [Prototyping](#prototyping)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> interfaces | just under 1242 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [Prototyping](#prototyping)
 	- &nbsp;1.1. [Types of interface prototypes](#types-of-interface-prototypes)
 		- &nbsp;1.1.1. [Sketches](#sketches)
 		- &nbsp;1.1.2. [Mock-ups](#mock-ups)
 		- &nbsp;1.1.3. [Wireframes](#wireframes)
 	- &nbsp;1.2. [Interface prototyping tools](#interface-prototyping-tools)
 - &nbsp;2. [Types of interfaces](#types-of-interfaces)
-	- &nbsp;2.1. [Reporting dashboards](#reporting-dashboards)
+	- &nbsp;2.1. [Dashboards](#dashboards)
 		- &nbsp;2.1.1. [Dashboard development process](#dashboard-development-process)
 		- &nbsp;2.1.2. [Dashboard design tips](#dashboard-design-tips)
 	- &nbsp;2.2. [Forms](#forms)
@@ -68,9 +68,9 @@ Per Ambler, n.d. and my friend Clint:
 
 # 2. Types of interfaces
 
-## 2.1. Reporting dashboards
+## 2.1. Dashboards
 
-Per Eckerson (2006) cited in Sharda et al. (2014, p. 122), dashboards combine the following functionalty:
+Dashboards can be "operational" or "tactical" (strategic). Per Eckerson (2006) cited in Sharda et al. (2014, p. 122), they combine the following functionalty:
 
 - **"Monitoring:** Graphical, abstracted data to monitor key performance metrics.
 - **Analysis:** Summarized dimensional data to analyze the root cause of problems.

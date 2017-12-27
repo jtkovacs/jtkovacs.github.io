@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3576 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3572 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
 		- &nbsp;1.1.1. [Food system metaphor](#food-system-metaphor)
 	- &nbsp;1.2. [Does BI have value?](#does-bi-have-value)
@@ -22,7 +22,7 @@
 			- &nbsp;2.5.1.1. [Business analysts](#business-analysts)
 			- &nbsp;2.5.1.2. [Data scientists](#data-scientists)
 		- &nbsp;2.5.2. [Analytic deliverables](#analytic-deliverables)
-			- &nbsp;2.5.2.1. [Business Performance Management (BPM)](#business-performance-management-bpm)
+			- &nbsp;2.5.2.1. [Performance management](#performance-management)
 			- &nbsp;2.5.2.2. [Data viz & visual analytics](#data-viz-visual-analytics)
 			- &nbsp;2.5.2.3. [Data mining](#data-mining)
 			- &nbsp;2.5.2.4. [Text & web analytics](#text-web-analytics)
@@ -387,9 +387,9 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
-#### 2.5.2.1. Business Performance Management (BPM)
+#### 2.5.2.1. Performance management
 
-BPM entails measuring and improving _actual performance_ versus KPIs and goals that have been established in correspondance with [managerial strategy](https://jtkovacs.github.io/refs/management.html#strategy) or local appetite; see [notes on performance management](https://jtkovacs.github.io/refs/performance-management.html) for further discussion. BPM intersects with BI because it is one of the primary intended uses of BI data---to understand and improve operations. The content of BI dashboards may be stongly determined by performance management goals and techniques.
+Business performance management (BPM) entails measuring and improving _actual performance_ versus KPIs and goals that have been established in correspondance with [managerial strategy](https://jtkovacs.github.io/refs/management.html#strategy) or local appetite; see [notes on performance management](https://jtkovacs.github.io/refs/performance-management.html) for further discussion. BPM intersects with BI because it is one of the primary intended uses of BI data---to understand and improve operations. The content of BI dashboards may be stongly determined by performance management goals and techniques.
 
 #### 2.5.2.2. Data viz & visual analytics
 
@@ -439,11 +439,11 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 
 - **Metric management reports** that track performance versus ***SLAs*** (service-level agreements with external partners) or ***KPIs*** (key performance indicators for internal strategic and operational targets); often used with Six Sigma or Total Quality Management (TQM)
 - **Balanced scorecard-type reports** from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
-- **Dashboard-type reports:** arrange multiple performance indicators as a dashboard (see [notes on dashboard design\)](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
+- **Dashboard-type reports:** arrange multiple performance indicators as a dashboard
 
 #### 2.6.1.1. Dashboards
 
-See [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
+See [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#dashboards)
 
 ### 2.6.2. Best practices for reporting
 

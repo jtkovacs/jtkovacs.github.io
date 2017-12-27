@@ -2,16 +2,53 @@
 
 # What is performance management?
 
-Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), and strategic enterprise management (SEM).
+Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), and strategic enterprise management (SEM). Performance management relates to the core managerial activity of [strategy](https://jtkovacs.github.io/refs/management.html#strategy) in the following way (called the "closed-loop BPM cycle"; Sharda et al., 2014):
 
-## Closed-loop BPM cycle
+<table>
+    <tr>
+        <th>Strategize</th>
+        <th>Plan</th>
+        <th>Monitor/Analyze</th>
+        <th>Act/Adjust</th>
+    </tr>
+    <tr>
+        <td>Where do we want to go? </td>
+        <td>How do we get there?</td>
+        <td>How are we doing?</td>
+        <td>What do we need to do differently?</td>
+    </tr>
+    <tr>
+        <td style="text-align:left;"><ul>
+            <li>Mission</li>
+            <li>Values</li>
+            <li>Goals</li>
+            <li>Objectives</li>
+            <li>Incentives</li>
+            <li>Strategy maps</li>
+        </ul></td>
+        <td style="text-align:left;"><ul>
+            <li>Budgets</li>
+            <li>Plans</li>
+            <li>Forecasts</li>
+            <li>Models</li>
+            <li>Initiatives</li>
+            <li>Targets</li>
+        </ul></td>
+        <td style="text-align:left;"><ul>
+            <li>Performance dashboards</li>
+            <li>Reports</li>
+            <li>Analytic tooles</li>
+        </ul></td>
+        <td style="text-align:left;"><ul>
+            <li>Interpret</li>
+            <li>Collaborate</li>
+            <li>Assess</li>
+            <li>Decide</li>
+            <li>Track</li>
+        </ul></td>
+    </tr>
+</table>
 
-Per Sharda et al. (2014):
-
-| Strategize | Plan | Monitor/Analyze | Act/Adjust |
-| --- | --- | --- | --- |
-| Where do we want to go? | How do we get there? | How are we doing? | What do we need to do differently? |
-| Mission<br>Values<br>Goals<br>Objectives<br>Incentives<br>Strategy maps | Budgets<br>Plans<br>Forecasts<br>Models<br>Initiatives<br>Targets | Performance dashboards<br>Reports<br>Analytic tools | Interpret<br>Collaborate<br>Assess<br>Decide<br>Track |
 
 ## Performance measurement systems
 
@@ -29,16 +66,40 @@ Sharda et al. (2014, p. 131) cite Eckerson (2009) on the properties of KPIs:
 KPIs can be classified (Sharda et al., 2014, p. 131):
 
 - **Outcomes** AKA lagging KPIs - show results of past activities
-- **Drivers** AKA leading indicators AKA value drivers - measure activities that have a significant impact on important outcomes
-    - **Operational KPIs**
-        - **Customer performance:** customer satisfaction, speed and accuracy of issue resolution, customer retention
-        - **Service performance:** service-call resolution rates, service renewal rates, service level agreements, delivery performance, return rates
-        - **Sales operations:** new pipeline accounts, sales meetings secured, conversion of inquiries to leads, average call closure time
-        - **Sales plan/forecast:** price-to-purchase accuracy, purchase order-to-fulfillment ratio, quantity earned, forecast-to-plan ratio, total closed contracts
+- **Drivers** AKA leading indicators AKA value drivers AKA operational KPIs - measure activities that have a significant impact on important outcomes
+    - **Customer performance:** customer satisfaction, speed and accuracy of issue resolution, customer retention
+    - **Service performance:** service-call resolution rates, service renewal rates, service level agreements, delivery performance, return rates
+    - **Sales operations:** new pipeline accounts, sales meetings secured, conversion of inquiries to leads, average call closure time
+    - **Sales plan/forecast:** price-to-purchase accuracy, purchase order-to-fulfillment ratio, quantity earned, forecast-to-plan ratio, total closed contracts
 
 ## Performance management systems
 
-### Balanced scorecard
+### Balanced scorecard (BSC)
+
+Per Sharda et al. (2014), the balanced scorecard approach to performance management was developed in 1992 by Kaplan and Norton. They quote: "Central to the BSC methodology is a holistic vision of a measurement system tied to the strategic direction of the organization. It is based on a four-perspective view of the [business] world" (p. 132), in which the "nonfinancial objectives [perspectives] form a simple causal chain [or ***strategy map]*** with **'learning and growth'** driving **'internal business process'** change, which produces **'customer'** outcomes that are responsible for reaching a company's **financial** objectives" (p. 134). 'Balance' is sought in multiple dimensions:
+
+- Financial and nonfinancial
+- Leading and lagging
+- Internal and external
+- Quantitative and qualitative
+- Short term and long term
+
+#### Customer perspective
+
+"[C]ustomer focus and customer satisfaction ... [t]hese are leading indicators ... [and] in developing metrics for satisfaction, customers should be analyzed in terms of kinds of customers and the kinds of processes for which we are providing a product or service to those customer groups" (Sharda et al., 2014, p. 133).
+
+#### Financial perspective
+
+The financial perspective does not need much advocacy or clarification. It is the domain of [corporate finance and accounting;](https://jtkovacs.github.io/refs/fin-acctg.html) is subject to regulation and shareholder oversight; and includes many well-established metrics---although, Sharda et al. suggest---"there is perhaps a need to include additional financial-related data, such as risk assessment and cost-benefit data, in this category" (2014, p. 133).
+
+#### Learning and growth perspective
+
+This "includes employee training, knowledge management, and corporate cultural characteristics related to both individual and corporate-level improvement ... it also includes things like mentors and tutors within the organization, as well as that ease of communication among workers that allows them to readily get help on a problem when it is needed" (Sharda et al., 2014, p. 133).
+
+#### Internal business process perspective
+
+Measuring and managing "processes the organization must excel at in order to satisfy its shareholders and customers" (Sharda et al., 2014, p. 134).
+
 
 ### Six Sigma
 

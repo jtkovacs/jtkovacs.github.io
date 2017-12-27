@@ -39,9 +39,9 @@ Per Ambler, n.d. and my friend Clint:
 
 # Types of interfaces
 
-## Reporting dashboards
+## Dashboards
 
-Per Eckerson (2006) cited in Sharda et al. (2014, p. 122), dashboards combine the following functionalty:
+Dashboards can be "operational" or "tactical" (strategic). Per Eckerson (2006) cited in Sharda et al. (2014, p. 122), they combine the following functionalty:
 
 - **"Monitoring:** Graphical, abstracted data to monitor key performance metrics.
 - **Analysis:** Summarized dimensional data to analyze the root cause of problems.

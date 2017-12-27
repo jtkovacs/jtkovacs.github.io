@@ -1,25 +1,37 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 678 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [Overview of a generic organization](#overview-of-a-generic-organization)
-- &nbsp;2. [What skills does a manager need?](#what-skills-does-a-manager-need)
-	- &nbsp;2.1. [Reading the business environment](#reading-the-business-environment)
-		- &nbsp;2.1.1. [The role of business intelligence and research](#the-role-of-business-intelligence-and-research)
-		- &nbsp;2.1.2. [What trends matter?](#what-trends-matter)
-	- &nbsp;2.2. [Strategic thinking and problem-solving](#strategic-thinking-and-problem-solving)
-			- &nbsp;2.2.1. [Design thinking](#design-thinking)
-			- &nbsp;2.2.2. [Systems thinking](#systems-thinking)
-		- &nbsp;2.2.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
-		- &nbsp;2.2.2. [What are frameworks for a strategic analysis?](#what-are-frameworks-for-a-strategic-analysis)
-- &nbsp;3. [Sources](#sources)
-	- &nbsp;3.1. [Cited](#cited)
-	- &nbsp;3.2. [References](#references)
-	- &nbsp;3.3. [Read](#read)
-	- &nbsp;3.4. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 685 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [Overview of a generic organization](#overview-of-a-generic-organization)
+- &nbsp;2. [History of management](#history-of-management)
+- &nbsp;3. [What skills does a manager need?](#what-skills-does-a-manager-need)
+	- &nbsp;3.1. [Leadership](#leadership)
+	- &nbsp;3.2. [Strategy](#strategy)
+		- &nbsp;3.2.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
+		- &nbsp;3.2.2. [Strategic analysis](#strategic-analysis)
+			- &nbsp;3.2.2.1. [Inputs to strategic decision-making](#inputs-to-strategic-decision-making)
+			- &nbsp;3.2.2.2. [What trends matter?](#what-trends-matter)
+		- &nbsp;3.2.3. [Strategic thinking](#strategic-thinking)
+			- &nbsp;3.2.3.1. [Design thinking](#design-thinking)
+			- &nbsp;3.2.3.2. [Systems thinking](#systems-thinking)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [References](#references)
+	- &nbsp;4.3. [Read](#read)
+	- &nbsp;4.4. [Unread](#unread)
 </div>
 
 # 1. Overview of a generic organization
 
 
 
-# 2. What skills does a manager need?
+
+
+# 2. History of management
+
+See Stewart, 2009.
+
+
+
+
+
+# 3. What skills does a manager need?
 
 - Leadership
 - Strategic thinking
@@ -29,7 +41,25 @@
 - [Performance management/process improvement](https://jtkovacs.github.io/refs/performance-management.html)
 
 
-## 2.1. Reading the business environment
+
+## 3.1. Leadership
+
+- [Cross-cultural leadership syllabus](https://webcache.googleusercontent.com/search?q=cache:245H1s8ZQigJ:https://canvas.uw.edu/courses/882562/pages/readings+&cd=2&hl=en&ct=clnk&gl=us)
+- [Leadership Practices Inventory](http://www.leadershipchallenge.com/professionals-section-lpi.aspx)
+
+
+
+
+
+## 3.2. Strategy
+
+### 3.2.1. What generic strategies can companies pursue?
+
+### 3.2.2. Strategic analysis
+
+- PORTER 5
+- PESTEL
+- SWOT
 
 Per Sharda et al. (2014, p. 7):
 
@@ -84,42 +114,37 @@ Per Sharda et al. (2014, p. 7):
 </tr>
 <table>
 
-### 2.1.1. The role of business intelligence and research
+#### 3.2.2.1. Inputs to strategic decision-making
 
 - Business research
 - Market research
 - BI
 - Data science
 
-### 2.1.2. What trends matter?
+#### 3.2.2.2. What trends matter?
 
 - **Technology:** Communication, automation, Big Data
 - **Labor:**  Overwork, precariousness, disemployment, loss or violation of labor laws
 - **Political:** Inequality, polarization
 
 
-## 2.2. Strategic thinking and problem-solving
+### 3.2.3. Strategic thinking
 
-#### 2.2.1. Design thinking
+#### 3.2.3.1. Design thinking
 
 See design.html#design-thinking
 
-#### 2.2.2. Systems thinking
-
-### 2.2.1. What generic strategies can companies pursue?
-
-### 2.2.2. What are frameworks for a strategic analysis?
-
-PESTEL, PORTER 5, SWOT.
+#### 3.2.3.2. Systems thinking
 
 
 
 
 
 
-# 3. Sources
 
-## 3.1. Cited
+# 4. Sources
+
+## 4.1. Cited
 
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
 
@@ -129,7 +154,7 @@ Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-## 3.2. References
+## 4.2. References
 
 - [http://www.nwlink.com/~donclark/contents.html:](http://www.nwlink.com/~donclark/contents.html) "your window to learning, training, leadership, design and all matters related to improving human performance"
 - [Mike Bradley & Tiff Zhang's startup generator](http://tiffzhang.com/startup/)
@@ -140,9 +165,9 @@ Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial
 - [CBBP's "policy futures" research](http://www.cbpp.org/about/special-projects/policy-futures)
 - [SLU library guide to market research](http://libguides.slu.edu/c.php?g=185604&amp;p=1226028)
 
-## 3.3. Read
+## 4.3. Read
 
-## 3.4. Unread
+## 4.4. Unread
 
 - Stewart, M. (2009). _The management myth: Why the experts keep getting it wrong._ New York City, NY: W. W. Norton.
 - [Paul Graham's "Do things that don't scale"](http://paulgraham.com/ds.html)

@@ -348,9 +348,9 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
-#### Business Performance Management (BPM)
+#### Performance management
 
-BPM entails measuring and improving _actual performance_ versus KPIs and goals that have been established in correspondance with [managerial strategy](https://jtkovacs.github.io/refs/management.html#strategy) or local appetite; see [notes on performance management](https://jtkovacs.github.io/refs/performance-management.html) for further discussion. BPM intersects with BI because it is one of the primary intended uses of BI data---to understand and improve operations. The content of BI dashboards may be stongly determined by performance management goals and techniques.
+Business performance management (BPM) entails measuring and improving _actual performance_ versus KPIs and goals that have been established in correspondance with [managerial strategy](https://jtkovacs.github.io/refs/management.html#strategy) or local appetite; see [notes on performance management](https://jtkovacs.github.io/refs/performance-management.html) for further discussion. BPM intersects with BI because it is one of the primary intended uses of BI data---to understand and improve operations. The content of BI dashboards may be stongly determined by performance management goals and techniques.
 
 #### Data viz & visual analytics
 
@@ -400,11 +400,11 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 
 - **Metric management reports** that track performance versus ***SLAs*** (service-level agreements with external partners) or ***KPIs*** (key performance indicators for internal strategic and operational targets); often used with Six Sigma or Total Quality Management (TQM)
 - **Balanced scorecard-type reports** from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
-- **Dashboard-type reports:** arrange multiple performance indicators as a dashboard (see [notes on dashboard design\)](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
+- **Dashboard-type reports:** arrange multiple performance indicators as a dashboard
 
 #### Dashboards
 
-See [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#reporting-dashboards)
+See [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#dashboards)
 
 ### Best practices for reporting
 

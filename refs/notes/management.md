@@ -3,6 +3,16 @@
 
 
 
+
+
+# History of management
+
+See Stewart, 2009.
+
+
+
+
+
 # What skills does a manager need?
 
 - Leadership
@@ -13,7 +23,25 @@
 - [Performance management/process improvement](https://jtkovacs.github.io/refs/performance-management.html)
 
 
-## Reading the business environment
+
+## Leadership
+
+- [Cross-cultural leadership syllabus](https://webcache.googleusercontent.com/search?q=cache:245H1s8ZQigJ:https://canvas.uw.edu/courses/882562/pages/readings+&cd=2&hl=en&ct=clnk&gl=us)
+- [Leadership Practices Inventory](http://www.leadershipchallenge.com/professionals-section-lpi.aspx)
+
+
+
+
+
+## Strategy
+
+### What generic strategies can companies pursue?
+
+### Strategic analysis
+
+- PORTER 5
+- PESTEL
+- SWOT
 
 Per Sharda et al. (2014, p. 7):
 
@@ -68,21 +96,21 @@ Per Sharda et al. (2014, p. 7):
 </tr>
 <table>
 
-### The role of business intelligence and research
+#### Inputs to strategic decision-making
 
 - Business research
 - Market research
 - BI
 - Data science
 
-### What trends matter?
+#### What trends matter?
 
 - **Technology:** Communication, automation, Big Data
 - **Labor:**  Overwork, precariousness, disemployment, loss or violation of labor laws
 - **Political:** Inequality, polarization
 
 
-## Strategic thinking and problem-solving
+### Strategic thinking
 
 #### Design thinking
 
@@ -90,11 +118,6 @@ See design.html#design-thinking
 
 #### Systems thinking
 
-### What generic strategies can companies pursue?
-
-### What are frameworks for a strategic analysis?
-
-PESTEL, PORTER 5, SWOT.
 
 
 

@@ -1,23 +1,26 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> performance management | just under 2920 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is performance management?](#what-is-performance-management)
-	- &nbsp;1.1. [Closed-loop BPM cycle](#closed-loop-bpm-cycle)
-	- &nbsp;1.2. [Performance measurement systems](#performance-measurement-systems)
-		- &nbsp;1.2.1. [Key performance indicators (KPIs)](#key-performance-indicators-kpis)
-	- &nbsp;1.3. [Performance management systems](#performance-management-systems)
-		- &nbsp;1.3.1. [Balanced scorecard](#balanced-scorecard)
-		- &nbsp;1.3.2. [Six Sigma](#six-sigma)
-		- &nbsp;1.3.3. [Lean](#lean)
-	- &nbsp;1.4. [Tools by degree of change sought](#tools-by-degree-of-change-sought)
-		- &nbsp;1.4.1. [Business process automation (BPA)](#business-process-automation-bpa)
-			- &nbsp;1.4.1.1. [Problem analysis](#problem-analysis)
-			- &nbsp;1.4.1.2. [Root cause analysis](#root-cause-analysis)
-		- &nbsp;1.4.2. [Business process improvement (BPI)](#business-process-improvement-bpi)
-			- &nbsp;1.4.2.1. [Duration analysis](#duration-analysis)
-			- &nbsp;1.4.2.2. [Activity-based costing](#activity-based-costing)
-			- &nbsp;1.4.2.3. [Informal bench-marking](#informal-bench-marking)
-		- &nbsp;1.4.3. [Business process reengineering (BPR)](#business-process-reengineering-bpr)
-			- &nbsp;1.4.3.1. [Outcome analysis](#outcome-analysis)
-			- &nbsp;1.4.3.2. [Technology analysis](#technology-analysis)
-			- &nbsp;1.4.3.3. [Activity elimination](#activity-elimination)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> performance management | just under 3275 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is performance management?](#what-is-performance-management)
+	- &nbsp;1.1. [Performance measurement systems](#performance-measurement-systems)
+		- &nbsp;1.1.1. [Key performance indicators (KPIs)](#key-performance-indicators-kpis)
+	- &nbsp;1.2. [Performance management systems](#performance-management-systems)
+		- &nbsp;1.2.1. [Balanced scorecard (BSC)](#balanced-scorecard-bsc)
+			- &nbsp;1.2.1.1. [Customer perspective](#customer-perspective)
+			- &nbsp;1.2.1.2. [Financial perspective](#financial-perspective)
+			- &nbsp;1.2.1.3. [Learning and growth perspective](#learning-and-growth-perspective)
+			- &nbsp;1.2.1.4. [Internal business process perspective](#internal-business-process-perspective)
+		- &nbsp;1.2.2. [Six Sigma](#six-sigma)
+		- &nbsp;1.2.3. [Lean](#lean)
+	- &nbsp;1.3. [Tools by degree of change sought](#tools-by-degree-of-change-sought)
+		- &nbsp;1.3.1. [Business process automation (BPA)](#business-process-automation-bpa)
+			- &nbsp;1.3.1.1. [Problem analysis](#problem-analysis)
+			- &nbsp;1.3.1.2. [Root cause analysis](#root-cause-analysis)
+		- &nbsp;1.3.2. [Business process improvement (BPI)](#business-process-improvement-bpi)
+			- &nbsp;1.3.2.1. [Duration analysis](#duration-analysis)
+			- &nbsp;1.3.2.2. [Activity-based costing](#activity-based-costing)
+			- &nbsp;1.3.2.3. [Informal bench-marking](#informal-bench-marking)
+		- &nbsp;1.3.3. [Business process reengineering (BPR)](#business-process-reengineering-bpr)
+			- &nbsp;1.3.3.1. [Outcome analysis](#outcome-analysis)
+			- &nbsp;1.3.3.2. [Technology analysis](#technology-analysis)
+			- &nbsp;1.3.3.3. [Activity elimination](#activity-elimination)
 - &nbsp;2. [Continuous Process Improvement](#continuous-process-improvement)
 	- &nbsp;2.1. [Depict system](#depict-system)
 		- &nbsp;2.1.1. [Value stream mapping](#value-stream-mapping)
@@ -63,20 +66,57 @@
 
 # 1. What is performance management?
 
-Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), and strategic enterprise management (SEM).
+Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), and strategic enterprise management (SEM). Performance management relates to the core managerial activity of [strategy](https://jtkovacs.github.io/refs/management.html#strategy) in the following way (called the "closed-loop BPM cycle"; Sharda et al., 2014):
 
-## 1.1. Closed-loop BPM cycle
+<table>
+    <tr>
+        <th>Strategize</th>
+        <th>Plan</th>
+        <th>Monitor/Analyze</th>
+        <th>Act/Adjust</th>
+    </tr>
+    <tr>
+        <td>Where do we want to go? </td>
+        <td>How do we get there?</td>
+        <td>How are we doing?</td>
+        <td>What do we need to do differently?</td>
+    </tr>
+    <tr>
+        <td style="text-align:left;"><ul>
+            <li>Mission</li>
+            <li>Values</li>
+            <li>Goals</li>
+            <li>Objectives</li>
+            <li>Incentives</li>
+            <li>Strategy maps</li>
+        </ul></td>
+        <td style="text-align:left;"><ul>
+            <li>Budgets</li>
+            <li>Plans</li>
+            <li>Forecasts</li>
+            <li>Models</li>
+            <li>Initiatives</li>
+            <li>Targets</li>
+        </ul></td>
+        <td style="text-align:left;"><ul>
+            <li>Performance dashboards</li>
+            <li>Reports</li>
+            <li>Analytic tooles</li>
+        </ul></td>
+        <td style="text-align:left;"><ul>
+            <li>Interpret</li>
+            <li>Collaborate</li>
+            <li>Assess</li>
+            <li>Decide</li>
+            <li>Track</li>
+        </ul></td>
+    </tr>
+</table>
 
-Per Sharda et al. (2014):
 
-| Strategize | Plan | Monitor/Analyze | Act/Adjust |
-| --- | --- | --- | --- |
-| Where do we want to go? | How do we get there? | How are we doing? | What do we need to do differently? |
-| Mission<br>Values<br>Goals<br>Objectives<br>Incentives<br>Strategy maps | Budgets<br>Plans<br>Forecasts<br>Models<br>Initiatives<br>Targets | Performance dashboards<br>Reports<br>Analytic tools | Interpret<br>Collaborate<br>Assess<br>Decide<br>Track |
+## 1.1. Performance measurement systems
 
-## 1.2. Performance measurement systems
-
-### 1.2.1. Key performance indicators (KPIs)
+### 1.1.1. Key performance indicators (KPIs)
 
 Sharda et al. (2014, p. 131) cite Eckerson (2009) on the properties of KPIs:
 
@@ -90,24 +130,48 @@ Sharda et al. (2014, p. 131) cite Eckerson (2009) on the properties of KPIs:
 KPIs can be classified (Sharda et al., 2014, p. 131):
 
 - **Outcomes** AKA lagging KPIs - show results of past activities
-- **Drivers** AKA leading indicators AKA value drivers - measure activities that have a significant impact on important outcomes
-    - **Operational KPIs**
-        - **Customer performance:** customer satisfaction, speed and accuracy of issue resolution, customer retention
-        - **Service performance:** service-call resolution rates, service renewal rates, service level agreements, delivery performance, return rates
-        - **Sales operations:** new pipeline accounts, sales meetings secured, conversion of inquiries to leads, average call closure time
-        - **Sales plan/forecast:** price-to-purchase accuracy, purchase order-to-fulfillment ratio, quantity earned, forecast-to-plan ratio, total closed contracts
+- **Drivers** AKA leading indicators AKA value drivers AKA operational KPIs - measure activities that have a significant impact on important outcomes
+    - **Customer performance:** customer satisfaction, speed and accuracy of issue resolution, customer retention
+    - **Service performance:** service-call resolution rates, service renewal rates, service level agreements, delivery performance, return rates
+    - **Sales operations:** new pipeline accounts, sales meetings secured, conversion of inquiries to leads, average call closure time
+    - **Sales plan/forecast:** price-to-purchase accuracy, purchase order-to-fulfillment ratio, quantity earned, forecast-to-plan ratio, total closed contracts
 
-## 1.3. Performance management systems
+## 1.2. Performance management systems
 
-### 1.3.1. Balanced scorecard
+### 1.2.1. Balanced scorecard (BSC)
 
-### 1.3.2. Six Sigma
+Per Sharda et al. (2014), the balanced scorecard approach to performance management was developed in 1992 by Kaplan and Norton. They quote: "Central to the BSC methodology is a holistic vision of a measurement system tied to the strategic direction of the organization. It is based on a four-perspective view of the [business] world" (p. 132), in which the "nonfinancial objectives [perspectives] form a simple causal chain [or ***strategy map]*** with **'learning and growth'** driving **'internal business process'** change, which produces **'customer'** outcomes that are responsible for reaching a company's **financial** objectives" (p. 134). 'Balance' is sought in multiple dimensions:
 
-### 1.3.3. Lean
+- Financial and nonfinancial
+- Leading and lagging
+- Internal and external
+- Quantitative and qualitative
+- Short term and long term
+
+#### 1.2.1.1. Customer perspective
+
+"[C]ustomer focus and customer satisfaction ... [t]hese are leading indicators ... [and] in developing metrics for satisfaction, customers should be analyzed in terms of kinds of customers and the kinds of processes for which we are providing a product or service to those customer groups" (Sharda et al., 2014, p. 133).
+
+#### 1.2.1.2. Financial perspective
+
+The financial perspective does not need much advocacy or clarification. It is the domain of [corporate finance and accounting;](https://jtkovacs.github.io/refs/fin-acctg.html) is subject to regulation and shareholder oversight; and includes many well-established metrics---although, Sharda et al. suggest---"there is perhaps a need to include additional financial-related data, such as risk assessment and cost-benefit data, in this category" (2014, p. 133).
+
+#### 1.2.1.3. Learning and growth perspective
+
+This "includes employee training, knowledge management, and corporate cultural characteristics related to both individual and corporate-level improvement ... it also includes things like mentors and tutors within the organization, as well as that ease of communication among workers that allows them to readily get help on a problem when it is needed" (Sharda et al., 2014, p. 133).
+
+#### 1.2.1.4. Internal business process perspective
+
+Measuring and managing "processes the organization must excel at in order to satisfy its shareholders and customers" (Sharda et al., 2014, p. 134).
+
+
+### 1.2.2. Six Sigma
+
+### 1.2.3. Lean
 
 
 
-## 1.4. Tools by degree of change sought
+## 1.3. Tools by degree of change sought
 
 Per Dennis et al. (2012),
 
@@ -118,35 +182,35 @@ Per Dennis et al. (2012),
 | **Breadth of analysis** | Narrow | Narrow-moderate | Very broad |
 | **Risk** | Low-moderate | Low-moderate | Very high |
 
-### 1.4.1. Business process automation (BPA)
+### 1.3.1. Business process automation (BPA)
 
 BPA is focused on making current processes more efficient through automation; it requires thorough analysis of the current system.
 
-#### 1.4.1.1. Problem analysis
+#### 1.3.1.1. Problem analysis
 
 This entails asking current system users about problems they face or features they desire. Problems identified with this technique are often related to UI and their resolution produces little if any business value.
 
-#### 1.4.1.2. Root cause analysis
+#### 1.3.1.2. Root cause analysis
 
 This entails asking current system users to explore the root causes of problems they've identified (since these problems may only be symptoms). Root causes may be uncovered by asking "Why?" five times; causal relationships may be represented as a hierarchy, web, or fishbone/Ishikawa diagram.
 
-### 1.4.2. Business process improvement (BPI)
+### 1.3.2. Business process improvement (BPI)
 
 BPI goes beyond increased efficiency to the realm of increased effectiveness, for instance taking advantage of new opportunities and technologies.
 
-#### 1.4.2.1. Duration analysis
+#### 1.3.2.1. Duration analysis
 
 First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through **integration** (fewer people involved in doing the work across its lifecycle) or **parallelization** (steps being done concurrently).
 
-#### 1.4.2.2. Activity-based costing
+#### 1.3.2.2. Activity-based costing
 
 Steps in a process are costed, and improvement efforts are focused on the costliest step.
 
-#### 1.4.2.3. Informal bench-marking
+#### 1.3.2.3. Informal bench-marking
 
 Examine competitors to identify performance targets and process improvements.
 
-### 1.4.3. Business process reengineering (BPR)
+### 1.3.3. Business process reengineering (BPR)
 
 BPR is a radical upending of current business processes and systems, so spends little time analyzing them. Per Rigby (2015; also gives recommendations for further reading), a BPR effort focuses on:
 
@@ -156,15 +220,15 @@ BPR is a radical upending of current business processes and systems, so spends l
     - Reduce costs, waste, and cycle times
     - Increase quality
 
-#### 1.4.3.1. Outcome analysis
+#### 1.3.3.1. Outcome analysis
 
 Trying to think about the business from the perspective of users' ultimate goals and needs (recognizing that your product or service may be only a means to an end).
 
-#### 1.4.3.2. Technology analysis
+#### 1.3.3.2. Technology analysis
 
 Reviewing existing and emerging technologies and asking how they might be applied in your company (either as a process improvement or a product).
 
-#### 1.4.3.3. Activity elimination
+#### 1.3.3.3. Activity elimination
 
 Systematically (but as a thought exercise) eliminating each step in a process, and asking what the implications are.
 

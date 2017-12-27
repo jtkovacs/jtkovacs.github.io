@@ -1,14 +1,17 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data management | just under 228 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is data?](#what-is-data)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data management | just under 251 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is data?](#what-is-data)
 	- &nbsp;1.1. [DIKW pyramid](#dikw-pyramid)
 	- &nbsp;1.2. [Computer perspective](#computer-perspective)
 	- &nbsp;1.3. [Statistical perspective](#statistical-perspective)
 - &nbsp;2. [What is data management?](#what-is-data-management)
-- &nbsp;3. [Structure and naming conventions for files and folders](#structure-and-naming-conventions-for-files-and-folders)
-- &nbsp;4. [Sources](#sources)
-	- &nbsp;4.1. [Cited](#cited)
-	- &nbsp;4.2. [References](#references)
-	- &nbsp;4.3. [Read](#read)
-	- &nbsp;4.4. [Unread](#unread)
+	- &nbsp;2.1. [Data management plans](#data-management-plans)
+	- &nbsp;2.2. [Structure and naming conventions for files and folders](#structure-and-naming-conventions-for-files-and-folders)
+- &nbsp;3. [What is data curation?](#what-is-data-curation)
+- &nbsp;4. [What is open data?](#what-is-open-data)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [Cited](#cited)
+	- &nbsp;5.2. [References](#references)
+	- &nbsp;5.3. [Read](#read)
+	- &nbsp;5.4. [Unread](#unread)
 </div>
 
 # 1. What is data?
@@ -28,7 +31,7 @@ Also: static versus dynamic AKA time series data.
 <table>
     <tr><td colspan=7>Data</td></tr>
     <tr><td colspan=4>Structured</td><td colspan=3>Unstructured or Semi-structured</td></tr>
-    <tr><td colspan=2>Categorical AKA Discrete</td><td colspan=2>Numerical AKA Continuous</td><td>Textual</td><td>Multimedia</td><td>XML/HTML</td></tr>
+    <tr><td colspan=2>Categorical AKA Discrete</td><td colspan=2>Numerical AKA Continuous</td><td rowspan=2>Textual</td><td rowspan=2>Multimedia</td><td rowspan=2>XML/HTML</td></tr>
     <tr><td>Nominal</td><td>Ordinal</td><td>Interval</td><td>Ratio</td><td colspan=3></td></tr>
 </table>
 
@@ -48,8 +51,10 @@ Also: static versus dynamic AKA time series data.
     - Websites
 
 
+## 2.1. Data management plans
 
-# 3. Structure and naming conventions for files and folders
+
+## 2.2. Structure and naming conventions for files and folders
 
 - [Purdue 1](http://guides.lib.purdue.edu/c.php?g=353013&p=2378293)
 - [Purdue 2](http://guides.lib.purdue.edu/c.php?g=353013&p=2378293)
@@ -64,14 +69,22 @@ Also: static versus dynamic AKA time series data.
 - [U Illinois](http://guides.library.illinois.edu/introdata/filenames)
 
 
-# 4. Sources
+# 3. What is data curation?
 
-## 4.1. Cited
+# 4. What is open data?
+
+(also see notes on civic tech)
+
+
+
+# 5. Sources
+
+## 5.1. Cited
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-## 4.2. References
+## 5.2. References
 
-## 4.3. Read
+## 5.3. Read
 
-## 4.4. Unread
+## 5.4. Unread

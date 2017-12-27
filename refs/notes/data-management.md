@@ -16,7 +16,7 @@ Also: static versus dynamic AKA time series data.
 <table>
     <tr><td colspan=7>Data</td></tr>
     <tr><td colspan=4>Structured</td><td colspan=3>Unstructured or Semi-structured</td></tr>
-    <tr><td colspan=2>Categorical AKA Discrete</td><td colspan=2>Numerical AKA Continuous</td><td>Textual</td><td>Multimedia</td><td>XML/HTML</td></tr>
+    <tr><td colspan=2>Categorical AKA Discrete</td><td colspan=2>Numerical AKA Continuous</td><td rowspan=2>Textual</td><td rowspan=2>Multimedia</td><td rowspan=2>XML/HTML</td></tr>
     <tr><td>Nominal</td><td>Ordinal</td><td>Interval</td><td>Ratio</td><td colspan=3></td></tr>
 </table>
 
@@ -36,8 +36,10 @@ Also: static versus dynamic AKA time series data.
     - Websites
 
 
+## Data management plans
 
-# Structure and naming conventions for files and folders
+
+## Structure and naming conventions for files and folders
 
 - [Purdue 1](http://guides.lib.purdue.edu/c.php?g=353013&p=2378293)
 - [Purdue 2](http://guides.lib.purdue.edu/c.php?g=353013&p=2378293)
@@ -50,6 +52,14 @@ Also: static versus dynamic AKA time series data.
 - [MNHS](http://www.mnhs.org/preserve/records/electronicrecords/erfnaming.php)
 - [Exadox](http://www.exadox.com/en/articles/file-naming-convention-ten-rules-best-practice)
 - [U Illinois](http://guides.library.illinois.edu/introdata/filenames)
+
+
+# What is data curation?
+
+# What is open data?
+
+(also see notes on civic tech)
+
 
 
 # Sources

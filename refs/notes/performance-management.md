@@ -63,6 +63,8 @@ Sharda et al. (2014, p. 131) cite Eckerson (2009) on the properties of KPIs:
 - **Time frames:** Targets are assigned time frames by which they must be accomplished. A time frame is often divided into smaller intervals to provide performance mileposts.
 - **Benchmarks.** Targets are measured against a baseline or benchmark."
 
+#### KPI types and examples
+
 KPIs can be classified (Sharda et al., 2014, p. 131):
 
 - **Outcomes** AKA lagging KPIs - show results of past activities
@@ -71,6 +73,20 @@ KPIs can be classified (Sharda et al., 2014, p. 131):
     - **Service performance:** service-call resolution rates, service renewal rates, service level agreements, delivery performance, return rates
     - **Sales operations:** new pipeline accounts, sales meetings secured, conversion of inquiries to leads, average call closure time
     - **Sales plan/forecast:** price-to-purchase accuracy, purchase order-to-fulfillment ratio, quantity earned, forecast-to-plan ratio, total closed contracts
+
+#### KPI best practices
+
+Per Sharda et al. (2014, pp. 136-137), "Measures should:
+
+- focus on key factors
+- mix past, present, and future
+- balance the needs of shareholders, employees, partners, suppliers, and other stakeholders
+- start at the top and flow down to the bottom
+- have targets that are based on research and reality rather than arbitrary
+
+Or, fundamentally: "Measures need to be derived from the corporate and business unit strategies and from an analysis of the key business processes required to achieve those strategies."
+
+
 
 ## Performance management systems
 
@@ -101,9 +117,22 @@ This "includes employee training, knowledge management, and corporate cultural c
 Measuring and managing "processes the organization must excel at in order to satisfy its shareholders and customers" (Sharda et al., 2014, p. 134).
 
 
-### Six Sigma
+
+### DMAIC & Six Sigma (performance management)
+
+"In the quality arena, variability [denoted by sigma] is synonymous with the number of defects"; while its original application is to [process improvement](https://jtkovacs.github.io/refs/performance-management.html#six-sigma-process-improvement), **Six Sigma** [can be] a performance management methodology aimed at reducing the number of defects in a business process to as close to zero DPMO [defects per million opportunities] as possible." For existing processes, Six Sigma rests on a DMAIC closed-loop model, similar to the BPM model (Sharda et al., 2014, p. 136):
+
+| Define | Measure | Analyze | Improve | Control |
+| --- | --- | --- | --- | --- |
+| Define the goals, objectives, and boundaries of the improvement activity. At the top level, the goals are the strategic objectives of the company. At lower levels---department or project levels---the goals are focused on specific operational processes. | Measure the existing system. Establish quantitative measures that will yield statistically valid data. The data can be used to monitor progress toward the goals defined in the previous step. | Analyze the system to identify ways to eliminate the gap between the current performance of the system or process and the desired goal. | Initiate actions to eliminate the gap by finding ways to do things better, cheaper, or faster. Use project management and other planning tools to implement the new approach. | Institutionalize the improved system by modifying compensation and incentive systems, policies, procedures, manufacturing resource planning, budgets, operation instructions, or other management systems. |
+
+For creation of new processes, the model is DMADV (define, measure, analyze, **design, verify).**
+
+
 
 ### Lean
+
+
 
 
 
@@ -333,6 +362,7 @@ KPI trees are about “visualizing the relationship between operational variable
 - Ford production system: Influenced by Taylor; aspired to optimization of work. Used a moving line, big machinery, economies of scale, standardization of product.
 - Toyota production system: c. 1950s, focused on elimination of waste and matching demand after failure to replicate Ford system in a postwar context where inputs and domestic demand was scarce.
     - Worry about: waste, inflexibility, and variability
+- See [notes on Six Sigma, above](#six-sigma)
 
 ### Basic defect calculations
 
@@ -351,7 +381,7 @@ KPI trees are about “visualizing the relationship between operational variable
     - However, buffers remove the incentive for process improvement; buffering hides problems.
     - Toyota developed the Kanban “demand-pull” card system to manage this dilemma. Kanban cards authorize work, and are themselves authorized by customer demand. This puts a cap on inventory.
 
-### Six Sigma
+### Six Sigma (process improvement)
 
 Improving a process by reducing internal variability.
 

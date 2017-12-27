@@ -11,7 +11,7 @@ From the perspective of computers, **data** is inside a **file** AKA document; f
 
 ## Statistical perspective
 
-Also: static versus dynamic AKA time series data.
+From Sharda et al. (2014):
 
 <table>
     <tr><td colspan=7>Data</td></tr>
@@ -20,6 +20,7 @@ Also: static versus dynamic AKA time series data.
     <tr><td>Nominal</td><td>Ordinal</td><td>Interval</td><td>Ratio</td></tr>
 </table>
 
+Also: static versus dynamic AKA time series data.
 
 
 # What is data management?

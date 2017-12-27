@@ -1,10 +1,61 @@
+
+
 # What is performance management?
+
+Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), and strategic enterprise management (SEM).
+
+## Closed-loop BPM cycle
+
+Per Sharda et al. (2014):
+
+| Strategize | Plan | Monitor/Analyze | Act/Adjust |
+| --- | --- | --- | --- |
+| Where do we want to go? | How do we get there? | How are we doing? | What do we need to do differently? |
+| Mission<br>Values<br>Goals<br>Objectives<br>Incentives<br>Strategy maps | Budgets<br>Plans<br>Forecasts<br>Models<br>Initiatives<br>Targets | Performance dashboards<br>Reports<br>Analytic tools | Interpret<br>Collaborate<br>Assess<br>Decide<br>Track |
+
+## Performance measurement systems
+
+### Key performance indicators (KPIs)
+
+Sharda et al. (2014, p. 131) cite Eckerson (2009) on the properties of KPIs:
+
+- **"Strategy:** KPIs embody a strategic objective.
+- **Targets:** KPIs measure performance against specific targets. Targets are defined in strategy, planning, or budget sessions and can take different forms (e.g., achievment targets, reduction targets, absolute targets).
+- **Ranges:** Targets have performance ranges (e.g., above, on, or below target).
+- **Encodings:** Ranges are encoded in software, enabling the visual display of performance (e.g., green, yellow, red). Encodings can be based on percentages or more complex rules.
+- **Time frames:** Targets are assigned time frames by which they must be accomplished. A time frame is often divided into smaller intervals to provide performance mileposts.
+- **Benchmarks.** Targets are measured against a baseline or benchmark."
+
+KPIs can be classified (Sharda et al., 2014, p. 131):
+
+- **Outcomes** AKA lagging KPIs - show results of past activities
+- **Drivers** AKA leading indicators AKA value drivers - measure activities that have a significant impact on important outcomes
+    - **Operational KPIs**
+        - **Customer performance:** customer satisfaction, speed and accuracy of issue resolution, customer retention
+        - **Service performance:** service-call resolution rates, service renewal rates, service level agreements, delivery performance, return rates
+        - **Sales operations:** new pipeline accounts, sales meetings secured, conversion of inquiries to leads, average call closure time
+        - **Sales plan/forecast:** price-to-purchase accuracy, purchase order-to-fulfillment ratio, quantity earned, forecast-to-plan ratio, total closed contracts
+
+## Performance management systems
+
+### Balanced scorecard
+
+### Six Sigma
+
+### Lean
+
+
 
 ## Tools by degree of change sought
 
 Per Dennis et al. (2012),
 
-![](../ILLOS/BPA-BPI-BPR.png)
+| * | Business Process Automation | Business Process Improvement | Business Process Reengineering |
+| --- | --- | --- | --- |
+| **Potential business value** | Low-moderate | Moderate | High |
+| **Project cost** | Low | Low-moderate | High |
+| **Breadth of analysis** | Narrow | Narrow-moderate | Very broad |
+| **Risk** | Low-moderate | Low-moderate | Very high |
 
 ### Business process automation (BPA)
 
@@ -59,6 +110,8 @@ Systematically (but as a thought exercise) eliminating each step in a process, a
 
 
 
+
+
 # Continuous Process Improvement
 
 _These notes are based on Jeevon Powell's class, [Process Improvement Tools.](https://ucs.admin.uw.edu/pod/Course/Details/Q1170)_
@@ -90,6 +143,8 @@ See [notes on systems modeling.](modeling.html)
 ### 5S organization methodology
 
 ### Brainstorming
+
+
 
 
 
@@ -280,11 +335,15 @@ Looking for root cause(s):
 
 
 
+
+
 # Sources
 
 Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
 
 Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 ## References
 

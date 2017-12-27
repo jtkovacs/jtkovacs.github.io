@@ -1,16 +1,23 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> performance management | just under 2492 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is performance management?](#what-is-performance-management)
-	- &nbsp;1.1. [Tools by degree of change sought](#tools-by-degree-of-change-sought)
-		- &nbsp;1.1.1. [Business process automation (BPA)](#business-process-automation-bpa)
-			- &nbsp;1.1.1.1. [Problem analysis](#problem-analysis)
-			- &nbsp;1.1.1.2. [Root cause analysis](#root-cause-analysis)
-		- &nbsp;1.1.2. [Business process improvement (BPI)](#business-process-improvement-bpi)
-			- &nbsp;1.1.2.1. [Duration analysis](#duration-analysis)
-			- &nbsp;1.1.2.2. [Activity-based costing](#activity-based-costing)
-			- &nbsp;1.1.2.3. [Informal bench-marking](#informal-bench-marking)
-		- &nbsp;1.1.3. [Business process reengineering (BPR)](#business-process-reengineering-bpr)
-			- &nbsp;1.1.3.1. [Outcome analysis](#outcome-analysis)
-			- &nbsp;1.1.3.2. [Technology analysis](#technology-analysis)
-			- &nbsp;1.1.3.3. [Activity elimination](#activity-elimination)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> performance management | just under 2920 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is performance management?](#what-is-performance-management)
+	- &nbsp;1.1. [Closed-loop BPM cycle](#closed-loop-bpm-cycle)
+	- &nbsp;1.2. [Performance measurement systems](#performance-measurement-systems)
+		- &nbsp;1.2.1. [Key performance indicators (KPIs)](#key-performance-indicators-kpis)
+	- &nbsp;1.3. [Performance management systems](#performance-management-systems)
+		- &nbsp;1.3.1. [Balanced scorecard](#balanced-scorecard)
+		- &nbsp;1.3.2. [Six Sigma](#six-sigma)
+		- &nbsp;1.3.3. [Lean](#lean)
+	- &nbsp;1.4. [Tools by degree of change sought](#tools-by-degree-of-change-sought)
+		- &nbsp;1.4.1. [Business process automation (BPA)](#business-process-automation-bpa)
+			- &nbsp;1.4.1.1. [Problem analysis](#problem-analysis)
+			- &nbsp;1.4.1.2. [Root cause analysis](#root-cause-analysis)
+		- &nbsp;1.4.2. [Business process improvement (BPI)](#business-process-improvement-bpi)
+			- &nbsp;1.4.2.1. [Duration analysis](#duration-analysis)
+			- &nbsp;1.4.2.2. [Activity-based costing](#activity-based-costing)
+			- &nbsp;1.4.2.3. [Informal bench-marking](#informal-bench-marking)
+		- &nbsp;1.4.3. [Business process reengineering (BPR)](#business-process-reengineering-bpr)
+			- &nbsp;1.4.3.1. [Outcome analysis](#outcome-analysis)
+			- &nbsp;1.4.3.2. [Technology analysis](#technology-analysis)
+			- &nbsp;1.4.3.3. [Activity elimination](#activity-elimination)
 - &nbsp;2. [Continuous Process Improvement](#continuous-process-improvement)
 	- &nbsp;2.1. [Depict system](#depict-system)
 		- &nbsp;2.1.1. [Value stream mapping](#value-stream-mapping)
@@ -52,43 +59,94 @@
 	- &nbsp;4.2. [Read](#read)
 	- &nbsp;4.3. [Unread](#unread)
 </div>
+
+
 # 1. What is performance management?
 
-## 1.1. Tools by degree of change sought
+Per Sharda et al. (2014), BPM is also called corporate performance management (CPM), enterprise performance management (EPM), and strategic enterprise management (SEM).
+
+## 1.1. Closed-loop BPM cycle
+
+Per Sharda et al. (2014):
+
+| Strategize | Plan | Monitor/Analyze | Act/Adjust |
+| --- | --- | --- | --- |
+| Where do we want to go? | How do we get there? | How are we doing? | What do we need to do differently? |
+| Mission<br>Values<br>Goals<br>Objectives<br>Incentives<br>Strategy maps | Budgets<br>Plans<br>Forecasts<br>Models<br>Initiatives<br>Targets | Performance dashboards<br>Reports<br>Analytic tools | Interpret<br>Collaborate<br>Assess<br>Decide<br>Track |
+
+## 1.2. Performance measurement systems
+
+### 1.2.1. Key performance indicators (KPIs)
+
+Sharda et al. (2014, p. 131) cite Eckerson (2009) on the properties of KPIs:
+
+- **"Strategy:** KPIs embody a strategic objective.
+- **Targets:** KPIs measure performance against specific targets. Targets are defined in strategy, planning, or budget sessions and can take different forms (e.g., achievment targets, reduction targets, absolute targets).
+- **Ranges:** Targets have performance ranges (e.g., above, on, or below target).
+- **Encodings:** Ranges are encoded in software, enabling the visual display of performance (e.g., green, yellow, red). Encodings can be based on percentages or more complex rules.
+- **Time frames:** Targets are assigned time frames by which they must be accomplished. A time frame is often divided into smaller intervals to provide performance mileposts.
+- **Benchmarks.** Targets are measured against a baseline or benchmark."
+
+KPIs can be classified (Sharda et al., 2014, p. 131):
+
+- **Outcomes** AKA lagging KPIs - show results of past activities
+- **Drivers** AKA leading indicators AKA value drivers - measure activities that have a significant impact on important outcomes
+    - **Operational KPIs**
+        - **Customer performance:** customer satisfaction, speed and accuracy of issue resolution, customer retention
+        - **Service performance:** service-call resolution rates, service renewal rates, service level agreements, delivery performance, return rates
+        - **Sales operations:** new pipeline accounts, sales meetings secured, conversion of inquiries to leads, average call closure time
+        - **Sales plan/forecast:** price-to-purchase accuracy, purchase order-to-fulfillment ratio, quantity earned, forecast-to-plan ratio, total closed contracts
+
+## 1.3. Performance management systems
+
+### 1.3.1. Balanced scorecard
+
+### 1.3.2. Six Sigma
+
+### 1.3.3. Lean
+
+
+
+## 1.4. Tools by degree of change sought
 
 Per Dennis et al. (2012),
 
-![](../ILLOS/BPA-BPI-BPR.png)
+| * | Business Process Automation | Business Process Improvement | Business Process Reengineering |
+| --- | --- | --- | --- |
+| **Potential business value** | Low-moderate | Moderate | High |
+| **Project cost** | Low | Low-moderate | High |
+| **Breadth of analysis** | Narrow | Narrow-moderate | Very broad |
+| **Risk** | Low-moderate | Low-moderate | Very high |
 
-### 1.1.1. Business process automation (BPA)
+### 1.4.1. Business process automation (BPA)
 
 BPA is focused on making current processes more efficient through automation; it requires thorough analysis of the current system.
 
-#### 1.1.1.1. Problem analysis
+#### 1.4.1.1. Problem analysis
 
 This entails asking current system users about problems they face or features they desire. Problems identified with this technique are often related to UI and their resolution produces little if any business value.
 
-#### 1.1.1.2. Root cause analysis
+#### 1.4.1.2. Root cause analysis
 
 This entails asking current system users to explore the root causes of problems they've identified (since these problems may only be symptoms). Root causes may be uncovered by asking "Why?" five times; causal relationships may be represented as a hierarchy, web, or fishbone/Ishikawa diagram.
 
-### 1.1.2. Business process improvement (BPI)
+### 1.4.2. Business process improvement (BPI)
 
 BPI goes beyond increased efficiency to the realm of increased effectiveness, for instance taking advantage of new opportunities and technologies.
 
-#### 1.1.2.1. Duration analysis
+#### 1.4.2.1. Duration analysis
 
 First, major processes are timed; second, all individual steps in those processes are timed. If the sum of step durations is smaller than the overall duration, this indicates a need for improvement --- which may be achieved through **integration** (fewer people involved in doing the work across its lifecycle) or **parallelization** (steps being done concurrently).
 
-#### 1.1.2.2. Activity-based costing
+#### 1.4.2.2. Activity-based costing
 
 Steps in a process are costed, and improvement efforts are focused on the costliest step.
 
-#### 1.1.2.3. Informal bench-marking
+#### 1.4.2.3. Informal bench-marking
 
 Examine competitors to identify performance targets and process improvements.
 
-### 1.1.3. Business process reengineering (BPR)
+### 1.4.3. Business process reengineering (BPR)
 
 BPR is a radical upending of current business processes and systems, so spends little time analyzing them. Per Rigby (2015; also gives recommendations for further reading), a BPR effort focuses on:
 
@@ -98,17 +156,19 @@ BPR is a radical upending of current business processes and systems, so spends l
     - Reduce costs, waste, and cycle times
     - Increase quality
 
-#### 1.1.3.1. Outcome analysis
+#### 1.4.3.1. Outcome analysis
 
 Trying to think about the business from the perspective of users' ultimate goals and needs (recognizing that your product or service may be only a means to an end).
 
-#### 1.1.3.2. Technology analysis
+#### 1.4.3.2. Technology analysis
 
 Reviewing existing and emerging technologies and asking how they might be applied in your company (either as a process improvement or a product).
 
-#### 1.1.3.3. Activity elimination
+#### 1.4.3.3. Activity elimination
 
 Systematically (but as a thought exercise) eliminating each step in a process, and asking what the implications are.
+
+
 
 
 
@@ -144,6 +204,8 @@ See [notes on systems modeling.](modeling.html)
 ### 2.4.2. 5S organization methodology
 
 ### 2.4.3. Brainstorming
+
+
 
 
 
@@ -334,11 +396,15 @@ Looking for root cause(s):
 
 
 
+
+
 # 4. Sources
 
 Dennis, A., Haley Wixom, B., & Tegarden, D. (2012). Requirements determination. In _Systems analysis and design: An object oriented approach with UML_ (4th ed., pp. 109–152). Hoboken, NJ: Wiley.
 
 Rigby, D. K. (2015). _Management tools 2015: An executive’s guide._ Boston, MA: Bain & Company.
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 ## 4.1. References
 

@@ -255,31 +255,30 @@ BA is a field, and its practitioners---business analysts---are perhaps the front
         - Writing & face-to-face communication
         - Listening & asking good questions
     - **Problem-solving skills**
-    - **Critical-thinking skills*
-- SOFT SKILLS
+    - **Critical-thinking skills**
+- ADVANCED SOFT SKILLS
     - **Relationship-building** for stakeholder participation and appeal
     - **Self-management**
     - **Thick skin** for participatory design work
 - CORE BA SKILLS
-    - **Documentation & specification**
-    - **Analysis** of:
+    - **Facilitation & elicitation** as part of the design process
+    - **Analysis of:**
         - "how the **business** work flows operationally, often completed by analyzing the business process";
         - "how the **software system** supports the business workflows, often completed through functional requirements models like use cases or user stories";
         - "how **data and information** is stored and maintained by an organization, completed using a variety of data modeling techniques"
-    - **Visual modeling**
-    - **Facilitation & elicitation**
+    - **Documentation, specification, and visual modeling**
     - **Business analysis tools** e.g.
         - *Office* - Word, Excel, PowerPoint
         - *Modeling* - Visio, Enterprise Architect
         - *Requirements Management* - DOORS, Caliber
-        - **Project Management**
-        - **Quality Management**
-- FOCUS BA SKILLS
+        - *Project Management*
+        - *Quality Management*
+- ADVANCED BA SKILLS
     - **Technical** e.g. SQL, .NET, Perl, Python, etc.
     - **Methodology** e.g. Agile, Six Sigma, BPMN, Rational Unified Process, etc.
     - **Industry/Domain**
 
-##### Data scientists
+#### Data scientists
 
 (see [notes on data science](https://jtkovacs.github.io/refs/data-science.html) for an overview of data science skills)
 
@@ -351,10 +350,7 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
 
 #### Business Performance Management (BPM)
 
-- management.html#strategy
-- https://jtkovacs.github.io/refs/process-improvement.html
-    - balanced score cards
-    - closed-loop BPM methodology
+BPM entails measuring and improving _actual performance_ versus KPIs and goals that have been established in correspondance with [managerial strategy](https://jtkovacs.github.io/refs/management.html#strategy) or local appetite; see [notes on performance management](https://jtkovacs.github.io/refs/performance-management.html) for further discussion. BPM intersects with BI because it is one of the primary intended uses of BI data---to understand and improve operations. The content of BI dashboards may be stongly determined by performance management goals and techniques.
 
 #### Data viz & visual analytics
 

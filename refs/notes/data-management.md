@@ -1,21 +1,39 @@
 
 # What is data?
 
-The **DIKW pyramid** differentiates the terms data, information, knowledge, and wisdom in an interesting way: data is raw, information is contextualized data, knowledge is internalized information (which is then re-externalized through [knowledge management]()); wisdom is knowledge that is refined and applied with good judgement. I like to think about the amount and kind of human effort that goes into each conversion.
+## DIKW pyramid
 
-From the perspective of computers, data is inside a file AKA document; files are inside directories AKA folders; and directories are organized hierarchically in the directory tree AKA file system.
+The DIKW pyramid differentiates the terms data, information, knowledge, and wisdom in an interesting way: **data** is raw, **information** is contextualized data, **knowledge** is internalized information (which is then re-externalized through [knowledge management](https://jtkovacs.github.io/refs/km.html)); **wisdom** is knowledge that is refined and applied with good judgement. I like to think about the amount and kind of human effort that goes into each conversion.
+
+## Computer perspective
+
+From the perspective of computers, **data** is inside a **file** AKA document; files are inside **directories** AKA folders; and directories are organized hierarchically in the **directory tree** AKA file system.
+
+## Statistical perspective
+
+Also: static versus dynamic AKA time series data.
+
+<table>
+    <tr><td colspan=7>Data</td></tr>
+    <tr><td colspan=4>Structured</td><td colspan=3>Unstructured or Semi-structured</td></tr>
+    <tr><td colspan=2>Categorical AKA Discrete</td><td colspan=2>Numerical AKA Continuous</td><td>Textual</td><td>Multimedia</td><td>XML/HTML</td></tr>
+    <tr><td>Nominal</td><td>Ordinal</td><td>Interval</td><td>Ratio</td><td colspan=3></td></tr>
+</table>
 
 
 
 # What is data management?
 
 - Data movement
-- Storage
+- Storage & preservation
     - Databases
     - Data warehouses
     - Data lakes
-- Preservation
+    - Archives
 - Curation
+    - Portals
+    - Repositories
+    - Websites
 
 
 
@@ -34,3 +52,14 @@ From the perspective of computers, data is inside a file AKA document; files are
 - [U Illinois](http://guides.library.illinois.edu/introdata/filenames)
 
 
+# Sources
+
+## Cited
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+## References
+
+## Read
+
+## Unread

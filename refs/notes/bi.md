@@ -352,18 +352,48 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
 
 Business performance management (BPM) entails measuring and improving _actual performance_ versus KPIs and goals that have been established in correspondance with [managerial strategy](https://jtkovacs.github.io/refs/management.html#strategy) or local appetite; see [notes on performance management](https://jtkovacs.github.io/refs/performance-management.html) for further discussion. BPM intersects with BI because it is one of the primary intended uses of BI data---to understand and improve operations. The content of BI dashboards may be stongly determined by performance management goals and techniques.
 
-#### Data viz & visual analytics
-
-Per Sharda et al. (2014, pp. 114-116), **data visualization** is increasingly important capability of BI software because it makes meaning in the data more accessible to more users---and **visual analytics** is a new term meant to describe data viz that goes beyond description to the realm of business analytics, i.e. "diagnostic ... prescriptive and predictive". See [notes on data visualization](https://jtkovacs.github.io/refs/data-viz.html) regarding the conversion of data into informative visuals; see [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#dashboards) regarding the presentation of multiple data visuals, combined to facilitate insights.
-
 #### Data mining
 
+Per Sharda et al. (2014), the field of data mining draws on _statistics, artificial intelligence and machine learning_ to create data mining tools that facilitate the discovery of meaningful patterns in large database-stored datasets. Adapted from Sharda et al. (2014, p. 157), there are three general patterns sought:
+
+<table>
+    <tr><th colspan=2>Data Mining Task</th><th>Learning Method</th><th>Popular Algorithms</th></tr>
+    <tr><td colspan=2>**Prediction** (forecasting Y based on Xs)</td><td>Supervised</td><td>Classification and regression trees, ANN, SVM, genetic algorithms</td></tr>
+    <tr><td></td><td>**Classification**</td><td>Supervised</td><td>Decision trees, ANN/MLP, SVM, rough sets, genetic algorithms</td></tr>
+    <tr><td></td><td>**Regression**</td><td>Supervised</td><td>Linear/nonlinear regression, regression trees, ANN/MLP, SVM</td></tr>
+    <tr><td colspan=2>**Association** (relationship between X and Y)</td><td>Unsupervised</td><td>Apriori, OneR, ZeroR, Eclat</td></tr>
+    <tr><td></td><td>**Link analysis**</td><td>Unsupervised</td><td>Expectation maximization, apriori algorithm, graph-based matching</td></tr>
+    <tr><td></td><td>**Sequence analysis**</td><td>Unsupervised</td><td>Apriori algorithm, FP-growth technique</td></tr>
+    <tr><td colspan=2>**Clustering** (breaking X into logical groups)</td><td>Unsupervised</td><td>K-means, ANN/SOM</td></tr>
+    <tr><td></td><td>**Outlier analysis**</td><td>Unsupervised</td><td>K-means, expectation maximization (EM)</td></tr>
+</table>
+
 See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [notes on machine learning.](https://jtkovacs.github.io/refs/machine-learning.html)
+
+##### DM applications
+
+
+
+##### CRISP-DM process
+
+The Cross-Industry Standard Process for Data Mining arose c. 1990s:
+
+1. Business understanding
+2. Data understanding
+3. Data preparation
+4. Model building
+5. Testing and evaluation
+6. Deployment
+
+
 
 #### Text & web analytics
 
 See [notes on text analytics.](https://jtkovacs.github.io/refs/text-analytics.html)
 
+#### Data viz & visual analytics
+
+Per Sharda et al. (2014, pp. 114-116), **data visualization** is increasingly important capability of BI software because it makes meaning in the data more accessible to more users---and **visual analytics** is a new term meant to describe data viz that goes beyond description to the realm of business analytics, i.e. "diagnostic ... prescriptive and predictive". See [notes on data visualization](https://jtkovacs.github.io/refs/data-viz.html) regarding the conversion of data into informative visuals; see [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#dashboards) regarding the presentation of multiple data visuals, combined to facilitate insights.
 
 
 
@@ -398,7 +428,7 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 
 #### Dashboards
 
-See [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#dashboards)
+See [notes on dashboard design.](https://jtkovacs.github.io/refs/interfaces.html#dashboards)
 
 ### Best practices for reporting
 

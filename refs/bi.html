@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 3596 words | updated 12/27/2017
+   &gt; bi | just under 3749 words | updated 12/27/2017
   </p>
   <div class="TOC">
    <ul>
@@ -185,20 +185,34 @@
           </li>
           <li>
            2.5.2.2.
-           <a href="#data-viz-visual-analytics">
-            Data viz &amp; visual analytics
+           <a href="#data-mining">
+            Data mining
            </a>
+           <ul>
+            <li>
+             2.5.2.2.1.
+             <a href="#dm-applications">
+              DM applications
+             </a>
+            </li>
+            <li>
+             2.5.2.2.2.
+             <a href="#crisp-dm-process">
+              CRISP-DM process
+             </a>
+            </li>
+           </ul>
           </li>
           <li>
            2.5.2.3.
-           <a href="#data-mining">
-            Data mining
+           <a href="#text-web-analytics">
+            Text &amp; web analytics
            </a>
           </li>
           <li>
            2.5.2.4.
-           <a href="#text-web-analytics">
-            Text &amp; web analytics
+           <a href="#data-viz-visual-analytics">
+            Data viz &amp; visual analytics
            </a>
           </li>
          </ul>
@@ -1473,9 +1487,205 @@
    </a>
    for further discussion. BPM intersects with BI because it is one of the primary intended uses of BI data---to understand and improve operations. The content of BI dashboards may be stongly determined by performance management goals and techniques.
   </p>
+  <h4 id="data-mining">
+   <a>
+    2.5.2.2. Data mining
+   </a>
+  </h4>
+  <p>
+   Per Sharda et al. (2014), the field of data mining draws on
+   <em>
+    statistics, artificial intelligence and machine learning
+   </em>
+   to create data mining tools that facilitate the discovery of meaningful patterns in large database-stored datasets. Adapted from Sharda et al. (2014, p. 157), there are three general patterns sought:
+  </p>
+  <table>
+   <tr>
+    <th colspan="2">
+     Data Mining Task
+    </th>
+    <th>
+     Learning Method
+    </th>
+    <th>
+     Popular Algorithms
+    </th>
+   </tr>
+   <tr>
+    <td colspan="2">
+     <strong>
+      Prediction
+     </strong>
+     (forecasting Y based on Xs)
+    </td>
+    <td>
+     Supervised
+    </td>
+    <td>
+     Classification and regression trees, ANN, SVM, genetic algorithms
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <strong>
+      Classification
+     </strong>
+    </td>
+    <td>
+     Supervised
+    </td>
+    <td>
+     Decision trees, ANN/MLP, SVM, rough sets, genetic algorithms
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <strong>
+      Regression
+     </strong>
+    </td>
+    <td>
+     Supervised
+    </td>
+    <td>
+     Linear/nonlinear regression, regression trees, ANN/MLP, SVM
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">
+     <strong>
+      Association
+     </strong>
+     (relationship between X and Y)
+    </td>
+    <td>
+     Unsupervised
+    </td>
+    <td>
+     Apriori, OneR, ZeroR, Eclat
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <strong>
+      Link analysis
+     </strong>
+    </td>
+    <td>
+     Unsupervised
+    </td>
+    <td>
+     Expectation maximization, apriori algorithm, graph-based matching
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <strong>
+      Sequence analysis
+     </strong>
+    </td>
+    <td>
+     Unsupervised
+    </td>
+    <td>
+     Apriori algorithm, FP-growth technique
+    </td>
+   </tr>
+   <tr>
+    <td colspan="2">
+     <strong>
+      Clustering
+     </strong>
+     (breaking X into logical groups)
+    </td>
+    <td>
+     Unsupervised
+    </td>
+    <td>
+     K-means, ANN/SOM
+    </td>
+   </tr>
+   <tr>
+    <td>
+    </td>
+    <td>
+     <strong>
+      Outlier analysis
+     </strong>
+    </td>
+    <td>
+     Unsupervised
+    </td>
+    <td>
+     K-means, expectation maximization (EM)
+    </td>
+   </tr>
+  </table>
+  <p>
+   See
+   <a href="https://jtkovacs.github.io/refs/statistics.html">
+    notes on statistics
+   </a>
+   and
+   <a href="https://jtkovacs.github.io/refs/machine-learning.html">
+    notes on machine learning.
+   </a>
+  </p>
+  <h5 id="dm-applications">
+   <a>
+    2.5.2.2.1. DM applications
+   </a>
+  </h5>
+  <h5 id="crisp-dm-process">
+   <a>
+    2.5.2.2.2. CRISP-DM process
+   </a>
+  </h5>
+  <p>
+   The Cross-Industry Standard Process for Data Mining arose c. 1990s:
+  </p>
+  <ol style="list-style-type: decimal">
+   <li>
+    Business understanding
+   </li>
+   <li>
+    Data understanding
+   </li>
+   <li>
+    Data preparation
+   </li>
+   <li>
+    Model building
+   </li>
+   <li>
+    Testing and evaluation
+   </li>
+   <li>
+    Deployment
+   </li>
+  </ol>
+  <h4 id="text-web-analytics">
+   <a>
+    2.5.2.3. Text &amp; web analytics
+   </a>
+  </h4>
+  <p>
+   See
+   <a href="https://jtkovacs.github.io/refs/text-analytics.html">
+    notes on text analytics.
+   </a>
+  </p>
   <h4 id="data-viz-visual-analytics">
    <a>
-    2.5.2.2. Data viz &amp; visual analytics
+    2.5.2.4. Data viz &amp; visual analytics
    </a>
   </h4>
   <p>
@@ -1496,32 +1706,6 @@
     notes on dashboard design
    </a>
    regarding the presentation of multiple data visuals, combined to facilitate insights.
-  </p>
-  <h4 id="data-mining">
-   <a>
-    2.5.2.3. Data mining
-   </a>
-  </h4>
-  <p>
-   See
-   <a href="https://jtkovacs.github.io/refs/statistics.html">
-    notes on statistics
-   </a>
-   and
-   <a href="https://jtkovacs.github.io/refs/machine-learning.html">
-    notes on machine learning.
-   </a>
-  </p>
-  <h4 id="text-web-analytics">
-   <a>
-    2.5.2.4. Text &amp; web analytics
-   </a>
-  </h4>
-  <p>
-   See
-   <a href="https://jtkovacs.github.io/refs/text-analytics.html">
-    notes on text analytics.
-   </a>
   </p>
   <h2 id="reporting">
    <a>
@@ -1702,7 +1886,7 @@
   <p>
    See
    <a href="https://jtkovacs.github.io/refs/interfaces.html#dashboards">
-    notes on dashboard design
+    notes on dashboard design.
    </a>
   </p>
   <h3 id="best-practices-for-reporting">

@@ -16,7 +16,7 @@ Business intelligence (BI) systems are a type of [management information system 
 
 ### BI versus data science
 
-https://jtkovacs.github.io/refs/data-science.html
+(see [notes on data science](https://jtkovacs.github.io/refs/data-science.html) for an overview of data science skills)
 
 - DS involves more programming, is better at using computational power for analysis
 - DS may involve more sophisticated modeling, facilitating more predictive and prescriptive analytics
@@ -74,6 +74,11 @@ Also:
 
 
 
+
+
+
+
+
 # BI systems
 
 Per Sharda et al. (2004), BI tools provide varying combinations of the following broad functionalities:
@@ -105,7 +110,6 @@ Gartner's Magic Quadrant for BI and Analytics Platforms (Sallam et al., 2017) co
 - **Overall platform capabilities**
     - ***Platform Capabilities and Workflow.*** This capability considers the degree to which capabilities are offered in a single, seamless product or across multiple products with little integration.
     - ***Ease of Use and Visual Appeal.*** Ease of use to administer and deploy the platform, create content, consume and interact with content, as well as the visual appeal."
-
 
 ## Implementing BI systems
 
@@ -242,11 +246,46 @@ To enable OLAP, data is stored in multidimensional cubes. These cubes can be eff
 
 
 
+
+
+
+
 ## Interpreting the data
 
 ### Analytics
 
-- Business Analytics as a field
+#### Business Analytics
+
+BA is a field, and its practitioners---business analysts---are perhaps the frontline users of data from BI systems; they play a major role in translating this data into action by relating it back to business processes and decisions.  [BABOK](https://en.wikipedia.org/wiki/A_Guide_to_the_Business_Analysis_Body_of_Knowledge) is the gold standard description of BA skills, but Brandenberg (n.d.) offers the following short version:
+
+- CORE SKILLS
+    - **Communication skills**
+        - Writing & face-to-face communication
+        - Listening & asking good questions
+    - **Problem-solving skills**
+    - **Critical-thinking skills*
+- SOFT SKILLS
+    - **Relationship-building** for stakeholder participation and appeal
+    - **Self-management**
+    - **Thick skin** for participatory design work
+- CORE BA SKILLS
+    - **Documentation & specification**
+    - **Analysis** of:
+        - "how the **business** work flows operationally, often completed by analyzing the business process";
+        - "how the **software system** supports the business workflows, often completed through functional requirements models like use cases or user stories";
+        - "how **data and information** is stored and maintained by an organization, completed using a variety of data modeling techniques"
+    - **Visual modeling**
+    - **Facilitation & elicitation**
+    - **Business analysis tools** e.g.
+        - *Office* - Word, Excel, PowerPoint
+        - *Modeling* - Visio, Enterprise Architect
+        - *Requirements Management* - DOORS, Caliber
+        - **Project Management**
+        - **Quality Management**
+- FOCUS BA SKILLS
+    - **Technical** e.g. SQL, .NET, Perl, Python, etc.
+    - **Methodology** e.g. Agile, Six Sigma, BPMN, Rational Unified Process, etc.
+    - **Industry/Domain**
 
 #### Types of analytic deliverables
 
@@ -318,9 +357,10 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
 
 - https://jtkovacs.github.io/refs/text-analytics.html
 
-#### Visual analytics
+#### Data viz & visual analytics
 
-- Why it's important
+Per Sharda et al. (2014, pp. 114-116), data visualization is increasingly important capability of BI software because it makes meaning in the data more accessible to more users; and 'visual analytics' is a new term meant to describe data or information visualization that goes beyond description to the realm of business analytics: "diagnostic (i.e. prescriptive and predictive)".
+
 - Different visualization techniques
 - https://jtkovacs.github.io/refs/data-viz.html
 - data-viz.html#tableau
@@ -370,9 +410,9 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 - Sharda et al. cite Hill (2008) on the importance of "an overarching **assurance** process that covers the entire value chain and moves back and forth, enrusing that reporting requirements and information delivery are properly aligned"
 - See [notes on graphic design](https://jtkovacs.github.io/refs/graphics-viz.html) re: layout
 
-#### Storytelling
+#### Data storytelling
 
-From Sharda et al. (2014, p. 117), to present data as a story, ask: _"Who are the **characters?** What is the drama or **challenge?** What hurdles have to be overcome? And at the end of your story, what do you want your audience to **do** as a result?_ (connect your 'call to action' with existing managerial conversations, if possible). They also cite Fink and Moore (2013):
+From Sharda et al. (2014, p. 117), to present data as a story, ask: _"Who are the **characters?** What is the drama or **challenge?** What hurdles have to be overcome? And at the end of your story, what do you want your audience to **do** as a result?_ (connect your 'call to action' with existing managerial conversations, if possible). They also cite Fink and Moore (2012):
 
 - "Think of your analysis as a story---use a story structure.
 - Be authentic---your story will flow.
@@ -391,6 +431,10 @@ From Sharda et al. (2014, p. 117), to present data as a story, ask: _"Who are th
 # Sources
 
 ## Cited
+
+Brandenberg, L. (n.d.) What Business Analyst skills are important for a new BA? Retrieved from [http://www.bridging-the-gap.com/business-analyst-skills-important/](http://www.bridging-the-gap.com/business-analyst-skills-important/)
+
+Fink, E., & Moore, S. J. (2012). Five best practices for telling great stories with data. Tableau Software, Inc. Retrieved from [http://tableausoftware.com/whitepapers/telling-stories-with-data](http://tableausoftware.com/whitepapers/telling-stories-with-data)
 
 Sallam, R, L., Howson, C., Idoine, C. J., Oestreich, T. W., & Laurence, J. (2017). Magic Quadrant for Business Intelligence and Analytics Platforms. Gartner. Retrieved from [https://cdn2.hubspot.net/hubfs/2172371/Q1%202017%20Gartner.pdf?t=149626062](https://cdn2.hubspot.net/hubfs/2172371/Q1%202017%20Gartner.pdf?t=149626062)
 

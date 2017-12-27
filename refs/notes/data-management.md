@@ -17,7 +17,7 @@ Also: static versus dynamic AKA time series data.
     <tr><td colspan=7>Data</td></tr>
     <tr><td colspan=4>Structured</td><td colspan=3>Unstructured or Semi-structured</td></tr>
     <tr><td colspan=2>Categorical AKA Discrete</td><td colspan=2>Numerical AKA Continuous</td><td rowspan=2>Textual</td><td rowspan=2>Multimedia</td><td rowspan=2>XML/HTML</td></tr>
-    <tr><td>Nominal</td><td>Ordinal</td><td>Interval</td><td>Ratio</td><td colspan=3></td></tr>
+    <tr><td>Nominal</td><td>Ordinal</td><td>Interval</td><td>Ratio</td></tr>
 </table>
 
 

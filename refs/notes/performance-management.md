@@ -118,13 +118,19 @@ Measuring and managing "processes the organization must excel at in order to sat
 
 
 
-### DMAIC & Six Sigma (performance management)
+### Six Sigma (performance management)
 
-"In the quality arena, variability [denoted by sigma] is synonymous with the number of defects"; while its original application is to [process improvement](https://jtkovacs.github.io/refs/performance-management.html#six-sigma-process-improvement), **Six Sigma** [can be] a performance management methodology aimed at reducing the number of defects in a business process to as close to zero DPMO [defects per million opportunities] as possible." For existing processes, Six Sigma rests on a DMAIC closed-loop model, similar to the BPM model (Sharda et al., 2014, p. 136):
+"In the quality arena, variability [denoted by sigma] is synonymous with the number of defects"; while its original application is to [process improvement](https://jtkovacs.github.io/refs/performance-management.html#six-sigma-process-improvement), **Six Sigma** [can be] a performance management methodology aimed at reducing the number of defects in a business process to as close to zero DPMO [defects per million opportunities] as possible."
+
+#### DMAIC
+
+For existing processes, Six Sigma rests on a DMAIC closed-loop model, similar to the BPM model (Sharda et al., 2014, p. 136):
 
 | Define | Measure | Analyze | Improve | Control |
 | --- | --- | --- | --- | --- |
 | Define the goals, objectives, and boundaries of the improvement activity. At the top level, the goals are the strategic objectives of the company. At lower levels---department or project levels---the goals are focused on specific operational processes. | Measure the existing system. Establish quantitative measures that will yield statistically valid data. The data can be used to monitor progress toward the goals defined in the previous step. | Analyze the system to identify ways to eliminate the gap between the current performance of the system or process and the desired goal. | Initiate actions to eliminate the gap by finding ways to do things better, cheaper, or faster. Use project management and other planning tools to implement the new approach. | Institutionalize the improved system by modifying compensation and incentive systems, policies, procedures, manufacturing resource planning, budgets, operation instructions, or other management systems. |
+
+#### DMADV
 
 For creation of new processes, the model is DMADV (define, measure, analyze, **design, verify).**
 

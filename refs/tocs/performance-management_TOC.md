@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> performance management | just under 3643 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is performance management?](#what-is-performance-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> performance management | just under 3645 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is performance management?](#what-is-performance-management)
 	- &nbsp;1.1. [Performance measurement systems](#performance-measurement-systems)
 		- &nbsp;1.1.1. [Key performance indicators (KPIs)](#key-performance-indicators-kpis)
 			- &nbsp;1.1.1.1. [KPI types and examples](#kpi-types-and-examples)
@@ -9,7 +9,9 @@
 			- &nbsp;1.2.1.2. [Financial perspective](#financial-perspective)
 			- &nbsp;1.2.1.3. [Learning and growth perspective](#learning-and-growth-perspective)
 			- &nbsp;1.2.1.4. [Internal business process perspective](#internal-business-process-perspective)
-		- &nbsp;1.2.2. [DMAIC & Six Sigma (performance management)](#dmaic-six-sigma-performance-management)
+		- &nbsp;1.2.2. [Six Sigma (performance management)](#six-sigma-performance-management)
+			- &nbsp;1.2.2.1. [DMAIC](#dmaic)
+			- &nbsp;1.2.2.2. [DMADV](#dmadv)
 		- &nbsp;1.2.3. [Lean](#lean)
 	- &nbsp;1.3. [Tools by degree of change sought](#tools-by-degree-of-change-sought)
 		- &nbsp;1.3.1. [Business process automation (BPA)](#business-process-automation-bpa)
@@ -184,13 +186,19 @@ Measuring and managing "processes the organization must excel at in order to sat
 
 
 
-### 1.2.2. DMAIC & Six Sigma (performance management)
+### 1.2.2. Six Sigma (performance management)
 
-"In the quality arena, variability [denoted by sigma] is synonymous with the number of defects"; while its original application is to [process improvement](https://jtkovacs.github.io/refs/performance-management.html#six-sigma-process-improvement), **Six Sigma** [can be] a performance management methodology aimed at reducing the number of defects in a business process to as close to zero DPMO [defects per million opportunities] as possible." For existing processes, Six Sigma rests on a DMAIC closed-loop model, similar to the BPM model (Sharda et al., 2014, p. 136):
+"In the quality arena, variability [denoted by sigma] is synonymous with the number of defects"; while its original application is to [process improvement](https://jtkovacs.github.io/refs/performance-management.html#six-sigma-process-improvement), **Six Sigma** [can be] a performance management methodology aimed at reducing the number of defects in a business process to as close to zero DPMO [defects per million opportunities] as possible."
+
+#### 1.2.2.1. DMAIC
+
+For existing processes, Six Sigma rests on a DMAIC closed-loop model, similar to the BPM model (Sharda et al., 2014, p. 136):
 
 | Define | Measure | Analyze | Improve | Control |
 | --- | --- | --- | --- | --- |
 | Define the goals, objectives, and boundaries of the improvement activity. At the top level, the goals are the strategic objectives of the company. At lower levels---department or project levels---the goals are focused on specific operational processes. | Measure the existing system. Establish quantitative measures that will yield statistically valid data. The data can be used to monitor progress toward the goals defined in the previous step. | Analyze the system to identify ways to eliminate the gap between the current performance of the system or process and the desired goal. | Initiate actions to eliminate the gap by finding ways to do things better, cheaper, or faster. Use project management and other planning tools to implement the new approach. | Institutionalize the improved system by modifying compensation and incentive systems, policies, procedures, manufacturing resource planning, budgets, operation instructions, or other management systems. |
+
+#### 1.2.2.2. DMADV
 
 For creation of new processes, the model is DMADV (define, measure, analyze, **design, verify).**
 

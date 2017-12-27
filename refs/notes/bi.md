@@ -431,17 +431,84 @@ Per Sharda et al. (2014, pp. 160-161):
     - forecasting to inform scheduling
 
 
-##### CRISP-DM process
+##### DM processes
 
-The Cross-Industry Standard Process for Data Mining arose c. 1990s:
+Per Sharda et al. (2014):
 
-1. Business understanding
-2. Data understanding
-3. Data preparation
-4. Model building
-5. Testing and evaluation
-6. Deployment
+<table>
+    <tr><th>CRISP-DM\*</th><th>SEMMA</th><th>KDD\*\*</th></tr>
+    <tr><td>1. Business understanding</td><td>1. Sample: "generate a representative sample of the data"</td><td>1. Data selection
+</td></tr>
+    <tr><td>2. Data understanding</td><td>2. Explore: "visualization and basic description of the data"</td><td>2. Data preprocessing</td></tr>
+    <tr><td>3. Data preparation</td><td>3. Modify: "select variables, transform variable representations"</td><td>3. Data transformation</td></tr>
+    <tr><td>4. Model building</td><td>4. Model: "use a variety of statistical and machine learning model"</td><td>4. Data mining </td></tr>
+    <tr><td>5. Testing & evaluation</td><td rowspan=2>5. Assess: "evaluate the accuracy and usefulness of the models"</td><td rowspan=2>5. Interpretation/evaluation</td></tr>
+    <tr><td>6. Deployment</td></tr>
+</table>
 
+\* Cross-Industry Standard Process for Data Mining, c. 1990s
+\*\* Knowledge Discovery in Databases
+
+##### DM software
+
+Per Sharda et al. (2015, p. 187), some commerical tools:
+
+- IBM SPSS Modeler
+- SAS Enterprise Miner
+- Statistica
+- Inteligent Miner
+- PolyAnalyst
+- CART, MARS, TreeNet, RandomForest (Saleford Systems)
+- Insightful Miner
+- XL Miner
+- KXEN
+- GhostMiner
+- Microsoft SQL Server Data Mining
+- Knowledge Miner
+- Teradata Warehouse Miner
+- Oracle Data Mining
+- Fair Isaac Business Science
+- DeltaMaster
+- iData Analyzer
+- Orange Data Mining Tool
+- Zementis Predictive Analytics
+
+Also, they cite a poll from KDNuggets.com (most to least popular):
+
+- R
+- Excel
+- Rapid-I RapidMiner
+- KNIME
+- Weka/Pentaho
+- StatSoft Statistica
+- SAS
+- Rapid-I RapidAnalytics
+- MATLAB
+- IMB SPSS Statistics
+- IBM SPSS Modeler
+- Orange
+- Microsoft SQL Server
+- Other free software
+- TIBCO Spotfire/S+/Miner
+- Tableau
+- Oracle Data Miner
+- Other commercial software
+- ...
+
+##### Common DM pitfalls
+
+Per Sharda et al. (2015, p. 195):
+
+- "Selecting the wrong problem for data mining.
+- Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
+- Leaving insufficient time for data preparation. It takes more effort than is generally understood.
+- Looking only at aggregated results and not at individual records ...
+- Being sloppy about keeping track of the data mining procedure and results.
+- Ignoring suspicious findings and quickly moving on.
+- Running mining algorithms repeatedly and blindly ...
+- Believing everything you are told about the data.
+- Believing everything you are told about your own data mining analysis [????]
+- Measuring your results differently from the way your sponsor measures them."
 
 
 #### Text & web analytics

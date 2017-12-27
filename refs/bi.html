@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 4171 words | updated 12/27/2017
+   &gt; bi | just under 4509 words | updated 12/27/2017
   </p>
   <div class="TOC">
    <ul>
@@ -197,8 +197,20 @@
             </li>
             <li>
              2.5.2.2.2.
-             <a href="#crisp-dm-process">
-              CRISP-DM process
+             <a href="#dm-processes">
+              DM processes
+             </a>
+            </li>
+            <li>
+             2.5.2.2.3.
+             <a href="#dm-software">
+              DM software
+             </a>
+            </li>
+            <li>
+             2.5.2.2.4.
+             <a href="#common-dm-pitfalls">
+              Common DM pitfalls
              </a>
             </li>
            </ul>
@@ -1702,574 +1714,863 @@
    </strong>
    - recommend/auto-play features - predict market reception of a movie, album, etc. - forecasting to inform scheduling
   </p>
-  <h5 id="crisp-dm-process">
+  <h5 id="dm-processes">
    <a>
-    2.5.2.2.2. CRISP-DM process
+    2.5.2.2.2. DM processes
    </a>
   </h5>
   <p>
-   The Cross-Industry Standard Process for Data Mining arose c. 1990s:
-  </p>
-  <ol style="list-style-type: decimal">
-   <li>
-    Business understanding
-   </li>
-   <li>
-    Data understanding
-   </li>
-   <li>
-    Data preparation
-   </li>
-   <li>
-    Model building
-   </li>
-   <li>
-    Testing and evaluation
-   </li>
-   <li>
-    Deployment
-   </li>
-  </ol>
-  <h4 id="text-web-analytics">
-   <a>
-    2.5.2.3. Text &amp; web analytics
-   </a>
-  </h4>
-  <p>
-   See
-   <a href="https://jtkovacs.github.io/refs/text-analytics.html">
-    notes on text analytics.
-   </a>
-  </p>
-  <h4 id="data-viz-visual-analytics">
-   <a>
-    2.5.2.4. Data viz &amp; visual analytics
-   </a>
-  </h4>
-  <p>
-   Per Sharda et al. (2014, pp. 114-116),
-   <strong>
-    data visualization
-   </strong>
-   is increasingly important capability of BI software because it makes meaning in the data more accessible to more users---and
-   <strong>
-    visual analytics
-   </strong>
-   is a new term meant to describe data viz that goes beyond description to the realm of business analytics, i.e. "diagnostic ... prescriptive and predictive". See
-   <a href="https://jtkovacs.github.io/refs/data-viz.html">
-    notes on data visualization
-   </a>
-   regarding the conversion of data into informative visuals; see
-   <a href="https://jtkovacs.github.io/refs/interfaces.html#dashboards">
-    notes on dashboard design
-   </a>
-   regarding the presentation of multiple data visuals, combined to facilitate insights.
-  </p>
-  <h2 id="reporting">
-   <a>
-    2.6. Reporting
-   </a>
-  </h2>
-  <p>
-   Sharda et al. call reporting "an essential part of the larger drive toward improved managerial decision making and
-   <a href="km.html">
-    organizational knowledge management"
-   </a>
-   and credit it with serving multiple
-   <strong>
-    internal functions:
-   </strong>
-  </p>
-  <ul>
-   <li>
-    "To ensure that all departments are functioning properly
-   </li>
-   <li>
-    To provide information
-   </li>
-   <li>
-    To provide the results of an analysis
-   </li>
-   <li>
-    To persuade others to act
-   </li>
-   <li>
-    To create an organizational memory"
-   </li>
-  </ul>
-  <h3 id="types-of-reports">
-   <a>
-    2.6.1. Types of reports
-   </a>
-  </h3>
-  <p>
-   Per Sharda et al. (2014, pp. 99-100), a report is "any communication artifact prepared with the specific intention of conveying information in a presentable form to whoever needs it"---which, in a business context, includes "memos, minutes, lab reports, sales reports, progress reports, justification reports, compliance reports, annual reports, and policies and procedures" (I object to the inclusion of policies and procedures in this list, because I would call them
-   <a href="https://jtkovacs.github.io/refs/docs.html">
-    documentation).
-   </a>
-  </p>
-  <p>
-   Reports can be for internal or external audiences, and prepared on a periodic or ad hoc basis. Regarding external reporting, the Data Foundation's
-   <a href="http://www.datafoundation.org/standard-business-reporting-2017/">
-    Standard Business Reporting
-   </a>
-   effort is an attempt to reduce reporting costs by standardizing national and international governmental reporting requirements.
+   Per Sharda et al. (2014):
   </p>
   <table>
-   <thead>
-    <tr class="header">
-     <th align="left">
-      Type
-     </th>
-     <th align="left">
-      Purpose
-     </th>
-     <th align="left">
-      Length
-     </th>
-     <th align="left">
-      Timing
-     </th>
-     <th align="left">
-      Audience
-     </th>
-     <th align="left">
-      Tone
-     </th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr class="odd">
-     <td align="left">
-      Informal
-     </td>
-     <td align="left">
-      ...
-     </td>
-     <td align="left">
-      &lt; 10 pgs.
-     </td>
-     <td align="left">
-      Periodic/routine
-     </td>
-     <td align="left">
-      Internal
-     </td>
-     <td align="left">
-      Personal pronouns &amp; contractions OK
-     </td>
-    </tr>
-    <tr class="even">
-     <td align="left">
-      Formal
-     </td>
-     <td align="left">
-      Communicate results of deeper research/analysis
-     </td>
-     <td align="left">
-      10-100 pgs.
-     </td>
-     <td align="left">
-      ...
-     </td>
-     <td align="left">
-      Varies
-     </td>
-     <td align="left">
-      Formal language; table of contents, executive summary
-     </td>
-    </tr>
-    <tr class="odd">
-     <td align="left">
-      Short
-     </td>
-     <td align="left">
-      "investigative, compliance, and situational focused"
-     </td>
-     <td align="left">
-      (short)
-     </td>
-     <td align="left">
-      Often periodic
-     </td>
-     <td align="left">
-      Varies
-     </td>
-     <td align="left">
-      Factual
-     </td>
-    </tr>
-   </tbody>
+   <tr>
+    <th>
+     CRISP-DM*
+    </th>
+    <th>
+     SEMMA
+    </th>
+    <th>
+     KDD**
+    </th>
+   </tr>
+   <tr>
+    <td>
+     <ol style="list-style-type: decimal">
+      <li>
+       Business understanding
+      </li>
+     </ol>
+    </td>
+    <td>
+     <ol style="list-style-type: decimal">
+      <li>
+       Sample: "generate a representative sample of the data"
+      </li>
+     </ol>
+    </td>
+    <td>
+     <ol style="list-style-type: decimal">
+      <li>
+       Data selection
+      </li>
+     </ol>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <ol start="2" style="list-style-type: decimal">
+      <li>
+       Data understanding
+      </li>
+     </ol>
+    </td>
+    <td>
+     <ol start="2" style="list-style-type: decimal">
+      <li>
+       Explore: "visualization and basic description of the data"
+      </li>
+     </ol>
+    </td>
+    <td>
+     <ol start="2" style="list-style-type: decimal">
+      <li>
+       Data preprocessing
+      </li>
+     </ol>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <ol start="3" style="list-style-type: decimal">
+      <li>
+       Data preparation
+      </li>
+     </ol>
+    </td>
+    <td>
+     <ol start="3" style="list-style-type: decimal">
+      <li>
+       Modify: "select variables, transform variable representations"
+      </li>
+     </ol>
+    </td>
+    <td>
+     <ol start="3" style="list-style-type: decimal">
+      <li>
+       Data transformation
+      </li>
+     </ol>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <ol start="4" style="list-style-type: decimal">
+      <li>
+       Model building
+      </li>
+     </ol>
+    </td>
+    <td>
+     <ol start="4" style="list-style-type: decimal">
+      <li>
+       Model: "use a variety of statistical and machine learning model"
+      </li>
+     </ol>
+    </td>
+    <td>
+     <ol start="4" style="list-style-type: decimal">
+      <li>
+       Data mining
+      </li>
+     </ol>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <ol start="5" style="list-style-type: decimal">
+      <li>
+       Testing &amp; evaluation
+      </li>
+     </ol>
+    </td>
+    <td rowspan="2">
+     <ol start="5" style="list-style-type: decimal">
+      <li>
+       Assess: "evaluate the accuracy and usefulness of the models"
+      </li>
+     </ol>
+    </td>
+    <td rowspan="2">
+     <ol start="5" style="list-style-type: decimal">
+      <li>
+       Interpretation/evaluation
+      </li>
+     </ol>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <ol start="6" style="list-style-type: decimal">
+      <li>
+       Deployment
+      </li>
+     </ol>
+    </td>
+   </tr>
   </table>
-  <p>
-   Sharda et al. (2014) cite Hill's (2013) typology of business reports:
-  </p>
-  <ul>
-   <li>
-    <strong>
-     Metric management reports
-    </strong>
-    that track performance versus
-    <strong>
-     <em>
-      SLAs
-     </em>
-    </strong>
-    (service-level agreements with external partners) or
-    <strong>
-     <em>
-      KPIs
-     </em>
-    </strong>
-    (key performance indicators for internal strategic and operational targets); often used with Six Sigma or Total Quality Management (TQM)
-   </li>
-   <li>
-    <strong>
-     Balanced scorecard-type reports
-    </strong>
-    from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
-   </li>
-   <li>
-    <strong>
-     Dashboard-type reports:
-    </strong>
-    arrange multiple performance indicators as a dashboard
-   </li>
-  </ul>
-  <h4 id="dashboards">
-   <a>
-    2.6.1.1. Dashboards
-   </a>
-  </h4>
-  <p>
-   See
-   <a href="https://jtkovacs.github.io/refs/interfaces.html#dashboards">
-    notes on dashboard design.
-   </a>
-  </p>
-  <h3 id="best-practices-for-reporting">
-   <a>
-    2.6.2. Best practices for reporting
-   </a>
-  </h3>
-  <ul>
-   <li>
-    Per Sharda et al. (2014, p. 100): "clarity, brevity, completeness, and correctness"
-   </li>
-   <li>
-    Sharda et al. cite Hill (2008) on the importance of "an overarching
-    <strong>
-     assurance
-    </strong>
-    process that covers the entire value chain and moves back and forth, enrusing that reporting requirements and information delivery are properly aligned"
-   </li>
-   <li>
-    See
-    <a href="https://jtkovacs.github.io/refs/graphics-viz.html">
-     notes on graphic design
-    </a>
-    re: layout
-   </li>
-  </ul>
-  <h4 id="data-storytelling">
-   <a>
-    2.6.2.1. Data storytelling
-   </a>
-  </h4>
-  <p>
-   From Sharda et al. (2014, p. 117), to present data as a story, ask:
-   <em>
-    "Who are the
-    <strong>
-     characters?
-    </strong>
-    What is the drama or
-    <strong>
-     challenge?
-    </strong>
-    What hurdles have to be overcome? And at the end of your story, what do you want your audience to
-    <strong>
-     do
-    </strong>
-    as a result?
-   </em>
-   (connect your 'call to action' with existing managerial conversations, if possible). They also cite Fink and Moore (2012):
-  </p>
-  <ul>
-   <li>
-    "Think of your analysis as a story---use a story structure.
-   </li>
-   <li>
-    Be authentic---your story will flow.
-   </li>
-   <li>
-    Be visual---think of yourself as a film editor.
-   </li>
-   <li>
-    Make it easy for your audience and you.
-   </li>
-   <li>
-    Invite and direct discussion."
-   </li>
-  </ul>
-  <h1 id="sources">
-   <a>
-    3. Sources
-   </a>
-  </h1>
-  <h2 id="cited">
-   <a>
-    3.1. Cited
-   </a>
-  </h2>
-  <p>
-   Brandenberg, L. (n.d.) What Business Analyst skills are important for a new BA? Retrieved from
-   <a href="http://www.bridging-the-gap.com/business-analyst-skills-important/">
-    http://www.bridging-the-gap.com/business-analyst-skills-important/
-   </a>
-  </p>
-  <p>
-   Fink, E., &amp; Moore, S. J. (2012). Five best practices for telling great stories with data. Tableau Software, Inc. Retrieved from
-   <a href="http://tableausoftware.com/whitepapers/telling-stories-with-data">
-    http://tableausoftware.com/whitepapers/telling-stories-with-data
-   </a>
-  </p>
-  <p>
-   Sallam, R, L., Howson, C., Idoine, C. J., Oestreich, T. W., &amp; Laurence, J. (2017). Magic Quadrant for Business Intelligence and Analytics Platforms. Gartner. Retrieved from
-   <a href="https://cdn2.hubspot.net/hubfs/2172371/Q1%202017%20Gartner.pdf?t=149626062">
-    https://cdn2.hubspot.net/hubfs/2172371/Q1%202017%20Gartner.pdf?t=149626062
-   </a>
-  </p>
-  <p>
-   Sharda, R., Delen, D., &amp; Turban, E. (2014).
-   <em>
-    Business intelligence: A managerial perspective on analytics
-   </em>
-   (3rd ed.). New York City, NY: Pearson.
-  </p>
-  <h2 id="references">
-   <a>
-    3.2. References
-   </a>
-  </h2>
-  <h2 id="read">
-   <a>
-    3.3. Read
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <a href="http://itconnect.uw.edu/work/data/training/workshops/#EDW101">
-     UW IT - EDW 101
-    </a>
-   </li>
-   <li>
-    <a href="http://research.google.com/archive/mapreduce.html">
-     MapReduce - Simplified Data Processing on Large Clusters
-    </a>
-   </li>
-   <li>
-    <a href="https://mikecvet.wordpress.com/2010/07/02/parallel-mapreduce-in-python/">
-     Parallel MapReduce in Python in 10 Minutes
-    </a>
-   </li>
-   <li>
-    <a href="http://www.talyarkoni.org/blog/2014/05/19/big-data-n-a-kind-of-black-magic/">
-     Big Data, n. A kind of black magic
-    </a>
-   </li>
-  </ul>
-  <h2>
-   <a name="3.4.-unread">
-    3.4. Unread
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <em>
-     The Data Warehouse Lifecycle Toolkit
-    </em>
-   </li>
-   <li>
-    <em>
-     The Data Warehouse Toolkit
-    </em>
-   </li>
-   <li>
-    <em>
-     The Data Warehouse ETL Toolkit
-    </em>
-   </li>
-   <li>
-    <a href="https://www.sisense.com/blog/demystifying-data-warehouses-data-lakes-data-marts/">
-     Demystifying data warehouses, lakes, and marts
-    </a>
-   </li>
-   <li>
-    <a href="https://www.quora.com/What-are-the-differences-between-a-database-data-mart-data-warehouse-a-data-lake-and-a-cube">
-     Difference between database, data warehouse, data lake, and data cube?
-    </a>
-   </li>
-   <li>
-    <a href="http://www.kdnuggets.com/2015/09/data-lake-vs-data-warehouse-key-differences.html">
-     Data lake versus data warehouse
-    </a>
-   </li>
-   <li>
-    <a href="http://timoelliott.com/blog/2014/04/no-hadoop-isnt-going-to-replace-your-data-warehouse.html">
-     No, Hadoop isn't going to replace your data warehouse
-    </a>
-   </li>
-   <li>
-    <a href="http://timoelliott.com/blog/2014/12/from-data-lakes-to-data-swamps.html">
-     From data lakes to data swamps
-    </a>
-   </li>
-   <li>
-    <a href="http://study.com/academy/course/information-systems-and-computer-applications.html">
-     Business 104 - Information Systems and Computer Applications
-    </a>
-   </li>
-   <li>
-    <a href="http://wiki.apache.org/hadoop/HadoopMapReduce">
-     MapReduce
-    </a>
-   </li>
-   <li>
-    <a href="http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/">
-     Writing a Hadoop MapReduce Job In Python
-    </a>
-   </li>
-   <li>
-    <a href="http://www.analyticbridge.com/profiles/blogs/what-mapreduce-can-t-do">
-     What MapReduce can’t do
-    </a>
-   </li>
-   <li>
-    <a href="http://www.ap-institute.com/big-data-articles/big-data-what-is-spark-an-explanation-for-anyone.aspx">
-     Practical illustration of Map-Reduce (Hadoop-style), on real data
-    </a>
-   </li>
-   <li>
-    <a href="http://www.ap-institute.com/big-data-articles/big-data-what-is-spark-an-explanation-for-anyone.aspx">
-     What is Spark?
-    </a>
-   </li>
-   <li>
-    <a href="http://www.ap-institute.com/big-data-articles/big-data-what-is-hadoop-%E2%80%93-an-explanation-for-absolutely-anyone.aspx">
-     What is Hadoop?
-    </a>
-   </li>
-   <li>
-    <a href="http://www.forbes.com/sites/bernardmarr/2015/06/22/spark-or-hadoop-which-is-the-best-big-data-framework/#5928d0cd532c">
-     Spark or Hadoop — Which is the best big data framework?
-    </a>
-   </li>
-   <li>
-    <a href="http://www.lynda.com/Hadoop-tutorials/Hadoop-Fundamentals/191942-2.html">
-     Hadoop Fundamentals
-    </a>
-   </li>
-   <li>
-    <a href="http://www.lynda.com/Amazon-Web-Services-tutorials/Amazon-Web-Services-Data-Services/383048-2.html">
-     AWS
-    </a>
-   </li>
-   <li>
-    <a href="http://www.lynda.com/Data-management-tutorials/Building-Modern-Enterprise-Data-Roadmap/420016-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3amodern+enterprise+data+environment%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2">
-     Modern Enterprise Data Environment
-    </a>
-   </li>
-   <li>
-    <a href="http://bigdatauniversity.com/courses/hadoop-course/">
-     Hadoop Fundamentals
-    </a>
-   </li>
-   <li>
-    <a href="http://bigdatauniversity.com/courses/hadoop-reporting-and-analysis/">
-     Hadoop Reporting &amp; Analysis
-    </a>
-   </li>
-   <li>
-    <a href="https://drive.google.com/open?id=0B6XYyy1UbJ3XU0psbHFkd1ZCdXc">
-     Integrated Analytics: Platforms and Principles for Centralizing Your Data
-    </a>
-   </li>
-   <li>
-    <a href="https://www.datacamp.com/community/open-courses/big-data-revolution-r-enterprise-tutorial#gs.O46fnBg">
-     Big data analysis with Revolution R Enterprise
-    </a>
-   </li>
-   <li>
-    <a href="http://www.bigdatanews.com/profiles/blogs/when-data-flows-faster-than-it-can-be-processed">
-     When data flows faster than it can be processed
-    </a>
-   </li>
-   <li>
-    <a href="https://www.oreilly.com/learning/making-sense-of-stream-processing">
-     Making sense of stream processing
-    </a>
-   </li>
-   <li>
-    <a href="https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/">
-     Why Python is slow
-    </a>
-   </li>
-   <li>
-    <a href="http://www.bigdatanews.com/profiles/blogs/fast-clustering-algorithms-for-massive-datasets">
-     Fast clustering algorithms for massive datasets
-    </a>
-   </li>
-   <li>
-    <a href="http://www.analyticbridge.com/profiles/blogs/why-and-how-you-should-build-a-data-dictionary-for-big-data-sets">
-     Why and how you should build a data dictionary for big datasets
-    </a>
-   </li>
-   <li>
-    <a href="http://www.kdnuggets.com/2016/07/database-key-terms-explained.html">
-     Database key terms
-    </a>
-   </li>
-   <li>
-    <a href="https://en.wikipedia.org/wiki/Data_governance">
-     Data governance
-    </a>
-   </li>
-   <li>
-    <a href="https://en.wikipedia.org/wiki/Data_steward">
-     Data steward
-    </a>
-   </li>
-   <li>
-    <a href="https://en.wikipedia.org/wiki/Data_custodian">
-     Data custodian
-    </a>
-   </li>
-   <li>
-    <a href="https://www.betterbuys.com/bi/governed-data-discovery/">
-     Governed data discovery
-    </a>
-   </li>
-   <li>
-    <a href="https://drive.google.com/open?id=0B6XYyy1UbJ3XeXlnOW11bzVqc2c">
-     In Search of Database Nirvana
-    </a>
-   </li>
-   <li>
-    <a href="https://slack.engineering/data-wrangling-at-slack-f2e0ff633b69?imm_mid=0eb8e0#.wyh01fwh4">
-     Data stack at Slack
-    </a>
-   </li>
-   <li>
-    <a href="https://bytes.blueapron.com/bigquery-delivers-for-blue-apron-9acef1c1b417#.jbicbta5v">
-     Data stack at Blue Apron
-    </a>
-   </li>
-   <li>
-    <a href="http://www.webopedia.com/TERM/E/ETL.html">
-     What is ETL?
-    </a>
-   </li>
-  </ul>
  </body>
 </html>
+<p>
+ * Cross-Industry Standard Process for Data Mining, c. 1990s ** Knowledge Discovery in Databases
+</p>
+<h5 id="dm-software">
+ <a>
+  2.5.2.2.3. DM software
+ </a>
+</h5>
+<p>
+ Per Sharda et al. (2015, p. 187), some commerical tools:
+</p>
+<ul>
+ <li>
+  IBM SPSS Modeler
+ </li>
+ <li>
+  SAS Enterprise Miner
+ </li>
+ <li>
+  Statistica
+ </li>
+ <li>
+  Inteligent Miner
+ </li>
+ <li>
+  PolyAnalyst
+ </li>
+ <li>
+  CART, MARS, TreeNet, RandomForest (Saleford Systems)
+ </li>
+ <li>
+  Insightful Miner
+ </li>
+ <li>
+  XL Miner
+ </li>
+ <li>
+  KXEN
+ </li>
+ <li>
+  GhostMiner
+ </li>
+ <li>
+  Microsoft SQL Server Data Mining
+ </li>
+ <li>
+  Knowledge Miner
+ </li>
+ <li>
+  Teradata Warehouse Miner
+ </li>
+ <li>
+  Oracle Data Mining
+ </li>
+ <li>
+  Fair Isaac Business Science
+ </li>
+ <li>
+  DeltaMaster
+ </li>
+ <li>
+  iData Analyzer
+ </li>
+ <li>
+  Orange Data Mining Tool
+ </li>
+ <li>
+  Zementis Predictive Analytics
+ </li>
+</ul>
+<p>
+ Also, they cite a poll from KDNuggets.com (most to least popular):
+</p>
+<ul>
+ <li>
+  R
+ </li>
+ <li>
+  Excel
+ </li>
+ <li>
+  Rapid-I RapidMiner
+ </li>
+ <li>
+  KNIME
+ </li>
+ <li>
+  Weka/Pentaho
+ </li>
+ <li>
+  StatSoft Statistica
+ </li>
+ <li>
+  SAS
+ </li>
+ <li>
+  Rapid-I RapidAnalytics
+ </li>
+ <li>
+  MATLAB
+ </li>
+ <li>
+  IMB SPSS Statistics
+ </li>
+ <li>
+  IBM SPSS Modeler
+ </li>
+ <li>
+  Orange
+ </li>
+ <li>
+  Microsoft SQL Server
+ </li>
+ <li>
+  Other free software
+ </li>
+ <li>
+  TIBCO Spotfire/S+/Miner
+ </li>
+ <li>
+  Tableau
+ </li>
+ <li>
+  Oracle Data Miner
+ </li>
+ <li>
+  Other commercial software
+ </li>
+ <li>
+  ...
+ </li>
+</ul>
+<h5 id="common-dm-pitfalls">
+ <a>
+  2.5.2.2.4. Common DM pitfalls
+ </a>
+</h5>
+<p>
+ Per Sharda et al. (2015, p. 195):
+</p>
+<ul>
+ <li>
+  "Selecting the wrong problem for data mining.
+ </li>
+ <li>
+  Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
+ </li>
+ <li>
+  Leaving insufficient time for data preparation. It takes more effort than is generally understood.
+ </li>
+ <li>
+  Looking only at aggregated results and not at individual records ...
+ </li>
+ <li>
+  Being sloppy about keeping track of the data mining procedure and results.
+ </li>
+ <li>
+  Ignoring suspicious findings and quickly moving on.
+ </li>
+ <li>
+  Running mining algorithms repeatedly and blindly ...
+ </li>
+ <li>
+  Believing everything you are told about the data.
+ </li>
+ <li>
+  Believing everything you are told about your own data mining analysis [????]
+ </li>
+ <li>
+  Measuring your results differently from the way your sponsor measures them."
+ </li>
+</ul>
+<h4 id="text-web-analytics">
+ <a>
+  2.5.2.3. Text &amp; web analytics
+ </a>
+</h4>
+<p>
+ See
+ <a href="https://jtkovacs.github.io/refs/text-analytics.html">
+  notes on text analytics.
+ </a>
+</p>
+<h4 id="data-viz-visual-analytics">
+ <a>
+  2.5.2.4. Data viz &amp; visual analytics
+ </a>
+</h4>
+<p>
+ Per Sharda et al. (2014, pp. 114-116),
+ <strong>
+  data visualization
+ </strong>
+ is increasingly important capability of BI software because it makes meaning in the data more accessible to more users---and
+ <strong>
+  visual analytics
+ </strong>
+ is a new term meant to describe data viz that goes beyond description to the realm of business analytics, i.e. "diagnostic ... prescriptive and predictive". See
+ <a href="https://jtkovacs.github.io/refs/data-viz.html">
+  notes on data visualization
+ </a>
+ regarding the conversion of data into informative visuals; see
+ <a href="https://jtkovacs.github.io/refs/interfaces.html#dashboards">
+  notes on dashboard design
+ </a>
+ regarding the presentation of multiple data visuals, combined to facilitate insights.
+</p>
+<h2 id="reporting">
+ <a>
+  2.6. Reporting
+ </a>
+</h2>
+<p>
+ Sharda et al. call reporting "an essential part of the larger drive toward improved managerial decision making and
+ <a href="km.html">
+  organizational knowledge management"
+ </a>
+ and credit it with serving multiple
+ <strong>
+  internal functions:
+ </strong>
+</p>
+<ul>
+ <li>
+  "To ensure that all departments are functioning properly
+ </li>
+ <li>
+  To provide information
+ </li>
+ <li>
+  To provide the results of an analysis
+ </li>
+ <li>
+  To persuade others to act
+ </li>
+ <li>
+  To create an organizational memory"
+ </li>
+</ul>
+<h3 id="types-of-reports">
+ <a>
+  2.6.1. Types of reports
+ </a>
+</h3>
+<p>
+ Per Sharda et al. (2014, pp. 99-100), a report is "any communication artifact prepared with the specific intention of conveying information in a presentable form to whoever needs it"---which, in a business context, includes "memos, minutes, lab reports, sales reports, progress reports, justification reports, compliance reports, annual reports, and policies and procedures" (I object to the inclusion of policies and procedures in this list, because I would call them
+ <a href="https://jtkovacs.github.io/refs/docs.html">
+  documentation).
+ </a>
+</p>
+<p>
+ Reports can be for internal or external audiences, and prepared on a periodic or ad hoc basis. Regarding external reporting, the Data Foundation's
+ <a href="http://www.datafoundation.org/standard-business-reporting-2017/">
+  Standard Business Reporting
+ </a>
+ effort is an attempt to reduce reporting costs by standardizing national and international governmental reporting requirements.
+</p>
+<table>
+ <thead>
+  <tr class="header">
+   <th align="left">
+    Type
+   </th>
+   <th align="left">
+    Purpose
+   </th>
+   <th align="left">
+    Length
+   </th>
+   <th align="left">
+    Timing
+   </th>
+   <th align="left">
+    Audience
+   </th>
+   <th align="left">
+    Tone
+   </th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr class="odd">
+   <td align="left">
+    Informal
+   </td>
+   <td align="left">
+    ...
+   </td>
+   <td align="left">
+    &lt; 10 pgs.
+   </td>
+   <td align="left">
+    Periodic/routine
+   </td>
+   <td align="left">
+    Internal
+   </td>
+   <td align="left">
+    Personal pronouns &amp; contractions OK
+   </td>
+  </tr>
+  <tr class="even">
+   <td align="left">
+    Formal
+   </td>
+   <td align="left">
+    Communicate results of deeper research/analysis
+   </td>
+   <td align="left">
+    10-100 pgs.
+   </td>
+   <td align="left">
+    ...
+   </td>
+   <td align="left">
+    Varies
+   </td>
+   <td align="left">
+    Formal language; table of contents, executive summary
+   </td>
+  </tr>
+  <tr class="odd">
+   <td align="left">
+    Short
+   </td>
+   <td align="left">
+    "investigative, compliance, and situational focused"
+   </td>
+   <td align="left">
+    (short)
+   </td>
+   <td align="left">
+    Often periodic
+   </td>
+   <td align="left">
+    Varies
+   </td>
+   <td align="left">
+    Factual
+   </td>
+  </tr>
+ </tbody>
+</table>
+<p>
+ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
+</p>
+<ul>
+ <li>
+  <strong>
+   Metric management reports
+  </strong>
+  that track performance versus
+  <strong>
+   <em>
+    SLAs
+   </em>
+  </strong>
+  (service-level agreements with external partners) or
+  <strong>
+   <em>
+    KPIs
+   </em>
+  </strong>
+  (key performance indicators for internal strategic and operational targets); often used with Six Sigma or Total Quality Management (TQM)
+ </li>
+ <li>
+  <strong>
+   Balanced scorecard-type reports
+  </strong>
+  from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
+ </li>
+ <li>
+  <strong>
+   Dashboard-type reports:
+  </strong>
+  arrange multiple performance indicators as a dashboard
+ </li>
+</ul>
+<h4 id="dashboards">
+ <a>
+  2.6.1.1. Dashboards
+ </a>
+</h4>
+<p>
+ See
+ <a href="https://jtkovacs.github.io/refs/interfaces.html#dashboards">
+  notes on dashboard design.
+ </a>
+</p>
+<h3 id="best-practices-for-reporting">
+ <a>
+  2.6.2. Best practices for reporting
+ </a>
+</h3>
+<ul>
+ <li>
+  Per Sharda et al. (2014, p. 100): "clarity, brevity, completeness, and correctness"
+ </li>
+ <li>
+  Sharda et al. cite Hill (2008) on the importance of "an overarching
+  <strong>
+   assurance
+  </strong>
+  process that covers the entire value chain and moves back and forth, enrusing that reporting requirements and information delivery are properly aligned"
+ </li>
+ <li>
+  See
+  <a href="https://jtkovacs.github.io/refs/graphics-viz.html">
+   notes on graphic design
+  </a>
+  re: layout
+ </li>
+</ul>
+<h4 id="data-storytelling">
+ <a>
+  2.6.2.1. Data storytelling
+ </a>
+</h4>
+<p>
+ From Sharda et al. (2014, p. 117), to present data as a story, ask:
+ <em>
+  "Who are the
+  <strong>
+   characters?
+  </strong>
+  What is the drama or
+  <strong>
+   challenge?
+  </strong>
+  What hurdles have to be overcome? And at the end of your story, what do you want your audience to
+  <strong>
+   do
+  </strong>
+  as a result?
+ </em>
+ (connect your 'call to action' with existing managerial conversations, if possible). They also cite Fink and Moore (2012):
+</p>
+<ul>
+ <li>
+  "Think of your analysis as a story---use a story structure.
+ </li>
+ <li>
+  Be authentic---your story will flow.
+ </li>
+ <li>
+  Be visual---think of yourself as a film editor.
+ </li>
+ <li>
+  Make it easy for your audience and you.
+ </li>
+ <li>
+  Invite and direct discussion."
+ </li>
+</ul>
+<h1 id="sources">
+ <a>
+  3. Sources
+ </a>
+</h1>
+<h2 id="cited">
+ <a>
+  3.1. Cited
+ </a>
+</h2>
+<p>
+ Brandenberg, L. (n.d.) What Business Analyst skills are important for a new BA? Retrieved from
+ <a href="http://www.bridging-the-gap.com/business-analyst-skills-important/">
+  http://www.bridging-the-gap.com/business-analyst-skills-important/
+ </a>
+</p>
+<p>
+ Fink, E., &amp; Moore, S. J. (2012). Five best practices for telling great stories with data. Tableau Software, Inc. Retrieved from
+ <a href="http://tableausoftware.com/whitepapers/telling-stories-with-data">
+  http://tableausoftware.com/whitepapers/telling-stories-with-data
+ </a>
+</p>
+<p>
+ Sallam, R, L., Howson, C., Idoine, C. J., Oestreich, T. W., &amp; Laurence, J. (2017). Magic Quadrant for Business Intelligence and Analytics Platforms. Gartner. Retrieved from
+ <a href="https://cdn2.hubspot.net/hubfs/2172371/Q1%202017%20Gartner.pdf?t=149626062">
+  https://cdn2.hubspot.net/hubfs/2172371/Q1%202017%20Gartner.pdf?t=149626062
+ </a>
+</p>
+<p>
+ Sharda, R., Delen, D., &amp; Turban, E. (2014).
+ <em>
+  Business intelligence: A managerial perspective on analytics
+ </em>
+ (3rd ed.). New York City, NY: Pearson.
+</p>
+<h2 id="references">
+ <a>
+  3.2. References
+ </a>
+</h2>
+<h2 id="read">
+ <a>
+  3.3. Read
+ </a>
+</h2>
+<ul>
+ <li>
+  <a href="http://itconnect.uw.edu/work/data/training/workshops/#EDW101">
+   UW IT - EDW 101
+  </a>
+ </li>
+ <li>
+  <a href="http://research.google.com/archive/mapreduce.html">
+   MapReduce - Simplified Data Processing on Large Clusters
+  </a>
+ </li>
+ <li>
+  <a href="https://mikecvet.wordpress.com/2010/07/02/parallel-mapreduce-in-python/">
+   Parallel MapReduce in Python in 10 Minutes
+  </a>
+ </li>
+ <li>
+  <a href="http://www.talyarkoni.org/blog/2014/05/19/big-data-n-a-kind-of-black-magic/">
+   Big Data, n. A kind of black magic
+  </a>
+ </li>
+</ul>
+<h2>
+ <a name="3.4.-unread">
+  3.4. Unread
+ </a>
+</h2>
+<ul>
+ <li>
+  <em>
+   The Data Warehouse Lifecycle Toolkit
+  </em>
+ </li>
+ <li>
+  <em>
+   The Data Warehouse Toolkit
+  </em>
+ </li>
+ <li>
+  <em>
+   The Data Warehouse ETL Toolkit
+  </em>
+ </li>
+ <li>
+  <a href="https://www.sisense.com/blog/demystifying-data-warehouses-data-lakes-data-marts/">
+   Demystifying data warehouses, lakes, and marts
+  </a>
+ </li>
+ <li>
+  <a href="https://www.quora.com/What-are-the-differences-between-a-database-data-mart-data-warehouse-a-data-lake-and-a-cube">
+   Difference between database, data warehouse, data lake, and data cube?
+  </a>
+ </li>
+ <li>
+  <a href="http://www.kdnuggets.com/2015/09/data-lake-vs-data-warehouse-key-differences.html">
+   Data lake versus data warehouse
+  </a>
+ </li>
+ <li>
+  <a href="http://timoelliott.com/blog/2014/04/no-hadoop-isnt-going-to-replace-your-data-warehouse.html">
+   No, Hadoop isn't going to replace your data warehouse
+  </a>
+ </li>
+ <li>
+  <a href="http://timoelliott.com/blog/2014/12/from-data-lakes-to-data-swamps.html">
+   From data lakes to data swamps
+  </a>
+ </li>
+ <li>
+  <a href="http://study.com/academy/course/information-systems-and-computer-applications.html">
+   Business 104 - Information Systems and Computer Applications
+  </a>
+ </li>
+ <li>
+  <a href="http://wiki.apache.org/hadoop/HadoopMapReduce">
+   MapReduce
+  </a>
+ </li>
+ <li>
+  <a href="http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/">
+   Writing a Hadoop MapReduce Job In Python
+  </a>
+ </li>
+ <li>
+  <a href="http://www.analyticbridge.com/profiles/blogs/what-mapreduce-can-t-do">
+   What MapReduce can’t do
+  </a>
+ </li>
+ <li>
+  <a href="http://www.ap-institute.com/big-data-articles/big-data-what-is-spark-an-explanation-for-anyone.aspx">
+   Practical illustration of Map-Reduce (Hadoop-style), on real data
+  </a>
+ </li>
+ <li>
+  <a href="http://www.ap-institute.com/big-data-articles/big-data-what-is-spark-an-explanation-for-anyone.aspx">
+   What is Spark?
+  </a>
+ </li>
+ <li>
+  <a href="http://www.ap-institute.com/big-data-articles/big-data-what-is-hadoop-%E2%80%93-an-explanation-for-absolutely-anyone.aspx">
+   What is Hadoop?
+  </a>
+ </li>
+ <li>
+  <a href="http://www.forbes.com/sites/bernardmarr/2015/06/22/spark-or-hadoop-which-is-the-best-big-data-framework/#5928d0cd532c">
+   Spark or Hadoop — Which is the best big data framework?
+  </a>
+ </li>
+ <li>
+  <a href="http://www.lynda.com/Hadoop-tutorials/Hadoop-Fundamentals/191942-2.html">
+   Hadoop Fundamentals
+  </a>
+ </li>
+ <li>
+  <a href="http://www.lynda.com/Amazon-Web-Services-tutorials/Amazon-Web-Services-Data-Services/383048-2.html">
+   AWS
+  </a>
+ </li>
+ <li>
+  <a href="http://www.lynda.com/Data-management-tutorials/Building-Modern-Enterprise-Data-Roadmap/420016-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3amodern+enterprise+data+environment%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2">
+   Modern Enterprise Data Environment
+  </a>
+ </li>
+ <li>
+  <a href="http://bigdatauniversity.com/courses/hadoop-course/">
+   Hadoop Fundamentals
+  </a>
+ </li>
+ <li>
+  <a href="http://bigdatauniversity.com/courses/hadoop-reporting-and-analysis/">
+   Hadoop Reporting &amp; Analysis
+  </a>
+ </li>
+ <li>
+  <a href="https://drive.google.com/open?id=0B6XYyy1UbJ3XU0psbHFkd1ZCdXc">
+   Integrated Analytics: Platforms and Principles for Centralizing Your Data
+  </a>
+ </li>
+ <li>
+  <a href="https://www.datacamp.com/community/open-courses/big-data-revolution-r-enterprise-tutorial#gs.O46fnBg">
+   Big data analysis with Revolution R Enterprise
+  </a>
+ </li>
+ <li>
+  <a href="http://www.bigdatanews.com/profiles/blogs/when-data-flows-faster-than-it-can-be-processed">
+   When data flows faster than it can be processed
+  </a>
+ </li>
+ <li>
+  <a href="https://www.oreilly.com/learning/making-sense-of-stream-processing">
+   Making sense of stream processing
+  </a>
+ </li>
+ <li>
+  <a href="https://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/">
+   Why Python is slow
+  </a>
+ </li>
+ <li>
+  <a href="http://www.bigdatanews.com/profiles/blogs/fast-clustering-algorithms-for-massive-datasets">
+   Fast clustering algorithms for massive datasets
+  </a>
+ </li>
+ <li>
+  <a href="http://www.analyticbridge.com/profiles/blogs/why-and-how-you-should-build-a-data-dictionary-for-big-data-sets">
+   Why and how you should build a data dictionary for big datasets
+  </a>
+ </li>
+ <li>
+  <a href="http://www.kdnuggets.com/2016/07/database-key-terms-explained.html">
+   Database key terms
+  </a>
+ </li>
+ <li>
+  <a href="https://en.wikipedia.org/wiki/Data_governance">
+   Data governance
+  </a>
+ </li>
+ <li>
+  <a href="https://en.wikipedia.org/wiki/Data_steward">
+   Data steward
+  </a>
+ </li>
+ <li>
+  <a href="https://en.wikipedia.org/wiki/Data_custodian">
+   Data custodian
+  </a>
+ </li>
+ <li>
+  <a href="https://www.betterbuys.com/bi/governed-data-discovery/">
+   Governed data discovery
+  </a>
+ </li>
+ <li>
+  <a href="https://drive.google.com/open?id=0B6XYyy1UbJ3XeXlnOW11bzVqc2c">
+   In Search of Database Nirvana
+  </a>
+ </li>
+ <li>
+  <a href="https://slack.engineering/data-wrangling-at-slack-f2e0ff633b69?imm_mid=0eb8e0#.wyh01fwh4">
+   Data stack at Slack
+  </a>
+ </li>
+ <li>
+  <a href="https://bytes.blueapron.com/bigquery-delivers-for-blue-apron-9acef1c1b417#.jbicbta5v">
+   Data stack at Blue Apron
+  </a>
+ </li>
+ <li>
+  <a href="http://www.webopedia.com/TERM/E/ETL.html">
+   What is ETL?
+  </a>
+ </li>
+</ul>

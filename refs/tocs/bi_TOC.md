@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 4171 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 4509 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
 		- &nbsp;1.1.1. [Food system metaphor](#food-system-metaphor)
 	- &nbsp;1.2. [Does BI have value?](#does-bi-have-value)
@@ -25,7 +25,9 @@
 			- &nbsp;2.5.2.1. [Performance management](#performance-management)
 			- &nbsp;2.5.2.2. [Data mining](#data-mining)
 				- &nbsp;2.5.2.2.1. [DM applications](#dm-applications)
-				- &nbsp;2.5.2.2.2. [CRISP-DM process](#crisp-dm-process)
+				- &nbsp;2.5.2.2.2. [DM processes](#dm-processes)
+				- &nbsp;2.5.2.2.3. [DM software](#dm-software)
+				- &nbsp;2.5.2.2.4. [Common DM pitfalls](#common-dm-pitfalls)
 			- &nbsp;2.5.2.3. [Text & web analytics](#text-web-analytics)
 			- &nbsp;2.5.2.4. [Data viz & visual analytics](#data-viz-visual-analytics)
 	- &nbsp;2.6. [Reporting](#reporting)
@@ -472,17 +474,84 @@ Per Sharda et al. (2014, pp. 160-161):
     - forecasting to inform scheduling
 
 
-##### 2.5.2.2.2. CRISP-DM process
+##### 2.5.2.2.2. DM processes
 
-The Cross-Industry Standard Process for Data Mining arose c. 1990s:
+Per Sharda et al. (2014):
 
-1. Business understanding
-2. Data understanding
-3. Data preparation
-4. Model building
-5. Testing and evaluation
-6. Deployment
+<table>
+    <tr><th>CRISP-DM\*</th><th>SEMMA</th><th>KDD\*\*</th></tr>
+    <tr><td>1. Business understanding</td><td>1. Sample: "generate a representative sample of the data"</td><td>1. Data selection
+</td></tr>
+    <tr><td>2. Data understanding</td><td>2. Explore: "visualization and basic description of the data"</td><td>2. Data preprocessing</td></tr>
+    <tr><td>3. Data preparation</td><td>3. Modify: "select variables, transform variable representations"</td><td>3. Data transformation</td></tr>
+    <tr><td>4. Model building</td><td>4. Model: "use a variety of statistical and machine learning model"</td><td>4. Data mining </td></tr>
+    <tr><td>5. Testing & evaluation</td><td rowspan=2>5. Assess: "evaluate the accuracy and usefulness of the models"</td><td rowspan=2>5. Interpretation/evaluation</td></tr>
+    <tr><td>6. Deployment</td></tr>
+</table>
 
+\* Cross-Industry Standard Process for Data Mining, c. 1990s
+\*\* Knowledge Discovery in Databases
+
+##### 2.5.2.2.3. DM software
+
+Per Sharda et al. (2015, p. 187), some commerical tools:
+
+- IBM SPSS Modeler
+- SAS Enterprise Miner
+- Statistica
+- Inteligent Miner
+- PolyAnalyst
+- CART, MARS, TreeNet, RandomForest (Saleford Systems)
+- Insightful Miner
+- XL Miner
+- KXEN
+- GhostMiner
+- Microsoft SQL Server Data Mining
+- Knowledge Miner
+- Teradata Warehouse Miner
+- Oracle Data Mining
+- Fair Isaac Business Science
+- DeltaMaster
+- iData Analyzer
+- Orange Data Mining Tool
+- Zementis Predictive Analytics
+
+Also, they cite a poll from KDNuggets.com (most to least popular):
+
+- R
+- Excel
+- Rapid-I RapidMiner
+- KNIME
+- Weka/Pentaho
+- StatSoft Statistica
+- SAS
+- Rapid-I RapidAnalytics
+- MATLAB
+- IMB SPSS Statistics
+- IBM SPSS Modeler
+- Orange
+- Microsoft SQL Server
+- Other free software
+- TIBCO Spotfire/S+/Miner
+- Tableau
+- Oracle Data Miner
+- Other commercial software
+- ...
+
+##### 2.5.2.2.4. Common DM pitfalls
+
+Per Sharda et al. (2015, p. 195):
+
+- "Selecting the wrong problem for data mining.
+- Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
+- Leaving insufficient time for data preparation. It takes more effort than is generally understood.
+- Looking only at aggregated results and not at individual records ...
+- Being sloppy about keeping track of the data mining procedure and results.
+- Ignoring suspicious findings and quickly moving on.
+- Running mining algorithms repeatedly and blindly ...
+- Believing everything you are told about the data.
+- Believing everything you are told about your own data mining analysis [????]
+- Measuring your results differently from the way your sponsor measures them."
 
 
 #### 2.5.2.3. Text & web analytics

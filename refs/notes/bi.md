@@ -370,11 +370,45 @@ Per Sharda et al. (2014), the field of data mining draws on _statistics, artific
 
 See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [notes on machine learning.](https://jtkovacs.github.io/refs/machine-learning.html)
 
-##### DM applications
+##### DM applications by technique
+
+Per Sharda et al. (2015, pp. 172; 181; 183):
+
+<table>
+    <tr><th>Prediction</th>
+    <td style="text-align:right;"><ul>
+        <li>credit approval</li>
+        <li>store location</li>
+        <li>target marketing</li>
+        <li>fraud detection</li>
+        <li>attrition</li>
+    </ul></td></tr>
+    <tr><th>Association</th>
+    <td style="text-align:right;"><ul>
+        <li>"identify a classification scheme (e.g., types of customers)"</li>
+        <li>"suggest statistical models to describe populations"</li>
+        <li>"indicate rules for assigning new cases to classes for identification, tagging, and diagnostic purposes"</li>
+        <li>"provide measures of definition, size, and change in what were previously broad concepts"</li>
+        <li>"find typical cases to label and represent classes"</li>
+        <li>"decrease the size and complexity of the problem space for other data mining methods"</li>
+        <li>"identify outliers in a specific domain (i.e., rare-event detection)"</li>
+    </ul></td></tr>
+    <tr><th>Clustering</th>
+    <td style="text-align:right;"><ul>
+        <li>"improve product placement on the sales floor ... and [coordinate] promotional pricing of products"</li>
+        <li>identify credit fraud based on purchase combinations</li>
+        <li>"sequentional patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
+        <li>"structure product bundles to maximize revenue"</li>
+        <li>detect elevated medical risk as a combination of factors</li>
+        <li>detect that "certain procedures at certain medical facilities can be tied to certain types of infection"</li>
+    </ul></td></tr>
+</table>
+
+##### DM applications by industry
 
 Per Sharda et al. (2014, pp. 160-161):
 
--**GENERIC** (common across many domains)
+- **GENERIC** (common across many domains)
     - customer profiling to identify most likely consumers for a given product, or most valuable customers to invest in
     - churn analysis, identifying roots of customer or employee attrition
     - identify and exploit seasonal trends
@@ -430,24 +464,23 @@ Per Sharda et al. (2014, pp. 160-161):
     - predict market reception of a movie, album, etc.
     - forecasting to inform scheduling
 
-
 ##### DM processes
 
 Per Sharda et al. (2014):
 
 <table>
     <tr><th>CRISP-DM\*</th><th>SEMMA</th><th>KDD\*\*</th></tr>
-    <tr><td>1. Business understanding</td><td>1. Sample: "generate a representative sample of the data"</td><td>1. Data selection
-</td></tr>
-    <tr><td>2. Data understanding</td><td>2. Explore: "visualization and basic description of the data"</td><td>2. Data preprocessing</td></tr>
-    <tr><td>3. Data preparation</td><td>3. Modify: "select variables, transform variable representations"</td><td>3. Data transformation</td></tr>
-    <tr><td>4. Model building</td><td>4. Model: "use a variety of statistical and machine learning model"</td><td>4. Data mining </td></tr>
-    <tr><td>5. Testing & evaluation</td><td rowspan=2>5. Assess: "evaluate the accuracy and usefulness of the models"</td><td rowspan=2>5. Interpretation/evaluation</td></tr>
-    <tr><td>6. Deployment</td></tr>
+    <tr><td>Business understanding</td><td>Sample: "generate a representative sample of the data"</td><td>Data selection</td></tr>
+    <tr><td>Data understanding</td><td>Explore: "visualization and basic description of the data"</td><td>Data preprocessing</td></tr>
+    <tr><td>Data preparation</td><td>Modify: "select variables, transform variable representations"</td><td>Data transformation</td></tr>
+    <tr><td>Model building</td><td>Model: "use a variety of statistical and machine learning model"</td><td>Data mining </td></tr>
+    <tr><td>Testing & evaluation</td><td rowspan=2>Assess: "evaluate the accuracy and usefulness of the models"</td><td rowspan=2>Interpretation/evaluation</td></tr>
+    <tr><td>Deployment</td></tr>
 </table>
 
 \* Cross-Industry Standard Process for Data Mining, c. 1990s
-\*\* Knowledge Discovery in Databases
+
+\*\* Knowledge Discovery in Databases, c. 1996
 
 ##### DM software
 

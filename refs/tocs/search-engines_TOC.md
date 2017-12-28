@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> search engines | just under 279 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What are search engines?](#what-are-search-engines)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> search engines | just under 367 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What are search engines?](#what-are-search-engines)
 	- &nbsp;1.1. [Business applications of search engines](#business-applications-of-search-engines)
 		- &nbsp;1.1.1. [Enterprise IR](#enterprise-ir)
 		- &nbsp;1.1.2. [Marketing](#marketing)
@@ -14,15 +14,16 @@
 	- &nbsp;2.1. [Search engine process](#search-engine-process)
 		- &nbsp;2.1.1. [Development cycle](#development-cycle)
 		- &nbsp;2.1.2. [Response cycle](#response-cycle)
-	- &nbsp;2.2. [Major search algorithms](#major-search-algorithms)
-		- &nbsp;2.2.1. [PageRank](#pagerank)
-		- &nbsp;2.2.2. [Hilltop](#hilltop)
-		- &nbsp;2.2.3. [Topic-Sensitive](#topic-sensitive)
-		- &nbsp;2.2.4. [Hyperlink-Induced Topic Search](#hyperlink-induced-topic-search)
-		- &nbsp;2.2.5. [Panda](#panda)
-		- &nbsp;2.2.6. [Penguin](#penguin)
-		- &nbsp;2.2.7. [Hummingbird](#hummingbird)
-		- &nbsp;2.2.8. [RankBrain](#rankbrain)
+	- &nbsp;2.2. [Measuring search engine performance](#measuring-search-engine-performance)
+	- &nbsp;2.3. [Major search algorithms](#major-search-algorithms)
+		- &nbsp;2.3.1. [PageRank](#pagerank)
+		- &nbsp;2.3.2. [Hilltop](#hilltop)
+		- &nbsp;2.3.3. [Topic-Sensitive](#topic-sensitive)
+		- &nbsp;2.3.4. [Hyperlink-Induced Topic Search](#hyperlink-induced-topic-search)
+		- &nbsp;2.3.5. [Panda](#panda)
+		- &nbsp;2.3.6. [Penguin](#penguin)
+		- &nbsp;2.3.7. [Hummingbird](#hummingbird)
+		- &nbsp;2.3.8. [RankBrain](#rankbrain)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -32,6 +33,8 @@
 
 
 # 1. What are search engines?
+
+"Technically, 'search engine' is the popular term for information retrieval systems. Although Web search engines are the most popular, search engines are often used in other than the Web, such as desktop search engines and document search engines ... perhaps a more appropriate name for them would have been _finding engines"_ (Sharda et al., 2014, p. 243).
 
 ## 1.1. Business applications of search engines
 
@@ -65,11 +68,14 @@
 
 In general, search engines work by crawling and [automatically indexing](information-architecture.html#cataloging-&-indexing) content, thus creating metadata. This index may be fairly shallow, e.g. based on contents of the <meta> tag or headers; it may also be quite deep, using natural language process (NLP) techniques like grammatical stemming. User search terms are then matched to the index.
 
-In the early days, there was a strong distinction in techniques used between search engines and library catalogs. Increasingly, though, [KOSs from IA](information-architecture.html#koss-by-role-in-ir) --- which take advantage of human knowledge by formalizing it for use by an information system --- play a role in improve search engine performance.
+In the early days, there was a strong distinction in techniques used between search engines and library catalogs. Increasingly, though, [KOSs from IA](information-architecture.html#koss-by-role-in-ir) --- which take advantage of human knowledge by formalizing it for use by an information system --- play a role in improving search engine performance.
+
 
 
 
 ## 2.1. Search engine process
+
+Per Sharda et al. (2014, pp. 243-
 
 - **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
 
@@ -80,28 +86,39 @@ In the early days, there was a strong distinction in techniques used between sea
 
 
 
+## 2.2. Measuring search engine performance
 
-## 2.2. Major search algorithms
+Per Sharda et al. (2014):
 
-### 2.2.1. PageRank
+- Effectiveness AKA quality of results
+    -  Recall
+    -  Precision
+- Efficiency AKA speed
 
-### 2.2.2. Hilltop
 
-### 2.2.3. Topic-Sensitive
 
-### 2.2.4. Hyperlink-Induced Topic Search
+
+## 2.3. Major search algorithms
+
+### 2.3.1. PageRank
+
+### 2.3.2. Hilltop
+
+### 2.3.3. Topic-Sensitive
+
+### 2.3.4. Hyperlink-Induced Topic Search
 
 (or Hypertext Induced Topic Selection??)
 
-### 2.2.5. Panda
+### 2.3.5. Panda
 
-### 2.2.6. Penguin
+### 2.3.6. Penguin
 
-### 2.2.7. Hummingbird
+### 2.3.7. Hummingbird
 
 (semantic reasoning and query rewriting)
 
-### 2.2.8. RankBrain
+### 2.3.8. RankBrain
 
 (machine learning)
 

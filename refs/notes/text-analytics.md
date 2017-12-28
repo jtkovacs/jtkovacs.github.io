@@ -45,7 +45,7 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - **Clustering.** Grouping similar documents without having a predefined set of categories.
 - **Concept-linking.** Connects related documents by identifying their shared concepts and, by doing so, helps users find information that they perhaps would not have found using traditional search methods."
 
-... and some applications specifically enabled by NLP (p. 213; for a great example, see [Textio, The Augmented Writing Platform\):](https://textio.com/)
+... and some applications specifically enabled by NLP (pp. 213, 225; for a great example, see [Textio, The Augmented Writing Platform\):](https://textio.com/)
 
 - **"Question-answering.** ... producing a human language answer when given a human language question. ...
 - **Automatic summarization.** The creation of a shortened version of a textual document by a computer program that contains the most important parts of the original document.
@@ -56,7 +56,7 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - **Speech recognition.** ... Given a sound clip of a person speaking, the system produces a text dictation.
 - **Text-to-speech.** Also called _speech synthesis,_ a computer program automatically converts normal language text into human speech.
 - **Text proofing.** A computer program reads a proof copy of a text in order to detect and correct errors.
-- **Optical character recognition.** The automatic translation of images of handwritten, typewritten, or printed text (usually captured by a scanner) into machine-editable textual documents."
+- **Optical character recognition.** The automatic translation of images of handwritten, typewritten, or printed text (usually captured by a scanner) into machine-editable textual documents"
 
 ... and some applications specifically enabled by sentiment analysis, part of NLP (p. 233):
 
@@ -190,13 +190,8 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
 
 ### Analyze
 
-Using methods from [data mining](https://jtkovacs.github.io/refs/data-mining.html)
+See [text analytics techniques.](#text-analytics-techniques)
 
-Classification (automatic text categorization)
-
-- Indexing text (semi/automatic)
-- Filtering spam
-- Cataloging web pages
 
 
 
@@ -224,10 +219,37 @@ Classification (automatic text categorization)
 
 ## Text mining
 
-- Classification
-- Association
-- Clustering
-- Trend analysis
+See [notes on data mining.](https://jtkovacs.github.io/refs/data-mining.html)
+
+### Clustering
+
+Per Sharda et al. (2014, pp. 224-225), clustering is often used to **improve search recall** ("when a query matches a document its whole cluster is returned") and **precision** ("grouping the documents into a number of much smaller groups of related documents, ordering them by relevance, and returning only the documents from the most relevant group or groups"). The most common clustering methods:
+
+- **Scatter/gather** "dynamically generates a table of contents for the collection and adapts and modifies it in response to the user selection"
+- **Query-specific clustering** "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
+
+### Association
+
+Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For _A_ ==> _C],_ confidence is the percentage of documents that include all the concepts in _C_ within the same subset of those documents that include all the concepts in _A._ Support is the percentage (or number) of documents that include all the concepts in _A_ and _C."_
+
+#### Trend analysis
+
+Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
+
+### Prediction
+
+#### Classification (automatic text categorization)
+
+Sharda et al. (2014, pp. 224):
+
+- indexing text (semi/automatic)
+- filtering spam
+- cataloging web pages
+- generating metadata
+- genre detection
+
+
+
 
 
 ### Web mining

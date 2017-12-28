@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 2275 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 2495 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -9,10 +9,15 @@
 		- &nbsp;1.2.3. [Analyze](#analyze)
 - &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
 	- &nbsp;2.1. [Text mining](#text-mining)
-		- &nbsp;2.1.1. [Web mining](#web-mining)
-			- &nbsp;2.1.1.1. [Search engines & SEO](#search-engines-seo)
-			- &nbsp;2.1.1.2. [Web analytics](#web-analytics)
-			- &nbsp;2.1.1.3. [Social analytics](#social-analytics)
+		- &nbsp;2.1.1. [Clustering](#clustering)
+		- &nbsp;2.1.2. [Association](#association)
+			- &nbsp;2.1.2.1. [Trend analysis](#trend-analysis)
+		- &nbsp;2.1.3. [Prediction](#prediction)
+			- &nbsp;2.1.3.1. [Classification (automatic text categorization)](#classification-automatic-text-categorization)
+		- &nbsp;2.1.4. [Web mining](#web-mining)
+			- &nbsp;2.1.4.1. [Search engines & SEO](#search-engines-seo)
+			- &nbsp;2.1.4.2. [Web analytics](#web-analytics)
+			- &nbsp;2.1.4.3. [Social analytics](#social-analytics)
 	- &nbsp;2.2. [Natural language processing](#natural-language-processing)
 		- &nbsp;2.2.1. [Sentiment analysis](#sentiment-analysis)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
@@ -73,7 +78,7 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - **Clustering.** Grouping similar documents without having a predefined set of categories.
 - **Concept-linking.** Connects related documents by identifying their shared concepts and, by doing so, helps users find information that they perhaps would not have found using traditional search methods."
 
-... and some applications specifically enabled by NLP (p. 213; for a great example, see [Textio, The Augmented Writing Platform\):](https://textio.com/)
+... and some applications specifically enabled by NLP (pp. 213, 225; for a great example, see [Textio, The Augmented Writing Platform\):](https://textio.com/)
 
 - **"Question-answering.** ... producing a human language answer when given a human language question. ...
 - **Automatic summarization.** The creation of a shortened version of a textual document by a computer program that contains the most important parts of the original document.
@@ -84,7 +89,7 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - **Speech recognition.** ... Given a sound clip of a person speaking, the system produces a text dictation.
 - **Text-to-speech.** Also called _speech synthesis,_ a computer program automatically converts normal language text into human speech.
 - **Text proofing.** A computer program reads a proof copy of a text in order to detect and correct errors.
-- **Optical character recognition.** The automatic translation of images of handwritten, typewritten, or printed text (usually captured by a scanner) into machine-editable textual documents."
+- **Optical character recognition.** The automatic translation of images of handwritten, typewritten, or printed text (usually captured by a scanner) into machine-editable textual documents"
 
 ... and some applications specifically enabled by sentiment analysis, part of NLP (p. 233):
 
@@ -218,13 +223,8 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
 
 ### 1.2.3. Analyze
 
-Using methods from [data mining](https://jtkovacs.github.io/refs/data-mining.html)
+See [text analytics techniques.](#text-analytics-techniques)
 
-Classification (automatic text categorization)
-
-- Indexing text (semi/automatic)
-- Filtering spam
-- Cataloging web pages
 
 
 
@@ -252,20 +252,47 @@ Classification (automatic text categorization)
 
 ## 2.1. Text mining
 
-- Classification
-- Association
-- Clustering
-- Trend analysis
+See [notes on data mining.](https://jtkovacs.github.io/refs/data-mining.html)
+
+### 2.1.1. Clustering
+
+Per Sharda et al. (2014, pp. 224-225), clustering is often used to **improve search recall** ("when a query matches a document its whole cluster is returned") and **precision** ("grouping the documents into a number of much smaller groups of related documents, ordering them by relevance, and returning only the documents from the most relevant group or groups"). The most common clustering methods:
+
+- **Scatter/gather** "dynamically generates a table of contents for the collection and adapts and modifies it in response to the user selection"
+- **Query-specific clustering** "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
+
+### 2.1.2. Association
+
+Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For _A_ ==> _C],_ confidence is the percentage of documents that include all the concepts in _C_ within the same subset of those documents that include all the concepts in _A._ Support is the percentage (or number) of documents that include all the concepts in _A_ and _C."_
+
+#### 2.1.2.1. Trend analysis
+
+Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
+
+### 2.1.3. Prediction
+
+#### 2.1.3.1. Classification (automatic text categorization)
+
+Sharda et al. (2014, pp. 224):
+
+- indexing text (semi/automatic)
+- filtering spam
+- cataloging web pages
+- generating metadata
+- genre detection
 
 
-### 2.1.1. Web mining
+
+
+
+### 2.1.4. Web mining
 
 Challenges with web mining, per Sharda et al. (2014, p. 239) --- the Web is:
 
 - Big, growing, and constantly updated
 - Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
 
-#### 2.1.1.1. Search engines & SEO
+#### 2.1.4.1. Search engines & SEO
 
 See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
 
@@ -274,7 +301,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-#### 2.1.1.2. Web analytics
+#### 2.1.4.2. Web analytics
 
 (mining usage)
 
@@ -288,7 +315,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-#### 2.1.1.3. Social analytics
+#### 2.1.4.3. Social analytics
 
 - types of networks
 - network metrics

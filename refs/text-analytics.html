@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 815 words | updated 12/28/2017
+   &gt; text analytics | just under 981 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -49,27 +49,47 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <a href="#business-applications-of-text-analytics">
         Business applications of text analytics
        </a>
+       <ul>
+        <li>
+         1.1.1.
+         <a href="#applications-by-technique">
+          Applications by technique
+         </a>
+        </li>
+        <li>
+         1.1.2.
+         <a href="#applications-by-industry">
+          Applications by industry
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        1.2.
+       <a href="#glossary-of-text-analytics-terms">
+        Glossary of text analytics terms
+       </a>
+      </li>
+      <li>
+       1.3.
        <a href="#doing-text-analytics">
         Doing text analytics
        </a>
        <ul>
         <li>
-         1.2.1.
+         1.3.1.
          <a href="#text-analytics-process">
           Text analytics process
          </a>
         </li>
         <li>
-         1.2.2.
+         1.3.2.
          <a href="#text-analytics-tools">
           Text analytics tools
          </a>
          <ul>
           <li>
-           1.2.2.1.
+           1.3.2.1.
            <a href="#ibm-watson">
             IBM Watson
            </a>
@@ -82,54 +102,90 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </li>
     <li>
      2.
-     <a href="#text-analytic-techniques">
-      Text analytic techniques
+     <a href="#text-analytics-techniques">
+      Text analytics techniques
      </a>
      <ul>
       <li>
        2.1.
-       <a href="#text-analytics-glossary">
-        Text analytics glossary
+       <a href="#text-mining">
+        Text mining
        </a>
       </li>
       <li>
        2.2.
-       <a href="#information-extraction">
-        Information extraction
+       <a href="#natural-language-processing-nlp">
+        Natural language processing (NLP)
        </a>
-       -  2.2.1.
-       <a href="#python">
-        Python
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#sentiment-analysis">
+          Sentiment analysis
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.3.
+       <a href="#web-mining">
+        Web mining
        </a>
+       <ul>
+        <li>
+         2.3.1.
+         <a href="#search-engines-seo">
+          Search engines &amp; SEO
+         </a>
+        </li>
+        <li>
+         2.3.2.
+         <a href="#web-analytics">
+          Web analytics
+         </a>
+        </li>
+        <li>
+         2.3.3.
+         <a href="#social-analytics">
+          Social analytics
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </li>
     <li>
      3.
+     <a href="#python">
+      Python
+     </a>
+    </li>
+    <li>
+     4.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       3.1.
+       4.1.
        <a href="#cited">
         Cited
        </a>
       </li>
       <li>
-       3.2.
+       4.2.
        <a href="#references">
         References
        </a>
       </li>
       <li>
-       3.3.
+       4.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       3.4.
+       4.4.
        <a href="#unread">
         Unread
        </a>
@@ -214,7 +270,75 @@ code > span.er { color: #ff0000; font-weight: bold; }
     1.1. Business applications of text analytics
    </a>
   </h2>
+  <h3 id="applications-by-technique">
+   <a>
+    1.1.1. Applications by technique
+   </a>
+  </h3>
+  <p>
+   p. 206
+  </p>
   <ul>
+   <li>
+    Information extraction
+   </li>
+   <li>
+    Topic tracking
+   </li>
+   <li>
+    Concept-linking
+   </li>
+   <li>
+    Question-answering
+   </li>
+   <li>
+    Summarization
+   </li>
+   <li>
+    Categorization
+   </li>
+   <li>
+    Clustering
+   </li>
+  </ul>
+  <h3 id="applications-by-industry">
+   <a>
+    1.1.2. Applications by industry
+   </a>
+  </h3>
+  <p>
+   pp. 213-19, 232
+  </p>
+  <ul>
+   <li>
+    Political
+   </li>
+   <li>
+    Marketing
+   </li>
+   <li>
+    Biomedical
+   </li>
+   <li>
+    Security
+   </li>
+   <li>
+    Financial (sentiment)
+   </li>
+   <li>
+    VOE, VOC, VOM (sentiment)
+   </li>
+   <li>
+    Managing search engines, email, websites
+   </li>
+   <li>
+    Acdemic
+   </li>
+   <li>
+    <p>
+     citation analysis
+    </p>
+   </li>
    <li>
     court orders
    </li>
@@ -254,30 +378,46 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </ul>
    </li>
   </ul>
+  <h2 id="glossary-of-text-analytics-terms">
+   <a>
+    1.2. Glossary of text analytics terms
+   </a>
+  </h2>
+  <p>
+   p. 207
+  </p>
   <h2 id="doing-text-analytics">
    <a>
-    1.2. Doing text analytics
+    1.3. Doing text analytics
    </a>
   </h2>
   <h3 id="text-analytics-process">
    <a>
-    1.2.1. Text analytics process
+    1.3.1. Text analytics process
    </a>
   </h3>
   <p>
-   Per Sharda et al. (2014, p. 206):
+   Per Sharda et al. (2014, p. 220):
   </p>
-  <p>
-   1. 2.
-  </p>
+  <ol style="list-style-type: decimal">
+   <li>
+    Establish the corpus
+   </li>
+   <li>
+    Create term-document matrix
+   </li>
+   <li>
+    Analyze
+   </li>
+  </ol>
   <h3 id="text-analytics-tools">
    <a>
-    1.2.2. Text analytics tools
+    1.3.2. Text analytics tools
    </a>
   </h3>
   <h4 id="ibm-watson">
    <a>
-    1.2.2.1. IBM Watson
+    1.3.2.1. IBM Watson
    </a>
   </h4>
   <p>
@@ -286,26 +426,140 @@ code > span.er { color: #ff0000; font-weight: bold; }
   <p>
    <img src="illos/DeepQA.png" width="600"/>
   </p>
-  <h1 id="text-analytic-techniques">
+  <h1 id="text-analytics-techniques">
    <a>
-    2. Text analytic techniques
+    2. Text analytics techniques
    </a>
   </h1>
-  <h2 id="text-analytics-glossary">
+  <h2 id="text-mining">
    <a>
-    2.1. Text analytics glossary
+    2.1. Text mining
    </a>
   </h2>
-  <h2 id="information-extraction">
+  <ul>
+   <li>
+    Classification
+   </li>
+   <li>
+    Association
+   </li>
+   <li>
+    Clustering
+   </li>
+   <li>
+    Trend analysis
+   </li>
+  </ul>
+  <h2 id="natural-language-processing-nlp">
    <a>
-    2.2. Information extraction
+    2.2. Natural language processing (NLP)
    </a>
   </h2>
-  <h4 id="python">
+  <p>
+   vs. bag of words
+  </p>
+  <p>
+   challenges
+  </p>
+  <h3 id="sentiment-analysis">
    <a>
-    2.2.1. Python
+    2.2.1. Sentiment analysis
    </a>
-  </h4>
+  </h3>
+  <ul>
+   <li>
+    Process, pp. 234
+   </li>
+  </ul>
+  <h2 id="web-mining">
+   <a>
+    2.3. Web mining
+   </a>
+  </h2>
+  <p>
+   Challenges
+  </p>
+  <h3 id="search-engines-seo">
+   <a>
+    2.3.1. Search engines &amp; SEO
+   </a>
+  </h3>
+  <p>
+   See
+   <a href="https://jtkovacs.github.io/refs/search-engines.html">
+    notes on search engines.
+   </a>
+  </p>
+  <p>
+   (mining content, structure)
+  </p>
+  <h3 id="web-analytics">
+   <a>
+    2.3.2. Web analytics
+   </a>
+  </h3>
+  <p>
+   (mining usage)
+  </p>
+  <ul>
+   <li>
+    metrics
+   </li>
+   <li>
+    visitor profiles
+   </li>
+   <li>
+    traffic
+   </li>
+   <li>
+    usability
+   </li>
+   <li>
+    conversion
+   </li>
+   <li>
+    technologies
+   </li>
+  </ul>
+  <h3 id="social-analytics">
+   <a>
+    2.3.3. Social analytics
+   </a>
+  </h3>
+  <ul>
+   <li>
+    types of networks
+   </li>
+   <li>
+    network metrics
+   </li>
+   <li>
+    connections
+   </li>
+   <li>
+    distributions
+   </li>
+   <li>
+    segmentation
+   </li>
+   <li>
+    social media analytics
+   </li>
+   <li>
+    social media vs traditional media
+   </li>
+   <li>
+    types of social media users
+   </li>
+   <li>
+    measuring social media impact
+   </li>
+  </ul>
+  <h1 id="python">
+   <a>
+    3. Python
+   </a>
+  </h1>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># reverse order of elements:</span>
 <span class="dt">list</span>.reverse(), my_string[::-<span class="dv">1</span>]
 <span class="co"># selectively replace:</span>
@@ -433,12 +687,12 @@ my_var.group(‘group_name’)
 my_var.group(<span class="dv">1</span>)</code></pre>
   <h1 id="sources">
    <a>
-    3. Sources
+    4. Sources
    </a>
   </h1>
   <h2 id="cited">
    <a>
-    3.1. Cited
+    4.1. Cited
    </a>
   </h2>
   <p>
@@ -450,7 +704,7 @@ my_var.group(<span class="dv">1</span>)</code></pre>
   </p>
   <h2 id="references">
    <a>
-    3.2. References
+    4.2. References
    </a>
   </h2>
   <ul>
@@ -477,7 +731,7 @@ my_var.group(<span class="dv">1</span>)</code></pre>
   </ul>
   <h2 id="read">
    <a>
-    3.3. Read
+    4.3. Read
    </a>
   </h2>
   <ul>
@@ -488,8 +742,8 @@ my_var.group(<span class="dv">1</span>)</code></pre>
    </li>
   </ul>
   <h2>
-   <a name="3.4.-unread">
-    3.4. Unread
+   <a name="4.4.-unread">
+    4.4. Unread
    </a>
   </h2>
   <ul>

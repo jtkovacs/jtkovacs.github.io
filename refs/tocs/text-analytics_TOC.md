@@ -1,19 +1,32 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 815 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 981 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
-	- &nbsp;1.2. [Doing text analytics](#doing-text-analytics)
-		- &nbsp;1.2.1. [Text analytics process](#text-analytics-process)
-		- &nbsp;1.2.2. [Text analytics tools](#text-analytics-tools)
-			- &nbsp;1.2.2.1. [IBM Watson](#ibm-watson)
-- &nbsp;2. [Text analytic techniques](#text-analytic-techniques)
-	- &nbsp;2.1. [Text analytics glossary](#text-analytics-glossary)
-	- &nbsp;2.2. [Information extraction](#information-extraction)
-			- &nbsp;2.2.1. [Python](#python)
-- &nbsp;3. [Sources](#sources)
-	- &nbsp;3.1. [Cited](#cited)
-	- &nbsp;3.2. [References](#references)
-	- &nbsp;3.3. [Read](#read)
-	- &nbsp;3.4. [Unread](#unread)
+		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
+		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
+	- &nbsp;1.2. [Glossary of text analytics terms](#glossary-of-text-analytics-terms)
+	- &nbsp;1.3. [Doing text analytics](#doing-text-analytics)
+		- &nbsp;1.3.1. [Text analytics process](#text-analytics-process)
+		- &nbsp;1.3.2. [Text analytics tools](#text-analytics-tools)
+			- &nbsp;1.3.2.1. [IBM Watson](#ibm-watson)
+- &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
+	- &nbsp;2.1. [Text mining](#text-mining)
+	- &nbsp;2.2. [Natural language processing (NLP)](#natural-language-processing-nlp)
+		- &nbsp;2.2.1. [Sentiment analysis](#sentiment-analysis)
+	- &nbsp;2.3. [Web mining](#web-mining)
+		- &nbsp;2.3.1. [Search engines & SEO](#search-engines-seo)
+		- &nbsp;2.3.2. [Web analytics](#web-analytics)
+		- &nbsp;2.3.3. [Social analytics](#social-analytics)
+- &nbsp;3. [Python](#python)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [References](#references)
+	- &nbsp;4.3. [Read](#read)
+	- &nbsp;4.4. [Unread](#unread)
 </div>
+
+
+
+
+
 
 
 # 1. What is text analytics?
@@ -40,7 +53,37 @@ Text analytics is enabled by technologies from the fields of:
 
 
 
+
+
+
+
 ## 1.1. Business applications of text analytics
+
+### 1.1.1. Applications by technique
+
+p. 206
+
+- Information extraction
+- Topic tracking
+- Concept-linking
+- Question-answering
+- Summarization
+- Categorization
+- Clustering
+
+### 1.1.2. Applications by industry
+
+pp. 213-19, 232
+
+- Political
+- Marketing
+- Biomedical
+- Security
+- Financial (sentiment)
+  - VOE, VOC, VOM (sentiment)
+- Managing search engines, email, websites
+- Acdemic
+  - citation analysis
 
 - court orders
 - research articles
@@ -56,32 +99,116 @@ Text analytics is enabled by technologies from the fields of:
     - generate automatic responses
 
 
-## 1.2. Doing text analytics
 
-### 1.2.1. Text analytics process
 
-Per Sharda et al. (2014, p. 206):
+## 1.2. Glossary of text analytics terms
 
-1.
-2.
+p. 207
 
-### 1.2.2. Text analytics tools
 
-#### 1.2.2.1. IBM Watson
+
+
+
+## 1.3. Doing text analytics
+
+### 1.3.1. Text analytics process
+
+Per Sharda et al. (2014, p. 220):
+
+1. Establish the corpus
+2. Create term-document matrix
+3. Analyze
+
+
+
+
+
+### 1.3.2. Text analytics tools
+
+#### 1.3.2.1. IBM Watson
 
 IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
 
 <img src="../illos/DeepQA.png" width="600">
 
 
-# 2. Text analytic techniques
-
-## 2.1. Text analytics glossary
-
-## 2.2. Information extraction
 
 
-#### 2.2.1. Python
+
+
+
+
+# 2. Text analytics techniques
+
+## 2.1. Text mining
+
+- Classification
+- Association
+- Clustering
+- Trend analysis
+
+
+
+
+## 2.2. Natural language processing (NLP)
+
+vs. bag of words
+
+challenges
+
+### 2.2.1. Sentiment analysis
+
+- Process, pp. 234
+
+
+
+
+## 2.3. Web mining
+
+Challenges
+
+
+
+
+### 2.3.1. Search engines & SEO
+
+See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
+
+(mining content, structure)
+
+
+
+
+### 2.3.2. Web analytics
+
+(mining usage)
+
+- metrics
+  - visitor profiles
+  - traffic
+  - usability
+  - conversion
+- technologies
+
+
+
+
+### 2.3.3. Social analytics
+
+- types of networks
+- network metrics
+  - connections
+  - distributions
+  - segmentation
+- social media analytics
+  - social media vs traditional media
+  - types of social media users
+  - measuring social media impact
+
+
+
+
+# 3. Python
 
 ```Python
 # reverse order of elements:
@@ -195,24 +322,24 @@ my_var.group(1)
 
 
 
-# 3. Sources
+# 4. Sources
 
-## 3.1. Cited
+## 4.1. Cited
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-## 3.2. References
+## 4.2. References
 
 - [NLTK cheatsheet](http://billchambers.me/tutorials/2015/01/14/python-nlp-cheatsheet-nltk-scikit-learn.html)
 - [Corpus of Contemporary American English](http://corpus.byu.edu/coca/)
 - [Corpus based language studies](http://cw.routledge.com/textbooks/0415286239/default.asp)
 - [IBM Watson demo - Infer personality from unstructured text](https://personality-insights-livedemo.mybluemix.net/)
 
-## 3.3. Read
+## 4.3. Read
 
 - [Lynda - Using Regex](http://www.lynda.com/Regular-Expressions-tutorials/Using-Regular-Expressions/85870-2.html)
 
-## 3.4. Unread
+## 4.4. Unread
 
 - Regex: [1](http://www.regular-expressions.info/), [2](https://regexone.com/)
 - [CodeSchool - Regular Expressions](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions)

@@ -1,9 +1,26 @@
 
-# How do search engines work?
 
-In general, search engines work by crawling and [automatically indexing](information-architecture.html#cataloging-&-indexing) content (thus creating metadata). This index may be fairly shallow, e.g. based on contents of the <meta> tag or headers; it may also be quite deep, using natural language process (NLP) techniques like grammatical stemming. User search terms are then matched to the index. 
+# What are search engines?
 
-In the early days, there was a strong distinction between search engines and library catalogs; increasingly, though, [KOSs from IA](information-architecture.html#koss-by-role-in-ir) may play a role. 
+Web mining > mining content, structure; see [notes on text analytics.](https://jtkovacs.github.io/refs/text-analytics.html#web-mining)
+
+## How do search engines work?
+
+In general, search engines work by crawling and [automatically indexing](information-architecture.html#cataloging-&-indexing) content (thus creating metadata). This index may be fairly shallow, e.g. based on contents of the <meta> tag or headers; it may also be quite deep, using natural language process (NLP) techniques like grammatical stemming. User search terms are then matched to the index.
+
+In the early days, there was a strong distinction between search engines and library catalogs; increasingly, though, [KOSs from IA](information-architecture.html#koss-by-role-in-ir) may play a role.
+
+## Search engine process
+
+### Development cycle
+
+### Response cycle
+
+
+- process
+  - development cycle
+  - response cycle
+- SEO
 
 ## Major search algorithms
 
@@ -11,7 +28,7 @@ In the early days, there was a strong distinction between search engines and lib
 
 ### Hilltop
 
-### Topic-Sensitive 
+### Topic-Sensitive
 
 ### Hypertext Induced Topic Selection
 
@@ -19,11 +36,11 @@ In the early days, there was a strong distinction between search engines and lib
 
 ### Penguin
 
-### Hummingbird 
+### Hummingbird
 
-(semantic reasoning and query rewriting)  
+(semantic reasoning and query rewriting)
 
-### RankBrain 
+### RankBrain
 
 (machine learning)
 
@@ -36,7 +53,7 @@ In the early days, there was a strong distinction between search engines and lib
 
 ### SEO
 
-### SEM 
+### SEM
 
 ## Enterprise IR
 
@@ -59,6 +76,15 @@ In the early days, there was a strong distinction between search engines and lib
 
 
 # Sources
+
+
+## Cited
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+## References
+
+## Read
 
 Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information Today, Inc.
 

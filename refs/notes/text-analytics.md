@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
 # What is text analytics?
 
 Per Sharda et al. (2014, p. 205), **text analytics** aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics".
@@ -24,7 +29,37 @@ Text analytics is enabled by technologies from the fields of:
 
 
 
+
+
+
+
 ## Business applications of text analytics
+
+### Applications by technique
+
+p. 206
+
+- Information extraction
+- Topic tracking
+- Concept-linking
+- Question-answering
+- Summarization
+- Categorization
+- Clustering
+
+### Applications by industry
+
+pp. 213-19, 232
+
+- Political
+- Marketing
+- Biomedical
+- Security
+- Financial (sentiment)
+  - VOE, VOC, VOM (sentiment)
+- Managing search engines, email, websites
+- Acdemic
+  - citation analysis
 
 - court orders
 - research articles
@@ -40,14 +75,29 @@ Text analytics is enabled by technologies from the fields of:
     - generate automatic responses
 
 
+
+
+## Glossary of text analytics terms
+
+p. 207
+
+
+
+
+
 ## Doing text analytics
 
 ### Text analytics process
 
-Per Sharda et al. (2014, p. 206):
+Per Sharda et al. (2014, p. 220):
 
-1.
-2.
+1. Establish the corpus
+2. Create term-document matrix
+3. Analyze
+
+
+
+
 
 ### Text analytics tools
 
@@ -58,14 +108,83 @@ IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic
 <img src="../illos/DeepQA.png" width="600">
 
 
-# Text analytic techniques
-
-## Text analytics glossary
-
-## Information extraction
 
 
-#### Python
+
+
+
+
+# Text analytics techniques
+
+## Text mining
+
+- Classification
+- Association
+- Clustering
+- Trend analysis
+
+
+
+
+## Natural language processing (NLP)
+
+vs. bag of words
+
+challenges
+
+### Sentiment analysis
+
+- Process, pp. 234
+
+
+
+
+## Web mining
+
+Challenges
+
+
+
+
+### Search engines & SEO
+
+See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
+
+(mining content, structure)
+
+
+
+
+### Web analytics
+
+(mining usage)
+
+- metrics
+  - visitor profiles
+  - traffic
+  - usability
+  - conversion
+- technologies
+
+
+
+
+### Social analytics
+
+- types of networks
+- network metrics
+  - connections
+  - distributions
+  - segmentation
+- social media analytics
+  - social media vs traditional media
+  - types of social media users
+  - measuring social media impact
+
+
+
+
+# Python
 
 ```Python
 # reverse order of elements:

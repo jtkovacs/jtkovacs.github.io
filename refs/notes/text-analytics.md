@@ -7,36 +7,28 @@
 
 # What is text analytics?
 
-Per Sharda et al. (2014, pp. 205-206), **text analytics** aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics", the latter taking a 'bag of words' approach and the former taking a much more sophisticated approach rooted in linguistics.
+Per Sharda et al. (2014, pp. 205-206), **text analytics** aims "to turn unstructured textual data into actionable information through the application of [techniques from] natural language processing (NLP) and analytics \[i.e., [data mining\]" ---](https://jtkovacs.github.io/refs/data-mining.html#what-is-data-mining) the latter taking a 'bag of words' approach and the former taking a much more sophisticated approach rooted in linguistics.
 
 Text analytics includes the core activities of:
 
-- [Information retrieval:](https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval) "searching and identifying relevant documents for a given set of key terms"; see [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html)
+- **Information retrieval:** "searching and identifying relevant documents for a given set of key terms"; see [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html) and [IA for information retrieval](https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval)
 - [Text mining](https://jtkovacs.github.io/refs/text-analytics.html#text-mining) AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources"
+    - **Information extraction:** "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
+    - **Web mining**
+        - Search engines (overlaps with "information retrieval")
+        - Web analytics
+        - Social media analytics
+    - [Data mining](https://jtkovacs.github.io/refs/data-mining.html)
 
 Text analytics is enabled by the foundational disciplines of:
 
 - Statistics
 - Computer Science
-- Artificial Intelligence
-- Machine Learning
-- Natural Language Processing
+    - Artificial Intelligence
+    - Machine Learning
 - Linguistics
+    - Natural Language Processing
 - Management Science
-
-
-
-
-## What is text mining?
-
-- **Information extraction:** "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
-- **Web mining**
-    - Search engines (overlaps with "information retrieval")
-    - Web analytics
-    - Social media analytics
-- [Data mining](https://jtkovacs.github.io/refs/data-mining.html)
-
-
 
 
 
@@ -143,13 +135,30 @@ Per Sharda et al. (2014, p. 216):
 
 
 
-## Text analytics process
+## Text mining process
 
-Per Sharda et al. (2014, p. 220):
+Per Sharda et al. (2014, pp. 220-226), text mining can be undertaken through the three-step process elaborated below. Delen and Crossland (2008, cited in Sharda et al., 2014) place the black box of this process into the following context, which they represent graphically:
 
-1. Establish the corpus
-2. Create term-by-document matrix
-3. Analyze
+- **Input**
+-   structured data
+-   unstructured data
+- **Constraints**
+    - software/hardware limitations
+    - privacy issues
+    - linguistic limitations
+- **Mechanisms**
+    - domain expertise
+    - tools & techniques
+- **Output** context-specific knowledge
+
+### Establish the corpus
+
+
+
+### Create term-by-document matrix
+
+
+### Analyze
 
 
 
@@ -249,7 +258,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-## Natural language processing (NLP)
+## Natural language processing
 
 vs. bag of words
 
@@ -308,7 +317,7 @@ list.index(‘str name’)
 list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list)
 ```
 
-#### String manipulation
+### String manipulation
 
 ```Python
 # remove punctuation
@@ -327,7 +336,7 @@ my_string.lstrip()
 my_string.rstrip()
 ```
 
-#### Regex
+### Regex
 
 ```Python
 # search for substrings within string or subset of string (i inclusive to j exclusive)

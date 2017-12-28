@@ -1,10 +1,12 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 1973 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
-	- &nbsp;1.1. [What is text mining?](#what-is-text-mining)
-	- &nbsp;1.2. [Business applications of text analytics](#business-applications-of-text-analytics)
-		- &nbsp;1.2.1. [Applications by technique](#applications-by-technique)
-		- &nbsp;1.2.2. [Applications by industry](#applications-by-industry)
-			- &nbsp;1.2.2.1. [Deception detection](#deception-detection)
-	- &nbsp;1.3. [Text analytics process](#text-analytics-process)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 2046 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
+		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
+		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
+			- &nbsp;1.1.2.1. [Deception detection](#deception-detection)
+	- &nbsp;1.2. [Text mining process](#text-mining-process)
+		- &nbsp;1.2.1. [Establish the corpus](#establish-the-corpus)
+		- &nbsp;1.2.2. [Create term-by-document matrix](#create-term-by-document-matrix)
+		- &nbsp;1.2.3. [Analyze](#analyze)
 - &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
 	- &nbsp;2.1. [Key definitions](#key-definitions)
 	- &nbsp;2.2. [Text mining](#text-mining)
@@ -12,13 +14,13 @@
 			- &nbsp;2.2.1.1. [Search engines & SEO](#search-engines-seo)
 			- &nbsp;2.2.1.2. [Web analytics](#web-analytics)
 			- &nbsp;2.2.1.3. [Social analytics](#social-analytics)
-	- &nbsp;2.3. [Natural language processing (NLP)](#natural-language-processing-nlp)
+	- &nbsp;2.3. [Natural language processing](#natural-language-processing)
 		- &nbsp;2.3.1. [Sentiment analysis](#sentiment-analysis)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
 	- &nbsp;3.1. [IBM Watson](#ibm-watson)
 	- &nbsp;3.2. [Python](#python)
-			- &nbsp;3.2.1. [String manipulation](#string-manipulation)
-			- &nbsp;3.2.2. [Regex](#regex)
+		- &nbsp;3.2.1. [String manipulation](#string-manipulation)
+		- &nbsp;3.2.2. [Regex](#regex)
 - &nbsp;4. [Sources](#sources)
 	- &nbsp;4.1. [Cited](#cited)
 	- &nbsp;4.2. [References](#references)
@@ -34,44 +36,36 @@
 
 # 1. What is text analytics?
 
-Per Sharda et al. (2014, pp. 205-206), **text analytics** aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics", the latter taking a 'bag of words' approach and the former taking a much more sophisticated approach rooted in linguistics.
+Per Sharda et al. (2014, pp. 205-206), **text analytics** aims "to turn unstructured textual data into actionable information through the application of [techniques from] natural language processing (NLP) and analytics \[i.e., [data mining\]" ---](https://jtkovacs.github.io/refs/data-mining.html#what-is-data-mining) the latter taking a 'bag of words' approach and the former taking a much more sophisticated approach rooted in linguistics.
 
 Text analytics includes the core activities of:
 
-- [Information retrieval:](https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval) "searching and identifying relevant documents for a given set of key terms"; see [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html)
+- **Information retrieval:** "searching and identifying relevant documents for a given set of key terms"; see [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html) and [IA for information retrieval](https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval)
 - [Text mining](https://jtkovacs.github.io/refs/text-analytics.html#text-mining) AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources"
+    - **Information extraction:** "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
+    - **Web mining**
+        - Search engines (overlaps with "information retrieval")
+        - Web analytics
+        - Social media analytics
+    - [Data mining](https://jtkovacs.github.io/refs/data-mining.html)
 
 Text analytics is enabled by the foundational disciplines of:
 
 - Statistics
 - Computer Science
-- Artificial Intelligence
-- Machine Learning
-- Natural Language Processing
+    - Artificial Intelligence
+    - Machine Learning
 - Linguistics
+    - Natural Language Processing
 - Management Science
 
 
 
 
-## 1.1. What is text mining?
 
-- **Information extraction:** "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
-- **Web mining**
-    - Search engines (overlaps with "information retrieval")
-    - Web analytics
-    - Social media analytics
-- [Data mining](https://jtkovacs.github.io/refs/data-mining.html)
+## 1.1. Business applications of text analytics
 
-
-
-
-
-
-
-## 1.2. Business applications of text analytics
-
-### 1.2.1. Applications by technique
+### 1.1.1. Applications by technique
 
 Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 
@@ -99,7 +93,7 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - Understanding the 'voices' of employees (VOE), customers (VOC) and the market (VOM)
 - Politics & surveillance
 
-### 1.2.2. Applications by industry
+### 1.1.2. Applications by industry
 
 Per Sharda et al. (2014, pp. 213-220):
 
@@ -135,7 +129,7 @@ Per Sharda et al. (2014, pp. 213-220):
     - medical records
     - molecular interactions
 
-#### 1.2.2.1. Deception detection
+#### 1.1.2.1. Deception detection
 
 Per Sharda et al. (2014, p. 216):
 
@@ -170,13 +164,30 @@ Per Sharda et al. (2014, p. 216):
 
 
 
-## 1.3. Text analytics process
+## 1.2. Text mining process
 
-Per Sharda et al. (2014, p. 220):
+Per Sharda et al. (2014, pp. 220-226), text mining can be undertaken through the three-step process elaborated below. Delen and Crossland (2008, cited in Sharda et al., 2014) place the black box of this process into the following context, which they represent graphically:
 
-1. Establish the corpus
-2. Create term-by-document matrix
-3. Analyze
+- **Input**
+-   structured data
+-   unstructured data
+- **Constraints**
+    - software/hardware limitations
+    - privacy issues
+    - linguistic limitations
+- **Mechanisms**
+    - domain expertise
+    - tools & techniques
+- **Output** context-specific knowledge
+
+### 1.2.1. Establish the corpus
+
+
+
+### 1.2.2. Create term-by-document matrix
+
+
+### 1.2.3. Analyze
 
 
 
@@ -276,7 +287,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-## 2.3. Natural language processing (NLP)
+## 2.3. Natural language processing
 
 vs. bag of words
 
@@ -335,7 +346,7 @@ list.index(‘str name’)
 list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list)
 ```
 
-#### 3.2.1. String manipulation
+### 3.2.1. String manipulation
 
 ```Python
 # remove punctuation
@@ -354,7 +365,7 @@ my_string.lstrip()
 my_string.rstrip()
 ```
 
-#### 3.2.2. Regex
+### 3.2.2. Regex
 
 ```Python
 # search for substrings within string or subset of string (i inclusive to j exclusive)

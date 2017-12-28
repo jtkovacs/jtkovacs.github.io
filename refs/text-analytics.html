@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 1973 words | updated 12/28/2017
+   &gt; text analytics | just under 2046 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -46,30 +46,24 @@ code > span.er { color: #ff0000; font-weight: bold; }
      <ul>
       <li>
        1.1.
-       <a href="#what-is-text-mining">
-        What is text mining?
-       </a>
-      </li>
-      <li>
-       1.2.
        <a href="#business-applications-of-text-analytics">
         Business applications of text analytics
        </a>
        <ul>
         <li>
-         1.2.1.
+         1.1.1.
          <a href="#applications-by-technique">
           Applications by technique
          </a>
         </li>
         <li>
-         1.2.2.
+         1.1.2.
          <a href="#applications-by-industry">
           Applications by industry
          </a>
          <ul>
           <li>
-           1.2.2.1.
+           1.1.2.1.
            <a href="#deception-detection">
             Deception detection
            </a>
@@ -79,10 +73,30 @@ code > span.er { color: #ff0000; font-weight: bold; }
        </ul>
       </li>
       <li>
-       1.3.
-       <a href="#text-analytics-process">
-        Text analytics process
+       1.2.
+       <a href="#text-mining-process">
+        Text mining process
        </a>
+       <ul>
+        <li>
+         1.2.1.
+         <a href="#establish-the-corpus">
+          Establish the corpus
+         </a>
+        </li>
+        <li>
+         1.2.2.
+         <a href="#create-term-by-document-matrix">
+          Create term-by-document matrix
+         </a>
+        </li>
+        <li>
+         1.2.3.
+         <a href="#analyze">
+          Analyze
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </li>
@@ -134,8 +148,8 @@ code > span.er { color: #ff0000; font-weight: bold; }
       </li>
       <li>
        2.3.
-       <a href="#natural-language-processing-nlp">
-        Natural language processing (NLP)
+       <a href="#natural-language-processing">
+        Natural language processing
        </a>
        <ul>
         <li>
@@ -165,14 +179,20 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <a href="#python">
         Python
        </a>
-       -  3.2.1.
-       <a href="#string-manipulation">
-        String manipulation
-       </a>
-       -  3.2.2.
-       <a href="#regex">
-        Regex
-       </a>
+       <ul>
+        <li>
+         3.2.1.
+         <a href="#string-manipulation">
+          String manipulation
+         </a>
+        </li>
+        <li>
+         3.2.2.
+         <a href="#regex">
+          Regex
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </li>
@@ -220,19 +240,23 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <strong>
     text analytics
    </strong>
-   aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics", the latter taking a 'bag of words' approach and the former taking a much more sophisticated approach rooted in linguistics.
+   aims "to turn unstructured textual data into actionable information through the application of [techniques from] natural language processing (NLP) and analytics [i.e., [data mining]" ---](https://jtkovacs.github.io/refs/data-mining.html#what-is-data-mining) the latter taking a 'bag of words' approach and the former taking a much more sophisticated approach rooted in linguistics.
   </p>
   <p>
    Text analytics includes the core activities of:
   </p>
   <ul>
    <li>
-    <a href="https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval">
+    <strong>
      Information retrieval:
-    </a>
+    </strong>
     "searching and identifying relevant documents for a given set of key terms"; see
     <a href="https://jtkovacs.github.io/refs/search-engines.html">
      notes on search engines
+    </a>
+    and
+    <a href="https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval">
+     IA for information retrieval
     </a>
    </li>
    <li>
@@ -240,6 +264,35 @@ code > span.er { color: #ff0000; font-weight: bold; }
      Text mining
     </a>
     AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources"
+    <ul>
+     <li>
+      <strong>
+       Information extraction:
+      </strong>
+      "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
+     </li>
+     <li>
+      <strong>
+       Web mining
+      </strong>
+      <ul>
+       <li>
+        Search engines (overlaps with "information retrieval")
+       </li>
+       <li>
+        Web analytics
+       </li>
+       <li>
+        Social media analytics
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="https://jtkovacs.github.io/refs/data-mining.html">
+       Data mining
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
   <p>
@@ -251,65 +304,35 @@ code > span.er { color: #ff0000; font-weight: bold; }
    </li>
    <li>
     Computer Science
-   </li>
-   <li>
-    Artificial Intelligence
-   </li>
-   <li>
-    Machine Learning
-   </li>
-   <li>
-    Natural Language Processing
+    <ul>
+     <li>
+      Artificial Intelligence
+     </li>
+     <li>
+      Machine Learning
+     </li>
+    </ul>
    </li>
    <li>
     Linguistics
+    <ul>
+     <li>
+      Natural Language Processing
+     </li>
+    </ul>
    </li>
    <li>
     Management Science
    </li>
   </ul>
-  <h2 id="what-is-text-mining">
-   <a>
-    1.1. What is text mining?
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <strong>
-     Information extraction:
-    </strong>
-    "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
-   </li>
-   <li>
-    <strong>
-     Web mining
-    </strong>
-    <ul>
-     <li>
-      Search engines (overlaps with "information retrieval")
-     </li>
-     <li>
-      Web analytics
-     </li>
-     <li>
-      Social media analytics
-     </li>
-    </ul>
-   </li>
-   <li>
-    <a href="https://jtkovacs.github.io/refs/data-mining.html">
-     Data mining
-    </a>
-   </li>
-  </ul>
   <h2 id="business-applications-of-text-analytics">
    <a>
-    1.2. Business applications of text analytics
+    1.1. Business applications of text analytics
    </a>
   </h2>
   <h3 id="applications-by-technique">
    <a>
-    1.2.1. Applications by technique
+    1.1.1. Applications by technique
    </a>
   </h3>
   <p>
@@ -432,7 +455,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="applications-by-industry">
    <a>
-    1.2.2. Applications by industry
+    1.1.2. Applications by industry
    </a>
   </h3>
   <p>
@@ -567,7 +590,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="deception-detection">
    <a>
-    1.2.2.1. Deception detection
+    1.1.2.1. Deception detection
    </a>
   </h4>
   <p>
@@ -662,25 +685,77 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </tr>
    </tbody>
   </table>
-  <h2 id="text-analytics-process">
+  <h2 id="text-mining-process">
    <a>
-    1.3. Text analytics process
+    1.2. Text mining process
    </a>
   </h2>
   <p>
-   Per Sharda et al. (2014, p. 220):
+   Per Sharda et al. (2014, pp. 220-226), text mining can be undertaken through the three-step process elaborated below. Delen and Crossland (2008, cited in Sharda et al., 2014) place the black box of this process into the following context, which they represent graphically:
   </p>
-  <ol style="list-style-type: decimal">
+  <ul>
    <li>
-    Establish the corpus
+    <strong>
+     Input
+    </strong>
    </li>
    <li>
-    Create term-by-document matrix
+    structured data
    </li>
    <li>
-    Analyze
+    unstructured data
    </li>
-  </ol>
+   <li>
+    <strong>
+     Constraints
+    </strong>
+    <ul>
+     <li>
+      software/hardware limitations
+     </li>
+     <li>
+      privacy issues
+     </li>
+     <li>
+      linguistic limitations
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Mechanisms
+    </strong>
+    <ul>
+     <li>
+      domain expertise
+     </li>
+     <li>
+      tools &amp; techniques
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Output
+    </strong>
+    context-specific knowledge
+   </li>
+  </ul>
+  <h3 id="establish-the-corpus">
+   <a>
+    1.2.1. Establish the corpus
+   </a>
+  </h3>
+  <h3 id="create-term-by-document-matrix">
+   <a>
+    1.2.2. Create term-by-document matrix
+   </a>
+  </h3>
+  <h3 id="analyze">
+   <a>
+    1.2.3. Analyze
+   </a>
+  </h3>
   <h1 id="text-analytics-techniques">
    <a>
     2. Text analytics techniques
@@ -897,9 +972,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
     measuring social media impact
    </li>
   </ul>
-  <h2 id="natural-language-processing-nlp">
+  <h2 id="natural-language-processing">
    <a>
-    2.3. Natural language processing (NLP)
+    2.3. Natural language processing
    </a>
   </h2>
   <p>
@@ -947,11 +1022,11 @@ str_name.replace(‘this’,’with this’)
 <span class="dt">list</span>.index(‘str name’)
 <span class="co"># times element occurs:</span>
 <span class="dt">list</span>.count(‘em_name’) makes <span class="dt">tuple</span> <span class="kw">with</span> (index,value): <span class="dt">enumerate</span>(my_list)</code></pre>
-  <h4 id="string-manipulation">
+  <h3 id="string-manipulation">
    <a>
     3.2.1. String manipulation
    </a>
-  </h4>
+  </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># remove punctuation</span>
 <span class="ch">import</span> string
 line.translate(<span class="ot">None</span>, string.punctuation)
@@ -966,11 +1041,11 @@ my_string.title()
 my_string.strip(<span class="st">'chars'</span>)
 my_string.lstrip()
 my_string.rstrip()</code></pre>
-  <h4 id="regex">
+  <h3 id="regex">
    <a>
     3.2.2. Regex
    </a>
-  </h4>
+  </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># search for substrings within string or subset of string (i inclusive to j exclusive)</span>
 str_index = my_string.find(x,i,j)
 str_index = my_string.index(x,i,j)  <span class="co"># raises ValueError if not found</span>

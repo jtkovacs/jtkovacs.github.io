@@ -215,17 +215,18 @@ See [text analytics techniques.](#text-analytics-techniques)
 
 # Text analytics techniques
 
+## Text mining
 
 See [notes on data mining.](https://jtkovacs.github.io/refs/data-mining.html)
 
-## Clustering
+### Clustering
 
 Per Sharda et al. (2014, pp. 224-225), clustering is often used to **improve search recall** ("when a query matches a document its whole cluster is returned") and **precision** ("grouping the documents into a number of much smaller groups of related documents, ordering them by relevance, and returning only the documents from the most relevant group or groups"). The most common clustering methods:
 
 - **Scatter/gather** "dynamically generates a table of contents for the collection and adapts and modifies it in response to the user selection"
 - **Query-specific clustering** "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
 
-## Association
+### Association
 
 Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For _A_ ==> _C],_ confidence is the percentage of documents that include all the concepts in _C_ within the same subset of those documents that include all the concepts in _A._ Support is the percentage (or number) of documents that include all the concepts in _A_ and _C."_
 
@@ -299,7 +300,11 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 ## Natural language processing
 
-With its two parent disciplines---artificial intelligence and computational linguistics---NLP extracts more meaning from textual data because it goes beyond the 'bag of words' approach to account for syntax, and, beyond that, "grammatical and semantic constraints as well as the context" (Sharda et al., 2014, p. 210). NLP faces major challenges:
+With its two parent disciplines---artificial intelligence and computational linguistics---NLP extracts more meaning from textual data because it goes beyond the 'bag of words' approach to account for syntax, and, beyond that, "grammatical and semantic constraints as well as the context" (Sharda et al., 2014, p. 210).
+
+### NLP challenges
+
+Per Sharda et al. (2014, p. 210), NLP faces major challenges:
 
 - **part-of-speech tagging**
 - **text segmentation** (identifying word boundaries in spoken language as well as written Chinese, Japanese, Thai, etc.)
@@ -325,14 +330,22 @@ Per Sharda et al. (2014, pp. 234-237):
 
 #### Challenges with sentiment identification
 
+Per Sharda et al. (2014):
+
 - Sentiments can be explicit or implicit, "where the text implies an opinion"; the latter is much more difficult to detect
 - "A document containing several opinionated statements would have a mixed polarity overall, which is different from not having a polarity at all"
 - "an article may contain negative news without explictly using any subjective words or terms"
 
 #### Methods for sentiment identification
 
+Per Sharda et al. (2014, pp. 236-237):
+
 - **Lexicon**
+    - [SentiWordNet](http://sentiwordnet.isti.cnr.it/)
+    - [WordNet-Affect](http://wndomains.fbk.eu/wnaffect.html)
 - **Training documents**
+    - ***data*** "Product-review Web sites like Amazon, C-NET, eBay, RottenTomatoes, and the Internet Movie Database (IMDB) have all been extensively used as sources of annotated data. The star (or tomato, as it were) system provides an explicit label of the overall polarity of the review, and it is often taken as the gold standard in algorithm evaluation"
+    - ***algorithms*** artificial neural networks, support vector machines, k-nearest neighbor, naive Bayes, decision trees, expectation maximization-based clustering
 
 
 

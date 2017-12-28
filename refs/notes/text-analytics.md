@@ -7,17 +7,14 @@
 
 # What is text analytics?
 
-Per Sharda et al. (2014, p. 205), **text analytics** aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics".
+Per Sharda et al. (2014, pp. 205-206), **text analytics** aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics", the latter taking a 'bag of words' approach and the former taking a much more sophisticated approach rooted in linguistics.
 
-Text analytics includes the activities of:
+Text analytics includes the core activities of:
 
-- [Information retrieval](https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval)
-- **Text mining** AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources")
-    - **Web mining**
-    - **Information extraction**
-    - [Data Mining](https://jtkovacs.github.io/refs/data-mining.html)
+- [Information retrieval:](https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval) "searching and identifying relevant documents for a given set of key terms"; see [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html)
+- [Text mining](https://jtkovacs.github.io/refs/text-analytics.html#text-mining) AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources"
 
-Text analytics is enabled by technologies from the fields of:
+Text analytics is enabled by the foundational disciplines of:
 
 - Statistics
 - Computer Science
@@ -27,6 +24,16 @@ Text analytics is enabled by technologies from the fields of:
 - Linguistics
 - Management Science
 
+## What is text mining?
+
+- **Information extraction:** "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
+- **Web mining**
+    - Search engines (overlaps with "information retrieval")
+    - Web analytics
+    - Social media analytics
+- [Data mining](https://jtkovacs.github.io/refs/data-mining.html)
+
+
 
 
 
@@ -35,51 +42,72 @@ Text analytics is enabled by technologies from the fields of:
 
 ## Business applications of text analytics
 
-### Applications by technique
+Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 
-p. 206
+- **"Topic tracking.** Based on a user profile and documents that a user views, text mining can predict other documents of interest to the user.
+- **Categorization.** Identifying the main themes of a document and them placing the document into a predefined set of categories based on those themes.
+- **Clustering.** Grouping similar documents without having a predefined set of categories.
+- **Concept-linking.** Connects related documents by identifying their shared concepts and, by doing so, helps users find information that they perhaps would not have found using traditional search methods."
 
-- Information extraction
-- Topic tracking
-- Concept-linking
-- Question-answering
-- Summarization
-- Categorization
-- Clustering
+... and some applications specifically enabled by NLP (p. 213):
+
+- **"Question-answering.** ... producing a human language answer when given a human language question. ...
+- **Automatic summarization.** The creation of a shortened version of a textual document by a computer program that contains the most important parts of the original document.
+- **Natural languge generation.** Systems convert information from computer databases into readable human language.
+- **Natural language understanding.** Systems convert samples of human language into more formal representations that are easier for computer programs to manipulate.
+- **Machine translation.** Automatic translation of one human language to another.
+- **Foreign language reading.** A computer program that assists a nonnative language speaker to read [or write, or speak] a foreign language ...
+- **Speech recognition.** ... Given a sound clip of a person speaking, the system produces a text dictation.
+- **Text-to-speech.** Also called _speech synthesis,_ a computer program automatically converts normal language text into human speech.
+- **Text proofing.** A computer program reads a proof copy of a text in order to detect and correct errors.
+- **Optical character recognition.** The automatic translation of images of handwritten, typewritten, or printed text (usually captured by a scanner) into machine-editable textual documents."
+
+For a great example, see [Textio: The Augmented Writing Platform.](https://textio.com/)
 
 ### Applications by industry
 
-pp. 213-19, 232
+#### Information management
 
-- Political
-- Marketing
-- Biomedical
-- Security
-- Financial (sentiment)
-  - VOE, VOC, VOM (sentiment)
-- Managing search engines, email, websites
-- Acdemic
-  - citation analysis
-
-- court orders
-- research articles
 - quarterly reports
-- molecular interactions
-- patent files
-- medical records
-- customer comments
+- manage search engines
+- manage websites
 - email
     - classify
     - filter junk
     - prioritize
     - generate automatic responses
 
+#### Marketing
+
+- **Data sources:**
+    - call centers (notes and transcriptions)
+    - blogs
+    - user reviews
+    - discussion boards & comment sections
+- **Information sought**
+    - customer perceptions in the market at-large
+    - CRM system-based insights about churn, perceptions, purchasing behavior
+
+#### Political, legal, military, security
+
+- court orders
+- patent files
+
+#### Financial
+
+- VOE, VOC, VOM (sentiment)
+
+#### Academic
+
+- citation analysis
+- research articles
+
+#### Biomedical
+
+- medical records
+- molecular interactions
 
 
-
-## Glossary of text analytics terms
-
-p. 207
 
 
 
@@ -100,6 +128,50 @@ p. 207
 - Trend analysis
 
 
+### Web mining
+
+Challenges
+
+
+
+
+#### Search engines & SEO
+
+See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
+
+(mining content, structure)
+
+
+
+
+#### Web analytics
+
+(mining usage)
+
+- metrics
+  - visitor profiles
+  - traffic
+  - usability
+  - conversion
+- technologies
+
+
+
+
+#### Social analytics
+
+- types of networks
+- network metrics
+  - connections
+  - distributions
+  - segmentation
+- social media analytics
+  - social media vs traditional media
+  - types of social media users
+  - measuring social media impact
+
+
+
 
 
 ## Natural language processing (NLP)
@@ -115,47 +187,6 @@ challenges
 
 
 
-## Web mining
-
-Challenges
-
-
-
-
-### Search engines & SEO
-
-See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
-
-(mining content, structure)
-
-
-
-
-### Web analytics
-
-(mining usage)
-
-- metrics
-  - visitor profiles
-  - traffic
-  - usability
-  - conversion
-- technologies
-
-
-
-
-### Social analytics
-
-- types of networks
-- network metrics
-  - connections
-  - distributions
-  - segmentation
-- social media analytics
-  - social media vs traditional media
-  - types of social media users
-  - measuring social media impact
 
 
 

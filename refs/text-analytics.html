@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 978 words | updated 12/28/2017
+   &gt; text analytics | just under 1374 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -46,29 +46,61 @@ code > span.er { color: #ff0000; font-weight: bold; }
      <ul>
       <li>
        1.1.
+       <a href="#what-is-text-mining">
+        What is text mining?
+       </a>
+      </li>
+      <li>
+       1.2.
        <a href="#business-applications-of-text-analytics">
         Business applications of text analytics
        </a>
        <ul>
         <li>
-         1.1.1.
-         <a href="#applications-by-technique">
-          Applications by technique
-         </a>
-        </li>
-        <li>
-         1.1.2.
+         1.2.1.
          <a href="#applications-by-industry">
           Applications by industry
          </a>
+         <ul>
+          <li>
+           1.2.1.1.
+           <a href="#information-management">
+            Information management
+           </a>
+          </li>
+          <li>
+           1.2.1.2.
+           <a href="#marketing">
+            Marketing
+           </a>
+          </li>
+          <li>
+           1.2.1.3.
+           <a href="#political-legal-military-security">
+            Political, legal, military, security
+           </a>
+          </li>
+          <li>
+           1.2.1.4.
+           <a href="#financial">
+            Financial
+           </a>
+          </li>
+          <li>
+           1.2.1.5.
+           <a href="#academic">
+            Academic
+           </a>
+          </li>
+          <li>
+           1.2.1.6.
+           <a href="#biomedical">
+            Biomedical
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
-      </li>
-      <li>
-       1.2.
-       <a href="#glossary-of-text-analytics-terms">
-        Glossary of text analytics terms
-       </a>
       </li>
      </ul>
     </li>
@@ -83,6 +115,34 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <a href="#text-mining">
         Text mining
        </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#web-mining">
+          Web mining
+         </a>
+         <ul>
+          <li>
+           2.1.1.1.
+           <a href="#search-engines-seo">
+            Search engines &amp; SEO
+           </a>
+          </li>
+          <li>
+           2.1.1.2.
+           <a href="#web-analytics">
+            Web analytics
+           </a>
+          </li>
+          <li>
+           2.1.1.3.
+           <a href="#social-analytics">
+            Social analytics
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
       </li>
       <li>
        2.2.
@@ -94,32 +154,6 @@ code > span.er { color: #ff0000; font-weight: bold; }
          2.2.1.
          <a href="#sentiment-analysis">
           Sentiment analysis
-         </a>
-        </li>
-       </ul>
-      </li>
-      <li>
-       2.3.
-       <a href="#web-mining">
-        Web mining
-       </a>
-       <ul>
-        <li>
-         2.3.1.
-         <a href="#search-engines-seo">
-          Search engines &amp; SEO
-         </a>
-        </li>
-        <li>
-         2.3.2.
-         <a href="#web-analytics">
-          Web analytics
-         </a>
-        </li>
-        <li>
-         2.3.3.
-         <a href="#social-analytics">
-          Social analytics
          </a>
         </li>
        </ul>
@@ -214,47 +248,34 @@ code > span.er { color: #ff0000; font-weight: bold; }
    </a>
   </h1>
   <p>
-   Per Sharda et al. (2014, p. 205),
+   Per Sharda et al. (2014, pp. 205-206),
    <strong>
     text analytics
    </strong>
-   aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics".
+   aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics", the latter taking a 'bag of words' approach and the former taking a much more sophisticated approach rooted in linguistics.
   </p>
   <p>
-   Text analytics includes the activities of:
+   Text analytics includes the core activities of:
   </p>
   <ul>
    <li>
     <a href="https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval">
-     Information retrieval
+     Information retrieval:
+    </a>
+    "searching and identifying relevant documents for a given set of key terms"; see
+    <a href="https://jtkovacs.github.io/refs/search-engines.html">
+     notes on search engines
     </a>
    </li>
    <li>
-    <strong>
+    <a href="https://jtkovacs.github.io/refs/text-analytics.html#text-mining">
      Text mining
-    </strong>
-    AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources")
-    <ul>
-     <li>
-      <strong>
-       Web mining
-      </strong>
-     </li>
-     <li>
-      <strong>
-       Information extraction
-      </strong>
-     </li>
-     <li>
-      <a href="https://jtkovacs.github.io/refs/data-mining.html">
-       Data Mining
-      </a>
-     </li>
-    </ul>
+    </a>
+    AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources"
    </li>
   </ul>
   <p>
-   Text analytics is enabled by technologies from the fields of:
+   Text analytics is enabled by the foundational disciplines of:
   </p>
   <ul>
    <li>
@@ -279,100 +300,168 @@ code > span.er { color: #ff0000; font-weight: bold; }
     Management Science
    </li>
   </ul>
-  <h2 id="business-applications-of-text-analytics">
+  <h2 id="what-is-text-mining">
    <a>
-    1.1. Business applications of text analytics
+    1.1. What is text mining?
    </a>
   </h2>
-  <h3 id="applications-by-technique">
-   <a>
-    1.1.1. Applications by technique
-   </a>
-  </h3>
-  <p>
-   p. 206
-  </p>
   <ul>
    <li>
-    Information extraction
+    <strong>
+     Information extraction:
+    </strong>
+    "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
    </li>
    <li>
-    Topic tracking
+    <strong>
+     Web mining
+    </strong>
+    <ul>
+     <li>
+      Search engines (overlaps with "information retrieval")
+     </li>
+     <li>
+      Web analytics
+     </li>
+     <li>
+      Social media analytics
+     </li>
+    </ul>
    </li>
    <li>
-    Concept-linking
-   </li>
-   <li>
-    Question-answering
-   </li>
-   <li>
-    Summarization
-   </li>
-   <li>
-    Categorization
-   </li>
-   <li>
-    Clustering
+    <a href="https://jtkovacs.github.io/refs/data-mining.html">
+     Data mining
+    </a>
    </li>
   </ul>
-  <h3 id="applications-by-industry">
+  <h2 id="business-applications-of-text-analytics">
    <a>
-    1.1.2. Applications by industry
+    1.2. Business applications of text analytics
    </a>
-  </h3>
+  </h2>
   <p>
-   pp. 213-19, 232
+   Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
   </p>
   <ul>
    <li>
-    Political
+    <strong>
+     "Topic tracking.
+    </strong>
+    Based on a user profile and documents that a user views, text mining can predict other documents of interest to the user.
    </li>
    <li>
-    Marketing
+    <strong>
+     Categorization.
+    </strong>
+    Identifying the main themes of a document and them placing the document into a predefined set of categories based on those themes.
    </li>
    <li>
-    Biomedical
+    <strong>
+     Clustering.
+    </strong>
+    Grouping similar documents without having a predefined set of categories.
    </li>
    <li>
-    Security
+    <strong>
+     Concept-linking.
+    </strong>
+    Connects related documents by identifying their shared concepts and, by doing so, helps users find information that they perhaps would not have found using traditional search methods."
+   </li>
+  </ul>
+  <p>
+   ... and some applications specifically enabled by NLP (p. 213):
+  </p>
+  <ul>
+   <li>
+    <strong>
+     "Question-answering.
+    </strong>
+    ... producing a human language answer when given a human language question. ...
    </li>
    <li>
-    Financial (sentiment)
+    <strong>
+     Automatic summarization.
+    </strong>
+    The creation of a shortened version of a textual document by a computer program that contains the most important parts of the original document.
    </li>
    <li>
-    VOE, VOC, VOM (sentiment)
+    <strong>
+     Natural languge generation.
+    </strong>
+    Systems convert information from computer databases into readable human language.
    </li>
    <li>
-    Managing search engines, email, websites
+    <strong>
+     Natural language understanding.
+    </strong>
+    Systems convert samples of human language into more formal representations that are easier for computer programs to manipulate.
    </li>
    <li>
-    Acdemic
+    <strong>
+     Machine translation.
+    </strong>
+    Automatic translation of one human language to another.
    </li>
    <li>
-    <p>
-     citation analysis
-    </p>
+    <strong>
+     Foreign language reading.
+    </strong>
+    A computer program that assists a nonnative language speaker to read [or write, or speak] a foreign language ...
    </li>
    <li>
-    court orders
+    <strong>
+     Speech recognition.
+    </strong>
+    ... Given a sound clip of a person speaking, the system produces a text dictation.
    </li>
    <li>
-    research articles
+    <strong>
+     Text-to-speech.
+    </strong>
+    Also called
+    <em>
+     speech synthesis,
+    </em>
+    a computer program automatically converts normal language text into human speech.
    </li>
+   <li>
+    <strong>
+     Text proofing.
+    </strong>
+    A computer program reads a proof copy of a text in order to detect and correct errors.
+   </li>
+   <li>
+    <strong>
+     Optical character recognition.
+    </strong>
+    The automatic translation of images of handwritten, typewritten, or printed text (usually captured by a scanner) into machine-editable textual documents."
+   </li>
+  </ul>
+  <p>
+   For a great example, see
+   <a href="https://textio.com/">
+    Textio: The Augmented Writing Platform.
+   </a>
+  </p>
+  <h3 id="applications-by-industry">
+   <a>
+    1.2.1. Applications by industry
+   </a>
+  </h3>
+  <h4 id="information-management">
+   <a>
+    1.2.1.1. Information management
+   </a>
+  </h4>
+  <ul>
    <li>
     quarterly reports
    </li>
    <li>
-    molecular interactions
+    manage search engines
    </li>
    <li>
-    patent files
-   </li>
-   <li>
-    medical records
-   </li>
-   <li>
-    customer comments
+    manage websites
    </li>
    <li>
     email
@@ -392,14 +481,94 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </ul>
    </li>
   </ul>
-  <h2 id="glossary-of-text-analytics-terms">
+  <h4 id="marketing">
    <a>
-    1.2. Glossary of text analytics terms
+    1.2.1.2. Marketing
    </a>
-  </h2>
-  <p>
-   p. 207
-  </p>
+  </h4>
+  <ul>
+   <li>
+    <strong>
+     Data sources:
+    </strong>
+    <ul>
+     <li>
+      call centers (notes and transcriptions)
+     </li>
+     <li>
+      blogs
+     </li>
+     <li>
+      user reviews
+     </li>
+     <li>
+      discussion boards &amp; comment sections
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Information sought
+    </strong>
+    <ul>
+     <li>
+      customer perceptions in the market at-large
+     </li>
+     <li>
+      CRM system-based insights about churn, perceptions, purchasing behavior
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h4 id="political-legal-military-security">
+   <a>
+    1.2.1.3. Political, legal, military, security
+   </a>
+  </h4>
+  <ul>
+   <li>
+    court orders
+   </li>
+   <li>
+    patent files
+   </li>
+  </ul>
+  <h4 id="financial">
+   <a>
+    1.2.1.4. Financial
+   </a>
+  </h4>
+  <ul>
+   <li>
+    VOE, VOC, VOM (sentiment)
+   </li>
+  </ul>
+  <h4 id="academic">
+   <a>
+    1.2.1.5. Academic
+   </a>
+  </h4>
+  <ul>
+   <li>
+    citation analysis
+   </li>
+   <li>
+    research articles
+   </li>
+  </ul>
+  <h4 id="biomedical">
+   <a>
+    1.2.1.6. Biomedical
+   </a>
+  </h4>
+  <ul>
+   <li>
+    medical records
+   </li>
+   <li>
+    molecular interactions
+   </li>
+  </ul>
   <h1 id="text-analytics-techniques">
    <a>
     2. Text analytics techniques
@@ -424,40 +593,19 @@ code > span.er { color: #ff0000; font-weight: bold; }
     Trend analysis
    </li>
   </ul>
-  <h2 id="natural-language-processing-nlp">
+  <h3 id="web-mining">
    <a>
-    2.2. Natural language processing (NLP)
-   </a>
-  </h2>
-  <p>
-   vs. bag of words
-  </p>
-  <p>
-   challenges
-  </p>
-  <h3 id="sentiment-analysis">
-   <a>
-    2.2.1. Sentiment analysis
+    2.1.1. Web mining
    </a>
   </h3>
-  <ul>
-   <li>
-    Process, pp. 234
-   </li>
-  </ul>
-  <h2 id="web-mining">
-   <a>
-    2.3. Web mining
-   </a>
-  </h2>
   <p>
    Challenges
   </p>
-  <h3 id="search-engines-seo">
+  <h4 id="search-engines-seo">
    <a>
-    2.3.1. Search engines &amp; SEO
+    2.1.1.1. Search engines &amp; SEO
    </a>
-  </h3>
+  </h4>
   <p>
    See
    <a href="https://jtkovacs.github.io/refs/search-engines.html">
@@ -467,11 +615,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
   <p>
    (mining content, structure)
   </p>
-  <h3 id="web-analytics">
+  <h4 id="web-analytics">
    <a>
-    2.3.2. Web analytics
+    2.1.1.2. Web analytics
    </a>
-  </h3>
+  </h4>
   <p>
    (mining usage)
   </p>
@@ -495,11 +643,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     technologies
    </li>
   </ul>
-  <h3 id="social-analytics">
+  <h4 id="social-analytics">
    <a>
-    2.3.3. Social analytics
+    2.1.1.3. Social analytics
    </a>
-  </h3>
+  </h4>
   <ul>
    <li>
     types of networks
@@ -527,6 +675,27 @@ code > span.er { color: #ff0000; font-weight: bold; }
    </li>
    <li>
     measuring social media impact
+   </li>
+  </ul>
+  <h2 id="natural-language-processing-nlp">
+   <a>
+    2.2. Natural language processing (NLP)
+   </a>
+  </h2>
+  <p>
+   vs. bag of words
+  </p>
+  <p>
+   challenges
+  </p>
+  <h3 id="sentiment-analysis">
+   <a>
+    2.2.1. Sentiment analysis
+   </a>
+  </h3>
+  <ul>
+   <li>
+    Process, pp. 234
    </li>
   </ul>
   <h1 id="doing-text-analytics">

@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 1695 words | updated 12/28/2017
+   &gt; text analytics | just under 1973 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -58,12 +58,18 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <ul>
         <li>
          1.2.1.
+         <a href="#applications-by-technique">
+          Applications by technique
+         </a>
+        </li>
+        <li>
+         1.2.2.
          <a href="#applications-by-industry">
           Applications by industry
          </a>
          <ul>
           <li>
-           1.2.1.1.
+           1.2.2.1.
            <a href="#deception-detection">
             Deception detection
            </a>
@@ -71,6 +77,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
          </ul>
         </li>
        </ul>
+      </li>
+      <li>
+       1.3.
+       <a href="#text-analytics-process">
+        Text analytics process
+       </a>
       </li>
      </ul>
     </li>
@@ -82,30 +94,36 @@ code > span.er { color: #ff0000; font-weight: bold; }
      <ul>
       <li>
        2.1.
+       <a href="#key-definitions">
+        Key definitions
+       </a>
+      </li>
+      <li>
+       2.2.
        <a href="#text-mining">
         Text mining
        </a>
        <ul>
         <li>
-         2.1.1.
+         2.2.1.
          <a href="#web-mining">
           Web mining
          </a>
          <ul>
           <li>
-           2.1.1.1.
+           2.2.1.1.
            <a href="#search-engines-seo">
             Search engines &amp; SEO
            </a>
           </li>
           <li>
-           2.1.1.2.
+           2.2.1.2.
            <a href="#web-analytics">
             Web analytics
            </a>
           </li>
           <li>
-           2.1.1.3.
+           2.2.1.3.
            <a href="#social-analytics">
             Social analytics
            </a>
@@ -115,13 +133,13 @@ code > span.er { color: #ff0000; font-weight: bold; }
        </ul>
       </li>
       <li>
-       2.2.
+       2.3.
        <a href="#natural-language-processing-nlp">
         Natural language processing (NLP)
        </a>
        <ul>
         <li>
-         2.2.1.
+         2.3.1.
          <a href="#sentiment-analysis">
           Sentiment analysis
          </a>
@@ -132,49 +150,29 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </li>
     <li>
      3.
-     <a href="#doing-text-analytics">
-      Doing text analytics
+     <a href="#text-analytics-tools">
+      Text analytics tools
      </a>
      <ul>
       <li>
        3.1.
-       <a href="#text-analytics-process">
-        Text analytics process
+       <a href="#ibm-watson">
+        IBM Watson
        </a>
       </li>
       <li>
        3.2.
-       <a href="#text-analytics-tools">
-        Text analytics tools
+       <a href="#python">
+        Python
        </a>
-       <ul>
-        <li>
-         3.2.1.
-         <a href="#ibm-watson">
-          IBM Watson
-         </a>
-        </li>
-        <li>
-         3.2.2.
-         <a href="#python">
-          Python
-         </a>
-         <ul>
-          <li>
-           3.2.2.1.
-           <a href="#string-manipulation">
-            String manipulation
-           </a>
-          </li>
-          <li>
-           3.2.2.2.
-           <a href="#regex">
-            Regex
-           </a>
-          </li>
-         </ul>
-        </li>
-       </ul>
+       -  3.2.1.
+       <a href="#string-manipulation">
+        String manipulation
+       </a>
+       -  3.2.2.
+       <a href="#regex">
+        Regex
+       </a>
       </li>
      </ul>
     </li>
@@ -309,6 +307,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     1.2. Business applications of text analytics
    </a>
   </h2>
+  <h3 id="applications-by-technique">
+   <a>
+    1.2.1. Applications by technique
+   </a>
+  </h3>
   <p>
    Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
   </p>
@@ -429,7 +432,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="applications-by-industry">
    <a>
-    1.2.1. Applications by industry
+    1.2.2. Applications by industry
    </a>
   </h3>
   <p>
@@ -564,7 +567,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="deception-detection">
    <a>
-    1.2.1.1. Deception detection
+    1.2.2.1. Deception detection
    </a>
   </h4>
   <p>
@@ -659,14 +662,133 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </tr>
    </tbody>
   </table>
+  <h2 id="text-analytics-process">
+   <a>
+    1.3. Text analytics process
+   </a>
+  </h2>
+  <p>
+   Per Sharda et al. (2014, p. 220):
+  </p>
+  <ol style="list-style-type: decimal">
+   <li>
+    Establish the corpus
+   </li>
+   <li>
+    Create term-by-document matrix
+   </li>
+   <li>
+    Analyze
+   </li>
+  </ol>
   <h1 id="text-analytics-techniques">
    <a>
     2. Text analytics techniques
    </a>
   </h1>
+  <h2 id="key-definitions">
+   <a>
+    2.1. Key definitions
+   </a>
+  </h2>
+  <p>
+   From Sharda et al. (2014, pp. 207-208), some broad concepts:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Morphology
+    </strong>
+    "branch of the field of linguistics and a part of natural language processing that studies the internal structure of words (patterns of word formation within a language or across languages)"
+   </li>
+   <li>
+    <strong>
+     Corpus
+    </strong>
+    "large and structured set of texts ... prepared for the purpose of conducting knowledge discovery"
+   </li>
+   <li>
+    <strong>
+     Lexicon
+    </strong>
+   </li>
+   <li>
+    <strong>
+     Terms
+    </strong>
+    and
+    <strong>
+     polysemy
+    </strong>
+    (elemental units; single word or multi-word phrase, see
+    <a href="https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies">
+     notes on controlled vocabularies)
+    </a>
+    and
+    <strong>
+     Concepts
+    </strong>
+    (combinations of terms)
+   </li>
+  </ul>
+  <p>
+   ... and narrow ones::
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Stemming
+    </strong>
+    "reducing inflected words to their stem (or base or root) form"
+   </li>
+   <li>
+    <strong>
+     Stop words
+    </strong>
+    "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles
+    <em>
+     (a, an, the, of, etc.),
+    </em>
+    auxiliary verbs
+    <em>
+     (is, are, was, were, etc.),
+    </em>
+    and context-specific words that are deemed not to have any differentiating value"
+   </li>
+   <li>
+    <strong>
+     Term-by-document-matrix
+    </strong>
+    AKA occurrence matrix "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
+    <ul>
+     <li>
+      <strong>
+       Latent semantic indexing
+      </strong>
+      by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Token
+    </strong>
+    "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as
+    <strong>
+     tokenizing"
+    </strong>
+    <ul>
+     <li>
+      <strong>
+       Part-of-speech tagging
+      </strong>
+     </li>
+    </ul>
+   </li>
+  </ul>
   <h2 id="text-mining">
    <a>
-    2.1. Text mining
+    2.2. Text mining
    </a>
   </h2>
   <ul>
@@ -685,7 +807,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="web-mining">
    <a>
-    2.1.1. Web mining
+    2.2.1. Web mining
    </a>
   </h3>
   <p>
@@ -701,7 +823,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="search-engines-seo">
    <a>
-    2.1.1.1. Search engines &amp; SEO
+    2.2.1.1. Search engines &amp; SEO
    </a>
   </h4>
   <p>
@@ -715,7 +837,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </p>
   <h4 id="web-analytics">
    <a>
-    2.1.1.2. Web analytics
+    2.2.1.2. Web analytics
    </a>
   </h4>
   <p>
@@ -743,7 +865,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="social-analytics">
    <a>
-    2.1.1.3. Social analytics
+    2.2.1.3. Social analytics
    </a>
   </h4>
   <ul>
@@ -777,7 +899,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h2 id="natural-language-processing-nlp">
    <a>
-    2.2. Natural language processing (NLP)
+    2.3. Natural language processing (NLP)
    </a>
   </h2>
   <p>
@@ -788,7 +910,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </p>
   <h3 id="sentiment-analysis">
    <a>
-    2.2.1. Sentiment analysis
+    2.3.1. Sentiment analysis
    </a>
   </h3>
   <ul>
@@ -796,51 +918,27 @@ code > span.er { color: #ff0000; font-weight: bold; }
     Process, pp. 234
    </li>
   </ul>
-  <h1 id="doing-text-analytics">
+  <h1 id="text-analytics-tools">
    <a>
-    3. Doing text analytics
+    3. Text analytics tools
    </a>
   </h1>
-  <h2 id="text-analytics-process">
+  <h2 id="ibm-watson">
    <a>
-    3.1. Text analytics process
+    3.1. IBM Watson
    </a>
   </h2>
-  <p>
-   Per Sharda et al. (2014, p. 220):
-  </p>
-  <ol style="list-style-type: decimal">
-   <li>
-    Establish the corpus
-   </li>
-   <li>
-    Create term-document matrix
-   </li>
-   <li>
-    Analyze
-   </li>
-  </ol>
-  <h2 id="text-analytics-tools">
-   <a>
-    3.2. Text analytics tools
-   </a>
-  </h2>
-  <h3 id="ibm-watson">
-   <a>
-    3.2.1. IBM Watson
-   </a>
-  </h3>
   <p>
    IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
   </p>
   <p>
    <img src="illos/DeepQA.png" width="600"/>
   </p>
-  <h3 id="python">
+  <h2 id="python">
    <a>
-    3.2.2. Python
+    3.2. Python
    </a>
-  </h3>
+  </h2>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># reverse order of elements:</span>
 <span class="dt">list</span>.reverse(), my_string[::-<span class="dv">1</span>]
 <span class="co"># selectively replace:</span>
@@ -851,7 +949,7 @@ str_name.replace(‘this’,’with this’)
 <span class="dt">list</span>.count(‘em_name’) makes <span class="dt">tuple</span> <span class="kw">with</span> (index,value): <span class="dt">enumerate</span>(my_list)</code></pre>
   <h4 id="string-manipulation">
    <a>
-    3.2.2.1. String manipulation
+    3.2.1. String manipulation
    </a>
   </h4>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># remove punctuation</span>
@@ -870,7 +968,7 @@ my_string.lstrip()
 my_string.rstrip()</code></pre>
   <h4 id="regex">
    <a>
-    3.2.2.2. Regex
+    3.2.2. Regex
    </a>
   </h4>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># search for substrings within string or subset of string (i inclusive to j exclusive)</span>

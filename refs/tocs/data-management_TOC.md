@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data management | just under 255 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is data?](#what-is-data)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data management | just under 261 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data?](#what-is-data)
 	- &nbsp;1.1. [DIKW pyramid](#dikw-pyramid)
 	- &nbsp;1.2. [Computer perspective](#computer-perspective)
 	- &nbsp;1.3. [Statistical perspective](#statistical-perspective)
@@ -35,7 +35,10 @@ From Sharda et al. (2014):
     <tr><td>Nominal</td><td>Ordinal</td><td>Interval</td><td>Ratio</td></tr>
 </table>
 
-Also: static versus dynamic AKA time series data.
+Also:
+
+- static versus dynamic AKA time series data
+- structured, semi-structured, unstructured data
 
 
 # 2. What is data management?

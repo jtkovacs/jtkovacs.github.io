@@ -1,23 +1,24 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 1695 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 1973 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [What is text mining?](#what-is-text-mining)
 	- &nbsp;1.2. [Business applications of text analytics](#business-applications-of-text-analytics)
-		- &nbsp;1.2.1. [Applications by industry](#applications-by-industry)
-			- &nbsp;1.2.1.1. [Deception detection](#deception-detection)
+		- &nbsp;1.2.1. [Applications by technique](#applications-by-technique)
+		- &nbsp;1.2.2. [Applications by industry](#applications-by-industry)
+			- &nbsp;1.2.2.1. [Deception detection](#deception-detection)
+	- &nbsp;1.3. [Text analytics process](#text-analytics-process)
 - &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
-	- &nbsp;2.1. [Text mining](#text-mining)
-		- &nbsp;2.1.1. [Web mining](#web-mining)
-			- &nbsp;2.1.1.1. [Search engines & SEO](#search-engines-seo)
-			- &nbsp;2.1.1.2. [Web analytics](#web-analytics)
-			- &nbsp;2.1.1.3. [Social analytics](#social-analytics)
-	- &nbsp;2.2. [Natural language processing (NLP)](#natural-language-processing-nlp)
-		- &nbsp;2.2.1. [Sentiment analysis](#sentiment-analysis)
-- &nbsp;3. [Doing text analytics](#doing-text-analytics)
-	- &nbsp;3.1. [Text analytics process](#text-analytics-process)
-	- &nbsp;3.2. [Text analytics tools](#text-analytics-tools)
-		- &nbsp;3.2.1. [IBM Watson](#ibm-watson)
-		- &nbsp;3.2.2. [Python](#python)
-			- &nbsp;3.2.2.1. [String manipulation](#string-manipulation)
-			- &nbsp;3.2.2.2. [Regex](#regex)
+	- &nbsp;2.1. [Key definitions](#key-definitions)
+	- &nbsp;2.2. [Text mining](#text-mining)
+		- &nbsp;2.2.1. [Web mining](#web-mining)
+			- &nbsp;2.2.1.1. [Search engines & SEO](#search-engines-seo)
+			- &nbsp;2.2.1.2. [Web analytics](#web-analytics)
+			- &nbsp;2.2.1.3. [Social analytics](#social-analytics)
+	- &nbsp;2.3. [Natural language processing (NLP)](#natural-language-processing-nlp)
+		- &nbsp;2.3.1. [Sentiment analysis](#sentiment-analysis)
+- &nbsp;3. [Text analytics tools](#text-analytics-tools)
+	- &nbsp;3.1. [IBM Watson](#ibm-watson)
+	- &nbsp;3.2. [Python](#python)
+			- &nbsp;3.2.1. [String manipulation](#string-manipulation)
+			- &nbsp;3.2.2. [Regex](#regex)
 - &nbsp;4. [Sources](#sources)
 	- &nbsp;4.1. [Cited](#cited)
 	- &nbsp;4.2. [References](#references)
@@ -50,6 +51,9 @@ Text analytics is enabled by the foundational disciplines of:
 - Linguistics
 - Management Science
 
+
+
+
 ## 1.1. What is text mining?
 
 - **Information extraction:** "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
@@ -64,7 +68,10 @@ Text analytics is enabled by the foundational disciplines of:
 
 
 
+
 ## 1.2. Business applications of text analytics
+
+### 1.2.1. Applications by technique
 
 Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 
@@ -92,7 +99,7 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - Understanding the 'voices' of employees (VOE), customers (VOC) and the market (VOM)
 - Politics & surveillance
 
-### 1.2.1. Applications by industry
+### 1.2.2. Applications by industry
 
 Per Sharda et al. (2014, pp. 213-220):
 
@@ -128,7 +135,7 @@ Per Sharda et al. (2014, pp. 213-220):
     - medical records
     - molecular interactions
 
-#### 1.2.1.1. Deception detection
+#### 1.2.2.1. Deception detection
 
 Per Sharda et al. (2014, p. 216):
 
@@ -158,9 +165,64 @@ Per Sharda et al. (2014, p. 216):
 
 
 
+
+
+
+
+
+## 1.3. Text analytics process
+
+Per Sharda et al. (2014, p. 220):
+
+1. Establish the corpus
+2. Create term-by-document matrix
+3. Analyze
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 2. Text analytics techniques
 
-## 2.1. Text mining
+## 2.1. Key definitions
+
+From Sharda et al. (2014, pp. 207-208), some broad concepts:
+
+- **Morphology** "branch of the field of linguistics and a part of natural language processing that studies the internal structure of words (patterns of word formation within a language or across languages)"
+- **Corpus** "large and structured set of texts ... prepared for the purpose of conducting knowledge discovery"
+- **Lexicon**
+- **Terms** and **polysemy** (elemental units; single word or multi-word phrase, see [notes on controlled vocabularies\)](https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies) and **Concepts** (combinations of terms)
+
+... and narrow ones::
+
+- **Stemming** "reducing inflected words to their stem (or base or root) form"
+- **Stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
+- **Term-by-document-matrix** AKA occurrence matrix "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
+    - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"
+- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
+    - **Part-of-speech tagging**
+
+
+## 2.2. Text mining
 
 - Classification
 - Association
@@ -168,14 +230,14 @@ Per Sharda et al. (2014, p. 216):
 - Trend analysis
 
 
-### 2.1.1. Web mining
+### 2.2.1. Web mining
 
 Challenges with web mining, per Sharda et al. (2014, p. 239) --- the Web is:
 
 - Big, growing, and constantly updated
 - Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
 
-#### 2.1.1.1. Search engines & SEO
+#### 2.2.1.1. Search engines & SEO
 
 See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
 
@@ -184,7 +246,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-#### 2.1.1.2. Web analytics
+#### 2.2.1.2. Web analytics
 
 (mining usage)
 
@@ -198,7 +260,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-#### 2.1.1.3. Social analytics
+#### 2.2.1.3. Social analytics
 
 - types of networks
 - network metrics
@@ -214,13 +276,13 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-## 2.2. Natural language processing (NLP)
+## 2.3. Natural language processing (NLP)
 
 vs. bag of words
 
 challenges
 
-### 2.2.1. Sentiment analysis
+### 2.3.1. Sentiment analysis
 
 - Process, pp. 234
 
@@ -237,23 +299,20 @@ challenges
 
 
 
-# 3. Doing text analytics
-
-## 3.1. Text analytics process
-
-Per Sharda et al. (2014, p. 220):
-
-1. Establish the corpus
-2. Create term-document matrix
-3. Analyze
 
 
 
 
 
-## 3.2. Text analytics tools
 
-### 3.2.1. IBM Watson
+
+
+
+
+
+# 3. Text analytics tools
+
+## 3.1. IBM Watson
 
 IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
 
@@ -263,7 +322,7 @@ IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic
 
 
 
-### 3.2.2. Python
+## 3.2. Python
 
 ```Python
 # reverse order of elements:
@@ -276,7 +335,7 @@ list.index(‘str name’)
 list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list)
 ```
 
-#### 3.2.2.1. String manipulation
+#### 3.2.1. String manipulation
 
 ```Python
 # remove punctuation
@@ -295,7 +354,7 @@ my_string.lstrip()
 my_string.rstrip()
 ```
 
-#### 3.2.2.2. Regex
+#### 3.2.2. Regex
 
 ```Python
 # search for substrings within string or subset of string (i inclusive to j exclusive)
@@ -374,6 +433,20 @@ my_var.group_dict()
 my_var.group(‘group_name’)
 my_var.group(1)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

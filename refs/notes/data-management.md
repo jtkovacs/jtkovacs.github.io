@@ -20,7 +20,10 @@ From Sharda et al. (2014):
     <tr><td>Nominal</td><td>Ordinal</td><td>Interval</td><td>Ratio</td></tr>
 </table>
 
-Also: static versus dynamic AKA time series data.
+Also:
+
+- static versus dynamic AKA time series data
+- structured, semi-structured, unstructured data
 
 
 # What is data management?

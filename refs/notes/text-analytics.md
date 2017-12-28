@@ -24,6 +24,9 @@ Text analytics is enabled by the foundational disciplines of:
 - Linguistics
 - Management Science
 
+
+
+
 ## What is text mining?
 
 - **Information extraction:** "identification of key phrases and relationships within text by looking for predefined objects and sequences by way of pattern matching"
@@ -38,7 +41,10 @@ Text analytics is enabled by the foundational disciplines of:
 
 
 
+
 ## Business applications of text analytics
+
+### Applications by technique
 
 Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 
@@ -132,7 +138,62 @@ Per Sharda et al. (2014, p. 216):
 
 
 
+
+
+
+
+
+## Text analytics process
+
+Per Sharda et al. (2014, p. 220):
+
+1. Establish the corpus
+2. Create term-by-document matrix
+3. Analyze
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Text analytics techniques
+
+## Key definitions
+
+From Sharda et al. (2014, pp. 207-208), some broad concepts:
+
+- **Morphology** "branch of the field of linguistics and a part of natural language processing that studies the internal structure of words (patterns of word formation within a language or across languages)"
+- **Corpus** "large and structured set of texts ... prepared for the purpose of conducting knowledge discovery"
+- **Lexicon**
+- **Terms** and **polysemy** (elemental units; single word or multi-word phrase, see [notes on controlled vocabularies\)](https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies) and **Concepts** (combinations of terms)
+
+... and narrow ones::
+
+- **Stemming** "reducing inflected words to their stem (or base or root) form"
+- **Stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
+- **Term-by-document-matrix** AKA occurrence matrix "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
+    - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"
+- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
+    - **Part-of-speech tagging**
+
 
 ## Text mining
 
@@ -211,23 +272,20 @@ challenges
 
 
 
-# Doing text analytics
-
-## Text analytics process
-
-Per Sharda et al. (2014, p. 220):
-
-1. Establish the corpus
-2. Create term-document matrix
-3. Analyze
 
 
 
 
 
-## Text analytics tools
 
-### IBM Watson
+
+
+
+
+
+# Text analytics tools
+
+## IBM Watson
 
 IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
 
@@ -237,7 +295,7 @@ IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic
 
 
 
-### Python
+## Python
 
 ```Python
 # reverse order of elements:
@@ -348,6 +406,20 @@ my_var.group_dict()
 my_var.group(‘group_name’)
 my_var.group(1)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

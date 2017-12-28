@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 2046 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 2275 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -8,14 +8,13 @@
 		- &nbsp;1.2.2. [Create term-by-document matrix](#create-term-by-document-matrix)
 		- &nbsp;1.2.3. [Analyze](#analyze)
 - &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
-	- &nbsp;2.1. [Key definitions](#key-definitions)
-	- &nbsp;2.2. [Text mining](#text-mining)
-		- &nbsp;2.2.1. [Web mining](#web-mining)
-			- &nbsp;2.2.1.1. [Search engines & SEO](#search-engines-seo)
-			- &nbsp;2.2.1.2. [Web analytics](#web-analytics)
-			- &nbsp;2.2.1.3. [Social analytics](#social-analytics)
-	- &nbsp;2.3. [Natural language processing](#natural-language-processing)
-		- &nbsp;2.3.1. [Sentiment analysis](#sentiment-analysis)
+	- &nbsp;2.1. [Text mining](#text-mining)
+		- &nbsp;2.1.1. [Web mining](#web-mining)
+			- &nbsp;2.1.1.1. [Search engines & SEO](#search-engines-seo)
+			- &nbsp;2.1.1.2. [Web analytics](#web-analytics)
+			- &nbsp;2.1.1.3. [Social analytics](#social-analytics)
+	- &nbsp;2.2. [Natural language processing](#natural-language-processing)
+		- &nbsp;2.2.1. [Sentiment analysis](#sentiment-analysis)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
 	- &nbsp;3.1. [IBM Watson](#ibm-watson)
 	- &nbsp;3.2. [Python](#python)
@@ -166,7 +165,9 @@ Per Sharda et al. (2014, p. 216):
 
 ## 1.2. Text mining process
 
-Per Sharda et al. (2014, pp. 220-226), text mining can be undertaken through the three-step process elaborated below. Delen and Crossland (2008, cited in Sharda et al., 2014) place the black box of this process into the following context, which they represent graphically:
+Per Sharda et al., text mining can be undertaken through the three-step process elaborated below (2014; I follow and mostly quote from pp. 220-226, but some term definitions are taken from pp. 206-207).
+
+Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' of this data mining process into the following context, which they represent graphically:
 
 - **Input**
 -   structured data
@@ -182,15 +183,48 @@ Per Sharda et al. (2014, pp. 220-226), text mining can be undertaken through the
 
 ### 1.2.1. Establish the corpus
 
+("large and structured set of texts ... prepared for the purpose of conducting knowledge discovery")
 
+- **"Collect** all documents related to the context (domain of interest) being studied", which may include:
+    - XML files
+    - emails
+    - web pages
+    - notes
+    - memos
+    - transcriptions of audio
+
+- **Organize** (often into a flat text file with consistent character encoding)
 
 ### 1.2.2. Create term-by-document matrix
+
+- **Count raw frequencies** in each document:
+    - **Filter out** stop words **OR filter in** include terms
+        - **stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
+        - **include terms** AKA term dictionary
+    - **Perform stemming** to "[reduce] inflected words to their stem (or base or root) form"
+
+- **Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.)
+
+- Construct the **term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
+    - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
+
+| | investment risk | project management | software engineering | development | SAP | ... |
+| --- | --- | --- | --- | --- | --- | --- |
+| Document 1 | 1 | | | 1 | | |
+| Document 2 | | 1 | | | | |
+| Document 3 | | | 3 | | 1 | |
+| Document 4 | | 2 | 1 | | | 1 |
 
 
 ### 1.2.3. Analyze
 
+Using methods from [data mining](https://jtkovacs.github.io/refs/data-mining.html)
 
+Classification (automatic text categorization)
 
+- Indexing text (semi/automatic)
+- Filtering spam
+- Cataloging web pages
 
 
 
@@ -214,26 +248,9 @@ Per Sharda et al. (2014, pp. 220-226), text mining can be undertaken through the
 
 # 2. Text analytics techniques
 
-## 2.1. Key definitions
-
-From Sharda et al. (2014, pp. 207-208), some broad concepts:
-
-- **Morphology** "branch of the field of linguistics and a part of natural language processing that studies the internal structure of words (patterns of word formation within a language or across languages)"
-- **Corpus** "large and structured set of texts ... prepared for the purpose of conducting knowledge discovery"
-- **Lexicon**
-- **Terms** and **polysemy** (elemental units; single word or multi-word phrase, see [notes on controlled vocabularies\)](https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies) and **Concepts** (combinations of terms)
-
-... and narrow ones::
-
-- **Stemming** "reducing inflected words to their stem (or base or root) form"
-- **Stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
-- **Term-by-document-matrix** AKA occurrence matrix "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
-    - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"
-- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
-    - **Part-of-speech tagging**
 
 
-## 2.2. Text mining
+## 2.1. Text mining
 
 - Classification
 - Association
@@ -241,14 +258,14 @@ From Sharda et al. (2014, pp. 207-208), some broad concepts:
 - Trend analysis
 
 
-### 2.2.1. Web mining
+### 2.1.1. Web mining
 
 Challenges with web mining, per Sharda et al. (2014, p. 239) --- the Web is:
 
 - Big, growing, and constantly updated
 - Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
 
-#### 2.2.1.1. Search engines & SEO
+#### 2.1.1.1. Search engines & SEO
 
 See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
 
@@ -257,7 +274,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-#### 2.2.1.2. Web analytics
+#### 2.1.1.2. Web analytics
 
 (mining usage)
 
@@ -271,7 +288,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-#### 2.2.1.3. Social analytics
+#### 2.1.1.3. Social analytics
 
 - types of networks
 - network metrics
@@ -287,15 +304,20 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-## 2.3. Natural language processing
+## 2.2. Natural language processing
 
 vs. bag of words
 
 challenges
 
-### 2.3.1. Sentiment analysis
+- **Terms** and **polysemy** (elemental units; single word or multi-word phrase, see [notes on controlled vocabularies\)](https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies) and **Concepts** (combinations of terms)
+
+### 2.2.1. Sentiment analysis
 
 - Process, pp. 234
+
+- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
+    - **Part-of-speech tagging**
 
 
 

@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 2046 words | updated 12/28/2017
+   &gt; text analytics | just under 2275 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -108,36 +108,30 @@ code > span.er { color: #ff0000; font-weight: bold; }
      <ul>
       <li>
        2.1.
-       <a href="#key-definitions">
-        Key definitions
-       </a>
-      </li>
-      <li>
-       2.2.
        <a href="#text-mining">
         Text mining
        </a>
        <ul>
         <li>
-         2.2.1.
+         2.1.1.
          <a href="#web-mining">
           Web mining
          </a>
          <ul>
           <li>
-           2.2.1.1.
+           2.1.1.1.
            <a href="#search-engines-seo">
             Search engines &amp; SEO
            </a>
           </li>
           <li>
-           2.2.1.2.
+           2.1.1.2.
            <a href="#web-analytics">
             Web analytics
            </a>
           </li>
           <li>
-           2.2.1.3.
+           2.1.1.3.
            <a href="#social-analytics">
             Social analytics
            </a>
@@ -147,13 +141,13 @@ code > span.er { color: #ff0000; font-weight: bold; }
        </ul>
       </li>
       <li>
-       2.3.
+       2.2.
        <a href="#natural-language-processing">
         Natural language processing
        </a>
        <ul>
         <li>
-         2.3.1.
+         2.2.1.
          <a href="#sentiment-analysis">
           Sentiment analysis
          </a>
@@ -691,7 +685,10 @@ code > span.er { color: #ff0000; font-weight: bold; }
    </a>
   </h2>
   <p>
-   Per Sharda et al. (2014, pp. 220-226), text mining can be undertaken through the three-step process elaborated below. Delen and Crossland (2008, cited in Sharda et al., 2014) place the black box of this process into the following context, which they represent graphically:
+   Per Sharda et al., text mining can be undertaken through the three-step process elaborated below (2014; I follow and mostly quote from pp. 220-226, but some term definitions are taken from pp. 206-207).
+  </p>
+  <p>
+   Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' of this data mining process into the following context, which they represent graphically:
   </p>
   <ul>
    <li>
@@ -746,124 +743,256 @@ code > span.er { color: #ff0000; font-weight: bold; }
     1.2.1. Establish the corpus
    </a>
   </h3>
+  <p>
+   ("large and structured set of texts ... prepared for the purpose of conducting knowledge discovery")
+  </p>
+  <ul>
+   <li>
+    <strong>
+     "Collect
+    </strong>
+    all documents related to the context (domain of interest) being studied", which may include:
+    <ul>
+     <li>
+      XML files
+     </li>
+     <li>
+      emails
+     </li>
+     <li>
+      web pages
+     </li>
+     <li>
+      notes
+     </li>
+     <li>
+      memos
+     </li>
+     <li>
+      transcriptions of audio
+     </li>
+    </ul>
+   </li>
+   <li>
+    <strong>
+     Organize
+    </strong>
+    (often into a flat text file with consistent character encoding)
+   </li>
+  </ul>
   <h3 id="create-term-by-document-matrix">
    <a>
     1.2.2. Create term-by-document matrix
    </a>
   </h3>
-  <h3 id="analyze">
-   <a>
-    1.2.3. Analyze
-   </a>
-  </h3>
-  <h1 id="text-analytics-techniques">
-   <a>
-    2. Text analytics techniques
-   </a>
-  </h1>
-  <h2 id="key-definitions">
-   <a>
-    2.1. Key definitions
-   </a>
-  </h2>
-  <p>
-   From Sharda et al. (2014, pp. 207-208), some broad concepts:
-  </p>
   <ul>
    <li>
     <strong>
-     Morphology
+     Count raw frequencies
     </strong>
-    "branch of the field of linguistics and a part of natural language processing that studies the internal structure of words (patterns of word formation within a language or across languages)"
+    in each document:
+    <ul>
+     <li>
+      <strong>
+       Filter out
+      </strong>
+      stop words
+      <strong>
+       OR filter in
+      </strong>
+      include terms
+      <ul>
+       <li>
+        <strong>
+         stop words
+        </strong>
+        "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles
+        <em>
+         (a, an, the, of, etc.),
+        </em>
+        auxiliary verbs
+        <em>
+         (is, are, was, were, etc.),
+        </em>
+        and context-specific words that are deemed not to have any differentiating value"
+       </li>
+       <li>
+        <strong>
+         include terms
+        </strong>
+        AKA term dictionary
+       </li>
+      </ul>
+     </li>
+     <li>
+      <strong>
+       Perform stemming
+      </strong>
+      to "[reduce] inflected words to their stem (or base or root) form"
+     </li>
+    </ul>
    </li>
    <li>
-    <strong>
-     Corpus
-    </strong>
-    "large and structured set of texts ... prepared for the purpose of conducting knowledge discovery"
+    <p>
+     <strong>
+      Normalize frequencies
+     </strong>
+     (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.)
+    </p>
    </li>
    <li>
+    Construct the
     <strong>
-     Lexicon
+     term-by-document-matrix
     </strong>
-   </li>
-   <li>
-    <strong>
-     Terms
-    </strong>
-    and
-    <strong>
-     polysemy
-    </strong>
-    (elemental units; single word or multi-word phrase, see
-    <a href="https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies">
-     notes on controlled vocabularies)
-    </a>
-    and
-    <strong>
-     Concepts
-    </strong>
-    (combinations of terms)
-   </li>
-  </ul>
-  <p>
-   ... and narrow ones::
-  </p>
-  <ul>
-   <li>
-    <strong>
-     Stemming
-    </strong>
-    "reducing inflected words to their stem (or base or root) form"
-   </li>
-   <li>
-    <strong>
-     Stop words
-    </strong>
-    "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles
-    <em>
-     (a, an, the, of, etc.),
-    </em>
-    auxiliary verbs
-    <em>
-     (is, are, was, were, etc.),
-    </em>
-    and context-specific words that are deemed not to have any differentiating value"
-   </li>
-   <li>
-    <strong>
-     Term-by-document-matrix
-    </strong>
-    AKA occurrence matrix "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
+    AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
     <ul>
      <li>
       <strong>
        Latent semantic indexing
       </strong>
-      by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"
-     </li>
-    </ul>
-   </li>
-   <li>
-    <strong>
-     Token
-    </strong>
-    "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as
-    <strong>
-     tokenizing"
-    </strong>
-    <ul>
-     <li>
-      <strong>
-       Part-of-speech tagging
-      </strong>
+      by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
      </li>
     </ul>
    </li>
   </ul>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+     </th>
+     <th align="left">
+      investment risk
+     </th>
+     <th align="left">
+      project management
+     </th>
+     <th align="left">
+      software engineering
+     </th>
+     <th align="left">
+      development
+     </th>
+     <th align="left">
+      SAP
+     </th>
+     <th align="left">
+      ...
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      Document 1
+     </td>
+     <td align="left">
+      1
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      1
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Document 2
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      1
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Document 3
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      3
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      1
+     </td>
+     <td align="left">
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Document 4
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      2
+     </td>
+     <td align="left">
+      1
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      1
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <h3 id="analyze">
+   <a>
+    1.2.3. Analyze
+   </a>
+  </h3>
+  <p>
+   Using methods from
+   <a href="https://jtkovacs.github.io/refs/data-mining.html">
+    data mining
+   </a>
+  </p>
+  <p>
+   Classification (automatic text categorization)
+  </p>
+  <ul>
+   <li>
+    Indexing text (semi/automatic)
+   </li>
+   <li>
+    Filtering spam
+   </li>
+   <li>
+    Cataloging web pages
+   </li>
+  </ul>
+  <h1 id="text-analytics-techniques">
+   <a>
+    2. Text analytics techniques
+   </a>
+  </h1>
   <h2 id="text-mining">
    <a>
-    2.2. Text mining
+    2.1. Text mining
    </a>
   </h2>
   <ul>
@@ -882,7 +1011,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="web-mining">
    <a>
-    2.2.1. Web mining
+    2.1.1. Web mining
    </a>
   </h3>
   <p>
@@ -898,7 +1027,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="search-engines-seo">
    <a>
-    2.2.1.1. Search engines &amp; SEO
+    2.1.1.1. Search engines &amp; SEO
    </a>
   </h4>
   <p>
@@ -912,7 +1041,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </p>
   <h4 id="web-analytics">
    <a>
-    2.2.1.2. Web analytics
+    2.1.1.2. Web analytics
    </a>
   </h4>
   <p>
@@ -940,7 +1069,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="social-analytics">
    <a>
-    2.2.1.3. Social analytics
+    2.1.1.3. Social analytics
    </a>
   </h4>
   <ul>
@@ -974,7 +1103,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h2 id="natural-language-processing">
    <a>
-    2.3. Natural language processing
+    2.2. Natural language processing
    </a>
   </h2>
   <p>
@@ -983,14 +1112,52 @@ code > span.er { color: #ff0000; font-weight: bold; }
   <p>
    challenges
   </p>
+  <ul>
+   <li>
+    <strong>
+     Terms
+    </strong>
+    and
+    <strong>
+     polysemy
+    </strong>
+    (elemental units; single word or multi-word phrase, see
+    <a href="https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies">
+     notes on controlled vocabularies)
+    </a>
+    and
+    <strong>
+     Concepts
+    </strong>
+    (combinations of terms)
+   </li>
+  </ul>
   <h3 id="sentiment-analysis">
    <a>
-    2.3.1. Sentiment analysis
+    2.2.1. Sentiment analysis
    </a>
   </h3>
   <ul>
    <li>
-    Process, pp. 234
+    <p>
+     Process, pp. 234
+    </p>
+   </li>
+   <li>
+    <strong>
+     Token
+    </strong>
+    "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as
+    <strong>
+     tokenizing"
+    </strong>
+    <ul>
+     <li>
+      <strong>
+       Part-of-speech tagging
+      </strong>
+     </li>
+    </ul>
    </li>
   </ul>
   <h1 id="text-analytics-tools">

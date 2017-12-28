@@ -1,13 +1,8 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 1374 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 1695 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [What is text mining?](#what-is-text-mining)
 	- &nbsp;1.2. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.2.1. [Applications by industry](#applications-by-industry)
-			- &nbsp;1.2.1.1. [Information management](#information-management)
-			- &nbsp;1.2.1.2. [Marketing](#marketing)
-			- &nbsp;1.2.1.3. [Political, legal, military, security](#political-legal-military-security)
-			- &nbsp;1.2.1.4. [Financial](#financial)
-			- &nbsp;1.2.1.5. [Academic](#academic)
-			- &nbsp;1.2.1.6. [Biomedical](#biomedical)
+			- &nbsp;1.2.1.1. [Deception detection](#deception-detection)
 - &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
 	- &nbsp;2.1. [Text mining](#text-mining)
 		- &nbsp;2.1.1. [Web mining](#web-mining)
@@ -69,8 +64,6 @@ Text analytics is enabled by the foundational disciplines of:
 
 
 
-
-
 ## 1.2. Business applications of text analytics
 
 Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
@@ -80,7 +73,7 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - **Clustering.** Grouping similar documents without having a predefined set of categories.
 - **Concept-linking.** Connects related documents by identifying their shared concepts and, by doing so, helps users find information that they perhaps would not have found using traditional search methods."
 
-... and some applications specifically enabled by NLP (p. 213):
+... and some applications specifically enabled by NLP (p. 213; for a great example, see [Textio, The Augmented Writing Platform\):](https://textio.com/)
 
 - **"Question-answering.** ... producing a human language answer when given a human language question. ...
 - **Automatic summarization.** The creation of a shortened version of a textual document by a computer program that contains the most important parts of the original document.
@@ -93,50 +86,66 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - **Text proofing.** A computer program reads a proof copy of a text in order to detect and correct errors.
 - **Optical character recognition.** The automatic translation of images of handwritten, typewritten, or printed text (usually captured by a scanner) into machine-editable textual documents."
 
-For a great example, see [Textio: The Augmented Writing Platform.](https://textio.com/)
+... and some applications specifically enabled by sentiment analysis, part of NLP (p. 233):
+
+- **Financial system,** trying to predict based on buzz
+- Understanding the 'voices' of employees (VOE), customers (VOC) and the market (VOM)
+- Politics & surveillance
 
 ### 1.2.1. Applications by industry
 
-#### 1.2.1.1. Information management
+Per Sharda et al. (2014, pp. 213-220):
 
-- quarterly reports
-- manage search engines
-- manage websites
-- email
-    - classify
-    - filter junk
-    - prioritize
-    - generate automatic responses
+- **Information management**
+    - quarterly reports
+    - manage search engines
+    - manage websites
+    - email
+        - classify
+        - filter junk
+        - prioritize
+        - generate automatic responses
+- **Marketing**
+    - *Data sources*
+        - call centers (notes and transcriptions)
+        - blogs
+        - user reviews
+        - discussion boards & comment sections
+    - *Information sought*
+        - customer perceptions in the market at-large
+        - CRM system-based insights about churn, perceptions, purchasing behavior
+        - improve customer service performance by providing granular feedback on writing (e.g. email to customers)
+- **Legal**
+    - court orders
+    - patent files
+- **Security**
+    - ECHELON, "assumed to be capable of identifying the content of telephone calls, faxes, emails, and other types of data, intercepting information sent via satellites, publics-switched telephone networks, and microwave links"
+    - FBI & CIA joint database development
+    - [deception detection](#deception-detection)
+- **Academic & biomedical**
+    - citation analysis
+    - research articles
+    - medical records
+    - molecular interactions
 
-#### 1.2.1.2. Marketing
+#### 1.2.1.1. Deception detection
 
-- **Data sources:**
-    - call centers (notes and transcriptions)
-    - blogs
-    - user reviews
-    - discussion boards & comment sections
-- **Information sought**
-    - customer perceptions in the market at-large
-    - CRM system-based insights about churn, perceptions, purchasing behavior
+Per Sharda et al. (2014, p. 216):
 
-#### 1.2.1.3. Political, legal, military, security
+"Applying text mining to a large set of real-world criminal (person-of-interest) statements, Fuller et al. (2008) developed prediction models to differentiate deceptive statements from truthful ones. Using a rich set of cues extracted from the textual statements, the model predicted the holdout samples with 70 percent accuracy, which is believed to be a significant success considering that the cues are extracted only from textual statementss (no verbal or visual cues are present). Furthermore, compared to other deception-detection techniques, such as polygraph, this method is nonintrusive and widely applicable to not only textual data, but also (potentially) to transcriptions of voice recordings."
 
-- court orders
-- patent files
+| Construct | Example Cues |
+| --- | --- |
+| Quantity | Verb count, noun-phrase count |
+| Complexity | Average number of clauses, average sentence length |
+| Uncertainty | Modifiers, modal verbs |
+| Nonimmediacy | Passive voice, objectification |
+| Expressivity | Emotiveness |
+| Diversity | Lexical diversity, redundancy |
+| Informality | Typographical error ratio |
+| Specificity | Spatiotemporal information, perceptual information |
+| Affect | Positive affect, negative affect |
 
-#### 1.2.1.4. Financial
-
-- VOE, VOC, VOM (sentiment)
-
-#### 1.2.1.5. Academic
-
-- citation analysis
-- research articles
-
-#### 1.2.1.6. Biomedical
-
-- medical records
-- molecular interactions
 
 
 
@@ -161,10 +170,10 @@ For a great example, see [Textio: The Augmented Writing Platform.](https://texti
 
 ### 2.1.1. Web mining
 
-Challenges
+Challenges with web mining, per Sharda et al. (2014, p. 239) --- the Web is:
 
-
-
+- Big, growing, and constantly updated
+- Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
 
 #### 2.1.1.1. Search engines & SEO
 

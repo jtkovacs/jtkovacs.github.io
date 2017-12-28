@@ -1,29 +1,28 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3041 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3036 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
 			- &nbsp;1.1.2.1. [Deception detection](#deception-detection)
-	- &nbsp;1.2. [Generic text mining process](#generic-text-mining-process)
-		- &nbsp;1.2.1. [Establish the corpus](#establish-the-corpus)
-		- &nbsp;1.2.2. [Create term-by-document matrix](#create-term-by-document-matrix)
-		- &nbsp;1.2.3. [Analyze](#analyze)
 - &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
 	- &nbsp;2.1. [Text mining](#text-mining)
-		- &nbsp;2.1.1. [Clustering](#clustering)
-		- &nbsp;2.1.2. [Association](#association)
-			- &nbsp;2.1.2.1. [Trend analysis](#trend-analysis)
-			- &nbsp;2.1.2.2. [Prediction](#prediction)
-				- &nbsp;2.1.2.2.1. [Classification](#classification)
-		- &nbsp;2.1.3. [Web mining](#web-mining)
-			- &nbsp;2.1.3.1. [Search engines & SEO](#search-engines-seo)
-			- &nbsp;2.1.3.2. [Web analytics](#web-analytics)
-			- &nbsp;2.1.3.3. [Social analytics](#social-analytics)
-	- &nbsp;2.2. [Natural language processing](#natural-language-processing)
-		- &nbsp;2.2.1. [NLP challenges](#nlp-challenges)
-		- &nbsp;2.2.2. [Sentiment analysis](#sentiment-analysis)
-			- &nbsp;2.2.2.1. [Generic sentiment analysis process](#generic-sentiment-analysis-process)
-			- &nbsp;2.2.2.2. [Challenges with sentiment identification](#challenges-with-sentiment-identification)
-			- &nbsp;2.2.2.3. [Methods for sentiment identification](#methods-for-sentiment-identification)
+		- &nbsp;2.1.1. [Establish the corpus](#establish-the-corpus)
+		- &nbsp;2.1.2. [Create term-by-document matrix](#create-term-by-document-matrix)
+		- &nbsp;2.1.3. [Analyze](#analyze)
+			- &nbsp;2.1.3.1. [Clustering](#clustering)
+			- &nbsp;2.1.3.2. [Association](#association)
+			- &nbsp;2.1.3.3. [Classification](#classification)
+			- &nbsp;2.1.3.4. [Trend analysis](#trend-analysis)
+	- &nbsp;2.2. [Web mining](#web-mining)
+		- &nbsp;2.2.1. [Challenges with web mining](#challenges-with-web-mining)
+		- &nbsp;2.2.2. [Search engines & SEO](#search-engines-seo)
+		- &nbsp;2.2.3. [Web analytics](#web-analytics)
+		- &nbsp;2.2.4. [Social analytics](#social-analytics)
+	- &nbsp;2.3. [Natural language processing](#natural-language-processing)
+		- &nbsp;2.3.1. [Challenges with NLP](#challenges-with-nlp)
+		- &nbsp;2.3.2. [Sentiment analysis](#sentiment-analysis)
+			- &nbsp;2.3.2.1. [Generic sentiment analysis process](#generic-sentiment-analysis-process)
+			- &nbsp;2.3.2.2. [Challenges with sentiment identification](#challenges-with-sentiment-identification)
+			- &nbsp;2.3.2.3. [Methods for sentiment identification](#methods-for-sentiment-identification)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
 	- &nbsp;3.1. [IBM Watson](#ibm-watson)
 	- &nbsp;3.2. [Attensity](#attensity)
@@ -173,64 +172,6 @@ Per Sharda et al. (2014, p. 216):
 
 
 
-## 1.2. Generic text mining process
-
-Per Sharda et al., text mining can be undertaken through the three-step process elaborated below (2014; I follow and mostly quote from pp. 220-226, but some term definitions are taken from pp. 206-207).
-
-Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' of this data mining process into the following context, which they represent graphically:
-
-- **Input**
--   structured data
--   unstructured data
-- **Constraints**
-    - software/hardware limitations
-    - privacy issues
-    - linguistic limitations
-- **Mechanisms**
-    - domain expertise
-    - tools & techniques
-- **Output** context-specific knowledge
-
-### 1.2.1. Establish the corpus
-
-("large and structured set of texts ... prepared for the purpose of conducting knowledge discovery")
-
-- **"Collect** all documents related to the context (domain of interest) being studied", which may include:
-    - XML files
-    - emails
-    - web pages
-    - notes
-    - memos
-    - transcriptions of audio
-
-- **Organize** (often into a flat text file with consistent character encoding)
-
-### 1.2.2. Create term-by-document matrix
-
-- **Count raw frequencies** in each document:
-    - **Filter out** stop words **OR filter in** include terms
-        - **stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
-        - **include terms** AKA term dictionary
-    - **Perform stemming** to "[reduce] inflected words to their stem (or base or root) form"
-
-- **Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.)
-
-- Construct the **term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
-    - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
-
-| | investment risk | project management | software engineering | development | SAP | ... |
-| --- | --- | --- | --- | --- | --- | --- |
-| Document 1 | 1 | | | 1 | | |
-| Document 2 | | 1 | | | | |
-| Document 3 | | | 3 | | 1 | |
-| Document 4 | | 2 | 1 | | | 1 |
-
-
-### 1.2.3. Analyze
-
-See [text analytics techniques.](#text-analytics-techniques)
-
-
 
 
 
@@ -255,28 +196,77 @@ See [text analytics techniques.](#text-analytics-techniques)
 
 ## 2.1. Text mining
 
+Per Sharda et al., text mining can be undertaken through the three-step process elaborated below (2014; I follow and mostly quote from pp. 220-226, but some term definitions are taken from pp. 206-207).
+
+Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' of this data mining process into the following context, which they represent graphically:
+
+- **Input**
+    - structured data
+    - unstructured data
+- **Constraints**
+    - software/hardware limitations
+    - privacy issues
+    - linguistic limitations
+- **Mechanisms**
+    - domain expertise
+    - tools & techniques
+- **Output** context-specific knowledge
+
+### 2.1.1. Establish the corpus
+
+("large and structured set of texts ... prepared for the purpose of conducting knowledge discovery")
+
+- **"Collect** all documents related to the context (domain of interest) being studied", which may include:
+    - XML files
+    - emails
+    - web pages
+    - notes
+    - memos
+    - transcriptions of audio
+
+- **Organize** (often into a flat text file with consistent character encoding)
+
+### 2.1.2. Create term-by-document matrix
+
+- **Count raw frequencies** in each document:
+    - **Filter out** stop words **OR filter in** include terms
+        - **stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
+        - **include terms** AKA term dictionary
+    - **Perform stemming** to "[reduce] inflected words to their stem (or base or root) form"
+
+- **Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.)
+
+- Construct the **term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
+    - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
+
+| | investment risk | project management | software engineering | development | SAP | ... |
+| --- | --- | --- | --- | --- | --- | --- |
+| Document 1 | 1 | | | 1 | | |
+| Document 2 | | 1 | | | | |
+| Document 3 | | | 3 | | 1 | |
+| Document 4 | | 2 | 1 | | | 1 |
+
+
+### 2.1.3. Analyze
+
 See [notes on data mining.](https://jtkovacs.github.io/refs/data-mining.html)
 
-### 2.1.1. Clustering
+#### 2.1.3.1. Clustering
 
 Per Sharda et al. (2014, pp. 224-225), clustering is often used to **improve search recall** ("when a query matches a document its whole cluster is returned") and **precision** ("grouping the documents into a number of much smaller groups of related documents, ordering them by relevance, and returning only the documents from the most relevant group or groups"). The most common clustering methods:
 
 - **Scatter/gather** "dynamically generates a table of contents for the collection and adapts and modifies it in response to the user selection"
 - **Query-specific clustering** "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
 
-### 2.1.2. Association
+#### 2.1.3.2. Association
 
 Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For _A_ ==> _C],_ confidence is the percentage of documents that include all the concepts in _C_ within the same subset of those documents that include all the concepts in _A._ Support is the percentage (or number) of documents that include all the concepts in _A_ and _C."_
 
-#### 2.1.2.1. Trend analysis
+#### 2.1.3.3. Classification
 
-Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
+(AKA automatic text categorization, a form of prediction)
 
-#### 2.1.2.2. Prediction
-
-##### 2.1.2.2.1. Classification
-
-AKA automatic text categorization; per Sharda et al. (2014, pp. 224), some applications:
+Per Sharda et al. (2014, pp. 224), some applications:
 
 - indexing text (semi/automatic)
 - filtering spam
@@ -284,20 +274,23 @@ AKA automatic text categorization; per Sharda et al. (2014, pp. 224), some appli
 - generating metadata
 - genre detection
 
+#### 2.1.3.4. Trend analysis
+
+Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
 
 
 
 
-### 2.1.3. Web mining
+## 2.2. Web mining
 
-Challenges with web mining, per Sharda et al. (2014, p. 239) --- the Web is:
+### 2.2.1. Challenges with web mining
+
+Per Sharda et al. (2014, p. 239) --- the Web is:
 
 - Big, growing, and constantly updated
 - Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
 
-
-
-#### 2.1.3.1. Search engines & SEO
+### 2.2.2. Search engines & SEO
 
 See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
 
@@ -305,8 +298,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 - **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
 
-
-#### 2.1.3.2. Web analytics
+### 2.2.3. Web analytics
 
 (mining usage)
 
@@ -317,10 +309,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
   - conversion
 - technologies
 
-
-
-
-#### 2.1.3.3. Social analytics
+### 2.2.4. Social analytics
 
 - types of networks
 - network metrics
@@ -336,11 +325,11 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-## 2.2. Natural language processing
+## 2.3. Natural language processing
 
 With its two parent disciplines---artificial intelligence and computational linguistics---NLP extracts more meaning from textual data because it goes beyond the 'bag of words' approach to account for syntax, and, beyond that, "grammatical and semantic constraints as well as the context" (Sharda et al., 2014, p. 210).
 
-### 2.2.1. NLP challenges
+### 2.3.1. Challenges with NLP
 
 Per Sharda et al. (2014, p. 210), NLP faces major challenges:
 
@@ -351,11 +340,11 @@ Per Sharda et al. (2014, p. 210), NLP faces major challenges:
 - **irregular input** (e.g. typos, accents)
 - identifying *speech acts,** speech that is meant to provoke an action
 
-### 2.2.2. Sentiment analysis
+### 2.3.2. Sentiment analysis
 
 "Often we want to categorize text by topic, which may involve dealing with whole taxonomies of topics. Sentiment classification, on the other hand, usually deals with two classes (positive versus negative), a range of polarity (e.g., star ratings for movies), or even a range in strength of opinion" (Sharda et al., 2014, p. 229).
 
-#### 2.2.2.1. Generic sentiment analysis process
+#### 2.3.2.1. Generic sentiment analysis process
 
 Per Sharda et al. (2014, pp. 234-237):
 
@@ -366,7 +355,7 @@ Per Sharda et al. (2014, pp. 234-237):
     - can be multiple valid or invalid targets in a sentence
 - **Collection and aggregation:** polarity is calculated at the word level, which can then be aggregated to the sentence/phrase and document levels through simple summing; weighted averaging; or "as complex as using one or more machine-learning techniques to create a predictive relationship between the words (and their polarity values) and phrases or sentences"
 
-#### 2.2.2.2. Challenges with sentiment identification
+#### 2.3.2.2. Challenges with sentiment identification
 
 Per Sharda et al. (2014):
 
@@ -374,7 +363,7 @@ Per Sharda et al. (2014):
 - "A document containing several opinionated statements would have a mixed polarity overall, which is different from not having a polarity at all"
 - "an article may contain negative news without explictly using any subjective words or terms"
 
-#### 2.2.2.3. Methods for sentiment identification
+#### 2.3.2.3. Methods for sentiment identification
 
 Per Sharda et al. (2014, pp. 236-237):
 

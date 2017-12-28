@@ -135,15 +135,37 @@ Per Sharda et al. (2014, p. 216):
 
 
 
-## Generic text mining process
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Text analytics techniques
+
+## Text mining
 
 Per Sharda et al., text mining can be undertaken through the three-step process elaborated below (2014; I follow and mostly quote from pp. 220-226, but some term definitions are taken from pp. 206-207).
 
 Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' of this data mining process into the following context, which they represent graphically:
 
 - **Input**
--   structured data
--   unstructured data
+    - structured data
+    - unstructured data
 - **Constraints**
     - software/hardware limitations
     - privacy issues
@@ -190,55 +212,24 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
 
 ### Analyze
 
-See [text analytics techniques.](#text-analytics-techniques)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Text analytics techniques
-
-## Text mining
-
 See [notes on data mining.](https://jtkovacs.github.io/refs/data-mining.html)
 
-### Clustering
+#### Clustering
 
 Per Sharda et al. (2014, pp. 224-225), clustering is often used to **improve search recall** ("when a query matches a document its whole cluster is returned") and **precision** ("grouping the documents into a number of much smaller groups of related documents, ordering them by relevance, and returning only the documents from the most relevant group or groups"). The most common clustering methods:
 
 - **Scatter/gather** "dynamically generates a table of contents for the collection and adapts and modifies it in response to the user selection"
 - **Query-specific clustering** "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
 
-### Association
+#### Association
 
 Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For _A_ ==> _C],_ confidence is the percentage of documents that include all the concepts in _C_ within the same subset of those documents that include all the concepts in _A._ Support is the percentage (or number) of documents that include all the concepts in _A_ and _C."_
 
-#### Trend analysis
+#### Classification
 
-Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
+(AKA automatic text categorization, a form of prediction)
 
-#### Prediction
-
-##### Classification
-
-AKA automatic text categorization; per Sharda et al. (2014, pp. 224), some applications:
+Per Sharda et al. (2014, pp. 224), some applications:
 
 - indexing text (semi/automatic)
 - filtering spam
@@ -246,20 +237,23 @@ AKA automatic text categorization; per Sharda et al. (2014, pp. 224), some appli
 - generating metadata
 - genre detection
 
+#### Trend analysis
+
+Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
 
 
 
 
-### Web mining
+## Web mining
 
-Challenges with web mining, per Sharda et al. (2014, p. 239) --- the Web is:
+### Challenges with web mining
+
+Per Sharda et al. (2014, p. 239) --- the Web is:
 
 - Big, growing, and constantly updated
 - Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
 
-
-
-#### Search engines & SEO
+### Search engines & SEO
 
 See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
 
@@ -267,8 +261,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 - **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
 
-
-#### Web analytics
+### Web analytics
 
 (mining usage)
 
@@ -279,10 +272,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
   - conversion
 - technologies
 
-
-
-
-#### Social analytics
+### Social analytics
 
 - types of networks
 - network metrics
@@ -302,7 +292,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 With its two parent disciplines---artificial intelligence and computational linguistics---NLP extracts more meaning from textual data because it goes beyond the 'bag of words' approach to account for syntax, and, beyond that, "grammatical and semantic constraints as well as the context" (Sharda et al., 2014, p. 210).
 
-### NLP challenges
+### Challenges with NLP
 
 Per Sharda et al. (2014, p. 210), NLP faces major challenges:
 

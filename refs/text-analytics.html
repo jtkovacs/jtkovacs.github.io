@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 3041 words | updated 12/28/2017
+   &gt; text analytics | just under 3036 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -72,32 +72,6 @@ code > span.er { color: #ff0000; font-weight: bold; }
         </li>
        </ul>
       </li>
-      <li>
-       1.2.
-       <a href="#generic-text-mining-process">
-        Generic text mining process
-       </a>
-       <ul>
-        <li>
-         1.2.1.
-         <a href="#establish-the-corpus">
-          Establish the corpus
-         </a>
-        </li>
-        <li>
-         1.2.2.
-         <a href="#create-term-by-document-matrix">
-          Create term-by-document matrix
-         </a>
-        </li>
-        <li>
-         1.2.3.
-         <a href="#analyze">
-          Analyze
-         </a>
-        </li>
-       </ul>
-      </li>
      </ul>
     </li>
     <li>
@@ -114,60 +88,44 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <ul>
         <li>
          2.1.1.
-         <a href="#clustering">
-          Clustering
+         <a href="#establish-the-corpus">
+          Establish the corpus
          </a>
         </li>
         <li>
          2.1.2.
-         <a href="#association">
-          Association
+         <a href="#create-term-by-document-matrix">
+          Create term-by-document matrix
          </a>
-         <ul>
-          <li>
-           2.1.2.1.
-           <a href="#trend-analysis">
-            Trend analysis
-           </a>
-          </li>
-          <li>
-           2.1.2.2.
-           <a href="#prediction">
-            Prediction
-           </a>
-           <ul>
-            <li>
-             2.1.2.2.1.
-             <a href="#classification">
-              Classification
-             </a>
-            </li>
-           </ul>
-          </li>
-         </ul>
         </li>
         <li>
          2.1.3.
-         <a href="#web-mining">
-          Web mining
+         <a href="#analyze">
+          Analyze
          </a>
          <ul>
           <li>
            2.1.3.1.
-           <a href="#search-engines-seo">
-            Search engines &amp; SEO
+           <a href="#clustering">
+            Clustering
            </a>
           </li>
           <li>
            2.1.3.2.
-           <a href="#web-analytics">
-            Web analytics
+           <a href="#association">
+            Association
            </a>
           </li>
           <li>
            2.1.3.3.
-           <a href="#social-analytics">
-            Social analytics
+           <a href="#classification">
+            Classification
+           </a>
+          </li>
+          <li>
+           2.1.3.4.
+           <a href="#trend-analysis">
+            Trend analysis
            </a>
           </li>
          </ul>
@@ -176,36 +134,68 @@ code > span.er { color: #ff0000; font-weight: bold; }
       </li>
       <li>
        2.2.
+       <a href="#web-mining">
+        Web mining
+       </a>
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#challenges-with-web-mining">
+          Challenges with web mining
+         </a>
+        </li>
+        <li>
+         2.2.2.
+         <a href="#search-engines-seo">
+          Search engines &amp; SEO
+         </a>
+        </li>
+        <li>
+         2.2.3.
+         <a href="#web-analytics">
+          Web analytics
+         </a>
+        </li>
+        <li>
+         2.2.4.
+         <a href="#social-analytics">
+          Social analytics
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.3.
        <a href="#natural-language-processing">
         Natural language processing
        </a>
        <ul>
         <li>
-         2.2.1.
-         <a href="#nlp-challenges">
-          NLP challenges
+         2.3.1.
+         <a href="#challenges-with-nlp">
+          Challenges with NLP
          </a>
         </li>
         <li>
-         2.2.2.
+         2.3.2.
          <a href="#sentiment-analysis">
           Sentiment analysis
          </a>
          <ul>
           <li>
-           2.2.2.1.
+           2.3.2.1.
            <a href="#generic-sentiment-analysis-process">
             Generic sentiment analysis process
            </a>
           </li>
           <li>
-           2.2.2.2.
+           2.3.2.2.
            <a href="#challenges-with-sentiment-identification">
             Challenges with sentiment identification
            </a>
           </li>
           <li>
-           2.2.2.3.
+           2.3.2.3.
            <a href="#methods-for-sentiment-identification">
             Methods for sentiment identification
            </a>
@@ -745,9 +735,14 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </tr>
    </tbody>
   </table>
-  <h2 id="generic-text-mining-process">
+  <h1 id="text-analytics-techniques">
    <a>
-    1.2. Generic text mining process
+    2. Text analytics techniques
+   </a>
+  </h1>
+  <h2 id="text-mining">
+   <a>
+    2.1. Text mining
    </a>
   </h2>
   <p>
@@ -761,12 +756,14 @@ code > span.er { color: #ff0000; font-weight: bold; }
     <strong>
      Input
     </strong>
-   </li>
-   <li>
-    structured data
-   </li>
-   <li>
-    unstructured data
+    <ul>
+     <li>
+      structured data
+     </li>
+     <li>
+      unstructured data
+     </li>
+    </ul>
    </li>
    <li>
     <strong>
@@ -806,7 +803,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="establish-the-corpus">
    <a>
-    1.2.1. Establish the corpus
+    2.1.1. Establish the corpus
    </a>
   </h3>
   <p>
@@ -848,7 +845,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="create-term-by-document-matrix">
    <a>
-    1.2.2. Create term-by-document matrix
+    2.1.2. Create term-by-document matrix
    </a>
   </h3>
   <ul>
@@ -1028,36 +1025,20 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </table>
   <h3 id="analyze">
    <a>
-    1.2.3. Analyze
+    2.1.3. Analyze
    </a>
   </h3>
-  <p>
-   See
-   <a href="#text-analytics-techniques">
-    text analytics techniques.
-   </a>
-  </p>
-  <h1 id="text-analytics-techniques">
-   <a>
-    2. Text analytics techniques
-   </a>
-  </h1>
-  <h2 id="text-mining">
-   <a>
-    2.1. Text mining
-   </a>
-  </h2>
   <p>
    See
    <a href="https://jtkovacs.github.io/refs/data-mining.html">
     notes on data mining.
    </a>
   </p>
-  <h3 id="clustering">
+  <h4 id="clustering">
    <a>
-    2.1.1. Clustering
+    2.1.3.1. Clustering
    </a>
-  </h3>
+  </h4>
   <p>
    Per Sharda et al. (2014, pp. 224-225), clustering is often used to
    <strong>
@@ -1083,11 +1064,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
    </li>
   </ul>
-  <h3 id="association">
+  <h4 id="association">
    <a>
-    2.1.2. Association
+    2.1.3.2. Association
    </a>
-  </h3>
+  </h4>
   <p>
    Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For
    <em>
@@ -1110,26 +1091,16 @@ code > span.er { color: #ff0000; font-weight: bold; }
     C."
    </em>
   </p>
-  <h4 id="trend-analysis">
+  <h4 id="classification">
    <a>
-    2.1.2.1. Trend analysis
+    2.1.3.3. Classification
    </a>
   </h4>
   <p>
-   Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
+   (AKA automatic text categorization, a form of prediction)
   </p>
-  <h4 id="prediction">
-   <a>
-    2.1.2.2. Prediction
-   </a>
-  </h4>
-  <h5 id="classification">
-   <a>
-    2.1.2.2.1. Classification
-   </a>
-  </h5>
   <p>
-   AKA automatic text categorization; per Sharda et al. (2014, pp. 224), some applications:
+   Per Sharda et al. (2014, pp. 224), some applications:
   </p>
   <ul>
    <li>
@@ -1148,13 +1119,26 @@ code > span.er { color: #ff0000; font-weight: bold; }
     genre detection
    </li>
   </ul>
-  <h3 id="web-mining">
+  <h4 id="trend-analysis">
    <a>
-    2.1.3. Web mining
+    2.1.3.4. Trend analysis
+   </a>
+  </h4>
+  <p>
+   Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
+  </p>
+  <h2 id="web-mining">
+   <a>
+    2.2. Web mining
+   </a>
+  </h2>
+  <h3 id="challenges-with-web-mining">
+   <a>
+    2.2.1. Challenges with web mining
    </a>
   </h3>
   <p>
-   Challenges with web mining, per Sharda et al. (2014, p. 239) --- the Web is:
+   Per Sharda et al. (2014, p. 239) --- the Web is:
   </p>
   <ul>
    <li>
@@ -1164,11 +1148,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
    </li>
   </ul>
-  <h4 id="search-engines-seo">
+  <h3 id="search-engines-seo">
    <a>
-    2.1.3.1. Search engines &amp; SEO
+    2.2.2. Search engines &amp; SEO
    </a>
-  </h4>
+  </h3>
   <p>
    See
    <a href="https://jtkovacs.github.io/refs/search-engines.html">
@@ -1189,11 +1173,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </strong>
    </li>
   </ul>
-  <h4 id="web-analytics">
+  <h3 id="web-analytics">
    <a>
-    2.1.3.2. Web analytics
+    2.2.3. Web analytics
    </a>
-  </h4>
+  </h3>
   <p>
    (mining usage)
   </p>
@@ -1217,11 +1201,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     technologies
    </li>
   </ul>
-  <h4 id="social-analytics">
+  <h3 id="social-analytics">
    <a>
-    2.1.3.3. Social analytics
+    2.2.4. Social analytics
    </a>
-  </h4>
+  </h3>
   <ul>
    <li>
     types of networks
@@ -1253,15 +1237,15 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h2 id="natural-language-processing">
    <a>
-    2.2. Natural language processing
+    2.3. Natural language processing
    </a>
   </h2>
   <p>
    With its two parent disciplines---artificial intelligence and computational linguistics---NLP extracts more meaning from textual data because it goes beyond the 'bag of words' approach to account for syntax, and, beyond that, "grammatical and semantic constraints as well as the context" (Sharda et al., 2014, p. 210).
   </p>
-  <h3 id="nlp-challenges">
+  <h3 id="challenges-with-nlp">
    <a>
-    2.2.1. NLP challenges
+    2.3.1. Challenges with NLP
    </a>
   </h3>
   <p>
@@ -1306,7 +1290,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="sentiment-analysis">
    <a>
-    2.2.2. Sentiment analysis
+    2.3.2. Sentiment analysis
    </a>
   </h3>
   <p>
@@ -1314,7 +1298,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </p>
   <h4 id="generic-sentiment-analysis-process">
    <a>
-    2.2.2.1. Generic sentiment analysis process
+    2.3.2.1. Generic sentiment analysis process
    </a>
   </h4>
   <p>
@@ -1356,7 +1340,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="challenges-with-sentiment-identification">
    <a>
-    2.2.2.2. Challenges with sentiment identification
+    2.3.2.2. Challenges with sentiment identification
    </a>
   </h4>
   <p>
@@ -1375,7 +1359,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="methods-for-sentiment-identification">
    <a>
-    2.2.2.3. Methods for sentiment identification
+    2.3.2.3. Methods for sentiment identification
    </a>
   </h4>
   <p>

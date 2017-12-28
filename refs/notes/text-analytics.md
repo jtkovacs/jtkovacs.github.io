@@ -1,19 +1,84 @@
 
-# Text analytics in Python
 
+# What is text analytics?
+
+Per Sharda et al. (2014, p. 205), **text analytics** aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics".
+
+Text analytics includes the activities of:
+
+- [Information retrieval](https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval)
+- **Text mining** AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources")
+    - **Web mining**
+    - **Information extraction**
+    - [Data Mining](https://jtkovacs.github.io/refs/data-mining.html)
+
+Text analytics is enabled by technologies from the fields of:
+
+- Statistics
+- Computer Science
+- Artificial Intelligence
+- Machine Learning
+- Natural Language Processing
+- Linguistics
+- Management Science
+
+
+
+## Business applications of text analytics
+
+- court orders
+- research articles
+- quarterly reports
+- molecular interactions
+- patent files
+- medical records
+- customer comments
+- email
+    - classify
+    - filter junk
+    - prioritize
+    - generate automatic responses
+
+
+## Doing text analytics
+
+### Text analytics process
+
+Per Sharda et al. (2014, p. 206):
+
+1.
+2.
+
+### Text analytics tools
+
+#### IBM Watson
+
+IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
+
+<img src="../illos/DeepQA.png" width="600">
+
+
+# Text analytic techniques
+
+## Text analytics glossary
+
+## Information extraction
+
+
+#### Python
 
 ```Python
-# reserve order of elements: 
-list.reverse(), my_string[::-1] 
-# selectively replace: 
-str_name.replace(‘this’,’with this’) 
-# find index of known element: 
-list.index(‘str name’) 
-# times element occurs: 
-list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list) 
+# reverse order of elements:
+list.reverse(), my_string[::-1]
+# selectively replace:
+str_name.replace(‘this’,’with this’)
+# find index of known element:
+list.index(‘str name’)
+# times element occurs:
+list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list)
 ```
 
-## Manage punctuation, case, & whitespace
+Manage punctuation, case, & whitespace:
 
 ```Python
 # remove punctuation
@@ -32,7 +97,7 @@ my_string.lstrip()
 my_string.rstrip()
 ```
 
-## Search & regex
+Search & regex:
 
 ```Python
 # search for substrings within string or subset of string (i inclusive to j exclusive)
@@ -53,9 +118,9 @@ re.match(pattern, text, flags)
 re.match(r’Jac’, data) # the r denotes a raw string
 
 # search anywhere in a string:
-# first match only: 
+# first match only:
 re.search(pattern, text, flags)
-# all nonoverlapping: 
+# all nonoverlapping:
 re.findall(pattern, text, flags)
 
 # phone number, note escaped parentheses:
@@ -72,17 +137,17 @@ flags:
 - multiple flags: re.findall(pattern, data, flag|flag|flag)
 
 ```Python
-# store regex for reuse: 
+# store regex for reuse:
 my_regex = re.compile(pattern, flags)
 re.search(my_regex, data)
-# OR 
+# OR
 my_regex.search(data)
 
 # loop to obtain iterable of match objects:
 for match in my_regex.finditer(data):
-    print(‘{first} {last} <{email}>’.format(**match.groupdict())) 
+    print(‘{first} {last} <{email}>’.format(**match.groupdict()))
 ```
-    
+
 - \\w = any Unicode word character,  \\W = anything not a Unicode word character
 - \\s = any whitespace, \\S = anything not whitespace, \t = tab
 - \\d = any number 0-9, \\D = any non-number
@@ -107,7 +172,7 @@ my_var = re.findall (r’’’
 
 # groups addressing
 my_var.groups()
-my_var.group_dict() 
+my_var.group_dict()
 my_var.group(‘group_name’)
 my_var.group(1)
 ```
@@ -115,6 +180,10 @@ my_var.group(1)
 
 
 # Sources
+
+## Cited
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 ## References
 

@@ -1,27 +1,100 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | nearly 566 words | updated 05/16/2017</p><div class="TOC">- 1. [Text analytics in Python](#text-analytics-in-python)
-	- 1.1. [Manage punctuation, case, & whitespace](#manage-punctuation-case-whitespace)
-	- 1.2. [Search & regex](#search-regex)
-- 2. [Sources](#sources)
-	- 2.1. [References](#references)
-	- 2.2. [Read](#read)
-	- 2.3. [Unread](#unread)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 815 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
+	- &nbsp;1.2. [Doing text analytics](#doing-text-analytics)
+		- &nbsp;1.2.1. [Text analytics process](#text-analytics-process)
+		- &nbsp;1.2.2. [Text analytics tools](#text-analytics-tools)
+			- &nbsp;1.2.2.1. [IBM Watson](#ibm-watson)
+- &nbsp;2. [Text analytic techniques](#text-analytic-techniques)
+	- &nbsp;2.1. [Text analytics glossary](#text-analytics-glossary)
+	- &nbsp;2.2. [Information extraction](#information-extraction)
+			- &nbsp;2.2.1. [Python](#python)
+- &nbsp;3. [Sources](#sources)
+	- &nbsp;3.1. [Cited](#cited)
+	- &nbsp;3.2. [References](#references)
+	- &nbsp;3.3. [Read](#read)
+	- &nbsp;3.4. [Unread](#unread)
 </div>
 
-# 1. Text analytics in Python
 
+# 1. What is text analytics?
+
+Per Sharda et al. (2014, p. 205), **text analytics** aims "to turn unstructured textual data into actionable information through the application of natural language processing (NLP) and analytics".
+
+Text analytics includes the activities of:
+
+- [Information retrieval](https://jtkovacs.github.io/refs/information-architecture.html#what-is-information-retrieval)
+- **Text mining** AKA text data mining, AKA knowledge discovery in textual databases: "primarily focused on discovering new and useful relationships from the textual data sources")
+    - **Web mining**
+    - **Information extraction**
+    - [Data Mining](https://jtkovacs.github.io/refs/data-mining.html)
+
+Text analytics is enabled by technologies from the fields of:
+
+- Statistics
+- Computer Science
+- Artificial Intelligence
+- Machine Learning
+- Natural Language Processing
+- Linguistics
+- Management Science
+
+
+
+## 1.1. Business applications of text analytics
+
+- court orders
+- research articles
+- quarterly reports
+- molecular interactions
+- patent files
+- medical records
+- customer comments
+- email
+    - classify
+    - filter junk
+    - prioritize
+    - generate automatic responses
+
+
+## 1.2. Doing text analytics
+
+### 1.2.1. Text analytics process
+
+Per Sharda et al. (2014, p. 206):
+
+1.
+2.
+
+### 1.2.2. Text analytics tools
+
+#### 1.2.2.1. IBM Watson
+
+IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
+
+<img src="../illos/DeepQA.png" width="600">
+
+
+# 2. Text analytic techniques
+
+## 2.1. Text analytics glossary
+
+## 2.2. Information extraction
+
+
+#### 2.2.1. Python
 
 ```Python
-# reserve order of elements: 
-list.reverse(), my_string[::-1] 
-# selectively replace: 
-str_name.replace(‘this’,’with this’) 
-# find index of known element: 
-list.index(‘str name’) 
-# times element occurs: 
-list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list) 
+# reverse order of elements:
+list.reverse(), my_string[::-1]
+# selectively replace:
+str_name.replace(‘this’,’with this’)
+# find index of known element:
+list.index(‘str name’)
+# times element occurs:
+list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list)
 ```
 
-## 1.1. Manage punctuation, case, & whitespace
+Manage punctuation, case, & whitespace:
 
 ```Python
 # remove punctuation
@@ -40,7 +113,7 @@ my_string.lstrip()
 my_string.rstrip()
 ```
 
-## 1.2. Search & regex
+Search & regex:
 
 ```Python
 # search for substrings within string or subset of string (i inclusive to j exclusive)
@@ -61,9 +134,9 @@ re.match(pattern, text, flags)
 re.match(r’Jac’, data) # the r denotes a raw string
 
 # search anywhere in a string:
-# first match only: 
+# first match only:
 re.search(pattern, text, flags)
-# all nonoverlapping: 
+# all nonoverlapping:
 re.findall(pattern, text, flags)
 
 # phone number, note escaped parentheses:
@@ -80,17 +153,17 @@ flags:
 - multiple flags: re.findall(pattern, data, flag|flag|flag)
 
 ```Python
-# store regex for reuse: 
+# store regex for reuse:
 my_regex = re.compile(pattern, flags)
 re.search(my_regex, data)
-# OR 
+# OR
 my_regex.search(data)
 
 # loop to obtain iterable of match objects:
 for match in my_regex.finditer(data):
-    print(‘{first} {last} <{email}>’.format(**match.groupdict())) 
+    print(‘{first} {last} <{email}>’.format(**match.groupdict()))
 ```
-    
+
 - \\w = any Unicode word character,  \\W = anything not a Unicode word character
 - \\s = any whitespace, \\S = anything not whitespace, \t = tab
 - \\d = any number 0-9, \\D = any non-number
@@ -115,27 +188,31 @@ my_var = re.findall (r’’’
 
 # groups addressing
 my_var.groups()
-my_var.group_dict() 
+my_var.group_dict()
 my_var.group(‘group_name’)
 my_var.group(1)
 ```
 
 
 
-# 2. Sources
+# 3. Sources
 
-## 2.1. References
+## 3.1. Cited
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+## 3.2. References
 
 - [NLTK cheatsheet](http://billchambers.me/tutorials/2015/01/14/python-nlp-cheatsheet-nltk-scikit-learn.html)
 - [Corpus of Contemporary American English](http://corpus.byu.edu/coca/)
 - [Corpus based language studies](http://cw.routledge.com/textbooks/0415286239/default.asp)
 - [IBM Watson demo - Infer personality from unstructured text](https://personality-insights-livedemo.mybluemix.net/)
 
-## 2.2. Read
+## 3.3. Read
 
 - [Lynda - Using Regex](http://www.lynda.com/Regular-Expressions-tutorials/Using-Regular-Expressions/85870-2.html)
 
-## 2.3. Unread
+## 3.4. Unread
 
 - Regex: [1](http://www.regular-expressions.info/), [2](https://regexone.com/)
 - [CodeSchool - Regular Expressions](https://www.codeschool.com/courses/breaking-the-ice-with-regular-expressions)

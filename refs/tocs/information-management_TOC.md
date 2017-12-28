@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> information systems | just under 1170 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What are information systems for?](#what-are-information-systems-for)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> information management | just under 1170 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What are information systems for?](#what-are-information-systems-for)
 - &nbsp;2. [What are management information systems (MIS)?](#what-are-management-information-systems-mis)
 	- &nbsp;2.1. [Evolution of MIS](#evolution-of-mis)
 	- &nbsp;2.2. [Why use a MIS?](#why-use-a-mis)

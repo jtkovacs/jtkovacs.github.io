@@ -1,25 +1,27 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 1235 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
-	- &nbsp;1.1. [DM applications by technique](#dm-applications-by-technique)
-	- &nbsp;1.2. [DM applications by industry](#dm-applications-by-industry)
-	- &nbsp;1.3. [DM processes](#dm-processes)
-	- &nbsp;1.4. [DM software](#dm-software)
-	- &nbsp;1.5. [Common DM pitfalls](#common-dm-pitfalls)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 1246 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
+	- &nbsp;1.1. [Business applications of data mining](#business-applications-of-data-mining)
+		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
+		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
+	- &nbsp;1.2. [Doing data mining](#doing-data-mining)
+		- &nbsp;1.2.1. [Data mining processes](#data-mining-processes)
+		- &nbsp;1.2.2. [Common data mining pitfalls](#common-data-mining-pitfalls)
+		- &nbsp;1.2.3. [Data mining software](#data-mining-software)
 - &nbsp;2. [Prediction](#prediction)
 	- &nbsp;2.1. [Regression](#regression)
 	- &nbsp;2.2. [Classification](#classification)
 		- &nbsp;2.2.1. [Estimating the true accuracy of classification models](#estimating-the-true-accuracy-of-classification-models)
 		- &nbsp;2.2.2. [Classification techniques](#classification-techniques)
-	- &nbsp;2.3. [Association](#association)
-		- &nbsp;2.3.1. [Support & confidence](#support-confidence)
-		- &nbsp;2.3.2. [Apriori algorithm](#apriori-algorithm)
-	- &nbsp;2.4. [Clustering](#clustering)
-		- &nbsp;2.4.1. [Determining optimal # of clusters](#determining-optimal-#-of-clusters)
-		- &nbsp;2.4.2. [Clustering techniques](#clustering-techniques)
-- &nbsp;3. [Sources](#sources)
-	- &nbsp;3.1. [Cited](#cited)
-	- &nbsp;3.2. [References](#references)
-	- &nbsp;3.3. [Read](#read)
-	- &nbsp;3.4. [Unrea](#unrea)
+- &nbsp;3. [Association](#association)
+	- &nbsp;3.1. [Support & confidence](#support-confidence)
+	- &nbsp;3.2. [Apriori algorithm](#apriori-algorithm)
+- &nbsp;4. [Clustering](#clustering)
+	- &nbsp;4.1. [Determining optimal \# of clusters](#determining-optimal-\#-of-clusters)
+	- &nbsp;4.2. [Clustering techniques](#clustering-techniques)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [Cited](#cited)
+	- &nbsp;5.2. [References](#references)
+	- &nbsp;5.3. [Read](#read)
+	- &nbsp;5.4. [Unrea](#unrea)
 </div>
 
 
@@ -41,7 +43,10 @@ Per Sharda et al. (2014), the field of data mining draws on _statistics, artific
 
 See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [notes on machine learning.](https://jtkovacs.github.io/refs/machine-learning.html)
 
-## 1.1. DM applications by technique
+
+## 1.1. Business applications of data mining
+
+### 1.1.1. Applications by technique
 
 Per Sharda et al. (2015, pp. 172; 181; 183):
 
@@ -75,7 +80,7 @@ Per Sharda et al. (2015, pp. 172; 181; 183):
     </ul></td></tr>
 </table>
 
-## 1.2. DM applications by industry
+### 1.1.2. Applications by industry
 
 Per Sharda et al. (2014, pp. 160-161):
 
@@ -135,7 +140,11 @@ Per Sharda et al. (2014, pp. 160-161):
     - predict market reception of a movie, album, etc.
     - forecasting to inform scheduling
 
-## 1.3. DM processes
+
+
+## 1.2. Doing data mining
+
+### 1.2.1. Data mining processes
 
 Per Sharda et al. (2014):
 
@@ -153,9 +162,24 @@ Per Sharda et al. (2014):
 
 \*\* Knowledge Discovery in Databases, c. 1996
 
-## 1.4. DM software
+### 1.2.2. Common data mining pitfalls
 
-Per Sharda et al. (2015, p. 187), some commerical tools:
+Per Sharda et al. (2015, p. 195):
+
+- "Selecting the wrong problem for data mining.
+- Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
+- Leaving insufficient time for data preparation. It takes more effort than is generally understood.
+- Looking only at aggregated results and not at individual records ...
+- Being sloppy about keeping track of the data mining procedure and results.
+- Ignoring suspicious findings and quickly moving on.
+- Running mining algorithms repeatedly and blindly ...
+- Believing everything you are told about the data.
+- Believing everything you are told about your own data mining analysis [????]
+- Measuring your results differently from the way your sponsor measures them."
+
+### 1.2.3. Data mining software
+
+Per Sharda et al. (2015, p. 187), some commercial tools:
 
 - IBM SPSS Modeler
 - SAS Enterprise Miner
@@ -199,20 +223,7 @@ Also, they cite a poll from KDNuggets.com (most to least popular):
 - Other commercial software
 - ...
 
-## 1.5. Common DM pitfalls
 
-Per Sharda et al. (2015, p. 195):
-
-- "Selecting the wrong problem for data mining.
-- Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
-- Leaving insufficient time for data preparation. It takes more effort than is generally understood.
-- Looking only at aggregated results and not at individual records ...
-- Being sloppy about keeping track of the data mining procedure and results.
-- Ignoring suspicious findings and quickly moving on.
-- Running mining algorithms repeatedly and blindly ...
-- Believing everything you are told about the data.
-- Believing everything you are told about your own data mining analysis [????]
-- Measuring your results differently from the way your sponsor measures them."
 
 
 
@@ -260,17 +271,26 @@ Genetic algorithms
 
 Rough sets
 
-## 2.3. Association
 
-### 2.3.1. Support & confidence
 
-### 2.3.2. Apriori algorithm
 
-## 2.4. Clustering
 
-### 2.4.1. Determining optimal # of clusters
 
-### 2.4.2. Clustering techniques
+
+# 3. Association
+
+## 3.1. Support & confidence
+
+## 3.2. Apriori algorithm
+
+
+
+
+# 4. Clustering
+
+## 4.1. Determining optimal \# of clusters
+
+## 4.2. Clustering techniques
 
 Divisive vs. agglomerative
 
@@ -283,14 +303,14 @@ k-means
 
 
 
-# 3. Sources
+# 5. Sources
 
-## 3.1. Cited
+## 5.1. Cited
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-## 3.2. References
+## 5.2. References
 
-## 3.3. Read
+## 5.3. Read
 
-## 3.4. Unread
+## 5.4. Unread

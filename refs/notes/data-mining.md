@@ -18,7 +18,10 @@ Per Sharda et al. (2014), the field of data mining draws on _statistics, artific
 
 See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [notes on machine learning.](https://jtkovacs.github.io/refs/machine-learning.html)
 
-## DM applications by technique
+
+## Business applications of data mining
+
+### Applications by technique
 
 Per Sharda et al. (2015, pp. 172; 181; 183):
 
@@ -52,7 +55,7 @@ Per Sharda et al. (2015, pp. 172; 181; 183):
     </ul></td></tr>
 </table>
 
-## DM applications by industry
+### Applications by industry
 
 Per Sharda et al. (2014, pp. 160-161):
 
@@ -112,7 +115,11 @@ Per Sharda et al. (2014, pp. 160-161):
     - predict market reception of a movie, album, etc.
     - forecasting to inform scheduling
 
-## DM processes
+
+
+## Doing data mining
+
+### Data mining processes
 
 Per Sharda et al. (2014):
 
@@ -130,9 +137,24 @@ Per Sharda et al. (2014):
 
 \*\* Knowledge Discovery in Databases, c. 1996
 
-## DM software
+### Common data mining pitfalls
 
-Per Sharda et al. (2015, p. 187), some commerical tools:
+Per Sharda et al. (2015, p. 195):
+
+- "Selecting the wrong problem for data mining.
+- Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
+- Leaving insufficient time for data preparation. It takes more effort than is generally understood.
+- Looking only at aggregated results and not at individual records ...
+- Being sloppy about keeping track of the data mining procedure and results.
+- Ignoring suspicious findings and quickly moving on.
+- Running mining algorithms repeatedly and blindly ...
+- Believing everything you are told about the data.
+- Believing everything you are told about your own data mining analysis [????]
+- Measuring your results differently from the way your sponsor measures them."
+
+### Data mining software
+
+Per Sharda et al. (2015, p. 187), some commercial tools:
 
 - IBM SPSS Modeler
 - SAS Enterprise Miner
@@ -176,20 +198,7 @@ Also, they cite a poll from KDNuggets.com (most to least popular):
 - Other commercial software
 - ...
 
-## Common DM pitfalls
 
-Per Sharda et al. (2015, p. 195):
-
-- "Selecting the wrong problem for data mining.
-- Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
-- Leaving insufficient time for data preparation. It takes more effort than is generally understood.
-- Looking only at aggregated results and not at individual records ...
-- Being sloppy about keeping track of the data mining procedure and results.
-- Ignoring suspicious findings and quickly moving on.
-- Running mining algorithms repeatedly and blindly ...
-- Believing everything you are told about the data.
-- Believing everything you are told about your own data mining analysis [????]
-- Measuring your results differently from the way your sponsor measures them."
 
 
 
@@ -237,17 +246,26 @@ Genetic algorithms
 
 Rough sets
 
-## Association
 
-### Support & confidence
 
-### Apriori algorithm
 
-## Clustering
 
-### Determining optimal # of clusters
 
-### Clustering techniques
+
+# Association
+
+## Support & confidence
+
+## Apriori algorithm
+
+
+
+
+# Clustering
+
+## Determining optimal \# of clusters
+
+## Clustering techniques
 
 Divisive vs. agglomerative
 

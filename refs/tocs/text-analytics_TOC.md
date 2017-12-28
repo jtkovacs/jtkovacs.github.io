@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 2792 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 2938 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -20,6 +20,8 @@
 	- &nbsp;2.3. [Natural language processing](#natural-language-processing)
 		- &nbsp;2.3.1. [Sentiment analysis](#sentiment-analysis)
 			- &nbsp;2.3.1.1. [Generic sentiment analysis process](#generic-sentiment-analysis-process)
+			- &nbsp;2.3.1.2. [Challenges with sentiment identification](#challenges-with-sentiment-identification)
+			- &nbsp;2.3.1.3. [Methods for sentiment identification](#methods-for-sentiment-identification)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
 	- &nbsp;3.1. [IBM Watson](#ibm-watson)
 	- &nbsp;3.2. [Attensity](#attensity)
@@ -346,24 +348,27 @@ With its two parent disciplines---artificial intelligence and computational ling
 
 "Often we want to categorize text by topic, which may involve dealing with whole taxonomies of topics. Sentiment classification, on the other hand, usually deals with two classes (positive versus negative), a range of polarity (e.g., star ratings for movies), or even a range in strength of opinion" (Sharda et al., 2014, p. 229).
 
-- Sentiments can be explicit or implicit, "where the text implies an opinion"; the latter is much more difficult to detect
-- "A document containing several opinionated statements would have a mixed polarity overall, which is different from not having a polarity at all"
-
 #### 2.3.1.1. Generic sentiment analysis process
 
 Per Sharda et al. (2014, pp. 234-237):
 
-- **Sentiment detection**
+- **Sentiment detection:** determine whether a given passage is 'sentimentful', perhaps by calculating its Objectivity-Subjectivity (O-S) polarity
+- **N-P polarity classification:** "classify the opinion as falling under one of two opposing sentiment polarities, or locate its position on the continuum between these two polarities"
+- **Target identification:** identify what---explicit or implicit in the sentence (or other unit of analysis)---the expressed sentiment is directed towards (its target)
+    - the challenge posed by this step varies greatly by domain
+    - can be multiple valid or invalid targets in a sentence
+- **Collection and aggregation:** polarity is calculated at the word level, which can then be aggregated to the sentence/phrase and document levels through simple summing; weighted averaging; or "as complex as using one or more machine-learning techniques to create a predictive relationship between the words (and their polarity values) and phrases or sentences"
 
-- **N-P polarity classification**
-    - **Lexicon**
-    - **Training documents**
+#### 2.3.1.2. Challenges with sentiment identification
 
-- **Target identification**
+- Sentiments can be explicit or implicit, "where the text implies an opinion"; the latter is much more difficult to detect
+- "A document containing several opinionated statements would have a mixed polarity overall, which is different from not having a polarity at all"
+- "an article may contain negative news without explictly using any subjective words or terms"
 
-- **Collection and aggregation**
-    - sentence/phrase level
-    - document level
+#### 2.3.1.3. Methods for sentiment identification
+
+- **Lexicon**
+- **Training documents**
 
 
 

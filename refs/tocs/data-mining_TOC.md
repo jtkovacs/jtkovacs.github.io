@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 1888 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 2054 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
 	- &nbsp;1.1. [Business applications of data mining](#business-applications-of-data-mining)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -12,17 +12,24 @@
 		- &nbsp;2.1.2. [Classification](#classification)
 			- &nbsp;2.1.2.1. [Classification versus clustering](#classification-versus-clustering)
 			- &nbsp;2.1.2.2. [Generic classification methodology](#generic-classification-methodology)
+				- &nbsp;2.1.2.2.1. [Training approaches](#training-approaches)
 			- &nbsp;2.1.2.3. [Evaluating classification models](#evaluating-classification-models)
 				- &nbsp;2.1.2.3.1. [Measuring accuracy](#measuring-accuracy)
-				- &nbsp;2.1.2.3.2. [Estimation methods](#estimation-methods)
 			- &nbsp;2.1.2.4. [Classification techniques](#classification-techniques)
+				- &nbsp;2.1.2.4.1. [Decision tree analysis](#decision-tree-analysis)
+				- &nbsp;2.1.2.4.2. [Statistical analysis](#statistical-analysis)
+				- &nbsp;2.1.2.4.3. [Neural networks](#neural-networks)
+				- &nbsp;2.1.2.4.4. [Case-based reasoning](#case-based-reasoning)
+				- &nbsp;2.1.2.4.5. [Bayesian classifiers](#bayesian-classifiers)
+				- &nbsp;2.1.2.4.6. [Genetic algorithms](#genetic-algorithms)
+				- &nbsp;2.1.2.4.7. [Rough sets](#rough-sets)
 	- &nbsp;2.2. [Association](#association)
 		- &nbsp;2.2.1. [Support & confidence](#support-confidence)
 		- &nbsp;2.2.2. [Apriori algorithm](#apriori-algorithm)
 	- &nbsp;2.3. [Clustering](#clustering)
-			- &nbsp;2.3.1. [Clustering versus classification](#clustering-versus-classification)
-		- &nbsp;2.3.1. [Determining optimal \# of clusters](#determining-optimal-\#-of-clusters)
-		- &nbsp;2.3.2. [Clustering techniques](#clustering-techniques)
+		- &nbsp;2.3.1. [Clustering versus classification](#clustering-versus-classification)
+		- &nbsp;2.3.2. [Determining optimal number of clusters](#determining-optimal-number-of-clusters)
+		- &nbsp;2.3.3. [Clustering techniques](#clustering-techniques)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -252,8 +259,17 @@ Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used t
 
 Per Sharda et al. (2014):
 
-1. Model development AKA model training: "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
-2. Model testing / Model deployment: "the model is tested against the holdout sample for accuracy assessment and eventually deployed for actual use"
+1. Model development AKA training: "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
+2. Model testing: "the model is tested against the holdout sample for accuracy assessment ..."
+3. Model deployment: "... and eventually deployed for actual use"
+
+##### 2.1.2.2.1. Training approaches
+
+- Simple split
+- k-fold cross-validation AKA rotation estimation
+- leave-one-out
+- bootstrapping
+- jackknifing
 
 #### 2.1.2.3. Evaluating classification models
 
@@ -279,45 +295,36 @@ Common accuracy metrics:
 
 | Formula | Description |
 | --- | --- |
-| True Positive Rate = TP/(TP+FN) | |
-| True Negative Rate = TN/(TN+FP) | |
-| Accuracy = (TP+TN)/(TP+TN+FP+FN) | |
-| Recall = TP/(TP+FN) | |
+| TRUE POSITIVE RATE = RECALL = TP/(TP+FN) | "The ratio of correctly classified positives divided by the sum of correctly classified positives and incorrectly classified negatives" |
+| TRUE NEGATIVE RATE = TN/(TN+FP) | "The ratio of correctly classified negatives divided by the total negative count (i.e., false alarm rate)" i.e., the sum of correctly classified negatives and incorrectly classified positives" |
+| ACCURACY = (TP+TN)/(TP+TN+FP+FN) | "The ratio of correctly classified instances (positives and negatives) divided by the total number of instances" |
+| PRECISION = TP/(TP+FP) | "The ratio of correctly classified positives divided by the sum of correctly classified positives and incorrectly classified positives" |
 
-Accuracy metrics for _n<sup>classes</sup>_ \> 2:
+"The **area under the ROC curve** is a graphical assessment technique where the true positive rate is plotted on the y-axis and the false positive rate is plotted on the x-axis. The area under the ROC curve determines the accuracy measure of a classifier: A value of 1 indicates a perfect classifier whereas 0.5 indicates no better than random chance" (Sharda et al., 2014, p. 175).
 
-| Formula | Description |
-| --- | --- |
-| Per class accuracy rate | |
-| Overall accuracy | |
+Accuracy metrics for classification problems with more than two classes:
 
-##### 2.1.2.3.2. Estimation methods
-
-For estimating accuracy
-
-- Simple split
-- k-fold cross-validation
-- leave-one-out
-- bootstrapping
-- jackknifing
-- area under the ROC curve
+- Per class accuracy rates: _True classification rate<sub>i</sub> =  (True classification)<sub>i</sub> / ∑<sub>i=1</sub><sup>n</sup> (False classification)<sub>i</sub>_
+- _(Overall classifier accuracy)<sub>i</sub> = ∑<sub>i=1</sub><sup>n</sup> (True classification)<sub>i</sub> / Total number of cases_
 
 
 #### 2.1.2.4. Classification techniques
 
-Decision tree analysis
+Per Sharda et al. (2014, pp. 175-176):
 
-Statistical analysis
+##### 2.1.2.4.1. Decision tree analysis
 
-Neural networks
+##### 2.1.2.4.2. Statistical analysis
 
-Case-based reasoning
+##### 2.1.2.4.3. Neural networks
 
-Bayesian classifiers
+##### 2.1.2.4.4. Case-based reasoning
 
-Genetic algorithms
+##### 2.1.2.4.5. Bayesian classifiers
 
-Rough sets
+##### 2.1.2.4.6. Genetic algorithms
+
+##### 2.1.2.4.7. Rough sets
 
 
 
@@ -336,14 +343,14 @@ Rough sets
 
 ## 2.3. Clustering
 
-#### 2.3.1. Clustering versus classification
+### 2.3.1. Clustering versus classification
 
 Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
 
 
-### 2.3.1. Determining optimal \# of clusters
+### 2.3.2. Determining optimal number of clusters
 
-### 2.3.2. Clustering techniques
+### 2.3.3. Clustering techniques
 
 Divisive vs. agglomerative
 

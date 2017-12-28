@@ -221,8 +221,17 @@ Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used t
 
 Per Sharda et al. (2014):
 
-1. Model development AKA model training: "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
-2. Model testing / Model deployment: "the model is tested against the holdout sample for accuracy assessment and eventually deployed for actual use"
+1. Model development AKA training: "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
+2. Model testing: "the model is tested against the holdout sample for accuracy assessment ..."
+3. Model deployment: "... and eventually deployed for actual use"
+
+##### Training approaches
+
+- Simple split
+- k-fold cross-validation AKA rotation estimation
+- leave-one-out
+- bootstrapping
+- jackknifing
 
 #### Evaluating classification models
 
@@ -248,45 +257,36 @@ Common accuracy metrics:
 
 | Formula | Description |
 | --- | --- |
-| True Positive Rate = TP/(TP+FN) | |
-| True Negative Rate = TN/(TN+FP) | |
-| Accuracy = (TP+TN)/(TP+TN+FP+FN) | |
-| Recall = TP/(TP+FN) | |
+| TRUE POSITIVE RATE = RECALL = TP/(TP+FN) | "The ratio of correctly classified positives divided by the sum of correctly classified positives and incorrectly classified negatives" |
+| TRUE NEGATIVE RATE = TN/(TN+FP) | "The ratio of correctly classified negatives divided by the total negative count (i.e., false alarm rate)" i.e., the sum of correctly classified negatives and incorrectly classified positives" |
+| ACCURACY = (TP+TN)/(TP+TN+FP+FN) | "The ratio of correctly classified instances (positives and negatives) divided by the total number of instances" |
+| PRECISION = TP/(TP+FP) | "The ratio of correctly classified positives divided by the sum of correctly classified positives and incorrectly classified positives" |
 
-Accuracy metrics for _n<sup>classes</sup>_ \> 2:
+"The **area under the ROC curve** is a graphical assessment technique where the true positive rate is plotted on the y-axis and the false positive rate is plotted on the x-axis. The area under the ROC curve determines the accuracy measure of a classifier: A value of 1 indicates a perfect classifier whereas 0.5 indicates no better than random chance" (Sharda et al., 2014, p. 175).
 
-| Formula | Description |
-| --- | --- |
-| Per class accuracy rate | |
-| Overall accuracy | |
+Accuracy metrics for classification problems with more than two classes:
 
-##### Estimation methods
-
-For estimating accuracy
-
-- Simple split
-- k-fold cross-validation
-- leave-one-out
-- bootstrapping
-- jackknifing
-- area under the ROC curve
+- Per class accuracy rates: _True classification rate<sub>i</sub> =  (True classification)<sub>i</sub> / ∑<sub>i=1</sub><sup>n</sup> (False classification)<sub>i</sub>_
+- _(Overall classifier accuracy)<sub>i</sub> = ∑<sub>i=1</sub><sup>n</sup> (True classification)<sub>i</sub> / Total number of cases_
 
 
 #### Classification techniques
 
-Decision tree analysis
+Per Sharda et al. (2014, pp. 175-176):
 
-Statistical analysis
+##### Decision tree analysis
 
-Neural networks
+##### Statistical analysis
 
-Case-based reasoning
+##### Neural networks
 
-Bayesian classifiers
+##### Case-based reasoning
 
-Genetic algorithms
+##### Bayesian classifiers
 
-Rough sets
+##### Genetic algorithms
+
+##### Rough sets
 
 
 
@@ -305,12 +305,12 @@ Rough sets
 
 ## Clustering
 
-#### Clustering versus classification
+### Clustering versus classification
 
 Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
 
 
-### Determining optimal \# of clusters
+### Determining optimal number of clusters
 
 ### Clustering techniques
 

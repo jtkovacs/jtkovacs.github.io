@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3036 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3178 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -12,17 +12,21 @@
 			- &nbsp;2.1.3.2. [Association](#association)
 			- &nbsp;2.1.3.3. [Classification](#classification)
 			- &nbsp;2.1.3.4. [Trend analysis](#trend-analysis)
-	- &nbsp;2.2. [Web mining](#web-mining)
-		- &nbsp;2.2.1. [Challenges with web mining](#challenges-with-web-mining)
-		- &nbsp;2.2.2. [Search engines & SEO](#search-engines-seo)
-		- &nbsp;2.2.3. [Web analytics](#web-analytics)
-		- &nbsp;2.2.4. [Social analytics](#social-analytics)
-	- &nbsp;2.3. [Natural language processing](#natural-language-processing)
-		- &nbsp;2.3.1. [Challenges with NLP](#challenges-with-nlp)
-		- &nbsp;2.3.2. [Sentiment analysis](#sentiment-analysis)
-			- &nbsp;2.3.2.1. [Generic sentiment analysis process](#generic-sentiment-analysis-process)
-			- &nbsp;2.3.2.2. [Challenges with sentiment identification](#challenges-with-sentiment-identification)
-			- &nbsp;2.3.2.3. [Methods for sentiment identification](#methods-for-sentiment-identification)
+	- &nbsp;2.2. [Natural language processing](#natural-language-processing)
+		- &nbsp;2.2.1. [Challenges with NLP](#challenges-with-nlp)
+		- &nbsp;2.2.2. [Sentiment analysis](#sentiment-analysis)
+			- &nbsp;2.2.2.1. [Generic sentiment analysis process](#generic-sentiment-analysis-process)
+			- &nbsp;2.2.2.2. [Challenges with sentiment identification](#challenges-with-sentiment-identification)
+			- &nbsp;2.2.2.3. [Methods for sentiment identification](#methods-for-sentiment-identification)
+	- &nbsp;2.3. [Web mining](#web-mining)
+		- &nbsp;2.3.1. [Challenges with web mining](#challenges-with-web-mining)
+		- &nbsp;2.3.2. [Web crawlers (structure & content mining)](#web-crawlers-structure-content-mining)
+		- &nbsp;2.3.3. [Web analytics (usage mining)](#web-analytics-usage-mining)
+			- &nbsp;2.3.3.1. [Metrics for web analytics](#metrics-for-web-analytics)
+			- &nbsp;2.3.3.2. [Technologies for web analytics](#technologies-for-web-analytics)
+		- &nbsp;2.3.4. [Social analytics](#social-analytics)
+			- &nbsp;2.3.4.1. [Social network analysis](#social-network-analysis)
+			- &nbsp;2.3.4.2. [Social media analytics](#social-media-analytics)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
 	- &nbsp;3.1. [IBM Watson](#ibm-watson)
 	- &nbsp;3.2. [Attensity](#attensity)
@@ -233,18 +237,16 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
         - **stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
         - **include terms** AKA term dictionary
     - **Perform stemming** to "[reduce] inflected words to their stem (or base or root) form"
-
 - **Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.)
-
 - Construct the **term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
     - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
 
-| | investment risk | project management | software engineering | development | SAP | ... |
+| | Term1 | Term2 | Term3 | Term4 | Term4 | Term5 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Document 1 | 1 | | | 1 | | |
-| Document 2 | | 1 | | | | |
-| Document 3 | | | 3 | | 1 | |
-| Document 4 | | 2 | 1 | | | 1 |
+| Doc1 | 1 | | | 1 | | |
+| Doc2 | | 1 | | | | |
+| Doc3 | | | 3 | | 1 | |
+| Doc4 | | 2 | 1 | | | 1 |
 
 
 ### 2.1.3. Analyze
@@ -281,55 +283,19 @@ Comparing the distribution of concepts across different subcollections, e.g. fro
 
 
 
-## 2.2. Web mining
-
-### 2.2.1. Challenges with web mining
-
-Per Sharda et al. (2014, p. 239) --- the Web is:
-
-- Big, growing, and constantly updated
-- Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
-
-### 2.2.2. Search engines & SEO
-
-See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
-
-(mining content, structure)
-
-- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
-
-### 2.2.3. Web analytics
-
-(mining usage)
-
-- metrics
-  - visitor profiles
-  - traffic
-  - usability
-  - conversion
-- technologies
-
-### 2.2.4. Social analytics
-
-- types of networks
-- network metrics
-  - connections
-  - distributions
-  - segmentation
-- social media analytics
-  - social media vs traditional media
-  - types of social media users
-  - measuring social media impact
 
 
 
 
 
-## 2.3. Natural language processing
+
+
+
+## 2.2. Natural language processing
 
 With its two parent disciplines---artificial intelligence and computational linguistics---NLP extracts more meaning from textual data because it goes beyond the 'bag of words' approach to account for syntax, and, beyond that, "grammatical and semantic constraints as well as the context" (Sharda et al., 2014, p. 210).
 
-### 2.3.1. Challenges with NLP
+### 2.2.1. Challenges with NLP
 
 Per Sharda et al. (2014, p. 210), NLP faces major challenges:
 
@@ -340,11 +306,11 @@ Per Sharda et al. (2014, p. 210), NLP faces major challenges:
 - **irregular input** (e.g. typos, accents)
 - identifying *speech acts,** speech that is meant to provoke an action
 
-### 2.3.2. Sentiment analysis
+### 2.2.2. Sentiment analysis
 
 "Often we want to categorize text by topic, which may involve dealing with whole taxonomies of topics. Sentiment classification, on the other hand, usually deals with two classes (positive versus negative), a range of polarity (e.g., star ratings for movies), or even a range in strength of opinion" (Sharda et al., 2014, p. 229).
 
-#### 2.3.2.1. Generic sentiment analysis process
+#### 2.2.2.1. Generic sentiment analysis process
 
 Per Sharda et al. (2014, pp. 234-237):
 
@@ -355,7 +321,7 @@ Per Sharda et al. (2014, pp. 234-237):
     - can be multiple valid or invalid targets in a sentence
 - **Collection and aggregation:** polarity is calculated at the word level, which can then be aggregated to the sentence/phrase and document levels through simple summing; weighted averaging; or "as complex as using one or more machine-learning techniques to create a predictive relationship between the words (and their polarity values) and phrases or sentences"
 
-#### 2.3.2.2. Challenges with sentiment identification
+#### 2.2.2.2. Challenges with sentiment identification
 
 Per Sharda et al. (2014):
 
@@ -363,7 +329,7 @@ Per Sharda et al. (2014):
 - "A document containing several opinionated statements would have a mixed polarity overall, which is different from not having a polarity at all"
 - "an article may contain negative news without explictly using any subjective words or terms"
 
-#### 2.3.2.3. Methods for sentiment identification
+#### 2.2.2.3. Methods for sentiment identification
 
 Per Sharda et al. (2014, pp. 236-237):
 
@@ -373,6 +339,77 @@ Per Sharda et al. (2014, pp. 236-237):
 - **Training documents**
     - ***data*** "Product-review Web sites like Amazon, C-NET, eBay, RottenTomatoes, and the Internet Movie Database (IMDB) have all been extensively used as sources of annotated data. The star (or tomato, as it were) system provides an explicit label of the overall polarity of the review, and it is often taken as the gold standard in algorithm evaluation"
     - ***algorithms*** artificial neural networks, support vector machines, k-nearest neighbor, naive Bayes, decision trees, expectation maximization-based clustering
+
+
+
+
+
+
+
+
+
+
+## 2.3. Web mining
+
+Per Sharda et al. (2014, pp. 240-241), web mining, AKA web data mining, "is essentially the same as data mining that uses data generated over the web". They contrast two common terms, noting that Web analytics has a narrower meaning but is replacing its parent term in popular discussion:
+
+| Web mining | Web analytics |
+| --- | --- |
+| "all data generated via the Internet, including transaction, social, and usage data" | "Web site usage data" |
+| "discover previously unknown patterns and relationships" | "describe what happened on a website" |
+| "predictive or prescriptive analytics methodology" | "predefined, metrics-driven descriptive analysis" |
+
+
+
+### 2.3.1. Challenges with web mining
+
+Per Sharda et al. (2014, p. 239) --- the Web is:
+
+- Big, growing, and constantly updated
+- Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
+
+
+
+### 2.3.2. Web crawlers (structure & content mining)
+
+Web content and metadata can be scraped and mined by web crawlers, to:
+
+- reveal the **structure** of the Web, for example identifying **authoritative pages** and **hubs** on the basis of hyperlinks
+- build a corpus of **content** for knowledge discovery through text mining.
+
+See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html) for a discussion of how web crawlers are used in that application.
+
+
+
+### 2.3.3. Web analytics (usage mining)
+
+#### 2.3.3.1. Metrics for web analytics
+
+- visitor profiles
+- traffic
+- usability
+- conversion
+
+#### 2.3.3.2. Technologies for web analytics
+
+
+
+
+### 2.3.4. Social analytics
+
+#### 2.3.4.1. Social network analysis
+
+- types of networks
+- network metrics
+  - connections
+  - distributions
+  - segmentation
+
+#### 2.3.4.2. Social media analytics
+
+- social media vs traditional media
+- types of social media users
+- measuring social media impact
 
 
 

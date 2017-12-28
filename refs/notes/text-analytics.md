@@ -196,18 +196,16 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
         - **stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
         - **include terms** AKA term dictionary
     - **Perform stemming** to "[reduce] inflected words to their stem (or base or root) form"
-
 - **Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.)
-
 - Construct the **term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
     - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
 
-| | investment risk | project management | software engineering | development | SAP | ... |
+| | Term1 | Term2 | Term3 | Term4 | Term4 | Term5 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Document 1 | 1 | | | 1 | | |
-| Document 2 | | 1 | | | | |
-| Document 3 | | | 3 | | 1 | |
-| Document 4 | | 2 | 1 | | | 1 |
+| Doc1 | 1 | | | 1 | | |
+| Doc2 | | 1 | | | | |
+| Doc3 | | | 3 | | 1 | |
+| Doc4 | | 2 | 1 | | | 1 |
 
 
 ### Analyze
@@ -244,45 +242,9 @@ Comparing the distribution of concepts across different subcollections, e.g. fro
 
 
 
-## Web mining
 
-### Challenges with web mining
 
-Per Sharda et al. (2014, p. 239) --- the Web is:
 
-- Big, growing, and constantly updated
-- Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
-
-### Search engines & SEO
-
-See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.html)
-
-(mining content, structure)
-
-- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
-
-### Web analytics
-
-(mining usage)
-
-- metrics
-  - visitor profiles
-  - traffic
-  - usability
-  - conversion
-- technologies
-
-### Social analytics
-
-- types of networks
-- network metrics
-  - connections
-  - distributions
-  - segmentation
-- social media analytics
-  - social media vs traditional media
-  - types of social media users
-  - measuring social media impact
 
 
 
@@ -336,6 +298,77 @@ Per Sharda et al. (2014, pp. 236-237):
 - **Training documents**
     - ***data*** "Product-review Web sites like Amazon, C-NET, eBay, RottenTomatoes, and the Internet Movie Database (IMDB) have all been extensively used as sources of annotated data. The star (or tomato, as it were) system provides an explicit label of the overall polarity of the review, and it is often taken as the gold standard in algorithm evaluation"
     - ***algorithms*** artificial neural networks, support vector machines, k-nearest neighbor, naive Bayes, decision trees, expectation maximization-based clustering
+
+
+
+
+
+
+
+
+
+
+## Web mining
+
+Per Sharda et al. (2014, pp. 240-241), web mining, AKA web data mining, "is essentially the same as data mining that uses data generated over the web". They contrast two common terms, noting that Web analytics has a narrower meaning but is replacing its parent term in popular discussion:
+
+| Web mining | Web analytics |
+| --- | --- |
+| "all data generated via the Internet, including transaction, social, and usage data" | "Web site usage data" |
+| "discover previously unknown patterns and relationships" | "describe what happened on a website" |
+| "predictive or prescriptive analytics methodology" | "predefined, metrics-driven descriptive analysis" |
+
+
+
+### Challenges with web mining
+
+Per Sharda et al. (2014, p. 239) --- the Web is:
+
+- Big, growing, and constantly updated
+- Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
+
+
+
+### Web crawlers (structure & content mining)
+
+Web content and metadata can be scraped and mined by web crawlers, to:
+
+- reveal the **structure** of the Web, for example identifying **authoritative pages** and **hubs** on the basis of hyperlinks
+- build a corpus of **content** for knowledge discovery through text mining.
+
+See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html) for a discussion of how web crawlers are used in that application.
+
+
+
+### Web analytics (usage mining)
+
+#### Metrics for web analytics
+
+- visitor profiles
+- traffic
+- usability
+- conversion
+
+#### Technologies for web analytics
+
+
+
+
+### Social analytics
+
+#### Social network analysis
+
+- types of networks
+- network metrics
+  - connections
+  - distributions
+  - segmentation
+
+#### Social media analytics
+
+- social media vs traditional media
+- types of social media users
+- measuring social media impact
 
 
 

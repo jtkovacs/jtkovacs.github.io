@@ -2,25 +2,53 @@
 
 # What are search engines?
 
-Web mining > mining content, structure; see [notes on text analytics.](https://jtkovacs.github.io/refs/text-analytics.html#web-mining)
+## Business applications of search engines
 
-## How do search engines work?
+### Enterprise IR
 
-In general, search engines work by crawling and [automatically indexing](information-architecture.html#cataloging-&-indexing) content (thus creating metadata). This index may be fairly shallow, e.g. based on contents of the <meta> tag or headers; it may also be quite deep, using natural language process (NLP) techniques like grammatical stemming. User search terms are then matched to the index.
+### Marketing
 
-In the early days, there was a strong distinction between search engines and library catalogs; increasingly, though, [KOSs from IA](information-architecture.html#koss-by-role-in-ir) may play a role.
+#### SEO
+
+#### SEM
+
+## Ethical & social dimensions of search
+
+### Information overload
+
+### Privacy vs. personalization
+
+### Political & cultural influences on search
+
+### Social networks as IR tools
+
+### Adversarial IR (spam)
+
+
+
+
+
+
+
+# How do search engines work?
+
+In general, search engines work by crawling and [automatically indexing](information-architecture.html#cataloging-&-indexing) content, thus creating metadata. This index may be fairly shallow, e.g. based on contents of the <meta> tag or headers; it may also be quite deep, using natural language process (NLP) techniques like grammatical stemming. User search terms are then matched to the index.
+
+In the early days, there was a strong distinction in techniques used between search engines and library catalogs. Increasingly, though, [KOSs from IA](information-architecture.html#koss-by-role-in-ir) --- which take advantage of human knowledge by formalizing it for use by an information system --- play a role in improve search engine performance.
+
+
 
 ## Search engine process
+
+- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
 
 ### Development cycle
 
 ### Response cycle
 
 
-- process
-  - development cycle
-  - response cycle
-- SEO
+
+
 
 ## Major search algorithms
 
@@ -30,7 +58,9 @@ In the early days, there was a strong distinction between search engines and lib
 
 ### Topic-Sensitive
 
-### Hypertext Induced Topic Selection
+### Hyperlink-Induced Topic Search
+
+(or Hypertext Induced Topic Selection??)
 
 ### Panda
 
@@ -47,36 +77,25 @@ In the early days, there was a strong distinction between search engines and lib
 
 
 
-# Monetized applications of search engines
-
-## Marketing
-
-### SEO
-
-### SEM
-
-## Enterprise IR
 
 
 
 
 
-# Ethical & social dimensions of search
 
-## Information overload
 
-## Privacy vs. personalization
 
-## Political & cultural influences on search
 
-## Social networks as IR tools
 
-## Adversarial IR (spam)
+
+
+
+
+
 
 
 
 # Sources
-
 
 ## Cited
 

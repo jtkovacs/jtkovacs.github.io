@@ -7,13 +7,13 @@ Per Sharda et al. (2014), the field of data mining draws on _statistics, artific
 <table>
     <tr><th colspan=2>Data Mining Task</th><th>Learning Method</th><th>Popular Algorithms</th></tr>
     <tr><td colspan=2>**Prediction** (forecasting Y based on Xs)</td><td>Supervised</td><td>Classification and regression trees, ANN, SVM, genetic algorithms</td></tr>
-    <tr><td></td><td>**Classification**</td><td>Supervised</td><td>Decision trees, ANN/MLP, SVM, rough sets, genetic algorithms</td></tr>
-    <tr><td></td><td>**Regression**</td><td>Supervised</td><td>Linear/nonlinear regression, regression trees, ANN/MLP, SVM</td></tr>
+    <tr><th></th><td>**Classification**</td><td>Supervised</td><td>Decision trees, ANN/MLP, SVM, rough sets, genetic algorithms</td></tr>
+    <tr><th></th><td>**Regression**</td><td>Supervised</td><td>Linear/nonlinear regression, regression trees, ANN/MLP, SVM</td></tr>
     <tr><td colspan=2>**Association** (relationship between X and Y)</td><td>Unsupervised</td><td>Apriori, OneR, ZeroR, Eclat</td></tr>
-    <tr><td></td><td>**Link analysis**</td><td>Unsupervised</td><td>Expectation maximization, apriori algorithm, graph-based matching</td></tr>
-    <tr><td></td><td>**Sequence analysis**</td><td>Unsupervised</td><td>Apriori algorithm, FP-growth technique</td></tr>
+    <tr><th></th><td>**Link analysis**</td><td>Unsupervised</td><td>Expectation maximization, apriori algorithm, graph-based matching</td></tr>
+    <tr><th></th><td>**Sequence analysis**</td><td>Unsupervised</td><td>Apriori algorithm, FP-growth technique</td></tr>
     <tr><td colspan=2>**Clustering** (breaking X into logical groups)</td><td>Unsupervised</td><td>K-means, ANN/SOM</td></tr>
-    <tr><td></td><td>**Outlier analysis**</td><td>Unsupervised</td><td>K-means, expectation maximization (EM)</td></tr>
+    <tr><th></th><td>**Outlier analysis**</td><td>Unsupervised</td><td>K-means, expectation maximization (EM)</td></tr>
 </table>
 
 See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [notes on machine learning.](https://jtkovacs.github.io/refs/machine-learning.html)
@@ -30,9 +30,10 @@ Per Sharda et al. (2014, pp. 172; 181; 183):
     <td style="text-align:left;"><ul>
         <li>"improve product placement on the sales floor ... and [coordinate] promotional pricing of products"</li>
         <li>identify credit fraud based on purchase combinations</li>
-        <li>"sequentional patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
+        <li>"sequential patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
         <li>"structure product bundles to maximize revenue"</li>
         <li>detect elevated medical risk as a combination of factors</li>
+        <li>market segmentation</li>
         <li>detect that "certain procedures at certain medical facilities can be tied to certain types of infection"</li>
     </ul></td></tr>
     <tr><th>Association</th>
@@ -203,11 +204,19 @@ Also, they cite a poll from KDNuggets.com (most to least popular):
 
 # Data mining techniques
 
+
+
 ## Prediction
 
 Per Sharda et al. (2014, p. 172), "classification learns patterns from past data (a set of information---traits, variables, features---on characteristics of the previously labeled items, objects, or events) in order to place new instances (with unknown labels) into their respective groups or classes. If what is being predicted is a class label (e.g., 'sunny, 'rainy', or 'cloudy') the prediction problem is called a classification, whereas if it is a numeric value (e.g., temperature such as 68°F), the prediction problem is called a regression".
 
+
+
+
 ### Regression
+
+
+
 
 ### Classification
 
@@ -273,26 +282,55 @@ Accuracy metrics for classification problems with more than two classes:
 - Per class accuracy rates: _True classification rate<sub>i</sub> =  (True classification)<sub>i</sub> / ∑<sub>i=1</sub><sup>n</sup> (False classification)<sub>i</sub>_
 - _(Overall classifier accuracy)<sub>i</sub> = ∑<sub>i=1</sub><sup>n</sup> (True classification)<sub>i</sub> / Total number of cases_
 
-
 #### Classification techniques
-
-Per Sharda et al. (2014, pp. 175-176):
 
 ##### Decision tree analysis
 
+Per Sharda et al. (2014, pp. 176-178):
+
+"A tree consists of brances and nodes. A _branch_ represents the outcome of a test to classify ... A _leaf node_ at the end represents the final class choice ... The basic idea behind a decision tree is that it recursively divides a training set until each division consists entirely or primarily of examples from one class. Each non-leaf node of the tree contains a _split point,_ which is a test on one or more attributes and determines how the data are to be divided further. Decision tree algorithms, in general, build an initial tree from the training data such that each leaf node is pure ["i.e., contains members of the same class ... The basic idea is to ask questions whose answers provide the most information, similar to what we may do when playing the game 'Twenty Questions'"], and they then prune the tree to increase its generalization, and hence, the prediction accuracy on test data ...
+
+1. Create a root node and assign all of the training data to it.
+2. Select the _best_ splitting attribute.
+3. Add a branch to the root node for each value of the split. Split the data into mutually exclusive (nonoverlapping) subsets along the lines of the specific splits and mode to the branches.
+4. Repeat steps 2 and 3 for each and every leaf node until the stopping criteria is reached (e.g., the mode is dominated by a single class label).
+
+Many algorithms have been proposed for creating decision trees. These algorithms differ primarily in terms of the way in which they determine the splitting attribute (and its split values), the order of splitting the attributes (splitting the same attribute only once or many times), the number of splits at each node (binary versus ternary), the stopping criteria, and the pruning of the tree (pre- versus postpruning)."
+
+Common algorithms:
+
+- From machine learning, **ID3, C4.5, C5**
+- From statistics, **CART** (classification and regression trees)
+- From pattern recognition, **CHAID** (chi-squared automatic interaction detector)
+
+To evaluate splits, use the Gini index or information gain:
+
+- gini(S) = 1 - ∑<sub>j=1</sub><sup>n</sup> p<sub>j</sub><sup>2</sup>
+- _for S split into two subsets:_ gini<sub>split</sub>(S) = N<sub>2</sub>/N gini(S<sub>1</sub>) + N<sub>2</sub>/N gini(S<sub>2</sub>)
+
 ##### Statistical analysis
+
+Per Sharda et al. (2014), logistic regression and discriminant analysis are two techniques that were dominant until machine learning techniques were developed. They arhave fairly restrictive assumptions.
 
 ##### Neural networks
 
+Sharda et al. (2014, p. 176) call this "among the most popular" of classification techniques.
+
 ##### Case-based reasoning
+
+"This approach uses historical cases to recognize commonalities in order to assign a new case into the more probable category" (Sharda et al., 2014, p. 176).
 
 ##### Bayesian classifiers
 
+"This approach uses probability theory to build classification models based on the past occurrences that are capable of placing a new instance into a most probable class (or category)" (Sharda et al., 2014, p. 176).
+
 ##### Genetic algorithms
+
+"[Genetic algorithms are inspired by] natural evolution to build directed-search-based mechanisms to classify sample data" (Sharda et al., 2014, p. 176).
 
 ##### Rough sets
 
-
+"This method takes into account the partial membership of class labels into predefined categories in building models (collections of rules) for classification problems" (Sharda et al., 2014, p. 176).
 
 
 
@@ -309,23 +347,49 @@ Per Sharda et al. (2014, pp. 175-176):
 
 ## Clustering
 
+"Cluster analysis is an exploratory data analysis tool for solving classification problems. The objective is to sort cases (e.g., people, things, events) into groups, or clusters, so that the degree of association is strong among members of the same cluster and weak among members of different clusters" (Sharda et al., 2014, pp. 180).
+
 ### Clustering versus classification
 
 Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
 
+### Generic clustering methodology
 
-### Determining optimal number of clusters
+Clustering algorithms usually require the desired **number of clusters** to be set as a parameter. To estimate this parameter, there are several different approaches (Sharda et al., 2014, p. 181):
+
+- "Look at the percentage of variance explained as a function of the number of clusters; that is, choose a number of clusters so that adding another cluster would not give much better modeling of the data"
+- Set the number of clusters to (n/2)<sup>1/2</sup>, where n is the number of data points"
+- "Use the Akaike information criterion (AIC), which is a measure of the goodness of fit (based on the concept of entropy) to determine the number of clusters"
+- "Use Bayesian information criterion (BIC), which is a model-selection criterion (based on maximum likelihood estimation)"
+
+"Most cluster analysis methods involve the use of a **distance measure** to calculate the closeness between pairs of items. Popular distance measures include Euclidean distance (the ordinary distance between two points that one would measure with a ruler) and Manhattan distance (also called rectilinear distance, or taxicab distance, between two points). ... Weighted averages may be used to establish these distances" (Sharda et al., 2014, 182).
 
 ### Clustering techniques
 
-Divisive vs. agglomerative
+Per Sharda et al. (2014, p. 181), algorithms may be classified by approach:
 
-Statistical (non/hierarchical) vs neural networks vs fuzzy logic vs genetic algorithms
+- (statistical) e.g. k-means, k-modes
+    - (hierarchical)
+    - (non--hierarchical)
+- (neural networks)
+    - with self-organizing map (SOM)
+- (fuzzy logic) e.g. fuzzy c-means
+- (genetic algorithms)
 
-Distance measures
+And also according to whether they are:
 
-k-means
+- **Divisive:** "all items start in one cluster and are broken apart"
+- **Agglomerative:** "all items start in individual clusters, and the clusters are joined together"
 
+#### k-means
+
+Per Sharda et al. (2014, p. 182):
+
+- **"Initialization step:** Choose the number of clusters (i.e., the value of k).
+- **Step 1:** Randomly generate k random points as initial cluster centers.
+- **Step 2:** Assign each point to the nearest cluster center.
+- **Step 3:** Recompute the new cluster centers.
+- **Repetition step:** Repeat steps 2 and 3 until some convergence criterion is met (usually that the assignment of points to clusters becomes stable)."
 
 
 

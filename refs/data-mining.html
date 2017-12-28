@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; data mining | just under 2292 words | updated 12/28/2017
+   &gt; data mining | just under 3186 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -219,8 +219,8 @@
         </li>
         <li>
          2.3.2.
-         <a href="#determining-optimal-number-of-clusters">
-          Determining optimal number of clusters
+         <a href="#generic-clustering-methodology">
+          Generic clustering methodology
          </a>
         </li>
         <li>
@@ -228,6 +228,14 @@
          <a href="#clustering-techniques">
           Clustering techniques
          </a>
+         <ul>
+          <li>
+           2.3.3.1.
+           <a href="#k-means">
+            k-means
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
       </li>
@@ -310,8 +318,8 @@
     </td>
    </tr>
    <tr>
-    <td>
-    </td>
+    <th>
+    </th>
     <td>
      <strong>
       Classification
@@ -325,8 +333,8 @@
     </td>
    </tr>
    <tr>
-    <td>
-    </td>
+    <th>
+    </th>
     <td>
      <strong>
       Regression
@@ -354,8 +362,8 @@
     </td>
    </tr>
    <tr>
-    <td>
-    </td>
+    <th>
+    </th>
     <td>
      <strong>
       Link analysis
@@ -369,8 +377,8 @@
     </td>
    </tr>
    <tr>
-    <td>
-    </td>
+    <th>
+    </th>
     <td>
      <strong>
       Sequence analysis
@@ -398,8 +406,8 @@
     </td>
    </tr>
    <tr>
-    <td>
-    </td>
+    <th>
+    </th>
     <td>
      <strong>
       Outlier analysis
@@ -450,13 +458,16 @@
        identify credit fraud based on purchase combinations
       </li>
       <li>
-       "sequentional patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"
+       "sequential patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"
       </li>
       <li>
        "structure product bundles to maximize revenue"
       </li>
       <li>
        detect elevated medical risk as a combination of factors
+      </li>
+      <li>
+       market segmentation
       </li>
       <li>
        detect that "certain procedures at certain medical facilities can be tied to certain types of infection"
@@ -1319,44 +1330,170 @@
     2.1.2.4. Classification techniques
    </a>
   </h4>
-  <p>
-   Per Sharda et al. (2014, pp. 175-176):
-  </p>
   <h5 id="decision-tree-analysis">
    <a>
     2.1.2.4.1. Decision tree analysis
    </a>
   </h5>
+  <p>
+   Per Sharda et al. (2014, pp. 176-178):
+  </p>
+  <p>
+   "A tree consists of brances and nodes. A
+   <em>
+    branch
+   </em>
+   represents the outcome of a test to classify ... A
+   <em>
+    leaf node
+   </em>
+   at the end represents the final class choice ... The basic idea behind a decision tree is that it recursively divides a training set until each division consists entirely or primarily of examples from one class. Each non-leaf node of the tree contains a
+   <em>
+    split point,
+   </em>
+   which is a test on one or more attributes and determines how the data are to be divided further. Decision tree algorithms, in general, build an initial tree from the training data such that each leaf node is pure ["i.e., contains members of the same class ... The basic idea is to ask questions whose answers provide the most information, similar to what we may do when playing the game 'Twenty Questions'"], and they then prune the tree to increase its generalization, and hence, the prediction accuracy on test data ...
+  </p>
+  <ol style="list-style-type: decimal">
+   <li>
+    Create a root node and assign all of the training data to it.
+   </li>
+   <li>
+    Select the
+    <em>
+     best
+    </em>
+    splitting attribute.
+   </li>
+   <li>
+    Add a branch to the root node for each value of the split. Split the data into mutually exclusive (nonoverlapping) subsets along the lines of the specific splits and mode to the branches.
+   </li>
+   <li>
+    Repeat steps 2 and 3 for each and every leaf node until the stopping criteria is reached (e.g., the mode is dominated by a single class label).
+   </li>
+  </ol>
+  <p>
+   Many algorithms have been proposed for creating decision trees. These algorithms differ primarily in terms of the way in which they determine the splitting attribute (and its split values), the order of splitting the attributes (splitting the same attribute only once or many times), the number of splits at each node (binary versus ternary), the stopping criteria, and the pruning of the tree (pre- versus postpruning)."
+  </p>
+  <p>
+   Common algorithms:
+  </p>
+  <ul>
+   <li>
+    From machine learning,
+    <strong>
+     ID3, C4.5, C5
+    </strong>
+   </li>
+   <li>
+    From statistics,
+    <strong>
+     CART
+    </strong>
+    (classification and regression trees)
+   </li>
+   <li>
+    From pattern recognition,
+    <strong>
+     CHAID
+    </strong>
+    (chi-squared automatic interaction detector)
+   </li>
+  </ul>
+  <p>
+   To evaluate splits, use the Gini index or information gain:
+  </p>
+  <ul>
+   <li>
+    gini(S) = 1 - ∑
+    <sub>
+     j=1
+    </sub>
+    <sup>
+     n
+    </sup>
+    p
+    <sub>
+     j
+    </sub>
+    <sup>
+     2
+    </sup>
+   </li>
+   <li>
+    <em>
+     for S split into two subsets:
+    </em>
+    gini
+    <sub>
+     split
+    </sub>
+    (S) = N
+    <sub>
+     2
+    </sub>
+    /N gini(S
+    <sub>
+     1
+    </sub>
+    ) + N
+    <sub>
+     2
+    </sub>
+    /N gini(S
+    <sub>
+     2
+    </sub>
+    )
+   </li>
+  </ul>
   <h5 id="statistical-analysis">
    <a>
     2.1.2.4.2. Statistical analysis
    </a>
   </h5>
+  <p>
+   Per Sharda et al. (2014), logistic regression and discriminant analysis are two techniques that were dominant until machine learning techniques were developed. They arhave fairly restrictive assumptions.
+  </p>
   <h5 id="neural-networks">
    <a>
     2.1.2.4.3. Neural networks
    </a>
   </h5>
+  <p>
+   Sharda et al. (2014, p. 176) call this "among the most popular" of classification techniques.
+  </p>
   <h5 id="case-based-reasoning">
    <a>
     2.1.2.4.4. Case-based reasoning
    </a>
   </h5>
+  <p>
+   "This approach uses historical cases to recognize commonalities in order to assign a new case into the more probable category" (Sharda et al., 2014, p. 176).
+  </p>
   <h5 id="bayesian-classifiers">
    <a>
     2.1.2.4.5. Bayesian classifiers
    </a>
   </h5>
+  <p>
+   "This approach uses probability theory to build classification models based on the past occurrences that are capable of placing a new instance into a most probable class (or category)" (Sharda et al., 2014, p. 176).
+  </p>
   <h5 id="genetic-algorithms">
    <a>
     2.1.2.4.6. Genetic algorithms
    </a>
   </h5>
+  <p>
+   "[Genetic algorithms are inspired by] natural evolution to build directed-search-based mechanisms to classify sample data" (Sharda et al., 2014, p. 176).
+  </p>
   <h5 id="rough-sets">
    <a>
     2.1.2.4.7. Rough sets
    </a>
   </h5>
+  <p>
+   "This method takes into account the partial membership of class labels into predefined categories in building models (collections of rules) for classification problems" (Sharda et al., 2014, p. 176).
+  </p>
   <h2 id="association">
    <a>
     2.2. Association
@@ -1377,6 +1514,9 @@
     2.3. Clustering
    </a>
   </h2>
+  <p>
+   "Cluster analysis is an exploratory data analysis tool for solving classification problems. The objective is to sort cases (e.g., people, things, events) into groups, or clusters, so that the degree of association is strong among members of the same cluster and weak among members of different clusters" (Sharda et al., 2014, pp. 180).
+  </p>
   <h3 id="clustering-versus-classification">
    <a>
     2.3.1. Clustering versus classification
@@ -1385,28 +1525,135 @@
   <p>
    Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
   </p>
-  <h3 id="determining-optimal-number-of-clusters">
+  <h3 id="generic-clustering-methodology">
    <a>
-    2.3.2. Determining optimal number of clusters
+    2.3.2. Generic clustering methodology
    </a>
   </h3>
+  <p>
+   Clustering algorithms usually require the desired
+   <strong>
+    number of clusters
+   </strong>
+   to be set as a parameter. To estimate this parameter, there are several different approaches (Sharda et al., 2014, p. 181):
+  </p>
+  <ul>
+   <li>
+    "Look at the percentage of variance explained as a function of the number of clusters; that is, choose a number of clusters so that adding another cluster would not give much better modeling of the data"
+   </li>
+   <li>
+    Set the number of clusters to (n/2)
+    <sup>
+     1/2
+    </sup>
+    , where n is the number of data points"
+   </li>
+   <li>
+    "Use the Akaike information criterion (AIC), which is a measure of the goodness of fit (based on the concept of entropy) to determine the number of clusters"
+   </li>
+   <li>
+    "Use Bayesian information criterion (BIC), which is a model-selection criterion (based on maximum likelihood estimation)"
+   </li>
+  </ul>
+  <p>
+   "Most cluster analysis methods involve the use of a
+   <strong>
+    distance measure
+   </strong>
+   to calculate the closeness between pairs of items. Popular distance measures include Euclidean distance (the ordinary distance between two points that one would measure with a ruler) and Manhattan distance (also called rectilinear distance, or taxicab distance, between two points). ... Weighted averages may be used to establish these distances" (Sharda et al., 2014, 182).
+  </p>
   <h3 id="clustering-techniques">
    <a>
     2.3.3. Clustering techniques
    </a>
   </h3>
   <p>
-   Divisive vs. agglomerative
+   Per Sharda et al. (2014, p. 181), algorithms may be classified by approach:
   </p>
+  <ul>
+   <li>
+    (statistical) e.g. k-means, k-modes
+    <ul>
+     <li>
+      (hierarchical)
+     </li>
+     <li>
+      (non--hierarchical)
+     </li>
+    </ul>
+   </li>
+   <li>
+    (neural networks)
+    <ul>
+     <li>
+      with self-organizing map (SOM)
+     </li>
+    </ul>
+   </li>
+   <li>
+    (fuzzy logic) e.g. fuzzy c-means
+   </li>
+   <li>
+    (genetic algorithms)
+   </li>
+  </ul>
   <p>
-   Statistical (non/hierarchical) vs neural networks vs fuzzy logic vs genetic algorithms
+   And also according to whether they are:
   </p>
+  <ul>
+   <li>
+    <strong>
+     Divisive:
+    </strong>
+    "all items start in one cluster and are broken apart"
+   </li>
+   <li>
+    <strong>
+     Agglomerative:
+    </strong>
+    "all items start in individual clusters, and the clusters are joined together"
+   </li>
+  </ul>
+  <h4 id="k-means">
+   <a>
+    2.3.3.1. k-means
+   </a>
+  </h4>
   <p>
-   Distance measures
+   Per Sharda et al. (2014, p. 182):
   </p>
-  <p>
-   k-means
-  </p>
+  <ul>
+   <li>
+    <strong>
+     "Initialization step:
+    </strong>
+    Choose the number of clusters (i.e., the value of k).
+   </li>
+   <li>
+    <strong>
+     Step 1:
+    </strong>
+    Randomly generate k random points as initial cluster centers.
+   </li>
+   <li>
+    <strong>
+     Step 2:
+    </strong>
+    Assign each point to the nearest cluster center.
+   </li>
+   <li>
+    <strong>
+     Step 3:
+    </strong>
+    Recompute the new cluster centers.
+   </li>
+   <li>
+    <strong>
+     Repetition step:
+    </strong>
+    Repeat steps 2 and 3 until some convergence criterion is met (usually that the assignment of points to clusters becomes stable)."
+   </li>
+  </ul>
   <h1 id="sources">
    <a>
     3. Sources

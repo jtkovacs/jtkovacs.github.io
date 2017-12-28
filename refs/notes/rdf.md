@@ -1,4 +1,0 @@
-
-# RDF
-
-Check out Turtle  

@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 2582 words | updated 12/28/2017
+   &gt; text analytics | just under 2792 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -74,8 +74,8 @@ code > span.er { color: #ff0000; font-weight: bold; }
       </li>
       <li>
        1.2.
-       <a href="#text-mining-process">
-        Text mining process
+       <a href="#generic-text-mining-process">
+        Generic text mining process
        </a>
        <ul>
         <li>
@@ -108,70 +108,48 @@ code > span.er { color: #ff0000; font-weight: bold; }
      <ul>
       <li>
        2.1.
-       <a href="#text-mining">
-        Text mining
+       <a href="#clustering">
+        Clustering
+       </a>
+      </li>
+      <li>
+       2.2.
+       <a href="#association">
+        Association
+       </a>
+       -  2.2.1.
+       <a href="#trend-analysis">
+        Trend analysis
+       </a>
+       -  2.2.2.
+       <a href="#prediction">
+        Prediction
+       </a>
+       -  2.2.2.1.
+       <a href="#classification">
+        Classification
        </a>
        <ul>
         <li>
-         2.1.1.
-         <a href="#data-mining">
-          Data mining
-         </a>
-         <ul>
-          <li>
-           2.1.1.1.
-           <a href="#clustering">
-            Clustering
-           </a>
-          </li>
-          <li>
-           2.1.1.2.
-           <a href="#association">
-            Association
-           </a>
-          </li>
-          <li>
-           2.1.1.3.
-           <a href="#trend-analysis">
-            Trend analysis
-           </a>
-          </li>
-          <li>
-           2.1.1.4.
-           <a href="#prediction">
-            Prediction
-           </a>
-           <ul>
-            <li>
-             2.1.1.4.1.
-             <a href="#classification">
-              Classification
-             </a>
-            </li>
-           </ul>
-          </li>
-         </ul>
-        </li>
-        <li>
-         2.1.2.
+         2.2.1.
          <a href="#web-mining">
           Web mining
          </a>
          <ul>
           <li>
-           2.1.2.1.
+           2.2.1.1.
            <a href="#search-engines-seo">
             Search engines &amp; SEO
            </a>
           </li>
           <li>
-           2.1.2.2.
+           2.2.1.2.
            <a href="#web-analytics">
             Web analytics
            </a>
           </li>
           <li>
-           2.1.2.3.
+           2.2.1.3.
            <a href="#social-analytics">
             Social analytics
            </a>
@@ -181,16 +159,24 @@ code > span.er { color: #ff0000; font-weight: bold; }
        </ul>
       </li>
       <li>
-       2.2.
+       2.3.
        <a href="#natural-language-processing">
         Natural language processing
        </a>
        <ul>
         <li>
-         2.2.1.
+         2.3.1.
          <a href="#sentiment-analysis">
           Sentiment analysis
          </a>
+         <ul>
+          <li>
+           2.3.1.1.
+           <a href="#generic-sentiment-analysis-process">
+            Generic sentiment analysis process
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
       </li>
@@ -210,18 +196,24 @@ code > span.er { color: #ff0000; font-weight: bold; }
       </li>
       <li>
        3.2.
+       <a href="#attensity">
+        Attensity
+       </a>
+      </li>
+      <li>
+       3.3.
        <a href="#python">
         Python
        </a>
        <ul>
         <li>
-         3.2.1.
+         3.3.1.
          <a href="#string-manipulation">
           String manipulation
          </a>
         </li>
         <li>
-         3.2.2.
+         3.3.2.
          <a href="#regex">
           Regex
          </a>
@@ -719,9 +711,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </tr>
    </tbody>
   </table>
-  <h2 id="text-mining-process">
+  <h2 id="generic-text-mining-process">
    <a>
-    1.2. Text mining process
+    1.2. Generic text mining process
    </a>
   </h2>
   <p>
@@ -1016,27 +1008,17 @@ code > span.er { color: #ff0000; font-weight: bold; }
     2. Text analytics techniques
    </a>
   </h1>
-  <h2 id="text-mining">
-   <a>
-    2.1. Text mining
-   </a>
-  </h2>
-  <h3 id="data-mining">
-   <a>
-    2.1.1. Data mining
-   </a>
-  </h3>
   <p>
    See
    <a href="https://jtkovacs.github.io/refs/data-mining.html">
     notes on data mining.
    </a>
   </p>
-  <h4 id="clustering">
+  <h2 id="clustering">
    <a>
-    2.1.1.1. Clustering
+    2.1. Clustering
    </a>
-  </h4>
+  </h2>
   <p>
    Per Sharda et al. (2014, pp. 224-225), clustering is often used to
    <strong>
@@ -1062,11 +1044,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
    </li>
   </ul>
-  <h4 id="association">
+  <h2 id="association">
    <a>
-    2.1.1.2. Association
+    2.2. Association
    </a>
-  </h4>
+  </h2>
   <p>
    Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For
    <em>
@@ -1091,7 +1073,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </p>
   <h4 id="trend-analysis">
    <a>
-    2.1.1.3. Trend analysis
+    2.2.1. Trend analysis
    </a>
   </h4>
   <p>
@@ -1099,12 +1081,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </p>
   <h4 id="prediction">
    <a>
-    2.1.1.4. Prediction
+    2.2.2. Prediction
    </a>
   </h4>
   <h5 id="classification">
    <a>
-    2.1.1.4.1. Classification
+    2.2.2.1. Classification
    </a>
   </h5>
   <p>
@@ -1129,7 +1111,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="web-mining">
    <a>
-    2.1.2. Web mining
+    2.2.1. Web mining
    </a>
   </h3>
   <p>
@@ -1145,7 +1127,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="search-engines-seo">
    <a>
-    2.1.2.1. Search engines &amp; SEO
+    2.2.1.1. Search engines &amp; SEO
    </a>
   </h4>
   <p>
@@ -1157,9 +1139,20 @@ code > span.er { color: #ff0000; font-weight: bold; }
   <p>
    (mining content, structure)
   </p>
+  <ul>
+   <li>
+    <strong>
+     Token
+    </strong>
+    "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as
+    <strong>
+     tokenizing"
+    </strong>
+   </li>
+  </ul>
   <h4 id="web-analytics">
    <a>
-    2.1.2.2. Web analytics
+    2.2.1.2. Web analytics
    </a>
   </h4>
   <p>
@@ -1187,7 +1180,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h4 id="social-analytics">
    <a>
-    2.1.2.3. Social analytics
+    2.2.1.3. Social analytics
    </a>
   </h4>
   <ul>
@@ -1221,7 +1214,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h2 id="natural-language-processing">
    <a>
-    2.2. Natural language processing
+    2.3. Natural language processing
    </a>
   </h2>
   <p>
@@ -1266,25 +1259,72 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </ul>
   <h3 id="sentiment-analysis">
    <a>
-    2.2.1. Sentiment analysis
+    2.3.1. Sentiment analysis
    </a>
   </h3>
+  <p>
+   "Often we want to categorize text by topic, which may involve dealing with whole taxonomies of topics. Sentiment classification, on the other hand, usually deals with two classes (positive versus negative), a range of polarity (e.g., star ratings for movies), or even a range in strength of opinion" (Sharda et al., 2014, p. 229).
+  </p>
+  <ul>
+   <li>
+    Sentiments can be explicit or implicit, "where the text implies an opinion"; the latter is much more difficult to detect
+   </li>
+   <li>
+    "A document containing several opinionated statements would have a mixed polarity overall, which is different from not having a polarity at all"
+   </li>
+  </ul>
+  <h4 id="generic-sentiment-analysis-process">
+   <a>
+    2.3.1.1. Generic sentiment analysis process
+   </a>
+  </h4>
+  <p>
+   Per Sharda et al. (2014, pp. 234-237):
+  </p>
   <ul>
    <li>
     <p>
-     Process, pp. 234
+     <strong>
+      Sentiment detection
+     </strong>
     </p>
+   </li>
+   <li>
+    <strong>
+     N-P polarity classification
+    </strong>
+    <ul>
+     <li>
+      <strong>
+       Lexicon
+      </strong>
+     </li>
+     <li>
+      <strong>
+       Training documents
+      </strong>
+     </li>
+    </ul>
    </li>
    <li>
     <p>
      <strong>
-      Token
-     </strong>
-     "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as
-     <strong>
-      tokenizing"
+      Target identification
      </strong>
     </p>
+   </li>
+   <li>
+    <strong>
+     Collection and aggregation
+    </strong>
+    <ul>
+     <li>
+      sentence/phrase level
+     </li>
+     <li>
+      document level
+     </li>
+    </ul>
    </li>
   </ul>
   <h1 id="text-analytics-tools">
@@ -1303,9 +1343,19 @@ code > span.er { color: #ff0000; font-weight: bold; }
   <p>
    <img src="illos/DeepQA.png" width="600"/>
   </p>
+  <h2 id="attensity">
+   <a>
+    3.2. Attensity
+   </a>
+  </h2>
+  <p>
+   <a href="https://en.wikipedia.org/wiki/Attensity">
+    https://en.wikipedia.org/wiki/Attensity
+   </a>
+  </p>
   <h2 id="python">
    <a>
-    3.2. Python
+    3.3. Python
    </a>
   </h2>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># reverse order of elements:</span>
@@ -1318,7 +1368,7 @@ str_name.replace(‘this’,’with this’)
 <span class="dt">list</span>.count(‘em_name’) makes <span class="dt">tuple</span> <span class="kw">with</span> (index,value): <span class="dt">enumerate</span>(my_list)</code></pre>
   <h3 id="string-manipulation">
    <a>
-    3.2.1. String manipulation
+    3.3.1. String manipulation
    </a>
   </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># remove punctuation</span>
@@ -1337,7 +1387,7 @@ my_string.lstrip()
 my_string.rstrip()</code></pre>
   <h3 id="regex">
    <a>
-    3.2.2. Regex
+    3.3.2. Regex
    </a>
   </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># search for substrings within string or subset of string (i inclusive to j exclusive)</span>
@@ -1460,6 +1510,19 @@ my_var.group(<span class="dv">1</span>)</code></pre>
    </a>
   </h2>
   <ul>
+   <li>
+    <a href="https://wordnet.princeton.edu/">
+     WordNet:
+    </a>
+    <em>
+     WordNet® is a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations. The resulting network of meaningfully related words and concepts can be navigated with the browser. WordNet is also freely and publicly available for download. WordNet's structure makes it a useful tool for computational linguistics and natural language processing.
+    </em>
+   </li>
+   <li>
+    <a href="https://stanfordnlp.github.io/CoreNLP/">
+     Stanford NLP Lab software
+    </a>
+   </li>
    <li>
     <a href="http://billchambers.me/tutorials/2015/01/14/python-nlp-cheatsheet-nltk-scikit-learn.html">
      NLTK cheatsheet

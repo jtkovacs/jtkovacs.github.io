@@ -135,7 +135,7 @@ Per Sharda et al. (2014, p. 216):
 
 
 
-## Text mining process
+## Generic text mining process
 
 Per Sharda et al., text mining can be undertaken through the three-step process elaborated below (2014; I follow and mostly quote from pp. 220-226, but some term definitions are taken from pp. 206-207).
 
@@ -216,21 +216,16 @@ See [text analytics techniques.](#text-analytics-techniques)
 # Text analytics techniques
 
 
-
-## Text mining
-
-### Data mining
-
 See [notes on data mining.](https://jtkovacs.github.io/refs/data-mining.html)
 
-#### Clustering
+## Clustering
 
 Per Sharda et al. (2014, pp. 224-225), clustering is often used to **improve search recall** ("when a query matches a document its whole cluster is returned") and **precision** ("grouping the documents into a number of much smaller groups of related documents, ordering them by relevance, and returning only the documents from the most relevant group or groups"). The most common clustering methods:
 
 - **Scatter/gather** "dynamically generates a table of contents for the collection and adapts and modifies it in response to the user selection"
 - **Query-specific clustering** "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
 
-#### Association
+## Association
 
 Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For _A_ ==> _C],_ confidence is the percentage of documents that include all the concepts in _C_ within the same subset of those documents that include all the concepts in _A._ Support is the percentage (or number) of documents that include all the concepts in _A_ and _C."_
 
@@ -269,7 +264,7 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 (mining content, structure)
 
-
+- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
 
 
 #### Web analytics
@@ -315,9 +310,28 @@ With its two parent disciplines---artificial intelligence and computational ling
 
 ### Sentiment analysis
 
-- Process, pp. 234
+"Often we want to categorize text by topic, which may involve dealing with whole taxonomies of topics. Sentiment classification, on the other hand, usually deals with two classes (positive versus negative), a range of polarity (e.g., star ratings for movies), or even a range in strength of opinion" (Sharda et al., 2014, p. 229).
 
-- **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
+- Sentiments can be explicit or implicit, "where the text implies an opinion"; the latter is much more difficult to detect
+- "A document containing several opinionated statements would have a mixed polarity overall, which is different from not having a polarity at all"
+
+#### Generic sentiment analysis process
+
+Per Sharda et al. (2014, pp. 234-237):
+
+- **Sentiment detection**
+
+- **N-P polarity classification**
+    - **Lexicon**
+    - **Training documents**
+
+- **Target identification**
+
+- **Collection and aggregation**
+    - sentence/phrase level
+    - document level
+
+
 
 
 
@@ -352,9 +366,9 @@ IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic
 
 <img src="../illos/DeepQA.png" width="600">
 
+## Attensity
 
-
-
+[https://en.wikipedia.org/wiki/Attensity](https://en.wikipedia.org/wiki/Attensity)
 
 ## Python
 
@@ -495,6 +509,8 @@ Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial
 
 ## References
 
+- [WordNet:](https://wordnet.princeton.edu/) _WordNet® is a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations. The resulting network of meaningfully related words and concepts can be navigated with the browser. WordNet is also freely and publicly available for download. WordNet's structure makes it a useful tool for computational linguistics and natural language processing._
+- [Stanford NLP Lab software](https://stanfordnlp.github.io/CoreNLP/)
 - [NLTK cheatsheet](http://billchambers.me/tutorials/2015/01/14/python-nlp-cheatsheet-nltk-scikit-learn.html)
 - [Corpus of Contemporary American English](http://corpus.byu.edu/coca/)
 - [Corpus based language studies](http://cw.routledge.com/textbooks/0415286239/default.asp)

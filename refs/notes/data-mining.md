@@ -23,7 +23,7 @@ See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [
 
 ### Applications by technique
 
-Per Sharda et al. (2015, pp. 172; 181; 183):
+Per Sharda et al. (2014, pp. 172; 181; 183):
 
 <table>
     <tr><th>Clustering</th>
@@ -139,7 +139,7 @@ Per Sharda et al. (2014):
 
 ### Common data mining pitfalls
 
-Per Sharda et al. (2015, p. 195):
+Per Sharda et al. (2014, p. 195):
 
 - "Selecting the wrong problem for data mining.
 - Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
@@ -154,7 +154,7 @@ Per Sharda et al. (2015, p. 195):
 
 ### Data mining software
 
-Per Sharda et al. (2015, p. 187), some commercial tools:
+Per Sharda et al. (2014, p. 187), some commercial tools:
 
 - IBM SPSS Modeler
 - SAS Enterprise Miner
@@ -201,27 +201,68 @@ Also, they cite a poll from KDNuggets.com (most to least popular):
 
 
 
+# Data mining techniques
 
+## Prediction
 
-# Prediction
+Per Sharda et al. (2014, p. 172), "classification learns patterns from past data (a set of information---traits, variables, features---on characteristics of the previously labeled items, objects, or events) in order to place new instances (with unknown labels) into their respective groups or classes. If what is being predicted is a class label (e.g., 'sunny, 'rainy', or 'cloudy') the prediction problem is called a classification, whereas if it is a numeric value (e.g., temperature such as 68°F), the prediction problem is called a regression".
 
-## Regression
+### Regression
 
-## Classification
+### Classification
 
-### Estimating the true accuracy of classification models
+Per Sharda et al. (2014, p. 172), "classification learns patterns from past data (a set of information---traits, variables, features---on characteristics of the previously labeled items, objects, or events) in order to place new instances (with unknown labels) into their respective groups or classes."
 
-per-class
+#### Classification versus clustering
 
-overall
+Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
 
-confusion matrix
+#### Generic classification methodology
 
-metrics
+Per Sharda et al. (2014):
 
-Measuring accuracy
+1. Model development AKA model training: "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
+2. Model testing / Model deployment: "the model is tested against the holdout sample for accuracy assessment and eventually deployed for actual use"
 
-Estimation methods
+#### Evaluating classification models
+
+Per Sharda et al. (2014, pp. 172-173):
+
+- **Predictive accuracy** (most common): "The model's ability to correctly predict the class label of new or previously unseen data"
+- **Speed:** "The computational costs incolced in generating and using the model, where faster is deemed to be better"
+- **Scalability:** "The ability to construct a prediction model efficiently given a rather large amount of data"
+- **Interpretability:** "The level of understanding and insight provided by the model (e.g., how and/or what the model concludes on certain predictions)"
+
+##### Measuring accuracy
+
+From Sharda et al. (2014, pp. 173-174), the universally-known **confusion matrix** (AKA classification matrix, AKA contingency table) for a two-class classification problem:
+
+<table>
+    <tr><th rowspan=2 colspan=2></th><th colspan=2>True Class</th></tr>
+    <tr><th>Positive</th><th>Negative</th></tr>
+    <tr><th rowspan=2>Predicted Class</th><th>Positive</th><td>True positive count (TP)</td><td>False positive count (FP)</td></tr>
+    <tr><th>Negative</th><td>False negative count (FN)</td><td>True negative count (TN)</td></tr>
+</table>
+
+Common accuracy metrics:
+
+| Formula | Description |
+| --- | --- |
+| True Positive Rate = TP/(TP+FN) | |
+| True Negative Rate = TN/(TN+FP) | |
+| Accuracy = (TP+TN)/(TP+TN+FP+FN) | |
+| Recall = TP/(TP+FN) | |
+
+Accuracy metrics for _n<sup>classes</sup>_ \> 2:
+
+| Formula | Description |
+| --- | --- |
+| Per class accuracy rate | |
+| Overall accuracy | |
+
+##### Estimation methods
+
+For estimating accuracy
 
 - Simple split
 - k-fold cross-validation
@@ -230,7 +271,8 @@ Estimation methods
 - jackknifing
 - area under the ROC curve
 
-### Classification techniques
+
+#### Classification techniques
 
 Decision tree analysis
 
@@ -252,20 +294,25 @@ Rough sets
 
 
 
-# Association
+## Association
 
-## Support & confidence
+### Support & confidence
 
-## Apriori algorithm
-
-
+### Apriori algorithm
 
 
-# Clustering
 
-## Determining optimal \# of clusters
 
-## Clustering techniques
+## Clustering
+
+#### Clustering versus classification
+
+Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
+
+
+### Determining optimal \# of clusters
+
+### Clustering techniques
 
 Divisive vs. agglomerative
 

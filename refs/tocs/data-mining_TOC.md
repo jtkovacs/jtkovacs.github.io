@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 1246 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 1888 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
 	- &nbsp;1.1. [Business applications of data mining](#business-applications-of-data-mining)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -6,22 +6,28 @@
 		- &nbsp;1.2.1. [Data mining processes](#data-mining-processes)
 		- &nbsp;1.2.2. [Common data mining pitfalls](#common-data-mining-pitfalls)
 		- &nbsp;1.2.3. [Data mining software](#data-mining-software)
-- &nbsp;2. [Prediction](#prediction)
-	- &nbsp;2.1. [Regression](#regression)
-	- &nbsp;2.2. [Classification](#classification)
-		- &nbsp;2.2.1. [Estimating the true accuracy of classification models](#estimating-the-true-accuracy-of-classification-models)
-		- &nbsp;2.2.2. [Classification techniques](#classification-techniques)
-- &nbsp;3. [Association](#association)
-	- &nbsp;3.1. [Support & confidence](#support-confidence)
-	- &nbsp;3.2. [Apriori algorithm](#apriori-algorithm)
-- &nbsp;4. [Clustering](#clustering)
-	- &nbsp;4.1. [Determining optimal \# of clusters](#determining-optimal-\#-of-clusters)
-	- &nbsp;4.2. [Clustering techniques](#clustering-techniques)
-- &nbsp;5. [Sources](#sources)
-	- &nbsp;5.1. [Cited](#cited)
-	- &nbsp;5.2. [References](#references)
-	- &nbsp;5.3. [Read](#read)
-	- &nbsp;5.4. [Unrea](#unrea)
+- &nbsp;2. [Data mining techniques](#data-mining-techniques)
+	- &nbsp;2.1. [Prediction](#prediction)
+		- &nbsp;2.1.1. [Regression](#regression)
+		- &nbsp;2.1.2. [Classification](#classification)
+			- &nbsp;2.1.2.1. [Classification versus clustering](#classification-versus-clustering)
+			- &nbsp;2.1.2.2. [Generic classification methodology](#generic-classification-methodology)
+			- &nbsp;2.1.2.3. [Evaluating classification models](#evaluating-classification-models)
+				- &nbsp;2.1.2.3.1. [Measuring accuracy](#measuring-accuracy)
+				- &nbsp;2.1.2.3.2. [Estimation methods](#estimation-methods)
+			- &nbsp;2.1.2.4. [Classification techniques](#classification-techniques)
+	- &nbsp;2.2. [Association](#association)
+		- &nbsp;2.2.1. [Support & confidence](#support-confidence)
+		- &nbsp;2.2.2. [Apriori algorithm](#apriori-algorithm)
+	- &nbsp;2.3. [Clustering](#clustering)
+			- &nbsp;2.3.1. [Clustering versus classification](#clustering-versus-classification)
+		- &nbsp;2.3.1. [Determining optimal \# of clusters](#determining-optimal-\#-of-clusters)
+		- &nbsp;2.3.2. [Clustering techniques](#clustering-techniques)
+- &nbsp;3. [Sources](#sources)
+	- &nbsp;3.1. [Cited](#cited)
+	- &nbsp;3.2. [References](#references)
+	- &nbsp;3.3. [Read](#read)
+	- &nbsp;3.4. [Unread](#unread)
 </div>
 
 
@@ -48,7 +54,7 @@ See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [
 
 ### 1.1.1. Applications by technique
 
-Per Sharda et al. (2015, pp. 172; 181; 183):
+Per Sharda et al. (2014, pp. 172; 181; 183):
 
 <table>
     <tr><th>Clustering</th>
@@ -164,7 +170,7 @@ Per Sharda et al. (2014):
 
 ### 1.2.2. Common data mining pitfalls
 
-Per Sharda et al. (2015, p. 195):
+Per Sharda et al. (2014, p. 195):
 
 - "Selecting the wrong problem for data mining.
 - Ignoring what your sponsor thinks data mining is and what it really can and cannot do.
@@ -179,7 +185,7 @@ Per Sharda et al. (2015, p. 195):
 
 ### 1.2.3. Data mining software
 
-Per Sharda et al. (2015, p. 187), some commercial tools:
+Per Sharda et al. (2014, p. 187), some commercial tools:
 
 - IBM SPSS Modeler
 - SAS Enterprise Miner
@@ -226,27 +232,68 @@ Also, they cite a poll from KDNuggets.com (most to least popular):
 
 
 
+# 2. Data mining techniques
 
+## 2.1. Prediction
 
-# 2. Prediction
+Per Sharda et al. (2014, p. 172), "classification learns patterns from past data (a set of information---traits, variables, features---on characteristics of the previously labeled items, objects, or events) in order to place new instances (with unknown labels) into their respective groups or classes. If what is being predicted is a class label (e.g., 'sunny, 'rainy', or 'cloudy') the prediction problem is called a classification, whereas if it is a numeric value (e.g., temperature such as 68°F), the prediction problem is called a regression".
 
-## 2.1. Regression
+### 2.1.1. Regression
 
-## 2.2. Classification
+### 2.1.2. Classification
 
-### 2.2.1. Estimating the true accuracy of classification models
+Per Sharda et al. (2014, p. 172), "classification learns patterns from past data (a set of information---traits, variables, features---on characteristics of the previously labeled items, objects, or events) in order to place new instances (with unknown labels) into their respective groups or classes."
 
-per-class
+#### 2.1.2.1. Classification versus clustering
 
-overall
+Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
 
-confusion matrix
+#### 2.1.2.2. Generic classification methodology
 
-metrics
+Per Sharda et al. (2014):
 
-Measuring accuracy
+1. Model development AKA model training: "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
+2. Model testing / Model deployment: "the model is tested against the holdout sample for accuracy assessment and eventually deployed for actual use"
 
-Estimation methods
+#### 2.1.2.3. Evaluating classification models
+
+Per Sharda et al. (2014, pp. 172-173):
+
+- **Predictive accuracy** (most common): "The model's ability to correctly predict the class label of new or previously unseen data"
+- **Speed:** "The computational costs incolced in generating and using the model, where faster is deemed to be better"
+- **Scalability:** "The ability to construct a prediction model efficiently given a rather large amount of data"
+- **Interpretability:** "The level of understanding and insight provided by the model (e.g., how and/or what the model concludes on certain predictions)"
+
+##### 2.1.2.3.1. Measuring accuracy
+
+From Sharda et al. (2014, pp. 173-174), the universally-known **confusion matrix** (AKA classification matrix, AKA contingency table) for a two-class classification problem:
+
+<table>
+    <tr><th rowspan=2 colspan=2></th><th colspan=2>True Class</th></tr>
+    <tr><th>Positive</th><th>Negative</th></tr>
+    <tr><th rowspan=2>Predicted Class</th><th>Positive</th><td>True positive count (TP)</td><td>False positive count (FP)</td></tr>
+    <tr><th>Negative</th><td>False negative count (FN)</td><td>True negative count (TN)</td></tr>
+</table>
+
+Common accuracy metrics:
+
+| Formula | Description |
+| --- | --- |
+| True Positive Rate = TP/(TP+FN) | |
+| True Negative Rate = TN/(TN+FP) | |
+| Accuracy = (TP+TN)/(TP+TN+FP+FN) | |
+| Recall = TP/(TP+FN) | |
+
+Accuracy metrics for _n<sup>classes</sup>_ \> 2:
+
+| Formula | Description |
+| --- | --- |
+| Per class accuracy rate | |
+| Overall accuracy | |
+
+##### 2.1.2.3.2. Estimation methods
+
+For estimating accuracy
 
 - Simple split
 - k-fold cross-validation
@@ -255,7 +302,8 @@ Estimation methods
 - jackknifing
 - area under the ROC curve
 
-### 2.2.2. Classification techniques
+
+#### 2.1.2.4. Classification techniques
 
 Decision tree analysis
 
@@ -277,20 +325,25 @@ Rough sets
 
 
 
-# 3. Association
+## 2.2. Association
 
-## 3.1. Support & confidence
+### 2.2.1. Support & confidence
 
-## 3.2. Apriori algorithm
-
-
+### 2.2.2. Apriori algorithm
 
 
-# 4. Clustering
 
-## 4.1. Determining optimal \# of clusters
 
-## 4.2. Clustering techniques
+## 2.3. Clustering
+
+#### 2.3.1. Clustering versus classification
+
+Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
+
+
+### 2.3.1. Determining optimal \# of clusters
+
+### 2.3.2. Clustering techniques
 
 Divisive vs. agglomerative
 
@@ -303,14 +356,14 @@ k-means
 
 
 
-# 5. Sources
+# 3. Sources
 
-## 5.1. Cited
+## 3.1. Cited
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-## 5.2. References
+## 3.2. References
 
-## 5.3. Read
+## 3.3. Read
 
-## 5.4. Unread
+## 3.4. Unread

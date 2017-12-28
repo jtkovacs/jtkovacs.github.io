@@ -28,16 +28,6 @@ Per Sharda et al. (2014, pp. 172; 181; 183):
 <table>
     <tr><th>Clustering</th>
     <td style="text-align:left;"><ul>
-        <li>"improve product placement on the sales floor ... and [coordinate] promotional pricing of products"</li>
-        <li>identify credit fraud based on purchase combinations</li>
-        <li>"sequential patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
-        <li>"structure product bundles to maximize revenue"</li>
-        <li>detect elevated medical risk as a combination of factors</li>
-        <li>market segmentation</li>
-        <li>detect that "certain procedures at certain medical facilities can be tied to certain types of infection"</li>
-    </ul></td></tr>
-    <tr><th>Association</th>
-    <td style="text-align:left;"><ul>
         <li>"identify a classification scheme (e.g., types of customers)"</li>
         <li>"suggest statistical models to describe populations"</li>
         <li>"indicate rules for assigning new cases to classes for identification, tagging, and diagnostic purposes"</li>
@@ -45,6 +35,16 @@ Per Sharda et al. (2014, pp. 172; 181; 183):
         <li>"find typical cases to label and represent classes"</li>
         <li>"decrease the size and complexity of the problem space for other data mining methods"</li>
         <li>"identify outliers in a specific domain (i.e., rare-event detection)"</li>
+    </ul></td></tr>
+    <tr><th>Association</th>
+    <td style="text-align:left;"><ul>
+        <li>"improve product placement on the sales floor [or magazine, or website] ... and [coordinate] promotional pricing of products"</li>
+        <li>identify credit fraud based on purchase combinations</li>
+        <li>"sequential patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
+        <li>"structure product bundles to maximize revenue"</li>
+        <li>detect elevated medical risk as a combination of factors</li>
+        <li>market segmentation</li>
+        <li>"discover relationships between symptoms and illnesses, diagnosis and patient characteristics and treatments ... and genes and their functions"</li>
     </ul></td></tr>
     <tr><th>Prediction</th>
     <td style="text-align:left;"><ul>
@@ -206,6 +206,102 @@ Also, they cite a poll from KDNuggets.com (most to least popular):
 
 
 
+
+
+## Clustering
+
+"Cluster analysis is an exploratory data analysis tool for solving classification problems. The objective is to sort cases (e.g., people, things, events) into groups, or clusters, so that the degree of association is strong among members of the same cluster and weak among members of different clusters" (Sharda et al., 2014, pp. 180).
+
+### Clustering versus classification
+
+Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
+
+### Generic clustering methodology
+
+Clustering algorithms usually require the desired **number of clusters** to be set as a parameter. To estimate this parameter, there are several different approaches (Sharda et al., 2014, p. 181):
+
+- "Look at the percentage of variance explained as a function of the number of clusters; that is, choose a number of clusters so that adding another cluster would not give much better modeling of the data"
+- Set the number of clusters to (n/2)<sup>1/2</sup>, where n is the number of data points"
+- "Use the Akaike information criterion (AIC), which is a measure of the goodness of fit (based on the concept of entropy) to determine the number of clusters"
+- "Use Bayesian information criterion (BIC), which is a model-selection criterion (based on maximum likelihood estimation)"
+
+"Most cluster analysis methods involve the use of a **distance measure** to calculate the closeness between pairs of items. Popular distance measures include Euclidean distance (the ordinary distance between two points that one would measure with a ruler) and Manhattan distance (also called rectilinear distance, or taxicab distance, between two points). ... Weighted averages may be used to establish these distances" (Sharda et al., 2014, 182).
+
+### Clustering techniques
+
+Per Sharda et al. (2014, p. 181), algorithms may be classified by approach:
+
+- (statistical) e.g. k-means, k-modes
+    - (hierarchical)
+    - (non--hierarchical)
+- (neural networks)
+    - with self-organizing map (SOM)
+- (fuzzy logic) e.g. fuzzy c-means
+- (genetic algorithms)
+
+And also according to whether they are:
+
+- **Divisive:** "all items start in one cluster and are broken apart"
+- **Agglomerative:** "all items start in individual clusters, and the clusters are joined together"
+
+#### k-means
+
+Per Sharda et al. (2014, p. 182):
+
+- **"Initialization step:** Choose the number of clusters (i.e., the value of k).
+- **Step 1:** Randomly generate k random points as initial cluster centers.
+- **Step 2:** Assign each point to the nearest cluster center.
+- **Step 3:** Recompute the new cluster centers.
+- **Repetition step:** Repeat steps 2 and 3 until some convergence criterion is met (usually that the assignment of points to clusters becomes stable)."
+
+
+
+
+
+
+
+
+
+
+## Association
+
+"In essence, association rule mining [AKA affinity analysis, AKA market-basket analysis] aims to find interesting relationships (affinities) between variables (items) in large databases" (Sharda et al., 2014, p. 183).
+
+Association rules have the following terms and notation:
+
+- antecedent ==> consequent [support, confidence]
+- **X ==> Y [Supp(%), Conf(%)]**
+- {Laptop Computer, Antivirus Software} ==> {Extended Service Plan} [30%, 70%]
+
+### Generic association methodology
+
+"Several algorithms are available for discovering association rules ... [they] do only half the job, which is to identify the frequent itemsets in the database. Once the frequent itemsets are identified, they need to be converted into rules with antecedent and consequent parts ... [which is] a straightforward matching process, but the process may be time-consuming with large transaction databases.
+
+Even though there may be many items in each section of the rule, in practice the consequent part usually contains a single item" (Sharda et al., 2014, p. 184).
+
+### Evaluating associations
+
+- **Support** = _Supp(X==>Y)_ = (number of baskets containing X and Y) / (total number of baskets)
+- **Confidence** = _Conf(X==>Y)_ = Supp(X==>Y)/Supp(X)
+- **Lift** = _Lift(X==>Y)_ = Conf(X==>Y)/Expected Conf(X==>Y) = S(X==>Y)/S(X)*S(Y)
+
+### Association techniques
+
+#### Apriori algorithm
+
+"Given a set of itemsets ... the algorithm attempts to find subsets that are common to at least a minimum number of items sets (i.e., complies with a minimum support). Apriori uses a bottom-up approach, where frequent subsets are extended one item at a time (a method known as _candidate generation ...), and groups of candidates at each level are tested agains the data for minimum support. The algorithm terminates when no further successful extensions are found" (Sharda et al., 2014, p. 185).
+
+#### Eclat
+
+#### FP-Growth
+
+
+
+
+
+
+
+
 ## Prediction
 
 Per Sharda et al. (2014, p. 172), "classification learns patterns from past data (a set of information---traits, variables, features---on characteristics of the previously labeled items, objects, or events) in order to place new instances (with unknown labels) into their respective groups or classes. If what is being predicted is a class label (e.g., 'sunny, 'rainy', or 'cloudy') the prediction problem is called a classification, whereas if it is a numeric value (e.g., temperature such as 68°F), the prediction problem is called a regression".
@@ -336,60 +432,21 @@ Sharda et al. (2014, p. 176) call this "among the most popular" of classificatio
 
 
 
-## Association
-
-### Support & confidence
-
-### Apriori algorithm
 
 
 
 
-## Clustering
 
-"Cluster analysis is an exploratory data analysis tool for solving classification problems. The objective is to sort cases (e.g., people, things, events) into groups, or clusters, so that the degree of association is strong among members of the same cluster and weak among members of different clusters" (Sharda et al., 2014, pp. 180).
 
-### Clustering versus classification
 
-Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
 
-### Generic clustering methodology
 
-Clustering algorithms usually require the desired **number of clusters** to be set as a parameter. To estimate this parameter, there are several different approaches (Sharda et al., 2014, p. 181):
 
-- "Look at the percentage of variance explained as a function of the number of clusters; that is, choose a number of clusters so that adding another cluster would not give much better modeling of the data"
-- Set the number of clusters to (n/2)<sup>1/2</sup>, where n is the number of data points"
-- "Use the Akaike information criterion (AIC), which is a measure of the goodness of fit (based on the concept of entropy) to determine the number of clusters"
-- "Use Bayesian information criterion (BIC), which is a model-selection criterion (based on maximum likelihood estimation)"
 
-"Most cluster analysis methods involve the use of a **distance measure** to calculate the closeness between pairs of items. Popular distance measures include Euclidean distance (the ordinary distance between two points that one would measure with a ruler) and Manhattan distance (also called rectilinear distance, or taxicab distance, between two points). ... Weighted averages may be used to establish these distances" (Sharda et al., 2014, 182).
 
-### Clustering techniques
 
-Per Sharda et al. (2014, p. 181), algorithms may be classified by approach:
 
-- (statistical) e.g. k-means, k-modes
-    - (hierarchical)
-    - (non--hierarchical)
-- (neural networks)
-    - with self-organizing map (SOM)
-- (fuzzy logic) e.g. fuzzy c-means
-- (genetic algorithms)
 
-And also according to whether they are:
-
-- **Divisive:** "all items start in one cluster and are broken apart"
-- **Agglomerative:** "all items start in individual clusters, and the clusters are joined together"
-
-#### k-means
-
-Per Sharda et al. (2014, p. 182):
-
-- **"Initialization step:** Choose the number of clusters (i.e., the value of k).
-- **Step 1:** Randomly generate k random points as initial cluster centers.
-- **Step 2:** Assign each point to the nearest cluster center.
-- **Step 3:** Recompute the new cluster centers.
-- **Repetition step:** Repeat steps 2 and 3 until some convergence criterion is met (usually that the assignment of points to clusters becomes stable)."
 
 
 

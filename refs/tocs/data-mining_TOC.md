@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 3186 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 3466 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
 	- &nbsp;1.1. [Business applications of data mining](#business-applications-of-data-mining)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -7,30 +7,34 @@
 		- &nbsp;1.2.2. [Common data mining pitfalls](#common-data-mining-pitfalls)
 		- &nbsp;1.2.3. [Data mining software](#data-mining-software)
 - &nbsp;2. [Data mining techniques](#data-mining-techniques)
-	- &nbsp;2.1. [Prediction](#prediction)
-		- &nbsp;2.1.1. [Regression](#regression)
-		- &nbsp;2.1.2. [Classification](#classification)
-			- &nbsp;2.1.2.1. [Classification versus clustering](#classification-versus-clustering)
-			- &nbsp;2.1.2.2. [Generic classification methodology](#generic-classification-methodology)
-				- &nbsp;2.1.2.2.1. [Training approaches](#training-approaches)
-			- &nbsp;2.1.2.3. [Evaluating classification models](#evaluating-classification-models)
-				- &nbsp;2.1.2.3.1. [Measuring accuracy](#measuring-accuracy)
-			- &nbsp;2.1.2.4. [Classification techniques](#classification-techniques)
-				- &nbsp;2.1.2.4.1. [Decision tree analysis](#decision-tree-analysis)
-				- &nbsp;2.1.2.4.2. [Statistical analysis](#statistical-analysis)
-				- &nbsp;2.1.2.4.3. [Neural networks](#neural-networks)
-				- &nbsp;2.1.2.4.4. [Case-based reasoning](#case-based-reasoning)
-				- &nbsp;2.1.2.4.5. [Bayesian classifiers](#bayesian-classifiers)
-				- &nbsp;2.1.2.4.6. [Genetic algorithms](#genetic-algorithms)
-				- &nbsp;2.1.2.4.7. [Rough sets](#rough-sets)
+	- &nbsp;2.1. [Clustering](#clustering)
+		- &nbsp;2.1.1. [Clustering versus classification](#clustering-versus-classification)
+		- &nbsp;2.1.2. [Generic clustering methodology](#generic-clustering-methodology)
+		- &nbsp;2.1.3. [Clustering techniques](#clustering-techniques)
+			- &nbsp;2.1.3.1. [k-means](#k-means)
 	- &nbsp;2.2. [Association](#association)
-		- &nbsp;2.2.1. [Support & confidence](#support-confidence)
-		- &nbsp;2.2.2. [Apriori algorithm](#apriori-algorithm)
-	- &nbsp;2.3. [Clustering](#clustering)
-		- &nbsp;2.3.1. [Clustering versus classification](#clustering-versus-classification)
-		- &nbsp;2.3.2. [Generic clustering methodology](#generic-clustering-methodology)
-		- &nbsp;2.3.3. [Clustering techniques](#clustering-techniques)
-			- &nbsp;2.3.3.1. [k-means](#k-means)
+		- &nbsp;2.2.1. [Generic association methodology](#generic-association-methodology)
+		- &nbsp;2.2.2. [Evaluating associations](#evaluating-associations)
+		- &nbsp;2.2.3. [Association techniques](#association-techniques)
+			- &nbsp;2.2.3.1. [Apriori algorithm](#apriori-algorithm)
+			- &nbsp;2.2.3.2. [Eclat](#eclat)
+			- &nbsp;2.2.3.3. [FP-Growth](#fp-growth)
+	- &nbsp;2.3. [Prediction](#prediction)
+		- &nbsp;2.3.1. [Regression](#regression)
+		- &nbsp;2.3.2. [Classification](#classification)
+			- &nbsp;2.3.2.1. [Classification versus clustering](#classification-versus-clustering)
+			- &nbsp;2.3.2.2. [Generic classification methodology](#generic-classification-methodology)
+				- &nbsp;2.3.2.2.1. [Training approaches](#training-approaches)
+			- &nbsp;2.3.2.3. [Evaluating classification models](#evaluating-classification-models)
+				- &nbsp;2.3.2.3.1. [Measuring accuracy](#measuring-accuracy)
+			- &nbsp;2.3.2.4. [Classification techniques](#classification-techniques)
+				- &nbsp;2.3.2.4.1. [Decision tree analysis](#decision-tree-analysis)
+				- &nbsp;2.3.2.4.2. [Statistical analysis](#statistical-analysis)
+				- &nbsp;2.3.2.4.3. [Neural networks](#neural-networks)
+				- &nbsp;2.3.2.4.4. [Case-based reasoning](#case-based-reasoning)
+				- &nbsp;2.3.2.4.5. [Bayesian classifiers](#bayesian-classifiers)
+				- &nbsp;2.3.2.4.6. [Genetic algorithms](#genetic-algorithms)
+				- &nbsp;2.3.2.4.7. [Rough sets](#rough-sets)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -67,16 +71,6 @@ Per Sharda et al. (2014, pp. 172; 181; 183):
 <table>
     <tr><th>Clustering</th>
     <td style="text-align:left;"><ul>
-        <li>"improve product placement on the sales floor ... and [coordinate] promotional pricing of products"</li>
-        <li>identify credit fraud based on purchase combinations</li>
-        <li>"sequential patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
-        <li>"structure product bundles to maximize revenue"</li>
-        <li>detect elevated medical risk as a combination of factors</li>
-        <li>market segmentation</li>
-        <li>detect that "certain procedures at certain medical facilities can be tied to certain types of infection"</li>
-    </ul></td></tr>
-    <tr><th>Association</th>
-    <td style="text-align:left;"><ul>
         <li>"identify a classification scheme (e.g., types of customers)"</li>
         <li>"suggest statistical models to describe populations"</li>
         <li>"indicate rules for assigning new cases to classes for identification, tagging, and diagnostic purposes"</li>
@@ -84,6 +78,16 @@ Per Sharda et al. (2014, pp. 172; 181; 183):
         <li>"find typical cases to label and represent classes"</li>
         <li>"decrease the size and complexity of the problem space for other data mining methods"</li>
         <li>"identify outliers in a specific domain (i.e., rare-event detection)"</li>
+    </ul></td></tr>
+    <tr><th>Association</th>
+    <td style="text-align:left;"><ul>
+        <li>"improve product placement on the sales floor [or magazine, or website] ... and [coordinate] promotional pricing of products"</li>
+        <li>identify credit fraud based on purchase combinations</li>
+        <li>"sequential patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
+        <li>"structure product bundles to maximize revenue"</li>
+        <li>detect elevated medical risk as a combination of factors</li>
+        <li>market segmentation</li>
+        <li>"discover relationships between symptoms and illnesses, diagnosis and patient characteristics and treatments ... and genes and their functions"</li>
     </ul></td></tr>
     <tr><th>Prediction</th>
     <td style="text-align:left;"><ul>
@@ -245,27 +249,123 @@ Also, they cite a poll from KDNuggets.com (most to least popular):
 
 
 
-## 2.1. Prediction
+
+
+## 2.1. Clustering
+
+"Cluster analysis is an exploratory data analysis tool for solving classification problems. The objective is to sort cases (e.g., people, things, events) into groups, or clusters, so that the degree of association is strong among members of the same cluster and weak among members of different clusters" (Sharda et al., 2014, pp. 180).
+
+### 2.1.1. Clustering versus classification
+
+Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
+
+### 2.1.2. Generic clustering methodology
+
+Clustering algorithms usually require the desired **number of clusters** to be set as a parameter. To estimate this parameter, there are several different approaches (Sharda et al., 2014, p. 181):
+
+- "Look at the percentage of variance explained as a function of the number of clusters; that is, choose a number of clusters so that adding another cluster would not give much better modeling of the data"
+- Set the number of clusters to (n/2)<sup>1/2</sup>, where n is the number of data points"
+- "Use the Akaike information criterion (AIC), which is a measure of the goodness of fit (based on the concept of entropy) to determine the number of clusters"
+- "Use Bayesian information criterion (BIC), which is a model-selection criterion (based on maximum likelihood estimation)"
+
+"Most cluster analysis methods involve the use of a **distance measure** to calculate the closeness between pairs of items. Popular distance measures include Euclidean distance (the ordinary distance between two points that one would measure with a ruler) and Manhattan distance (also called rectilinear distance, or taxicab distance, between two points). ... Weighted averages may be used to establish these distances" (Sharda et al., 2014, 182).
+
+### 2.1.3. Clustering techniques
+
+Per Sharda et al. (2014, p. 181), algorithms may be classified by approach:
+
+- (statistical) e.g. k-means, k-modes
+    - (hierarchical)
+    - (non--hierarchical)
+- (neural networks)
+    - with self-organizing map (SOM)
+- (fuzzy logic) e.g. fuzzy c-means
+- (genetic algorithms)
+
+And also according to whether they are:
+
+- **Divisive:** "all items start in one cluster and are broken apart"
+- **Agglomerative:** "all items start in individual clusters, and the clusters are joined together"
+
+#### 2.1.3.1. k-means
+
+Per Sharda et al. (2014, p. 182):
+
+- **"Initialization step:** Choose the number of clusters (i.e., the value of k).
+- **Step 1:** Randomly generate k random points as initial cluster centers.
+- **Step 2:** Assign each point to the nearest cluster center.
+- **Step 3:** Recompute the new cluster centers.
+- **Repetition step:** Repeat steps 2 and 3 until some convergence criterion is met (usually that the assignment of points to clusters becomes stable)."
+
+
+
+
+
+
+
+
+
+
+## 2.2. Association
+
+"In essence, association rule mining [AKA affinity analysis, AKA market-basket analysis] aims to find interesting relationships (affinities) between variables (items) in large databases" (Sharda et al., 2014, p. 183).
+
+Association rules have the following terms and notation:
+
+- antecedent ==> consequent [support, confidence]
+- **X ==> Y [Supp(%), Conf(%)]**
+- {Laptop Computer, Antivirus Software} ==> {Extended Service Plan} [30%, 70%]
+
+### 2.2.1. Generic association methodology
+
+"Several algorithms are available for discovering association rules ... [they] do only half the job, which is to identify the frequent itemsets in the database. Once the frequent itemsets are identified, they need to be converted into rules with antecedent and consequent parts ... [which is] a straightforward matching process, but the process may be time-consuming with large transaction databases.
+
+Even though there may be many items in each section of the rule, in practice the consequent part usually contains a single item" (Sharda et al., 2014, p. 184).
+
+### 2.2.2. Evaluating associations
+
+- **Support** = _Supp(X==>Y)_ = (number of baskets containing X and Y) / (total number of baskets)
+- **Confidence** = _Conf(X==>Y)_ = Supp(X==>Y)/Supp(X)
+- **Lift** = _Lift(X==>Y)_ = Conf(X==>Y)/Expected Conf(X==>Y) = S(X==>Y)/S(X)*S(Y)
+
+### 2.2.3. Association techniques
+
+#### 2.2.3.1. Apriori algorithm
+
+"Given a set of itemsets ... the algorithm attempts to find subsets that are common to at least a minimum number of items sets (i.e., complies with a minimum support). Apriori uses a bottom-up approach, where frequent subsets are extended one item at a time (a method known as _candidate generation ...), and groups of candidates at each level are tested agains the data for minimum support. The algorithm terminates when no further successful extensions are found" (Sharda et al., 2014, p. 185).
+
+#### 2.2.3.2. Eclat
+
+#### 2.2.3.3. FP-Growth
+
+
+
+
+
+
+
+
+## 2.3. Prediction
 
 Per Sharda et al. (2014, p. 172), "classification learns patterns from past data (a set of information---traits, variables, features---on characteristics of the previously labeled items, objects, or events) in order to place new instances (with unknown labels) into their respective groups or classes. If what is being predicted is a class label (e.g., 'sunny, 'rainy', or 'cloudy') the prediction problem is called a classification, whereas if it is a numeric value (e.g., temperature such as 68°F), the prediction problem is called a regression".
 
 
 
 
-### 2.1.1. Regression
+### 2.3.1. Regression
 
 
 
 
-### 2.1.2. Classification
+### 2.3.2. Classification
 
 Per Sharda et al. (2014, p. 172), "classification learns patterns from past data (a set of information---traits, variables, features---on characteristics of the previously labeled items, objects, or events) in order to place new instances (with unknown labels) into their respective groups or classes."
 
-#### 2.1.2.1. Classification versus clustering
+#### 2.3.2.1. Classification versus clustering
 
 Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
 
-#### 2.1.2.2. Generic classification methodology
+#### 2.3.2.2. Generic classification methodology
 
 Per Sharda et al. (2014):
 
@@ -273,7 +373,7 @@ Per Sharda et al. (2014):
 2. **Model testing:** "the model is tested against the holdout sample for accuracy assessment ..."
 3. **Model deployment:** "... and eventually deployed for actual use"
 
-##### 2.1.2.2.1. Training approaches
+##### 2.3.2.2.1. Training approaches
 
 Per Sharda et al. (2014, pp. 174-175):
 
@@ -285,7 +385,7 @@ Per Sharda et al. (2014, pp. 174-175):
 - **Bootstrapping:** "fixed number of instances from the original data are sampled (with replacement) for training and the rest of the data set is used for testing. This process is repeated as many times as desired."
 - **Jackknifing:** "similar to the leave-one-out methodology ... accuracy is calculated by leaving one sample out at each iteration of the estimation process."
 
-#### 2.1.2.3. Evaluating classification models
+#### 2.3.2.3. Evaluating classification models
 
 Per Sharda et al. (2014, pp. 172-173):
 
@@ -294,7 +394,7 @@ Per Sharda et al. (2014, pp. 172-173):
 - **Scalability:** "The ability to construct a prediction model efficiently given a rather large amount of data"
 - **Interpretability:** "The level of understanding and insight provided by the model (e.g., how and/or what the model concludes on certain predictions)"
 
-##### 2.1.2.3.1. Measuring accuracy
+##### 2.3.2.3.1. Measuring accuracy
 
 From Sharda et al. (2014, pp. 173-174), the universally-known **confusion matrix** (AKA classification matrix, AKA contingency table) for a two-class classification problem:
 
@@ -321,9 +421,9 @@ Accuracy metrics for classification problems with more than two classes:
 - Per class accuracy rates: _True classification rate<sub>i</sub> =  (True classification)<sub>i</sub> / ∑<sub>i=1</sub><sup>n</sup> (False classification)<sub>i</sub>_
 - _(Overall classifier accuracy)<sub>i</sub> = ∑<sub>i=1</sub><sup>n</sup> (True classification)<sub>i</sub> / Total number of cases_
 
-#### 2.1.2.4. Classification techniques
+#### 2.3.2.4. Classification techniques
 
-##### 2.1.2.4.1. Decision tree analysis
+##### 2.3.2.4.1. Decision tree analysis
 
 Per Sharda et al. (2014, pp. 176-178):
 
@@ -347,27 +447,27 @@ To evaluate splits, use the Gini index or information gain:
 - gini(S) = 1 - ∑<sub>j=1</sub><sup>n</sup> p<sub>j</sub><sup>2</sup>
 - _for S split into two subsets:_ gini<sub>split</sub>(S) = N<sub>2</sub>/N gini(S<sub>1</sub>) + N<sub>2</sub>/N gini(S<sub>2</sub>)
 
-##### 2.1.2.4.2. Statistical analysis
+##### 2.3.2.4.2. Statistical analysis
 
 Per Sharda et al. (2014), logistic regression and discriminant analysis are two techniques that were dominant until machine learning techniques were developed. They arhave fairly restrictive assumptions.
 
-##### 2.1.2.4.3. Neural networks
+##### 2.3.2.4.3. Neural networks
 
 Sharda et al. (2014, p. 176) call this "among the most popular" of classification techniques.
 
-##### 2.1.2.4.4. Case-based reasoning
+##### 2.3.2.4.4. Case-based reasoning
 
 "This approach uses historical cases to recognize commonalities in order to assign a new case into the more probable category" (Sharda et al., 2014, p. 176).
 
-##### 2.1.2.4.5. Bayesian classifiers
+##### 2.3.2.4.5. Bayesian classifiers
 
 "This approach uses probability theory to build classification models based on the past occurrences that are capable of placing a new instance into a most probable class (or category)" (Sharda et al., 2014, p. 176).
 
-##### 2.1.2.4.6. Genetic algorithms
+##### 2.3.2.4.6. Genetic algorithms
 
 "[Genetic algorithms are inspired by] natural evolution to build directed-search-based mechanisms to classify sample data" (Sharda et al., 2014, p. 176).
 
-##### 2.1.2.4.7. Rough sets
+##### 2.3.2.4.7. Rough sets
 
 "This method takes into account the partial membership of class labels into predefined categories in building models (collections of rules) for classification problems" (Sharda et al., 2014, p. 176).
 
@@ -375,60 +475,21 @@ Sharda et al. (2014, p. 176) call this "among the most popular" of classificatio
 
 
 
-## 2.2. Association
-
-### 2.2.1. Support & confidence
-
-### 2.2.2. Apriori algorithm
 
 
 
 
-## 2.3. Clustering
 
-"Cluster analysis is an exploratory data analysis tool for solving classification problems. The objective is to sort cases (e.g., people, things, events) into groups, or clusters, so that the degree of association is strong among members of the same cluster and weak among members of different clusters" (Sharda et al., 2014, pp. 180).
 
-### 2.3.1. Clustering versus classification
 
-Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
 
-### 2.3.2. Generic clustering methodology
 
-Clustering algorithms usually require the desired **number of clusters** to be set as a parameter. To estimate this parameter, there are several different approaches (Sharda et al., 2014, p. 181):
 
-- "Look at the percentage of variance explained as a function of the number of clusters; that is, choose a number of clusters so that adding another cluster would not give much better modeling of the data"
-- Set the number of clusters to (n/2)<sup>1/2</sup>, where n is the number of data points"
-- "Use the Akaike information criterion (AIC), which is a measure of the goodness of fit (based on the concept of entropy) to determine the number of clusters"
-- "Use Bayesian information criterion (BIC), which is a model-selection criterion (based on maximum likelihood estimation)"
 
-"Most cluster analysis methods involve the use of a **distance measure** to calculate the closeness between pairs of items. Popular distance measures include Euclidean distance (the ordinary distance between two points that one would measure with a ruler) and Manhattan distance (also called rectilinear distance, or taxicab distance, between two points). ... Weighted averages may be used to establish these distances" (Sharda et al., 2014, 182).
 
-### 2.3.3. Clustering techniques
 
-Per Sharda et al. (2014, p. 181), algorithms may be classified by approach:
 
-- (statistical) e.g. k-means, k-modes
-    - (hierarchical)
-    - (non--hierarchical)
-- (neural networks)
-    - with self-organizing map (SOM)
-- (fuzzy logic) e.g. fuzzy c-means
-- (genetic algorithms)
 
-And also according to whether they are:
-
-- **Divisive:** "all items start in one cluster and are broken apart"
-- **Agglomerative:** "all items start in individual clusters, and the clusters are joined together"
-
-#### 2.3.3.1. k-means
-
-Per Sharda et al. (2014, p. 182):
-
-- **"Initialization step:** Choose the number of clusters (i.e., the value of k).
-- **Step 1:** Randomly generate k random points as initial cluster centers.
-- **Step 2:** Assign each point to the nearest cluster center.
-- **Step 3:** Recompute the new cluster centers.
-- **Repetition step:** Repeat steps 2 and 3 until some convergence criterion is met (usually that the assignment of points to clusters becomes stable)."
 
 
 

@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; data mining | just under 3186 words | updated 12/28/2017
+   &gt; data mining | just under 3466 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -81,105 +81,33 @@
      <ul>
       <li>
        2.1.
-       <a href="#prediction">
-        Prediction
+       <a href="#clustering">
+        Clustering
        </a>
        <ul>
         <li>
          2.1.1.
-         <a href="#regression">
-          Regression
+         <a href="#clustering-versus-classification">
+          Clustering versus classification
          </a>
         </li>
         <li>
          2.1.2.
-         <a href="#classification">
-          Classification
+         <a href="#generic-clustering-methodology">
+          Generic clustering methodology
+         </a>
+        </li>
+        <li>
+         2.1.3.
+         <a href="#clustering-techniques">
+          Clustering techniques
          </a>
          <ul>
           <li>
-           2.1.2.1.
-           <a href="#classification-versus-clustering">
-            Classification versus clustering
+           2.1.3.1.
+           <a href="#k-means">
+            k-means
            </a>
-          </li>
-          <li>
-           2.1.2.2.
-           <a href="#generic-classification-methodology">
-            Generic classification methodology
-           </a>
-           <ul>
-            <li>
-             2.1.2.2.1.
-             <a href="#training-approaches">
-              Training approaches
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           2.1.2.3.
-           <a href="#evaluating-classification-models">
-            Evaluating classification models
-           </a>
-           <ul>
-            <li>
-             2.1.2.3.1.
-             <a href="#measuring-accuracy">
-              Measuring accuracy
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           2.1.2.4.
-           <a href="#classification-techniques">
-            Classification techniques
-           </a>
-           <ul>
-            <li>
-             2.1.2.4.1.
-             <a href="#decision-tree-analysis">
-              Decision tree analysis
-             </a>
-            </li>
-            <li>
-             2.1.2.4.2.
-             <a href="#statistical-analysis">
-              Statistical analysis
-             </a>
-            </li>
-            <li>
-             2.1.2.4.3.
-             <a href="#neural-networks">
-              Neural networks
-             </a>
-            </li>
-            <li>
-             2.1.2.4.4.
-             <a href="#case-based-reasoning">
-              Case-based reasoning
-             </a>
-            </li>
-            <li>
-             2.1.2.4.5.
-             <a href="#bayesian-classifiers">
-              Bayesian classifiers
-             </a>
-            </li>
-            <li>
-             2.1.2.4.6.
-             <a href="#genetic-algorithms">
-              Genetic algorithms
-             </a>
-            </li>
-            <li>
-             2.1.2.4.7.
-             <a href="#rough-sets">
-              Rough sets
-             </a>
-            </li>
-           </ul>
           </li>
          </ul>
         </li>
@@ -193,47 +121,145 @@
        <ul>
         <li>
          2.2.1.
-         <a href="#support-confidence">
-          Support &amp; confidence
+         <a href="#generic-association-methodology">
+          Generic association methodology
          </a>
         </li>
         <li>
          2.2.2.
-         <a href="#apriori-algorithm">
-          Apriori algorithm
+         <a href="#evaluating-associations">
+          Evaluating associations
          </a>
+        </li>
+        <li>
+         2.2.3.
+         <a href="#association-techniques">
+          Association techniques
+         </a>
+         <ul>
+          <li>
+           2.2.3.1.
+           <a href="#apriori-algorithm">
+            Apriori algorithm
+           </a>
+          </li>
+          <li>
+           2.2.3.2.
+           <a href="#eclat">
+            Eclat
+           </a>
+          </li>
+          <li>
+           2.2.3.3.
+           <a href="#fp-growth">
+            FP-Growth
+           </a>
+          </li>
+         </ul>
         </li>
        </ul>
       </li>
       <li>
        2.3.
-       <a href="#clustering">
-        Clustering
+       <a href="#prediction">
+        Prediction
        </a>
        <ul>
         <li>
          2.3.1.
-         <a href="#clustering-versus-classification">
-          Clustering versus classification
+         <a href="#regression">
+          Regression
          </a>
         </li>
         <li>
          2.3.2.
-         <a href="#generic-clustering-methodology">
-          Generic clustering methodology
-         </a>
-        </li>
-        <li>
-         2.3.3.
-         <a href="#clustering-techniques">
-          Clustering techniques
+         <a href="#classification">
+          Classification
          </a>
          <ul>
           <li>
-           2.3.3.1.
-           <a href="#k-means">
-            k-means
+           2.3.2.1.
+           <a href="#classification-versus-clustering">
+            Classification versus clustering
            </a>
+          </li>
+          <li>
+           2.3.2.2.
+           <a href="#generic-classification-methodology">
+            Generic classification methodology
+           </a>
+           <ul>
+            <li>
+             2.3.2.2.1.
+             <a href="#training-approaches">
+              Training approaches
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           2.3.2.3.
+           <a href="#evaluating-classification-models">
+            Evaluating classification models
+           </a>
+           <ul>
+            <li>
+             2.3.2.3.1.
+             <a href="#measuring-accuracy">
+              Measuring accuracy
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           2.3.2.4.
+           <a href="#classification-techniques">
+            Classification techniques
+           </a>
+           <ul>
+            <li>
+             2.3.2.4.1.
+             <a href="#decision-tree-analysis">
+              Decision tree analysis
+             </a>
+            </li>
+            <li>
+             2.3.2.4.2.
+             <a href="#statistical-analysis">
+              Statistical analysis
+             </a>
+            </li>
+            <li>
+             2.3.2.4.3.
+             <a href="#neural-networks">
+              Neural networks
+             </a>
+            </li>
+            <li>
+             2.3.2.4.4.
+             <a href="#case-based-reasoning">
+              Case-based reasoning
+             </a>
+            </li>
+            <li>
+             2.3.2.4.5.
+             <a href="#bayesian-classifiers">
+              Bayesian classifiers
+             </a>
+            </li>
+            <li>
+             2.3.2.4.6.
+             <a href="#genetic-algorithms">
+              Genetic algorithms
+             </a>
+            </li>
+            <li>
+             2.3.2.4.7.
+             <a href="#rough-sets">
+              Rough sets
+             </a>
+            </li>
+           </ul>
           </li>
          </ul>
         </li>
@@ -452,36 +478,6 @@
     <td style="text-align:left;">
      <ul>
       <li>
-       "improve product placement on the sales floor ... and [coordinate] promotional pricing of products"
-      </li>
-      <li>
-       identify credit fraud based on purchase combinations
-      </li>
-      <li>
-       "sequential patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"
-      </li>
-      <li>
-       "structure product bundles to maximize revenue"
-      </li>
-      <li>
-       detect elevated medical risk as a combination of factors
-      </li>
-      <li>
-       market segmentation
-      </li>
-      <li>
-       detect that "certain procedures at certain medical facilities can be tied to certain types of infection"
-      </li>
-     </ul>
-    </td>
-   </tr>
-   <tr>
-    <th>
-     Association
-    </th>
-    <td style="text-align:left;">
-     <ul>
-      <li>
        "identify a classification scheme (e.g., types of customers)"
       </li>
       <li>
@@ -501,6 +497,36 @@
       </li>
       <li>
        "identify outliers in a specific domain (i.e., rare-event detection)"
+      </li>
+     </ul>
+    </td>
+   </tr>
+   <tr>
+    <th>
+     Association
+    </th>
+    <td style="text-align:left;">
+     <ul>
+      <li>
+       "improve product placement on the sales floor [or magazine, or website] ... and [coordinate] promotional pricing of products"
+      </li>
+      <li>
+       identify credit fraud based on purchase combinations
+      </li>
+      <li>
+       "sequential patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"
+      </li>
+      <li>
+       "structure product bundles to maximize revenue"
+      </li>
+      <li>
+       detect elevated medical risk as a combination of factors
+      </li>
+      <li>
+       market segmentation
+      </li>
+      <li>
+       "discover relationships between symptoms and illnesses, diagnosis and patient characteristics and treatments ... and genes and their functions"
       </li>
      </ul>
     </td>
@@ -1027,9 +1053,249 @@
     2. Data mining techniques
    </a>
   </h1>
+  <h2 id="clustering">
+   <a>
+    2.1. Clustering
+   </a>
+  </h2>
+  <p>
+   "Cluster analysis is an exploratory data analysis tool for solving classification problems. The objective is to sort cases (e.g., people, things, events) into groups, or clusters, so that the degree of association is strong among members of the same cluster and weak among members of different clusters" (Sharda et al., 2014, pp. 180).
+  </p>
+  <h3 id="clustering-versus-classification">
+   <a>
+    2.1.1. Clustering versus classification
+   </a>
+  </h3>
+  <p>
+   Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
+  </p>
+  <h3 id="generic-clustering-methodology">
+   <a>
+    2.1.2. Generic clustering methodology
+   </a>
+  </h3>
+  <p>
+   Clustering algorithms usually require the desired
+   <strong>
+    number of clusters
+   </strong>
+   to be set as a parameter. To estimate this parameter, there are several different approaches (Sharda et al., 2014, p. 181):
+  </p>
+  <ul>
+   <li>
+    "Look at the percentage of variance explained as a function of the number of clusters; that is, choose a number of clusters so that adding another cluster would not give much better modeling of the data"
+   </li>
+   <li>
+    Set the number of clusters to (n/2)
+    <sup>
+     1/2
+    </sup>
+    , where n is the number of data points"
+   </li>
+   <li>
+    "Use the Akaike information criterion (AIC), which is a measure of the goodness of fit (based on the concept of entropy) to determine the number of clusters"
+   </li>
+   <li>
+    "Use Bayesian information criterion (BIC), which is a model-selection criterion (based on maximum likelihood estimation)"
+   </li>
+  </ul>
+  <p>
+   "Most cluster analysis methods involve the use of a
+   <strong>
+    distance measure
+   </strong>
+   to calculate the closeness between pairs of items. Popular distance measures include Euclidean distance (the ordinary distance between two points that one would measure with a ruler) and Manhattan distance (also called rectilinear distance, or taxicab distance, between two points). ... Weighted averages may be used to establish these distances" (Sharda et al., 2014, 182).
+  </p>
+  <h3 id="clustering-techniques">
+   <a>
+    2.1.3. Clustering techniques
+   </a>
+  </h3>
+  <p>
+   Per Sharda et al. (2014, p. 181), algorithms may be classified by approach:
+  </p>
+  <ul>
+   <li>
+    (statistical) e.g. k-means, k-modes
+    <ul>
+     <li>
+      (hierarchical)
+     </li>
+     <li>
+      (non--hierarchical)
+     </li>
+    </ul>
+   </li>
+   <li>
+    (neural networks)
+    <ul>
+     <li>
+      with self-organizing map (SOM)
+     </li>
+    </ul>
+   </li>
+   <li>
+    (fuzzy logic) e.g. fuzzy c-means
+   </li>
+   <li>
+    (genetic algorithms)
+   </li>
+  </ul>
+  <p>
+   And also according to whether they are:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Divisive:
+    </strong>
+    "all items start in one cluster and are broken apart"
+   </li>
+   <li>
+    <strong>
+     Agglomerative:
+    </strong>
+    "all items start in individual clusters, and the clusters are joined together"
+   </li>
+  </ul>
+  <h4 id="k-means">
+   <a>
+    2.1.3.1. k-means
+   </a>
+  </h4>
+  <p>
+   Per Sharda et al. (2014, p. 182):
+  </p>
+  <ul>
+   <li>
+    <strong>
+     "Initialization step:
+    </strong>
+    Choose the number of clusters (i.e., the value of k).
+   </li>
+   <li>
+    <strong>
+     Step 1:
+    </strong>
+    Randomly generate k random points as initial cluster centers.
+   </li>
+   <li>
+    <strong>
+     Step 2:
+    </strong>
+    Assign each point to the nearest cluster center.
+   </li>
+   <li>
+    <strong>
+     Step 3:
+    </strong>
+    Recompute the new cluster centers.
+   </li>
+   <li>
+    <strong>
+     Repetition step:
+    </strong>
+    Repeat steps 2 and 3 until some convergence criterion is met (usually that the assignment of points to clusters becomes stable)."
+   </li>
+  </ul>
+  <h2 id="association">
+   <a>
+    2.2. Association
+   </a>
+  </h2>
+  <p>
+   "In essence, association rule mining [AKA affinity analysis, AKA market-basket analysis] aims to find interesting relationships (affinities) between variables (items) in large databases" (Sharda et al., 2014, p. 183).
+  </p>
+  <p>
+   Association rules have the following terms and notation:
+  </p>
+  <ul>
+   <li>
+    antecedent ==&gt; consequent [support, confidence]
+   </li>
+   <li>
+    <strong>
+     X ==&gt; Y [Supp(%), Conf(%)]
+    </strong>
+   </li>
+   <li>
+    {Laptop Computer, Antivirus Software} ==&gt; {Extended Service Plan} [30%, 70%]
+   </li>
+  </ul>
+  <h3 id="generic-association-methodology">
+   <a>
+    2.2.1. Generic association methodology
+   </a>
+  </h3>
+  <p>
+   "Several algorithms are available for discovering association rules ... [they] do only half the job, which is to identify the frequent itemsets in the database. Once the frequent itemsets are identified, they need to be converted into rules with antecedent and consequent parts ... [which is] a straightforward matching process, but the process may be time-consuming with large transaction databases.
+  </p>
+  <p>
+   Even though there may be many items in each section of the rule, in practice the consequent part usually contains a single item" (Sharda et al., 2014, p. 184).
+  </p>
+  <h3 id="evaluating-associations">
+   <a>
+    2.2.2. Evaluating associations
+   </a>
+  </h3>
+  <ul>
+   <li>
+    <strong>
+     Support
+    </strong>
+    =
+    <em>
+     Supp(X==&gt;Y)
+    </em>
+    = (number of baskets containing X and Y) / (total number of baskets)
+   </li>
+   <li>
+    <strong>
+     Confidence
+    </strong>
+    =
+    <em>
+     Conf(X==&gt;Y)
+    </em>
+    = Supp(X==&gt;Y)/Supp(X)
+   </li>
+   <li>
+    <strong>
+     Lift
+    </strong>
+    =
+    <em>
+     Lift(X==&gt;Y)
+    </em>
+    = Conf(X==&gt;Y)/Expected Conf(X==&gt;Y) = S(X==&gt;Y)/S(X)*S(Y)
+   </li>
+  </ul>
+  <h3 id="association-techniques">
+   <a>
+    2.2.3. Association techniques
+   </a>
+  </h3>
+  <h4 id="apriori-algorithm">
+   <a>
+    2.2.3.1. Apriori algorithm
+   </a>
+  </h4>
+  <p>
+   "Given a set of itemsets ... the algorithm attempts to find subsets that are common to at least a minimum number of items sets (i.e., complies with a minimum support). Apriori uses a bottom-up approach, where frequent subsets are extended one item at a time (a method known as _candidate generation ...), and groups of candidates at each level are tested agains the data for minimum support. The algorithm terminates when no further successful extensions are found" (Sharda et al., 2014, p. 185).
+  </p>
+  <h4 id="eclat">
+   <a>
+    2.2.3.2. Eclat
+   </a>
+  </h4>
+  <h4 id="fp-growth">
+   <a>
+    2.2.3.3. FP-Growth
+   </a>
+  </h4>
   <h2 id="prediction">
    <a>
-    2.1. Prediction
+    2.3. Prediction
    </a>
   </h2>
   <p>
@@ -1037,12 +1303,12 @@
   </p>
   <h3 id="regression">
    <a>
-    2.1.1. Regression
+    2.3.1. Regression
    </a>
   </h3>
   <h3 id="classification">
    <a>
-    2.1.2. Classification
+    2.3.2. Classification
    </a>
   </h3>
   <p>
@@ -1050,7 +1316,7 @@
   </p>
   <h4 id="classification-versus-clustering">
    <a>
-    2.1.2.1. Classification versus clustering
+    2.3.2.1. Classification versus clustering
    </a>
   </h4>
   <p>
@@ -1058,7 +1324,7 @@
   </p>
   <h4 id="generic-classification-methodology">
    <a>
-    2.1.2.2. Generic classification methodology
+    2.3.2.2. Generic classification methodology
    </a>
   </h4>
   <p>
@@ -1086,7 +1352,7 @@
   </ol>
   <h5 id="training-approaches">
    <a>
-    2.1.2.2.1. Training approaches
+    2.3.2.2.1. Training approaches
    </a>
   </h5>
   <p>
@@ -1134,7 +1400,7 @@
   </ul>
   <h4 id="evaluating-classification-models">
    <a>
-    2.1.2.3. Evaluating classification models
+    2.3.2.3. Evaluating classification models
    </a>
   </h4>
   <p>
@@ -1168,7 +1434,7 @@
   </ul>
   <h5 id="measuring-accuracy">
    <a>
-    2.1.2.3.1. Measuring accuracy
+    2.3.2.3.1. Measuring accuracy
    </a>
   </h5>
   <p>
@@ -1327,12 +1593,12 @@
   </ul>
   <h4 id="classification-techniques">
    <a>
-    2.1.2.4. Classification techniques
+    2.3.2.4. Classification techniques
    </a>
   </h4>
   <h5 id="decision-tree-analysis">
    <a>
-    2.1.2.4.1. Decision tree analysis
+    2.3.2.4.1. Decision tree analysis
    </a>
   </h5>
   <p>
@@ -1448,7 +1714,7 @@
   </ul>
   <h5 id="statistical-analysis">
    <a>
-    2.1.2.4.2. Statistical analysis
+    2.3.2.4.2. Statistical analysis
    </a>
   </h5>
   <p>
@@ -1456,7 +1722,7 @@
   </p>
   <h5 id="neural-networks">
    <a>
-    2.1.2.4.3. Neural networks
+    2.3.2.4.3. Neural networks
    </a>
   </h5>
   <p>
@@ -1464,7 +1730,7 @@
   </p>
   <h5 id="case-based-reasoning">
    <a>
-    2.1.2.4.4. Case-based reasoning
+    2.3.2.4.4. Case-based reasoning
    </a>
   </h5>
   <p>
@@ -1472,7 +1738,7 @@
   </p>
   <h5 id="bayesian-classifiers">
    <a>
-    2.1.2.4.5. Bayesian classifiers
+    2.3.2.4.5. Bayesian classifiers
    </a>
   </h5>
   <p>
@@ -1480,7 +1746,7 @@
   </p>
   <h5 id="genetic-algorithms">
    <a>
-    2.1.2.4.6. Genetic algorithms
+    2.3.2.4.6. Genetic algorithms
    </a>
   </h5>
   <p>
@@ -1488,172 +1754,12 @@
   </p>
   <h5 id="rough-sets">
    <a>
-    2.1.2.4.7. Rough sets
+    2.3.2.4.7. Rough sets
    </a>
   </h5>
   <p>
    "This method takes into account the partial membership of class labels into predefined categories in building models (collections of rules) for classification problems" (Sharda et al., 2014, p. 176).
   </p>
-  <h2 id="association">
-   <a>
-    2.2. Association
-   </a>
-  </h2>
-  <h3 id="support-confidence">
-   <a>
-    2.2.1. Support &amp; confidence
-   </a>
-  </h3>
-  <h3 id="apriori-algorithm">
-   <a>
-    2.2.2. Apriori algorithm
-   </a>
-  </h3>
-  <h2 id="clustering">
-   <a>
-    2.3. Clustering
-   </a>
-  </h2>
-  <p>
-   "Cluster analysis is an exploratory data analysis tool for solving classification problems. The objective is to sort cases (e.g., people, things, events) into groups, or clusters, so that the degree of association is strong among members of the same cluster and weak among members of different clusters" (Sharda et al., 2014, pp. 180).
-  </p>
-  <h3 id="clustering-versus-classification">
-   <a>
-    2.3.1. Clustering versus classification
-   </a>
-  </h3>
-  <p>
-   Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used to determine groups (or class memberships) of things, there is a significant difference between the two. Classification learns the function between the characteristics of things (i.e., [their] independent variables) and their membership (i.e., output variable) through a supervised learning process where both types (input and output) of variables are presented to the algorithm; in clustering, the membership of the objects is learned through an unsupervised learning process where only the input variables are presented to the algorithm. Unlike classification, clustering does not habe a supervising (or controlling) mechanism that enforces the learning process; instead, clustering algorithms use one or more heuristics (e.g., multidimensional distance measure) to discover natural groupings of objects."
-  </p>
-  <h3 id="generic-clustering-methodology">
-   <a>
-    2.3.2. Generic clustering methodology
-   </a>
-  </h3>
-  <p>
-   Clustering algorithms usually require the desired
-   <strong>
-    number of clusters
-   </strong>
-   to be set as a parameter. To estimate this parameter, there are several different approaches (Sharda et al., 2014, p. 181):
-  </p>
-  <ul>
-   <li>
-    "Look at the percentage of variance explained as a function of the number of clusters; that is, choose a number of clusters so that adding another cluster would not give much better modeling of the data"
-   </li>
-   <li>
-    Set the number of clusters to (n/2)
-    <sup>
-     1/2
-    </sup>
-    , where n is the number of data points"
-   </li>
-   <li>
-    "Use the Akaike information criterion (AIC), which is a measure of the goodness of fit (based on the concept of entropy) to determine the number of clusters"
-   </li>
-   <li>
-    "Use Bayesian information criterion (BIC), which is a model-selection criterion (based on maximum likelihood estimation)"
-   </li>
-  </ul>
-  <p>
-   "Most cluster analysis methods involve the use of a
-   <strong>
-    distance measure
-   </strong>
-   to calculate the closeness between pairs of items. Popular distance measures include Euclidean distance (the ordinary distance between two points that one would measure with a ruler) and Manhattan distance (also called rectilinear distance, or taxicab distance, between two points). ... Weighted averages may be used to establish these distances" (Sharda et al., 2014, 182).
-  </p>
-  <h3 id="clustering-techniques">
-   <a>
-    2.3.3. Clustering techniques
-   </a>
-  </h3>
-  <p>
-   Per Sharda et al. (2014, p. 181), algorithms may be classified by approach:
-  </p>
-  <ul>
-   <li>
-    (statistical) e.g. k-means, k-modes
-    <ul>
-     <li>
-      (hierarchical)
-     </li>
-     <li>
-      (non--hierarchical)
-     </li>
-    </ul>
-   </li>
-   <li>
-    (neural networks)
-    <ul>
-     <li>
-      with self-organizing map (SOM)
-     </li>
-    </ul>
-   </li>
-   <li>
-    (fuzzy logic) e.g. fuzzy c-means
-   </li>
-   <li>
-    (genetic algorithms)
-   </li>
-  </ul>
-  <p>
-   And also according to whether they are:
-  </p>
-  <ul>
-   <li>
-    <strong>
-     Divisive:
-    </strong>
-    "all items start in one cluster and are broken apart"
-   </li>
-   <li>
-    <strong>
-     Agglomerative:
-    </strong>
-    "all items start in individual clusters, and the clusters are joined together"
-   </li>
-  </ul>
-  <h4 id="k-means">
-   <a>
-    2.3.3.1. k-means
-   </a>
-  </h4>
-  <p>
-   Per Sharda et al. (2014, p. 182):
-  </p>
-  <ul>
-   <li>
-    <strong>
-     "Initialization step:
-    </strong>
-    Choose the number of clusters (i.e., the value of k).
-   </li>
-   <li>
-    <strong>
-     Step 1:
-    </strong>
-    Randomly generate k random points as initial cluster centers.
-   </li>
-   <li>
-    <strong>
-     Step 2:
-    </strong>
-    Assign each point to the nearest cluster center.
-   </li>
-   <li>
-    <strong>
-     Step 3:
-    </strong>
-    Recompute the new cluster centers.
-   </li>
-   <li>
-    <strong>
-     Repetition step:
-    </strong>
-    Repeat steps 2 and 3 until some convergence criterion is met (usually that the assignment of points to clusters becomes stable)."
-   </li>
-  </ul>
   <h1 id="sources">
    <a>
     3. Sources

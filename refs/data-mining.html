@@ -15,31 +15,47 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; data mining | just under 1238 words | updated 12/27/2017
+   &gt; data mining | just under 1235 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
     <li>
      1.
-     <a href="#dm-applications-by-technique">
-      DM applications by technique
+     <a href="#what-is-data-mining">
+      What is data mining?
      </a>
-     -  1.1.
-     <a href="#dm-applications-by-industry">
-      DM applications by industry
-     </a>
-     -  1.2.
-     <a href="#dm-processes">
-      DM processes
-     </a>
-     -  1.3.
-     <a href="#dm-software">
-      DM software
-     </a>
-     -  1.4.
-     <a href="#common-dm-pitfalls">
-      Common DM pitfalls
-     </a>
+     <ul>
+      <li>
+       1.1.
+       <a href="#dm-applications-by-technique">
+        DM applications by technique
+       </a>
+      </li>
+      <li>
+       1.2.
+       <a href="#dm-applications-by-industry">
+        DM applications by industry
+       </a>
+      </li>
+      <li>
+       1.3.
+       <a href="#dm-processes">
+        DM processes
+       </a>
+      </li>
+      <li>
+       1.4.
+       <a href="#dm-software">
+        DM software
+       </a>
+      </li>
+      <li>
+       1.5.
+       <a href="#common-dm-pitfalls">
+        Common DM pitfalls
+       </a>
+      </li>
+     </ul>
     </li>
     <li>
      2.
@@ -149,18 +165,21 @@
     </li>
    </ul>
   </div>
-  <p>
-   (business applications of these techniques are discussed in
-   <a href="https://jtkovacs.github.io/refs/bi.html">
-    notes on BI systems.)
+  <h1 id="what-is-data-mining">
+   <a>
+    1. What is data mining?
    </a>
-  </p>
+  </h1>
   <p>
    Per Sharda et al. (2014), the field of data mining draws on
    <em>
     statistics, artificial intelligence and machine learning
    </em>
-   to create data mining tools that facilitate the discovery of meaningful patterns in large database-stored datasets. Adapted from Sharda et al. (2014, p. 157), there are three general patterns sought:
+   to create data mining tools that facilitate the discovery of meaningful patterns in large BI datasets(see
+   <a href="https://jtkovacs.github.io/refs/bi.html">
+    notes on BI systems).
+   </a>
+   Adapted from Sharda et al. (2014, p. 157), there are three general patterns sought:
   </p>
   <table>
    <tr>
@@ -302,35 +321,38 @@
     notes on machine learning.
    </a>
   </p>
-  <h5 id="dm-applications-by-technique">
+  <h2 id="dm-applications-by-technique">
    <a>
-    1. DM applications by technique
+    1.1. DM applications by technique
    </a>
-  </h5>
+  </h2>
   <p>
    Per Sharda et al. (2015, pp. 172; 181; 183):
   </p>
   <table>
    <tr>
     <th>
-     Prediction
+     Clustering
     </th>
     <td style="text-align:left;">
      <ul>
       <li>
-       credit approval
+       "improve product placement on the sales floor ... and [coordinate] promotional pricing of products"
       </li>
       <li>
-       store location
+       identify credit fraud based on purchase combinations
       </li>
       <li>
-       target marketing
+       "sequentional patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"
       </li>
       <li>
-       fraud detection
+       "structure product bundles to maximize revenue"
       </li>
       <li>
-       attrition
+       detect elevated medical risk as a combination of factors
+      </li>
+      <li>
+       detect that "certain procedures at certain medical facilities can be tied to certain types of infection"
       </li>
      </ul>
     </td>
@@ -367,37 +389,34 @@
    </tr>
    <tr>
     <th>
-     Clustering
+     Prediction
     </th>
     <td style="text-align:left;">
      <ul>
       <li>
-       "improve product placement on the sales floor ... and [coordinate] promotional pricing of products"
+       credit approval
       </li>
       <li>
-       identify credit fraud based on purchase combinations
+       store location
       </li>
       <li>
-       "sequentional patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"
+       target marketing
       </li>
       <li>
-       "structure product bundles to maximize revenue"
+       fraud detection
       </li>
       <li>
-       detect elevated medical risk as a combination of factors
-      </li>
-      <li>
-       detect that "certain procedures at certain medical facilities can be tied to certain types of infection"
+       attrition
       </li>
      </ul>
     </td>
    </tr>
   </table>
-  <h5 id="dm-applications-by-industry">
+  <h2 id="dm-applications-by-industry">
    <a>
-    1.1. DM applications by industry
+    1.2. DM applications by industry
    </a>
-  </h5>
+  </h2>
   <p>
    Per Sharda et al. (2014, pp. 160-161):
   </p>
@@ -624,11 +643,11 @@
     </ul>
    </li>
   </ul>
-  <h5 id="dm-processes">
+  <h2 id="dm-processes">
    <a>
-    1.2. DM processes
+    1.3. DM processes
    </a>
-  </h5>
+  </h2>
   <p>
    Per Sharda et al. (2014):
   </p>
@@ -711,11 +730,11 @@
   <p>
    ** Knowledge Discovery in Databases, c. 1996
   </p>
-  <h5 id="dm-software">
+  <h2 id="dm-software">
    <a>
-    1.3. DM software
+    1.4. DM software
    </a>
-  </h5>
+  </h2>
   <p>
    Per Sharda et al. (2015, p. 187), some commerical tools:
   </p>
@@ -840,11 +859,11 @@
     ...
    </li>
   </ul>
-  <h5 id="common-dm-pitfalls">
+  <h2 id="common-dm-pitfalls">
    <a>
-    1.4. Common DM pitfalls
+    1.5. Common DM pitfalls
    </a>
-  </h5>
+  </h2>
   <p>
    Per Sharda et al. (2015, p. 195):
   </p>

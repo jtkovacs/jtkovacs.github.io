@@ -1,8 +1,9 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 1238 words | updated 12/27/2017</p><div class="TOC">				- &nbsp;1. [DM applications by technique](#dm-applications-by-technique)
-				- &nbsp;1.1. [DM applications by industry](#dm-applications-by-industry)
-				- &nbsp;1.2. [DM processes](#dm-processes)
-				- &nbsp;1.3. [DM software](#dm-software)
-				- &nbsp;1.4. [Common DM pitfalls](#common-dm-pitfalls)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data mining | just under 1235 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is data mining?](#what-is-data-mining)
+	- &nbsp;1.1. [DM applications by technique](#dm-applications-by-technique)
+	- &nbsp;1.2. [DM applications by industry](#dm-applications-by-industry)
+	- &nbsp;1.3. [DM processes](#dm-processes)
+	- &nbsp;1.4. [DM software](#dm-software)
+	- &nbsp;1.5. [Common DM pitfalls](#common-dm-pitfalls)
 - &nbsp;2. [Prediction](#prediction)
 	- &nbsp;2.1. [Regression](#regression)
 	- &nbsp;2.2. [Classification](#classification)
@@ -21,10 +22,10 @@
 	- &nbsp;3.4. [Unrea](#unrea)
 </div>
 
-(business applications of these techniques are discussed in [notes on BI systems.\)](https://jtkovacs.github.io/refs/bi.html)
 
+# 1. What is data mining?
 
-Per Sharda et al. (2014), the field of data mining draws on _statistics, artificial intelligence and machine learning_ to create data mining tools that facilitate the discovery of meaningful patterns in large database-stored datasets. Adapted from Sharda et al. (2014, p. 157), there are three general patterns sought:
+Per Sharda et al. (2014), the field of data mining draws on _statistics, artificial intelligence and machine learning_ to create data mining tools that facilitate the discovery of meaningful patterns in large BI datasets(see [notes on BI systems\).](https://jtkovacs.github.io/refs/bi.html) Adapted from Sharda et al. (2014, p. 157), there are three general patterns sought:
 
 <table>
     <tr><th colspan=2>Data Mining Task</th><th>Learning Method</th><th>Popular Algorithms</th></tr>
@@ -40,18 +41,19 @@ Per Sharda et al. (2014), the field of data mining draws on _statistics, artific
 
 See [notes on statistics](https://jtkovacs.github.io/refs/statistics.html) and [notes on machine learning.](https://jtkovacs.github.io/refs/machine-learning.html)
 
-##### 1. DM applications by technique
+## 1.1. DM applications by technique
 
 Per Sharda et al. (2015, pp. 172; 181; 183):
 
 <table>
-    <tr><th>Prediction</th>
+    <tr><th>Clustering</th>
     <td style="text-align:left;"><ul>
-        <li>credit approval</li>
-        <li>store location</li>
-        <li>target marketing</li>
-        <li>fraud detection</li>
-        <li>attrition</li>
+        <li>"improve product placement on the sales floor ... and [coordinate] promotional pricing of products"</li>
+        <li>identify credit fraud based on purchase combinations</li>
+        <li>"sequentional patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
+        <li>"structure product bundles to maximize revenue"</li>
+        <li>detect elevated medical risk as a combination of factors</li>
+        <li>detect that "certain procedures at certain medical facilities can be tied to certain types of infection"</li>
     </ul></td></tr>
     <tr><th>Association</th>
     <td style="text-align:left;"><ul>
@@ -63,18 +65,17 @@ Per Sharda et al. (2015, pp. 172; 181; 183):
         <li>"decrease the size and complexity of the problem space for other data mining methods"</li>
         <li>"identify outliers in a specific domain (i.e., rare-event detection)"</li>
     </ul></td></tr>
-    <tr><th>Clustering</th>
+    <tr><th>Prediction</th>
     <td style="text-align:left;"><ul>
-        <li>"improve product placement on the sales floor ... and [coordinate] promotional pricing of products"</li>
-        <li>identify credit fraud based on purchase combinations</li>
-        <li>"sequentional patterns of services used by customers (checking account followed by savings account) can be used to identify other services they may be interested in (investment account)"</li>
-        <li>"structure product bundles to maximize revenue"</li>
-        <li>detect elevated medical risk as a combination of factors</li>
-        <li>detect that "certain procedures at certain medical facilities can be tied to certain types of infection"</li>
+        <li>credit approval</li>
+        <li>store location</li>
+        <li>target marketing</li>
+        <li>fraud detection</li>
+        <li>attrition</li>
     </ul></td></tr>
 </table>
 
-##### 1.1. DM applications by industry
+## 1.2. DM applications by industry
 
 Per Sharda et al. (2014, pp. 160-161):
 
@@ -134,7 +135,7 @@ Per Sharda et al. (2014, pp. 160-161):
     - predict market reception of a movie, album, etc.
     - forecasting to inform scheduling
 
-##### 1.2. DM processes
+## 1.3. DM processes
 
 Per Sharda et al. (2014):
 
@@ -152,7 +153,7 @@ Per Sharda et al. (2014):
 
 \*\* Knowledge Discovery in Databases, c. 1996
 
-##### 1.3. DM software
+## 1.4. DM software
 
 Per Sharda et al. (2015, p. 187), some commerical tools:
 
@@ -198,7 +199,7 @@ Also, they cite a poll from KDNuggets.com (most to least popular):
 - Other commercial software
 - ...
 
-##### 1.4. Common DM pitfalls
+## 1.5. Common DM pitfalls
 
 Per Sharda et al. (2015, p. 195):
 

@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; data mining | just under 2054 words | updated 12/28/2017
+   &gt; data mining | just under 2292 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -1055,13 +1055,22 @@
   </p>
   <ol style="list-style-type: decimal">
    <li>
-    Model development AKA training: "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
+    <strong>
+     Model development AKA training:
+    </strong>
+    "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
    </li>
    <li>
-    Model testing: "the model is tested against the holdout sample for accuracy assessment ..."
+    <strong>
+     Model testing:
+    </strong>
+    "the model is tested against the holdout sample for accuracy assessment ..."
    </li>
    <li>
-    Model deployment: "... and eventually deployed for actual use"
+    <strong>
+     Model deployment:
+    </strong>
+    "... and eventually deployed for actual use"
    </li>
   </ol>
   <h5 id="training-approaches">
@@ -1069,21 +1078,47 @@
     2.1.2.2.1. Training approaches
    </a>
   </h5>
+  <p>
+   Per Sharda et al. (2014, pp. 174-175):
+  </p>
   <ul>
    <li>
-    Simple split
+    <strong>
+     Simple split
+    </strong>
+    AKA holdout AKA: two mutually-exclusive sets, typically 2/3 training data
+    <ul>
+     <li>
+      "[If] the classifier is an artificial neural network ... the data is partitioned into three mutually exclusive subsets: training, validation, and testing ... to prevent over-fitting"
+     </li>
+     <li>
+      Partitioning can be random or stratified; in either case there is bias (if the classification variable isn't distributed normally), but less in the latter
+     </li>
+    </ul>
    </li>
    <li>
-    k-fold cross-validation AKA rotation estimation
+    <strong>
+     k-fold cross-validation (CVA)
+    </strong>
+    AKA rotation estimation: "the complete dataset is randomly split into k mutually exclusive datasets of approximately equal size. The classification model is trained and tested k times. Each time it is trained on all but one fold and then tested on the remaining single fold. The cross-validation estimate of the overall accuracy of a model is calculated by simply averaging the k individual accuracy measures."
    </li>
    <li>
-    leave-one-out
+    <strong>
+     Leave-one-out:
+    </strong>
+    "similar to k-fold cross-validation where the k takes the value of 1; that is, every data point is used for testing once on as many models developed as there are number of data points. [???????] This is a time-consuming methodology, but sometimes for small data sets it is a viable option."
    </li>
    <li>
-    bootstrapping
+    <strong>
+     Bootstrapping:
+    </strong>
+    "fixed number of instances from the original data are sampled (with replacement) for training and the rest of the data set is used for testing. This process is repeated as many times as desired."
    </li>
    <li>
-    jackknifing
+    <strong>
+     Jackknifing:
+    </strong>
+    "similar to the leave-one-out methodology ... accuracy is calculated by leaving one sample out at each iteration of the estimation process."
    </li>
   </ul>
   <h4 id="evaluating-classification-models">

@@ -221,17 +221,21 @@ Per Sharda et al. (2014, p. 172), "Even though clustering ... can also be used t
 
 Per Sharda et al. (2014):
 
-1. Model development AKA training: "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
-2. Model testing: "the model is tested against the holdout sample for accuracy assessment ..."
-3. Model deployment: "... and eventually deployed for actual use"
+1. **Model development AKA training:** "a collection of input data, including the actual class labels, is used ... [and] the model is trained"
+2. **Model testing:** "the model is tested against the holdout sample for accuracy assessment ..."
+3. **Model deployment:** "... and eventually deployed for actual use"
 
 ##### Training approaches
 
-- Simple split
-- k-fold cross-validation AKA rotation estimation
-- leave-one-out
-- bootstrapping
-- jackknifing
+Per Sharda et al. (2014, pp. 174-175):
+
+- **Simple split** AKA holdout AKA: two mutually-exclusive sets, typically 2/3 training data
+    - "[If] the classifier is an artificial neural network ... the data is partitioned into three mutually exclusive subsets: training, validation, and testing ... to prevent over-fitting"
+    - Partitioning can be random or stratified; in either case there is bias (if the classification variable isn't distributed normally), but less in the latter
+- **k-fold cross-validation (CVA)** AKA rotation estimation: "the complete dataset is randomly split into k mutually exclusive datasets of approximately equal size. The classification model is trained and tested k times. Each time it is trained on all but one fold and then tested on the remaining single fold. The cross-validation estimate of the overall accuracy of a model is calculated by simply averaging the k individual accuracy measures."
+- **Leave-one-out:** "similar to k-fold cross-validation where the k takes the value of 1; that is, every data point is used for testing once on as many models developed as there are number of data points. [???????] This is a time-consuming methodology, but sometimes for small data sets it is a viable option."
+- **Bootstrapping:** "fixed number of instances from the original data are sampled (with replacement) for training and the rest of the data set is used for testing. This process is repeated as many times as desired."
+- **Jackknifing:** "similar to the leave-one-out methodology ... accuracy is calculated by leaving one sample out at each iteration of the estimation process."
 
 #### Evaluating classification models
 
@@ -256,7 +260,7 @@ From Sharda et al. (2014, pp. 173-174), the universally-known **confusion matrix
 Common accuracy metrics:
 
 | Formula | Description |
-| --- | --- |
+| --- | ------- |
 | TRUE POSITIVE RATE = RECALL = TP/(TP+FN) | "The ratio of correctly classified positives divided by the sum of correctly classified positives and incorrectly classified negatives" |
 | TRUE NEGATIVE RATE = TN/(TN+FP) | "The ratio of correctly classified negatives divided by the total negative count (i.e., false alarm rate)" i.e., the sum of correctly classified negatives and incorrectly classified positives" |
 | ACCURACY = (TP+TN)/(TP+TN+FP+FN) | "The ratio of correctly classified instances (positives and negatives) divided by the total number of instances" |

@@ -7,7 +7,7 @@ IR occurs when a user retrieves information objects AKA content objects (documen
 
 ## IR systems
 
-- Catalogs, search engines, ??? 
+- Catalogs, search engines, ???
 - Svenonius (2005): "Systems that do not employ vocabulary control may be characterized in terms of their indexing: natural language, derived, keyword, or title word indexing; or, in terms of the type of searching they allow: free-text searching or full-text searching. It is not a foregone conclusion that a system with vocabulary control is better than one without it."
 
 
@@ -19,24 +19,24 @@ Information professionals work to ensure that IR (1) has good **precision,** AKA
 
 - **CATALOGING** the object, i.e. describing/representing an information object with metadata, including subject headings and subheadings. Subject headings and subheadings can be combined from the beginning (precoordination) or combined by users while searching (postcoordination)
 
-    - Assigning subject headings (called "subject cataloging") entails **CLASSIFYING** objects. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522). 
+    - Assigning subject headings (called "subject cataloging") entails **CLASSIFYING** objects. "In LIS, the term 'classification' is used to refer to three distinct but related concepts: a system of classes, ordered according to a predetermined set of principles and used to organize a set of entities; a group or class in a classification system; and the process of assigning entities to classes in a classification system" (Jacob, 2004, p.522).
     - The first sense of classification given here (constructing classes) may also be called **CATEGORIZATION,** although categories are perhaps less strict than classes. "Categorization is the process of dividing the world into groups of entities whose members are in some way similar to each ... By reducing the load on memory and facilitating the efficient storage and retrieval of information, categorization serves as the fundamental cognitive mechanism that simplifies the individual’s experience of the environment" (Jacob, 2004, p. 518).
-    
-- **INDEXING** the object, i.e. mapping out the contents of an information object, perhaps using terms from a CV (at minimum, for named entities, an authority file should be consulted). 
+
+- **INDEXING** the object, i.e. mapping out the contents of an information object, perhaps using terms from a CV (at minimum, for named entities, an authority file should be consulted).
 
     - Although **TAGGING** or keywording is occasionally used as a synonym for indexing, it is more often used to denote the opposite of indexing, in which keywords emerge from an information itself rather than from an indexing language. This allows for a grassroots view of what something is about.
-    
+
     - Indexing may be performed by machines when it is **necessary** (there are many documents; content changes quickly; speed matters) or when it is **suitable** (documents are inherently structured; documents fall within a small domain; documents are only text).
-        - Automatic indexing with a CV (AKA auto-tagging, -classification, -categorization) may be rules-based (e.g., using regex) or machine learning-based (Bayesian, support vector machines, neural networks). Regardless, performance is better with pre-coordinated terms. 
+        - Automatic indexing with a CV (AKA auto-tagging, -classification, -categorization) may be rules-based (e.g., using regex) or machine learning-based (Bayesian, support vector machines, neural networks). Regardless, performance is better with pre-coordinated terms.
         - Automatic indexing that doesn't use a CV is called information extraction, which includes**entity extraction** AKA entity recognition, entity identification.
 <br/><br/>
-    - Indexing may be performed by humans (professionals or social media users) when it is **necessary** (accuracy matters more than speed; must index nontext objects; content lacks inherent structure; content varies greatly) or **feasible** (few documents). 
-        - Human professional indexing consists of 
-            - analyzing content; 
-            - assigning terms; and possibly 
+    - Indexing may be performed by humans (professionals or social media users) when it is **necessary** (accuracy matters more than speed; must index nontext objects; content lacks inherent structure; content varies greatly) or **feasible** (few documents).
+        - Human professional indexing consists of
+            - analyzing content;
+            - assigning terms; and possibly
             - assigning relevancy scores/weights to the terms.
         - Human social indexing produced a **folksonomy,** different from the anthropological term "folk taxonomy" that describes informal categorization schemes.
-    
+
 <table style="padding-left: 90px;">
 <tr><th></th><th></th>
 <th colspan="3">INDEXING AGENT</th></tr>
@@ -60,21 +60,21 @@ Information professionals work to ensure that IR (1) has good **precision,** AKA
 
 
 ### Searching, browsing, & navigating
-    
+
 To retrieve information, users engage with information systems by:
 
 - **SEARCHING** for a specific piece of information; this is the concern of back-end IA. Simultaneous search of multiple information systems is called metasearching, broadcast searching, cross-database searching, federated searching, and parallel searching.
-    
-- **BROWSING** a collection of information; this is the concern of front-end IA, with the goal of intuitive user interfaces and navigational structures. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157). 
+
+- **BROWSING** a collection of information; this is the concern of front-end IA, with the goal of intuitive user interfaces and navigational structures. Browsing is "quick examination of the relevance of a number of objects which may or may not lead to a closer examination or acquisition/selection of (some of) these objects" Hjørland (2011); "visually scanning through organized collections of representations of content objects" (ANSI/NISO Z39.19-2005, p. 157).
 
     - **NAVIGATION** is related to browsing, but has implications of (1) traversing a website (2) via "pre-established links or relationships" (ANSI/NISO Z39.19-2005, p. 162).
 
 
-    
-    
+
+
 # What is information architecture?
 
-Rosenfeld, Morville, and Arango (2015) say that IA aims to facilitate both the finding and understanding of information. The "finding" dimension of IA is information retrieval, the legacy of library science; the "understanding" dimension comes via Richard Saul Wurman, who focused on making complex systems intelligible through visualization. 
+Rosenfeld, Morville, and Arango (2015) say that IA aims to facilitate both the finding and understanding of information. The "finding" dimension of IA is information retrieval, the legacy of library science; the "understanding" dimension comes via Richard Saul Wurman, who focused on making complex systems intelligible through structured presentation, visualization, etc.
 
 ## Must information be organized?
 
@@ -91,11 +91,11 @@ Per Abrahamson and Freedman (2008):
 Hedden (2016) offers a typology in which taxonomies (i.e., knowledge organization structures) have different bases/origins. KOSs may be (1) objective, with obvious empirical basis; (2) socially-negotiated, perhaps eventually becoming (3) culturally embedded; or (4) idiosyncratic:
 
 ![](../illos/taxonomy_status.png)
-    
+
 ## What ways can things be organized?
 
 Schemas and structures work together. For example, my Zotero library is a hierarchy (structure) of topical categories (schema), automatically sorted by alphabet (schema).
-The distinction I draw is that "schemas" are for the conceptual (abstract, disembodied) organization of information into groups, whereas "structures" describe group configuration. 
+The distinction I draw is that "schemas" are for the conceptual (abstract, disembodied) organization of information into groups, whereas "structures" describe group configuration.
 
 ### Information schemas
 
@@ -115,9 +115,9 @@ Can’t express constraints on the data, but express structure well.
 
 ##### Hierarchical
 
-Per Zeng (n.d.), 
+Per Zeng (n.d.),
 
-- **Strict hierarchies** (trees) can model three different types of real-world relationships: 
+- **Strict hierarchies** (trees) can model three different types of real-world relationships:
     - __Generic:__ _X is a Y_ or _All X are Y, and some Y are X_
         - Succulent: Cactus (NTG)
         - Cactus: Succulent (BTG)
@@ -138,7 +138,7 @@ AKA networks, triples, ontologies. Enables explicit modeling of different kinds 
 ##### Relational
 
 Tables with columns, implicitly related via attributes; see [notes on relational databases.](databases.html#the-relational-data-model)
-    
+
 #### Object-based
 
 Allow specification of constraints, but not overall structure. Objects are instances of classes; classes and objects have attributes (properties, characteristics, adjectives/nouns) and methods (actions, functions, behaviors, verbs).
@@ -163,9 +163,9 @@ Allow specification of constraints, but not overall structure. Objects are insta
 
 # What is taxonomy?
 
-Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings. 
+Per Hedden, taxonomy --- the law or science (nomos) of order (taxis) --- has both general and specific meanings.
 
-In general, taxonomy is the discipline of creating and managing taxonomies, a term synonymous with knowledge organization structures/systems (KOS) and very nearly synonymous with controlled vocabularies (CVs). As a field, taxonomy has roots in biological taxonomies and library catalogs (which existed even in antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread. 
+In general, taxonomy is the discipline of creating and managing taxonomies, a term synonymous with knowledge organization structures/systems (KOS) and very nearly synonymous with controlled vocabularies (CVs). As a field, taxonomy has roots in biological taxonomies and library catalogs (which existed even in antiquity as scrolls). Companies began to use taxonomies for corporate knowledge asset management very marginally in the 1980s, then increasingly in the 1990s as web technologies spread.
 
 Beyond this general sense, taxonomies are also [specific kinds of KOSs.](#what-are-knowledge-organization-structures?)
 
@@ -184,7 +184,11 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 | Taxonomy | X | X | X | |
 | Thesaurus | X | X | X | X |
 
-**Term lists** are essentially flat list, though they may include "See"/"Use" to steer people towards preferred language, or use a synonym ring approach (no preferred term among multiple). 
+**Terms** are meant to be atomic units of meaning---single or multi-word phrases.
+
+**Concepts** are combinations of terms.
+
+**Term lists** are essentially flat list, though they may include "See"/"Use" to steer people towards preferred language, or use a synonym ring approach (no preferred term among multiple).
 
 - **Name authority file:** Identifies the definitive version of a name among all variants
 - [Glossary](project-management.html#glossaries) (vocabulary, clavis, specialized dictionary): An alphabetical list of terms with definitions inside a particular domain of knowledge.
@@ -194,21 +198,20 @@ In order of increasing complexity (number, kind, and configuration of relationsh
 
 **Synonym rings** AKA synsets associate synonyms without indicating preference for one over the others (equivalence relationship). Synsets are usually invisible to users, e.g. underpinning a search engine.
 
-**Taxonomies** AKA hierarchies AKA hierarchical taxonomies AKA tree structures arrange terms into parent/child relationships beneath a single top term (TT). A strict hierarchy requires that each term have a single parent AKA broader term (BT), though they may have multiple siblings and children AKA narrower terms (NT). 
+**Taxonomies** AKA hierarchies AKA hierarchical taxonomies AKA tree structures arrange terms into parent/child relationships beneath a single top term (TT). A strict hierarchy requires that each term have a single parent AKA broader term (BT), though they may have multiple siblings and children AKA narrower terms (NT).
 
-Indexing a content object with a term is called posting; a given term contains X postings. The practice of indexing a content object with a broader term rather than a narrower term is called generic posting. If, instead, the content object is indexed with narrower and broader terms, this is called up-posting AKA autoposting. Generic posting also means subsuming narrower terms under a preferred broader term in a controlled vocabulary.
-
-Taxonomies are a top-down approach. Thus, there may occasionally be node labels AKA blind references AKA facet indicators: terms in a CV that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
+- Indexing a content object with a term is called **posting;** a given term contains X postings. The practice of indexing a content object with a broader term rather than a narrower term is called **generic posting.** If, instead, the content object is indexed with narrower and broader terms, this is called **up-posting** AKA autoposting. Generic posting _also_ means subsuming narrower terms under a preferred broader term when defining a controlled vocabulary.
+- There may occasionally be **node labels** AKA blind references AKA facet indicators --- terms in a CV that are never applied to a content object, but exist to preserve a coherent logical structure or to expose the logic behind choices made.
 
 **Microcontrolled vocabularies** are subsets of a controlled vocabulary, creating a specialist CV.
 
-**Faceted taxonomies** are a bottom-up approach to providing multiple views of the same content objects, based on shared attributes like topic, location, format, author, etc. They are often presented as navigation aids or search refinments; they may also be used to organize  very large controlled vocabulary. 
+**Faceted taxonomies** are a bottom-up approach to providing multiple views of the same content objects, based on shared attributes like topic, location, format, author, etc. They are often presented as navigation aids or search refinments; they may also be used to organize  very large controlled vocabulary.
 
 **Polyhierarchies** are hierarchies in which children may have multiple parents.
 
 **Thesauri** capture associative relationships AKA related terms (RT) in addition to equivalence (U/UF) and hierarchical (BT/NT) relationships. Relationships are also called cross-references; they should be reciprocal (explicit entry at term Y linking to term X, explicit entry at term X linking to term Y) and may or may not be symmetric. Thesauri are useful for representing a very large controlled vocabulary.
 
-**Semantic networks** fall short, in some way, of full **ontologies,** which are defined by their:   
+**Semantic networks** fall short, in some way, of full **ontologies,** which are defined by their:
 
 - Ambition to "[define] a set of representational primitives [atoms] with which to model a domain of knowledge or discourse" (Tom Gruber, qtd. in Hedden, 2015)
 - Network/graph model of interconnected triples (subject-predicate-object)
@@ -220,19 +223,19 @@ Relevant technologies include RDF, OWL, and topic maps.
 
 ### KOSs by role in IR
 
-As part of ingesting a content object into an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about: 
+As part of ingesting a content object into an information system, KOSs can be applied to the content object at several levels, creating more or less granular pictures of what the object is about:
 
 - Subject headings applied during cataloging may be organized in hierarchical (single parent), polyhierarchical (multi-parent), and faceted taxonomies
 - Indexing may use indexing terms from an authority file or other CV
 
-Information consumers depend on KOSs to browse and search content objects: 
+Information consumers depend on KOSs to browse and search content objects:
 
 - Browsing and navigating are supported by hierarchical taxonomies, faceted taxonomies, and pick lists
 - [Search engines](search-engines.html) may use synonym rings AKA synsets to convert between user search terms and indexing terms that represent content objects
     - Small search engines (for website, intranet, CMS, repository) may use thesauri to facilitate search
 
-See also [uses of CVs.](#uses-of-cvs)    
-    
+See also [uses of CVs.](#uses-of-cvs)
+
 
 ## What are reference works?
 
@@ -242,12 +245,12 @@ Reference works are information-dense resources meant to be consulted for specif
 - **Lexicon:** The ‘catalog’ of a language’s words, which together with a ‘grammar’ constitutes the language.
 - **Lexical database:** Stores terms along with information about terms.
 - **Encyclopedia:** A type of reference work or compendium holding a comprehensive summary of information from either all branches of knowledge or a particular branch of knowledge.
-- **Bibliography:** Collected citations for related books, articles, etc., which may be as simple as a reading list or may be extensively annotated. 
-- **Thesaurus:** A list of words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words, and generally lists them in alphabetical order. 
-- **Almanac:** An annual publication that includes information such as weather forecasts, farmers' planting dates, tide tables, and tabular information often arranged according to the calendar. 
+- **Bibliography:** Collected citations for related books, articles, etc., which may be as simple as a reading list or may be extensively annotated.
+- **Thesaurus:** A list of words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words, and generally lists them in alphabetical order.
+- **Almanac:** An annual publication that includes information such as weather forecasts, farmers' planting dates, tide tables, and tabular information often arranged according to the calendar.
 - **Gazetteer:** A gazetteer is a geographical dictionary or directory used in conjunction with a map or atlas. They typically contain information concerning the geographical makeup, social statistics and physical features of a country, region, or continent.
 - **Directory:** A listing of information for location/navigation; e.g. business direcfory, telephone directory, web directory.
-- **Catalog:** A listing of content objects (their description and location). 
+- **Catalog:** A listing of content objects (their description and location).
 
 
 
@@ -255,7 +258,7 @@ Reference works are information-dense resources meant to be consulted for specif
 
 ## What are controlled vocabularies?
 
-CVs (AKA authority lists) consist of **terms, syntax** (how terms may be combined), and **term records** containing each term's **semantic relationships, scope notes,** and **history notes.**    
+CVs (AKA authority lists) consist of **terms, syntax** (how terms may be combined), and **term records** containing each term's **semantic relationships, scope notes,** and **history notes.**
 
 Controlled vocabularies stand in contrast with natural languages, which undermine information retrieval because they are fraught with polysemes* (ambiguous words --- both homographs and synonyms/near-synonyms/quasi-synonyms). At minimum, to avoid the IR pitfalls of natural languages CVs must:
 
@@ -277,11 +280,11 @@ Controlled vocabularies stand in contrast with natural languages, which undermin
 
 ### Uses of CVs
 
-Svenonius (2005), also see [KOSs by role in IR:](#koss-by-role-in-ir) *"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."*    
+Svenonius (2005), also see [KOSs by role in IR:](#koss-by-role-in-ir) *"In the form of terminological databanks, CVs are used to assist in both manual and automatic translation. In the form of glossaries, they standardize and explicate the meaning or usage of terms in specialized fields of activity. In the form of literary thesauri they assist in composition by facilitating the expression of ideas. In the form of conceptual structures they give backbone to knowledge representation systems."*
 
 #### CV-metadata connections
 
-Per ANSI/NISO Z39.19 (p. 19), 
+Per ANSI/NISO Z39.19 (p. 19),
 
 - A metadata standard may require that values for certain fields come from CVs
 - Metadata may be used to describe a CV, supporting its discovery as a resource
@@ -318,7 +321,7 @@ The basic rule per ANSI/NISO Z39.19 is that a term should denote a single **conc
 - Disciplines, fields
 - Units of measurement
 
-The simplest term form is a **single-word term;** there are several kinds of multiword AKA **compound terms,** the construction of which is governed by the CV's **syntax:** 
+The simplest term form is a **single-word term;** there are several kinds of multiword AKA **compound terms,** the construction of which is governed by the CV's **syntax:**
 
 A <span style="color: red; font-weight: bold;">(1)</span> **bound term** uses multiple words or a phrase to denote a single concept, e.g. _oral surgery._ The inverted form of bound terms may be included as an entry term, e.g. _surgery, oral: see oral surgery._ These <span style="color: red; font-weight: bold;">(a)</span> naturally occurring compound terms are generally preferable to <span style="color: red; font-weight: bold;">(b)</span> **qualified homographs** --- for example, _religious tolerance_ is generally better than _tolerance (religious)._  If no bound compound term exists, ambiguous terms (AKA head or focus nouns) should receive a modifier (AKA difference). Additionally, the scope of any term, not just homographs, may be clarified with a scope note (SN). If a SN mentions another term in the vocabulary, it should receive a reciprocal SN or cross-reference: _term2: X SN term1._
 
@@ -330,7 +333,7 @@ A <span style="color: red; font-weight: bold;">(1)</span> **bound term** uses mu
     - ... unless other meanings of the homograph are entirely outside the domain
         - ... but even then, anticipate metasearching and include a qualifier
 
-While compound terms denote a single concept, <span style="color: red; font-weight: bold;">(2)</span> **coordinated terms** AKA synthesized terms associate several concepts with a single information object and generally fall in the domain of indexing languages. Coordinated terms can be <span style="color: red; font-weight: bold;">(a)</span> embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English Language--Rhetoric, Persuasion (Rhetoric), Report Writing._ Precoordinated terms enable browsing with great specificity, describe complex concepts, and impose alphabetic proximity on related terms that would otherwise be far apart. Given the high cost of taxonomist labor, though, it's often better to let users <span style="color: red; font-weight: bold;">(b)</span> combine terms interactively during search **(postcoordination),** e.g. _English Language AND Rhetoric AND Persuasion AND Report Writing._ 
+While compound terms denote a single concept, <span style="color: red; font-weight: bold;">(2)</span> **coordinated terms** AKA synthesized terms associate several concepts with a single information object and generally fall in the domain of indexing languages. Coordinated terms can be <span style="color: red; font-weight: bold;">(a)</span> embedded in the object **(precoordination),** as with Library of Congress subject headings in books: _English Language--Rhetoric, Persuasion (Rhetoric), Report Writing._ Precoordinated terms enable browsing with great specificity, describe complex concepts, and impose alphabetic proximity on related terms that would otherwise be far apart. Given the high cost of taxonomist labor, though, it's often better to let users <span style="color: red; font-weight: bold;">(b)</span> combine terms interactively during search **(postcoordination),** e.g. _English Language AND Rhetoric AND Persuasion AND Report Writing._
 
 Use of a compound term should be determined by warrant, total #terms in the CV (more compound terms means more overall terms), and intended format (print sometimes benefits from precoordinated terms); see ANSI/NISO Z9.19 pp. 39-40 for more guidance and examples.
 
@@ -352,16 +355,16 @@ Use of a compound term should be determined by warrant, total #terms in the CV (
     - Regardless, abstract concepts and unique entities are singular
     - Singular and plural forms of a noun may denote different concepts, so both may appear (qualified) in the CV
 
-<span style="color:red;">\*Svenonius (2005)</span> explains the intended effect of this standard: CVs where every term is "context independent", i.e. self-contained and thus reusable. However, context independence is "not normally operative in classification schemes where the verbal headings are governed by the principle of hierarchical force."     
+<span style="color:red;">\*Svenonius (2005)</span> explains the intended effect of this standard: CVs where every term is "context independent", i.e. self-contained and thus reusable. However, context independence is "not normally operative in classification schemes where the verbal headings are governed by the principle of hierarchical force."
 
 ##### Typographic forms
 
 - **Capitalization:** don't capitalize unless it's a proper noun
 - **Punctuation:** minimize because it can interfere with sorting, searching, etc.
-    - Reserve parentheses for qualifiers 
+    - Reserve parentheses for qualifiers
     - Use apostrophes for possessives and proper names
     - Diacritical marks are acceptable e.g. for loan words
- 
+
 
 
 
@@ -376,12 +379,12 @@ Synonyms, near-synonyms, lexical variants, and (when **generic posting** is prac
 - Only equate near-synonyms if warranted
 - Include a term's full form and acronym:
     - Prefer full form unless acronym dominant in the domain
-    - If acronym is dominant but ambiguous, prefer full form 
+    - If acronym is dominant but ambiguous, prefer full form
 - Include a term's popular and scientific forms; prefer whichever is dominant in the domain
 - Consult lexical authorities for official spelling
-- Prefer whichever is more popular for loan words versus translations 
+- Prefer whichever is more popular for loan words versus translations
 - Romanization converts non-Roman characters to Roman characters via a table, which may not align with informal but dominant Romanizations; prefer the dominant form
-- For compound terms where postcoordination is intended, and component terms have no other use: 
+- For compound terms where postcoordination is intended, and component terms have no other use:
     - _coal mining: USE coal AND mining_
     - _coal: USED FOR coal AND mining_
     - _mining: USED FOR coal AND mining_
@@ -413,7 +416,7 @@ Associative relationships should be recorded between terms that are needed to ex
 
 #### CV elements by impact on IR
 
-Per ANSI/NISO Z39.19 (p. 16), 
+Per ANSI/NISO Z39.19 (p. 16),
 
 - **Recall** is improved by indicating relationships:
     - Equivalence relationships/preferred terms
@@ -426,7 +429,7 @@ Per ANSI/NISO Z39.19 (p. 16),
     - Parenthetical qualifiers
     - Broader and narrower term hierarchical relationships
     - Compound terms
-    - Precoordination 
+    - Precoordination
 
 
 ### Testing CVs
@@ -434,7 +437,7 @@ Per ANSI/NISO Z39.19 (p. 16),
 The usability and IR performance of CVs should be tested:
 
 - for conformance with standards;
-- heuristically (by expert opinion); and/or 
+- heuristically (by expert opinion); and/or
 - through user research (e.g. comparing to user-generated card-based affinity models).
 
 
@@ -456,7 +459,7 @@ Documentation should cover:
 
 ### Maintaining CVs
 
-CVs must be updated to stay valid, so there should be plan for reviews at defined intervals. 
+CVs must be updated to stay valid, so there should be plan for reviews at defined intervals.
 
 Updates may include:
 
@@ -489,7 +492,7 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 - **Alphabetic:**
     - Alphabetic listing
     - Flat format (only shows immediate BT/s & NT/s)
-- **Graphic** 
+- **Graphic**
 - **Hierarchical:**
     - Tree AKA systematic display, classified display:
         - Top term
@@ -521,16 +524,16 @@ ANSI/NISO Z39.19 (pp. 99-102) lists desirable features of CV management software
 #### Format considerations
 
 - **Print:** Minimize double lookups, and use a running header to indicate position
-- **Screen:** 
+- **Screen:**
     - UF principles
     - Keyword search
     - Consider accessibility
     - Term detail
     - Display hierarchy
     - Pick list
-- **Web,** a subset of screens: 
+- **Web,** a subset of screens:
     - Path hierarchy display: show the file path (URL) of the current page
-    - Path hierarchy in context: show all file paths together (e.g., [PKB index)](../../pkb.html) 
+    - Path hierarchy in context: show all file paths together (e.g., [PKB index)](../../pkb.html)
     - Facilitate browsing with scroll bars, arrows, hyperlinks, [+] (click to expand)
 
 

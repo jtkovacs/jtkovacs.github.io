@@ -219,16 +219,18 @@ See [text analytics techniques.](#text-analytics-techniques)
 
 ## Text mining
 
+### Data mining
+
 See [notes on data mining.](https://jtkovacs.github.io/refs/data-mining.html)
 
-### Clustering
+#### Clustering
 
 Per Sharda et al. (2014, pp. 224-225), clustering is often used to **improve search recall** ("when a query matches a document its whole cluster is returned") and **precision** ("grouping the documents into a number of much smaller groups of related documents, ordering them by relevance, and returning only the documents from the most relevant group or groups"). The most common clustering methods:
 
 - **Scatter/gather** "dynamically generates a table of contents for the collection and adapts and modifies it in response to the user selection"
 - **Query-specific clustering** "a hierarchical clustering approach where the most relevant documents to the posed query appear in small tight clusters that are nested in larger clusters"
 
-### Association
+#### Association
 
 Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer to the direct relationships between concepts (terms) or set of concepts ... [For _A_ ==> _C],_ confidence is the percentage of documents that include all the concepts in _C_ within the same subset of those documents that include all the concepts in _A._ Support is the percentage (or number) of documents that include all the concepts in _A_ and _C."_
 
@@ -236,11 +238,11 @@ Sharda et al. (2014, pp. 225): "In text mining, associations specifically refer 
 
 Comparing the distribution of concepts across different subcollections, e.g. from the same source but at different points in time.
 
-### Prediction
+#### Prediction
 
-#### Classification (automatic text categorization)
+##### Classification
 
-Sharda et al. (2014, pp. 224):
+AKA automatic text categorization; per Sharda et al. (2014, pp. 224), some applications:
 
 - indexing text (semi/automatic)
 - filtering spam
@@ -258,6 +260,8 @@ Challenges with web mining, per Sharda et al. (2014, p. 239) --- the Web is:
 
 - Big, growing, and constantly updated
 - Complex, e.g. authoring style, content variation, lack of unified structure, not specific to a domain
+
+
 
 #### Search engines & SEO
 
@@ -300,18 +304,21 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 ## Natural language processing
 
-vs. bag of words
+With its two parent disciplines---artificial intelligence and computational linguistics---NLP extracts more meaning from textual data because it goes beyond the 'bag of words' approach to account for syntax, and, beyond that, "grammatical and semantic constraints as well as the context" (Sharda et al., 2014, p. 210). NLP faces major challenges:
 
-challenges
-
-- **Terms** and **polysemy** (elemental units; single word or multi-word phrase, see [notes on controlled vocabularies\)](https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies) and **Concepts** (combinations of terms)
+- **part-of-speech tagging**
+- **text segmentation** (identifying word boundaries in spoken language as well as written Chinese, Japanese, Thai, etc.)
+- **word sense disambiguation** (see [notes on controlled vocabularies\)](https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies)
+- **syntatic ambiguity** ("multiple possible sentence structures often need to be considered")
+- **irregular input** (e.g. typos, accents)
+- identifying *speech acts,** speech that is meant to provoke an action
 
 ### Sentiment analysis
 
 - Process, pp. 234
 
 - **Token** "a categorized block of text in a sentence ... this assignment of meaning to blocks of text is known as **tokenizing"**
-    - **Part-of-speech tagging**
+
 
 
 

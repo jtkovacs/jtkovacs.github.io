@@ -85,30 +85,6 @@ p. 207
 
 
 
-## Doing text analytics
-
-### Text analytics process
-
-Per Sharda et al. (2014, p. 220):
-
-1. Establish the corpus
-2. Create term-document matrix
-3. Analyze
-
-
-
-
-
-### Text analytics tools
-
-#### IBM Watson
-
-IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
-
-<img src="../illos/DeepQA.png" width="600">
-
-
-
 
 
 
@@ -184,7 +160,39 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-# Python
+
+
+
+
+
+
+# Doing text analytics
+
+## Text analytics process
+
+Per Sharda et al. (2014, p. 220):
+
+1. Establish the corpus
+2. Create term-document matrix
+3. Analyze
+
+
+
+
+
+## Text analytics tools
+
+### IBM Watson
+
+IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
+
+<img src="../illos/DeepQA.png" width="600">
+
+
+
+
+
+### Python
 
 ```Python
 # reverse order of elements:
@@ -197,7 +205,7 @@ list.index(‘str name’)
 list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list)
 ```
 
-Manage punctuation, case, & whitespace:
+#### String manipulation
 
 ```Python
 # remove punctuation
@@ -216,7 +224,7 @@ my_string.lstrip()
 my_string.rstrip()
 ```
 
-Search & regex:
+#### Regex
 
 ```Python
 # search for substrings within string or subset of string (i inclusive to j exclusive)
@@ -295,6 +303,9 @@ my_var.group_dict()
 my_var.group(‘group_name’)
 my_var.group(1)
 ```
+
+
+
 
 
 

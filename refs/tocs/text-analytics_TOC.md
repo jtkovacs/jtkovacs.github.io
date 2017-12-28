@@ -1,12 +1,8 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 981 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 978 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
 	- &nbsp;1.2. [Glossary of text analytics terms](#glossary-of-text-analytics-terms)
-	- &nbsp;1.3. [Doing text analytics](#doing-text-analytics)
-		- &nbsp;1.3.1. [Text analytics process](#text-analytics-process)
-		- &nbsp;1.3.2. [Text analytics tools](#text-analytics-tools)
-			- &nbsp;1.3.2.1. [IBM Watson](#ibm-watson)
 - &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
 	- &nbsp;2.1. [Text mining](#text-mining)
 	- &nbsp;2.2. [Natural language processing (NLP)](#natural-language-processing-nlp)
@@ -15,7 +11,13 @@
 		- &nbsp;2.3.1. [Search engines & SEO](#search-engines-seo)
 		- &nbsp;2.3.2. [Web analytics](#web-analytics)
 		- &nbsp;2.3.3. [Social analytics](#social-analytics)
-- &nbsp;3. [Python](#python)
+- &nbsp;3. [Doing text analytics](#doing-text-analytics)
+	- &nbsp;3.1. [Text analytics process](#text-analytics-process)
+	- &nbsp;3.2. [Text analytics tools](#text-analytics-tools)
+		- &nbsp;3.2.1. [IBM Watson](#ibm-watson)
+		- &nbsp;3.2.2. [Python](#python)
+			- &nbsp;3.2.2.1. [String manipulation](#string-manipulation)
+			- &nbsp;3.2.2.2. [Regex](#regex)
 - &nbsp;4. [Sources](#sources)
 	- &nbsp;4.1. [Cited](#cited)
 	- &nbsp;4.2. [References](#references)
@@ -109,30 +111,6 @@ p. 207
 
 
 
-## 1.3. Doing text analytics
-
-### 1.3.1. Text analytics process
-
-Per Sharda et al. (2014, p. 220):
-
-1. Establish the corpus
-2. Create term-document matrix
-3. Analyze
-
-
-
-
-
-### 1.3.2. Text analytics tools
-
-#### 1.3.2.1. IBM Watson
-
-IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
-
-<img src="../illos/DeepQA.png" width="600">
-
-
-
 
 
 
@@ -208,7 +186,39 @@ See [notes on search engines.](https://jtkovacs.github.io/refs/search-engines.ht
 
 
 
-# 3. Python
+
+
+
+
+
+
+# 3. Doing text analytics
+
+## 3.1. Text analytics process
+
+Per Sharda et al. (2014, p. 220):
+
+1. Establish the corpus
+2. Create term-document matrix
+3. Analyze
+
+
+
+
+
+## 3.2. Text analytics tools
+
+### 3.2.1. IBM Watson
+
+IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
+
+<img src="../illos/DeepQA.png" width="600">
+
+
+
+
+
+### 3.2.2. Python
 
 ```Python
 # reverse order of elements:
@@ -221,7 +231,7 @@ list.index(‘str name’)
 list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list)
 ```
 
-Manage punctuation, case, & whitespace:
+#### 3.2.2.1. String manipulation
 
 ```Python
 # remove punctuation
@@ -240,7 +250,7 @@ my_string.lstrip()
 my_string.rstrip()
 ```
 
-Search & regex:
+#### 3.2.2.2. Regex
 
 ```Python
 # search for substrings within string or subset of string (i inclusive to j exclusive)
@@ -319,6 +329,9 @@ my_var.group_dict()
 my_var.group(‘group_name’)
 my_var.group(1)
 ```
+
+
+
 
 
 

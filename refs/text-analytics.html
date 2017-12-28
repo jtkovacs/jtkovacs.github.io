@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 981 words | updated 12/28/2017
+   &gt; text analytics | just under 978 words | updated 12/28/2017
   </p>
   <div class="TOC">
    <ul>
@@ -69,34 +69,6 @@ code > span.er { color: #ff0000; font-weight: bold; }
        <a href="#glossary-of-text-analytics-terms">
         Glossary of text analytics terms
        </a>
-      </li>
-      <li>
-       1.3.
-       <a href="#doing-text-analytics">
-        Doing text analytics
-       </a>
-       <ul>
-        <li>
-         1.3.1.
-         <a href="#text-analytics-process">
-          Text analytics process
-         </a>
-        </li>
-        <li>
-         1.3.2.
-         <a href="#text-analytics-tools">
-          Text analytics tools
-         </a>
-         <ul>
-          <li>
-           1.3.2.1.
-           <a href="#ibm-watson">
-            IBM Watson
-           </a>
-          </li>
-         </ul>
-        </li>
-       </ul>
       </li>
      </ul>
     </li>
@@ -156,9 +128,51 @@ code > span.er { color: #ff0000; font-weight: bold; }
     </li>
     <li>
      3.
-     <a href="#python">
-      Python
+     <a href="#doing-text-analytics">
+      Doing text analytics
      </a>
+     <ul>
+      <li>
+       3.1.
+       <a href="#text-analytics-process">
+        Text analytics process
+       </a>
+      </li>
+      <li>
+       3.2.
+       <a href="#text-analytics-tools">
+        Text analytics tools
+       </a>
+       <ul>
+        <li>
+         3.2.1.
+         <a href="#ibm-watson">
+          IBM Watson
+         </a>
+        </li>
+        <li>
+         3.2.2.
+         <a href="#python">
+          Python
+         </a>
+         <ul>
+          <li>
+           3.2.2.1.
+           <a href="#string-manipulation">
+            String manipulation
+           </a>
+          </li>
+          <li>
+           3.2.2.2.
+           <a href="#regex">
+            Regex
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+     </ul>
     </li>
     <li>
      4.
@@ -386,46 +400,6 @@ code > span.er { color: #ff0000; font-weight: bold; }
   <p>
    p. 207
   </p>
-  <h2 id="doing-text-analytics">
-   <a>
-    1.3. Doing text analytics
-   </a>
-  </h2>
-  <h3 id="text-analytics-process">
-   <a>
-    1.3.1. Text analytics process
-   </a>
-  </h3>
-  <p>
-   Per Sharda et al. (2014, p. 220):
-  </p>
-  <ol style="list-style-type: decimal">
-   <li>
-    Establish the corpus
-   </li>
-   <li>
-    Create term-document matrix
-   </li>
-   <li>
-    Analyze
-   </li>
-  </ol>
-  <h3 id="text-analytics-tools">
-   <a>
-    1.3.2. Text analytics tools
-   </a>
-  </h3>
-  <h4 id="ibm-watson">
-   <a>
-    1.3.2.1. IBM Watson
-   </a>
-  </h4>
-  <p>
-   IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
-  </p>
-  <p>
-   <img src="illos/DeepQA.png" width="600"/>
-  </p>
   <h1 id="text-analytics-techniques">
    <a>
     2. Text analytics techniques
@@ -555,11 +529,51 @@ code > span.er { color: #ff0000; font-weight: bold; }
     measuring social media impact
    </li>
   </ul>
-  <h1 id="python">
+  <h1 id="doing-text-analytics">
    <a>
-    3. Python
+    3. Doing text analytics
    </a>
   </h1>
+  <h2 id="text-analytics-process">
+   <a>
+    3.1. Text analytics process
+   </a>
+  </h2>
+  <p>
+   Per Sharda et al. (2014, p. 220):
+  </p>
+  <ol style="list-style-type: decimal">
+   <li>
+    Establish the corpus
+   </li>
+   <li>
+    Create term-document matrix
+   </li>
+   <li>
+    Analyze
+   </li>
+  </ol>
+  <h2 id="text-analytics-tools">
+   <a>
+    3.2. Text analytics tools
+   </a>
+  </h2>
+  <h3 id="ibm-watson">
+   <a>
+    3.2.1. IBM Watson
+   </a>
+  </h3>
+  <p>
+   IBM Watson's DeepQA is a "massively parallel, text mining-focused, probabilistic evidence-based computational architecture ... [using] more than 100 different techniques for analyzing natural language, identifying sources, finding and generating hypotheses, finding and scoring evidence, and merging and ranking hypotheses" (Sharda et al., 2014, pp. 203-204):
+  </p>
+  <p>
+   <img src="illos/DeepQA.png" width="600"/>
+  </p>
+  <h3 id="python">
+   <a>
+    3.2.2. Python
+   </a>
+  </h3>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># reverse order of elements:</span>
 <span class="dt">list</span>.reverse(), my_string[::-<span class="dv">1</span>]
 <span class="co"># selectively replace:</span>
@@ -568,9 +582,11 @@ str_name.replace(‘this’,’with this’)
 <span class="dt">list</span>.index(‘str name’)
 <span class="co"># times element occurs:</span>
 <span class="dt">list</span>.count(‘em_name’) makes <span class="dt">tuple</span> <span class="kw">with</span> (index,value): <span class="dt">enumerate</span>(my_list)</code></pre>
-  <p>
-   Manage punctuation, case, &amp; whitespace:
-  </p>
+  <h4 id="string-manipulation">
+   <a>
+    3.2.2.1. String manipulation
+   </a>
+  </h4>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># remove punctuation</span>
 <span class="ch">import</span> string
 line.translate(<span class="ot">None</span>, string.punctuation)
@@ -585,9 +601,11 @@ my_string.title()
 my_string.strip(<span class="st">'chars'</span>)
 my_string.lstrip()
 my_string.rstrip()</code></pre>
-  <p>
-   Search &amp; regex:
-  </p>
+  <h4 id="regex">
+   <a>
+    3.2.2.2. Regex
+   </a>
+  </h4>
   <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># search for substrings within string or subset of string (i inclusive to j exclusive)</span>
 str_index = my_string.find(x,i,j)
 str_index = my_string.index(x,i,j)  <span class="co"># raises ValueError if not found</span>

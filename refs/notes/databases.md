@@ -5,12 +5,12 @@ _These notes are heavily influenced by Dr. Simon Wu-Ping Wang's slides as well a
 
 # What is a database?
 
-A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.html#information-structures) for other major data models); or (2) this structured data plus a database management system (DBMS). 
+A **database** is a either (1) collection of data that's structured according to a **data model** (usually relational, as [discussed below;](#the-relational-data-model) see [notes on information structures](information-architecture.html#information-structures) for other major data models); or (2) this structured data plus a database management system (DBMS).
 
 A [DBMS](DBMS.html) is either a **database engine** for interacting with the database plus a **database frontend** for user interaction, per definition (1) above; or these two things plus a database, per definition (2) above. A DMBS may be desktop-based (Access, FileMaker Pro) or server-based (SQL Server, Oracle, DB2, MySQL, PostgreSQL). Typical DBMS offer:
 
 - A convenient language with two data sublanguages:
-    - Data definition language **(DDL)** expresses the schema; 
+    - Data definition language **(DDL)** expresses the schema;
     - Data manipulation language **(DML),**
         - enables **CRUD operations** (create, read, update, delete);
         - includes the capacity to query/retrieve/read the data and is therefore often called a query language, though this is technically incorrect (because partial);
@@ -73,23 +73,23 @@ Then, the DBMS creates mappings (also called intensions; a realization of a sche
 
 
 
-## Types of databases
+# Types of databases
 
-### The relational data model
+## Relational data model
 
 In a relational database, the data model is of **tables** AKA relations, which can be clustered tables or heaps [depending on their indexing.](#indexing-and-performance) Tables have **rows** (AKA tuples, records) and **columns** (AKA attributes, fields). The order of rows and columns is insignificant (unless an [index](#indexing-and-performance) is created).
 
-Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development. Per Ullman (2006), **many different relational schemas could be used to model any given reality;** the best designs will suit the underlying business processes and be [in a normal form.](#normalization) 
+Representing reality in terms of entities, attributes and relationships occurs during the [conceptual design phase](#conceptual-design) of database development. Per Ullman (2006), **many different relational schemas could be used to model any given reality;** the best designs will suit the underlying business processes and be [in a normal form.](#normalization)
 
-#### Relationships between entities
+### Relationships between entities
 
 The relationship between two entites has several characteristics. The **participation** of a relationship is mandatory or optional; the **cardinality** AKA modality of a relationships may be one-to-one, one-to-many, or many-to-many; see [ERDs](modeling.html#erds-for-databases) for notation. A relationship is **identifying** if the PK of a parent entity appears in the PK of a child entity, denoted with a solid line; nonidentifying relationships are denoted with dashed lines.
 
-##### Associative entities
+#### Associative entities
 
 Many-to-many relationships must be resolved with an associative entity (AKA junction table) that has a combined primary key (PK), both of which are foreign keys (FK)---though there are [arguments for](http://codebetter.com/jeremymiller/2007/02/01/composite-keys-are-evil/) and [against](https://stackoverflow.com/questions/37784634/primary-key-of-associative-entity) creating a synthetic key for an associative entity. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment and a car will likewise be driven by many different drivers. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
 
-##### Superclasses and subclasses
+#### Superclasses and subclasses
 
 Entities may be classified as superclasses and subclasses; this provides more semantic meaning to an ER model, makes the ER model more readable, and (depending on implementation) can reduce the number of NULLs in the database. There are several implementation options:
 
@@ -97,25 +97,23 @@ Entities may be classified as superclasses and subclasses; this provides more se
 - Subclass entity contains all superclass attributes along with its own unique attributes;
 - The ERD includes a superclass and subclass(es) but they are implemented as a single table.
 
-
-#### Types of attributes
+### Types of attributes
 
 Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is:
 
 - **Composite** if it can be decomposed into **atomic** attributes (which, per first normal form, it should be).
 - **Derived** if its value can be calculated from (an)other attribute(s) (which, per third normal form, it shouldn't be).
-- **Multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.  
+- **Multi-valued** AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.
 
-
-#### Relationships between attributes
+### Relationships between attributes
 
 Different sorts of relationships AKA dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. Dependencies are important for understanding [normalization;](#normalization) normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity. Dependencies are also used (somehow?) in DB compression and query optimization.
 
-##### Functional dependencies and keys
+#### Functional dependencies and keys
 
 A functional dependency `A → B` exists when the same A (for our purposes, an attribute value called the **determinant)** is linked to a single B (another attribute value, called the **dependent).** The reverse is not necessarily true. Note that this is like a mathematical function, where each x, a function input, must correspond to exactly one y, a function output, but a single value of y might correspond to multiple different values of x:
 
-| This is a Function | This is Not a Function | 
+| This is a Function | This is Not a Function |
 | --- | --- |
 | ![](../illos/fcn.png) | ![](../illos/not-fcn.png) |
 
@@ -123,35 +121,34 @@ Written in predicate logic with tuples denoted t and u, attributes denoted A and
 
 - Trivial: `A → B & B ⊆ A`
 - Nontrivial: `A → B & B ⊈ A`
-- Completely nontrivial: `A → B & A ∩ B = ∅` 
+- Completely nontrivial: `A → B & A ∩ B = ∅`
 - Technically transitive dependencies are functional dependencies
 
 The set of attributes that are functionally dependent on a determinant is called the determinant's **closure, ** `{A}*.` A closure can obviously be as small as a single attribute. Per displayName (2015), a determinant whose closure is the *entire table* is a **candidate key** AKA identity value; one candidate key is chosen as the table's sole **primary key (PK).** [This is an excellent demonstration of identifying (super) keys.](http://stackoverflow.com/questions/2718420/candidate-keys-from-functional-dependencie)
 
 In general, keys may be **natural,** i.e. present in the data, or **synthetic** AKA surrogate, automatically generated by the database for internal use. Keys may also be **composite** AKA concatenated, meaning that several attributes taken together (a set) are a determinant whose closure is the entire table. For primary keys specifically, they are most often an integer (the narrowest suitable field); immutable; and mandatory.
 
-##### Transitive dependencies
+#### Transitive dependencies
 
 If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z: `A → B & B → C ⇒ A → C.` As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
 
-##### Multivalued dependencies
+#### Multivalued dependencies
 
 A multivalued dependency `A ↠ B` exists if all tuples share their A attributes; tuple v shares B attributes with t, and its remaining attributes with u; tuple w shares A attributes with u, and its remaining attributes with t. In predicate logic: `if ∀ t,u∈R | t.A = u.A then ∃ v∈R | v.A=t.A and v.B=t.B and v.rest=u.rest.` Furthermore, `∃ w∈R | w.A=t.A and w.B=u.B and w.rest=t.rest`. MVDs matter for 4NF; [examples and details here.](http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/mvds.pdf)
 
-
-#### Integrity
+### Integrity
 
 Data must have integrity to be useful and trustworthy. Data integrity [tends to erode,](wrangling.html#dirty-data-typologies) and a database has mechanisms for maintaining it in its various forms:
 
-- **Entity integrity** is the assurance that entities in the real world are represented in each applicable table of the database by a single record (row). The constraint that rows be unique is enforced through the primary key.     
+- **Entity integrity** is the assurance that entities in the real world are represented in each applicable table of the database by a single record (row). The constraint that rows be unique is enforced through the primary key.
 - **Domain integrity** is the assurance that attributes have meaningful (as in possible, if not necessarily accurate) values. This is enforced by column data types and custom domain restrictions.
 - **Referential integrity** is the assurance that, once one-to-many or many-to-many relationships are separated into different tables, the data is still kept in sync despite updates and deletions. Specifically, when a row is added to the latter table, its FK value should come from the former table’s PK or it should be NULL.
 
 ![](../illos/integrity.png)
 
-Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs). 
+Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs).
 
-##### Normalization
+#### Normalization
 
 Normalization is a process of allocating attributes to entities to achieve a certain configuration of [dependencies](#relationships-between-attributes) within each entity; [Bill Kent](http://www.bkent.net/Doc/simple5.htm) does a good job talking about this in terms of which attributes provide "facts" about other attributes. There are five but actually maybe six levels of normalization, with third normal form the commonly accepted target. The first normal form is how Codd articulated his relational data model in the 1970s, with the other forms progressive refinements of the basic relational model:
 
@@ -164,13 +161,13 @@ Normalization is a process of allocating attributes to entities to achieve a cer
 
 This [example from ThoughtCo](https://www.thoughtco.com/transitive-dependency-1019760) shows how normal forms prevent anomalies. In this case there are two FDs `(Book → Author, Author → Author_Nationality)` and one TD `(Book → Author_Nationality),` plus a violation of 1NF's atomic field requirement:
 
-| Author | Book | Author_Nationality | 
+| Author | Book | Author_Nationality |
 | --- | --- | --- |
-| Orson Scott Card | Ender's Game | United States | 
-| Orson Scott Card | Children of the Mind | United States | 
+| Orson Scott Card | Ender's Game | United States |
+| Orson Scott Card | Children of the Mind | United States |
 | Margaret Atwood | The Handmaid's Tale | Canada |
 
-Note the redundancy---repeating pairs of (Orson Scott Card, United States), caused by the transitive dependency---and the liabilities it creates in the form of potential data loss and data corruption: 
+Note the redundancy---repeating pairs of (Orson Scott Card, United States), caused by the transitive dependency---and the liabilities it creates in the form of potential data loss and data corruption:
 
 - If you deleted Card's two books, you would remove _him_ as an entity from the database. This is a **deletion anomaly.**
 - You must add an author to add a book, and vice versa; this is an **insertion anomaly.**
@@ -180,10 +177,10 @@ Note the redundancy---repeating pairs of (Orson Scott Card, United States), caus
 
 | AuthorID | Author_Firstname | Author_Lastname| Author_Nationality |
 | --- | --- | --- | --- |
-| 01 | Orson Scott | Card | United States | 
+| 01 | Orson Scott | Card | United States |
 | 02 | Margaret | Atwood | Canada |
 
-| AuthorID | BookID | 
+| AuthorID | BookID |
 | --- | --- |
 | 01 | 001 |
 | 01 | 002 |
@@ -195,10 +192,9 @@ Note the redundancy---repeating pairs of (Orson Scott Card, United States), caus
 | 002 | Children of the Mind |
 | 003 | The Handmaid's Tale |
 
+#### Why not normalize?
 
-##### Why not normalize?
-
-Per Chapple (2016): 
+Per Chapple (2016):
 
 - Normalization means more tables; more tables mean more [JOINs;](SQL.html) JOINs are slow.
 - Normalization is a complex, time-consuming process and developer time is valuable, so operate in the spirit of 'quick and dirty'.
@@ -206,40 +202,15 @@ Per Chapple (2016):
 
 
 
-### NoSQL databases
+## NoSQL databases
 
-NoSQL databases use non-relational data models ... 
-
-- **Key-value model,** e.g. Dynamo, Riak, Basho: _[Key|Value|Timestamp]._ Provides easy and fast storage for simple data.
-- **Columnar model,** e.g. Google’s Bigtable, Apache’s HBase (part of Hadoop): _[Row Key|Value|Timestamp|Column Family|Column Name]._ Good for retaining relationships (since columns can be grouped into families). 
-- **Document model,** e.g. MongoDB, JSON, XML. Good for storing complex hierarchical relationships.
-- **Graph/triple model,** e.g. Neo4j. Good for capturing a web of relationships.
-
-... plus some of these other features ...
-
-- Open source & less costly hardware
-- Distributed storage and processing rather than client/server architecture
-- Memory cache
-- Batch processing (Google Map Reduce) or interactive AKA stream processing (Apache Tez Framework, Apache Spark, Facebook Presto)
-- Proprietary and/or (for Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope) SQL-like interfaces  
-- Analytics integration (Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal)
-
-... to store Big Data ...  
-
-- large **volume** (petabytes rather than terabytes)
-- wide **variety** (structured and unstructured)
-- high **velocity**
-
-... achieving greater speed by: 
-
-- appending rather than updating records, and 
-- denormalizing data upon input. 
+See [notes on Big Data,](https://jtkovacs.github.io/refs/big-data.html) an area in which NoSQL databases are commonly used.
 
 
 
 
 
-# Database development
+# Relational database development
 
 A good design process minimizes redundancy; reduces errors by automating or imposing constraints on data entry; permits multiple analyses by replacing multipart fields with atomic ones; avoids data conflicts by reserving calculation to the analysis phase, rather than storing results; and ensures complete information by requiring it during input. **Best practices for DB design:**
 
@@ -267,12 +238,12 @@ All stages of design are beholden to the underlying data model. Conceptual desig
 
 ### Conceptual design
 
-In the conceptual design stage of database development, there are two competing approaches: 
+In the conceptual design stage of database development, there are two competing approaches:
 
-- The **top-down approach** (AKA design by decomposition) begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both. 
+- The **top-down approach** (AKA design by decomposition) begins with identifying entities and relationships in the domain to be modeled, then filling in attributes. Entity relationship diagrams are often used. ERDs can be done in [ER or UML notation;](modeling.html#erds-for-databases) MS Visio offers both.
 - The **bottom-up approach** begins with identifying attributes, then grouping them until entities and relationships emerge. Connolly and Begg (2015) suggest that a bottom-up approach is manageable only for smaller databases. For a larger, more complex database, a top-down approach may be necessary so that the database designer doesn’t get overwhelmed by numerous attributes.
 
-Regardless, the end goal is a schema that is [normalized](#normalization) to avoid anomalies. 
+Regardless, the end goal is a schema that is [normalized](#normalization) to avoid anomalies.
 
 In addition to constructing tables via a top-down or bottom-up approach, a conceptual design should:
 
@@ -283,7 +254,7 @@ In addition to constructing tables via a top-down or bottom-up approach, a conce
 - Identify [primary keys.](#types-of-attributes)
 
 ### Logical design
-    
+
 Proceed table by table, field by field:
 
 - Choose naming conventions (avoid special characters and reserved words for your DBMS);
@@ -291,14 +262,14 @@ Proceed table by table, field by field:
     - Store numbers as text if you don’t need to manipulate them mathematically, e.g. phone numbers
 - Resolve many-to-many relationships with [associative entities;](#associative-entities)
 - Apply [integrity constraints:](#integrity)
-    - With a lookup table; 
-    - With a referential integrity constraint to prevent orphaned records; 
-    - Through a check constraint. 
+    - With a lookup table;
+    - With a referential integrity constraint to prevent orphaned records;
+    - Through a check constraint.
 - Denote required fields.
 
 ### Physical design
-    
-The goal of the physical design stage is to provide all the information necessary to build a database that takes advantage of features from the chosen platform. Physical design depends on DBMS-specific features, so consult notes on specific DBMS software; this discussion is based on MS SQL Server. 
+
+The goal of the physical design stage is to provide all the information necessary to build a database that takes advantage of features from the chosen platform. Physical design depends on DBMS-specific features, so consult notes on specific DBMS software; this discussion is based on MS SQL Server.
 
 #### Database architectures
 
@@ -332,9 +303,9 @@ If the main data file (.MDF) exceeds its initially allocated space, there are se
 
 ##### Why to index
 
-Various kinds of indexes are created to accelerate queries (SELECT rows from pages) at the expense of write speed (INSERT, UPDATE, and DELETE operations). Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index. 
+Various kinds of indexes are created to accelerate queries (SELECT rows from pages) at the expense of write speed (INSERT, UPDATE, and DELETE operations). Per Sheldon (2014), not _all_ indexes improve performance for _all_ queries; more complex queries that involve grouping and sorting can suffer from a clustered index.
 
-Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored. 
+Because of this read/write tradeoff, indexes are most useful in [reporting databases versus transactional databases.](information-systems.html#what-are-mis?) Alternatively, an index may be erased when loading a very large dataset into the database, then subsequently restored.
 
 ##### What to index
 
@@ -344,10 +315,10 @@ The PK is indexed by default, and commonly searched fields may be indexed as wel
 
 A table is either a **heap** or, if it has a clustered index, a **clustered table.** A heap is simply unsorted data pages; the order of its contents (i.e., how its rows are allocated across data pages) will be determined initially by data entry and then by DBMS-initiated changes (for efficiency's sake). A **clustered index,** on the other hand, introduces sorting that is implemented at the level of pages through row offset arrays AKA slot arrays; see Sheffield (2012). For this reason, there can be only one clustered index per table (PK by default).
 
-To facilitate specific queries, both heaps and clustered tables may have multiple **non-clustered indexes** that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d.).  
+To facilitate specific queries, both heaps and clustered tables may have multiple **non-clustered indexes** that provide alternate sort orders "very much like the index at the end of a book: it occupies its own space, it is highly redundant, and it refers to the actual information stored in a different place"  (Winand, n.d.).
 
-- When a subset of rows are indexed, this is called a **filtered index.** 
-- When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.  
+- When a subset of rows are indexed, this is called a **filtered index.**
+- When multiple fields are included in a single non-clustered index, this is called a **covering index** because it could "cover" all the fields retrieved in a stored query.
 
 Just as heaps and clustered tables store their rows in data pages, non-clustered indexes store their **leaf nodes** in data pages. Via pointers, [leaves are doubly connected](http://use-the-index-luke.com/sql/anatomy/the-leaf-nodes) to each other (to maintain sort order as rows are added and deleted) and also point to rows in the heap/clustered table (thereby making the index useful):
 
@@ -357,7 +328,7 @@ For heap pages, clustered indexes, and non-clustered indexes alike, a **B-tree**
 
 <img src="../illos/B-tree.png" style="padding-top: 5px;" width="500px">
 
-Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstore structure (Sheldon, 2013), a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns: 
+Finally, while heaps, clustered indexes, and non-clustered indexes use a rowstore structure (Sheldon, 2013), a **columnstore index** (useful for read-heavy databases with star or snowflake schemas, i.e. BI warehouses) searches only relevant columns:
 
 ![](../illos/columnstore.png)
 
@@ -369,7 +340,7 @@ Index fragmentation is inevitable, especially in OLTP environments:
 - DELETE operations lead to partially-filled pages **(internal fragmentation)**
 - Large rows **(extent fragmentation?)**
 
-Fragmentation can be detected with a DBMS tool, then repaired: 
+Fragmentation can be detected with a DBMS tool, then repaired:
 
 - Clustered indexes:
     - <1000 pages long or <5% fragmentation, do nothing
@@ -392,7 +363,7 @@ Fragmentation can be detected with a DBMS tool, then repaired:
 
 
 
-# Database administration
+# Relational database administration
 
 ## Transaction management
 
@@ -417,15 +388,15 @@ Common security threats may be categorized by human vectors or by system targets
 - Inadequate training
 - Blackmail
 - Unwitting conduit for viruses or hacks
-</td> 
+</td>
 <td style="text-align: left;">
 - Creation of trapdoor
 - Staff shortages leading to bad code
 - Lack of security training and procedures
-</td> 
+</td>
 <td style="text-align: left; width=50px;">
 - Inadequate policies and procedures
-</td> 
+</td>
 </tr>
 </table>
 
@@ -438,20 +409,20 @@ Common security threats may be categorized by human vectors or by system targets
 - Electromagnetic interference and radiation
 - Hardware failure of security mechanisms
 - Equipment theft
-</td> 
+</td>
 <td style="text-align: left;">
 - Wire tapping
 - Cable breakage or disconnection
 - Electromagnetic interference and radiation
-</td> 
+</td>
 <td style="text-align: left;">
 - Software failure of security mechanisms
 - Program alteration
 - Program theft
-</td> 
+</td>
 <td style="text-align: left;">
 - Unauthorized data I/O
-</td> 
+</td>
 </tr>
 </table>
 
@@ -466,13 +437,13 @@ This is what security typically looks like for enterprise databases:
 
 Encryption protects the meaning of data despite an insecure environment. There are different approaches to encryption:
 
-- **Bit manipulation** is substitution and permutation within blocks of N bits, decoded by a single key. This approach is used by the data encryption standard (DES; 64 bits) and advanced encryption standards (AES; 128/192/256 bits). 
+- **Bit manipulation** is substitution and permutation within blocks of N bits, decoded by a single key. This approach is used by the data encryption standard (DES; 64 bits) and advanced encryption standards (AES; 128/192/256 bits).
 - **Mathematical functions** are used in public key encryption --- developed by Diffie & Hellman in 1976, and operationalized as RSA in 1978. This approach uses two keys.
 - **Digital signatures** are based on public key techniques, creating a unique, single-use string of symbols to represent (most often) an online transaction.
 
 ##### TDE
 
-SQL Server specifically offers transparent data encryption (TDE) so that data is protected if hardware is stolen. TDE stores database data in encrypted form, decrypts data as it's read, and encrypts data as it's written. 
+SQL Server specifically offers transparent data encryption (TDE) so that data is protected if hardware is stolen. TDE stores database data in encrypted form, decrypts data as it's read, and encrypts data as it's written.
 
 #### Access control
 

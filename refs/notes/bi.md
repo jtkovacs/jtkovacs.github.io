@@ -10,15 +10,6 @@ Business intelligence (BI) systems are a type of [management information system 
 
 
 
-## Generic BI system architecture
-
-<img src="../illos/bi-arch.jpg" width="600">
-
-### Food system metaphor
-
-![](../illos/bi-food-metaphor.png)
-
-
 
 
 ## Does BI have value?
@@ -61,7 +52,7 @@ Per Sharda et al. (2014):
 Also:
 
 - IoT
-- Big Data
+- [Big Data](https://jtkovacs.github.io/refs/big-data.html)
 - Data democratization
 
 
@@ -72,6 +63,16 @@ Also:
 
 
 # BI systems
+
+## Generic BI system architecture
+
+<img src="../illos/bi-arch.jpg" width="600">
+
+### Food system metaphor
+
+![](../illos/bi-food-metaphor.png)
+
+## BI system capabilities
 
 Per Sharda et al. (2004), BI tools provide varying combinations of the following broad functionalities:
 
@@ -143,6 +144,8 @@ Per Sharda et al. (2014, p. 81):
 
 
 
+
+# BI technologies
 
 
 ## ETL

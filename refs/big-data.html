@@ -15,47 +15,181 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; big data | just under 37 words | updated 12/27/2017
+   &gt; big data | just under 399 words | updated 12/29/2017
   </p>
   <div class="TOC">
    <ul>
     <li>
      1.
-     <a href="#definition-of-big-data">
-      Definition of big data
+     <a href="#what-is-big-data">
+      What is Big Data?
      </a>
      <ul>
       <li>
        1.1.
-       <a href="#sources">
-        Sources
+       <a href="#what-is-high-performance-computing">
+        What is high-performance computing?
        </a>
       </li>
       <li>
        1.2.
-       <a href="#business-value-of-big-data">
-        Business value of big data
+       <a href="#what-is-data-science">
+        What is data science?
        </a>
+       <ul>
+        <li>
+         1.2.1.
+         <a href="#required-skills">
+          Required skills
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       1.3.
+       <a href="#business-applications-of-big-data-analytics">
+        Business applications of Big Data analytics
+       </a>
+      </li>
+      <li>
+       1.4.
+       <a href="#implementing-big-data-initiatives">
+        Implementing Big Data initiatives
+       </a>
+       <ul>
+        <li>
+         1.4.1.
+         <a href="#when-big-data-versus-data-warehousing">
+          When Big Data versus data warehousing?
+         </a>
+        </li>
+        <li>
+         1.4.2.
+         <a href="#success-factors-for-big-data-initiatives">
+          Success factors for Big Data initiatives
+         </a>
+        </li>
+        <li>
+         1.4.3.
+         <a href="#challenges-with-big-data-initiatives">
+          Challenges with Big Data initiatives
+         </a>
+        </li>
+       </ul>
       </li>
      </ul>
     </li>
     <li>
      2.
-     <a href="#big-data-technologies">
-      Big data technologies
+     <a href="#tools">
+      Tools
      </a>
      <ul>
       <li>
        2.1.
-       <a href="#hdfs-for-storage">
-        HDFS for storage
+       <a href="#storage">
+        Storage
        </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#hadoop">
+          Hadoop
+         </a>
+         <ul>
+          <li>
+           2.1.1.1.
+           <a href="#why-use-hadoop">
+            Why use Hadoop?
+           </a>
+          </li>
+          <li>
+           2.1.1.2.
+           <a href="#hadoop-components">
+            Hadoop components
+           </a>
+           <ul>
+            <li>
+             2.1.1.2.1.
+             <a href="#hdfs">
+              HDFS
+             </a>
+            </li>
+            <li>
+             2.1.1.2.2.
+             <a href="#name-node">
+              Name node
+             </a>
+            </li>
+            <li>
+             2.1.1.2.3.
+             <a href="#secondary-node">
+              Secondary node
+             </a>
+            </li>
+            <li>
+             2.1.1.2.4.
+             <a href="#job-tracker">
+              Job tracker
+             </a>
+            </li>
+            <li>
+             2.1.1.2.5.
+             <a href="#slave-nodes">
+              Slave nodes
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li>
+           2.1.1.3.
+           <a href="#hadoop-suprojects">
+            Hadoop suprojects
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         2.1.2.
+         <a href="#nosql-databases">
+          NoSQL databases
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        2.2.
-       <a href="#map-reduce-for-processing">
-        Map-reduce for processing
+       <a href="#big-data-analytics">
+        Big Data analytics
        </a>
+       <ul>
+        <li>
+         2.2.1.
+         <a href="#mapreduce">
+          MapReduce
+         </a>
+        </li>
+        <li>
+         2.2.2.
+         <a href="#data-stream-mining">
+          Data stream mining
+         </a>
+         <ul>
+          <li>
+           2.2.2.1.
+           <a href="#critical-event-processing">
+            Critical event processing
+           </a>
+          </li>
+          <li>
+           2.2.2.2.
+           <a href="#data-stream-mining-versus-perpetual-analytics">
+            Data stream mining versus perpetual analytics
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
       </li>
      </ul>
     </li>
@@ -93,46 +227,334 @@
     </li>
    </ul>
   </div>
-  <h1 id="definition-of-big-data">
+  <h1 id="what-is-big-data">
    <a>
-    1. Definition of big data
+    1. What is Big Data?
    </a>
   </h1>
-  <h2 id="sources">
+  <p>
+   <strong>
+    Interesting how, in some presentations, the Vs are defined as
+    <em>
+     challenges
+    </em>
+    associated with Big Data, whereas in other presentations they are all treated as
+    <em>
+     benefits
+    </em>
+    particular to Big Data
+   </strong>
+  </p>
+  <p>
+   Volume
+  </p>
+  <p>
+   Variety
+  </p>
+  <p>
+   Velocity
+  </p>
+  <p>
+   Veracity
+  </p>
+  <p>
+   Variability
+  </p>
+  <p>
+   Value proposition
+  </p>
+  <h2 id="what-is-high-performance-computing">
    <a>
-    1.1. Sources
+    1.1. What is high-performance computing?
    </a>
   </h2>
-  <h2 id="business-value-of-big-data">
+  <p>
+   In-memory analytics
+  </p>
+  <p>
+   In-database analytics
+  </p>
+  <p>
+   Grid computing
+  </p>
+  <p>
+   Appliances
+  </p>
+  <h2 id="what-is-data-science">
    <a>
-    1.2. Business value of big data
+    1.2. What is data science?
    </a>
   </h2>
-  <h1 id="big-data-technologies">
+  <p>
+   (responsibilities)
+  </p>
+  <h3 id="required-skills">
    <a>
-    2. Big data technologies
+    1.2.1. Required skills
    </a>
-  </h1>
+  </h3>
+  <h2 id="business-applications-of-big-data-analytics">
+   <a>
+    1.3. Business applications of Big Data analytics
+   </a>
+  </h2>
+  <p>
+   pp. 287
+  </p>
+  <p>
+   ... stream analytics specifically, pp. 317-321
+  </p>
+  <h2 id="implementing-big-data-initiatives">
+   <a>
+    1.4. Implementing Big Data initiatives
+   </a>
+  </h2>
+  <h3 id="when-big-data-versus-data-warehousing">
+   <a>
+    1.4.1. When Big Data versus data warehousing?
+   </a>
+  </h3>
   <ul>
    <li>
-    https://jtkovacs.github.io/refs/databases.html#nosql-databases
+    Use cases for one or either
    </li>
   </ul>
-  <h2 id="hdfs-for-storage">
+  <h3 id="success-factors-for-big-data-initiatives">
    <a>
-    2.1. HDFS for storage
+    1.4.2. Success factors for Big Data initiatives
+   </a>
+  </h3>
+  <p>
+   pp. 285 &amp; 312
+  </p>
+  <h3 id="challenges-with-big-data-initiatives">
+   <a>
+    1.4.3. Challenges with Big Data initiatives
+   </a>
+  </h3>
+  <p>
+   pp. 286-287
+  </p>
+  <h1 id="tools">
+   <a>
+    2. Tools
+   </a>
+  </h1>
+  <h2 id="storage">
+   <a>
+    2.1. Storage
    </a>
   </h2>
-  <h2 id="map-reduce-for-processing">
+  <h3 id="hadoop">
    <a>
-    2.2. Map-reduce for processing
+    2.1.1. Hadoop
+   </a>
+  </h3>
+  <h4 id="why-use-hadoop">
+   <a>
+    2.1.1.1. Why use Hadoop?
+   </a>
+  </h4>
+  <h4 id="hadoop-components">
+   <a>
+    2.1.1.2. Hadoop components
+   </a>
+  </h4>
+  <h5 id="hdfs">
+   <a>
+    2.1.1.2.1. HDFS
+   </a>
+  </h5>
+  <h5 id="name-node">
+   <a>
+    2.1.1.2.2. Name node
+   </a>
+  </h5>
+  <h5 id="secondary-node">
+   <a>
+    2.1.1.2.3. Secondary node
+   </a>
+  </h5>
+  <h5 id="job-tracker">
+   <a>
+    2.1.1.2.4. Job tracker
+   </a>
+  </h5>
+  <h5 id="slave-nodes">
+   <a>
+    2.1.1.2.5. Slave nodes
+   </a>
+  </h5>
+  <h4 id="hadoop-suprojects">
+   <a>
+    2.1.1.3. Hadoop suprojects
+   </a>
+  </h4>
+  <ul>
+   <li>
+    Hive
+   </li>
+   <li>
+    Pig
+   </li>
+   <li>
+    ...
+   </li>
+  </ul>
+  <h3 id="nosql-databases">
+   <a>
+    2.1.2. NoSQL databases
+   </a>
+  </h3>
+  <p>
+   Per
+  </p>
+  <p>
+   NoSQL databases use non-relational data models ...
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Key-value model,
+    </strong>
+    e.g. Dynamo, Riak, Basho:
+    <em>
+     [Key|Value|Timestamp].
+    </em>
+    Provides easy and fast storage for simple data.
+   </li>
+   <li>
+    <strong>
+     Columnar model,
+    </strong>
+    e.g. Google’s Bigtable, Apache’s HBase (part of Hadoop):
+    <em>
+     [Row Key|Value|Timestamp|Column Family|Column Name].
+    </em>
+    Good for retaining relationships (since columns can be grouped into families).
+   </li>
+   <li>
+    <strong>
+     Document model,
+    </strong>
+    e.g. MongoDB, JSON, XML. Good for storing complex hierarchical relationships.
+   </li>
+   <li>
+    <strong>
+     Graph/triple model,
+    </strong>
+    e.g. Neo4j. Good for capturing a web of relationships.
+   </li>
+  </ul>
+  <p>
+   ... plus some of these other features ...
+  </p>
+  <ul>
+   <li>
+    Open source &amp; less costly hardware
+   </li>
+   <li>
+    Distributed storage and processing rather than client/server architecture
+   </li>
+   <li>
+    Memory cache
+   </li>
+   <li>
+    Batch processing (Google Map Reduce) or interactive AKA stream processing (Apache Tez Framework, Apache Spark, Facebook Presto)
+   </li>
+   <li>
+    Proprietary and/or (for Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope) SQL-like interfaces
+   </li>
+   <li>
+    Analytics integration (Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal)
+   </li>
+  </ul>
+  <p>
+   ... to store Big Data ...
+  </p>
+  <ul>
+   <li>
+    large
+    <strong>
+     volume
+    </strong>
+    (petabytes rather than terabytes)
+   </li>
+   <li>
+    wide
+    <strong>
+     variety
+    </strong>
+    (structured and unstructured)
+   </li>
+   <li>
+    high
+    <strong>
+     velocity
+    </strong>
+   </li>
+  </ul>
+  <p>
+   ... achieving greater speed by:
+  </p>
+  <ul>
+   <li>
+    appending rather than updating records, and
+   </li>
+   <li>
+    <p>
+     denormalizing data upon input.
+    </p>
+   </li>
+   <li>
+    MongoDB
+   </li>
+   <li>
+    Cassandra
+   </li>
+   <li>
+    <p>
+     CouchDB
+    </p>
+   </li>
+  </ul>
+  <h2 id="big-data-analytics">
+   <a>
+    2.2. Big Data analytics
    </a>
   </h2>
-  <h1 id="sources-1">
+  <h3 id="mapreduce">
+   <a>
+    2.2.1. MapReduce
+   </a>
+  </h3>
+  <h3 id="data-stream-mining">
+   <a>
+    2.2.2. Data stream mining
+   </a>
+  </h3>
+  <h4 id="critical-event-processing">
+   <a>
+    2.2.2.1. Critical event processing
+   </a>
+  </h4>
+  <h4 id="data-stream-mining-versus-perpetual-analytics">
+   <a>
+    2.2.2.2. Data stream mining versus perpetual analytics
+   </a>
+  </h4>
+  <h1 id="sources">
    <a>
     3. Sources
    </a>
   </h1>
+  <p>
+   Connolly, T. &amp; Begg, C. (2015).
+   <em>
+    Database systems: A practical approach to design, implementation, and management
+   </em>
+   (6th ed.). New York City, NY: Pearson Education.
+  </p>
   <h2 id="cited">
    <a>
     3.1. Cited

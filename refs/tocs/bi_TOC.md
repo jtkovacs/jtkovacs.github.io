@@ -1,41 +1,43 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3605 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
-	- &nbsp;1.1. [Generic BI system architecture](#generic-bi-system-architecture)
-		- &nbsp;1.1.1. [Food system metaphor](#food-system-metaphor)
-	- &nbsp;1.2. [Does BI have value?](#does-bi-have-value)
-	- &nbsp;1.3. [History of BI](#history-of-bi)
-	- &nbsp;1.4. [Trends in BI](#trends-in-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3612 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+	- &nbsp;1.1. [Does BI have value?](#does-bi-have-value)
+	- &nbsp;1.2. [History of BI](#history-of-bi)
+	- &nbsp;1.3. [Trends in BI](#trends-in-bi)
 - &nbsp;2. [BI systems](#bi-systems)
-	- &nbsp;2.1. [Implementing BI systems](#implementing-bi-systems)
-		- &nbsp;2.1.1. [Common problems with BI initiatives](#common-problems-with-bi-initiatives)
-		- &nbsp;2.1.2. [Scoping BI systems](#scoping-bi-systems)
-			- &nbsp;2.1.2.1. [Big Data](#big-data)
-			- &nbsp;2.1.2.2. [Real-time BI](#real-time-bi)
-	- &nbsp;2.2. [ETL](#etl)
-	- &nbsp;2.3. [Data warehousing](#data-warehousing)
-		- &nbsp;2.3.1. [Why a data warehouse?](#why-a-data-warehouse)
-		- &nbsp;2.3.2. [Dimensional modeling](#dimensional-modeling)
-		- &nbsp;2.3.3. [Various data warehouse architectures](#various-data-warehouse-architectures)
-			- &nbsp;2.3.3.1. [Choosing an architecture](#choosing-an-architecture)
-	- &nbsp;2.4. [OLAP](#olap)
-	- &nbsp;2.5. [Interpreting the data](#interpreting-the-data)
-		- &nbsp;2.5.1. [Analytic roles](#analytic-roles)
-			- &nbsp;2.5.1.1. [Business analysts](#business-analysts)
-			- &nbsp;2.5.1.2. [Data scientists](#data-scientists)
-		- &nbsp;2.5.2. [Analytic deliverables](#analytic-deliverables)
-			- &nbsp;2.5.2.1. [Performance management](#performance-management)
-			- &nbsp;2.5.2.2. [Data mining](#data-mining)
-			- &nbsp;2.5.2.3. [Text & web analytics](#text-web-analytics)
-			- &nbsp;2.5.2.4. [Data viz & visual analytics](#data-viz-visual-analytics)
-	- &nbsp;2.6. [Reporting](#reporting)
-		- &nbsp;2.6.1. [Types of reports](#types-of-reports)
-			- &nbsp;2.6.1.1. [Dashboards](#dashboards)
-		- &nbsp;2.6.2. [Best practices for reporting](#best-practices-for-reporting)
-			- &nbsp;2.6.2.1. [Data storytelling](#data-storytelling)
-- &nbsp;3. [Sources](#sources)
-	- &nbsp;3.1. [Cited](#cited)
-	- &nbsp;3.2. [References](#references)
-	- &nbsp;3.3. [Read](#read)
-	- &nbsp;3.4. [Unread](#unread)
+	- &nbsp;2.1. [Generic BI system architecture](#generic-bi-system-architecture)
+		- &nbsp;2.1.1. [Food system metaphor](#food-system-metaphor)
+	- &nbsp;2.2. [BI system capabilities](#bi-system-capabilities)
+	- &nbsp;2.3. [Implementing BI systems](#implementing-bi-systems)
+		- &nbsp;2.3.1. [Common problems with BI initiatives](#common-problems-with-bi-initiatives)
+		- &nbsp;2.3.2. [Scoping BI systems](#scoping-bi-systems)
+			- &nbsp;2.3.2.1. [Big Data](#big-data)
+			- &nbsp;2.3.2.2. [Real-time BI](#real-time-bi)
+- &nbsp;3. [BI technologies](#bi-technologies)
+	- &nbsp;3.1. [ETL](#etl)
+	- &nbsp;3.2. [Data warehousing](#data-warehousing)
+		- &nbsp;3.2.1. [Why a data warehouse?](#why-a-data-warehouse)
+		- &nbsp;3.2.2. [Dimensional modeling](#dimensional-modeling)
+		- &nbsp;3.2.3. [Various data warehouse architectures](#various-data-warehouse-architectures)
+			- &nbsp;3.2.3.1. [Choosing an architecture](#choosing-an-architecture)
+	- &nbsp;3.3. [OLAP](#olap)
+	- &nbsp;3.4. [Interpreting the data](#interpreting-the-data)
+		- &nbsp;3.4.1. [Analytic roles](#analytic-roles)
+			- &nbsp;3.4.1.1. [Business analysts](#business-analysts)
+			- &nbsp;3.4.1.2. [Data scientists](#data-scientists)
+		- &nbsp;3.4.2. [Analytic deliverables](#analytic-deliverables)
+			- &nbsp;3.4.2.1. [Performance management](#performance-management)
+			- &nbsp;3.4.2.2. [Data mining](#data-mining)
+			- &nbsp;3.4.2.3. [Text & web analytics](#text-web-analytics)
+			- &nbsp;3.4.2.4. [Data viz & visual analytics](#data-viz-visual-analytics)
+	- &nbsp;3.5. [Reporting](#reporting)
+		- &nbsp;3.5.1. [Types of reports](#types-of-reports)
+			- &nbsp;3.5.1.1. [Dashboards](#dashboards)
+		- &nbsp;3.5.2. [Best practices for reporting](#best-practices-for-reporting)
+			- &nbsp;3.5.2.1. [Data storytelling](#data-storytelling)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [References](#references)
+	- &nbsp;4.3. [Read](#read)
+	- &nbsp;4.4. [Unread](#unread)
 </div>
 
 
@@ -49,18 +51,9 @@ Business intelligence (BI) systems are a type of [management information system 
 
 
 
-## 1.1. Generic BI system architecture
-
-<img src="../illos/bi-arch.jpg" width="600">
-
-### 1.1.1. Food system metaphor
-
-![](../illos/bi-food-metaphor.png)
 
 
-
-
-## 1.2. Does BI have value?
+## 1.1. Does BI have value?
 
 In theory, BI adds value by improving decisions. BI may enable organizations to answer their questions faster, or to pose new questions and gain new insights. Faster answers may support faster actions; new insights may indicate and/or support new courses of action. But very clearly, the value of BI depends on (1) the **quality of the data** being fed into the system; (2) the **quality of the analysis** performed on the data; (3) the **capacity to turn analysis into decisions,** and most fundamentally, (4) the **capacity to act on decisions.** (Senge's concept of a learning organization is relevant here---it is an organization that can _not only_ make and act on decisions, but also reflect on outcomes and improve them through iteration.)
 
@@ -68,7 +61,7 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 
 
 
-## 1.3. History of BI
+## 1.2. History of BI
 
 - [use of info to support decisions]
 - [use of computers to support decisions]
@@ -82,7 +75,7 @@ In theory, BI adds value by improving decisions. BI may enable organizations to 
 
 
 
-## 1.4. Trends in BI
+## 1.3. Trends in BI
 
 Per Sharda et al. (2014):
 
@@ -100,7 +93,7 @@ Per Sharda et al. (2014):
 Also:
 
 - IoT
-- Big Data
+- [Big Data](https://jtkovacs.github.io/refs/big-data.html)
 - Data democratization
 
 
@@ -111,6 +104,16 @@ Also:
 
 
 # 2. BI systems
+
+## 2.1. Generic BI system architecture
+
+<img src="../illos/bi-arch.jpg" width="600">
+
+### 2.1.1. Food system metaphor
+
+![](../illos/bi-food-metaphor.png)
+
+## 2.2. BI system capabilities
 
 Per Sharda et al. (2004), BI tools provide varying combinations of the following broad functionalities:
 
@@ -142,9 +145,9 @@ Gartner's Magic Quadrant for BI and Analytics Platforms (Sallam et al., 2017) co
     - ***Platform Capabilities and Workflow.*** This capability considers the degree to which capabilities are offered in a single, seamless product or across multiple products with little integration.
     - ***Ease of Use and Visual Appeal.*** Ease of use to administer and deploy the platform, create content, consume and interact with content, as well as the visual appeal."
 
-## 2.1. Implementing BI systems
+## 2.3. Implementing BI systems
 
-### 2.1.1. Common problems with BI initiatives
+### 2.3.1. Common problems with BI initiatives
 
 Per Sharda et al. (2014, pp. 73-74):
 
@@ -160,13 +163,13 @@ Per Sharda et al. (2014, pp. 73-74):
 - Believing that your problems are over when the data warehouse is up and running
 - Focusing on ad hoc data mining and periodic reporting instead of alerts"
 
-### 2.1.2. Scoping BI systems
+### 2.3.2. Scoping BI systems
 
-#### 2.1.2.1. Big Data
+#### 2.3.2.1. Big Data
 
 See [notes on big data.](https://jtkovacs.github.io/refs/big-data.html)
 
-#### 2.1.2.2. Real-time BI
+#### 2.3.2.2. Real-time BI
 
 Per Sharda et al. (2014, p. 81):
 
@@ -183,8 +186,10 @@ Per Sharda et al. (2014, p. 81):
 
 
 
+# 3. BI technologies
 
-## 2.2. ETL
+
+## 3.1. ETL
 
 Data must be **extracted** from operational systems; **transformed** so that it is clean, conformant with data quality standards, and aligned with the logical structure of the data warehouse; and finally **loaded** into the data warehouse. Per Sharda et al. (2014), important factors to consider in selecting ETL tools:
 
@@ -198,7 +203,7 @@ Data must be **extracted** from operational systems; **transformed** so that it 
 
 
 
-## 2.3. Data warehousing
+## 3.2. Data warehousing
 
 A data warehouse is a data store that is used to
 
@@ -213,7 +218,7 @@ Per Sharda et al., many data warehouses have the following characteristics:
 - **Time variant** (storing data in a way that allows time series analysis)
 - **Nonvolatile** (protected from edits)
 
-### 2.3.1. Why a data warehouse?
+### 3.2.1. Why a data warehouse?
 
 Per Sharda et al. (2014, p. 47):
 
@@ -224,11 +229,11 @@ Per Sharda et al. (2014, p. 47):
 - Improved quality (identifying and prioritizing issues faster)
 - Combines data, enabling construction of a more accurate and comprehensive picture of the organization
 
-### 2.3.2. Dimensional modeling
+### 3.2.2. Dimensional modeling
 
 Dimensional modeling is data modeling to optimize retrieval (read rather than write). **Star schema** (denormalized) and **snowflake schema** (normalized) are common.
 
-### 2.3.3. Various data warehouse architectures
+### 3.2.3. Various data warehouse architectures
 
 - **(In)dependent data mart:** A data mart serves a single department or focuses on a single area; it is conceptually confined. If dependent, the data mart is a subset of a broader data warehouse.
 - **Data mart bus architecture:** Dimensionalized data marts linked by conformed dimensions (Ralph Kimball: "plan big, build small").
@@ -238,7 +243,7 @@ Dimensional modeling is data modeling to optimize retrieval (read rather than wr
 - **Operational data store:** An ODS has fresh data, to support immediate and short-term decision-making. It does not fulfill the traditional DW's role of storing data and enabling analysis across long periods of time.
 - **Oper marts:** ODS for multidimensional analysis.
 
-#### 2.3.3.1. Choosing an architecture
+#### 3.2.3.1. Choosing an architecture
 
 Per Sharda et al. (2014):
 
@@ -262,7 +267,7 @@ More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p.
 
 
 
-## 2.4. OLAP
+## 3.3. OLAP
 
 "Simply, OLAP is an approach to quickly answer ad hoc questions by executing multidimensional analytic queries against organizational data repositories" (Sharda et al., 2014, p. 69). The disctinction between [transaction](https://jtkovacs.github.io/refs/databases.html) and analytics databases arises from the current state of computer science, viz., you must optimize for either reads or writes. In addition to this basic distinction, there are [subtypes of OLAP databases](http://olap.com/types-of-olap-systems/) (HTAP, MOLAP, ROLAP, etc.) with varying functionality.
 
@@ -279,11 +284,11 @@ To enable OLAP, data is stored in multidimensional cubes. These cubes can be eff
 
 
 
-## 2.5. Interpreting the data
+## 3.4. Interpreting the data
 
-### 2.5.1. Analytic roles
+### 3.4.1. Analytic roles
 
-#### 2.5.1.1. Business analysts
+#### 3.4.1.1. Business analysts
 
 BA is a field, and its practitioners---business analysts---are perhaps the frontline users of data from BI systems; they play a major role in translating this data into action by relating it back to business processes and decisions.  [BABOK](https://en.wikipedia.org/wiki/A_Guide_to_the_Business_Analysis_Body_of_Knowledge) is the gold standard description of BA skills, but Brandenberg (n.d.) offers the following short version:
 
@@ -315,7 +320,7 @@ BA is a field, and its practitioners---business analysts---are perhaps the front
     - **Methodology** e.g. Agile, Six Sigma, BPMN, Rational Unified Process, etc.
     - **Industry/Domain**
 
-#### 2.5.1.2. Data scientists
+#### 3.4.1.2. Data scientists
 
 (see [notes on data science](https://jtkovacs.github.io/refs/data-science.html) for an overview of data science skills)
 
@@ -325,7 +330,7 @@ Versus BI and BA:
 - DS may involve more sophisticated modeling, facilitating more predictive and prescriptive analytics
 - Because DS uses computers, it loses the context awareness that human actors supply in their interactions with BI and must recreate it somehow (for instance in training machine learning algorithms)
 
-### 2.5.2. Analytic deliverables
+### 3.4.2. Analytic deliverables
 
 Per Sharda et al. (2014):
 
@@ -385,26 +390,26 @@ According to Sharda et al. (2014) and [summarized here,](https://amitadeshpande.
             </ul></td></tr>
 </table>
 
-#### 2.5.2.1. Performance management
+#### 3.4.2.1. Performance management
 
 Business performance management (BPM) entails measuring and improving _actual performance_ versus KPIs and goals that have been established in correspondance with [managerial strategy](https://jtkovacs.github.io/refs/management.html#strategy) or local appetite; see [notes on performance management](https://jtkovacs.github.io/refs/performance-management.html) for further discussion. BPM intersects with BI because it is one of the primary intended uses of BI data---to understand and improve operations. The content of BI dashboards may be stongly determined by performance management goals and techniques.
 
-#### 2.5.2.2. Data mining
+#### 3.4.2.2. Data mining
 
 See [notes on data mining](https://jtkovacs.github.io/refs/data-mining.html) for discussion of the business applications and implementation of prediction, association, and clustering techniques.
 
-#### 2.5.2.3. Text & web analytics
+#### 3.4.2.3. Text & web analytics
 
 See [notes on text analytics.](https://jtkovacs.github.io/refs/text-analytics.html)
 
-#### 2.5.2.4. Data viz & visual analytics
+#### 3.4.2.4. Data viz & visual analytics
 
 Per Sharda et al. (2014, pp. 114-116), **data visualization** is increasingly important capability of BI software because it makes meaning in the data more accessible to more users---and **visual analytics** is a new term meant to describe data viz that goes beyond description to the realm of business analytics, i.e. "diagnostic ... prescriptive and predictive". See [notes on data visualization](https://jtkovacs.github.io/refs/data-viz.html) regarding the conversion of data into informative visuals; see [notes on dashboard design](https://jtkovacs.github.io/refs/interfaces.html#dashboards) regarding the presentation of multiple data visuals, combined to facilitate insights.
 
 
 
 
-## 2.6. Reporting
+## 3.5. Reporting
 
 Sharda et al. call reporting "an essential part of the larger drive toward improved managerial decision making and [organizational knowledge management"](km.html) and credit it with serving multiple **internal functions:**
 
@@ -414,7 +419,7 @@ Sharda et al. call reporting "an essential part of the larger drive toward impro
 - To persuade others to act
 - To create an organizational memory"
 
-### 2.6.1. Types of reports
+### 3.5.1. Types of reports
 
 Per Sharda et al. (2014, pp. 99-100), a report is "any communication artifact prepared with the specific intention of conveying information in a presentable form to whoever needs it"---which, in a business context, includes "memos, minutes, lab reports, sales reports, progress reports, justification reports, compliance reports, annual reports, and policies and procedures" (I object to the inclusion of policies and procedures in this list, because I would call them [documentation\).](https://jtkovacs.github.io/refs/docs.html)
 
@@ -432,17 +437,17 @@ Sharda et al. (2014) cite Hill's (2013) typology of business reports:
 - **Balanced scorecard-type reports** from Kaplan and Norton, adding "customer, business process, and learning and growth perspectives" alongside financial performance
 - **Dashboard-type reports:** arrange multiple performance indicators as a dashboard
 
-#### 2.6.1.1. Dashboards
+#### 3.5.1.1. Dashboards
 
 See [notes on dashboard design.](https://jtkovacs.github.io/refs/interfaces.html#dashboards)
 
-### 2.6.2. Best practices for reporting
+### 3.5.2. Best practices for reporting
 
 - Per Sharda et al. (2014, p. 100): "clarity, brevity, completeness, and correctness"
 - Sharda et al. cite Hill (2008) on the importance of "an overarching **assurance** process that covers the entire value chain and moves back and forth, enrusing that reporting requirements and information delivery are properly aligned"
 - See [notes on graphic design](https://jtkovacs.github.io/refs/graphics-viz.html) re: layout
 
-#### 2.6.2.1. Data storytelling
+#### 3.5.2.1. Data storytelling
 
 From Sharda et al. (2014, p. 117), to present data as a story, ask: _"Who are the **characters?** What is the drama or **challenge?** What hurdles have to be overcome? And at the end of your story, what do you want your audience to **do** as a result?_ (connect your 'call to action' with existing managerial conversations, if possible). They also cite Fink and Moore (2012):
 
@@ -460,9 +465,9 @@ From Sharda et al. (2014, p. 117), to present data as a story, ask: _"Who are th
 
 
 
-# 3. Sources
+# 4. Sources
 
-## 3.1. Cited
+## 4.1. Cited
 
 Brandenberg, L. (n.d.) What Business Analyst skills are important for a new BA? Retrieved from [http://www.bridging-the-gap.com/business-analyst-skills-important/](http://www.bridging-the-gap.com/business-analyst-skills-important/)
 
@@ -472,16 +477,16 @@ Sallam, R, L., Howson, C., Idoine, C. J., Oestreich, T. W., & Laurence, J. (2017
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-## 3.2. References
+## 4.2. References
 
-## 3.3. Read
+## 4.3. Read
 
 - [UW IT - EDW 101](http://itconnect.uw.edu/work/data/training/workshops/#EDW101)
 - [MapReduce - Simplified Data Processing on Large Clusters](http://research.google.com/archive/mapreduce.html)
 - [Parallel MapReduce in Python in 10 Minutes](https://mikecvet.wordpress.com/2010/07/02/parallel-mapreduce-in-python/)
 - [Big Data, n. A kind of black magic](http://www.talyarkoni.org/blog/2014/05/19/big-data-n-a-kind-of-black-magic/)
 
-## 3.4. Unread
+## 4.4. Unread
 
 - _The Data Warehouse Lifecycle Toolkit_
 - _The Data Warehouse Toolkit_

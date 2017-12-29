@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 4045 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 4044 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -6,8 +6,8 @@
 - &nbsp;2. [Text analytics techniques](#text-analytics-techniques)
 	- &nbsp;2.1. [Text mining](#text-mining)
 		- &nbsp;2.1.1. [Establish the corpus](#establish-the-corpus)
-		- &nbsp;2.1.2. [Create term-by-document matrix](#create-term-by-document-matrix)
-		- &nbsp;2.1.3. [Analyze](#analyze)
+		- &nbsp;2.1.2. [Process the corpus](#process-the-corpus)
+		- &nbsp;2.1.3. [Analyze the data](#analyze-the-data)
 			- &nbsp;2.1.3.1. [Clustering](#clustering)
 			- &nbsp;2.1.3.2. [Association](#association)
 			- &nbsp;2.1.3.3. [Classification](#classification)
@@ -109,7 +109,7 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 
 ... and some applications specifically enabled by sentiment analysis, part of NLP (p. 233):
 
-- **Financial system,** trying to predict based on buzz
+- Incorporating 'buzz' into models of financial markets
 - Understanding the 'voices' of employees (VOE), customers (VOC) and the market (VOM)
 - Politics & surveillance
 
@@ -245,18 +245,23 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
 
 - **Organize** (often into a flat text file with consistent character encoding)
 
-### 2.1.2. Create term-by-document matrix
+### 2.1.2. Process the corpus
 
-- **Count raw frequencies** in each document:
-    - **Tokenize** raw input (a token is "a categorized block of text in a sentence ... assignment of meaning to blocks of text is known as tokenizing")
-    - **Filter out** stop words **OR filter in** include terms
-        - **stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
-        - **include terms** AKA term dictionary
-    - **Reckon with linguistic ambiguities** e.g. typos, synonyms, etc.
-    - **Perform stemming** to "[reduce] inflected words to their stem (or base or root) form"
-- **Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.; "text mining research and practice have clearly indicated that the best weighting may come from the use of _term-frequency_ divided by _inverse-document-frequency_ ... "; p. 245)
-- **Construct the term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
-    - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
+**Count raw frequencies** in each document:
+
+- **Tokenize** raw input (a token is "a categorized block of text in a sentence ... assignment of meaning to blocks of text is known as tokenizing")
+- **Filter out** stop words **OR filter in** include terms
+    - **stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
+    - **include terms** AKA term dictionary
+- **Reckon with linguistic ambiguities** e.g. typos, synonyms, etc.
+
+**Perform stemming** to "[reduce] inflected words to their stem (or base or root) form"
+
+**Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.; "text mining research and practice have clearly indicated that the best weighting may come from the use of _term-frequency_ divided by _inverse-document-frequency_ ... "; p. 245)
+
+**Construct the term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
+
+- **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
 
 | | Term1 | Term2 | Term3 | Term4 | Term4 | Term5 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -266,7 +271,7 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
 | Doc4 | | 2 | 1 | | | 1 |
 
 
-### 2.1.3. Analyze
+### 2.1.3. Analyze the data
 
 See [notes on data mining.](https://jtkovacs.github.io/refs/data-mining.html)
 
@@ -396,7 +401,7 @@ Web content and metadata can be scraped and mined by web crawlers, to:
 - reveal the **structure** of the Web, for example identifying **authoritative pages** and **hubs** on the basis of hyperlinks
 - build a corpus of **content** for knowledge discovery through text mining.
 
-See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html) for a discussion of how web crawlers are used in that application.
+See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html) for a discussion of how web crawlers are used there.
 
 
 
@@ -407,8 +412,12 @@ See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.htm
 
 Per Sharda et al. (2014, p. 251):
 
-- Web analytics may be done on data from one's own web properties **(on-site)** or data from other sites **(off-site,** including: email, sales and lead history, social media data)
-- On-site data can be in the form of **server logs,** "where the Web server records file requests made by browsers", or **page tagging,** "which uses JavaScript embedded in the site page code to make image requests to a thid-party analytics-dedicated server whenever a page is rendered by a Web browser (or when a mouse click occurs)"
+- Web analytics may be done on
+    - data from one's own web properties **(on-site)** or
+    - data from other sites **(off-site,** including: email, sales and lead history, social media data)
+- On-site data can be in the form of
+    - **server logs,** "where the Web server records file requests made by browsers", or
+    - **page tagging,** "which uses JavaScript embedded in the site page code to make image requests to a thid-party analytics-dedicated server whenever a page is rendered by a Web browser (or when a mouse click occurs)"
 
 #### 2.3.3.1. Metrics for on-site web analytics
 
@@ -453,7 +462,7 @@ Citing TWG (2013), Sharda et al. present their metrics in four categories (2014,
 - actions
     - leads
     - sales/purchases/submissions
-- abandonment/exit and completion rates (\#page_actions/\#page_views)
+- abandonment/exit and completion rates (\#page\_actions/\#page\_views)
 
 #### 2.3.3.2. Technologies for web analytics
 
@@ -479,32 +488,37 @@ Per Sharda et al. (2014):
 
 Per Sharda et al. (2014):
 
-- Communication (flow of information)
-- (social)
+- Communication _(flow of information)_
+- _(social relationships)_
     - Community
     - Criminal
-- Innovation (flow of ideas)
+- Innovation _(flow of ideas)_
 
 ##### 2.3.4.1.2. Network metrics
 
 Per Sharda et al. (2014):
 
-- CONNECTIONS
-    - **Homophily** (to what extend friends are similar)
-    - **Multiplexity** (nodes connected in multiple ways, e.g. people connected through multiple social roles)
-    - **Mutuality/reciprocity** (of interactions)
-    - **Network closure** (to what extent friends are also friends, AKA **transivity)**
-    - **Propinquity** (to what extent friendship reflects geographical proximity)
-- DISTRIBUTIONS
-    - **Bridge** (node that single-handedly connects separate clusters)
-        - **Structural holes** ("absence of ties between two parts of a network")
-    - **Centrality** (influence/importance of a node, calculated different ways --- _betweenness, closeness, eigenvector, alpha, and degree centrality)_
-    - **Density** ("proportion of direct ties in a network relative to the total number possible")
-    - **Distance** ("minimum number of ties required to connect two particular actors")
-    - **Tie strength** ("linear combination of time, emotional intensity, intimacy, and reciprocity ... **strong ties** are associated with homophily, intimacy, propinquity, and transitivity, while **weak ties** are associated with bridges)
-- SEGMENTATION
-    - **Cliques** versus **social circles** (lots of direct ties, versus looser circles; **clustering coefficient** higher for cliques)
-    - **Cohesion** ("minimum humber of members who, if removed from the group, would disconnect the group")
+_CONNECTIONS_
+
+- **Homophily** (to what extend friends are similar)
+- **Multiplexity** (nodes connected in multiple ways, e.g. people connected through multiple social roles)
+- **Mutuality/reciprocity** (of interactions)
+- **Network closure** (to what extent friends are also friends, AKA **transivity)**
+- **Propinquity** (to what extent friendship reflects geographical proximity)
+
+_DISTRIBUTIONS_
+
+- **Bridge** (node that single-handedly connects separate clusters)
+    - **Structural holes** ("absence of ties between two parts of a network")
+- **Centrality** (influence/importance of a node, calculated different ways --- _betweenness, closeness, eigenvector, alpha, and degree centrality)_
+- **Density** ("proportion of direct ties in a network relative to the total number possible")
+- **Distance** ("minimum number of ties required to connect two particular actors")
+- **Tie strength** ("linear combination of time, emotional intensity, intimacy, and reciprocity ... **strong ties** are associated with homophily, intimacy, propinquity, and transitivity, while **weak ties** are associated with bridges)
+
+_SEGMENTATION_
+
+- **Cliques** versus **social circles** (lots of direct ties, versus looser circles; **clustering coefficient** higher for cliques)
+- **Cohesion** ("minimum humber of members who, if removed from the group, would disconnect the group")
 
 
 #### 2.3.4.2. Social media analytics
@@ -528,7 +542,7 @@ Sharda et al. (2014, p. 262) summarize Morgan et al. (2010) regarding **differen
 - **Accessibility** (as readers) and **usability** (as authors) is higher for social media
 - **Mutability** is clearly higher for digital content
 
-Sharda et al. (2014, pp. 262-263) summarize Brogan and Bastone's (2011) stratification of social media users on the basis of time and intensity:
+Sharda et al. (2014, pp. 262-263) summarize Brogan and Bastone's (2011) stratification of **social media users** on the basis of time and intensity of use:
 
 - Inactives
 - Spectators

@@ -5,7 +5,7 @@
   <meta content="text/css" http-equiv="Content-Style-Type"/>
   <meta content="pandoc" name="generator"/>
   <title>
-   jtkovacs.github.io | databases
+   jtck.github.io | databases
   </title>
   <link href="../assets/styles/main.css" rel="stylesheet" type="text/css"/>
   <link href="../assets/styles/refs.css" rel="stylesheet" type="text/css"/>
@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; databases | just under 4975 words | updated 05/27/2017
+   &gt; databases | just under 4807 words | updated 12/29/2017
   </p>
   <div class="TOC">
    <ul>
@@ -45,152 +45,152 @@
         </li>
        </ul>
       </li>
-      <li>
-       1.3.
-       <a href="#types-of-databases">
-        Types of databases
-       </a>
-       <ul>
-        <li>
-         1.3.1.
-         <a href="#the-relational-data-model">
-          The relational data model
-         </a>
-         <ul>
-          <li>
-           1.3.1.1.
-           <a href="#relationships-between-entities">
-            Relationships between entities
-           </a>
-           <ul>
-            <li>
-             1.3.1.1.1.
-             <a href="#associative-entities">
-              Associative entities
-             </a>
-            </li>
-            <li>
-             1.3.1.1.2.
-             <a href="#superclasses-and-subclasses">
-              Superclasses and subclasses
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           1.3.1.2.
-           <a href="#types-of-attributes">
-            Types of attributes
-           </a>
-          </li>
-          <li>
-           1.3.1.3.
-           <a href="#relationships-between-attributes">
-            Relationships between attributes
-           </a>
-           <ul>
-            <li>
-             1.3.1.3.1.
-             <a href="#functional-dependencies-and-keys">
-              Functional dependencies and keys
-             </a>
-            </li>
-            <li>
-             1.3.1.3.2.
-             <a href="#transitive-dependencies">
-              Transitive dependencies
-             </a>
-            </li>
-            <li>
-             1.3.1.3.3.
-             <a href="#multivalued-dependencies">
-              Multivalued dependencies
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           1.3.1.4.
-           <a href="#integrity">
-            Integrity
-           </a>
-           <ul>
-            <li>
-             1.3.1.4.1.
-             <a href="#normalization">
-              Normalization
-             </a>
-            </li>
-            <li>
-             1.3.1.4.2.
-             <a href="#why-not-normalize">
-              Why not normalize?
-             </a>
-            </li>
-           </ul>
-          </li>
-         </ul>
-        </li>
-        <li>
-         1.3.2.
-         <a href="#nosql-databases">
-          NoSQL databases
-         </a>
-        </li>
-       </ul>
-      </li>
      </ul>
     </li>
     <li>
      2.
-     <a href="#database-development">
-      Database development
+     <a href="#types-of-databases">
+      Types of databases
      </a>
      <ul>
       <li>
        2.1.
+       <a href="#relational-data-model">
+        Relational data model
+       </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#relationships-between-entities">
+          Relationships between entities
+         </a>
+         <ul>
+          <li>
+           2.1.1.1.
+           <a href="#associative-entities">
+            Associative entities
+           </a>
+          </li>
+          <li>
+           2.1.1.2.
+           <a href="#superclasses-and-subclasses">
+            Superclasses and subclasses
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         2.1.2.
+         <a href="#types-of-attributes">
+          Types of attributes
+         </a>
+        </li>
+        <li>
+         2.1.3.
+         <a href="#relationships-between-attributes">
+          Relationships between attributes
+         </a>
+         <ul>
+          <li>
+           2.1.3.1.
+           <a href="#functional-dependencies-and-keys">
+            Functional dependencies and keys
+           </a>
+          </li>
+          <li>
+           2.1.3.2.
+           <a href="#transitive-dependencies">
+            Transitive dependencies
+           </a>
+          </li>
+          <li>
+           2.1.3.3.
+           <a href="#multivalued-dependencies">
+            Multivalued dependencies
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         2.1.4.
+         <a href="#integrity">
+          Integrity
+         </a>
+         <ul>
+          <li>
+           2.1.4.1.
+           <a href="#normalization">
+            Normalization
+           </a>
+          </li>
+          <li>
+           2.1.4.2.
+           <a href="#why-not-normalize">
+            Why not normalize?
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
+       <a href="#nosql-databases">
+        NoSQL databases
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     3.
+     <a href="#relational-database-development">
+      Relational database development
+     </a>
+     <ul>
+      <li>
+       3.1.
        <a href="#business-requirements">
         Business requirements
        </a>
       </li>
       <li>
-       2.2.
+       3.2.
        <a href="#design-phases">
         Design phases
        </a>
        <ul>
         <li>
-         2.2.1.
+         3.2.1.
          <a href="#conceptual-design">
           Conceptual design
          </a>
         </li>
         <li>
-         2.2.2.
+         3.2.2.
          <a href="#logical-design">
           Logical design
          </a>
         </li>
         <li>
-         2.2.3.
+         3.2.3.
          <a href="#physical-design">
           Physical design
          </a>
          <ul>
           <li>
-           2.2.3.1.
+           3.2.3.1.
            <a href="#database-architectures">
             Database architectures
            </a>
           </li>
           <li>
-           2.2.3.2.
+           3.2.3.2.
            <a href="#files-and-filegroups">
             Files and filegroups
            </a>
            <ul>
             <li>
-             2.2.3.2.1.
+             3.2.3.2.1.
              <a href="#storage-size">
               Storage size
              </a>
@@ -198,31 +198,31 @@
            </ul>
           </li>
           <li>
-           2.2.3.3.
+           3.2.3.3.
            <a href="#indexing-and-performance">
             Indexing and performance
            </a>
            <ul>
             <li>
-             2.2.3.3.1.
+             3.2.3.3.1.
              <a href="#why-to-index">
               Why to index
              </a>
             </li>
             <li>
-             2.2.3.3.2.
+             3.2.3.3.2.
              <a href="#what-to-index">
               What to index
              </a>
             </li>
             <li>
-             2.2.3.3.3.
+             3.2.3.3.3.
              <a href="#how-different-types-of-indexes-work">
               How different types of indexes work
              </a>
             </li>
             <li>
-             2.2.3.3.4.
+             3.2.3.3.4.
              <a href="#fragmentation">
               Fragmentation
              </a>
@@ -236,43 +236,43 @@
      </ul>
     </li>
     <li>
-     3.
-     <a href="#database-administration">
-      Database administration
+     4.
+     <a href="#relational-database-administration">
+      Relational database administration
      </a>
      <ul>
       <li>
-       3.1.
+       4.1.
        <a href="#transaction-management">
         Transaction management
        </a>
       </li>
       <li>
-       3.2.
+       4.2.
        <a href="#security">
         Security
        </a>
        <ul>
         <li>
-         3.2.1.
+         4.2.1.
          <a href="#security-threats">
           Security threats
          </a>
         </li>
         <li>
-         3.2.2.
+         4.2.2.
          <a href="#security-solutions">
           Security solutions
          </a>
          <ul>
           <li>
-           3.2.2.1.
+           4.2.2.1.
            <a href="#encryption">
             Encryption
            </a>
            <ul>
             <li>
-             3.2.2.1.1.
+             4.2.2.1.1.
              <a href="#tde">
               TDE
              </a>
@@ -280,19 +280,19 @@
            </ul>
           </li>
           <li>
-           3.2.2.2.
+           4.2.2.2.
            <a href="#access-control">
             Access control
            </a>
            <ul>
             <li>
-             3.2.2.2.1.
+             4.2.2.2.1.
              <a href="#ownership-chaining">
               Ownership chaining
              </a>
             </li>
             <li>
-             3.2.2.2.2.
+             4.2.2.2.2.
              <a href="#contained-database">
               Contained database
              </a>
@@ -300,7 +300,7 @@
            </ul>
           </li>
           <li>
-           3.2.2.3.
+           4.2.2.3.
            <a href="#preventing-sql-injections">
             Preventing SQL injections
            </a>
@@ -308,7 +308,7 @@
          </ul>
         </li>
         <li>
-         3.2.3.
+         4.2.3.
          <a href="#security-audits">
           Security audits
          </a>
@@ -316,7 +316,7 @@
        </ul>
       </li>
       <li>
-       3.3.
+       4.3.
        <a href="#backup">
         Backup
        </a>
@@ -324,31 +324,31 @@
      </ul>
     </li>
     <li>
-     4.
+     5.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       4.1.
+       5.1.
        <a href="#cited">
         Cited
        </a>
       </li>
       <li>
-       4.2.
+       5.2.
        <a href="#references">
         References
        </a>
       </li>
       <li>
-       4.3.
+       5.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       4.4.
+       5.4.
        <a href="#unread">
         Unread
        </a>
@@ -658,16 +658,16 @@
   <p>
    Then, the DBMS creates mappings (also called intensions; a realization of a schema is called the extension or state of the database) between schemas.
   </p>
-  <h2 id="types-of-databases">
+  <h1 id="types-of-databases">
    <a>
-    1.3. Types of databases
+    2. Types of databases
+   </a>
+  </h1>
+  <h2 id="relational-data-model">
+   <a>
+    2.1. Relational data model
    </a>
   </h2>
-  <h3 id="the-relational-data-model">
-   <a>
-    1.3.1. The relational data model
-   </a>
-  </h3>
   <p>
    In a relational database, the data model is of
    <strong>
@@ -705,11 +705,11 @@
     in a normal form.
    </a>
   </p>
-  <h4 id="relationships-between-entities">
+  <h3 id="relationships-between-entities">
    <a>
-    1.3.1.1. Relationships between entities
+    2.1.1. Relationships between entities
    </a>
-  </h4>
+  </h3>
   <p>
    The relationship between two entites has several characteristics. The
    <strong>
@@ -729,11 +729,11 @@
    </strong>
    if the PK of a parent entity appears in the PK of a child entity, denoted with a solid line; nonidentifying relationships are denoted with dashed lines.
   </p>
-  <h5 id="associative-entities">
+  <h4 id="associative-entities">
    <a>
-    1.3.1.1.1. Associative entities
+    2.1.1.1. Associative entities
    </a>
-  </h5>
+  </h4>
   <p>
    Many-to-many relationships must be resolved with an associative entity (AKA junction table) that has a combined primary key (PK), both of which are foreign keys (FK)---though there are
    <a href="http://codebetter.com/jeremymiller/2007/02/01/composite-keys-are-evil/">
@@ -745,11 +745,11 @@
    </a>
    creating a synthetic key for an associative entity. For example, consider a taxi company that owns cars; employs drivers; randomly assigns each driver a car for their shift; and wants to maintain a record for liability purposes. Entities CAR and DRIVER have a many-to-many relationship, since a driver will be assigned to multiple cars over the course of their employment and a car will likewise be driven by many different drivers. To capture the necessary data, SHIFTS is created as an associative entity with attributes driver ID, car ID, and shift date.
   </p>
-  <h5 id="superclasses-and-subclasses">
+  <h4 id="superclasses-and-subclasses">
    <a>
-    1.3.1.1.2. Superclasses and subclasses
+    2.1.1.2. Superclasses and subclasses
    </a>
-  </h5>
+  </h4>
   <p>
    Entities may be classified as superclasses and subclasses; this provides more semantic meaning to an ER model, makes the ER model more readable, and (depending on implementation) can reduce the number of NULLs in the database. There are several implementation options:
   </p>
@@ -764,11 +764,11 @@
     The ERD includes a superclass and subclass(es) but they are implemented as a single table.
    </li>
   </ul>
-  <h4 id="types-of-attributes">
+  <h3 id="types-of-attributes">
    <a>
-    1.3.1.2. Types of attributes
+    2.1.2. Types of attributes
    </a>
-  </h4>
+  </h3>
   <p>
    Per Sunderraman (2012) and the Database Management Wikia (n.d.), an attribute is:
   </p>
@@ -796,11 +796,11 @@
     AKA set-valued if, for a single entity, the attribute could/should store multiple values (one-to-many relationship); in this case, the multi-valued attribute should be moved to a new table and linked back to the main entity via the entity's primary key.
    </li>
   </ul>
-  <h4 id="relationships-between-attributes">
+  <h3 id="relationships-between-attributes">
    <a>
-    1.3.1.3. Relationships between attributes
+    2.1.3. Relationships between attributes
    </a>
-  </h4>
+  </h3>
   <p>
    Different sorts of relationships AKA dependencies exist between attributes; this is not a modeling decision, it is a feature of the real world. Dependencies are important for understanding
    <a href="#normalization">
@@ -808,11 +808,11 @@
    </a>
    normalization is a process of allocating attributes to entities to achieve a certain configuration of dependencies within each entity. Dependencies are also used (somehow?) in DB compression and query optimization.
   </p>
-  <h5 id="functional-dependencies-and-keys">
+  <h4 id="functional-dependencies-and-keys">
    <a>
-    1.3.1.3.1. Functional dependencies and keys
+    2.1.3.1. Functional dependencies and keys
    </a>
-  </h5>
+  </h4>
   <p>
    A functional dependency
    <code>
@@ -919,11 +919,11 @@
    </strong>
    AKA concatenated, meaning that several attributes taken together (a set) are a determinant whose closure is the entire table. For primary keys specifically, they are most often an integer (the narrowest suitable field); immutable; and mandatory.
   </p>
-  <h5 id="transitive-dependencies">
+  <h4 id="transitive-dependencies">
    <a>
-    1.3.1.3.2. Transitive dependencies
+    2.1.3.2. Transitive dependencies
    </a>
-  </h5>
+  </h4>
   <p>
    If a functional dependency exists between X and Y, and a functional dependency exists between Y and Z, then a transitive dependency exists between X and Z:
    <code>
@@ -931,11 +931,11 @@
    </code>
    As an example, consider a table (perhaps in a bookstore database) with three attributes: ISBN, TITLE, AUTHOR, PHONE NUMBER. ISBN is the primary key; TITLE and AUTHOR are functionally dependent on it; but PHONE NUMBER is functionally dependent on AUTHOR, not on ISBN. Therefore a transitive dependency exists between PHONE NUMBER and ISBN.
   </p>
-  <h5 id="multivalued-dependencies">
+  <h4 id="multivalued-dependencies">
    <a>
-    1.3.1.3.3. Multivalued dependencies
+    2.1.3.3. Multivalued dependencies
    </a>
-  </h5>
+  </h4>
   <p>
    A multivalued dependency
    <code>
@@ -954,11 +954,11 @@
     examples and details here.
    </a>
   </p>
-  <h4 id="integrity">
+  <h3 id="integrity">
    <a>
-    1.3.1.4. Integrity
+    2.1.4. Integrity
    </a>
-  </h4>
+  </h3>
   <p>
    Data must have integrity to be useful and trustworthy. Data integrity
    <a href="wrangling.html#dirty-data-typologies">
@@ -972,7 +972,6 @@
      Entity integrity
     </strong>
     is the assurance that entities in the real world are represented in each applicable table of the database by a single record (row). The constraint that rows be unique is enforced through the primary key.
-    <br/>
    </li>
    <li>
     <strong>
@@ -993,11 +992,11 @@
   <p>
    Additionally, database designs are normalized to preserve integrity and minimize redundancy (by limiting storage costs).
   </p>
-  <h5 id="normalization">
+  <h4 id="normalization">
    <a>
-    1.3.1.4.1. Normalization
+    2.1.4.1. Normalization
    </a>
-  </h5>
+  </h4>
   <p>
    Normalization is a process of allocating attributes to entities to achieve a certain configuration of
    <a href="#relationships-between-attributes">
@@ -1285,11 +1284,11 @@
     </tr>
    </tbody>
   </table>
-  <h5 id="why-not-normalize">
+  <h4 id="why-not-normalize">
    <a>
-    1.3.1.4.2. Why not normalize?
+    2.1.4.2. Why not normalize?
    </a>
-  </h5>
+  </h4>
   <p>
    Per Chapple (2016):
   </p>
@@ -1305,111 +1304,21 @@
     Normalization is a complex, time-consuming process and developer time is valuable, so operate in the spirit of 'quick and dirty'.
    </li>
   </ul>
-  <h3 id="nosql-databases">
+  <h2 id="nosql-databases">
    <a>
-    1.3.2. NoSQL databases
+    2.2. NoSQL databases
    </a>
-  </h3>
+  </h2>
   <p>
-   NoSQL databases use non-relational data models ...
+   See
+   <a href="https://jtkovacs.github.io/refs/big-data.html">
+    notes on Big Data,
+   </a>
+   an area in which NoSQL databases are commonly used.
   </p>
-  <ul>
-   <li>
-    <strong>
-     Key-value model,
-    </strong>
-    e.g. Dynamo, Riak, Basho:
-    <em>
-     [Key|Value|Timestamp].
-    </em>
-    Provides easy and fast storage for simple data.
-   </li>
-   <li>
-    <strong>
-     Columnar model,
-    </strong>
-    e.g. Google’s Bigtable, Apache’s HBase (part of Hadoop):
-    <em>
-     [Row Key|Value|Timestamp|Column Family|Column Name].
-    </em>
-    Good for retaining relationships (since columns can be grouped into families).
-   </li>
-   <li>
-    <strong>
-     Document model,
-    </strong>
-    e.g. MongoDB, JSON, XML. Good for storing complex hierarchical relationships.
-   </li>
-   <li>
-    <strong>
-     Graph/triple model,
-    </strong>
-    e.g. Neo4j. Good for capturing a web of relationships.
-   </li>
-  </ul>
-  <p>
-   ... plus some of these other features ...
-  </p>
-  <ul>
-   <li>
-    Open source &amp; less costly hardware
-   </li>
-   <li>
-    Distributed storage and processing rather than client/server architecture
-   </li>
-   <li>
-    Memory cache
-   </li>
-   <li>
-    Batch processing (Google Map Reduce) or interactive AKA stream processing (Apache Tez Framework, Apache Spark, Facebook Presto)
-   </li>
-   <li>
-    Proprietary and/or (for Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope) SQL-like interfaces
-    <br/>
-   </li>
-   <li>
-    Analytics integration (Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal)
-   </li>
-  </ul>
-  <p>
-   ... to store Big Data ...
-  </p>
-  <ul>
-   <li>
-    large
-    <strong>
-     volume
-    </strong>
-    (petabytes rather than terabytes)
-   </li>
-   <li>
-    wide
-    <strong>
-     variety
-    </strong>
-    (structured and unstructured)
-   </li>
-   <li>
-    high
-    <strong>
-     velocity
-    </strong>
-   </li>
-  </ul>
-  <p>
-   ... achieving greater speed by:
-  </p>
-  <ul>
-   <li>
-    appending rather than updating records, and
-   </li>
-   <li>
-    denormalizing data upon input.
-   </li>
-  </ul>
-  <h1 id="database-development">
+  <h1 id="relational-database-development">
    <a>
-    2. Database development
+    3. Relational database development
    </a>
   </h1>
   <p>
@@ -1437,7 +1346,7 @@
   </p>
   <h2 id="business-requirements">
    <a>
-    2.1. Business requirements
+    3.1. Business requirements
    </a>
   </h2>
   <ul>
@@ -1486,7 +1395,7 @@
   </ul>
   <h2 id="design-phases">
    <a>
-    2.2. Design phases
+    3.2. Design phases
    </a>
   </h2>
   <p>
@@ -1494,7 +1403,7 @@
   </p>
   <h3 id="conceptual-design">
    <a>
-    2.2.1. Conceptual design
+    3.2.1. Conceptual design
    </a>
   </h3>
   <p>
@@ -1552,7 +1461,7 @@
   </ul>
   <h3 id="logical-design">
    <a>
-    2.2.2. Logical design
+    3.2.2. Logical design
    </a>
   </h3>
   <p>
@@ -1599,7 +1508,7 @@
   </ul>
   <h3 id="physical-design">
    <a>
-    2.2.3. Physical design
+    3.2.3. Physical design
    </a>
   </h3>
   <p>
@@ -1607,7 +1516,7 @@
   </p>
   <h4 id="database-architectures">
    <a>
-    2.2.3.1. Database architectures
+    3.2.3.1. Database architectures
    </a>
   </h4>
   <div class="figure">
@@ -1648,7 +1557,7 @@
   </div>
   <h4 id="files-and-filegroups">
    <a>
-    2.2.3.2. Files and filegroups
+    3.2.3.2. Files and filegroups
    </a>
   </h4>
   <p>
@@ -1682,7 +1591,7 @@
   </div>
   <h5 id="storage-size">
    <a>
-    2.2.3.2.1. Storage size
+    3.2.3.2.1. Storage size
    </a>
   </h5>
   <p>
@@ -1709,12 +1618,12 @@
   </ul>
   <h4 id="indexing-and-performance">
    <a>
-    2.2.3.3. Indexing and performance
+    3.2.3.3. Indexing and performance
    </a>
   </h4>
   <h5 id="why-to-index">
    <a>
-    2.2.3.3.1. Why to index
+    3.2.3.3.1. Why to index
    </a>
   </h5>
   <p>
@@ -1737,7 +1646,7 @@
   </p>
   <h5 id="what-to-index">
    <a>
-    2.2.3.3.2. What to index
+    3.2.3.3.2. What to index
    </a>
   </h5>
   <p>
@@ -1749,7 +1658,7 @@
   </p>
   <h5 id="how-different-types-of-indexes-work">
    <a>
-    2.2.3.3.3. How different types of indexes work
+    3.2.3.3.3. How different types of indexes work
    </a>
   </h5>
   <p>
@@ -1829,7 +1738,7 @@
   </div>
   <h5 id="fragmentation">
    <a>
-    2.2.3.3.4. Fragmentation
+    3.2.3.3.4. Fragmentation
    </a>
   </h5>
   <p>
@@ -1883,15 +1792,7 @@
     Extent fragmentation of a heap table (non-indexed) can be reduced by creating then dropping a clustered index
    </li>
   </ul>
-  <table style="width:42%;">
-   <colgroup>
-    <col width="22%">
-    </col>
-    <col width="6%">
-    </col>
-    <col width="12%">
-    </col>
-   </colgroup>
+  <table>
    <thead>
     <tr class="header">
      <th align="left">
@@ -2007,14 +1908,14 @@
     </tr>
    </tbody>
   </table>
-  <h1 id="database-administration">
+  <h1 id="relational-database-administration">
    <a>
-    3. Database administration
+    4. Relational database administration
    </a>
   </h1>
   <h2 id="transaction-management">
    <a>
-    3.1. Transaction management
+    4.1. Transaction management
    </a>
   </h2>
   <ul>
@@ -2027,12 +1928,12 @@
   </ul>
   <h2 id="security">
    <a>
-    3.2. Security
+    4.2. Security
    </a>
   </h2>
   <h3 id="security-threats">
    <a>
-    3.2.1. Security threats
+    4.2.1. Security threats
    </a>
   </h3>
   <p>
@@ -2071,517 +1972,511 @@
      </ul>
     </td>
     <td style="text-align: left;">
-     <ul>
-      <li>
-       Creation of trapdoor
-      </li>
-      <li>
-       Staff shortages leading to bad code
-      </li>
-      <li>
-       Lack of security training and procedures
-      </li>
-     </ul>
-    </td>
-    <td style="text-align: left; width=50px;">
-     <ul>
-      <li>
-       Inadequate policies and procedures
-      </li>
-     </ul>
     </td>
    </tr>
   </table>
-  <table class="bullets">
-   <tr>
-    <th>
-     Hardware
-    </th>
-    <th>
-     Networks
-    </th>
-    <th>
-     DBMS &amp; Applications
-    </th>
-    <th>
-     Database
-    </th>
-   </tr>
-   <tr>
-    <td style="text-align: left;">
-     <ul>
-      <li>
-       Fire, flood, bombs
-      </li>
-      <li>
-       Power loss or surge
-      </li>
-      <li>
-       Electromagnetic interference and radiation
-      </li>
-      <li>
-       Hardware failure of security mechanisms
-      </li>
-      <li>
-       Equipment theft
-      </li>
-     </ul>
-    </td>
-    <td style="text-align: left;">
-     <ul>
-      <li>
-       Wire tapping
-      </li>
-      <li>
-       Cable breakage or disconnection
-      </li>
-      <li>
-       Electromagnetic interference and radiation
-      </li>
-     </ul>
-    </td>
-    <td style="text-align: left;">
-     <ul>
-      <li>
-       Software failure of security mechanisms
-      </li>
-      <li>
-       Program alteration
-      </li>
-      <li>
-       Program theft
-      </li>
-     </ul>
-    </td>
-    <td style="text-align: left;">
-     <ul>
-      <li>
-       Unauthorized data I/O
-      </li>
-     </ul>
-    </td>
-   </tr>
-  </table>
-  <h3 id="security-solutions">
-   <a>
-    3.2.2. Security solutions
-   </a>
-  </h3>
-  <p>
-   This is what security typically looks like for enterprise databases:
-  </p>
-  <div class="figure">
-   <img alt="Source: Simon Wang" src="illos/db-security.png"/>
-   <p class="caption">
-    <strong>
-     Source:
-    </strong>
-    Simon Wang
-   </p>
-  </div>
-  <h4 id="encryption">
-   <a>
-    3.2.2.1. Encryption
-   </a>
-  </h4>
-  <p>
-   Encryption protects the meaning of data despite an insecure environment. There are different approaches to encryption:
-  </p>
-  <ul>
-   <li>
-    <strong>
-     Bit manipulation
-    </strong>
-    is substitution and permutation within blocks of N bits, decoded by a single key. This approach is used by the data encryption standard (DES; 64 bits) and advanced encryption standards (AES; 128/192/256 bits).
-   </li>
-   <li>
-    <strong>
-     Mathematical functions
-    </strong>
-    are used in public key encryption --- developed by Diffie &amp; Hellman in 1976, and operationalized as RSA in 1978. This approach uses two keys.
-   </li>
-   <li>
-    <strong>
-     Digital signatures
-    </strong>
-    are based on public key techniques, creating a unique, single-use string of symbols to represent (most often) an online transaction.
-   </li>
-  </ul>
-  <h5 id="tde">
-   <a>
-    3.2.2.1.1. TDE
-   </a>
-  </h5>
-  <p>
-   SQL Server specifically offers transparent data encryption (TDE) so that data is protected if hardware is stolen. TDE stores database data in encrypted form, decrypts data as it's read, and encrypts data as it's written.
-  </p>
-  <h4 id="access-control">
-   <a>
-    3.2.2.2. Access control
-   </a>
-  </h4>
-  <p>
-   It's helpful to think about access in terms of principles (entities needing access); permissions (levels of access); and securables (objects needing protection). Access permissions specify
-   <strong>
-    who
-   </strong>
-   is allowed to do
-   <strong>
-    what
-   </strong>
-   (read, write, execute, share) to an object. Per DifferenceBetween.net (n.d.) and Steve DL (2014), there are several generic approaches to managing access permissions:
-  </p>
-  <ul>
-   <li>
-    Discretionary access control
-    <strong>
-     (DAC)
-    </strong>
-    permissions (widely used) are based on objects: each object has a list of users who may access it. This is a more flexible but also more admin labor-intensive approach, unless the data is meant to be goverened by individual users (e.g., Facebook).
-   </li>
-   <li>
-    Mandatory access control
-    <strong>
-     (MAC)
-    </strong>
-    permissions (less common) are managed based on user group
-    <a href="bash.html#manage-permissions">
-     (like Linux).
-    </a>
-   </li>
-   <li>
-    In role-based access control
-    <strong>
-     (RBAC),
-    </strong>
-    user groups correspond to specific roles.
-   </li>
-  </ul>
-  <h5 id="ownership-chaining">
-   <a>
-    3.2.2.2.1. Ownership chaining
-   </a>
-  </h5>
-  <p>
-   Instead of granting permissions to multiple tables, one can reduce administrative overhead by creating a view based on several tables and granting access to the view.
-  </p>
-  <h5 id="contained-database">
-   <a>
-    3.2.2.2.2. Contained database
-   </a>
-  </h5>
-  <p>
-   This is a SQL Server feature. A contained database handles its own authentication, metadata, etc., and is extremely useful for cloud computing.
-  </p>
-  <h4 id="preventing-sql-injections">
-   <a>
-    3.2.2.3. Preventing SQL injections
-   </a>
-  </h4>
-  <p>
-   SQL injections happen when database application developers use dynamic SQL statements in their code; hackers can use these channels to introduce their own malicious SQL statements. SQL injection is countered by user input validation:
-  </p>
-  <ul>
-   <li>
-    Use sp_executesql stored procedure
-   </li>
-   <li>
-    Disallow comments:
-    <code>
-     -- /* */
-    </code>
-   </li>
-   <li>
-    Disallow punctuation:
-    <code>
-     ' ; ( )
-    </code>
-   </li>
-   <li>
-    Disallow binary data
-   </li>
-   <li>
-    Validate XML against an XML schema
-   </li>
-  </ul>
-  <h3 id="security-audits">
-   <a>
-    3.2.3. Security audits
-   </a>
-  </h3>
-  <p>
-   Check database logs to identify security problems, or conduct a more extensive audit. SQL Server provides a common criteria (C2) audit mode as well as SQL trace/SQL triggers (???).
-  </p>
-  <h2 id="backup">
-   <a>
-    3.3. Backup
-   </a>
-  </h2>
-  <h1 id="sources">
-   <a>
-    4. Sources
-   </a>
-  </h1>
-  <h2 id="cited">
-   <a>
-    4.1. Cited
-   </a>
-  </h2>
-  <p>
-   Chapple, M. (2016, November 29). Should I denormalize my database? ThoughtCo. Retrieved from
-   <a class="uri" href="https://www.thoughtco.com/should-i-normalize-my-database-1019730">
-    https://www.thoughtco.com/should-i-normalize-my-database-1019730
-   </a>
-  </p>
-  <p>
-   DifferenceBetween.net. (n.d.). Difference between MAC and DAC. Retrieved from
-   <a class="uri" href="http://www.differencebetween.net/technology/software-technology/difference-between-mac-and-dac/">
-    http://www.differencebetween.net/technology/software-technology/difference-between-mac-and-dac/
-   </a>
-  </p>
-  <p>
-   displayName. (2015, December 3). Are determinants and candidate keys same or different things? [Comment]. Stack Overflow. Message posted to
-   <a class="uri" href="https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things">
-    https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things
-   </a>
-  </p>
-  <p>
-   E/R model: types of attributes. (n.d.). Retrieved from the Database Management Wiki:
-   <a class="uri" href="http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes">
-    http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes
-   </a>
-  </p>
-  <p>
-   Connolly, T. &amp; Begg, C. (2015).
-   <em>
-    Database systems: A practical approach to design, implementation, and management
-   </em>
-   (6th ed.). New York City, NY: Pearson Education.
-  </p>
-  <p>
-   Sheffield, W. (2012, October 12). Does a clustered index really physically store the rows in key order?
-   <a class="uri" href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
-    http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/
-   </a>
-  </p>
-  <p>
-   Sheldon, R. (2013, July 30). Columnstore indexes in SQL Server 2012.
-   <em>
-    Simple Talk.
-   </em>
-   Retrieved from
-   <a class="uri" href="https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/">
-    https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/
-   </a>
-  </p>
-  <p>
-   Sheldon, R. (2014, March 25). 14 SQL Server indexing questions you were too shy to ask.
-   <em>
-    Simple Talk.
-   </em>
-   Retrieved from
-   <a class="uri" href="https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/">
-    https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/
-   </a>
-  </p>
-  <p>
-   Steve DL. (2014, July 20). MAC vs DAC vs RBAC [forum post]. StackOverflow. Retrieved from
-   <a class="uri" href="https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac">
-    https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac
-   </a>
-  </p>
-  <p>
-   Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from
-   <a class="uri" href="http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html">
-    http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html
-   </a>
-  </p>
-  <p>
-   Ullman, R. D. (2006). Relational database design. Retrieved from
-   <a class="uri" href="http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html">
-    http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html
-   </a>
-  </p>
-  <p>
-   Watt, A. (n.d.). Functional dependencies. In
-   <em>
-    Database design.
-   </em>
-   Retrieved from
-   <a class="uri" href="https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/">
-    https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/
-   </a>
-  </p>
-  <p>
-   Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from
-   <a class="uri" href="http://use-the-index-luke.com/sql/anatomy">
-    http://use-the-index-luke.com/sql/anatomy
-   </a>
-  </p>
-  <h2 id="references">
-   <a>
-    4.2. References
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <a href="http://databasemanagement.wikia.com/wiki/Main_Page">
-     Database Management Wikia
-    </a>
-   </li>
-   <li>
-    <a href="http://use-the-index-luke.com/sql/table-of-contents">
-     Use the index, Luke: A guide to database performance for developers
-    </a>
-   </li>
-  </ul>
-  <h2 id="read">
-   <a>
-    4.3. Read
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <a href="https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about">
-     Intro. to Relational Databases
-    </a>
-   </li>
-   <li>
-    <a href="https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about">
-     Relational Algebra
-    </a>
-   </li>
-   <li>
-    <a href="https://lagunita.stanford.edu/courses/DB/RD/SelfPaced/about">
-     Relational Design Theory
-    </a>
-   </li>
-   <li>
-    <a href="http://www.lynda.com/Access-tutorials/Relational-Database-Fundamentals/145932-2.html">
-     Relational Database Fundamentals
-    </a>
-   </li>
-   <li>
-    <a href="http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html">
-     ORM is an offensive anti-pattern
-    </a>
-   </li>
-   <li>
-    <a href="http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html">
-     Access 2016
-    </a>
-   </li>
-  </ul>
-  <h2>
-   <a name="4.4.-unread">
-    4.4. Unread
-   </a>
-  </h2>
-  <ul>
-   <li>
-    <a class="uri" href="https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/">
-     https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/
-    </a>
-   </li>
-   <li>
-    <a href="https://www.codecademy.com/articles/sql-rdbms">
-     Overview of SQL RDBMS
-    </a>
-   </li>
-   <li>
-    <a href="http://coding-geek.com/how-databases-work/">
-     How does a relational database work?
-    </a>
-   </li>
-   <li>
-    <a href="https://lagunita.stanford.edu/courses/DB/Indexes/SelfPaced/about">
-     Indexes &amp; Transactions
-    </a>
-   </li>
-   <li>
-    <a href="https://lagunita.stanford.edu/courses/DB/Constraints/SelfPaced/about">
-     Constraints &amp; Triggers
-    </a>
-   </li>
-   <li>
-    <a href="https://lagunita.stanford.edu/courses/DB/Views/SelfPaced/about">
-     Views &amp; Authorization
-    </a>
-   </li>
-   <li>
-    <a href="https://lagunita.stanford.edu/courses/DB/OLAP/SelfPaced/about">
-     OLAP
-    </a>
-   </li>
-   <li>
-    <a href="https://lagunita.stanford.edu/courses/DB/Recursion/SelfPaced/about">
-     Recursion
-    </a>
-   </li>
-   <li>
-    <a href="http://databases.about.com/od/specificproducts/a/Database-Dependency.htm">
-     Database dependency
-    </a>
-   </li>
-   <li>
-    <a href="https://www.codeschool.com/courses/the-magical-marvels-of-mongodb">
-     CodeSchool - NoSQL with MongoDB
-    </a>
-   </li>
-   <li>
-    <a href="https://neo4j.com/developer/graph-db-vs-rdbms/">
-     From relational to graph databases
-    </a>
-   </li>
-   <li>
-    <a href="https://en.wikipedia.org/wiki/Blockchain_(database)">
-     Blockchain
-    </a>
-   </li>
-   <li>
-    <a href="https://news.ycombinator.com/item?id=9436847">
-     Is Git a blockchain?
-    </a>
-   </li>
-   <li>
-    <a href="http://dataconomy.com/sql-vs-nosql-need-know/">
-     SQL vs NoSQL
-    </a>
-   </li>
-   <li>
-    <a href="http://faculty.washington.edu/blabob/bob/eBooks/Beyond%20Relational%20(WP%20MarkLogic%202015).pdf">
-     Beyond Relational
-    </a>
-   </li>
-   <li>
-    <a href="http://faculty.washington.edu/blabob/bob/eBooks/Why%20NoSQL%20(WP%20IBM).PDF">
-     Why NoSQL
-    </a>
-   </li>
-   <li>
-    <a href="http://www.kdnuggets.com/2016/07/seven-steps-understanding-nosql-databases.html">
-     7 steps to understanding NoSQL databases
-    </a>
-   </li>
-   <li>
-    <a href="http://apigee.com/about/blog/technology/nosql-noproblem-mapping-your-sql-thinking-nosql">
-     Mapping your SQL thinking to NoSQL
-    </a>
-    -
-    <a href="https://bigdatauniversity.com/courses/sql-access-on-hadoop-big-sql-v4/">
-     BigSQL on Hadoop
-    </a>
-   </li>
-   <li>
-    <a href="http://faculty.washington.edu/blabob/bob/eBooks/Enterprise%20NoSQL%20for%20Dummies%20(eBook).pdf">
-     Enterprise NoSQL for Dummies
-    </a>
-   </li>
-   <li>
-    <a href="http://graphdatabases.com/">
-     Graph Databases
-    </a>
-   </li>
-  </ul>
  </body>
 </html>
+<li>
+ Creation of trapdoor
+</li>
+<li>
+ Staff shortages leading to bad code
+</li>
+<li>
+ Lack of security training and procedures
+</li>
+<td style="text-align: left; width=50px;">
+</td>
+<li>
+ Inadequate policies and procedures
+</li>
+<table class="bullets">
+ <tr>
+  <th>
+   Hardware
+  </th>
+  <th>
+   Networks
+  </th>
+  <th>
+   DBMS &amp; Applications
+  </th>
+  <th>
+   Database
+  </th>
+ </tr>
+ <tr>
+  <td style="text-align: left;">
+   <ul>
+    <li>
+     Fire, flood, bombs
+    </li>
+    <li>
+     Power loss or surge
+    </li>
+    <li>
+     Electromagnetic interference and radiation
+    </li>
+    <li>
+     Hardware failure of security mechanisms
+    </li>
+    <li>
+     Equipment theft
+    </li>
+   </ul>
+  </td>
+  <td style="text-align: left;">
+  </td>
+ </tr>
+</table>
+<li>
+ Wire tapping
+</li>
+<li>
+ Cable breakage or disconnection
+</li>
+<li>
+ Electromagnetic interference and radiation
+</li>
+<td style="text-align: left;">
+</td>
+<li>
+ Software failure of security mechanisms
+</li>
+<li>
+ Program alteration
+</li>
+<li>
+ Program theft
+</li>
+<td style="text-align: left;">
+</td>
+<li>
+ Unauthorized data I/O
+</li>
+<h3 id="security-solutions">
+ <a>
+  4.2.2. Security solutions
+ </a>
+</h3>
+<p>
+ This is what security typically looks like for enterprise databases:
+</p>
+<div class="figure">
+ <img alt="Source: Simon Wang" src="illos/db-security.png"/>
+ <p class="caption">
+  <strong>
+   Source:
+  </strong>
+  Simon Wang
+ </p>
+</div>
+<h4 id="encryption">
+ <a>
+  4.2.2.1. Encryption
+ </a>
+</h4>
+<p>
+ Encryption protects the meaning of data despite an insecure environment. There are different approaches to encryption:
+</p>
+<ul>
+ <li>
+  <strong>
+   Bit manipulation
+  </strong>
+  is substitution and permutation within blocks of N bits, decoded by a single key. This approach is used by the data encryption standard (DES; 64 bits) and advanced encryption standards (AES; 128/192/256 bits).
+ </li>
+ <li>
+  <strong>
+   Mathematical functions
+  </strong>
+  are used in public key encryption --- developed by Diffie &amp; Hellman in 1976, and operationalized as RSA in 1978. This approach uses two keys.
+ </li>
+ <li>
+  <strong>
+   Digital signatures
+  </strong>
+  are based on public key techniques, creating a unique, single-use string of symbols to represent (most often) an online transaction.
+ </li>
+</ul>
+<h5 id="tde">
+ <a>
+  4.2.2.1.1. TDE
+ </a>
+</h5>
+<p>
+ SQL Server specifically offers transparent data encryption (TDE) so that data is protected if hardware is stolen. TDE stores database data in encrypted form, decrypts data as it's read, and encrypts data as it's written.
+</p>
+<h4 id="access-control">
+ <a>
+  4.2.2.2. Access control
+ </a>
+</h4>
+<p>
+ It's helpful to think about access in terms of principles (entities needing access); permissions (levels of access); and securables (objects needing protection). Access permissions specify
+ <strong>
+  who
+ </strong>
+ is allowed to do
+ <strong>
+  what
+ </strong>
+ (read, write, execute, share) to an object. Per DifferenceBetween.net (n.d.) and Steve DL (2014), there are several generic approaches to managing access permissions:
+</p>
+<ul>
+ <li>
+  Discretionary access control
+  <strong>
+   (DAC)
+  </strong>
+  permissions (widely used) are based on objects: each object has a list of users who may access it. This is a more flexible but also more admin labor-intensive approach, unless the data is meant to be goverened by individual users (e.g., Facebook).
+ </li>
+ <li>
+  Mandatory access control
+  <strong>
+   (MAC)
+  </strong>
+  permissions (less common) are managed based on user group
+  <a href="bash.html#manage-permissions">
+   (like Linux).
+  </a>
+ </li>
+ <li>
+  In role-based access control
+  <strong>
+   (RBAC),
+  </strong>
+  user groups correspond to specific roles.
+ </li>
+</ul>
+<h5 id="ownership-chaining">
+ <a>
+  4.2.2.2.1. Ownership chaining
+ </a>
+</h5>
+<p>
+ Instead of granting permissions to multiple tables, one can reduce administrative overhead by creating a view based on several tables and granting access to the view.
+</p>
+<h5 id="contained-database">
+ <a>
+  4.2.2.2.2. Contained database
+ </a>
+</h5>
+<p>
+ This is a SQL Server feature. A contained database handles its own authentication, metadata, etc., and is extremely useful for cloud computing.
+</p>
+<h4 id="preventing-sql-injections">
+ <a>
+  4.2.2.3. Preventing SQL injections
+ </a>
+</h4>
+<p>
+ SQL injections happen when database application developers use dynamic SQL statements in their code; hackers can use these channels to introduce their own malicious SQL statements. SQL injection is countered by user input validation:
+</p>
+<ul>
+ <li>
+  Use sp_executesql stored procedure
+ </li>
+ <li>
+  Disallow comments:
+  <code>
+   -- /* */
+  </code>
+ </li>
+ <li>
+  Disallow punctuation:
+  <code>
+   ' ; ( )
+  </code>
+ </li>
+ <li>
+  Disallow binary data
+ </li>
+ <li>
+  Validate XML against an XML schema
+ </li>
+</ul>
+<h3 id="security-audits">
+ <a>
+  4.2.3. Security audits
+ </a>
+</h3>
+<p>
+ Check database logs to identify security problems, or conduct a more extensive audit. SQL Server provides a common criteria (C2) audit mode as well as SQL trace/SQL triggers (???).
+</p>
+<h2 id="backup">
+ <a>
+  4.3. Backup
+ </a>
+</h2>
+<h1 id="sources">
+ <a>
+  5. Sources
+ </a>
+</h1>
+<h2 id="cited">
+ <a>
+  5.1. Cited
+ </a>
+</h2>
+<p>
+ Chapple, M. (2016, November 29). Should I denormalize my database? ThoughtCo. Retrieved from
+ <a href="https://www.thoughtco.com/should-i-normalize-my-database-1019730">
+  https://www.thoughtco.com/should-i-normalize-my-database-1019730
+ </a>
+</p>
+<p>
+ DifferenceBetween.net. (n.d.). Difference between MAC and DAC. Retrieved from
+ <a href="http://www.differencebetween.net/technology/software-technology/difference-between-mac-and-dac/">
+  http://www.differencebetween.net/technology/software-technology/difference-between-mac-and-dac/
+ </a>
+</p>
+<p>
+ displayName. (2015, December 3). Are determinants and candidate keys same or different things? [Comment]. Stack Overflow. Message posted to
+ <a href="https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things">
+  https://stackoverflow.com/questions/16706637/are-determinants-and-candidate-keys-same-or-different-things
+ </a>
+</p>
+<p>
+ E/R model: types of attributes. (n.d.). Retrieved from the Database Management Wiki:
+ <a href="http://databasemanagement.wikia.com/wiki/E/R_Model:_Type_of_Attributes">
+  http://databasemanagement.wikia.com/wiki/E/R_Model:
+  <em>
+   Type
+  </em>
+  of_Attributes
+ </a>
+</p>
+<p>
+ Connolly, T. &amp; Begg, C. (2015).
+ <em>
+  Database systems: A practical approach to design, implementation, and management
+ </em>
+ (6th ed.). New York City, NY: Pearson Education.
+</p>
+<p>
+ Sheffield, W. (2012, October 12). Does a clustered index really physically store the rows in key order?
+ <a href="http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/">
+  http://blog.waynesheffield.com/wayne/archive/2012/10/does-a-clustered-index-really-physically-store-the-rows-in-key-order/
+ </a>
+</p>
+<p>
+ Sheldon, R. (2013, July 30). Columnstore indexes in SQL Server 2012.
+ <em>
+  Simple Talk.
+ </em>
+ Retrieved from
+ <a href="https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/">
+  https://www.simple-talk.com/sql/database-administration/columnstore-indexes-in-sql-server-2012/
+ </a>
+</p>
+<p>
+ Sheldon, R. (2014, March 25). 14 SQL Server indexing questions you were too shy to ask.
+ <em>
+  Simple Talk.
+ </em>
+ Retrieved from
+ <a href="https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/">
+  https://www.simple-talk.com/sql/performance/14-sql-server-indexing-questions-you-were-too-shy-to-ask/
+ </a>
+</p>
+<p>
+ Steve DL. (2014, July 20). MAC vs DAC vs RBAC [forum post]. StackOverflow. Retrieved from
+ <a href="https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac">
+  https://security.stackexchange.com/questions/63518/mac-vs-dac-vs-rbac
+ </a>
+</p>
+<p>
+ Sunderraman, R. (2012). Entity-relationship (ER) model. Retrieved from
+ <a href="http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html">
+  http://tinman.cs.gsu.edu/~raj/4340/sp12/er.html
+ </a>
+</p>
+<p>
+ Ullman, R. D. (2006). Relational database design. Retrieved from
+ <a href="http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html">
+  http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/reldesign.html
+ </a>
+</p>
+<p>
+ Watt, A. (n.d.). Functional dependencies. In
+ <em>
+  Database design.
+ </em>
+ Retrieved from
+ <a href="https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/">
+  https://opentextbc.ca/dbdesign/chapter/chapter-11-functional-dependencies/
+ </a>
+</p>
+<p>
+ Winand, M. (n.d.). Anatomy of a SQL index. Retrieved from
+ <a href="http://use-the-index-luke.com/sql/anatomy">
+  http://use-the-index-luke.com/sql/anatomy
+ </a>
+</p>
+<h2 id="references">
+ <a>
+  5.2. References
+ </a>
+</h2>
+<ul>
+ <li>
+  <a href="http://databasemanagement.wikia.com/wiki/Main_Page">
+   Database Management Wikia
+  </a>
+ </li>
+ <li>
+  <a href="http://use-the-index-luke.com/sql/table-of-contents">
+   Use the index, Luke: A guide to database performance for developers
+  </a>
+ </li>
+</ul>
+<h2 id="read">
+ <a>
+  5.3. Read
+ </a>
+</h2>
+<ul>
+ <li>
+  <a href="https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about">
+   Intro. to Relational Databases
+  </a>
+ </li>
+ <li>
+  <a href="https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about">
+   Relational Algebra
+  </a>
+ </li>
+ <li>
+  <a href="https://lagunita.stanford.edu/courses/DB/RD/SelfPaced/about">
+   Relational Design Theory
+  </a>
+ </li>
+ <li>
+  <a href="http://www.lynda.com/Access-tutorials/Relational-Database-Fundamentals/145932-2.html">
+   Relational Database Fundamentals
+  </a>
+ </li>
+ <li>
+  <a href="http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html">
+   ORM is an offensive anti-pattern
+  </a>
+ </li>
+ <li>
+  <a href="http://www.lynda.com/Access-tutorials/Access-2016-Essential-Training/367064-2.html">
+   Access 2016
+  </a>
+ </li>
+</ul>
+<h2>
+ <a name="5.4.-unread">
+  5.4. Unread
+ </a>
+</h2>
+<ul>
+ <li>
+  <a href="https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/">
+   https://blogs.msdn.microsoft.com/plankytronixx/2010/10/22/crypto-primer-understanding-encryption-publicprivate-key-signatures-and-certificates/
+  </a>
+ </li>
+ <li>
+  <a href="https://www.codecademy.com/articles/sql-rdbms">
+   Overview of SQL RDBMS
+  </a>
+ </li>
+ <li>
+  <a href="http://coding-geek.com/how-databases-work/">
+   How does a relational database work?
+  </a>
+ </li>
+ <li>
+  <a href="https://lagunita.stanford.edu/courses/DB/Indexes/SelfPaced/about">
+   Indexes &amp; Transactions
+  </a>
+ </li>
+ <li>
+  <a href="https://lagunita.stanford.edu/courses/DB/Constraints/SelfPaced/about">
+   Constraints &amp; Triggers
+  </a>
+ </li>
+ <li>
+  <a href="https://lagunita.stanford.edu/courses/DB/Views/SelfPaced/about">
+   Views &amp; Authorization
+  </a>
+ </li>
+ <li>
+  <a href="https://lagunita.stanford.edu/courses/DB/OLAP/SelfPaced/about">
+   OLAP
+  </a>
+ </li>
+ <li>
+  <a href="https://lagunita.stanford.edu/courses/DB/Recursion/SelfPaced/about">
+   Recursion
+  </a>
+ </li>
+ <li>
+  <a href="http://databases.about.com/od/specificproducts/a/Database-Dependency.htm">
+   Database dependency
+  </a>
+ </li>
+ <li>
+  <a href="https://www.codeschool.com/courses/the-magical-marvels-of-mongodb">
+   CodeSchool - NoSQL with MongoDB
+  </a>
+ </li>
+ <li>
+  <a href="https://neo4j.com/developer/graph-db-vs-rdbms/">
+   From relational to graph databases
+  </a>
+ </li>
+ <li>
+  <a href="https://en.wikipedia.org/wiki/Blockchain_(database)">
+   Blockchain
+  </a>
+ </li>
+ <li>
+  <a href="https://news.ycombinator.com/item?id=9436847">
+   Is Git a blockchain?
+  </a>
+ </li>
+ <li>
+  <a href="http://dataconomy.com/sql-vs-nosql-need-know/">
+   SQL vs NoSQL
+  </a>
+ </li>
+ <li>
+  <a href="http://faculty.washington.edu/blabob/bob/eBooks/Beyond%20Relational%20(WP%20MarkLogic%202015).pdf">
+   Beyond Relational
+  </a>
+ </li>
+ <li>
+  <a href="http://faculty.washington.edu/blabob/bob/eBooks/Why%20NoSQL%20(WP%20IBM).PDF">
+   Why NoSQL
+  </a>
+ </li>
+ <li>
+  <a href="http://www.kdnuggets.com/2016/07/seven-steps-understanding-nosql-databases.html">
+   7 steps to understanding NoSQL databases
+  </a>
+ </li>
+ <li>
+  <a href="http://apigee.com/about/blog/technology/nosql-noproblem-mapping-your-sql-thinking-nosql">
+   Mapping your SQL thinking to NoSQL
+  </a>
+  -
+  <a href="https://bigdatauniversity.com/courses/sql-access-on-hadoop-big-sql-v4/">
+   BigSQL on Hadoop
+  </a>
+ </li>
+ <li>
+  <a href="http://faculty.washington.edu/blabob/bob/eBooks/Enterprise%20NoSQL%20for%20Dummies%20(eBook).pdf">
+   Enterprise NoSQL for Dummies
+  </a>
+ </li>
+ <li>
+  <a href="http://graphdatabases.com/">
+   Graph Databases
+  </a>
+ </li>
+</ul>

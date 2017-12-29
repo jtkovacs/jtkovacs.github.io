@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; bi | just under 3605 words | updated 12/27/2017
+   &gt; bi | just under 3612 words | updated 12/29/2017
   </p>
   <div class="TOC">
    <ul>
@@ -27,32 +27,18 @@
      <ul>
       <li>
        1.1.
-       <a href="#generic-bi-system-architecture">
-        Generic BI system architecture
-       </a>
-       <ul>
-        <li>
-         1.1.1.
-         <a href="#food-system-metaphor">
-          Food system metaphor
-         </a>
-        </li>
-       </ul>
-      </li>
-      <li>
-       1.2.
        <a href="#does-bi-have-value">
         Does BI have value?
        </a>
       </li>
       <li>
-       1.3.
+       1.2.
        <a href="#history-of-bi">
         History of BI
        </a>
       </li>
       <li>
-       1.4.
+       1.3.
        <a href="#trends-in-bi">
         Trends in BI
        </a>
@@ -67,30 +53,50 @@
      <ul>
       <li>
        2.1.
+       <a href="#generic-bi-system-architecture">
+        Generic BI system architecture
+       </a>
+       <ul>
+        <li>
+         2.1.1.
+         <a href="#food-system-metaphor">
+          Food system metaphor
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       2.2.
+       <a href="#bi-system-capabilities">
+        BI system capabilities
+       </a>
+      </li>
+      <li>
+       2.3.
        <a href="#implementing-bi-systems">
         Implementing BI systems
        </a>
        <ul>
         <li>
-         2.1.1.
+         2.3.1.
          <a href="#common-problems-with-bi-initiatives">
           Common problems with BI initiatives
          </a>
         </li>
         <li>
-         2.1.2.
+         2.3.2.
          <a href="#scoping-bi-systems">
           Scoping BI systems
          </a>
          <ul>
           <li>
-           2.1.2.1.
+           2.3.2.1.
            <a href="#big-data">
             Big Data
            </a>
           </li>
           <li>
-           2.1.2.2.
+           2.3.2.2.
            <a href="#real-time-bi">
             Real-time BI
            </a>
@@ -99,38 +105,46 @@
         </li>
        </ul>
       </li>
+     </ul>
+    </li>
+    <li>
+     3.
+     <a href="#bi-technologies">
+      BI technologies
+     </a>
+     <ul>
       <li>
-       2.2.
+       3.1.
        <a href="#etl">
         ETL
        </a>
       </li>
       <li>
-       2.3.
+       3.2.
        <a href="#data-warehousing">
         Data warehousing
        </a>
        <ul>
         <li>
-         2.3.1.
+         3.2.1.
          <a href="#why-a-data-warehouse">
           Why a data warehouse?
          </a>
         </li>
         <li>
-         2.3.2.
+         3.2.2.
          <a href="#dimensional-modeling">
           Dimensional modeling
          </a>
         </li>
         <li>
-         2.3.3.
+         3.2.3.
          <a href="#various-data-warehouse-architectures">
           Various data warehouse architectures
          </a>
          <ul>
           <li>
-           2.3.3.1.
+           3.2.3.1.
            <a href="#choosing-an-architecture">
             Choosing an architecture
            </a>
@@ -140,31 +154,31 @@
        </ul>
       </li>
       <li>
-       2.4.
+       3.3.
        <a href="#olap">
         OLAP
        </a>
       </li>
       <li>
-       2.5.
+       3.4.
        <a href="#interpreting-the-data">
         Interpreting the data
        </a>
        <ul>
         <li>
-         2.5.1.
+         3.4.1.
          <a href="#analytic-roles">
           Analytic roles
          </a>
          <ul>
           <li>
-           2.5.1.1.
+           3.4.1.1.
            <a href="#business-analysts">
             Business analysts
            </a>
           </li>
           <li>
-           2.5.1.2.
+           3.4.1.2.
            <a href="#data-scientists">
             Data scientists
            </a>
@@ -172,31 +186,31 @@
          </ul>
         </li>
         <li>
-         2.5.2.
+         3.4.2.
          <a href="#analytic-deliverables">
           Analytic deliverables
          </a>
          <ul>
           <li>
-           2.5.2.1.
+           3.4.2.1.
            <a href="#performance-management">
             Performance management
            </a>
           </li>
           <li>
-           2.5.2.2.
+           3.4.2.2.
            <a href="#data-mining">
             Data mining
            </a>
           </li>
           <li>
-           2.5.2.3.
+           3.4.2.3.
            <a href="#text-web-analytics">
             Text &amp; web analytics
            </a>
           </li>
           <li>
-           2.5.2.4.
+           3.4.2.4.
            <a href="#data-viz-visual-analytics">
             Data viz &amp; visual analytics
            </a>
@@ -206,19 +220,19 @@
        </ul>
       </li>
       <li>
-       2.6.
+       3.5.
        <a href="#reporting">
         Reporting
        </a>
        <ul>
         <li>
-         2.6.1.
+         3.5.1.
          <a href="#types-of-reports">
           Types of reports
          </a>
          <ul>
           <li>
-           2.6.1.1.
+           3.5.1.1.
            <a href="#dashboards">
             Dashboards
            </a>
@@ -226,13 +240,13 @@
          </ul>
         </li>
         <li>
-         2.6.2.
+         3.5.2.
          <a href="#best-practices-for-reporting">
           Best practices for reporting
          </a>
          <ul>
           <li>
-           2.6.2.1.
+           3.5.2.1.
            <a href="#data-storytelling">
             Data storytelling
            </a>
@@ -244,31 +258,31 @@
      </ul>
     </li>
     <li>
-     3.
+     4.
      <a href="#sources">
       Sources
      </a>
      <ul>
       <li>
-       3.1.
+       4.1.
        <a href="#cited">
         Cited
        </a>
       </li>
       <li>
-       3.2.
+       4.2.
        <a href="#references">
         References
        </a>
       </li>
       <li>
-       3.3.
+       4.3.
        <a href="#read">
         Read
        </a>
       </li>
       <li>
-       3.4.
+       4.4.
        <a href="#unread">
         Unread
        </a>
@@ -307,25 +321,9 @@
     BI supports their response/decision with analysis and predictions.
    </li>
   </ul>
-  <h2 id="generic-bi-system-architecture">
-   <a>
-    1.1. Generic BI system architecture
-   </a>
-  </h2>
-  <p>
-   <img src="illos/bi-arch.jpg" width="600"/>
-  </p>
-  <h3 id="food-system-metaphor">
-   <a>
-    1.1.1. Food system metaphor
-   </a>
-  </h3>
-  <div class="figure">
-   <img src="illos/bi-food-metaphor.png"/>
-  </div>
   <h2 id="does-bi-have-value">
    <a>
-    1.2. Does BI have value?
+    1.1. Does BI have value?
    </a>
   </h2>
   <p>
@@ -353,7 +351,7 @@
   </p>
   <h2 id="history-of-bi">
    <a>
-    1.3. History of BI
+    1.2. History of BI
    </a>
   </h2>
   <ul>
@@ -378,7 +376,7 @@
   </div>
   <h2 id="trends-in-bi">
    <a>
-    1.4. Trends in BI
+    1.3. Trends in BI
    </a>
   </h2>
   <p>
@@ -428,7 +426,9 @@
     IoT
    </li>
    <li>
-    Big Data
+    <a href="https://jtkovacs.github.io/refs/big-data.html">
+     Big Data
+    </a>
    </li>
    <li>
     Data democratization
@@ -439,6 +439,27 @@
     2. BI systems
    </a>
   </h1>
+  <h2 id="generic-bi-system-architecture">
+   <a>
+    2.1. Generic BI system architecture
+   </a>
+  </h2>
+  <p>
+   <img src="illos/bi-arch.jpg" width="600"/>
+  </p>
+  <h3 id="food-system-metaphor">
+   <a>
+    2.1.1. Food system metaphor
+   </a>
+  </h3>
+  <div class="figure">
+   <img src="illos/bi-food-metaphor.png"/>
+  </div>
+  <h2 id="bi-system-capabilities">
+   <a>
+    2.2. BI system capabilities
+   </a>
+  </h2>
   <p>
    Per Sharda et al. (2004), BI tools provide varying combinations of the following broad functionalities:
   </p>
@@ -613,12 +634,12 @@
   </ul>
   <h2 id="implementing-bi-systems">
    <a>
-    2.1. Implementing BI systems
+    2.3. Implementing BI systems
    </a>
   </h2>
   <h3 id="common-problems-with-bi-initiatives">
    <a>
-    2.1.1. Common problems with BI initiatives
+    2.3.1. Common problems with BI initiatives
    </a>
   </h3>
   <p>
@@ -665,12 +686,12 @@
   </ul>
   <h3 id="scoping-bi-systems">
    <a>
-    2.1.2. Scoping BI systems
+    2.3.2. Scoping BI systems
    </a>
   </h3>
   <h4 id="big-data">
    <a>
-    2.1.2.1. Big Data
+    2.3.2.1. Big Data
    </a>
   </h4>
   <p>
@@ -681,7 +702,7 @@
   </p>
   <h4 id="real-time-bi">
    <a>
-    2.1.2.2. Real-time BI
+    2.3.2.2. Real-time BI
    </a>
   </h4>
   <p>
@@ -749,9 +770,14 @@
     </tr>
    </tbody>
   </table>
+  <h1 id="bi-technologies">
+   <a>
+    3. BI technologies
+   </a>
+  </h1>
   <h2 id="etl">
    <a>
-    2.2. ETL
+    3.1. ETL
    </a>
   </h2>
   <p>
@@ -785,7 +811,7 @@
   </ul>
   <h2 id="data-warehousing">
    <a>
-    2.3. Data warehousing
+    3.2. Data warehousing
    </a>
   </h2>
   <p>
@@ -833,7 +859,7 @@
   </ul>
   <h3 id="why-a-data-warehouse">
    <a>
-    2.3.1. Why a data warehouse?
+    3.2.1. Why a data warehouse?
    </a>
   </h3>
   <p>
@@ -861,7 +887,7 @@
   </ul>
   <h3 id="dimensional-modeling">
    <a>
-    2.3.2. Dimensional modeling
+    3.2.2. Dimensional modeling
    </a>
   </h3>
   <p>
@@ -877,7 +903,7 @@
   </p>
   <h3 id="various-data-warehouse-architectures">
    <a>
-    2.3.3. Various data warehouse architectures
+    3.2.3. Various data warehouse architectures
    </a>
   </h3>
   <ul>
@@ -928,7 +954,7 @@
   </ul>
   <h4 id="choosing-an-architecture">
    <a>
-    2.3.3.1. Choosing an architecture
+    3.2.3.1. Choosing an architecture
    </a>
   </h4>
   <p>
@@ -976,7 +1002,7 @@
   </ul>
   <h2 id="olap">
    <a>
-    2.4. OLAP
+    3.3. OLAP
    </a>
   </h2>
   <p>
@@ -1067,17 +1093,17 @@
   </p>
   <h2 id="interpreting-the-data">
    <a>
-    2.5. Interpreting the data
+    3.4. Interpreting the data
    </a>
   </h2>
   <h3 id="analytic-roles">
    <a>
-    2.5.1. Analytic roles
+    3.4.1. Analytic roles
    </a>
   </h3>
   <h4 id="business-analysts">
    <a>
-    2.5.1.1. Business analysts
+    3.4.1.1. Business analysts
    </a>
   </h4>
   <p>
@@ -1243,7 +1269,7 @@
   </ul>
   <h4 id="data-scientists">
    <a>
-    2.5.1.2. Data scientists
+    3.4.1.2. Data scientists
    </a>
   </h4>
   <p>
@@ -1269,7 +1295,7 @@
   </ul>
   <h3 id="analytic-deliverables">
    <a>
-    2.5.2. Analytic deliverables
+    3.4.2. Analytic deliverables
    </a>
   </h3>
   <p>
@@ -1450,7 +1476,7 @@
   </table>
   <h4 id="performance-management">
    <a>
-    2.5.2.1. Performance management
+    3.4.2.1. Performance management
    </a>
   </h4>
   <p>
@@ -1470,7 +1496,7 @@
   </p>
   <h4 id="data-mining">
    <a>
-    2.5.2.2. Data mining
+    3.4.2.2. Data mining
    </a>
   </h4>
   <p>
@@ -1482,7 +1508,7 @@
   </p>
   <h4 id="text-web-analytics">
    <a>
-    2.5.2.3. Text &amp; web analytics
+    3.4.2.3. Text &amp; web analytics
    </a>
   </h4>
   <p>
@@ -1493,7 +1519,7 @@
   </p>
   <h4 id="data-viz-visual-analytics">
    <a>
-    2.5.2.4. Data viz &amp; visual analytics
+    3.4.2.4. Data viz &amp; visual analytics
    </a>
   </h4>
   <p>
@@ -1517,7 +1543,7 @@
   </p>
   <h2 id="reporting">
    <a>
-    2.6. Reporting
+    3.5. Reporting
    </a>
   </h2>
   <p>
@@ -1549,7 +1575,7 @@
   </ul>
   <h3 id="types-of-reports">
    <a>
-    2.6.1. Types of reports
+    3.5.1. Types of reports
    </a>
   </h3>
   <p>
@@ -1688,7 +1714,7 @@
   </ul>
   <h4 id="dashboards">
    <a>
-    2.6.1.1. Dashboards
+    3.5.1.1. Dashboards
    </a>
   </h4>
   <p>
@@ -1699,7 +1725,7 @@
   </p>
   <h3 id="best-practices-for-reporting">
    <a>
-    2.6.2. Best practices for reporting
+    3.5.2. Best practices for reporting
    </a>
   </h3>
   <ul>
@@ -1723,7 +1749,7 @@
   </ul>
   <h4 id="data-storytelling">
    <a>
-    2.6.2.1. Data storytelling
+    3.5.2.1. Data storytelling
    </a>
   </h4>
   <p>
@@ -1764,12 +1790,12 @@
   </ul>
   <h1 id="sources">
    <a>
-    3. Sources
+    4. Sources
    </a>
   </h1>
   <h2 id="cited">
    <a>
-    3.1. Cited
+    4.1. Cited
    </a>
   </h2>
   <p>
@@ -1799,12 +1825,12 @@
   </p>
   <h2 id="references">
    <a>
-    3.2. References
+    4.2. References
    </a>
   </h2>
   <h2 id="read">
    <a>
-    3.3. Read
+    4.3. Read
    </a>
   </h2>
   <ul>
@@ -1830,8 +1856,8 @@
    </li>
   </ul>
   <h2>
-   <a name="3.4.-unread">
-    3.4. Unread
+   <a name="4.4.-unread">
+    4.4. Unread
    </a>
   </h2>
   <ul>

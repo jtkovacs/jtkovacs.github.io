@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 992 words | updated 12/27/2017</p><div class="TOC">- &nbsp;1. [What is management?](#what-is-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 1000 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is management?](#what-is-management)
 	- &nbsp;1.1. [Managerial hierarchy](#managerial-hierarchy)
 	- &nbsp;1.2. [Managerial skills](#managerial-skills)
 	- &nbsp;1.3. [History of management thought](#history-of-management-thought)
@@ -108,6 +108,8 @@ See Stewart, 2009.
 ### 1.5.1. What generic strategies can companies pursue?
 
 ### 1.5.2. Strategic analysis
+
+Import from Google Drive: [notes on market research](https://docs.google.com/document/d/1o-Fsv0Zd7mquwI52-r9QGTldHCSM_KEQ73WQ2NY7Iy4/edit)
 
 - PORTER 5
 - PESTEL

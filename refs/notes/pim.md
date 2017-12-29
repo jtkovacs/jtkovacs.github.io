@@ -106,6 +106,11 @@ Per Wikipedia (n.d. d):
     - Collaboration skills. Coordination, synchronization, experimentation, cooperation, and design.
 
 
+### Personal knowledge mastery & sense-seek-share framework
+
+[http://jarche.com/2014/02/the-seek-sense-share-framework/](http://jarche.com/2014/02/the-seek-sense-share-framework/)
+
+
 
 # PIM tools
 

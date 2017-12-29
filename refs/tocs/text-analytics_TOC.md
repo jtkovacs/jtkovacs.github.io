@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3178 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3263 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -27,6 +27,7 @@
 		- &nbsp;2.3.4. [Social analytics](#social-analytics)
 			- &nbsp;2.3.4.1. [Social network analysis](#social-network-analysis)
 			- &nbsp;2.3.4.2. [Social media analytics](#social-media-analytics)
+				- &nbsp;2.3.4.2.1. [Tools for social media analytics](#tools-for-social-media-analytics)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
 	- &nbsp;3.1. [IBM Watson](#ibm-watson)
 	- &nbsp;3.2. [Attensity](#attensity)
@@ -214,7 +215,8 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
 - **Mechanisms**
     - domain expertise
     - tools & techniques
-- **Output** context-specific knowledge
+- **Output**
+    - context-specific knowledge
 
 ### 2.1.1. Establish the corpus
 
@@ -233,12 +235,14 @@ Delen and Crossland (2008, cited in Sharda et al., 2014) place the 'black box' o
 ### 2.1.2. Create term-by-document matrix
 
 - **Count raw frequencies** in each document:
+    - **Tokenize** raw input (a token is "a categorized block of text in a sentence ... assignment of meaning to blocks of text is known as tokenizing")
     - **Filter out** stop words **OR filter in** include terms
         - **stop words** "(or noise words) ... are filtered out prior to or after processing of natural language data ... there is no universally accepted list of stop words, [but] most natural language processing tools use a list that includes articles _(a, an, the, of, etc.),_ auxiliary verbs _(is, are, was, were, etc.),_ and context-specific words that are deemed not to have any differentiating value"
         - **include terms** AKA term dictionary
+    - **Reckon with linguistic ambiguities** e.g. typos, synonyms, etc.
     - **Perform stemming** to "[reduce] inflected words to their stem (or base or root) form"
-- **Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.)
-- Construct the **term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
+- **Normalize frequencies** (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.; "text mining research and practice have clearly indicated that the best weighting may come from the use of _term-frequency_ divided by _inverse-document-frequency_ ... "; p. 245)
+- **Construct the term-by-document-matrix** AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
     - **Latent semantic indexing** by single-value decomposition (SVD) "dimensionality reduction method to transform the term-by-document matrix to a manageable size by generating an intermediate representation of the frequencies using a matrix manipulation method similar to principal component analysis"; through SVD, "the analyst might identify the two or three most salient dimensions that account for most of the variability (differences) between the words and documents, thus identifying the latent semantic space that organizes the words and documents in the analysis. Once such dimensions are identified, the underlying 'meaning' of what is contained (discussed or described) in the documents has been extracted."
 
 | | Term1 | Term2 | Term3 | Term4 | Term4 | Term5 |
@@ -304,7 +308,7 @@ Per Sharda et al. (2014, p. 210), NLP faces major challenges:
 - **word sense disambiguation** (see [notes on controlled vocabularies\)](https://jtkovacs.github.io/refs/information-architecture.html#what-are-controlled-vocabularies)
 - **syntatic ambiguity** ("multiple possible sentence structures often need to be considered")
 - **irregular input** (e.g. typos, accents)
-- identifying *speech acts,** speech that is meant to provoke an action
+- **identifying speech acts,** speech that is meant to provoke an action
 
 ### 2.2.2. Sentiment analysis
 
@@ -411,6 +415,15 @@ See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.htm
 - types of social media users
 - measuring social media impact
 
+##### 2.3.4.2.1. Tools for social media analytics
+
+- [https://blog.bufferapp.com/social-media-analytics-tools](https://blog.bufferapp.com/social-media-analytics-tools)
+- [http://venturebeat.com/2013/12/20/top-10-social-media-analytics-tools-the-venturebeat-index/](http://venturebeat.com/2013/12/20/top-10-social-media-analytics-tools-the-venturebeat-index/)
+- [http://www.entrepreneur.com/article/239029](http://www.entrepreneur.com/article/239029)
+- [http://www.wordstream.com/home-a-may2015](http://www.wordstream.com/home-a-may2015)
+- [https://keen.io/](https://keen.io/)
+- kissmetrics
+
 
 
 
@@ -465,7 +478,7 @@ list.count(‘em_name’) makes tuple with (index,value): enumerate(my_list)
 
 ### 3.3.1. String manipulation
 
-```Python
+```
 # remove punctuation
 import string
 line.translate(None, string.punctuation)
@@ -484,7 +497,7 @@ my_string.rstrip()
 
 ### 3.3.2. Regex
 
-```Python
+```
 # search for substrings within string or subset of string (i inclusive to j exclusive)
 str_index = my_string.find(x,i,j)
 str_index = my_string.index(x,i,j)  # raises ValueError if not found
@@ -497,7 +510,7 @@ my_string.count(x,i,j)
 - https://docs.python.org/3/howto/regex.html
 - http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
 
-```Python
+```
 # match the beginning of a string:
 re.match(pattern, text, flags)
 re.match(r’Jac’, data) # the r denotes a raw string
@@ -521,7 +534,7 @@ flags:
 - re.MULTILINE or re.M to make a pattern regard lines in your text as the beginning or end of a string
 - multiple flags: re.findall(pattern, data, flag|flag|flag)
 
-```Python
+```
 # store regex for reuse:
 my_regex = re.compile(pattern, flags)
 re.search(my_regex, data)
@@ -547,7 +560,7 @@ counts, for when something occurs multiple times:
 sets let us combine explicit characters and escape patterns into pieces that can be repeated multiple time; they also let us specify pieces that should be left out of any matches:
 [aple] finds apple and pale, [a-z] finds any lowercase letter, [A-Z] finds uppercase, [a-zA-Z] finds any case, [^2] finds anything not two, [0-9] finds any number, [\w.]+ finds any # of \w, .
 
-```Python
+```
 # groups search for multiple conditions simultaneously; note that ^ marks the beginning of the string, and $ marks the end; unnamed groups returned as tuples, named groups as dicts:
 my_var = re.findall (r’’’
     ^(?P<name>[-\w ]+,\s[-\w ]+)\t   # search for lastname, firstname
@@ -590,6 +603,8 @@ Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial
 ## 4.2. References
 
 - [WordNet:](https://wordnet.princeton.edu/) _WordNet® is a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations. The resulting network of meaningfully related words and concepts can be navigated with the browser. WordNet is also freely and publicly available for download. WordNet's structure makes it a useful tool for computational linguistics and natural language processing._
+    - [SentiWordNet](http://sentiwordnet.isti.cnr.it/)
+    - [WordNet-Affect](http://wndomains.fbk.eu/wnaffect.html)
 - [Stanford NLP Lab software](https://stanfordnlp.github.io/CoreNLP/)
 - [NLTK cheatsheet](http://billchambers.me/tutorials/2015/01/14/python-nlp-cheatsheet-nltk-scikit-learn.html)
 - [Corpus of Contemporary American English](http://corpus.byu.edu/coca/)

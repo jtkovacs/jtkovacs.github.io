@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 3178 words | updated 12/28/2017
+   &gt; text analytics | just under 3263 words | updated 12/29/2017
   </p>
   <div class="TOC">
    <ul>
@@ -227,6 +227,14 @@ code > span.er { color: #ff0000; font-weight: bold; }
            <a href="#social-media-analytics">
             Social media analytics
            </a>
+           <ul>
+            <li>
+             2.3.4.2.1.
+             <a href="#tools-for-social-media-analytics">
+              Tools for social media analytics
+             </a>
+            </li>
+           </ul>
           </li>
          </ul>
         </li>
@@ -826,7 +834,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     <strong>
      Output
     </strong>
-    context-specific knowledge
+    <ul>
+     <li>
+      context-specific knowledge
+     </li>
+    </ul>
    </li>
   </ul>
   <h3 id="establish-the-corpus">
@@ -885,6 +897,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
     <ul>
      <li>
       <strong>
+       Tokenize
+      </strong>
+      raw input (a token is "a categorized block of text in a sentence ... assignment of meaning to blocks of text is known as tokenizing")
+     </li>
+     <li>
+      <strong>
        Filter out
       </strong>
       stop words
@@ -917,6 +935,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
      </li>
      <li>
       <strong>
+       Reckon with linguistic ambiguities
+      </strong>
+      e.g. typos, synonyms, etc.
+     </li>
+     <li>
+      <strong>
        Perform stemming
       </strong>
       to "[reduce] inflected words to their stem (or base or root) form"
@@ -927,12 +951,19 @@ code > span.er { color: #ff0000; font-weight: bold; }
     <strong>
      Normalize frequencies
     </strong>
-    (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.)
+    (e.g., to account for different document lengths or to assign different weights to different documents; can use log frequencies, binary frequencies, inverse document frequencies, etc.; "text mining research and practice have clearly indicated that the best weighting may come from the use of
+    <em>
+     term-frequency
+    </em>
+    divided by
+    <em>
+     inverse-document-frequency
+    </em>
+    ... "; p. 245)
    </li>
    <li>
-    Construct the
     <strong>
-     term-by-document-matrix
+     Construct the term-by-document-matrix
     </strong>
     AKA occurrence matrix (example below) --- a "common representation schema of the frequency-based relationship between the terms and documents in a tabular format where terms are listed in rows, documents are listed in columns, and the frequency between the terms and documents is listed in cells as integer values"
     <ul>
@@ -1203,7 +1234,10 @@ code > span.er { color: #ff0000; font-weight: bold; }
     (e.g. typos, accents)
    </li>
    <li>
-    identifying *speech acts,** speech that is meant to provoke an action
+    <strong>
+     identifying speech acts,
+    </strong>
+    speech that is meant to provoke an action
    </li>
   </ul>
   <h3 id="sentiment-analysis">
@@ -1498,6 +1532,41 @@ code > span.er { color: #ff0000; font-weight: bold; }
     measuring social media impact
    </li>
   </ul>
+  <h5 id="tools-for-social-media-analytics">
+   <a>
+    2.3.4.2.1. Tools for social media analytics
+   </a>
+  </h5>
+  <ul>
+   <li>
+    <a href="https://blog.bufferapp.com/social-media-analytics-tools">
+     https://blog.bufferapp.com/social-media-analytics-tools
+    </a>
+   </li>
+   <li>
+    <a href="http://venturebeat.com/2013/12/20/top-10-social-media-analytics-tools-the-venturebeat-index/">
+     http://venturebeat.com/2013/12/20/top-10-social-media-analytics-tools-the-venturebeat-index/
+    </a>
+   </li>
+   <li>
+    <a href="http://www.entrepreneur.com/article/239029">
+     http://www.entrepreneur.com/article/239029
+    </a>
+   </li>
+   <li>
+    <a href="http://www.wordstream.com/home-a-may2015">
+     http://www.wordstream.com/home-a-may2015
+    </a>
+   </li>
+   <li>
+    <a href="https://keen.io/">
+     https://keen.io/
+    </a>
+   </li>
+   <li>
+    kissmetrics
+   </li>
+  </ul>
   <h1 id="text-analytics-tools">
    <a>
     3. Text analytics tools
@@ -1542,18 +1611,18 @@ str_name.replace(‘this’,’with this’)
     3.3.1. String manipulation
    </a>
   </h3>
-  <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># remove punctuation</span>
-<span class="ch">import</span> string
-line.translate(<span class="ot">None</span>, string.punctuation)
+  <pre><code># remove punctuation
+import string
+line.translate(None, string.punctuation)
 
-<span class="co"># modify case</span>
+# modify case
 my_string.lower()
 my_string.upper()
 my_string.capitalize()
 my_string.title()
 
-<span class="co"># remove whitespace by default, or remove specified characters</span>
-my_string.strip(<span class="st">'chars'</span>)
+# remove whitespace by default, or remove specified characters
+my_string.strip('chars')
 my_string.lstrip()
 my_string.rstrip()</code></pre>
   <h3 id="regex">
@@ -1561,11 +1630,11 @@ my_string.rstrip()</code></pre>
     3.3.2. Regex
    </a>
   </h3>
-  <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># search for substrings within string or subset of string (i inclusive to j exclusive)</span>
+  <pre><code># search for substrings within string or subset of string (i inclusive to j exclusive)
 str_index = my_string.find(x,i,j)
-str_index = my_string.index(x,i,j)  <span class="co"># raises ValueError if not found</span>
-<span class="dt">str</span>.endswith(x,i,j)
-<span class="dt">str</span>.startswith(x,i,j)
+str_index = my_string.index(x,i,j)  # raises ValueError if not found
+str.endswith(x,i,j)
+str.startswith(x,i,j)
 my_string.count(x,i,j)</code></pre>
   <ul>
    <li>
@@ -1578,20 +1647,20 @@ my_string.count(x,i,j)</code></pre>
     http://nbviewer.jupyter.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/tree/master/ipynb/
    </li>
   </ul>
-  <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># match the beginning of a string:</span>
+  <pre><code># match the beginning of a string:
 re.match(pattern, text, flags)
-re.match(r’Jac’, data) <span class="co"># the r denotes a raw string</span>
+re.match(r’Jac’, data) # the r denotes a raw string
 
-<span class="co"># search anywhere in a string:</span>
-<span class="co"># first match only:</span>
+# search anywhere in a string:
+# first match only:
 re.search(pattern, text, flags)
-<span class="co"># all nonoverlapping:</span>
+# all nonoverlapping:
 re.findall(pattern, text, flags)
 
-<span class="co"># phone number, note escaped parentheses:</span>
+# phone number, note escaped parentheses:
 re.search(r’\(\d\d\d\) \d\d\d-\d\d\d\d’, data)
-<span class="co"># make parentheses, space, hyphen optional in phone number</span>
-r’\)?\d{<span class="dv">3</span>})?\s?-?\d\{<span class="dv">3</span>}-\d{<span class="dv">4</span>}’</code></pre>
+# make parentheses, space, hyphen optional in phone number
+r’\)?\d{3})?\s?-?\d\{3}-\d{4}’</code></pre>
   <p>
    flags:
   </p>
@@ -1609,15 +1678,15 @@ r’\)?\d{<span class="dv">3</span>})?\s?-?\d\{<span class="dv">3</span>}-\d{<sp
     multiple flags: re.findall(pattern, data, flag|flag|flag)
    </li>
   </ul>
-  <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># store regex for reuse:</span>
-my_regex = re.<span class="dt">compile</span>(pattern, flags)
+  <pre><code># store regex for reuse:
+my_regex = re.compile(pattern, flags)
 re.search(my_regex, data)
-<span class="co"># OR</span>
+# OR
 my_regex.search(data)
 
-<span class="co"># loop to obtain iterable of match objects:</span>
-<span class="kw">for</span> match in my_regex.finditer(data):
-    <span class="dt">print</span>(‘{first} {last} &lt;{email}&gt;’.<span class="dt">format</span>(**match.groupdict()))</code></pre>
+# loop to obtain iterable of match objects:
+for match in my_regex.finditer(data):
+    print(‘{first} {last} &lt;{email}&gt;’.format(**match.groupdict()))</code></pre>
   <ul>
    <li>
     \w = any Unicode word character, \W = anything not a Unicode word character
@@ -1646,18 +1715,18 @@ my_regex.search(data)
   <p>
    sets let us combine explicit characters and escape patterns into pieces that can be repeated multiple time; they also let us specify pieces that should be left out of any matches: [aple] finds apple and pale, [a-z] finds any lowercase letter, [A-Z] finds uppercase, [a-zA-Z] finds any case, [^2] finds anything not two, [0-9] finds any number, [.]+ finds any # of , .
   </p>
-  <pre class="sourceCode Python"><code class="sourceCode python"><span class="co"># groups search for multiple conditions simultaneously; note that ^ marks the beginning of the string, and $ marks the end; unnamed groups returned as tuples, named groups as dicts:</span>
+  <pre><code># groups search for multiple conditions simultaneously; note that ^ marks the beginning of the string, and $ marks the end; unnamed groups returned as tuples, named groups as dicts:
 my_var = re.findall (r’’’
-    ^(?P&lt;name&gt;[-\w ]+,\s[-\w ]+)\t   <span class="co"># search for lastname, firstname</span>
-    (\)?\d{<span class="dv">3</span>})?\s?-?\d\{<span class="dv">3</span>}-\d{<span class="dv">4</span>})? <span class="co"># search for phone number, optional</span>
-    (?&lt;email&gt;[-\w\d.+]+ @[-\w\d.]+)\t$  <span class="co"># search for emails</span>
+    ^(?P&lt;name&gt;[-\w ]+,\s[-\w ]+)\t   # search for lastname, firstname
+    (\)?\d{3})?\s?-?\d\{3}-\d{4})? # search for phone number, optional
+    (?&lt;email&gt;[-\w\d.+]+ @[-\w\d.]+)\t$  # search for emails
     ‘’’, data, flags)
 
-<span class="co"># groups addressing</span>
+# groups addressing
 my_var.groups()
 my_var.group_dict()
 my_var.group(‘group_name’)
-my_var.group(<span class="dv">1</span>)</code></pre>
+my_var.group(1)</code></pre>
   <h1 id="sources">
    <a>
     4. Sources
@@ -1688,6 +1757,18 @@ my_var.group(<span class="dv">1</span>)</code></pre>
     <em>
      WordNet® is a large lexical database of English. Nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations. The resulting network of meaningfully related words and concepts can be navigated with the browser. WordNet is also freely and publicly available for download. WordNet's structure makes it a useful tool for computational linguistics and natural language processing.
     </em>
+    <ul>
+     <li>
+      <a href="http://sentiwordnet.isti.cnr.it/">
+       SentiWordNet
+      </a>
+     </li>
+     <li>
+      <a href="http://wndomains.fbk.eu/wnaffect.html">
+       WordNet-Affect
+      </a>
+     </li>
+    </ul>
    </li>
    <li>
     <a href="https://stanfordnlp.github.io/CoreNLP/">

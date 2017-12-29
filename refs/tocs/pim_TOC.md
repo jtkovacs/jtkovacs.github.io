@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3885 words | updated 11/20/2017</p><div class="TOC">- &nbsp;1. [Personal information](#personal-information)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> pim | just under 3893 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [Personal information](#personal-information)
 	- &nbsp;1.1. [Information literacy](#information-literacy)
 		- &nbsp;1.1.1. [History](#history)
 		- &nbsp;1.1.2. [Definitions](#definitions)
@@ -10,6 +10,7 @@
 	- &nbsp;1.2. [Information fluency](#information-fluency)
 	- &nbsp;1.3. [Personal information management](#personal-information-management)
 	- &nbsp;1.4. [Personal knowledge management](#personal-knowledge-management)
+		- &nbsp;1.4.1. [Personal knowledge mastery & sense-seek-share framework](#personal-knowledge-mastery-sense-seek-share-framework)
 - &nbsp;2. [PIM tools](#pim-tools)
 	- &nbsp;2.1. [Content management](#content-management)
 		- &nbsp;2.1.1. [Record-keeping](#record-keeping)
@@ -156,6 +157,11 @@ Per Wikipedia (n.d. d):
     - Communication skills. Perception, intuition, expression, visualization, and interpretation.
     - Creative skills. Imagination, pattern recognition, appreciation, innovation, inference. Understanding of complex adaptive systems.
     - Collaboration skills. Coordination, synchronization, experimentation, cooperation, and design.
+
+
+### 1.4.1. Personal knowledge mastery & sense-seek-share framework
+
+[http://jarche.com/2014/02/the-seek-sense-share-framework/](http://jarche.com/2014/02/the-seek-sense-share-framework/)
 
 
 

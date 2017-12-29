@@ -83,6 +83,8 @@ See Stewart, 2009.
 
 ### Strategic analysis
 
+Import from Google Drive: [notes on market research](https://docs.google.com/document/d/1o-Fsv0Zd7mquwI52-r9QGTldHCSM_KEQ73WQ2NY7Iy4/edit)
+
 - PORTER 5
 - PESTEL
 - SWOT

@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3263 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3595 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -22,7 +22,11 @@
 		- &nbsp;2.3.1. [Challenges with web mining](#challenges-with-web-mining)
 		- &nbsp;2.3.2. [Web crawlers (structure & content mining)](#web-crawlers-structure-content-mining)
 		- &nbsp;2.3.3. [Web analytics (usage mining)](#web-analytics-usage-mining)
-			- &nbsp;2.3.3.1. [Metrics for web analytics](#metrics-for-web-analytics)
+			- &nbsp;2.3.3.1. [Metrics for on-site web analytics](#metrics-for-on-site-web-analytics)
+				- &nbsp;2.3.3.1.1. [Web site usability](#web-site-usability)
+				- &nbsp;2.3.3.1.2. [Traffic sources](#traffic-sources)
+				- &nbsp;2.3.3.1.3. [Visitor profiles](#visitor-profiles)
+				- &nbsp;2.3.3.1.4. [Conversion statistics](#conversion-statistics)
 			- &nbsp;2.3.3.2. [Technologies for web analytics](#technologies-for-web-analytics)
 		- &nbsp;2.3.4. [Social analytics](#social-analytics)
 			- &nbsp;2.3.4.1. [Social network analysis](#social-network-analysis)
@@ -105,6 +109,12 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - **Financial system,** trying to predict based on buzz
 - Understanding the 'voices' of employees (VOE), customers (VOC) and the market (VOM)
 - Politics & surveillance
+
+... and some applications specifically enabled by Web analytics (p. 250):
+
+- "improve the effectiveness of e-commerce Web sites"
+- "measure the results of traditional print or broadcast marketing campaigns" (impact on site traffic)
+
 
 ### 1.1.2. Applications by industry
 
@@ -387,14 +397,61 @@ See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.htm
 
 ### 2.3.3. Web analytics (usage mining)
 
-#### 2.3.3.1. Metrics for web analytics
+(AKA clickstream analysis)
 
-- visitor profiles
-- traffic
-- usability
-- conversion
+Per Sharda et al. (2014, p. 251):
+
+- Web analytics may be done on data from one's own web properties **(on-site)** or data from other sites **(off-site,** including: email, sales and lead history, social media data)
+- On-site data can be in the form of **server logs,** "where the Web server records file requests made by browsers", or **page tagging,** "which uses JavaScript embedded in the site page code to make image requests to a thid-party analytics-dedicated server whenever a page is rendered by a Web browser (or when a mouse click occurs)"
+
+#### 2.3.3.1. Metrics for on-site web analytics
+
+Citing TWG (2013), Sharda et al. present their metrics in four categories (2014, pp.253-256):
+
+##### 2.3.3.1.1. Web site usability
+
+**How were they using my website?**
+
+- page views, average page views per visitor
+- time on site
+- downloads
+- click map (clicks within webpages)
+- click paths (do you need to 'eduate' new visitors or 'motivate' returning ones?)
+
+##### 2.3.3.1.2. Traffic sources
+
+**Where did they come from?**
+
+- referral web sites (where does your best traffic originate?)
+- search engines (keywords, landing pages)
+- direct hits (bookmarked and clicked, or typed the URL directly into the browser)
+- online and offline marketing campaigns (create dedicated page to catch traffic originating from these sources, e.g. _www.mycompany.com/offer50)_
+
+##### 2.3.3.1.3. Visitor profiles
+
+**"What do my visitors look like?"** --- segmentation (and potentially, differentiation of landing pages) based on:
+
+- keywords (do they echo yours, or find the site via their own?)
+- content groupings ("analyze specific sections of your Web site that correspond with specific products, services, campaigns")
+- geography
+- time of day
+    - when do people browse vs. buy?
+
+##### 2.3.3.1.4. Conversion statistics
+
+**"What does it all mean for the business?"**
+
+- views
+    - new visitors
+    - returning visitors
+- actions
+    - leads
+    - sales/purchases/submissions
+- abandonment/exit and completion rates (\#page_actions/\#page_views)
 
 #### 2.3.3.2. Technologies for web analytics
+
+- Google Analytics
 
 
 
@@ -423,11 +480,6 @@ See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.htm
 - [http://www.wordstream.com/home-a-may2015](http://www.wordstream.com/home-a-may2015)
 - [https://keen.io/](https://keen.io/)
 - kissmetrics
-
-
-
-
-
 
 
 

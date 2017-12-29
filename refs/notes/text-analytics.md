@@ -64,6 +64,12 @@ Per Sharda et al., some applications of text analytics (2014, pp. 206-207):
 - Understanding the 'voices' of employees (VOE), customers (VOC) and the market (VOM)
 - Politics & surveillance
 
+... and some applications specifically enabled by Web analytics (p. 250):
+
+- "improve the effectiveness of e-commerce Web sites"
+- "measure the results of traditional print or broadcast marketing campaigns" (impact on site traffic)
+
+
 ### Applications by industry
 
 Per Sharda et al. (2014, pp. 213-220):
@@ -345,14 +351,61 @@ See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.htm
 
 ### Web analytics (usage mining)
 
-#### Metrics for web analytics
+(AKA clickstream analysis)
 
-- visitor profiles
-- traffic
-- usability
-- conversion
+Per Sharda et al. (2014, p. 251):
+
+- Web analytics may be done on data from one's own web properties **(on-site)** or data from other sites **(off-site,** including: email, sales and lead history, social media data)
+- On-site data can be in the form of **server logs,** "where the Web server records file requests made by browsers", or **page tagging,** "which uses JavaScript embedded in the site page code to make image requests to a thid-party analytics-dedicated server whenever a page is rendered by a Web browser (or when a mouse click occurs)"
+
+#### Metrics for on-site web analytics
+
+Citing TWG (2013), Sharda et al. present their metrics in four categories (2014, pp.253-256):
+
+##### Web site usability
+
+**How were they using my website?**
+
+- page views, average page views per visitor
+- time on site
+- downloads
+- click map (clicks within webpages)
+- click paths (do you need to 'eduate' new visitors or 'motivate' returning ones?)
+
+##### Traffic sources
+
+**Where did they come from?**
+
+- referral web sites (where does your best traffic originate?)
+- search engines (keywords, landing pages)
+- direct hits (bookmarked and clicked, or typed the URL directly into the browser)
+- online and offline marketing campaigns (create dedicated page to catch traffic originating from these sources, e.g. _www.mycompany.com/offer50)_
+
+##### Visitor profiles
+
+**"What do my visitors look like?"** --- segmentation (and potentially, differentiation of landing pages) based on:
+
+- keywords (do they echo yours, or find the site via their own?)
+- content groupings ("analyze specific sections of your Web site that correspond with specific products, services, campaigns")
+- geography
+- time of day
+    - when do people browse vs. buy?
+
+##### Conversion statistics
+
+**"What does it all mean for the business?"**
+
+- views
+    - new visitors
+    - returning visitors
+- actions
+    - leads
+    - sales/purchases/submissions
+- abandonment/exit and completion rates (\#page_actions/\#page_views)
 
 #### Technologies for web analytics
+
+- Google Analytics
 
 
 
@@ -381,11 +434,6 @@ See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.htm
 - [http://www.wordstream.com/home-a-may2015](http://www.wordstream.com/home-a-may2015)
 - [https://keen.io/](https://keen.io/)
 - kissmetrics
-
-
-
-
-
 
 
 

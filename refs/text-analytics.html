@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 3263 words | updated 12/29/2017
+   &gt; text analytics | just under 3595 words | updated 12/29/2017
   </p>
   <div class="TOC">
    <ul>
@@ -198,9 +198,35 @@ code > span.er { color: #ff0000; font-weight: bold; }
          <ul>
           <li>
            2.3.3.1.
-           <a href="#metrics-for-web-analytics">
-            Metrics for web analytics
+           <a href="#metrics-for-on-site-web-analytics">
+            Metrics for on-site web analytics
            </a>
+           <ul>
+            <li>
+             2.3.3.1.1.
+             <a href="#web-site-usability">
+              Web site usability
+             </a>
+            </li>
+            <li>
+             2.3.3.1.2.
+             <a href="#traffic-sources">
+              Traffic sources
+             </a>
+            </li>
+            <li>
+             2.3.3.1.3.
+             <a href="#visitor-profiles">
+              Visitor profiles
+             </a>
+            </li>
+            <li>
+             2.3.3.1.4.
+             <a href="#conversion-statistics">
+              Conversion statistics
+             </a>
+            </li>
+           </ul>
           </li>
           <li>
            2.3.3.2.
@@ -537,6 +563,17 @@ code > span.er { color: #ff0000; font-weight: bold; }
    </li>
    <li>
     Politics &amp; surveillance
+   </li>
+  </ul>
+  <p>
+   ... and some applications specifically enabled by Web analytics (p. 250):
+  </p>
+  <ul>
+   <li>
+    "improve the effectiveness of e-commerce Web sites"
+   </li>
+   <li>
+    "measure the results of traditional print or broadcast marketing campaigns" (impact on site traffic)
    </li>
   </ul>
   <h3 id="applications-by-industry">
@@ -1465,23 +1502,163 @@ code > span.er { color: #ff0000; font-weight: bold; }
     2.3.3. Web analytics (usage mining)
    </a>
   </h3>
-  <h4 id="metrics-for-web-analytics">
-   <a>
-    2.3.3.1. Metrics for web analytics
-   </a>
-  </h4>
+  <p>
+   (AKA clickstream analysis)
+  </p>
+  <p>
+   Per Sharda et al. (2014, p. 251):
+  </p>
   <ul>
    <li>
-    visitor profiles
+    Web analytics may be done on data from one's own web properties
+    <strong>
+     (on-site)
+    </strong>
+    or data from other sites
+    <strong>
+     (off-site,
+    </strong>
+    including: email, sales and lead history, social media data)
    </li>
    <li>
-    traffic
+    On-site data can be in the form of
+    <strong>
+     server logs,
+    </strong>
+    "where the Web server records file requests made by browsers", or
+    <strong>
+     page tagging,
+    </strong>
+    "which uses JavaScript embedded in the site page code to make image requests to a thid-party analytics-dedicated server whenever a page is rendered by a Web browser (or when a mouse click occurs)"
+   </li>
+  </ul>
+  <h4 id="metrics-for-on-site-web-analytics">
+   <a>
+    2.3.3.1. Metrics for on-site web analytics
+   </a>
+  </h4>
+  <p>
+   Citing TWG (2013), Sharda et al. present their metrics in four categories (2014, pp.253-256):
+  </p>
+  <h5 id="web-site-usability">
+   <a>
+    2.3.3.1.1. Web site usability
+   </a>
+  </h5>
+  <p>
+   <strong>
+    How were they using my website?
+   </strong>
+  </p>
+  <ul>
+   <li>
+    page views, average page views per visitor
    </li>
    <li>
-    usability
+    time on site
    </li>
    <li>
-    conversion
+    downloads
+   </li>
+   <li>
+    click map (clicks within webpages)
+   </li>
+   <li>
+    click paths (do you need to 'eduate' new visitors or 'motivate' returning ones?)
+   </li>
+  </ul>
+  <h5 id="traffic-sources">
+   <a>
+    2.3.3.1.2. Traffic sources
+   </a>
+  </h5>
+  <p>
+   <strong>
+    Where did they come from?
+   </strong>
+  </p>
+  <ul>
+   <li>
+    referral web sites (where does your best traffic originate?)
+   </li>
+   <li>
+    search engines (keywords, landing pages)
+   </li>
+   <li>
+    direct hits (bookmarked and clicked, or typed the URL directly into the browser)
+   </li>
+   <li>
+    online and offline marketing campaigns (create dedicated page to catch traffic originating from these sources, e.g.
+    <em>
+     www.mycompany.com/offer50)
+    </em>
+   </li>
+  </ul>
+  <h5 id="visitor-profiles">
+   <a>
+    2.3.3.1.3. Visitor profiles
+   </a>
+  </h5>
+  <p>
+   <strong>
+    "What do my visitors look like?"
+   </strong>
+   --- segmentation (and potentially, differentiation of landing pages) based on:
+  </p>
+  <ul>
+   <li>
+    keywords (do they echo yours, or find the site via their own?)
+   </li>
+   <li>
+    content groupings ("analyze specific sections of your Web site that correspond with specific products, services, campaigns")
+   </li>
+   <li>
+    geography
+   </li>
+   <li>
+    time of day
+    <ul>
+     <li>
+      when do people browse vs. buy?
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <h5 id="conversion-statistics">
+   <a>
+    2.3.3.1.4. Conversion statistics
+   </a>
+  </h5>
+  <p>
+   <strong>
+    "What does it all mean for the business?"
+   </strong>
+  </p>
+  <ul>
+   <li>
+    views
+    <ul>
+     <li>
+      new visitors
+     </li>
+     <li>
+      returning visitors
+     </li>
+    </ul>
+   </li>
+   <li>
+    actions
+    <ul>
+     <li>
+      leads
+     </li>
+     <li>
+      sales/purchases/submissions
+     </li>
+    </ul>
+   </li>
+   <li>
+    abandonment/exit and completion rates (#page_actions/#page_views)
    </li>
   </ul>
   <h4 id="technologies-for-web-analytics">
@@ -1489,6 +1666,11 @@ code > span.er { color: #ff0000; font-weight: bold; }
     2.3.3.2. Technologies for web analytics
    </a>
   </h4>
+  <ul>
+   <li>
+    Google Analytics
+   </li>
+  </ul>
   <h3 id="social-analytics">
    <a>
     2.3.4. Social analytics

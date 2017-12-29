@@ -28,12 +28,74 @@ Per Sharda et al. (2014, pp. 246-248), SEO is the "intentional activity of affec
 - "Updating content so as to keep search engines crawling back"
 - "Adding relevant keywords to a Web page's metadata"
 
+From VanFossen (2006), some more SEO tactics:
 
-#### Search engine marketing
+- Website/blog optimization:
+    - Optimize your code → “HTML/XHMTL errors, lack of connecting and navigational links, lack of text, a table-based design, 404 page not found errors or other dead or moved links, and bad Apache .htaccess or robots.txt files.”
+    - Develop strong intrasite links
+    - Write with strong keyword usage: “Make sure that all links and images have TITLE and ALT attributes, and again put some of your keywords in their titles and descriptions.”
+    - Use categories and tags
+    - Use ping services → already built in to Wordpress
+- Blog promotion:
+    - Submit via pings
+    - Submit to search engines and directories
+    - Become active and visible → e.g., comment on others’ posts
+    - Build incoming links and reputation
+- Track SEO efforts & results:
+    - Understand visitor and traffic statistics
+    - Analyze visitor length of stay
+    - Analyze referers
+    - Analyze search keywords
+    - Analyze most popular posts
+    - Check your PageRank
+- Research competitors:
+    - Study your competitors
+    - Check who is linking to your competitors → Google search: link:http://site.address
+    - Learn from their techniques and content
+- Maintain your site:
+    - Develop strong annual site maintenance plans
+    - Check code, dead end links, and other site maintenance on a regular schedule
 
-AKA SEM; paid search
+Per Sharda et al., (2014), 'black-hat SEO' tactics include cloaking (crawler and human see different versions of a page) and using HTML, JavaScript, etc. to create content that a crawler sees but a human doesn't (e.g., through text color).
 
-- [https://searchengineland.com/guide/what-is-paid-search](https://searchengineland.com/guide/what-is-paid-search)
+Per VanRossen, in 2005(b) Google used the following factors to rank websites, implying some SEO practices:
+
+- Number and quality of incoming links, where quality determinations are based on the page rank & age of the linking page
+- Link anchor text, which should echo keywords (but a variety of them)
+- If you have a blogroll set it so that it randomizes a partial selection from your whole blogroll
+- Keep your domain name for as long as possible
+- Click through rate to your site (especially your fresh content) from other sites, and from your site to ads
+- Consistent and moderately frequent content addition matters more than volume
+- How long users linger
+- Avoid tables in favor of CSS
+
+##### Keywords in SEO
+
+Per VanRossen (2005a):
+
+- “Words inside of HTML heading tags get extra points when they match the keywords within your post, post title, post links, and image tags.”
+- Repetition of keywords is really important
+- “Putting keywords in titles, links, headings, tags, and throughout the page is still critical to the success of your site’s page ranking and keyword ranking results”
+
+VanRossen (2005c):
+
+- "According to experts, your keyword density for a single word should be less than 12%, though many recommend 3-10% to be safe."
+- Ask: what keywords do people use to get to your site already?
+- Ask: what keywords do your competitors use? (comparison tool)
+    - (Who are your competitors? Check [DMOZ](http://dmoz.org/) and [All The Web](http://www.alltheweb.com/) to find other sites by category)
+
+Tools:
+
+- [Keyword Density Counter](http://www.keyworddensity.com/)
+- [Keyword Density Compare](http://www.rankquest.com/tools/Keyword-Density-Compare.php)
+- [Free Google AdWords tool for planning keyword usage](https://adwords.google.com/KeywordPlanner)
+
+Re: long-tail (uncommon) keywords,
+
+- http://www.wordtracker.com/academy/keyword-research/technical-guides/three-good-reasons-to-target-long-tail-keywords
+- http://blog.hubspot.com/blog/tabid/6307/bid/28912/The-Ultimate-Guide-for-Mastering-Long-Tail-Search.aspx
+
+
 
 
 #### Content marketing
@@ -87,7 +149,7 @@ Kanter (2013) provides an excellent summary (as she must) of how curation adds v
     - **Illustrating / Visualizing:** Add an illustration to the resource or collection
     - **Evaluating:** Rate and rank items in your collection
     - **Crediting & Attributing:** Giving credit to the original source
-- [From R. W. Paul, re: critical thinking:]
+- [From R. W. Paul, re: critical thinking:](https://www.brainpickings.org/index.php/2013/04/22/14-ways-to-acquire-knowledge-james-mangan-1936/)
     - **Clarification:** How can the information be explained in another way? Is it accurate? It is well organized? Is it missing something?
     - **Assumptions:** What are the writer’s assumptions? Can we verify or disapprove the assumption?
     - **Reasons and Evidence:** What are some other examples of this idea? Is the same as something else?
@@ -123,8 +185,15 @@ Per Daly (2015):
 
 
 
+#### Search engine marketing
 
-## Most popular search engines
+AKA SEM; paid search
+
+- [https://searchengineland.com/guide/what-is-paid-search](https://searchengineland.com/guide/what-is-paid-search)
+
+
+
+## Popular search engines
 
 [Per EBizMBA,](http://www.ebizmba.com/articles/search-engines) based on 2017 traffic data from Alexa, Compete, and Quantcast, ordered most to least popular:
 
@@ -153,6 +222,8 @@ Per Daly (2015):
 - Information overload
 - Privacy vs. personalization
 - Political & cultural influences on search
+- Effect on traditional media
+    - [http://www.theguardian.com/technology/2014/mar/10/journalism-democracy-algorithms-facebook-google-twitter](http://www.theguardian.com/technology/2014/mar/10/journalism-democracy-algorithms-facebook-google-twitter )
 - Social networks as IR tools
 - Adversarial IR (spam)
 
@@ -288,7 +359,17 @@ Kanter, B. (2013, December 13). How nonprofits get significant value from conten
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
+VanFossen, L. (2005a, October 16). How people search the web, and how they can find your blog. Retrieved from [https://lorelle.wordpress.com/2005/10/16/how-people-search-the-web-and-how-they-can-find-your-blog/](https://lorelle.wordpress.com/2005/10/16/how-people-search-the-web-and-how-they-can-find-your-blog/)
+
+VanFossen, L. (2005b, September 19). Secret out -- How Google ranks websites. Retrieved from [https://lorelle.wordpress.com/2005/09/19/secret-out-how-google-ranks-websites/](https://lorelle.wordpress.com/2005/09/19/secret-out-how-google-ranks-websites/)
+
+VanFossen, L. (2005c, November 26). What are keywords? Retrieved from [https://lorelle.wordpress.com/2005/11/26/what-are-keywords/](https://lorelle.wordpress.com/2005/11/26/what-are-keywords/)
+
+VanFossen, L. (2006, January 15) Do-It-Yourself Search Engine Optimization. Retrieved from [https://lorelle.wordpress.com/2006/01/15/dyi-search-engine-optimization/](https://lorelle.wordpress.com/2006/01/15/dyi-search-engine-optimization/)
+
 ## References
+
+- [https://searchengineland.com/](https://searchengineland.com/)
 
 ## Read
 
@@ -298,4 +379,5 @@ Hedden, H. (2016). _The accidental taxonomist_ (2e). Medford, NJ: Information To
 
 - [Computational Advertising on Social Networks](http://www.datasciencecentral.com/profiles/blogs/computational-advertising-on-social-network)
 - [SEO tutorial](http://www.afterhoursprogramming.com/tutorial/SEO/Introduction/)
+- [https://moz.com/blog/keyword-research-for-the-modern-customer-journey](https://moz.com/blog/keyword-research-for-the-modern-customer-journey)
 

@@ -34,7 +34,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; text analytics | just under 3595 words | updated 12/29/2017
+   &gt; text analytics | just under 3824 words | updated 12/29/2017
   </p>
   <div class="TOC">
    <ul>
@@ -247,6 +247,20 @@ code > span.er { color: #ff0000; font-weight: bold; }
            <a href="#social-network-analysis">
             Social network analysis
            </a>
+           <ul>
+            <li>
+             2.3.4.1.1.
+             <a href="#types-of-networks">
+              Types of networks
+             </a>
+            </li>
+            <li>
+             2.3.4.1.2.
+             <a href="#network-metrics">
+              Network metrics
+             </a>
+            </li>
+           </ul>
           </li>
           <li>
            2.3.4.2.
@@ -256,6 +270,24 @@ code > span.er { color: #ff0000; font-weight: bold; }
            <ul>
             <li>
              2.3.4.2.1.
+             <a href="#social-media-vs-traditional-media">
+              Social media vs traditional media
+             </a>
+            </li>
+            <li>
+             2.3.4.2.2.
+             <a href="#types-of-social-media-users">
+              Types of social media users
+             </a>
+            </li>
+            <li>
+             2.3.4.2.3.
+             <a href="#measuring-social-media-impact">
+              Measuring social media impact
+             </a>
+            </li>
+            <li>
+             2.3.4.2.4.
              <a href="#tools-for-social-media-analytics">
               Tools for social media analytics
              </a>
@@ -1418,7 +1450,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
    <tbody>
     <tr class="odd">
      <td align="left">
-      "all data generated via the Internet, including transaction, social, and usage data"
+      "all [Web] data ... including transaction, social, and usage data"
      </td>
      <td align="left">
       "Web site usage data"
@@ -1676,6 +1708,9 @@ code > span.er { color: #ff0000; font-weight: bold; }
     2.3.4. Social analytics
    </a>
   </h3>
+  <p>
+   As defined by Gartner, social analytics is "monitoring, analyzing, measuring and interpreting digital interactions and relationships of people, topics, ideas and content" (qtd. in Sharda et al., 2014, p. 257).
+  </p>
   <h4 id="social-network-analysis">
    <a>
     2.3.4.1. Social network analysis
@@ -1683,19 +1718,158 @@ code > span.er { color: #ff0000; font-weight: bold; }
   </h4>
   <ul>
    <li>
-    types of networks
+    Mathematical graph theory, c. 1950s
    </li>
    <li>
-    network metrics
+    Network analysis, c. 1980s
+   </li>
+  </ul>
+  <h5 id="types-of-networks">
+   <a>
+    2.3.4.1.1. Types of networks
+   </a>
+  </h5>
+  <ul>
+   <li>
+    Communication (flow of information)
    </li>
    <li>
-    connections
+    (social)
+    <ul>
+     <li>
+      Community
+     </li>
+     <li>
+      Criminal
+     </li>
+    </ul>
    </li>
    <li>
-    distributions
+    Innovation (flow of ideas)
+   </li>
+  </ul>
+  <h5 id="network-metrics">
+   <a>
+    2.3.4.1.2. Network metrics
+   </a>
+  </h5>
+  <ul>
+   <li>
+    CONNECTIONS
+    <ul>
+     <li>
+      <strong>
+       Homophily
+      </strong>
+      (to what extend friends are similar)
+     </li>
+     <li>
+      <strong>
+       Multiplexity
+      </strong>
+      (nodes connected in multiple ways, e.g. people connected through multiple social roles)
+     </li>
+     <li>
+      <strong>
+       Mutuality/reciprocity
+      </strong>
+      (of interactions)
+     </li>
+     <li>
+      <strong>
+       Network closure
+      </strong>
+      (to what extent friends are also friends, AKA
+      <strong>
+       transivity)
+      </strong>
+     </li>
+     <li>
+      <strong>
+       Propinquity
+      </strong>
+      (to what extent friendship reflects geographical proximity)
+     </li>
+    </ul>
    </li>
    <li>
-    segmentation
+    DISTRIBUTIONS
+    <ul>
+     <li>
+      <strong>
+       Bridge
+      </strong>
+      (node that single-handedly connects separate clusters)
+      <ul>
+       <li>
+        <strong>
+         Structural holes
+        </strong>
+        ("absence of ties between two parts of a network")
+       </li>
+      </ul>
+     </li>
+     <li>
+      <strong>
+       Centrality
+      </strong>
+      (influence/importance of a node, calculated different ways ---
+      <em>
+       betweenness, closeness, eigenvector, alpha, and degree centrality)
+      </em>
+     </li>
+     <li>
+      <strong>
+       Density
+      </strong>
+      ("proportion of direct ties in a network relative to the total number possible")
+     </li>
+     <li>
+      <strong>
+       Distance
+      </strong>
+      ("minimum number of ties required to connect two particular actors")
+     </li>
+     <li>
+      <strong>
+       Tie strength
+      </strong>
+      ("linear combination of time, emotional intensity, intimacy, and reciprocity ...
+      <strong>
+       strong ties
+      </strong>
+      are associated with homophily, intimacy, propinquity, and transitivity, while
+      <strong>
+       weak ties
+      </strong>
+      are associated with bridges)
+     </li>
+    </ul>
+   </li>
+   <li>
+    SEGMENTATION
+    <ul>
+     <li>
+      <strong>
+       Cliques
+      </strong>
+      versus
+      <strong>
+       social circles
+      </strong>
+      (lots of direct ties, versus looser circles;
+      <strong>
+       clustering coefficient
+      </strong>
+      higher for cliques)
+     </li>
+     <li>
+      <strong>
+       Cohesion
+      </strong>
+      ("minimum humber of members who, if removed from the group, would disconnect the group")
+     </li>
+    </ul>
    </li>
   </ul>
   <h4 id="social-media-analytics">
@@ -1703,20 +1877,24 @@ code > span.er { color: #ff0000; font-weight: bold; }
     2.3.4.2. Social media analytics
    </a>
   </h4>
-  <ul>
-   <li>
-    social media vs traditional media
-   </li>
-   <li>
-    types of social media users
-   </li>
-   <li>
-    measuring social media impact
-   </li>
-  </ul>
+  <h5 id="social-media-vs-traditional-media">
+   <a>
+    2.3.4.2.1. Social media vs traditional media
+   </a>
+  </h5>
+  <h5 id="types-of-social-media-users">
+   <a>
+    2.3.4.2.2. Types of social media users
+   </a>
+  </h5>
+  <h5 id="measuring-social-media-impact">
+   <a>
+    2.3.4.2.3. Measuring social media impact
+   </a>
+  </h5>
   <h5 id="tools-for-social-media-analytics">
    <a>
-    2.3.4.2.1. Tools for social media analytics
+    2.3.4.2.4. Tools for social media analytics
    </a>
   </h5>
   <ul>

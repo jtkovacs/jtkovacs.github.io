@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3595 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3824 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -30,8 +30,13 @@
 			- &nbsp;2.3.3.2. [Technologies for web analytics](#technologies-for-web-analytics)
 		- &nbsp;2.3.4. [Social analytics](#social-analytics)
 			- &nbsp;2.3.4.1. [Social network analysis](#social-network-analysis)
+				- &nbsp;2.3.4.1.1. [Types of networks](#types-of-networks)
+				- &nbsp;2.3.4.1.2. [Network metrics](#network-metrics)
 			- &nbsp;2.3.4.2. [Social media analytics](#social-media-analytics)
-				- &nbsp;2.3.4.2.1. [Tools for social media analytics](#tools-for-social-media-analytics)
+				- &nbsp;2.3.4.2.1. [Social media vs traditional media](#social-media-vs-traditional-media)
+				- &nbsp;2.3.4.2.2. [Types of social media users](#types-of-social-media-users)
+				- &nbsp;2.3.4.2.3. [Measuring social media impact](#measuring-social-media-impact)
+				- &nbsp;2.3.4.2.4. [Tools for social media analytics](#tools-for-social-media-analytics)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
 	- &nbsp;3.1. [IBM Watson](#ibm-watson)
 	- &nbsp;3.2. [Attensity](#attensity)
@@ -369,9 +374,10 @@ Per Sharda et al. (2014, pp. 240-241), web mining, AKA web data mining, "is esse
 
 | Web mining | Web analytics |
 | --- | --- |
-| "all data generated via the Internet, including transaction, social, and usage data" | "Web site usage data" |
+| "all [Web] data ... including transaction, social, and usage data" | "Web site usage data" |
 | "discover previously unknown patterns and relationships" | "describe what happened on a website" |
 | "predictive or prescriptive analytics methodology" | "predefined, metrics-driven descriptive analysis" |
+
 
 
 
@@ -384,6 +390,7 @@ Per Sharda et al. (2014, p. 239) --- the Web is:
 
 
 
+
 ### 2.3.2. Web crawlers (structure & content mining)
 
 Web content and metadata can be scraped and mined by web crawlers, to:
@@ -392,6 +399,7 @@ Web content and metadata can be scraped and mined by web crawlers, to:
 - build a corpus of **content** for knowledge discovery through text mining.
 
 See [notes on search engines](https://jtkovacs.github.io/refs/search-engines.html) for a discussion of how web crawlers are used in that application.
+
 
 
 
@@ -458,21 +466,52 @@ Citing TWG (2013), Sharda et al. present their metrics in four categories (2014,
 
 ### 2.3.4. Social analytics
 
+As defined by Gartner, social analytics is "monitoring, analyzing, measuring and interpreting digital interactions and relationships of people, topics, ideas and content" (qtd. in Sharda et al., 2014, p. 257).
+
+
+
 #### 2.3.4.1. Social network analysis
 
-- types of networks
-- network metrics
-  - connections
-  - distributions
-  - segmentation
+- Mathematical graph theory, c. 1950s
+- Network analysis, c. 1980s
+
+##### 2.3.4.1.1. Types of networks
+
+- Communication (flow of information)
+- (social)
+    - Community
+    - Criminal
+- Innovation (flow of ideas)
+
+##### 2.3.4.1.2. Network metrics
+
+- CONNECTIONS
+    - **Homophily** (to what extend friends are similar)
+    - **Multiplexity** (nodes connected in multiple ways, e.g. people connected through multiple social roles)
+    - **Mutuality/reciprocity** (of interactions)
+    - **Network closure** (to what extent friends are also friends, AKA **transivity)**
+    - **Propinquity** (to what extent friendship reflects geographical proximity)
+- DISTRIBUTIONS
+    - **Bridge** (node that single-handedly connects separate clusters)
+        - **Structural holes** ("absence of ties between two parts of a network")
+    - **Centrality** (influence/importance of a node, calculated different ways --- _betweenness, closeness, eigenvector, alpha, and degree centrality)_
+    - **Density** ("proportion of direct ties in a network relative to the total number possible")
+    - **Distance** ("minimum number of ties required to connect two particular actors")
+    - **Tie strength** ("linear combination of time, emotional intensity, intimacy, and reciprocity ... **strong ties** are associated with homophily, intimacy, propinquity, and transitivity, while **weak ties** are associated with bridges)
+- SEGMENTATION
+    - **Cliques** versus **social circles** (lots of direct ties, versus looser circles; **clustering coefficient** higher for cliques)
+    - **Cohesion** ("minimum humber of members who, if removed from the group, would disconnect the group")
+
 
 #### 2.3.4.2. Social media analytics
 
-- social media vs traditional media
-- types of social media users
-- measuring social media impact
+##### 2.3.4.2.1. Social media vs traditional media
 
-##### 2.3.4.2.1. Tools for social media analytics
+##### 2.3.4.2.2. Types of social media users
+
+##### 2.3.4.2.3. Measuring social media impact
+
+##### 2.3.4.2.4. Tools for social media analytics
 
 - [https://blog.bufferapp.com/social-media-analytics-tools](https://blog.bufferapp.com/social-media-analytics-tools)
 - [http://venturebeat.com/2013/12/20/top-10-social-media-analytics-tools-the-venturebeat-index/](http://venturebeat.com/2013/12/20/top-10-social-media-analytics-tools-the-venturebeat-index/)

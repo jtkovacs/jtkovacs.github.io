@@ -1,12 +1,14 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> search engines | just under 958 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What are search engines?](#what-are-search-engines)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> search engines | just under 1661 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What are search engines?](#what-are-search-engines)
 	- &nbsp;1.1. [Business applications of search engines](#business-applications-of-search-engines)
 		- &nbsp;1.1.1. [Enterprise IR](#enterprise-ir)
-		- &nbsp;1.1.2. [Marketing](#marketing)
-			- &nbsp;1.1.2.1. [Search engine optimization (SEO)](#search-engine-optimization-seo)
-				- &nbsp;1.1.2.1.1. [SEO tactics](#seo-tactics)
-			- &nbsp;1.1.2.2. [Search Marketing (SEM)](#search-marketing-sem)
-		- &nbsp;1.1.3. [Most popular search engines](#most-popular-search-engines)
-	- &nbsp;1.2. [Ethical & social dimensions of search](#ethical-social-dimensions-of-search)
+		- &nbsp;1.1.2. [Search marketing](#search-marketing)
+			- &nbsp;1.1.2.1. [Search engine optimization](#search-engine-optimization)
+			- &nbsp;1.1.2.2. [Search engine marketing](#search-engine-marketing)
+			- &nbsp;1.1.2.3. [Content marketing](#content-marketing)
+				- &nbsp;1.1.2.3.1. [Content curation](#content-curation)
+				- &nbsp;1.1.2.3.2. [Writing roundup posts](#writing-roundup-posts)
+	- &nbsp;1.2. [Most popular search engines](#most-popular-search-engines)
+	- &nbsp;1.3. [Ethical & social dimensions of search](#ethical-social-dimensions-of-search)
 - &nbsp;2. [How do search engines work?](#how-do-search-engines-work)
 	- &nbsp;2.1. [Search engine process](#search-engine-process)
 		- &nbsp;2.1.1. [Development cycle](#development-cycle)
@@ -50,13 +52,12 @@
 
 
 
-### 1.1.2. Marketing
+### 1.1.2. Search marketing
 
-#### 1.1.2.1. Search engine optimization (SEO)
+
+#### 1.1.2.1. Search engine optimization
 
 Per Sharda et al. (2014, pp. 246-248), SEO is the "intentional activity of affecting the visibility of an e-commerce site or a Web site in a search engine's natural (unpaid or organic) search results ... As an Internet marketing strategy, SEO considers how search engines work, what people search for, the actual search terms or keywords typed into search engines, and which search engines are preferred by their targeted audience. Optimizing a Web site may involve editing its content, HTML, and associated coding to both increase its relevance to specific keywords and to remove barriers to the indexing activities of search engines. Promoting a site to increase the number of backlinks, or inbound links, is another SEO tactic."
-
-##### 1.1.2.1.1. SEO tactics
 
 - "Cross-linking between pages of the same Web site to provide more links to the most important pages"
 - "URL normalization of Web pages so that they are accessible via multiple URLs and using canonical link elements and redirects"
@@ -65,10 +66,14 @@ Per Sharda et al. (2014, pp. 246-248), SEO is the "intentional activity of affec
 - "Adding relevant keywords to a Web page's metadata"
 
 
+#### 1.1.2.2. Search engine marketing
 
-#### 1.1.2.2. Search Marketing (SEM)
+AKA SEM; paid search
 
-Same as content marketing???
+- [https://searchengineland.com/guide/what-is-paid-search](https://searchengineland.com/guide/what-is-paid-search)
+
+
+#### 1.1.2.3. Content marketing
 
 - http://okdork.com/2014/04/21/why-content-goes-viral-what-analyzing-100-millions-articles-taught-us/
 - http://buzzsumo.com/
@@ -76,10 +81,87 @@ Same as content marketing???
 - http://time.com/12933/what-you-think-you-know-about-the-web-is-wrong/
 - https://blog.bufferapp.com/perfect-blog-post-research-data
 - https://moz.com/blog/the-generational-content-gap-three-ways-to-reach-multiple-generations
+- https://moz.com/blog/how-to-conduct-creative-content-research
+- http://www.svmsolutions.com/blog/content-marketing-what-should-you-write-about
+- http://www.komarketingassociates.com/blog/5-content-marketing-hacks-cheat-sheet-content-brainstorming/
+- http://visual.ly/portrait-content-marketer-more-marketer
+- http://blogs.timesofindia.indiatimes.com/Citycitybangbang/in-praise-of-un-marketing/
+- https://www.scoop.it/
+- https://paper.li/
+
+##### 1.1.2.3.1. Content curation
+
+Good (2014), a content _curator_ is distinguished from a content marketer in the following ways; he [sic]:
+
+1. "Is not after quantity. Quality is his key measure.
+2. Does not ever curate something without having thoroughly looked at it, multiple times.
+3. Always provides insight as to why something is relevant and where the item fits in its larger collection (stream, catalog, list, etc.)
+4. Adds personal evaluation, judgment, critique or praise.
+5. Integrates a personal touch, in the way it presents the curated object.
+6. Provides useful information about other related, connected or similar objects of interest.
+7. Credits and thanks anyone who has helped in the discovery, identification and analysis of any curated item and links relevant names of people present in the content.
+8. Does not ever republish content “as is” without adding extra value to it.
+9. Does not curate, select, personalize or republish his own content in an automated way.
+10. Discloses bias, affiliation and other otherwise non self-evident contextual clues."
+
+Or, the short version: “[never] forget what these people are looking for and what they really expect from anyone providing them with an answer”;“[take] seriously the information needs of your niche”.
+
+Kanter (2013) provides an excellent summary (as she must) of how curation adds value to information:
+
+- [From Ross Dawson:](http://rossdawsonblog.com/weblog/archives/2010/03/5_ways_to_add_v.html)
+    - **Filtering:** Identifying groups of good sources or key words – so you can laser in on the topic
+    - **Validation:** Knowing your sources and their level of expertise
+    - **Synthesis:** Combining ideas and themes or boiling down a lot of information into a summary
+    - **Presentation:** Putting resources together – the ordering, sub-categories, and aesthetics
+    - **Customization:** Changing the title, context, or revising some of the ideas to match your audience’s needs
+- [From James Mangan:](http://www.brainpickings.org/index.php/2013/04/22/14-ways-to-acquire-knowledge-james-mangan-1936/)
+    - **Practice and experiment:** Read the article and try the technique and describe how it worked or didn’t for you
+    - **Answer the question yourself:** Answer the question raised in the article from your own experience
+    - **Change your perspective:** Describe the article or resource from a different perspective
+- [From Robin Good:](http://curation.masternewmedia.org/p/4010034690/content-curation-13-sense-making-approaches-to-add-value-to-information)
+    - **Comparing:** Compare the strengths and weaknesses of different sources
+    - **Finding related items:** Search and find other sources or articles that are talking about the same idea, putting the resource into a different context
+    - **Illustrating / Visualizing:** Add an illustration to the resource or collection
+    - **Evaluating:** Rate and rank items in your collection
+    - **Crediting & Attributing:** Giving credit to the original source
+- [From R. W. Paul, re: critical thinking:]
+    - **Clarification:** How can the information be explained in another way? Is it accurate? It is well organized? Is it missing something?
+    - **Assumptions:** What are the writer’s assumptions? Can we verify or disapprove the assumption?
+    - **Reasons and Evidence:** What are some other examples of this idea? Is the same as something else?
+    - **Viewpoints and Perspectives:** What is another way to look at this idea? Is it the best? Why or why not? What are the strengths and weaknesses? What would be an alternative? What is the counter argument?
+    - **Implications and Consequences:** What generalization can or can’t be made? How does this tie into what I already know about the topic?
+    - **Questions about Questions:** Why is x important? What does this mean?
+
+##### 1.1.2.3.2. Writing roundup posts
+
+Per Daly (2015):
+
+1. Identify and automate the collection of good content
+    - RSS readers (Feedly)
+    - Google Alerts
+    - Facebook, Google+ hashtags
+    - Twitter lists and hashtags
+    - IFTTT
+    - [Prismatic](http://getprismatic.com/)
+    - [StumbleUpon](http://www.stumbleupon.com/)
+    - [Klout](http://klout.com/)
+    - [Scoopit](https://www.scoop.it/)
+    - [Paperli](https://paper.li/)
+
+2. Get inspired by top-notch curators
+    - NextDraft
+    - Digg
+    - Longreads
+    - Drudge Report
+    - The Verge
+    - Nieman Journalism Lab
+    - Digiday
+3. Establishing a well-trafficked blog takes 6-12 months; be patient, consistent, and promote the blog through links and complementary media channels
 
 
 
-### 1.1.3. Most popular search engines
+
+## 1.2. Most popular search engines
 
 [Per EBizMBA,](http://www.ebizmba.com/articles/search-engines) based on 2017 traffic data from Alexa, Compete, and Quantcast, ordered most to least popular:
 
@@ -103,7 +185,7 @@ Same as content marketing???
 
 
 
-## 1.2. Ethical & social dimensions of search
+## 1.3. Ethical & social dimensions of search
 
 - Information overload
 - Privacy vs. personalization
@@ -234,6 +316,12 @@ Per Sharda et al. (2014):
 # 3. Sources
 
 ## 3.1. Cited
+
+Daly, J. (2015, May 5). How to write a great roundup post. Retrieved from [http://www.cornerstonecontent.com/how-to-write-a-great-roundup-post/](http://www.cornerstonecontent.com/how-to-write-a-great-roundup-post/)
+
+Good, R. (2014, March 18). Content curation is not content marketing. MasterNewMedia. Retrieved from [http://www.masternewmedia.org/content-curation-is-not-content-marketing/](http://www.masternewmedia.org/content-curation-is-not-content-marketing/)
+
+Kanter, B. (2013, December 13). How nonprofits get significant value from content curation. Beth's Blog. Retrieved from [http://www.bethkanter.org/content-curation-2/](http://www.bethkanter.org/content-curation-2/)
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 

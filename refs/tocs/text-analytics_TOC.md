@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 3824 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> text analytics | just under 4045 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is text analytics?](#what-is-text-analytics)
 	- &nbsp;1.1. [Business applications of text analytics](#business-applications-of-text-analytics)
 		- &nbsp;1.1.1. [Applications by technique](#applications-by-technique)
 		- &nbsp;1.1.2. [Applications by industry](#applications-by-industry)
@@ -33,10 +33,8 @@
 				- &nbsp;2.3.4.1.1. [Types of networks](#types-of-networks)
 				- &nbsp;2.3.4.1.2. [Network metrics](#network-metrics)
 			- &nbsp;2.3.4.2. [Social media analytics](#social-media-analytics)
-				- &nbsp;2.3.4.2.1. [Social media vs traditional media](#social-media-vs-traditional-media)
-				- &nbsp;2.3.4.2.2. [Types of social media users](#types-of-social-media-users)
-				- &nbsp;2.3.4.2.3. [Measuring social media impact](#measuring-social-media-impact)
-				- &nbsp;2.3.4.2.4. [Tools for social media analytics](#tools-for-social-media-analytics)
+				- &nbsp;2.3.4.2.1. [What is social media?](#what-is-social-media)
+				- &nbsp;2.3.4.2.2. [Tools for social media analytics](#tools-for-social-media-analytics)
 - &nbsp;3. [Text analytics tools](#text-analytics-tools)
 	- &nbsp;3.1. [IBM Watson](#ibm-watson)
 	- &nbsp;3.2. [Attensity](#attensity)
@@ -472,10 +470,14 @@ As defined by Gartner, social analytics is "monitoring, analyzing, measuring and
 
 #### 2.3.4.1. Social network analysis
 
+Per Sharda et al. (2014):
+
 - Mathematical graph theory, c. 1950s
 - Network analysis, c. 1980s
 
 ##### 2.3.4.1.1. Types of networks
+
+Per Sharda et al. (2014):
 
 - Communication (flow of information)
 - (social)
@@ -484,6 +486,8 @@ As defined by Gartner, social analytics is "monitoring, analyzing, measuring and
 - Innovation (flow of ideas)
 
 ##### 2.3.4.1.2. Network metrics
+
+Per Sharda et al. (2014):
 
 - CONNECTIONS
     - **Homophily** (to what extend friends are similar)
@@ -505,13 +509,35 @@ As defined by Gartner, social analytics is "monitoring, analyzing, measuring and
 
 #### 2.3.4.2. Social media analytics
 
-##### 2.3.4.2.1. Social media vs traditional media
+##### 2.3.4.2.1. What is social media?
 
-##### 2.3.4.2.2. Types of social media users
+Per Sharda et al. (2014, p. 261), **social media includes** "online magazine, Internet forums, Web logs, social blogs, microblogging, wikis, social networks, podcasts, pictures, video, and product/service evaluations/ratings"; they cite Kaplan and Haenlein's (2010) typology of social media based on theories from "media research (social presence, media richness) and social processes (self-presentation, self-disclosure):
 
-##### 2.3.4.2.3. Measuring social media impact
+- **collaborative projects,** e.g. Wikipedia
+- **blogs and microblogs,** e.g. Tumblr
+- **content communities,** e.g. YouTube
+- **social networking sites,** e.g. Facebook
+- **virtual game worlds,** e.g. World of Warcraft
+- **virtual social worlds,** e.g. Second Life
 
-##### 2.3.4.2.4. Tools for social media analytics
+Sharda et al. (2014, p. 262) summarize Morgan et al. (2010) regarding **differences between social and traditional media.** For social media,
+
+- **Quality** is not always safeguarded with traditional editorial processes; it varies widely
+- **Reach** can be similar, but traditional media scales via hierarchy and social media via network (i.e., virally)
+- **Frequency** and **immediacy** can be higher for social media because it's "easier, faster, and cheaper", "resulting in fresher content"
+- **Accessibility** (as readers) and **usability** (as authors) is higher for social media
+- **Mutability** is clearly higher for digital content
+
+Sharda et al. (2014, pp. 262-263) summarize Brogan and Bastone's (2011) stratification of social media users on the basis of time and intensity:
+
+- Inactives
+- Spectators
+- Collectors
+- Joiners
+- Critics
+- Creators
+
+##### 2.3.4.2.2. Tools for social media analytics
 
 - [https://blog.bufferapp.com/social-media-analytics-tools](https://blog.bufferapp.com/social-media-analytics-tools)
 - [http://venturebeat.com/2013/12/20/top-10-social-media-analytics-tools-the-venturebeat-index/](http://venturebeat.com/2013/12/20/top-10-social-media-analytics-tools-the-venturebeat-index/)

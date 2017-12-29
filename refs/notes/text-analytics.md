@@ -421,10 +421,14 @@ As defined by Gartner, social analytics is "monitoring, analyzing, measuring and
 
 #### Social network analysis
 
+Per Sharda et al. (2014):
+
 - Mathematical graph theory, c. 1950s
 - Network analysis, c. 1980s
 
 ##### Types of networks
+
+Per Sharda et al. (2014):
 
 - Communication (flow of information)
 - (social)
@@ -433,6 +437,8 @@ As defined by Gartner, social analytics is "monitoring, analyzing, measuring and
 - Innovation (flow of ideas)
 
 ##### Network metrics
+
+Per Sharda et al. (2014):
 
 - CONNECTIONS
     - **Homophily** (to what extend friends are similar)
@@ -454,11 +460,33 @@ As defined by Gartner, social analytics is "monitoring, analyzing, measuring and
 
 #### Social media analytics
 
-##### Social media vs traditional media
+##### What is social media?
 
-##### Types of social media users
+Per Sharda et al. (2014, p. 261), **social media includes** "online magazine, Internet forums, Web logs, social blogs, microblogging, wikis, social networks, podcasts, pictures, video, and product/service evaluations/ratings"; they cite Kaplan and Haenlein's (2010) typology of social media based on theories from "media research (social presence, media richness) and social processes (self-presentation, self-disclosure):
 
-##### Measuring social media impact
+- **collaborative projects,** e.g. Wikipedia
+- **blogs and microblogs,** e.g. Tumblr
+- **content communities,** e.g. YouTube
+- **social networking sites,** e.g. Facebook
+- **virtual game worlds,** e.g. World of Warcraft
+- **virtual social worlds,** e.g. Second Life
+
+Sharda et al. (2014, p. 262) summarize Morgan et al. (2010) regarding **differences between social and traditional media.** For social media,
+
+- **Quality** is not always safeguarded with traditional editorial processes; it varies widely
+- **Reach** can be similar, but traditional media scales via hierarchy and social media via network (i.e., virally)
+- **Frequency** and **immediacy** can be higher for social media because it's "easier, faster, and cheaper", "resulting in fresher content"
+- **Accessibility** (as readers) and **usability** (as authors) is higher for social media
+- **Mutability** is clearly higher for digital content
+
+Sharda et al. (2014, pp. 262-263) summarize Brogan and Bastone's (2011) stratification of social media users on the basis of time and intensity:
+
+- Inactives
+- Spectators
+- Collectors
+- Joiners
+- Critics
+- Creators
 
 ##### Tools for social media analytics
 

@@ -1,21 +1,22 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> information management | just under 1170 words | updated 12/28/2017</p><div class="TOC">- &nbsp;1. [What are information systems for?](#what-are-information-systems-for)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> information management | just under 1261 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What are information systems for?](#what-are-information-systems-for)
 - &nbsp;2. [What are management information systems (MIS)?](#what-are-management-information-systems-mis)
-	- &nbsp;2.1. [Evolution of MIS](#evolution-of-mis)
-	- &nbsp;2.2. [Why use a MIS?](#why-use-a-mis)
-	- &nbsp;2.3. [Why not use a MIS?](#why-not-use-a-mis)
-	- &nbsp;2.4. [Types of MIS](#types-of-mis)
-		- &nbsp;2.4.1. [Enterprise systems](#enterprise-systems)
-			- &nbsp;2.4.1.1. [Enterprise resource planning (ERP)](#enterprise-resource-planning-erp)
-			- &nbsp;2.4.1.2. [Customer relationship management (CRM)](#customer-relationship-management-crm)
-			- &nbsp;2.4.1.3. [Supply chain management (SCM)](#supply-chain-management-scm)
-		- &nbsp;2.4.2. [Business intelligence (BI)](#business-intelligence-bi)
-		- &nbsp;2.4.3. [Collaboration systems (CS)](#collaboration-systems-cs)
-- &nbsp;3. [Other IS](#other-is)
-- &nbsp;4. [Implementing an IS](#implementing-an-is)
-	- &nbsp;4.1. [Customizing an IS](#customizing-an-is)
-- &nbsp;5. [Governance of IS](#governance-of-is)
-- &nbsp;6. [Sources](#sources)
-	- &nbsp;6.1. [Cited](#cited)
+	- &nbsp;2.1. [Versus other IS](#versus-other-is)
+	- &nbsp;2.2. [Evolution of MIS](#evolution-of-mis)
+	- &nbsp;2.3. [Why use a MIS?](#why-use-a-mis)
+	- &nbsp;2.4. [Why not use a MIS?](#why-not-use-a-mis)
+	- &nbsp;2.5. [Types of MIS](#types-of-mis)
+		- &nbsp;2.5.1. [Enterprise systems](#enterprise-systems)
+			- &nbsp;2.5.1.1. [Enterprise resource planning (ERP)](#enterprise-resource-planning-erp)
+			- &nbsp;2.5.1.2. [Customer relationship management (CRM)](#customer-relationship-management-crm)
+			- &nbsp;2.5.1.3. [Supply chain management (SCM)](#supply-chain-management-scm)
+		- &nbsp;2.5.2. [Business intelligence (BI)](#business-intelligence-bi)
+		- &nbsp;2.5.3. [Collaboration systems (CS)](#collaboration-systems-cs)
+- &nbsp;3. [Implementing an IS](#implementing-an-is)
+	- &nbsp;3.1. [Customizing an IS](#customizing-an-is)
+	- &nbsp;3.2. [IS adoption & change management](#is-adoption-change-management)
+	- &nbsp;3.3. [Governance of IS](#governance-of-is)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
 </div>
 
 
@@ -43,7 +44,13 @@ Per Annabi and McGann (2014a), information systems (IS) consist of three compone
 
 IS professionals work with IT professionals to create IS systems. IT people build the IT, but IS people identify the problems that an IS system may solve or the opportunities that an IS system may create, and coordinate implementation of an IS that meets the organization's needs.
 
-## 2.1. Evolution of MIS
+## 2.1. Versus other IS
+
+- Digital asset management (DAM)
+- Content management systems (CMS)
+- Libraries, catalogs, portals, archives
+
+## 2.2. Evolution of MIS
 
 Per Annabi and McGann (2014b):
 
@@ -51,11 +58,11 @@ Per Annabi and McGann (2014b):
 - **Functional systems** were slightly broader and place automated tasks in context of all related tasks, e.g. accounting and financial reporting
 - **Enterprise systems** are broadest and try to integrate processes across functional areas, e.g. recognizing the relationship between accounting and HR, as well as bridging internal and external users
 
-## 2.2. Why use a MIS?
+## 2.3. Why use a MIS?
 
 Davenport (1998) claims the raison d'être of enterprise systems is to integrate information fragmented across many legacy systems --- which has costs both direct (maintaining systems and integrating them ad hoc) and indirect (missed opportunities and poor service). By uniting cross-departmental data and functionality into a single software package, enterprise systems can dramatically increase business process efficiency (Davenport cites examples).
 
-## 2.3. Why not use a MIS?
+## 2.4. Why not use a MIS?
 
 Davenport (1998) argues that "the technical challenges, however great, are not the main reason enterprise systems fail. The biggest problems are business problems.
 
@@ -63,7 +70,7 @@ Davenport (1998) argues that "the technical challenges, however great, are not t
 
 **(2)** Moreover, as EIS spread throughout industry, "convergence around a single software package should raise a sobering question in the minds of chief executives: How similar can our information flows and our processes be to those of our competitors before we begin to undermine our own sources of differentiation in the market?" This question is not salient to all companies, but for some, "differentiation is based more on service and price than on product."
 
-## 2.4. Types of MIS
+## 2.5. Types of MIS
 
 There are three major MIS in an enterprise, collectively referred to as an organization's **IS architecture:**
 
@@ -71,31 +78,31 @@ There are three major MIS in an enterprise, collectively referred to as an organ
 - **Business intelligence (BI) systems** are used to inform strategic decisions; see [notes on BI](bi.html)
 - **Collaboration systems (CS)** are used to connect people.
 
-### 2.4.1. Enterprise systems
+### 2.5.1. Enterprise systems
 
-![**Source:** Davenport (1998)](illos/eis-anatomy.png)
+![**Source:** Davenport (1998)](../illos/eis-anatomy.png)
 
-![**Source:** Davenport (1998)](illos/eis-scope.png)
+![**Source:** Davenport (1998)](../illos/eis-scope.png)
 
-#### 2.4.1.1. Enterprise resource planning (ERP)
+#### 2.5.1.1. Enterprise resource planning (ERP)
 
 - Major providers: SAP, Oracle, Sage Group, Microsoft Dynamics, SSA Global Technologies, Baan, PeopleSoft
 - Benefits: Eliminate data inconsistencies; enable reporting that covers the entirety of a business function or process; better availability of data.
 - Costs: Purchase, training, data conversion, consulting fees, etc. Also enforce standardization of business processes, which users may resist.
 
-#### 2.4.1.2. Customer relationship management (CRM)
+#### 2.5.1.2. Customer relationship management (CRM)
 
 - CRMs incl. sales, marketing, customer service, and analysis of such.
 - Benefits: Enable targeted marketing and experiences; help discover new customers; support better customer service to attract and retain customers.
 - Costs: ERM success depends on a customer-centric organizational culture, which can be hard to develop.
 
-#### 2.4.1.3. Supply chain management (SCM)
+#### 2.5.1.3. Supply chain management (SCM)
 
 - External interface; covers suppliers, manufacturers, distributors, and customers (presumably in a way that isn't redundant to the CRM??).
 - Benefits: Avoid waste in supply chain by identifying inefficiencies and improving forecasting.
 - Costs: SCM success depends on (1) trust among members of the supply chain, and (2) accurate models of the supply chain, which can be dauntingly complex.
 
-### 2.4.2. Business intelligence (BI)
+### 2.5.2. Business intelligence (BI)
 
 See [notes on BI.](bi.html)
 
@@ -105,7 +112,7 @@ See [notes on BI.](bi.html)
 - Expert systems (ES)
 - AI systems
 
-### 2.4.3. Collaboration systems (CS)
+### 2.5.3. Collaboration systems (CS)
 
 - Groupware
 - Workflow
@@ -119,21 +126,25 @@ See [notes on BI.](bi.html)
 
 
 
-# 3. Other IS
-
-- Digital asset management (DAM)
-- Content management systems (CMS)
-- Libraries, catalogs, portals, archives
 
 
 
 
 
-# 4. Implementing an IS
+
+
+
+
+
+
+
+# 3. Implementing an IS
 
 See [notes on project management](project-management.html) for complete description of phases and techniques employed across the systems development lifecycle (SDLC).
 
-## 4.1. Customizing an IS
+
+
+## 3.1. Customizing an IS
 
 Davenport (1998) identifies several pathways:
 
@@ -144,7 +155,19 @@ Davenport (1998) identifies several pathways:
 
 
 
-# 5. Governance of IS
+## 3.2. IS adoption & change management
+
+Sharda et al. (2014, p. 286) suggest that "senior management" promote a "fact-based decision-making culture ... [and] a culture of experimentation" by:
+
+- "[Recognizing] that some people can't or won't adjust
+- [Being] a vocal supporter
+- [Stressing] that outdated methods must be discontinued
+- [Asking] to see what analytics went into decisions
+- [Linking] incentives and compensation to desired behaviors"
+-
+
+
+## 3.3. Governance of IS
 
 Per Archives.gov (2016), there are two aspects to governance: **(1)** specifying the structure of accountability ("boundaries, authorities, responsibilities, and tasks") and **(2)**
 measuring performance. The governance structure should be as simple and stable as possible, and may include:
@@ -171,9 +194,12 @@ Many [project management practices and artifacts](project-management.html) contr
 
 
 
-# 6. Sources
 
-## 6.1. Cited
+
+
+# 4. Sources
+
+## 4.1. Cited
 
 Annabi, H. & McGann, S. (2014a). Unit 1 -- What is MIS? In _The real deal on MIS._
 
@@ -186,5 +212,7 @@ Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects
 Davenport, T. H. (1998). Putting the enterprise into the enterprise system. _Harvard Business Review._ Retrieved from [https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system](https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system)
 
 Detlor, B. (2010). Information management. _International Journal of Information Management,_ 30(2), 103-108. [http://dx.doi.org/10.1016/j.ijinfomgt.2009.12.001](http://dx.doi.org/10.1016/j.ijinfomgt.2009.12.001)
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 

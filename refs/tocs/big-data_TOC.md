@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> big data | just under 707 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is Big Data?](#what-is-big-data)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> big data | just under 1087 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is Big Data?](#what-is-big-data)
 	- &nbsp;1.1. [Sources of Big Data](#sources-of-big-data)
 	- &nbsp;1.2. [Business applications of Big Data](#business-applications-of-big-data)
 	- &nbsp;1.3. [Implementing Big Data initiatives](#implementing-big-data-initiatives)
@@ -49,16 +49,14 @@ Per Sharda et al. (2014, pp. 280-282):
 | 2011 | 1.8 ZB
 | 2020 | 35 ZB |
 
-| Name | Symbol | Value |
-| --- | --- | --- |
-| Kilobyte | kB | 10<sup>3</sup> |
-| Megabyte | MB | 10<sup>6</sup> |
-| Gigabyte | GB | 10<sup>9</sup> |
-| Terabyte | TB | 10<sup>12</sup> |
-| Petabyte | PB | 10<sup>15</sup> |
-| Exabyte | EB | 10<sup>18</sup> |
-| Zettabyte | ZB | 10<sup>21</sup> |
-| Yottabyte | YB | 10<sup>24</sup> |
+- Kilobyte (kB) = 10<sup>3</sup>
+- Megabyte (MB) = 10<sup>6</sup>
+- Gigabyte (GB) = 10<sup>9</sup>
+- Terabyte (TB) = 10<sup>12</sup>
+- Petabyte (PB) = 10<sup>15</sup>
+- Exabyte (EB) = 10<sup>18</sup>
+- Zettabyte (ZB) = 10<sup>21</sup>
+- Yottabyte (YB) = 10<sup>24</sup>
 
 **Variety** (in format; about 80-85% unstructured)
 
@@ -97,13 +95,39 @@ Per Sharda et al. (2014, pp. 280-282):
 
 ## 1.2. Business applications of Big Data
 
-pp. 287
+Sharda et al. (2014, pp. 287):
 
-... stream analytics specifically, pp. 317-321
+... stream analytics specifically, pp. 317-321:
 
+Per Zhu et al. (2014, pp. 16-17), there are four categories of business goals that companies may fruitfully pursue with Big Data:
 
+*REVENUE*
 
+- **Monetize big data:** Design and execute big data analytics use cases that increase revenue, lower costs, or reduce risk.
+- **Manage big data at a low cost:** Demonstrate cost savings of big data analytics styles for both MapReduce clusters and real-time analytics.
+- **Improve efficiency in business operations:** Develop insight about the value of specific business processes, such as enterprise resource planning (ERP), supply chain management (SCM), and customer relationship management (CRM).
 
+*CUSTOMER SERVICES*
+
+- **Improve customer understanding (360-degree view of the customer):** Mine all sources of client experience and interaction from additional unstructured and semi-structured data types using real-time and batch (Hadoop) analytics.
+- **Obtain behavioral insight into client transactions:** | What led to a certain business transaction? Why did the client choose us? What else can we deduce about a client’s buying behavior?
+- **Attract and retain customers:** Mine and apply insight toward marketing and sales effectiveness with clients, customers, and customer support personnel.
+- **Fraud detection and claims processing:** Derive and exploit additional insight from data types not previously analyzed for anti-fraud and claims processing.
+
+*BUSINESS DEVELOPMENT*
+
+- **Introduce new products or services:** Thanks to your new insight about target market preferences, new products and services will have higher adoption rates by the target clientele.
+- **Outsource non-core functions:** Decide what to outsource without affecting the customer experience.
+- **Pursue mergers, acquisitions, and divestitures:** Gather and consider marketplace insights about the potential impact of mergers, acquisitions, and divestitures.
+- **Gain new competitive insights:** Mine all sources of information, even non-traditional sources of information, to learn about the brand perception of the company by its customers, its reputation, and its industry ranking. | Define metrics for improvement that are achievable if based on better insight.
+
+*BUSINESS AGILITY & GOVERNANCE*
+
+- **Increase business agility:** Mine real-time events for trends and apply the insight to transactions and interactions with customers.
+- **Plan with greater confidence:** Build better scenario-based analysis models.
+- **Make better decisions faster:** Harvest better insights from both batch (Hadoop) and real-time events and rapidly make them available to decision makers.
+- **Ensure regulatory compliance:** Improve your understanding of the current regulatory climate and expectations of auditors.
+- **Lower risk:** Improve the cost-benefit analysis of various risks (regulatory, market, credit, counter-party operational, and so on).
 
 
 
@@ -115,8 +139,6 @@ pp. 287
 Per Zhu et al. (2014, p. 26):
 
 ![](../illos/big-data-maturity.png)
-
-- The Data Warehousing Institute (TDWI). [https://tdwi.org/pages/maturity-model/big-data-maturity-model-assessment-tool.aspx](https://tdwi.org/pages/maturity-model/big-data-maturity-model-assessment-tool.aspx)
 
 
 
@@ -181,13 +203,15 @@ Appliances
 
 Per Zhu et al. (2014, p. 6):
 
-![](big-data-arch1.png)
+![](../illos/big-data-arch1.png)
 
 Per AsterData, cited in Sharda et al. (2014, p. 283):
 
+![](../illos/big-data-arch2.jpg)
 
+Per Tetadata, their landscape of products AKA [Unified Data Architecture:](https://www.teradata.com/Solutions-and-Industries/unified-data-architecture)
 
-
+![](big-data-arch3.jpg)
 
 
 

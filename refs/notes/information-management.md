@@ -24,6 +24,12 @@ Per Annabi and McGann (2014a), information systems (IS) consist of three compone
 
 IS professionals work with IT professionals to create IS systems. IT people build the IT, but IS people identify the problems that an IS system may solve or the opportunities that an IS system may create, and coordinate implementation of an IS that meets the organization's needs.
 
+## Versus other IS
+
+- Digital asset management (DAM)
+- Content management systems (CMS)
+- Libraries, catalogs, portals, archives
+
 ## Evolution of MIS
 
 Per Annabi and McGann (2014b):
@@ -54,9 +60,9 @@ There are three major MIS in an enterprise, collectively referred to as an organ
 
 ### Enterprise systems
 
-![**Source:** Davenport (1998)](illos/eis-anatomy.png)
+![**Source:** Davenport (1998)](../illos/eis-anatomy.png)
 
-![**Source:** Davenport (1998)](illos/eis-scope.png)
+![**Source:** Davenport (1998)](../illos/eis-scope.png)
 
 #### Enterprise resource planning (ERP)
 
@@ -100,11 +106,13 @@ See [notes on BI.](bi.html)
 
 
 
-# Other IS
 
-- Digital asset management (DAM)
-- Content management systems (CMS)
-- Libraries, catalogs, portals, archives
+
+
+
+
+
+
 
 
 
@@ -113,6 +121,8 @@ See [notes on BI.](bi.html)
 # Implementing an IS
 
 See [notes on project management](project-management.html) for complete description of phases and techniques employed across the systems development lifecycle (SDLC).
+
+
 
 ## Customizing an IS
 
@@ -125,7 +135,19 @@ Davenport (1998) identifies several pathways:
 
 
 
-# Governance of IS
+## IS adoption & change management
+
+Sharda et al. (2014, p. 286) suggest that "senior management" promote a "fact-based decision-making culture ... [and] a culture of experimentation" by:
+
+- "[Recognizing] that some people can't or won't adjust
+- [Being] a vocal supporter
+- [Stressing] that outdated methods must be discontinued
+- [Asking] to see what analytics went into decisions
+- [Linking] incentives and compensation to desired behaviors"
+-
+
+
+## Governance of IS
 
 Per Archives.gov (2016), there are two aspects to governance: **(1)** specifying the structure of accountability ("boundaries, authorities, responsibilities, and tasks") and **(2)**
 measuring performance. The governance structure should be as simple and stable as possible, and may include:
@@ -152,6 +174,9 @@ Many [project management practices and artifacts](project-management.html) contr
 
 
 
+
+
+
 # Sources
 
 ## Cited
@@ -167,5 +192,7 @@ Bloch, M., Blumberg, S., & Laartz, J. (n.d.). Delivering large-scale IT projects
 Davenport, T. H. (1998). Putting the enterprise into the enterprise system. _Harvard Business Review._ Retrieved from [https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system](https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system)
 
 Detlor, B. (2010). Information management. _International Journal of Information Management,_ 30(2), 103-108. [http://dx.doi.org/10.1016/j.ijinfomgt.2009.12.001](http://dx.doi.org/10.1016/j.ijinfomgt.2009.12.001)
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 

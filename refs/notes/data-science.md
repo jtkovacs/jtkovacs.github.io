@@ -1,15 +1,8 @@
 
 # What is data science?
 
-## Responsibilities
 
-Per Sharda et al. (2014):
-
-## Skills
-
-Per Sharda et al. (2014):
-
-## Lifecycle
+## Data science lifecycles
 
 Via Mason and Wiggins (2010):
 
@@ -99,13 +92,51 @@ See [notes on models,](models.html) [statistics,](statistics.html) [machine lear
 
 
 
-## Data science tools
+## What is a data scientist?
+
+### Responsibilities
+
+Per Sharda et al. (2014, p. 300):
+
+- "Work closely with a product engineering team to identify and answer important product questions
+- Answer product questions by using appropriate statistical techniques on available data
+- Communicate findings to product managers and engineers
+- Drive the collection of new data and the refinement of existing data sources
+- Analyze and interpret the results of product experiments
+- Develop bext practices for instrumentation and experimentation and communicate those to product engineering teams
+
+### Skills
+
+Per Sharda et al. (2014, p. 299):
+
+_SOFT_
+
+- Domain expertise, problem definition, and decision making
+- Curiosity and creativity
+- Communication and interpersonal
+
+_HARD_
+
+- Data access and management (both traditional and new data systems)
+- Programming, scripting, and hacking
+- Internet and social media/social networking technologies
+
+
+
+
+
+
+
+
+
+
+# Data science tools
 
 R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
 
 
 
-### Why command line for data science?
+## Why command line for data science?
 
 Per Janssens (2015):
 
@@ -117,10 +148,7 @@ Per Janssens (2015):
 
 
 
-
-
-
-# Workflow management
+## Workflow management tools
 
 - [https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/](https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/)
 - [https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/)
@@ -131,7 +159,11 @@ Per Janssens (2015):
 
 
 
+
+
 # Sources
+
+## Cited
 
 Janssens, J. (2015). _Data science at the command line: Facing the future with time-tested tools._ Sebastopol, CA: O'Reilly.
 

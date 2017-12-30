@@ -1,32 +1,27 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data science | just under 1055 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is data science?](#what-is-data-science)
-	- &nbsp;1.1. [Responsibilities](#responsibilities)
-	- &nbsp;1.2. [Skills](#skills)
-	- &nbsp;1.3. [Lifecycle](#lifecycle)
-		- &nbsp;1.3.1. [Obtain](#obtain)
-		- &nbsp;1.3.2. [Scrub](#scrub)
-		- &nbsp;1.3.3. [Explore](#explore)
-		- &nbsp;1.3.4. [Model](#model)
-		- &nbsp;1.3.5. [iNterpret](#interpret)
-	- &nbsp;1.4. [Data science tools](#data-science-tools)
-		- &nbsp;1.4.1. [Why command line for data science?](#why-command-line-for-data-science)
-- &nbsp;2. [Workflow management](#workflow-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data science | just under 1184 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is data science?](#what-is-data-science)
+	- &nbsp;1.1. [Data science lifecycles](#data-science-lifecycles)
+		- &nbsp;1.1.1. [Obtain](#obtain)
+		- &nbsp;1.1.2. [Scrub](#scrub)
+		- &nbsp;1.1.3. [Explore](#explore)
+		- &nbsp;1.1.4. [Model](#model)
+		- &nbsp;1.1.5. [iNterpret](#interpret)
+	- &nbsp;1.2. [What is a data scientist?](#what-is-a-data-scientist)
+		- &nbsp;1.2.1. [Responsibilities](#responsibilities)
+		- &nbsp;1.2.2. [Skills](#skills)
+- &nbsp;2. [Data science tools](#data-science-tools)
+	- &nbsp;2.1. [Why command line for data science?](#why-command-line-for-data-science)
+	- &nbsp;2.2. [Workflow management tools](#workflow-management-tools)
 - &nbsp;3. [Sources](#sources)
-	- &nbsp;3.1. [References](#references)
-	- &nbsp;3.2. [Read](#read)
-	- &nbsp;3.3. [Unread](#unread)
+	- &nbsp;3.1. [Cited](#cited)
+	- &nbsp;3.2. [References](#references)
+	- &nbsp;3.3. [Read](#read)
+	- &nbsp;3.4. [Unread](#unread)
 </div>
 
 # 1. What is data science?
 
-## 1.1. Responsibilities
 
-Per Sharda et al. (2014):
-
-## 1.2. Skills
-
-Per Sharda et al. (2014):
-
-## 1.3. Lifecycle
+## 1.1. Data science lifecycles
 
 Via Mason and Wiggins (2010):
 
@@ -85,29 +80,29 @@ Via Mason and Wiggins (2010):
     </tr>
 </table>
 
-### 1.3.1. Obtain
+### 1.1.1. Obtain
 
 - What are major risks in web scraping?
 - How do you parse scraped web data (HTML, JSON, XML)?
 - How is authorization implemented in Google APIs?
 
-### 1.3.2. Scrub
+### 1.1.2. Scrub
 
 - [http://radar.oreilly.com/2012/07/data-jujitsu.html](http://radar.oreilly.com/2012/07/data-jujitsu.html)
 - What's the best way to filter data?
 - How to efficiently aggregate data?
 
-### 1.3.3. Explore
+### 1.1.3. Explore
 
 See [notes on data visualization.](data-viz.html)
 
 [https://medium.com/@eytanadar/banning-exploration-in-my-infovis-class-9578676a4705](https://medium.com/@eytanadar/banning-exploration-in-my-infovis-class-9578676a4705)
 
-### 1.3.4. Model
+### 1.1.4. Model
 
 See [notes on models,](models.html) [statistics,](statistics.html) [machine learning,](machine-learning.html) and [text analytics.](text-analytics.html)
 
-### 1.3.5. iNterpret
+### 1.1.5. iNterpret
 
 - What are best practices for making Excel sheets auditable?
 - [_Thinking with data_](http://shop.oreilly.com/product/0636920029182.do)
@@ -116,13 +111,51 @@ See [notes on models,](models.html) [statistics,](statistics.html) [machine lear
 
 
 
-## 1.4. Data science tools
+## 1.2. What is a data scientist?
+
+### 1.2.1. Responsibilities
+
+Per Sharda et al. (2014, p. 300):
+
+- "Work closely with a product engineering team to identify and answer important product questions
+- Answer product questions by using appropriate statistical techniques on available data
+- Communicate findings to product managers and engineers
+- Drive the collection of new data and the refinement of existing data sources
+- Analyze and interpret the results of product experiments
+- Develop bext practices for instrumentation and experimentation and communicate those to product engineering teams
+
+### 1.2.2. Skills
+
+Per Sharda et al. (2014, p. 299):
+
+_SOFT_
+
+- Domain expertise, problem definition, and decision making
+- Curiosity and creativity
+- Communication and interpersonal
+
+_HARD_
+
+- Data access and management (both traditional and new data systems)
+- Programming, scripting, and hacking
+- Internet and social media/social networking technologies
+
+
+
+
+
+
+
+
+
+
+# 2. Data science tools
 
 R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
 
 
 
-### 1.4.1. Why command line for data science?
+## 2.1. Why command line for data science?
 
 Per Janssens (2015):
 
@@ -134,10 +167,7 @@ Per Janssens (2015):
 
 
 
-
-
-
-# 2. Workflow management
+## 2.2. Workflow management tools
 
 - [https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/](https://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/)
 - [https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/)
@@ -148,7 +178,11 @@ Per Janssens (2015):
 
 
 
+
+
 # 3. Sources
+
+## 3.1. Cited
 
 Janssens, J. (2015). _Data science at the command line: Facing the future with time-tested tools._ Sebastopol, CA: O'Reilly.
 
@@ -156,7 +190,7 @@ Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataist
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-## 3.1. References
+## 3.2. References
 
 - [Google APIs Explorer](https://developers.google.com/apis-explorer/#p/)
 - [Google Developers](https://developers.google.com/)
@@ -166,7 +200,7 @@ Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial
 - [A gallery of interesting IPython notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 - [Payscale.com](http://www.google.com/url?q=http%3A%2F%2FPayscale.com&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGimDEmMBGkQckho0pfxd2Apq2pog)
 
-## 3.2. Read
+## 3.3. Read
 
 - [Treehouse -&nbsp;CSV &amp; JSON&nbsp;in Python](https://www.google.com/url?q=https%3A%2F%2Fteamtreehouse.com%2Flibrary%2Fcsv-and-json-in-python&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH4m-fFGcDa-fuIpEHKxk28kRxlqg)
 - _Bad data handbook._
@@ -183,7 +217,7 @@ Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial
 - [One year as a data scientist at Stack Overflow](http://www.google.com/url?q=http%3A%2F%2Fvarianceexplained.org%2Fr%2Fyear_data_scientist%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFsYHVOtqKTMjBOpf9Cjnr2d42hWg)
 - [The evolution of data science at Airbnb](http://www.google.com/url?q=http%3A%2F%2Fblog.kaggle.com%2F2016%2F09%2F06%2Fbuilding-a-team-from-the-inside-out-alok-gupta-on-the-evolution-of-data-science-at-airbnb%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHq0epTyxnQywNKzIra7o4rnPOj6Q)
 
-## 3.3. Unread
+## 3.4. Unread
 
 - [Formulas](http://www.lynda.com/Excel-tutorials/Excel-2016-Advanced-Formulas-Functions/431188-2.html)
 - [What is a modern, SaaS-based BI stack?](https://blog.fishtownanalytics.com/what-are-the-steps-tools-in-setting-up-a-modern-saas-based-bi-infrastructure-281e0860f9a9#.bm4b1vblj)

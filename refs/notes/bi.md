@@ -236,6 +236,20 @@ More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p.
 - Compatability with existing systems
 - Perceived ability/capacity of in-house IT staff
 
+### Data warehouse performance
+
+Per Sharda et al. (2014, pp. 304-305):
+
+- basic indexing
+- advanced indexing
+    - materialized views
+    - aggregate join indexes
+    - cube indexes
+    - spares join indexes
+- cost-based optimizer (analyzing SQL query, generates alternatives, compares cost)
+- partitioning
+
+
 
 
 

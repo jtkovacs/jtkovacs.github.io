@@ -1,11 +1,11 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> big data | just under 1087 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is Big Data?](#what-is-big-data)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> big data | just under 1505 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is Big Data?](#what-is-big-data)
 	- &nbsp;1.1. [Sources of Big Data](#sources-of-big-data)
 	- &nbsp;1.2. [Business applications of Big Data](#business-applications-of-big-data)
+		- &nbsp;1.2.1. [Business applications of stream analytics](#business-applications-of-stream-analytics)
 	- &nbsp;1.3. [Implementing Big Data initiatives](#implementing-big-data-initiatives)
 		- &nbsp;1.3.1. [Big Data maturity model](#big-data-maturity-model)
 		- &nbsp;1.3.2. [When Big Data versus data warehousing?](#when-big-data-versus-data-warehousing)
 		- &nbsp;1.3.3. [Success factors for Big Data initiatives](#success-factors-for-big-data-initiatives)
-		- &nbsp;1.3.4. [Challenges with Big Data initiatives](#challenges-with-big-data-initiatives)
 - &nbsp;2. [Big Data technologies](#big-data-technologies)
 	- &nbsp;2.1. [High-performance computing](#high-performance-computing)
 	- &nbsp;2.2. [Generic Big Data architectures](#generic-big-data-architectures)
@@ -97,7 +97,16 @@ Per Sharda et al. (2014, pp. 280-282):
 
 Sharda et al. (2014, pp. 287):
 
-... stream analytics specifically, pp. 317-321:
+- "Process efficiency and cost reduction
+- Brand management
+- Revenue maximization, cross-selling, and up-selling
+- Enhanced customer experience
+- Churn identification, customer recruiting
+- Improved customer service
+- Identifying new products and market opportunities
+- Risk management
+- Regulatory compliance
+- Enhanced security capabilities"
 
 Per Zhu et al. (2014, pp. 16-17), there are four categories of business goals that companies may fruitfully pursue with Big Data:
 
@@ -129,6 +138,54 @@ Per Zhu et al. (2014, pp. 16-17), there are four categories of business goals th
 - **Ensure regulatory compliance:** Improve your understanding of the current regulatory climate and expectations of auditors.
 - **Lower risk:** Improve the cost-benefit analysis of various risks (regulatory, market, credit, counter-party operational, and so on).
 
+### 1.2.1. Business applications of stream analytics
+
+Per Sharda et al. (2014, pp. 317-321):
+
+_e-COMMERCE_ ("analysis of [clickstream] data can turn browsers into buyers and buyers into shopaholics")
+
+- recommendations
+- sales
+- bundle offers
+
+_TELECOMMUNICATIONS_
+
+- call detail records (CDRs); identify influencers via call patterns
+    - act on this to retain and recruit own customers
+    - sell it?
+- IP detail records, "
+
+_LAW ENFORCEMENT & CYBER SECURITY_
+
+- real-time situational awareness
+- multimodal surveillance
+- cyber-security detection
+- legal wire tapping
+- face recognition
+
+_POWER INDUSTRY_ (smart meters)
+
+- forecast energy demand
+- optimize supply chain
+    - capacity adjustments
+    - distribution network options
+    - real-time buying & selling
+
+_FINANCIAL SERVICES_
+
+- optimal buy/sell decisions
+- detect fraud
+
+_HEALTH SCIENCES_
+
+- detect medical emergencies from streaming vital signs
+
+_GOVERNMENT_
+
+- surveil and respond to natural disasters
+- monitor water and air quality
+- traffic management
+
 
 
 
@@ -144,23 +201,43 @@ Per Zhu et al. (2014, p. 26):
 
 ### 1.3.2. When Big Data versus data warehousing?
 
-- Use cases for one or either
+Use Hadoop as:
 
+- Repository and refinery for raw data (HDFS can capture hundreds of TB per day)
+- Active archive (replacing magnetic tape archives)
 
+Use data warehouses for:
+
+- While performance is satisfactory
+    - basic indexing
+    - advanced indexing
+        - materialized views
+        - aggregate join indexes
+        - cube indexes
+        - spares join indexes
+    - cost-based optimizer (analyzing SQL query, generates alternatives, compares cost)
+    - partitioning
+
+- Integration of data ("Data model designers and ETL architects armed with metadata, data-cleansing tools, and patience must rationalize data formats, source systems. and semantic meaning of the data to make it understandable and trustworthy")
+- Backend for interactive BI tools
 
 ### 1.3.3. Success factors for Big Data initiatives
 
-pp. 285 & 312
+Sharda et al. (2014, pp. 285-286) cite Watson's (2012) "critical success factors" as follows:
 
+- "A clear business need (alignment with the vision and the strategy)"
+- "Strong, committed sponsorship (executive champion)"
+- "Alignment between the business and IT strategy"
+- "A fact-based decision-making culture ... also a culture of experimentation"
+- "A strong data infrastructure," see [high-performance computing](#high-performance-computing)
 
+They also synthesize Lampitt (2012) and a Tableau white paper (pp. 312-313):
 
-### 1.3.4. Challenges with Big Data initiatives
-
-pp. 286-287
-
-
-
-
+- **Simplify** (the ecosystem is pretty complex)
+- **Coexist** (blend legacy and new systems)
+- **Empower** (support self-service)
+- **Integrate** (more value from combining data across sources, despite the difficulty)
+- **Evangelize**
 
 
 
@@ -186,13 +263,10 @@ pp. 286-287
 
 ## 2.1. High-performance computing
 
-In-memory analytics
-
-In-database analytics
-
-Grid computing
-
-Appliances
+- In-memory analytics
+- In-database analytics
+- **Grid computing:** "Promotes efficiency, lower cost, and better performance by processing jobs in a shared, centrally-managed pool of IT resources"
+- **Appliances:** "Brings together hardware and software in a physical unit that is not only fast but also scalable on an as-needed basis"
 
 
 

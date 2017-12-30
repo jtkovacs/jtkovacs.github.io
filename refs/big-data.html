@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; big data | just under 1087 words | updated 12/30/2017
+   &gt; big data | just under 1505 words | updated 12/30/2017
   </p>
   <div class="TOC">
    <ul>
@@ -36,6 +36,14 @@
        <a href="#business-applications-of-big-data">
         Business applications of Big Data
        </a>
+       <ul>
+        <li>
+         1.2.1.
+         <a href="#business-applications-of-stream-analytics">
+          Business applications of stream analytics
+         </a>
+        </li>
+       </ul>
       </li>
       <li>
        1.3.
@@ -59,12 +67,6 @@
          1.3.3.
          <a href="#success-factors-for-big-data-initiatives">
           Success factors for Big Data initiatives
-         </a>
-        </li>
-        <li>
-         1.3.4.
-         <a href="#challenges-with-big-data-initiatives">
-          Challenges with Big Data initiatives
          </a>
         </li>
        </ul>
@@ -438,9 +440,38 @@
   <p>
    Sharda et al. (2014, pp. 287):
   </p>
-  <p>
-   ... stream analytics specifically, pp. 317-321:
-  </p>
+  <ul>
+   <li>
+    "Process efficiency and cost reduction
+   </li>
+   <li>
+    Brand management
+   </li>
+   <li>
+    Revenue maximization, cross-selling, and up-selling
+   </li>
+   <li>
+    Enhanced customer experience
+   </li>
+   <li>
+    Churn identification, customer recruiting
+   </li>
+   <li>
+    Improved customer service
+   </li>
+   <li>
+    Identifying new products and market opportunities
+   </li>
+   <li>
+    Risk management
+   </li>
+   <li>
+    Regulatory compliance
+   </li>
+   <li>
+    Enhanced security capabilities"
+   </li>
+  </ul>
   <p>
    Per Zhu et al. (2014, pp. 16-17), there are four categories of business goals that companies may fruitfully pursue with Big Data:
   </p>
@@ -568,6 +599,138 @@
     Improve the cost-benefit analysis of various risks (regulatory, market, credit, counter-party operational, and so on).
    </li>
   </ul>
+  <h3 id="business-applications-of-stream-analytics">
+   <a>
+    1.2.1. Business applications of stream analytics
+   </a>
+  </h3>
+  <p>
+   Per Sharda et al. (2014, pp. 317-321):
+  </p>
+  <p>
+   <em>
+    e-COMMERCE
+   </em>
+   ("analysis of [clickstream] data can turn browsers into buyers and buyers into shopaholics")
+  </p>
+  <ul>
+   <li>
+    recommendations
+   </li>
+   <li>
+    sales
+   </li>
+   <li>
+    bundle offers
+   </li>
+  </ul>
+  <p>
+   <em>
+    TELECOMMUNICATIONS
+   </em>
+  </p>
+  <ul>
+   <li>
+    call detail records (CDRs); identify influencers via call patterns
+    <ul>
+     <li>
+      act on this to retain and recruit own customers
+     </li>
+     <li>
+      sell it?
+     </li>
+    </ul>
+   </li>
+   <li>
+    IP detail records, "
+   </li>
+  </ul>
+  <p>
+   <em>
+    LAW ENFORCEMENT &amp; CYBER SECURITY
+   </em>
+  </p>
+  <ul>
+   <li>
+    real-time situational awareness
+   </li>
+   <li>
+    multimodal surveillance
+   </li>
+   <li>
+    cyber-security detection
+   </li>
+   <li>
+    legal wire tapping
+   </li>
+   <li>
+    face recognition
+   </li>
+  </ul>
+  <p>
+   <em>
+    POWER INDUSTRY
+   </em>
+   (smart meters)
+  </p>
+  <ul>
+   <li>
+    forecast energy demand
+   </li>
+   <li>
+    optimize supply chain
+    <ul>
+     <li>
+      capacity adjustments
+     </li>
+     <li>
+      distribution network options
+     </li>
+     <li>
+      real-time buying &amp; selling
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <p>
+   <em>
+    FINANCIAL SERVICES
+   </em>
+  </p>
+  <ul>
+   <li>
+    optimal buy/sell decisions
+   </li>
+   <li>
+    detect fraud
+   </li>
+  </ul>
+  <p>
+   <em>
+    HEALTH SCIENCES
+   </em>
+  </p>
+  <ul>
+   <li>
+    detect medical emergencies from streaming vital signs
+   </li>
+  </ul>
+  <p>
+   <em>
+    GOVERNMENT
+   </em>
+  </p>
+  <ul>
+   <li>
+    surveil and respond to natural disasters
+   </li>
+   <li>
+    monitor water and air quality
+   </li>
+   <li>
+    traffic management
+   </li>
+  </ul>
   <h2 id="implementing-big-data-initiatives">
    <a>
     1.3. Implementing Big Data initiatives
@@ -589,9 +752,57 @@
     1.3.2. When Big Data versus data warehousing?
    </a>
   </h3>
+  <p>
+   Use Hadoop as:
+  </p>
   <ul>
    <li>
-    Use cases for one or either
+    Repository and refinery for raw data (HDFS can capture hundreds of TB per day)
+   </li>
+   <li>
+    Active archive (replacing magnetic tape archives)
+   </li>
+  </ul>
+  <p>
+   Use data warehouses for:
+  </p>
+  <ul>
+   <li>
+    While performance is satisfactory
+    <ul>
+     <li>
+      basic indexing
+     </li>
+     <li>
+      advanced indexing
+      <ul>
+       <li>
+        materialized views
+       </li>
+       <li>
+        aggregate join indexes
+       </li>
+       <li>
+        cube indexes
+       </li>
+       <li>
+        spares join indexes
+       </li>
+      </ul>
+     </li>
+     <li>
+      cost-based optimizer (analyzing SQL query, generates alternatives, compares cost)
+     </li>
+     <li>
+      partitioning
+     </li>
+    </ul>
+   </li>
+   <li>
+    Integration of data ("Data model designers and ETL architects armed with metadata, data-cleansing tools, and patience must rationalize data formats, source systems. and semantic meaning of the data to make it understandable and trustworthy")
+   </li>
+   <li>
+    Backend for interactive BI tools
    </li>
   </ul>
   <h3 id="success-factors-for-big-data-initiatives">
@@ -600,16 +811,62 @@
    </a>
   </h3>
   <p>
-   pp. 285 &amp; 312
+   Sharda et al. (2014, pp. 285-286) cite Watson's (2012) "critical success factors" as follows:
   </p>
-  <h3 id="challenges-with-big-data-initiatives">
-   <a>
-    1.3.4. Challenges with Big Data initiatives
-   </a>
-  </h3>
+  <ul>
+   <li>
+    "A clear business need (alignment with the vision and the strategy)"
+   </li>
+   <li>
+    "Strong, committed sponsorship (executive champion)"
+   </li>
+   <li>
+    "Alignment between the business and IT strategy"
+   </li>
+   <li>
+    "A fact-based decision-making culture ... also a culture of experimentation"
+   </li>
+   <li>
+    "A strong data infrastructure," see
+    <a href="#high-performance-computing">
+     high-performance computing
+    </a>
+   </li>
+  </ul>
   <p>
-   pp. 286-287
+   They also synthesize Lampitt (2012) and a Tableau white paper (pp. 312-313):
   </p>
+  <ul>
+   <li>
+    <strong>
+     Simplify
+    </strong>
+    (the ecosystem is pretty complex)
+   </li>
+   <li>
+    <strong>
+     Coexist
+    </strong>
+    (blend legacy and new systems)
+   </li>
+   <li>
+    <strong>
+     Empower
+    </strong>
+    (support self-service)
+   </li>
+   <li>
+    <strong>
+     Integrate
+    </strong>
+    (more value from combining data across sources, despite the difficulty)
+   </li>
+   <li>
+    <strong>
+     Evangelize
+    </strong>
+   </li>
+  </ul>
   <h1 id="big-data-technologies">
    <a>
     2. Big Data technologies
@@ -620,18 +877,26 @@
     2.1. High-performance computing
    </a>
   </h2>
-  <p>
-   In-memory analytics
-  </p>
-  <p>
-   In-database analytics
-  </p>
-  <p>
-   Grid computing
-  </p>
-  <p>
-   Appliances
-  </p>
+  <ul>
+   <li>
+    In-memory analytics
+   </li>
+   <li>
+    In-database analytics
+   </li>
+   <li>
+    <strong>
+     Grid computing:
+    </strong>
+    "Promotes efficiency, lower cost, and better performance by processing jobs in a shared, centrally-managed pool of IT resources"
+   </li>
+   <li>
+    <strong>
+     Appliances:
+    </strong>
+    "Brings together hardware and software in a physical unit that is not only fast but also scalable on an as-needed basis"
+   </li>
+  </ul>
   <h2 id="generic-big-data-architectures">
    <a>
     2.2. Generic Big Data architectures

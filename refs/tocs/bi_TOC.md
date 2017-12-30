@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3650 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3693 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.2. [History of BI](#history-of-bi)
 	- &nbsp;1.3. [Trends in BI](#trends-in-bi)
@@ -19,6 +19,7 @@
 		- &nbsp;3.2.2. [Dimensional modeling](#dimensional-modeling)
 		- &nbsp;3.2.3. [Various data warehouse architectures](#various-data-warehouse-architectures)
 			- &nbsp;3.2.3.1. [Choosing an architecture](#choosing-an-architecture)
+		- &nbsp;3.2.4. [Data warehouse performance](#data-warehouse-performance)
 	- &nbsp;3.3. [OLAP](#olap)
 	- &nbsp;3.4. [Interpreting the data](#interpreting-the-data)
 		- &nbsp;3.4.1. [Analytic roles](#analytic-roles)
@@ -277,6 +278,20 @@ More factors, from Ariyachandra and Watson (2005) qtd in Sharda et al. (2014, p.
 - Constraints on reqources
 - Compatability with existing systems
 - Perceived ability/capacity of in-house IT staff
+
+### 3.2.4. Data warehouse performance
+
+Per Sharda et al. (2014, pp. 304-305):
+
+- basic indexing
+- advanced indexing
+    - materialized views
+    - aggregate join indexes
+    - cube indexes
+    - spares join indexes
+- cost-based optimizer (analyzing SQL query, generates alternatives, compares cost)
+- partitioning
+
 
 
 

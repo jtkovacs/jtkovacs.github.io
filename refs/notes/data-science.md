@@ -1,7 +1,15 @@
 
 # What is data science?
 
-## Data science lifecycle & skills
+## Responsibilities
+
+Per Sharda et al. (2014):
+
+## Skills
+
+Per Sharda et al. (2014):
+
+## Lifecycle
 
 Via Mason and Wiggins (2010):
 
@@ -62,8 +70,6 @@ Via Mason and Wiggins (2010):
 
 ### Obtain
 
-**Describe the concepts here. Code can be embedded or via a link, depending on how much there is.**
-
 - What are major risks in web scraping?
 - How do you parse scraped web data (HTML, JSON, XML)?
 - How is authorization implemented in Google APIs?
@@ -97,6 +103,8 @@ See [notes on models,](models.html) [statistics,](statistics.html) [machine lear
 
 R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
 
+
+
 ### Why command line for data science?
 
 Per Janssens (2015):
@@ -121,11 +129,15 @@ Per Janssens (2015):
 
 
 
+
+
 # Sources
 
 Janssens, J. (2015). _Data science at the command line: Facing the future with time-tested tools._ Sebastopol, CA: O'Reilly.
 
 Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataists._ Retrieved from [http://www.dataists.com/2010/09/a-taxonomy-of-data-science/](http://www.dataists.com/2010/09/a-taxonomy-of-data-science/)
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 ## References
 

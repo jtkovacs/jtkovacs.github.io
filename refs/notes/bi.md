@@ -122,7 +122,22 @@ Per Sharda et al. (2014, pp. 73-74):
 - Believing that your problems are over when the data warehouse is up and running
 - Focusing on ad hoc data mining and periodic reporting instead of alerts"
 
+
+
 ### Scoping BI systems
+
+#### Maturity models
+
+A Big Data maturity model, per Zhu et al. (2014, p. 26):
+
+![](../illos/big-data-maturity.png)
+
+The Data Warehousing Institute (TDWI) also has [maturity models](https://tdwi.org/pages/research/maturity-models-and-assessments.aspx) for:
+
+- Self-service analytics
+- IoT readiness
+- Hadoop readiness
+- Analytics maturity
 
 #### Big Data
 

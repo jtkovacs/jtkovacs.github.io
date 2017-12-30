@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3612 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> bi | just under 3650 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is BI?](#what-is-bi)
 	- &nbsp;1.1. [Does BI have value?](#does-bi-have-value)
 	- &nbsp;1.2. [History of BI](#history-of-bi)
 	- &nbsp;1.3. [Trends in BI](#trends-in-bi)
@@ -9,8 +9,9 @@
 	- &nbsp;2.3. [Implementing BI systems](#implementing-bi-systems)
 		- &nbsp;2.3.1. [Common problems with BI initiatives](#common-problems-with-bi-initiatives)
 		- &nbsp;2.3.2. [Scoping BI systems](#scoping-bi-systems)
-			- &nbsp;2.3.2.1. [Big Data](#big-data)
-			- &nbsp;2.3.2.2. [Real-time BI](#real-time-bi)
+			- &nbsp;2.3.2.1. [Maturity models](#maturity-models)
+			- &nbsp;2.3.2.2. [Big Data](#big-data)
+			- &nbsp;2.3.2.3. [Real-time BI](#real-time-bi)
 - &nbsp;3. [BI technologies](#bi-technologies)
 	- &nbsp;3.1. [ETL](#etl)
 	- &nbsp;3.2. [Data warehousing](#data-warehousing)
@@ -163,13 +164,28 @@ Per Sharda et al. (2014, pp. 73-74):
 - Believing that your problems are over when the data warehouse is up and running
 - Focusing on ad hoc data mining and periodic reporting instead of alerts"
 
+
+
 ### 2.3.2. Scoping BI systems
 
-#### 2.3.2.1. Big Data
+#### 2.3.2.1. Maturity models
+
+A Big Data maturity model, per Zhu et al. (2014, p. 26):
+
+![](../illos/big-data-maturity.png)
+
+The Data Warehousing Institute (TDWI) also has [maturity models](https://tdwi.org/pages/research/maturity-models-and-assessments.aspx) for:
+
+- Self-service analytics
+- IoT readiness
+- Hadoop readiness
+- Analytics maturity
+
+#### 2.3.2.2. Big Data
 
 See [notes on big data.](https://jtkovacs.github.io/refs/big-data.html)
 
-#### 2.3.2.2. Real-time BI
+#### 2.3.2.3. Real-time BI
 
 Per Sharda et al. (2014, p. 81):
 

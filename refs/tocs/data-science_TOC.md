@@ -1,12 +1,14 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> data science | just under 1041 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is data science?](#what-is-data-science)
-	- &nbsp;1.1. [Data science lifecycle & skills](#data-science-lifecycle-skills)
-		- &nbsp;1.1.1. [Obtain](#obtain)
-		- &nbsp;1.1.2. [Scrub](#scrub)
-		- &nbsp;1.1.3. [Explore](#explore)
-		- &nbsp;1.1.4. [Model](#model)
-		- &nbsp;1.1.5. [iNterpret](#interpret)
-	- &nbsp;1.2. [Data science tools](#data-science-tools)
-		- &nbsp;1.2.1. [Why command line for data science?](#why-command-line-for-data-science)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> data science | just under 1055 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is data science?](#what-is-data-science)
+	- &nbsp;1.1. [Responsibilities](#responsibilities)
+	- &nbsp;1.2. [Skills](#skills)
+	- &nbsp;1.3. [Lifecycle](#lifecycle)
+		- &nbsp;1.3.1. [Obtain](#obtain)
+		- &nbsp;1.3.2. [Scrub](#scrub)
+		- &nbsp;1.3.3. [Explore](#explore)
+		- &nbsp;1.3.4. [Model](#model)
+		- &nbsp;1.3.5. [iNterpret](#interpret)
+	- &nbsp;1.4. [Data science tools](#data-science-tools)
+		- &nbsp;1.4.1. [Why command line for data science?](#why-command-line-for-data-science)
 - &nbsp;2. [Workflow management](#workflow-management)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [References](#references)
@@ -16,7 +18,15 @@
 
 # 1. What is data science?
 
-## 1.1. Data science lifecycle & skills
+## 1.1. Responsibilities
+
+Per Sharda et al. (2014):
+
+## 1.2. Skills
+
+Per Sharda et al. (2014):
+
+## 1.3. Lifecycle
 
 Via Mason and Wiggins (2010):
 
@@ -75,31 +85,29 @@ Via Mason and Wiggins (2010):
     </tr>
 </table>
 
-### 1.1.1. Obtain
-
-**Describe the concepts here. Code can be embedded or via a link, depending on how much there is.**
+### 1.3.1. Obtain
 
 - What are major risks in web scraping?
 - How do you parse scraped web data (HTML, JSON, XML)?
 - How is authorization implemented in Google APIs?
 
-### 1.1.2. Scrub
+### 1.3.2. Scrub
 
 - [http://radar.oreilly.com/2012/07/data-jujitsu.html](http://radar.oreilly.com/2012/07/data-jujitsu.html)
 - What's the best way to filter data?
 - How to efficiently aggregate data?
 
-### 1.1.3. Explore
+### 1.3.3. Explore
 
 See [notes on data visualization.](data-viz.html)
 
 [https://medium.com/@eytanadar/banning-exploration-in-my-infovis-class-9578676a4705](https://medium.com/@eytanadar/banning-exploration-in-my-infovis-class-9578676a4705)
 
-### 1.1.4. Model
+### 1.3.4. Model
 
 See [notes on models,](models.html) [statistics,](statistics.html) [machine learning,](machine-learning.html) and [text analytics.](text-analytics.html)
 
-### 1.1.5. iNterpret
+### 1.3.5. iNterpret
 
 - What are best practices for making Excel sheets auditable?
 - [_Thinking with data_](http://shop.oreilly.com/product/0636920029182.do)
@@ -108,11 +116,13 @@ See [notes on models,](models.html) [statistics,](statistics.html) [machine lear
 
 
 
-## 1.2. Data science tools
+## 1.4. Data science tools
 
 R, Python, Bash, SQL on MySQL, Spark, Excel, Tableau are most common; see [2016 Data Science Salary Survey](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf?utm_campaign=Revue%20newsletter&utm_medium=Newsletter&utm_source=revue) and [2016 Stack Overflow Developer Survey.](https://stackoverflow.com/insights/survey/2016)
 
-### 1.2.1. Why command line for data science?
+
+
+### 1.4.1. Why command line for data science?
 
 Per Janssens (2015):
 
@@ -136,11 +146,15 @@ Per Janssens (2015):
 
 
 
+
+
 # 3. Sources
 
 Janssens, J. (2015). _Data science at the command line: Facing the future with time-tested tools._ Sebastopol, CA: O'Reilly.
 
 Mason, H. & Wiggins, C. (2010). A taxonomy of data science [blog post]. _dataists._ Retrieved from [http://www.dataists.com/2010/09/a-taxonomy-of-data-science/](http://www.dataists.com/2010/09/a-taxonomy-of-data-science/)
+
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 ## 3.1. References
 

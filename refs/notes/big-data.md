@@ -2,71 +2,134 @@
 
 
 
-
-
-
-
-
-
-
-
-
 # What is Big Data?
 
-**Interesting how, in some presentations, the Vs are defined as _challenges_ associated with Big Data, whereas in other presentations they are all treated as _benefits_ particular to Big Data**
+Per Sharda et al. (2014, pp. 280-282):
 
-Volume
+**Volume**
 
-Variety
+| Year | Estimated World Data |
+| --- | --- |
+| 2009 | 0.8 ZB |
+| 2010 | >1 ZB |
+| 2011 | 1.8 ZB
+| 2020 | 35 ZB |
 
-Velocity
+| Name | Symbol | Value |
+| --- | --- | --- |
+| Kilobyte | kB | 10<sup>3</sup> |
+| Megabyte | MB | 10<sup>6</sup> |
+| Gigabyte | GB | 10<sup>9</sup> |
+| Terabyte | TB | 10<sup>12</sup> |
+| Petabyte | PB | 10<sup>15</sup> |
+| Exabyte | EB | 10<sup>18</sup> |
+| Zettabyte | ZB | 10<sup>21</sup> |
+| Yottabyte | YB | 10<sup>24</sup> |
 
-Veracity
+**Variety** (in format; about 80-85% unstructured)
 
-Variability
+- RDBMS, hierachical data stores, OLAP
+- text documents, email
+- XML, HTML
+- meter-collected, sensor-captured data
+- video, audio
+- stock ticker
 
-Value proposition
+**Velocity**
 
-## What is high-performance computing?
+- increased speed of data **production** ("RFID tags, automated sensors, GPS devices, and smart meters are driving an increasing need to deal with torrents of data in near-real time")
+- **demand** for quicker data processing, i.e. [data stream mining](#data-stream-mining)
 
-In-memory analytics
+**Veracity**
 
-In-database analytics
+- coined by IBM
+- "conformity with facts: accuracy, quality, truthfulness, or trustiworthiness"
 
-Grid computing
+**Variability** ("Daily, seasonal, and event-driven peak data loads")
 
-Appliances
-
-
-
-
-## What is data science?
-
-(responsibilities)
-
-### Required skills
+**Value** (one hopes)
 
 
 
 
-## Business applications of Big Data analytics
+## Sources of Big Data
 
-pp. 287
+"Web logs, RFID, GPS systems, sensor networks, social networks, Internet-based text documents, Internet search indexes, detail call records, astronomy, atmospheric science, biology, genomics, nuclear physics, biochemical experiments, medical records, scientific research, military surveillance, photography archives, video archives, and large-scalre e-commerce practices" (Sharda et al., 2014, pp. 278-280).
 
-... stream analytics specifically, pp. 317-321
+
+
+
+
+
+## Business applications of Big Data
+
+Sharda et al. (2014, pp. 287):
+
+... stream analytics specifically, pp. 317-321:
+
+Per Zhu et al. (2014, pp. 16-17), there are four categories of business goals that companies may fruitfully pursue with Big Data:
+
+### Revenue
+
+| Goal | Critical Success Factors |
+| --- | --- |
+| **Monetize big data:** Design and execute big data analytics use cases that increase revenue, lower costs, or reduce risk. | Metrics for revenue (value), cost savings, and risk reduction. |
+| **Manage big data at a low cost:** Demonstrate cost savings of big data analytics styles for both MapReduce clusters and real-time analytics. | Understand the cost savings that can be achieved with MapReduce clusters, such as Hadoop, and real-time analytics when compared to traditional IT solutions, such as data warehouses and storage area network (SAN) storage |
+| **Improve efficiency in business operations:** Develop insight about the value of specific business processes, such as enterprise resource planning (ERP), supply chain management (SCM), and customer relationship management (CRM). | Define and categorize the big data types that are available for mining to improve ERP, SCM, and CRM. |
+
+### Customer services
+
+| Goal | Critical Success Factors |
+| --- | --- |
+| **Improve customer understanding (360-degree view of the customer):** Mine all sources of client experience and interaction from additional unstructured and semi-structured data types using real-time and batch (Hadoop) analytics. | Metrics for sentiment analysis, client satisfaction, and client experience improvement. |
+| **Obtain behavioral insight into client transactions:** | What led to a certain business transaction? Why did the client choose us? What else can we deduce about a client’s buying behavior? | Obtain client information within the parameters of privacy for the client. |
+| **Attract and retain customers:** Mine and apply insight toward marketing and sales effectiveness with clients, customers, and customer support personnel. | Capture broader information about customer buying behavior and preferences. |
+| **Fraud detection and claims processing:** Derive and exploit additional insight from data types not previously analyzed for anti-fraud and claims processing. | Mine fradulent activity patterns from batch and real-time data. |
+
+### Business development
+
+| Goal | Critical Success Factors |
+| --- | --- |
+| **Introduce new products or services:** Thanks to your new insight about target market preferences, new products and services will have higher adoption rates by the target clientele. |  Collect feedback from new product and service introductions. |
+| **Outsource non-core functions:** Decide what to outsource without affecting the customer experience. | Design and implement analytics for core versus non-core functions using big data analytics techniques. |
+| **Pursue mergers, acquisitions, and divestitures:** Gather and consider marketplace insights about the potential impact of mergers, acquisitions, and divestitures. | Identify your target marketplace and perform sentiment analysis of what is working and what is not. |
+| **Gain new competitive insights:** Mine all sources of information, even non-traditional sources of information, to learn about the brand perception of the company by its customers, its reputation, and its industry ranking. | Define metrics for improvement that are achievable if based on better insight. |
+
+### Business agility and governance
+
+| Goal | Critical Success Factors |
+| --- | --- |
+| **Increase business agility:** Mine real-time events for trends and apply the insight to transactions and interactions with customers. | Apply what is learned in an iterative manner to steadily improve the client experience. |
+| **Plan with greater confidence:** Build better scenario-based analysis models. | Provide big data analytics capabilities to business analysts and solution designers. |
+| **Make better decisions faster:** Harvest better insights from both batch (Hadoop) and real-time events and rapidly make them available to decision makers. | Grow big data analytic skills in the functional areas dedicated to decision management. |
+| **Ensure regulatory compliance:** Improve your understanding of the current regulatory climate and expectations of auditors. | Improved traceability of all relevant records. |
+| **Lower risk:** Improve the cost-benefit analysis of various risks (regulatory, market, credit, counter-party operational, and so on). | Reduction in penalties and outages, and organization risk rating by external agencies. |
+
 
 
 
 
 ## Implementing Big Data initiatives
 
+### Big Data maturity model
+
+Per Zhu et al. (2014, p. 26):
+
+![](../illos/big-data-maturity.png)
+
+
+
 ### When Big Data versus data warehousing?
 
 - Use cases for one or either
 
+
+
 ### Success factors for Big Data initiatives
 
 pp. 285 & 312
+
+
 
 ### Challenges with Big Data initiatives
 
@@ -81,11 +144,55 @@ pp. 286-287
 
 
 
+
+
+
+
+
+
+
+
+
 # Big Data technologies
 
 
 
-## Storage
+
+
+
+
+## High-performance computing
+
+In-memory analytics
+
+In-database analytics
+
+Grid computing
+
+Appliances
+
+
+
+
+
+
+## Generic Big Data architectures
+
+Per Zhu et al. (2014, p. 6):
+
+![](big-data-arch1.png)
+
+Per AsterData, cited in Sharda et al. (2014, p. 283):
+
+
+
+
+
+
+
+
+
+## Big Data storage
 
 ### Hadoop
 
@@ -116,9 +223,9 @@ pp. 286-287
 
 
 
-### NoSQL databases
+### What are NoSQL databases?
 
-Per
+Per Connolly and Begg (2015):
 
 NoSQL databases use non-relational data models ...
 
@@ -136,20 +243,12 @@ NoSQL databases use non-relational data models ...
 - Proprietary and/or (for Presto, Hive QL, Pig, Cassandra Query Language (CQL), Cosmos/Scope) SQL-like interfaces
 - Analytics integration (Hive, Amazon’s Redshift, Facebook’s Presto, Airbnb’s Airpal)
 
-... to store Big Data ...
+... to store Big Data, achieving better performance by:
 
-- large **volume** (petabytes rather than terabytes)
-- wide **variety** (structured and unstructured)
-- high **velocity**
+- **appending** rather than updating records, and
+- **denormalizing** data upon input
 
-... achieving greater speed by:
-
-- appending rather than updating records, and
-- denormalizing data upon input.
-
-
-
-
+#### NoSQL database software
 
 - MongoDB
 - Cassandra
@@ -161,9 +260,16 @@ NoSQL databases use non-relational data models ...
 
 ## Big Data analytics
 
+See [notes on data science.](https://jtkovacs.github.io/refs/data-science.html)
+
 ### MapReduce
 
+
+
+
 ### Data stream mining
+
+(AKA in-motion analytics)
 
 #### Critical event processing
 
@@ -189,11 +295,13 @@ NoSQL databases use non-relational data models ...
 
 # Sources
 
+## Cited
+
 Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
 
+Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
-
-## Cited
+Zhu, W-D., Gupta, M., Kumar, V., Perepa, S., Sathi, A., & Statchuk, C. (2014). Building Big Data and analytics solutions in the cloud. IBM Redpaper. Retrieved from [https://www.redbooks.ibm.com/redpapers/pdfs/redp5085.pdf](https://www.redbooks.ibm.com/redpapers/pdfs/redp5085.pdf)
 
 ## References
 

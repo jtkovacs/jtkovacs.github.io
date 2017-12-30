@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> big data | just under 1505 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is Big Data?](#what-is-big-data)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> big data | just under 2456 words | updated 12/30/2017</p><div class="TOC">- &nbsp;1. [What is Big Data?](#what-is-big-data)
 	- &nbsp;1.1. [Sources of Big Data](#sources-of-big-data)
 	- &nbsp;1.2. [Business applications of Big Data](#business-applications-of-big-data)
 		- &nbsp;1.2.1. [Business applications of stream analytics](#business-applications-of-stream-analytics)
@@ -11,21 +11,14 @@
 	- &nbsp;2.2. [Generic Big Data architectures](#generic-big-data-architectures)
 	- &nbsp;2.3. [Big Data storage](#big-data-storage)
 		- &nbsp;2.3.1. [Hadoop](#hadoop)
-			- &nbsp;2.3.1.1. [Why use Hadoop?](#why-use-hadoop)
-			- &nbsp;2.3.1.2. [Hadoop components](#hadoop-components)
-				- &nbsp;2.3.1.2.1. [HDFS](#hdfs)
-				- &nbsp;2.3.1.2.2. [Name node](#name-node)
-				- &nbsp;2.3.1.2.3. [Secondary node](#secondary-node)
-				- &nbsp;2.3.1.2.4. [Job tracker](#job-tracker)
-				- &nbsp;2.3.1.2.5. [Slave nodes](#slave-nodes)
-			- &nbsp;2.3.1.3. [Hadoop suprojects](#hadoop-suprojects)
+			- &nbsp;2.3.1.1. [Hadoop components](#hadoop-components)
+			- &nbsp;2.3.1.2. [Hadoop suprojects](#hadoop-suprojects)
 		- &nbsp;2.3.2. [What are NoSQL databases?](#what-are-nosql-databases)
-			- &nbsp;2.3.2.1. [NoSQL database software](#nosql-database-software)
+			- &nbsp;2.3.2.1. [NoSQL databases versus other data store options](#nosql-databases-versus-other-data-store-options)
+			- &nbsp;2.3.2.2. [NoSQL database software](#nosql-database-software)
 	- &nbsp;2.4. [Big Data analytics](#big-data-analytics)
 		- &nbsp;2.4.1. [MapReduce](#mapreduce)
 		- &nbsp;2.4.2. [Data stream mining](#data-stream-mining)
-			- &nbsp;2.4.2.1. [Critical event processing](#critical-event-processing)
-			- &nbsp;2.4.2.2. [Data stream mining versus perpetual analytics](#data-stream-mining-versus-perpetual-analytics)
 - &nbsp;3. [Sources](#sources)
 	- &nbsp;3.1. [Cited](#cited)
 	- &nbsp;3.2. [References](#references)
@@ -201,25 +194,32 @@ Per Zhu et al. (2014, p. 26):
 
 ### 1.3.2. When Big Data versus data warehousing?
 
-Use Hadoop as:
-
-- Repository and refinery for raw data (HDFS can capture hundreds of TB per day)
-- Active archive (replacing magnetic tape archives)
-
 Use data warehouses for:
 
-- While performance is satisfactory
-    - basic indexing
-    - advanced indexing
-        - materialized views
-        - aggregate join indexes
-        - cube indexes
-        - spares join indexes
-    - cost-based optimizer (analyzing SQL query, generates alternatives, compares cost)
-    - partitioning
+- **Integration of data** ("Data model designers and ETL architects armed with metadata, data-cleansing tools, and patience must rationalize data formats, source systems. and semantic meaning of the data to make it understandable and trustworthy")
+- **Backend for interactive BI tools**
 
-- Integration of data ("Data model designers and ETL architects armed with metadata, data-cleansing tools, and patience must rationalize data formats, source systems. and semantic meaning of the data to make it understandable and trustworthy")
-- Backend for interactive BI tools
+Use Hadoop as:
+
+- **Repository and refinery for raw data** (HDFS can capture hundreds of TB per day)
+- **Active archive** (replacing magnetic tape archives)
+
+| Requirement | DW | Hadoop |
+| --- | --- | --- |
+| Low latency, interactive reports, and OLAP | X | |
+| ANSI 2003 SQL compliance is required | X | X |
+| Preprocessing or exploration of raw unstructured data | | X |
+| Online archives alternative to tape | | X |
+| High-quality cleansed and consistent data | X | ? |
+| 100s to 1,000s of concurrent users | ? | X |
+| Discover unknown relationships in the data | | X |
+| [Complex parallel] process logic | ? | X |
+| CPU intense analysis | X | |
+| System, users, and data governance | | X |
+| Many flexible programming languages running in parallel | | X |
+| Unrestricted, ungoverned sandbox explorations | | X |
+| Analysis of provisional data | X | |
+| Extensive security and regulatory compliance | X | ? |
 
 ### 1.3.3. Success factors for Big Data initiatives
 
@@ -279,13 +279,14 @@ Per Zhu et al. (2014, p. 6):
 
 ![](../illos/big-data-arch1.png)
 
+Per Tetadata, their landscape of products AKA [Unified Data Architecture:](https://www.teradata.com/Solutions-and-Industries/unified-data-architecture)
+
+![](big-data-arch3.jpg)
+
 Per AsterData, cited in Sharda et al. (2014, p. 283):
 
 ![](../illos/big-data-arch2.jpg)
 
-Per Tetadata, their landscape of products AKA [Unified Data Architecture:](https://www.teradata.com/Solutions-and-Industries/unified-data-architecture)
-
-![](big-data-arch3.jpg)
 
 
 
@@ -293,32 +294,38 @@ Per Tetadata, their landscape of products AKA [Unified Data Architecture:](https
 
 ## 2.3. Big Data storage
 
+
 ### 2.3.1. Hadoop
 
-#### 2.3.1.1. Why use Hadoop?
+Per Sharda et al. (2014, pp. 291, 294), "Hadoop is an open source framework for processing, storing, and analyzing massive amounts of distibuted, unstructured data"; it is distributed storage plus distributed processing via the [MapReduce framework.](#mapreduce)
 
+- Hadoop's native language is Java
+- "Hadoop consists of multiple products"
+- "HDFS is a file system, not a database management system (DBMS)"
+- "Hadoop is about data diversity, not just data volume. Theoretically, HDFS can manage the storage and access of any data type as long as you can put the data in a file and copy that file into HDFS."
 
+#### 2.3.1.1. Hadoop components
 
+- **HDFS:** "The default storage layer in any given Hadoop cluster"
+- **Name node:** "The node in a Hadoop cluster that provides the client information on where in the cluster particular data is stored and if any nodes fail"
+- **Secondary node:** "A backup to the Name Node, it periodically replicates and stores data from the Name Node should it fail"
+- **Job tracker:** "The node in a Hadoop cluster that initiates and coordinates MapReduce jobs or the processing of the data"
+- **Slave nodes:** "The grunts of any Hadoop cluster, slave nodes store data and take direction to process it from the Job Tracker"
 
-#### 2.3.1.2. Hadoop components
+#### 2.3.1.2. Hadoop suprojects
 
-##### 2.3.1.2.1. HDFS
+Per Sharda et al. (2014, pp. 292-293):
 
-##### 2.3.1.2.2. Name node
-
-##### 2.3.1.2.3. Secondary node
-
-##### 2.3.1.2.4. Job tracker
-
-##### 2.3.1.2.5. Slave nodes
-
-
-
-#### 2.3.1.3. Hadoop suprojects
-
-  - Hive
-  - Pig
-  - ...
+- **Hive** (from Facebook) converts HiveQL (SQL-like) queries to MapReduce jobs, thereby enabling Hadoop to function like a data warehouse in terms of interfacing with users and BI tools
+- **Pig** (from Yahoo) is a Hadoop query language that's "adept at very deep, very long data pipelines"'
+- **Flume** "is a framework for populating Hadoop with data"
+- **HBase** "is a nonrelational database that ... adds transactional capabilities to Hadoop, allowing users to conduct updates, inserts, and deletes"
+- **Oozie** "is a workflow processing system that lets users define a series of jobs written in multiple languages---such as MapReduce, Pig, and Hive---and then intelligently link them together"
+- **Ambari** "is a Web-based set of tools for deploying, administering, and monitoring Apache Hadoop clusters"
+- **Avro** "is a data serialization system that allows for encoding the schema of Hadoop files"
+- **Mahout** "is a data mining library [that] takes the most popular data mining algorithms for performing clustering, regression testing, and statistical modeling and implements them using the MapReduce model"
+- **Sqoop** "is a connectivity tool for moving data from non-Hadoop data stores ... into Hadoop"
+- **HCatalog** "is a centralized metadata management and sharing service"
 
 
 
@@ -347,8 +354,14 @@ NoSQL databases use non-relational data models ...
 - **appending** rather than updating records, and
 - **denormalizing** data upon input
 
-#### 2.3.2.1. NoSQL database software
+#### 2.3.2.1. NoSQL databases versus other data store options
 
+Per Sharda et al. (2014, p. 295): "[W]hereas **Hadoop** is adept at supporting large-scale, batch-style historical analysis, **NoSQL databases** are aimed, for the most part (although there are some important exceptions), at serving up discrete data stored among large volumes of multi-structured data ... [a capability] sorely lacking in **relational database technology** ... the downside of most NoSQL databases today is that they trade ACID (atomicity, consistency, isolation, durability) compliance for performance and scalability. Many also lack mature management and monitoring tools".
+
+#### 2.3.2.2. NoSQL database software
+
+- HBase (a Hadoop subproject)
+- Neo4j
 - MongoDB
 - Cassandra
 - CouchDB
@@ -363,17 +376,36 @@ See [notes on data science.](https://jtkovacs.github.io/refs/data-science.html)
 
 ### 2.4.1. MapReduce
 
+Per Dean and Ghemawat's seminal paper (2004): "MapReduce is a programming model and an associated implementaiton for processing and generating large data sets. Programs written in this functional style are automatically patallelized and executed on a large cluster of commodity machines. This allows programmers without any experience with parallel and distributed systems to easily utilize the resources of a large distributed system."
+
+Another way of putting this, from Russom (2010) by way of Sharda et al. (2014, p. 295): "MapReduce provides control for analytics, not analytics per se. MapReduce is a general-purpose execution engine that handles the complexities of network communication, parallel programming, and fault-tolerance for any kind of application that you can hand code---not just analytics."
+
+![](../illos/map-reduce.png)
+
+Per Sharda et al. (2014, p. 290):
+
+- "The **MapReduce system** first reads the input file and splits it into multiple pieces ...
+- These splits are then processed by **multiple map programs** running in parallel on the nodes of the cluster ...
+- The **MapReduce system** then takes the ouput from each map program and merges (shuffle/sort) the results for input to
+- the **reduce program,** which [aggregates the results and outputs them]"
+
+
 
 
 
 ### 2.4.2. Data stream mining
 
-(AKA in-motion analytics)
+(AKA data-in-motion analytics, AKA in-motion analytics, AKA real-time data analytics)
 
-#### 2.4.2.1. Critical event processing
+Per Sharda et al. (2014, p. 215), stream analytics began in the energy industry, and has become important because:
 
-#### 2.4.2.2. Data stream mining versus perpetual analytics
+- Despite Big Data storage technologies, keeping everything is impossible; "current total storage capacity lags far behind the digital information being generated in the world"
+- A turbulent business environment makes "real-time detection of meaningful changes in data as well as complex pattern variations within a short time **window ...** essential to come up with the actions that better fit with the new environment"
 
+Some related concepts:
+
+- **Perpetual analytics** is different from data stream mining, since it "evaluates every incoming observation against all prior observations", i.e. does not use a window
+- **Critical event processing** is the anticipation or extremely rapid detection of outlier events, to enable prevention or immediate response
 
 
 
@@ -398,6 +430,8 @@ See [notes on data science.](https://jtkovacs.github.io/refs/data-science.html)
 
 Connolly, T. & Begg, C. (2015). _Database systems: A practical approach to design, implementation, and management_ (6th ed.). New York City, NY: Pearson Education.
 
+Dean, J., & Ghemawat, S. (2004). MapReduce: Simplified data processing on large clusters. Retrieved from [https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf)
+
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 Zhu, W-D., Gupta, M., Kumar, V., Perepa, S., Sathi, A., & Statchuk, C. (2014). Building Big Data and analytics solutions in the cloud. IBM Redpaper. Retrieved from [https://www.redbooks.ibm.com/redpapers/pdfs/redp5085.pdf](https://www.redbooks.ibm.com/redpapers/pdfs/redp5085.pdf)
@@ -405,5 +439,8 @@ Zhu, W-D., Gupta, M., Kumar, V., Perepa, S., Sathi, A., & Statchuk, C. (2014). B
 ## 3.2. References
 
 ## 3.3. Read
+
+- [What is MapReduce? (Youtube video)](https://www.youtube.com/watch?v=43fqzaSH0CQ)
+- [What is Hadoop? (Youtube video)](https://www.youtube.com/watch?v=4DgTLaFNQq0)
 
 ## 3.4. Unread

@@ -15,7 +15,7 @@
    <a href="../pkb.html">
     pkb contents
    </a>
-   &gt; big data | just under 1505 words | updated 12/30/2017
+   &gt; big data | just under 2456 words | updated 12/30/2017
   </p>
   <div class="TOC">
    <ul>
@@ -105,50 +105,12 @@
          <ul>
           <li>
            2.3.1.1.
-           <a href="#why-use-hadoop">
-            Why use Hadoop?
+           <a href="#hadoop-components">
+            Hadoop components
            </a>
           </li>
           <li>
            2.3.1.2.
-           <a href="#hadoop-components">
-            Hadoop components
-           </a>
-           <ul>
-            <li>
-             2.3.1.2.1.
-             <a href="#hdfs">
-              HDFS
-             </a>
-            </li>
-            <li>
-             2.3.1.2.2.
-             <a href="#name-node">
-              Name node
-             </a>
-            </li>
-            <li>
-             2.3.1.2.3.
-             <a href="#secondary-node">
-              Secondary node
-             </a>
-            </li>
-            <li>
-             2.3.1.2.4.
-             <a href="#job-tracker">
-              Job tracker
-             </a>
-            </li>
-            <li>
-             2.3.1.2.5.
-             <a href="#slave-nodes">
-              Slave nodes
-             </a>
-            </li>
-           </ul>
-          </li>
-          <li>
-           2.3.1.3.
            <a href="#hadoop-suprojects">
             Hadoop suprojects
            </a>
@@ -163,6 +125,12 @@
          <ul>
           <li>
            2.3.2.1.
+           <a href="#nosql-databases-versus-other-data-store-options">
+            NoSQL databases versus other data store options
+           </a>
+          </li>
+          <li>
+           2.3.2.2.
            <a href="#nosql-database-software">
             NoSQL database software
            </a>
@@ -188,20 +156,6 @@
          <a href="#data-stream-mining">
           Data stream mining
          </a>
-         <ul>
-          <li>
-           2.4.2.1.
-           <a href="#critical-event-processing">
-            Critical event processing
-           </a>
-          </li>
-          <li>
-           2.4.2.2.
-           <a href="#data-stream-mining-versus-perpetual-analytics">
-            Data stream mining versus perpetual analytics
-           </a>
-          </li>
-         </ul>
         </li>
        </ul>
       </li>
@@ -753,58 +707,200 @@
    </a>
   </h3>
   <p>
-   Use Hadoop as:
-  </p>
-  <ul>
-   <li>
-    Repository and refinery for raw data (HDFS can capture hundreds of TB per day)
-   </li>
-   <li>
-    Active archive (replacing magnetic tape archives)
-   </li>
-  </ul>
-  <p>
    Use data warehouses for:
   </p>
   <ul>
    <li>
-    While performance is satisfactory
-    <ul>
-     <li>
-      basic indexing
-     </li>
-     <li>
-      advanced indexing
-      <ul>
-       <li>
-        materialized views
-       </li>
-       <li>
-        aggregate join indexes
-       </li>
-       <li>
-        cube indexes
-       </li>
-       <li>
-        spares join indexes
-       </li>
-      </ul>
-     </li>
-     <li>
-      cost-based optimizer (analyzing SQL query, generates alternatives, compares cost)
-     </li>
-     <li>
-      partitioning
-     </li>
-    </ul>
+    <strong>
+     Integration of data
+    </strong>
+    ("Data model designers and ETL architects armed with metadata, data-cleansing tools, and patience must rationalize data formats, source systems. and semantic meaning of the data to make it understandable and trustworthy")
    </li>
    <li>
-    Integration of data ("Data model designers and ETL architects armed with metadata, data-cleansing tools, and patience must rationalize data formats, source systems. and semantic meaning of the data to make it understandable and trustworthy")
-   </li>
-   <li>
-    Backend for interactive BI tools
+    <strong>
+     Backend for interactive BI tools
+    </strong>
    </li>
   </ul>
+  <p>
+   Use Hadoop as:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Repository and refinery for raw data
+    </strong>
+    (HDFS can capture hundreds of TB per day)
+   </li>
+   <li>
+    <strong>
+     Active archive
+    </strong>
+    (replacing magnetic tape archives)
+   </li>
+  </ul>
+  <table>
+   <thead>
+    <tr class="header">
+     <th align="left">
+      Requirement
+     </th>
+     <th align="left">
+      DW
+     </th>
+     <th align="left">
+      Hadoop
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class="odd">
+     <td align="left">
+      Low latency, interactive reports, and OLAP
+     </td>
+     <td align="left">
+      X
+     </td>
+     <td align="left">
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      ANSI 2003 SQL compliance is required
+     </td>
+     <td align="left">
+      X
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Preprocessing or exploration of raw unstructured data
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Online archives alternative to tape
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      High-quality cleansed and consistent data
+     </td>
+     <td align="left">
+      X
+     </td>
+     <td align="left">
+      ?
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      100s to 1,000s of concurrent users
+     </td>
+     <td align="left">
+      ?
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Discover unknown relationships in the data
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      [Complex parallel] process logic
+     </td>
+     <td align="left">
+      ?
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      CPU intense analysis
+     </td>
+     <td align="left">
+      X
+     </td>
+     <td align="left">
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      System, users, and data governance
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Many flexible programming languages running in parallel
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Unrestricted, ungoverned sandbox explorations
+     </td>
+     <td align="left">
+     </td>
+     <td align="left">
+      X
+     </td>
+    </tr>
+    <tr class="odd">
+     <td align="left">
+      Analysis of provisional data
+     </td>
+     <td align="left">
+      X
+     </td>
+     <td align="left">
+     </td>
+    </tr>
+    <tr class="even">
+     <td align="left">
+      Extensive security and regulatory compliance
+     </td>
+     <td align="left">
+      X
+     </td>
+     <td align="left">
+      ?
+     </td>
+    </tr>
+   </tbody>
+  </table>
   <h3 id="success-factors-for-big-data-initiatives">
    <a>
     1.3.3. Success factors for Big Data initiatives
@@ -909,12 +1005,6 @@
    <img src="illos/big-data-arch1.png"/>
   </div>
   <p>
-   Per AsterData, cited in Sharda et al. (2014, p. 283):
-  </p>
-  <div class="figure">
-   <img src="illos/big-data-arch2.jpg"/>
-  </div>
-  <p>
    Per Tetadata, their landscape of products AKA
    <a href="https://www.teradata.com/Solutions-and-Industries/unified-data-architecture">
     Unified Data Architecture:
@@ -922,6 +1012,12 @@
   </p>
   <div class="figure">
    <img src="illos/big-data-arch3.jpg"/>
+  </div>
+  <p>
+   Per AsterData, cited in Sharda et al. (2014, p. 283):
+  </p>
+  <div class="figure">
+   <img src="illos/big-data-arch2.jpg"/>
   </div>
   <h2 id="big-data-storage">
    <a>
@@ -933,55 +1029,131 @@
     2.3.1. Hadoop
    </a>
   </h3>
-  <h4 id="why-use-hadoop">
-   <a>
-    2.3.1.1. Why use Hadoop?
+  <p>
+   Per Sharda et al. (2014, pp. 291, 294), "Hadoop is an open source framework for processing, storing, and analyzing massive amounts of distibuted, unstructured data"; it is distributed storage plus distributed processing via the
+   <a href="#mapreduce">
+    MapReduce framework.
    </a>
-  </h4>
+  </p>
+  <ul>
+   <li>
+    Hadoop's native language is Java
+   </li>
+   <li>
+    "Hadoop consists of multiple products"
+   </li>
+   <li>
+    "HDFS is a file system, not a database management system (DBMS)"
+   </li>
+   <li>
+    "Hadoop is about data diversity, not just data volume. Theoretically, HDFS can manage the storage and access of any data type as long as you can put the data in a file and copy that file into HDFS."
+   </li>
+  </ul>
   <h4 id="hadoop-components">
    <a>
-    2.3.1.2. Hadoop components
-   </a>
-  </h4>
-  <h5 id="hdfs">
-   <a>
-    2.3.1.2.1. HDFS
-   </a>
-  </h5>
-  <h5 id="name-node">
-   <a>
-    2.3.1.2.2. Name node
-   </a>
-  </h5>
-  <h5 id="secondary-node">
-   <a>
-    2.3.1.2.3. Secondary node
-   </a>
-  </h5>
-  <h5 id="job-tracker">
-   <a>
-    2.3.1.2.4. Job tracker
-   </a>
-  </h5>
-  <h5 id="slave-nodes">
-   <a>
-    2.3.1.2.5. Slave nodes
-   </a>
-  </h5>
-  <h4 id="hadoop-suprojects">
-   <a>
-    2.3.1.3. Hadoop suprojects
+    2.3.1.1. Hadoop components
    </a>
   </h4>
   <ul>
    <li>
-    Hive
+    <strong>
+     HDFS:
+    </strong>
+    "The default storage layer in any given Hadoop cluster"
    </li>
    <li>
-    Pig
+    <strong>
+     Name node:
+    </strong>
+    "The node in a Hadoop cluster that provides the client information on where in the cluster particular data is stored and if any nodes fail"
    </li>
    <li>
-    ...
+    <strong>
+     Secondary node:
+    </strong>
+    "A backup to the Name Node, it periodically replicates and stores data from the Name Node should it fail"
+   </li>
+   <li>
+    <strong>
+     Job tracker:
+    </strong>
+    "The node in a Hadoop cluster that initiates and coordinates MapReduce jobs or the processing of the data"
+   </li>
+   <li>
+    <strong>
+     Slave nodes:
+    </strong>
+    "The grunts of any Hadoop cluster, slave nodes store data and take direction to process it from the Job Tracker"
+   </li>
+  </ul>
+  <h4 id="hadoop-suprojects">
+   <a>
+    2.3.1.2. Hadoop suprojects
+   </a>
+  </h4>
+  <p>
+   Per Sharda et al. (2014, pp. 292-293):
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Hive
+    </strong>
+    (from Facebook) converts HiveQL (SQL-like) queries to MapReduce jobs, thereby enabling Hadoop to function like a data warehouse in terms of interfacing with users and BI tools
+   </li>
+   <li>
+    <strong>
+     Pig
+    </strong>
+    (from Yahoo) is a Hadoop query language that's "adept at very deep, very long data pipelines"'
+   </li>
+   <li>
+    <strong>
+     Flume
+    </strong>
+    "is a framework for populating Hadoop with data"
+   </li>
+   <li>
+    <strong>
+     HBase
+    </strong>
+    "is a nonrelational database that ... adds transactional capabilities to Hadoop, allowing users to conduct updates, inserts, and deletes"
+   </li>
+   <li>
+    <strong>
+     Oozie
+    </strong>
+    "is a workflow processing system that lets users define a series of jobs written in multiple languages---such as MapReduce, Pig, and Hive---and then intelligently link them together"
+   </li>
+   <li>
+    <strong>
+     Ambari
+    </strong>
+    "is a Web-based set of tools for deploying, administering, and monitoring Apache Hadoop clusters"
+   </li>
+   <li>
+    <strong>
+     Avro
+    </strong>
+    "is a data serialization system that allows for encoding the schema of Hadoop files"
+   </li>
+   <li>
+    <strong>
+     Mahout
+    </strong>
+    "is a data mining library [that] takes the most popular data mining algorithms for performing clustering, regression testing, and statistical modeling and implements them using the MapReduce model"
+   </li>
+   <li>
+    <strong>
+     Sqoop
+    </strong>
+    "is a connectivity tool for moving data from non-Hadoop data stores ... into Hadoop"
+   </li>
+   <li>
+    <strong>
+     HCatalog
+    </strong>
+    "is a centralized metadata management and sharing service"
    </li>
   </ul>
   <h3 id="what-are-nosql-databases">
@@ -1069,12 +1241,38 @@
     data upon input
    </li>
   </ul>
+  <h4 id="nosql-databases-versus-other-data-store-options">
+   <a>
+    2.3.2.1. NoSQL databases versus other data store options
+   </a>
+  </h4>
+  <p>
+   Per Sharda et al. (2014, p. 295): "[W]hereas
+   <strong>
+    Hadoop
+   </strong>
+   is adept at supporting large-scale, batch-style historical analysis,
+   <strong>
+    NoSQL databases
+   </strong>
+   are aimed, for the most part (although there are some important exceptions), at serving up discrete data stored among large volumes of multi-structured data ... [a capability] sorely lacking in
+   <strong>
+    relational database technology
+   </strong>
+   ... the downside of most NoSQL databases today is that they trade ACID (atomicity, consistency, isolation, durability) compliance for performance and scalability. Many also lack mature management and monitoring tools".
+  </p>
   <h4 id="nosql-database-software">
    <a>
-    2.3.2.1. NoSQL database software
+    2.3.2.2. NoSQL database software
    </a>
   </h4>
   <ul>
+   <li>
+    HBase (a Hadoop subproject)
+   </li>
+   <li>
+    Neo4j
+   </li>
    <li>
     MongoDB
    </li>
@@ -1101,24 +1299,88 @@
     2.4.1. MapReduce
    </a>
   </h3>
+  <p>
+   Per Dean and Ghemawat's seminal paper (2004): "MapReduce is a programming model and an associated implementaiton for processing and generating large data sets. Programs written in this functional style are automatically patallelized and executed on a large cluster of commodity machines. This allows programmers without any experience with parallel and distributed systems to easily utilize the resources of a large distributed system."
+  </p>
+  <p>
+   Another way of putting this, from Russom (2010) by way of Sharda et al. (2014, p. 295): "MapReduce provides control for analytics, not analytics per se. MapReduce is a general-purpose execution engine that handles the complexities of network communication, parallel programming, and fault-tolerance for any kind of application that you can hand code---not just analytics."
+  </p>
+  <div class="figure">
+   <img src="illos/map-reduce.png"/>
+  </div>
+  <p>
+   Per Sharda et al. (2014, p. 290):
+  </p>
+  <ul>
+   <li>
+    "The
+    <strong>
+     MapReduce system
+    </strong>
+    first reads the input file and splits it into multiple pieces ...
+   </li>
+   <li>
+    These splits are then processed by
+    <strong>
+     multiple map programs
+    </strong>
+    running in parallel on the nodes of the cluster ...
+   </li>
+   <li>
+    The
+    <strong>
+     MapReduce system
+    </strong>
+    then takes the ouput from each map program and merges (shuffle/sort) the results for input to
+   </li>
+   <li>
+    the
+    <strong>
+     reduce program,
+    </strong>
+    which [aggregates the results and outputs them]"
+   </li>
+  </ul>
   <h3 id="data-stream-mining">
    <a>
     2.4.2. Data stream mining
    </a>
   </h3>
   <p>
-   (AKA in-motion analytics)
+   (AKA data-in-motion analytics, AKA in-motion analytics, AKA real-time data analytics)
   </p>
-  <h4 id="critical-event-processing">
-   <a>
-    2.4.2.1. Critical event processing
-   </a>
-  </h4>
-  <h4 id="data-stream-mining-versus-perpetual-analytics">
-   <a>
-    2.4.2.2. Data stream mining versus perpetual analytics
-   </a>
-  </h4>
+  <p>
+   Per Sharda et al. (2014, p. 215), stream analytics began in the energy industry, and has become important because:
+  </p>
+  <ul>
+   <li>
+    Despite Big Data storage technologies, keeping everything is impossible; "current total storage capacity lags far behind the digital information being generated in the world"
+   </li>
+   <li>
+    A turbulent business environment makes "real-time detection of meaningful changes in data as well as complex pattern variations within a short time
+    <strong>
+     window ...
+    </strong>
+    essential to come up with the actions that better fit with the new environment"
+   </li>
+  </ul>
+  <p>
+   Some related concepts:
+  </p>
+  <ul>
+   <li>
+    <strong>
+     Perpetual analytics
+    </strong>
+    is different from data stream mining, since it "evaluates every incoming observation against all prior observations", i.e. does not use a window
+   </li>
+   <li>
+    <strong>
+     Critical event processing
+    </strong>
+    is the anticipation or extremely rapid detection of outlier events, to enable prevention or immediate response
+   </li>
+  </ul>
   <h1 id="sources">
    <a>
     3. Sources
@@ -1135,6 +1397,12 @@
     Database systems: A practical approach to design, implementation, and management
    </em>
    (6th ed.). New York City, NY: Pearson Education.
+  </p>
+  <p>
+   Dean, J., &amp; Ghemawat, S. (2004). MapReduce: Simplified data processing on large clusters. Retrieved from
+   <a href="https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf">
+    https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
+   </a>
   </p>
   <p>
    Sharda, R., Delen, D., &amp; Turban, E. (2014).
@@ -1159,6 +1427,18 @@
     3.3. Read
    </a>
   </h2>
+  <ul>
+   <li>
+    <a href="https://www.youtube.com/watch?v=43fqzaSH0CQ">
+     What is MapReduce? (Youtube video)
+    </a>
+   </li>
+   <li>
+    <a href="https://www.youtube.com/watch?v=4DgTLaFNQq0">
+     What is Hadoop? (Youtube video)
+    </a>
+   </li>
+  </ul>
   <h2>
    <a name="3.4.-unread">
     3.4. Unread

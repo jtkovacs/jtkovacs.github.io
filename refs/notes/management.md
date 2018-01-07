@@ -169,14 +169,25 @@ Per Sharda et al. (2014, p. 7):
 
 ### Strategic thinking
 
+#### Analytic thinking
+
+(vs synthetic, dialectic)
+
 #### Design thinking
 
-See design.html#design-thinking
+See [notes on design thinking](design.html#design-thinking)
 
 #### Systems thinking
 
+Per Vassallo (2017):
 
+Systems thinking operates on systems; systems are parts that are interconnected, leading to **emergent** behavior. This means a system must be studied as a whole; it is dangerous to study parts in isolation. And when the system is analyzed as a whole, it may reveal **leverage points** where interventions (which may be small) can trigger large or simply _persistent_ changes in system states (i.e., design). Desipte Vassallo's phrasing, this is _not_ the same idea as incremental change or iteration, nor is it the same as the idea that a small change can have a large cumulative impact given a large user population.
 
+"The vocabulary of formal systems thinking is one of **causal loops, unintended consequences, emergence, and system dynamics.** Practicing systems theorists employ tools such as **systemigrams, archetypes, stock and flow diagrams, interpretive structural modeling, and systemic root cause analysis ... the Iceberg Model and ... leverage points.**
+
+##### Iceberg model
+
+Per Vassallo (2017): **Values** (our aspirations and vision) inform our **mental models,** which "give birth to" **systemic structures** ("how the components of the system are organized") that are visible as **patterns** of **events;** any one of these levels can be points of intervention.
 
 
 
@@ -194,6 +205,10 @@ Jones, G. R. & George, J. M. (2015). _Contemporary management (9th ed.)._ Colomb
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+Vassallo, S. (2017, May 1). Design thinking needs to think bigger. Co.Design. Retrieved from [https://www.fastcodesign.com/90112320/design-thinking-needs-to-think-bigger](https://www.fastcodesign.com/90112320/design-thinking-needs-to-think-bigger)
+
+Wright, A. (2007). _Glut: Mastering information through the ages._ Ithaca, NY: Cornell University Press.
 
 ## References
 

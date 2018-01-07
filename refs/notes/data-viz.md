@@ -4,9 +4,18 @@
 
 See also [notes on graphic design.](https://jtkovacs.github.io/refs/graphics-viz.html)
 
-## Edward Tufte
+My summary of Edward Tufte's approach: _Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter._
 
-Trust the eye as a tool that extracts patterns from complex data. Provide viewers with dense information in high-resolution; maximize information, minimize clutter.
+Tufte's principles of analytic design (2006, pp. 225-239):
+
+- **Grand principle:** "The principles of analytic design are derived from the principles of [analytic thinking;"](management.html#analytic-thinking) he does not cite a source for these deeper principles
+- "Show comparisons, contrasts, differences" (in the data itself, and versus meaningful external benchmarks)
+- "Show causality, mechanism, structure, explanation, process"
+- "Show multivariate data"
+- "Completely integrate [i.e., do not artificially separate] words, numbers, images, diagrams"
+- "Thoroughly document [i.e., provide metadata for] the evidence [i.e., the data vizualization, rechristened to illuminate its essential purpose]" --- in terms of: title, author, sponsors, sources, measurement scales
+- "Attend to quality, relevance, and integrity of content"; when necessary, seek out better content (don't use gimmicks)
+
 
 
 
@@ -185,6 +194,8 @@ plot(jitter(x), y)
 Eckerson, W., & Hammond, M. (2011). _Visual reporting and analysis._ TDWI Best Practices Report. TDWI, Chatsworth. Retrieved from [http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf](http://www.smartanalytics.com.au/pdf/Advizor-TDWI_VisualReportingandAnalysisReport.pdf)
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+Tufte, E. (2006). _Beautiful evidence._ Cheshire, CT: Graphics Press.
 
 ## References
 

@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 1000 words | updated 12/29/2017</p><div class="TOC">- &nbsp;1. [What is management?](#what-is-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 1235 words | updated 01/06/2018</p><div class="TOC">- &nbsp;1. [What is management?](#what-is-management)
 	- &nbsp;1.1. [Managerial hierarchy](#managerial-hierarchy)
 	- &nbsp;1.2. [Managerial skills](#managerial-skills)
 	- &nbsp;1.3. [History of management thought](#history-of-management-thought)
@@ -16,8 +16,10 @@
 			- &nbsp;1.5.2.1. [Inputs to strategic decision-making](#inputs-to-strategic-decision-making)
 			- &nbsp;1.5.2.2. [Trends with strategic significance](#trends-with-strategic-significance)
 		- &nbsp;1.5.3. [Strategic thinking](#strategic-thinking)
-			- &nbsp;1.5.3.1. [Design thinking](#design-thinking)
-			- &nbsp;1.5.3.2. [Systems thinking](#systems-thinking)
+			- &nbsp;1.5.3.1. [Analytic thinking](#analytic-thinking)
+			- &nbsp;1.5.3.2. [Design thinking](#design-thinking)
+			- &nbsp;1.5.3.3. [Systems thinking](#systems-thinking)
+				- &nbsp;1.5.3.3.1. [Iceberg model](#iceberg-model)
 - &nbsp;2. [Sources](#sources)
 	- &nbsp;2.1. [Cited](#cited)
 	- &nbsp;2.2. [References](#references)
@@ -195,14 +197,25 @@ Per Sharda et al. (2014, p. 7):
 
 ### 1.5.3. Strategic thinking
 
-#### 1.5.3.1. Design thinking
+#### 1.5.3.1. Analytic thinking
 
-See design.html#design-thinking
+(vs synthetic, dialectic)
 
-#### 1.5.3.2. Systems thinking
+#### 1.5.3.2. Design thinking
 
+See [notes on design thinking](design.html#design-thinking)
 
+#### 1.5.3.3. Systems thinking
 
+Per Vassallo (2017):
+
+Systems thinking operates on systems; systems are parts that are interconnected, leading to **emergent** behavior. This means a system must be studied as a whole; it is dangerous to study parts in isolation. And when the system is analyzed as a whole, it may reveal **leverage points** where interventions (which may be small) can trigger large or simply _persistent_ changes in system states (i.e., design). Desipte Vassallo's phrasing, this is _not_ the same idea as incremental change or iteration, nor is it the same as the idea that a small change can have a large cumulative impact given a large user population.
+
+"The vocabulary of formal systems thinking is one of **causal loops, unintended consequences, emergence, and system dynamics.** Practicing systems theorists employ tools such as **systemigrams, archetypes, stock and flow diagrams, interpretive structural modeling, and systemic root cause analysis ... the Iceberg Model and ... leverage points.**
+
+##### 1.5.3.3.1. Iceberg model
+
+Per Vassallo (2017): **Values** (our aspirations and vision) inform our **mental models,** which "give birth to" **systemic structures** ("how the components of the system are organized") that are visible as **patterns** of **events;** any one of these levels can be points of intervention.
 
 
 
@@ -220,6 +233,10 @@ Jones, G. R. & George, J. M. (2015). _Contemporary management (9th ed.)._ Colomb
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
+
+Vassallo, S. (2017, May 1). Design thinking needs to think bigger. Co.Design. Retrieved from [https://www.fastcodesign.com/90112320/design-thinking-needs-to-think-bigger](https://www.fastcodesign.com/90112320/design-thinking-needs-to-think-bigger)
+
+Wright, A. (2007). _Glut: Mastering information through the ages._ Ithaca, NY: Cornell University Press.
 
 ## 2.2. References
 

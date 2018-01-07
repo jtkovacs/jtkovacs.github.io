@@ -1,7 +1,18 @@
+
+# Roles within groups
+
+As summarized in Wright (2007, p. 13):
+
+"[Science writer Howard Bloom] postulates that the phenomenon of collective intelligence emerges from the interplay of five essential forces: conformity enforcers, diversity generators, inner judges, resource shifters, and intergroup tourmanents. **Conformity enforcers** (like worker bees or middle managers) ensure that the group as a whole maintains sufficient cohesion to survive adverse conditions; **diversity generators** (like stray ants or artists) are the 'odd ducks' who generate alternative hypotheses for a group to consider, thus ensuring variation; **intergroup tournaments** (like the waggle dances of bees or scientific debates) enable societies to test alternative hypotheses; **inner judges** reward productive behavior and punish deleterious actions. Finally, resource shifters (like alpha chimpanzees or corporate executives) make sure successful adaptations receive the support they need to benefit the group as a whole."
+
+
 # Sources
 
-## References
+## Cited
 
+Wright, A. (2007). _Glut: Mastering information through the ages._ Ithaca, NY: Cornell University Press.
+
+## References
 
 ## Read
 

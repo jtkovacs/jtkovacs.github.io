@@ -181,7 +181,7 @@ See [notes on design thinking](design.html#design-thinking)
 
 Per Vassallo (2017):
 
-Systems thinking operates on systems; systems are parts that are interconnected, leading to **emergent** behavior. This means a system must be studied as a whole; it is dangerous to study parts in isolation. And when the system is analyzed as a whole, it may reveal **leverage points** where interventions (which may be small) can trigger large or simply _persistent_ changes in system states (i.e., design). Desipte Vassallo's phrasing, this is _not_ the same idea as incremental change or iteration, nor is it the same as the idea that a small change can have a large cumulative impact given a large user population.
+Systems thinking operates on systems; systems are parts that are interconnected, leading to **emergent** behavior. This means a system must be studied as a whole; it is dangerous to study parts in isolation. And when the system is analyzed as a whole, it may reveal **leverage points** where interventions (which may be small) can trigger large or simply _persistent_ changes in system states (i.e., design). Despite Vassallo's phrasing, this is _not_ the same idea as incremental change or iteration, nor is it the same as the idea that a small change can have a large cumulative impact given a large user population.
 
 "The vocabulary of formal systems thinking is one of **causal loops, unintended consequences, emergence, and system dynamics.** Practicing systems theorists employ tools such as **systemigrams, archetypes, stock and flow diagrams, interpretive structural modeling, and systemic root cause analysis ... the Iceberg Model and ... leverage points.**
 

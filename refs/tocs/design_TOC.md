@@ -1,15 +1,11 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> design | just under 1206 words | updated 01/06/2018</p><div class="TOC">- &nbsp;1. [Design](#design)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> design | just under 1241 words | updated 01/07/2018</p><div class="TOC">- &nbsp;1. [Design](#design)
 	- &nbsp;1.1. [What is good design?](#what-is-good-design)
 	- &nbsp;1.2. [What is bad design?](#what-is-bad-design)
 		- &nbsp;1.2.1. [Promoting addiction](#promoting-addiction)
 		- &nbsp;1.2.2. [Neglecting or violating privacy](#neglecting-or-violating-privacy)
 - &nbsp;2. [Design thinking](#design-thinking)
 	- &nbsp;2.1. [What is empathy?](#what-is-empathy)
-- &nbsp;3. [Design process](#design-process)
-	- &nbsp;3.1. [Ideation](#ideation)
-	- &nbsp;3.2. [Iteration](#iteration)
-	- &nbsp;3.3. [Evaluation](#evaluation)
-	- &nbsp;3.4. [Documentation](#documentation)
+- &nbsp;3. [Design processes](#design-processes)
 - &nbsp;4. [User research](#user-research)
 - &nbsp;5. [Sources](#sources)
 	- &nbsp;5.1. [Cited](#cited)
@@ -112,17 +108,21 @@ Keller (1983) credits Gordon (1961) for developing the concepts of divergent and
 
 
 
-# 3. Design process
+# 3. Design processes
 
-## 3.1. Ideation
+Per Jaime Snyder (2018) at University of Washington:
 
-## 3.2. Iteration
+1. Ideation
+2. Iteration
+3. Evaluation
+4. Documentation (passing off to developers)
 
-## 3.3. Evaluation
+Per Birsel (2015):
 
-## 3.4. Documentation
-
-passing off to developers
+1. Deconstruction
+2. Point of view (see things a new way)
+3. Reconstruction
+4. Expression (implementation)
 
 
 
@@ -140,6 +140,8 @@ passing off to developers
 # 5. Sources
 
 ## 5.1. Cited
+
+Birsel, A. (2015). _Design the life you love._
 
 Brignall, H. (n.d.). Types of dark patterns. Retrieved from [https://darkpatterns.org/types-of-dark-pattern](https://darkpatterns.org/types-of-dark-pattern)
 

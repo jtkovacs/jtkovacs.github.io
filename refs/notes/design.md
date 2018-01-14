@@ -1,10 +1,46 @@
 
-# Design
+# What is design?
 
 Herbert Simon's definition (1969, p. 55) of design as the “transformation of existing conditions into preferred ones” is very popular. Also, from the editor's introduction to Johan Redström's _Making design theory:_ "All goods and services are designed. The urge to design --- to consider a situation, imagine a better situation, and act to create that improved situation --- goes back to our prehuman ancestors. Making tools helped us to become what we are --- design helped to make us human."
 
 Per Jaime Snyder at University of Washington, the purpose of a specific **design intervention** may be (1) to solve specific problems, OR (2) to help people reach their potential (more ambitious).
 
+
+
+## Origins of design
+
+Orginally applied in product development, design was imported into education in the late 1960s.
+
+
+## Subfields of design
+
+### Industrial design
+
+Per Norman (2013, p. 5), emphasizes "form and material".
+
+### Interaction design
+
+Per Norman (2013, p. 5), emphasizes "understandability and usability".
+
+### Experience design
+
+Per Norman (2013, p. 5), emphasizes "emotional impact".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Design philosophy
 
 ## What is good design?
 
@@ -34,6 +70,35 @@ Per Labarre (2018), it is:
 - Not risk-averse
 - For people and machines (cyberagents)
 
+### Human-centered design
+
+Per Norman, a good design is a design that addresses the two Gulfs --- of Execution, via feedforward information from the system, and of Evaluation, via feedback. He calls this **human-centered design** --- "an approach that puts human needs, capabilities, and behavior first" (Norman, 2013, p. 8). It entails:
+
+- "starting with a good understanding of people" (general HCI principles) "and of the needs that the design is intended to meet" (user research)
+- "This understanding comes about primarily through observation, for people themselves are often unaware of their true needs, even unaware of the difficulties they are encountering"
+- Finally, the approach includes "rapid tests of ideas ... after each test modifying the approach and the problem definition"
+
+Basic terms:
+
+- **Affordances:**
+- **Signifiers:**
+- **Mappings:**
+- **Conceptual models:**
+- **Constraints:**
+- **System image:**
+
+![](../illos/Norman-HCD-model.png)
+
+
+#### Gulf of Execution
+
+#### Gulf of Evaluation
+
+- "That's the point: even experts make errors. So we must design ... on the assumption that people will make errors." (Norman, 2013, p. 8)
+- "Actually, [error-handling] is where the most satisfaction can arises [for the user]" (Norman, 2013, p. 9)
+
+
+
 
 
 ## What is bad design?
@@ -60,6 +125,20 @@ These are "dark patterns", coined and classified by Harry Brignall (n.d.):
 
 - [https://www.fastcodesign.com/3067094/our-apathy-toward-privacy-will-destroy-us-designers-can-help](https://www.fastcodesign.com/3067094/our-apathy-toward-privacy-will-destroy-us-designers-can-help)
 
+## Causes of poor design
+
+Per Norman (2013, pp. 6 & 8):
+
+- current technological limitations
+- self-imposed restrictions
+- cost
+- lack of understanding of HCI, because "Engineers are trained to think logically"
+- technology changes faster than design; design must be rediscovered by each field
+
+
+
+
+
 
 
 
@@ -68,22 +147,16 @@ These are "dark patterns", coined and classified by Harry Brignall (n.d.):
 
 # Design thinking
 
-Design thinking is for generating ideas. It draws on user research/contextual inquiry; it contributes to [strategy](https://jtkovacs.github.io/refs/management.html#strategy) and [performance management](https://jtkovacs.github.io/refs/performance-management.html) as well as product and service design.
+Design thinking is for generating ideas. It draws on user research/contextual inquiry; it contributes to [strategy](https://jtkovacs.github.io/refs/management.html#strategy) and [performance management](https://jtkovacs.github.io/refs/performance-management.html) as well as product and service design. Vassallo (2017b) urges the incorporation of [systems thinking](management.html#systems-thinking) into design thinking, to cope with global complexity.
 
-Vassallo (2017b) urges design thinking to incorporate systems thinking in the face of global complexity.
+"Design thinking incorporates constituent or consumer insights in depth and rapid prototyping, all aimed at getting beyond the assumptions that block effective solutions. Design thinking — **inherently optimistic, constructive, and experiential** — addresses the needs of the people who will consume a product or service and the infrastructure that enables it. Businesses are embracing design thinking because it helps them be more innovative, better differentiate their brands, and bring their products and services to market faster. Nonprofits are beginning to use design thinking as well to develop better solutions to social problems. Design thinking crosses the traditional boundaries between public, for-profit, and nonprofit sectors. By working closely with the clients and consumers, design thinking allows high-impact solutions to bubble up from below rather than being imposed from the top" (Brown and Wyatt, 2010, p. 32).
 
-"Design thinking incorporates constituent or consumer insights in depth and rapid prototyping, all aimed at getting beyond the assumptions that block eff ective solutions. Design thinking**—inherently optimistic, constructive, and experiential—**addresses the needs of the people who will consume a product or service and the infrastructure that enables it. Businesses are embracing design thinking because it helps them be more innovative, better diff erentiate their brands, and bring their products and services to market faster. Nonprofi ts are beginning to use design thinking as well to develop better solutions to social problems. Design thinking crosses the traditional boundaries between public, for-profi t, and nonprofi t sectors. By working closely with the clients and consumers, design thinking allows high-impact solutions to bubble up from below rather than being imposed from the top" (Brown and Wyatt, 2010, p. 32).
 
-"The design thinking process is best thought of as a system of overlapping spaces rather than a sequence of orderly steps. There are three spaces to keep in mind: inspiration, ideation, and implementation. Think of **inspiration** as the problem or opportunity that motivates the search for solutions; **ideation** as the process of generating, developing, and testing ideas; and **implementation** as the path that leads from the project stage into people’s lives."
+## Convergence & divergence
 
-Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics". Orginally applied in product development, it was imported into education in the late 1960s. Per Beneteau (2017), some key components:
+Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics".
 
-- Empathizing (cultivating empathy with personas, perhaps with accessories or other attributes)
-- Ideation/Brainstorming (divergent thinking)
-- Prototyping (convergent)
-- Testing
-
-## What is empathy?
+## Empathy
 
 "'Empathy' was Ideo founder David Kelley’s shorthand for in-the-weeds ethnographic research. And, to be fair, that’s what some design thinkers still have in mind. But as design thinking has grown in popularity, some of its core tenets have been watered down or misapplied. Perhaps as a result of overuse, when most designers talk about empathy, they don’t seem to me to be referring to fact-gathering at all, but something more like feeling-broadcasting. Empathy in design has gone from an outward-facing action to an inward-turned affect. I think it might be too late to protect the design-thinking denotation of the word from the layman’s definition. Regardless, I would urge us as a discipline to practice rigorous evidence-based compassion, rather than trying to feel people’s pain" (Vassallo, 2017a).
 
@@ -94,6 +167,8 @@ Keller (1983) credits Gordon (1961) for developing the concepts of divergent and
 
 
 # Design processes
+
+## Design lifecycles
 
 Per Jaime Snyder (2018) at University of Washington:
 
@@ -109,14 +184,49 @@ Per Birsel (2015):
 3. Reconstruction
 4. Expression (implementation)
 
+"The design thinking process is best thought of as a system of overlapping spaces rather than a sequence of orderly steps. There are three spaces to keep in mind: inspiration, ideation, and implementation. Think of **inspiration** as the problem or opportunity that motivates the search for solutions; **ideation** as the process of generating, developing, and testing ideas; and **implementation** as the path that leads from the project stage into people’s lives."  (Brown and Wyatt, 2010, p. 33)
 
+## Design subprocesses
 
+(this list per Friedman & Hendry, 2012)
 
+### Co-design
 
+### Heuristic evaluation
 
-# User research
+### Critique
+
+### User research
 
 (AKA inquiry)
+
+
+
+
+
+
+
+
+
+# Design tools
+
+## Cards
+
+Friedman & Hendry (2012):
+
+- Envisioning Cards
+- IDEO Method Cards
+- Interactive Thread Cards
+
+**Envisioning Cards** have been used to:
+
+- 'stimulate ideation and iteration in co-design'
+- explore the implications of a new technology (e.g., persuasion profiles)
+- prompts for heuristic evaluation
+
+
+
+
 
 
 
@@ -130,9 +240,15 @@ Birsel, A. (2015). _Design the life you love._
 
 Brignall, H. (n.d.). Types of dark patterns. Retrieved from [https://darkpatterns.org/types-of-dark-pattern](https://darkpatterns.org/types-of-dark-pattern)
 
-Rams, D. (n.d.). Good design. Vitsoe. Retrieved from [https://www.vitsoe.com/us/about/good-design](https://www.vitsoe.com/us/about/good-design)
+Brown, T. & Wyatt, J. (2010). Design thinking for social innovation. _Stanford Social Innovation Review._ Retrieved from [https://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.ssl.cf1.rackcdn.com/files/pdfs/news/2010_SSIR_DesignThinking.pdf](https://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.ssl.cf1.rackcdn.com/files/pdfs/news/2010_SSIR_DesignThinking.pdf)
+
+Friedman, B. & Hendry, D. G. (2012). The _Envisioning Cards:_ A toolkit for catalyzing humanistic and technical imaginations. In E. H. Chi & K. Höök (Eds.), _Proceedings of the 30th Annual SIGCHI Conference on Human Factors in Computing Systems (CHI ’12)_ (pp. 1145-1148). New York, NY: ACM Press.
 
 Labarre, S. (2018, January 3). 10 new principles of good design. Co.Design. Retrieved from [https://www.fastcodesign.com/90154519/10-new-principles-of-good-design](https://www.fastcodesign.com/90154519/10-new-principles-of-good-design)
+
+Norman, D. (2013). _The design of everyday things_ (revised and expanded edition). New York City, NY: Basic Books.
+
+Rams, D. (n.d.). Good design. Vitsoe. Retrieved from [https://www.vitsoe.com/us/about/good-design](https://www.vitsoe.com/us/about/good-design)
 
 Simon. H. (1969). _Sciences of the artificial._
 

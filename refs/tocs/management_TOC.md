@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 1235 words | updated 01/07/2018</p><div class="TOC">- &nbsp;1. [What is management?](#what-is-management)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> management | just under 1316 words | updated 01/14/2018</p><div class="TOC">- &nbsp;1. [What is management?](#what-is-management)
 	- &nbsp;1.1. [Managerial hierarchy](#managerial-hierarchy)
 	- &nbsp;1.2. [Managerial skills](#managerial-skills)
 	- &nbsp;1.3. [History of management thought](#history-of-management-thought)
@@ -9,22 +9,22 @@
 			- &nbsp;1.3.2.3. [Behavioral management theory (1915-1990)](#behavioral-management-theory-1915-1990)
 			- &nbsp;1.3.2.4. [Management science theory (1940-1990)](#management-science-theory-1940-1990)
 			- &nbsp;1.3.2.5. [Organizational environment theory (1950-2005)](#organizational-environment-theory-1950-2005)
-	- &nbsp;1.4. [What is management consulting?](#what-is-management-consulting)
-	- &nbsp;1.5. [Strategy](#strategy)
-		- &nbsp;1.5.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
-		- &nbsp;1.5.2. [Strategic analysis](#strategic-analysis)
-			- &nbsp;1.5.2.1. [Inputs to strategic decision-making](#inputs-to-strategic-decision-making)
-			- &nbsp;1.5.2.2. [Trends with strategic significance](#trends-with-strategic-significance)
-		- &nbsp;1.5.3. [Strategic thinking](#strategic-thinking)
-			- &nbsp;1.5.3.1. [Analytic thinking](#analytic-thinking)
-			- &nbsp;1.5.3.2. [Design thinking](#design-thinking)
-			- &nbsp;1.5.3.3. [Systems thinking](#systems-thinking)
-				- &nbsp;1.5.3.3.1. [Iceberg model](#iceberg-model)
-- &nbsp;2. [Sources](#sources)
-	- &nbsp;2.1. [Cited](#cited)
-	- &nbsp;2.2. [References](#references)
-	- &nbsp;2.3. [Read](#read)
-	- &nbsp;2.4. [Unread](#unread)
+- &nbsp;2. [Strategic management](#strategic-management)
+	- &nbsp;2.1. [What generic strategies can companies pursue?](#what-generic-strategies-can-companies-pursue)
+	- &nbsp;2.2. [Strategic analysis](#strategic-analysis)
+		- &nbsp;2.2.1. [Inputs to strategic decision-making](#inputs-to-strategic-decision-making)
+		- &nbsp;2.2.2. [Trends with strategic significance](#trends-with-strategic-significance)
+	- &nbsp;2.3. [Strategic thinking](#strategic-thinking)
+		- &nbsp;2.3.1. [Analytic thinking](#analytic-thinking)
+		- &nbsp;2.3.2. [Design thinking](#design-thinking)
+		- &nbsp;2.3.3. [Systems thinking](#systems-thinking)
+			- &nbsp;2.3.3.1. [Iceberg model](#iceberg-model)
+- &nbsp;3. [Management consulting](#management-consulting)
+- &nbsp;4. [Sources](#sources)
+	- &nbsp;4.1. [Cited](#cited)
+	- &nbsp;4.2. [References](#references)
+	- &nbsp;4.3. [Read](#read)
+	- &nbsp;4.4. [Unread](#unread)
 </div>
 
 
@@ -43,21 +43,21 @@
 
 According to Jones and George (2015), management involves the following tasks, with upper-level managers more involved in _planning and organizing_ while lower-level managers are more involved with _leading and controlling:_
 
-- **Planning** AKA [strategy](#strategy)
+- **Planning** AKA [strategy](#strategic-management)
     - Setting goals
     - Choosing strategies
-    - Allocating **resources,** [see notes on finance & accounting](https://jtkovacs.github.io/refs/fin-acctg.html)
+    - Allocating **resources,** [see notes on finance & accounting](fin-acctg.html)
         - People and skills
         - Machinery and materials
         - Computers and IT
         - Patents, capital, and goodwill
 - **Organizing**
-    - Defining [organizational architecture](https://jtkovacs.github.io/refs/org-arch.html)
-    - Defining lines of reporting and other communication channels (related to [knowledge management\)](https://jtkovacs.github.io/refs/km.html)
-- [Leading](https://jtkovacs.github.io/refs/leadership.html) with "power, personality, influence, persuasion, and communication skills" that rally people around a vision
+    - Defining [organizational architecture](org-arch.html)
+    - Defining lines of reporting and other communication channels (related to [knowledge management\)](km.html)
+- [Leading](leadership.html) with "power, personality, influence, persuasion, and communication skills" that rally people around a vision
 - **Controlling** (monitoring and correcting) execution of strategies
-    - [Performance management & process improvement](https://jtkovacs.github.io/refs/performance-management.html)
-    - [Project management](https://jtkovacs.github.io/refs/project-management.html)
+    - [Performance management & process improvement](performance-management.html)
+    - [Project management](project-management.html)
 
 Another typology comes from Mintzenberg (cited in Jones and George, 2015), who identifies 10 roles that managers play:
 
@@ -97,19 +97,17 @@ Adam Smith and the division of labor
 
 
 
-## 1.4. What is management consulting?
-
-See Stewart, 2009.
 
 
 
 
 
-## 1.5. Strategy
 
-### 1.5.1. What generic strategies can companies pursue?
+# 2. Strategic management
 
-### 1.5.2. Strategic analysis
+## 2.1. What generic strategies can companies pursue?
+
+## 2.2. Strategic analysis
 
 Import from Google Drive: [notes on market research](https://docs.google.com/document/d/1o-Fsv0Zd7mquwI52-r9QGTldHCSM_KEQ73WQ2NY7Iy4/edit)
 
@@ -117,14 +115,14 @@ Import from Google Drive: [notes on market research](https://docs.google.com/doc
 - PESTEL
 - SWOT
 
-#### 1.5.2.1. Inputs to strategic decision-making
+### 2.2.1. Inputs to strategic decision-making
 
 - Business research
 - Market research
 - BI
 - Data science
 
-#### 1.5.2.2. Trends with strategic significance
+### 2.2.2. Trends with strategic significance
 
 - **Technology:** Communication, automation, Big Data
 - **Labor:**  Overwork, precariousness, disemployment, loss or violation of labor laws
@@ -195,17 +193,20 @@ Per Sharda et al. (2014, p. 7):
 
 
 
-### 1.5.3. Strategic thinking
+## 2.3. Strategic thinking
 
-#### 1.5.3.1. Analytic thinking
+### 2.3.1. Analytic thinking
 
 (vs synthetic, dialectic)
 
-#### 1.5.3.2. Design thinking
+### 2.3.2. Design thinking
 
-See [notes on design thinking](design.html#design-thinking)
+- See [notes on design thinking](design.html#design-thinking) and [notes on performance management](performance-management.html)
+- Per Norman (2013, p. 43), when it comes to improving products, services, processes, etc., design methods can be used for
+    - **incremental change,** when a designer focuses on how to better bridge the gulfs of execution and evaluation;
+    - **radical change,** when a designer uses root cause analysis to ask why the user is using the product
 
-#### 1.5.3.3. Systems thinking
+### 2.3.3. Systems thinking
 
 Per Vassallo (2017):
 
@@ -213,16 +214,33 @@ Systems thinking operates on systems; systems are parts that are interconnected,
 
 "The vocabulary of formal systems thinking is one of **causal loops, unintended consequences, emergence, and system dynamics.** Practicing systems theorists employ tools such as **systemigrams, archetypes, stock and flow diagrams, interpretive structural modeling, and systemic root cause analysis ... the Iceberg Model and ... leverage points.**
 
-##### 1.5.3.3.1. Iceberg model
+#### 2.3.3.1. Iceberg model
 
 Per Vassallo (2017): **Values** (our aspirations and vision) inform our **mental models,** which "give birth to" **systemic structures** ("how the components of the system are organized") that are visible as **patterns** of **events;** any one of these levels can be points of intervention.
 
 
 
 
-# 2. Sources
 
-## 2.1. Cited
+
+
+
+# 3. Management consulting
+
+See Stewart, 2009.
+
+
+
+
+
+
+
+
+
+
+# 4. Sources
+
+## 4.1. Cited
 
 Beneteau, E. (2017). Lecture for LIS 570. University of Washington.
 
@@ -232,13 +250,15 @@ Jones, G. R. & George, J. M. (2015). _Contemporary management (9th ed.)._ Colomb
 
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
 
+Norman, D. (2013). _The design of everyday things_ (revised and expanded edition). New York City, NY: Basic Books.
+
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 
 Vassallo, S. (2017, May 1). Design thinking needs to think bigger. Co.Design. Retrieved from [https://www.fastcodesign.com/90112320/design-thinking-needs-to-think-bigger](https://www.fastcodesign.com/90112320/design-thinking-needs-to-think-bigger)
 
 Wright, A. (2007). _Glut: Mastering information through the ages._ Ithaca, NY: Cornell University Press.
 
-## 2.2. References
+## 4.2. References
 
 - [http://www.nwlink.com/~donclark/contents.html:](http://www.nwlink.com/~donclark/contents.html) "your window to learning, training, leadership, design and all matters related to improving human performance"
 - [Mike Bradley & Tiff Zhang's startup generator](http://tiffzhang.com/startup/)
@@ -249,9 +269,9 @@ Wright, A. (2007). _Glut: Mastering information through the ages._ Ithaca, NY: C
 - [CBBP's "policy futures" research](http://www.cbpp.org/about/special-projects/policy-futures)
 - [SLU library guide to market research](http://libguides.slu.edu/c.php?g=185604&amp;p=1226028)
 
-## 2.3. Read
+## 4.3. Read
 
-## 2.4. Unread
+## 4.4. Unread
 
 - Stewart, M. (2009). _The management myth: Why the experts keep getting it wrong._ New York City, NY: W. W. Norton.
 - [Paul Graham's "Do things that don't scale"](http://paulgraham.com/ds.html)

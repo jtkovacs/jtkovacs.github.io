@@ -7,6 +7,8 @@
 - - **Academia vs. real-world learning:** Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
 - **Learning environments vs. instructional systems:** This distinction comes from Gagné: _"learning environments_ are constructivist educational spaces that provide the framework for self-discovery, whereas _instructional systems_ are behaviorist/cognitivist spaces that 'focus on telling ... learners what they need to know'" (Booth, 2011, p. 87).
 
+![](../illos/ideas-of-the-university.png)
+
 ### Types of classrooms
 
 Per Barkley and Major (2016):

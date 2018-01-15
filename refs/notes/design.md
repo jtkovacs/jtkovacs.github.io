@@ -70,38 +70,147 @@ Per Labarre (2018), it is:
 - Not risk-averse
 - For people and machines (cyberagents)
 
+Norman's fundamental principles of design (2013, p. 72):
+
+- **"Discoverability.** It is possible to determine what actions are possible and the current state of the device.
+- **"Feedback.** There is full and continuous information about the result of actions and the current state of the product or service. After an action has been executed, it is easy to determine the new state.
+- **"Conceptual model.** The design projects all the information needed to create a good conceptual model of the system, leading to understanding and a feeling of control. The conceptual model enhances both discoverability and evaluation of results.
+- **"Affordances.** The proper affordances exist to make the desired actions possible.
+- **"Signifiers.** Effective use of signifiers ensures discoverability and the feedback is well communicated and intelligible.
+- **"Mappings.** The relationship between controls and their actions follows the principles of good mapping, enhanced as much as possible through spatial layout and temporal contiguity.
+- **"Constraints.** Providing physical, logical, semantic, and cultural constraints guides action and eases interpretation."
+
+
+
 ### Human-centered design
 
-Per Norman, a good design is a design that addresses the two Gulfs --- of Execution, via feedforward information from the system, and of Evaluation, via feedback. He calls this **human-centered design** --- "an approach that puts human needs, capabilities, and behavior first" (Norman, 2013, p. 8). It entails:
+Per Norman, a good design is **human-centered design** --- "an approach that puts human needs, capabilities, and behavior first" (Norman, 2013, p. 8). It entails **"starting with a good understanding of people** and of the needs that the design is intended to meet". "This understanding comes about primarily through **observation,** for people themselves are often unaware of their true needs, even unaware of the difficulties they are encountering"; it also comes in the form of principles from psychology and HCI. Finally, the approach involves **iteration** --- "rapid tests of ideas ... after each test modifying the approach and the problem definition".
 
-- "starting with a good understanding of people" (general HCI principles) "and of the needs that the design is intended to meet" (user research)
-- "This understanding comes about primarily through observation, for people themselves are often unaware of their true needs, even unaware of the difficulties they are encountering"
-- Finally, the approach includes "rapid tests of ideas ... after each test modifying the approach and the problem definition"
+#### Model of cognitive processing
 
-Basic terms:
+Norman's (2013) conceptual model of the brain involves three levels of processing, with emotion and cognition (conscious and subconscious) tightly interrelated. This model is presented at-length in his book _Emotional design._ Designers should consider how their product, service, process, etc. impacts each level of processing:
 
-- **Affordances:**
-- **Signifiers:**
-- **Mappings:**
-- **Conceptual models:**
-- **Constraints:**
-- **System image:**
+##### Visceral level
+
+**"Visceral** responses are fast and completely subconscious. They are sensitive only to the current state of things" (p. 51; see [notes on trauma\).](health.html#what-is-trauma) Emotions at this level are _reactions_ of **calmness and anxiety** (p. 55).
+
+##### Behavioral level
+
+"The **behavioural** level is the home of learned skills, triggered by situations that match the appropriate patterns. Actions and analysis at this level are largely subconscious. Even though we are usually aware of our actions, we are often unaware of the details ... all we have to do is think of the goal and the behavioral level handles all" (p. 51). Emotions at this level are pattern-based or intentional _expectations_ of **hope and fear,** as well as outcomes-related emotions of **relief or despair** (p. 55).
+
+##### Reflective level
+
+"The **reflective** level is the home of conscious cognition ... where deep understanding develops, where reasoning and conscious decision-making take place ... Reflection is cognitive, deep, and slow. It often occurs after the events have happened ... [e.g.] adding causal elements to experienced events\" (p. 53; see [notes on learning](learning.html) and [notes on mindfulness\).](health.html#what-is-mindfulness) Emotions at this level are _judgements_ of **satisfaction, pride, blame, anger, guilt, etc.** (p. 55).
+
+
+
+#### Terminology for interaction
+
+- **Affordance:** "a relationship between the properties of an object and the capabilities of the agent that determines just how the object could possibly be used" (Norman, 2013, p. 11)
+- **Signifier:** "can be words, a graphical illustration, or just a device whose perceived affordances are unambiguous"; a signifier makes the object's affordances known to the agent (Norman, 2013, p. 19)
+- **Mapping:** "a technical term, borrowed from mathematics, meaning the relationship between the elements of two sets of things ... an important concept in the design and layout of controls and displays" (Norman, 2013, p. 21)
+- **Feedback:** "communicating the results of an action" (Norman, 2013, p. 23)
+- **Conceptual model:** "an explanation, usually highly simplified, of how something works. It doesn't have to be complete or even accurate as long as it is useful ... they reside in the minds of the people who are using the product, so they are also 'mental models'... " (Norman, 2013, pp. 25-26)
+- **Constraint:** "" (Norman, 2013, p. )
+- **System image:** "the combined information [about a system] available to [its users]", from the system, its context, and other information sources; "The user's conceptual model comes from the system image" (Norman, 2013, p. 31)
+
+
+
+#### Model of (inter)action
+
+Norman's (2013) model of action (relevant to [productivity\)](productivity.html) is also a model of interaction with a system (relevant to design).
+
+Between a person (processor) and the world are two gulfs:
+
+- **Gulf of Execution:** looking at an unfamiliar system or object, trying to figure out its affordances and the actions that will exercise them
+- **Gulf of Evaluation:** "the amount of effort that a person must make to interpret the physical state of the device and to determine how well the expectations and intentions have been met" (p. 39)
+
+To cross the Gulf of Execution, a person must:
+
+- **Plan** the action (different alternatives)
+- **Specify** the action (what was chosen)
+- **Perform** the action
+
+To cross the Gulf of Evaluation, a person must:
+
+- **Perceive** the system state
+- **Interpret** the perception
+- **Compare** the interpretation with the goal, perhaps leading to formation of a new goal
+
+In this model, the agent may begin by forming a goal ("goal-driven behavior") or by reacting to the world ("data-" or "event-driven behavior"; pp. 42-43). Regardless, the agent is empowered to act by a robust, suggestive conceptual model, such as might come from [systems thinking,](management.html#systems-thinking) and by depersonalizing the situation (as promoted by positive psychology) rather than blaming themselves (p. 37). This empowerment contrasts with a state of "learned" or "taught helpnessness" (p. 62).
+
+
+
+#### Full model
 
 ![](../illos/Norman-HCD-model.png)
 
 
-#### Gulf of Execution
-
-#### Gulf of Evaluation
-
-- "That's the point: even experts make errors. So we must design ... on the assumption that people will make errors." (Norman, 2013, p. 8)
-- "Actually, [error-handling] is where the most satisfaction can arises [for the user]" (Norman, 2013, p. 9)
 
 
+#### Design implications
+
+From processing model:
+
+| Level | Implication |
+| --- | ----- |
+| VISCERAL | attend to "immediate perception ... [because] style matters: appearances, whether sound or sight, touch or smell" (p. 51) |
+| BEHAVIOURAL | train/guide behavior by establishing expectations and providing feedback (p. 52) |
+| REFLECTIVE | (this is the realm of interacting with tools in an artful or craftwork way; it has been neglected by designers pursuing user friendliness, according to Douglas Engelbart (in Levy, 2016, pp. 5-6) |
+
+- p. 59, people tell stories == conceptual models
+- p. 64, principles from positive psychology:
+    - "Do not blame people when they fail to use your product properly.
+    - "Take people's difficulties as signifiers of where the product can be improved.
+    - "Eliminate all error messages from electronic or computer systems. Instead, provide help and guidance.
+    - "Make it possble to correct problems directly from help and guidance messages. Allow people to continue with their task ... Never make people start over.
+    - "Assume that what people have done is partially correct ...
+    - "Think positively, for yourself and for the people you interact with."
+
+From interaction model,
+
+- "Anyone using a product should always be able to determine the answers" to these questions (p. 71):
+    - "What do I want to accomplish?
+    - "What are the alternative action sequences?
+    - "What action can I do now?
+    - "How do I do it?
+    - "What happened?
+    - "What does it mean?
+    - "Is this okay?
+    - "Have I accomplished my goal?"
+- "We bridge the Gulf of Execution through the use of signifiers, constraints, mappings, and a conceptual model. We bridge the Gulf of Evaluation through the use of feedback and a conceptual model" (p. 40)
+    - Regarding **feedforward:** "A relationship between a control and its results is easiest to learn wherever there is an understandable mapping between the controls, the actions, and the intended results. **Natural mapping,** by which I mean taking advantage of spacial analogies, leads to udnerstanding ... A device is easiest to use when the set of possible actions is visible, when the controls and displays exploit natural mappings" (pp. 22-23)
+    - Regarding **feedback:**
+        - "That's the point: even experts make errors. So we must design ... on the assumption that people will make errors ... Actually, [error-handling] is where the most satisfaction can arises [for the user, if handled properly]" (Norman, 2013, pp. 8-9).
+        - "Poor feedback can be worse than no feedback at all, because it is distracting, uninformative, and in many cases irritating and anxiety-provoking" (p. 24)
+        - Feedback should be (pp. 23-25, 60):
+            - immediate, < .1 sec
+            - informative (differentiated)
+            - not too little
+            - not too much ("Feedback is essential, but not when it gets in the way of other things including a calm and relaxing environment"
+            - prioritized
+            - underpredict duration of processing/waiting time
 
 
 
 ## What is bad design?
+
+At least two kinds:
+
+- Bad intentions
+- Bad execution
+    - Failure to learn
+
+### Causes of poor design
+
+Per Norman (2013, pp. 6 & 8):
+
+- current technological limitations
+- self-imposed restrictions (he calls "cost" one of these, I think that's debatable)
+- lack of understanding of HCI, because "Engineers are trained to think logically"
+- technology changes faster than design, so design must be introduced to or rediscovered by each new field
+
+### Dark patterns
 
 These are "dark patterns", coined and classified by Harry Brignall (n.d.):
 
@@ -117,23 +226,13 @@ These are "dark patterns", coined and classified by Harry Brignall (n.d.):
 - **Sneak into Basket:** You attempt to purchase something, but somewhere in the purchasing journey the site sneaks an additional item into your basket, often through the use of an opt-out radio button or checkbox on a prior page.
 - **Trick Questions:** You respond to a question, which, when glanced upon quickly appears to ask one thing, but if read carefully, asks another thing entirely.
 
-### Promoting addiction
+#### Promoting addiction
 
 - [https://journal.thriveglobal.com/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3](https://journal.thriveglobal.com/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3)
 
-### Neglecting or violating privacy
+#### Neglecting or violating privacy
 
 - [https://www.fastcodesign.com/3067094/our-apathy-toward-privacy-will-destroy-us-designers-can-help](https://www.fastcodesign.com/3067094/our-apathy-toward-privacy-will-destroy-us-designers-can-help)
-
-## Causes of poor design
-
-Per Norman (2013, pp. 6 & 8):
-
-- current technological limitations
-- self-imposed restrictions
-- cost
-- lack of understanding of HCI, because "Engineers are trained to think logically"
-- technology changes faster than design; design must be rediscovered by each field
 
 
 
@@ -245,6 +344,8 @@ Brown, T. & Wyatt, J. (2010). Design thinking for social innovation. _Stanford S
 Friedman, B. & Hendry, D. G. (2012). The _Envisioning Cards:_ A toolkit for catalyzing humanistic and technical imaginations. In E. H. Chi & K. Höök (Eds.), _Proceedings of the 30th Annual SIGCHI Conference on Human Factors in Computing Systems (CHI ’12)_ (pp. 1145-1148). New York, NY: ACM Press.
 
 Labarre, S. (2018, January 3). 10 new principles of good design. Co.Design. Retrieved from [https://www.fastcodesign.com/90154519/10-new-principles-of-good-design](https://www.fastcodesign.com/90154519/10-new-principles-of-good-design)
+
+Levy, D. (2016). _Mindful tech: How to bring balance to our digital lives._ New Haven, CT: Yale University Press.
 
 Norman, D. (2013). _The design of everyday things_ (revised and expanded edition). New York City, NY: Basic Books.
 

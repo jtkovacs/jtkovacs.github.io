@@ -15,21 +15,21 @@
 
 According to Jones and George (2015), management involves the following tasks, with upper-level managers more involved in _planning and organizing_ while lower-level managers are more involved with _leading and controlling:_
 
-- **Planning** AKA [strategy](#strategy)
+- **Planning** AKA [strategy](#strategic-management)
     - Setting goals
     - Choosing strategies
-    - Allocating **resources,** [see notes on finance & accounting](https://jtkovacs.github.io/refs/fin-acctg.html)
+    - Allocating **resources,** [see notes on finance & accounting](fin-acctg.html)
         - People and skills
         - Machinery and materials
         - Computers and IT
         - Patents, capital, and goodwill
 - **Organizing**
-    - Defining [organizational architecture](https://jtkovacs.github.io/refs/org-arch.html)
-    - Defining lines of reporting and other communication channels (related to [knowledge management\)](https://jtkovacs.github.io/refs/km.html)
-- [Leading](https://jtkovacs.github.io/refs/leadership.html) with "power, personality, influence, persuasion, and communication skills" that rally people around a vision
+    - Defining [organizational architecture](org-arch.html)
+    - Defining lines of reporting and other communication channels (related to [knowledge management\)](km.html)
+- [Leading](leadership.html) with "power, personality, influence, persuasion, and communication skills" that rally people around a vision
 - **Controlling** (monitoring and correcting) execution of strategies
-    - [Performance management & process improvement](https://jtkovacs.github.io/refs/performance-management.html)
-    - [Project management](https://jtkovacs.github.io/refs/project-management.html)
+    - [Performance management & process improvement](performance-management.html)
+    - [Project management](project-management.html)
 
 Another typology comes from Mintzenberg (cited in Jones and George, 2015), who identifies 10 roles that managers play:
 
@@ -69,19 +69,17 @@ Adam Smith and the division of labor
 
 
 
-## What is management consulting?
-
-See Stewart, 2009.
 
 
 
 
 
-## Strategy
 
-### What generic strategies can companies pursue?
+# Strategic management
 
-### Strategic analysis
+## What generic strategies can companies pursue?
+
+## Strategic analysis
 
 Import from Google Drive: [notes on market research](https://docs.google.com/document/d/1o-Fsv0Zd7mquwI52-r9QGTldHCSM_KEQ73WQ2NY7Iy4/edit)
 
@@ -89,14 +87,14 @@ Import from Google Drive: [notes on market research](https://docs.google.com/doc
 - PESTEL
 - SWOT
 
-#### Inputs to strategic decision-making
+### Inputs to strategic decision-making
 
 - Business research
 - Market research
 - BI
 - Data science
 
-#### Trends with strategic significance
+### Trends with strategic significance
 
 - **Technology:** Communication, automation, Big Data
 - **Labor:**  Overwork, precariousness, disemployment, loss or violation of labor laws
@@ -167,17 +165,20 @@ Per Sharda et al. (2014, p. 7):
 
 
 
-### Strategic thinking
+## Strategic thinking
 
-#### Analytic thinking
+### Analytic thinking
 
 (vs synthetic, dialectic)
 
-#### Design thinking
+### Design thinking
 
-See [notes on design thinking](design.html#design-thinking)
+- See [notes on design thinking](design.html#design-thinking) and [notes on performance management](performance-management.html)
+- Per Norman (2013, p. 43), when it comes to improving products, services, processes, etc., design methods can be used for
+    - **incremental change,** when a designer focuses on how to better bridge the gulfs of execution and evaluation;
+    - **radical change,** when a designer uses root cause analysis to ask why the user is using the product
 
-#### Systems thinking
+### Systems thinking
 
 Per Vassallo (2017):
 
@@ -185,9 +186,26 @@ Systems thinking operates on systems; systems are parts that are interconnected,
 
 "The vocabulary of formal systems thinking is one of **causal loops, unintended consequences, emergence, and system dynamics.** Practicing systems theorists employ tools such as **systemigrams, archetypes, stock and flow diagrams, interpretive structural modeling, and systemic root cause analysis ... the Iceberg Model and ... leverage points.**
 
-##### Iceberg model
+#### Iceberg model
 
 Per Vassallo (2017): **Values** (our aspirations and vision) inform our **mental models,** which "give birth to" **systemic structures** ("how the components of the system are organized") that are visible as **patterns** of **events;** any one of these levels can be points of intervention.
+
+
+
+
+
+
+
+
+# Management consulting
+
+See Stewart, 2009.
+
+
+
+
+
+
 
 
 
@@ -203,6 +221,8 @@ Brown, T., & Wyatt, J. (2010). Design thinking for social innovation. _Developme
 Jones, G. R. & George, J. M. (2015). _Contemporary management (9th ed.)._ Colombus, OH: McGraw-Hill Education.
 
 Keller, J. M. (1983). Motivational design of instruction. In C. M. Reigeluth (Ed.), *Instructional-design theories and models: An overview of their current status.* Hillsdale, NJ: Lawrence Erlbaum Associates.
+
+Norman, D. (2013). _The design of everyday things_ (revised and expanded edition). New York City, NY: Basic Books.
 
 Sharda, R., Delen, D., & Turban, E. (2014). _Business intelligence: A managerial perspective on analytics_ (3rd ed.). New York City, NY: Pearson.
 

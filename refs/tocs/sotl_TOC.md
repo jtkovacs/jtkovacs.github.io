@@ -1,4 +1,4 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 9866 words | updated 12/25/2017</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> sotl | just under 9867 words | updated 01/15/2018</p><div class="TOC">- &nbsp;1. [What is instruction?](#what-is-instruction)
 	- &nbsp;1.1. [How does instruction vary by context?](#how-does-instruction-vary-by-context)
 		- &nbsp;1.1.1. [Types of classrooms](#types-of-classrooms)
 	- &nbsp;1.2. [What competencies should instructors have?](#what-competencies-should-instructors-have)
@@ -111,6 +111,8 @@
 - **Education vs. training:** Booth (2014, p. 51) notes that some people distinguish between education and training on the basis of transfer (which education aims to promote, but training does not).
 - - **Academia vs. real-world learning:** Via Bransford et al. (2014), academic work is typically more solitary and cognitive than other contexts, although collaboration and use of tools may be increasingly present in some disciplines.
 - **Learning environments vs. instructional systems:** This distinction comes from Gagné: _"learning environments_ are constructivist educational spaces that provide the framework for self-discovery, whereas _instructional systems_ are behaviorist/cognitivist spaces that 'focus on telling ... learners what they need to know'" (Booth, 2011, p. 87).
+
+![](../illos/ideas-of-the-university.png)
 
 ### 1.1.1. Types of classrooms
 

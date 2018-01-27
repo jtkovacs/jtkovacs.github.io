@@ -269,6 +269,12 @@ Keller (1983) credits Gordon (1961) for developing the concepts of divergent and
 
 ## Design lifecycles
 
+"The design thinking process is best thought of as a system of overlapping spaces rather than a sequence of orderly steps. There are three spaces to keep in mind: inspiration, ideation, and implementation. Think of
+
+- **inspiration** as the problem or opportunity that motivates the search for solutions;
+- **ideation** as the process of generating, developing, and testing ideas; and
+- **implementation** as the path that leads from the project stage into people’s lives" (Brown and Wyatt, 2010, p. 33)
+
 Per Jaime Snyder (2018) at University of Washington:
 
 1. Ideation
@@ -283,22 +289,125 @@ Per Birsel (2015):
 3. Reconstruction
 4. Expression (implementation)
 
-"The design thinking process is best thought of as a system of overlapping spaces rather than a sequence of orderly steps. There are three spaces to keep in mind: inspiration, ideation, and implementation. Think of **inspiration** as the problem or opportunity that motivates the search for solutions; **ideation** as the process of generating, developing, and testing ideas; and **implementation** as the path that leads from the project stage into people’s lives."  (Brown and Wyatt, 2010, p. 33)
+### Contextual design process
+
+Per Beyer & Holtzblatt (1999):
+
+| Name | Action | Purpose |
+| --- | --- | --- |
+| Contextual Inquiry | Talk to specific customers while they work | Reliable knowledge about what customers do and what they care about |
+| Work Modeling  | Interpret the data in a cross-functional team | Create a shared perspective on the data |
+| Consolidation | Consolidate data across multiple customers | Create a single statement of work practice for your customer population |
+| Work Redesign | Invent solutions grounded in user work practice | Imagine and develop better ways to work |
+| User Environment Design | Structure the system to support this new work practice | Represent the system for planning, marketing, UI design, and specification |
+| Mockup & Testing | Iteration with customer through paper mockups | Early verification of design before any ideas are committed to code |
+| Implementation Design | Design the implementation object model or code structure | Define implementation architecture ensuring support of work structure |
+
+| Design Scenario | Recommended Application of CD |
+| --- | --- |
+| FAST FEEDBACK: You're in field test. Your manager wants to know, "What are the 10 most important problems to fix before we ship?" Or you have a product in the field. You are asked, "What are the key usability problems in this part of the interface?" | Perform contextual inquiries with four to eight users at a minimum of four field test sites. Conduct interpretation sessions, capturing notes but no models. Create an affinity diagram to view the issues and write a report. |
+| NEXT VERSION: You're working on the next version of your product. You know you want to support a certain task better, or extend it to support a new task. | Interview 8 to 12 users playing two or three roles in all at four to six sites. Take notes during your interpretation sessions, as well as sequence, artifact, and physical models. Consolidate the sequence models to see the structure of the task. If they are interesting, consolidate the artifact models to see strategies and intents. Create a low-level vision and storyboard, showing details of the users' interaction with the system. Design the UI and test it with paper prototypes. |
+| NEW PRODUCT: You're designing a new product for a market. | Follow the whole process, including the affinity diagram and all models. Ifyou lack time, skip building a User Environment Design and go straight to UI design and paper prototypes. |
+| NEW MARKET: You're defining a product strategy for a market you've never addressed. | Follow the whole process using a vision. Conduct 15 to 20 interviews, covering as many roles as you can---go for breadth, not depth, of understanding. End with a vision defining various product you _might_ deliver. Analyze the vision to decide which products to pursue, and conduct another round of in-depth interviews to design them. |
+
+
+#### Contextual inquiry
+
+**Process,** per Beyer & Holtzblatt (1997):
+
+1. **Conventional interview**
+    - Introduce self & purpose
+    - Confidentiality & recording
+    - Get an overview of the job: "This is summary data, not contextual data, so don’t pursue am issues; instead, watch to see if they come up in the body of the interview and pursue them then, when they are in context."
+2. **Transition:** Explain next stage
+3. **Contextual interview:** Observe and ask clarifying questions
+4. **Wrap-up:** "Skim back over your notes and summarize what you learned, trying not to repeat verbatim what happened, but saying what is important about the work, to her and to the organization. This is the customer’s last chance to correct and elaborate on your understanding, and she usually will."
+
+**Principles,** per Beyer & Holtzblatt (1997):
+
+- Pursue an apprentice/master dynamic (designer as apprentice); avoid interviewer/interviewee, expert/novice, and guest/host dynamics
+- _Go where the work is to get the best data:_ "Staying in context enables us to gather ongoing experience rather than summary experience, and concrete data rather than summary data"
+    - _When you're watching the work happen, learning is easy_
+    - _Seeing the work reveals what matters_
+    - _Seeing the work reveals details_
+    - _Seeing the work reveals structure_
+    - _Every current activity recalls past instances_
+- Adopt an attitude of partnership; respect the customer's ownership of their work
+- Make fact-based interpretations of the data
+    - Sharing in-process interpretations with the customer won't bias the data; customers will reject or fine-tune inaccurate interpretations
+    - _If the interpretation is close, the customer will nearly always respond immediately. A pause for thought means that they are trying to make it fit their experience and cannot._
+    - _Customers say 'yes' by twinkling their eyes at you as they realize your words match their experience or by elaborating on what you said—or by saying 'yes' flatly, as if the whole point was obvious._
+- _Taking a focus is unavoidable, everyone has an entering focus, a whole life history defining what they notice and what they don't ... Having a focus means that the interviewer sees more ... _
+    - Pay attention to surprises and contradictions
+    - Pay attention to feelings of non-surprise and try to dig deeper
+    - Admit your ignorance and probe for details when you hear something you don't know about
+
+#### Work modeling
+
+See [notes on modeling](modeling.html) for notation and examples; also see [notes on documentation;](documentation.html) [performance management\/process improvement;](performance-management.html) and [information systems project management.](project-management.html#analyzing-designing-specifying-systems)
+
+Per Beyer & Holtzblatt (1999, p. 35), "Five different models provide five perspectives on how work is done:
+
+1. the _flow model_ shows communication and coordination,
+2. the _cultural model_ shows culture and policy,
+3. the _sequence model_ shows the detailed steps performed to accomplish a task,
+4. the _physical model_ shows the physical environment as it supports the work, and
+5. the _artifact model_ shows how artifacts are used and structured in doing the work".
+
+(For small projects, sequence and artifact models may be sufficient.)
+
+#### Consolidation
+
+"Together, the affinity diagram and consolidated work models produce a single picture of the customer population a design will address. They give the team a focus in the design conversation, showing how the work functions as a whole rather than breaking it up in lists. They show what matters in the work and guide the structuring of a coherent response, including system focus and features, business actions, and delivery mechanisms" (Beyer & Holtzblatt, 1999, p. 36):
+
+- "The _affinity diagram_ maps issues and insights across all customers into a wall-sized, hierarchical diagram to reveal the scope of the problem.
+- _Consolidated work models_ bring together each different type of work model separately to reveal common strategies and intents while retaining and organizing individual differences."
+
+#### Work redesign
+
+"The redesigned work practice [NB: not the redesigned _technology;_ the focus is still on the customer] is portrayed in a _vision,_ a story of how customers will do their work in the new world we invent. A vision includes the system, its delivery, and support structures to make the new work practice successful. The team develops the details of the vision in _storyboards,_ 'freeze-frame' sketches showing scenarios of how people will work with the new system ... when you make your _use cases,_ use your storyboards as a guide ... " (Beyer & Holtzblatt, 1999, p. 39).
+
+#### User environment design
+
+Diagrams in UED are meant to express the function of a system, abstracted away from its interface: "[show] every part of the system, how it supports the user's work, exactly what function is available in that part, and how the user gets to and from other parts of the system" (Beyer & Holtzblatt, 1999, p. 40).
+
+#### Mockup & testing
+
+Paper prototyping of an interface ---- "using Post-it notes to represent windows, dialog boxes, buttons, and menus" (Beyer & Holtzblatt, 1999, p. 40).
+
+
+
 
 ## Design subprocesses
 
 (this list per Friedman & Hendry, 2012)
 
-### Co-design
 
-### Heuristic evaluation
-
-### Critique
 
 ### User research
 
-(AKA inquiry)
+See qualitative research methods
 
+- Interviews
+- Participant-observation
+- Focus groups
+- Critical incident technique
+- Rhetorical analysis
+- Discourse analysis
+
+
+
+### Co-design
+
+
+
+### Usability testing
+
+#### Heuristic evaluation
+
+
+
+### Critique
 
 
 
@@ -334,6 +443,10 @@ Friedman & Hendry (2012):
 # Sources
 
 ## Cited
+
+Beyer, H., & Holtzblatt, K. (1997). Principles of contextual inquiry. In _Contextual design: Defining customer-centered systems._ Amsterdam, Netherlands: Elsevier.
+
+Beyer, H., & Holtzblatt, K. (1999). Contextual design. _Interactions, 6_(1), 32-42.
 
 Birsel, A. (2015). _Design the life you love._
 

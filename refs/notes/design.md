@@ -28,20 +28,6 @@ Per Norman (2013, p. 5), emphasizes "emotional impact".
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Design philosophy
-
 ## What is good design?
 
 Per Rams (n.d.; an industrial designer), good design:
@@ -244,30 +230,12 @@ These are "dark patterns", coined and classified by Harry Brignall (n.d.):
 
 
 
-# Design thinking
-
-Design thinking is for generating ideas. It draws on user research/contextual inquiry; it contributes to [strategy](https://jtkovacs.github.io/refs/management.html#strategy) and [performance management](https://jtkovacs.github.io/refs/performance-management.html) as well as product and service design. Vassallo (2017b) urges the incorporation of [systems thinking](management.html#systems-thinking) into design thinking, to cope with global complexity.
-
-"Design thinking incorporates constituent or consumer insights in depth and rapid prototyping, all aimed at getting beyond the assumptions that block effective solutions. Design thinking — **inherently optimistic, constructive, and experiential** — addresses the needs of the people who will consume a product or service and the infrastructure that enables it. Businesses are embracing design thinking because it helps them be more innovative, better differentiate their brands, and bring their products and services to market faster. Nonprofits are beginning to use design thinking as well to develop better solutions to social problems. Design thinking crosses the traditional boundaries between public, for-profit, and nonprofit sectors. By working closely with the clients and consumers, design thinking allows high-impact solutions to bubble up from below rather than being imposed from the top" (Brown and Wyatt, 2010, p. 32).
-
-
-## Convergence & divergence
-
-Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics".
-
-## Empathy
-
-"'Empathy' was Ideo founder David Kelley’s shorthand for in-the-weeds ethnographic research. And, to be fair, that’s what some design thinkers still have in mind. But as design thinking has grown in popularity, some of its core tenets have been watered down or misapplied. Perhaps as a result of overuse, when most designers talk about empathy, they don’t seem to me to be referring to fact-gathering at all, but something more like feeling-broadcasting. Empathy in design has gone from an outward-facing action to an inward-turned affect. I think it might be too late to protect the design-thinking denotation of the word from the layman’s definition. Regardless, I would urge us as a discipline to practice rigorous evidence-based compassion, rather than trying to feel people’s pain" (Vassallo, 2017a).
 
 
 
 
 
-
-
-# Design processes
-
-## Design lifecycles
+# Design processes and lifecycles
 
 "The design thinking process is best thought of as a system of overlapping spaces rather than a sequence of orderly steps. There are three spaces to keep in mind: inspiration, ideation, and implementation. Think of
 
@@ -289,7 +257,7 @@ Per Birsel (2015):
 3. Reconstruction
 4. Expression (implementation)
 
-### Contextual design process
+## Contextual design process
 
 Per Beyer & Holtzblatt (1999):
 
@@ -310,8 +278,7 @@ Per Beyer & Holtzblatt (1999):
 | NEW PRODUCT: You're designing a new product for a market. | Follow the whole process, including the affinity diagram and all models. Ifyou lack time, skip building a User Environment Design and go straight to UI design and paper prototypes. |
 | NEW MARKET: You're defining a product strategy for a market you've never addressed. | Follow the whole process using a vision. Conduct 15 to 20 interviews, covering as many roles as you can---go for breadth, not depth, of understanding. End with a vision defining various product you _might_ deliver. Analyze the vision to decide which products to pursue, and conduct another round of in-depth interviews to design them. |
 
-
-#### Contextual inquiry
+### Contextual inquiry
 
 **Process,** per Beyer & Holtzblatt (1997):
 
@@ -342,7 +309,7 @@ Per Beyer & Holtzblatt (1999):
     - Pay attention to feelings of non-surprise and try to dig deeper
     - Admit your ignorance and probe for details when you hear something you don't know about
 
-#### Work modeling
+### Work modeling
 
 See [notes on modeling](modeling.html) for notation and examples; also see [notes on documentation;](documentation.html) [performance management\/process improvement;](performance-management.html) and [information systems project management.](project-management.html#analyzing-designing-specifying-systems)
 
@@ -356,37 +323,37 @@ Per Beyer & Holtzblatt (1999, p. 35), "Five different models provide five perspe
 
 (For small projects, sequence and artifact models may be sufficient.)
 
-#### Consolidation
+### Consolidation
 
 "Together, the affinity diagram and consolidated work models produce a single picture of the customer population a design will address. They give the team a focus in the design conversation, showing how the work functions as a whole rather than breaking it up in lists. They show what matters in the work and guide the structuring of a coherent response, including system focus and features, business actions, and delivery mechanisms" (Beyer & Holtzblatt, 1999, p. 36):
 
 - "The _affinity diagram_ maps issues and insights across all customers into a wall-sized, hierarchical diagram to reveal the scope of the problem.
 - _Consolidated work models_ bring together each different type of work model separately to reveal common strategies and intents while retaining and organizing individual differences."
 
-#### Work redesign
+### Work redesign
 
 "The redesigned work practice [NB: not the redesigned _technology;_ the focus is still on the customer] is portrayed in a _vision,_ a story of how customers will do their work in the new world we invent. A vision includes the system, its delivery, and support structures to make the new work practice successful. The team develops the details of the vision in _storyboards,_ 'freeze-frame' sketches showing scenarios of how people will work with the new system ... when you make your _use cases,_ use your storyboards as a guide ... " (Beyer & Holtzblatt, 1999, p. 39).
 
-#### User environment design
+### User environment design
 
 Diagrams in UED are meant to express the function of a system, abstracted away from its interface: "[show] every part of the system, how it supports the user's work, exactly what function is available in that part, and how the user gets to and from other parts of the system" (Beyer & Holtzblatt, 1999, p. 40).
 
-#### Mockup & testing
+### Mockup & testing
 
 Paper prototyping of an interface ---- "using Post-it notes to represent windows, dialog boxes, buttons, and menus" (Beyer & Holtzblatt, 1999, p. 40).
 
 
 
 
-## Design subprocesses
+# Design subprocesses
 
 (this list per Friedman & Hendry, 2012)
 
 
 
-### User research
+## User research
 
-See qualitative research methods
+See qualitative research methods:
 
 - Interviews
 - Participant-observation
@@ -397,17 +364,98 @@ See qualitative research methods
 
 
 
-### Co-design
+
+
+## Requirements specification
+
+### Personas
+
+### Scenarios
 
 
 
-### Usability testing
 
-#### Heuristic evaluation
+## Design thinking
+
+Design thinking is for generating ideas. It draws on user research/contextual inquiry; it contributes to [strategy](https://jtkovacs.github.io/refs/management.html#strategy) and [performance management](https://jtkovacs.github.io/refs/performance-management.html) as well as product and service design. Vassallo (2017b) urges the incorporation of [systems thinking](management.html#systems-thinking) into design thinking, to cope with global complexity.
+
+"Design thinking incorporates constituent or consumer insights in depth and rapid prototyping, all aimed at getting beyond the assumptions that block effective solutions. Design thinking — **inherently optimistic, constructive, and experiential** — addresses the needs of the people who will consume a product or service and the infrastructure that enables it. Businesses are embracing design thinking because it helps them be more innovative, better differentiate their brands, and bring their products and services to market faster. Nonprofits are beginning to use design thinking as well to develop better solutions to social problems. Design thinking crosses the traditional boundaries between public, for-profit, and nonprofit sectors. By working closely with the clients and consumers, design thinking allows high-impact solutions to bubble up from below rather than being imposed from the top" (Brown and Wyatt, 2010, p. 32).
+
+
+### Convergence & divergence
+
+Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics".
+
+### Empathy
+
+"'Empathy' was Ideo founder David Kelley’s shorthand for in-the-weeds ethnographic research. And, to be fair, that’s what some design thinkers still have in mind. But as design thinking has grown in popularity, some of its core tenets have been watered down or misapplied. Perhaps as a result of overuse, when most designers talk about empathy, they don’t seem to me to be referring to fact-gathering at all, but something more like feeling-broadcasting. Empathy in design has gone from an outward-facing action to an inward-turned affect. I think it might be too late to protect the design-thinking denotation of the word from the layman’s definition. Regardless, I would urge us as a discipline to practice rigorous evidence-based compassion, rather than trying to feel people’s pain" (Vassallo, 2017a).
 
 
 
-### Critique
+
+## Prototyping
+
+
+
+
+
+## Co-design
+
+
+
+
+## Usability testing
+
+### Purpose of usability testing
+
+- General
+- Specific applications of usability testing
+
+#### How usability testing differs from beta testing
+
+#### How usability testing differs from research
+
+#### How usability testing differs from QA testing
+
+### How to conduct usability testing
+
+#### Create a testing plan
+
+##### Address reliability
+
+- sample size (=f(variability))
+
+##### Address validity
+
+- checklist
+- between/w/in subject designs
+
+##### Address ethics
+
+#### Choose tasks for testing
+
+#### Estimate task time and resources
+
+#### Sequence tasks
+
+#### Translate tasks into testing instructions (scenarios)
+
+#### Pilot test
+
+#### Testing methods
+
+vs. surveys, focus groups, interviews, etc. from [user research,](#user-research) where you don’t see users interacting with objects:
+
+- observing
+- - active intervention
+- heuristic evaluation?
+- contextual inquiry
+- co-discovery
+
+
+
+
+## Critique
 
 
 
@@ -418,7 +466,7 @@ See qualitative research methods
 
 # Design tools
 
-## Cards
+## Design cards
 
 Friedman & Hendry (2012):
 
@@ -444,6 +492,7 @@ Friedman & Hendry (2012):
 
 ## Cited
 
+
 Beyer, H., & Holtzblatt, K. (1997). Principles of contextual inquiry. In _Contextual design: Defining customer-centered systems._ Amsterdam, Netherlands: Elsevier.
 
 Beyer, H., & Holtzblatt, K. (1999). Contextual design. _Interactions, 6_(1), 32-42.
@@ -454,11 +503,19 @@ Brignall, H. (n.d.). Types of dark patterns. Retrieved from [https://darkpattern
 
 Brown, T. & Wyatt, J. (2010). Design thinking for social innovation. _Stanford Social Innovation Review._ Retrieved from [https://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.ssl.cf1.rackcdn.com/files/pdfs/news/2010_SSIR_DesignThinking.pdf](https://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.ssl.cf1.rackcdn.com/files/pdfs/news/2010_SSIR_DesignThinking.pdf)
 
+Carroll, J. M. (1999). Five reasons for scenario-based design.In _HICSS '99: Proceedings of the Thirty-Second Annual Hawaii International Conference on System Sciences,_ 3, 3051.
+
+Dumas, J. & Redish, J. (1999). _A practical guide to usability testing._ Bristol, UK: Intellect Ltd.
+
 Friedman, B. & Hendry, D. G. (2012). The _Envisioning Cards:_ A toolkit for catalyzing humanistic and technical imaginations. In E. H. Chi & K. Höök (Eds.), _Proceedings of the 30th Annual SIGCHI Conference on Human Factors in Computing Systems (CHI ’12)_ (pp. 1145-1148). New York, NY: ACM Press.
 
 Labarre, S. (2018, January 3). 10 new principles of good design. Co.Design. Retrieved from [https://www.fastcodesign.com/90154519/10-new-principles-of-good-design](https://www.fastcodesign.com/90154519/10-new-principles-of-good-design)
 
 Levy, D. (2016). _Mindful tech: How to bring balance to our digital lives._ New Haven, CT: Yale University Press.
+
+Nielsen, J. (1993). Usability testing. In _Usability engineering_ (pp. 165-206). San Francisco: Morgan Kaufmann.
+
+Nielsen, J. (1994). Heuristic evaluation. In J. Nielsen & R. L. Mack (eds.), _Usability inspection methods,_ (pp. 25 – 62). New York: John Wiley & Sons.
 
 Norman, D. (2013). _The design of everyday things_ (revised and expanded edition). New York City, NY: Basic Books.
 
@@ -476,6 +533,7 @@ Vassallo, S. (2017b, May 1). Design thinking needs to think bigger. Co.Design. R
 - [User Experience Questionnaire](http://www.ueq-online.org/)
 - [Usability.gov](https://www.usability.gov/)
 - [Simply Secure Knowledge Base](https://simplysecure.org/knowledge-base/) - Best practices for privacy, security, and transparency in design
+- [Design Kit - HCD Methods](http://www.designkit.org/methods)
 
 ## Read
 

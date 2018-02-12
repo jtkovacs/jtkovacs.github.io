@@ -1,50 +1,66 @@
-<p class="path"><a href="../pkb.html">pkb contents</a> \> design | just under 4326 words | updated 01/27/2018</p><div class="TOC">- &nbsp;1. [What is design?](#what-is-design)
+<p class="path"><a href="../pkb.html">pkb contents</a> \> design | just under 4539 words | updated 02/12/2018</p><div class="TOC">- &nbsp;1. [What is design?](#what-is-design)
 	- &nbsp;1.1. [Origins of design](#origins-of-design)
 	- &nbsp;1.2. [Subfields of design](#subfields-of-design)
 		- &nbsp;1.2.1. [Industrial design](#industrial-design)
 		- &nbsp;1.2.2. [Interaction design](#interaction-design)
 		- &nbsp;1.2.3. [Experience design](#experience-design)
-- &nbsp;2. [Design philosophy](#design-philosophy)
-	- &nbsp;2.1. [What is good design?](#what-is-good-design)
-		- &nbsp;2.1.1. [Human-centered design](#human-centered-design)
-			- &nbsp;2.1.1.1. [Model of cognitive processing](#model-of-cognitive-processing)
-				- &nbsp;2.1.1.1.1. [Visceral level](#visceral-level)
-				- &nbsp;2.1.1.1.2. [Behavioral level](#behavioral-level)
-				- &nbsp;2.1.1.1.3. [Reflective level](#reflective-level)
-			- &nbsp;2.1.1.2. [Terminology for interaction](#terminology-for-interaction)
-			- &nbsp;2.1.1.3. [Model of (inter)action](#model-of-interaction)
-			- &nbsp;2.1.1.4. [Full model](#full-model)
-			- &nbsp;2.1.1.5. [Design implications](#design-implications)
-	- &nbsp;2.2. [What is bad design?](#what-is-bad-design)
-		- &nbsp;2.2.1. [Causes of poor design](#causes-of-poor-design)
-		- &nbsp;2.2.2. [Dark patterns](#dark-patterns)
-			- &nbsp;2.2.2.1. [Promoting addiction](#promoting-addiction)
-			- &nbsp;2.2.2.2. [Neglecting or violating privacy](#neglecting-or-violating-privacy)
-- &nbsp;3. [Design thinking](#design-thinking)
-	- &nbsp;3.1. [Convergence & divergence](#convergence-divergence)
-	- &nbsp;3.2. [Empathy](#empathy)
-- &nbsp;4. [Design processes](#design-processes)
-	- &nbsp;4.1. [Design lifecycles](#design-lifecycles)
-		- &nbsp;4.1.1. [Contextual design process](#contextual-design-process)
-			- &nbsp;4.1.1.1. [Contextual inquiry](#contextual-inquiry)
-			- &nbsp;4.1.1.2. [Work modeling](#work-modeling)
-			- &nbsp;4.1.1.3. [Consolidation](#consolidation)
-			- &nbsp;4.1.1.4. [Work redesign](#work-redesign)
-			- &nbsp;4.1.1.5. [User environment design](#user-environment-design)
-			- &nbsp;4.1.1.6. [Mockup & testing](#mockup-testing)
-	- &nbsp;4.2. [Design subprocesses](#design-subprocesses)
-		- &nbsp;4.2.1. [User research](#user-research)
-		- &nbsp;4.2.2. [Co-design](#co-design)
-		- &nbsp;4.2.3. [Usability testing](#usability-testing)
-			- &nbsp;4.2.3.1. [Heuristic evaluation](#heuristic-evaluation)
-		- &nbsp;4.2.4. [Critique](#critique)
-- &nbsp;5. [Design tools](#design-tools)
-	- &nbsp;5.1. [Cards](#cards)
-- &nbsp;6. [Sources](#sources)
-	- &nbsp;6.1. [Cited](#cited)
-	- &nbsp;6.2. [References](#references)
-	- &nbsp;6.3. [Read](#read)
-	- &nbsp;6.4. [Unread](#unread)
+	- &nbsp;1.3. [What is good design?](#what-is-good-design)
+		- &nbsp;1.3.1. [Human-centered design](#human-centered-design)
+			- &nbsp;1.3.1.1. [Model of cognitive processing](#model-of-cognitive-processing)
+				- &nbsp;1.3.1.1.1. [Visceral level](#visceral-level)
+				- &nbsp;1.3.1.1.2. [Behavioral level](#behavioral-level)
+				- &nbsp;1.3.1.1.3. [Reflective level](#reflective-level)
+			- &nbsp;1.3.1.2. [Terminology for interaction](#terminology-for-interaction)
+			- &nbsp;1.3.1.3. [Model of (inter)action](#model-of-interaction)
+			- &nbsp;1.3.1.4. [Full model](#full-model)
+			- &nbsp;1.3.1.5. [Design implications](#design-implications)
+	- &nbsp;1.4. [What is bad design?](#what-is-bad-design)
+		- &nbsp;1.4.1. [Causes of poor design](#causes-of-poor-design)
+		- &nbsp;1.4.2. [Dark patterns](#dark-patterns)
+			- &nbsp;1.4.2.1. [Promoting addiction](#promoting-addiction)
+			- &nbsp;1.4.2.2. [Neglecting or violating privacy](#neglecting-or-violating-privacy)
+- &nbsp;2. [Design processes and lifecycles](#design-processes-and-lifecycles)
+	- &nbsp;2.1. [Contextual design process](#contextual-design-process)
+		- &nbsp;2.1.1. [Contextual inquiry](#contextual-inquiry)
+		- &nbsp;2.1.2. [Work modeling](#work-modeling)
+		- &nbsp;2.1.3. [Consolidation](#consolidation)
+		- &nbsp;2.1.4. [Work redesign](#work-redesign)
+		- &nbsp;2.1.5. [User environment design](#user-environment-design)
+		- &nbsp;2.1.6. [Mockup & testing](#mockup-testing)
+- &nbsp;3. [Design subprocesses](#design-subprocesses)
+	- &nbsp;3.1. [User research](#user-research)
+	- &nbsp;3.2. [Requirements specification](#requirements-specification)
+		- &nbsp;3.2.1. [Personas](#personas)
+		- &nbsp;3.2.2. [Scenarios](#scenarios)
+	- &nbsp;3.3. [Design thinking](#design-thinking)
+		- &nbsp;3.3.1. [Convergence & divergence](#convergence-divergence)
+		- &nbsp;3.3.2. [Empathy](#empathy)
+	- &nbsp;3.4. [Prototyping](#prototyping)
+	- &nbsp;3.5. [Co-design](#co-design)
+	- &nbsp;3.6. [Usability testing](#usability-testing)
+		- &nbsp;3.6.1. [Purpose of usability testing](#purpose-of-usability-testing)
+			- &nbsp;3.6.1.1. [How usability testing differs from beta testing](#how-usability-testing-differs-from-beta-testing)
+			- &nbsp;3.6.1.2. [How usability testing differs from research](#how-usability-testing-differs-from-research)
+			- &nbsp;3.6.1.3. [How usability testing differs from QA testing](#how-usability-testing-differs-from-qa-testing)
+		- &nbsp;3.6.2. [How to conduct usability testing](#how-to-conduct-usability-testing)
+			- &nbsp;3.6.2.1. [Create a testing plan](#create-a-testing-plan)
+				- &nbsp;3.6.2.1.1. [Address reliability](#address-reliability)
+				- &nbsp;3.6.2.1.2. [Address validity](#address-validity)
+				- &nbsp;3.6.2.1.3. [Address ethics](#address-ethics)
+			- &nbsp;3.6.2.2. [Choose tasks for testing](#choose-tasks-for-testing)
+			- &nbsp;3.6.2.3. [Estimate task time and resources](#estimate-task-time-and-resources)
+			- &nbsp;3.6.2.4. [Sequence tasks](#sequence-tasks)
+			- &nbsp;3.6.2.5. [Translate tasks into testing instructions (scenarios)](#translate-tasks-into-testing-instructions-scenarios)
+			- &nbsp;3.6.2.6. [Pilot test](#pilot-test)
+			- &nbsp;3.6.2.7. [Testing methods](#testing-methods)
+	- &nbsp;3.7. [Critique](#critique)
+- &nbsp;4. [Design tools](#design-tools)
+	- &nbsp;4.1. [Design cards](#design-cards)
+- &nbsp;5. [Sources](#sources)
+	- &nbsp;5.1. [Cited](#cited)
+	- &nbsp;5.2. [References](#references)
+	- &nbsp;5.3. [Read](#read)
+	- &nbsp;5.4. [Unread](#unread)
 </div>
 
 # 1. What is design?
@@ -76,21 +92,7 @@ Per Norman (2013, p. 5), emphasizes "emotional impact".
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# 2. Design philosophy
-
-## 2.1. What is good design?
+## 1.3. What is good design?
 
 Per Rams (n.d.; an industrial designer), good design:
 
@@ -130,29 +132,29 @@ Norman's fundamental principles of design (2013, p. 72):
 
 
 
-### 2.1.1. Human-centered design
+### 1.3.1. Human-centered design
 
 Per Norman, a good design is **human-centered design** --- "an approach that puts human needs, capabilities, and behavior first" (Norman, 2013, p. 8). It entails **"starting with a good understanding of people** and of the needs that the design is intended to meet". "This understanding comes about primarily through **observation,** for people themselves are often unaware of their true needs, even unaware of the difficulties they are encountering"; it also comes in the form of principles from psychology and HCI. Finally, the approach involves **iteration** --- "rapid tests of ideas ... after each test modifying the approach and the problem definition".
 
-#### 2.1.1.1. Model of cognitive processing
+#### 1.3.1.1. Model of cognitive processing
 
 Norman's (2013) conceptual model of the brain involves three levels of processing, with emotion and cognition (conscious and subconscious) tightly interrelated. This model is presented at-length in his book _Emotional design._ Designers should consider how their product, service, process, etc. impacts each level of processing:
 
-##### 2.1.1.1.1. Visceral level
+##### 1.3.1.1.1. Visceral level
 
 **"Visceral** responses are fast and completely subconscious. They are sensitive only to the current state of things" (p. 51; see [notes on trauma\).](health.html#what-is-trauma) Emotions at this level are _reactions_ of **calmness and anxiety** (p. 55).
 
-##### 2.1.1.1.2. Behavioral level
+##### 1.3.1.1.2. Behavioral level
 
 "The **behavioural** level is the home of learned skills, triggered by situations that match the appropriate patterns. Actions and analysis at this level are largely subconscious. Even though we are usually aware of our actions, we are often unaware of the details ... all we have to do is think of the goal and the behavioral level handles all" (p. 51). Emotions at this level are pattern-based or intentional _expectations_ of **hope and fear,** as well as outcomes-related emotions of **relief or despair** (p. 55).
 
-##### 2.1.1.1.3. Reflective level
+##### 1.3.1.1.3. Reflective level
 
 "The **reflective** level is the home of conscious cognition ... where deep understanding develops, where reasoning and conscious decision-making take place ... Reflection is cognitive, deep, and slow. It often occurs after the events have happened ... [e.g.] adding causal elements to experienced events\" (p. 53; see [notes on learning](learning.html) and [notes on mindfulness\).](health.html#what-is-mindfulness) Emotions at this level are _judgements_ of **satisfaction, pride, blame, anger, guilt, etc.** (p. 55).
 
 
 
-#### 2.1.1.2. Terminology for interaction
+#### 1.3.1.2. Terminology for interaction
 
 - **Affordance:** "a relationship between the properties of an object and the capabilities of the agent that determines just how the object could possibly be used" (Norman, 2013, p. 11)
 - **Signifier:** "can be words, a graphical illustration, or just a device whose perceived affordances are unambiguous"; a signifier makes the object's affordances known to the agent (Norman, 2013, p. 19)
@@ -164,7 +166,7 @@ Norman's (2013) conceptual model of the brain involves three levels of processin
 
 
 
-#### 2.1.1.3. Model of (inter)action
+#### 1.3.1.3. Model of (inter)action
 
 Norman's (2013) model of action (relevant to [productivity\)](productivity.html) is also a model of interaction with a system (relevant to design).
 
@@ -189,14 +191,14 @@ In this model, the agent may begin by forming a goal ("goal-driven behavior") or
 
 
 
-#### 2.1.1.4. Full model
+#### 1.3.1.4. Full model
 
 ![](../illos/Norman-HCD-model.png)
 
 
 
 
-#### 2.1.1.5. Design implications
+#### 1.3.1.5. Design implications
 
 From processing model:
 
@@ -241,7 +243,7 @@ From interaction model,
 
 
 
-## 2.2. What is bad design?
+## 1.4. What is bad design?
 
 At least two kinds:
 
@@ -249,7 +251,7 @@ At least two kinds:
 - Bad execution
     - Failure to learn
 
-### 2.2.1. Causes of poor design
+### 1.4.1. Causes of poor design
 
 Per Norman (2013, pp. 6 & 8):
 
@@ -258,7 +260,7 @@ Per Norman (2013, pp. 6 & 8):
 - lack of understanding of HCI, because "Engineers are trained to think logically"
 - technology changes faster than design, so design must be introduced to or rediscovered by each new field
 
-### 2.2.2. Dark patterns
+### 1.4.2. Dark patterns
 
 These are "dark patterns", coined and classified by Harry Brignall (n.d.):
 
@@ -274,11 +276,11 @@ These are "dark patterns", coined and classified by Harry Brignall (n.d.):
 - **Sneak into Basket:** You attempt to purchase something, but somewhere in the purchasing journey the site sneaks an additional item into your basket, often through the use of an opt-out radio button or checkbox on a prior page.
 - **Trick Questions:** You respond to a question, which, when glanced upon quickly appears to ask one thing, but if read carefully, asks another thing entirely.
 
-#### 2.2.2.1. Promoting addiction
+#### 1.4.2.1. Promoting addiction
 
 - [https://journal.thriveglobal.com/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3](https://journal.thriveglobal.com/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3)
 
-#### 2.2.2.2. Neglecting or violating privacy
+#### 1.4.2.2. Neglecting or violating privacy
 
 - [https://www.fastcodesign.com/3067094/our-apathy-toward-privacy-will-destroy-us-designers-can-help](https://www.fastcodesign.com/3067094/our-apathy-toward-privacy-will-destroy-us-designers-can-help)
 
@@ -292,30 +294,12 @@ These are "dark patterns", coined and classified by Harry Brignall (n.d.):
 
 
 
-# 3. Design thinking
-
-Design thinking is for generating ideas. It draws on user research/contextual inquiry; it contributes to [strategy](https://jtkovacs.github.io/refs/management.html#strategy) and [performance management](https://jtkovacs.github.io/refs/performance-management.html) as well as product and service design. Vassallo (2017b) urges the incorporation of [systems thinking](management.html#systems-thinking) into design thinking, to cope with global complexity.
-
-"Design thinking incorporates constituent or consumer insights in depth and rapid prototyping, all aimed at getting beyond the assumptions that block effective solutions. Design thinking — **inherently optimistic, constructive, and experiential** — addresses the needs of the people who will consume a product or service and the infrastructure that enables it. Businesses are embracing design thinking because it helps them be more innovative, better differentiate their brands, and bring their products and services to market faster. Nonprofits are beginning to use design thinking as well to develop better solutions to social problems. Design thinking crosses the traditional boundaries between public, for-profit, and nonprofit sectors. By working closely with the clients and consumers, design thinking allows high-impact solutions to bubble up from below rather than being imposed from the top" (Brown and Wyatt, 2010, p. 32).
-
-
-## 3.1. Convergence & divergence
-
-Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics".
-
-## 3.2. Empathy
-
-"'Empathy' was Ideo founder David Kelley’s shorthand for in-the-weeds ethnographic research. And, to be fair, that’s what some design thinkers still have in mind. But as design thinking has grown in popularity, some of its core tenets have been watered down or misapplied. Perhaps as a result of overuse, when most designers talk about empathy, they don’t seem to me to be referring to fact-gathering at all, but something more like feeling-broadcasting. Empathy in design has gone from an outward-facing action to an inward-turned affect. I think it might be too late to protect the design-thinking denotation of the word from the layman’s definition. Regardless, I would urge us as a discipline to practice rigorous evidence-based compassion, rather than trying to feel people’s pain" (Vassallo, 2017a).
 
 
 
 
 
-
-
-# 4. Design processes
-
-## 4.1. Design lifecycles
+# 2. Design processes and lifecycles
 
 "The design thinking process is best thought of as a system of overlapping spaces rather than a sequence of orderly steps. There are three spaces to keep in mind: inspiration, ideation, and implementation. Think of
 
@@ -337,7 +321,7 @@ Per Birsel (2015):
 3. Reconstruction
 4. Expression (implementation)
 
-### 4.1.1. Contextual design process
+## 2.1. Contextual design process
 
 Per Beyer & Holtzblatt (1999):
 
@@ -358,8 +342,7 @@ Per Beyer & Holtzblatt (1999):
 | NEW PRODUCT: You're designing a new product for a market. | Follow the whole process, including the affinity diagram and all models. Ifyou lack time, skip building a User Environment Design and go straight to UI design and paper prototypes. |
 | NEW MARKET: You're defining a product strategy for a market you've never addressed. | Follow the whole process using a vision. Conduct 15 to 20 interviews, covering as many roles as you can---go for breadth, not depth, of understanding. End with a vision defining various product you _might_ deliver. Analyze the vision to decide which products to pursue, and conduct another round of in-depth interviews to design them. |
 
-
-#### 4.1.1.1. Contextual inquiry
+### 2.1.1. Contextual inquiry
 
 **Process,** per Beyer & Holtzblatt (1997):
 
@@ -390,7 +373,7 @@ Per Beyer & Holtzblatt (1999):
     - Pay attention to feelings of non-surprise and try to dig deeper
     - Admit your ignorance and probe for details when you hear something you don't know about
 
-#### 4.1.1.2. Work modeling
+### 2.1.2. Work modeling
 
 See [notes on modeling](modeling.html) for notation and examples; also see [notes on documentation;](documentation.html) [performance management\/process improvement;](performance-management.html) and [information systems project management.](project-management.html#analyzing-designing-specifying-systems)
 
@@ -404,37 +387,37 @@ Per Beyer & Holtzblatt (1999, p. 35), "Five different models provide five perspe
 
 (For small projects, sequence and artifact models may be sufficient.)
 
-#### 4.1.1.3. Consolidation
+### 2.1.3. Consolidation
 
 "Together, the affinity diagram and consolidated work models produce a single picture of the customer population a design will address. They give the team a focus in the design conversation, showing how the work functions as a whole rather than breaking it up in lists. They show what matters in the work and guide the structuring of a coherent response, including system focus and features, business actions, and delivery mechanisms" (Beyer & Holtzblatt, 1999, p. 36):
 
 - "The _affinity diagram_ maps issues and insights across all customers into a wall-sized, hierarchical diagram to reveal the scope of the problem.
 - _Consolidated work models_ bring together each different type of work model separately to reveal common strategies and intents while retaining and organizing individual differences."
 
-#### 4.1.1.4. Work redesign
+### 2.1.4. Work redesign
 
 "The redesigned work practice [NB: not the redesigned _technology;_ the focus is still on the customer] is portrayed in a _vision,_ a story of how customers will do their work in the new world we invent. A vision includes the system, its delivery, and support structures to make the new work practice successful. The team develops the details of the vision in _storyboards,_ 'freeze-frame' sketches showing scenarios of how people will work with the new system ... when you make your _use cases,_ use your storyboards as a guide ... " (Beyer & Holtzblatt, 1999, p. 39).
 
-#### 4.1.1.5. User environment design
+### 2.1.5. User environment design
 
 Diagrams in UED are meant to express the function of a system, abstracted away from its interface: "[show] every part of the system, how it supports the user's work, exactly what function is available in that part, and how the user gets to and from other parts of the system" (Beyer & Holtzblatt, 1999, p. 40).
 
-#### 4.1.1.6. Mockup & testing
+### 2.1.6. Mockup & testing
 
 Paper prototyping of an interface ---- "using Post-it notes to represent windows, dialog boxes, buttons, and menus" (Beyer & Holtzblatt, 1999, p. 40).
 
 
 
 
-## 4.2. Design subprocesses
+# 3. Design subprocesses
 
 (this list per Friedman & Hendry, 2012)
 
 
 
-### 4.2.1. User research
+## 3.1. User research
 
-See qualitative research methods
+See qualitative research methods:
 
 - Interviews
 - Participant-observation
@@ -445,28 +428,109 @@ See qualitative research methods
 
 
 
-### 4.2.2. Co-design
 
 
+## 3.2. Requirements specification
 
-### 4.2.3. Usability testing
+### 3.2.1. Personas
 
-#### 4.2.3.1. Heuristic evaluation
-
-
-
-### 4.2.4. Critique
+### 3.2.2. Scenarios
 
 
 
 
+## 3.3. Design thinking
+
+Design thinking is for generating ideas. It draws on user research/contextual inquiry; it contributes to [strategy](https://jtkovacs.github.io/refs/management.html#strategy) and [performance management](https://jtkovacs.github.io/refs/performance-management.html) as well as product and service design. Vassallo (2017b) urges the incorporation of [systems thinking](management.html#systems-thinking) into design thinking, to cope with global complexity.
+
+"Design thinking incorporates constituent or consumer insights in depth and rapid prototyping, all aimed at getting beyond the assumptions that block effective solutions. Design thinking — **inherently optimistic, constructive, and experiential** — addresses the needs of the people who will consume a product or service and the infrastructure that enables it. Businesses are embracing design thinking because it helps them be more innovative, better differentiate their brands, and bring their products and services to market faster. Nonprofits are beginning to use design thinking as well to develop better solutions to social problems. Design thinking crosses the traditional boundaries between public, for-profit, and nonprofit sectors. By working closely with the clients and consumers, design thinking allows high-impact solutions to bubble up from below rather than being imposed from the top" (Brown and Wyatt, 2010, p. 32).
+
+
+### 3.3.1. Convergence & divergence
+
+Keller (1983) credits Gordon (1961) for developing the concepts of divergent and convergent thinking under the banner of "synectics".
+
+### 3.3.2. Empathy
+
+"'Empathy' was Ideo founder David Kelley’s shorthand for in-the-weeds ethnographic research. And, to be fair, that’s what some design thinkers still have in mind. But as design thinking has grown in popularity, some of its core tenets have been watered down or misapplied. Perhaps as a result of overuse, when most designers talk about empathy, they don’t seem to me to be referring to fact-gathering at all, but something more like feeling-broadcasting. Empathy in design has gone from an outward-facing action to an inward-turned affect. I think it might be too late to protect the design-thinking denotation of the word from the layman’s definition. Regardless, I would urge us as a discipline to practice rigorous evidence-based compassion, rather than trying to feel people’s pain" (Vassallo, 2017a).
 
 
 
 
-# 5. Design tools
+## 3.4. Prototyping
 
-## 5.1. Cards
+
+
+
+
+## 3.5. Co-design
+
+
+
+
+## 3.6. Usability testing
+
+### 3.6.1. Purpose of usability testing
+
+- General
+- Specific applications of usability testing
+
+#### 3.6.1.1. How usability testing differs from beta testing
+
+#### 3.6.1.2. How usability testing differs from research
+
+#### 3.6.1.3. How usability testing differs from QA testing
+
+### 3.6.2. How to conduct usability testing
+
+#### 3.6.2.1. Create a testing plan
+
+##### 3.6.2.1.1. Address reliability
+
+- sample size (=f(variability))
+
+##### 3.6.2.1.2. Address validity
+
+- checklist
+- between/w/in subject designs
+
+##### 3.6.2.1.3. Address ethics
+
+#### 3.6.2.2. Choose tasks for testing
+
+#### 3.6.2.3. Estimate task time and resources
+
+#### 3.6.2.4. Sequence tasks
+
+#### 3.6.2.5. Translate tasks into testing instructions (scenarios)
+
+#### 3.6.2.6. Pilot test
+
+#### 3.6.2.7. Testing methods
+
+vs. surveys, focus groups, interviews, etc. from [user research,](#user-research) where you don’t see users interacting with objects:
+
+- observing
+- - active intervention
+- heuristic evaluation?
+- contextual inquiry
+- co-discovery
+
+
+
+
+## 3.7. Critique
+
+
+
+
+
+
+
+
+# 4. Design tools
+
+## 4.1. Design cards
 
 Friedman & Hendry (2012):
 
@@ -488,9 +552,10 @@ Friedman & Hendry (2012):
 
 
 
-# 6. Sources
+# 5. Sources
 
-## 6.1. Cited
+## 5.1. Cited
+
 
 Beyer, H., & Holtzblatt, K. (1997). Principles of contextual inquiry. In _Contextual design: Defining customer-centered systems._ Amsterdam, Netherlands: Elsevier.
 
@@ -502,11 +567,19 @@ Brignall, H. (n.d.). Types of dark patterns. Retrieved from [https://darkpattern
 
 Brown, T. & Wyatt, J. (2010). Design thinking for social innovation. _Stanford Social Innovation Review._ Retrieved from [https://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.ssl.cf1.rackcdn.com/files/pdfs/news/2010_SSIR_DesignThinking.pdf](https://5a5f89b8e10a225a44ac-ccbed124c38c4f7a3066210c073e7d55.ssl.cf1.rackcdn.com/files/pdfs/news/2010_SSIR_DesignThinking.pdf)
 
+Carroll, J. M. (1999). Five reasons for scenario-based design.In _HICSS '99: Proceedings of the Thirty-Second Annual Hawaii International Conference on System Sciences,_ 3, 3051.
+
+Dumas, J. & Redish, J. (1999). _A practical guide to usability testing._ Bristol, UK: Intellect Ltd.
+
 Friedman, B. & Hendry, D. G. (2012). The _Envisioning Cards:_ A toolkit for catalyzing humanistic and technical imaginations. In E. H. Chi & K. Höök (Eds.), _Proceedings of the 30th Annual SIGCHI Conference on Human Factors in Computing Systems (CHI ’12)_ (pp. 1145-1148). New York, NY: ACM Press.
 
 Labarre, S. (2018, January 3). 10 new principles of good design. Co.Design. Retrieved from [https://www.fastcodesign.com/90154519/10-new-principles-of-good-design](https://www.fastcodesign.com/90154519/10-new-principles-of-good-design)
 
 Levy, D. (2016). _Mindful tech: How to bring balance to our digital lives._ New Haven, CT: Yale University Press.
+
+Nielsen, J. (1993). Usability testing. In _Usability engineering_ (pp. 165-206). San Francisco: Morgan Kaufmann.
+
+Nielsen, J. (1994). Heuristic evaluation. In J. Nielsen & R. L. Mack (eds.), _Usability inspection methods,_ (pp. 25 – 62). New York: John Wiley & Sons.
 
 Norman, D. (2013). _The design of everyday things_ (revised and expanded edition). New York City, NY: Basic Books.
 
@@ -518,16 +591,17 @@ Vassallo, S. (2017a, April 26). The case against empathy. Co.Design. Retrieved f
 
 Vassallo, S. (2017b, May 1). Design thinking needs to think bigger. Co.Design. Retrieved from [https://www.fastcodesign.com/90112320/design-thinking-needs-to-think-bigger](https://www.fastcodesign.com/90112320/design-thinking-needs-to-think-bigger)
 
-## 6.2. References
+## 5.2. References
 
 - [Questionnaire bank for usability research](http://www.usabilitynet.org/tools/r_questionnaire.htm)
 - [User Experience Questionnaire](http://www.ueq-online.org/)
 - [Usability.gov](https://www.usability.gov/)
 - [Simply Secure Knowledge Base](https://simplysecure.org/knowledge-base/) - Best practices for privacy, security, and transparency in design
+- [Design Kit - HCD Methods](http://www.designkit.org/methods)
 
-## 6.3. Read
+## 5.3. Read
 
-## 6.4. Unread
+## 5.4. Unread
 
 - [System Usability Scale](https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html)
 - [Usability tutorial](http://www.afterhoursprogramming.com/tutorial/Usability/Introduction/)
